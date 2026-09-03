@@ -37,7 +37,7 @@ v 1.21.3.27
 - Fix: Radioschatten in Musicvisualisierung korrigiert
 - Fix: Farben des Radiodisplayhintergrundes und des Textes in Musicvisualisierung für bessere Sichtbarkeit verändert</news>
 		<forum>https://www.kodinerds.net/board/100-horizonz-v/</forum>
-		<source>https://github.com/blauesgruen/skin.horizonzv-omega</source>
+				<source>https://github.com/blauesgruen/skin.horizonzv-piers</source>
 			<assets>
 				<icon>resources/icon.png</icon>
 				<fanart>resources/fanart.jpg</fanart>
