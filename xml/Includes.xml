@@ -51,13 +51,11 @@
     <include file="Includes_Dash_Layout.xml"/>
     <include file="Includes_Dash_Weather.xml"/>
     <include file="Includes_DebugInfo.xml"/>
-    <include file="Includes_Extendedinfo.xml"/>
     <include file="Includes_Flagging.xml"/>
     <include file="Includes_Games.xml"/>
     <include file="Includes_HomeContent.xml"/>
     <include file="Includes_HomeOSD.xml"/>
     <include file="Includes_JumpSMS.xml"/>
-    <include file="Includes_KNSwitcher_Content.xml"/>
     <include file="Includes_Nexttrackplaylist.xml"/>
     <include file="Includes_PVR.xml"/>
     <include file="Includes_SetInformation.xml"/>
