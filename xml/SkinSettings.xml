@@ -85,41 +85,41 @@
                         <content>
                             <item id="2">
                                 <description>Homebutton Settings</description>
-                                <label>301346</label>
+                                <label>$LOCALIZE[301346]</label>
                                 <onclick/>
                             </item>
                             <item id="9">
                                 <description>Submenu Settings</description>
-                                <label>301348</label>
+                                <label>$LOCALIZE[301348]</label>
                                 <onclick/>
                             </item>
                             <item id="4">
-                                <label>301350</label>
+                                <label>$LOCALIZE[301350]</label>
                                 <onclick/>
                             </item>
                             <item id="5">
                                 <description>Widget Settings</description>
-                                <label>301351</label>
+                                <label>$LOCALIZE[301351]</label>
                                 <onclick/>
                             </item>
                             <item id="6">
                                 <description>Design / Performance</description>
-                                <label>301352</label>
+                                <label>$LOCALIZE[301352]</label>
                                 <onclick/>
                             </item>
                             <item id="7">
                                 <description>Extra Art Settings</description>
-                                <label>301354</label>
+                                <label>$LOCALIZE[301354]</label>
                                 <onclick/>
                             </item>
                             <item id="1">
                                 <description>Admin Menu</description>
-                                <label>301356</label>
+                                <label>$LOCALIZE[301356]</label>
                                 <onclick/>
                             </item>
                             <item id="10">
                                 <description>Shutdown Menu</description>
-                                <label>301357</label>
+                                <label>$LOCALIZE[301357]</label>
                                 <onclick/>
                             </item>
                             <item id="11">
@@ -292,7 +292,7 @@
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
                                 <label>$LOCALIZE[301622] $LOCALIZE[301624]</label>
-                                <label>301622</label>
+                                <label>$LOCALIZE[301622]</label>
                                 <onclick>Skin.ToggleSetting(videolibrary_export)</onclick>
                                 <selected>Skin.HasSetting(videolibrary_export)</selected>
                             </control>
@@ -312,7 +312,7 @@
                                 <width>100%</width>
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
-                                <label>301358</label>
+                                <label>$LOCALIZE[301358]</label>
                                 <onclick>Skin.ToggleSetting(DebugGrid)</onclick>
                                 <selected>Skin.HasSetting(DebugGrid)</selected>
                             </control>
@@ -321,7 +321,7 @@
                                 <width>100%</width>
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
-                                <label>301360</label>
+                                <label>$LOCALIZE[301360]</label>
                                 <onclick>Skin.ToggleSetting(DebugInfo)</onclick>
                                 <selected>Skin.HasSetting(DebugInfo)</selected>
                             </control>
@@ -330,7 +330,7 @@
                                 <width>100%</width>
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
-                                <label>301362</label>
+                                <label>$LOCALIZE[301362]</label>
                                 <onclick>Skin.ToggleSetting(firstrun_horizonzv)</onclick>
                                 <onclick>Skin.ToggleSetting(firstrun1_horizonzv)</onclick>
                                 <selected>!Skin.HasSetting(firstrun_horizonzv)</selected>
@@ -340,7 +340,7 @@
                                 <width>100%</width>
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
-                                <label>301364</label>
+                                <label>$LOCALIZE[301364]</label>
                                 <onclick>ActivateWindow(home)</onclick>
                                 <onclick>ActivateWindow(1155)</onclick>
                             </control>
@@ -357,7 +357,7 @@
                                 <width>100%</width>
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
-                                <label>301366</label>
+                                <label>$LOCALIZE[301366]</label>
                                 <onclick>Skin.ToggleSetting(mousearrow)</onclick>
                                 <selected>Skin.HasSetting(mousearrow)</selected>
                             </control>
@@ -387,7 +387,7 @@
                                 <width>100%</width>
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
-                                <label>301368</label>
+                                <label>$LOCALIZE[301368]</label>
                                 <focusedcolor>black</focusedcolor>
                                 <onclick>ActivateWindow(1301)</onclick>
                             </control>
@@ -396,7 +396,7 @@
                                 <width>100%</width>
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
-                                <label>301370</label>
+                                <label>$LOCALIZE[301370]</label>
                                 <label2>$INFO[Skin.String(homemenufocus)]</label2>
                                 <focusedcolor>black</focusedcolor>
                                 <onclick>Skin.SetString(homemenufocus)</onclick>
@@ -446,7 +446,7 @@
                                 <width>100%</width>
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
-                                <label>301371</label>
+                                <label>$LOCALIZE[301371]</label>
                                 <onclick>SetProperty(HomeButton,dashboard,home)</onclick>
                                 <onclick>ActivateWindow(1501)</onclick>
                             </control>
@@ -541,7 +541,7 @@
                                 <description>PlayDisc Button</description>
                                 <width>100%</width>
                                 <align>left</align>
-                                <label>427</label>
+                                <label>$LOCALIZE[427]</label>
                                 <include>DialogButtonTextureFocus</include>
                                 <onclick>SetProperty(HomeButton,playdisc,home)</onclick>
                                 <onclick>ActivateWindow(1501)</onclick>
@@ -678,7 +678,7 @@
                                 <width>100%</width>
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
-                                <label>13000</label>
+                                <label>$LOCALIZE[13000]</label>
                                 <onclick>SetProperty(HomeButton,setting,home)</onclick>
                                 <onclick>ActivateWindow(1501)</onclick>
                             </control>
@@ -687,7 +687,7 @@
                                 <width>100%</width>
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
-                                <label>19020</label>
+                                <label>$LOCALIZE[19020]</label>
                                 <onclick>SetProperty(HomeButton,pvr,home)</onclick>
                                 <onclick>ActivateWindow(1501)</onclick>
                             </control>
@@ -696,7 +696,7 @@
                                 <width>100%</width>
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
-                                <label>19183</label>
+                                <label>$LOCALIZE[19183]</label>
                                 <onclick>SetProperty(HomeButton,radio,home)</onclick>
                                 <onclick>ActivateWindow(1501)</onclick>
                             </control>
@@ -725,7 +725,7 @@
                                 <width>600</width>
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
-                                <label>20342</label>
+                                <label>$LOCALIZE[20342]</label>
                                 <focusedcolor>black</focusedcolor>
                             </control>
                             <control type="button" id="912">
@@ -733,7 +733,7 @@
                                 <width>600</width>
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
-                                <label>20389</label>
+                                <label>$LOCALIZE[20389]</label>
                                 <focusedcolor>black</focusedcolor>
                             </control>
                             <control type="button" id="913">
@@ -741,7 +741,7 @@
                                 <width>600</width>
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
-                                <label>20343</label>
+                                <label>$LOCALIZE[20343]</label>
                                 <focusedcolor>black</focusedcolor>
                             </control>
                             <control type="button" id="914">
@@ -757,7 +757,7 @@
                                 <width>600</width>
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
-                                <label>13000</label>
+                                <label>$LOCALIZE[13000]</label>
                                 <focusedcolor>black</focusedcolor>
                             </control>
                         </control>
@@ -926,7 +926,7 @@
                                 <width>100%</width>
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
-                                <label>369</label>
+                                <label>$LOCALIZE[369]</label>
                                 <focusedcolor>black</focusedcolor>
                                 <onclick>Skin.ToggleSetting(SubMenu_tvshow_NoTitleButton)</onclick>
                                 <selected>!Skin.HasSetting(SubMenu_tvshow_NoTitleButton)</selected>
@@ -937,7 +937,7 @@
                                 <width>100%</width>
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
-                                <label>135</label>
+                                <label>$LOCALIZE[135]</label>
                                 <focusedcolor>black</focusedcolor>
                                 <onclick>Skin.ToggleSetting(SubMenu_tvshow_NoGenreButton)</onclick>
                                 <selected>!Skin.HasSetting(SubMenu_tvshow_NoGenreButton)</selected>
@@ -948,7 +948,7 @@
                                 <width>100%</width>
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
-                                <label>652</label>
+                                <label>$LOCALIZE[652]</label>
                                 <focusedcolor>black</focusedcolor>
                                 <onclick>Skin.ToggleSetting(SubMenu_tvshow_NoYearButton)</onclick>
                                 <selected>!Skin.HasSetting(SubMenu_tvshow_NoYearButton)</selected>
@@ -959,7 +959,7 @@
                                 <width>100%</width>
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
-                                <label>344</label>
+                                <label>$LOCALIZE[344]</label>
                                 <focusedcolor>black</focusedcolor>
                                 <onclick>Skin.ToggleSetting(SubMenu_tvshow_NoActorButton)</onclick>
                                 <selected>!Skin.HasSetting(SubMenu_tvshow_NoActorButton)</selected>
@@ -971,7 +971,7 @@
                                 <width>100%</width>
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
-                                <label>589</label>
+                                <label>$LOCALIZE[589]</label>
                                 <focusedcolor>black</focusedcolor>
                                 <onclick>Skin.ToggleSetting(SubMenu_music_NoPartymodeButton)</onclick>
                                 <selected>!Skin.HasSetting(SubMenu_music_NoPartymodeButton)</selected>
@@ -982,7 +982,7 @@
                                 <width>100%</width>
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
-                                <label>133</label>
+                                <label>$LOCALIZE[133]</label>
                                 <focusedcolor>black</focusedcolor>
                                 <onclick>Skin.ToggleSetting(SubMenu_music_NoArtistButton)</onclick>
                                 <selected>!Skin.HasSetting(SubMenu_music_NoArtistButton)</selected>
@@ -993,7 +993,7 @@
                                 <width>100%</width>
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
-                                <label>132</label>
+                                <label>$LOCALIZE[132]</label>
                                 <focusedcolor>black</focusedcolor>
                                 <onclick>Skin.ToggleSetting(SubMenu_music_NoAlbumButton)</onclick>
                                 <selected>!Skin.HasSetting(SubMenu_music_NoAlbumButton)</selected>
@@ -1004,7 +1004,7 @@
                                 <width>100%</width>
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
-                                <label>134</label>
+                                <label>$LOCALIZE[134]</label>
                                 <focusedcolor>black</focusedcolor>
                                 <onclick>Skin.ToggleSetting(SubMenu_music_NoSongsButton)</onclick>
                                 <selected>!Skin.HasSetting(SubMenu_music_NoSongsButton)</selected>
@@ -1015,7 +1015,7 @@
                                 <width>100%</width>
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
-                                <label>14022</label>
+                                <label>$LOCALIZE[14022]</label>
                                 <focusedcolor>black</focusedcolor>
                                 <onclick>Skin.ToggleSetting(SubMenu_music_NoLibraryButton)</onclick>
                                 <selected>!Skin.HasSetting(SubMenu_music_NoLibraryButton)</selected>
@@ -1026,7 +1026,7 @@
                                 <width>100%</width>
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
-                                <label>24001</label>
+                                <label>$LOCALIZE[24001]</label>
                                 <focusedcolor>black</focusedcolor>
                                 <onclick>Skin.ToggleSetting(SubMenu_music_NoAddonButton)</onclick>
                                 <selected>!Skin.HasSetting(SubMenu_music_NoAddonButton)</selected>
@@ -1038,7 +1038,7 @@
                                 <width>100%</width>
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
-                                <label>20077</label>
+                                <label>$LOCALIZE[20077]</label>
                                 <focusedcolor>black</focusedcolor>
                                 <onclick>Skin.ToggleSetting(SubMenu_music_NoSkinSettingButton)</onclick>
                                 <selected>!Skin.HasSetting(SubMenu_music_NoSkinSettingButton)</selected>
@@ -1072,7 +1072,7 @@
                                 <width>100%</width>
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
-                                <label>13200</label>
+                                <label>$LOCALIZE[13200]</label>
                                 <focusedcolor>black</focusedcolor>
                                 <onclick>Skin.ToggleSetting(SubMenu_music_NoProfileButton)</onclick>
                                 <selected>!Skin.HasSetting(SubMenu_music_NoProfileButton)</selected>
@@ -1083,7 +1083,7 @@
                                 <width>100%</width>
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
-                                <label>130</label>
+                                <label>$LOCALIZE[130]</label>
                                 <focusedcolor>black</focusedcolor>
                                 <onclick>Skin.ToggleSetting(SubMenu_music_NoSystemInfoButton)</onclick>
                                 <selected>!Skin.HasSetting(SubMenu_music_NoSystemInfoButton)</selected>
@@ -1106,7 +1106,7 @@
                                 <width>100%</width>
                                 <height>30</height>
                                 <align>center</align>
-                                <label>1212</label>
+                                <label>$LOCALIZE[1212]</label>
                                 <textcolor>description</textcolor>
                             </control>
                             <control type="image" id="502">
@@ -1121,7 +1121,7 @@
                                 <width>100%</width>
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
-                                <label>301376</label>
+                                <label>$LOCALIZE[301376]</label>
                                 <onclick>Skin.ToggleSetting(BackgroundVideo)</onclick>
                                 <onfocus>SetProperty(SSD,"$LOCALIZE[301126]",skinsettings)</onfocus>
                                 <onunfocus>ClearProperty(SSD)</onunfocus>
@@ -1132,7 +1132,7 @@
                                 <width>100%</width>
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
-                                <label>301378</label>
+                                <label>$LOCALIZE[301378]</label>
                                 <label2>$VAR[rated_language]</label2>
                                 <focusedcolor>black</focusedcolor>
                                 <onfocus>SetProperty(SSD,"$LOCALIZE[301132]",skinsettings)</onfocus>
@@ -1143,7 +1143,7 @@
                                 <width>100%</width>
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
-                                <label>301380</label>
+                                <label>$LOCALIZE[301380]</label>
                                 <onclick>Skin.ToggleSetting(WindowedTrailer)</onclick>
                                 <onfocus>SetProperty(SSD,"$LOCALIZE[301134]",skinsettings)</onfocus>
                                 <onunfocus>ClearProperty(SSD)</onunfocus>
@@ -1160,7 +1160,7 @@
                                 <width>100%</width>
                                 <height>30</height>
                                 <align>center</align>
-                                <label>14221</label>
+                                <label>$LOCALIZE[14221]</label>
                                 <textcolor>description</textcolor>
                             </control>
                             <control type="image" id="522">
@@ -1186,7 +1186,7 @@
                                 <width>100%</width>
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
-                                <label>301382</label>
+                                <label>$LOCALIZE[301382]</label>
                                 <onclick>Skin.ToggleSetting(playlist)</onclick>
                                 <onfocus>SetProperty(SSD,"$LOCALIZE[301136]",skinsettings)</onfocus>
                                 <onunfocus>ClearProperty(SSD)</onunfocus>
@@ -1203,7 +1203,7 @@
                                 <width>100%</width>
                                 <height>30</height>
                                 <align>center</align>
-                                <label>16000</label>
+                                <label>$LOCALIZE[16000]</label>
                                 <textcolor>description</textcolor>
                             </control>
                             <control type="image" id="534">
@@ -1218,7 +1218,7 @@
                                 <width>100%</width>
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
-                                <label>301384</label>
+                                <label>$LOCALIZE[301384]</label>
                                 <label2>$INFO[Skin.String(start_volume),,%]</label2>
                                 <onclick>Skin.SetNumeric(start_volume)</onclick>
                                 <onclick>Skin.ToggleSetting(startvolume)</onclick>
@@ -1230,7 +1230,7 @@
                                 <width>100%</width>
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
-                                <label>301386</label>
+                                <label>$LOCALIZE[301386]</label>
                                 <onclick>Skin.ToggleSetting(HideJumpSMSBar)</onclick>
                                 <onfocus>SetProperty(SSD,"$LOCALIZE[301142]",skinsettings)</onfocus>
                                 <onunfocus>ClearProperty(SSD)</onunfocus>
@@ -1241,7 +1241,7 @@
                                 <width>100%</width>
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
-                                <label>301388</label>
+                                <label>$LOCALIZE[301388]</label>
                                 <focusedcolor>black</focusedcolor>
                                 <onclick>Skin.ToggleSetting(hidewolhome)</onclick>
                                 <selected>Skin.HasSetting(hidewolhome)</selected>
@@ -1255,7 +1255,7 @@
                                 <width>100%</width>
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
-                                <label>31067</label>
+                                <label>$LOCALIZE[31067]</label>
                                 <onclick>Skin.ToggleSetting(Use_Startup_Playlist)</onclick>
                                 <onfocus>SetProperty(SSD,"$LOCALIZE[301144]",skinsettings)</onfocus>
                                 <onunfocus>ClearProperty(SSD)</onunfocus>
@@ -1276,7 +1276,7 @@
                                 <width>100%</width>
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
-                                <label>301390</label>
+                                <label>$LOCALIZE[301390]</label>
                                 <onclick>Skin.ToggleSetting(context_globalsearch)</onclick>
                                 <onfocus>SetProperty(SSD,"$LOCALIZE[301145]",skinsettings)</onfocus>
                                 <onunfocus>ClearProperty(SSD)</onunfocus>
@@ -1288,7 +1288,7 @@
                                 <width>100%</width>
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
-                                <label>301392</label>
+                                <label>$LOCALIZE[301392]</label>
                                 <onclick>Skin.ToggleSetting(statistic)</onclick>
                                 <onfocus>SetProperty(SSD,"$LOCALIZE[301146]",skinsettings)</onfocus>
                                 <onunfocus>ClearProperty(SSD)</onunfocus>
@@ -1299,7 +1299,7 @@
                                 <width>100%</width>
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
-                                <label>301394</label>
+                                <label>$LOCALIZE[301394]</label>
                                 <onclick>Skin.ToggleSetting(hide_fav)</onclick>
                                 <onfocus>SetProperty(SSD,"$LOCALIZE[301147]",skinsettings)</onfocus>
                                 <onunfocus>ClearProperty(SSD)</onunfocus>
@@ -1310,7 +1310,7 @@
                                 <width>100%</width>
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
-                                <label>301396</label>
+                                <label>$LOCALIZE[301396]</label>
                                 <onclick>Skin.ToggleSetting(hide_central)</onclick>
                                 <onfocus>SetProperty(SSD,"$LOCALIZE[301148]",skinsettings)</onfocus>
                                 <onunfocus>ClearProperty(SSD)</onunfocus>
@@ -1321,7 +1321,7 @@
                                 <width>100%</width>
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
-                                <label>301502</label>
+                                <label>$LOCALIZE[301502]</label>
                                 <onclick>Skin.ToggleSetting(profilname)</onclick>
                                 <selected>Skin.HasSetting(profilname)</selected>
                                 <visible>Integer.IsGreater(System.ProfileCount,1)</visible>
@@ -1358,7 +1358,7 @@
                                 <width>100%</width>
                                 <height>30</height>
                                 <align>center</align>
-                                <label>16000</label>
+                                <label>$LOCALIZE[16000]</label>
                                 <textcolor>description</textcolor>
                             </control>
                             <control type="image" id="6003">
@@ -1373,7 +1373,7 @@
                                 <width>100%</width>
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
-                                <label>301306</label>
+                                <label>$LOCALIZE[301306]</label>
                                 <focusedcolor>black</focusedcolor>
                                 <onclick>Skin.ToggleSetting(WidgetDim)</onclick>
                                 <onfocus>SetProperty(SSD,"$LOCALIZE[301152]",skinsettings)</onfocus>
@@ -1385,7 +1385,7 @@
                                 <width>100%</width>
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
-                                <label>301598</label>
+                                <label>$LOCALIZE[301598]</label>
                                 <focusedcolor>black</focusedcolor>
                                 <onclick>Skin.ToggleSetting(WidgetNoPercentPlayedBar)</onclick>
                                 <onfocus>SetProperty(SSD,"$LOCALIZE[301153]",skinsettings)</onfocus>
@@ -1402,7 +1402,7 @@
                                 <width>100%</width>
                                 <height>30</height>
                                 <align>center</align>
-                                <label>301351</label>
+                                <label>$LOCALIZE[301351]</label>
                                 <textcolor>description</textcolor>
                             </control>
                             <control type="image" id="6006">
@@ -1422,7 +1422,7 @@
                                 <width>100%</width>
                                 <height>30</height>
                                 <align>center</align>
-                                <label>301151</label>
+                                <label>$LOCALIZE[301151]</label>
                                 <textcolor>white</textcolor>
                             </control>
                         </control>
@@ -1448,7 +1448,7 @@
                                 <width>100%</width>
                                 <height>30</height>
                                 <align>center</align>
-                                <label>16000</label>
+                                <label>$LOCALIZE[16000]</label>
                                 <textcolor>description</textcolor>
                             </control>
                             <control type="image" id="8003">
@@ -1463,7 +1463,7 @@
                                 <width>100%</width>
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
-                                <label>301402</label>
+                                <label>$LOCALIZE[301402]</label>
                                 <onclick>Skin.ToggleSetting(animation)</onclick>
                                 <onfocus>SetProperty(SSD,"$LOCALIZE[301166]",skinsettings)</onfocus>
                                 <onunfocus>ClearProperty(SSD)</onunfocus>
@@ -1474,7 +1474,7 @@
                                 <width>100%</width>
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
-                                <label>301404</label>
+                                <label>$LOCALIZE[301404]</label>
                                 <onclick>Skin.ToggleSetting(NavInfo)</onclick>
                                 <onfocus>SetProperty(SSD,"$LOCALIZE[301168]",skinsettings)</onfocus>
                                 <onunfocus>ClearProperty(SSD)</onunfocus>
@@ -1486,7 +1486,7 @@
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
                                 <focusedcolor>black</focusedcolor>
-                                <label>301408</label>
+                                <label>$LOCALIZE[301408]</label>
                                 <onclick>Skin.ToggleSetting(NoDate)</onclick>
                                 <onfocus>SetProperty(SSD,"$LOCALIZE[301169]",skinsettings)</onfocus>
                                 <onunfocus>ClearProperty(SSD)</onunfocus>
@@ -1507,7 +1507,7 @@
                             </control>
                             <control type="radiobutton" id="810">
                                 <description>Only one Background</description>
-                                <label>301410</label>
+                                <label>$LOCALIZE[301410]</label>
                                 <width>100%</width>
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
@@ -1524,7 +1524,7 @@
                                 <width>100%</width>
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
-                                <label>301412</label>
+                                <label>$LOCALIZE[301412]</label>
                                 <label2>$INFO[Skin.String(Home_Custom_Back_picture_OnlyOne)]</label2>
                                 <focusedcolor>black</focusedcolor>
                                 <onclick condition="Skin.String(Home_Custom_Back_picture_OnlyOne)">Skin.Reset(Home_Custom_Back_picture_OnlyOne)</onclick>
@@ -1537,7 +1537,7 @@
                             <control type="radiobutton" id="814">
                                 <include>openclosevisible</include>
                                 <description>Only one Background</description>
-                                <label>301414</label>
+                                <label>$LOCALIZE[301414]</label>
                                 <width>100%</width>
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
@@ -1568,7 +1568,7 @@
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
                                 <focusedcolor>black</focusedcolor>
-                                <label>301286</label>
+                                <label>$LOCALIZE[301286]</label>
                                 <label2>$VAR[BackgroundDimLabel]</label2>
                                 <onclick>Skin.SelectBool(301286, 301460|background_dim_1, 301462|background_dim_2, 301464|background_dim_3, 594|background_dim_no)</onclick>
                                 <onfocus>SetProperty(SSD,"$LOCALIZE[301174]",skinsettings)</onfocus>
@@ -1581,7 +1581,7 @@
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
                                 <focusedcolor>black</focusedcolor>
-                                <label>301416</label>
+                                <label>$LOCALIZE[301416]</label>
                                 <label2>$VAR[BackgroundOverlayColorLabel]</label2>
                                 <onclick>Skin.SelectBool(301416, $VAR[ColorAkzentVar])</onclick>
                                 <onfocus>SetProperty(SSD,"$LOCALIZE[301175]",skinsettings)</onfocus>
@@ -1623,7 +1623,7 @@
                                 <width>100%</width>
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
-                                <label>301288</label>
+                                <label>$LOCALIZE[301288]</label>
                                 <focusedcolor>black</focusedcolor>
                                 <onclick>Skin.ToggleSetting(CommonPageCount)</onclick>
                                 <onfocus>SetProperty(SSD,"$LOCALIZE[301177]",skinsettings)</onfocus>
@@ -1650,7 +1650,7 @@
                                 <width>100%</width>
                                 <height>30</height>
                                 <align>center</align>
-                                <label>10000</label>
+                                <label>$LOCALIZE[10000]</label>
                                 <textcolor>description</textcolor>
                             </control>
                             <control type="image" id="2002">
@@ -1676,7 +1676,7 @@
                                 <width>100%</width>
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
-                                <label>301418</label>
+                                <label>$LOCALIZE[301418]</label>
                                 <label2>$VAR[backgroundfolder_label]</label2>
                                 <focusedcolor>black</focusedcolor>
                                 <onclick>Skin.SelectBool(301416, 15112|standard_bkg, 301572|avengers_sw, 301574|gambit_background)</onclick>
@@ -1689,7 +1689,7 @@
                                 <width>100%</width>
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
-                                <label>301424</label>
+                                <label>$LOCALIZE[301424]</label>
                                 <focusedcolor>black</focusedcolor>
                                 <onclick>Skin.ToggleSetting(BackgroundDiffuseOverlay)</onclick>
                                 <onfocus>SetProperty(SSD,"$LOCALIZE[301184]",skinsettings)</onfocus>
@@ -1701,7 +1701,7 @@
                                 <width>100%</width>
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
-                                <label>301426</label>
+                                <label>$LOCALIZE[301426]</label>
                                 <focusedcolor>black</focusedcolor>
                                 <onfocus>SetProperty(SSD,"$LOCALIZE[301186]",skinsettings)</onfocus>
                                 <onunfocus>ClearProperty(SSD)</onunfocus>
@@ -1713,7 +1713,7 @@
                                 <width>100%</width>
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
-                                <label>301406</label>
+                                <label>$LOCALIZE[301406]</label>
                                 <onclick>Skin.ToggleSetting(homepageNOWeatherinfo)</onclick>
                                 <onfocus>SetProperty(SSD,"$LOCALIZE[301188]",skinsettings)</onfocus>
                                 <onunfocus>ClearProperty(SSD)</onunfocus>
@@ -1747,7 +1747,7 @@
                                 <include>DialogButtonTextureFocus</include>
                                 <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
-                                <label>301330</label>
+                                <label>$LOCALIZE[301330]</label>
                                 <onclick>Skin.ToggleSetting(noradioviz)</onclick>
                                 <onclick condition="Skin.HasSetting(radioview)">Skin.Reset(radioview)</onclick>
                                 <onclick condition="!Skin.HasSetting(noradioviz)">Skin.Reset(vinylview)</onclick>
@@ -1762,7 +1762,7 @@
                                 <include>DialogButtonTextureFocus</include>
                                 <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
-                                <label>301332</label>
+                                <label>$LOCALIZE[301332]</label>
                                 <label2>$VAR[MusicVisualisierung]</label2>
                                 <onclick>Skin.SelectBool(301332, 301578|radioview, 301576|vinylview, 301580|standardnowplaying)</onclick>
                                 <onfocus>SetProperty(SSD,"$LOCALIZE[301192]",skinsettings)</onfocus>
@@ -1776,7 +1776,7 @@
                                 <include>DialogButtonTextureFocus</include>
                                 <textcolor>white</textcolor>
                                 <focusedcolor>black</focusedcolor>
-                                <label>301332</label>
+                                <label>$LOCALIZE[301332]</label>
                                 <label2>$VAR[MusicVisualisierung]</label2>
                                 <onclick>Skin.ToggleSetting(vinylview)</onclick>
                                 <onclick condition="Skin.HasSetting(radioview)">Skin.Reset(radioview)</onclick>
@@ -1789,7 +1789,7 @@
                                 <width>100%</width>
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
-                                <label>658</label>
+                                <label>$LOCALIZE[658]</label>
                                 <focusedcolor>black</focusedcolor>
                                 <onclick>Skin.ToggleSetting(musicoverlay_stream)</onclick>
                                 <onfocus>SetProperty(SSD,"$LOCALIZE[301196]",skinsettings)</onfocus>
@@ -1807,7 +1807,7 @@
                                 <width>100%</width>
                                 <height>30</height>
                                 <align>center</align>
-                                <label>20342</label>
+                                <label>$LOCALIZE[20342]</label>
                                 <textcolor>description</textcolor>
                             </control>
                             <control type="image" id="866">
@@ -1822,7 +1822,7 @@
                                 <width>100%</width>
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
-                                <label>301430</label>
+                                <label>$LOCALIZE[301430]</label>
                                 <focusedcolor>black</focusedcolor>
                                 <onclick>Skin.ToggleSetting(pause_light)</onclick>
                                 <onfocus>Skin.SetBool(color_orange)</onfocus>
@@ -1836,7 +1836,7 @@
                                 <width>100%</width>
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
-                                <label>301432</label>
+                                <label>$LOCALIZE[301432]</label>
                                 <focusedcolor>black</focusedcolor>
                                 <onclick>Skin.ToggleSetting(pause_light_hideinfos)</onclick>
                                 <onfocus>Activate(1155)</onfocus>
@@ -1915,7 +1915,7 @@
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
                                 <focusedcolor>black</focusedcolor>
-                                <label>301492</label>
+                                <label>$LOCALIZE[301492]</label>
                                 <onclick>Skin.ToggleSetting(EnableExtendedArt)</onclick>
                                 <onfocus>SetProperty(SSD,"$LOCALIZE[301202]",skinsettings)</onfocus>
                                 <onunfocus>ClearProperty(SSD)</onunfocus>
@@ -1947,7 +1947,7 @@
                                 <width>100%</width>
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
-                                <label>301434</label>
+                                <label>$LOCALIZE[301434]</label>
                                 <label2>$VAR[CDArtStyle_Label]</label2>
                                 <focusedcolor>black</focusedcolor>
                                 <onclick>Skin.SelectBool(301434, 301456|cdart_glass, 301458|cdart_rohling, 36554|cdart_off)</onclick>
@@ -2036,7 +2036,7 @@
                     <top>3</top>
                     <width>480</width>
 					<height>45</height>
-                    <label>20077</label>
+                    <label>$LOCALIZE[20077]</label>
                     <align>left</align>
                     <aligny>center</aligny>
                     <font>impacted24</font>

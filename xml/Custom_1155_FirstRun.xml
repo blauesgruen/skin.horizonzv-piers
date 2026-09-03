@@ -56,7 +56,7 @@
 					<font>impacted18</font>
 					<disabledcolor>selectedhome</disabledcolor>
 					<texturenofocus/>
-					<label>301246</label>
+					<label>$LOCALIZE[301246]</label>
 					<onclick>Skin.ResetSettings</onclick>
 					<onclick>Skin.SetBool(color_grey)</onclick>
 					<onclick>Skin.SetBool(hideMovieCases)</onclick>
@@ -82,7 +82,7 @@
 					<font>impacted18</font>
 					<disabledcolor>selectedhome</disabledcolor>
 					<texturenofocus/>
-					<label>301248</label>
+					<label>$LOCALIZE[301248]</label>
 					<onclick>Skin.ResetSettings</onclick>
 					<onclick>Skin.SetBool(animation)</onclick>
 					<onclick>Skin.SetBool(EnableExtendedArt)</onclick>
@@ -119,7 +119,7 @@
 					<font>impacted18</font>
 					<disabledcolor>selectedhome</disabledcolor>
 					<texturenofocus/>
-					<label>301250</label>
+					<label>$LOCALIZE[301250]</label>
 					<onclick>Skin.ResetSettings</onclick>
 					<onclick>Skin.SetBool(animation)</onclick>
 					<onclick>Skin.SetBool(EnableExtendedArt)</onclick>

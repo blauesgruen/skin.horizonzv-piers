@@ -52,7 +52,7 @@
 							<height>100%</height>
 							<align>center</align>
 							<font>ubuntu-r21b</font>
-							<label>20052</label>
+							<label>$LOCALIZE[20052]</label>
 							<textcolor>red</textcolor>
 							<visible>ControlGroup(9004).HasFocus(4)</visible>
 							<include>openclosevisible</include>
