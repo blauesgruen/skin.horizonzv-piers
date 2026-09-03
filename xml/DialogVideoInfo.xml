@@ -410,8 +410,8 @@
 									<include>openclosevisible</include>
 									<visible>Control.HasFocus(50)</visible>
 									<visible>![Control.HasFocus(441)|ControlGroup(600).HasFocus()]</visible>
+									<left>SpacePadding</left>
 									<height>100%</height>
-									<width>50%</width>
 									<font>impacted24</font>
 									<align>center</align>
 									<aligny>center</aligny>
@@ -589,6 +589,7 @@
 									<control type="label">
 										<height>100%</height>
 										<textcolor>grey2</textcolor>
+										<font>ubuntu-r12</font>
 										<align>center</align>
 										<wrapmultiline>true</wrapmultiline>
 										<label>$LOCALIZE[19055]. ($LOCALIZE[460]/$LOCALIZE[287])</label>
@@ -601,6 +602,7 @@
 								<right>SpacePadding</right>
 								<top>-20</top>
 								<bottom>90</bottom>
+								<visible>!Control.HasFocus(50)</visible>
 								<include>openclosevisible</include>
 								<control type="group">
 									<right>0</right>
@@ -608,8 +610,10 @@
 									<control type="group">
 										<centerleft>50%</centerleft>
 										<width>380</width>
-										<animation effect="slide" end="-130,0" condition="ListItem.IsCollection|String.IsEmpty(ListItem.Property(AudioLanguage.1))">Conditional</animation>
+										<animation effect="slide" end="-130,0" condition="ListItem.IsCollection">Conditional</animation>
+										<!-- <animation effect="slide" end="-130,0" condition="ListItem.IsCollection|String.IsEmpty(ListItem.Property(AudioLanguage.1))">Conditional</animation> -->
 										<visible>!Container.Content(episodes)</visible>
+										<include>openclosevisible</include>
 										<control type="group">
 											<visible>!Skin.HasSetting(hideMovieCases)</visible>
 											<control type="image">
