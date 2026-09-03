@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <include name="View_512_MediaListArtist">
+		<param name="viewid">512</param>
+		<definition>
+			<control type="group">
+				<visible>Control.IsVisible($PARAM[viewid])</visible>
+				<include>openclose</include>
+				<include>MirrorPanel</include>
+				<control type="group"> <!-- Left Panel -->
+					<include>opencloseslideright</include>
+					<include content="InfoListPanel">
+						<param name="left" value="InlayLeftSmall" />
+						<param name="right" value="InlayRightSmall" />
+					</include>
+					<control type="group">
+						<left>InlayLeftSmall</left>
+						<right>InlayRightSmall</right>
+						<top>InlayTop</top>
+						<bottom>InlayBottom</bottom>
+						<control type="list" id="$PARAM[viewid]">
+							<left>60</left>
+							<right>75</right>
+							<top>80</top>
+							<bottom>80</bottom>
+							<onleft>9000</onleft>
+							<onright condition="Control.IsVisible($PARAM[viewid]1)">$PARAM[viewid]1</onright>
+							<onright condition="!Control.IsVisible($PARAM[viewid]1)+Control.IsVisible(15000)">15000</onright>
+							<onright condition="!Control.IsVisible($PARAM[viewid]1)+!Control.IsVisible(15000)">732</onright>
+							<onup>$PARAM[viewid]</onup>
+							<ondown>$PARAM[viewid]</ondown>
+							<pagecontrol>$PARAM[viewid]1</pagecontrol>
+							<viewtype label="$LOCALIZE[544]">list</viewtype>
+							<scrolltime>200</scrolltime>
+							<visible>Container.Content(artists)</visible>
+							<itemlayout height="60" width="auto">
+								<control type="label">
+									<left>15</left>
+									<top>3</top>
+									<height>60</height>
+									<textcolor>grey</textcolor>
+									<align>left</align>
+									<aligny>center</aligny>
+									<label>$INFO[ListItem.Label]</label>
+								</control>
+								<control type="label">
+									<left>82</left>
+									<top>3</top>
+									<height>60</height>
+									<textcolor>grey</textcolor>
+									<align>right</align>
+									<aligny>center</aligny>
+									<font>font16</font>
+									<label>$VAR[InfoWallBottomLabel1Var]</label>
+								</control>
+							</itemlayout>
+							<focusedlayout height="60" width="auto">
+								<control type="group">
+									<control type="image">
+										<left>0</left>
+										<top>3</top>
+										<height>60</height>
+										<colordiffuse>grey2</colordiffuse>
+										<texture border="5">buttons/ButtonFOlightGlow.png</texture>
+										<visible>!Control.HasFocus($PARAM[viewid])</visible>
+										<include>openclosevisible</include>
+									</control>
+									<control type="image">
+										<left>0</left>
+										<top>3</top>
+										<height>60</height>
+										<colordiffuse>grey1</colordiffuse>
+										<texture border="5">buttons/ButtonFOlightGlow.png</texture>
+										<visible>Control.HasFocus($PARAM[viewid])</visible>
+										<include>openclosevisible</include>
+									</control>
+									<control type="label">
+										<left>15</left>
+										<top>3</top>
+										<height>60</height>
+										<textcolor>white</textcolor>
+										<align>left</align>
+										<aligny>center</aligny>
+										<label>$INFO[ListItem.Label]</label>
+										<shadowcolor>black</shadowcolor>
+									</control>
+									<control type="label">
+										<left>82</left>
+										<top>3</top>
+										<height>60</height>
+										<textcolor>white</textcolor>
+										<align>right</align>
+										<aligny>center</aligny>
+										<font>font16</font>
+										<shadowcolor>black</shadowcolor>
+										<label>$VAR[InfoWallBottomLabel1Var]</label>
+									</control>
+								</control>
+							</focusedlayout>
+						</control>
+						<include content="DefaultScrollbar">
+							<param name="top" value="80" />
+							<param name="bottom" value="80" />
+							<param name="id" value="$PARAM[viewid]1" />
+							<param name="left" value="60r" />
+							<param name="height" value="100%" />
+							<param name="onleft" value="$PARAM[viewid]" />
+						</include>
+					</control>
+				</control>
+				<control type="group"> <!-- Right Panel -->
+					<include>opencloseslideleft</include>
+					<include content="InfoListPanel">
+						<param name="left" value="InlayRest" />
+						<param name="right" value="InlayLeftSmall" />
+					</include>
+					<control type="group">
+						<left>InlayRest</left>
+						<right>InlayLeftSmall</right>
+						<top>50</top>
+						<bottom>60</bottom>
+						<control type="group">
+							<left>SpacePaddingLarge</left>
+							<right>SpacePaddingLarge</right>
+							<top>SpacePaddingLarge</top>
+							<bottom>SpacePaddingXL</bottom>
+							<control type="image">
+								<top>20</top>
+								<height>350</height>
+								<aspectratio>keep</aspectratio>
+								<texture border="4">$VAR[PosterThumb]</texture>
+							</control>
+							<control type="group">
+								<top>390</top>
+								<control type="image">
+									<height>3</height>
+									<colordiffuse>fanartdiffuse</colordiffuse>
+									<texture border="1">Separator1.png</texture>
+								</control>
+								<control type="label">
+									<description>Born txt</description>
+									<top>15</top>
+									<width>210</width>
+									<height>38</height>
+									<label>$LOCALIZE[21893]:</label>
+									<align>right</align>
+									<aligny>center</aligny>
+									<textcolor>selected</textcolor>
+									<!-- <visible>!String.IsEmpty(ListItem.Property(Artist_Born))</visible> -->
+								</control>
+								<control type="label">
+									<description>Born Value</description>
+									<top>15</top>
+									<left>225</left>
+									<height>38</height>
+									<label>$INFO[ListItem.Property(Artist_Born)]</label>
+									<align>left</align>
+									<aligny>center</aligny>
+									<scroll>true</scroll>
+									<!-- <visible>!String.IsEmpty(ListItem.Property(Artist_Born))</visible> -->
+								</control>
+								<control type="label">
+									<description>Formed txt</description>
+									<top>53</top>
+									<width>210</width>
+									<height>38</height>
+									<label>$LOCALIZE[21894]:</label>
+									<align>right</align>
+									<aligny>center</aligny>
+									<textcolor>selected</textcolor>
+									<!-- <visible>!String.IsEmpty(ListItem.Property(Artist_Formed))</visible> -->
+								</control>
+								<control type="label">
+									<description>Formed Value</description>
+									<left>225</left>
+									<top>53</top>
+									<height>38</height>
+									<label>$INFO[ListItem.Property(Artist_Formed)]</label>
+									<align>left</align>
+									<aligny>center</aligny>
+									<scroll>true</scroll>
+									<!-- <visible>!String.IsEmpty(ListItem.Property(Artist_Formed))</visible> -->
+								</control>
+								<control type="label">
+									<description>Genre txt</description>
+									<top>90</top>
+									<width>210</width>
+									<height>38</height>
+									<label>$LOCALIZE[515]:</label>
+									<align>right</align>
+									<aligny>center</aligny>
+									<textcolor>selected</textcolor>
+								</control>
+								<control type="label">
+									<description>Genre Value</description>
+									<left>225</left>
+									<top>90</top>
+									<height>38</height>
+									<label fallback="416">$INFO[ListItem.Property(Artist_Genre)]</label>
+									<align>left</align>
+									<aligny>center</aligny>
+									<scroll>true</scroll>
+								</control>
+								<control type="image">
+									<top>135</top>
+									<height>3</height>
+									<colordiffuse>fanartdiffuse</colordiffuse>
+									<texture border="1">Separator1.png</texture>
+								</control>
+								<control type="textbox">
+									<description>Description Value for Artist</description>
+									<top>145</top>
+									<bottom>10</bottom>
+									<font>font16</font>
+									<aligny>top</aligny>
+									<textcolor>white</textcolor>
+									<label>$INFO[ListItem.Property(Artist_Description)]</label>
+								</control>
+							</control>
+						</control>
+					</control>
+				</control>
+				<include>CommonPageCount</include>
+				<include content="AlphaBarV" condition="!Skin.HasSetting(HideJumpSMSBar)"><param name="id" value="$PARAM[viewid]"/></include>
+				<control type="button" id="777">
+					<include>HiddenButton</include>
+					<onfocus>Control.SetFocus($PARAM[viewid])</onfocus>
+				</control>
+			</control>
+		</definition>
+    </include>
+</includes>

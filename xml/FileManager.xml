@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+    <defaultcontrol>20</defaultcontrol>
+	<backgroundcolor>grey3</backgroundcolor>
+    <include>openclose</include>
+    <controls>
+        <include>DialogBackgroundSimple</include>
+		<control type="group">
+            <include content="DialogBackgroundCommons">
+                <param name="width" value="95%" />
+                <param name="height" value="90%" />
+                <param name="header_id" value="0" />
+                <param name="header_label" value="" />
+            </include>
+            <control type="group">
+                <left>SpacePadding</left>
+                <right>SpacePadding</right>
+                <control type="group"> <!-- Center Arrows -->
+                    <top>SpacePaddingXL</top>
+                    <bottom>SpacePaddingXL</bottom>
+                    <control type="group">
+                        <centerleft>50%</centerleft>
+                        <width>1</width>
+                        <control type="image">
+                            <colordiffuse>grey1</colordiffuse>
+                            <texture border="2">Separator3.png</texture>
+                        </control>
+                    </control>
+                    <control type="group">
+                        <centerleft>50%</centerleft>
+                        <centertop>50%</centertop>
+                        <width>66</width>
+                        <height>60</height>
+                        <control type="image">
+                            <width>30</width>
+                            <aspectratio>keep</aspectratio>
+                            <texture>ArrowBig.png</texture>
+                        </control>
+                        <control type="image">
+                            <left>36</left>
+                            <top>30</top>
+                            <width>30</width>
+                            <aspectratio>keep</aspectratio>
+                            <texture flipx="true">ArrowBig.png</texture>
+                        </control>
+                    </control>
+                </control>
+                <control type="group">
+                    <left>SpacePadding</left>
+                    <control type="group">
+                        <top>8</top>
+                        <control type="label">
+                            <description>header label</description>
+                            <width>45</width>
+                            <height>45</height>
+                            <font>impacted24</font>
+                            <label>A</label>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                        </control>
+                        <control type="group">
+                            <right>SpacePadding</right>
+                            <width>45</width>
+                            <control type="label">
+                                <description>header label</description>
+                                <height>45</height>
+                                <font>impacted24</font>
+                                <label>B</label>
+                                <align>right</align>
+                                <aligny>center</aligny>
+                            </control>
+                        </control>
+                    </control>
+                    <control type="group">
+                        <top>SpacePaddingXL</top>
+                        <bottom>SpacePaddingXL</bottom>
+                        <include>openclosevisible</include>
+                        <control type="group"> <!-- Left List -->
+                            <width>47%</width>
+                            <control type="image">
+                                <height>50</height>
+                                <aspectratio align="left">keep</aspectratio>
+                                <info>Container(20).ListItem.Icon</info>
+                            </control>
+                            <control type="label" id="101">
+                                <description>current directory text label</description>
+                                <left>60</left>
+                                <right>95</right>
+                                <height>50</height>
+                                <scroll>true</scroll>
+                                <align>left</align>
+                                <aligny>center</aligny>
+                            </control>
+                            <control type="group">
+                                <top>55</top>
+                                <control type="scrollbar" id="30">
+                                    <height>100%</height>
+                                    <onright>20</onright>
+                                    <showonepage>false</showonepage>
+                                    <orientation>vertical</orientation>
+                                </control>
+                                <control type="list" id="20">
+                                    <left>20</left>
+                                    <onleft>30</onleft>
+                                    <onright>21</onright>
+                                    <onup>20</onup>
+                                    <ondown>20</ondown>
+                                    <pagecontrol>30</pagecontrol>
+                                    <scrolltime>200</scrolltime>
+                                    <include content="DefaultLabelListLayout">
+                                        <param name="list_id" value="20" />
+                                        <param name="width" value="100%" />
+                                    </include>
+                                </control>
+                            </control>
+                        </control>
+                        <control type="group">  <!-- Right List -->
+                            <right>SpacePadding</right>
+                            <width>47%</width>
+                            <control type="group">
+                                <control type="image">
+                                    <height>50</height>
+                                    <aspectratio align="left">keep</aspectratio>
+                                    <info>Container(21).ListItem.Icon</info>
+                                </control>
+                                <control type="label" id="102">
+                                    <description>current directory text label</description>
+                                    <left>60</left>
+                                    <right>95</right>
+                                    <height>50</height>
+                                    <scroll>true</scroll>
+                                    <align>left</align>
+                                    <aligny>center</aligny>
+                                </control>
+                                <control type="group">
+                                    <top>55</top>
+                                    <control type="group">
+                                        <right>0</right>
+                                        <width>12</width>
+                                        <control type="scrollbar" id="31">
+                                            <height>100%</height>
+                                            <onleft>21</onleft>
+                                            <showonepage>false</showonepage>
+                                            <orientation>vertical</orientation>
+                                        </control>
+                                    </control>
+                                    <control type="list" id="21">
+                                        <left>20</left>
+                                        <right>20</right>
+                                        <onleft>20</onleft>
+                                        <onright>31</onright>
+                                        <onup>21</onup>
+                                        <ondown>21</ondown>
+                                        <pagecontrol>31</pagecontrol>
+                                        <scrolltime>200</scrolltime>
+                                        <include content="DefaultLabelListLayout">
+                                            <param name="list_id" value="21" />
+                                        </include>
+                                    </control>
+                                </control>
+                            </control>
+                        </control>
+                    </control>
+                </control>
+                <control type="group">
+                    <left>SpacePadding</left>
+                    <right>SpacePadding</right>
+                    <control type="group">
+                        <bottom>0</bottom>
+                        <height>55</height>
+                        <control type="label">
+                            <include>openclosemedium</include>
+                            <description>number of files/pages in left list text label</description>
+                            <bottom>0</bottom>
+                            <height>45</height>
+                            <align>left</align>
+                            <scroll>true</scroll>
+                            <font>impacted18</font>
+                            <textcolor>grey</textcolor>
+                            <label>([COLOR=white]$INFO[Container(20).NumItems][/COLOR]) $LOCALIZE[31009] - $LOCALIZE[31008] ([COLOR=white]$INFO[Container(20).CurrentPage]/$INFO[Container(20).NumPages][/COLOR])</label>
+                        </control>
+                        <control type="label">
+                            <include>openclosemedium</include>
+                            <description>number of files/pages in left list text label</description>
+                            <bottom>0</bottom>
+                            <height>45</height>
+                            <align>right</align>
+                            <scroll>true</scroll>
+                            <font>impacted18</font>
+                            <textcolor>grey</textcolor>
+                            <label>([COLOR=white]$INFO[Container(21).NumItems][/COLOR]) $LOCALIZE[31009] - $LOCALIZE[31008] ([COLOR=white]$INFO[Container(21).CurrentPage]/$INFO[Container(21).NumPages][/COLOR])</label>
+                        </control>
+                    </control>
+                </control>
+            </control>
+        </control>
+        <include>Clock</include>
+        <include>NavInfo</include>
+    </controls>
+</window>

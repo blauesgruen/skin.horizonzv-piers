@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+	<include name="DialogVideoVersionLayout">
+		<control type="group">
+			<include>openclosebox</include>
+			<include content="DefaultPopupLayout">
+				<param name="id" value="2" />
+				<param name="height" value="730" />
+				<param name="height2" value="580" />
+				<param name="PopupHeaderTitle" value="2" />
+				<param name="PopupIcon" />
+				<param name="PopupTitle" value="$LOCALIZE[424]" />
+				<param name="PopupTitle2" value="14230" />
+			</include>
+			<include>DialogVideoVersionCommonLayout</include>
+			<control type="grouplist" id="101">
+				<left>920</left>
+				<top>160</top>
+				<width>300</width>
+				<height>565</height>
+				<onleft condition="ControlGroup(200).HasFocus(201) | Integer.IsGreater(Container(51).NumItems,0)">100</onleft>
+				<onleft condition="ControlGroup(200).HasFocus(202) + Integer.IsEqual(Container(51).NumItems,0)">200</onleft>
+				<itemgap>dialogbuttons_itemgap</itemgap>
+				<align>top</align>
+				<scrolltime tween="quadratic">200</scrolltime>
+				<include content="DefaultDialogButton">
+					<param name="id" value="21" />
+					<param name="label" value="$LOCALIZE[208]" />
+					<param name="onleft" value="60" />
+				</include>
+				<include content="DefaultDialogButton">
+					<param name="id" value="22" />
+					<param name="label" value="$LOCALIZE[19114] $LOCALIZE[15019]" />
+					<param name="onleft" value="60" />
+					<param name="visible">ControlGroup(200).HasFocus(201)</param>
+				</include>
+				<include content="DefaultDialogButton">
+					<param name="id" value="23" />
+					<param name="label" value="$LOCALIZE[19114] $LOCALIZE[15019]" />
+					<param name="onleft" value="60" />
+					<param name="visible">ControlGroup(200).HasFocus(202)</param>
+				</include>
+				<include content="DefaultDialogButton">
+					<param name="id" value="27" />
+					<param name="label" value="$LOCALIZE[13511]" />
+					<param name="onleft" value="60" />
+				</include>
+				<include content="DefaultDialogButton">
+					<param name="id" value="24" />
+					<param name="label" value="$LOCALIZE[118]" />
+					<param name="onleft" value="60" />
+				</include>
+				<include content="DefaultDialogButton">
+					<param name="id" value="26" />
+					<param name="label" value="$LOCALIZE[15015]" />
+				</include>
+				<include content="DefaultDialogButton">
+					<param name="id" value="25" />
+					<param name="label" value="$LOCALIZE[20347] $LOCALIZE[39105] $LOCALIZE[20141]" />
+					<param name="onleft" value="60" />
+					<param name="visible">ControlGroup(200).HasFocus(201)</param>
+				</include>
+			</control>
+		</control>
+	</include>
+	<include name="DialogVideoVersionSelectLayout">
+		<control type="group">
+			<include content="DefaultPopupLayout">
+				<param name="id" value="2" />
+				<param name="height" value="750" />
+				<param name="height2" value="600" />
+				<param name="width" value="940" />
+				<param name="width2" value="910" />
+				<param name="width_title" value="800" />
+				<param name="PopupHeaderTitle" value="2" />
+				<param name="PopupTitle" value="$LOCALIZE[424]" />
+			</include>
+			<include>DialogVideoVersionCommonLayout</include>
+		</control>
+	</include>
+	<include name="DialogVideoVersionCommonLayout">
+		<control type="grouplist" id="200">
+			<left>40</left>
+			<top>160</top>
+			<height>180</height>
+			<orientation>vertical</orientation>
+			<itemgap>dialogbuttons_itemgap</itemgap>
+			<onright condition="ControlGroup(200).HasFocus(201)">50</onright>
+			<onright condition="ControlGroup(200).HasFocus(202)">51</onright>
+			<include content="DialogToggleButton">
+				<param name="id" value="201" />
+				<param name="label" value="$LOCALIZE[40000]" />
+				<param name="usealttexture" value="Control.IsVisible(50)" />
+				<param name="onright" value="50" />
+				<param name="visible">Window.IsActive(videoversion)| Window.IsActive(videoversionselect) + Integer.IsGreater(Container(50).NumItems,0)</param>
+			</include>
+			<include content="DialogToggleButton">
+				<param name="id" value="202" />
+				<param name="label" value="$LOCALIZE[40211]" />
+				<param name="usealttexture" value="Control.IsVisible(51)" />
+				<param name="onright" value="51" />
+				<param name="visible">Window.IsActive(videoversion) | Window.IsActive(videoversionselect) + Integer.IsGreater(Container(51).NumItems,0)</param>
+			</include>
+		</control>
+		<control type="image">
+			<top>280</top>
+			<left>40</left>
+			<width>260</width>
+			<height>380</height>
+			<align>top</align>
+			<aligny>center</aligny>
+			<aspectratio>scale</aspectratio>
+			<texture fallback="DefaultVideo.png">$VAR[PosterThumb]</texture>
+		</control>
+		<control type="group" id="100">
+			<top>160</top>
+			<left>320</left>
+			<control type="image">
+				<top>0</top>
+				<left>0</left>
+				<width>580</width>
+				<height>500</height>
+				<texture border="21" colordiffuse="menudiffuse">buttons/ButtonNF.png</texture>
+			</control>
+			<control type="list" id="17">
+				<description>version list</description>
+				<visible>ControlGroup(200).HasFocus(201)</visible>
+				<top>20</top>
+				<left>20</left>
+				<height>480</height>
+				<onup>50</onup>
+				<ondown>50</ondown>
+				<onleft>200</onleft>
+				<onright>60</onright>
+				<pagecontrol>60</pagecontrol>
+				<scrolltime>200</scrolltime>
+				<include content="DefaultSimpleListLayout">
+					<param name="width" value="540" />
+					<param name="height" value="45" />
+					<param name="list_id" value="50" />
+					<param name="align" value="left" />
+				</include>
+			</control>
+			<control type="list" id="51">
+				<description>extras list</description>
+				<visible>ControlGroup(200).HasFocus(202)</visible>
+				<top>20</top>
+				<left>20</left>
+				<onup>51</onup>
+				<ondown>51</ondown>
+				<height>480</height>
+				<onleft>200</onleft>
+				<onright>60</onright>
+				<pagecontrol>60</pagecontrol>
+				<scrolltime>200</scrolltime>
+				<include content="DefaultSimpleListLayout">
+					<param name="width" value="440" />
+					<param name="height" value="45" />
+					<param name="list_id" value="51" />
+					<param name="align" value="left" />
+				</include>
+			</control>
+			<control type="scrollbar" id="60">
+				<left>560</left>
+				<top>20</top>
+				<width>12</width>
+				<height>460</height>
+				<onleft condition="Control.IsVisible(50)">50</onleft>
+				<onleft condition="Control.IsVisible(51)">51</onleft>
+				<onright condition="Window.IsActive(videoversion)">101</onright>
+				<orientation>vertical</orientation>
+			</control>
+		</control>
+		<control type="label">
+			<visible>Control.HasFocus(50) | Control.HasFocus(51)</visible>
+			<align>left</align>
+			<top>670</top>
+			<left>40</left>
+			<right>40</right>
+			<height>45</height>
+			<scroll>true</scroll>
+			<font>bebas19</font>
+			<haspath>false</haspath>
+			<label>$VAR[VideoVersionFileVar]</label>
+			<include>openclosevisible</include>
+		</control>
+	</include>
+	<include name="DefaultSimpleListLayout">
+		<param name="align">left</param>
+		<param name="height">70</param>
+		<param name="font">ubuntu-r16b</param>
+		<param name="fontcolor">white</param>
+		<param name="fontcolor2">grey3</param>
+		<param name="texture">WhiteBack.png</param>
+		<definition>
+			<itemlayout width="$PARAM[width]" height="$PARAM[height]">
+				<control type="group">
+					<visible>ListItem.Property(PVR.IsRecordingTimer) | ListItem.Property(PVR.IsRemindingTimer)</visible>
+					<control type="image">
+						<left>20</left>
+						<width>40</width>
+						<aspectratio align="left">keep</aspectratio>
+						<aligny>center</aligny>
+						<texture>PVR-IsRecording.png</texture>
+						<visible>ListItem.Property(PVR.IsRecordingTimer)</visible>
+					</control>
+					<control type="image">
+						<left>20</left>
+						<width>40</width>
+						<aspectratio align="left">keep</aspectratio>
+						<aligny>center</aligny>
+						<texture>PVR-HasTimer2.png</texture>
+						<visible>ListItem.Property(PVR.IsRemindingTimer)</visible>
+					</control>
+					<control type="label">
+						<left>80</left>
+						<top>0</top>
+						<right>20</right>
+						<bottom>0</bottom>
+						<align>$PARAM[align]</align>
+						<font>$PARAM[font]</font>
+						<aligny>center</aligny>
+						<textcolor>$PARAM[fontcolor]</textcolor>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+				</control>
+				<control type="group">
+					<visible>!ListItem.Property(PVR.IsRecordingTimer) + !ListItem.Property(PVR.IsRemindingTimer)</visible>
+					<control type="label">
+						<left>20</left>
+						<top>0</top>
+						<right>20</right>
+						<bottom>0</bottom>
+						<align>$PARAM[align]</align>
+						<font>$PARAM[font]</font>
+						<aligny>center</aligny>
+						<textcolor>$PARAM[fontcolor]</textcolor>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+				</control>
+			</itemlayout>
+			<focusedlayout width="$PARAM[width]" height="$PARAM[height]">
+				<control type="image">
+					<left>0</left>
+					<top>0</top>
+					<right>0</right>
+					<bottom>0</bottom>
+					<texture>$PARAM[texture]</texture>
+					<visible>Control.HasFocus($PARAM[list_id])</visible>
+				</control>
+				<control type="group">
+					<visible>ListItem.Property(PVR.IsRecordingTimer) | ListItem.Property(PVR.IsRemindingTimer)</visible>
+					<control type="image">
+						<left>20</left>
+						<width>40</width>
+						<aspectratio align="left">keep</aspectratio>
+						<aligny>center</aligny>
+						<texture>PVR-IsRecording.png</texture>
+						<visible>ListItem.Property(PVR.IsRecordingTimer)</visible>
+					</control>
+					<control type="image">
+						<left>20</left>
+						<width>40</width>
+						<aspectratio align="left">keep</aspectratio>
+						<aligny>center</aligny>
+						<texture>PVR-HasTimer2.png</texture>
+						<visible>ListItem.Property(PVR.IsRemindingTimer)</visible>
+					</control>
+					<control type="label">
+						<left>80</left>
+						<top>0</top>
+						<right>20</right>
+						<bottom>0</bottom>
+						<align>$PARAM[align]</align>
+						<font>$PARAM[font]</font>
+						<aligny>center</aligny>
+						<textcolor>$PARAM[fontcolor2]</textcolor>
+						<label>$INFO[ListItem.Label]</label>
+						<scroll>true</scroll>
+					</control>
+				</control>
+				<control type="group">
+					<visible>!ListItem.Property(PVR.IsRecordingTimer) + !ListItem.Property(PVR.IsRemindingTimer)</visible>
+					<control type="label">
+						<left>20</left>
+						<top>0</top>
+						<right>20</right>
+						<bottom>0</bottom>
+						<align>$PARAM[align]</align>
+						<font>$PARAM[font]</font>
+						<aligny>center</aligny>
+						<textcolor>$PARAM[fontcolor2]</textcolor>
+						<label>$INFO[ListItem.Label]</label>
+						<scroll>true</scroll>
+						<visible>Control.HasFocus($PARAM[list_id])</visible>
+					</control>
+					<control type="label">
+						<left>20</left>
+						<top>0</top>
+						<right>20</right>
+						<bottom>0</bottom>
+						<align>$PARAM[align]</align>
+						<font>$PARAM[font]</font>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+						<scroll>true</scroll>
+						<visible>!Control.HasFocus($PARAM[list_id])</visible>
+					</control>
+				</control>
+			</focusedlayout>
+		</definition>
+	</include>
+</includes>

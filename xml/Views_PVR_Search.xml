@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <include name="View_50_LiveTVSearch">
+        <param name="viewid">50</param>
+        <definition>
+            <control type="group">
+                <description>Recordings group</description>
+                <top>318</top>
+                <include>openclose</include>
+                <include>opencloseslideup</include>
+                <visible>Control.IsVisible($PARAM[viewid])</visible>
+                <control type="group">
+                    <width>50%</width>
+                    <control type="group">
+                        <top>SpacePadding</top>
+                        <bottom>SpacePaddingLarge</bottom>
+                        <control type="fixedlist" id="$PARAM[viewid]">
+                            <left>SpacePaddingLarge</left>
+                            <onright>$PARAM[viewid]1</onright>
+                            <onleft>9000</onleft>
+                            <onup>$PARAM[viewid]</onup>
+                            <ondown>$PARAM[viewid]</ondown>
+                            <viewtype label="535">list</viewtype>
+                            <movement>2</movement>
+                            <focusposition>3</focusposition>
+                            <pagecontrol>$PARAM[viewid]1</pagecontrol>
+                            <scrolltime>200</scrolltime>
+                            <orientation>vertical</orientation>
+                            <include content="LiveTVChannelViewLayout">
+                                <param name="id" value="$PARAM[viewid]" />
+                                <param name="item_width" value="auto" />
+                            </include>
+                        </control>
+                        <control type="scrollbar" id="$PARAM[viewid]1">
+                            <left>100%</left>
+                            <height>100%</height>
+                            <onright>9000</onright>
+                            <onleft>$PARAM[viewid]</onleft>
+                            <showonepage>false</showonepage>
+                            <orientation>vertical</orientation>
+                        </control>
+                    </control>
+                </control>
+                <control type="group">
+                    <width>50%</width>
+                    <right>0</right>
+                    <control type="group">
+                        <left>12</left>
+                        <control type="image">
+                            <texture>BlackBack.png</texture>
+                        </control>
+                        <control type="group">
+                            <left>SpacePaddingLarge</left>
+                            <right>SpacePaddingLarge</right>
+                            <bottom>SpacePaddingLarge</bottom>
+                            <include>PVRInfoPanel</include>
+                        </control>
+                    </control>
+                </control>
+            </control>
+        </definition>
+    </include>
+</includes>

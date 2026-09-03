@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keymap>
+  <global>
+    <keyboard>
+      <F1>ReloadSkin()</F1>
+      <F2>ToggleFullScreen</F2>
+      <F3>System.Exec("\"D:\Program Files\Kodi21\portable_data\addons\skin.horizonzv-omega\scripts\RunSetKodiWindow_min.bat\" 1680 720 50 50 0")</F3>
+      <F4>System.Exec("\"D:\Program Files\Kodi21\portable_data\addons\skin.horizonzv-omega\scripts\RunSetKodiWindow_min.bat\" 1440 900 50 50 0")</F4>
+      <F5>Skin.ToggleSetting(DebugInfo)</F5>
+      <F6>Skin.ToggleDebug()</F6>
+      <F7>ActivateWindow(6606)</F7>
+    </keyboard>
+  </global>
+</keymap>

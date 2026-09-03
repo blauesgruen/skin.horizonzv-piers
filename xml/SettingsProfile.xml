@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+    <defaultcontrol always="true">2</defaultcontrol>
+	<backgroundcolor>grey3</backgroundcolor>
+    <include>openclose</include>
+    <controls>
+        <include>DialogBackgroundSimple</include>
+        <control type="group">
+			<visible>!Window.IsVisible(130)</visible>
+            <include>openclosebox</include>
+            <include content="DialogBackgroundCommons">
+                <param name="width" value="1650" />
+                <param name="height" value="900" />
+                <param name="header_id" value="1" />
+                <param name="header_label" value="10034" />
+            </include>
+            <control type="group">
+                <left>SpacePadding</left>
+                <right>SpacePadding</right>
+                <top>SpacePaddingXL</top>
+                <bottom>SpacePaddingXL</bottom>
+                <control type="group">
+                <width>400</width>
+                    <control type="grouplist">
+                        <control type="radiobutton" id="4">
+                            <description>Enable Login screen</description>
+                            <width>100%</width>
+                            <textoffsety>6</textoffsety>
+                            <label>20096</label>
+                            <align>left</align>
+                            <include>DialogButtonTextureFocus</include>
+                            <include>DialogButtonTextureNoFocus</include>
+                            <onleft>2</onleft>
+                            <onright>2</onright>
+                            <onup>6</onup>
+                            <ondown>5</ondown>
+                            <enable>!Window.IsVisible(ProfileSettings)</enable>
+                        </control>
+                        <control type="button" id="9">
+                            <description>Choose auto login user (grayed out)</description>
+                            <width>100%</width>
+                            <label>33084</label>
+                            <textcolor>grey2</textcolor>
+                            <include>DialogButtonTextureFocus</include>
+                            <include>DialogButtonTextureNoFocus</include>
+                            <onleft>2</onleft>
+                            <onright>2</onright>
+                            <onup>4</onup>
+                            <ondown>6</ondown>
+                            <visible>System.HasLoginScreen</visible>
+                            <enable>false</enable>
+                        </control>
+                        <control type="button" id="5">
+                            <description>Choose auto login user</description>
+                            <width>100%</width>
+                            <label>33084</label>
+                            <include>DialogButtonTextureFocus</include>
+                            <include>DialogButtonTextureNoFocus</include>
+                            <onleft>2</onleft>
+                            <onright>2</onright>
+                            <onup>4</onup>
+                            <ondown>6</ondown>
+                            <visible>!System.HasLoginScreen</visible>
+                            <enable>!Window.IsVisible(ProfileSettings) + !System.HasLoginScreen</enable>
+                        </control>
+                        <control type="label" id="7">
+                            <width>100%</width>
+                            <textcolor>selected</textcolor>
+                            <font>font16</font>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <label>$INFO[System.ProfileAutoLogin]</label>
+                            <visible>!Control.HasFocus(5) + !System.HasLoginScreen</visible>
+                        </control>
+                        <control type="label" id="8">
+                            <width>100%</width>
+                            <textcolor>selected</textcolor>
+                            <font>font16</font>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <label>$INFO[System.ProfileAutoLogin]</label>
+                            <scroll>true</scroll>
+                            <scrollspeed>30</scrollspeed>
+                            <visible>Control.HasFocus(5) + !System.HasLoginScreen</visible>
+                        </control>
+                        <control type="button" id="6">
+                            <description>Cancel</description>
+                            <width>100%</width>
+                            <onclick>Action(back)</onclick>
+                            <label>301344</label>
+                            <include>DialogButtonTextureFocus</include>
+                            <include>DialogButtonTextureNoFocus</include>
+                            <onleft/>
+                            <onright>2</onright>
+                            <onup>5</onup>
+                            <ondown>4</ondown>
+                        </control>
+                    </control>
+                    <control type="group">
+                        <bottom>0</bottom>
+                        <height>300</height>
+                        <control type="image">
+                            <aspectratio>keep</aspectratio>
+                            <bordertexture border="10">ThumbShadow.png</bordertexture>
+                            <bordersize>6</bordersize>
+                            <texture fallback="DefaultUser.png">$INFO[Container(2).Listitem.Icon]</texture>
+                        </control>
+                    </control>
+                </control>
+                <control type="image">
+                    <left>420</left>
+                    <width>3</width>
+                    <colordiffuse>fanartdiffuse</colordiffuse>
+                    <texture border="1">Separator4.png</texture>
+                </control>
+                <control type="panel" id="2">
+                    <left>440</left>
+                    <right>15</right>
+                    <onleft>4</onleft>
+                    <onright>60</onright>
+                    <onup>53</onup>
+                    <ondown>53</ondown>
+                    <viewtype label="21371">list</viewtype>
+                    <pagecontrol>60</pagecontrol>
+                    <scrolltime>200</scrolltime>
+                    <itemlayout height="248" width="218">
+                        <control type="image">
+                            <left>8</left>
+                            <top>8</top>
+                            <width>195</width>
+                            <height>195</height>
+                            <colordiffuse>grey</colordiffuse>
+                            <aspectratio>scale</aspectratio>
+                            <texture fallback="DefaultUser.png">$INFO[ListItem.Icon]</texture>
+                        </control>
+                        <control type="label">
+                            <left>0</left>
+                            <top>210</top>
+                            <width>225</width>
+                            <height>38</height>
+                            <font>font16</font>
+                            <textcolor>grey</textcolor>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <info>ListItem.Label</info>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="248" width="218">
+                        <control type="image">
+                            <left>0</left>
+                            <top>0</top>
+                            <width>210</width>
+                            <height>210</height>
+                            <aspectratio>scale</aspectratio>
+                            <bordertexture border="5">buttons/ButtonNF.png</bordertexture>
+                            <bordersize>5</bordersize>
+                            <texture fallback="DefaultUser.png">$INFO[ListItem.Icon]</texture>
+                        </control>
+                        <control type="label">
+                            <left>0</left>
+                            <top>210</top>
+                            <width>225</width>
+                            <height>38</height>
+                            <font>font16</font>
+                            <textcolor>white</textcolor>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <info>ListItem.Label</info>
+                        </control>
+                    </focusedlayout>
+                </control>
+                <control type="scrollbar" id="60">
+                    <left>100%</left>
+                    <height>100%</height>
+                    <onleft>2</onleft>
+                    <onright>4</onright>
+                    <showonepage>false</showonepage>
+                    <orientation>vertical</orientation>
+                </control>
+            </control>
+            <control type="group">
+                <centerleft>50%</centerleft>
+                <bottom>0</bottom>
+                <height>55</height>
+                <control type="label">
+                    <width>100%</width>
+                    <font>impacted18</font>
+                    <align>center</align>
+                    <textcolor>grey</textcolor>
+                    <label>$LOCALIZE[31050]: [COLOR=white]$INFO[Container(2).ListItem.Label][/COLOR] - $LOCALIZE[31051]: [COLOR=white]$INFO[Container(2).ListItem.Label2][/COLOR]</label>
+                    <visible>!String.IsEmpty(Container(2).ListItem.Label2)</visible>
+                </control>
+                <control type="label">
+                    <width>100%</width>
+                    <font>impacted18</font>
+                    <align>center</align>
+                    <textcolor>grey</textcolor>
+                    <label>$LOCALIZE[31050]: [COLOR=white]$INFO[Container(2).ListItem.Label][/COLOR] - $LOCALIZE[31051]: [COLOR=white]$LOCALIZE[13170][/COLOR]</label>
+                    <visible>String.IsEmpty(Container(2).ListItem.Label2)</visible>
+                </control>
+            </control>
+        </control>
+        <include>Clock</include>
+        <control type="grouplist">
+            <include>opencloseslideright</include>
+            <left>22</left>
+            <top>0</top>
+            <width>1500</width>
+            <height>45</height>
+            <orientation>horizontal</orientation>
+            <align>left</align>
+            <itemgap>8</itemgap>
+            <control type="label">
+                <font>impacted24</font>
+                <label>$LOCALIZE[13200]</label>
+            </control>
+        </control>
+        <include>BehindDialogFadeOut</include>
+    </controls>
+</window>

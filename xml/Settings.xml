@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+	<defaultcontrol always="true">9000</defaultcontrol>
+	<backgroundcolor>grey3</backgroundcolor>
+    <include>openclose</include>
+    <controls>
+        <include>Multiimage</include>
+		<control type="group">
+			<left>SpacePadding</left>
+			<right>SpacePadding</right>
+			<centerleft>50%</centerleft>
+			<height>75%</height>
+			<control type="group">
+				<centertop>50%</centertop>
+				<height>528</height>
+				<control type="panel" id="9000">
+					<height>528</height>
+					<width>1848</width>
+					<centerleft>50%</centerleft>
+					<onleft>9000</onleft>
+					<onright>9000</onright>
+					<onup>9000</onup>
+					<ondown>9000</ondown>
+					<include>openclosebox</include>
+					<itemlayout height="264" width="264">
+						<control type="image">
+							<right>5</right>
+							<bottom>5</bottom>
+							<texture border="2">BlackBack$VAR[CornerSettingVar].png</texture>
+						</control>
+						<control type="image">
+							<right>5</right>
+							<bottom>5</bottom>
+							<aspectratio>keep</aspectratio>
+							<colordiffuse>grey1</colordiffuse>
+							<texture>$INFO[ListItem.Icon]</texture>
+							<align>center</align>
+						</control>
+						<control type="label">
+							<right>20</right>
+							<left>15</left>
+							<top>190</top>
+							<height>50</height>
+							<font>impacted18</font>
+							<label>$INFO[ListItem.Label]</label>
+							<align>center</align>
+						</control>
+						<control type="image">
+							<right>5</right>
+							<bottom>5</bottom>
+							<colordiffuse>fanartdiffuse</colordiffuse>
+							<texture border="5">masks/Default$VAR[CornerSettingVar].png</texture>
+						</control>
+					</itemlayout>
+					<focusedlayout height="264" width="264">
+						<control type="group">
+							<depth>DepthContentPopout</depth>
+							<!-- <include>focuseffect</include> -->
+							<control type="image">
+								<right>5</right>
+								<bottom>5</bottom>
+								<texture border="2">BlackBack$VAR[CornerSettingVar].png</texture>
+							</control>
+							<control type="image">
+								<left>10</left>
+								<right>15</right>
+								<top>10</top>
+								<bottom>15</bottom>
+								<colordiffuse>$VAR[BackgroundOverlayColor]</colordiffuse>
+								<texture border="2">White.png</texture>
+							</control>
+							<control type="image">
+								<right>5</right>
+								<bottom>5</bottom>
+								<aspectratio>keep</aspectratio>
+								<texture>$INFO[ListItem.Icon]</texture>
+								<align>center</align>
+							</control>
+							<control type="label">
+								<right>20</right>
+								<left>15</left>
+								<top>190</top>
+								<height>50</height>
+								<font>impacted18</font>
+								<label>$INFO[ListItem.Label]</label>
+								<align>center</align>
+							</control>
+							<control type="image">
+								<right>5</right>
+								<bottom>5</bottom>
+								<texture border="5">masks/Default$VAR[CornerSettingVar].png</texture>
+								<!-- <texture border="4">buttons/ButtonNF.png</texture> -->
+							</control>
+						</control>
+					</focusedlayout>
+					<content>
+						<item>
+							<label>$LOCALIZE[14201]</label>
+							<onclick>ActivateWindow(PlayerSettings)</onclick>
+							<icon>icons/settings/video.png</icon>
+						</item>
+						<item>
+							<label>$LOCALIZE[14212]</label>
+							<onclick>ActivateWindow(MediaSettings)</onclick>
+							<icon>icons/settings/library.png</icon>
+						</item>
+						<item>
+							<label>$LOCALIZE[14205]</label>
+							<onclick>ActivateWindow(PVRSettings)</onclick>
+							<icon>icons/settings/livetv.png</icon>
+						</item>
+						<item>
+							<label>$LOCALIZE[14208]</label>
+							<onclick>ActivateWindow(ServiceSettings)</onclick>
+							<icon>icons/settings/network.png</icon>
+						</item>
+						<item>
+							<label>$LOCALIZE[15016]</label>
+							<visible>System.GetBool(gamesgeneral.enable)</visible>
+							<onclick>ActivateWindow(GameSettings)</onclick>
+							<icon>icons/settings/games.png</icon>
+						</item>
+						<item>
+							<label>$LOCALIZE[14207]</label>
+							<onclick>ActivateWindow(InterfaceSettings)</onclick>
+							<icon>icons/settings/appearance.png</icon>
+						</item>
+						<item>
+							<label>$LOCALIZE[20077]</label>
+							<onclick>ActivateWindow(SkinSettings)</onclick>
+							<icon>icons/settings/skin.png</icon>
+						</item>
+						<item>
+							<label>$LOCALIZE[14210]</label>
+							<onclick>ActivateWindow(Profiles)</onclick>
+							<icon>icons/settings/profiles.png</icon>
+						</item>
+						<item>
+							<label>$LOCALIZE[14209]</label>
+							<onclick>ActivateWindow(SystemSettings)</onclick>
+							<icon>icons/settings/system.png</icon>
+						</item>
+						<item>
+							<label>$LOCALIZE[138]</label>
+							<onclick>ActivateWindow(systeminfo)</onclick>
+							<icon>icons/settings/sysinfo.png</icon>
+						</item>
+						<item>
+							<label>$LOCALIZE[10050]</label>
+							<onclick>ActivateWindow(eventlog)</onclick>
+							<icon>icons/settings/eventlog.png</icon>
+						</item>
+						<item>
+							<label>$LOCALIZE[10003]</label>
+							<onclick>ActivateWindow(filemanager)</onclick>
+							<icon>icons/settings/filemanager.png</icon>
+						</item>
+						<item>
+							<label>$LOCALIZE[24001]</label>
+							<onclick>ActivateWindow(addonbrowser)</onclick>
+							<icon>icons/settings/addons.png</icon>
+						</item>
+						<item>
+							<label>LibreELEC</label>
+							<onclick>RunAddon(service.libreelec.settings)</onclick>
+							<icon>icons/settings/libreelec.png</icon>
+							<visible>System.HasAddon(service.libreelec.settings)</visible>
+						</item>
+						<item>
+							<label>CoreELEC</label>
+							<onclick>RunAddon(service.coreelec.settings)</onclick>
+							<icon>icons/settings/coreelec.png</icon>
+							<visible>System.HasAddon(service.coreelec.settings)</visible>
+						</item>
+					</content>
+				</control>
+				<control type="image">
+					<left>0</left>
+					<top>100</top>
+					<height>40</height>
+					<width>100%</width>
+					<aspectratio>keep</aspectratio>
+					<texture>ArrowBig.png</texture>
+					<animation effect="rotate" end="-90" center="auto" time="0" condition="true">Conditional</animation>
+					<visible>Container(9000).HasPrevious</visible>
+					<include>openclosefanart</include>
+					<include>openclosevisible</include>
+				</control>
+				<control type="image">
+					<left>0</left>
+					<top>740</top>
+					<height>40</height>
+					<width>100%</width>
+					<aspectratio>keep</aspectratio>
+					<texture>ArrowBig.png</texture>
+					<animation effect="rotate" end="90" center="auto" time="0" condition="true">Conditional</animation>
+					<visible>Container(9000).HasNext</visible>
+					<include>openclosefanart</include>
+					<include>openclosevisible</include>
+				</control>
+			</control>
+		</control>
+		<include>Clock</include>
+        <include>NavInfo</include>
+        <!-- <include>Arrows</include> -->
+        <include>BehindDialogFadeOut</include>
+        <include>systeminfo</include>
+        <include>TouchButtons</include>
+	</controls>
+</window>

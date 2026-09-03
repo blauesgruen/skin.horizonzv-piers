@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="1200">
+    <defaultcontrol always="true">8006</defaultcontrol>
+    <include>openclose</include>
+    <controls>
+		<control type="image">
+			<visible>Window.IsVisible(1200)</visible>
+			<description>background</description>
+			<include>openclosefanart</include>
+			<include>Dimensions_Fullscreen</include>
+			<colordiffuse>grey2</colordiffuse>
+			<texture>WhiteBack.png</texture>
+			<include>openclosevisible</include>
+		</control>
+		<control type="group">
+			<centertop>25%</centertop>
+			<height>500</height>
+			<include>openclosebox</include>
+			<control type="group">
+				<visible>Window.IsActive(Home)</visible>
+				<control type="group">
+					<include content="DialogBackgroundCommons">
+						<param name="width" value="900" />
+						<param name="height" value="300" />
+						<param name="bottomimage" value="240" />
+						<param name="header_id" value="1" />
+						<param name="header_label" value="-  $INFO[Container(8006).CurrentItem]  -" />
+					</include>
+					<control type="group">
+						<left>SpacePadding</left>
+						<right>SpacePadding</right>
+						<top>SpacePaddingXL</top>
+						<bottom>SpacePaddingXL</bottom>
+						<control type="group">
+							<visible>!ControlGroup(9004).HasFocus(4)</visible>
+							<include>openclosevisible</include>
+							<control type="image">
+								<width>150</width>
+								<aspectratio>keep</aspectratio>
+								<texture>$INFO[Container(8006).ListItem.Icon]</texture>
+							</control>
+							<control type="label">
+								<left>170</left>
+								<height>100%</height>
+								<align>left</align>
+								<font>ubuntu-r21b</font>
+								<label>$INFO[Container(8006).ListItem.Label]</label>
+							</control>
+						</control>
+						<control type="label">
+							<width>100%</width>
+							<height>100%</height>
+							<align>center</align>
+							<font>ubuntu-r21b</font>
+							<label>20052</label>
+							<textcolor>red</textcolor>
+							<visible>ControlGroup(9004).HasFocus(4)</visible>
+							<include>openclosevisible</include>
+						</control>
+					</control>
+					<control type="grouplist" id="9004">
+						<centerleft>50%</centerleft>
+						<bottom>5</bottom>
+						<width>830</width>
+						<height>50</height>
+						<align>center</align>
+						<onright>9004</onright>
+						<onleft>9004</onleft>
+						<itemgap>10</itemgap>
+						<orientation>horizontal</orientation>
+						<include content="DefaultDialogButton">
+							<param name="id" value="1" />
+							<param name="width" value="200" />
+							<param name="label" value="$LOCALIZE[24001]" />
+							<param name="font" value="impacted18" />
+							<param name="onclick" value="Skin.SetAddon(addon_fav$INFO[Container(8006).CurrentItem],xbmc.addon.video,xbmc.addon.audio,xbmc.addon.executable,xbmc.addon.image,kodi.gameclient)" />
+							<param name="ondown" value="8006" />
+							<param name="nofocus" />
+						</include>
+						<include content="DefaultDialogButton">
+							<param name="id" value="2" />
+							<param name="width" value="200" />
+							<param name="label" value="$LOCALIZE[1210]" />
+							<param name="font" value="impacted18" />
+							<param name="onclick" value="Skin.Reset(addon_fav$INFO[Container(8006).CurrentItem])" />
+							<param name="onclick2" value="Skin.Reset(addon_fav$INFO[Container(8006).CurrentItem]_icon)" />
+							<param name="onclick3" value="Skin.Reset(addon_fav$INFO[Container(8006).CurrentItem]_label)" />
+							<param name="ondown" value="8006" />
+							<param name="nofocus" />
+						</include>
+						<include content="DefaultDialogButton">
+							<param name="id" value="3" />
+							<param name="width" value="200" />
+							<param name="label" value="$LOCALIZE[15067]" />
+							<param name="font" value="impacted18" />
+							<param name="onclick" value="Action(back)" />
+							<param name="ondown" value="8006" />
+							<param name="nofocus" />
+						</include>
+						<include content="DefaultDialogButton">
+							<param name="id" value="4" />
+							<param name="width" value="200" />
+							<param name="label" value="$LOCALIZE[593] $LOCALIZE[1210]" />
+							<param name="font" value="impacted18" />
+							<param name="onclick" value="SetFocus(555555)" />
+							<param name="ondown" value="8006" />
+							<param name="nofocus" />
+						</include>
+					</control>
+				</control>
+				<control type="panel" id="8006"> <!-- Addons 8006-->
+					<centerleft>50%</centerleft>
+					<width>1800</width>
+					<top>500</top>
+					<height>180</height>
+					<onup>9004</onup>
+					<ondown>Action(back)</ondown>
+					<include>DashboardLayout_Row1_Settings</include>
+				</control>
+			</control>
+			<control type="button" id="555555"> <!-- fakebutton -->
+				<width/>
+				<height/>
+				<onleft/>
+				<onright/>
+				<ondown/>
+				<label/>
+				<textcolor/>
+				<textwidth/>
+				<font/>
+				<disabledcolor/>
+				<texturefocus/>
+				<texturenofocus/>
+				<onfocus>Skin.Reset(addon_fav1)</onfocus>
+				<onfocus>Skin.Reset(addon_fav2)</onfocus>
+				<onfocus>Skin.Reset(addon_fav3)</onfocus>
+				<onfocus>Skin.Reset(addon_fav3)</onfocus>
+				<onfocus>Skin.Reset(addon_fav4)</onfocus>
+				<onfocus>Skin.Reset(addon_fav5)</onfocus>
+				<onfocus>Skin.Reset(addon_fav6)</onfocus>
+				<onfocus>Skin.Reset(addon_fav7)</onfocus>
+				<onfocus>Skin.Reset(addon_fav8)</onfocus>
+				<onfocus>Skin.Reset(addon_fav9)</onfocus>
+				<onfocus>Skin.Reset(addon_fav10)</onfocus>
+				<onfocus>Skin.Reset(addon_fav1_icon)</onfocus>
+				<onfocus>Skin.Reset(addon_fav2_icon)</onfocus>
+				<onfocus>Skin.Reset(addon_fav3_icon)</onfocus>
+				<onfocus>Skin.Reset(addon_fav3_icon)</onfocus>
+				<onfocus>Skin.Reset(addon_fav4_icon)</onfocus>
+				<onfocus>Skin.Reset(addon_fav5_icon)</onfocus>
+				<onfocus>Skin.Reset(addon_fav6_icon)</onfocus>
+				<onfocus>Skin.Reset(addon_fav7_icon)</onfocus>
+				<onfocus>Skin.Reset(addon_fav8_icon)</onfocus>
+				<onfocus>Skin.Reset(addon_fav9_icon)</onfocus>
+				<onfocus>Skin.Reset(addon_fav10_icon)</onfocus>
+				<onfocus>Skin.Reset(addon_fav1_label)</onfocus>
+				<onfocus>Skin.Reset(addon_fav2_label)</onfocus>
+				<onfocus>Skin.Reset(addon_fav3_label)</onfocus>
+				<onfocus>Skin.Reset(addon_fav3_label)</onfocus>
+				<onfocus>Skin.Reset(addon_fav4_label)</onfocus>
+				<onfocus>Skin.Reset(addon_fav5_label)</onfocus>
+				<onfocus>Skin.Reset(addon_fav6_label)</onfocus>
+				<onfocus>Skin.Reset(addon_fav7_label)</onfocus>
+				<onfocus>Skin.Reset(addon_fav8_label)</onfocus>
+				<onfocus>Skin.Reset(addon_fav9_label)</onfocus>
+				<onfocus>Skin.Reset(addon_fav10_label)</onfocus>
+				<onfocus>SetFocus(4)</onfocus>
+			</control>
+        </control>
+    </controls>
+</window>

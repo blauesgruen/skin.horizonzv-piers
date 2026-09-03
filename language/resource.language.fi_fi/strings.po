@@ -1,0 +1,1172 @@
+﻿# Kodi Media Center language file
+# Addon Name: HorizonzV
+# Addon id: skin.horizonzv
+# Addon Provider: blauesgruen
+msgid ""
+msgstr ""
+"Project-Id-Version: KODI Main\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2022-11-13 12:16+0000\n"
+"Language-Team: Finnish <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-estuary/fi_fi/>\n"
+"Language: fi_fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.14.2\n"
+
+msgctxt "#31000"
+msgid ""
+msgstr "Energia-asetukset"
+
+msgctxt "#31002"
+msgid ""
+msgstr "Näytä asetukset"
+
+msgctxt "#31003"
+msgid ""
+msgstr "Total duration"
+
+msgctxt "#31005"
+msgid ""
+msgstr "Muut asetukset"
+
+msgctxt "#31007"
+msgid ""
+msgstr "Se on käynnissä"
+
+msgctxt "#31008"
+msgid ""
+msgstr "Page"
+
+msgctxt "#31009"
+msgid ""
+msgstr "Entries"
+
+msgctxt "#31012"
+msgid ""
+msgstr "Muistin käyttö"
+
+msgctxt "#31013"
+msgid ""
+msgstr "Thumbnails"
+
+msgctxt "#31014"
+msgid ""
+msgstr "tilaus"
+
+msgctxt "#31016"
+msgid ""
+msgstr "Laajennetut tiedot"
+
+msgctxt "#31017"
+msgid ""
+msgstr "IT'S RUNNING"
+
+msgctxt "#31022"
+msgid ""
+msgstr "Visualisointiasetukset"
+
+msgctxt "#31023"
+msgid ""
+msgstr "Sort: Nouseva"
+
+msgctxt "#31024"
+msgid ""
+msgstr "Sort: Laskeutuva"
+
+msgctxt "#31025"
+msgid ""
+msgstr "Avaa soittolista"
+
+msgctxt "#31026"
+msgid ""
+msgstr "Save playlist"
+
+msgctxt "#31027"
+msgid ""
+msgstr "Sulje soittolista"
+
+msgctxt "#31032"
+msgid ""
+msgstr "Tällä hetkellä valittu"
+
+msgctxt "#31033"
+msgid ""
+msgstr "Search trailer"
+
+msgctxt "#31035"
+msgid ""
+msgstr "Etsi YouTubesta"
+
+msgctxt "#31036"
+msgid ""
+msgstr "Ohjaajan elokuvat"
+
+msgctxt "#31043"
+msgid ""
+msgstr "Valitse kappale"
+
+msgctxt "#31044"
+msgid ""
+msgstr "Lyrics source"
+
+msgctxt "#31046"
+msgid ""
+msgstr "Lähde"
+
+msgctxt "#31047"
+msgid ""
+msgstr "Hide fanart"
+
+msgctxt "#31048"
+msgid ""
+msgstr "Muistin kulutus:"
+
+msgctxt "#31049"
+msgid ""
+msgstr "Title number."
+
+msgctxt "#31050"
+msgid ""
+msgstr "Valitse profiili"
+
+msgctxt "#31051"
+msgid ""
+msgstr "Viimeksi kirjautunut sisään"
+
+msgctxt "#31052"
+msgid ""
+msgstr "Emitted"
+
+msgctxt "#31053"
+msgid ""
+msgstr "Soittolistan asetukset"
+
+msgctxt "#31054"
+msgid ""
+msgstr "Created"
+
+msgctxt "#31056"
+msgid ""
+msgstr "Sammutusajastin aktiivinen! [COLOR=harmaa1] - Aika sammutukseen asti:[/COLOR]"
+
+msgctxt "#31057"
+msgid ""
+msgstr "Click button to play[CR][CR]movie trailer"
+
+msgctxt "#31059"
+msgid ""
+msgstr "Stop"
+
+msgctxt "#31060"
+msgid ""
+msgstr "Nopeasti eteenpäin"
+
+msgctxt "#31061"
+msgid ""
+msgstr "Rewind"
+
+msgctxt "#31062"
+msgid ""
+msgstr "Elokuvavalikko"
+
+msgctxt "#31063"
+msgid ""
+msgstr "Download subtitles"
+
+msgctxt "#31064"
+msgid ""
+msgstr "Näytä 2D:nä"
+
+msgctxt "#31065"
+msgid ""
+msgstr "Vaihda tilaa"
+
+msgctxt "#31067"
+msgid ""
+msgstr "Oma soittolista alussa"
+
+msgctxt "#31068"
+msgid ""
+msgstr "Paikallinen tekstitys saatavilla"
+
+msgctxt "#31069"
+msgid ""
+msgstr "Please select Kodi user profile to continue."
+
+msgctxt "#31072"
+msgid ""
+msgstr "Add group"
+
+msgctxt "#31073"
+msgid ""
+msgstr "Nimeä ryhmä uudelleen"
+
+msgctxt "#31074"
+msgid ""
+msgstr "Poista ryhmä"
+
+msgctxt "#31075"
+msgid ""
+msgstr "Saatavilla olevat[CR]ryhmät"
+
+msgctxt "#31076"
+msgid ""
+msgstr "Ajastin aktivoitu"
+
+msgctxt "#31077"
+msgid ""
+msgstr "Kanavan asetukset"
+
+msgctxt "#31078"
+msgid ""
+msgstr "36 tunnin ennuste"
+
+msgctxt "#31079"
+msgid ""
+msgstr "Tuntiennuste"
+
+msgctxt "#31080"
+msgid ""
+msgstr "Viikonlopun ennuste"
+
+msgctxt "#31081"
+msgid ""
+msgstr "Päivittäinen ennuste"
+
+msgctxt "#31083"
+msgid ""
+msgstr "Forecast data being retrieved..."
+
+# Horizonz
+
+msgctxt "#301126"
+msgid ""
+msgstr "Enables background video in main menu."
+
+msgctxt "#301132"
+msgid ""
+msgstr "Select the country for the age rating (defined in the scrapper).[CR]Supported are DE, US, UK, FR.[CR]If only US ratings are available, they will be displayed."
+
+msgctxt "#301134"
+msgid ""
+msgstr "Trailerit näkyvät suoraan elokuvan tiedoissa tai koko ruudussa."
+
+msgctxt "#301135"
+msgid ""
+msgstr "Jos visualisointi on valittu musiikin toistoon, se näkyy myös päävalikossa."
+
+msgctxt "#301136"
+msgid ""
+msgstr "Näyttää 9 seuraavan kappaleen soittolistan päävalikossa ja koko näytössä."
+
+msgctxt "#301140"
+msgid ""
+msgstr "Set the volume in percent to be played each time KODI is started.[CR]Määritä luku väliltä 0 - 100."
+
+msgctxt "#301142"
+msgid ""
+msgstr "Disables SMS-style alphanumeric jump list.[CR][COLOR=grey]Imported from skin \'Alaska.\'[/COLOR]"
+
+msgctxt "#301143"
+msgid ""
+msgstr "Tämän toiminnon käyttämiseen tarvitaan _Andy_/PvD:n lisäosa \'Skinhelper Ping\'.[CR][COLOR=grey]Sen voi asentaa täältä Addons-kohdasta tai Kodinerds Repon kautta.[/COLOR]"
+
+msgctxt "#301144"
+msgid ""
+msgstr "Käynnistää valitun soittolistan KODIn käynnistämisen jälkeen."
+
+msgctxt "#301145"
+msgid ""
+msgstr "Tämän toiminnon käyttämiseen tarvitaan lisäosa \'Global Search\' virallisesta arkistosta."
+
+msgctxt "#301146"
+msgid ""
+msgstr "Näyttää pienen tilaston tietokantamerkinnöistä päävalikon oikeassa alakulmassa."
+
+msgctxt "#301147"
+msgid ""
+msgstr "Näyttää suosikit päävalikon alapuolella eikä suoraan \'Keskusvalikossa\'.[CR]Näihin pääsee muuten \'Keskusvalikon\' kautta.\'"
+
+msgctxt "#301148"
+msgid ""
+msgstr "Hides the \'Central\' located below the main menu."
+
+msgctxt "#301150"
+msgid ""
+msgstr "Aktivoi oikeassa yläkulmassa olevan kuvakkeen, joka näyttää akun varaustilan.[CR][COLOR=white]Virheellinen näyttö esiintyy tietokoneissa, joissa ei ole akkua.[/COLOR]"
+
+msgctxt "#301151"
+msgid ""
+msgstr "Widgetin asetukset ovat päävalikon vastaavassa alivalikossa."
+
+msgctxt "#301152"
+msgid ""
+msgstr "Dims all non-focused covers."
+
+msgctxt "#301153"
+msgid ""
+msgstr "Piilottaa vihreän edistymispalkin kansissa."
+
+msgctxt "#301166"
+msgid ""
+msgstr "This skin contains various animation effects.[CR]Käytä tätä kytkintä poistaaksesi ne käytöstä. Sen sijaan käytetään yksinkertaista häivytystehostetta.[CR]Tämä saattaa parantaa suorituskykyä hitaissa järjestelmissä."
+
+msgctxt "#301168"
+msgid ""
+msgstr "Näyttää, missä olet vasemmassa yläkulmassa."
+
+msgctxt "#301169"
+msgid ""
+msgstr "Hides the date display in the upper right corner."
+
+msgctxt "#301170"
+msgid ""
+msgstr "Enables fanart in all areas."
+
+msgctxt "#301171"
+msgid ""
+msgstr "Disables changing background images.[CR][COLOR=white]Choose your own image or path.[/COLOR]"
+
+msgctxt "#301172"
+msgid ""
+msgstr "Select an image here.[CR]If no image is specified, a default image is shown.[CR][COLOR=white]Click again to delete it.[/COLOR]"
+
+msgctxt "#301173"
+msgid ""
+msgstr "Näyttää taustalla diaesityksen, joka perustuu KODI-kirjastoon.[CR][COLOR=white]Näkyy päävalikossa kohdassa: Elokuvia, sarjoja ja musiikkia.[/COLOR]"
+
+msgctxt "#301174"
+msgid ""
+msgstr "Activates background darkening in all areas.[CR][COLOR=white]Mahdolliset tummennustasot: OFF, LIGHT, MEDIUM, HEAVY.[/COLOR]\'."
+
+msgctxt "#301175"
+msgid ""
+msgstr "Valitse korostusväri, joka näkyy monilla ihoalueilla.[CR][COLOR=grey]Custom: Värikoodit on ilmoitettava AARRGGBB-heksamuodossa.[CR]Esimerkki [/COLOR][COLOR=ffffffffff]Valkoinen[/COLOR]: FFFFFFFFFF"
+
+msgctxt "#301176"
+msgid ""
+msgstr "Asenna ColorPicker-lisaosa Kodinerds-varastosta, jotta voit valita varit yhdella napsautuksella."
+
+msgctxt "#301177"
+msgid ""
+msgstr "In database views, shows number and total runtime of entries."
+
+msgctxt "#301178"
+msgid ""
+msgstr "Aktivoi valotehosteen päävalikossa."
+
+msgctxt "#301180"
+msgid ""
+msgstr "Select one of the background themes. Se muuttaa voimakkaasti päävalikon yleisvaikutelmaa.[CR][COLOR=white]Poistuu käytöstä heti, kun \'vain yksi taustakuva\' on aktiivinen.[/COLOR][COLOR=grey][CR]Teeman \'Gambit\' etuna on, että se tarjoaa paremman suorituskyvyn heikommissa järjestelmissä.[CR]Tämän teeman on ystävällisesti toimittanut \'G4mbit\' KODINERDS-foorumilta.[/COLOR]"
+
+msgctxt "#301184"
+msgid ""
+msgstr "Puts a texture over the background image."
+
+msgctxt "#301186"
+msgid ""
+msgstr "Näyttää soittimen ohjaimet toiston aikana vasemmalla, päävalikon alapuolella."
+
+msgctxt "#301188"
+msgid ""
+msgstr "Näyttää nykyisen sään vasemmassa yläkulmassa."
+
+msgctxt "#301190"
+msgid ""
+msgstr "\'Radio\', yksi 3 näkymästä koko näytön toiston aikana, voidaan poistaa käytöstä tässä.\'"
+
+msgctxt "#301192"
+msgid ""
+msgstr "Valitse näkymien Standard, Alternative ja Radio välillä.[CR][COLOR=grey]\'Radio\' on aina käytössä online-musiikkivirroissa. Mutta se voidaan poistaa käytöstä.[/COLOR]"
+
+msgctxt "#301194"
+msgid ""
+msgstr "Choose between Standard and Alternative views.[CR][COLOR=white]Info: Radio has been disabled.[/COLOR]"
+
+msgctxt "#301196"
+msgid ""
+msgstr "Näyttää raidan perustiedot koko näytön kokoisena musiikin toiston aikana vasemmassa alakulmassa.[CR][COLOR=whithe]Näkyy, kun OSD ei ole näkyvissä.[/COLOR]"
+
+msgctxt "#301198"
+msgid ""
+msgstr "Näyttää huomaamattoman, kapean version taukonäytöstä."
+
+msgctxt "#301200"
+msgid ""
+msgstr "No info such as chapters, subtitles, runtime bars, etc. are shown.[CR][COLOR=grey]Studiologos and Extra Arts are also hidden.[/COLOR]"
+
+msgctxt "#301202"
+msgid ""
+msgstr "Show all available movie & series artworks.[CR][COLOR=white]Since Kodi 19 artworks are loaded with the scrapper \'The Movie Database PYTHON\'.[/COLOR][COLOR=grey][CR][CR]\'Artwork Beef\' tai vastaavaa addonia voidaan kuitenkin käyttää.[/COLOR]"
+
+msgctxt "#301204"
+msgid ""
+msgstr "Select the appearance of the CD here if no CDArt is found.[CR][COLOR=white]CDArts must be ready in a folder. Määrität tämän järjestelmäasetuksissa (Media->Musiikki)[/COLOR]\'.[/COLOR]"
+
+msgctxt "#301210"
+msgid ""
+msgstr "Aktivoi kaikki käytettävissä olevat PVR-taideteokset.[CR][COLOR=white]\'Skin Helper Service\' is required.[/COLOR]"
+
+msgctxt "#301218"
+msgid ""
+msgstr "Valitse taustakuva"
+
+msgctxt "#301240"
+msgid ""
+msgstr "Reset"
+
+msgctxt "#301244"
+msgid ""
+msgstr "Sets the default for this skin.[CR]Affects custom settings only."
+
+msgctxt "#301246"
+msgid ""
+msgstr "Heikko"
+
+msgctxt "#301248"
+msgid ""
+msgstr "Medium"
+
+msgctxt "#301250"
+msgid ""
+msgstr "Fast"
+
+msgctxt "#301268"
+msgid ""
+msgstr "[UPPERCASE]Reset skin settings ?[/UPPERCASE]"
+
+msgctxt "#301270"
+msgid ""
+msgstr "Cover"
+
+msgctxt "#301272"
+msgid ""
+msgstr "No favourites available"
+
+msgctxt "#301274"
+msgid ""
+msgstr "[B]KODI SUBTITLE[/B]"
+
+msgctxt "#301276"
+msgid ""
+msgstr "sivupaneeli"
+
+msgctxt "#301278"
+msgid ""
+msgstr "Set information"
+
+msgctxt "#301280"
+msgid ""
+msgstr "Konsertit"
+
+msgctxt "#301282"
+msgid ""
+msgstr "Kieli (ikäluokitus)"
+
+msgctxt "#301284"
+msgid ""
+msgstr "Liput tekstimuodossa"
+
+msgctxt "#301286"
+msgid ""
+msgstr "Dim background"
+
+msgctxt "#301288"
+msgid ""
+msgstr "Page counter"
+
+msgctxt "#301290"
+msgid ""
+msgstr "Envelopes"
+
+msgctxt "#301292"
+msgid ""
+msgstr "Hide large cover"
+
+msgctxt "#301294"
+msgid ""
+msgstr "Logo otsikon sijasta"
+
+msgctxt "#301296"
+msgid ""
+msgstr "Tiedot"
+
+msgctxt "#301300"
+msgid ""
+msgstr "Piilota \'NEW\' kuvake"
+
+msgctxt "#301302"
+msgid ""
+msgstr "Pölyefekti (Envelope)"
+
+msgctxt "#301304"
+msgid ""
+msgstr "Disable cover animation"
+
+msgctxt "#301306"
+msgid ""
+msgstr "Dim cover"
+
+msgctxt "#301308"
+msgid ""
+msgstr "List"
+
+msgctxt "#301310"
+msgid ""
+msgstr "Info List"
+
+msgctxt "#301312"
+msgid ""
+msgstr "Thumbview"
+
+msgctxt "#301314"
+msgid ""
+msgstr "Banner"
+
+msgctxt "#301316"
+msgid ""
+msgstr "Showcase"
+
+msgctxt "#301318"
+msgid ""
+msgstr "Perspective"
+
+msgctxt "#301320"
+msgid ""
+msgstr "Disc Flow"
+
+msgctxt "#301322"
+msgid ""
+msgstr "Rightlist"
+
+msgctxt "#301324"
+msgid ""
+msgstr "Cover Wall (Full Screen)"
+
+msgctxt "#301326"
+msgid ""
+msgstr "Cover Wall"
+
+msgctxt "#301328"
+msgid ""
+msgstr "Cover Wall"
+
+msgctxt "#301330"
+msgid ""
+msgstr "Disable radio view"
+
+msgctxt "#301331"
+msgid ""
+msgstr " - Poista TV Wall käytöstä"
+
+msgctxt "#301332"
+msgid ""
+msgstr "Musiikin visualisointi"
+
+msgctxt "#301334"
+msgid ""
+msgstr "Music Extra Arts"
+
+msgctxt "#301336"
+msgid ""
+msgstr "Date Display"
+
+msgctxt "#301338"
+msgid ""
+msgstr "Avaimen kuvaus"
+
+msgctxt "#301340"
+msgid ""
+msgstr "Infopanel"
+
+msgctxt "#301344"
+msgid ""
+msgstr "back"
+
+msgctxt "#301346"
+msgid ""
+msgstr "päävalikon painikkeet"
+
+msgctxt "#301348"
+msgid ""
+msgstr "Alivalikon painikkeet"
+
+msgctxt "#301350"
+msgid ""
+msgstr "Toiminnot"
+
+msgctxt "#301351"
+msgid ""
+msgstr "Widgetit"
+
+msgctxt "#301352"
+msgid ""
+msgstr "Suunnittelu / Suorituskyky"
+
+msgctxt "#301354"
+msgid ""
+msgstr "Extra Arts"
+
+msgctxt "#301356"
+msgid ""
+msgstr "Admin"
+
+msgctxt "#301357"
+msgid ""
+msgstr "Sammutusvalikko"
+
+msgctxt "#301358"
+msgid ""
+msgstr "Enable Grid"
+
+msgctxt "#301360"
+msgid ""
+msgstr "Debug Information"
+
+msgctxt "#301362"
+msgid ""
+msgstr "Aktivoi ensimmäinen käynnistys"
+
+msgctxt "#301364"
+msgid ""
+msgstr "valitse järjestelmän suorituskyky"
+
+msgctxt "#301366"
+msgid ""
+msgstr "hiiren osoitin"
+
+msgctxt "#301368"
+msgid ""
+msgstr "Aseta asemat"
+
+msgctxt "#301370"
+msgid ""
+msgstr "Move focus"
+
+msgctxt "#301371"
+msgid ""
+msgstr "Dashboard"
+
+msgctxt "#301372"
+msgid ""
+msgstr "Piilota päävalikko automaattisesti"
+
+msgctxt "#301374"
+msgid ""
+msgstr "Time until hide"
+
+msgctxt "#301376"
+msgid ""
+msgstr "Taustavideo"
+
+msgctxt "#301378"
+msgid ""
+msgstr "Valitse ikäluokituksen maa"
+
+msgctxt "#301380"
+msgid ""
+msgstr "Do NOT play trailer in window"
+
+msgctxt "#301382"
+msgid ""
+msgstr "Seuraavan kappaleen soittolista"
+
+msgctxt "#301384"
+msgid ""
+msgstr "Set start volume"
+
+msgctxt "#301386"
+msgid ""
+msgstr "Disable alfanumeerinen hyppypalkki"
+
+msgctxt "#301388"
+msgid ""
+msgstr "Hide wake on lan -kytkimen piilottaminen \'Päämajassa\'\'"
+
+msgctxt "#301390"
+msgid ""
+msgstr "Globalsearch in the context menu"
+
+msgctxt "#301392"
+msgid ""
+msgstr "Näytä tilasto päävalikossa"
+
+msgctxt "#301394"
+msgid ""
+msgstr "näytä suosikki-ikkuna päävalikossa"
+
+msgctxt "#301396"
+msgid ""
+msgstr "\'disable central\'"
+
+msgctxt "#301389"
+msgid ""
+msgstr "- Kansio"
+
+msgctxt "#301400"
+msgid ""
+msgstr "Levy"
+
+msgctxt "#301402"
+msgid ""
+msgstr "Animaatiot (korkea suorittimen kuormitus)"
+
+msgctxt "#301404"
+msgid ""
+msgstr "Navigointitiedot"
+
+msgctxt "#301406"
+msgid ""
+msgstr "Pienet säätiedot"
+
+msgctxt "#301408"
+msgid ""
+msgstr "Hide date display"
+
+msgctxt "#301410"
+msgid ""
+msgstr "Vain yksi taustakuva"
+
+msgctxt "#301412"
+msgid ""
+msgstr "- kuva / polku"
+
+msgctxt "#301414"
+msgid ""
+msgstr "- Diaesitys still-kuvan sijaan"
+
+msgctxt "#301416"
+msgid ""
+msgstr "Väriaksentit"
+
+msgctxt "#301418"
+msgid ""
+msgstr "taustateema"
+
+msgctxt "#301424"
+msgid ""
+msgstr "Rakenne päävalikossa"
+
+msgctxt "#301426"
+msgid ""
+msgstr "Player Controls"
+
+msgctxt "#301428"
+msgid ""
+msgstr "Weather Fanarts"
+
+msgctxt "#301430"
+msgid ""
+msgstr "Kevyt versio tauko-näytöstä"
+
+msgctxt "#301432"
+msgid ""
+msgstr "hide video details"
+
+msgctxt "#301434"
+msgid ""
+msgstr "CD Style"
+
+msgctxt "#301436"
+msgid ""
+msgstr "kuuntele"
+
+msgctxt "#301438"
+msgid ""
+msgstr "manage your"
+
+msgctxt "#301440"
+msgid ""
+msgstr "experience your"
+
+msgctxt "#301442"
+msgid ""
+msgstr "explore your"
+
+msgctxt "#301444"
+msgid ""
+msgstr "let it rotate"
+
+msgctxt "#301446"
+msgid ""
+msgstr "go to"
+
+msgctxt "#301448"
+msgid ""
+msgstr "change your"
+
+msgctxt "#301456"
+msgid ""
+msgstr "lasi"
+
+msgctxt "#301458"
+msgid ""
+msgstr "blank"
+
+msgctxt "#301460"
+msgid ""
+msgstr "valo"
+
+msgctxt "#301462"
+msgid ""
+msgstr "medium"
+
+msgctxt "#301464"
+msgid ""
+msgstr "strong"
+
+msgctxt "#301466"
+msgid ""
+msgstr "central"
+
+msgctxt "#301468"
+msgid ""
+msgstr "muu/tuntematon"
+
+msgctxt "#301470"
+msgid ""
+msgstr "film draama"
+
+msgctxt "#301472"
+msgid ""
+msgstr "Uutiset"
+
+msgctxt "#301474"
+msgid ""
+msgstr "Näytä"
+
+msgctxt "#301476"
+msgid ""
+msgstr "Sport"
+
+msgctxt "#301478"
+msgid ""
+msgstr "Lapset"
+
+msgctxt "#301480"
+msgid ""
+msgstr "music"
+
+msgctxt "#301482"
+msgid ""
+msgstr "Art"
+
+msgctxt "#301484"
+msgid ""
+msgstr "Yritys"
+
+msgctxt "#301486"
+msgid ""
+msgstr "Tiede"
+
+msgctxt "#301488"
+msgid ""
+msgstr "Special"
+
+msgctxt "#301490"
+msgid ""
+msgstr "Harrastus"
+
+msgctxt "#301492"
+msgid ""
+msgstr "load artwork"
+
+msgctxt "#301494"
+msgid ""
+msgstr "Hiljattain lisätty tv-sarja"
+
+msgctxt "#301496"
+msgid ""
+msgstr "Ennuste"
+
+msgctxt "#301498"
+msgid ""
+msgstr "Set the position of each main menu item here.[CR]Käytä kohtien numeroita 1 - 22."
+
+msgctxt "#301500"
+msgid ""
+msgstr "hyppää suoraan videotiedostoihin"
+
+msgctxt "#301502"
+msgid ""
+msgstr "näytä profiilin nimet"
+
+msgctxt "#301504"
+msgid ""
+msgstr "Kodi is running:"
+
+msgctxt "#301506"
+msgid ""
+msgstr "<"
+
+msgctxt "#301508"
+msgid ""
+msgstr "<<"
+
+msgctxt "#301510"
+msgid ""
+msgstr "Studio symbols ..."
+
+msgctxt "#301512"
+msgid ""
+msgstr "Genre symbols ..."
+
+msgctxt "#301514"
+msgid ""
+msgstr "Sääsymbolit ..."
+
+msgctxt "#301516"
+msgid ""
+msgstr "Weather fanart ..."
+
+msgctxt "#301520"
+msgid ""
+msgstr "Vaihtajan ajastimen asettamiseen tarvitaan \'KN Switcher Service\'. Lataa Kodinerds-tietovaraston kautta."
+
+msgctxt "#301522"
+msgid ""
+msgstr "delete all timers"
+
+msgctxt "#301524"
+msgid ""
+msgstr "delete"
+
+msgctxt "#301526"
+msgid ""
+msgstr "manage"
+
+msgctxt "#301528"
+msgid ""
+msgstr "toggle timer"
+
+msgctxt "#301530"
+msgid ""
+msgstr "Ajastimen yleiskatsaus"
+
+msgctxt "#301532"
+msgid ""
+msgstr "Tänään"
+
+msgctxt "#301534"
+msgid ""
+msgstr "Näytä"
+
+msgctxt "#301536"
+msgid ""
+msgstr "Kanavat"
+
+msgctxt "#301538"
+msgid ""
+msgstr "Both"
+
+msgctxt "#301540"
+msgid ""
+msgstr "Alkuperäinen"
+
+msgctxt "#301542"
+msgid ""
+msgstr "HorizonzV Flag"
+
+msgctxt "#301544"
+msgid ""
+msgstr "Saksa"
+
+msgctxt "#301546"
+msgid ""
+msgstr "Yhdysvallat"
+
+msgctxt "#301548"
+msgid ""
+msgstr "Yhdistynyt kuningaskunta"
+
+msgctxt "#301550"
+msgid ""
+msgstr "Ranska"
+
+msgctxt "#301551"
+msgid ""
+msgstr "Serge Blue"
+
+msgctxt "#301552"
+msgid ""
+msgstr "Harmaa sininen"
+
+msgctxt "#301554"
+msgid ""
+msgstr "Turkoosi"
+
+msgctxt "#301558"
+msgid ""
+msgstr "Sea Green"
+
+msgctxt "#301560"
+msgid ""
+msgstr "Punainen"
+
+msgctxt "#301562"
+msgid ""
+msgstr "Vaaleanharmaa"
+
+msgctxt "#301564"
+msgid ""
+msgstr "Tumma kulta"
+
+msgctxt "#301566"
+msgid ""
+msgstr "Sandy Brown"
+
+msgctxt "#301570"
+msgid ""
+msgstr "ColorPicker"
+
+msgctxt "#301572"
+msgid ""
+msgstr "Kostajat B/W"
+
+msgctxt "#301574"
+msgid ""
+msgstr "Gambit"
+
+msgctxt "#301576"
+msgid ""
+msgstr "Vinyl View"
+
+msgctxt "#301578"
+msgid ""
+msgstr "Radio view"
+
+msgctxt "#301580"
+msgid ""
+msgstr "Standard View"
+
+msgctxt "#301582"
+msgid ""
+msgstr "will be started ..."
+
+msgctxt "#301584"
+msgid ""
+msgstr "hiding"
+
+msgctxt "#301586"
+msgid ""
+msgstr "show"
+
+msgctxt "#301588"
+msgid ""
+msgstr "switch"
+
+msgctxt "#301590"
+msgid ""
+msgstr "Reload skin"
+
+msgctxt "#301592"
+msgid ""
+msgstr "Käynnistä KODI APP uudelleen"
+
+msgctxt "#301596"
+msgid ""
+msgstr "Näkyvä"
+
+msgctxt "#301598"
+msgid ""
+msgstr "no progress bar in widget (green bar on cover)"
+
+msgctxt "#301600"
+msgid ""
+msgstr "viimeinen elokuva alkoi paikasta 1"
+
+msgctxt "#301602"
+msgid ""
+msgstr "viimeksi kuunneltu albumi sijalla #1"
+
+msgctxt "#301604"
+msgid ""
+msgstr "seuraava jakso numerolla 1"
+
+msgctxt "#301606"
+msgid ""
+msgstr "viimeinen video alkoi paikasta 1"
+
+msgctxt "#301608"
+msgid ""
+msgstr "5 päivän sää"
+
+msgctxt "#301610"
+msgid ""
+msgstr "Saksan televisiolähetystarjoukset (GTO)"
+
+msgctxt "#301612"
+msgid ""
+msgstr "Fritz Smart Home"
+
+msgctxt "#301614"
+msgid ""
+msgstr "Choose a content for row"
+
+msgctxt "#301616"
+msgid ""
+msgstr "an"
+
+msgctxt "#301618"
+msgid ""
+msgstr "off"
+
+msgctxt "#301620"
+msgid ""
+msgstr "Akun varaustaso"
+
+msgctxt "#301622"
+msgid ""
+msgstr "Vie videokirjasto"
+
+msgctxt "#301624"
+msgid ""
+msgstr "(single NFO, ilman kuvia, vanhojen tietojen korvaaminen)"
+
+# msgctxt "#xyxyxyxyxy"
+# msgid ""
+# msgstr "After hiding the infopanel in full screen, a discreet display of title information is shown."
+
+msgctxt "#31030"
+msgid ""
+msgstr "Järjestelmän muistin käyttö."
+
+#~ msgctxt "#31137"
+#~ msgid ""
+#~ msgstr "PVR information"
+
+msgctxt "#31139"
+msgid ""
+msgstr "Video decoder"
+
+msgctxt "#31140"
+msgid ""
+msgstr "Pikselimuoto"
+
+msgctxt "#31607"
+msgid ""
+msgstr "Näytön tarkkuus"
+
+msgctxt "#31608"
+msgid ""
+msgstr "Renderöintinopeus"
+
+msgctxt "#31609"
+msgid ""
+msgstr "CPU load"
+
+msgctxt "#31611"
+msgid ""
+msgstr "Koodirivi"
+
+msgctxt "#31613"
+msgid ""
+msgstr "kirjoita soittolistan luokka tähän ..."
+
+msgctxt "#35500"
+msgid "Location"
+msgstr "Sijainti"
+

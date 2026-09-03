@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+    <defaultcontrol>10</defaultcontrol>
+	<backgroundcolor>grey3</backgroundcolor>
+    <include>openclose</include>
+    <controls>
+        <include>DialogBackgroundSimple</include>
+        <control type="group">
+            <include>openclosebox</include>
+            <include content="DialogBackgroundCommons">
+                <param name="width" value="1410" />
+                <param name="height" value="750" />
+				<param name="bottomimage" value="690" />
+                <param name="header_id" value="2" />
+                <param name="header_label" value="13406" />
+            </include>
+            <control type="group">
+                <left>SpacePadding</left>
+                <right>SpacePadding</right>
+                <top>SpacePaddingXL</top>
+                <bottom>SpacePaddingXL</bottom>
+                <control type="label">
+                    <description>path label</description>
+                    <left>SpacePadding</left>
+                    <right>SpacePadding</right>
+                    <height>45</height>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <label>1021</label>
+                    <textcolor>grey1</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                </control>
+                <control type="group">
+                    <left>45</left>
+                    <right>335</right>
+                    <top>60</top>
+                    <bottom>80</bottom>
+                    <control type="list" id="10">
+                        <onup>9001</onup>
+                        <onleft>9000</onleft>
+                        <onright>60</onright>
+                        <ondown>12</ondown>
+                        <pagecontrol>60</pagecontrol>
+                        <scrolltime>200</scrolltime>
+                        <itemlayout height="55" width="auto">
+                            <control type="label">
+                                <textoffsetx>15</textoffsetx>
+                                <height>45</height>
+                                <align>left</align>
+                                <textcolor>white</textcolor>
+                                <selectedcolor>selected</selectedcolor>
+                                <info>ListItem.Label</info>
+                            </control>
+                        </itemlayout>
+                        <focusedlayout height="55" width="auto">
+                            <control type="image">
+                                <height>45</height>
+                                <include>DialogButtonTextureNoFocus</include>
+                                <visible>!Control.HasFocus(10)</visible>
+                            </control>
+                            <control type="image">
+                                <height>45</height>
+                                <include>DialogButtonTextureFocus</include>
+                                <visible>Control.HasFocus(10)</visible>
+                            </control>
+                            <control type="label">
+                                <textoffsetx>15</textoffsetx>
+                                <right>15</right>
+                                <height>45</height>
+                                <align>left</align>
+                                <textcolor>black</textcolor>
+                                <selectedcolor>selected</selectedcolor>
+                                <info>ListItem.Label</info>
+                                <visible>Control.HasFocus(10)</visible>
+                            </control>
+                            <control type="label">
+                                <textoffsetx>15</textoffsetx>
+                                <right>15</right>
+                                <height>45</height>
+                                <align>left</align>
+                                <textcolor>white</textcolor>
+                                <selectedcolor>selected</selectedcolor>
+                                <info>ListItem.Label</info>
+                                <visible>!Control.HasFocus(10)</visible>
+                            </control>
+                        </focusedlayout>
+                    </control>
+                    <control type="scrollbar" id="60">
+                        <right>-20</right>
+                        <height>100%</height>
+                        <onleft>10</onleft>
+                        <onright>9000</onright>
+                        <showonepage>false</showonepage>
+                        <orientation>vertical</orientation>
+                    </control>
+                </control>
+                <control type="grouplist" id="9000">
+                    <right>45</right>
+                    <top>60</top>
+                    <width>260</width>
+                    <onleft>10</onleft>
+                    <ondown>12</ondown>
+                    <itemgap>dialogbuttons_itemgap</itemgap>
+                    <include content="DefaultDialogButton">
+                        <param name="id" value="11" />
+                        <param name="label" value="$LOCALIZE[1024]" />
+                        <param name="onleft" value="10" />
+                        <param name="ondown" value="12" />
+                    </include>
+                    <include content="DefaultDialogButton">
+                        <param name="id" value="13" />
+                        <param name="label" value="$LOCALIZE[15019]" />
+                        <param name="onleft" value="10" />
+                        <param name="ondown" value="12" />
+                    </include>
+                    <include content="DefaultDialogButton">
+                        <param name="id" value="14" />
+                        <param name="label" value="$LOCALIZE[1210]" />
+                        <param name="onleft" value="10" />
+                        <param name="ondown" value="12" />
+                    </include>
+                </control>
+                <control type="group">
+                    <left>45</left>
+                    <right>45</right>
+                    <bottom>-25</bottom>
+                    <height>50</height>
+                    <control type="label">
+                        <description>Name label</description>
+                        <left>45</left>
+                        <height>45</height>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <label>1022</label>
+                        <textcolor>grey1</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                    </control>
+                    <control type="image">
+                        <description>Name label</description>
+                        <height>3</height>
+                        <colordiffuse>fanartdiffuse</colordiffuse>
+                        <texture>Separator1.png</texture>
+                    </control>
+                    <include content="DialogEditButton">
+                        <param name="id" value="12" />
+                        <param name="top" value="-45" />
+                        <param name="left" value="0" />
+                        <param name="width" value="100%" />
+                        <param name="height" value="45" />
+                        <param name="align" value="center" />
+                        <param name="onup" value="10" />
+                        <param name="ondown" value="9001" />
+                        <param name="nofocus" />
+                    </include>
+                </control>
+                <control type="grouplist" id="9001">
+                    <centerleft>50%</centerleft>
+                    <bottom>-98</bottom>
+                    <height>60</height>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <itemgap>dialogbuttons_itemgap</itemgap>
+                    <orientation>horizontal</orientation>
+                    <include content="DefaultDialogButton">
+                        <param name="id" value="18" />
+                        <param name="label" value="$LOCALIZE[186]" />
+                        <param name="font" value="impacted18" />
+                        <param name="onup" value="12" />
+                        <param name="ondown" value="10" />
+                    </include>
+                    <include content="DefaultDialogButton">
+                        <param name="id" value="19" />
+                        <param name="label" value="$LOCALIZE[222]" />
+                        <param name="font" value="impacted18" />
+                        <param name="onup" value="12" />
+                        <param name="ondown" value="10" />
+                    </include>
+                </control>
+            </control>
+        </control>
+    </controls>
+</window>

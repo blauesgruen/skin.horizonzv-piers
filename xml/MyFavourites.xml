@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+    <defaultcontrol always="true">777</defaultcontrol>
+	<backgroundcolor>grey3</backgroundcolor>
+    <menucontrol>9000</menucontrol>
+    <include>ViewidVideo</include>
+    <!-- <onload condition="!Skin.HasSetting(firstrun1_horizonzv)">ActivateWindow(1140)</onload> -->
+    <controls>
+		<include condition="System.HasAddon(plugin.video.themoviedb.helper)">TMDbhelperListButton</include>
+        <include>fakebutton_visible_bkg</include>
+        <include>BackgroundMyNavs</include>
+        <include>ViewsVideo</include>
+        <control type="group">
+            <include>SidePanelBackgroundOverlay</include>
+			<control type="group">
+				<visible>!Skin.HasSetting(KioskMode)</visible>
+				<include>SidePanelAnimation</include>
+				<include>SidePanelBackground</include>
+					<control type="grouplist" id="9000">
+						<include>SidePanelProperty</include>
+						<control type="button" id="1">
+							<description>View</description>
+							<label>31002</label>
+							<include>SidePanelButton</include>
+							<onclick>Control.SetFocus(9001)</onclick>
+						</control>
+						<control type="togglebutton" id="4">
+							<description>Sort asc</description>
+							<include>SidePanelToggleButton</include>
+							<label>31024</label>
+							<altlabel>31023</altlabel>
+							<usealttexture>Container.SortDirection(Ascending)</usealttexture>
+						</control>
+						<include condition="Window.IsVisible(Videos) | Window.IsVisible(Music)">MediaMenuSearchButton</include>
+						<control type="edit" id="19">
+							<visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>
+							<description>Filter</description>
+							<textwidth>345</textwidth>
+							<include>SidePanelButton</include>
+							<label>587</label>
+						</control>
+						<control type="radiobutton" id="98">
+							<visible>Container.CanFilterAdvanced</visible>
+							<description>Filter</description>
+							<include>SidePanelToggleButton</include>
+							<label>587</label>
+							<selected>Container.Filtered</selected>
+							<onclick>right</onclick>
+							<onclick>Filter</onclick>
+						</control>
+						<control type="button" id="8">
+							<description>Search</description>
+							<include>SidePanelButton</include>
+							<label>137</label>
+							<visible>Window.IsVisible(Videos) | Window.IsVisible(Music)</visible>
+						</control>
+					</control>
+                <include>SidePanelNavigation</include>
+                <control type="image">
+                    <width>akzentline_size</width>
+                    <left>SidePanelLeftWidth</left>
+                    <colordiffuse>$VAR[BackgroundOverlayColorDialog]</colordiffuse>
+                    <texture>White.png</texture>
+                    <animation effect="slide" end="-2" time="0" condition="true">Conditional</animation>
+                </control>
+			</control>
+		</control>
+        <include>SidePanelShortcuts</include>
+        <include>ViewTypeList</include>
+        <include>cs_rightpanel</include>
+        <include>Clock</include>
+        <control type="group">
+            <include>NavInfo</include>
+            <visible>!Control.IsVisible(740)</visible>
+        </control>
+        <include>BehindDialogFadeOut</include>
+        <include>TouchButtons</include>
+    </controls>
+</window>

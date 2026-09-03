@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="1700">
+    <defaultcontrol>17000</defaultcontrol>
+    <zorder>2</zorder>
+    <controls>
+        <include>BlackBack</include>
+        <control type="group">
+            <include>openclosebox</include>
+            <left>352</left>
+            <top>90</top>
+            <width>1215</width>
+            <height>900</height>
+            <control type="image">
+                <description>background image</description>
+                <left>0</left>
+                <top>0</top>
+                <width>1215</width>
+                <height>900</height>
+                <colordiffuse>grey1</colordiffuse>
+                <texture border="1">WhiteBack.png</texture>
+            </control>
+            <control type="image">
+                <description>background image</description>
+                <left>15</left>
+                <top>15</top>
+                <width>1185</width>
+                <height>870</height>
+                <texture border="1">WhiteBack.png</texture>
+            </control>
+            <control type="label" id="1">
+                <description>header label</description>
+                <left>60</left>
+                <top>22</top>
+                <width>1095</width>
+                <height>45</height>
+                <font>impacted21</font>
+                <label>Wetterwarnungen</label>
+                <align>center</align>
+                <aligny>center</aligny>
+                <textcolor>grey2</textcolor>
+            </control>
+            <control type="image">
+                <description>background image</description>
+                <left>15</left>
+                <top>72</top>
+                <width>1185</width>
+                <height>60</height>
+                <colordiffuse>grey2</colordiffuse>
+                <texture border="1">WhiteBack.png</texture>
+            </control>
+            <control type="label">
+                <description>Title label</description>
+                <left>60</left>
+                <top>78</top>
+                <width>1095</width>
+                <height>45</height>
+                <label>Daten vom Deutschen Wetter Dienst</label>
+                <align>center</align>
+                <scroll>false</scroll>
+            </control>
+            <control type="grouplist">
+                <left>870</left>
+                <top>555</top>
+                <width>330</width>
+                <height>330</height>
+                <control type="image">
+                    <description>background image</description>
+                    <width>450</width>
+                    <height>450</height>
+                    <aspectratio align="left">keep</aspectratio>
+                    <colordiffuse>grey1</colordiffuse>
+                    <texture border="1">Design-Wettericon.png</texture>
+                </control>
+            </control>
+            <control type="button" id="17000">
+                <include>HiddenButton</include>
+                <onclick>Dialog.Close(1700,true)</onclick>
+                <onright>Dialog.Close(1700,true)</onright>
+                <onleft>Dialog.Close(1700,true)</onleft>
+                <onup>Dialog.Close(1700,true)</onup>
+                <ondown>Dialog.Close(1700,true)</ondown>
+            </control>
+            <control type="image">
+                <left>0</left>
+                <top>135</top>
+                <width>750</width>
+                <height>720</height>
+                <aspectratio>keep</aspectratio>
+                <texture>http://www.dwd.de/DWD/warnungen/warnapp/json/warning_map.png</texture>
+            </control>
+            <control type="image">
+                <left>720</left>
+                <top>150</top>
+                <width>420</width>
+                <height>420</height>
+                <aspectratio align="right">keep</aspectratio>
+                <texture>http://www.proplanta.de/web/image/1444746716bkwb_1024.gif</texture>
+                <bordertexture border="6">ThumbShadow.png</bordertexture>
+                <bordersize>8</bordersize>
+            </control>
+        </control>
+    </controls>
+</window>

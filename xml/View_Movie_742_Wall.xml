@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <include name="View_742_CoverWall">
+		<param name="viewid">742</param>
+		<definition>
+			<control type="group">
+				<include>openclose</include>
+				<visible>Control.IsVisible($PARAM[viewid])</visible>
+				<control type="group">
+					<include content="FakeButton444">
+						<param name="visible" value="Control.IsVisible($PARAM[viewid])"/>
+					</include>
+					<include>openclosevisible</include>
+					<visible>Control.IsVisible($PARAM[viewid])</visible>
+					<include content="WhiteGrunge">
+						<param name="colordiffuse" value="$VAR[BackgroundOverlayColorDialog]"/>
+					</include>
+				</control>
+                <include content="ScrollOffsetLabel">
+                    <param name="left">-10</param>
+                    <param name="top">80</param>
+                </include>
+				<control type="group">
+					<include>openclosebox</include>
+					<visible>Control.IsVisible($PARAM[viewid])</visible>
+					<include content="sidefade_shadow">
+						<param name="left" value="165r" />
+						<param name="flipx" value="true" />
+						<param name="id" value="$PARAM[viewid]1" />
+						<param name="visible" value="Control.HasFocus($PARAM[viewid]1)" />
+					</include>
+					<include content="WallViewLayout">
+						<param name="id" value="$PARAM[viewid]" />
+					</include>
+				</control>
+				<include>WallViewInfoPanel</include>
+				<include content="AlphaBarV" condition="!Skin.HasSetting(HideJumpSMSBar)"><param name="id" value="$PARAM[viewid]"/></include>
+				<control type="button" id="777">
+					<include>HiddenButton</include>
+					<onfocus>Control.SetFocus($PARAM[viewid])</onfocus>
+				</control>
+			</control>
+		</definition>
+    </include>
+    <include name="WallViewLayout">
+        <param name="id">742</param>
+        <param name="top">100</param>
+        <param name="bottom">320</param>
+        <param name="left">180</param>
+        <param name="right">180</param>
+        <definition>
+            <control type="group">
+                <top>$PARAM[top]</top>
+                <bottom>$PARAM[bottom]</bottom>
+                <control type="panel" id="$PARAM[id]">
+                    <left>$PARAM[left]</left>
+                    <right>$PARAM[right]</right>
+                    <onleft>9000</onleft>
+                    <onright condition="Control.IsVisible($PARAM[id]1)">$PARAM[id]1</onright>
+                    <onright condition="!Control.IsVisible($PARAM[id]1)+Control.IsVisible(15000)">15000</onright>
+                    <onright condition="!Control.IsVisible($PARAM[id]1)+!Control.IsVisible(15000)">732</onright>
+                    <onup>$PARAM[id]</onup>
+                    <ondown>$PARAM[id]</ondown>
+                    <viewtype label="Wall">panel1</viewtype>
+                    <pagecontrol>$PARAM[id]1</pagecontrol>
+                    <scrolltime>300</scrolltime>
+                    <preloaditems>PreloadItems</preloaditems>
+                    <visible>Container.Content(Musicvideos)|Container.Content(Sets)|Container.Content(Movies)|Container.Content(TVShows)|Container.Content(Seasons)</visible>
+                    <itemlayout height="330" width="240">
+                        <control type="group">
+                            <control type="group">
+                                <visible>Skin.HasSetting(hideMovieCases)</visible>
+                                <control type="image">
+                                    <description>coverbackground</description>
+                                    <texture>Black.png</texture>
+                                </control>
+                                <control type="image">
+                                    <description>cover</description>
+                                    <left>0</left>
+                                    <top>0</top>
+                                    <colordiffuse>$VAR[CoverDim]</colordiffuse>
+                                    <aspectratio>stretch</aspectratio>
+                                    <texture>$VAR[PosterThumb]</texture>
+                                    <visible>![String.StartsWith(ListItem.Label,*)|String.IsEqual(ListItem.Label,..)|String.StartsWith(ListItem.FolderPath,plugin://)]</visible>
+                                </control>
+                                <control type="image">
+                                    <description>cover</description>
+                                    <left>0</left>
+                                    <top>0</top>
+                                    <colordiffuse>$VAR[CoverDim]</colordiffuse>
+                                    <aspectratio>keep</aspectratio>
+                                    <texture>$VAR[PosterThumb]</texture>
+                                    <visible>String.StartsWith(ListItem.Label,*)|String.IsEqual(ListItem.Label,..)|String.StartsWith(ListItem.FolderPath,plugin://)</visible>
+                                </control>
+                                <control type="image">
+                                    <description>cover</description>
+                                    <left>0</left>
+                                    <top>0</top>
+                                    <colordiffuse>$VAR[CoverDim]</colordiffuse>
+                                    <aspectratio>stretch</aspectratio>
+                                    <texture border="15">buttons/ButtonNF.png</texture>
+                                </control>
+                            </control>
+                            <control type="group">
+                                <top>15</top>
+                                <bottom>15</bottom>
+                                <visible>!Skin.HasSetting(hideMovieCases)</visible>
+                                <control type="image">
+                                    <description>coverbackground</description>
+                                    <left>26</left>
+                                    <top>3</top>
+                                    <bottom>3</bottom>
+                                    <texture diffuse="clear-cases/clearcase_inlay.png">BlackBack.png</texture>
+                                    <include>openclosevisible</include>
+                                </control>
+                                <control type="image">
+                                    <description>cover</description>
+                                    <left>26</left>
+                                    <top>3</top>
+                                    <bottom>3</bottom>
+                                    <aspectratio align="left" aligny="top">stretch</aspectratio>
+                                    <colordiffuse>$VAR[CoverDim]</colordiffuse>
+                                    <texture diffuse="clear-cases/clearcase_inlay.png">$VAR[PosterThumb]</texture>
+                                    <visible>![String.StartsWith(ListItem.Label,*)|String.IsEqual(ListItem.Label,..)|String.StartsWith(ListItem.FolderPath,plugin://)]</visible>
+                                </control>
+                                <control type="image">
+                                    <description>cover</description>
+                                    <left>26</left>
+                                    <top>3</top>
+                                    <bottom>3</bottom>
+                                    <aspectratio>keep</aspectratio>
+                                    <colordiffuse>$VAR[CoverDim]</colordiffuse>
+                                    <texture>$VAR[PosterThumb]</texture>
+                                    <visible>String.StartsWith(ListItem.Label,*)|String.IsEqual(ListItem.Label,..)|String.StartsWith(ListItem.FolderPath,plugin://)</visible>
+                                </control>
+                                <control type="image">
+                                    <left>26</left>
+                                    <top>3</top>
+                                    <bottom>3</bottom>
+                                    <colordiffuse>dustdiffuse</colordiffuse>
+                                    <aspectratio align="left" aligny="top">stretch</aspectratio>
+                                    <texture diffuse="clear-cases/clearcase_inlay.png" fallback="FallbackCover.png">Dust.png</texture>
+                                    <visible>Skin.HasSetting(dust)</visible>
+                                    <include>openclosevisible</include>
+                                </control>
+                                <control type="image">
+                                    <description>case by resolution</description>
+                                    <colordiffuse>$VAR[CoverDim]</colordiffuse>
+                                    <texture fallback="clear-cases/fallback.png">$VAR[clearcase]</texture>
+                                </control>
+                            </control>
+                            <control type="group">
+                                <animation effect="slide" end="24,16" condition="!Skin.HasSetting(hideMovieCases)">Conditional</animation>
+                                <include content="Flagg_LeftCorner">
+                                    <param name="height" value="75" />
+                                    <param name="width" value="75" />
+                                </include>
+                            </control>
+                            <control type="group">
+                                <bottom>10</bottom>
+                                <animation effect="slide" end="26,-16" condition="!Skin.HasSetting(hideMovieCases)">Conditional</animation>
+                                <control type="image">
+                                    <description>3D Image</description>
+                                    <width>75</width>
+                                    <aspectratio align="left" aligny="bottom">keep</aspectratio>
+                                    <texture>flagging/video/3d.png</texture>
+                                    <visible>ListItem.IsStereoscopic</visible>
+                                </control>
+                            </control>
+                            <control type="group">
+                                <animation effect="slide" end="0,-17" condition="!Skin.HasSetting(hideMovieCases)">Conditional</animation>
+                                <include content="Set_Flagg">
+                                    <param name="height" value="75" />
+                                    <param name="width" value="75" />
+                                </include>
+                            </control>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="330" width="240">
+                        <control type="group">
+                            <animation type="Focus" reversible="false" condition="!Skin.HasSetting(animation)|Skin.HasSetting(no_wall_animation)">
+                                <effect type="zoom" center="auto" start="100" end="110" time="0"/>
+                            </animation>
+                            <animation type="Focus" reversible="false" condition="Skin.HasSetting(animation)+!Skin.HasSetting(no_wall_animation)">
+                                <effect type="zoom" center="auto" start="100" end="110" time="300" delay="100" tween="quadratic" easing="out"/>
+                            </animation>
+                            <control type="group">
+                                <centertop>50%</centertop>
+                                <left>30</left>
+                                <right>10</right>
+                                <control type="image">
+                                    <visible>!Container($PARAM[viewid]).OnNext+!Container($PARAM[viewid]).OnPrevious</visible>
+                                    <include>DiscartMovies</include>
+                                    <include content="DiscAnimation">
+                                        <param name="slide" value="105" />
+                                    </include>
+                                </control>
+                            </control>
+                            <control type="group">
+                                <visible>Skin.HasSetting(hideMovieCases)</visible>
+                                <control type="image">
+                                    <description>coverbackground</description>
+                                    <texture>Black.png</texture>
+                                </control>
+                                <control type="image">
+                                    <description>cover</description>
+                                    <left>0</left>
+                                    <top>0</top>
+                                    <aspectratio>stretch</aspectratio>
+                                    <texture>$VAR[PosterThumb]</texture>
+                                    <visible>![String.StartsWith(ListItem.Label,*)|String.IsEqual(ListItem.Label,..)|String.StartsWith(ListItem.FolderPath,plugin://)]</visible>
+                                </control>
+                                <control type="image">
+                                    <description>cover</description>
+                                    <left>0</left>
+                                    <top>0</top>
+                                    <aspectratio>keep</aspectratio>
+                                    <texture>$VAR[PosterThumb]</texture>
+                                    <visible>String.StartsWith(ListItem.Label,*)|String.IsEqual(ListItem.Label,..)|String.StartsWith(ListItem.FolderPath,plugin://)</visible>
+                                </control>
+                                <control type="group">
+                                    <include>openclosevisible</include>
+                                    <visible>!Skin.HasSetting(smallinfo_off)+!ListItem.IsCollection</visible>
+                                    <control type="image">
+                                        <texture>Shadow.png</texture>
+                                    </control>
+                                    <control type="group">
+                                        <left>6</left>
+                                        <right>6</right>
+                                        <bottom>5</bottom>
+                                        <height>40</height>
+                                        <control type="label">
+                                            <align>center</align>
+                                            <font>clock-18</font>
+                                            <label>$VAR[WideView_InfosVar]</label>
+                                        </control>
+                                    </control>
+                                </control>
+                                <control type="image">
+                                    <description>cover</description>
+                                    <left>0</left>
+                                    <top>0</top>
+                                    <aspectratio>stretch</aspectratio>
+                                    <texture border="15">buttons/ButtonNF.png</texture>
+                                </control>
+                            </control>
+                            <control type="group">
+                                <top>15</top>
+                                <bottom>15</bottom>
+                                <visible>!Skin.HasSetting(hideMovieCases)</visible>
+                                <control type="image">
+                                    <description>coverbackground</description>
+                                    <left>26</left>
+                                    <top>3</top>
+                                    <bottom>3</bottom>
+                                    <texture diffuse="clear-cases/clearcase_inlay.png">BlackBack.png</texture>
+                                    <include>openclosevisible</include>
+                                </control>
+                                <control type="image">
+                                    <description>cover</description>
+                                    <left>26</left>
+                                    <top>3</top>
+                                    <bottom>3</bottom>
+                                    <aspectratio align="left" aligny="top">stretch</aspectratio>
+                                    <texture diffuse="clear-cases/clearcase_inlay.png">$VAR[PosterThumb]</texture>
+                                    <visible>![String.StartsWith(ListItem.Label,*)|String.IsEqual(ListItem.Label,..)|String.StartsWith(ListItem.FolderPath,plugin://)]</visible>
+                                </control>
+                                <control type="image">
+                                    <description>cover</description>
+                                    <left>26</left>
+                                    <top>3</top>
+                                    <bottom>3</bottom>
+                                    <aspectratio>keep</aspectratio>
+                                    <texture>$VAR[PosterThumb]</texture>
+                                    <visible>String.StartsWith(ListItem.Label,*)|String.IsEqual(ListItem.Label,..)|String.StartsWith(ListItem.FolderPath,plugin://)</visible>
+                                </control>
+                                <control type="group">
+                                    <include>openclosevisible</include>
+                                    <visible>!Skin.HasSetting(smallinfo_off)+!ListItem.IsCollection</visible>
+                                    <control type="image">
+                                        <texture diffuse="clear-cases/clearcase_inlay.png">Shadow.png</texture>
+                                    </control>
+                                    <control type="group">
+                                        <left>30</left>
+                                        <right>6</right>
+                                        <bottom>5</bottom>
+                                        <height>40</height>
+                                        <control type="label">
+                                            <align>center</align>
+                                            <font>clock-16</font>
+                                            <label>$VAR[WideView_InfosVar]</label>
+                                        </control>
+                                    </control>
+                                </control>
+                                <control type="image">
+                                    <description>case by resolution</description>
+                                    <texture fallback="clear-cases/fallback.png">$VAR[clearcase]</texture>
+                                </control>
+                            </control>
+                            <control type="group">
+                                <animation effect="slide" end="24,16" condition="!Skin.HasSetting(hideMovieCases)">Conditional</animation>
+                                <include content="Flagg_LeftCorner">
+                                    <param name="height" value="75" />
+                                    <param name="width" value="75" />
+                                </include>
+                            </control>
+                            <control type="group">
+                                <bottom>10</bottom>
+                                <animation effect="slide" end="26,-16" condition="!Skin.HasSetting(hideMovieCases)">Conditional</animation>
+                                <control type="image">
+                                    <description>3D Image</description>
+                                    <width>75</width>
+                                    <aspectratio align="left" aligny="bottom">keep</aspectratio>
+                                    <texture>flagging/video/3d.png</texture>
+                                    <visible>ListItem.IsStereoscopic</visible>
+                                </control>
+                            </control>
+                            <control type="group">
+                                <animation effect="slide" end="0,-17" condition="!Skin.HasSetting(hideMovieCases)">Conditional</animation>
+                                <include content="Set_Flagg">
+                                    <param name="height" value="75" />
+                                    <param name="width" value="75" />
+                                </include>
+                            </control>
+                        </control>
+                    </focusedlayout>
+                </control>
+                <control type="group">
+                    <animation effect="slide" end="-65" time="150">Focus</animation>
+                    <include content="DefaultScrollbar">
+                        <param name="id" value="$PARAM[id]1" />
+                        <param name="left" value="101%" />
+                        <param name="top" value="0" />
+                        <param name="height" value="100%" />
+                        <param name="onleft" value="$PARAM[id]" />
+                    </include>
+                </control>
+            </control>
+        </definition>
+    </include>
+    <include name="WallViewInfoPanel">
+        <control type="group"> <!-- infopanel design -->
+            <height>380</height>
+            <bottom>0</bottom>
+            <include>opencloseslideup</include>
+                <animation effect="slide" end="0,110" condition="Container.Content(Seasons)|Container.Content(TVShows)">Conditional</animation>
+            <control type="group">
+                <include>opencloseslideup</include>
+                <control type="image">
+                    <width>101%</width>
+                    <height>270</height>
+                    <texture>Shadow.png</texture>
+                </control>
+                <control type="group">
+                    <top>270</top>
+                    <control type="image">
+                        <width>101%</width>
+                        <height>112</height>
+						<colordiffuse>dustdiffuse</colordiffuse>
+                        <texture>Black.png</texture>
+                    </control>
+                    <control type="image">
+                        <height>1</height>
+                        <texture>Separator2.png</texture>
+                    </control>
+                </control>
+            </control>
+            <control type="group">
+                <include>openclosevisible</include>
+                <visible>ListItem.IsCollection+[Control.IsVisible(742)|Control.IsVisible(740)]</visible>
+                <include content="MovieSetInformationCover"> <!-- Movie Set Info Panel -->
+                    <param name="top" value="100" />
+                    <param name="height" value="140" />
+                    <param name="visible_label" value="false" />
+                </include>
+            </control>
+            <control type="group">
+                <description>Info Panel</description>
+                <include>opencloseslideup</include>
+                <control type="group">
+                    <left>SpacePadding</left>
+                    <right>SpacePadding</right>
+                    <top>60</top>
+                    <height>210</height>
+                    <control type="group">
+                        <top>60</top>
+                        <width>80%</width>
+                        <include>openclosevisible</include>
+                        <animation effect="slide" end="0,100" time="0" condition="ListItem.IsCollection">Conditional</animation>
+                        <control type="image">
+                            <description>Rated</description>
+                            <left>-5</left>
+                            <width>180</width>
+                            <height>30</height>
+                            <texture fallback="leftratingvideo/0.0.png">$INFO[ListItem.Rating,leftratingvideo/,.png]</texture>
+                            <visible>!ListItem.IsCollection</visible>
+                        </control>
+                        <control type="label">
+                            <description>Title</description>
+                            <top>30</top>
+                            <height>40</height>
+                            <font>impacted21</font>
+                            <label>$INFO[ListItem.Tagline]</label>
+                            <align>left</align>
+                            <aligny>top</aligny>
+                            <textcolor>grey1</textcolor>
+                            <shadowcolor>black</shadowcolor>
+                            <scroll>true</scroll>
+                            <include>openclosevisible</include>
+                            <visible>!String.IsEmpty(ListItem.Tagline)</visible>
+                        </control>
+                        <control type="label">
+                            <description>Title</description>
+                            <top>55</top>
+                            <height>45</height>
+                            <font>impacted44</font>
+                            <label>$VAR[OriginalTitle]$INFO[ListItem.Year, (,)]</label>
+                            <align>left</align>
+                            <aligny>top</aligny>
+                            <textcolor>white</textcolor>
+                            <shadowcolor>black</shadowcolor>
+                            <scroll>true</scroll>
+                            <include>openclosevisible</include>
+                            <visible>!String.IsEmpty(ListItem.Label)</visible>
+                        </control>
+                    </control>
+                    <control type="group">
+                        <right>0</right>
+                        <width>750</width>
+                        <control type="image">
+                            <top>60</top>
+                            <animation effect="slide" end="0,80" time="0" condition="!Skin.HasSetting(CommonPageCount)">Conditional</animation>
+                            <height>60</height>
+                            <aspectratio align="right" aligny="bottom">keep</aspectratio>
+                            <texture>$VAR[Furniture_VideoRating]</texture>
+                            <include>opencloseslideleft</include>
+                        </control>
+                        <control type="group">
+                            <bottom>10</bottom>
+                            <height>60</height>
+                            <include>opencloseslideleft</include>
+                            <visible>Skin.HasSetting(CommonPageCount)</visible>
+                            <control type="label">
+                                <description>Page Count Label</description>
+                                <height>30</height>
+                                <font>impacted21</font>
+                                <textcolor>grey</textcolor>
+                                <shadowcolor>grey3</shadowcolor>
+                                <scroll>false</scroll>
+                                <align>right</align>
+                                <aligny>center</aligny>
+                                <label>$INFO[Container.NumItems,([COLOR=selected],[/COLOR]) $LOCALIZE[31009]]$INFO[Container.CurrentPage, - $LOCALIZE[31008] ([COLOR=selected]]$INFO[Container.NumPages,/,[/COLOR])]</label>
+                            </control>
+                            <control type="label">
+                                <description>Container Duration Label</description>
+                                <top>30</top>
+                                <height>30</height>
+                                <font>impacted21</font>
+                                <textcolor>grey</textcolor>
+                                <shadowcolor>grey3</shadowcolor>
+                                <scroll>false</scroll>
+                                <align>right</align>
+                                <aligny>center</aligny>
+                                <label>$INFO[Container.TotalTime,$LOCALIZE[31003] ([COLOR=selected],[/COLOR])]</label>
+                            </control>
+                        </control>
+                    </control>
+                </control>
+                <control type="group"> <!-- Movie Flagging -->
+                    <include>opencloseslideup</include>
+                    <visible>!ListItem.IsParentFolder</visible>
+                    <visible>!ListItem.IsFolder</visible>
+                    <control type="group">
+                        <top>280</top>
+                        <height>100</height>
+                        <control type="grouplist">
+                            <top>35</top>
+                            <left>SpacePadding</left>
+                            <itemgap>6</itemgap>
+                            <align>left</align>
+                            <orientation>horizontal</orientation>
+                            <include>FlagVideo</include>
+                            <include>FlagVideoAudioStream1</include>
+                            <include>FlagVideoAudioStream2</include>
+                            <include>FlagVideoSubtitles</include>
+                        </control>
+                        <control type="grouplist">
+                            <right>SpacePadding</right>
+                            <bottom>5</bottom>
+                            <width>1000</width>
+                            <align>right</align>
+                            <orientation>horizontal</orientation>
+                            <itemgap>30</itemgap>
+                            <control type="image">
+                                <width>150</width>
+                                <aspectratio align="center">keep</aspectratio>
+                                <texture>$VAR[MovieStudioLogoVar]$INFO[ListItem.Studio,,.png]</texture>
+                                <visible>!String.Contains(Control.GetLabel(9999),Empty.png)</visible>
+                                <include>openclosevisible</include>
+                            </control>
+                            <control type="image">
+                                <width>3</width>
+                                <texture border="1">Separator3.png</texture>
+                                <visible>!String.Contains(Control.GetLabel(9999),Empty.png)+!String.IsEmpty(Control.GetLabel(9998))</visible>
+                                <include>openclosevisible</include>
+                            </control>
+                            <control type="image">
+                                <width>260</width>
+                                <aspectratio align="center">keep</aspectratio>
+                                <texture>$VAR[ClearlogoVAR]</texture>
+                                <visible>Skin.HasSetting(EnableExtendedArt)+!String.IsEmpty(Control.GetLabel(9998))</visible>
+                                <include>openclosevisible</include>
+                            </control>
+                        </control>
+                    </control>
+                </control>
+            </control>
+            <control type="group"> <!-- TMDb Provider Icon -->
+                <include content="TMDbhelper_Provider_Icon">
+                    <param name="align" value="center"/>
+                    <param name="left" value="0"/>
+                    <param name="top" value="105"/>
+                    <param name="width" value="100%"/>
+                    <param name="height" value="50"/>
+                    <param name="box" value="35"/>
+                    <param name="orientation" value="horizontal"/>
+                    <param name="id" value="$PARAM[viewid]"/>
+                </include>
+            </control>
+        </control>
+    </include>
+</includes>

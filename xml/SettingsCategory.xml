@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+    <defaultcontrol>3</defaultcontrol>
+	<backgroundcolor>grey3</backgroundcolor>
+    <menucontrol>9000</menucontrol>
+    <include>openclose</include>
+    <controls>
+        <include>Multiimage</include>
+        <control type="group">
+            <include>BlackBack</include>
+            <visible>!Skin.HasSetting(animation)+!Skin.HasSetting(background_dim_1)+!Skin.HasSetting(background_dim_2)+!Skin.HasSetting(background_dim_3)</visible>
+        </control>
+		<control type="group">
+			<include>opencloseslidedown</include>
+			<top>40</top>
+			<control type="group"> <!-- Menustripe inkl. Submenudesign -->
+				<width>100%</width>
+				<control type="image">
+					<top>185</top>
+					<height>65</height>
+					<colordiffuse>$VAR[BackgroundOverlayColorDialog]</colordiffuse>
+					<texture>WhiteBack.png</texture>
+				</control>
+				<control type="image">
+					<top>185</top>
+					<height>65</height>
+					<texture>BlackBack.png</texture>
+				</control>
+				<control type="image">
+					<top>250</top>
+					<height>akzentline_size</height>
+					<colordiffuse>$VAR[BackgroundOverlayColorDialog]</colordiffuse>
+					<texture>White.png</texture>
+				</control>
+				<control type="image">
+					<top>100</top>
+					<height>86</height>
+					<texture>BlackBack.png</texture>
+				</control>
+				<control type="image">
+					<top>95</top>
+					<height>95</height>
+					<texture colordiffuse="grey1">MenuStripe.png</texture>
+				</control>
+				<control type="image">
+					<top>100</top>
+					<height>1</height>
+					<texture>Separator2.png</texture>
+				</control>
+				<control type="image">
+					<top>184</top>
+					<height>1</height>
+					<texture>Separator2.png</texture>
+				</control>
+				<control type="group"> <!-- homemenushadow -->
+					<control type="image">
+						<left>-3</left>
+						<top>101</top>
+						<width>480</width>
+						<height>83</height>
+						<texture>SideFade.png</texture>
+					</control>
+					<control type="image">
+						<left>372r</left>
+						<top>101</top>
+						<width>375</width>
+						<height>83</height>
+						<texture flipx="true">SideFade.png</texture>
+					</control>
+				</control>
+			</control>
+			<control type="group"> <!-- Menubutton -->
+				<centerleft>50%</centerleft>
+				<width>700</width>
+				<control type="group"> <!-- homemenubuttonshadow -->
+					<top>101</top>
+					<height>82</height>
+					<control type="image">
+						<width>90</width>
+						<texture flipx="true">SideFade.png</texture>
+					</control>
+					<control type="image">
+						<left>590</left>
+						<width>90</width>
+						<texture>SideFade.png</texture>
+					</control>
+				</control>
+				<control type="image">
+					<left>90</left>
+					<top>71</top>
+					<width>508</width>
+					<height>112</height>
+					<colordiffuse>$VAR[BackgroundOverlayColor]</colordiffuse>
+					<texture>White.png</texture>
+				</control>
+				<control type="image">
+					<left>80</left>
+					<top>58</top>
+					<width>532</width>
+					<height>144</height>
+					<texture border="6">buttons/MenuButton.png</texture>
+				</control>
+				<control type="group"> <!-- Title & Level -->
+					<left>110</left>
+					<right>110</right>
+					<centerleft>50%</centerleft>
+					<control type="label">
+						<top>30</top>
+						<height>102</height>
+						<align>center</align>
+						<aligny>center</aligny>
+						<textcolor>white</textcolor>
+						<font>lcd14</font>
+						<label>$LOCALIZE[33063]</label>
+					</control>
+					<control type="label">
+						<top>87</top>
+						<height>102</height>
+						<align>center</align>
+						<aligny>center</aligny>
+						<textcolor>white</textcolor>
+						<shadowcolor>grey3</shadowcolor>
+						<font>impacted36</font>
+						<label>$INFO[Control.GetLabel(2)]</label>
+					</control>
+				</control>
+				<control type="group"> <!-- Level Label -->
+					<centerleft>-90%</centerleft>
+					<width>200%</width>
+					<control type="label">
+						<top>95</top>
+						<height>95</height>
+						<align>right</align>
+						<textcolor>description</textcolor>
+						<shadowcolor>grey3</shadowcolor>
+						<font>impacted21</font>
+						<label>Level: $INFO[Control.GetLabel(20)]</label>
+					</control>
+				</control>
+			</control>
+			<control type="group"> <!-- Level Button -->
+				<control type="image">
+					<description>Arrow</description>
+					<left>18</left>
+					<top>133</top>
+					<width>24</width>
+					<height>27</height>
+					<texture>ArrowBig.png</texture>
+				</control>
+				<control type="label">
+					<left>51</left>
+					<top>123</top>
+					<height>45</height>
+					<width>525</width>
+					<align>left</align>
+					<textcolor>description</textcolor>
+					<shadowcolor>grey3</shadowcolor>
+					<!-- <font>impacted21</font> -->
+					<label>SP</label>
+				</control>
+				<control type="button">
+					<left>525</left>
+					<top>123</top>
+					<height>45</height>
+					<width>300</width>
+					<label/>
+					<texturefocus/>
+					<onclick>SettingsLevelChange</onclick>
+					<onup>3</onup>
+					<ondown>3</ondown>
+					<onleft>3</onleft>
+					<onright>3</onright>
+				</control>
+			</control>
+			<control type="group">
+				<top>200</top>
+				<include>openclosevisible</include>
+				<visible>ControlGroup(3).HasFocus()</visible>
+				<control type="image">
+					<include>openclosevisible</include>
+					<description>Arrow for List 50</description>
+					<left>10</left>
+					<top>10</top>
+					<width>18</width>
+					<height>27</height>
+					<texture>ArrowBig.png</texture>
+					<visible>Container(3).HasPrevious</visible>
+				</control>
+				<control type="image">
+					<include>openclosevisible</include>
+					<description>Arrow</description>
+					<left>30r</left>
+					<top>10</top>
+					<width>18</width>
+					<height>27</height>
+					<texture flipx="true">ArrowBig.png</texture>
+					<visible>Container(3).HasNext</visible>
+				</control>
+				<control type="grouplist" id="3">
+					<description>button area</description>
+					<centerleft>50%</centerleft>
+					<top>-3</top>
+					<width>1840</width>
+					<height>50</height>
+					<itemgap>dialogbuttons_itemgap</itemgap>
+					<orientation>horizontal</orientation>
+					<onleft>9000</onleft>
+					<onright>3</onright>
+					<onup>5</onup>
+					<ondown>5</ondown>
+					<align>center</align>
+				</control>
+			</control>
+		</control>
+		<control type="group">
+			<include>openclosemediumnodelay</include>
+			<control type="grouplist" id="5">
+				<description>control area</description>
+				<centerleft>50%</centerleft>
+				<top>310</top>
+				<bottom>180</bottom>
+				<width>80%</width>
+				<onup>5</onup>
+				<ondown>5</ondown>
+				<onleft>3</onleft>
+				<onright>3</onright>
+			</control>
+			<include content="MirrorPanel">
+				<param name="top" value="170r" />
+			</include>
+			<control type="textbox" id="6">
+				<description>description area</description>
+				<left>SpacePaddingLarge</left>
+				<right>SpacePaddingLarge</right>
+				<top>155r</top>
+				<height>150</height>
+				<align>left</align>
+				<font>ubuntu-r16b</font>
+				<textcolor>description</textcolor>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="button" id="7">
+				<description>Default Button</description>
+				<height>45</height>
+				<texturenofocus colordiffuse="menudiffuse" border="2">buttons/ButtonNFlight.png</texturenofocus>
+				<pulseonselect>false</pulseonselect>
+				<align>left</align>
+				<aligny>center</aligny>
+			</control>
+			<control type="radiobutton" id="8">
+				<description>Default RadioButton</description>
+				<height>45</height>
+				<texturenofocus colordiffuse="menudiffuse" border="2">buttons/ButtonNFlight.png</texturenofocus>
+				<pulseonselect>false</pulseonselect>
+				<align>left</align>
+				<aligny>center</aligny>
+			</control>
+			<control type="spincontrolex" id="9">
+				<description>Default SpinControlex</description>
+				<height>45</height>
+				<disabledcolor>60d0d0d0</disabledcolor>
+				<texturenofocus colordiffuse="menudiffuse" border="2">buttons/ButtonNFlight.png</texturenofocus>
+				<aligny>center</aligny>
+				<reverse>yes</reverse>
+			</control>
+			<include content="DefaultDialogButton">
+				<param name="id" value="10" />
+				<param name="width" value="auto" />
+				<param name="label" value="$LOCALIZE[12321]" />
+				<param name="ondown" value="5" />
+				<param name="nofocus" />
+			</include>
+			<control type="sliderex" id="13">
+				<description>Default Slider</description>
+				<height>45</height>
+				<align>left</align>
+				<aligny>center</aligny>
+				<texturenofocus colordiffuse="menudiffuse" border="2">buttons/ButtonNFlight.png</texturenofocus>
+			</control>
+			<control type="label" id="14">
+				<description>Default Label</description>
+				<height>45</height>
+				<align>left</align>
+				<font>ubuntu-r16b</font>
+				<label/>
+				<textcolor>description</textcolor>
+				<shadowcolor>black</shadowcolor>
+			</control>
+		</control>
+        <include>Clock</include>
+        <include>NavInfo</include>
+        <control type="group">
+            <include>SidePanelBackgroundOverlay</include>
+			<control type="group"> <!-- Sidepanel -->
+				<include>SidePanelAnimation</include>
+				<include>SidePanelBackground</include>
+				<width>SidePanelLeftWidth</width>
+				<control type="grouplist" id="9000">
+					<top>150</top>
+					<bottom>150</bottom>
+					<onleft>9002</onleft>
+					<onright>3</onright>
+					<onup>9000</onup>
+					<ondown>9000</ondown>
+					<itemgap>3</itemgap>
+					<orientation>vertical</orientation>
+					<control type="label" id="200">
+						<width>428</width>
+						<height>42</height>
+						<textoffsetx>22</textoffsetx>
+						<align>center</align>
+						<font>bebas19</font>
+						<label>10507</label>
+					</control>
+					<control type="image">
+						<height>10</height>
+						<texture/>
+					</control>
+					<control type="image">
+						<height>3</height>
+						<texture>Separator1.png</texture>
+					</control>
+					<control type="image">
+						<height>10</height>
+						<texture/>
+					</control>
+					<control type="button" id="20">
+						<description>Setting level button</description>
+						<include>SidePanelButton</include>
+						<label>10037</label>
+						<onclick>SettingsLevelChange</onclick>
+					</control>
+				</control>
+			</control>
+		</control>
+        <include>BehindDialogFadeOut</include>
+        <include>TouchButtons</include>
+		<control type="label" id="2">
+			<description>breadcrumbs label</description>
+			<visible>False</visible>
+		</control>
+    </controls>
+</window>

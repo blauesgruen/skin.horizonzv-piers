@@ -1,0 +1,1098 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+	<include name="DefaultDialogButton">
+		<param name="width">260</param>
+		<param name="height">45</param>
+		<param name="focus">White.png</param>
+		<param name="nofocus">White.png</param>
+		<param name="wrapmultiline">false</param>
+		<param name="font">ubuntu-r16b</param>
+		<param name="textcolor">white</param>
+		<param name="align">center</param>
+		<param name="onclick">nope</param>
+		<param name="onclick2">nope</param>
+		<param name="onclick2_condition">true</param>
+		<param name="onclick3">nope</param>
+		<param name="onclick3_condition">true</param>
+		<param name="onclick4">nope</param>
+		<param name="onclick5">nope</param>
+		<param name="onclick6">nope</param>
+		<param name="onclick7">nope</param>
+		<param name="onclick8">nope</param>
+		<param name="onclick9">nope</param>
+		<param name="onclick10">nope</param>
+		<param name="enable">true</param>
+		<param name="visible">true</param>
+		<param name="visible2">true</param>
+		<param name="visible3">true</param>
+		<param name="colordiffuse_focus">white</param>
+		<param name="colordiffuse_nofocus">grey2</param>
+		<definition>
+			<control type="button" id="$PARAM[id]">
+				<left>$PARAM[left]</left>
+				<top>$PARAM[top]</top>
+				<width min="105" max="275">$PARAM[width]</width>
+				<height>$PARAM[height]</height>
+				<label>$PARAM[label]</label>
+				<label2>$PARAM[label2]</label2>
+				<font>$PARAM[font]</font>
+				<textcolor>$PARAM[textcolor]</textcolor>
+				<onup>$PARAM[onup]</onup>
+				<ondown>$PARAM[ondown]</ondown>
+				<onleft>$PARAM[onleft]</onleft>
+				<onright>$PARAM[onright]</onright>
+				<onclick>$PARAM[onclick]</onclick>
+				<onclick condition="$PARAM[onclick2_condition]">$PARAM[onclick2]</onclick>
+				<onclick condition="$PARAM[onclick3_condition]">$PARAM[onclick3]</onclick>
+				<onclick>$PARAM[onclick4]</onclick>
+				<onclick>$PARAM[onclick5]</onclick>
+				<onclick>$PARAM[onclick6]</onclick>
+				<onclick>$PARAM[onclick7]</onclick>
+				<onclick>$PARAM[onclick8]</onclick>
+				<onclick>$PARAM[onclick9]</onclick>
+				<onclick>$PARAM[onclick10]</onclick>
+				<wrapmultiline>$PARAM[wrapmultiline]</wrapmultiline>
+				<align>$PARAM[align]</align>
+				<texturefocus border="5" colordiffuse="$PARAM[colordiffuse_focus]">$PARAM[focus]</texturefocus>
+				<texturenofocus border="5" colordiffuse="$PARAM[colordiffuse_nofocus]">$PARAM[nofocus]</texturenofocus>
+				<enable>$PARAM[enable]</enable>
+				<visible>$PARAM[visible]</visible>
+				<visible>$PARAM[visible2]</visible>
+				<visible>$PARAM[visible3]</visible>
+			</control>
+		</definition>
+	</include>
+	<include name="DialogToggleButton">
+		<param name="width">260</param>
+		<param name="height">45</param>
+		<param name="altlabel"></param>
+		<param name="focus">White.png</param>
+		<param name="nofocus">White.png</param>
+		<param name="wrapmultiline">false</param>
+		<param name="font">ubuntu-r16b</param>
+		<param name="align">center</param>
+		<param name="visible">true</param>
+		<param name="visible2">true</param>
+		<param name="visible3">true</param>
+		<param name="enable">true</param>
+		<param name="usealttexture">false</param>
+		<param name="focusedcolor">black</param>
+		<param name="textcolor">white</param>
+		<param name="textwidth">auto</param>
+		<param name="colordiffuse_focus">white</param>
+		<param name="colordiffuse_nofocus">grey2</param>
+		<param name="colordiffuse_selected">selected</param>
+		<definition>
+			<control type="togglebutton" id="$PARAM[id]">
+				<width min="105" max="275">$PARAM[width]</width>
+				<height>$PARAM[height]</height>
+				<label>$PARAM[label]</label>
+				<label2>$PARAM[label2]</label2>
+				<altlabel>$PARAM[altlabel]</altlabel>
+				<font>$PARAM[font]</font>
+				<focusedcolor>$PARAM[focusedcolor]</focusedcolor>
+				<textcolor>$PARAM[textcolor]</textcolor>
+				<textwidth>$PARAM[textwidth]</textwidth>
+				<onup>$PARAM[onup]</onup>
+				<ondown>$PARAM[ondown]</ondown>
+				<onleft>$PARAM[onleft]</onleft>
+				<onright>$PARAM[onright]</onright>
+				<wrapmultiline>$PARAM[wrapmultiline]</wrapmultiline>
+				<align>$PARAM[align]</align>
+				<aligny>center</aligny>
+				<usealttexture>$PARAM[usealttexture]</usealttexture>
+				<visible>$PARAM[visible]</visible>
+				<visible>$PARAM[visible2]</visible>
+				<visible>$PARAM[visible3]</visible>
+				<enable>$PARAM[enable]</enable>
+				<disabledcolor>grey2</disabledcolor>
+				<texturefocus border="5" colordiffuse="$PARAM[colordiffuse_focus]">$PARAM[focus]</texturefocus>
+				<texturenofocus border="5" colordiffuse="$PARAM[colordiffuse_nofocus]">$PARAM[nofocus]</texturenofocus>
+				<alttexturenofocus border="5" colordiffuse="$PARAM[colordiffuse_selected]">$PARAM[nofocus]</alttexturenofocus>
+				<alttexturefocus border="5" colordiffuse="$PARAM[colordiffuse_focus]">$PARAM[focus]</alttexturefocus>
+			</control>
+		</definition>
+	</include>
+	<include name="DialogRadioButton">
+		<param name="width">260</param>
+		<param name="height">45</param>
+		<param name="altlabel"></param>
+		<param name="focus">White.png</param>
+		<param name="nofocus">White.png</param>
+		<param name="wrapmultiline">false</param>
+		<param name="font">ubuntu-r16b</param>
+		<param name="align">center</param>
+		<param name="onclick">nope</param>
+		<param name="onclick2">nope</param>
+		<param name="onclick2_condition">true</param>
+		<param name="onclick3">nope</param>
+		<param name="onclick3_condition">true</param>
+		<param name="onclick4">nope</param>
+		<param name="onclick5">nope</param>
+		<param name="visible">true</param>
+		<param name="visible2">true</param>
+		<param name="visible3">true</param>
+		<param name="enable">true</param>
+		<param name="usealttexture">false</param>
+		<param name="focusedcolor">black</param>
+		<param name="textcolor">white</param>
+		<param name="textwidth">auto</param>
+		<param name="colordiffuse_focus">white</param>
+		<param name="colordiffuse_nofocus">grey2</param>
+		<param name="colordiffuse_selected">selected</param>
+		<definition>
+			<control type="radiobutton" id="$PARAM[id]">
+				<width min="105" max="275">$PARAM[width]</width>
+				<height>$PARAM[height]</height>
+				<label>$PARAM[label]</label>
+				<label2>$PARAM[label2]</label2>
+				<font>$PARAM[font]</font>
+				<focusedcolor>$PARAM[focusedcolor]</focusedcolor>
+				<textcolor>$PARAM[textcolor]</textcolor>
+				<textwidth>$PARAM[textwidth]</textwidth>
+				<onup>$PARAM[onup]</onup>
+				<ondown>$PARAM[ondown]</ondown>
+				<onleft>$PARAM[onleft]</onleft>
+				<onright>$PARAM[onright]</onright>
+				<align>$PARAM[align]</align>
+				<aligny>center</aligny>
+				<visible>$PARAM[visible]</visible>
+				<visible>$PARAM[visible2]</visible>
+				<visible>$PARAM[visible3]</visible>
+				<enable>$PARAM[enable]</enable>
+				<selected>$PARAM[selected]</selected>
+				<disabledcolor>grey2</disabledcolor>
+				<onclick>$PARAM[onclick]</onclick>
+				<onclick condition="$PARAM[onclick2_condition]">$PARAM[onclick2]</onclick>
+				<onclick condition="$PARAM[onclick3_condition]">$PARAM[onclick3]</onclick>
+				<onclick>$PARAM[onclick4]</onclick>
+				<onclick>$PARAM[onclick5]</onclick>
+				<texturefocus border="5" colordiffuse="$PARAM[colordiffuse_focus]">$PARAM[focus]</texturefocus>
+				<texturenofocus border="5" colordiffuse="$PARAM[colordiffuse_nofocus]">$PARAM[nofocus]</texturenofocus>
+			</control>
+		</definition>
+	</include>
+	<include name="DialogSpinButton">
+		<param name="width">260</param>
+		<param name="height">45</param>
+		<param name="focus">White.png</param>
+		<param name="nofocus">White.png</param>
+		<param name="font">ubuntu-r16b</param>
+		<param name="align">center</param>
+		<param name="onclick">nope</param>
+		<param name="onclick2">nope</param>
+		<param name="onclick2_condition">true</param>
+		<param name="onclick3">nope</param>
+		<param name="onclick3_condition">true</param>
+		<param name="onclick4">nope</param>
+		<param name="onclick5">nope</param>
+		<param name="enable">true</param>
+		<param name="visible">true</param>
+		<param name="visible2">true</param>
+		<param name="visible3">true</param>
+		<param name="colordiffuse_focus">white</param>
+		<param name="colordiffuse_nofocus">grey2</param>
+		<definition>
+			<control type="spincontrolex" id="$PARAM[id]">
+				<left>$PARAM[left]</left>
+				<top>$PARAM[top]</top>
+				<width min="105" max="275">$PARAM[width]</width>
+				<height>$PARAM[height]</height>
+				<label>$PARAM[label]</label>
+				<label2>$PARAM[label2]</label2>
+				<font>$PARAM[font]</font>
+				<onup>$PARAM[onup]</onup>
+				<ondown>$PARAM[ondown]</ondown>
+				<onleft>$PARAM[onleft]</onleft>
+				<onright>$PARAM[onright]</onright>
+				<onclick>$PARAM[onclick]</onclick>
+				<onclick condition="$PARAM[onclick2_condition]">$PARAM[onclick2]</onclick>
+				<onclick condition="$PARAM[onclick3_condition]">$PARAM[onclick3]</onclick>
+				<onclick>$PARAM[onclick4]</onclick>
+				<onclick>$PARAM[onclick5]</onclick>
+				<wrapmultiline>$PARAM[wrapmultiline]</wrapmultiline>
+				<align>$PARAM[align]</align>
+				<texturefocus border="5" colordiffuse="$PARAM[colordiffuse_focus]">$PARAM[focus]</texturefocus>
+				<texturenofocus border="5" colordiffuse="$PARAM[colordiffuse_nofocus]">$PARAM[nofocus]</texturenofocus>
+				<enable>$PARAM[enable]</enable>
+				<visible>$PARAM[visible]</visible>
+				<visible>$PARAM[visible2]</visible>
+				<visible>$PARAM[visible3]</visible>
+			</control>
+		</definition>
+	</include>
+	<include name="DialogSliderexButton">
+		<param name="width">260</param>
+		<param name="height">45</param>
+		<param name="focus">White.png</param>
+		<param name="nofocus">White.png</param>
+		<param name="font">ubuntu-r16b</param>
+		<param name="align">center</param>
+		<param name="onclick">nope</param>
+		<param name="onclick2">nope</param>
+		<param name="onclick2_condition">true</param>
+		<param name="onclick3">nope</param>
+		<param name="onclick3_condition">true</param>
+		<param name="onclick4">nope</param>
+		<param name="onclick5">nope</param>
+		<param name="enable">true</param>
+		<param name="visible">true</param>
+		<param name="visible2">true</param>
+		<param name="visible3">true</param>
+		<param name="colordiffuse_focus">white</param>
+		<param name="colordiffuse_nofocus">grey2</param>
+		<definition>
+			<control type="sliderex" id="$PARAM[id]">
+				<left>$PARAM[left]</left>
+				<top>$PARAM[top]</top>
+				<width min="105" max="275">$PARAM[width]</width>
+				<height>$PARAM[height]</height>
+				<label>$PARAM[label]</label>
+				<label2>$PARAM[label2]</label2>
+				<font>$PARAM[font]</font>
+				<onup>$PARAM[onup]</onup>
+				<ondown>$PARAM[ondown]</ondown>
+				<onleft>$PARAM[onleft]</onleft>
+				<onright>$PARAM[onright]</onright>
+				<onclick>$PARAM[onclick]</onclick>
+				<onclick condition="$PARAM[onclick2_condition]">$PARAM[onclick2]</onclick>
+				<onclick condition="$PARAM[onclick3_condition]">$PARAM[onclick3]</onclick>
+				<onclick>$PARAM[onclick4]</onclick>
+				<onclick>$PARAM[onclick5]</onclick>
+				<wrapmultiline>$PARAM[wrapmultiline]</wrapmultiline>
+				<align>$PARAM[align]</align>
+				<texturefocus border="5" colordiffuse="$PARAM[colordiffuse_focus]">$PARAM[focus]</texturefocus>
+				<texturenofocus border="5" colordiffuse="$PARAM[colordiffuse_nofocus]">$PARAM[nofocus]</texturenofocus>
+				<enable>$PARAM[enable]</enable>
+				<visible>$PARAM[visible]</visible>
+				<visible>$PARAM[visible2]</visible>
+				<visible>$PARAM[visible3]</visible>
+			</control>
+		</definition>
+	</include>
+	<include name="DialogEditButton">
+		<param name="width">260</param>
+		<param name="height">45</param>
+		<param name="focus">White.png</param>
+		<param name="nofocus">White.png</param>
+		<param name="hinttext"></param>
+		<param name="font">ubuntu-r16b</param>
+		<param name="align">center</param>
+		<param name="visible">true</param>
+		<param name="visible2">true</param>
+		<param name="visible3">true</param>
+		<param name="colordiffuse_focus">white</param>
+		<param name="colordiffuse_nofocus">grey2</param>
+		<definition>
+			<control type="edit" id="$PARAM[id]">
+				<left>$PARAM[left]</left>
+				<top>$PARAM[top]</top>
+				<width min="105" max="275">$PARAM[width]</width>
+				<height>$PARAM[height]</height>
+				<label>$PARAM[label]</label>
+				<hinttext>$PARAM[hinttext]</hinttext>
+				<font>$PARAM[font]</font>
+				<textoffsetx>15</textoffsetx>
+				<onup>$PARAM[onup]</onup>
+				<ondown>$PARAM[ondown]</ondown>
+				<onleft>$PARAM[onleft]</onleft>
+				<onright>$PARAM[onright]</onright>
+				<onclick>$PARAM[onclick]</onclick>
+				<onclick condition="$PARAM[onclick2_condition]">$PARAM[onclick2]</onclick>
+				<onclick condition="$PARAM[onclick3_condition]">$PARAM[onclick3]</onclick>
+				<onclick>$PARAM[onclick4]</onclick>
+				<onclick>$PARAM[onclick5]</onclick>
+				<align>$PARAM[align]</align>
+				<texturefocus border="5" colordiffuse="$PARAM[colordiffuse_focus]">$PARAM[focus]</texturefocus>
+				<texturenofocus border="5" colordiffuse="$PARAM[colordiffuse_nofocus]">$PARAM[nofocus]</texturenofocus>
+				<visible>$PARAM[visible]</visible>
+				<visible>$PARAM[visible2]</visible>
+				<visible>$PARAM[visible3]</visible>
+			</control>
+		</definition>
+	</include>
+	<include name="KeyboardButton">
+        <width>80</width>
+        <height>42</height>
+        <texturenofocus border="5" colordiffuse="grey2">White.png</texturenofocus>
+        <texturefocus border="5" colordiffuse="white">White.png</texturefocus>
+		<font>ubuntu-r21</font>
+        <align>center</align>
+        <aligny>center</aligny>
+        <focusedcolor>black</focusedcolor>
+        <textoffsetx>0</textoffsetx>
+		<radiowidth>50</radiowidth>
+		<radioheight>25</radioheight>
+    </include>
+	<include name="DialogButtonTextureFocus">
+		<param name="color">white</param>
+		<definition>
+			<texture border="5" colordiffuse="$PARAM[color]">White.png</texture>
+			<texturefocus border="5" colordiffuse="$PARAM[color]">White.png</texturefocus>
+		</definition>
+	</include>
+	<include name="DialogButtonTextureNoFocus">
+		<texture border="5" colordiffuse="grey2">White.png</texture>
+        <texturenofocus border="5" colordiffuse="grey2">White.png</texturenofocus>
+	</include>
+	<include name="DefaultGrouplistHomemenuTargets">
+		<param name="widthlist">1110</param>
+		<param name="id">1</param>
+		<definition>
+			<control type="grouplist" id="$PARAM[grouplist_id]">
+				<visible>String.IsEqual(Window(Home).Property(HomeButton),$PARAM[homemenu_name])</visible>
+				<include content="WidgetDefaultGrouplistLayout">
+					<param name="width" value="$PARAM[widthlist]" />
+					<param name="id_name" value="$PARAM[homemenu_name]" />
+					<param name="onup" value="$PARAM[grouplist_id]" />
+					<param name="ondown" value="$PARAM[grouplist_id]" />
+				</include>
+				<include content="DialogRadioButton">
+					<param name="id" value="$PARAM[id]1" />
+					<param name="width" value="$PARAM[widthlist]" />
+					<param name="label" value="$LOCALIZE[301596]" />
+					<param name="align" value="left" />
+					<param name="onclick" value="Skin.ToggleSetting(HomeMenuNo_$PARAM[homemenu_name]_Button)" />
+					<param name="selected" value="!Skin.HasSetting(HomeMenuNo_$PARAM[homemenu_name]_Button)" />
+					<param name="visible3" value="!String.StartsWith(Window(Home).Property(HomeButton),custom)" />
+					<param name="enable" value="!String.StartsWith(Window(Home).Property(HomeButton),custom)" />
+					<param name="nofocus" />
+				</include>
+				<include content="DialogRadioButton">
+					<param name="id" value="$PARAM[id]2" />
+					<param name="width" value="$PARAM[widthlist]" />
+					<param name="label" value="- $LOCALIZE[636]" />
+					<param name="align" value="left" />
+					<param name="onclick" value="Skin.ToggleSetting(Home_$PARAM[homemenu_name]_Button)" />
+					<param name="selected" value="Skin.HasSetting(Home_$PARAM[homemenu_name]_Button)" />
+					<param name="enable" value="!Skin.HasSetting(HomeMenuNo_$PARAM[homemenu_name]_Button)" />
+					<param name="visible2" value="!String.IsEqual(Window(Home).Property(HomeButton),setting)+!String.IsEqual(Window(Home).Property(HomeButton),dashboard)" />
+					<param name="visible3" value="!String.StartsWith(Window(Home).Property(HomeButton),custom)" />
+					<param name="enable" value="!String.StartsWith(Window(Home).Property(HomeButton),custom)" />
+					<param name="nofocus" />
+				</include>
+				<include content="DefaultDialogButton">
+					<param name="id" value="$PARAM[id]3" />
+					<param name="width" value="$PARAM[widthlist]" />
+					<param name="label" value="- $LOCALIZE[21899]" />
+					<param name="label2" value="$INFO[Skin.String(Home_$PARAM[homemenu_name]_Custom_Label)]" />
+					<param name="align" value="left" />
+					<param name="onclick" value="Skin.SetString(Home_$PARAM[homemenu_name]_Custom_Label)" />
+					<param name="visible" value="!Skin.HasSetting(HomeMenuNo_$PARAM[homemenu_name]_Button)+Skin.HasSetting(Home_$PARAM[homemenu_name]_Button)" />
+					<param name="visible2" value="!String.IsEqual(Window(Home).Property(HomeButton),setting)+!String.IsEqual(Window(Home).Property(HomeButton),dashboard)" />
+					<param name="visible3" value="!String.StartsWith(Window(Home).Property(HomeButton),custom)" />
+					<param name="enable" value="!String.StartsWith(Window(Home).Property(HomeButton),custom)" />
+					<param name="nofocus" />
+				</include>
+				<include content="DefaultDialogButton">
+					<param name="id" value="$PARAM[id]4" />
+					<param name="width" value="$PARAM[widthlist]" />
+					<param name="label" value="- $LOCALIZE[21866]" />
+					<param name="label2" value="$VAR[Home_$PARAM[homemenu_name]_Category]" />
+					<param name="align" value="left" />
+					<param name="onclick" value="Skin.SelectBool(21866, 36912|Home_$PARAM[homemenu_name]_Custom_Category_Video, 2|Home_$PARAM[homemenu_name]_Custom_Category_Music, 1|Home_$PARAM[homemenu_name]_Custom_Category_Pictures, 559|Home_$PARAM[homemenu_name]_Custom_Category_File, 10821|Home_$PARAM[homemenu_name]_Custom_Category_Games)" />
+					<param name="visible" value="!Skin.HasSetting(HomeMenuNo_$PARAM[homemenu_name]_Button)+Skin.HasSetting(Home_$PARAM[homemenu_name]_Button)" />
+					<param name="visible2" value="!String.IsEqual(Window(Home).Property(HomeButton),setting)+!String.IsEqual(Window(Home).Property(HomeButton),dashboard)" />
+					<param name="visible3" value="!String.StartsWith(Window(Home).Property(HomeButton),custom)" />
+					<param name="enable" value="!String.StartsWith(Window(Home).Property(HomeButton),custom)" />
+					<param name="nofocus" />
+				</include>
+				<include content="DefaultDialogButton">
+					<param name="id" value="$PARAM[id]5" />
+					<param name="width" value="$PARAM[widthlist]" />
+					<param name="label" value="  $LOCALIZE[31613]" />
+					<param name="label2" value="$VAR[Home_$PARAM[homemenu_name]_SubCategory_Label]" />
+					<param name="align" value="left" />
+					<param name="onclick" value="Skin.SelectBool(21866, 36912|Home_$PARAM[homemenu_name]_Custom_SubCategory_Video, 2|Home_$PARAM[homemenu_name]_Custom_SubCategory_Music)" />
+					<param name="visible" value="!Skin.HasSetting(HomeMenuNo_$PARAM[homemenu_name]_Button)+Skin.HasSetting(Home_$PARAM[homemenu_name]_Button)+Skin.HasSetting(Home_$PARAM[homemenu_name]_Custom_Category_File)" />
+					<param name="visible2" value="!String.IsEqual(Window(Home).Property(HomeButton),setting)+!String.IsEqual(Window(Home).Property(HomeButton),dashboard)" />
+					<param name="visible3" value="!String.StartsWith(Window(Home).Property(HomeButton),custom)" />
+					<param name="enable" value="!String.StartsWith(Window(Home).Property(HomeButton),custom)" />
+					<param name="nofocus" />
+				</include>
+				<include content="DefaultDialogButton">
+					<param name="id" value="$PARAM[id]6" />
+					<param name="width" value="$PARAM[widthlist]" />
+					<param name="label" value="- $LOCALIZE[573]" />
+					<param name="label2" value="$INFO[Skin.String(Home_$PARAM[homemenu_name]_Custom_Path)]" />
+					<param name="align" value="left" />
+					<param name="onclick" value="$VAR[Home_$PARAM[homemenu_name]_Currentpath]" />
+					<param name="visible" value="!Skin.HasSetting(HomeMenuNo_$PARAM[homemenu_name]_Button)+Skin.HasSetting(Home_$PARAM[homemenu_name]_Button)" />
+					<param name="visible2" value="!String.IsEqual(Window(Home).Property(HomeButton),setting)+!String.IsEqual(Window(Home).Property(HomeButton),dashboard)" />
+					<param name="visible3" value="!String.StartsWith(Window(Home).Property(HomeButton),custom)" />
+					<param name="enable" value="!String.StartsWith(Window(Home).Property(HomeButton),custom)" />
+					<param name="nofocus" />
+				</include>
+				<include content="DefaultDialogButton">
+					<param name="id" value="$PARAM[id]7" />
+					<param name="width" value="$PARAM[widthlist]" />
+					<param name="label" value="$LOCALIZE[13007]" />
+					<param name="align" value="left" />
+					<param name="onclick" value="Skin.Reset(Home_$PARAM[homemenu_name]_Custom_Label)" />
+					<param name="onclick2" value="Skin.Reset(Home_$PARAM[homemenu_name]_Custom_Category_Video)" />
+					<param name="onclick3" value="Skin.Reset(Home_$PARAM[homemenu_name]_Custom_Category_Music)" />
+					<param name="onclick4" value="Skin.Reset(Home_$PARAM[homemenu_name]_Custom_Category_Pictures)" />
+					<param name="onclick5" value="Skin.Reset(Home_$PARAM[homemenu_name]_Custom_Category_File)" />
+					<param name="onclick6" value="Skin.Reset(Home_$PARAM[homemenu_name]_Custom_Category_Games)" />
+					<param name="onclick7" value="Skin.Reset(Home_$PARAM[homemenu_name]_Custom_SubCategory_Video)" />
+					<param name="onclick8" value="Skin.Reset(Home_$PARAM[homemenu_name]_Custom_SubCategory_Music)" />
+					<param name="onclick9" value="Skin.Reset(Home_$PARAM[homemenu_name]_Custom_Path)" />
+					<param name="onclick10" value="Skin.Reset(Home_$PARAM[homemenu_name]_Button)" />
+					<param name="visible" value="Skin.HasSetting(Home_$PARAM[homemenu_name]_Button)" />
+					<param name="visible3" value="!String.StartsWith(Window(Home).Property(HomeButton),custom)" />
+					<param name="enable" value="String.StartsWith(Window(Home).Property(HomeButton),custom)" />
+					<param name="nofocus" />
+				</include>
+				<!-- custom buttons -->
+				<include content="DialogRadioButton">
+					<param name="id" value="$PARAM[id]8" />
+					<param name="width" value="$PARAM[widthlist]" />
+					<param name="label" value="$LOCALIZE[301596]" />
+					<param name="align" value="left" />
+					<param name="onclick" value="Skin.ToggleSetting(Home_$PARAM[homemenu_name]_Button)" />
+					<param name="selected" value="Skin.HasSetting(Home_$PARAM[homemenu_name]_Button)" />
+					<param name="visible" value="String.StartsWith(Window(Home).Property(HomeButton),custom)" />
+					<param name="enable" value="String.StartsWith(Window(Home).Property(HomeButton),custom)" />
+					<param name="nofocus" />
+				</include>
+				<include content="DefaultDialogButton">
+					<param name="id" value="$PARAM[id]9" />
+					<param name="width" value="$PARAM[widthlist]" />
+					<param name="label" value="- $LOCALIZE[21899]" />
+					<param name="label2" value="$INFO[Skin.String(Home_$PARAM[homemenu_name]_Custom_Label)]" />
+					<param name="align" value="left" />
+					<param name="onclick" value="Skin.SetString(Home_$PARAM[homemenu_name]_Custom_Label)" />
+					<param name="visible" value="Skin.HasSetting(Home_$PARAM[homemenu_name]_Button)" />
+					<param name="visible3" value="String.StartsWith(Window(Home).Property(HomeButton),custom)" />
+					<param name="enable" value="String.StartsWith(Window(Home).Property(HomeButton),custom)" />
+					<param name="nofocus" />
+				</include>
+				<include content="DefaultDialogButton">
+					<param name="id" value="$PARAM[id]10" />
+					<param name="width" value="$PARAM[widthlist]" />
+					<param name="label" value="- $LOCALIZE[21866]" />
+					<param name="label2" value="$VAR[Home_$PARAM[homemenu_name]_Category]" />
+					<param name="align" value="left" />
+					<param name="onclick" value="Skin.SelectBool(21866, 36912|Home_$PARAM[homemenu_name]_Custom_Category_Video, 2|Home_$PARAM[homemenu_name]_Custom_Category_Music, 1|Home_$PARAM[homemenu_name]_Custom_Category_Pictures, 559|Home_$PARAM[homemenu_name]_Custom_Category_File, 10821|Home_$PARAM[homemenu_name]_Custom_Category_Games, 31611|Home_$PARAM[homemenu_name]_Custom_Category_Code)" />
+					<param name="visible" value="Skin.HasSetting(Home_$PARAM[homemenu_name]_Button)" />
+					<param name="visible3" value="String.StartsWith(Window(Home).Property(HomeButton),custom)" />
+					<param name="enable" value="String.StartsWith(Window(Home).Property(HomeButton),custom)" />
+					<param name="nofocus" />
+				</include>
+				<include content="DefaultDialogButton">
+					<param name="id" value="$PARAM[id]11" />
+					<param name="width" value="$PARAM[widthlist]" />
+					<param name="label" value="  $LOCALIZE[31613]" />
+					<param name="label2" value="$VAR[Home_$PARAM[homemenu_name]_SubCategory_Label]" />
+					<param name="align" value="left" />
+					<param name="onclick" value="Skin.SelectBool(21866, 36912|Home_$PARAM[homemenu_name]_Custom_SubCategory_Video, 2|Home_$PARAM[homemenu_name]_Custom_SubCategory_Music)" />
+					<param name="visible" value="Skin.HasSetting(Home_$PARAM[homemenu_name]_Button)+Skin.HasSetting(Home_$PARAM[homemenu_name]_Custom_Category_File)" />
+					<param name="visible3" value="String.StartsWith(Window(Home).Property(HomeButton),custom)" />
+					<param name="enable" value="String.StartsWith(Window(Home).Property(HomeButton),custom)" />
+					<param name="nofocus" />
+				</include>
+				<include content="DefaultDialogButton">
+					<param name="id" value="$PARAM[id]12" />
+					<param name="width" value="$PARAM[widthlist]" />
+					<param name="label" value="- $LOCALIZE[573]/$LOCALIZE[31611]" />
+					<param name="label2" value="$INFO[Skin.String(Home_$PARAM[homemenu_name]_Custom_Path)]" />
+					<param name="align" value="left" />
+					<param name="onclick" value="$VAR[Home_$PARAM[homemenu_name]_Currentpath]" />
+					<param name="visible" value="Skin.HasSetting(Home_$PARAM[homemenu_name]_Button)" />
+					<param name="visible3" value="String.StartsWith(Window(Home).Property(HomeButton),custom)" />
+					<param name="enable" value="String.StartsWith(Window(Home).Property(HomeButton),custom)" />
+					<param name="nofocus" />
+				</include>
+				<include content="DefaultDialogButton">
+					<param name="id" value="$PARAM[id]13" />
+					<param name="width" value="$PARAM[widthlist]" />
+					<param name="label" value="$LOCALIZE[13007]" />
+					<param name="align" value="left" />
+					<param name="onclick" value="Skin.Reset(Home_$PARAM[homemenu_name]_Custom_Label)" />
+					<param name="onclick2" value="Skin.Reset(Home_$PARAM[homemenu_name]_Custom_Category_Video)" />
+					<param name="onclick3" value="Skin.Reset(Home_$PARAM[homemenu_name]_Custom_Category_Music)" />
+					<param name="onclick4" value="Skin.Reset(Home_$PARAM[homemenu_name]_Custom_Category_Pictures)" />
+					<param name="onclick5" value="Skin.Reset(Home_$PARAM[homemenu_name]_Custom_Category_File)" />
+					<param name="onclick6" value="Skin.Reset(Home_$PARAM[homemenu_name]_Custom_Category_Games)" />
+					<param name="onclick7" value="Skin.Reset(Home_$PARAM[homemenu_name]_Custom_SubCategory_Video)" />
+					<param name="onclick8" value="Skin.Reset(Home_$PARAM[homemenu_name]_Custom_SubCategory_Music)" />
+					<param name="onclick9" value="Skin.Reset(Home_$PARAM[homemenu_name]_Custom_Path)" />
+					<param name="onclick10" value="Skin.Reset(Home_$PARAM[homemenu_name]_Button)" />
+					<param name="visible3" value="String.StartsWith(Window(Home).Property(HomeButton),custom)" />
+					<param name="enable" value="String.StartsWith(Window(Home).Property(HomeButton),custom)" />
+					<param name="nofocus" />
+				</include>
+				<!-- custom buttons end -->
+				<include content="separatorlabel">
+					<param name="separatorlabel_id" value="$PARAM[id]14" />
+				</include>
+				<include content="DialogRadioButton">
+					<param name="id" value="$PARAM[id]15" />
+					<param name="width" value="$PARAM[widthlist]" />
+					<param name="label" value="Multiimage $LOCALIZE[33068]" />
+					<param name="align" value="left" />
+					<param name="onclick" value="Skin.ToggleSetting(Home_Background_$PARAM[homemenu_name]_Multiimage)" />
+					<param name="selected" value="Skin.HasSetting(Home_Background_$PARAM[homemenu_name]_Multiimage)" />
+					<param name="nofocus" />
+				</include>
+				<include content="DefaultDialogButton">
+					<param name="id" value="$PARAM[id]16" />
+					<param name="width" value="$PARAM[widthlist]" />
+					<param name="label" value="$LOCALIZE[33068]" />
+					<param name="label2" value="$INFO[Skin.String(user_bkg_$PARAM[homemenu_name])]" />
+					<param name="align" value="left" />
+					<param name="onclick2" value="Skin.SetImage(user_bkg_$PARAM[homemenu_name],smb://)" />
+					<param name="onclick2_condition" value="!Skin.HasSetting(Home_Background_$PARAM[homemenu_name]_Multiimage)" />
+					<param name="onclick3" value="Skin.SetPath(user_bkg_$PARAM[homemenu_name],smb://)" />
+					<param name="onclick3_condition" value="Skin.HasSetting(Home_Background_$PARAM[homemenu_name]_Multiimage)" />
+					<param name="nofocus" />
+				</include>
+				<include content="DefaultDialogButton">
+					<param name="id" value="$PARAM[id]17" />
+					<param name="width" value="$PARAM[widthlist]" />
+					<param name="label" value="$LOCALIZE[13007]" />
+					<param name="align" value="left" />
+					<param name="onclick" value="Skin.Reset(user_bkg_$PARAM[homemenu_name])" />
+					<param name="nofocus" />
+				</include>
+				<include content="separatorlabel">
+					<param name="separatorlabel_id" value="$PARAM[id]18" />
+				</include>
+				<include content="DefaultDialogButton">
+					<param name="id" value="$PARAM[id]19" />
+					<param name="width" value="$PARAM[widthlist]" />
+					<param name="label" value="$LOCALIZE[39156]" />
+					<param name="align" value="left" />
+					<param name="onclick" value="Dialog.Close(all,true)" />
+					<param name="onclick2" value="ActivateWindow(1301)" />
+					<param name="nofocus" />
+				</include>
+				<include content="separatorlabel">
+					<param name="separatorlabel_id" value="$PARAM[id]20" />
+				</include>
+				<include content="DefaultDialogButton">
+					<param name="id" value="$PARAM[id]21" />
+					<param name="width" value="$PARAM[widthlist]" />
+					<param name="label" value="Widget $LOCALIZE[5]" />
+					<param name="align" value="left" />
+					<param name="onclick" value="SetProperty(HomeButton,$PARAM[homemenu_name])" />
+					<param name="onclick2" value="ActivateWindow(1500)" />
+					<param name="visible" value="!String.IsEqual(Window(Home).Property(HomeButton),playdisc)+!String.IsEqual(Window(Home).Property(HomeButton),setting)" />
+					<param name="enable" value="!String.IsEqual(Window(Home).Property(HomeButton),playdisc)+!String.IsEqual(Window(Home).Property(HomeButton),setting)" />
+					<param name="nofocus" />
+				</include>
+				<include content="DialogRadioButton">
+					<param name="id" value="$PARAM[id]22" />
+					<param name="width" value="$PARAM[widthlist]" />
+					<param name="label" value="DVD Widget" />
+					<param name="align" value="left" />
+					<param name="onclick2" value="Skin.SetBool(Widget_DVDLabel)" />
+					<param name="onclick2_condition" value="!Skin.HasSetting(Widget_DVDLabel)" />
+					<param name="onclick3" value="Skin.Reset(Widget_DVDLabel)" />
+					<param name="onclick3_condition" value="Skin.HasSetting(Widget_DVDLabel)" />
+					<param name="visible" value="String.IsEqual(Window(Home).Property(HomeButton),playdisc)" />
+					<param name="enable" value="String.IsEqual(Window(Home).Property(HomeButton),playdisc)" />
+					<param name="nofocus" />
+				</include>
+				<include content="DialogRadioButton">
+					<param name="id" value="$PARAM[id]23" />
+					<param name="width" value="$PARAM[widthlist]" />
+					<param name="label" value="$LOCALIZE[13000] Widget" />
+					<param name="align" value="left" />
+					<param name="onclick" value="Skin.ToggleSetting(Widget_Systeminfo)" />
+					<param name="selected" value="Skin.HasSetting(Widget_Systeminfo)" />
+					<param name="visible" value="String.IsEqual(Window(Home).Property(HomeButton),setting)" />
+					<param name="enable" value="String.IsEqual(Window(Home).Property(HomeButton),setting)" />
+					<param name="nofocus" />
+				</include>
+				<include>WidgetBackButton</include>
+			</control>
+		</definition>
+	</include>
+	<include name="DefaultGrouplistWidgetSettingsCustom">
+		<param name="widthlist">1110</param>
+		<param name="id">884</param>
+		<param name="textcolor">white</param>
+		<param name="grouplist_id">35100</param>
+		<definition>
+			<control type="grouplist" id="$PARAM[grouplist_id]">
+				<visible>String.IsEqual(Window(Home).Property(HomeButton),$PARAM[homemenu_name])</visible>
+				<include content="WidgetDefaultGrouplistLayout">
+					<param name="width" value="$PARAM[widthlist]" />
+					<param name="id_name" value="$PARAM[homemenu_name]" />
+					<param name="onup" value="$PARAM[grouplist_id]" />
+					<param name="ondown" value="$PARAM[grouplist_id]" />
+				</include>
+				<include content="DialogRadioButton">
+					<param name="id" value="$PARAM[id]885" />
+					<param name="width" value="$PARAM[widthlist]" />
+					<param name="label" value="Widget - $LOCALIZE[409]" />
+					<param name="align" value="left" />
+					<param name="onclick" value="Skin.ToggleSetting(HomeWidget_$PARAM[homemenu_name]_Standard)" />
+					<param name="onclick2" value="Skin.Reset(HomeWidget_$PARAM[homemenu_name]_User)" />
+					<param name="selected" value="Skin.HasSetting(HomeWidget_$PARAM[homemenu_name]_Standard)" />
+					<param name="nofocus" />
+				</include>
+				<include content="DialogRadioButton">
+					<param name="id" value="$PARAM[id]886" />
+					<param name="width" value="$PARAM[widthlist]" />
+					<param name="label" value="Widget - $LOCALIZE[636]" />
+					<param name="align" value="left" />
+					<param name="onclick" value="Skin.ToggleSetting(HomeWidget_$PARAM[homemenu_name]_User)" />
+					<param name="onclick2" value="Skin.Reset(HomeWidget_$PARAM[homemenu_name]_Standard)" />
+					<param name="selected" value="Skin.HasSetting(HomeWidget_$PARAM[homemenu_name]_User)" />
+					<param name="nofocus" />
+				</include>
+				<include content="DefaultDialogButton">
+					<param name="id" value="$PARAM[id]887" />
+					<param name="width" value="$PARAM[widthlist]" />
+					<param name="label" value="- $LOCALIZE[21899]" />
+					<param name="label2" value="$INFO[Skin.String(HomeWidget_$PARAM[homemenu_name]_Label)]" />
+					<param name="align" value="left" />
+					<param name="onclick" value="Skin.SetString(HomeWidget_$PARAM[homemenu_name]_Label)" />
+					<param name="visible" value="Skin.HasSetting(HomeWidget_$PARAM[homemenu_name]_User)" />
+					<param name="nofocus" />
+				</include>
+				<include content="DefaultDialogButton">
+					<param name="id" value="$PARAM[id]888" />
+					<param name="width" value="$PARAM[widthlist]" />
+					<param name="label" value="- $LOCALIZE[573]" />
+					<param name="label2" value="$INFO[Skin.String(HomeWidget_$PARAM[homemenu_name]_Path)]" />
+					<param name="align" value="left" />
+					<param name="onclick" value="$VAR[HomeWidget_$PARAM[homemenu_name]_Currentpath]" />
+					<param name="visible" value="Skin.HasSetting(HomeWidget_$PARAM[homemenu_name]_User)" />
+					<param name="nofocus" />
+				</include>
+				<include content="DefaultDialogButton">
+					<param name="id" value="$PARAM[id]889" />
+					<param name="width" value="$PARAM[widthlist]" />
+					<param name="label" value="$LOCALIZE[13007]" />
+					<param name="align" value="left" />
+					<param name="onclick" value="Skin.Reset(HomeWidget_$PARAM[homemenu_name]_Label)" />
+					<param name="onclick2" value="Skin.Reset(HomeWidget_$PARAM[homemenu_name]_Path)" />
+					<param name="onclick3" value="Skin.Reset(HomeWidget_$PARAM[homemenu_name]_User)" />
+					<param name="visible" value="Skin.HasSetting(HomeWidget_$PARAM[homemenu_name]_User)" />
+					<param name="nofocus" />
+				</include>
+				<include>WidgetGeneralSettings</include>
+				<include>WidgetBackButton</include>
+			</control>
+		</definition>
+	</include>
+    <include name="WidgetGeneralSettings">
+		<param name="id">994</param>
+		<definition>
+			<include content="separatorlabel">
+				<param name="separatorlabel_id" value="$PARAM[id]995" />
+			</include>
+			<include content="DialogRadioButton">
+				<param name="id" value="$PARAM[id]996" />
+				<param name="width" value="1110" />
+				<param name="label" value="$LOCALIZE[301306]" />
+				<param name="align" value="left" />
+				<param name="onclick" value="Skin.ToggleSetting(WidgetDim)" />
+				<param name="selected" value="Skin.HasSetting(WidgetDim)" />
+				<param name="nofocus" />
+			</include>
+			<include content="DialogRadioButton">
+				<param name="id" value="$PARAM[id]997" />
+				<param name="width" value="1110" />
+				<param name="label" value="$LOCALIZE[301598]" />
+				<param name="align" value="left" />
+				<param name="onclick" value="Skin.ToggleSetting(WidgetNoPercentPlayedBar)" />
+				<param name="selected" value="Skin.HasSetting(WidgetNoPercentPlayedBar)" />
+				<param name="nofocus" />
+			</include>
+		</definition>
+    </include>
+    <include name="WidgetBackButton">
+		<param name="id">998</param>
+		<definition>
+			<include content="DefaultDialogButton">
+				<param name="id" value="$PARAM[id]999" />
+				<param name="width" value="1110" />
+				<param name="label" value="$LOCALIZE[210]" />
+				<param name="align" value="left" />
+				<param name="onclick" value="Action(back)" />
+				<param name="nofocus" />
+			</include>
+		</definition>
+    </include>
+    <include name="WidgetDefaultGrouplistLayout">
+		<param name="left">50</param>
+		<param name="top">168</param>
+		<param name="width">1110</param>
+		<param name="height">672</param>
+		<param name="itemgap">10</param>
+		<param name="onup">36000</param>
+		<param name="ondown">36000</param>
+		<definition>
+			<left>$PARAM[left]</left>
+			<top>$PARAM[top]</top>
+			<width>$PARAM[width]</width>
+			<height>$PARAM[height]</height>
+			<itemgap>$PARAM[itemgap]</itemgap>
+			<onup>$PARAM[onup]</onup>
+			<ondown>$PARAM[ondown]</ondown>
+			<visible>String.IsEqual(Window(Home).Property(HomeButton),$PARAM[id_name])</visible>
+		</definition>
+    </include>
+	<include name="DefaultMediaInfoListLayout">
+		<param name="height">125</param>
+		<param name="width">850</param>
+		<param name="thumbtexture">$VAR[PosterThumb]</param>
+		<param name="font_2">ubuntu-r13b</param>
+		<param name="label_1">$INFO[ListItem.Label]</param>
+		<param name="label_2">$INFO[ListItem.Duration,$LOCALIZE[180]: ]</param>
+		<param name="label_3">$VAR[VideoCodecVar,, ]$INFO[ListItem.VideoResolution,| , ]$VAR[VideoResolutionTypeVar,, ]$VAR[VideoHDRVar,| , ]$INFO[ListItem.VideoAspect,| ,:1 ]$VAR[AudioCodecVar,| , ]$VAR[AudioChannelsVar]</param>
+		<param name="fontcolor">white</param>
+		<param name="fontcolor_focus">black</param>
+		<param name="selectedcolor">focused</param>
+		<definition>
+			<itemlayout height="$PARAM[height]" width="$PARAM[width]">
+				<control type="image">
+					<width max="125">auto</width>
+					<texture>$PARAM[thumbtexture]</texture>
+					<bordersize>8</bordersize>
+					<aspectratio align="center">keep</aspectratio>
+				</control>
+				<control type="label">
+					<left>135</left>
+					<right>20</right>
+					<textcolor>$PARAM[fontcolor]</textcolor>
+					<selectedcolor>$PARAM[selectedcolor]</selectedcolor>
+					<label>$PARAM[label_1]</label>
+				</control>
+				<control type="label">
+					<left>135</left>
+					<top>50</top>
+					<right>20</right>
+					<height>35</height>
+					<font>$PARAM[font_2]</font>
+					<aligny>center</aligny>
+					<textcolor>$PARAM[fontcolor]</textcolor>
+					<selectedcolor>$PARAM[selectedcolor]</selectedcolor>
+					<label>$PARAM[label_2]</label>
+				</control>
+				<control type="label">
+					<left>135</left>
+					<top>85</top>
+					<right>20</right>
+					<height>30</height>
+					<font>$PARAM[font_2]</font>
+					<aligny>center</aligny>
+					<textcolor>$PARAM[fontcolor]</textcolor>
+					<selectedcolor>$PARAM[selectedcolor]</selectedcolor>
+					<label>$PARAM[label_3]</label>
+				</control>
+			</itemlayout>
+			<focusedlayout height="$PARAM[height]" width="$PARAM[width]">
+				<control type="image">
+					<include>DialogButtonTextureFocus</include>
+					<animation effect="fade" start="100" end="0" time="0">UnFocus</animation>
+					<animation effect="fade" start="0" end="100" time="0">Focus</animation>
+				</control>
+				<control type="image">
+					<include>DialogButtonTextureNoFocus</include>
+					<animation effect="fade" start="0" end="100" time="0">UnFocus</animation>
+					<animation effect="fade" start="100" end="0" time="0">Focus</animation>
+				</control>
+				<control type="image">
+					<width max="125">auto</width>
+					<texture>$PARAM[thumbtexture]</texture>
+					<bordersize>8</bordersize>
+					<aspectratio align="center">keep</aspectratio>
+				</control>
+				<control type="label">
+					<left>135</left>
+					<right>20</right>
+					<scroll>true</scroll>
+					<label>$PARAM[label_1]</label>
+					<textcolor>$PARAM[fontcolor_focus]</textcolor>
+					<selectedcolor>$PARAM[selectedcolor]</selectedcolor>
+				</control>
+				<control type="label">
+					<left>135</left>
+					<top>50</top>
+					<right>20</right>
+					<height>35</height>
+					<font>$PARAM[font_2]</font>
+					<aligny>center</aligny>
+					<label>$PARAM[label_2]</label>
+					<textcolor>$PARAM[fontcolor_focus]</textcolor>
+					<selectedcolor>$PARAM[selectedcolor]</selectedcolor>
+				</control>
+				<control type="label">
+					<left>135</left>
+					<top>85</top>
+					<right>20</right>
+					<height>30</height>
+					<font>$PARAM[font_2]</font>
+					<aligny>center</aligny>
+					<label>$PARAM[label_3]</label>
+					<textcolor>$PARAM[fontcolor_focus]</textcolor>
+					<selectedcolor>$PARAM[selectedcolor]</selectedcolor>
+				</control>
+			</focusedlayout>
+		</definition>
+	</include>
+	<include name="DefaultLabelListLayout">
+		<param name="height">45</param>
+		<param name="textcolor">black</param>
+		<param name="textcolor2">white</param>
+		<param name="label_2">ListItem.Label2</param>
+		<param name="visible_flags">false</param>
+		<param name="selectedcolor">focused</param>
+		<definition>
+			<itemlayout height="$PARAM[height]">
+				<control type="label">
+					<left>15</left>
+					<right>15</right>
+					<align>left</align>
+					<height>$PARAM[height]</height>
+					<info>ListItem.Label</info>
+					<selectedcolor>$PARAM[selectedcolor]</selectedcolor>
+				</control>
+				<control type="label">
+					<left>15</left>
+					<right>15</right>
+					<align>right</align>
+					<height>$PARAM[height]</height>
+					<info>$PARAM[label_2]</info>
+					<selectedcolor>$PARAM[selectedcolor]</selectedcolor>
+				</control>
+				<control type="image">
+					<description>AudioLanguage Icon</description>
+					<left>55r</left>
+					<width>50</width>
+					<aspectratio align="right" aligny="center">keep</aspectratio>
+					<texture>$VAR[SelectFlag]</texture>
+					<visible>$PARAM[visible_flags]</visible>
+				</control>
+			</itemlayout>
+			<focusedlayout height="$PARAM[height]">
+				<control type="image">
+					<include>DialogButtonTextureNoFocus</include>
+					<visible>!Control.HasFocus($PARAM[list_id])</visible>
+					<include>openclosevisible</include>
+				</control>
+				<control type="image">
+					<include>DialogButtonTextureFocus</include>
+					<visible>Control.HasFocus($PARAM[list_id])</visible>
+					<include>openclosevisible</include>
+				</control>
+				<control type="label">
+					<left>15</left>
+					<right>15</right>
+					<align>left</align>
+					<height>$PARAM[height]</height>
+					<textcolor>$PARAM[textcolor]</textcolor>
+					<info>ListItem.Label</info>
+					<selectedcolor>$PARAM[selectedcolor]</selectedcolor>
+					<visible>Control.HasFocus($PARAM[list_id])</visible>
+				</control>
+				<control type="label">
+					<left>15</left>
+					<right>15</right>
+					<align>right</align>
+					<height>$PARAM[height]</height>
+					<textcolor>$PARAM[textcolor]</textcolor>
+					<info>$PARAM[label_2]</info>
+					<selectedcolor>$PARAM[selectedcolor]</selectedcolor>
+					<visible>Control.HasFocus($PARAM[list_id])</visible>
+				</control>
+				<control type="image">
+					<description>AudioLanguage Icon</description>
+					<left>55r</left>
+					<width>50</width>
+					<aspectratio align="right" aligny="center">keep</aspectratio>
+					<texture>$VAR[SelectFlag]</texture>
+					<visible>$PARAM[visible_flags]</visible>
+				</control>
+				<!-- unfocus -->
+				<control type="label">
+					<left>15</left>
+					<right>15</right>
+					<align>left</align>
+					<height>$PARAM[height]</height>
+					<textcolor>$PARAM[textcolor2]</textcolor>
+					<info>ListItem.Label</info>
+					<selectedcolor>$PARAM[selectedcolor]</selectedcolor>
+					<visible>!Control.HasFocus($PARAM[list_id])</visible>
+				</control>
+				<control type="label">
+					<left>15</left>
+					<right>15</right>
+					<align>right</align>
+					<height>$PARAM[height]</height>
+					<textcolor>$PARAM[textcolor2]</textcolor>
+					<info>$PARAM[label_2]</info>
+					<selectedcolor>$PARAM[selectedcolor]</selectedcolor>
+					<visible>!Control.HasFocus($PARAM[list_id])</visible>
+				</control>
+			</focusedlayout>
+		</definition>
+	</include>
+	<include name="DefaultViewListLayout">
+		<param name="list_id">50</param>
+		<param name="textcolor">black</param>
+		<param name="selectedcolor">focused</param>
+		<definition>
+			<itemlayout height="50">
+				<control type="label">
+					<left>15</left>
+					<right>30</right>
+					<height>50</height>
+					<align>left</align>
+					<textcolor>grey</textcolor>
+					<shadowcolor/>
+					<label>$VAR[ListItemLabelTitle]</label>
+				</control>
+				<control type="label">
+					<right>50</right>
+					<height>50</height>
+					<align>right</align>
+					<font>ubuntu-r16b</font>
+					<textcolor>grey</textcolor>
+					<shadowcolor/>
+					<label>$VAR[ListItemLabel2]</label>
+					<visible>!Container.Content(Addons)</visible>
+					<animation effect="slide" end="35" condition="Window.IsVisible(music)">Conditional</animation>
+				</control>
+				<control type="label">
+					<right>50</right>
+					<height>50</height>
+					<height>50</height>
+					<align>right</align>
+					<font>ubuntu-r16b</font>
+					<textcolor>grey</textcolor>
+					<shadowcolor/>
+					<label>$INFO[ListItem.Property(Addon.Status)]$INFO[ListItem.AddonVersion, (,) ]</label>
+					<visible>Container.Content(Addons)</visible>
+				</control>
+				<control type="image">
+					<left>35r</left>
+					<width>20</width>
+					<aspectratio>keep</aspectratio>
+					<colordiffuse>$VAR[AddonStatusVar]</colordiffuse>
+					<texture>masks/mask2.png</texture>
+				</control>
+				<control type="image">
+					<left>40r</left>
+					<width>30</width>
+					<aspectratio align="left" aligny="center">keep</aspectratio>
+					<texture>$VAR[resumable_overlay]</texture>
+				</control>
+			</itemlayout>
+			<focusedlayout height="50">
+				<control type="image">
+					<left>1</left>
+					<right>1</right>
+					<include>DialogButtonTextureFocus</include>
+					<visible>Control.HasFocus($PARAM[list_id])</visible>
+				</control>
+				<control type="image">
+					<left>1</left>
+					<right>1</right>
+					<include>DialogButtonTextureNoFocus</include>
+					<visible>!Control.HasFocus($PARAM[list_id])</visible>
+				</control>
+				<control type="label">
+					<left>15</left>
+					<right>30</right>
+					<height>50</height>
+					<align>left</align>
+					<textcolor>$VAR[textcolor_focused_view]</textcolor>
+					<selectedcolor>$PARAM[selectedcolor]</selectedcolor>
+					<label>$VAR[ListItemLabelTitle]</label>
+				</control>
+				<control type="label">
+					<left>360</left>
+					<right>50</right>
+					<height>50</height>
+					<align>right</align>
+					<font>ubuntu-r16b</font>
+					<textcolor>$VAR[textcolor_focused_view]</textcolor>
+					<label>$VAR[ListItemLabel2]</label>
+					<visible>!Container.Content(Addons)</visible>
+					<animation effect="slide" end="35" condition="Window.IsVisible(music)">Conditional</animation>
+				</control>
+				<control type="label">
+					<left>360</left>
+					<right>50</right>
+					<height>50</height>
+					<align>right</align>
+					<font>ubuntu-r16b</font>
+					<textcolor>$VAR[textcolor_focused_view]</textcolor>
+					<label>$INFO[ListItem.Property(Addon.Status)]$INFO[ListItem.AddonVersion, (,) ]</label>
+					<visible>Container.Content(Addons)</visible>
+				</control>
+				<control type="image">
+					<left>35r</left>
+					<width>20</width>
+					<aspectratio>keep</aspectratio>
+					<colordiffuse>$VAR[AddonStatusVar]</colordiffuse>
+					<texture>masks/mask2.png</texture>
+				</control>
+				<control type="image">
+					<left>40r</left>
+					<width>30</width>
+					<aspectratio align="left" aligny="center">keep</aspectratio>
+					<texture>$VAR[resumable_overlay]</texture>
+				</control>
+			</focusedlayout>
+		</definition>
+	</include>
+	<include name="PVRGroupManagerListLayout">
+		<param name="height">60</param>
+		<param name="textcolor">black</param>
+		<param name="textcolor2">white</param>
+		<definition>
+			<itemlayout height="$PARAM[height]">
+				<control type="image">
+					<left>4</left>
+					<width>44</width>
+					<texture>$INFO[ListItem.Icon]</texture>
+					<aspectratio aligny="center" align="left">keep</aspectratio>
+				</control>
+				<control type="label">
+					<left>60</left>
+					<width>375</width>
+					<height>$PARAM[height]</height>
+					<label>$INFO[ListItem.ChannelNumberLabel,(,) - ]$INFO[ListItem.ChannelName]</label>
+				</control>
+			</itemlayout>
+			<focusedlayout height="$PARAM[height]">
+				<control type="image">
+					<include>DialogButtonTextureFocus</include>
+					<visible>Control.HasFocus($PARAM[list_id])</visible>
+				</control>
+				<control type="image">
+					<include>DialogButtonTextureNoFocus</include>
+					<visible>!Control.HasFocus($PARAM[list_id])</visible>
+				</control>
+				<control type="image">
+					<left>4</left>
+					<width>44</width>
+					<texture>$INFO[ListItem.Icon]</texture>
+					<aspectratio aligny="center" align="left">keep</aspectratio>
+				</control>
+				<control type="label">
+					<left>60</left>
+					<height>$PARAM[height]</height>
+					<textcolor>$PARAM[textcolor]</textcolor>
+					<label>$INFO[ListItem.ChannelNumberLabel,(,) - ]$INFO[ListItem.ChannelName]</label>
+					<visible>Control.HasFocus($PARAM[list_id])</visible>
+				</control>
+				<!-- unfocus -->
+				<control type="label">
+					<left>60</left>
+					<height>$PARAM[height]</height>
+					<textcolor>$PARAM[textcolor2]</textcolor>
+					<label>$INFO[ListItem.ChannelNumberLabel,(,) - ]$INFO[ListItem.ChannelName]</label>
+					<visible>!Control.HasFocus($PARAM[list_id])</visible>
+				</control>
+			</focusedlayout>
+		</definition>
+	</include>
+</includes>

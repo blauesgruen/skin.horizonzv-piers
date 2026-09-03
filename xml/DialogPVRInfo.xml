@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="601">
+    <defaultcontrol always="true">9000</defaultcontrol>
+    <include>openclose</include>
+    <!-- <animation effect="slide" start="735,0" end="0,0" time="400">WindowOpen</animation>
+    <animation effect="slide" start="0,0" end="735,0" time="400">WindowClose</animation> -->
+    <controls>
+		<control type="group">
+			<include>opencloseslideleft</include>
+			<right>InfoSidePanel_Right</right>
+			<width>InfoSidePanel_Width</width>
+			<include>InfoSidePanelBackground</include>
+			<control type="group">
+				<left>20</left>
+				<right>20</right>
+				<top>80</top>
+				<bottom>80</bottom>
+				<control type="grouplist" id="49">
+					<left>20</left>
+					<right>20</right>
+					<top>20</top>
+					<bottom>20</bottom>
+					<onleft>49</onleft>
+					<onright>49</onright>
+					<onup>9000</onup>
+					<ondown>9000</ondown>
+					<orientation>vertical</orientation>
+					<control type="label">
+						<height>45</height>
+						<width>auto</width>
+						<font>font13</font>
+						<textcolor>white</textcolor>
+						<label>[COLOR=selected]$LOCALIZE[369]:[/COLOR] $INFO[ListItem.Title]</label>
+						<visible>!String.IsEmpty(ListItem.Title)</visible>
+					</control>
+					<control type="label">
+						<height>45</height>
+						<width>auto</width>
+						<font>font13</font>
+						<textcolor>white</textcolor>
+						<label>[COLOR=selected]$LOCALIZE[21442]:[/COLOR] $INFO[ListItem.EpisodeName]</label>
+						<visible>!String.IsEmpty(ListItem.EpisodeName)</visible>
+					</control>
+					<control type="label">
+						<height>45</height>
+						<width>auto</width>
+						<font>font13</font>
+						<textcolor>white</textcolor>
+						<label>[COLOR=selected]$LOCALIZE[20373]:[/COLOR] $INFO[ListItem.Season]</label>
+						<visible>!String.IsEmpty(ListItem.Season)</visible>
+					</control>
+					<control type="label">
+						<height>45</height>
+						<width>auto</width>
+						<font>font13</font>
+						<textcolor>white</textcolor>
+						<label>[COLOR=selected]$LOCALIZE[20359]:[/COLOR] $INFO[ListItem.Episode]</label>
+						<visible>!String.IsEmpty(ListItem.Episode)</visible>
+					</control>
+					<control type="label">
+						<height>45</height>
+						<width>auto</width>
+						<font>font13</font>
+						<textcolor>white</textcolor>
+						<label>[COLOR=selected]$LOCALIZE[19148]:[/COLOR] $INFO[ListItem.ChannelName]</label>
+						<visible>!String.IsEmpty(ListItem.ChannelName)</visible>
+					</control>
+					<control type="label">
+						<height>45</height>
+						<width>auto</width>
+						<font>font13</font>
+						<textcolor>white</textcolor>
+						<label>[COLOR=selected]$LOCALIZE[142]:[/COLOR] $INFO[ListItem.StartTime] - $INFO[ListItem.EndTime] ($INFO[ListItem.StartDate])</label>
+						<visible>!String.IsEmpty(ListItem.StartTime)</visible>
+					</control>
+					<control type="label">
+						<height>45</height>
+						<width>auto</width>
+						<font>font13</font>
+						<textcolor>white</textcolor>
+						<label>[COLOR=selected]$LOCALIZE[180]:[/COLOR] $INFO[ListItem.Duration]</label>
+						<visible>!String.IsEmpty(ListItem.Duration)</visible>
+					</control>
+					<control type="label">
+						<height>45</height>
+						<width>auto</width>
+						<font>font13</font>
+						<textcolor>white</textcolor>
+						<label>[COLOR=selected]$LOCALIZE[515]:[/COLOR] $INFO[ListItem.Genre]</label>
+						<visible>!String.IsEmpty(ListItem.Genre)</visible>
+					</control>
+					<control type="label">
+						<height>45</height>
+						<width>auto</width>
+						<font>font13</font>
+						<textcolor>white</textcolor>
+						<label>[COLOR=selected]$LOCALIZE[20417]:[/COLOR] $INFO[ListItem.Writer]</label>
+						<visible>!String.IsEmpty(ListItem.Writer)</visible>
+					</control>
+					<control type="label">
+						<height>45</height>
+						<width>auto</width>
+						<font>font13</font>
+						<textcolor>white</textcolor>
+						<label>[COLOR=selected]$LOCALIZE[20339]:[/COLOR] $INFO[ListItem.Director]</label>
+						<visible>!String.IsEmpty(ListItem.Director)</visible>
+					</control>
+					<control type="label">
+						<height>45</height>
+						<width>auto</width>
+						<font>font13</font>
+						<textcolor>white</textcolor>
+						<label>[COLOR=selected]$LOCALIZE[206]:[/COLOR] $INFO[ListItem.Cast]</label>
+						<visible>!String.IsEmpty(ListItem.Cast)</visible>
+					</control>
+					<control type="group">
+						<visible>!String.IsEmpty(ListItem.Plot)</visible>
+						<height>15</height>
+						<control type="image">
+							<height>3</height>
+							<colordiffuse>fanartdiffuse</colordiffuse>
+							<texture border="1">Separator1.png</texture>
+						</control>
+					</control>
+					<control type="label">
+						<height min="45" max="500">auto</height>
+						<width>100%</width>
+						<aligny>top</aligny>
+						<include condition="!Skin.HasSetting(BigPlotText)">PlotText16Var</include>
+						<include condition="Skin.HasSetting(BigPlotText)">PlotTextBigVar</include>
+						<textcolor>white</textcolor>
+						<wrapmultiline>true</wrapmultiline>
+						<label>$INFO[ListItem.Plot]</label>
+						<visible>!String.IsEmpty(ListItem.Plot)</visible>
+					</control>
+				</control>
+			</control>
+			<control type="grouplist" id="9000">
+				<bottom>30</bottom>
+				<height>45</height>
+				<itemgap>dialogbuttons_itemgap</itemgap>
+				<align>center</align>
+				<orientation>horizontal</orientation>
+				<onleft>9000</onleft>
+				<onright>9000</onright>
+				<onup>49</onup>
+				<ondown>49</ondown>
+				<include content="DefaultDialogButton">
+					<param name="id" value="7" />
+					<param name="width" value="auto" />
+					<param name="label" value="$LOCALIZE[186]" />
+					<param name="font" value="bebas19" />
+					<param name="nofocus" />
+					<param name="onup" value="49" />
+				</include>
+				<include content="DefaultDialogButton">
+					<param name="id" value="11" />
+					<param name="width" value="auto" />
+					<param name="label" value="$LOCALIZE[826]" />
+					<param name="font" value="bebas19" />
+					<param name="nofocus" />
+					<param name="onup" value="49" />
+				</include>
+				<include content="DefaultDialogButton">
+					<param name="id" value="4" />
+					<param name="width" value="auto" />
+					<param name="label" value="$LOCALIZE[19003]" />
+					<param name="font" value="bebas19" />
+					<param name="nofocus" />
+					<param name="onup" value="49" />
+				</include>
+				<include content="DefaultDialogButton">
+					<param name="id" value="5" />
+					<param name="width" value="auto" />
+					<param name="label" value="$LOCALIZE[19165]" />
+					<param name="font" value="bebas19" />
+					<param name="nofocus" />
+					<param name="onup" value="49" />
+				</include>
+				<include content="DefaultDialogButton">
+					<param name="id" value="6" />
+					<param name="width" value="auto" />
+					<param name="font" value="bebas19" />
+					<param name="align" value="left" />
+					<param name="nofocus" />
+					<param name="onup" value="49" />
+				</include>
+			</control>
+		</control>
+    </controls>
+</window>

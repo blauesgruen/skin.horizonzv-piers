@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="1000">
+    <zorder>2</zorder>
+    <visible>Window.IsVisible(visualisation)+[Skin.HasSetting(artistslideshow_artistinfos_bio)|Skin.HasSetting(artistslideshow_artistinfos_albums)|Skin.HasSetting(artistslideshow_artistinfos_similar)]</visible>
+    <visible>![Player.ShowInfo | Window.IsActive(MusicOSD)|Player.Paused|Player.Forwarding|Player.Rewinding]</visible>
+    <controls>
+        <control type="grouplist">
+            <include>openclosevisible</include>
+            <include>openclose</include>
+            <left>15</left>
+            <top>18</top>
+            <width>1890</width>
+            <height>1080</height>
+            <itemgap>15</itemgap>
+            <visible>!ControlGroup(240).HasFocus()</visible>
+            <visible>System.HasAddon(script.artistslideshow)</visible>
+            <orientation>vertical</orientation>
+            <animation effect="slide" end="0,33" condition="system.getbool(lookandfeel.enablerssfeeds)">Conditional</animation>
+            <control type="group">
+                <width>1860</width>
+                <height>135</height>
+                <include>openclosevisible</include>
+                <visible>[Skin.HasSetting(artistslideshow_artistinfos_albums)+!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.1.AlbumName))]|[Skin.HasSetting(artistslideshow_artistinfos_similar)+!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.1.SimilarName))]</visible>
+                <control type="grouplist">
+                    <width>1890</width>
+                    <height>135</height>
+                    <itemgap>22</itemgap>
+                    <orientation>horizontal</orientation>
+                    <control type="group">
+                        <!-- Albums -->
+                        <width>930</width>
+                        <height>135</height>
+                        <visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.1.AlbumName))</visible>
+                        <visible>Skin.HasSetting(artistslideshow_artistinfos_albums)</visible>
+                        <control type="image">
+                            <left>0</left>
+                            <top>0</top>
+                            <width>930</width>
+                            <height>135</height>
+                            <texture border="6" diffuse="masks/mask_round.png">BlackBack.png</texture>
+                        </control>
+                        <control type="image">
+                            <left>0</left>
+                            <top>0</top>
+                            <width>930</width>
+                            <height>135</height>
+                            <colordiffuse>menudiffuse</colordiffuse>
+                            <texture border="6">masks/Default_round.png</texture>
+                        </control>
+                        <control type="list" id="1100">
+                            <left>8</left>
+                            <top>8</top>
+                            <width>930</width>
+                            <height>120</height>
+                            <onleft>1100</onleft>
+                            <onright>1100</onright>
+                            <onup/>
+                            <ondown/>
+                            <pagecontrol/>
+                            <scrolltime>0</scrolltime>
+                            <focusposition>0</focusposition>
+                            <movement>1</movement>
+                            <orientation>Horizontal</orientation>
+                            <autoscroll time="5000" delay="0" repeat="0">Integer.IsGreater(Container(1100).NumItems,4)</autoscroll>
+                            <itemlayout height="120" width="128"/>
+                            <focusedlayout height="120" width="900">
+                                <control type="image">
+                                    <left>0</left>
+                                    <width>120</width>
+                                    <height>120</height>
+                                    <texture fallback="BlackBack.png">$INFO[ListItem.Icon]</texture>
+                                </control>
+                                <control type="label">
+                                    <description>Album Title</description>
+                                    <left>142</left>
+                                    <width>765</width>
+                                    <height>120</height>
+                                    <align>left</align>
+                                    <aligny>center</aligny>
+                                    <font>impacted26</font>
+                                    <scroll>true</scroll>
+                                    <textcolor>grey</textcolor>
+                                    <shadowcolor>grey3</shadowcolor>
+                                    <label>$INFO[ListItem.Label]</label>
+                                </control>
+                            </focusedlayout>
+                            <content>
+                                <item>
+                                    <label>$INFO[Window(Visualisation).Property(ArtistSlideshow.1.AlbumName)]</label>
+                                    <icon fallback="BlackBack.png">$INFO[Window(Visualisation).Property(ArtistSlideshow.1.AlbumThumb)]</icon>
+                                    <onclick/>
+                                    <visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.1.AlbumName))</visible>
+                                </item>
+                                <item>
+                                    <label>$INFO[Window(Visualisation).Property(ArtistSlideshow.2.AlbumName)]</label>
+                                    <icon fallback="BlackBack.png">$INFO[Window(Visualisation).Property(ArtistSlideshow.2.AlbumThumb)]</icon>
+                                    <onclick/>
+                                    <visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.2.AlbumName))</visible>
+                                </item>
+                                <item>
+                                    <label>$INFO[Window(Visualisation).Property(ArtistSlideshow.3.AlbumName)]</label>
+                                    <icon fallback="BlackBack.png">$INFO[Window(Visualisation).Property(ArtistSlideshow.3.AlbumThumb)]</icon>
+                                    <onclick/>
+                                    <visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.3.AlbumName))</visible>
+                                </item>
+                                <item>
+                                    <label>$INFO[Window(Visualisation).Property(ArtistSlideshow.4.AlbumName)]</label>
+                                    <icon fallback="BlackBack.png">$INFO[Window(Visualisation).Property(ArtistSlideshow.4.AlbumThumb)]</icon>
+                                    <onclick/>
+                                    <visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.4.AlbumName))</visible>
+                                </item>
+                                <item>
+                                    <label>$INFO[Window(Visualisation).Property(ArtistSlideshow.5.AlbumName)]</label>
+                                    <icon fallback="BlackBack.png">$INFO[Window(Visualisation).Property(ArtistSlideshow.5.AlbumThumb)]</icon>
+                                    <onclick/>
+                                    <visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.5.AlbumName))</visible>
+                                </item>
+                                <item>
+                                    <label>$INFO[Window(Visualisation).Property(ArtistSlideshow.6.AlbumName)]</label>
+                                    <icon fallback="BlackBack.png">$INFO[Window(Visualisation).Property(ArtistSlideshow.6.AlbumThumb)]</icon>
+                                    <onclick/>
+                                    <visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.6.AlbumName))</visible>
+                                </item>
+                                <item>
+                                    <label>$INFO[Window(Visualisation).Property(ArtistSlideshow.7.AlbumName)]</label>
+                                    <icon fallback="BlackBack.png">$INFO[Window(Visualisation).Property(ArtistSlideshow.7.AlbumThumb)]</icon>
+                                    <onclick/>
+                                    <visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.7.AlbumName))</visible>
+                                </item>
+                                <item>
+                                    <label>$INFO[Window(Visualisation).Property(ArtistSlideshow.8.AlbumName)]</label>
+                                    <icon fallback="BlackBack.png">$INFO[Window(Visualisation).Property(ArtistSlideshow.8.AlbumThumb)]</icon>
+                                    <onclick/>
+                                    <visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.8.AlbumName))</visible>
+                                </item>
+                                <item>
+                                    <label>$INFO[Window(Visualisation).Property(ArtistSlideshow.9.AlbumName)]</label>
+                                    <icon fallback="BlackBack.png">$INFO[Window(Visualisation).Property(ArtistSlideshow.9.AlbumThumb)]</icon>
+                                    <onclick/>
+                                    <visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.9.AlbumName))</visible>
+                                </item>
+                                <item>
+                                    <label>$INFO[Window(Visualisation).Property(ArtistSlideshow.10.AlbumName)]</label>
+                                    <icon fallback="BlackBack.png">$INFO[Window(Visualisation).Property(ArtistSlideshow.10.AlbumThumb)]</icon>
+                                    <onclick/>
+                                    <visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.10.AlbumName))</visible>
+                                </item>
+                                <item>
+                                    <label>$INFO[Window(Visualisation).Property(ArtistSlideshow.11.AlbumName)]</label>
+                                    <icon fallback="BlackBack.png">$INFO[Window(Visualisation).Property(ArtistSlideshow.11.AlbumThumb)]</icon>
+                                    <onclick/>
+                                    <visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.11.AlbumName))</visible>
+                                </item>
+                                <item>
+                                    <label>$INFO[Window(Visualisation).Property(ArtistSlideshow.12.AlbumName)]</label>
+                                    <icon fallback="BlackBack.png">$INFO[Window(Visualisation).Property(ArtistSlideshow.12.AlbumThumb)]</icon>
+                                    <onclick/>
+                                    <visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.12.AlbumName))</visible>
+                                </item>
+                                <item>
+                                    <label>$INFO[Window(Visualisation).Property(ArtistSlideshow.13.AlbumName)]</label>
+                                    <icon fallback="BlackBack.png">$INFO[Window(Visualisation).Property(ArtistSlideshow.13.AlbumThumb)]</icon>
+                                    <onclick/>
+                                    <visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.13.AlbumName))</visible>
+                                </item>
+                                <item>
+                                    <label>$INFO[Window(Visualisation).Property(ArtistSlideshow.14.AlbumName)]</label>
+                                    <icon fallback="BlackBack.png">$INFO[Window(Visualisation).Property(ArtistSlideshow.14.AlbumThumb)]</icon>
+                                    <onclick/>
+                                    <visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.14.AlbumName))</visible>
+                                </item>
+                                <item>
+                                    <label>$INFO[Window(Visualisation).Property(ArtistSlideshow.15.AlbumName)]</label>
+                                    <icon fallback="BlackBack.png">$INFO[Window(Visualisation).Property(ArtistSlideshow.15.AlbumThumb)]</icon>
+                                    <onclick/>
+                                    <visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.15.AlbumName))</visible>
+                                </item>
+                                <item>
+                                    <label>$INFO[Window(Visualisation).Property(ArtistSlideshow.16.AlbumName)]</label>
+                                    <icon fallback="BlackBack.png">$INFO[Window(Visualisation).Property(ArtistSlideshow.16.AlbumThumb)]</icon>
+                                    <onclick/>
+                                    <visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.16.AlbumName))</visible>
+                                </item>
+                                <item>
+                                    <label>$INFO[Window(Visualisation).Property(ArtistSlideshow.17.AlbumName)]</label>
+                                    <icon fallback="BlackBack.png">$INFO[Window(Visualisation).Property(ArtistSlideshow.17.AlbumThumb)]</icon>
+                                    <onclick/>
+                                    <visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.17.AlbumName))</visible>
+                                </item>
+                                <item>
+                                    <label>$INFO[Window(Visualisation).Property(ArtistSlideshow.18.AlbumName)]</label>
+                                    <icon fallback="BlackBack.png">$INFO[Window(Visualisation).Property(ArtistSlideshow.18.AlbumThumb)]</icon>
+                                    <onclick/>
+                                    <visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.18.AlbumName))</visible>
+                                </item>
+                                <item>
+                                    <label>$INFO[Window(Visualisation).Property(ArtistSlideshow.19.AlbumName)]</label>
+                                    <icon fallback="BlackBack.png">$INFO[Window(Visualisation).Property(ArtistSlideshow.19.AlbumThumb)]</icon>
+                                    <onclick/>
+                                    <visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.19.AlbumName))</visible>
+                                </item>
+                                <item>
+                                    <label>$INFO[Window(Visualisation).Property(ArtistSlideshow.20.AlbumName)]</label>
+                                    <icon fallback="BlackBack.png">$INFO[Window(Visualisation).Property(ArtistSlideshow.20.AlbumThumb)]</icon>
+                                    <onclick/>
+                                    <visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.20.AlbumName))</visible>
+                                </item>
+                            </content>
+                        </control>
+                    </control>
+                    <control type="group">
+                        <!-- Similar -->
+                        <width>930</width>
+                        <height>135</height>
+                        <include>openclosevisible</include>
+                        <visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.1.SimilarName))</visible>
+                        <visible>Skin.HasSetting(artistslideshow_artistinfos_similar)</visible>
+                        <control type="image">
+                            <left>0</left>
+                            <top>0</top>
+                            <width>930</width>
+                            <height>135</height>
+                            <texture border="6" diffuse="masks/mask_round.png">BlackBack.png</texture>
+                        </control>
+                        <control type="image">
+                            <left>0</left>
+                            <top>0</top>
+                            <width>930</width>
+                            <height>135</height>
+                            <colordiffuse>menudiffuse</colordiffuse>
+                            <texture border="6">masks/Default_round.png</texture>
+                        </control>
+                        <control type="fixedlist" id="1110">
+                            <left>8</left>
+                            <top>8</top>
+                            <width>930</width>
+                            <height>120</height>
+                            <onleft>1100</onleft>
+                            <onright>1100</onright>
+                            <onup/>
+                            <ondown/>
+                            <pagecontrol/>
+                            <scrolltime>0</scrolltime>
+                            <focusposition>0</focusposition>
+                            <movement>1</movement>
+                            <orientation>Horizontal</orientation>
+                            <autoscroll time="5000" delay="0" repeat="0">Integer.IsGreater(Container(1100).NumItems,4)</autoscroll>
+                            <itemlayout height="120" width="128"/>
+                            <focusedlayout height="120" width="930">
+                                <control type="image">
+                                    <left>0</left>
+                                    <width>120</width>
+                                    <height>120</height>
+                                    <aspectratio>scale</aspectratio>
+                                    <texture fallback="BlackBack.png">$INFO[ListItem.Icon]</texture>
+                                </control>
+                                <control type="label">
+                                    <description>Album Title</description>
+                                    <left>142</left>
+                                    <width>765</width>
+                                    <height>120</height>
+                                    <align>left</align>
+                                    <aligny>center</aligny>
+                                    <font>impacted26</font>
+                                    <scroll>true</scroll>
+                                    <textcolor>grey</textcolor>
+                                    <shadowcolor>grey3</shadowcolor>
+                                    <label>$INFO[ListItem.Label]</label>
+                                </control>
+                            </focusedlayout>
+                            <content>
+                                <item>
+                                    <label>$INFO[Window(Visualisation).Property(ArtistSlideshow.1.SimilarName)]</label>
+                                    <icon fallback="BlackBack.png">$INFO[Window(Visualisation).Property(ArtistSlideshow.1.SimilarThumb)]</icon>
+                                    <onclick/>
+                                    <visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.1.SimilarName))</visible>
+                                </item>
+                                <item>
+                                    <label>$INFO[Window(Visualisation).Property(ArtistSlideshow.2.SimilarName)]</label>
+                                    <icon fallback="BlackBack.png">$INFO[Window(Visualisation).Property(ArtistSlideshow.2.SimilarThumb)]</icon>
+                                    <onclick/>
+                                    <visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.2.SimilarName))</visible>
+                                </item>
+                                <item>
+                                    <label>$INFO[Window(Visualisation).Property(ArtistSlideshow.3.SimilarName)]</label>
+                                    <icon fallback="BlackBack.png">$INFO[Window(Visualisation).Property(ArtistSlideshow.3.SimilarThumb)]</icon>
+                                    <onclick/>
+                                    <visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.3.SimilarName))</visible>
+                                </item>
+                                <item>
+                                    <label>$INFO[Window(Visualisation).Property(ArtistSlideshow.4.SimilarName)]</label>
+                                    <icon fallback="BlackBack.png">$INFO[Window(Visualisation).Property(ArtistSlideshow.4.SimilarThumb)]</icon>
+                                    <onclick/>
+                                    <visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.4.SimilarName))</visible>
+                                </item>
+                                <item>
+                                    <label>$INFO[Window(Visualisation).Property(ArtistSlideshow.5.SimilarName)]</label>
+                                    <icon fallback="BlackBack.png">$INFO[Window(Visualisation).Property(ArtistSlideshow.5.SimilarThumb)]</icon>
+                                    <onclick/>
+                                    <visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.5.SimilarName))</visible>
+                                </item>
+                                <item>
+                                    <label>$INFO[Window(Visualisation).Property(ArtistSlideshow.6.SimilarName)]</label>
+                                    <icon fallback="BlackBack.png">$INFO[Window(Visualisation).Property(ArtistSlideshow.6.SimilarThumb)]</icon>
+                                    <onclick/>
+                                    <visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.6.SimilarName))</visible>
+                                </item>
+                                <item>
+                                    <label>$INFO[Window(Visualisation).Property(ArtistSlideshow.7.SimilarName)]</label>
+                                    <icon fallback="BlackBack.png">$INFO[Window(Visualisation).Property(ArtistSlideshow.7.SimilarThumb)]</icon>
+                                    <onclick/>
+                                    <visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.7.SimilarName))</visible>
+                                </item>
+                                <item>
+                                    <label>$INFO[Window(Visualisation).Property(ArtistSlideshow.8.SimilarName)]</label>
+                                    <icon fallback="BlackBack.png">$INFO[Window(Visualisation).Property(ArtistSlideshow.8.SimilarThumb)]</icon>
+                                    <onclick/>
+                                    <visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.8.SimilarName))</visible>
+                                </item>
+                                <item>
+                                    <label>$INFO[Window(Visualisation).Property(ArtistSlideshow.9.SimilarName)]</label>
+                                    <icon fallback="BlackBack.png">$INFO[Window(Visualisation).Property(ArtistSlideshow.9.SimilarThumb)]</icon>
+                                    <onclick/>
+                                    <visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.9.SimilarName))</visible>
+                                </item>
+                                <item>
+                                    <label>$INFO[Window(Visualisation).Property(ArtistSlideshow.10.SimilarName)]</label>
+                                    <icon fallback="BlackBack.png">$INFO[Window(Visualisation).Property(ArtistSlideshow.10.SimilarThumb)]</icon>
+                                    <onclick/>
+                                    <visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.10.SimilarName))</visible>
+                                </item>
+                                <item>
+                                    <label>$INFO[Window(Visualisation).Property(ArtistSlideshow.11.SimilarName)]</label>
+                                    <icon fallback="BlackBack.png">$INFO[Window(Visualisation).Property(ArtistSlideshow.11.SimilarThumb)]</icon>
+                                    <onclick/>
+                                    <visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.11.SimilarName))</visible>
+                                </item>
+                                <item>
+                                    <label>$INFO[Window(Visualisation).Property(ArtistSlideshow.12.SimilarName)]</label>
+                                    <icon fallback="BlackBack.png">$INFO[Window(Visualisation).Property(ArtistSlideshow.12.SimilarThumb)]</icon>
+                                    <onclick/>
+                                    <visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.12.SimilarName))</visible>
+                                </item>
+                                <item>
+                                    <label>$INFO[Window(Visualisation).Property(ArtistSlideshow.13.SimilarName)]</label>
+                                    <icon fallback="BlackBack.png">$INFO[Window(Visualisation).Property(ArtistSlideshow.13.SimilarThumb)]</icon>
+                                    <onclick/>
+                                    <visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.13.SimilarName))</visible>
+                                </item>
+                                <item>
+                                    <label>$INFO[Window(Visualisation).Property(ArtistSlideshow.14.SimilarName)]</label>
+                                    <icon fallback="BlackBack.png">$INFO[Window(Visualisation).Property(ArtistSlideshow.14.SimilarThumb)]</icon>
+                                    <onclick/>
+                                    <visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.14.SimilarName))</visible>
+                                </item>
+                                <item>
+                                    <label>$INFO[Window(Visualisation).Property(ArtistSlideshow.15.SimilarName)]</label>
+                                    <icon fallback="BlackBack.png">$INFO[Window(Visualisation).Property(ArtistSlideshow.15.SimilarThumb)]</icon>
+                                    <onclick/>
+                                    <visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.15.SimilarName))</visible>
+                                </item>
+                                <item>
+                                    <label>$INFO[Window(Visualisation).Property(ArtistSlideshow.16.SimilarName)]</label>
+                                    <icon fallback="BlackBack.png">$INFO[Window(Visualisation).Property(ArtistSlideshow.16.SimilarThumb)]</icon>
+                                    <onclick/>
+                                    <visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.16.SimilarName))</visible>
+                                </item>
+                                <item>
+                                    <label>$INFO[Window(Visualisation).Property(ArtistSlideshow.17.SimilarName)]</label>
+                                    <icon fallback="BlackBack.png">$INFO[Window(Visualisation).Property(ArtistSlideshow.17.SimilarThumb)]</icon>
+                                    <onclick/>
+                                    <visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.17.SimilarName))</visible>
+                                </item>
+                                <item>
+                                    <label>$INFO[Window(Visualisation).Property(ArtistSlideshow.18.SimilarName)]</label>
+                                    <icon fallback="BlackBack.png">$INFO[Window(Visualisation).Property(ArtistSlideshow.18.SimilarThumb)]</icon>
+                                    <onclick/>
+                                    <visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.18.SimilarName))</visible>
+                                </item>
+                                <item>
+                                    <label>$INFO[Window(Visualisation).Property(ArtistSlideshow.19.SimilarName)]</label>
+                                    <icon fallback="BlackBack.png">$INFO[Window(Visualisation).Property(ArtistSlideshow.19.SimilarThumb)]</icon>
+                                    <onclick/>
+                                    <visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.19.SimilarName))</visible>
+                                </item>
+                                <item>
+                                    <label>$INFO[Window(Visualisation).Property(ArtistSlideshow.20.SimilarName)]</label>
+                                    <icon fallback="BlackBack.png">$INFO[Window(Visualisation).Property(ArtistSlideshow.20.SimilarThumb)]</icon>
+                                    <onclick/>
+                                    <visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.20.SimilarName))</visible>
+                                </item>
+                            </content>
+                        </control>
+                    </control>
+                </control>
+            </control>
+            <control type="group">
+                <!-- Bio -->
+                <left>0</left>
+                <top>0</top>
+                <width>1890</width>
+                <height>330</height>
+                <include>openclosevisible</include>
+                <visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.ArtistBiography))</visible>
+                <visible>Skin.HasSetting(artistslideshow_artistinfos_bio)</visible>
+                <control type="image">
+                    <left>0</left>
+                    <top>0</top>
+                    <width>1890</width>
+                    <height>330</height>
+                    <texture border="6" diffuse="masks/mask_round.png">BlackBack.png</texture>
+                </control>
+                <control type="image">
+                    <description>Artist Discography background</description>
+                    <left>0</left>
+                    <top>0</top>
+                    <width>1890</width>
+                    <height>330</height>
+                    <colordiffuse>fanartdiffuse</colordiffuse>
+                    <texture border="6">masks/Default_round.png</texture>
+                </control>
+                <control type="image">
+                    <description>Artist Discography background</description>
+                    <left>15</left>
+                    <top>15</top>
+                    <width>435</width>
+                    <height>300</height>
+                    <aspectratio>scale</aspectratio>
+                    <texture fallback="BlackBack.png">$INFO[Player.Art(fanart)]</texture>
+                </control>
+                <control type="textbox">
+                    <description>Artist Biography from Artist Slideshow</description>
+                    <left>465</left>
+                    <top>15</top>
+                    <width>1395</width>
+                    <height>300</height>
+                    <align>left</align>
+                    <aligny>top</aligny>
+                    <font>font13</font>
+                    <autoscroll time="5000" delay="12000" repeat="5000"/>
+                    <label>$INFO[Window(Visualisation).Property(ArtistSlideshow.ArtistBiography)]</label>
+                </control>
+            </control>
+        </control>
+    </controls>
+</window>

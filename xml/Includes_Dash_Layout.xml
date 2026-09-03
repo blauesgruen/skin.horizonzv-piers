@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+	<include name="DashListLayout_smal">
+		<itemlayout height="105" width="180">
+			<include content="DashItemlayout">
+				<param name="Dash_Label2" value="$INFO[ListItem.Label]" />
+				<param name="Dash_Icon" value="$INFO[ListItem.Icon]" />
+				<param name="aspect" value="keep" />
+				<param name="id" value="$PARAM[id]" />
+			</include>
+		</itemlayout>
+		<focusedlayout height="105" width="180" condition="Control.HasFocus($PARAM[id])">
+			<include content="DashFocusedlayout">
+				<param name="Dash_Label1" value="$INFO[ListItem.TVShowTitle]" />
+				<param name="Dash_Label2" value="$INFO[ListItem.Label]" />
+				<param name="Dash_Label3" value="$INFO[ListItem.Genre,❖ ,]" />
+				<param name="Dash_Icon" value="$INFO[ListItem.Icon]" />
+				<param name="aspect" value="keep" />
+			</include>
+		</focusedlayout>
+		<focusedlayout height="105" width="180" condition="!Control.HasFocus($PARAM[id])">
+			<include content="DashItemlayout">
+				<param name="Dash_Label2" value="$INFO[ListItem.Label]" />
+				<param name="Dash_Icon" value="$INFO[ListItem.Icon]" />
+				<param name="aspect" value="keep" />
+				<param name="id" value="$PARAM[id]" />
+			</include>
+		</focusedlayout>
+	</include>
+	<include name="DashListLayout">
+		<itemlayout height="105" width="360">
+			<include content="DashItemlayout">
+				<param name="Dash_Label2" value="$INFO[ListItem.Label]" />
+				<param name="Dash_Icon" value="$INFO[ListItem.Icon]" />
+				<param name="aspect" value="scale" />
+				<param name="id" value="$PARAM[id]" />
+			</include>
+		</itemlayout>
+		<focusedlayout height="105" width="360" condition="Control.HasFocus($PARAM[id])">
+			<include content="DashFocusedlayout">
+				<param name="Dash_Label1" value="$INFO[ListItem.TVShowTitle]" />
+				<param name="Dash_Label2" value="$INFO[ListItem.Label]" />
+				<param name="Dash_Label3" value="$INFO[ListItem.Genre,❖ ,]" />
+				<param name="Dash_Icon" value="$INFO[ListItem.Icon]" />
+				<param name="aspect" value="scale" />
+			</include>
+		</focusedlayout>
+		<focusedlayout height="105" width="360" condition="!Control.HasFocus($PARAM[id])">
+			<include content="DashItemlayout">
+				<param name="Dash_Label2" value="$INFO[ListItem.Label]" />
+				<param name="Dash_Icon" value="$INFO[ListItem.Icon]" />
+				<param name="aspect" value="scale" />
+				<param name="id" value="$PARAM[id]" />
+			</include>
+		</focusedlayout>
+	</include>
+    <include name="DashItemlayout">
+		<definition>
+			<control type="group">
+				<left>5</left>
+				<right>5</right>
+				<control type="image">
+					<colordiffuse>grey</colordiffuse>
+					<include condition="Skin.HasSetting(roundcorner)" content="cornersetting_round"><param name="diffuse" value="masks/mask_banner_round.png"/><param name="border" value="4"/><param name="image" value="SetBanner.png"/></include>
+					<include condition="!Skin.HasSetting(roundcorner)" content="cornersetting_sharp"><param name="image" value="SetBanner.png"/></include>
+				</control>
+				<control type="image">
+					<left>5</left>
+					<right>5</right>
+					<top>5</top>
+					<bottom>5</bottom>
+					<aspectratio>$PARAM[aspect]</aspectratio>
+					<texture>$PARAM[Dash_Icon]</texture>
+				</control>
+				<control type="group">
+					<centertop>50%</centertop>
+					<height>36</height>
+					<control type="image">
+						<colordiffuse>grey3</colordiffuse>
+						<texture border="4">WhiteBack.png</texture>
+					</control>
+					<control type="label">
+						<left>5</left>
+						<right>5</right>
+						<height>100%</height>
+						<font>bebas24</font>
+						<align>center</align>
+						<aligny>center</aligny>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>$PARAM[Dash_Label2]</label>
+					</control>
+				</control>
+				<control type="image">
+					<colordiffuse>menudiffuse</colordiffuse>
+					<texture border="4">BlackBack$VAR[CornerSettingVar].png</texture>
+					<visible>Skin.HasSetting(WidgetDimDashrows)|Control.HasFocus($PARAM[id])</visible>
+				</control>
+				<control type="image">
+					<colordiffuse>menudiffuse</colordiffuse>
+					<texture border="4">masks/Default$VAR[CornerSettingVar].png</texture>
+				</control>
+			</control>
+		</definition>
+    </include>
+    <include name="DashFocusedlayout">
+		<control type="group">
+			<animation effect="zoom" center="auto" start="90" end="100" time="300" delay="100" tween="quadratic" reversible="false" condition="Skin.HasSetting(animation)">Focus</animation>
+			<left>5</left>
+			<right>5</right>
+			<control type="image">
+				<colordiffuse>menudiffuse</colordiffuse>
+				<texture>BlackBack$VAR[CornerSettingVar].png</texture>
+			</control>
+			<control type="image">
+				<left>5</left>
+				<right>5</right>
+				<top>5</top>
+				<bottom>5</bottom>
+				<aspectratio>$PARAM[aspect]</aspectratio>
+				<texture>$PARAM[Dash_Icon]</texture>
+			</control>
+			<control type="image">
+				<description>background</description>
+				<colordiffuse>description</colordiffuse>
+				<texture border="4">WhiteBack$VAR[CornerSettingVar].png</texture>
+			</control>
+			<control type="group">
+				<centertop>50%</centertop>
+				<height>36</height>
+				<control type="image">
+					<colordiffuse>grey3</colordiffuse>
+					<texture>White.png</texture>
+				</control>
+				<control type="label">
+					<left>5</left>
+					<right>5</right>
+					<height>100%</height>
+					<font>ubuntu-r12</font>
+					<align>center</align>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<label>[B][UPPERCASE]$PARAM[Dash_Label1][/UPPERCASE][/B]</label>
+					<visible>String.IsEmpty($PARAM[Dash_Label2])</visible>
+				</control>
+				<control type="label">
+					<left>5</left>
+					<right>5</right>
+					<height>100%</height>
+					<font>bebas24</font>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<label>$PARAM[Dash_Label2]</label>
+				</control>
+				<control type="label">
+					<top>36</top>
+					<left>5</left>
+					<right>5</right>
+					<height>100%</height>
+					<font>clock-20</font>
+					<align>center</align>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<label>$PARAM[Dash_Label3]</label>
+				</control>
+			</control>
+			<control type="image">
+				<description>background</description>
+				<colordiffuse>menudiffuse</colordiffuse>
+				<texture border="4">buttons/ButtonNF$VAR[CornerSettingVar].png</texture>
+			</control>
+		</control>
+	</include>
+    <include name="DashboardLayout_Row1">
+		<include>openclosemedium</include>
+		<visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),dashboard)</visible>
+        <viewtype label="535">panel</viewtype>
+        <pagecontrol/>
+        <scrolltime>200</scrolltime>
+        <orientation>horizontal</orientation>
+        <itemlayout height="180" width="180">
+			<include content="DashboardAddonIconLayout">
+				<param name="icon">BlackBack$VAR[CornerSettingVar].png</param>
+				<param name="visible">true</param>
+			</include>
+			<include content="DashboardAddonIconLayout">
+				<param name="icon">$INFO[ListItem.Icon]</param>
+				<param name="left_top">10</param>
+				<param name="right_bottom">10</param>
+				<param name="visible">true</param>
+			</include>
+			<include content="DashboardAddonIconLayout">
+				<param name="icon">BlackBack$VAR[CornerSettingVar].png</param>
+				<param name="visible">Skin.HasSetting(WidgetDimDashrows)|Control.HasFocus(8009)</param>
+			</include>
+			<include content="DashboardAddonIconLayout">
+				<param name="icon">masks/Default$VAR[CornerSettingVar].png</param>
+				<param name="visible">true</param>
+				<param name="diffuse">menudiffuse</param>
+				<param name="aspectratio">stretch</param>
+				<param name="border">20</param>
+			</include>
+        </itemlayout>
+        <focusedlayout height="180" width="180">
+            <control type="group">
+				<animation effect="zoom" center="auto" start="90" end="100" time="300" delay="100" tween="quadratic" reversible="false" condition="Skin.HasSetting(animation)">Focus</animation>
+				<include content="DashboardAddonIconLayout">
+					<param name="icon">BlackBack$VAR[CornerSettingVar].png</param>
+					<param name="border">4</param>
+					<param name="visible">true</param>
+				</include>
+				<include content="DashboardAddonIconLayout">
+					<param name="icon">WhiteBack$VAR[CornerSettingVar].png</param>
+					<param name="diffuse">description</param>
+					<param name="border">4</param>
+					<param name="visible">Control.HasFocus(8009)</param>
+				</include>
+				<include content="DashboardAddonIconLayout">
+					<param name="icon">$INFO[ListItem.Icon]</param>
+					<param name="left_top">10</param>
+					<param name="right_bottom">10</param>
+					<param name="visible">true</param>
+				</include>
+				<include content="DashboardAddonIconLayout">
+					<param name="icon">BlackBack$VAR[CornerSettingVar].png</param>
+					<param name="border">4</param>
+					<param name="visible">Skin.HasSetting(WidgetDimDashrows)+!Control.HasFocus(8009)</param>
+				</include>
+				<include content="DashboardAddonIconLayout">
+					<param name="icon">buttons/ButtonNF$VAR[CornerSettingVar].png</param>
+					<param name="diffuse">menudiffuse</param>
+					<param name="aspectratio">stretch</param>
+					<param name="border">15</param>
+					<param name="visible">Control.HasFocus(8009)</param>
+				</include>
+				<include content="DashboardAddonIconLayout">
+					<param name="icon">masks/Default$VAR[CornerSettingVar].png</param>
+					<param name="diffuse">menudiffuse</param>
+					<param name="aspectratio">stretch</param>
+					<param name="border">15</param>
+					<param name="visible">!Control.HasFocus(8009)</param>
+				</include>
+            </control>
+        </focusedlayout>
+    </include>
+    <include name="DashboardLayout_Row1_Settings"> <!-- need for custom window 1200 -->
+        <itemlayout height="180" width="180">
+			<include content="DashboardAddonIconLayout">
+				<param name="icon">BlackBack.png</param>
+				<param name="visible">true</param>
+			</include>
+			<include content="DashboardAddonIconLayout">
+				<param name="icon">$INFO[ListItem.Icon]</param>
+				<param name="visible">true</param>
+			</include>
+			<include content="DashboardAddonIconLayout">
+				<param name="icon">BlackBack.png</param>
+				<param name="visible">Control.HasFocus(8006)</param>
+			</include>
+			<control type="group">
+				<centertop>50%</centertop>
+				<height>60</height>
+				<control type="label">
+					<left>10</left>
+					<right>10</right>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>Home</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<info>ListItem.CurrentItem</info>
+				</control>
+			</control>
+			<include content="DashboardAddonIconLayout">
+				<param name="icon">masks/Default.png</param>
+				<param name="visible">true</param>
+				<param name="diffuse">menudiffuse</param>
+				<param name="aspectratio">stretch</param>
+			</include>
+		</itemlayout>
+        <focusedlayout height="180" width="180">
+			<include content="DashboardAddonIconLayout">
+				<param name="icon">BlackBack.png</param>
+				<param name="visible">true</param>
+			</include>
+			<include content="DashboardAddonIconLayout">
+				<param name="icon">WhiteBack.png</param>
+				<param name="visible">true</param>
+				<param name="diffuse">description</param>
+			</include>
+			<include content="DashboardAddonIconLayout">
+				<param name="icon">$INFO[ListItem.Icon]</param>
+				<param name="visible">true</param>
+			</include>
+			<include content="DashboardAddonIconLayout">
+				<param name="icon">buttons/ButtonNF.png</param>
+				<param name="diffuse">menudiffuse</param>
+				<param name="aspectratio">stretch</param>
+				<param name="border">4</param>
+				<param name="visible">Control.HasFocus(8006)</param>
+			</include>
+			<include content="DashboardAddonIconLayout">
+				<param name="icon">masks/Default.png</param>
+				<param name="diffuse">menudiffuse</param>
+				<param name="aspectratio">stretch</param>
+				<param name="border">4</param>
+				<param name="visible">!Control.HasFocus(8006)</param>
+			</include>
+			<control type="group">
+				<centertop>50%</centertop>
+				<height>60</height>
+				<control type="label">
+					<left>10</left>
+					<right>10</right>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>Home</font>
+					<textcolor>red</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<info>ListItem.CurrentItem</info>
+				</control>
+			</control>
+        </focusedlayout>
+        <include>DashboardContent</include>
+    </include>
+    <include name="DashboardAddonIconLayout">
+		<param name="left_top">5</param>
+		<param name="right_bottom">5</param>
+		<param name="aspectratio">scale</param>
+		<param name="border">0</param>
+		<definition>
+			<control type="image">
+				<description>background</description>
+				<left>$PARAM[left_top]</left>
+				<top>$PARAM[left_top]</top>
+				<right>$PARAM[right_bottom]</right>
+				<bottom>$PARAM[right_bottom]</bottom>
+				<aspectratio>$PARAM[aspectratio]</aspectratio>
+				<texture border="$PARAM[border]">$PARAM[icon]</texture>
+				<colordiffuse>$PARAM[diffuse]</colordiffuse>
+				<visible>$PARAM[visible]</visible>
+			</control>
+		</definition>
+	</include>
+</includes>

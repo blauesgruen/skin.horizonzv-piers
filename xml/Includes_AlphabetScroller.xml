@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <!-- Variablen für die 11 sichtbaren Positionen (-5 bis +5 relativ zum aktuellen Buchstaben) -->
+    <!-- Alphabet: #=0, 0-9=1-10, A-Z=11-36 -->
+    
+    <!-- Position -5 (5 vor dem aktuellen) -->
+    <variable name="AlphabetPos_Minus5">
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,#)">V</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,0)">W</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,1)">X</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,2)">Y</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,3)">Z</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,4)">#</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,5)">0</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,6)">1</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,7)">2</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,8)">3</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,9)">4</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,A)">5</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,B)">6</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,C)">7</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,D)">8</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,E)">9</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,F)">A</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,G)">B</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,H)">C</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,I)">D</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,J)">E</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,K)">F</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,L)">G</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,M)">H</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,N)">I</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,O)">J</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,P)">K</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,Q)">L</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,R)">M</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,S)">N</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,T)">O</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,U)">P</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,V)">Q</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,W)">R</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,X)">S</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,Y)">T</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,Z)">U</value>
+        <value>V</value>
+    </variable>
+    
+    <!-- Position -4 -->
+    <variable name="AlphabetPos_Minus4">
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,#)">W</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,0)">X</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,1)">Y</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,2)">Z</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,3)">#</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,4)">0</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,5)">1</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,6)">2</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,7)">3</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,8)">4</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,9)">5</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,A)">6</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,B)">7</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,C)">8</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,D)">9</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,E)">A</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,F)">B</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,G)">C</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,H)">D</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,I)">E</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,J)">F</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,K)">G</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,L)">H</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,M)">I</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,N)">J</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,O)">K</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,P)">L</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,Q)">M</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,R)">N</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,S)">O</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,T)">P</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,U)">Q</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,V)">R</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,W)">S</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,X)">T</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,Y)">U</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,Z)">V</value>
+        <value>W</value>
+    </variable>
+    
+    <!-- Position -3 -->
+    <variable name="AlphabetPos_Minus3">
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,#)">X</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,0)">Y</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,1)">Z</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,2)">#</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,3)">0</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,4)">1</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,5)">2</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,6)">3</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,7)">4</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,8)">5</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,9)">6</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,A)">7</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,B)">8</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,C)">9</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,D)">A</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,E)">B</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,F)">C</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,G)">D</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,H)">E</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,I)">F</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,J)">G</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,K)">H</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,L)">I</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,M)">J</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,N)">K</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,O)">L</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,P)">M</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,Q)">N</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,R)">O</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,S)">P</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,T)">Q</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,U)">R</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,V)">S</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,W)">T</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,X)">U</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,Y)">V</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,Z)">W</value>
+        <value>X</value>
+    </variable>
+    
+    <!-- Position -2 -->
+    <variable name="AlphabetPos_Minus2">
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,#)">Y</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,0)">Z</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,1)">#</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,2)">0</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,3)">1</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,4)">2</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,5)">3</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,6)">4</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,7)">5</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,8)">6</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,9)">7</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,A)">8</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,B)">9</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,C)">A</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,D)">B</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,E)">C</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,F)">D</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,G)">E</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,H)">F</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,I)">G</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,J)">H</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,K)">I</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,L)">J</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,M)">K</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,N)">L</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,O)">M</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,P)">N</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,Q)">O</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,R)">P</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,S)">Q</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,T)">R</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,U)">S</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,V)">T</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,W)">U</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,X)">V</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,Y)">W</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,Z)">X</value>
+        <value>Y</value>
+    </variable>
+    
+    <!-- Position -1 -->
+    <variable name="AlphabetPos_Minus1">
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,#)">Z</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,0)">#</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,1)">0</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,2)">1</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,3)">2</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,4)">3</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,5)">4</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,6)">5</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,7)">6</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,8)">7</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,9)">8</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,A)">9</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,B)">A</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,C)">B</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,D)">C</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,E)">D</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,F)">E</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,G)">F</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,H)">G</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,I)">H</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,J)">I</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,K)">J</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,L)">K</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,M)">L</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,N)">M</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,O)">N</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,P)">O</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,Q)">P</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,R)">Q</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,S)">R</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,T)">S</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,U)">T</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,V)">U</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,W)">V</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,X)">W</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,Y)">X</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,Z)">Y</value>
+        <value>Z</value>
+    </variable>
+    
+    <!-- Position 0 (aktueller Buchstabe) -->
+    <variable name="AlphabetPos_Current">
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,#)">#</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,0)">0</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,1)">1</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,2)">2</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,3)">3</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,4)">4</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,5)">5</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,6)">6</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,7)">7</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,8)">8</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,9)">9</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,A)">A</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,B)">B</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,C)">C</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,D)">D</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,E)">E</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,F)">F</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,G)">G</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,H)">H</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,I)">I</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,J)">J</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,K)">K</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,L)">L</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,M)">M</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,N)">N</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,O)">O</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,P)">P</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,Q)">Q</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,R)">R</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,S)">S</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,T)">T</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,U)">U</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,V)">V</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,W)">W</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,X)">X</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,Y)">Y</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,Z)">Z</value>
+        <value>#</value>
+    </variable>
+    
+    <!-- Position +1 -->
+    <variable name="AlphabetPos_Plus1">
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,#)">0</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,0)">1</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,1)">2</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,2)">3</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,3)">4</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,4)">5</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,5)">6</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,6)">7</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,7)">8</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,8)">9</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,9)">A</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,A)">B</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,B)">C</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,C)">D</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,D)">E</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,E)">F</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,F)">G</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,G)">H</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,H)">I</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,I)">J</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,J)">K</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,K)">L</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,L)">M</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,M)">N</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,N)">O</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,O)">P</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,P)">Q</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,Q)">R</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,R)">S</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,S)">T</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,T)">U</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,U)">V</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,V)">W</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,W)">X</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,X)">Y</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,Y)">Z</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,Z)">#</value>
+        <value>0</value>
+    </variable>
+    
+    <!-- Position +2 -->
+    <variable name="AlphabetPos_Plus2">
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,#)">1</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,0)">2</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,1)">3</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,2)">4</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,3)">5</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,4)">6</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,5)">7</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,6)">8</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,7)">9</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,8)">A</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,9)">B</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,A)">C</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,B)">D</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,C)">E</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,D)">F</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,E)">G</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,F)">H</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,G)">I</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,H)">J</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,I)">K</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,J)">L</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,K)">M</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,L)">N</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,M)">O</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,N)">P</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,O)">Q</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,P)">R</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,Q)">S</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,R)">T</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,S)">U</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,T)">V</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,U)">W</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,V)">X</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,W)">Y</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,X)">Z</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,Y)">#</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,Z)">0</value>
+        <value>1</value>
+    </variable>
+    
+    <!-- Position +3 -->
+    <variable name="AlphabetPos_Plus3">
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,#)">2</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,0)">3</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,1)">4</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,2)">5</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,3)">6</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,4)">7</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,5)">8</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,6)">9</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,7)">A</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,8)">B</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,9)">C</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,A)">D</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,B)">E</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,C)">F</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,D)">G</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,E)">H</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,F)">I</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,G)">J</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,H)">K</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,I)">L</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,J)">M</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,K)">N</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,L)">O</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,M)">P</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,N)">Q</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,O)">R</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,P)">S</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,Q)">T</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,R)">U</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,S)">V</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,T)">W</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,U)">X</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,V)">Y</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,W)">Z</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,X)">#</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,Y)">0</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,Z)">1</value>
+        <value>2</value>
+    </variable>
+    
+    <!-- Position +4 -->
+    <variable name="AlphabetPos_Plus4">
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,#)">3</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,0)">4</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,1)">5</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,2)">6</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,3)">7</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,4)">8</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,5)">9</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,6)">A</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,7)">B</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,8)">C</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,9)">D</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,A)">E</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,B)">F</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,C)">G</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,D)">H</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,E)">I</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,F)">J</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,G)">K</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,H)">L</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,I)">M</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,J)">N</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,K)">O</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,L)">P</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,M)">Q</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,N)">R</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,O)">S</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,P)">T</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,Q)">U</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,R)">V</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,S)">W</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,T)">X</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,U)">Y</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,V)">Z</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,W)">#</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,X)">0</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,Y)">1</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,Z)">2</value>
+        <value>3</value>
+    </variable>
+    
+    <!-- Position +5 -->
+    <variable name="AlphabetPos_Plus5">
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,#)">4</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,0)">5</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,1)">6</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,2)">7</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,3)">8</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,4)">9</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,5)">A</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,6)">B</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,7)">C</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,8)">D</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,9)">E</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,A)">F</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,B)">G</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,C)">H</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,D)">I</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,E)">J</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,F)">K</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,G)">L</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,H)">M</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,I)">N</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,J)">O</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,K)">P</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,L)">Q</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,M)">R</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,N)">S</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,O)">T</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,P)">U</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,Q)">V</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,R)">W</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,S)">X</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,T)">Y</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,U)">Z</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,V)">#</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,W)">0</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,X)">1</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,Y)">2</value>
+        <value condition="String.StartsWith(Container.ListItem.SortLetter,Z)">3</value>
+        <value>4</value>
+    </variable>
+
+    <!-- Alphabet Scroller Include -->
+    <include name="AlphabetScroller">
+        <param name="height">700</param> <!-- 11*spacing + 10*itemgap -->
+        <param name="spacing">50</param>
+        <param name="itemgap">15</param>
+        <param name="fontsize">ubuntu-r16</param>
+        <param name="fontsize_active">ubuntu-r21b</param>
+        <param name="visible">Container.Scrolling</param>
+        <definition>
+            <control type="group">
+                <centertop>50%</centertop>
+                <height>$PARAM[height]</height>
+                <visible>String.IsEqual(Container.SortMethod,$LOCALIZE[369]) | String.IsEqual(Container.SortMethod,$LOCALIZE[556]) | String.IsEqual(Container.SortMethod,$LOCALIZE[551])</visible>
+                <!-- Fokus-Highlight Hintergrund (immer in der Mitte bei Position 5) -->
+                <!-- <control type="group">
+                    <centertop>50%</centertop>
+                    <height>$PARAM[spacing]</height>
+                    <control type="image">
+                        <texture colordiffuse="44FFFFFF">White.png</texture>
+                    </control>
+                </control> -->
+                <control type="grouplist">
+                    <itemgap>$PARAM[itemgap]</itemgap>
+                    <visible>$PARAM[visible]</visible>
+                    <include>openclosevisible</include>
+                    <!-- 11 feste Label-Positionen -->
+                    <!-- Position 0 (-5) -->
+                    <control type="label">
+                        <height>$PARAM[spacing]</height>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <font>$PARAM[fontsize]</font>
+                        <textcolor>33FFFFFF</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <label>$VAR[AlphabetPos_Minus5]</label>
+                    </control>
+                    <!-- Position 1 (-4) -->
+                    <control type="label">
+                        <height>$PARAM[spacing]</height>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <font>$PARAM[fontsize]</font>
+                        <textcolor>4DFFFFFF</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <label>$VAR[AlphabetPos_Minus4]</label>
+                    </control>
+                    <!-- Position 2 (-3) -->
+                    <control type="label">
+                        <height>$PARAM[spacing]</height>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <font>$PARAM[fontsize]</font>
+                        <textcolor>66FFFFFF</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <label>$VAR[AlphabetPos_Minus3]</label>
+                    </control>
+                    <!-- Position 3 (-2) -->
+                    <control type="label">
+                        <height>$PARAM[spacing]</height>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <font>$PARAM[fontsize]</font>
+                        <textcolor>99FFFFFF</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <label>$VAR[AlphabetPos_Minus2]</label>
+                    </control>
+                    <!-- Position 4 (-1) -->
+                    <control type="label">
+                        <height>$PARAM[spacing]</height>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <font>$PARAM[fontsize]</font>
+                        <textcolor>CCFFFFFF</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <label>$VAR[AlphabetPos_Minus1]</label>
+                    </control>
+                    <!-- Position 5 (aktuell - Mitte) -->
+                    <control type="label">
+                        <height>$PARAM[spacing]</height>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <font>$PARAM[fontsize_active]</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <label>$VAR[AlphabetPos_Current]</label>
+                    </control>
+                    <!-- Position 6 (+1) -->
+                    <control type="label">
+                        <height>$PARAM[spacing]</height>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <font>$PARAM[fontsize]</font>
+                        <textcolor>CCFFFFFF</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <label>$VAR[AlphabetPos_Plus1]</label>
+                    </control>
+                    <!-- Position 7 (+2) -->
+                    <control type="label">
+                        <height>$PARAM[spacing]</height>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <font>$PARAM[fontsize]</font>
+                        <textcolor>99FFFFFF</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <label>$VAR[AlphabetPos_Plus2]</label>
+                    </control>
+                    <!-- Position 8 (+3) -->
+                    <control type="label">
+                        <height>$PARAM[spacing]</height>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <font>$PARAM[fontsize]</font>
+                        <textcolor>66FFFFFF</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <label>$VAR[AlphabetPos_Plus3]</label>
+                    </control>
+                    <!-- Position 9 (+4) -->
+                    <control type="label">
+                        <height>$PARAM[spacing]</height>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <font>$PARAM[fontsize]</font>
+                        <textcolor>4DFFFFFF</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <label>$VAR[AlphabetPos_Plus4]</label>
+                    </control>
+                    <!-- Position 10 (+5) -->
+                    <control type="label">
+                        <height>$PARAM[spacing]</height>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <font>$PARAM[fontsize]</font>
+                        <textcolor>33FFFFFF</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <label>$VAR[AlphabetPos_Plus5]</label>
+                    </control>
+                </control>
+            </control>
+        </definition>
+    </include>
+    <include name="AlphabetScrollerContainer">
+        <param name="right" />
+        <param name="width">40</param>
+        <param name="top">0</param>
+        <definition>
+            <control type="group">
+                <right>$PARAM[right]</right>
+                <top>$PARAM[top]</top>
+                <width>$PARAM[width]</width>
+                <include>openclosevisible</include>
+                <visible>!Skin.HasSetting(alphabetscroller_off)+!Container.Content(episodes)</visible>
+                <include content="AlphabetScroller">
+                    <param name="left" value="0" />
+                    <param name="top" value="0" />
+                    <param name="visible" value="true" />
+                </include>
+            </control>
+        </definition>
+    </include>
+</includes>

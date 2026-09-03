@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="1600">
+    <zorder>2</zorder>
+    <visible>!Window.IsVisible(startup)</visible>
+    <controls>
+        <!-- Fake Videowindow for flowing presentation -->
+        <!-- <control type="group">
+            <visible>![Window.IsVisible(MyPVRChannels.xml)|Window.IsVisible(MyPVRGuide.xml)|Window.IsVisible(MyPVRRecordings.xml)|Window.IsVisible(MyPVRTimers.xml)|Window.IsVisible(MyPVRSearch.xml)]</visible>
+            <visible>!Window.IsVisible(Home)+!Window.IsVisible(fullscreenvideo)+!Window.IsVisible(movieinformation)</visible>
+            <control type="videowindow">
+                <left>0</left>
+                <top>0</top>
+                <width>1</width>
+                <height>1</height>
+            </control>
+            <control type="image">
+                <left>0</left>
+                <top>0</top>
+                <width>1</width>
+                <height>1</height>
+                <texture>Black.png</texture>
+            </control>
+        </control> -->
+		<control type="group"> <!-- Fullscreen Logo -->
+            <visible>!VideoPlayer.Content(livetv)+!Window.IsVisible(shutdownmenu)+!Window.IsVisible(fullscreeninfo)</visible>
+			<visible>![Window.IsActive(DialogSubtitles.xml)|Window.IsActive(DialogSettings.xml)]</visible>
+            <height>900</height>
+            <bottom>200</bottom>
+            <control type="image" id="5000">
+                <description>Clearart Image TV Shows</description>
+                <animation type="Visible" reversible="false">
+                    <effect type="fade" start="0" end="100" time="800" delay="1500" />
+                    <effect type="fade" start="100" end="0" time="400" delay="11000" />
+                </animation>
+                <left>30</left>
+                <top>836</top>
+                <height>230</height>
+                <width>390</width>
+                <aspectratio align="center" aligny="bottom">keep</aspectratio>
+                <texture border="4">$VAR[extraart_player_rule]</texture>
+                <visible>[VideoPlayer.Content(episodes)|VideoPlayer.Content(movies)]+Skin.HasSetting(EnableExtendedArt)</visible>
+                <visible>Window.IsVisible(fullscreenvideo)+!Window.IsVisible(SeekBar)</visible>
+            </control>
+            <control type="image">
+                <description>Clearart Image TV Shows</description>
+                <animation type="Visible" reversible="false">
+                    <effect type="zoom" start="50" end="150" center="auto" time="600" delay="1000" />
+                    <effect type="zoom" start="150" end="0" center="auto" time="400" delay="1600" />
+                    <effect type="fade" start="100" end="0" time="400" delay="2000" />
+                </animation>
+                <left>-225</left>
+                <top>495</top>
+                <height>900</height>
+                <width>900</width>
+                <colordiffuse>menudiffuse</colordiffuse>
+                <texture border="4">effects/supernova.png</texture>
+                <visible>[VideoPlayer.Content(episodes)|VideoPlayer.Content(movies)]+Skin.HasSetting(EnableExtendedArt)</visible>
+                <visible>Window.IsVisible(fullscreenvideo)+!Window.IsVisible(SeekBar)+!String.IsEmpty(Control.GetLabel(5000))</visible>
+            </control>
+        </control>
+    </controls>
+</window>

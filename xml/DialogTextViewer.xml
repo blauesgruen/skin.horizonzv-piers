@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="147">
+    <defaultcontrol>61</defaultcontrol>
+    <include>openclose</include>
+    <controls>
+        <include>DialogBackgroundSimple</include>
+        <control type="image">
+            <description>Fanart Image</description>
+            <include>Dimensions_Fullscreen</include>
+            <colordiffuse>grey1</colordiffuse>
+            <texture>$INFO[ListItem.Art(fanart)]</texture>
+            <visible>Skin.HasSetting(fanart)</visible>
+            <include>openclosemediumnodelay</include>
+        </control>
+        <control type="group">
+            <include>openclosebox</include>
+            <control type="group">
+                <include content="DialogBackgroundCommons">
+                    <param name="width" value="90%" />
+                    <param name="height" value="80%" />
+                    <param name="header_id" value="1" />
+                    <param name="header_label" value="$INFO[Window(home).Property(TextViewer_Header)]" />
+                </include>
+                <control type="group">
+                    <left>SpacePadding</left>
+                    <right>SpacePadding</right>
+                    <top>SpacePaddingXL</top>
+                    <bottom>SpacePaddingXL</bottom>
+                    <control type="image">
+                        <aspectratio>scale</aspectratio>
+                        <colordiffuse>grey2</colordiffuse>
+                        <texture>$INFO[ListItem.Art(fanart)]</texture>
+                        <visible>!String.IsEmpty(ListItem.Art(fanart))</visible>
+                    </control>
+                    <control type="image">
+                        <top>80r</top>
+                        <height>100</height>
+                        <aspectratio aligny="bottom">keep</aspectratio>
+                        <colordiffuse>grey</colordiffuse>
+                        <texture>$VAR[BannerVAR]</texture>
+                        <visible>!String.IsEmpty(ListItem.Art(banner))</visible>
+                    </control>
+                    <control type="textbox">
+                        <description>textarea</description>
+                        <left>SpacePadding</left>
+                        <right>SpacePadding</right>
+                        <bottom>130</bottom>
+                        <align>justify</align>
+                        <aligny>center</aligny>
+                        <pagecontrol>61</pagecontrol>
+                        <include condition="!Skin.HasSetting(BigPlotText)">PlotText16Var</include>
+                        <include condition="Skin.HasSetting(BigPlotText)">PlotTextBigVar</include>
+                        <label>$INFO[Window(home).Property(TextViewer_Bottom),[COLOR=description],[/COLOR][CR][CR]]$INFO[Window(home).Property(TextViewer_Text)]</label>
+                    </control>
+                    <control type="scrollbar" id="61">
+                        <left>100%</left>
+                        <onleft>Close</onleft>
+                        <onright>Close</onright>
+                        <ondown>61</ondown>
+                        <onup>61</onup>
+                        <showonepage>false</showonepage>
+                    </control>
+                </control>
+                <control type="label">
+                    <top>60r</top>
+                    <width>100%</width>
+                    <height>60</height>
+                    <align>center</align>
+                    <aligny>bottom</aligny>
+                    <font>impacted24</font>
+                    <label>$INFO[ListItem.Label]</label>
+                </control>
+            </control>
+        </control>
+    </controls>
+</window>

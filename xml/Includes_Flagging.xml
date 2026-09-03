@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <include name="FlagDimensionButton">
+        <param name="font">clock-18b</param>
+        <definition>
+            <width>auto</width>
+            <height>26</height>
+            <textcolor>white</textcolor>
+            <shadowcolor>black</shadowcolor>
+            <focusedcolor>white</focusedcolor>
+            <font>$PARAM[font]</font>
+            <onclick/>
+            <texturefocus border="4" colordiffuse="menudiffuse">flagging/blank.png</texturefocus>
+            <texturenofocus border="4" colordiffuse="menudiffuse">flagging/blank.png</texturenofocus>
+            <!-- <texturefocus border="4" colordiffuse="menudiffuse">buttons/KeyboardEditArea.png</texturefocus>
+            <texturenofocus border="4" colordiffuse="menudiffuse">buttons/KeyboardEditArea.png</texturenofocus> -->
+        </definition>
+    </include>
+    <include name="FlagDimension">
+        <width>98</width>
+        <height>40</height>
+        <aspectratio>stretch</aspectratio>
+    </include>
+    <include name="FlagDimension2">
+        <!-- Landflaggs -->
+        <width>48</width>
+        <height>40</height>
+		<bodertexture border="10">buttons/ButtonNF.png</bodertexture>
+		<bordersize>0</bordersize>
+    </include>
+    <variable name="FlagDimension_Label_Color">
+        <value condition="!Window.IsActive(movieinformation)">description</value>
+        <value condition="Window.IsActive(movieinformation)">grey3</value>
+    </variable>
+    <include name="FlagVideo_Player">
+        <control type="button" id="1">
+            <description>Audiolanguage Icon</description>
+			<include>FlagDimensionButton</include>
+            <label>$INFO[VideoPlayer.AudioLanguage]</label>
+            <visible>!String.IsEmpty(VideoPlayer.AudioLanguage)</visible>
+        </control>
+        <control type="button" id="1">
+            <description>SubtitlesLanguage Icon</description>
+			<include>FlagDimensionButton</include>
+            <label>abc: $INFO[VideoPlayer.SubtitlesLanguage]</label>
+            <visible>!String.IsEmpty(VideoPlayer.SubtitlesLanguage)</visible>
+        </control>
+        <control type="button" id="1">
+            <description>Video rez Image</description>
+			<include>FlagDimensionButton</include>
+            <label>$VAR[VideoResolutionTypeVar]</label>
+            <visible>!String.IsEmpty(VideoPlayer.VideoResolution)</visible>
+        </control>
+        <control type="button" id="1">
+            <description>Audio Channel Image</description>
+			<include>FlagDimensionButton</include>
+            <label>$VAR[AudioCodecVar,, ]$VAR[AudioChannelsVar]</label>
+            <visible>!String.IsEmpty(VideoPlayer.AudioChannels)</visible>
+        </control>
+        <control type="button" id="1">
+            <description>Video Aspect Image</description>
+			<include>FlagDimensionButton</include>
+            <label>$INFO[VideoPlayer.VideoAspect,,:1]</label>
+            <visible>!String.IsEmpty(VideoPlayer.VideoAspect)</visible>
+        </control>
+        <control type="button" id="1">
+            <description>Video Aspect Image</description>
+			<include>FlagDimensionButton</include>
+            <label>$VAR[VideoCodecVar]</label>
+            <visible>!String.IsEmpty(VideoPlayer.VideoCodec)</visible>
+        </control>
+        <control type="button" id="1">
+            <description>Video Aspect Image</description>
+			<include>FlagDimensionButton</include>
+            <label>3D</label>
+            <visible>VideoPlayer.IsStereoscopic</visible>
+        </control>
+        <control type="button" id="1">
+            <description>Video Aspect Image</description>
+			<include>FlagDimensionButton</include>
+            <label>$INFO[VideoPlayer.mpaa]</label>
+            <visible>!String.IsEmpty(VideoPlayer.mpaa)</visible>
+        </control>
+    </include>
+    <include name="FlagVideo_PlayerStudio">
+        <control type="button" id="1">
+            <description>Video Aspect Image</description>
+			<include>FlagDimensionButton</include>
+            <label>$INFO[VideoPlayer.Studio]</label>
+            <visible>!String.IsEmpty(VideoPlayer.Studio)</visible>
+        </control>
+    </include>
+    <include name="FlagVideo">
+        <control type="image">
+            <description>AudioLanguage Icon</description>
+            <width>42</width>
+            <height>26</height>
+            <colordiffuse>white</colordiffuse>
+            <texture>flagging/videostream1.png</texture>
+            <visible>!String.IsEmpty(ListItem.VideoResolution)</visible>
+            <!-- <visible>!String.IsEmpty(ListItem.Property(AudioLanguage.1))+!String.IsEmpty(ListItem.Property(AudioLanguage.2))</visible> -->
+        </control>
+        <control type="button">
+            <description>Video Resolution</description>
+            <include>FlagDimensionButton</include>
+            <label>$VAR[VideoResolutionTypeVar]</label>
+            <visible>!String.IsEmpty(ListItem.VideoResolution)</visible>
+        </control>
+        <control type="button">
+            <description>Video Codec</description>
+            <include>FlagDimensionButton</include>
+            <label>$VAR[VideoCodecVar]</label>
+            <visible>!String.IsEmpty(ListItem.VideoCodec)</visible>
+        </control>
+        <control type="button">
+            <description>Video Aspect</description>
+            <include>FlagDimensionButton</include>
+            <label>$INFO[ListItem.VideoAspect,,:1]</label>
+            <visible>!String.IsEmpty(ListItem.VideoAspect)</visible>
+        </control>
+        <control type="button">
+            <description>3D</description>
+            <include>FlagDimensionButton</include>
+            <label>3D</label>
+            <visible>ListItem.IsStereoscopic</visible>
+        </control>
+        <control type="button">
+            <description>Video mpaa</description>
+            <width>auto</width>
+            <include>FlagDimensionButton</include>
+            <label>$INFO[ListItem.mpaa]</label>
+            <visible>!String.IsEmpty(ListItem.mpaa)</visible>
+        </control>
+        <control type="button">
+            <description>SET</description>
+            <include>FlagDimensionButton</include>
+            <label>20457</label>
+            <visible>ListItem.IsCollection</visible>
+        </control>
+    </include>
+    <include name="FlagVideoAudioStream1">
+        <control type="image">
+            <description>AudioLanguage Icon</description>
+            <width>42</width>
+            <height>26</height>
+            <colordiffuse>white</colordiffuse>
+            <texture>flagging/audiostream1.png</texture>
+            <visible>!String.IsEmpty(ListItem.Property(AudioLanguage.1))</visible>
+            <!-- <visible>!String.IsEmpty(ListItem.Property(AudioLanguage.1))+!String.IsEmpty(ListItem.Property(AudioLanguage.2))</visible> -->
+        </control>
+        <control type="button">
+            <description>Video AudioLanguage 1</description>
+			<include>FlagDimensionButton</include>
+            <label>$INFO[ListItem.Property(AudioLanguage.1)]</label>
+            <visible>!String.IsEmpty(ListItem.Property(AudioLanguage.1))</visible>
+        </control>
+        <control type="button">
+            <description>Video AudioChannels 1</description>
+			<include>FlagDimensionButton</include>
+            <label>$VAR[AudioCodecVar,, ]$VAR[AudioChannelsVar]</label>
+            <visible>!String.IsEmpty(ListItem.Property(AudioChannels.1))</visible>
+        </control>
+    </include>
+    <include name="FlagVideoAudioStream2">
+        <control type="image">
+            <description>Seperator Icon</description>
+            <width>42</width>
+            <height>26</height>
+            <colordiffuse>white</colordiffuse>
+            <texture>flagging/audiostream2.png</texture>
+            <visible>!String.IsEmpty(ListItem.Property(AudioLanguage.2))</visible>
+        </control>
+        <control type="button">
+            <description>Video AudioLanguage 2</description>
+			<include>FlagDimensionButton</include>
+            <label>$INFO[ListItem.Property(AudioLanguage.2)]</label>
+            <visible>!String.IsEmpty(ListItem.Property(AudioLanguage.2))</visible>
+        </control>
+        <control type="button">
+            <description>Video AudioChannels 2</description>
+			<include>FlagDimensionButton</include>
+            <label>$INFO[ListItem.Property(AudioChannels.2),, $LOCALIZE[10127]]</label>
+            <visible>!String.IsEmpty(ListItem.Property(AudioChannels.2))</visible>
+        </control>
+        <control type="button">
+            <description>Video AudioCodec 2</description>
+			<include>FlagDimensionButton</include>
+            <label>$INFO[ListItem.Property(AudioCodec.2)]</label>
+            <visible>!String.IsEmpty(ListItem.Property(AudioCodec.2))</visible>
+        </control>
+    </include>
+    <include name="FlagVideoSubtitles">
+        <control type="image">
+            <description>Seperator Icon</description>
+            <width>42</width>
+            <height>26</height>
+            <colordiffuse>white</colordiffuse>
+            <texture>flagging/subtitles.png</texture>
+            <visible>!String.IsEmpty(ListItem.Property(SubtitleLanguage.1))</visible>
+            <visible>!Skin.HasSetting(Label_Flagging)</visible>
+        </control>
+        <control type="button">
+            <description>Video SubtitleLanguage 1</description>
+			<include>FlagDimensionButton</include>
+            <label>$INFO[ListItem.Property(SubtitleLanguage.1)]</label>
+            <visible>!String.IsEmpty(ListItem.Property(SubtitleLanguage.1))</visible>
+        </control>
+        <control type="button">
+            <description>Video SubtitleLanguage 2</description>
+			<include>FlagDimensionButton</include>
+            <label>$INFO[ListItem.Property(SubtitleLanguage.2)]</label>
+            <visible>!String.IsEmpty(ListItem.Property(SubtitleLanguage.2))</visible>
+        </control>
+        <control type="button">
+            <description>Video SubtitleLanguage 3</description>
+			<include>FlagDimensionButton</include>
+            <label>$INFO[ListItem.Property(SubtitleLanguage.3)]</label>
+            <visible>!String.IsEmpty(ListItem.Property(SubtitleLanguage.3))</visible>
+        </control>
+        <control type="button">
+            <description>Video SubtitleLanguage 4</description>
+			<include>FlagDimensionButton</include>
+            <label>$INFO[ListItem.Property(SubtitleLanguage.4)]</label>
+            <visible>!String.IsEmpty(ListItem.Property(SubtitleLanguage.4))</visible>
+        </control>
+    </include>
+    <include name="FlagMusic">
+        <control type="button">
+            <description>FileExtension</description>
+			<include>FlagDimensionButton</include>
+            <label>$INFO[ListItem.FileExtension]</label>
+            <visible>!String.IsEmpty(ListItem.FileExtension)</visible>
+        </control>
+        <control type="button">
+            <description>FileExtension</description>
+			<include>FlagDimensionButton</include>
+            <label>$LOCALIZE[623]: $INFO[ListItem.BitRate]</label>
+            <visible>!String.IsEmpty(ListItem.BitRate)</visible>
+        </control>
+        <control type="button">
+            <description>FileExtension</description>
+			<include>FlagDimensionButton</include>
+            <label>$INFO[ListItem.BPM] BPM</label>
+            <visible>!String.IsEmpty(ListItem.BPM)</visible>
+        </control>
+        <control type="button">
+            <description>FileExtension</description>
+			<include>FlagDimensionButton</include>
+            <label>$LOCALIZE[10127]: $INFO[ListItem.MusicChannels]</label>
+            <visible>!String.IsEmpty(ListItem.MusicChannels)</visible>
+        </control>
+        <control type="button">
+            <description>FileExtension</description>
+			<include>FlagDimensionButton</include>
+            <label>$LOCALIZE[613]: $INFO[ListItem.SampleRate]</label>
+            <visible>!String.IsEmpty(ListItem.SampleRate)</visible>
+        </control>
+        <control type="button">
+            <description>StarRating</description>
+			<include>FlagDimensionButton</include>
+            <label>$LOCALIZE[858] $LOCALIZE[563]: $INFO[ListItem.UserRating]</label>
+			<visible>!ListItem.IsParentFolder</visible>
+            <visible>!String.IsEmpty(ListItem.UserRating)</visible>
+        </control>
+        <control type="button">
+            <description>Rating</description>
+			<include>FlagDimensionButton</include>
+            <label>$LOCALIZE[563]: $INFO[ListItem.Rating]</label>
+			<visible>!ListItem.IsParentFolder</visible>
+            <visible>!String.IsEmpty(ListItem.Rating)</visible>
+        </control>
+		<control type="image">
+			<description>UserRating</description>
+			<width>250</width>
+			<height>30</height>
+			<aspectratio>keep</aspectratio>
+			<texture fallback="leftuserrating/0.png">$INFO[ListItem.UserRating,leftuserrating/,.png]</texture>
+			<visible>!ListItem.IsParentFolder</visible>
+            <visible>!String.IsEmpty(ListItem.UserRating)</visible>
+		</control>
+    </include>
+</includes>

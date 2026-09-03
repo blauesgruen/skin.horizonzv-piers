@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+	<include name="DialogInfoList_Songs">
+		<definition>
+			<item>
+				<label>$LOCALIZE[369]:</label>
+				<label2 fallback="-">$INFO[ListItem.Title]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.Title)</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[31049]:</label>
+				<label2 fallback="-">$INFO[ListItem.TrackNumber]</label2>
+				<onclick/>
+				<visible>String.IsEqual(ListItem.DBType,song)</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[557]:</label>
+				<label2 fallback="-">$INFO[ListItem.Artist]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.Artist)</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[558]:</label>
+				<label2 fallback="-">$INFO[ListItem.Album]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.Album)</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[566]:</label>
+				<label2 fallback="-">$INFO[ListItem.AlbumArtist]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.AlbumArtist)</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[515]:</label>
+				<label2 fallback="-">$INFO[ListItem.Genre]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.Genre)</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[515] (sep):</label>
+				<label2 fallback="-">$INFO[ListItem.Genre(comma)]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.Genre)</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[345]:</label>
+				<label2 fallback="-">$INFO[ListItem.Year]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.Year)</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[180]:</label>
+				<label2 fallback="-">$INFO[ListItem.Duration]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.Duration)</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[623]:</label>
+				<label2 fallback="-">$INFO[ListItem.BitRate]</label2>
+				<onclick/>
+				<visible>String.IsEqual(ListItem.DBType,song)</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[613]:</label>
+				<label2 fallback="-">$INFO[ListItem.SampleRate]</label2>
+				<onclick/>
+				<visible>String.IsEqual(ListItem.DBType,song)</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[38080]:</label>
+				<label2 fallback="-">$INFO[ListItem.BPM]</label2>
+				<onclick/>
+				<visible>String.IsEqual(ListItem.DBType,song)</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[427]:</label>
+				<label2 fallback="-">$INFO[ListItem.DiscNumber]</label2>
+				<onclick/>
+				<visible>String.IsEqual(ListItem.DBType,song)</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[38076]:</label>
+				<label2 fallback="-">$INFO[ListItem.DiscTitle]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.DiscTitle)</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[553]:</label>
+				<label2 fallback="-">$INFO[ListItem.Property(Artist_Style)]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.Size)</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[573]:</label>
+				<label2 fallback="-">$INFO[ListItem.Path]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.Path)</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[21800]:</label>
+				<label2 fallback="-">$INFO[ListItem.FileName]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.FileName)</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[21801]:</label>
+				<label2 fallback="-">$INFO[ListItem.FileNameAndPath]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.FileNameAndPath)</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[858] $LOCALIZE[563]:</label>
+				<label2 fallback="-">$INFO[ListItem.UserRating]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.UserRating)</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[567]:</label>
+				<label2 fallback="-">$INFO[ListItem.PlayCount]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.PlayCount)</visible>
+			</item>
+			<item>
+				<label>Contributors:</label>
+				<label2 fallback="-">$INFO[ListItem.Contributors]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.Contributors)</visible>
+			</item>
+			<item>
+				<label>Contributors &amp; Roles:</label>
+				<label2 fallback="-">$INFO[ListItem.ContributorAndRole]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.ContributorAndRole)</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[632]:</label>
+				<label2 fallback="-">$INFO[ListItem.Mood]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.Mood)</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[29903]:</label>
+				<label2 fallback="-">$INFO[ListItem.Property(Role.Composer)]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.Property(Role.Composer))</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[38035]:</label>
+				<label2 fallback="-">$INFO[ListItem.Property(Role.Lyricist)]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.Property(Role.Lyricist))</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[13652]:</label>
+				<label2 fallback="-">$INFO[ListItem.Property(Role.Conductor)]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.Property(Role.Conductor))</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[38039]:</label>
+				<label2 fallback="-">$INFO[ListItem.Property(Role.Producer)]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.Property(Role.Producer))</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[38036]:</label>
+				<label2 fallback="-">$INFO[ListItem.Property(Role.Remixer)]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.Property(Role.Remixer))</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[38041]:</label>
+				<label2 fallback="-">$INFO[ListItem.Property(Role.Mixer)]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.Property(Role.Mixer))</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[38038]:</label>
+				<label2 fallback="-">$INFO[ListItem.Property(Role.Engineer)]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.Property(Role.Engineer))</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[38037]:</label>
+				<label2 fallback="-">$INFO[ListItem.Property(Role.Arranger)]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.Property(Role.Arranger))</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[38040]:</label>
+				<label2 fallback="-">$INFO[ListItem.Property(Role.DJMixer)]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.Property(Role.DJMixer))</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[38034]:</label>
+				<label2 fallback="-">$INFO[ListItem.Property(Role.Orchestra)]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.Property(Role.Orchestra))</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[558] Label:</label>
+				<label2 fallback="-">$INFO[ListItem.Property(Album_Label)]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.Property(Album_Label))</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[558] Description:</label>
+				<label2 fallback="-">$INFO[ListItem.Property(Album_Description)]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.Property(Album_Description))</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[558] $LOCALIZE[180]:</label>
+				<label2 fallback="-">$INFO[ListItem.Property(Album_Duration)]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.Property(Album_Duration))</visible>
+			</item>
+			<item>
+				<label>Thumb (art):</label>
+				<label2 fallback="-">$INFO[ListItem.Thumb]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.Thumb)</visible>
+			</item>
+			<item>
+				<label>Art (thumb):</label>
+				<label2 fallback="-">$INFO[ListItem.Art(thumb)]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.Art(thumb))</visible>
+			</item>
+			<item>
+				<label>Art (fanart):</label>
+				<label2 fallback="-">$INFO[ListItem.Art(fanart)]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.Art(fanart))</visible>
+			</item>
+		</definition>
+	</include>
+	<include name="DialogInfoList_Albums">
+		<definition>
+			<item>
+				<label>$LOCALIZE[558]:</label>
+				<label2 fallback="-">$INFO[ListItem.Album]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.Album)</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[558] $LOCALIZE[557]:</label>
+				<label2 fallback="-">$INFO[ListItem.AlbumArtist]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.AlbumArtist)</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[515]:</label>
+				<label2 fallback="-">$INFO[ListItem.Genre]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.Genre)</visible>
+			</item>
+			<item>
+				<label>Genre (sep):</label>
+				<label2 fallback="-">$INFO[ListItem.Genre(comma)]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.Genre)</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[345]:</label>
+				<label2 fallback="-">$INFO[ListItem.Year]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.Year)</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[858] $LOCALIZE[563]:</label>
+				<label2 fallback="-">$INFO[ListItem.UserRating]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.UserRating)</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[567]:</label>
+				<label2 fallback="-">$INFO[ListItem.PlayCount]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.PlayCount)</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[38077]:</label>
+				<label2 fallback="-">$INFO[ListItem.TotalDiscs]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.TotalDiscs)</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[558] $LOCALIZE[467]:</label>
+				<label2 fallback="-">$INFO[ListItem.Property(Album_Type)]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.Property(Album_Type))</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[558] $LOCALIZE[15111]:</label>
+				<label2 fallback="-">$INFO[ListItem.Property(Album_Theme)]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.Property(Album_Theme))</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[558] Label:</label>
+				<label2 fallback="-">$INFO[ListItem.Property(Album_Label)]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.Property(Album_Label))</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[558] Description:</label>
+				<label2 fallback="-">$INFO[ListItem.Property(Album_Description)]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.Property(Album_Description))</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[558] $LOCALIZE[180]:</label>
+				<label2 fallback="-">$INFO[ListItem.Property(Album_Duration)]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.Property(Album_Duration))</visible>
+			</item>
+			<item>
+				<label>Thumb (art):</label>
+				<label2 fallback="-">$INFO[ListItem.Thumb]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.Thumb)</visible>
+			</item>
+			<item>
+				<label>Art (thumb):</label>
+				<label2 fallback="-">$INFO[ListItem.Art(thumb)]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.Art(thumb))</visible>
+			</item>
+			<item>
+				<label>Art (fanart):</label>
+				<label2 fallback="-">$INFO[ListItem.Art(fanart)]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.Art(fanart))</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[553]:</label>
+				<label2 fallback="-">$INFO[ListItem.Size]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.Size)</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[573]:</label>
+				<label2 fallback="-">$INFO[ListItem.Path]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.Path)</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[21800]:</label>
+				<label2 fallback="-">$INFO[ListItem.FileName]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.FileName)</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[21801]:</label>
+				<label2 fallback="-">$INFO[ListItem.FileNameAndPath]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.FileNameAndPath)</visible>
+			</item>
+		</definition>
+	</include>
+	<include name="DialogInfoList_Artists">
+		<definition>
+			<item>
+				<label>$LOCALIZE[557]:</label>
+				<label2 fallback="-">$INFO[ListItem.Artist]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.Artist)</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[21893]:</label>
+				<label2 fallback="-">$INFO[ListItem.Property(Artist_Born)]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.Property(Artist_Born))</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[21897]:</label>
+				<label2 fallback="-">$INFO[ListItem.Property(Artist_Died)]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.Property(Artist_Died))</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[21894]:</label>
+				<label2 fallback="-">$INFO[ListItem.Property(Artist_Formed)]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.Property(Artist_Formed))</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[21896]:</label>
+				<label2 fallback="-">$INFO[ListItem.Property(Artist_Disbanded)]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.Property(Artist_Disbanded))</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[21898]:</label>
+				<label2 fallback="-">$INFO[ListItem.Property(Artist_YearsActive)]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.Property(Artist_YearsActive))</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[21892]:</label>
+				<label2 fallback="-">$INFO[ListItem.Property(Artist_Instrument)]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.Property(Artist_Instrument))</visible>
+			</item>
+			<item>
+				<label>Mood:</label>
+				<label2 fallback="-">$INFO[ListItem.Property(Artist_Mood)]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.Property(Artist_Mood))</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[736]:</label>
+				<label2 fallback="-">$INFO[ListItem.Property(Artist_Style)]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.Property(Artist_Style))</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[515]:</label>
+				<label2 fallback="-">$INFO[ListItem.Property(Artist_Genre)]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.Property(Artist_Genre))</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[467]:</label>
+				<label2 fallback="-">$INFO[ListItem.Property(Artist_Type)]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.Property(Artist_Type))</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[12455]:</label>
+				<label2 fallback="-">$INFO[ListItem.Property(Artist_Description)]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.Property(Artist_Description))</visible>
+			</item>
+			<item>
+				<label>Thumb (art):</label>
+				<label2 fallback="-">$INFO[ListItem.Thumb]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.Thumb)</visible>
+			</item>
+			<item>
+				<label>Art (fanart):</label>
+				<label2 fallback="-">$INFO[ListItem.Art(fanart)]</label2>
+				<onclick/>
+				<visible>!String.IsEmpty(ListItem.Art(fanart))</visible>
+			</item>
+		</definition>
+	</include>
+</includes>

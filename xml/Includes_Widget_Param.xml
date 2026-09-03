@@ -1,0 +1,2017 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+	<include name="HomepageWidgetPosition">
+        <right>28</right>
+        <height>240</height>
+        <bottom>0</bottom>
+    </include>
+    <include name="HomepageWidget">
+        <include>HomepageWidget_Music</include>
+        <include>HomepageWidget_Videos</include>
+        <include>HomepageWidget_Movies</include>
+        <include>HomepageWidget_TVShows</include>
+        <include>HomepageWidget_MusicVideos</include>
+        <include>HomepageWidget_Picture</include>
+        <include>HomepageWidget_Weather</include>
+        <include>HomepageWidget_PlayDisc</include>
+        <include>HomepageWidget_Custom1</include>
+        <include>HomepageWidget_Custom2</include>
+        <include>HomepageWidget_Custom3</include>
+        <include>HomepageWidget_Custom4</include>
+        <include>HomepageWidget_Custom5</include>
+        <include>HomepageWidget_Custom6</include>
+        <include>HomepageWidget_Custom7</include>
+        <include>HomepageWidget_Custom8</include>
+        <include>HomepageWidget_Custom9</include>
+        <include>HomepageWidget_pvr_TV</include>
+        <include>HomepageWidget_pvr_RADIO</include>
+        <include>HomepageWidget_System</include>
+        <include>HomepageWidget_Games</include>
+    </include>
+    <include name="HomepageWidget_Music">
+        <control type="group">
+            <include>HomepageWidgetPosition</include>
+            <include>opencloseslideleft</include>
+            <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),music)</visible>
+			<include content="HomePageWidget_list" condition="Library.HasContent(music)"> <!-- random albums -->
+				<param name="HomePageWidget_content" value="special://skin/playlists/Music_Albums_random.xsp"/>
+				<!-- <param name="HomePageWidget_content" value="plugin://service.library.data.provider?type=randomalbums&amp;reload=$INFO[Window.Property(randomalbums)]&amp;limit=10"/> -->
+				<param name="HomePageWidget_content2" value="$VAR[WidgetInProgressPlace1]"/>
+				<param name="HomePageWidget_limit" value="10"/>
+				<param name="HomePageWidget_sortby" value=""/>
+				<param name="HomePageWidget_list_id" value="210"/>
+				<param name="HomePageWidget_list_width" value="729"/>
+				<param name="HomePageWidget_list_onfocus" value="SetProperty(WidgetLabel,$LOCALIZE[590] - $LOCALIZE[36919],home)"/>
+				<param name="HomePageWidget_list_onunfocus" value="ClearProperty(WidgetLabel)"/>
+				<param name="HomePageWidget_list_onclick" value="PlayMedia(musicdb://albums/$INFO[ListItem.DBID]/)"/>
+				<param name="HomePageWidget_list_visible" value="Skin.HasSetting(Widget_RandomAlbums)+Library.HasContent(Music)+!Skin.HasSetting(Home_music_Button)"/>
+				<param name="HomePageWidget_list_visible2" value="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),music)"/>
+				<param name="HomePageWidget_list_visible3" value="!String.IsEmpty(Window.Property(randomalbums))"/>
+			</include>
+			<include content="HomePageWidget_list" condition="Library.HasContent(music)"> <!-- random songs -->
+				<param name="HomePageWidget_content" value="special://skin/playlists/Music_Songs_random.xsp"/>
+				<!-- <param name="HomePageWidget_content" value="plugin://service.library.data.provider?type=randomsongs&amp;reload=$INFO[Window.Property(randomsongs)]&amp;limit=10"/> -->
+				<param name="HomePageWidget_content2" value="$VAR[WidgetInProgressPlace1]"/>
+				<param name="HomePageWidget_limit" value="10"/>
+				<param name="HomePageWidget_sortby" value=""/>
+				<param name="HomePageWidget_list_id" value="211"/>
+				<param name="HomePageWidget_list_width" value="729"/>
+				<param name="HomePageWidget_list_onfocus" value="SetProperty(WidgetLabel,$LOCALIZE[590] - $LOCALIZE[36921],home)"/>
+				<param name="HomePageWidget_list_onunfocus" value="ClearProperty(WidgetLabel)"/>
+				<param name="HomePageWidget_list_onclick" value="PlayMedia(musicdb://albums/$INFO[ListItem.DBID]/)"/>
+				<param name="HomePageWidget_list_visible" value="Skin.HasSetting(Widget_RandomSongs)+Library.HasContent(Music)+!Skin.HasSetting(Home_music_Button)"/>
+				<param name="HomePageWidget_list_visible2" value="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),music)"/>
+				<param name="HomePageWidget_list_visible3" value="!String.IsEmpty(Window.Property(randomsongs))"/>
+			</include>
+			<include content="HomePageWidget_list" condition="Library.HasContent(music)"> <!-- recent albums -->
+				<param name="HomePageWidget_content" value="special://skin/playlists/Music_Albums_recently.xsp"/>
+				<!-- <param name="HomePageWidget_content" value="plugin://service.library.data.provider?type=recentalbums&amp;reload=$INFO[Window.Property(recentalbums)]&amp;limit=10"/> -->
+				<param name="HomePageWidget_content2" value="$VAR[WidgetInProgressPlace1]"/>
+				<param name="HomePageWidget_limit" value="10"/>
+				<param name="HomePageWidget_sortby" value="dateadded"/>
+				<param name="HomePageWidget_sortorder" value="descending"/>
+				<param name="HomePageWidget_list_id" value="212"/>
+				<param name="HomePageWidget_list_width" value="729"/>
+				<param name="HomePageWidget_list_onfocus" value="SetProperty(WidgetLabel,$LOCALIZE[359],home)"/>
+				<param name="HomePageWidget_list_onunfocus" value="ClearProperty(WidgetLabel)"/>
+				<param name="HomePageWidget_list_onclick" value="PlayMedia(musicdb://albums/$INFO[ListItem.DBID]/)"/>
+				<param name="HomePageWidget_list_visible" value="Skin.HasSetting(Widget_RecentAlbums)+Library.HasContent(Music)+!Skin.HasSetting(Home_music_Button)"/>
+				<param name="HomePageWidget_list_visible2" value="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),music)"/>
+				<param name="HomePageWidget_list_visible3" value="!String.IsEmpty(Window.Property(recentalbums))"/>
+			</include>
+			<include content="HomePageWidget_list" condition="Library.HasContent(music)"> <!-- recommended albums -->
+				<param name="HomePageWidget_content" value="special://skin/playlists/Music_Albums_recommended.xsp"/>
+				<!-- <param name="HomePageWidget_content" value="plugin://service.library.data.provider?type=recommendedalbums&amp;reload=$INFO[Window.Property(recommendedalbums)]&amp;limit=10"/> -->
+				<param name="HomePageWidget_content2" value="$VAR[WidgetInProgressPlace1]"/>
+				<param name="HomePageWidget_limit" value="10"/>
+				<param name="HomePageWidget_sortby" value="lastplayed"/>
+				<param name="HomePageWidget_sortorder" value="descending"/>
+				<param name="HomePageWidget_list_id" value="213"/>
+				<param name="HomePageWidget_list_width" value="729"/>
+				<param name="HomePageWidget_list_onfocus" value="SetProperty(WidgetLabel,$LOCALIZE[517],home)"/>
+				<param name="HomePageWidget_list_onunfocus" value="ClearProperty(WidgetLabel)"/>
+				<param name="HomePageWidget_list_onclick" value="PlayMedia(musicdb://albums/$INFO[ListItem.DBID]/)"/>
+				<param name="HomePageWidget_list_visible" value="Skin.HasSetting(Widget_RecommendedAlbums)+Library.HasContent(Music)+!Skin.HasSetting(Home_music_Button)"/>
+				<param name="HomePageWidget_list_visible2" value="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),music)"/>
+				<param name="HomePageWidget_list_visible3" value="!String.IsEmpty(Window.Property(recommendedalbums))"/>
+			</include>
+			<include content="HomePageWidget_list" condition="Library.HasContent(music)"> <!-- custom -->
+				<param name="HomePageWidget_content" value="$VAR[HomeWidget_music_Path]"/>
+				<param name="HomePageWidget_limit" value="20"/>
+				<param name="HomePageWidget_sortby" value=""/>
+				<param name="HomePageWidget_sortorder" value=""/>
+				<param name="HomePageWidget_list_id" value="214"/>
+				<param name="HomePageWidget_list_width" value="729"/>
+				<param name="HomePageWidget_list_onfocus" value="SetProperty(WidgetLabel,$INFO[Skin.String(HomeWidget_music_Label)],home)"/>
+				<param name="HomePageWidget_list_onunfocus" value="ClearProperty(WidgetLabel)"/>
+				<param name="HomePageWidget_list_visible" value="Skin.HasSetting(Home_music_Button)"/>
+				<param name="HomePageWidget_list_visible2" value="Skin.HasSetting(HomeWidget_music_Standard)|Skin.HasSetting(HomeWidget_music_User)"/>
+				<param name="HomePageWidget_list_visible3" value="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),music)"/>
+			</include>
+			<include content="HomePageWidget_list" condition="Library.HasContent(music)"> <!-- inprogress place1 -->
+				<param name="HomePageWidget_content" value="$VAR[WidgetInProgressPlace1]"/>
+				<param name="HomePageWidget_limit" value="1"/>
+				<param name="HomePageWidget_sortby" value=""/>
+				<param name="HomePageWidget_sortorder" value=""/>
+				<param name="HomePageWidget_list_id" value="215"/>
+				<param name="HomePageWidget_list_width" value="720"/>
+				<param name="HomePageWidget_list_onfocus" value="SetProperty(WidgetLabel,$LOCALIZE[575],home)"/>
+				<param name="HomePageWidget_list_onunfocus" value="ClearProperty(WidgetLabel)"/>
+				<param name="HomePageWidget_list_visible" value="Skin.HasSetting(Widget_inProgress_musicAlbum_Place1)+![Skin.HasSetting(Widget_RandomAlbums)|Skin.HasSetting(Widget_RandomSongs)|Skin.HasSetting(Widget_RecentAlbums)|Skin.HasSetting(Widget_RecommendedAlbums)]"/>
+				<param name="HomePageWidget_list_visible2" value="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),music)"/>
+				<param name="HomePageWidget_list_visible3" value="!Skin.HasSetting(Home_music_Button)"/>
+			</include>
+        </control>
+    </include>
+    <include name="HomepageWidget_Videos">
+        <control type="group">
+            <include>HomepageWidgetPosition</include>
+            <include>opencloseslideleft</include>
+            <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),videos)</visible>
+			<include content="HomePageWidget_list">
+				<!-- sources -->
+				<param name="HomePageWidget_content" value="sources://video/"/>
+				<param name="HomePageWidget_limit" value="10"/>
+				<param name="HomePageWidget_sortby" value="title"/>
+				<param name="HomePageWidget_sortorder" value="descending"/>
+				<param name="HomePageWidget_list_id" value="218"/>
+				<param name="HomePageWidget_list_width" value="720"/>
+				<param name="HomePageWidget_list_onfocus" value="SetProperty(WidgetLabel,$LOCALIZE[20094],home)"/>
+				<param name="HomePageWidget_list_onunfocus" value="ClearProperty(WidgetLabel)"/>
+				<param name="HomePageWidget_list_visible" value="Skin.HasSetting(Widget_Sources)+!Skin.HasSetting(Home_videos_Button)"/>
+				<param name="HomePageWidget_list_visible2" value="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),videos)"/>
+				<param name="HomePageWidget_list_visible3" value="true"/>
+			</include>
+			<include content="HomePageWidget_list">
+				<!-- videoplaylists -->
+				<param name="HomePageWidget_content" value="special://videoplaylists/"/>
+				<param name="HomePageWidget_limit" value="10"/>
+				<param name="HomePageWidget_sortby" value="title"/>
+				<param name="HomePageWidget_sortorder" value="descending"/>
+				<param name="HomePageWidget_list_id" value="219"/>
+				<param name="HomePageWidget_list_width" value="720"/>
+				<param name="HomePageWidget_list_onfocus" value="SetProperty(WidgetLabel,$LOCALIZE[136],home)"/>
+				<param name="HomePageWidget_list_onunfocus" value="ClearProperty(WidgetLabel)"/>
+				<param name="HomePageWidget_list_visible" value="Skin.HasSetting(Widget_Videoplaylists)+!Skin.HasSetting(Home_videos_Button)"/>
+				<param name="HomePageWidget_list_visible2" value="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),videos)"/>
+				<param name="HomePageWidget_list_visible3" value="true"/>
+			</include>
+			<include content="HomePageWidget_list">
+				<!-- custom -->
+				<param name="HomePageWidget_content" value="$VAR[HomeWidget_videos_Path]"/>
+				<param name="HomePageWidget_limit" value="20"/>
+				<param name="HomePageWidget_sortby" value=""/>
+				<param name="HomePageWidget_sortorder" value=""/>
+				<param name="HomePageWidget_list_id" value="220"/>
+				<param name="HomePageWidget_list_width" value="729"/>
+				<param name="HomePageWidget_list_onfocus" value="SetProperty(WidgetLabel,$INFO[Skin.String(HomeWidget_videos_Label)],home)"/>
+				<param name="HomePageWidget_list_onunfocus" value="ClearProperty(WidgetLabel)"/>
+				<param name="HomePageWidget_list_visible" value="Skin.HasSetting(Home_videos_Button)"/>
+				<param name="HomePageWidget_list_visible2" value="Skin.HasSetting(HomeWidget_videos_Standard)|Skin.HasSetting(HomeWidget_videos_User)"/>
+				<param name="HomePageWidget_list_visible3" value="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),videos)"/>
+			</include>
+        </control>
+    </include>
+    <include name="HomepageWidget_Movies">
+        <control type="group">
+            <include>HomepageWidgetPosition</include>
+            <include>opencloseslideleft</include>
+            <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),movies)</visible>
+			<include content="HomePageWidget_list" condition="Library.HasContent(movies)">
+				<!-- inprogress -->
+				<param name="HomePageWidget_content" value="special://skin/playlists/Videos_inprogress.xsp"/>
+				<param name="HomePageWidget_limit" value="10"/>
+				<param name="HomePageWidget_sortby" value=""/>
+				<param name="HomePageWidget_sortorder" value="descending"/>
+				<param name="HomePageWidget_list_id" value="224"/>
+				<param name="HomePageWidget_list_width" value="720"/>
+				<param name="HomePageWidget_list_onfocus" value="SetProperty(WidgetLabel,$LOCALIZE[575],home)"/>
+				<param name="HomePageWidget_list_onunfocus" value="ClearProperty(WidgetLabel)"/>
+				<param name="HomePageWidget_list_visible" value="Skin.HasSetting(Widget_RecommendedMovies)"/>
+				<param name="HomePageWidget_list_visible2" value="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),movies)"/>
+				<param name="HomePageWidget_list_visible3" value="!Skin.HasSetting(Home_movies_Button)"/>
+			</include>
+			<include content="HomePageWidget_list" condition="Library.HasContent(movies)">
+				<!-- random -->
+				<param name="HomePageWidget_content" value="videodb://movies/titles"/>
+				<param name="HomePageWidget_content2" value="$VAR[WidgetInProgressPlace1]"/>
+				<param name="HomePageWidget_limit" value="10"/>
+				<param name="HomePageWidget_sortby" value="random"/>
+				<param name="HomePageWidget_sortorder" value=""/>
+				<param name="HomePageWidget_list_id" value="225"/>
+				<param name="HomePageWidget_list_width" value="720"/>
+				<param name="HomePageWidget_list_onfocus" value="SetProperty(WidgetLabel,$LOCALIZE[590],home)"/>
+				<param name="HomePageWidget_list_onunfocus" value="ClearProperty(WidgetLabel)"/>
+				<param name="HomePageWidget_list_visible" value="Skin.HasSetting(Widget_RandomMovies)"/>
+				<param name="HomePageWidget_list_visible2" value="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),movies)+!Skin.HasSetting(Home_movies_Button)"/>
+				<param name="HomePageWidget_list_visible3" value="Library.HasContent(Movies)"/>
+			</include>
+			<include content="HomePageWidget_list" condition="Library.HasContent(movies)">
+				<!-- recently -->
+				<param name="HomePageWidget_content" value="special://skin/playlists/Videos_recently.xsp"/>
+				<param name="HomePageWidget_content2" value="$VAR[WidgetInProgressPlace1]"/>
+				<param name="HomePageWidget_limit" value="10"/>
+				<param name="HomePageWidget_sortby" value="dateadded"/>
+				<param name="HomePageWidget_sortorder" value="descending"/>
+				<param name="HomePageWidget_list_id" value="226"/>
+				<param name="HomePageWidget_list_width" value="720"/>
+				<param name="HomePageWidget_list_onfocus" value="SetProperty(WidgetLabel,$LOCALIZE[20386],home)"/>
+				<param name="HomePageWidget_list_onunfocus" value="ClearProperty(WidgetLabel)"/>
+				<param name="HomePageWidget_list_visible" value="Skin.HasSetting(Widget_RecentMovies)"/>
+				<param name="HomePageWidget_list_visible2" value="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),movies)+!Skin.HasSetting(Home_movies_Button)"/>
+				<param name="HomePageWidget_list_visible3" value="Library.HasContent(Movies)"/>
+			</include>
+			<include content="HomePageWidget_list" condition="Library.HasContent(movies)">
+				<!-- custom -->
+				<param name="HomePageWidget_content" value="$VAR[HomeWidget_movies_Path]"/>
+				<param name="HomePageWidget_limit" value="20"/>
+				<param name="HomePageWidget_sortby" value=""/>
+				<param name="HomePageWidget_sortorder" value=""/>
+				<param name="HomePageWidget_list_id" value="227"/>
+				<param name="HomePageWidget_list_width" value="720"/>
+				<param name="HomePageWidget_list_onfocus" value="SetProperty(WidgetLabel,$INFO[Skin.String(HomeWidget_movies_Label)],home)"/>
+				<param name="HomePageWidget_list_onunfocus" value="ClearProperty(WidgetLabel)"/>
+				<param name="HomePageWidget_list_visible" value="Skin.HasSetting(Home_movies_Button)"/>
+				<param name="HomePageWidget_list_visible2" value="Skin.HasSetting(HomeWidget_movies_Standard)|Skin.HasSetting(HomeWidget_movies_User)"/>
+				<param name="HomePageWidget_list_visible3" value="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),movies)"/>
+			</include>
+			<include content="HomePageWidget_list" condition="Library.HasContent(movies)">
+				<!-- inprogress place1 -->
+				<param name="HomePageWidget_content" value="$VAR[WidgetInProgressPlace1]"/>
+				<param name="HomePageWidget_limit" value="1"/>
+				<param name="HomePageWidget_sortby" value="lastplayed"/>
+				<param name="HomePageWidget_sortorder" value="descending"/>
+				<param name="HomePageWidget_list_id" value="228"/>
+				<param name="HomePageWidget_list_width" value="720"/>
+				<param name="HomePageWidget_list_onfocus" value="SetProperty(WidgetLabel,$LOCALIZE[575],home)"/>
+				<param name="HomePageWidget_list_onunfocus" value="ClearProperty(WidgetLabel)"/>
+				<param name="HomePageWidget_list_visible" value="Skin.HasSetting(Widget_inProgress_movies_Place1)+![Skin.HasSetting(Widget_RecommendedMovies)|Skin.HasSetting(Widget_RandomMovies)|Skin.HasSetting(Widget_RecentMovies)|Skin.HasSetting(Widget_RecentMovies)]"/>
+				<param name="HomePageWidget_list_visible2" value="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),movies)"/>
+				<param name="HomePageWidget_list_visible3" value="!Skin.HasSetting(Home_movies_Button)"/>
+			</include>
+        </control>
+    </include>
+    <include name="HomepageWidget_TVShows">
+        <control type="group">
+            <include>HomepageWidgetPosition</include>
+            <include>opencloseslideleft</include>
+            <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),tvshow)</visible>
+			<include content="HomePageWidget_list" condition="Library.HasContent(tvshows)"> <!-- inprogress -->
+				<param name="HomePageWidget_content" value="special://skin/playlists/TVShows_inprogress.xsp"/>
+				<!-- <param name="HomePageWidget_content" value="plugin://service.library.data.provider?type=recommendedepisodes&amp;reload=$INFO[Window.Property(recommendedepisodes)]&amp;limit=10"/> -->
+				<param name="HomePageWidget_content2" value="$VAR[WidgetInProgressPlace1]"/>
+				<param name="HomePageWidget_limit" value="10"/>
+				<param name="HomePageWidget_sortby" value=""/>
+				<param name="HomePageWidget_sortorder" value=""/>
+				<param name="HomePageWidget_list_id" value="232"/>
+				<param name="HomePageWidget_list_width" value="180"/>
+				<param name="HomePageWidget_list_onup" value="-"/>
+				<param name="HomePageWidget_list_onfocus" value="SetProperty(WidgetLabel,$LOCALIZE[575],home)"/>
+				<param name="HomePageWidget_list_onunfocus" value="ClearProperty(WidgetLabel)"/>
+				<param name="HomePageWidget_list_visible" value="Skin.HasSetting(Widget_RecommendedTVShows)+!Skin.HasSetting(Home_tvshow_Button)"/>
+				<param name="HomePageWidget_list_visible2" value="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),tvshow)+!Skin.HasSetting(Home_SeriesButton)"/>
+				<param name="HomePageWidget_list_visible3" value="true"/>
+			</include>
+			<include content="HomePageWidget_list" condition="Library.HasContent(tvshows)"> <!-- recently added episode -->
+				<param name="HomePageWidget_content" value="videodb://recentlyaddedepisodes/"/>
+				<param name="HomePageWidget_content2" value="$VAR[WidgetInProgressPlace1]"/>
+				<param name="HomePageWidget_limit" value="40"/>
+				<param name="HomePageWidget_sortby" value="episodenumber"/>
+				<param name="HomePageWidget_sortorder" value="ascending"/>
+				<param name="HomePageWidget_list_id" value="233"/>
+				<param name="HomePageWidget_list_width" value="720"/>
+				<param name="HomePageWidget_list_onup" value="-"/>
+				<param name="HomePageWidget_list_onfocus" value="SetProperty(WidgetLabel,$LOCALIZE[301494],home)"/>
+				<param name="HomePageWidget_list_onunfocus" value="ClearProperty(WidgetLabel)"/>
+				<param name="HomePageWidget_list_visible" value="Skin.HasSetting(Widget_RecentTVShows)+!Skin.HasSetting(Home_tvshow_Button)"/>
+				<param name="HomePageWidget_list_visible2" value="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),tvshow)+!Skin.HasSetting(Home_SeriesButton)"/>
+				<param name="HomePageWidget_list_visible3" value="Skin.HasSetting(Widget_RecentTVShows_Episodes)"/>
+			</include>
+			<include content="HomePageWidget_list" condition="Library.HasContent(tvshows)"> <!-- recent season -->
+				<param name="HomePageWidget_content" value="special://skin/playlists/TVShows_recent_tvshows.xsp"/>
+				<param name="HomePageWidget_content2" value="$VAR[WidgetInProgressPlace1]"/>
+				<param name="HomePageWidget_limit" value="10"/>
+				<param name="HomePageWidget_sortby" value="dateadded"/>
+				<param name="HomePageWidget_sortorder" value="descending"/>
+				<param name="HomePageWidget_list_id" value="234"/>
+				<param name="HomePageWidget_list_width" value="720"/>
+				<param name="HomePageWidget_list_onup" value="-"/>
+				<param name="HomePageWidget_list_onfocus" value="SetProperty(WidgetLabel,$LOCALIZE[301494],home)"/>
+				<param name="HomePageWidget_list_onunfocus" value="ClearProperty(WidgetLabel)"/>
+				<param name="HomePageWidget_list_visible" value="Skin.HasSetting(Widget_RecentTVShows)+!Skin.HasSetting(Home_tvshow_Button)"/>
+				<param name="HomePageWidget_list_visible2" value="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),tvshow)+!Skin.HasSetting(Home_SeriesButton)"/>
+				<param name="HomePageWidget_list_visible3" value="!Skin.HasSetting(Widget_RecentTVShows_Episodes)"/>
+			</include>
+			<include content="HomePageWidget_list" condition="Library.HasContent(tvshows)"> <!-- random season -->
+				<param name="HomePageWidget_content" value="special://skin/playlists/TVShows_random_episodes.xsp"/>
+				<param name="HomePageWidget_content2" value="$VAR[WidgetInProgressPlace1]"/>
+				<param name="HomePageWidget_limit" value="10"/>
+				<param name="HomePageWidget_sortby" value="random"/>
+				<param name="HomePageWidget_sortorder" value="descending"/>
+				<param name="HomePageWidget_list_id" value="235"/>
+				<param name="HomePageWidget_list_width" value="720"/>
+				<param name="HomePageWidget_list_onup" value="-"/>
+				<param name="HomePageWidget_list_onfocus" value="SetProperty(WidgetLabel,$LOCALIZE[590],home)"/>
+				<param name="HomePageWidget_list_onunfocus" value="ClearProperty(WidgetLabel)"/>
+				<param name="HomePageWidget_list_visible" value="Skin.HasSetting(Widget_RandomTVShows)+!Skin.HasSetting(Home_tvshow_Button)"/>
+				<param name="HomePageWidget_list_visible2" value="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),tvshow)+!Skin.HasSetting(Home_SeriesButton)"/>
+				<param name="HomePageWidget_list_visible3" value="Library.HasContent(TVShows)"/>
+			</include>
+			<include content="HomePageWidget_list" condition="Library.HasContent(tvshows)"> <!-- custom -->
+				<param name="HomePageWidget_content" value="$VAR[HomeWidget_tvshow_Path]"/>
+				<param name="HomePageWidget_limit" value="20"/>
+				<param name="HomePageWidget_sortby" value=""/>
+				<param name="HomePageWidget_sortorder" value=""/>
+				<param name="HomePageWidget_list_id" value="236"/>
+				<param name="HomePageWidget_list_width" value="729"/>
+				<param name="HomePageWidget_list_onfocus" value="SetProperty(WidgetLabel,$INFO[Skin.String(HomeWidget_tvshow_Label)],home)"/>
+				<param name="HomePageWidget_list_onunfocus" value="ClearProperty(WidgetLabel)"/>
+				<param name="HomePageWidget_list_visible" value="Skin.HasSetting(Home_tvshow_Button)"/>
+				<param name="HomePageWidget_list_visible2" value="Skin.HasSetting(HomeWidget_tvshow_Standard)|Skin.HasSetting(HomeWidget_tvshow_User)"/>
+				<param name="HomePageWidget_list_visible3" value="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),tvshow)"/>
+			</include>
+			<include content="HomePageWidget_list" condition="Library.HasContent(tvshows) + System.HasAddon(service.library.data.provider)"> <!-- inprogress place1 -->
+				<param name="HomePageWidget_content" value="$VAR[WidgetInProgressPlace1]"/>
+				<param name="HomePageWidget_limit" value="1"/>
+				<param name="HomePageWidget_sortby" value=""/>
+				<param name="HomePageWidget_sortorder" value="descending"/>
+				<param name="HomePageWidget_list_id" value="237"/>
+				<param name="HomePageWidget_list_width" value="720"/>
+				<param name="HomePageWidget_list_onfocus" value="SetProperty(WidgetLabel,$LOCALIZE[575],home)"/>
+				<param name="HomePageWidget_list_onunfocus" value="ClearProperty(WidgetLabel)"/>
+				<param name="HomePageWidget_list_visible" value="Skin.HasSetting(Widget_inProgress_tvshow_Place1)+![Skin.HasSetting(Widget_RecommendedTVShows)|Skin.HasSetting(Widget_RecentTVShows)|Skin.HasSetting(Widget_RecentTVShows)|Skin.HasSetting(Widget_RandomTVShows)]"/>
+				<param name="HomePageWidget_list_visible2" value="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),tvshow)"/>
+				<param name="HomePageWidget_list_visible3" value="!Skin.HasSetting(Home_tvshow_Button)"/>
+			</include>
+        </control>
+    </include>
+    <include name="HomepageWidget_MusicVideos">
+        <control type="group">
+            <include>HomepageWidgetPosition</include>
+            <include>opencloseslideleft</include>
+            <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),musicvideo)</visible>
+			<include content="HomePageWidget_list" condition="Library.HasContent(musicvideos)">
+				<!-- inprogress -->
+				<param name="HomePageWidget_content" value="videodb://musicvideos/titles"/>
+				<param name="HomePageWidget_limit" value="10"/>
+				<param name="HomePageWidget_sortby" value="lastplayed"/>
+				<param name="HomePageWidget_sortorder" value="descending"/>
+				<param name="HomePageWidget_list_id" value="240"/>
+				<param name="HomePageWidget_list_width" value="720"/>
+				<param name="HomePageWidget_list_onfocus" value="SetProperty(WidgetLabel,$LOCALIZE[575],home)"/>
+				<param name="HomePageWidget_list_onunfocus" value="ClearProperty(WidgetLabel)"/>
+				<param name="HomePageWidget_list_visible" value="Skin.HasSetting(Widget_RecommendedMusicVideos)"/>
+				<param name="HomePageWidget_list_visible2" value="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),musicvideo)"/>
+				<param name="HomePageWidget_list_visible3" value="true"/>
+			</include>
+			<include content="HomePageWidget_list" condition="Library.HasContent(musicvideos)">
+				<!-- random -->
+				<param name="HomePageWidget_content" value="videodb://musicvideos/titles"/>
+				<param name="HomePageWidget_content2" value="$VAR[WidgetInProgressPlace1]"/>
+				<param name="HomePageWidget_limit" value="10"/>
+				<param name="HomePageWidget_sortby" value="random"/>
+				<param name="HomePageWidget_sortorder" value="descending"/>
+				<param name="HomePageWidget_list_id" value="241"/>
+				<param name="HomePageWidget_list_width" value="720"/>
+				<param name="HomePageWidget_list_onfocus" value="SetProperty(WidgetLabel,$LOCALIZE[590],home)"/>
+				<param name="HomePageWidget_list_onunfocus" value="ClearProperty(WidgetLabel)"/>
+				<param name="HomePageWidget_list_visible" value="Skin.HasSetting(Widget_RandomMusicVideos)"/>
+				<param name="HomePageWidget_list_visible2" value="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),musicvideo)"/>
+				<param name="HomePageWidget_list_visible3" value="Library.HasContent(musicvideos)"/>
+			</include>
+			<include content="HomePageWidget_list" condition="Library.HasContent(musicvideos)">
+				<!-- recently -->
+				<param name="HomePageWidget_content" value="videodb://recentlyaddedmusicvideos/"/>
+				<param name="HomePageWidget_content2" value="$VAR[WidgetInProgressPlace1]"/>
+				<param name="HomePageWidget_limit" value="10"/>
+				<param name="HomePageWidget_sortby" value="dateadded"/>
+				<param name="HomePageWidget_sortorder" value="descending"/>
+				<param name="HomePageWidget_list_id" value="242"/>
+				<param name="HomePageWidget_list_width" value="720"/>
+				<param name="HomePageWidget_list_onfocus" value="SetProperty(WidgetLabel,$LOCALIZE[20386],home)"/>
+				<param name="HomePageWidget_list_onunfocus" value="ClearProperty(WidgetLabel)"/>
+				<param name="HomePageWidget_list_visible" value="Skin.HasSetting(Widget_RecentMusicVideos)"/>
+				<param name="HomePageWidget_list_visible2" value="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),musicvideo)"/>
+				<param name="HomePageWidget_list_visible3" value="Library.HasContent(musicvideos)"/>
+			</include>
+			<include content="HomePageWidget_list" condition="Library.HasContent(musicvideos)">
+				<!-- custom -->
+				<param name="HomePageWidget_content" value="$VAR[HomeWidget_musicvideo_Path]"/>
+				<param name="HomePageWidget_sortby" value=""/>
+				<param name="HomePageWidget_sortorder" value=""/>
+				<param name="HomePageWidget_limit" value="20"/>
+				<param name="HomePageWidget_list_id" value="243"/>
+				<param name="HomePageWidget_list_width" value="720"/>
+				<param name="HomePageWidget_list_onfocus" value="SetProperty(WidgetLabel,$INFO[Skin.String(HomeWidget_musicvideo_Label)],home)"/>
+				<param name="HomePageWidget_list_onunfocus" value="ClearProperty(WidgetLabel)"/>
+				<param name="HomePageWidget_list_visible" value="Skin.HasSetting(Home_musicvideo_Button)"/>
+				<param name="HomePageWidget_list_visible2" value="Skin.HasSetting(HomeWidget_musicvideo_Standard)|Skin.HasSetting(HomeWidget_musicvideo_User)"/>
+				<param name="HomePageWidget_list_visible3" value="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),musicvideo)"/>
+			</include>
+			<include content="HomePageWidget_list" condition="Library.HasContent(musicvideos)">
+				<!-- inprogress place1 -->
+				<param name="HomePageWidget_content" value="$VAR[WidgetInProgressPlace1]"/>
+				<param name="HomePageWidget_limit" value="1"/>
+				<param name="HomePageWidget_sortby" value="lastplayed"/>
+				<param name="HomePageWidget_sortorder" value="descending"/>
+				<param name="HomePageWidget_list_id" value="244"/>
+				<param name="HomePageWidget_list_width" value="720"/>
+				<param name="HomePageWidget_list_onfocus" value="SetProperty(WidgetLabel,$LOCALIZE[575],home)"/>
+				<param name="HomePageWidget_list_onunfocus" value="ClearProperty(WidgetLabel)"/>
+				<param name="HomePageWidget_list_visible" value="Skin.HasSetting(Widget_inProgress_musicvideo_Place1)+![Skin.HasSetting(Widget_RecommendedMusicVideos)|Skin.HasSetting(Widget_RandomMusicVideos)|Skin.HasSetting(Widget_RecentMovies)|Skin.HasSetting(Widget_RecentMusicVideos)]"/>
+				<param name="HomePageWidget_list_visible2" value="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),musicvideo)"/>
+				<param name="HomePageWidget_list_visible3" value="!Skin.HasSetting(Home_musicvideo_Button)"/>
+			</include>
+        </control>
+    </include>
+    <include name="HomepageWidget_Picture">
+        <control type="group">
+            <include>HomepageWidgetPosition</include>
+            <include>opencloseslideleft</include>
+			<visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),picture)</visible>
+            <visible>Skin.HasSetting(Widget_Diashow)+!Skin.HasSetting(Home_picture_Button)</visible>
+            <include>HomepageWidgetBackground</include>
+            <control type="multiimage">
+                <description>Diashow</description>
+                <right>1</right>
+                <top>1</top>
+                <width>40%</width>
+                <height>238</height>
+                <imagepath flipx="true" diffuse="SideFadeWhite.png">$INFO[Skin.String(widget_diashow_folder)]</imagepath>
+                <info>Diashow</info>
+                <timeperimage>5000</timeperimage>
+                <fadetime>500</fadetime>
+                <pauseatend>2000</pauseatend>
+                <randomize>true</randomize>
+                <loop>yes</loop>
+                <aspectratio align="right" aligny="center">scale</aspectratio>
+			</control>
+			<include content="HomePageWidget_list">
+				<!-- custom -->
+				<param name="HomePageWidget_content" value="$VAR[HomeWidget_picture_Path]"/>
+				<param name="HomePageWidget_sortby" value=""/>
+				<param name="HomePageWidget_sortorder" value=""/>
+				<param name="HomePageWidget_limit" value="20"/>
+				<param name="HomePageWidget_list_id" value="248"/>
+				<param name="HomePageWidget_list_width" value="720"/>
+				<param name="HomePageWidget_list_onfocus" value="SetProperty(WidgetLabel,$INFO[Skin.String(HomeWidget_picture_Label)],home)"/>
+				<param name="HomePageWidget_list_onunfocus" value="ClearProperty(WidgetLabel)"/>
+				<param name="HomePageWidget_list_visible" value="Skin.HasSetting(Home_picture_Button)"/>
+				<param name="HomePageWidget_list_visible2" value="Skin.HasSetting(HomeWidget_picture_Standard)|Skin.HasSetting(HomeWidget_picture_User)"/>
+				<param name="HomePageWidget_list_visible3" value="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),picture)"/>
+			</include>
+		</control>
+    </include>
+    <include name="HomepageWidget_Weather">
+        <control type="group">
+            <include>HomepageWidgetPosition</include>
+            <include>opencloseslideleft</include>
+            <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),weather)</visible>
+            <visible>Skin.HasSetting(HomeWeatherWidgetToday)|Skin.HasSetting(HomeWeatherWidgetFull)</visible>
+            <visible>Weather.IsFetched</visible>
+            <control type="group" id="3004">
+                <right>SpacePadding</right>
+                <width>744</width>
+                <animation effect="slide" start="0" end="0,312" time="400" condition="Control.HasFocus(666)">conditional</animation>
+                <control type="list" id="3005">
+                    <animation effect="slide" start="0,0" end="556,0" time="0" condition="String.IsEqual(Container(3005).NumItems,1)">conditional</animation>
+                    <right>0</right>
+                    <!-- <width>744</width> -->
+                    <height>360</height>
+                    <onleft>3005</onleft>
+                    <onright>3005</onright>
+                    <onup>20</onup>
+                    <ondown>9000</ondown>
+                    <ondown>Action(FirstPage)</ondown>
+                    <viewtype label="535">list</viewtype>
+                    <pagecontrol/>
+                    <scrolltime>200</scrolltime>
+                    <orientation>Horizontal</orientation>
+                    <focusposition>1</focusposition>
+                    <movement>2</movement>
+                    <visible>Skin.HasSetting(HomeWeatherWidgetToday)|Skin.HasSetting(HomeWeatherWidgetFull)</visible>
+                    <itemlayout height="240" width="186">
+                        <control type="group">
+                            <right>8</right>
+                            <control type="image">
+                                <texture border="4">BlackBack$VAR[CornerSettingVar].png</texture>
+                            </control>
+                            <control type="label">
+                                <height>45</height>
+                                <font>font16</font>
+                                <textcolor>white</textcolor>
+                                <align>center</align>
+                                <aligny>center</aligny>
+                                <label>$INFO[ListItem.Label]</label>
+                            </control>
+                            <control type="group">
+                                <left>5</left>
+                                <right>5</right>
+                                <top>45</top>
+                                <bottom>45</bottom>
+                                <control type="multiimage">
+                                    <imagepath>$INFO[ListItem.Icon]</imagepath>
+                                    <timeperimage>100</timeperimage>
+                                    <randomize>false</randomize>
+                                    <fadetime>10</fadetime>
+                                    <aspectratio>keep</aspectratio>
+                                    <colordiffuse>$VAR[widgetdim]</colordiffuse>
+                                </control>
+                            </control>
+                            <control type="group">
+                                <bottom>0</bottom>
+                                <height>45</height>
+                                <control type="label">
+                                    <font>font16</font>
+                                    <textcolor>white</textcolor>
+                                    <shadowcolor>black</shadowcolor>
+                                    <align>center</align>
+                                    <aligny>center</aligny>
+                                    <label>$INFO[ListItem.Label2]</label>
+                                </control>
+                                <control type="label">
+                                    <description>fetching label</description>
+                                    <font>font16</font>
+                                    <textcolor>white</textcolor>
+                                    <shadowcolor>black</shadowcolor>
+                                    <align>center</align>
+                                    <aligny>center</aligny>
+                                    <label>$LOCALIZE[301366]</label>
+                                    <visible>!Weather.IsFetched</visible>
+                                </control>
+                            </control>
+                            <control type="image">
+                                <texture border="4">masks/Default$VAR[CornerSettingVar].png</texture>
+                            </control>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="240" width="186">
+                        <control type="group">
+                            <right>8</right>
+                            <control type="image">
+                                <texture border="4">BlackBack$VAR[CornerSettingVar].png</texture>
+                            </control>
+                            <control type="image">
+                                <colordiffuse>$VAR[BackgroundOverlayColorDialog]</colordiffuse>
+                                <texture border="4">WhiteBack$VAR[CornerSettingVar].png</texture>
+                                <visible>Control.HasFocus(3005)</visible>
+                            </control>
+                            <control type="label">
+                                <height>45</height>
+                                <font>font16</font>
+                                <textcolor>white</textcolor>
+                                <align>center</align>
+                                <aligny>center</aligny>
+                                <label>$INFO[ListItem.Label]</label>
+                            </control>
+                            <control type="group">
+                                <left>5</left>
+                                <right>5</right>
+                                <top>45</top>
+                                <bottom>45</bottom>
+                                <control type="multiimage">
+                                    <imagepath>$INFO[ListItem.Icon]</imagepath>
+                                    <timeperimage>100</timeperimage>
+                                    <randomize>false</randomize>
+                                    <fadetime>10</fadetime>
+                                    <aspectratio>keep</aspectratio>
+                                    <colordiffuse>$VAR[widgetdim]</colordiffuse>
+                                    <visible>!Control.HasFocus(3005)</visible>
+                                </control>
+                                <control type="multiimage">
+                                    <imagepath>$INFO[ListItem.Icon]</imagepath>
+                                    <timeperimage>100</timeperimage>
+                                    <randomize>false</randomize>
+                                    <fadetime>10</fadetime>
+                                    <aspectratio>keep</aspectratio>
+                                    <include>openclosevisible</include>
+                                    <visible>Control.HasFocus(3005)</visible>
+                                </control>
+                            </control>
+                            <control type="group">
+                                <bottom>0</bottom>
+                                <height>45</height>
+                                <control type="label">
+                                    <font>font16</font>
+                                    <textcolor>white</textcolor>
+                                    <shadowcolor>black</shadowcolor>
+                                    <align>center</align>
+                                    <aligny>center</aligny>
+                                    <label>$INFO[ListItem.Label2]</label>
+                                </control>
+                                <control type="label">
+                                    <description>fetching label</description>
+                                    <font>font16</font>
+                                    <textcolor>white</textcolor>
+                                    <shadowcolor>black</shadowcolor>
+                                    <align>center</align>
+                                    <aligny>center</aligny>
+                                    <label>$LOCALIZE[301366]</label>
+                                    <visible>!Weather.IsFetched</visible>
+                                </control>
+                            </control>
+                            <control type="image">
+                                <texture border="4">masks/Default$VAR[CornerSettingVar].png</texture>
+                            </control>
+                        </control>
+                    </focusedlayout>
+                    <content>
+                        <item>
+                            <label/>
+                            <icon/>
+                            <onclick/>
+                            <visible>!Weather.IsFetched</visible>
+                        </item>
+                        <item>
+                            <label>$INFO[Window(Weather).Property(Day0.Title)]</label>
+                            <label2>$INFO[Window(Weather).Property(Day0.LowTemp)]$INFO[System.TemperatureUnits] / $INFO[Window(Weather).Property(Day0.HighTemp)]$INFO[System.TemperatureUnits]</label2>
+                            <icon>$VAR[WeatherIconVar]$INFO[Window(Weather).Property(Day0.FanartCode)]$VAR[WeatherIconFolderVar]</icon>
+                            <onclick>ActivateWindow(weather)</onclick>
+                            <visible>Weather.IsFetched + String.IsEmpty(Window.Property(Daily.IsFetched))</visible>
+                        </item>
+                        <item>
+                            <label>$INFO[Window.Property(Daily.0.ShortDay)]</label>
+                            <label2>$INFO[Window.Property(Daily.0.HighTemperature),, 7] $INFO[Window.Property(Daily.0.LowTemperature)]</label2>
+                            <icon>$VAR[WeatherIconVar]$INFO[Window(Weather).Property(Daily.0.FanartCode)]$VAR[WeatherIconFolderVar]</icon>
+                            <onclick>ActivateWindow(weather)</onclick>
+                            <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Daily.IsFetched))</visible>
+                        </item>
+                        <include content="WeatherContentDefaultItem">
+                            <param name="day_id" value="1"/>
+                            <param name="visible" value="Skin.HasSetting(HomeWeatherWidgetFull)"/>
+                        </include>
+                        <include content="WeatherContentDefaultItem">
+                            <param name="day_id" value="2"/>
+                            <param name="visible" value="Skin.HasSetting(HomeWeatherWidgetFull)"/>
+                        </include>
+                        <include content="WeatherContentDefaultItem">
+                            <param name="day_id" value="3"/>
+                            <param name="visible" value="Skin.HasSetting(HomeWeatherWidgetFull)"/>
+                        </include>
+                        <include content="WeatherContentDefaultItem">
+                            <param name="day_id" value="4"/>
+                            <param name="visible" value="Skin.HasSetting(HomeWeatherWidgetFull)"/>
+                        </include>
+                        <include content="WeatherContentDefaultItem">
+                            <param name="day_id" value="5"/>
+                            <param name="visible" value="Skin.HasSetting(HomeWeatherWidgetFull)"/>
+                        </include>
+                        <include content="WeatherContentDefaultItem">
+                            <param name="day_id" value="6"/>
+                            <param name="visible" value="Skin.HasSetting(HomeWeatherWidgetFull)"/>
+                        </include>
+                        <include content="WeatherContentDailyItem">
+                            <param name="day_id" value="1"/>
+                            <param name="visible" value="Skin.HasSetting(HomeWeatherWidgetFull)"/>
+                        </include>
+                        <include content="WeatherContentDailyItem">
+                            <param name="day_id" value="2"/>
+                            <param name="visible" value="Skin.HasSetting(HomeWeatherWidgetFull)"/>
+                        </include>
+                        <include content="WeatherContentDailyItem">
+                            <param name="day_id" value="3"/>
+                            <param name="visible" value="Skin.HasSetting(HomeWeatherWidgetFull)"/>
+                        </include>
+                        <include content="WeatherContentDailyItem">
+                            <param name="day_id" value="4"/>
+                            <param name="visible" value="Skin.HasSetting(HomeWeatherWidgetFull)"/>
+                        </include>
+                        <include content="WeatherContentDailyItem">
+                            <param name="day_id" value="5"/>
+                            <param name="visible" value="Skin.HasSetting(HomeWeatherWidgetFull)"/>
+                        </include>
+                        <include content="WeatherContentDailyItem">
+                            <param name="day_id" value="6"/>
+                            <param name="visible" value="Skin.HasSetting(HomeWeatherWidgetFull)"/>
+                        </include>
+                        <include content="WeatherContentDailyItem">
+                            <param name="day_id" value="7"/>
+                            <param name="visible" value="Skin.HasSetting(HomeWeatherWidgetFull)"/>
+                        </include>
+                        <include content="WeatherContentDailyItem">
+                            <param name="day_id" value="8"/>
+                            <param name="visible" value="Skin.HasSetting(HomeWeatherWidgetFull)"/>
+                        </include>
+                        <include content="WeatherContentDailyItem">
+                            <param name="day_id" value="9"/>
+                            <param name="visible" value="Skin.HasSetting(HomeWeatherWidgetFull)"/>
+                        </include>
+                        <include content="WeatherContentDailyItem">
+                            <param name="day_id" value="10"/>
+                            <param name="visible" value="Skin.HasSetting(HomeWeatherWidgetFull)"/>
+                        </include>
+                    </content>
+                </control>
+                <control type="group">
+                    <right>8</right>
+                    <width>744</width>
+                    <control type="image">
+                        <top>252</top>
+                        <height>21</height>
+                        <aspectratio align="right" aligny="top">keep</aspectratio>
+                        <texture>$INFO[Window(weather).Property(WeatherProviderLogo)]</texture>
+                    </control>
+                </control>
+                <control type="group">
+                    <!-- today info -->
+                    <right>202</right>
+                    <visible>!Skin.HasSetting(HomeWeatherWidgetFull)</visible>
+                    <control type="image">
+                        <include condition="Skin.HasSetting(roundcorner)" content="cornersetting_round">
+                            <param name="image" value="SideFadeWhite_round.png"/>
+                            <param name="diffuse" />
+                            <param name="colordiffuse" value="black"/>
+                            <param name="border" value="4"/>
+                        </include>
+                        <include condition="!Skin.HasSetting(roundcorner)" content="cornersetting_sharp">
+                            <param name="flipx" value="true"/>
+                            <param name="image" value="SideFade.png"/>
+                        </include>
+                    </control>
+                    <control type="image">
+                        <texture border="4">buttons\ButtonNFhalf$VAR[CornerSettingVar].png</texture>
+                    </control>
+                    <control type="grouplist">
+                        <description>Control Area</description>
+                        <bottom>14</bottom>
+                        <right>20</right>
+                        <width>450</width>
+                        <itemgap>1</itemgap>
+                        <align>right</align>
+                        <orientation>vertical</orientation>
+                        <control type="label">
+                            <height>30</height>
+                            <font>font16</font>
+                            <textcolor>selected</textcolor>
+                            <align>right</align>
+                            <aligny>center</aligny>
+                            <label>$INFO[Window(Weather).Property(Location)]</label>
+                        </control>
+                        <control type="label">
+                            <height>30</height>
+                            <font>font16</font>
+                            <textcolor>selected</textcolor>
+                            <align>right</align>
+                            <aligny>center</aligny>
+                            <label>[COLOR=grey]$LOCALIZE[33020]: [/COLOR]$INFO[Window(Weather).Property(Current.Condition)]</label>
+                        </control>
+                        <control type="label">
+                            <height>30</height>
+                            <font>font16</font>
+                            <textcolor>selected</textcolor>
+                            <align>right</align>
+                            <aligny>center</aligny>
+                            <label>[COLOR=grey]$LOCALIZE[143] [/COLOR]$INFO[Window(Weather).Property(Current.Temperature),,°]</label>
+                        </control>
+                        <control type="label">
+                            <height>30</height>
+                            <font>font16</font>
+                            <textcolor>selected</textcolor>
+                            <align>right</align>
+                            <aligny>center</aligny>
+                            <label>[COLOR=grey]$LOCALIZE[376]: [/COLOR]$INFO[Window(Weather).Property(Daily.1.Precipitation),,]</label>
+                        </control>
+                        <control type="label">
+                            <height>30</height>
+                            <font>font16</font>
+                            <textcolor>selected</textcolor>
+                            <align>right</align>
+                            <aligny>center</aligny>
+                            <label>[COLOR=grey]$LOCALIZE[33027]: [/COLOR]$INFO[Window(Weather).Property(Today.Sunrise),,]</label>
+                        </control>
+                        <control type="label">
+                            <height>30</height>
+                            <font>font16</font>
+                            <textcolor>selected</textcolor>
+                            <align>right</align>
+                            <aligny>center</aligny>
+                            <label>[COLOR=grey]$LOCALIZE[33028]: [/COLOR]$INFO[Window(Weather).Property(Today.Sunset),,]</label>
+                        </control>
+                        <control type="label">
+                            <description>update label</description>
+                            <height>30</height>
+                            <font>font16</font>
+                            <textcolor>selected</textcolor>
+                            <align>right</align>
+                            <aligny>center</aligny>
+                            <label>[COLOR=grey]$LOCALIZE[12014]: [/COLOR]$INFO[Window(Weather).Property(Updated),,]</label>
+                        </control>
+                    </control>
+                </control>
+            </control>
+        </control>
+    </include>
+    <include name="HomepageWidget_PlayDisc">
+        <control type="group">
+            <include>HomepageWidgetPosition</include>
+            <include>opencloseslideleft</include>
+            <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),playdisc)</visible>
+            <include>HomepageWidgetBackground</include>
+            <visible>Skin.HasSetting(Widget_DVDLabel)</visible>
+            <visible>System.HasMediadvd</visible>
+            <control type="group">
+                <right>SpacePadding</right>
+                <width>40%</width>
+                <control type="image">
+                    <right>SpacePadding</right>
+                    <top>60</top>
+                    <height>142</height>
+                    <aspectratio align="right" aligny="center">keep</aspectratio>
+                    <texture>cdart/default.png</texture>
+                </control>
+                <control type="image">
+                    <right>0</right>
+                    <top>12</top>
+                    <height>240</height>
+                    <aspectratio align="right" aligny="center">keep</aspectratio>
+                    <texture flipx="true">clear-cases/fallback.png</texture>
+                </control>
+                <control type="label">
+                    <right>240</right>
+                    <top>150</top>
+                    <height>75</height>
+                    <label>$LOCALIZE[165]</label>
+                    <align>right</align>
+                    <textcolor>selected</textcolor>
+                </control>
+                <control type="label">
+                    <right>240</right>
+                    <top>188</top>
+                    <height>75</height>
+                    <width>525</width>
+                    <label>$INFO[System.DVDLabel]</label>
+                    <align>right</align>
+                    <textcolor>white</textcolor>
+                </control>
+            </control>
+        </control>
+    </include>
+    <include name="HomepageWidget_Custom1">
+        <control type="group">
+            <include>HomepageWidgetPosition</include>
+            <include>opencloseslideleft</include>
+            <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),custom1)</visible>
+			<include content="HomePageWidget_list">
+				<param name="HomePageWidget_content" value="$VAR[HomeWidget_custom1_Path]"/>
+				<param name="HomePageWidget_sortby" value=""/>
+				<param name="HomePageWidget_sortorder" value=""/>
+				<param name="HomePageWidget_limit" value="20"/>
+				<param name="HomePageWidget_list_id" value="250"/>
+				<param name="HomePageWidget_list_width" value="720"/>
+				<param name="HomePageWidget_list_onfocus" value="SetProperty(WidgetLabel,$INFO[Skin.String(HomeWidget_custom1_Label)],home)"/>
+				<param name="HomePageWidget_list_onunfocus" value="ClearProperty(WidgetLabel)"/>
+				<param name="HomePageWidget_list_visible" value="Skin.HasSetting(Home_custom1_Button)"/>
+				<param name="HomePageWidget_list_visible2" value="Skin.HasSetting(HomeWidget_custom1_Standard)|Skin.HasSetting(HomeWidget_custom1_User)"/>
+				<param name="HomePageWidget_list_visible3" value="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),custom1)"/>
+			</include>
+        </control>
+    </include>
+    <include name="HomepageWidget_Custom2">
+        <control type="group">
+            <include>HomepageWidgetPosition</include>
+            <include>opencloseslideleft</include>
+            <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),custom2)</visible>
+			<include content="HomePageWidget_list">
+				<param name="HomePageWidget_content" value="$VAR[HomeWidget_custom2_Path]"/>
+				<param name="HomePageWidget_sortby" value=""/>
+				<param name="HomePageWidget_sortorder" value=""/>
+				<param name="HomePageWidget_limit" value="20"/>
+				<param name="HomePageWidget_list_id" value="254"/>
+				<param name="HomePageWidget_list_width" value="720"/>
+				<param name="HomePageWidget_list_onfocus" value="SetProperty(WidgetLabel,$INFO[Skin.String(HomeWidget_custom2_Label)],home)"/>
+				<param name="HomePageWidget_list_onunfocus" value="ClearProperty(WidgetLabel)"/>
+				<param name="HomePageWidget_list_visible" value="Skin.HasSetting(Home_custom2_Button)"/>
+				<param name="HomePageWidget_list_visible2" value="Skin.HasSetting(HomeWidget_custom2_Standard)|Skin.HasSetting(HomeWidget_custom2_User)"/>
+				<param name="HomePageWidget_list_visible3" value="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),custom2)"/>
+			</include>
+        </control>
+    </include>
+    <include name="HomepageWidget_Custom3">
+        <control type="group">
+            <include>HomepageWidgetPosition</include>
+            <include>opencloseslideleft</include>
+            <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),custom3)</visible>
+			<include content="HomePageWidget_list">
+				<param name="HomePageWidget_content" value="$VAR[HomeWidget_custom3_Path]"/>
+				<param name="HomePageWidget_sortby" value=""/>
+				<param name="HomePageWidget_sortorder" value=""/>
+				<param name="HomePageWidget_limit" value="20"/>
+				<param name="HomePageWidget_list_id" value="258"/>
+				<param name="HomePageWidget_list_width" value="720"/>
+				<param name="HomePageWidget_list_onfocus" value="SetProperty(WidgetLabel,$INFO[Skin.String(HomeWidget_custom3_Label)],home)"/>
+				<param name="HomePageWidget_list_onunfocus" value="ClearProperty(WidgetLabel)"/>
+				<param name="HomePageWidget_list_visible" value="Skin.HasSetting(Home_custom3_Button)"/>
+				<param name="HomePageWidget_list_visible2" value="Skin.HasSetting(HomeWidget_custom3_Standard)|Skin.HasSetting(HomeWidget_custom3_User)"/>
+				<param name="HomePageWidget_list_visible3" value="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),custom3)"/>
+			</include>
+        </control>
+    </include>
+    <include name="HomepageWidget_Custom4">
+        <control type="group">
+            <include>HomepageWidgetPosition</include>
+            <include>opencloseslideleft</include>
+            <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),custom4)</visible>
+			<include content="HomePageWidget_list">
+				<param name="HomePageWidget_content" value="$VAR[HomeWidget_custom4_Path]"/>
+				<param name="HomePageWidget_sortby" value=""/>
+				<param name="HomePageWidget_sortorder" value=""/>
+				<param name="HomePageWidget_limit" value="20"/>
+				<param name="HomePageWidget_list_id" value="262"/>
+				<param name="HomePageWidget_list_width" value="720"/>
+				<param name="HomePageWidget_list_onfocus" value="SetProperty(WidgetLabel,$INFO[Skin.String(HomeWidget_custom4_Label)],home)"/>
+				<param name="HomePageWidget_list_onunfocus" value="ClearProperty(WidgetLabel)"/>
+				<param name="HomePageWidget_list_visible" value="Skin.HasSetting(Home_custom4_Button)"/>
+				<param name="HomePageWidget_list_visible2" value="Skin.HasSetting(HomeWidget_custom4_Standard)|Skin.HasSetting(HomeWidget_custom4_User)"/>
+				<param name="HomePageWidget_list_visible3" value="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),custom4)"/>
+			</include>
+        </control>
+    </include>
+    <include name="HomepageWidget_Custom5">
+        <control type="group">
+            <include>HomepageWidgetPosition</include>
+            <include>opencloseslideleft</include>
+            <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),custom5)</visible>
+			<include content="HomePageWidget_list">
+				<param name="HomePageWidget_content" value="$VAR[HomeWidget_custom5_Path]"/>
+				<param name="HomePageWidget_sortby" value=""/>
+				<param name="HomePageWidget_sortorder" value=""/>
+				<param name="HomePageWidget_limit" value="20"/>
+				<param name="HomePageWidget_list_id" value="266"/>
+				<param name="HomePageWidget_list_width" value="720"/>
+				<param name="HomePageWidget_list_onfocus" value="SetProperty(WidgetLabel,$INFO[Skin.String(HomeWidget_custom5_Label)],home)"/>
+				<param name="HomePageWidget_list_onunfocus" value="ClearProperty(WidgetLabel)"/>
+				<param name="HomePageWidget_list_visible" value="Skin.HasSetting(Home_custom5_Button)"/>
+				<param name="HomePageWidget_list_visible2" value="Skin.HasSetting(HomeWidget_custom5_Standard)|Skin.HasSetting(HomeWidget_custom5_User)"/>
+				<param name="HomePageWidget_list_visible3" value="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),custom5)"/>
+			</include>
+        </control>
+    </include>
+    <include name="HomepageWidget_Custom6">
+        <control type="group">
+            <include>HomepageWidgetPosition</include>
+            <include>opencloseslideleft</include>
+            <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),custom6)</visible>
+			<include content="HomePageWidget_list">
+				<param name="HomePageWidget_content" value="$VAR[HomeWidget_custom6_Path]"/>
+				<param name="HomePageWidget_sortby" value=""/>
+				<param name="HomePageWidget_sortorder" value=""/>
+				<param name="HomePageWidget_limit" value="20"/>
+				<param name="HomePageWidget_list_id" value="270"/>
+				<param name="HomePageWidget_list_width" value="720"/>
+				<param name="HomePageWidget_list_onfocus" value="SetProperty(WidgetLabel,$INFO[Skin.String(HomeWidget_custom6_Label)],home)"/>
+				<param name="HomePageWidget_list_onunfocus" value="ClearProperty(WidgetLabel)"/>
+				<param name="HomePageWidget_list_visible" value="Skin.HasSetting(Home_custom6_Button)"/>
+				<param name="HomePageWidget_list_visible2" value="Skin.HasSetting(HomeWidget_custom6_Standard)|Skin.HasSetting(HomeWidget_custom6_User)"/>
+				<param name="HomePageWidget_list_visible3" value="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),custom6)"/>
+			</include>
+        </control>
+    </include>
+    <include name="HomepageWidget_Custom7">
+        <control type="group">
+            <include>HomepageWidgetPosition</include>
+            <include>opencloseslideleft</include>
+            <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),custom7)</visible>
+			<include content="HomePageWidget_list">
+				<param name="HomePageWidget_content" value="$VAR[HomeWidget_custom7_Path]"/>
+				<param name="HomePageWidget_sortby" value=""/>
+				<param name="HomePageWidget_sortorder" value=""/>
+				<param name="HomePageWidget_limit" value="20"/>
+				<param name="HomePageWidget_list_id" value="274"/>
+				<param name="HomePageWidget_list_width" value="720"/>
+				<param name="HomePageWidget_list_onfocus" value="SetProperty(WidgetLabel,$INFO[Skin.String(HomeWidget_custom7_Label)],home)"/>
+				<param name="HomePageWidget_list_onunfocus" value="ClearProperty(WidgetLabel)"/>
+				<param name="HomePageWidget_list_visible" value="Skin.HasSetting(Home_custom7_Button)"/>
+				<param name="HomePageWidget_list_visible2" value="Skin.HasSetting(HomeWidget_custom7_Standard)|Skin.HasSetting(HomeWidget_custom7_User)"/>
+				<param name="HomePageWidget_list_visible3" value="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),custom7)"/>
+			</include>
+        </control>
+    </include>
+    <include name="HomepageWidget_Custom8">
+        <control type="group">
+            <include>HomepageWidgetPosition</include>
+            <include>opencloseslideleft</include>
+            <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),custom8)</visible>
+			<include content="HomePageWidget_list">
+				<param name="HomePageWidget_content" value="$VAR[HomeWidget_custom8_Path]"/>
+				<param name="HomePageWidget_sortby" value=""/>
+				<param name="HomePageWidget_sortorder" value=""/>
+				<param name="HomePageWidget_limit" value="20"/>
+				<param name="HomePageWidget_list_id" value="278"/>
+				<param name="HomePageWidget_list_width" value="720"/>
+				<param name="HomePageWidget_list_onfocus" value="SetProperty(WidgetLabel,$INFO[Skin.String(HomeWidget_custom8_Label)],home)"/>
+				<param name="HomePageWidget_list_onunfocus" value="ClearProperty(WidgetLabel)"/>
+				<param name="HomePageWidget_list_visible" value="Skin.HasSetting(Home_custom8_Button)"/>
+				<param name="HomePageWidget_list_visible2" value="Skin.HasSetting(HomeWidget_custom8_Standard)|Skin.HasSetting(HomeWidget_custom8_User)"/>
+				<param name="HomePageWidget_list_visible3" value="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),custom8)"/>
+			</include>
+        </control>
+    </include>
+    <include name="HomepageWidget_Custom9">
+        <control type="group">
+            <include>HomepageWidgetPosition</include>
+            <include>opencloseslideleft</include>
+            <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),custom9)</visible>
+			<include content="HomePageWidget_list">
+				<param name="HomePageWidget_content" value="$VAR[HomeWidget_custom9_Path]"/>
+				<param name="HomePageWidget_sortby" value=""/>
+				<param name="HomePageWidget_sortorder" value=""/>
+				<param name="HomePageWidget_limit" value="20"/>
+				<param name="HomePageWidget_list_id" value="282"/>
+				<param name="HomePageWidget_list_width" value="720"/>
+				<param name="HomePageWidget_list_onfocus" value="SetProperty(WidgetLabel,$INFO[Skin.String(HomeWidget_custom9_Label)],home)"/>
+				<param name="HomePageWidget_list_onunfocus" value="ClearProperty(WidgetLabel)"/>
+				<param name="HomePageWidget_list_visible" value="!Skin.HasSetting(Home_custom9_Button)"/>
+				<param name="HomePageWidget_list_visible2" value="Skin.HasSetting(HomeWidget_custom9_Standard)|Skin.HasSetting(HomeWidget_custom9_User)"/>
+				<param name="HomePageWidget_list_visible3" value="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),custom9)"/>
+			</include>
+        </control>
+    </include>
+    <include name="HomepageWidget_pvr_TV">
+        <control type="group">
+            <include>HomepageWidgetPosition</include>
+            <include>opencloseslideleft</include>
+            <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),pvr)</visible>
+			<include content="HomePageWidget_list">
+				<!-- pvr recordings -->
+				<param name="HomePageWidget_content" value="$VAR[PVRWidgetRecordsFlatVAR]"/>
+				<param name="HomePageWidget_sortby" value="date"/>
+				<param name="HomePageWidget_sortorder" value="descending"/>
+				<param name="HomePageWidget_limit" value="40"/>
+				<param name="HomePageWidget_list_id" value="286"/>
+				<param name="HomePageWidget_list_width" value="729"/>
+				<param name="HomePageWidget_list_onfocus" value="SetProperty(WidgetLabel,$LOCALIZE[20007],home)"/>
+				<param name="HomePageWidget_list_onunfocus" value="ClearProperty(WidgetLabel)"/>
+				<param name="HomePageWidget_list_visible" value="Skin.HasSetting(Widget_Recordings)"/>
+				<param name="HomePageWidget_list_visible2" value="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),pvr)"/>
+				<param name="HomePageWidget_list_visible3" value="true"/>
+				<!-- <param name="HomePageWidget_list_visible3" value="Integer.IsGreater(Container(295).NumItems,0)"/> -->
+			</include>
+			<include content="HomePageWidget_list">
+				<!-- pvr timer -->
+				<param name="HomePageWidget_content" value="pvr://timers/tv/timers"/>
+				<param name="HomePageWidget_sortby" value="date"/>
+				<param name="HomePageWidget_sortorder" value="ascending"/>
+				<param name="HomePageWidget_limit" value="10"/>
+				<param name="HomePageWidget_list_id" value="287"/>
+				<param name="HomePageWidget_list_width" value="729"/>
+				<param name="HomePageWidget_list_onfocus" value="SetProperty(WidgetLabel,$LOCALIZE[19040],home)"/>
+				<param name="HomePageWidget_list_onunfocus" value="ClearProperty(WidgetLabel)"/>
+				<param name="HomePageWidget_list_visible" value="Skin.HasSetting(Widget_PVRTimers)+PVR.HasTimer"/>
+				<param name="HomePageWidget_list_visible2" value="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),pvr)"/>
+				<param name="HomePageWidget_list_visible3" value="true"/>
+				<!-- <param name="HomePageWidget_list_visible3" value="Integer.IsGreater(Container(2951).NumItems,0)"/> -->
+			</include>
+			<include content="HomePageWidget_list">
+				<!-- pvr channels -->
+				<param name="HomePageWidget_content" value="$INFO[Skin.String(Widget_pvr_TV_WidgetChannels_Path)]"/>
+				<param name="HomePageWidget_sortby" value="number"/>
+				<param name="HomePageWidget_sortorder" value="ascending"/>
+				<param name="HomePageWidget_limit" value="20"/>
+				<param name="HomePageWidget_list_id" value="288"/>
+				<param name="HomePageWidget_list_width" value="729"/>
+				<param name="HomePageWidget_list_onfocus" value="SetProperty(WidgetLabel,$INFO[Skin.String(Widget_pvr_TV_WidgetChannels_Path)],home)"/>
+				<param name="HomePageWidget_list_onunfocus" value="ClearProperty(WidgetLabel)"/>
+				<param name="HomePageWidget_list_visible" value="Skin.HasSetting(Widget_LiveTVWidgetChannels)+PVR.HasTVChannels"/>
+				<param name="HomePageWidget_list_visible2" value="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),pvr)"/>
+				<param name="HomePageWidget_list_visible3" value="!String.IsEmpty(Skin.String(Widget_pvr_TV_WidgetChannels_Path))+!Skin.HasSetting(Widget_LiveTVWidgetChannels_inprogress)"/>
+			</include>
+			<include content="HomePageWidget_list">
+				<!-- pvr channels -->
+				<param name="HomePageWidget_content" value="pvr://channels/tv/*"/>
+				<param name="HomePageWidget_sortby" value="lastplayed"/>
+				<param name="HomePageWidget_sortorder" value="descending"/>
+				<param name="HomePageWidget_limit" value="20"/>
+				<param name="HomePageWidget_list_id" value="289"/>
+				<param name="HomePageWidget_list_width" value="729"/>
+				<param name="HomePageWidget_list_onfocus" value="SetProperty(WidgetLabel,$LOCALIZE[575],home)"/>
+				<param name="HomePageWidget_list_onunfocus" value="ClearProperty(WidgetLabel)"/>
+				<param name="HomePageWidget_list_visible" value="Skin.HasSetting(Widget_LiveTVWidgetChannels)+PVR.HasTVChannels"/>
+				<param name="HomePageWidget_list_visible2" value="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),pvr)"/>
+				<param name="HomePageWidget_list_visible3" value="!String.IsEmpty(Skin.String(Widget_pvr_TV_WidgetChannels_Path))+Skin.HasSetting(Widget_LiveTVWidgetChannels_inprogress)"/>
+			</include>
+        </control>
+    </include>
+    <include name="HomepageWidget_pvr_RADIO">
+        <control type="group">
+            <include>HomepageWidgetPosition</include>
+            <include>opencloseslideleft</include>
+            <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),radio)</visible>
+            <visible>Skin.HasSetting(Widget_pvr_radio_WidgetChannels)</visible>
+			<include content="HomePageWidget_list">
+				<!-- channels -->
+				<param name="HomePageWidget_content" value="$INFO[Skin.String(Widget_pvr_radio_WidgetChannels_Path)]"/>
+				<param name="HomePageWidget_limit" value="10"/>
+				<param name="HomePageWidget_sortby" value=""/>
+				<param name="HomePageWidget_list_id" value="292"/>
+				<param name="HomePageWidget_list_width" value="729"/>
+				<param name="HomePageWidget_list_onfocus" value="SetProperty(WidgetLabel,$INFO[Skin.String(Widget_pvr_radio_WidgetChannels_Path)],home)"/>
+				<param name="HomePageWidget_list_onunfocus" value="ClearProperty(WidgetLabel)"/>
+				<param name="HomePageWidget_list_visible" value="Skin.HasSetting(Widget_pvr_radio_WidgetChannels)"/>
+				<param name="HomePageWidget_list_visible2" value="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),radio)"/>
+				<param name="HomePageWidget_list_visible3" value="!String.IsEmpty(Skin.String(Widget_pvr_radio_WidgetChannels_Path))"/>
+			</include>
+        </control>
+    </include>
+    <include name="HomepageWidget_System">
+        <control type="group">
+            <include>HomepageWidgetPosition</include>
+            <include>opencloseslideleft</include>
+            <visible>Skin.HasSetting(Widget_Systeminfo)+String.IsEqual(Container(9000).ListItem.Property(homemenu_id),setting)</visible>
+            <include>HomepageWidgetBackground</include>
+            <control type="grouplist">
+                <right>10</right>
+                <width>40%</width>
+                <height>240</height>
+                <itemgap>0</itemgap>
+                <align>center</align>
+                <control type="label">
+                    <description>Screen</description>
+                    <height>30</height>
+                    <align>right</align>
+                    <aligny>top</aligny>
+                    <textcolor>grey</textcolor>
+                    <font>font12</font>
+                    <label>$INFO[System.ScreenMode]</label>
+                </control>
+                <control type="label">
+                    <description>Network</description>
+                    <height>33</height>
+                    <align>right</align>
+                    <textcolor>grey</textcolor>
+                    <font>font12</font>
+                    <label>$INFO[Network.IPAddress,IP: ,]$INFO[Network.MacAddress, | MAC: ,]</label>
+                    <visible>!String.IsEmpty(Network.IPAddress)</visible>
+                </control>
+                <control type="label">
+                    <description>FPS</description>
+                    <height>33</height>
+                    <align>right</align>
+                    <textcolor>grey</textcolor>
+                    <font>font12</font>
+                    <label>FPS: $INFO[System.FPS]</label>
+                </control>
+                <control type="label">
+                    <description>CpuFrequency</description>
+                    <height>33</height>
+                    <align>right</align>
+                    <textcolor>grey</textcolor>
+                    <font>font12</font>
+                    <label>$LOCALIZE[13284] $INFO[System.CpuFrequency]</label>
+                </control>
+                <control type="label">
+                    <description>CPU Text</description>
+                    <height>33</height>
+                    <align>right</align>
+                    <textcolor>grey</textcolor>
+                    <font>font12</font>
+                    <label>$LOCALIZE[13271] $INFO[System.CPUUsage]</label>
+                </control>
+                <control type="label">
+                    <description>fake</description>
+                    <height>3</height>
+                    <label/>
+                </control>
+                <control type="progress">
+                    <description>CPU BAR</description>
+                    <height>9</height>
+                    <info>System.CPUUsage</info>
+                    <animation effect="rotatey" end="180" center="auto" condition="true">Conditional</animation>
+                </control>
+                <control type="label">
+                    <description>Memory Text</description>
+                    <height>33</height>
+                    <align>right</align>
+                    <textcolor>grey</textcolor>
+                    <font>font12</font>
+                    <label>$LOCALIZE[31048] $INFO[system.memory(used.percent)]</label>
+                </control>
+                <control type="label">
+                    <description>fake</description>
+                    <height>3</height>
+                    <label/>
+                </control>
+                <control type="progress">
+                    <description>Memory BAR</description>
+                    <height>9</height>
+                    <info>system.memory(used)</info>
+                    <animation effect="rotatey" end="180" center="auto" condition="true">Conditional</animation>
+                </control>
+            </control>
+        </control>
+    </include>
+    <include name="HomepageWidget_Games">
+        <control type="group">
+            <include>HomepageWidgetPosition</include>
+            <include>opencloseslideleft</include>
+            <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),games)</visible>
+			<include content="HomePageWidget_list">
+				<!-- last used -->
+				<param name="HomePageWidget_content" value="addons://sources/game/"/>
+				<param name="HomePageWidget_limit" value="10"/>
+				<param name="HomePageWidget_sortby" value="lastused"/>
+				<param name="HomePageWidget_sortorder" value="ascending"/>
+				<param name="HomePageWidget_list_id" value="294"/>
+				<param name="HomePageWidget_list_width" value="720"/>
+				<param name="HomePageWidget_list_onfocus" value="SetProperty(WidgetLabel,$LOCALIZE[10821],home)"/>
+				<param name="HomePageWidget_list_onunfocus" value="ClearProperty(WidgetLabel)"/>
+				<param name="HomePageWidget_list_visible" value="Skin.HasSetting(Widget_LastusedGames)"/>
+				<param name="HomePageWidget_list_visible2" value="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),games)"/>
+				<param name="HomePageWidget_list_visible3" value="!Skin.HasSetting(Home_games_Button)"/>
+			</include>
+			<include content="HomePageWidget_list">
+				<!-- custom -->
+				<param name="HomePageWidget_content" value="$VAR[HomeWidget_games_Path]"/>
+				<param name="HomePageWidget_limit" value="20"/>
+				<param name="HomePageWidget_sortby" value=""/>
+				<param name="HomePageWidget_sortorder" value=""/>
+				<param name="HomePageWidget_list_id" value="295"/>
+				<param name="HomePageWidget_list_width" value="720"/>
+				<param name="HomePageWidget_list_onfocus" value="SetProperty(WidgetLabel,$INFO[Skin.String(HomeWidget_games_Label)],home)"/>
+				<param name="HomePageWidget_list_onunfocus" value="ClearProperty(WidgetLabel)"/>
+				<param name="HomePageWidget_list_visible" value="Skin.HasSetting(Home_games_Button)"/>
+				<param name="HomePageWidget_list_visible2" value="Skin.HasSetting(HomeWidget_games_User)|Skin.HasSetting(HomeWidget_games_Standard)"/>
+				<param name="HomePageWidget_list_visible3" value="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),games)"/>
+			</include>
+        </control>
+    </include>
+    <include name="HomepageWidgetInfoPanel_fanart">
+        <control type="group">
+            <visible>Control.HasFocus($PARAM[HomePageWidget_id])</visible>
+            <visible>Skin.HasSetting(fanart)</visible>
+            <control type="image">
+                <description>background</description>
+                <include>openclosemedium</include>
+                <left>-15</left>
+                <top>1</top>
+                <width>600</width>
+                <height>237</height>
+                <aspectratio align="left" aligny="center">scale</aspectratio>
+                <texture diffuse="SideFadeWhiteHalf.png">$INFO[ListItem.Art(fanart)]</texture>
+                <visible>Skin.HasSetting(fanart)+!String.IsEmpty(ListItem.Art(fanart))</visible>
+            </control>
+            <control type="image">
+                <description>background</description>
+                <include>openclosemedium</include>
+                <left>-15</left>
+                <top>1</top>
+                <width>600</width>
+                <height>237</height>
+                <aspectratio align="left" aligny="center">scale</aspectratio>
+                <texture diffuse="SideFadeWhiteHalf.png">$INFO[ListItem.Property(fanart_image)]</texture>
+                <visible>Skin.HasSetting(fanart)+!String.IsEmpty(ListItem.Property(fanart_image))+String.IsEmpty(ListItem.Art(fanart))</visible>
+            </control>
+            <control type="image">
+                <description>background</description>
+                <left>-15</left>
+                <top>0</top>
+                <width>1125</width>
+                <height>240</height>
+                <texture border="15" flipx="true">buttons\ButtonNFhalf.png</texture>
+                <visible>Skin.HasSetting(fanart)+!String.IsEmpty(ListItem.Art(fanart))+!String.IsEmpty(ListItem.Property(fanart_image))</visible>
+            </control>
+            <control type="group">
+                <left>57</left>
+                <top>160</top>
+                <width>300</width>
+                <height>150</height>
+                <control type="image">
+                    <include>openclosemedium</include>
+                    <aspectratio align="left" aligny="center">keep</aspectratio>
+                    <texture>$VAR[ClearlogoVAR]</texture>
+                    <visible>Control.Hasfocus($PARAM[HomePageWidget_id])</visible>
+                    <visible>Skin.HasSetting(EnableExtendedArt)</visible>
+                </control>
+            </control>
+            <!-- <control type="image">
+                <include>openclosemedium</include>
+                <left>57</left>
+                <top>136</top>
+                <width>302</width>
+                <height>160</height>
+                <aspectratio align="left" aligny="bottom">keep</aspectratio>
+                <texture>$VAR[ClearlogoVAR]</texture>
+                <visible>Skin.HasSetting(EnableExtendedArt)</visible>
+                <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),music)</visible>
+            </control> -->
+        </control>
+    </include>
+    <include name="HomepageWidgetInfoPanel">
+        <control type="group">
+			<visible>Integer.IsGreater(Container($PARAM[HomePageWidget_id]).NumItems,0)+Control.IsVisible($PARAM[HomePageWidget_id])</visible>
+            <visible>ControlGroup(2900).HasFocus()|!Player.HasMedia</visible>
+            <left>334</left>
+            <height>330</height>
+            <control type="group">
+                <left>-166</left>
+                <width>784</width>
+                <height>240</height>
+                <control type="image">
+                    <include condition="Skin.HasSetting(roundcorner)" content="cornersetting_round">
+                        <param name="image" value="SideFadeWhite_round.png"/>
+                        <param name="diffuse" />
+                        <param name="colordiffuse" value="black"/>
+                        <param name="border" value="4"/>
+                    </include>
+                    <include condition="!Skin.HasSetting(roundcorner)" content="cornersetting_sharp">
+                        <param name="flipx" value="true"/>
+                        <param name="image" value="SideFade.png"/>
+                    </include>
+                </control>
+                <control type="image">
+                    <texture border="4">buttons\ButtonNFhalf$VAR[CornerSettingVar].png</texture>
+                </control>
+            </control>
+        </control>
+    </include>
+    <include name="HomepageWidgetInfoPanel_Data">
+        <control type="group">
+            <left>205</left>
+            <top>12</top>
+            <include>openclosemedium</include>
+			<visible>Control.HasFocus($PARAM[HomePageWidget_id])</visible>
+            <!-- zeile 1 -->
+            <control type="label">
+                <left>0</left>
+                <top>0</top>
+                <width>725</width>
+                <height>30</height>
+                <font>font12</font>
+                <textcolor>grey</textcolor>
+                <align>right</align>
+                <aligny>center</aligny>
+                <label>[UPPERCASE]$VAR[WidgetInProgressRow1_Label][/UPPERCASE] $INFO[Container($PARAM[HomePageWidget_id]).CurrentItem,(,/]$INFO[Container($PARAM[HomePageWidget_id]).NumItems,,)]</label>
+            </control>
+            <!-- zeile 2 (title) -->
+            <control type="label">
+                <left>0</left>
+                <top>30</top>
+                <width>725</width>
+                <height>68</height>
+                <font>impacted21</font>
+                <align>right</align>
+                <aligny>center</aligny>
+                <label>$VAR[SkinWidgetInfoDataVar]</label>
+            </control>
+        </control>
+		<!-- ab zeile 3 -->
+        <control type="grouplist">
+            <left>205</left>
+            <top>108</top>
+            <height>111</height>
+            <itemgap>3</itemgap>
+            <include>openclosemedium</include>
+			<visible>Control.HasFocus($PARAM[HomePageWidget_id])</visible>
+            <control type="label">
+                <width>725</width>
+                <height>24</height>
+                <font>font12</font>
+                <align>right</align>
+                <textcolor>grey</textcolor>
+                <label>$INFO[Container.ListItem.EpisodeName]</label>
+                <visible>!String.IsEmpty(Container.ListItem.EpisodeName)</visible>
+            </control>
+            <control type="label">
+                <width>725</width>
+                <height>24</height>
+                <font>font12</font>
+                <align>right</align>
+                <textcolor>grey</textcolor>
+                <label>$INFO[Container.ListItem.Set]</label>
+                <visible>!String.IsEmpty(Container.ListItem.Set)+String.Contains(Container.ListItem.DBType,set)</visible>
+            </control>
+            <control type="label">
+                <width>725</width>
+                <height>24</height>
+                <font>font12</font>
+                <align>right</align>
+                <textcolor>grey</textcolor>
+                <label>$INFO[Container.ListItem.ChannelName]</label>
+                <visible>!String.IsEmpty(Container.ListItem.ChannelName)</visible>
+            </control>
+            <control type="label">
+                <width>725</width>
+                <height>24</height>
+                <font>font12</font>
+                <align>right</align>
+                <textcolor>grey</textcolor>
+                <label>$INFO[Container.ListItem.Season, $LOCALIZE[20373] , ]$INFO[Container.ListItem.Episode,$LOCALIZE[20359] ,]</label>
+                <visible>![String.IsEmpty(Container.ListItem.Season)+String.IsEmpty(Container.ListItem.Episode)]</visible>
+            </control>
+            <control type="label">
+                <width>725</width>
+                <height>24</height>
+                <font>font12</font>
+                <align>right</align>
+                <label>$INFO[Container.ListItem.Comment]</label>
+                <visible>!String.IsEmpty(Container.ListItem.Comment)</visible>
+            </control>
+            <control type="label">
+                <width>725</width>
+                <height>24</height>
+                <font>font12</font>
+                <align>right</align>
+                <textcolor>grey</textcolor>
+                <label>$INFO[Container.ListItem.Genre]</label>
+                <visible>!String.IsEmpty(Container.ListItem.Genre)</visible>
+            </control>
+            <control type="label">
+                <width>725</width>
+                <height>24</height>
+                <font>font12</font>
+                <align>right</align>
+                <textcolor>grey</textcolor>
+                <label>$INFO[Container.ListItem.Year]$INFO[Container.ListItem.Property(Album_Label), / ,]</label>
+                <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),music)</visible>
+                <visible>!String.IsEmpty(Container.ListItem.Year)</visible>
+            </control>
+            <control type="label">
+                <width>725</width>
+                <height>24</height>
+                <font>font12</font>
+                <align>right</align>
+                <textcolor>grey</textcolor>
+                <label>$INFO[Container.ListItem.DateAdded,$LOCALIZE[570]: ,]</label>
+                <visible>!String.IsEmpty(Container.ListItem.DateAdded)+!String.IsEmpty(Container.ListItem.LastPlayed)</visible>
+            </control>
+            <control type="label">
+                <width>725</width>
+                <height>24</height>
+                <font>font12</font>
+                <align>right</align>
+                <textcolor>grey</textcolor>
+                <label>$INFO[Container.ListItem.AudioLanguage,, / ]$INFO[Container.ListItem.SubtitleLanguage,sub:  , / ]$INFO[Container.ListItem.VideoResolution,, / ]$INFO[Container.ListItem.VideoCodec,, / ]$INFO[Container.ListItem.VideoAspect,, / ]$INFO[Container.ListItem.AudioCodec,, / ]$INFO[Container.ListItem.AudioChannels,, $LOCALIZE[19019]]</label>
+                <visible>!String.IsEmpty(Container.ListItem.VideoResolution)</visible>
+            </control>
+            <control type="label">
+                <width>725</width>
+                <height>24</height>
+                <font>font12</font>
+                <align>right</align>
+				<aligny>bottom</aligny>
+                <textcolor>grey</textcolor>
+                <label>$INFO[Container.ListItem.Property(Album_Description)]</label>
+                <visible>!String.IsEmpty(Container.ListItem.Property(Album_Description))</visible>
+                <scroll>false</scroll>
+            </control>
+            <!-- TV Highlihgts Grabber -->
+            <control type="label">
+                <width>725</width>
+                <height>24</height>
+                <font>font12</font>
+                <align>right</align>
+                <textcolor>grey</textcolor>
+                <label>$INFO[Container.ListItem.Property(channel)]$INFO[Container.ListItem.Label2]</label>
+                <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),pvr)+Skin.HasSetting(Widget_LiveTVHighlights)</visible>
+                <visible>!String.IsEmpty(Container.ListItem.Property(channel))|!String.IsEmpty(Container.ListItem.Label2)</visible>
+            </control>
+            <control type="label">
+                <width>725</width>
+                <height>24</height>
+                <font>font12</font>
+                <align>right</align>
+                <textcolor>grey</textcolor>
+                <label>$INFO[Container.ListItem.Property(extrainfos)]</label>
+                <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),pvr)+Skin.HasSetting(Widget_LiveTVHighlights)</visible>
+                <visible>!String.IsEmpty(Container.ListItem.Property(extrainfos))</visible>
+            </control>
+            <control type="label">
+                <width>725</width>
+                <height>24</height>
+                <font>font12</font>
+                <align>right</align>
+                <textcolor>grey</textcolor>
+                <label>$INFO[Container.ListItem.Genre]$INFO[Container.ListItem.Property(StartTime), / ,]$INFO[Container.ListItem.Property(EndTime), - ,]</label>
+                <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),pvr)+Skin.HasSetting(Widget_LiveTVHighlights)</visible>
+                <visible>String.IsEmpty(Container.ListItem.Property(extrainfos))</visible>
+            </control>
+            <control type="label">
+                <width>725</width>
+                <height>24</height>
+                <font>font12</font>
+                <align>right</align>
+                <textcolor>grey</textcolor>
+                <label>$INFO[Container.ListItem.Property(watchtype)]</label>
+                <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),pvr)+Skin.HasSetting(Widget_LiveTVHighlights)</visible>
+                <visible>!String.IsEmpty(Container.ListItem.Property(watchtype))</visible>
+            </control>
+            <control type="label">
+                <width>725</width>
+                <height>24</height>
+                <font>font12</font>
+                <align>right</align>
+                <textcolor>grey</textcolor>
+                <label>$INFO[Container.ListItem.Property(comment)]</label>
+                <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),pvr)+Skin.HasSetting(Widget_LiveTVHighlights)</visible>
+                <visible>!String.IsEmpty(Container.ListItem.Property(comment))</visible>
+            </control>
+            <!-- END TV Highlights -->
+            <control type="label">
+                <width>725</width>
+                <height>24</height>
+                <font>font12</font>
+                <align>right</align>
+                <textcolor>grey</textcolor>
+                <label>$INFO[Container.ListItem.Year,, / ]$INFO[Container.ListItem.Rating,$LOCALIZE[563]: , / ]$INFO[Container.ListItem.Studio]$INFO[Container.ListItem.Runtime, / , $LOCALIZE[12391]]$INFO[Container.ListItem.Duration, / , $LOCALIZE[12391]]</label>
+                <visible>![String.IsEqual(Container(9000).ListItem.Property(homemenu_id),music)|String.IsEqual(Container(9000).ListItem.Property(homemenu_id),radio)|String.IsEqual(Container(9000).ListItem.Property(homemenu_id),custom8)]</visible>
+            </control>
+        </control>
+    </include>
+    <include name="HomePageWidget_list">
+		<include content="HomepageWidgetInfoPanel_fanart">
+			<param name="HomePageWidget_id" value="$PARAM[HomePageWidget_list_id]"/>
+		</include>
+		<control type="grouplist">
+			<animation effect="slide" end="554" time="300" condition="[String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,video)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,movie)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,set)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,tvshow)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,season)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,episode)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,musicvideo)]+Control.IsVisible($PARAM[HomePageWidget_list_id])+String.IsEqual(Container($PARAM[HomePageWidget_list_id]).NumItems,1)">Conditional</animation>
+			<animation effect="slide" end="370" time="300" condition="[String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,video)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,movie)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,set)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,tvshow)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,season)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,episode)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,musicvideo)]+Control.IsVisible($PARAM[HomePageWidget_list_id])+String.IsEqual(Container($PARAM[HomePageWidget_list_id]).NumItems,2)">Conditional</animation>
+			<animation effect="slide" end="185" time="300" condition="[String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,video)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,movie)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,set)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,tvshow)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,season)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,episode)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,musicvideo)]+Control.IsVisible($PARAM[HomePageWidget_list_id])+String.IsEqual(Container($PARAM[HomePageWidget_list_id]).NumItems,3)">Conditional</animation>
+			<animation effect="slide" end="488" time="300" condition="![String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,video)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,movie)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,set)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,tvshow)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,season)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,episode)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,musicvideo)]+Control.IsVisible($PARAM[HomePageWidget_list_id])+String.IsEqual(Container($PARAM[HomePageWidget_list_id]).NumItems,1)">Conditional</animation>
+			<animation effect="slide" end="243" time="300" condition="![String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,video)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,movie)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,set)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,tvshow)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,season)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,episode)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,musicvideo)]+Control.IsVisible($PARAM[HomePageWidget_list_id])+String.IsEqual(Container($PARAM[HomePageWidget_list_id]).NumItems,2)">Conditional</animation>
+			<right>39</right>
+			<width>100%</width>
+			<height>330</height>
+			<itemgap>1</itemgap>
+			<align>right</align>
+			<orientation>horizontal</orientation>
+			<control type="group">
+				<width>960</width>
+				<visible>Control.IsVisible($PARAM[HomePageWidget_list_id])</visible>
+				<control type="group">
+					<visible>Control.IsVisible($PARAM[HomePageWidget_list_id])</visible>
+					<include content="HomepageWidgetInfoPanel">
+						<param name="HomePageWidget_id" value="$PARAM[HomePageWidget_list_id]"/>
+					</include>
+					<include content="HomepageWidgetInfoPanel_Data">
+						<param name="HomePageWidget_id" value="$PARAM[HomePageWidget_list_id]"/>
+					</include>
+				</control>
+			</control>
+			<control type="list" id="$PARAM[HomePageWidget_list_id]">
+				<width min="0" max="736">auto</width>
+				<height>240</height>
+				<onclick condition="String.Contains(Container.ListItem.FolderPath,pvr://timers)">ActivateWindow(tvtimers)</onclick>
+				<ondown>Action(FirstPage)</ondown>
+				<ondown>9000</ondown>
+				<onup/>
+				<onfocus>SetProperty(Widget_Content_Info,$INFO[Container($PARAM[Widget_Listlayout_id]).ListItem.DBType],home)</onfocus>
+				<onunfocus>ClearProperty(Widget_Content_Info)</onunfocus>
+				<onfocus>$PARAM[HomePageWidget_list_onfocus]</onfocus>
+				<onunfocus>$PARAM[HomePageWidget_list_onunfocus]</onunfocus>
+				<viewtype label="Widget">list</viewtype>
+				<pagecontrol/>
+				<scrolltime>300</scrolltime>
+				<visible>$PARAM[HomePageWidget_list_visible]</visible>
+				<visible>$PARAM[HomePageWidget_list_visible2]</visible>
+				<visible>$PARAM[HomePageWidget_list_visible3]</visible>
+				<include>openclosevisible</include>
+				<orientation>Horizontal</orientation>
+				<visible>Integer.IsGreater(Container($PARAM[HomePageWidget_list_id]).NumItems,0) | Container($PARAM[HomePageWidget_list_id]).IsUpdating</visible>
+				<include content="Widget_Listlayout">
+                    <param name="Widget_Listlayout_id" value="$PARAM[HomePageWidget_list_id]"/>
+				</include>
+				<content limit="1" sortby="$PARAM[HomePageWidget_sortby]" sortorder="$PARAM[HomePageWidget_sortorder]" target="$VAR[WidgetTarget]">$PARAM[HomePageWidget_content2]</content>
+				<content limit="$PARAM[HomePageWidget_limit]" sortby="$PARAM[HomePageWidget_sortby]" sortorder="$PARAM[HomePageWidget_sortorder]" target="$VAR[WidgetTarget]">$PARAM[HomePageWidget_content]</content>
+			</control>
+		</control>
+		<include content="HomepageWidgetInfoPanel_BehindShadowImage">
+			<param name="HomePageWidget_id" value="$PARAM[HomePageWidget_list_id]"/>
+		</include>
+    </include>
+    <include name="HomepageWidgetInfoPanel_BehindShadowImage">
+        <control type="group">
+			<visible>Integer.IsGreater(Container($PARAM[HomePageWidget_id]).NumItems,0)+Control.IsVisible($PARAM[HomePageWidget_id])</visible>
+            <visible>ControlGroup(2900).HasFocus()|!Player.HasMedia</visible>
+            <right>-36</right>
+            <width>75</width>
+            <height>240</height>
+            <control type="group">
+                <width>200</width>
+                <control type="image">
+                    <include condition="Skin.HasSetting(roundcorner)" content="cornersetting_round">
+                        <param name="flipx" value="true"/>
+                        <param name="image" value="SideFadeWhite_round.png"/>
+                        <param name="diffuse" />
+                        <param name="colordiffuse" value="black"/>
+                        <param name="border" value="4"/>
+                    </include>
+                    <include condition="!Skin.HasSetting(roundcorner)" content="cornersetting_sharp">
+                        <param name="image" value="SideFade.png"/>
+                    </include>
+                </control>
+                <control type="image">
+                    <texture border="4" flipx="true">buttons\ButtonNFhalf$VAR[CornerSettingVar].png</texture>
+                </control>
+            </control>
+        </control>
+    </include>
+    <include name="Widget_Listlayout">
+		<param name="width">184</param>
+		<param name="width2">245</param>
+		<param name="height">240</param>
+        <definition>
+            <itemlayout height="$PARAM[height]" width="$PARAM[width]" infoupdate="5000" condition="String.Contains(Container($PARAM[Widget_Listlayout_id]).ListItem.DBType,video)|String.Contains(Container($PARAM[Widget_Listlayout_id]).ListItem.DBType,movie)|String.Contains(Container($PARAM[Widget_Listlayout_id]).ListItem.DBType,set)|String.Contains(Container($PARAM[Widget_Listlayout_id]).ListItem.DBType,tvshow)|String.Contains(Container($PARAM[Widget_Listlayout_id]).ListItem.DBType,season)|String.Contains(Container($PARAM[Widget_Listlayout_id]).ListItem.DBType,episode)|String.Contains(Container($PARAM[Widget_Listlayout_id]).ListItem.DBType,musicvideo)">
+                <control type="group">
+                    <height>$PARAM[height]</height>
+                    <width>$PARAM[width]</width>
+                    <control type="image">
+                        <right>8</right>
+                        <texture border="4">BlackBack$VAR[CornerSettingVar].png</texture>
+                    </control>
+                    <control type="image">
+                        <left>8</left>
+                        <right>16</right>
+                        <top>8</top>
+                        <bottom>8</bottom>
+                        <aspectratio>stretch</aspectratio>
+						<include condition="Skin.HasSetting(roundcorner)">cornersetting_round</include>
+						<include condition="!Skin.HasSetting(roundcorner)">cornersetting_sharp</include>
+                        <!-- <texture fallback="FallbackCover.png">$VAR[PosterThumb]</texture> -->
+                    </control>
+                    <control type="image">
+                        <left>1</left>
+                        <right>9</right>
+                        <top>76r</top>
+                        <height>75</height>
+                        <include condition="Skin.HasSetting(roundcorner)" content="cornersetting_round"><param name="image" value="Shadow.png"/><param name="border" value="4"/></include>
+						<include condition="!Skin.HasSetting(roundcorner)" content="cornersetting_sharp"><param name="image" value="Shadow.png"/></include>
+                        <!-- <texture>Shadow.png</texture> -->
+                        <visible>String.IsEmpty(ListItem.Icon)</visible>
+                    </control>
+                    <control type="label">
+                        <left>8</left>
+                        <right>16</right>
+                        <top>180</top>
+                        <height>75</height>
+                        <font>ubuntu-r13b</font>
+                        <align>center</align>
+                        <label>$INFO[ListItem.Label]</label>
+                        <visible>String.IsEmpty(ListItem.Icon)</visible>
+                    </control>
+                    <control type="group">
+                        <visible>String.Contains(ListItem.DBTYPE,episode)</visible>
+                        <control type="image">
+                            <left>1</left>
+                            <right>9</right>
+                            <top>76r</top>
+                            <height>75</height>
+                            <include condition="Skin.HasSetting(roundcorner)" content="cornersetting_round"><param name="image" value="Shadow.png"/><param name="border" value="4"/></include>
+                            <include condition="!Skin.HasSetting(roundcorner)" content="cornersetting_sharp"><param name="image" value="Shadow.png"/></include>
+                        </control>
+                        <control type="label">
+                            <right>9</right>
+                            <top>180</top>
+                            <height>75</height>
+                            <font>font12</font>
+                            <textcolor>white</textcolor>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <label>[B][UPPERCASE]$INFO[ListItem.Season,S,]$INFO[ListItem.Episode, E,][/UPPERCASE][/B]</label>
+                        </control>
+                    </control>
+                    <control type="group">
+                        <visible>ListItem.IsResumable|[!String.IsEmpty(ListItem.Property(dbid))+String.IsEqual(ListItem.DBTYPE,episode)]</visible>
+                        <control type="image">
+                            <left>8</left>
+                            <top>8</top>
+                            <width>90</width>
+                            <height>90</height>
+                            <texture border="1">watched/OverlayProgress.png</texture>
+                        </control>
+                        <control type="progress">
+                            <description>Progressbar</description>
+                            <left>12</left>
+                            <right>20</right>
+                            <top>218</top>
+                            <height>9</height>
+                            <info>ListItem.PercentPlayed</info>
+                            <texturebg colordiffuse="grey1">WhiteBack.png</texturebg>
+                            <midtexture colordiffuse="green2">WhiteBack.png</midtexture>
+                            <visible>!Skin.HasSetting(WidgetNoPercentPlayedBar)</visible>
+                            <visible>String.IsEmpty(ListItem.Property(dbid))|String.IsEqual(ListItem.DBTYPE,movies)</visible>
+                        </control>
+                    </control>
+                    <control type="image">
+                        <left>8</left>
+                        <top>8</top>
+                        <width>84</width>
+                        <height>84</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture>$VAR[StreamFlag]</texture>
+                    </control>
+                    <include content="WidgetDimImage">
+                        <param name="visible" value="Skin.HasSetting(WidgetDim)|Control.HasFocus($PARAM[Widget_Listlayout_id])"/>
+                    </include>
+                    <control type="image">
+                        <description>background</description>
+                        <right>8</right>
+                        <texture border="4">masks/Default$VAR[CornerSettingVar].png</texture>
+                    </control>
+                </control>
+            </itemlayout>
+            <focusedlayout height="$PARAM[height]" width="$PARAM[width]" infoupdate="5000" condition="String.Contains(Container($PARAM[Widget_Listlayout_id]).ListItem.DBType,video)|String.Contains(Container($PARAM[Widget_Listlayout_id]).ListItem.DBType,movie)|String.Contains(Container($PARAM[Widget_Listlayout_id]).ListItem.DBType,set)|String.Contains(Container($PARAM[Widget_Listlayout_id]).ListItem.DBType,tvshow)|String.Contains(Container($PARAM[Widget_Listlayout_id]).ListItem.DBType,season)|String.Contains(Container($PARAM[Widget_Listlayout_id]).ListItem.DBType,episode)|String.Contains(Container($PARAM[Widget_Listlayout_id]).ListItem.DBType,musicvideo)">
+                <control type="group">
+                    <height>$PARAM[height]</height>
+                    <width>$PARAM[width]</width>
+                    <control type="image">
+                        <right>8</right>
+                        <texture border="4">BlackBack$VAR[CornerSettingVar].png</texture>
+                        <visible>!Control.HasFocus($PARAM[Widget_Listlayout_id])</visible>
+                    </control>
+                    <control type="image">
+                        <right>8</right>
+                        <colordiffuse>$VAR[BackgroundOverlayColorDialog]</colordiffuse>
+                        <texture border="4">WhiteBack$VAR[CornerSettingVar].png</texture>
+                        <visible>Control.HasFocus($PARAM[Widget_Listlayout_id])</visible>
+                    </control>
+                    <control type="image">
+                        <left>8</left>
+                        <right>16</right>
+                        <top>8</top>
+                        <bottom>8</bottom>
+                        <aspectratio>stretch</aspectratio>
+						<include condition="Skin.HasSetting(roundcorner)">cornersetting_round</include>
+						<include condition="!Skin.HasSetting(roundcorner)">cornersetting_sharp</include>
+                        <!-- <texture fallback="FallbackCover.png">$VAR[PosterThumb]</texture> -->
+                    </control>
+                    <control type="image">
+                        <left>1</left>
+                        <right>9</right>
+                        <top>76r</top>
+                        <height>75</height>
+                        <include condition="Skin.HasSetting(roundcorner)" content="cornersetting_round"><param name="image" value="Shadow.png"/><param name="border" value="4"/></include>
+                        <include condition="!Skin.HasSetting(roundcorner)" content="cornersetting_sharp"><param name="image" value="Shadow.png"/></include>
+                        <visible>String.IsEmpty(ListItem.Icon)</visible>
+                    </control>
+                    <control type="label">
+                        <left>8</left>
+                        <right>16</right>
+                        <top>180</top>
+                        <height>75</height>
+                        <font>ubuntu-r13b</font>
+                        <align>center</align>
+                        <label>$INFO[ListItem.Label]</label>
+                        <visible>String.IsEmpty(ListItem.Icon)</visible>
+                    </control>
+                    <control type="group">
+                        <visible>String.Contains(ListItem.DBTYPE,episode)</visible>
+                        <control type="image">
+                            <left>1</left>
+                            <right>9</right>
+                            <top>76r</top>
+                            <height>75</height>
+                            <include condition="Skin.HasSetting(roundcorner)" content="cornersetting_round"><param name="image" value="Shadow.png"/><param name="border" value="4"/></include>
+                            <include condition="!Skin.HasSetting(roundcorner)" content="cornersetting_sharp"><param name="image" value="Shadow.png"/></include>
+                        </control>
+                        <control type="label">
+                            <right>9</right>
+                            <top>180</top>
+                            <height>75</height>
+                            <font>font12</font>
+                            <textcolor>white</textcolor>
+                            <shadowcolor>black</shadowcolor>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <label>[B][UPPERCASE]$INFO[ListItem.Season,S,] $INFO[ListItem.Episode,E,][/UPPERCASE][/B]</label>
+                        </control>
+                    </control>
+                    <control type="group">
+                        <visible>ListItem.IsResumable|[!String.IsEmpty(ListItem.Property(dbid))+String.IsEqual(ListItem.DBTYPE,episode)]</visible>
+                        <control type="image">
+                            <left>8</left>
+                            <top>8</top>
+                            <width>90</width>
+                            <height>90</height>
+                            <texture border="1">watched/OverlayProgress.png</texture>
+                        </control>
+                        <control type="progress">
+                            <description>Progressbar</description>
+                            <left>12</left>
+                            <right>20</right>
+                            <top>218</top>
+                            <height>9</height>
+                            <info>ListItem.PercentPlayed</info>
+                            <texturebg colordiffuse="grey1">WhiteBack.png</texturebg>
+                            <midtexture colordiffuse="green2">WhiteBack.png</midtexture>
+                            <visible>!Skin.HasSetting(WidgetNoPercentPlayedBar)</visible>
+                            <visible>String.IsEmpty(ListItem.Property(dbid))|String.IsEqual(ListItem.DBTYPE,movies)</visible>
+                        </control>
+                    </control>
+                    <control type="image">
+                        <left>8</left>
+                        <top>8</top>
+                        <width>84</width>
+                        <height>84</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture>$VAR[StreamFlag]</texture>
+                    </control>
+                    <include content="WidgetDimImage">
+                        <param name="visible" value="Skin.HasSetting(WidgetDim)+!Control.HasFocus($PARAM[Widget_Listlayout_id])"/>
+                    </include>
+                    <control type="image">
+                        <description>background</description>
+                        <right>8</right>
+                        <texture border="4">masks/Default$VAR[CornerSettingVar].png</texture>
+                        <visible>!Control.HasFocus($PARAM[Widget_Listlayout_id])</visible>
+                    </control>
+                    <control type="image">
+                        <description>background</description>
+                        <right>8</right>
+                        <texture border="4">buttons/ButtonNF$VAR[CornerSettingVar].png</texture>
+                        <visible>Control.HasFocus($PARAM[Widget_Listlayout_id])</visible>
+                    </control>
+                </control>
+            </focusedlayout>
+            <itemlayout height="$PARAM[height]" width="$PARAM[width2]" infoupdate="5000" condition="![String.Contains(Container($PARAM[Widget_Listlayout_id]).ListItem.DBType,video)|String.Contains(Container($PARAM[Widget_Listlayout_id]).ListItem.DBType,movie)|String.Contains(Container($PARAM[Widget_Listlayout_id]).ListItem.DBType,set)|String.Contains(Container($PARAM[Widget_Listlayout_id]).ListItem.DBType,tvshow)|String.Contains(Container($PARAM[Widget_Listlayout_id]).ListItem.DBType,season)|String.Contains(Container($PARAM[Widget_Listlayout_id]).ListItem.DBType,episode)|String.Contains(Container($PARAM[Widget_Listlayout_id]).ListItem.DBType,musicvideo)]">
+                <control type="group">
+                    <height>$PARAM[height]</height>
+                    <width>$PARAM[width2]</width>
+                    <control type="image">
+                        <right>8</right>
+                        <texture border="4">BlackBack$VAR[CornerSettingVar].png</texture>
+                    </control>
+                    <control type="image">
+                        <left>8</left>
+                        <right>16</right>
+                        <top>8</top>
+                        <bottom>8</bottom>
+                        <aspectratio>stretch</aspectratio>
+                        <include condition="Skin.HasSetting(roundcorner)" content="cornersetting_round"><param name="diffuse" value="masks/mask_round.png"/></include>
+						<include condition="!Skin.HasSetting(roundcorner)">cornersetting_sharp</include>
+                        <visible>!String.Contains(ListItem.FolderPath,PVR://)+!String.Contains(ListItem.FolderPath,/TV/)</visible>
+                    </control>
+                    <control type="image">
+                        <left>8</left>
+                        <right>16</right>
+                        <top>8</top>
+                        <bottom>8</bottom>
+                        <aspectratio>keep</aspectratio>
+                        <include condition="Skin.HasSetting(roundcorner)" content="cornersetting_round"><param name="diffuse" value="masks/mask_round.png"/></include>
+						<include condition="!Skin.HasSetting(roundcorner)">cornersetting_sharp</include>
+                        <visible>String.Contains(ListItem.FolderPath,PVR://)|String.Contains(ListItem.FolderPath,/TV/)</visible>
+                    </control>
+                    <control type="image">
+                        <left>1</left>
+                        <right>9</right>
+                        <top>76r</top>
+                        <height>75</height>
+                        <include condition="Skin.HasSetting(roundcorner)" content="cornersetting_round"><param name="image" value="Shadow.png"/><param name="border" value="4"/></include>
+                        <include condition="!Skin.HasSetting(roundcorner)" content="cornersetting_sharp"><param name="image" value="Shadow.png"/></include>
+                        <visible>String.IsEmpty(ListItem.Icon)</visible>
+                    </control>
+                    <control type="label">
+                        <left>8</left>
+                        <right>16</right>
+                        <top>180</top>
+                        <height>75</height>
+                        <font>ubuntu-r13b</font>
+                        <align>center</align>
+                        <label>$INFO[ListItem.Label]</label>
+                        <visible>String.IsEmpty(ListItem.Icon)</visible>
+                    </control>
+                    <control type="group">
+                        <visible>String.Contains(ListItem.DBTYPE,episode)</visible>
+                        <control type="image">
+                            <left>1</left>
+                            <right>9</right>
+                            <top>76r</top>
+                            <height>75</height>
+                            <include condition="Skin.HasSetting(roundcorner)" content="cornersetting_round"><param name="image" value="Shadow.png"/><param name="border" value="4"/></include>
+                            <include condition="!Skin.HasSetting(roundcorner)" content="cornersetting_sharp"><param name="image" value="Shadow.png"/></include>
+                        </control>
+                        <control type="label">
+                            <right>9</right>
+                            <top>180</top>
+                            <height>75</height>
+                            <font>font12</font>
+                            <textcolor>white</textcolor>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <label>[B][UPPERCASE]$INFO[ListItem.Season,S,]$INFO[ListItem.Episode, E,][/UPPERCASE][/B]</label>
+                        </control>
+                    </control>
+                    <control type="group">
+                        <visible>ListItem.IsResumable|[!String.IsEmpty(ListItem.Property(dbid))+String.IsEqual(ListItem.DBTYPE,episode)]</visible>
+                        <control type="image">
+                            <description>background</description>
+                            <width>90</width>
+                            <height>90</height>
+                            <texture border="1">watched/OverlayProgress.png</texture>
+                        </control>
+                        <control type="progress">
+                            <description>Progressbar</description>
+                            <left>12</left>
+                            <right>20</right>
+                            <top>218</top>
+                            <height>9</height>
+                            <info>ListItem.PercentPlayed</info>
+                            <texturebg colordiffuse="grey1">WhiteBack.png</texturebg>
+                            <midtexture colordiffuse="green2">WhiteBack.png</midtexture>
+                            <visible>!Skin.HasSetting(WidgetNoPercentPlayedBar)</visible>
+                            <visible>String.IsEmpty(ListItem.Property(dbid))|String.IsEqual(ListItem.DBTYPE,movies)</visible>
+                        </control>
+                    </control>
+                    <control type="image">
+                        <left>1</left>
+                        <top>2</top>
+                        <width>84</width>
+                        <height>84</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture>$VAR[StreamFlag]</texture>
+                    </control>
+                    <include content="WidgetDimImage">
+                        <param name="visible" value="Skin.HasSetting(WidgetDim)|Control.HasFocus($PARAM[Widget_Listlayout_id])"/>
+                    </include>
+                    <control type="image">
+                        <description>background</description>
+                        <right>8</right>
+                        <texture border="4">masks/Default$VAR[CornerSettingVar].png</texture>
+                    </control>
+                </control>
+            </itemlayout>
+            <focusedlayout height="$PARAM[height]" width="$PARAM[width2]" infoupdate="5000" condition="![String.Contains(Container($PARAM[Widget_Listlayout_id]).ListItem.DBType,video)|String.Contains(Container($PARAM[Widget_Listlayout_id]).ListItem.DBType,movie)|String.Contains(Container($PARAM[Widget_Listlayout_id]).ListItem.DBType,set)|String.Contains(Container($PARAM[Widget_Listlayout_id]).ListItem.DBType,tvshow)|String.Contains(Container($PARAM[Widget_Listlayout_id]).ListItem.DBType,season)|String.Contains(Container($PARAM[Widget_Listlayout_id]).ListItem.DBType,episode)|String.Contains(Container($PARAM[Widget_Listlayout_id]).ListItem.DBType,musicvideo)]">
+                <control type="group">
+                    <control type="group">
+                        <control type="image">
+                            <right>8</right>
+                            <texture border="4">BlackBack$VAR[CornerSettingVar].png</texture>
+                            <visible>!Control.HasFocus($PARAM[Widget_Listlayout_id])</visible>
+                        </control>
+                        <control type="image">
+                            <right>8</right>
+                            <colordiffuse>$VAR[BackgroundOverlayColorDialog]</colordiffuse>
+                            <texture border="4">WhiteBack$VAR[CornerSettingVar].png</texture>
+                            <visible>Control.HasFocus($PARAM[Widget_Listlayout_id])</visible>
+                        </control>
+                        <control type="image">
+                            <left>8</left>
+                            <right>16</right>
+                            <top>8</top>
+                            <bottom>8</bottom>
+                            <aspectratio>stretch</aspectratio>
+                            <include condition="Skin.HasSetting(roundcorner)" content="cornersetting_round"><param name="diffuse" value="masks/mask_round.png"/></include>
+                            <include condition="!Skin.HasSetting(roundcorner)">cornersetting_sharp</include>
+                            <visible>!String.Contains(ListItem.FolderPath,PVR://)+!String.Contains(ListItem.FolderPath,/TV/)</visible>
+                        </control>
+                        <control type="image">
+                            <left>8</left>
+                            <right>16</right>
+                            <top>8</top>
+                            <bottom>8</bottom>
+                            <aspectratio>keep</aspectratio>
+                            <include condition="Skin.HasSetting(roundcorner)" content="cornersetting_round"><param name="diffuse" value="masks/mask_round.png"/></include>
+                            <include condition="!Skin.HasSetting(roundcorner)">cornersetting_sharp</include>
+                            <visible>String.Contains(ListItem.FolderPath,PVR://)|String.Contains(ListItem.FolderPath,/TV/)</visible>
+                        </control>
+                        <control type="image">
+                            <left>1</left>
+                            <right>9</right>
+                            <top>76r</top>
+                            <height>75</height>
+                            <include condition="Skin.HasSetting(roundcorner)" content="cornersetting_round"><param name="image" value="Shadow.png"/><param name="border" value="4"/></include>
+                            <include condition="!Skin.HasSetting(roundcorner)" content="cornersetting_sharp"><param name="image" value="Shadow.png"/></include>
+                            <visible>String.IsEmpty(ListItem.Icon)</visible>
+                        </control>
+                        <control type="label">
+                            <left>8</left>
+                            <right>16</right>
+                            <top>50r</top>
+                            <font>font12</font>
+                            <align>center</align>
+                            <label>[B]$INFO[ListItem.Label][/B]</label>
+                            <visible>String.IsEmpty(ListItem.Icon)</visible>
+                        </control>
+                        <include content="WidgetDimImage">
+                            <param name="visible" value="Skin.HasSetting(WidgetDim)+!Control.HasFocus($PARAM[Widget_Listlayout_id])"/>
+                        </include>
+                        <control type="image">
+                            <description>background</description>
+                            <right>8</right>
+                            <texture border="4">buttons/ButtonNF$VAR[CornerSettingVar].png</texture>
+                        </control>
+                    </control>
+                </control>
+            </focusedlayout>
+        </definition>
+    </include>
+    <include name="HomepageWidgetBackground">
+        <control type="group">
+            <right>0</right>
+            <top>0</top>
+            <height>240</height>
+            <width>40%</width>
+            <control type="image">
+                <include condition="Skin.HasSetting(roundcorner)" content="cornersetting_round">
+                    <param name="flipx" value="true"/>
+                    <param name="image" value="SideFade.png"/>
+                    <param name="diffuse" value="masks/mask_landscape_round.png"/>
+                </include>
+                <include condition="!Skin.HasSetting(roundcorner)" content="cornersetting_sharp">
+                    <param name="flipx" value="true"/>
+                    <param name="image" value="SideFade.png"/>
+                </include>
+            </control>
+            <control type="image">
+                <texture border="4">buttons\ButtonNFhalf$VAR[CornerSettingVar].png</texture>
+            </control>
+        </control>
+    </include>
+</includes>

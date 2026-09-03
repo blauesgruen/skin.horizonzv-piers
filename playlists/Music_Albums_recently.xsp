@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<smartplaylist type="songs">
+    <name>Music Albums (recently played) [COLOR=FFFF0000]!! DO NOT CHANGE !![/COLOR]</name>
+    <match>all</match>
+    <rule field="playcount" operator="greaterthan">
+        <value>0</value>
+    </rule>
+    <limit>10</limit>
+    <order direction="descending">lastplayed</order>
+    <group>albums</group>
+</smartplaylist>

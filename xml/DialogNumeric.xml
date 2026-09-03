@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+    <defaultcontrol always="true">21</defaultcontrol>
+    <include>openclose</include>
+	<zorder>10</zorder>
+    <controls>
+        <control type="group">
+			<centerleft>50%</centerleft>
+            <bottom>-60</bottom>
+			<width>600</width>
+			<height>570</height>
+			<include>opencloseslideup</include>
+			<control type="group">
+				<include content="DialogBackgroundCommons">
+					<param name="header_id" value="0" />
+					<param name="header_label" value="$INFO[System.CurrentWindow]" />
+				</include>
+				<control type="image">
+					<animation effect="fade" end="50" condition="true">Conditional</animation>
+					<colordiffuse>$VAR[BackgroundOverlayColorDialog]</colordiffuse>
+					<texture>ShadowWhite.png</texture>
+				</control>
+			</control>
+			<control type="image">
+				<left>30</left>
+				<right>30</right>
+				<top>125</top>
+				<height>2</height>
+				<colordiffuse>fanartdiffuse</colordiffuse>
+				<texture border="1">Separator1.png</texture>
+			</control>
+			<control type="label" id="4">
+				<description>Edit Text</description>
+				<left>30</left>
+				<right>30</right>
+				<top>70</top>
+				<height>60</height>
+				<align>center</align>
+			</control>
+			<control type="group">
+				<top>20</top>
+				<control type="image">
+					<left>30</left>
+					<right>240</right>
+					<top>140</top>
+					<bottom>110</bottom>
+					<aspectratio>stretch</aspectratio>
+					<colordiffuse>fanartdiffuse</colordiffuse>
+					<texture border="5">buttons/KeyboardEditArea.png</texture>
+				</control>
+				<control type="group">
+					<left>55</left>
+					<top>170</top>
+					<control type="button" id="11">
+						<description>1 button</description>
+						<left>0</left>
+						<top>0</top>
+						<label>12311</label>
+						<onleft>23</onleft>
+						<onright>12</onright>
+						<onup>20</onup>
+						<ondown>14</ondown>
+						<include>KeyboardButton</include>
+					</control>
+					<control type="button" id="12">
+						<description>2 button</description>
+						<left>98</left>
+						<top>0</top>
+						<label>12312</label>
+						<onleft>11</onleft>
+						<onright>13</onright>
+						<onup>10</onup>
+						<ondown>15</ondown>
+						<include>KeyboardButton</include>
+					</control>
+					<control type="button" id="13">
+						<description>3 button</description>
+						<left>195</left>
+						<top>0</top>
+						<label>12313</label>
+						<focusedcolor>black</focusedcolor>
+						<onleft>12</onleft>
+						<onright>23</onright>
+						<onup>22</onup>
+						<ondown>16</ondown>
+						<include>KeyboardButton</include>
+					</control>
+					<control type="button" id="14">
+						<description>4 button</description>
+						<left>0</left>
+						<top>70</top>
+						<label>12314</label>
+						<onleft>23</onleft>
+						<onright>15</onright>
+						<onup>11</onup>
+						<ondown>17</ondown>
+						<include>KeyboardButton</include>
+					</control>
+					<control type="button" id="15">
+						<description>5 button</description>
+						<left>98</left>
+						<top>70</top>
+						<label>12315</label>
+						<onleft>14</onleft>
+						<onright>16</onright>
+						<onup>12</onup>
+						<ondown>18</ondown>
+						<include>KeyboardButton</include>
+					</control>
+					<control type="button" id="16">
+						<description>6 button</description>
+						<left>195</left>
+						<top>70</top>
+						<label>12316</label>
+						<onleft>15</onleft>
+						<onright>23</onright>
+						<onup>13</onup>
+						<ondown>19</ondown>
+						<include>KeyboardButton</include>
+					</control>
+					<control type="button" id="17">
+						<description>7 button</description>
+						<left>0</left>
+						<top>140</top>
+						<label>12317</label>
+						<onleft>21</onleft>
+						<onright>18</onright>
+						<onup>14</onup>
+						<ondown>20</ondown>
+						<include>KeyboardButton</include>
+					</control>
+					<control type="button" id="18">
+						<description>8 button</description>
+						<left>98</left>
+						<top>140</top>
+						<label>12318</label>
+						<onleft>17</onleft>
+						<onright>19</onright>
+						<onup>15</onup>
+						<ondown>10</ondown>
+						<include>KeyboardButton</include>
+					</control>
+					<control type="button" id="19">
+						<description>9 button</description>
+						<left>195</left>
+						<top>140</top>
+						<label>12319</label>
+						<onleft>18</onleft>
+						<onright>21</onright>
+						<onup>16</onup>
+						<ondown>22</ondown>
+						<include>KeyboardButton</include>
+					</control>
+					<include content="DefaultDialogButton">
+						<param name="id" value="21" />
+						<param name="top" value="140" />
+						<param name="left" value="320" />
+						<param name="width" value="190" />
+						<param name="height" value="42" />
+						<param name="label" value="$LOCALIZE[20177]" />
+						<param name="font" value="impacted18" />
+						<param name="onup" value="23" />
+						<param name="ondown" value="23" />
+						<param name="onleft" value="19" />
+						<param name="onright" value="17" />
+					</include>
+					<include content="DefaultDialogButton">
+						<param name="id" value="23" />
+						<param name="top" value="70" />
+						<param name="left" value="320" />
+						<param name="width" value="190" />
+						<param name="height" value="42" />
+						<param name="label" value="$LOCALIZE[20181]" />
+						<param name="font" value="impacted18" />
+						<param name="onup" value="21" />
+						<param name="ondown" value="21" />
+						<param name="onleft" value="13" />
+						<param name="onright" value="11" />
+					</include>
+					<control type="button" id="20">
+						<description>prev button</description>
+						<left>0</left>
+						<top>210</top>
+						<label>&lt;</label>
+						<onleft>21</onleft>
+						<onright>10</onright>
+						<onup>17</onup>
+						<ondown>11</ondown>
+						<include>KeyboardButton</include>
+					</control>
+					<control type="button" id="10">
+						<description>0 button</description>
+						<left>98</left>
+						<top>210</top>
+						<label>12310</label>
+						<onleft>20</onleft>
+						<onright>22</onright>
+						<onup>18</onup>
+						<ondown>12</ondown>
+						<include>KeyboardButton</include>
+					</control>
+					<control type="button" id="22">
+						<description>next button</description>
+						<left>195</left>
+						<top>210</top>
+						<label>&gt;</label>
+						<onleft>10</onleft>
+						<onright>21</onright>
+						<onup>19</onup>
+						<ondown>13</ondown>
+						<include>KeyboardButton</include>
+					</control>
+				</control>
+			</control>
+        </control>
+    </controls>
+</window>

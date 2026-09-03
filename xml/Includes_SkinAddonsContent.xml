@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+	<include name="SkinAddonListLayout">
+		<param name="id" default="18000"/>
+		<param name="left" default="15"/>
+		<param name="top" default="0"/>
+		<param name="width" default="1165"/>
+		<param name="height" default="698"/>
+		<param name="item_height" default="53"/>
+		<param name="onleft" default=""/>
+		<param name="visible" default="true"/>
+		<param name="visible" default="true"/>
+		<param name="itemlayouttextcolor" default="white"/>
+		<param name="focusedtextcolor" default="grey3"/>
+		<param name="pagecontrol" default="70"/>
+		<definition>
+			<control type="list" id="$PARAM[id]">
+				<left>$PARAM[left]</left>
+				<top>$PARAM[top]</top>
+				<width>$PARAM[width]</width>
+				<height>$PARAM[height]</height>
+				<onup>$PARAM[id]</onup>
+				<ondown>$PARAM[id]</ondown>
+				<onleft>$PARAM[onleft]</onleft>
+				<onright>$PARAM[pagecontrol]</onright>
+				<visible>$PARAM[visible]</visible>
+				<include>openclosevisible</include>
+				<scrolltime tween="Quadratic" easing="out">500</scrolltime>
+				<focusposition>0</focusposition>
+				<orientation>vertical</orientation>
+				<pagecontrol>$PARAM[pagecontrol]</pagecontrol>
+				<movement>1</movement>
+				<itemlayout height="$PARAM[item_height]" width="auto">
+					<control type="label">
+						<left>30</left>
+						<height>$PARAM[item_height]</height>
+						<textcolor>$PARAM[itemlayouttextcolor]</textcolor>
+						<label>$INFO[ListItem.Label]</label>
+						<align>left</align>
+					</control>
+					<control type="label">
+						<right>20</right>
+						<height>$PARAM[item_height]</height>
+						<textcolor>$PARAM[itemlayouttextcolor]</textcolor>
+						<label>$INFO[ListItem.Label2]</label>
+						<align>right</align>
+					</control>
+					<control type="image">
+						<left>56r</left>
+						<width>36</width>
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Icon]</texture>
+					</control>
+				</itemlayout>
+				<focusedlayout height="$PARAM[item_height]" width="auto">
+					<control type="image">
+						<left>15</left>
+						<include>DialogButtonTextureFocus</include>
+						<visible>Control.HasFocus($PARAM[id])</visible>
+					</control>
+					<control type="label">
+						<left>30</left>
+						<height>$PARAM[item_height]</height>
+						<textcolor>$PARAM[focusedtextcolor]</textcolor>
+						<label>$INFO[ListItem.Label]</label>
+						<align>left</align>
+						<visible>Control.HasFocus($PARAM[id])</visible>
+					</control>
+					<control type="label">
+						<right>20</right>
+						<height>$PARAM[item_height]</height>
+						<textcolor>$PARAM[focusedtextcolor]</textcolor>
+						<label>$INFO[ListItem.Label2]</label>
+						<align>right</align>
+						<visible>Control.HasFocus($PARAM[id])</visible>
+					</control>
+					<control type="image">
+						<left>56r</left>
+						<width>36</width>
+						<colordiffuse>$PARAM[focusedtextcolor]</colordiffuse>
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Icon]</texture>
+						<visible>Control.HasFocus($PARAM[id])</visible>
+					</control>
+					<!-- unfocus -->
+					<control type="label">
+						<left>30</left>
+						<height>$PARAM[item_height]</height>
+						<textcolor>$PARAM[itemlayouttextcolor]</textcolor>
+						<label>$INFO[ListItem.Label]</label>
+						<align>left</align>
+						<visible>!Control.HasFocus($PARAM[id])</visible>
+					</control>
+					<control type="label">
+						<right>20</right>
+						<height>$PARAM[item_height]</height>
+						<textcolor>$PARAM[itemlayouttextcolor]</textcolor>
+						<label>$INFO[ListItem.Label2]</label>
+						<align>right</align>
+						<visible>!Control.HasFocus($PARAM[id])</visible>
+					</control>
+					<control type="image">
+						<left>56r</left>
+						<width>36</width>
+						<colordiffuse>$PARAM[itemlayouttextcolor]</colordiffuse>
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Icon]</texture>
+						<visible>!Control.HasFocus($PARAM[id])</visible>
+					</control>
+				</focusedlayout>
+				<include>SkinAddonContent</include>
+			</control>
+		</definition>
+	</include>
+	<include name="SkinAddonContent">
+		<content>
+			<item>
+				<label>Artist Slide Show</label>
+				<label2>$LOCALIZE[24038]</label2>
+				<onclick>InstallAddon(script.artistslideshow)</onclick>
+				<property name="beschreibung">TEST</property>
+				<visible>!System.HasAddon(script.artistslideshow)</visible>
+			</item>
+			<item>
+				<label>Artist Slide Show $INFO[System.AddonVersion(script.artistslideshow),(,)]</label>
+				<label2>$LOCALIZE[5]/$LOCALIZE[843]</label2>
+				<onclick condition="System.AddonIsEnabled(script.artistslideshow)">Back</onclick>
+				<onclick condition="System.AddonIsEnabled(script.artistslideshow)">Addon.OpenSettings(script.artistslideshow)</onclick>
+				<onclick condition="!System.AddonIsEnabled(script.artistslideshow)">EnableAddon(script.artistslideshow)</onclick>
+				<visible>System.HasAddon(script.artistslideshow)</visible>
+			</item>
+			<item>
+				<label>Audio Stream Monitor</label>
+				<label2>$LOCALIZE[24038]</label2>
+				<onclick>InstallAddon(service.audio.stream.monitor)</onclick>
+				<visible>!System.HasAddon(service.audio.stream.monitor)</visible>
+			</item>
+			<item>
+				<label>Audio Stream Monitor $INFO[System.AddonVersion(service.audio.stream.monitor),(,)]</label>
+				<label2/>
+				<icon>OverlayWatched.png</icon>
+				<onclick/>
+				<visible>System.HasAddon(service.audio.stream.monitor)</visible>
+			</item>
+			<item>
+				<label>Fritz Smart Home</label>
+				<label2>$LOCALIZE[24038]</label2>
+				<onclick>InstallAddon(script.program.fritzact)</onclick>
+				<visible>!System.HasAddon(script.program.fritzact)</visible>
+			</item>
+			<item>
+				<label>Fritz Smart Home $INFO[System.AddonVersion(script.program.fritzact),(,)]</label>
+				<label2>$LOCALIZE[5]/$LOCALIZE[843]</label2>
+				<onclick condition="System.AddonIsEnabled(script.program.fritzact)">Back</onclick>
+				<onclick condition="System.AddonIsEnabled(script.program.fritzact)">Addon.OpenSettings(script.program.fritzact)</onclick>
+				<onclick condition="!System.AddonIsEnabled(script.program.fritzact)">EnableAddon(script.program.fritzact)</onclick>
+				<visible>System.HasAddon(script.program.fritzact)</visible>
+			</item>
+			<item>
+				<label>German Telecast Offers</label>
+				<label2>$LOCALIZE[24038]</label2>
+				<onclick>InstallAddon(script.service.gto)</onclick>
+				<visible>!System.HasAddon(script.service.gto)</visible>
+			</item>
+			<item>
+				<label>German Telecast Offers $INFO[System.AddonVersion(script.service.gto),(,)]</label>
+				<label2>$LOCALIZE[5]/$LOCALIZE[843]</label2>
+				<onclick condition="System.AddonIsEnabled(script.service.gto)">Back</onclick>
+				<onclick condition="System.AddonIsEnabled(script.service.gto)">Addon.OpenSettings(script.service.gto)</onclick>
+				<onclick condition="!System.AddonIsEnabled(script.service.gto)">EnableAddon(script.service.gto)</onclick>
+				<visible>System.HasAddon(script.service.gto)</visible>
+			</item>
+			<item>
+				<label>Global Search</label>
+				<label2>$LOCALIZE[24038]</label2>
+				<onclick>InstallAddon(script.globalsearch)</onclick>
+				<visible>!System.HasAddon(script.globalsearch)</visible>
+			</item>
+			<item>
+				<label>Global Search Script $INFO[System.AddonVersion(script.globalsearch),(,)]</label>
+				<label2>$LOCALIZE[5]/$LOCALIZE[843]</label2>
+				<onclick condition="System.AddonIsEnabled(script.globalsearch)">Back</onclick>
+				<onclick condition="System.AddonIsEnabled(script.globalsearch)">Addon.OpenSettings(script.globalsearch)</onclick>
+				<onclick condition="!System.AddonIsEnabled(script.globalsearch)">EnableAddon(script.globalsearch)</onclick>
+				<visible>System.HasAddon(script.globalsearch)</visible>
+			</item>
+			<item>
+				<label>KN Switchtimer Service</label>
+				<label2>$LOCALIZE[24038]</label2>
+				<onclick>InstallAddon(service.kn.switchtimer)</onclick>
+				<visible>!System.HasAddon(service.kn.switchtimer)</visible>
+			</item>
+			<item>
+				<label>KN Switchtimer Service $INFO[System.AddonVersion(service.kn.switchtimer),(,)]</label>
+				<label2>$LOCALIZE[5]/$LOCALIZE[843]</label2>
+				<onclick condition="System.AddonIsEnabled(service.kn.switchtimer)">Back</onclick>
+				<onclick condition="System.AddonIsEnabled(service.kn.switchtimer)">Addon.OpenSettings(service.kn.switchtimer)</onclick>
+				<onclick condition="!System.AddonIsEnabled(service.kn.switchtimer)">EnableAddon(service.kn.switchtimer)</onclick>
+				<visible>System.HasAddon(service.kn.switchtimer)</visible>
+			</item>
+			<item>
+				<label>Service Library Data Provider</label>
+				<label2>$LOCALIZE[24038]</label2>
+				<onclick>InstallAddon(service.library.data.provider)</onclick>
+				<visible>!System.HasAddon(service.library.data.provider)</visible>
+			</item>
+			<item>
+				<label>Service Library Data Provider $INFO[System.AddonVersion(service.library.data.provider),(,)]</label>
+				<label2/>
+				<icon>OverlayWatched.png</icon>
+				<onclick/>
+				<visible>System.HasAddon(service.library.data.provider)</visible>
+			</item>
+			<item>
+				<label>Plugin Library Node Editor</label>
+				<label2>$LOCALIZE[24038]</label2>
+				<onclick>InstallAddon(plugin.library.node.editor)</onclick>
+				<visible>!System.HasAddon(plugin.library.node.editor)</visible>
+			</item>
+			<item>
+				<label>Plugin Library Node Editor $INFO[System.AddonVersion(plugin.library.node.editor),(,)]</label>
+				<label2/>
+				<icon>OverlayWatched.png</icon>
+				<onclick/>
+				<visible>System.HasAddon(plugin.library.node.editor)</visible>
+			</item>
+			<item>
+				<label>Skinhelper Colorpicker BG-Edition</label>
+				<label2>$LOCALIZE[24038]</label2>
+				<onclick>InstallAddon(script.skin.helper.colorpicker.bg)</onclick>
+				<visible>!System.HasAddon(script.skin.helper.colorpicker.bg)</visible>
+			</item>
+			<item>
+				<label>Skinhelper Colorpicker BG-Edition $INFO[System.AddonVersion(script.skin.helper.colorpicker.bg),(,)]</label>
+				<label2/>
+				<icon>OverlayWatched.png</icon>
+				<onclick/>
+				<visible>System.HasAddon(script.skin.helper.colorpicker.bg)</visible>
+			</item>
+			<item>
+				<label>Skinhelper Ping &amp; WOL by _Andy_</label>
+				<label2>$LOCALIZE[24038]</label2>
+				<onclick>InstallAddon(script.skinhelper.ping)</onclick>
+				<visible>!System.HasAddon(script.skinhelper.ping)</visible>
+			</item>
+			<item>
+				<label>Skinhelper Ping &amp; WOL by _Andy_ $INFO[System.AddonVersion(script.skinhelper.ping),(,)]</label>
+				<label2>$LOCALIZE[5]/$LOCALIZE[843]</label2>
+				<onclick condition="System.HasAddon(script.skinhelper.ping)+System.AddonIsEnabled(script.skinhelper.ping)">Back</onclick>
+				<onclick condition="System.HasAddon(script.skinhelper.ping)+System.AddonIsEnabled(script.skinhelper.ping)">Addon.OpenSettings(script.skinhelper.ping)</onclick>
+				<onclick condition="System.HasAddon(script.skinhelper.ping)+!System.AddonIsEnabled(script.skinhelper.ping)">EnableAddon(script.skinhelper.ping)</onclick>
+				<visible>System.HasAddon(script.skinhelper.ping)</visible>
+			</item>
+			<item>
+				<label>TheMovieDb Helper</label>
+				<label2>$LOCALIZE[24038]</label2>
+				<onclick>InstallAddon(plugin.video.themoviedb.helper)</onclick>
+				<visible>!System.HasAddon(plugin.video.themoviedb.helper)</visible>
+			</item>
+			<item>
+				<label>TheMovieDb Helper $INFO[System.AddonVersion(plugin.video.themoviedb.helper),(,)]</label>
+				<label2>$LOCALIZE[5]/$LOCALIZE[843]</label2>
+				<onclick condition="System.AddonIsEnabled(plugin.video.themoviedb.helper)">Back</onclick>
+				<onclick condition="System.AddonIsEnabled(plugin.video.themoviedb.helper)">Addon.OpenSettings(plugin.video.themoviedb.helper)</onclick>
+				<onclick condition="!System.AddonIsEnabled(plugin.video.themoviedb.helper)">EnableAddon(plugin.video.themoviedb.helper)</onclick>
+				<visible>System.HasAddon(plugin.video.themoviedb.helper)</visible>
+			</item>
+			<item>
+				<label>Resource Images Languageflags Colour $INFO[System.AddonVersion(resource.images.languageflags.colour),(,)]</label>
+				<label2/>
+				<icon>OverlayWatched.png</icon>
+				<onclick/>
+				<visible>System.HasAddon(resource.images.languageflags.colour)</visible>
+			</item>
+			<item>
+				<label>Resource Images Select</label>
+				<label2>$LOCALIZE[24038]</label2>
+				<onclick>InstallAddon(script.image.resource.select)</onclick>
+				<visible>!System.HasAddon(script.image.resource.select)</visible>
+			</item>
+			<item>
+				<label>Resource Image Select $INFO[System.AddonVersion(script.image.resource.select),(,)]</label>
+				<label2/>
+				<icon>OverlayWatched.png</icon>
+				<onclick/>
+				<visible>System.HasAddon(script.image.resource.select)</visible>
+			</item>
+			<item>
+				<label>Resource Images Weatherfanart Multi</label>
+				<label2>$LOCALIZE[24038]</label2>
+				<onclick>InstallAddon(resource.images.weatherfanart.multi)</onclick>
+				<visible>!System.HasAddon(resource.images.weatherfanart.multi)</visible>
+			</item>
+			<item>
+				<label>Resource Images Weatherfanart Multi $INFO[System.AddonVersion(resource.images.weatherfanart.multi),(,)]</label>
+				<label2/>
+				<icon>OverlayWatched.png</icon>
+				<onclick/>
+				<visible>System.HasAddon(resource.images.weatherfanart.multi)</visible>
+			</item>
+			<item>
+				<label>Resource Images Weathericons Outline-HD $INFO[System.AddonVersion(resource.images.weathericons.outline-hd),(,)]</label>
+				<label2/>
+				<icon>OverlayWatched.png</icon>
+				<onclick/>
+				<visible>System.HasAddon(resource.images.weathericons.outline-hd)</visible>
+			</item>
+		</content>
+	</include>
+</includes>

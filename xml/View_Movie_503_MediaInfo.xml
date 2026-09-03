@@ -1,0 +1,823 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <include name="View_503_MediaList">
+		<param name="viewid">503</param>
+		<definition>
+			<control type="group">
+				<visible>Control.IsVisible($PARAM[viewid])</visible>
+				<include>openclosebox</include>
+				<control type="group">
+					<include>openclosevisible</include>
+					<include content="FakeButton444">
+						<param name="visible" value="Control.IsVisible($PARAM[viewid])"/>
+					</include>
+					<visible>Control.IsVisible($PARAM[viewid])+!Control.HasFocus(666)</visible>
+					<include>BlackGrunge</include>
+					<control type="group"> <!-- Top Panel -->
+						<height>MediaInfoHeight_Top</height>
+						<control type="image">
+							<colordiffuse>menudiffuse</colordiffuse>
+							<texture>BlackBack.png</texture>
+						</control>
+						<control type="group">
+							<left>SpacePaddingXL</left>
+							<bottom>SpacePadding</bottom>
+							<height>170</height>
+							<width>50%</width>
+							<include>openclosevisible</include>
+							<control type="image">
+								<aspectratio align="left">keep</aspectratio>
+								<include condition="Skin.HasSetting(roundcorner)" content="cornersetting_round"><param name="image" value="$VAR[BannerVAR]"/><param name="diffuse" value="masks/mask_banner_round.png"/></include>
+								<include condition="!Skin.HasSetting(roundcorner)" content="cornersetting_sharp"><param name="image" value="$VAR[BannerVAR]"/></include>
+								<!-- <bordertexture border="10">ThumbShadowWhite.png</bordertexture>
+								<bordersize>6</bordersize> -->
+								<visible>![Container.Content(Sets)|ListItem.IsCollection]</visible>
+							</control>
+						</control>
+						<control type="group">
+							<right>SpacePaddingXL</right>
+							<bottom>SpacePaddingLarge</bottom>
+							<width>10%</width>
+							<height>170</height>
+							<control type="image" id="50301">
+								<include>openclosevisible</include>
+								<aspectratio align="right" aligny="bottom">keep</aspectratio>
+								<texture>$VAR[ClearlogoVAR]</texture>
+								<visible>Skin.HasSetting(EnableExtendedArt)</visible>
+							</control>
+						</control>
+						<control type="grouplist"> <!-- Set Information -->
+							<visible>ListItem.IsCollection</visible>
+							<visible>Skin.HasSetting(EnableExtendedArt)</visible>
+							<include>openclosemedium</include>
+							<left>SpacePadding</left>
+							<height>175</height>
+							<bottom>0</bottom>
+							<include content="MovieSetInformationCover">
+								<param name="GroupLeft" value="SpacePaddingXL"/>
+								<param name="LabelLeft" value="0"/>
+								<param name="LabelTop" value="0" />
+							</include>
+						</control>
+						<control type="group">
+							<top>100%</top>
+							<width>101%</width>
+							<control type="image">
+								<top>-15</top>
+								<height>15</height>
+								<colordiffuse>menudiffuse</colordiffuse>
+								<texture border="2">Shadow.png</texture>
+							</control>
+						</control>
+					</control>
+					<control type="group"> <!-- Middle Panel -->
+						<top>MediaInfoHeight_Top</top>
+						<bottom>MediaInfoHeight_Bottom</bottom>
+						<control type="image">
+							<texture>WhiteBack.png</texture>
+						</control>
+						<control type="image">
+							<height>akzentline_size</height>
+							<colordiffuse>$VAR[BackgroundOverlayColorDialog]</colordiffuse>
+							<texture>White.png</texture>
+						</control>
+						<control type="group">	<!-- left side -->
+							<width>50%</width>
+							<control type="list" id="$PARAM[viewid]">
+								<animation effect="slide" end="-30" time="300" condition="System.HasAddon(plugin.video.themoviedb.helper)+Control.HasFocus($PARAM[viewid])">Conditional</animation>
+								<left>SpacePadding</left>
+								<top>SpacePadding</top>
+								<bottom>SpacePaddingLarge</bottom>
+								<right>SpacePaddingLarge</right>
+								<onup condition="ListItem.IsCollection">Container.Refresh</onup>
+								<ondown condition="ListItem.IsCollection">Container.Refresh</ondown>
+								<onleft>9000</onleft>
+								<onright condition="Control.IsVisible($PARAM[viewid]1)">$PARAM[viewid]1</onright>
+								<onright condition="!Control.IsVisible($PARAM[viewid]1)+Control.IsVisible(15000)">15000</onright>
+								<onright condition="!Control.IsVisible($PARAM[viewid]1)+!Control.IsVisible(15000)">732</onright>
+								<onup>$PARAM[viewid]</onup>
+								<ondown>$PARAM[viewid]</ondown>
+								<viewtype label="$LOCALIZE[544]">list</viewtype>
+								<pagecontrol>$PARAM[viewid]1</pagecontrol>
+								<scrolltime>200</scrolltime>
+								<visible>Window.IsVisible(videos)</visible>
+								<visible>!String.StartsWith(Container.FolderPath,plugin://)+!Container.Content(Addons)</visible>
+								<animation effect="slide" end="20" condition="System.HasAddon(plugin.video.themoviedb.helper)">Conditional</animation>
+								<itemlayout height="40" width="auto">
+									<control type="label">
+										<left>15</left>
+										<height>40</height>
+										<textcolor>black</textcolor>
+										<shadowcolor>grey</shadowcolor>
+										<align>left</align>
+										<aligny>center</aligny>
+										<label>$VAR[OriginalTitle]</label>
+									</control>
+									<control type="label">
+										<right>100</right>
+										<height>40</height>
+										<textcolor>black</textcolor>
+										<align>right</align>
+										<aligny>center</aligny>
+										<font>font16</font>
+										<label>$VAR[ListItemLabel2]</label>
+										<visible>Window.IsVisible(Videos)</visible>
+										<animation effect="slide" start="0,0" end="60,0" delay="0" time="0" condition="![Container.Content(Movies)|Container.Content(episodes)|Container.Content(MusicVideos)]">conditional</animation>
+									</control>
+									<control type="image">
+										<left>94r</left>
+										<top>1</top>
+										<width>60</width>
+										<height>38</height>
+										<aspectratio>keep</aspectratio>
+										<texture>$VAR[ListFlag]</texture>
+										<visible>Container.Content(Movies)|Container.Content(episodes)|Container.Content(MusicVideos)</visible>
+									</control>
+									<control type="group">
+										<left>22r</left>
+										<control type="image">
+											<top>8</top>
+											<width>30</width>
+											<height>24</height>
+											<colordiffuse>grey3</colordiffuse>
+											<texture>$INFO[ListItem.Overlay]</texture>
+											<visible>!ListItem.IsResumable</visible>
+										</control>
+										<control type="image">
+											<top>8</top>
+											<width>24</width>
+											<height>24</height>
+											<colordiffuse>grey3</colordiffuse>
+											<texture>OverlayWatching.png</texture>
+											<visible>ListItem.IsResumable</visible>
+										</control>
+									</control>
+								</itemlayout>
+								<focusedlayout height="70" width="auto">
+									<control type="group">
+										<animation effect="zoom" center="auto" start="98" end="100" time="300" delay="100" tween="quadratic" reversible="false" condition="Skin.HasSetting(animation)+Control.HasFocus($PARAM[viewid])">Focus</animation>
+										<control type="image">
+											<top>1</top>
+											<bottom>1</bottom>
+											<colordiffuse>grey2</colordiffuse>
+											<texture border="4">buttons/ButtonFOlightGlow.png</texture>
+											<visible>!Control.HasFocus($PARAM[viewid])</visible>
+										</control>
+										<control type="image">
+											<top>1</top>
+											<bottom>1</bottom>
+											<colordiffuse>black</colordiffuse>
+											<texture border="4">buttons/ButtonFOlightGlow.png</texture>
+											<visible>Control.HasFocus($PARAM[viewid])</visible>
+										</control>
+										<control type="group">
+											<left>15</left>
+											<right>100</right>
+											<control type="label">
+												<height>40</height>
+												<textcolor>white</textcolor>
+												<shadowcolor>black</shadowcolor>
+												<align>left</align>
+												<aligny>center</aligny>
+												<label>$VAR[OriginalTitle]</label>
+											</control>
+											<control type="group">
+												<bottom>0</bottom>
+												<height>40</height>
+												<control type="label">
+													<height>100%</height>
+													<right>15</right>
+													<font>clock-20</font>
+													<label>$VAR[WideView_InfosVar]</label>
+												</control>
+											</control>
+											<control type="label">
+												<height>40</height>
+												<textcolor>black</textcolor>
+												<shadowcolor>grey1</shadowcolor>
+												<align>right</align>
+												<aligny>center</aligny>
+												<font>font16</font>
+												<label>$VAR[ListItemLabel2]</label>
+												<visible>Window.IsVisible(Videos)</visible>
+												<animation effect="slide" start="0,0" end="60,0" delay="0" time="0" condition="![Container.Content(Movies)|Container.Content(episodes)|Container.Content(MusicVideos)]">conditional</animation>
+											</control>
+										</control>
+										<control type="image">
+											<left>94r</left>
+											<top>1</top>
+											<width>60</width>
+											<height>38</height>
+											<aspectratio>keep</aspectratio>
+											<texture>$VAR[ListFlag]</texture>
+											<visible>Container.Content(Movies)|Container.Content(episodes)|Container.Content(MusicVideos)</visible>
+										</control>
+										<control type="group">
+											<left>22r</left>
+											<control type="image">
+												<top>8</top>
+												<width>30</width>
+												<height>24</height>
+												<colordiffuse>grey3</colordiffuse>
+												<texture>$INFO[ListItem.Overlay]</texture>
+												<visible>!ListItem.IsResumable</visible>
+											</control>
+											<control type="image">
+												<top>8</top>
+												<width>24</width>
+												<height>24</height>
+												<colordiffuse>grey3</colordiffuse>
+												<texture>OverlayWatching.png</texture>
+												<visible>ListItem.IsResumable</visible>
+											</control>
+										</control>
+									</control>
+								</focusedlayout>
+							</control>
+							<include content="DefaultScrollbar">
+								<param name="id" value="$PARAM[viewid]1" />
+								<param name="left" value="99.2%" />
+								<param name="top" value="SpacePadding" />
+								<param name="bottom" value="SpacePaddingLarge" />
+								<param name="onleft" value="$PARAM[viewid]" />
+							</include>
+							<control type="group">
+								<right>SpacePadding</right>
+								<bottom>20</bottom>
+								<width>750</width>
+								<height>30</height>
+								<control type="label">
+									<description>Page Count Label</description>
+									<font>ubuntu-r13</font>
+									<textcolor>grey3</textcolor>
+									<shadowcolor>grey1</shadowcolor>
+									<scroll>false</scroll>
+									<align>right</align>
+									<aligny>center</aligny>
+									<label>$INFO[Container.NumItems,([COLOR=black],[/COLOR]) $LOCALIZE[31009]]$INFO[Container.CurrentPage, - $LOCALIZE[31008] ([COLOR=black]]$INFO[Container.NumPages,/,[/COLOR])] $INFO[Container.TotalTime,$LOCALIZE[31003] ([COLOR=black],[/COLOR])]</label>
+									<visible>Skin.HasSetting(CommonPageCount)</visible>
+								</control>
+							</control>
+							<control type="group">
+								<right>0</right>
+								<top>SpacePadding</top>
+								<bottom>SpacePadding</bottom>
+								<width>3</width>
+								<visible>!Control.IsVisible($PARAM[viewid]1)</visible>
+								<visible>String.IsEmpty(Container(99950).ListItem.Property(Provider.1.Icon))</visible>
+								<control type="image">
+									<colordiffuse>fanartdiffuse</colordiffuse>
+									<texture border="1">Separator4.png</texture>
+								</control>
+							</control>
+							<control type="group">
+								<right>10</right>
+								<width>50</width>
+								<include>openclosevisible</include>
+								<visible>Control.HasFocus($PARAM[viewid])</visible>
+								<include content="TMDbhelper_Provider_Icon">
+									<param name="left" value="12" />
+									<param name="top" value="SpacePadding" />
+									<param name="bottom" value="SpacePaddingLarge" />
+									<param name="height" value="100%" />
+									<param name="width" value="100%" />
+									<param name="box" value="28" />
+								</include>
+							</control>
+						</control>
+						<control type="group"> 	<!-- right side -->
+							<right>0</right>
+							<width>50%</width>
+							<control type="group">
+								<visible>!ListItem.IsParentFolder</visible>
+								<include>openclosevisible</include>
+								<control type="group">
+									<left>SpacePaddingLarge</left>
+									<right>SpacePaddingLarge</right>
+									<top>SpacePaddingLarge</top>
+									<control type="group"> <!-- TVShows -->
+										<visible>Container.Content(TVShows)</visible>
+										<include>openclosevisible</include>
+										<control type="group">
+											<visible>!ListItem.IsParentFolder</visible>
+											<control type="image">
+												<include>openclosevisible</include>
+												<visible>Skin.HasSetting(hideMovieCases)</visible>
+												<width>272</width>
+												<height>380</height>
+												<aspectratio align="left" aligny="top">scale</aspectratio>
+												<texture diffuse="clear-cases/clearcase_inlay.png" fallback="FallbackCover.png">$VAR[PosterThumb]</texture>
+												<bordertexture border="10">ThumbShadow.png</bordertexture>
+												<bordersize>7</bordersize>
+												<visible>![String.StartsWith(ListItem.Label,*)|String.IsEqual(ListItem.Label,..)]</visible>
+											</control>
+											<control type="image">
+												<include>openclosevisible</include>
+												<visible>Skin.HasSetting(hideMovieCases)</visible>
+												<width>272</width>
+												<height>380</height>
+												<aspectratio align="left" aligny="top">keep</aspectratio>
+												<texture>$VAR[PosterThumb]</texture>
+												<bordertexture border="10">ThumbShadow.png</bordertexture>
+												<bordersize>7</bordersize>
+												<visible>String.StartsWith(ListItem.Label,*)|String.IsEqual(ListItem.Label,..)</visible>
+											</control>
+											<control type="group">
+												<visible>!Skin.HasSetting(hideMovieCases)</visible>
+												<control type="group">
+													<left>24</left>
+													<top>2</top>
+													<control type="image">
+														<description>case by resolution</description>
+														<width>220</width>
+														<height>308</height>
+														<texture diffuse="clear-cases/clearcase_inlay.png" fallback="FallbackCover.png">$VAR[PosterThumb]</texture>
+														<aspectratio align="right" aligny="top">stretch</aspectratio>
+														<visible>![String.StartsWith(ListItem.Label,*)|String.IsEqual(ListItem.Label,..)]</visible>
+													</control>
+													<control type="image">
+														<description>case by resolution</description>
+														<width>220</width>
+														<height>308</height>
+														<texture>$VAR[PosterThumb]</texture>
+														<aspectratio>keep</aspectratio>
+													<visible>String.StartsWith(ListItem.Label,*)|String.IsEqual(ListItem.Label,..)</visible>
+													</control>
+												</control>
+												<control type="image">
+													<description>case by resolution</description>
+													<width>246</width>
+													<height>312</height>
+													<texture fallback="clear-cases/fallback.png">$VAR[clearcase]</texture>
+												</control>
+											</control>
+											<control type="group">
+												<left>280</left>
+												<bottom>280</bottom>
+												<control type="textbox">
+													<description>Description Value for Movie</description>
+													<include>openclosevisible</include>
+													<include condition="!Skin.HasSetting(BigPlotText)">PlotText16Var</include>
+													<include condition="Skin.HasSetting(BigPlotText)">PlotTextBigVar</include>
+													<textcolor>black</textcolor>
+													<shadowcolor>grey</shadowcolor>
+													<label>$INFO[ListItem.Plot]</label>
+													<include>openclosevisible</include>
+													<visible>!String.IsEmpty(ListItem.Plot)</visible>
+												</control>
+											</control>
+										</control>
+										<control type="group">
+											<bottom>130</bottom>
+											<height>130</height>
+											<control type="image">
+												<height>3</height>
+												<colordiffuse>fanartdiffuse</colordiffuse>
+												<texture border="1">Separator1.png</texture>
+											</control>
+											<control type="group">
+												<top>10</top>
+												<control type="label">
+													<description>Episodes txt</description>
+													<width>210</width>
+													<include>PlotText16Var</include>
+													<label>$LOCALIZE[20360]:</label>
+													<align>right</align>
+													<aligny>center</aligny>
+													<textcolor>grey3</textcolor>
+												</control>
+												<control type="label">
+													<description>Episodes Value</description>
+													<left>225</left>
+													<include>PlotText16Var</include>
+													<label fallback="416">$INFO[ListItem.Property(WatchedEpisodes),,]$INFO[listitem.Episode, / ,]</label>
+													<align>left</align>
+													<aligny>center</aligny>
+													<textcolor>black</textcolor>
+													<scroll>true</scroll>
+												</control>
+												<control type="label">
+													<description>Aired txt</description>
+													<top>40</top>
+													<width>210</width>
+													<include>PlotText16Var</include>
+													<label>$LOCALIZE[31052]:</label>
+													<align>right</align>
+													<aligny>center</aligny>
+													<textcolor>grey3</textcolor>
+												</control>
+												<control type="label">
+													<description>Aired Value</description>
+													<left>225</left>
+													<top>40</top>
+													<include>PlotText16Var</include>
+													<label fallback="416">$INFO[listitem.premiered]</label>
+													<align>left</align>
+													<aligny>center</aligny>
+													<textcolor>black</textcolor>
+													<scroll>true</scroll>
+												</control>
+												<control type="label">
+													<description>Genre txt</description>
+													<top>80</top>
+													<width>210</width>
+													<include>PlotText16Var</include>
+													<label>$LOCALIZE[515]:</label>
+													<align>right</align>
+													<aligny>center</aligny>
+													<textcolor>grey3</textcolor>
+												</control>
+												<control type="fadelabel">
+													<description>Genre Value</description>
+													<left>225</left>
+													<top>80</top>
+													<include>PlotText16Var</include>
+													<label fallback="416">$INFO[listitem.Genre]</label>
+													<align>left</align>
+													<aligny>center</aligny>
+													<textcolor>black</textcolor>
+													<scrollout>false</scrollout>
+													<pauseatend>1000</pauseatend>
+												</control>
+											</control>
+										</control>
+										<control type="group">
+											<bottom>110</bottom>
+											<height>3</height>
+											<control type="image">
+												<colordiffuse>fanartdiffuse</colordiffuse>
+												<texture border="1">Separator1.png</texture>
+											</control>
+										</control>
+										<control type="group">
+											<bottom>20</bottom>
+											<height>80</height>
+											<control type="image">
+												<top>10</top>
+												<bottom>10</bottom>
+												<include>openclosevisible</include>
+												<width>450</width>
+												<aspectratio align="left" aligny="bottom">keep</aspectratio>
+												<texture>$VAR[Furniture_VideoRating]</texture>
+											</control>
+											<control type="group">
+												<right>0</right>
+												<width>300</width>
+												<control type="image">
+													<colordiffuse>grey3</colordiffuse>
+													<aspectratio align="right" aligny="bottom">keep</aspectratio>
+													<texture>$VAR[MovieStudioLogoVar]$INFO[ListItem.Studio,,.png]</texture>
+												</control>
+											</control>
+										</control>
+									</control>
+									<control type="group"> <!-- Seasons -->
+										<visible>Container.Content(Seasons)</visible>
+										<include>openclosevisible</include>
+										<control type="group">
+											<visible>!ListItem.IsParentFolder</visible>
+											<control type="image">
+												<include>openclosevisible</include>
+												<visible>Skin.HasSetting(hideMovieCases)</visible>
+												<width>390</width>
+												<height>580</height>
+												<aspectratio align="left" aligny="top">scale</aspectratio>
+												<texture diffuse="clear-cases/clearcase_inlay.png" fallback="FallbackCover.png">$VAR[PosterThumb]</texture>
+												<bordertexture border="10">ThumbShadow.png</bordertexture>
+												<bordersize>7</bordersize>
+												<visible>![String.StartsWith(ListItem.Label,*)|String.IsEqual(ListItem.Label,..)]</visible>
+											</control>
+											<control type="image">
+												<include>openclosevisible</include>
+												<visible>Skin.HasSetting(hideMovieCases)</visible>
+												<width>390</width>
+												<height>580</height>
+												<aspectratio align="left" aligny="top">keep</aspectratio>
+												<texture>$VAR[PosterThumb]</texture>
+												<bordertexture border="10">ThumbShadow.png</bordertexture>
+												<bordersize>7</bordersize>
+												<visible>String.StartsWith(ListItem.Label,*)|String.IsEqual(ListItem.Label,..)</visible>
+											</control>
+											<control type="group">
+												<visible>!Skin.HasSetting(hideMovieCases)</visible>
+												<control type="image">
+													<description>case by resolution</description>
+													<left>38</left>
+													<top>4</top>
+													<width>340</width>
+													<height>508</height>
+													<texture diffuse="clear-cases/clearcase_inlay.png" fallback="FallbackCover.png">$VAR[PosterThumb]</texture>
+													<aspectratio>scale</aspectratio>
+													<visible>![String.StartsWith(ListItem.Label,*)|String.IsEqual(ListItem.Label,..)]</visible>
+												</control>
+												<control type="image">
+													<description>case by resolution</description>
+													<left>38</left>
+													<top>4</top>
+													<width>340</width>
+													<height>508</height>
+													<texture>$VAR[PosterThumb]</texture>
+													<aspectratio>keep</aspectratio>
+												<visible>String.StartsWith(ListItem.Label,*)|String.IsEqual(ListItem.Label,..)</visible>
+												</control>
+												<control type="image">
+													<description>case by resolution</description>
+													<left>0</left>
+													<top>0</top>
+													<width>382</width>
+													<height>516</height>
+													<texture fallback="clear-cases/fallback.png">$VAR[clearcase]</texture>
+												</control>
+											</control>
+											<control type="textbox">
+												<description>Description Value for Movie</description>
+												<include>openclosevisible</include>
+												<left>405</left>
+												<bottom>100</bottom>
+												<include condition="!Skin.HasSetting(BigPlotText)">PlotText16Var</include>
+												<include condition="Skin.HasSetting(BigPlotText)">PlotTextBigVar</include>
+												<textcolor>black</textcolor>
+												<shadowcolor>grey</shadowcolor>
+												<label>$INFO[ListItem.Plot]</label>
+												<include>openclosevisible</include>
+												<visible>!String.IsEmpty(ListItem.Plot)</visible>
+											</control>
+											<control type="group">
+												<left>405</left>
+												<include content="MovieSetInformationList">
+													<param name="textcolor">black</param>
+													<param name="visible">String.IsEmpty(ListItem.Plot)+[Control.IsVisible(2000)+!Integer.IsGreater(Container(2000).NumItems,7)]</param>
+												</include>
+											</control>
+										</control>
+										<control type="group">
+											<bottom>SpacePaddingLarge</bottom>
+											<height>3</height>
+											<control type="image">
+												<colordiffuse>fanartdiffuse</colordiffuse>
+												<texture border="1">Separator1.png</texture>
+											</control>
+										</control>
+										<control type="label">
+											<description>Watched Count</description>
+											<top>50r</top>
+											<height>38</height>
+											<label>$LOCALIZE[20360]: [COLOR=black]$INFO[ListItem.Property(WatchedEpisodes)]$INFO[ListItem.Property(TotalEpisodes), / ,][/COLOR]</label>
+											<align>left</align>
+											<aligny>center</aligny>
+											<textcolor>grey3</textcolor>
+											<shadowcolor>grey1</shadowcolor>
+										</control>
+									</control>
+									<control type="group"> <!-- Episodes -->
+										<visible>Container.Content(episodes)</visible>
+										<include>openclosevisible</include>
+										<control type="image">
+											<height>315</height>
+											<aspectratio>keep</aspectratio>
+											<texture>$VAR[PosterThumb]</texture>
+											<bordertexture border="8">ThumbShadow.png</bordertexture>
+											<bordersize>8</bordersize>
+										</control>
+										<control type="label">
+											<description>INFO txt</description>
+											<top>322</top>
+											<height>45</height>
+											<font>clock-22b</font>
+											<label>$INFO[ListItem.Season,[COLOR=grey3] $LOCALIZE[20373] :[/COLOR] ] $INFO[ListItem.episode,[COLOR=grey3] $LOCALIZE[20359] :[/COLOR] ] $INFO[ListItem.premiered,[COLOR=grey3] $LOCALIZE[31052] :[/COLOR] ][CR]$VAR[WideView_InfosVar]</label>
+											<align>center</align>
+											<aligny>center</aligny>
+											<textcolor>black</textcolor>
+											<!-- <shadowcolor>grey1</shadowcolor> -->
+											<wrapmultiline>true</wrapmultiline>
+										</control>
+										<control type="image">
+											<top>376</top>
+											<height>3</height>
+											<colordiffuse>fanartdiffuse</colordiffuse>
+											<texture border="1">Separator1.png</texture>
+										</control>
+										<control type="textbox">
+											<description>Description Value for TVShows</description>
+											<top>390</top>
+											<bottom>SpacePadding</bottom>
+											<include condition="!Skin.HasSetting(BigPlotText)">PlotText16Var</include>
+											<include condition="Skin.HasSetting(BigPlotText)">PlotTextBigVar</include>
+											<textcolor>black</textcolor>
+											<shadowcolor>grey</shadowcolor>
+											<label>$INFO[ListItem.Plot]</label>
+										</control>
+									</control>
+									<control type="group"> <!-- Movies -->
+										<visible>Container.Content(Movies)|Container.Content(Sets)|Container.Content(musicvideos)</visible>
+										<visible>!ListItem.IsParentFolder</visible>
+										<control type="group">
+											<control type="group">
+												<bottom>80</bottom>
+												<height>3</height>
+												<control type="image">
+													<colordiffuse>fanartdiffuse</colordiffuse>
+													<texture border="1">Separator1.png</texture>
+												</control>
+											</control>
+											<control type="group">
+												<height>60</height>
+												<bottom>10</bottom>
+												<control type="label">
+													<top>5</top>
+													<align>center</align>
+													<font>impacted44</font>
+													<textcolor>grey3</textcolor>
+													<label>$LOCALIZE[20457]</label>
+													<include>openclosevisible</include>
+													<visible>Container.Content(Sets)|ListItem.IsCollection</visible>
+												</control>
+												<control type="grouplist">
+													<left>0</left>
+													<align>center</align>
+													<orientation>horizontal</orientation>
+													<itemgap>30</itemgap>
+													<control type="image">
+														<width>250</width>
+														<include>openclosevisible</include>
+														<aspectratio>keep</aspectratio>
+														<texture>$VAR[Furniture_VideoRating]</texture>
+														<visible>!String.IsEmpty(Control.GetLabel(9997))</visible>
+														<include>openclosevisible</include>
+													</control>
+													<control type="image">
+														<width>3</width>
+														<colordiffuse>grey3</colordiffuse>
+														<texture border="1">Separator4.png</texture>
+														<visible>!String.Contains(Control.GetLabel(9999),Empty.png)+!String.IsEmpty(Control.GetLabel(9997))</visible>
+														<include>openclosevisible</include>
+													</control>
+													<control type="image">
+														<width>250</width>
+														<aspectratio>keep</aspectratio>
+														<texture>$VAR[MovieStudioLogoVar]$INFO[ListItem.Studio,,.png]</texture>
+														<visible>!String.Contains(Control.GetLabel(9999),Empty.png)</visible>
+														<include>openclosevisible</include>
+													</control>
+												</control>
+											</control>
+										</control>
+										<control type="group">
+											<top>-20</top>
+											<visible>!ListItem.IsParentFolder</visible>
+											<control type="image">
+												<include>openclosevisible</include>
+												<visible>Skin.HasSetting(hideMovieCases)</visible>
+												<width>343</width>
+												<height>508</height>
+												<aspectratio align="right" aligny="top">stretch</aspectratio>
+												<include condition="Skin.HasSetting(roundcorner)">cornersetting_round</include>
+												<include condition="!Skin.HasSetting(roundcorner)">cornersetting_sharp</include>
+												<!-- <texture>$VAR[PosterThumb]</texture> -->
+												<!-- <bordertexture border="10">ThumbShadow.png</bordertexture>
+												<bordersize>6</bordersize> -->
+											</control>
+											<control type="group">
+												<visible>!Skin.HasSetting(hideMovieCases)</visible>
+												<control type="image">
+													<description>case by resolution</description>
+													<left>38</left>
+													<top>4</top>
+													<width>340</width>
+													<height>508</height>
+													<texture diffuse="clear-cases/clearcase_inlay.png" fallback="FallbackCover.png">$VAR[PosterThumb]</texture>
+													<aspectratio>scale</aspectratio>
+												</control>
+												<control type="image">
+													<description>case by resolution</description>
+													<left>0</left>
+													<top>0</top>
+													<width>382</width>
+													<height>516</height>
+													<texture fallback="clear-cases/fallback.png">$VAR[clearcase]</texture>
+												</control>
+											</control>
+											<control type="textbox">
+												<description>Description Value for Movie</description>
+												<include>openclosevisible</include>
+												<left>405</left>
+												<bottom>100</bottom>
+												<include condition="!Skin.HasSetting(BigPlotText)">PlotText16Var</include>
+												<include condition="Skin.HasSetting(BigPlotText)">PlotTextBigVar</include>
+												<textcolor>black</textcolor>
+												<shadowcolor>grey</shadowcolor>
+												<label>$INFO[ListItem.Plot]</label>
+												<include>openclosevisible</include>
+												<visible>!String.IsEmpty(ListItem.Plot)</visible>
+											</control>
+											<control type="group">
+												<left>405</left>
+												<include content="MovieSetInformationList">
+													<param name="textcolor">black</param>
+													<param name="visible">String.IsEmpty(ListItem.Plot)+[Control.IsVisible(2000)+!Integer.IsGreater(Container(2000).NumItems,7)]</param>
+												</include>
+											</control>
+										</control>
+									</control>
+									<control type="group"> <!-- other -->
+										<visible>![Container.Content(Movies)|Container.Content(Sets)|Container.Content(musicvideos)
+										|Container.Content(Seasons)|Container.Content(episodes)|Container.Content(TVShows)]</visible>
+										<visible>!ListItem.IsParentFolder</visible>
+										<bottom>SpacePadding</bottom>
+										<control type="group">
+											<centerleft>50%</centerleft>
+											<centertop>50%</centertop>
+											<width>400</width>
+											<height>400</height>
+											<control type="image">
+												<texture>$INFO[ListItem.Icon]</texture>
+											</control>
+										</control>
+									</control>
+								</control>
+							</control>
+						</control>
+					</control>
+					<control type="group"> <!-- Bottom Panel -->
+						<height>MediaInfoHeight_Bottom</height>
+						<bottom>0</bottom>
+						<control type="image">
+							<description>background</description>
+							<include>openclosevisible</include>
+							<colordiffuse>menudiffuse</colordiffuse>
+							<texture>BlackBack.png</texture>
+						</control>
+						<control type="group">
+							<width>101%</width>
+							<height>15</height>
+							<control type="image">
+								<colordiffuse>menudiffuse</colordiffuse>
+								<texture border="2" flipy="true">Shadow.png</texture>
+							</control>
+							<control type="image">
+								<height>akzentline_size</height>
+								<colordiffuse>$VAR[BackgroundOverlayColorDialog]</colordiffuse>
+								<texture>White.png</texture>
+							</control>
+						</control>
+						<control type="group">
+							<right>SpacePadding</right>
+							<bottom>SpacePadding</bottom>
+							<width>330</width>
+							<height>30</height>
+							<include>openclosevisible</include>
+							<visible>!Control.IsEmpty(ListItem.Rating)</visible>
+							<!-- <visible>Container.Content(Movies)|Container.Content(Sets)|Container.Content(musicvideos)
+							|Container.Content(Seasons)|Container.Content(episodes)|Container.Content(TVShows)</visible>
+							<visible>!ListItem.IsParentFolder+!Container.Content(Seasons)</visible> -->
+							<control type="group">
+								<top>-8</top>
+								<right>180</right>
+								<control type="label">
+									<font>impacted18</font>
+									<align>right</align>
+									<aligny>top</aligny>
+									<textcolor>grey</textcolor>
+									<label>$LOCALIZE[563]:</label>
+								</control>
+							</control>
+							<control type="group">
+								<right>0</right>
+								<width>180</width>
+								<control type="image">
+									<description>Rated</description>
+									<aspectratio align="right" aligny="bottom">stretch</aspectratio>
+									<texture fallback="leftratingvideo/0.0.png">$INFO[ListItem.Rating,leftratingvideo/,.png]</texture>
+								</control>
+							</control>
+						</control>
+						<control type="group"> <!-- Flagging -->
+							<visible>Container.Content(Movies)|Container.Content(Sets)|Container.Content(episodes)|Container.Content(musicvideos)</visible>
+							<control type="grouplist">
+								<left>10</left>
+								<bottom>15</bottom>
+								<height>45</height>
+								<itemgap>12</itemgap>
+								<align>left</align>
+								<orientation>horizontal</orientation>
+								<include>FlagVideo</include>
+								<include>FlagVideoAudioStream1</include>
+								<include>FlagVideoAudioStream2</include>
+								<include>FlagVideoSubtitles</include>
+							</control>
+						</control>
+					</control>
+				</control>
+                <include content="ScrollOffsetLabel">
+                    <param name="left">-10</param>
+                    <param name="top">MediaInfoHeight_Top</param>
+                </include>
+				<include content="AlphaBarV" condition="!Skin.HasSetting(HideJumpSMSBar)"><param name="id" value="$PARAM[viewid]"/></include>
+				<control type="button" id="777">
+					<include>HiddenButton</include>
+					<onfocus>Control.SetFocus($PARAM[viewid])</onfocus>
+				</control>
+			</control>
+		</definition>
+    </include>
+</includes>

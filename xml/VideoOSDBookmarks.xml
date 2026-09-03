@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+    <defaultcontrol always="true">2</defaultcontrol>
+    <include>openclose</include>
+    <include>opencloseslideleft</include>
+    <controls>
+        <control type="group">
+            <right>0</right>
+            <width>450</width>
+            <control type="group">
+                <left>70</left>
+                <control type="image">
+                    <colordiffuse>grey</colordiffuse>
+                    <texture border="5">BlackBack.png</texture>
+                </control>
+                <control type="image">
+                    <width>akzentline_size</width>
+                    <colordiffuse>$VAR[BackgroundOverlayColorDialog]</colordiffuse>
+                    <texture>WhiteBack.png</texture>
+                </control>
+            </control>
+            <!-- <control type="label">
+				<description>header label</description>
+				<left>40</left>
+				<top>20</top>
+				<width>520</width>
+				<height>30</height>
+				<label>$LOCALIZE[298]</label>
+				<align>center</align>
+				<aligny>center</aligny>
+			</control> -->
+            <control type="group">
+                <right>15</right>
+                <bottom>0</bottom>
+                <width>390</width>
+                <height>52</height>
+                <control type="label">
+                    <description>number of files/pages in list text label</description>
+                    <font>font16</font>
+                    <align>right</align>
+                    <aligny>center</aligny>
+                    <scroll>true</scroll>
+                    <textcolor>grey</textcolor>
+                    <label>([COLOR=selected]$INFO[Container(11).NumItems][/COLOR]) $LOCALIZE[31009] - $LOCALIZE[31008] ([COLOR=selected]$INFO[Container(11).CurrentPage]/$INFO[Container(11).NumPages][/COLOR])</label>
+                </control>
+            </control>
+            <control type="list" id="11">
+                <left>80</left>
+                <top>15</top>
+                <width>360</width>
+                <onleft>9000</onleft>
+                <onright/>
+                <ondown>11</ondown>
+                <onup>11</onup>
+                <scrolltime>200</scrolltime>
+                <viewtype label="536">icon</viewtype>
+                <pagecontrol/>
+                <orientation>vertical</orientation>
+                <itemlayout height="255" width="368">
+                    <control type="image">
+                        <width>360</width>
+                        <height>207</height>
+                        <texture border="3">buttons/ButtonNF.png</texture>
+                        <visible>!Control.HasFocus(11)</visible>
+                        <visible>!String.IsEmpty(ListItem.Icon)</visible>
+                    </control>
+                    <control type="image">
+                        <left>6</left>
+                        <top>6</top>
+                        <width>346</width>
+                        <height>195</height>
+                        <aspectratio>scale</aspectratio>
+                        <colordiffuse>grey</colordiffuse>
+                        <info>ListItem.Icon</info>
+                        <visible>!String.IsEmpty(ListItem.Icon)</visible>
+                    </control>
+                    <control type="label">
+                        <left>6</left>
+                        <top>222</top>
+                        <width>346</width>
+                        <height>22</height>
+                        <align>right</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label]$INFO[ListItem.Label2, (,)]</label>
+                        <visible>!String.IsEmpty(ListItem.Icon)</visible>
+                    </control>
+                </itemlayout>
+                <focusedlayout height="255" width="368">
+                    <control type="image">
+                        <width>360</width>
+                        <height>207</height>
+                        <texture border="3">buttons/ButtonNF.png</texture>
+                        <visible>!String.IsEmpty(ListItem.Icon)</visible>
+                    </control>
+                    <control type="image">
+                        <left>6</left>
+                        <top>6</top>
+                        <width>346</width>
+                        <height>195</height>
+                        <aspectratio>scale</aspectratio>
+                        <info>ListItem.Icon</info>
+                        <visible>!String.IsEmpty(ListItem.Icon)</visible>
+                    </control>
+                    <control type="label">
+                        <left>6</left>
+                        <top>222</top>
+                        <width>346</width>
+                        <height>22</height>
+                        <align>right</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label]$INFO[ListItem.Label2, (,)]</label>
+                        <visible>!String.IsEmpty(ListItem.Icon)</visible>
+                    </control>
+                </focusedlayout>
+            </control>
+            <control type="grouplist" id="9000">
+                <top>15</top>
+                <width>360</width>
+                <height>240</height>
+                <itemgap>8</itemgap>
+                <!-- <align>center</align> -->
+                <orientation>vertical</orientation>
+                <onleft/>
+                <onright>11</onright>
+                <onup>9000</onup>
+                <ondown>9000</ondown>
+                <control type="button" id="2">
+                    <description>Create Bookmark button</description>
+                    <label/>
+                    <!-- <label>294</label> -->
+                    <width>60</width>
+                    <height>60</height>
+                    <texturefocus>osd/PlusFO.png</texturefocus>
+                    <texturenofocus>osd/PlusNF.png</texturenofocus>
+                </control>
+                <control type="button" id="3">
+                    <description>Clear Bookmark button</description>
+                    <label/>
+                    <!-- <label>296</label> -->
+                    <width>60</width>
+                    <height>60</height>
+                    <texturefocus>osd/MinusFO.png</texturefocus>
+                    <texturenofocus>osd/MinusNF.png</texturenofocus>
+                </control>
+                <control type="button" id="4">
+                    <description>Clear Bookmark button</description>
+                    <label/>
+                    <!-- <label>20406</label> -->
+                    <width>60</width>
+                    <height>60</height>
+                    <visible>videoplayer.content(episodes)</visible>
+                    <texturefocus>osd/MinusFO.png</texturefocus>
+                    <texturenofocus>osd/MinusNF.png</texturenofocus>
+                </control>
+            </control>
+        </control>
+    </controls>
+</window>

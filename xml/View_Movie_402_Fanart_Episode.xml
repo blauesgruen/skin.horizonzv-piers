@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<includes>
+    <include name="View_402_FanartEpisode">
+		<param name="viewid">402</param>
+		<definition>
+			<control type="group">
+				<visible>Control.IsVisible($PARAM[viewid])</visible>
+				<include>openclose</include>
+				<control type="group">
+					<include content="FakeButton444">
+						<param name="visible" value="Control.IsVisible($PARAM[viewid])"/>
+					</include>
+					<visible>Control.IsVisible($PARAM[viewid])+!Control.HasFocus(666)</visible>
+				</control>
+				<control type="group"> <!-- Middle Panel -->
+					<top>PanelTop</top>
+					<height>48%</height>
+					<control type="group">
+						<centertop>50%</centertop>
+						<left>SpacePadding</left>
+						<right>SpacePadding</right>
+						<height>PanelMiddle</height>
+						<control type="group">
+							<top>-38</top>
+							<control type="grouplist">
+								<top>12</top>
+								<height>28</height>
+								<itemgap>12</itemgap>
+								<align>left</align>
+								<orientation>horizontal</orientation>
+								<include>FlagVideo</include>
+								<include>FlagVideoAudioStream1</include>
+								<include>FlagVideoAudioStream2</include>
+							</control>
+							<include content="TMDbhelper_Provider_Icon">
+								<param name="align" value="right"/>
+								<param name="left" value="0"/>
+								<param name="top" value="0"/>
+								<param name="width" value="100%"/>
+								<param name="box" value="35"/>
+								<param name="orientation" value="horizontal"/>
+								<param name="id" value="$PARAM[viewid]"/>
+							</include>
+							<control type="image">
+								<description>Separator</description>
+								<top>48</top>
+								<height>3</height>
+								<colordiffuse>fanartdiffuse</colordiffuse>
+								<texture border="1">Separator1.png</texture>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Skin.HasSetting(EpisodeInfo)</visible>
+							<visible>!String.IsEmpty(ListItem.DBID)</visible>
+							<include>openclosevisible</include>
+							<control type="group">
+								<top>16</top>
+								<control type="group">
+									<width>75%</width>
+									<height>90</height>
+									<control type="label">
+										<height>100%</height>
+										<width>100%</width>
+										<font>impacted31</font>
+										<scroll>true</scroll>
+										<textcolor>grey</textcolor>
+										<shadowcolor>black</shadowcolor>
+										<label>$VAR[OriginalTitle]$INFO[ListItem.Rating, * , *]$INFO[ListItem.Year, - (,)]</label>
+										<include>openclosevisible</include>
+									</control>
+								</control>
+								<control type="group">
+									<include>openclosevisible</include>
+									<visible>Control.IsVisible($PARAM[viewid])+!Control.HasFocus(666)</visible>
+									<top>12</top>
+									<right>0</right>
+									<width>35%</width>
+									<height>70</height>
+									<control type="image" id="9898">
+										<include>openclosevisible</include>
+										<aspectratio align="right">keep</aspectratio>
+										<texture>$VAR[MovieStudioLogoVar]$INFO[ListItem.Studio,,.png]</texture>
+									</control>
+								</control>
+							</control>
+							<control type="group">
+								<top>110</top>
+								<!-- <control type="image">
+									<texture>WhiteBack.png</texture>
+									<include>openclosevisible</include>
+									<visible>!ListItem.IsFolder</visible>
+								</control> -->
+								<control type="image">
+									<texture>BlackBack.png</texture>
+								</control>
+								<control type="image">
+									<top>-3</top>
+									<description>Separator</description>
+									<height>3</height>
+									<colordiffuse>fanartdiffuse</colordiffuse>
+									<texture border="1">Separator1.png</texture>
+								</control>
+								<control type="group">
+									<bottom>0</bottom>
+									<height>3</height>
+									<control type="image">
+										<description>Separator</description>
+										<include>openclosevisible</include>
+										<colordiffuse>fanartdiffuse</colordiffuse>
+										<texture border="1">Separator1.png</texture>
+									</control>
+								</control>
+								<control type="group">
+									<include>openclosevisible</include>
+									<include>openclosemediumnodelay</include>
+									<control type="group">
+										<top>SpacePadding</top>
+										<bottom>SpacePadding</bottom>
+										<control type="textbox">
+											<description>Description</description>
+											<include>openclosevisible</include>
+											<left>SpacePadding</left>
+											<width>70%</width>
+											<include condition="!Skin.HasSetting(BigPlotText)">PlotText16Var</include>
+											<include condition="Skin.HasSetting(BigPlotText)">PlotTextBigVar</include>
+											<shadowcolor>black</shadowcolor>
+											<label>$INFO[ListItem.Plot]</label>
+										</control>
+										<control type="image">
+											<description>Separator</description>
+											<include>openclosefanart</include>
+											<left>72.5%</left>
+											<width>3</width>
+											<colordiffuse>fanartdiffuse</colordiffuse>
+											<texture border="1">Separator4.png</texture>
+										</control>
+										<control type="group">
+											<include>openclosefanart</include>
+											<right>SpacePadding</right>
+											<width>25%</width>
+											<control type="group">
+												<control type="grouplist">
+													<control type="label">
+														<height>30</height>
+														<font>font16</font>
+														<label>[COLOR=grey]$LOCALIZE[2050]: [/COLOR]$INFO[ListItem.Duration] $LOCALIZE[12391] $INFO[ListItem.PercentPlayed,/ , % $LOCALIZE[576]]</label>
+													</control>
+													<control type="label">
+														<height>30</height>
+														<font>font16</font>
+														<label>[COLOR=grey]$LOCALIZE[515]: [/COLOR]$INFO[ListItem.Genre]</label>
+														<visible>!String.IsEmpty(ListItem.Genre)</visible>
+													</control>
+													<control type="label">
+														<height>30</height>
+														<font>font16</font>
+														<label>[COLOR=grey]$LOCALIZE[572]: [/COLOR]$INFO[ListItem.Studio]</label>
+													</control>
+													<control type="label">
+														<height>30</height>
+														<font>font16</font>
+														<label>[COLOR=grey]$LOCALIZE[563]: [/COLOR]$INFO[ListItem.RatingAndVotes]</label>
+													</control>
+													<control type="label">
+														<height>30</height>
+														<font>font16</font>
+														<label>[COLOR=grey]$LOCALIZE[20074]: [/COLOR]$INFO[ListItem.mpaa]</label>
+													</control>
+													<control type="label">
+														<height>30</height>
+														<font>font16</font>
+														<label>[COLOR=grey]$LOCALIZE[568]: [/COLOR]$INFO[ListItem.LastPlayed]</label>
+														<visible>!String.IsEmpty(ListItem.LastPlayed)</visible>
+													</control>
+												</control>
+												<control type="group">
+													<left>0</left>
+													<top>220</top>
+													<control type="label">
+														<left>0</left>
+														<top>0</top>
+														<width>555</width>
+														<height>60</height>
+														<align>left</align>
+														<textcolor>grey</textcolor>
+														<font>menufontimpacted</font>
+														<label>$INFO[ListItem.Season,$LOCALIZE[20373] ,]</label>
+													</control>
+													<control type="label">
+														<left>8</left>
+														<top>60</top>
+														<width>555</width>
+														<height>60</height>
+														<align>left</align>
+														<font>menufontimpacted</font>
+														<shadowcolor>grey3</shadowcolor>
+														<label>$INFO[ListItem.Episode,$LOCALIZE[20452] ,]</label>
+													</control>
+												</control>
+											</control>
+											<control type="group">
+												<visible>![ListItem.IsCollection|Container.Content(Sets)]</visible>
+												<!-- <control type="image">
+													<description>Rated</description>
+													<include>openclosevisible</include>
+													<left>-8</left>
+													<top>20r</top>
+													<width>180</width>
+													<height>30</height>
+													<texture fallback="leftratingvideo/0.0.png">$INFO[ListItem.Rating,leftratingvideo/,.png]</texture>
+												</control> -->
+												<control type="group">
+													<right>0</right>
+													<bottom>-10</bottom>
+													<width>225</width>
+													<height>60</height>
+													<control type="image">
+														<include>openclosevisible</include>
+														<aspectratio align="right" aligny="bottom">keep</aspectratio>
+														<texture>$VAR[Furniture_VideoRating]</texture>
+													</control>
+												</control>
+											</control>
+										</control>
+									</control>
+								</control>
+							</control>
+						</control>
+					</control>
+				</control>
+				<control type="group"> <!-- Bottom Panel -->
+					<top>58%</top>
+					<control type="group">
+						<control type="group"> <!-- Mirror Panel -->
+							<include>opencloseslideup</include>
+							<visible>Control.IsVisible($PARAM[viewid])+!Control.HasFocus(666)</visible>
+							<include content="MirrorPanel">
+								<param name="top" value="260" />
+							</include>
+						</control>
+						<control type="group">
+							<left>SpacePadding</left>
+							<right>SpacePadding</right>
+							<top>10</top>
+							<include>opencloseslideup</include>
+							<visible>Control.IsVisible($PARAM[viewid])+!Control.HasFocus(666)</visible>
+							<animation effect="slide" end="0,405" condition="!Skin.HasSetting(EpisodeInfo)">Conditional</animation>
+							<control type="label">
+								<description>Page Count Label</description>
+								<height>30</height>
+								<font>font16</font>
+								<textcolor>grey</textcolor>
+								<scroll>false</scroll>
+								<align>right</align>
+								<aligny>center</aligny>
+								<label>$INFO[Container.NumItems,([COLOR=selected],[/COLOR]) $LOCALIZE[31009]]$INFO[Container.CurrentPage, - $LOCALIZE[31008] ([COLOR=selected]]$INFO[Container.NumPages,/,[/COLOR])]</label>
+								<visible>Skin.HasSetting(CommonPageCount)</visible>
+							</control>
+						</control>
+						<control type="fixedlist" id="$PARAM[viewid]">
+							<top>90</top>
+							<height>280</height>
+							<onleft>$PARAM[viewid]</onleft>
+							<onright>$PARAM[viewid]</onright>
+							<onup>9000</onup>
+							<ondown condition="Control.IsVisible($PARAM[viewid]1)">$PARAM[viewid]1</ondown>
+							<ondown condition="!Control.IsVisible($PARAM[viewid]1)+Control.IsVisible(17000)">17000</ondown>
+							<ondown condition="!Control.IsVisible($PARAM[viewid]1)+!Control.IsVisible(17000)">732</ondown>
+							<viewtype label="20445">fixed</viewtype>
+							<viewtype label="20445">fixed</viewtype>
+							<pagecontrol>$PARAM[viewid]1</pagecontrol>
+							<scrolltime>200</scrolltime>
+							<focusposition>5</focusposition>
+							<movement>3</movement>
+							<orientation>horizontal</orientation>
+							<preloaditems>PreloadItems</preloaditems>
+							<visible>Container.Content(episodes)</visible>
+							<itemlayout height="auto" width="412">
+								<control type="group">
+									<top>10</top>
+									<left>20</left>
+									<right>20</right>
+									<height>205</height>
+									<control type="image">
+										<aspectratio>stretch</aspectratio>
+										<texture diffuse="masks/mask_landscape_round.png">BlackBack.png</texture>
+										<visible>String.StartsWith(ListItem.Label,*)|String.IsEqual(ListItem.Label,..)</visible>
+									</control>
+									<control type="image">
+										<aspectratio>stretch</aspectratio>
+										<colordiffuse>$VAR[CoverDim]</colordiffuse>
+										<texture diffuse="masks/mask_landscape_round.png" fallback="FallbackCover.png">$VAR[PosterThumb]</texture>
+										<visible>![String.StartsWith(ListItem.Label,*)|String.IsEqual(ListItem.Label,..)]</visible>
+									</control>
+									<control type="group">
+										<centerleft>50%</centerleft>
+										<width>200</width>
+										<control type="image">
+											<aspectratio align="center" aligny="center">keep</aspectratio>
+											<colordiffuse>$VAR[CoverDim]</colordiffuse>
+											<texture>$VAR[PosterThumb]</texture>
+											<visible>String.StartsWith(ListItem.Label,*)|String.IsEqual(ListItem.Label,..)</visible>
+										</control>
+									</control>
+									<control type="group">
+										<include content="Flagg_LeftCorner">
+											<param name="left" value="1"/>
+											<param name="top" value="1"/>
+											<param name="width" value="75"/>
+											<param name="height" value="75"/>
+										</include>
+										<control type="image">
+											<aspectratio>stretch</aspectratio>
+											<colordiffuse>$VAR[CoverDim]</colordiffuse>
+											<texture border="8">masks/Default_round.png</texture>
+										</control>
+									</control>
+									<control type="group">
+										<left>0</left>
+										<right>0</right>
+										<bottom>-55</bottom>
+										<height>50</height>
+										<visible>![String.StartsWith(ListItem.Label,*)|String.IsEqual(ListItem.Label,..)]</visible>
+										<include>openclosevisible</include>
+										<control type="image">
+											<aspectratio align="center" aligny="top">stretch</aspectratio>
+											<colordiffuse>grey2</colordiffuse>
+											<texture flipy="true" diffuse="ShadowWhiteFlipy_2.png" fallback="FallbackCover.png">$VAR[PosterThumb]</texture>
+										</control>
+									</control>
+									<control type="group">
+										<left>0</left>
+										<right>0</right>
+										<bottom>-55</bottom>
+										<height>50</height>
+										<visible>String.StartsWith(ListItem.Label,*)|String.IsEqual(ListItem.Label,..)</visible>
+										<include>openclosevisible</include>
+										<control type="group">
+											<centerleft>50%</centerleft>
+											<width>200</width>
+											<control type="image">
+												<aspectratio align="center" aligny="top">stretch</aspectratio>
+												<colordiffuse>grey2</colordiffuse>
+												<texture flipy="true" diffuse="ShadowWhiteFlipy_2.png" fallback="FallbackCover.png">$VAR[PosterThumb]</texture>
+											</control>
+										</control>
+									</control>
+								</control>
+							</itemlayout>
+							<focusedlayout height="auto" width="402">
+								<control type="group">
+									<animation effect="zoom" center="auto" start="90" end="100" time="300" delay="100" tween="quadratic" reversible="false" condition="Skin.HasSetting(animation)+Control.HasFocus($PARAM[viewid])">Focus</animation>
+									<animation effect="zoom" center="auto" start="100" end="90" time="100" tween="quadratic" reversible="false" condition="Skin.HasSetting(animation)+Control.HasFocus($PARAM[viewid])">Unfocus</animation>
+									<control type="group">
+										<height>225</height>
+										<control type="image">
+											<aspectratio>stretch</aspectratio>
+											<texture diffuse="masks/mask_landscape_round.png">BlackBack.png</texture>
+											<visible>String.StartsWith(ListItem.Label,*)|String.IsEqual(ListItem.Label,..)</visible>
+										</control>
+										<control type="group">
+											<visible>!Control.HasFocus($PARAM[viewid])</visible>
+											<control type="image">
+												<aspectratio>stretch</aspectratio>
+												<texture diffuse="masks/mask_landscape_round.png" fallback="FallbackCover.png">$VAR[PosterThumb]</texture>
+												<visible>![String.StartsWith(ListItem.Label,*)|String.IsEqual(ListItem.Label,..)]</visible>
+											</control>
+											<control type="image">
+												<aspectratio aligny="center">keep</aspectratio>
+												<texture>$VAR[PosterThumb]</texture>
+												<visible>String.StartsWith(ListItem.Label,*)|String.IsEqual(ListItem.Label,..)</visible>
+											</control>
+										</control>
+										<control type="group">
+											<visible>Control.HasFocus($PARAM[viewid])</visible>
+											<control type="image">
+												<aspectratio>stretch</aspectratio>
+												<texture diffuse="masks/mask_landscape_round.png" fallback="FallbackCover.png">$VAR[PosterThumb]</texture>
+												<visible>![String.StartsWith(ListItem.Label,*)|String.IsEqual(ListItem.Label,..)]</visible>
+											</control>
+											<control type="image">
+												<aspectratio aligny="center">keep</aspectratio>
+												<texture>$VAR[PosterThumb]</texture>
+												<visible>String.StartsWith(ListItem.Label,*)|String.IsEqual(ListItem.Label,..)</visible>
+											</control>
+										</control>
+										<control type="group">
+											<include>openclosevisible</include>
+											<visible>!Skin.HasSetting(smallinfo_off)</visible>
+											<visible>![String.StartsWith(ListItem.Label,*)|String.IsEqual(ListItem.Label,..)]</visible>
+											<control type="image">
+												<texture>Shadow.png</texture>
+											</control>
+											<control type="group">
+												<bottom>5</bottom>
+												<height>40</height>
+												<control type="label">
+													<align>center</align>
+													<font>clock-20</font>
+													<label>$VAR[WideView_InfosVar]</label>
+												</control>
+											</control>
+										</control>
+										<include content="Flagg_LeftCorner">
+											<param name="left" value="1"/>
+											<param name="top" value="1"/>
+											<param name="width" value="75"/>
+											<param name="height" value="75"/>
+										</include>
+										<control type="image">
+											<aspectratio>stretch</aspectratio>
+											<texture border="8">buttons/ButtonNF_round.png</texture>
+										</control>
+									</control>
+								</control>
+							</focusedlayout>
+						</control>
+						<control type="group">
+							<include>opencloseslideup</include>
+							<visible>Control.IsVisible($PARAM[viewid])+!Control.HasFocus(666)</visible>
+							<top>340</top>
+							<control type="group">
+								<visible>!Skin.HasSetting(Fanart_ClearlogoTitle)|!Skin.HasSetting(EnableExtendedArt)</visible>
+								<include>openclosevisible</include>
+								<control type="group">
+									<left>SpacePadding</left>
+									<right>SpacePadding</right>
+									<control type="label">
+										<height>30</height>
+										<textcolor>white</textcolor>
+										<shadowcolor>black</shadowcolor>
+										<scroll>true</scroll>
+										<align>center</align>
+										<aligny>center</aligny>
+										<font>impacted31</font>
+										<label>$VAR[OriginalTitle]$INFO[ListItem.Year, (,)]</label>
+										<include>openclosevisible</include>
+										<visible>!ListItem.IsCollection</visible>
+									</control>
+									<control type="label">
+										<height>30</height>
+										<textcolor>white</textcolor>
+										<shadowcolor>black</shadowcolor>
+										<scroll>true</scroll>
+										<align>center</align>
+										<aligny>center</aligny>
+										<font>impacted31</font>
+										<label>$VAR[OriginalTitle]</label>
+										<include>openclosevisible</include>
+										<visible>ListItem.IsCollection</visible>
+									</control>
+									<control type="group">
+										<top>40</top>
+										<centerleft>50%</centerleft>
+										<width>80%</width>
+										<control type="image">
+											<height>1</height>
+											<colordiffuse>fanartdiffuse</colordiffuse>
+											<texture>Separator2.png</texture>
+										</control>
+									</control>
+									<control type="label">
+										<top>45</top>
+										<height>30</height>
+										<scroll>true</scroll>
+										<align>center</align>
+										<aligny>center</aligny>
+										<font>impacted18</font>
+										<textcolor>grey1</textcolor>
+										<shadowcolor/>
+										<label>$INFO[ListItem.Tagline]</label>
+										<include>opencloseslideup</include>
+										<visible>![Control.HasFocus($PARAM[viewid]1)|ControlGroup(17000).HasFocus()]</visible>
+										<visible>!String.IsEmpty(ListItem.Tagline)</visible>
+									</control>
+								</control>
+							</control>
+							<control type="image">
+								<left>SpacePadding</left>
+								<right>SpacePadding</right>
+								<height>90</height>
+								<aspectratio aligny="bottom">keep</aspectratio>
+								<texture>$VAR[ClearlogoVAR]</texture>
+								<visible>Skin.HasSetting(Fanart_ClearlogoTitle)+Skin.HasSetting(EnableExtendedArt)</visible>
+								<include>openclosevisible</include>
+							</control>
+						</control>
+					</control>
+					<control type="group">
+						<include>openclosevisible</include>
+						<visible>Control.IsVisible($PARAM[viewid])+!Control.HasFocus(666)</visible>
+						<animation effect="slide" start="0,-20" end="0,0" time="250" condition="!Control.HasFocus($PARAM[viewid]1)">Conditional</animation>
+						<animation effect="slide" start="0,0" end="0,-20" time="250" condition="Control.HasFocus($PARAM[viewid]1)">Conditional</animation>
+						<animation effect="slide" start="0,0" end="0,-20" time="250" condition="ControlGroup(17000).HasFocus()">Conditional</animation>
+						<control type="image">
+							<top>400</top>
+							<width>101%</width>
+							<height>90</height>
+							<texture>Shadow.png</texture>
+						</control>
+						<control type="image">
+							<top>490</top>
+							<width>101%</width>
+							<texture>Black.png</texture>
+						</control>
+						<control type="group">
+							<top>455</top>
+							<include content="DefaultScrollbar_horizontal">
+								<param name="id" value="$PARAM[viewid]1" />
+								<param name="onup" value="$PARAM[viewid]" />
+								<param name="ondown1" value="17000" />
+								<param name="ondown1_condi" value="Control.IsVisible(17000)" />
+								<param name="ondown2" value="732" />
+								<param name="ondown2_condi" value="!Control.IsVisible(17000)" />
+							</include>
+						</control>
+					</control>
+				</control>
+				<include content="AlphaBarH" condition="!Skin.HasSetting(HideJumpSMSBar)"><param name="id" value="$PARAM[viewid]"/></include>
+				<control type="button" id="777">
+					<include>HiddenButton</include>
+					<onfocus>Control.SetFocus($PARAM[viewid])</onfocus>
+				</control>
+			</control>
+		</definition>
+    </include>
+</includes>

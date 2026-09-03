@@ -1,0 +1,187 @@
+﻿v 1.22.0.0
+- Kopie fuer Kodi 22 erstellt; bestehende Funktionen und Komfortfunktionen unveraendert uebernommen.
+
+v 1.21.3.31
+- Fix: Sichtbarkeit der TV Wall auf Internetstream und PVR-Radio reduziert
+
+v 1.21.3.30
+- Fix: Sichtbarkeit Logos in Musicvisualisierung verbessert
+- Fix: Sichtbarkeit der Senderlogos im PVR-Bereich verbessert (Senderlogo-Hintergrund abschaltbar)
+- Fix: Radioansicht wechselt nicht mehr zur Playerinfo (umschaltbar in Musik OSD - Titelinformationen) -  betrifft nur den Radioview in Musicvisualisierung
+
+v 1.21.3.29
+- Fix: PVR-Senderkanalnummer wird nun auch angezeigt, wenn die neue Option des ASM-QF Addons genutzt wird.
+- Neu: TV-Wall-Hintergrund bei Radiowiedergabe eingebaut. Abschaltbar.
+
+v 1.21.3.28
+- Fix: Überblendzeit für Artistslideshow erhöht
+
+v 1.21.3.27
+- Fix: Radioschatten in Musicvisualisierung korrigiert
+- Fix: Farben des Radiodisplayhintergrundes und des Textes in Musicvisualisierung für bessere Sichtbarkeit verändert
+
+v 1.21.3.26
+- neue Grafiken für die Radioansicht in Musicvisualisierung
+
+v 1.21.3.25
+- Neu: Colorpicker (Original von marcelveldt und sualfred) eingeführt
+- Fix: SkinAddons-Fenster - Abfrage AddonIsEnable korrigiert
+- Fix: Musicvisualisierung - Animation korrigiert
+- Fix: Fullscreen Include korrigiert
+- Fix: NowPlaying-Infos im Seitenpanel
+- Fix: Einstellungmenü-Schaltflächen nun auch mit umschaltbaren runden/eckigen Ecken
+- Fix: nicht mehr verwendete Grafiken aussortiert
+- Fix: Casesensitive Schreibweisen überprüft
+
+v 1.21.3.24
+- RadioMonitor Labels nach Änderung angepasst
+
+v 1.21.3.23
+- leicht Debuganpassungen und Darstellungsoptimierung für RadioMonitor Labels
+
+v 1.21.3.22
+- leichte Designanpassung in den Musikinfos, beim Abspielen
+
+v 1.21.3.21
+- erweiterte Infos durch "Audio Stream Monitor" wie Album, Bandmitglieder, Erscheinungsjahr des Songs werden nun in der Titelinformation des laufenden Songs angezeigt
+
+v 1.21.3.20
+- doppelte Anzeige von Sendernamen verhindert
+
+v 1.21.3.19
+- Variablen und Labels für Radiostream Infos überarbeitet
+
+v 1.21.3.18
+- Musicinfodarstellung überarbeitet
+
+v 1.21.3.17
+- einheitliche Anzeige der gespielten Medien eingerichtet (Beispiel: Sender • Artist • Titel)
+
+v 1.21.3.16
+- Senderlogo wird nun korrekt unter Radio.de Addon angezeigt
+
+v 1.21.3.15
+- neue Infolabels für das Service Addon Radio light integriert
+- Bugfix: Position der Playercontrol bei Musik im Vollbild korrigert
+
+v 1.21.3.14
+- neue Einstellung in Skinsettings->Design/Performance: abgerundete Ecken (at work)
+- Ansicht Wide: Umschaltfunktion zwischen Poster und Banner in der Staffelebene im rechten Seitenpanel eingebaut
+- Rotation der DVD in den entsprechenden Ansichten kann über das seitliche Panel deaktiviert werden
+- neue kleinere Grafikdateien und Grafikdatei-Updates
+
+v 1.21.3.13
+- Debug-Labels entfernt
+
+v 1.21.3.12
+- Bugfix JumpSMS Bar
+
+v 1.21.3.11
+- globaler Feinschliff
+
+v 1.21.3.10
+- kopie der Ansicht Wide erstellt -> Download
+- kleine Arbeiten an den Views und den neuen Kurzinfos
+
+v 1.21.3.8
+- Dashboard onclick gefixt
+- Dashboard Kacheln überarbeitet, Focuseffekt eingebaut (animation muss aktiviert sein)
+- Addon.xml fix Aspectratio
+- PVR OSD: Kanalswitch gefixt
+- Videotextinfos (zB. Wide View): um ein Icon für Endzeit ergänzt
+- global: Aspectratio korrigiert
+
+v 1.21.3.7
+- Ansicht "Wide": EndTime in den Infos auf EndTimeResume geändert
+- Picture View überarbeitet
+
+v 1.21.3.6
+- Ansicht "Wide": Alphabet Scroller nur sichtbar und wählbar bei Sortierung nach Titel
+- Ansicht "Wide": Schriftart Segoe UI Symbol für die Info-Symbole hinzugefügt
+- Ansicht "Wide": Clearartlogogröße/-position überarbeitet
+- Ansicht "Wide": TMDB-Providericongröße/-position überarbeitet
+- Ansicht "Wide": Bugfix Stunden/Minuten in den Infos
+- Ansicht "Wide": Auge in den Infos mit Unicode Icon "Play" ersetzt
+
+v 1.21.3.5
+- Ansicht "Wide" - Neu: Alphabet Scroller, 3 Reihen Option, Zusatzinfos
+- Bugfixes
+
+v 1.21.3.4
+- Ansicht "Wide" nochmals überarbeitet - Icon (Auge) hinzugefügt.
+- rechtes Seitenpanel um Schalter "Information" für Ansicht "Wide" erweitert
+- Flags in Ansicht "Wide" vergrößert
+
+v 1.21.3.3
+- Ansicht "Wide" überarbeitet - Infos eingebaut
+- Gamebereich überarbeitet (at work)
+- Bugfixes
+- Code aufgeräumt
+
+v 1.21.3.2
+- Nutzung des library.data.provider Addon stark reduziert. Automatische Nutzung komplett deaktiviert
+- Nutzung von Smartplaylisten für die Widgets erweitert
+- Playlisteditor, Smartplaylistrule und Smartplaylisteditor, Videobookmarks für verschiedene Bildschirmformate angepasst
+
+v 1.21.3.1
+- Verfügbare Addon‑Infos komplettiert
+- Musicplayer‑Ansichten überarbeitet
+- PVR‑Ansichten und Seitenpanele vereinheitlicht
+- Performance im Hauptmenü beim allgemeinen Laden erhöht (Prozesse eingereiht)
+- Positionierung der allgemeinen Informationsleiste korrigiert (unten rechts)
+- Bugfixes
+
+v 1.21.3.0
+- Komplettumbau des Skins für dynamische Darstellung unter verschiedenen Bildschirmformaten
+- Farbakzente stärker hervorgehoben
+- Bugfixes
+- 2 Views entfernt
+
+v 1.21.1.1
+- Fehler beim Trailer‑Button in der VideoInfo behoben
+- Anzeige für den gesehenen Status auf dem 2. Panel in der 3Panel‑Ansicht geändert
+
+v 1.21.1.0
+- Fehler in den Kalibrierungseinstellungen behoben
+
+v 1.21.0.12
+- Bugfix: Ansicht in m3u‑Playlists (Dank an "derRuhige" für die Meldung)
+- Bugfix: Unterkategorie‑Button für benutzerdefinierte Hauptmenüpunkte mit einer Wiedergabeliste
+- Lyrics‑Script aktualisiert & Fehler behoben
+
+v 1.21.0.10
+- Tastatur‑Label korrigiert (Passwort, Benutzer ...)
+- Schauspieler in Videoinfo wieder eingefügt
+
+v 1.21.0.9
+- "Selected"-Farbe geändert
+- Bugfix: "Selected"- und "Focused"-Farbe
+
+v 1.21.0.8
+- PVR‑Icons‑View überarbeitet
+- Textviewer überarbeitet
+- Dialoglayout leicht überarbeitet
+
+v 1.21.0.7
+- Bugfix: PVR‑Views
+
+v 1.21.0.5
+- Episode‑View überarbeitet
+- Bugfixes
+
+v 1.21.0.3
+- Games‑Bereich überarbeitet
+- Video‑Versions‑Manager eingepflegt
+- Diverse Schalter überarbeitet
+- KN.Switcher‑Unterstützung entfernt
+- Bugfixes
+
+v 1.21.0.2
+- Label‑Fehler beseitigt
+- Neue Icons
+
+v 1.21.0.1
+- Alle Änderungen für Omega umgesetzt
+
+v 1.21.0.0
+- Portierung auf Kodi 20

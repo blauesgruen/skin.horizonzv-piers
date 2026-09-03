@@ -1,0 +1,1172 @@
+﻿# Kodi Media Center language file
+# Addon Name: HorizonzV
+# Addon id: skin.horizonzv
+# Addon Provider: blauesgruen
+msgid ""
+msgstr ""
+"Project-Id-Version: KODI Main\n"
+"Report-Msgid-Bugs-To: https://github.com/xbmc/xbmc/issues/\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2022-02-26 16:13+0000\n"
+"Language-Team: Greek <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-estuary/el_gr/>\n"
+"Language: el_gr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.11\n"
+
+msgctxt "#31000"
+msgid ""
+msgstr "Ρυθμίσεις ενέργειας"
+
+msgctxt "#31002"
+msgid ""
+msgstr "Ρυθμίσεις προβολής"
+
+msgctxt "#31003"
+msgid ""
+msgstr "Συνολική διάρκεια"
+
+msgctxt "#31005"
+msgid ""
+msgstr "Άλλες ρυθμίσεις"
+
+msgctxt "#31007"
+msgid ""
+msgstr "It's running"
+
+msgctxt "#31008"
+msgid ""
+msgstr "Σελίδα"
+
+msgctxt "#31009"
+msgid ""
+msgstr "Entries"
+
+msgctxt "#31012"
+msgid ""
+msgstr "Χρήση μνήμης"
+
+msgctxt "#31013"
+msgid ""
+msgstr "Thumbnails"
+
+msgctxt "#31014"
+msgid ""
+msgstr "order"
+
+msgctxt "#31016"
+msgid ""
+msgstr "Extended info"
+
+msgctxt "#31017"
+msgid ""
+msgstr "IT'S RUNNING"
+
+msgctxt "#31022"
+msgid ""
+msgstr "Προτιμήσεις απεικόνισης"
+
+msgctxt "#31023"
+msgid ""
+msgstr "Sort: Ανερχόμενο"
+
+msgctxt "#31024"
+msgid ""
+msgstr "Sort: Κατεβαίνοντας"
+
+msgctxt "#31025"
+msgid ""
+msgstr "Open playlist"
+
+msgctxt "#31026"
+msgid ""
+msgstr "Save playlist"
+
+msgctxt "#31027"
+msgid ""
+msgstr "Close playlist"
+
+msgctxt "#31032"
+msgid ""
+msgstr "Currently selected"
+
+msgctxt "#31033"
+msgid ""
+msgstr "Αναζήτηση τρέιλερ"
+
+msgctxt "#31035"
+msgid ""
+msgstr "Αναζήτηση στο YouTube"
+
+msgctxt "#31036"
+msgid ""
+msgstr "Ταινίες του σκηνοθέτη"
+
+msgctxt "#31043"
+msgid ""
+msgstr "Επιλέξτε τραγούδι"
+
+msgctxt "#31044"
+msgid ""
+msgstr "Πηγή στίχων"
+
+msgctxt "#31046"
+msgid ""
+msgstr "Πηγή"
+
+msgctxt "#31047"
+msgid ""
+msgstr "Hide fanart"
+
+msgctxt "#31048"
+msgid ""
+msgstr "Κατανάλωση μνήμης:"
+
+msgctxt "#31049"
+msgid ""
+msgstr "Αριθμός τίτλου."
+
+msgctxt "#31050"
+msgid ""
+msgstr "Select profile"
+
+msgctxt "#31051"
+msgid ""
+msgstr "Τελευταία σύνδεση"
+
+msgctxt "#31052"
+msgid ""
+msgstr "Emitted"
+
+msgctxt "#31053"
+msgid ""
+msgstr "Ρυθμίσεις λίστας αναπαραγωγής"
+
+msgctxt "#31054"
+msgid ""
+msgstr "Created"
+
+msgctxt "#31056"
+msgid ""
+msgstr "Shutdown timer active! [COLOR=grey1] - Χρόνος μέχρι το κλείσιμο:[/COLOR]"
+
+msgctxt "#31057"
+msgid ""
+msgstr "Click button to play[CR][CR]movie trailer"
+
+msgctxt "#31059"
+msgid ""
+msgstr "Stop"
+
+msgctxt "#31060"
+msgid ""
+msgstr "Fast forward"
+
+msgctxt "#31061"
+msgid ""
+msgstr "Rewind"
+
+msgctxt "#31062"
+msgid ""
+msgstr "Film menu"
+
+msgctxt "#31063"
+msgid ""
+msgstr "Λήψη υποτίτλων"
+
+msgctxt "#31064"
+msgid ""
+msgstr "Προβολή σε 2D"
+
+msgctxt "#31065"
+msgid ""
+msgstr "Αλλαγή λειτουργίας"
+
+msgctxt "#31067"
+msgid ""
+msgstr "Own playlist at start"
+
+msgctxt "#31068"
+msgid ""
+msgstr "Local subtitle available"
+
+msgctxt "#31069"
+msgid ""
+msgstr "Please select Kodi user profile to continue."
+
+msgctxt "#31072"
+msgid ""
+msgstr "Add group"
+
+msgctxt "#31073"
+msgid ""
+msgstr "Μετονομασία ομάδας"
+
+msgctxt "#31074"
+msgid ""
+msgstr "Διαγραφή ομάδας"
+
+msgctxt "#31075"
+msgid ""
+msgstr "Διαθέσιμες[CR]ομάδες"
+
+msgctxt "#31076"
+msgid ""
+msgstr "Timer activated"
+
+msgctxt "#31077"
+msgid ""
+msgstr "Ρυθμίσεις καναλιού"
+
+msgctxt "#31078"
+msgid ""
+msgstr "Πρόγνωση 36 ωρών"
+
+msgctxt "#31079"
+msgid ""
+msgstr "Ωριαία πρόβλεψη"
+
+msgctxt "#31080"
+msgid ""
+msgstr "Πρόγνωση Σαββατοκύριακου"
+
+msgctxt "#31081"
+msgid ""
+msgstr "Ημερήσια πρόβλεψη"
+
+msgctxt "#31083"
+msgid ""
+msgstr "Forecast data being retrieved..."
+
+# Horizonz
+
+msgctxt "#301126"
+msgid ""
+msgstr "Ενεργοποιεί το βίντεο φόντου στο κύριο μενού."
+
+msgctxt "#301132"
+msgid ""
+msgstr "Select the country for the age rating (defined in the scrapper).[CR]Supported are DE, US, UK, FR.[CR]If only US ratings are available, they will be displayed."
+
+msgctxt "#301134"
+msgid ""
+msgstr "Τα τρέιλερ εμφανίζονται απευθείας στις πληροφορίες της ταινίας ή σε πλήρη οθόνη."
+
+msgctxt "#301135"
+msgid ""
+msgstr "Εάν μια απεικόνιση έχει επιλεγεί για την αναπαραγωγή μουσικής, εμφανίζεται επίσης στο κύριο μενού."
+
+msgctxt "#301136"
+msgid ""
+msgstr "Εμφανίζει μια λίστα αναπαραγωγής με τα επόμενα 9 κομμάτια στο κύριο μενού και στην πλήρη οθόνη."
+
+msgctxt "#301140"
+msgid ""
+msgstr "Ρύθμιση της έντασης ήχου σε ποσοστό που θα αναπαράγεται κάθε φορά που ξεκινάει το KODI.[CR] Καθορίστε έναν αριθμό από 0 - 100."
+
+msgctxt "#301142"
+msgid ""
+msgstr "Disables SMS-style alphanumeric jump list.[CR][COLOR=grey]Imported from skin \'Alaska.\'[/COLOR]"
+
+msgctxt "#301143"
+msgid ""
+msgstr "Για τη χρήση αυτής της λειτουργίας απαιτείται το πρόσθετο \'Skinhelper Ping\' του _Andy_/PvD.[CR][COLOR=grey]It can be installed here under Addons or via the Kodinerds Repo.[/COLOR]"
+
+msgctxt "#301144"
+msgid ""
+msgstr "Ξεκινά την επιλεγμένη λίστα αναπαραγωγής μετά την εκκίνηση του KODI."
+
+msgctxt "#301145"
+msgid ""
+msgstr "Για τη χρήση αυτής της λειτουργίας απαιτείται το πρόσθετο \'Global Search\' από το επίσημο αποθετήριο."
+
+msgctxt "#301146"
+msgid ""
+msgstr "Εμφανίζει μια μικρή στατιστική σχετικά με τις καταχωρήσεις της βάσης δεδομένων στο κάτω δεξιά μέρος του κύριου μενού."
+
+msgctxt "#301147"
+msgid ""
+msgstr "Εμφανίζει τα αγαπημένα κάτω από το κύριο μενού αντί για απευθείας το \'Central\'.[CR]Αυτά μπορούν διαφορετικά να προσεγγιστούν μέσω του \'Central\'."
+
+msgctxt "#301148"
+msgid ""
+msgstr "Αποκρύπτει το \'Central\' που βρίσκεται κάτω από το κύριο μενού."
+
+msgctxt "#301150"
+msgid ""
+msgstr "Ενεργοποιεί ένα εικονίδιο στην επάνω δεξιά γωνία που εμφανίζει την κατάσταση φόρτισης της μπαταρίας.[CR][COLOR=white]Η λανθασμένη εμφάνιση εμφανίζεται σε υπολογιστές χωρίς μπαταρία.[/COLOR]"
+
+msgctxt "#301151"
+msgid ""
+msgstr "Οι ρυθμίσεις για το widget βρίσκονται στο αντίστοιχο υπομενού του κύριου μενού."
+
+msgctxt "#301152"
+msgid ""
+msgstr "Dims all non-focused covers."
+
+msgctxt "#301153"
+msgid ""
+msgstr "Αποκρύπτει την πράσινη γραμμή προόδου στα καλύμματα."
+
+msgctxt "#301166"
+msgid ""
+msgstr "This skin contains various animation effects.[CR]Use this switch to disable them. Αντ' αυτού χρησιμοποιείται ένα απλό εφέ εξασθένισης.Αυτό μπορεί να έχει ως αποτέλεσμα καλύτερες επιδόσεις σε αργά συστήματα."
+
+msgctxt "#301168"
+msgid ""
+msgstr "Δείχνει πού βρίσκεστε στην πάνω αριστερή γωνία."
+
+msgctxt "#301169"
+msgid ""
+msgstr "Αποκρύπτει την εμφάνιση της ημερομηνίας στην επάνω δεξιά γωνία."
+
+msgctxt "#301170"
+msgid ""
+msgstr "Enables fanart in all areas."
+
+msgctxt "#301171"
+msgid ""
+msgstr "Disables changing background images.[CR][COLOR=white]Choose your own image or path.[/COLOR]"
+
+msgctxt "#301172"
+msgid ""
+msgstr "Select an image here.[CR]If no image is specified, a default image is shown.[CR][COLOR=white]Click again to delete it.[/COLOR]"
+
+msgctxt "#301173"
+msgid ""
+msgstr "Εμφανίζει ένα slideshow στο παρασκήνιο, βασισμένο στη βιβλιοθήκη KODI.[CR][COLOR=white]Visible in the main menu under: Ταινίες, σειρές και μουσική.[/COLOR]"
+
+msgctxt "#301174"
+msgid ""
+msgstr "Ενεργοποιεί το σκούρο φόντο σε όλες τις περιοχές.[CR][COLOR=white]Possible darkening levels: OFF, LIGHT, MEDIUM, HEAVY.[/COLOR]"
+
+msgctxt "#301175"
+msgid ""
+msgstr "Choose an accent colour that shows up in many areas of the skin.[CR][COLOR=grey]Custom: Οι κωδικοί χρωμάτων πρέπει να καθορίζονται σε δεκαεξαδική μορφή AARRGGBB.[CR]Ένα παράδειγμα [/COLOR][COLOR=ffffffffff]Λευκό[/COLOR]: FFFFFFFFFF"
+
+msgctxt "#301176"
+msgid ""
+msgstr "Εγκαταστήστε το πρόσθετο ColorPicker από το αποθετήριο Kodinerds, ώστε να μπορείτε να επιλέγετε χρώματα με ένα κλικ."
+
+msgctxt "#301177"
+msgid ""
+msgstr "In database views, shows number and total runtime of entries."
+
+msgctxt "#301178"
+msgid ""
+msgstr "Ενεργοποιεί ένα φωτεινό εφέ κατά μήκος του κύριου μενού."
+
+msgctxt "#301180"
+msgid ""
+msgstr "Επιλέξτε ένα από τα θέματα φόντου. Αλλάζει έντονα τη συνολική εντύπωση του κεντρικού μενού.[CR][COLOR=white]Θα απενεργοποιηθεί μόλις ενεργοποιηθεί η \'μόνο μία εικόνα φόντου\'.[/COLOR][COLOR=grey][CR]Το θέμα \'Gambit\' έχει το πλεονέκτημα ότι παρέχει καλύτερη απόδοση σε πιο αδύναμα συστήματα.[CR]Αυτό το θέμα παραχωρήθηκε ευγενικά από τον \'G4mbit\' από το φόρουμ KODINERDS.[/COLOR]"
+
+msgctxt "#301184"
+msgid ""
+msgstr "Puts a texture over the background image."
+
+msgctxt "#301186"
+msgid ""
+msgstr "Εμφανίζει τα χειριστήρια του player κατά την αναπαραγωγή στα αριστερά, κάτω από το κύριο μενού."
+
+msgctxt "#301188"
+msgid ""
+msgstr "Εμφανίζει τον τρέχοντα καιρό στην επάνω αριστερή γωνία."
+
+msgctxt "#301190"
+msgid ""
+msgstr "\'Radio\', μία από τις 3 προβολές κατά την αναπαραγωγή σε πλήρη οθόνη, μπορεί να απενεργοποιηθεί εδώ.\'"
+
+msgctxt "#301192"
+msgid ""
+msgstr "Επιλέξτε ανάμεσα στις προβολές Standard, Alternative και Radio.[CR][COLOR=grey][COLOR=grey][COLOR=grey]\'Radio\' is always used for online music streams. Αλλά μπορεί να απενεργοποιηθεί[/COLOR]"
+
+msgctxt "#301194"
+msgid ""
+msgstr "Επιλέξτε μεταξύ της τυπικής και της εναλλακτικής προβολής.[CR][COLOR=white]Info: Radio has been disabled.[/COLOR]"
+
+msgctxt "#301196"
+msgid ""
+msgstr "Εμφανίζει τις βασικές πληροφορίες του κομματιού σε πλήρη οθόνη κατά την αναπαραγωγή μουσικής στην κάτω αριστερή γωνία.[CR][COLOR=whithe]Ορατό όταν το OSD δεν είναι ορατό[/COLOR]"
+
+msgctxt "#301198"
+msgid ""
+msgstr "Εμφανίζει μια διακριτική, στενή έκδοση της οθόνης παύσης."
+
+msgctxt "#301200"
+msgid ""
+msgstr "Δεν εμφανίζονται πληροφορίες όπως κεφάλαια, υπότιτλοι, μπάρες χρόνου εκτέλεσης κ.λπ.[CR][COLOR=grey]Studiologos and Extra Arts are also hidden.[/COLOR]"
+
+msgctxt "#301202"
+msgid ""
+msgstr "Show all available movie & series artworks.[CR][COLOR=white]Since Kodi 19 artworks are loaded with the scrapper \'The Movie Database PYTHON\'.[/COLOR][COLOR=grey][CR][CR]\'Artwork Beef\' or a similar addon can still be used though.[/COLOR]"
+
+msgctxt "#301204"
+msgid ""
+msgstr "Select the appearance of the CD here if no CDArt is found.[CR][COLOR=white]Τα CDArts πρέπει να είναι έτοιμα σε ένα φάκελο. Αυτό το καθορίζετε στις ρυθμίσεις του συστήματος (Media->Music)[/COLOR]"
+
+msgctxt "#301210"
+msgid ""
+msgstr "Ενεργοποιεί όλα τα διαθέσιμα έργα τέχνης PVR.[CR][COLOR=white]\'Skin Helper Service\' is required.[/COLOR]"
+
+msgctxt "#301218"
+msgid ""
+msgstr "Επιλέξτε μια εικόνα φόντου"
+
+msgctxt "#301240"
+msgid ""
+msgstr "Επαναφορά"
+
+msgctxt "#301244"
+msgid ""
+msgstr "Ορίζει την προεπιλογή για αυτό το δέρμα.[CR]Affects custom settings only."
+
+msgctxt "#301246"
+msgid ""
+msgstr "Weak"
+
+msgctxt "#301248"
+msgid ""
+msgstr "Medium"
+
+msgctxt "#301250"
+msgid ""
+msgstr "Fast"
+
+msgctxt "#301268"
+msgid ""
+msgstr "[UPPERCASE]Reset skin settings ?[/UPPERCASE]"
+
+msgctxt "#301270"
+msgid ""
+msgstr "Cover"
+
+msgctxt "#301272"
+msgid ""
+msgstr "Δεν υπάρχουν διαθέσιμα αγαπημένα"
+
+msgctxt "#301274"
+msgid ""
+msgstr "[B]KODI SUBTITLE[/B]"
+
+msgctxt "#301276"
+msgid ""
+msgstr "page panel"
+
+msgctxt "#301278"
+msgid ""
+msgstr "Set information"
+
+msgctxt "#301280"
+msgid ""
+msgstr "Συναυλίες"
+
+msgctxt "#301282"
+msgid ""
+msgstr "Γλώσσα (ηλικιακή διαβάθμιση)"
+
+msgctxt "#301284"
+msgid ""
+msgstr "Σημαίες σε μορφή κειμένου"
+
+msgctxt "#301286"
+msgid ""
+msgstr "Dim background"
+
+msgctxt "#301288"
+msgid ""
+msgstr "Page counter"
+
+msgctxt "#301290"
+msgid ""
+msgstr "Φάκελοι"
+
+msgctxt "#301292"
+msgid ""
+msgstr "Απόκρυψη μεγάλου καλύμματος"
+
+msgctxt "#301294"
+msgid ""
+msgstr "Λογότυπο αντί για τίτλο"
+
+msgctxt "#301296"
+msgid ""
+msgstr "Πληροφορίες"
+
+msgctxt "#301300"
+msgid ""
+msgstr "Hide \'NEW\' Icon"
+
+msgctxt "#301302"
+msgid ""
+msgstr "Dust Effect (Envelope)"
+
+msgctxt "#301304"
+msgid ""
+msgstr "Disable cover animation"
+
+msgctxt "#301306"
+msgid ""
+msgstr "Dim cover"
+
+msgctxt "#301308"
+msgid ""
+msgstr "Λίστα"
+
+msgctxt "#301310"
+msgid ""
+msgstr "Info List"
+
+msgctxt "#301312"
+msgid ""
+msgstr "Thumbview"
+
+msgctxt "#301314"
+msgid ""
+msgstr "Banner"
+
+msgctxt "#301316"
+msgid ""
+msgstr "Προθήκη"
+
+msgctxt "#301318"
+msgid ""
+msgstr "Perspective"
+
+msgctxt "#301320"
+msgid ""
+msgstr "Ροή δίσκου"
+
+msgctxt "#301322"
+msgid ""
+msgstr "Rightlist"
+
+msgctxt "#301324"
+msgid ""
+msgstr "Cover Wall (Full Screen)"
+
+msgctxt "#301326"
+msgid ""
+msgstr "Cover Wall"
+
+msgctxt "#301328"
+msgid ""
+msgstr "Cover Wall"
+
+msgctxt "#301330"
+msgid ""
+msgstr "Disable radio view"
+
+msgctxt "#301331"
+msgid ""
+msgstr " - Απενεργοποίηση TV Wall"
+
+msgctxt "#301332"
+msgid ""
+msgstr "Μουσική απεικόνιση"
+
+msgctxt "#301334"
+msgid ""
+msgstr "Music Extra Arts"
+
+msgctxt "#301336"
+msgid ""
+msgstr "Εμφάνιση ημερομηνίας"
+
+msgctxt "#301338"
+msgid ""
+msgstr "Περιγραφή κλειδιού"
+
+msgctxt "#301340"
+msgid ""
+msgstr "Infopanel"
+
+msgctxt "#301344"
+msgid ""
+msgstr "back"
+
+msgctxt "#301346"
+msgid ""
+msgstr "κουμπιά κύριου μενού"
+
+msgctxt "#301348"
+msgid ""
+msgstr "Κουμπιά υπομενού"
+
+msgctxt "#301350"
+msgid ""
+msgstr "Λειτουργίες"
+
+msgctxt "#301351"
+msgid ""
+msgstr "Γραφικά στοιχεία"
+
+msgctxt "#301352"
+msgid ""
+msgstr "Σχεδιασμός / Απόδοση"
+
+msgctxt "#301354"
+msgid ""
+msgstr "Extra Arts"
+
+msgctxt "#301356"
+msgid ""
+msgstr "Διαχειριστής"
+
+msgctxt "#301357"
+msgid ""
+msgstr "Shutdown Menu"
+
+msgctxt "#301358"
+msgid ""
+msgstr "Enable Grid"
+
+msgctxt "#301360"
+msgid ""
+msgstr "Πληροφορίες εντοπισμού σφαλμάτων"
+
+msgctxt "#301362"
+msgid ""
+msgstr "Ενεργοποίηση πρώτης εκκίνησης"
+
+msgctxt "#301364"
+msgid ""
+msgstr "choose your system performance"
+
+msgctxt "#301366"
+msgid ""
+msgstr "δείκτης ποντικιού"
+
+msgctxt "#301368"
+msgid ""
+msgstr "Set positions"
+
+msgctxt "#301370"
+msgid ""
+msgstr "Move focus"
+
+msgctxt "#301371"
+msgid ""
+msgstr "Dashboard"
+
+msgctxt "#301372"
+msgid ""
+msgstr "Hide main menu automatically"
+
+msgctxt "#301374"
+msgid ""
+msgstr "Χρόνος μέχρι την απόκρυψη"
+
+msgctxt "#301376"
+msgid ""
+msgstr "Background video"
+
+msgctxt "#301378"
+msgid ""
+msgstr "Select the country of age rating"
+
+msgctxt "#301380"
+msgid ""
+msgstr "Do NOT play trailer in window"
+
+msgctxt "#301382"
+msgid ""
+msgstr "Λίστα αναπαραγωγής επόμενου κομματιού"
+
+msgctxt "#301384"
+msgid ""
+msgstr "Set start volume"
+
+msgctxt "#301386"
+msgid ""
+msgstr "Disable alphanumeric jump bar"
+
+msgctxt "#301388"
+msgid ""
+msgstr "Hide wake on lan switch in \'Headquarters\'"
+
+msgctxt "#301390"
+msgid ""
+msgstr "Παγκόσμια αναζήτηση στο μενού περιβάλλοντος"
+
+msgctxt "#301392"
+msgid ""
+msgstr "Εμφάνιση στατιστικών στοιχείων στο κύριο μενού"
+
+msgctxt "#301394"
+msgid ""
+msgstr "show favorites window in main menu"
+
+msgctxt "#301396"
+msgid ""
+msgstr "\'disable central\'"
+
+msgctxt "#301389"
+msgid ""
+msgstr "- Φάκελος"
+
+msgctxt "#301400"
+msgid ""
+msgstr "Δίσκος"
+
+msgctxt "#301402"
+msgid ""
+msgstr "Κινούμενα σχέδια (υψηλός φόρτος CPU)"
+
+msgctxt "#301404"
+msgid ""
+msgstr "Πληροφορίες πλοήγησης"
+
+msgctxt "#301406"
+msgid ""
+msgstr "Μικρές πληροφορίες καιρού"
+
+msgctxt "#301408"
+msgid ""
+msgstr "Απόκρυψη εμφάνισης ημερομηνίας"
+
+msgctxt "#301410"
+msgid ""
+msgstr "Μόνο μία εικόνα φόντου"
+
+msgctxt "#301412"
+msgid ""
+msgstr "- εικόνα / διαδρομή"
+
+msgctxt "#301414"
+msgid ""
+msgstr "- Προβολή διαφανειών αντί για ακίνητη εικόνα"
+
+msgctxt "#301416"
+msgid ""
+msgstr "Colour accents"
+
+msgctxt "#301418"
+msgid ""
+msgstr "θέμα φόντου"
+
+msgctxt "#301424"
+msgid ""
+msgstr "Δομή στο κύριο μενού"
+
+msgctxt "#301426"
+msgid ""
+msgstr "Player Controls"
+
+msgctxt "#301428"
+msgid ""
+msgstr "Weather Fanarts"
+
+msgctxt "#301430"
+msgid ""
+msgstr "Ελαφριά έκδοση της οθόνης παύσης"
+
+msgctxt "#301432"
+msgid ""
+msgstr "hide video details"
+
+msgctxt "#301434"
+msgid ""
+msgstr "Στυλ CD"
+
+msgctxt "#301436"
+msgid ""
+msgstr "listen"
+
+msgctxt "#301438"
+msgid ""
+msgstr "manage your"
+
+msgctxt "#301440"
+msgid ""
+msgstr "experience your"
+
+msgctxt "#301442"
+msgid ""
+msgstr "explore your"
+
+msgctxt "#301444"
+msgid ""
+msgstr "let it rotate"
+
+msgctxt "#301446"
+msgid ""
+msgstr "go to"
+
+msgctxt "#301448"
+msgid ""
+msgstr "change your"
+
+msgctxt "#301456"
+msgid ""
+msgstr "glass"
+
+msgctxt "#301458"
+msgid ""
+msgstr "blank"
+
+msgctxt "#301460"
+msgid ""
+msgstr "φως"
+
+msgctxt "#301462"
+msgid ""
+msgstr "medium"
+
+msgctxt "#301464"
+msgid ""
+msgstr "strong"
+
+msgctxt "#301466"
+msgid ""
+msgstr "central"
+
+msgctxt "#301468"
+msgid ""
+msgstr "άλλο/άγνωστο"
+
+msgctxt "#301470"
+msgid ""
+msgstr "film drama"
+
+msgctxt "#301472"
+msgid ""
+msgstr "Νέα"
+
+msgctxt "#301474"
+msgid ""
+msgstr "Εμφάνιση"
+
+msgctxt "#301476"
+msgid ""
+msgstr "Sport"
+
+msgctxt "#301478"
+msgid ""
+msgstr "Παιδιά"
+
+msgctxt "#301480"
+msgid ""
+msgstr "music"
+
+msgctxt "#301482"
+msgid ""
+msgstr "Τέχνη"
+
+msgctxt "#301484"
+msgid ""
+msgstr "Εταιρεία"
+
+msgctxt "#301486"
+msgid ""
+msgstr "Επιστήμη"
+
+msgctxt "#301488"
+msgid ""
+msgstr "Special"
+
+msgctxt "#301490"
+msgid ""
+msgstr "Χόμπι"
+
+msgctxt "#301492"
+msgid ""
+msgstr "load artwork"
+
+msgctxt "#301494"
+msgid ""
+msgstr "Πρόσφατα προστιθέμενη τηλεοπτική σειρά"
+
+msgctxt "#301496"
+msgid ""
+msgstr "Πρόβλεψη"
+
+msgctxt "#301498"
+msgid ""
+msgstr "Set the position of each main menu item here.[CR]Use item numbers from 1 - 22."
+
+msgctxt "#301500"
+msgid ""
+msgstr "jump directly to video files"
+
+msgctxt "#301502"
+msgid ""
+msgstr "show profile names"
+
+msgctxt "#301504"
+msgid ""
+msgstr "Kodi is running:"
+
+msgctxt "#301506"
+msgid ""
+msgstr "<"
+
+msgctxt "#301508"
+msgid ""
+msgstr "<<"
+
+msgctxt "#301510"
+msgid ""
+msgstr "Studio symbols ..."
+
+msgctxt "#301512"
+msgid ""
+msgstr "Σύμβολα είδους ..."
+
+msgctxt "#301514"
+msgid ""
+msgstr "Weather symbols ..."
+
+msgctxt "#301516"
+msgid ""
+msgstr "Weather fanart ..."
+
+msgctxt "#301520"
+msgid ""
+msgstr "Για να ορίσετε ένα χρονοδιακόπτη εναλλαγής απαιτείται η υπηρεσία \'KN Switcher Service\'. Λήψη μέσω του αποθετηρίου Kodinerds."
+
+msgctxt "#301522"
+msgid ""
+msgstr "delete all timers"
+
+msgctxt "#301524"
+msgid ""
+msgstr "delete"
+
+msgctxt "#301526"
+msgid ""
+msgstr "manage"
+
+msgctxt "#301528"
+msgid ""
+msgstr "toggle timer"
+
+msgctxt "#301530"
+msgid ""
+msgstr "Επισκόπηση χρονοδιακόπτη"
+
+msgctxt "#301532"
+msgid ""
+msgstr "Σήμερα"
+
+msgctxt "#301534"
+msgid ""
+msgstr "Εμφάνιση"
+
+msgctxt "#301536"
+msgid ""
+msgstr "Κανάλια"
+
+msgctxt "#301538"
+msgid ""
+msgstr "Both"
+
+msgctxt "#301540"
+msgid ""
+msgstr "Original"
+
+msgctxt "#301542"
+msgid ""
+msgstr "Σημαία HorizonzV"
+
+msgctxt "#301544"
+msgid ""
+msgstr "Γερμανία"
+
+msgctxt "#301546"
+msgid ""
+msgstr "Ηνωμένες Πολιτείες"
+
+msgctxt "#301548"
+msgid ""
+msgstr "Ηνωμένο Βασίλειο"
+
+msgctxt "#301550"
+msgid ""
+msgstr "Γαλλία"
+
+msgctxt "#301551"
+msgid ""
+msgstr "Serge Blue"
+
+msgctxt "#301552"
+msgid ""
+msgstr "Γκρι μπλε"
+
+msgctxt "#301554"
+msgid ""
+msgstr "Τυρκουάζ"
+
+msgctxt "#301558"
+msgid ""
+msgstr "Sea Green"
+
+msgctxt "#301560"
+msgid ""
+msgstr "Κόκκινο"
+
+msgctxt "#301562"
+msgid ""
+msgstr "Ανοιχτό γκρι"
+
+msgctxt "#301564"
+msgid ""
+msgstr "Dark Gold"
+
+msgctxt "#301566"
+msgid ""
+msgstr "Sandy Brown"
+
+msgctxt "#301570"
+msgid ""
+msgstr "ColorPicker"
+
+msgctxt "#301572"
+msgid ""
+msgstr "Avengers B/W"
+
+msgctxt "#301574"
+msgid ""
+msgstr "Gambit"
+
+msgctxt "#301576"
+msgid ""
+msgstr "Vinyl View"
+
+msgctxt "#301578"
+msgid ""
+msgstr "Προβολή ραδιοφώνου"
+
+msgctxt "#301580"
+msgid ""
+msgstr "Standard View"
+
+msgctxt "#301582"
+msgid ""
+msgstr "will be started ..."
+
+msgctxt "#301584"
+msgid ""
+msgstr "hiding"
+
+msgctxt "#301586"
+msgid ""
+msgstr "show"
+
+msgctxt "#301588"
+msgid ""
+msgstr "switch"
+
+msgctxt "#301590"
+msgid ""
+msgstr "Reload skin"
+
+msgctxt "#301592"
+msgid ""
+msgstr "Restart KODI APP"
+
+msgctxt "#301596"
+msgid ""
+msgstr "Visible"
+
+msgctxt "#301598"
+msgid ""
+msgstr "no progress bar in widget (green bar on cover)"
+
+msgctxt "#301600"
+msgid ""
+msgstr "η τελευταία ταινία ξεκίνησε στη θέση 1"
+
+msgctxt "#301602"
+msgid ""
+msgstr "last album listened to ranked #1"
+
+msgctxt "#301604"
+msgid ""
+msgstr "επόμενο επεισόδιο στο νούμερο 1"
+
+msgctxt "#301606"
+msgid ""
+msgstr "το τελευταίο βίντεο ξεκίνησε στη θέση 1"
+
+msgctxt "#301608"
+msgid ""
+msgstr "5 ημέρες καιρού"
+
+msgctxt "#301610"
+msgid ""
+msgstr "Προσφορές γερμανικής τηλεόρασης (GTO)"
+
+msgctxt "#301612"
+msgid ""
+msgstr "Fritz Smart Home"
+
+msgctxt "#301614"
+msgid ""
+msgstr "Choose a content for row"
+
+msgctxt "#301616"
+msgid ""
+msgstr "an"
+
+msgctxt "#301618"
+msgid ""
+msgstr "off"
+
+msgctxt "#301620"
+msgid ""
+msgstr "Επίπεδο φόρτισης μπαταρίας"
+
+msgctxt "#301622"
+msgid ""
+msgstr "Εξαγωγή βιβλιοθήκης βίντεο"
+
+msgctxt "#301624"
+msgid ""
+msgstr "(single NFO, without images, overwrite old data)"
+
+# msgctxt "#xyxyxyxyxyxy"
+# msgid ""
+# msgstr "After hiding the infopanel in full screen, a discreet display of title information is shown."
+
+msgctxt "#31030"
+msgid ""
+msgstr "System memory usage."
+
+#~ msgctxt "#31137"
+#~ msgid ""
+#~ msgstr "Πληροφορίες PVR"
+
+msgctxt "#31139"
+msgid ""
+msgstr "Αποκωδικοποιητής βίντεο"
+
+msgctxt "#31140"
+msgid ""
+msgstr "Pixel format"
+
+msgctxt "#31607"
+msgid ""
+msgstr "Ανάλυση οθόνης"
+
+msgctxt "#31608"
+msgid ""
+msgstr "Render speed"
+
+msgctxt "#31609"
+msgid ""
+msgstr "CPU load"
+
+msgctxt "#31611"
+msgid ""
+msgstr "Γραμμή κώδικα"
+
+msgctxt "#31613"
+msgid ""
+msgstr "εισάγετε την κατηγορία της λίστας αναπαραγωγής εδώ ..."
+
+msgctxt "#35500"
+msgid "Location"
+msgstr "Τοποθεσία"
+

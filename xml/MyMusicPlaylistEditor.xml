@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+    <defaultcontrol allways="true">6</defaultcontrol>
+	<backgroundcolor>grey3</backgroundcolor>
+	<views>50</views>
+    <menucontrol>9000</menucontrol>
+    <include>openclose</include>
+    <controls>
+        <include>DialogBackgroundSimple</include>
+        <control type="group">
+            <top>20</top>
+            <include>openclosebox</include>
+            <control type="group">
+                <include content="DialogBackgroundCommons">
+                    <param name="header_id" value="0" />
+                    <param name="header_label" value="" />
+                    <param name="width" value="94%" />
+                    <param name="height" value="89%" />
+                </include>
+                <control type="group">
+                    <left>SpacePadding</left>
+                    <top>8</top>
+                    <width>38%</width>
+                    <control type="label">
+                        <height>45</height>
+                        <font>impacted24</font>
+                        <scroll>true</scroll>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>112</label>
+                    </control>
+                    <control type="group">
+                        <bottom>20</bottom>
+                        <height>30</height>
+                        <control type="label">
+                            <description>number of files/pages in left list text label</description>
+                            <align>left</align>
+                            <scroll>true</scroll>
+                            <font>impacted18</font>
+                            <label>($INFO[Container(50).NumItems]) $LOCALIZE[31009] - $LOCALIZE[31008] ($INFO[Container(50).CurrentPage]/$INFO[Container(50).NumPages])</label>
+                        </control>
+                    </control>
+                </control>
+                <control type="group">
+                    <right>SpacePadding</right>
+                    <top>8</top>
+                    <width>38%</width>
+                    <control type="label">
+                        <height>45</height>
+                        <font>impacted24</font>
+                        <scroll>true</scroll>
+                        <align>right</align>
+                        <aligny>center</aligny>
+                        <label>13350</label>
+                    </control>
+                    <control type="group">
+                        <bottom>20</bottom>
+                        <height>30</height>
+                        <control type="label">
+                            <description>Page Count Label</description>
+                            <font>impacted18</font>
+                            <scroll>false</scroll>
+                            <align>right</align>
+                            <aligny>center</aligny>
+                            <label>($INFO[Container(100).NumItems]) $LOCALIZE[31009] - $LOCALIZE[31008] ($INFO[Container(100).CurrentPage]/$INFO[Container(100).NumPages])</label>
+                        </control>
+                    </control>
+                </control>
+                <control type="group">
+                    <left>SpacePadding</left>
+                    <right>SpacePadding</right>
+                    <top>SpacePaddingXL</top>
+                    <bottom>SpacePaddingXL</bottom>
+                    <control type="group">
+                        <!-- <top>38</top> -->
+                        <width>37%</width>
+                        <control type="list" id="50">
+                            <right>15</right>
+                            <onleft>30</onleft>
+                            <onright>9000</onright>
+                            <onup>50</onup>
+                            <ondown>50</ondown>
+                            <viewtype label="">list</viewtype>
+                            <pagecontrol>30</pagecontrol>
+                            <scrolltime>200</scrolltime>
+                            <include content="DefaultLabelListLayout">
+                                <param name="list_id" value="50" />
+                            </include>
+                            <content>special://skin/playlists/Music_Albums_recently.xsp</content>
+                        </control>
+                        <control type="scrollbar" id="30">
+                            <left>100%</left>
+                            <height>100%</height>
+                            <onleft>31</onleft>
+                            <onright>50</onright>
+                            <showonepage>false</showonepage>
+                            <orientation>vertical</orientation>
+                        </control>
+                    </control>
+                    <control type="group">
+                        <right>0</right>
+                        <width>37%</width>
+                        <control type="list" id="100">
+                            <right>15</right>
+                            <onleft>9000</onleft>
+                            <onright>31</onright>
+                            <onup>100</onup>
+                            <ondown>100</ondown>
+                            <viewtype label="">list</viewtype>
+                            <pagecontrol>31</pagecontrol>
+                            <scrolltime>200</scrolltime>
+                            <include content="DefaultLabelListLayout">
+                                <param name="list_id" value="100" />
+                            </include>
+                            <content>special://skin/playlists/Music_Albums_recently.xsp</content>
+                        </control>
+                        <control type="scrollbar" id="31">
+                            <left>100%</left>
+                            <height>100%</height>
+                            <onleft>100</onleft>
+                            <onright>30</onright>
+                            <showonepage>false</showonepage>
+                            <orientation>vertical</orientation>
+                        </control>
+                    </control>
+                </control>
+            </control>
+            <control type="group">
+                <centerleft>50%</centerleft>
+                <top>4%</top>
+                <bottom>4%</bottom>
+                <width>20%</width>
+                <control type="image">
+                    <texture>Black.png</texture>
+                    <bordersize>7</bordersize>
+                </control>
+                <control type="image">
+                    <colordiffuse>$VAR[BackgroundOverlayColorDialog]</colordiffuse>
+                    <texture>WhiteBack.png</texture>
+                    <bordertexture border="14">ThumbShadow.png</bordertexture>
+                    <bordersize>7</bordersize>
+                </control>
+                <control type="image">
+                    <colordiffuse>dustdiffuse</colordiffuse>
+                    <texture>BlackBack.png</texture>
+                    <bordersize>7</bordersize>
+                </control>
+                <control type="label">
+                    <top>40</top>
+                    <height>45</height>
+                    <font>impacted18</font>
+                    <scroll>true</scroll>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <label>$LOCALIZE[31032]</label>
+                </control>
+                <control type="grouplist" id="9000">
+                    <left>20</left>
+                    <right>20</right>
+                    <bottom>0</bottom>
+                    <height>175</height>
+                    <onleft>50</onleft>
+                    <right>100</right>
+                    <itemgap>dialogbuttons_itemgap</itemgap>
+                    <include content="DefaultDialogButton">
+                        <param name="id" value="6" />
+                        <param name="width" value="100%" />
+                        <param name="label" value="$LOCALIZE[31025]" />
+                        <param name="font" value="impacted18" />
+                        <param name="onleft" value="50" />
+                        <param name="onright" value="100" />
+                    </include>
+                    <include content="DefaultDialogButton">
+                        <param name="id" value="7" />
+                        <param name="width" value="100%" />
+                        <param name="label" value="$LOCALIZE[31026]" />
+                        <param name="font" value="impacted18" />
+                        <param name="onleft" value="50" />
+                        <param name="onright" value="100" />
+                    </include>
+                    <include content="DefaultDialogButton">
+                        <param name="id" value="8" />
+                        <param name="width" value="100%" />
+                        <param name="label" value="$LOCALIZE[31027]" />
+                        <param name="font" value="impacted18" />
+                        <param name="onleft" value="50" />
+                        <param name="onright" value="100" />
+                    </include>
+                </control>
+                <control type="group">
+                    <left>20</left>
+                    <right>20</right>
+                    <top>SpacePaddingXL</top>
+                    <control type="group">
+                        <visible>Control.HasFocus(50)|Control.HasFocus(100)</visible>
+                        <include>openclosevisible</include>
+                        <control type="image">
+                            <aspectratio aligny="top">keep</aspectratio>
+                            <height>400</height>
+                            <texture>$INFO[Container().ListItem.Icon]</texture>
+                            <bordersize>7</bordersize>
+                        </control>
+                        <control type="textbox">
+                            <top>440</top>
+                            <bottom>200</bottom>
+                            <align>center</align>
+                            <textcolor>white</textcolor>
+                            <pagecontrol/>
+                            <label>$INFO[Container().ListItem.Title,[COLOR=grey]$LOCALIZE[556]:[/COLOR] ,[CR]]$INFO[Container().ListItem.Artist,[COLOR=grey]$LOCALIZE[557]:[/COLOR] ,[CR]]$INFO[Container().ListItem.Album,[COLOR=grey]$LOCALIZE[558]:[/COLOR] ,[CR]]$INFO[Container().ListItem.Duration,[COLOR=grey]$LOCALIZE[555]:[/COLOR] ,[CR]]$INFO[Container().ListItem.TrackNumber,[COLOR=grey]$LOCALIZE[554]:[/COLOR] ,[CR]]$INFO[Container().ListItem.Genre,[COLOR=grey]$LOCALIZE[515]:[/COLOR] ,[CR]]</label>
+                        </control>
+                    </control>
+                </control>
+            </control>
+        </control>
+        <include>Clock</include>
+        <include>NavInfo</include>
+    </controls>
+</window>

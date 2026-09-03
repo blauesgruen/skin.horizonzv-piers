@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <include name="View_740_CoverWallBig">
+		<param name="viewid">740</param>
+		<definition>
+			<control type="group">
+				<include>openclose</include>
+				<visible>Control.IsVisible($PARAM[viewid])</visible>
+				<control type="group">
+					<include content="FakeButton444">
+						<param name="visible" value="Control.IsVisible($PARAM[viewid])"/>
+					</include>
+					<include>openclosevisible</include>
+					<visible>Control.IsVisible($PARAM[viewid])</visible>
+					<include content="WhiteGrunge">
+						<param name="colordiffuse" value="$VAR[BackgroundOverlayColorDialog]"/>
+					</include>
+				</control>
+                <include content="ScrollOffsetLabel">
+                    <param name="left">-10</param>
+                    <param name="top">80</param>
+                </include>
+				<control type="group">
+					<include>openclosebox</include>
+					<visible>Control.IsVisible($PARAM[viewid])</visible>
+					<include content="sidefade_shadow">
+						<param name="left" value="165r" />
+						<param name="flipx" value="true" />
+						<param name="id" value="$PARAM[viewid]1" />
+						<param name="visible" value="Control.HasFocus($PARAM[viewid]1)" />
+					</include>
+					<include content="WallViewLayout">
+						<param name="id" value="$PARAM[viewid]" />
+						<param name="left" value="60" />
+						<param name="right" value="60" />
+						<param name="top" value="70" />
+						<param name="bottom" value="112" />
+					</include>
+				</control>
+				<include>WallViewInfoPanel</include>
+				<include content="AlphaBarV" condition="!Skin.HasSetting(HideJumpSMSBar)"><param name="id" value="$PARAM[viewid]"/></include>
+				<control type="button" id="777">
+					<include>HiddenButton</include>
+					<onfocus>Control.SetFocus($PARAM[viewid])</onfocus>
+				</control>
+			</control>
+		</definition>
+    </include>
+</includes>

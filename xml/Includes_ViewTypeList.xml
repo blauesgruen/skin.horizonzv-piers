@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <include name="ViewidAudio">
+        <views>50,58,505,506,509,512,515,550,551,562,570,722,741</views>
+    </include>
+    <include name="ViewsAudio">
+        <param name="id" value="$PARAM[viewid]" />
+        <definition>
+            <control type="group">
+                <visible>!Window.IsVisible(selectdialog)</visible>
+                <include>View_50_List</include>
+                <include>View_58_BannerMusic</include>
+                <include>View_505_Wide</include>
+                <include>View_506_InfoListMusic</include>
+                <include>View_509_FanartMusic</include>
+                <include>View_512_MediaListArtist</include>
+                <include>View_515_Episode</include>
+                <include>View_550_InfoListAddon</include>
+                <include>View_551_InfoThumbAddon</include>
+                <include>View_562_Showcase</include>
+                <include>View_570_DiscFlowMusic</include>
+                <include>View_722_RightListAddons</include>
+                <include>View_741_CoverWallMusic</include>
+            </control>
+        </definition>
+    </include>
+    <include name="ViewidVideo">
+        <views>50,57,302,401,402,500,502,503,505,515,550,551,562,721,722,742,740</views>
+    </include>
+    <include name="ViewsVideo">
+        <control type="group">
+            <visible>!Window.IsVisible(selectdialog)</visible>
+            <include>View_50_List</include>
+            <include>View_562_Showcase</include>
+            <include>View_57_Banner</include>
+            <include>View_503_MediaList</include>
+            <include>View_505_Wide</include>
+            <include>View_401_Fanart</include>
+            <include>View_402_FanartEpisode</include>
+            <include>View_500_PanelMovie</include>
+            <include>View_502_Don</include>
+            <include>View_302_3Panel</include>
+            <include>View_515_Episode</include>
+            <include>View_721_RightList</include>
+            <include>View_742_CoverWall</include>
+            <include>View_740_CoverWallBig</include>
+            <include>View_550_InfoListAddon</include>
+            <include>View_551_InfoThumbAddon</include>
+            <include>View_722_RightListAddons</include>
+        </control>
+    </include>
+    <include name="ViewidPictures">
+        <views>50,510,514,516,550,551,722</views>
+    </include>
+    <include name="ViewsPictures">
+        <control type="group">
+            <visible>!Window.IsVisible(selectdialog)</visible>
+            <include>View_50_List</include>
+            <include>View_510_WrapViewPicture</include>
+            <include>View_514_ThumbViewPicture</include>
+            <include>View_516_WallViewPicture</include>
+            <include>View_550_InfoListAddon</include>
+            <include>View_551_InfoThumbAddon</include>
+            <include>View_722_RightListAddons</include>
+        </control>
+    </include>
+    <include name="ViewidAddons">
+        <views>50,550,551,722</views>
+    </include>
+    <include name="ViewsAddons">
+        <control type="group">
+            <visible>!Window.IsVisible(selectdialog)</visible>
+            <include>View_50_List</include>
+            <include>View_550_InfoListAddon</include>
+            <include>View_551_InfoThumbAddon</include>
+            <include>View_722_RightListAddons</include>
+        </control>
+    </include>
+    <include name="ViewsidPVR">
+        <views>9,14,15</views>
+    </include>
+    <include name="ViewsPVR">
+        <control type="group">
+            <include>View_9_LiveTVChannelPanel</include>
+            <include>View_14_LiveTVChannelIcons</include>
+            <include>View_15_LiveTVChannelList</include>
+        </control>
+    </include>
+    <include name="ViewsidGuide">
+        <views>10,11,12,13</views>
+    </include>
+    <include name="ViewsGuide">
+        <control type="group">
+            <include>View_10_PVRGuideTimeline</include>
+            <include>View_11_PVRGuideNow</include>
+            <include>View_12_PVRGuideNext</include>
+            <include>View_13_PVRGuideChannel</include>
+        </control>
+    </include>
+    <include name="ViewsidRecordings">
+        <views>50</views>
+    </include>
+    <include name="ViewsRecordings">
+        <control type="group">
+            <include>View_50_LiveTVRecordings</include>
+        </control>
+    </include>
+    <include name="ViewsidTimers">
+        <views>21</views>
+    </include>
+    <include name="ViewsTimers">
+        <control type="group">
+            <include>View_21_LiveTVTimers</include>
+        </control>
+    </include>
+    <include name="ViewsidSearch">
+        <views>50</views>
+    </include>
+    <include name="ViewsSearch">
+        <control type="group">
+            <include>View_50_LiveTVSearch</include>
+        </control>
+    </include>
+    <include name="ViewTypeList">
+        <control type="group">
+            <include>SidePanelBackground</include>
+            <animation effect="slide" start="-450" end="0" time="400" condition="ControlGroup(9001).HasFocus()">Conditional</animation>
+            <animation effect="fade" start="100" end="0" time="400" delay="250" condition="!ControlGroup(9001).HasFocus()">Conditional</animation>
+            <control type="grouplist" id="9001">
+                <left>0</left>
+                <top>150</top>
+                <width>SidePanelLeftWidth</width>
+                <height>1113</height>
+                <onleft>9000</onleft>
+                <onright>777</onright>
+                <onup>9001</onup>
+                <ondown>9001</ondown>
+                <onback>777</onback>
+                <itemgap>0</itemgap>
+                <scrolltime tween="sine" easing="out">200</scrolltime>
+                <control type="button" id="810">
+                    <description>View</description>
+                    <label>301308</label>
+                    <label2>$VAR[ViewIDLabel_List]</label2>
+                    <onclick>Container.SetViewMode(50)</onclick>
+                    <onclick>Action(down)</onclick>
+                    <include>SidePanelButton</include>
+					<visible>![Window.IsVisible(MyPVRChannels.xml)|Window.IsVisible(MyPVRGuide.xml)|Window.IsVisible(MyPVRRecordings.xml)|Window.IsVisible(MyPVRTimers.xml)|Window.IsVisible(MyPVRSearch.xml)]</visible>
+                </control>
+                <control type="button" id="812">
+                    <description>View</description>
+                    <label>301310</label>
+                    <onclick>Container.SetViewMode(550)</onclick>
+                    <onclick>Action(down)</onclick>
+                    <include>SidePanelButton</include>
+                    <visible>Window.IsVisible(AddonBrowser)|Container.Content(Addons)</visible>
+                </control>
+                <control type="button" id="814">
+                    <description>View</description>
+                    <label>301312</label>
+                    <onclick>Container.SetViewMode(551)</onclick>
+                    <onclick>Action(down)</onclick>
+                    <include>SidePanelButton</include>
+                    <visible>Window.IsVisible(AddonBrowser)|Container.Content(Addons)</visible>
+                </control>
+                <control type="button" id="816">
+                    <description>View</description>
+                    <label>301314</label>
+                    <onclick>Container.SetViewMode(58)</onclick>
+                    <onclick>Action(down)</onclick>
+                    <include>SidePanelButton</include>
+                    <visible>Container.Content(songs)|Container.Content(artists)|Container.Content(albums)</visible>
+                </control>
+                <control type="button" id="818">
+                    <description>View</description>
+                    <label>301316</label>
+                    <label2>$VAR[ViewIDLabel_Showcase]</label2>
+                    <onclick>Container.SetViewMode(562)</onclick>
+                    <onclick>Action(down)</onclick>
+                    <include>SidePanelButton</include>
+                    <visible>Container.Content(artists)|Container.Content(albums)|Container.Content(Movies)
+					|Container.Content(Sets)|Container.Content(Seasons)|Container.Content(tvshows)|Container.Content(musicvideos)
+					|[String.StartsWith(Container.FolderPath,plugin://)+Container.Content(Movies)]</visible>
+                </control>
+                <!-- <control type="button" id="817">
+                    <description>View</description>
+                    <label>301318</label>
+                    <onclick>Container.SetViewMode(541)</onclick>
+                    <onclick>Action(down)</onclick>
+                    <include>SidePanelButton</include>
+                    <visible>Window.IsVisible(videos)</visible>
+                    <visible>!String.StartsWith(Container.FolderPath,plugin://)+!Container.Content(Addons)</visible>
+                </control> -->
+                <control type="button" id="820">
+                    <description>View</description>
+                    <label>301320</label>
+                    <onclick>Container.SetViewMode(570)</onclick>
+                    <onclick>Action(down)</onclick>
+                    <include>SidePanelButton</include>
+                    <visible>Container.Content(songs)|Container.Content(artists)|Container.Content(albums)</visible>
+                </control>
+                <!-- <control type="button" id="84">
+					<description>View</description>
+					<label>31014</label>
+					<onclick>Container.SetViewMode(556)</onclick>
+					<onclick>Action(down)</onclick>
+					<include>SidePanelButton</include>
+					<visible>Container.Content(artists)|Container.Content(albums)</visible>
+				</control> -->
+                <control type="button" id="822">
+                    <description>View</description>
+                    <label>544</label>
+                    <onclick>Container.SetViewMode(506)</onclick>
+                    <onclick>Action(down)</onclick>
+                    <include>SidePanelButton</include>
+                    <visible>Window.IsVisible(MusicPlaylist)|Container.Content(Songs)|Container.Content(Albums)</visible>
+                </control>
+                <control type="button" id="824">
+                    <description>View</description>
+                    <label>20445</label>
+                    <onclick>Container.SetViewMode(509)</onclick>
+                    <onclick>Action(down)</onclick>
+                    <include>SidePanelButton</include>
+                    <visible>Container.Content(artists)|Container.Content(Albums)</visible>
+                </control>
+                <control type="button" id="826">
+                    <description>View</description>
+                    <label>544</label>
+                    <onclick>Container.SetViewMode(512)</onclick>
+                    <onclick>Action(down)</onclick>
+                    <include>SidePanelButton</include>
+                    <visible>Container.Content(artists)</visible>
+                </control>
+                <control type="button" id="828">
+                    <description>Movie Poster Wrap</description>
+                    <label>301314</label>
+                    <onclick>Container.SetViewMode(57)</onclick>
+                    <onclick>Action(down)</onclick>
+                    <include>SidePanelButton</include>
+                    <visible>Container.Content(Sets)|Container.Content(Movies)|Container.Content(TVShows)|Container.Content(Seasons)|Container.Content(episodes)|Window.IsVisible(VideoPlaylist)|Container.Content(favourites)</visible>
+                    <visible>!String.StartsWith(Container.FolderPath,plugin://)+!Container.Content(Addons)</visible>
+                </control>
+                <control type="button" id="830">
+                    <description>Movie Poster Wrap</description>
+                    <label>$LOCALIZE[544]</label>
+                    <onclick>Container.SetViewMode(503)</onclick>
+                    <onclick>Action(down)</onclick>
+                    <include>SidePanelButton</include>
+                    <visible>Window.IsVisible(videos)</visible>
+                    <visible>!String.StartsWith(Container.FolderPath,plugin://)+!Container.Content(Addons)</visible>
+                </control>
+                <control type="button" id="832">
+                    <description>Movie Poster Wrap</description>
+                    <label>Wide</label>
+                    <onclick>Container.SetViewMode(505)</onclick>
+                    <onclick>Action(down)</onclick>
+                    <include>SidePanelButton</include>
+                    <!-- <visible>Window.IsVisible(videos)</visible> -->
+                    <visible>Container.Content(TVShows)|Container.Content(Sets)|Container.Content(Movies)|Container.Content(episodes)|Container.Content(seasons)|Container.Content(Files)|Container.Content(artists)</visible>
+                    <visible>!String.StartsWith(Container.FolderPath,plugin://)+!Container.Content(Addons)</visible>
+                </control>
+                <control type="button" id="834">
+                    <description>Fanart Movies</description>
+                    <label>20445</label>
+                    <label2>$VAR[ViewIDLabel_Fanart]</label2>
+                    <onclick>Container.SetViewMode(401)</onclick>
+                    <onclick>Action(down)</onclick>
+                    <include>SidePanelButton</include>
+                    <visible>Container.Content(Movies)|Container.Content(TVShows)|Container.Content(Seasons)|Container.Content(Sets)</visible>
+                </control>
+                <control type="button" id="836">
+                    <description>Fanart Movies</description>
+                    <label>Panel</label>
+                    <label2>$VAR[ViewIDLabel_Panel]</label2>
+                    <onclick>Container.SetViewMode(500)</onclick>
+                    <onclick>Action(down)</onclick>
+                    <include>SidePanelButton</include>
+                    <visible>Window.IsVisible(videos)|Container.Content(favourites)</visible>
+                    <!-- <visible>!Container.Content(files)</visible> -->
+                </control>
+                <control type="button" id="838">
+                    <description>Fanart Movies</description>
+                    <label>Don</label>
+                    <label2>$VAR[ViewIDLabel_Panel]</label2>
+                    <onclick>Container.SetViewMode(502)</onclick>
+                    <onclick>Action(down)</onclick>
+                    <include>SidePanelButton</include>
+                    <visible>Window.IsVisible(videos)|Container.Content(favourites)</visible>
+                    <!-- <visible>!Container.Content(files)</visible> -->
+                </control>
+                <control type="button" id="840">
+                    <description>View</description>
+                    <label>3 Panel</label>
+                    <label2>$VAR[ViewIDLabel_3Panel]</label2>
+                    <onclick>Container.SetViewMode(302)</onclick>
+                    <onclick>Action(down)</onclick>
+                    <include>SidePanelButton</include>
+                    <visible>Container.Content(Sets)|Container.Content(Musicvideos)|Container.Content(Movies)|Container.Content(TVShows)|Container.Content(episodes)|Container.Content(Seasons)</visible>
+                </control>
+                <control type="button" id="842">
+                    <description>Fanart Episodes</description>
+                    <label>$LOCALIZE[20445]</label>
+                    <label2>$VAR[ViewIDLabel_Fanart_Episodes]</label2>
+                    <onclick>Container.SetViewMode(402)</onclick>
+                    <onclick>Action(down)</onclick>
+                    <include>SidePanelButton</include>
+                    <visible>Container.Content(episodes)</visible>
+                </control>
+                <control type="button" id="844">
+                    <description>Episode</description>
+                    <label>20359</label>
+                    <label2>$VAR[ViewIDLabel_Episode]</label2>
+                    <onclick>Container.SetViewMode(515)</onclick>
+                    <onclick>Action(down)</onclick>
+                    <include>SidePanelButton</include>
+                    <visible>Window.IsVisible(videos)|Container.Content(artists)|Container.Content(Albums)|Container.Content(songs)|Container.Content(favourites)</visible>
+                    <visible>!Container.Content(files)+!Container.Content(Addons)</visible>
+                </control>
+                <control type="button" id="846">
+                    <description>Movie View_721_RightList</description>
+                    <label>301322</label>
+                    <label2>$VAR[ViewIDLabel_Rightlist]</label2>
+                    <onclick>Container.SetViewMode(721)</onclick>
+                    <onclick>Action(down)</onclick>
+                    <include>SidePanelButton</include>
+                    <visible>Container.Content(Sets)|Container.Content(Musicvideos)|Container.Content(Movies)|Container.Content(TVShows)|Container.Content(episodes)|Container.Content(Seasons)</visible>
+                </control>
+                <control type="button" id="850">
+                    <description>non Movie View_721_RightList</description>
+                    <label>301322</label>
+                    <label2>$VAR[ViewIDLabel_Rightlist2]</label2>
+                    <onclick>Container.SetViewMode(722)</onclick>
+                    <onclick>Action(down)</onclick>
+                    <include>SidePanelButton</include>
+                    <visible>![Container.Content(Sets)|Container.Content(Musicvideos)|Container.Content(Movies)|Container.Content(TVShows)|Container.Content(episodes)|Container.Content(Seasons)]</visible>
+					<visible>![Window.IsVisible(MyPVRChannels.xml)|Window.IsVisible(MyPVRGuide.xml)|Window.IsVisible(MyPVRRecordings.xml)|Window.IsVisible(MyPVRTimers.xml)|Window.IsVisible(MyPVRSearch.xml)]</visible>
+                </control>
+                <control type="button" id="852">
+                    <description>View</description>
+                    <label>Wall</label>
+                    <label2>$VAR[ViewIDLabel_Wall]</label2>
+                    <onclick>Container.SetViewMode(742)</onclick>
+                    <onclick>Action(down)</onclick>
+                    <include>SidePanelButton</include>
+                    <visible>Container.Content(Musicvideos)|Container.Content(Sets)|Container.Content(Movies)|Container.Content(TVShows)|Container.Content(Seasons)</visible>
+                </control>
+                <control type="button" id="854">
+                    <description>View</description>
+                    <label>301324</label>
+                    <label2>$VAR[ViewIDLabel_BigWall]</label2>
+                    <onclick>Container.SetViewMode(740)</onclick>
+                    <onclick>Action(down)</onclick>
+                    <include>SidePanelButton</include>
+                    <visible>Container.Content(Musicvideos)|Container.Content(Sets)|Container.Content(Movies)|Container.Content(TVShows)|Container.Content(Seasons)</visible>
+                </control>
+                <control type="button" id="856">
+                    <description>View</description>
+                    <label>301326</label>
+                    <label2>$VAR[ViewIDLabel_MusicWall]</label2>
+                    <onclick>Container.SetViewMode(741)</onclick>
+                    <onclick>Action(down)</onclick>
+                    <include>SidePanelButton</include>
+                    <visible>Container.Content(artists)|Container.Content(Albums)</visible>
+                </control>
+                <control type="button" id="858">
+                    <description>View</description>
+                    <label>31014</label>
+                    <onclick>Container.SetViewMode(510)</onclick>
+                    <onclick>Action(down)</onclick>
+                    <include>SidePanelButton</include>
+                    <visible>Window.IsVisible(Pictures)</visible>
+                    <visible>!Container.Content(Addons)</visible>
+                </control>
+                <control type="button" id="860">
+                    <description>View</description>
+                    <label>31013</label>
+                    <onclick>Container.SetViewMode(514)</onclick>
+                    <onclick>Action(down)</onclick>
+                    <include>SidePanelButton</include>
+                    <visible>Window.IsVisible(Pictures)</visible>
+                    <visible>!Container.Content(Addons)</visible>
+                </control>
+                <control type="button" id="862">
+                    <description>View</description>
+                    <label>301328</label>
+                    <onclick>Container.SetViewMode(516)</onclick>
+                    <onclick>Action(down)</onclick>
+                    <include>SidePanelButton</include>
+                    <visible>Window.IsVisible(Pictures)</visible>
+                    <visible>!Container.Content(Addons)</visible>
+                </control>
+                <control type="button" id="864">
+                    <description>View</description>
+                    <label>PVR Panel</label>
+                    <onclick>Container.SetViewMode(11)</onclick>
+                    <onclick>Action(down)</onclick>
+                    <include>SidePanelButton</include>
+					<visible>Window.IsVisible(MyPVRChannels.xml)|Window.IsVisible(MyPVRGuide.xml)|Window.IsVisible(MyPVRRecordings.xml)|Window.IsVisible(MyPVRTimers.xml)|Window.IsVisible(MyPVRSearch.xml)</visible>
+                </control>
+                <control type="button" id="868">
+                    <description>View</description>
+                    <label>PVR List</label>
+                    <onclick>Container.SetViewMode(10)</onclick>
+                    <onclick>Action(down)</onclick>
+                    <include>SidePanelButton</include>
+					<visible>Window.IsVisible(MyPVRChannels.xml)|Window.IsVisible(MyPVRGuide.xml)|Window.IsVisible(MyPVRRecordings.xml)|Window.IsVisible(MyPVRTimers.xml)|Window.IsVisible(MyPVRSearch.xml)</visible>
+                </control>
+            </control>
+            <include>SidePanelNavigation</include>
+            <control type="image">
+                <width>akzentline_size</width>
+                <left>SidePanelLeftWidth</left>
+                <colordiffuse>$VAR[BackgroundOverlayColorDialog]</colordiffuse>
+                <texture>White.png</texture>
+                <animation effect="slide" end="-2" time="0" condition="true">Conditional</animation>
+            </control>
+        </control>
+    </include>
+</includes>

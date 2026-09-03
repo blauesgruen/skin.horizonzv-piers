@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="1154">
+    <defaultcontrol always="true">11</defaultcontrol>
+    <include>openclose</include>
+    <controls>
+        <include>DialogBackgroundSimple</include>
+        <include>BlackStripes</include>
+		<control type="group">
+			<include>openclosebox</include>
+			<include content="DialogBackgroundCommons">
+				<param name="width" value="900" />
+				<param name="height" value="450" />
+				<param name="bottomimage" value="390" />
+				<param name="header_id" value="1" />
+				<param name="header_label" value="20077" />
+			</include>
+			<include>openclosebox</include>
+			<control type="label">
+				<description>dialog line</description>
+				<width>100%</width>
+				<height>100%</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<textcolor>white</textcolor>
+				<shadowcolor>red</shadowcolor>
+				<font>impacted24</font>
+				<label>301268</label>
+			</control>
+			<control type="grouplist">
+				<centerleft>50%</centerleft>
+				<bottom>10</bottom>
+				<width>420</width>
+				<height>40</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<itemgap>20</itemgap>
+				<orientation>horizontal</orientation>
+				<control type="button" id="10">
+					<description>Yes button</description>
+					<width>200</width>
+					<height>100%</height>
+					<textwidth>270</textwidth>
+					<font>impacted18</font>
+					<disabledcolor>selectedhome</disabledcolor>
+					<texturenofocus/>
+					<label>107</label>
+					<onleft>12</onleft>
+					<onright>11</onright>
+					<onclick>Skin.ResetSettings</onclick>
+					<onclick>Notification(werden zurückgesetzt ...,Einstellungen,4000, DefaultIconInfo.png)</onclick>
+					<onclick>back</onclick>
+					<texturenofocus/>
+				</control>
+				<control type="button" id="11">
+					<description>No button</description>
+					<width>200</width>
+					<height>100%</height>
+					<textwidth>270</textwidth>
+					<font>impacted18</font>
+					<disabledcolor>selectedhome</disabledcolor>
+					<texturenofocus/>
+					<label>106</label>
+					<onleft>10</onleft>
+					<onright>12</onright>
+					<onclick>back</onclick>
+					<texturenofocus/>
+				</control>
+			</control>
+		</control>
+    </controls>
+</window>

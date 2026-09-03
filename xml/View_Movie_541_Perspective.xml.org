@@ -1,0 +1,830 @@
+<?xml version="1.0" encoding="utf-8"?>
+<includes>
+    <include name="Perspective">
+		<param name="viewid">541</param>
+		<definition>
+			<control type="group">
+				<visible>Control.IsVisible($PARAM[viewid])</visible>
+				<include>openclose</include>
+				<control type="group">
+					<include content="FakeButton444">
+						<param name="visible" value="Control.IsVisible($PARAM[viewid])"/>
+					</include>
+					<visible>Control.IsVisible($PARAM[viewid])+!Control.HasFocus(666)</visible>
+					<control type="group">
+						<top>980</top>
+						<include>MirrorPanel</include>
+					</control>
+				</control>
+				<control type="group">
+					<include>openclosebox</include>
+					<visible>Control.IsVisible($PARAM[viewid])+!Control.HasFocus(666)</visible>
+					<control type="group">
+						<control type="group">
+							<top>30</top>
+							<left>240</left>
+							<!-- <control type="image" id="testimage">
+								<left>-200</left>
+								<right>-450</right>
+								<top>1028</top>
+								<height>15</height>
+								<texture>WhiteBack.png</texture>
+							</control> -->
+							<include content="DefaultScrollbar_horizontal">
+								<param name="id" value="$PARAM[viewid]1" />
+								<param name="top" value="1028" />
+								<param name="onup" value="$PARAM[viewid]" />
+							</include>
+							<control type="group">
+								<right>0</right>
+								<top>640</top>
+								<width>540</width>
+								<height>350</height>
+								<control type="image">
+									<texture flipx="true">SideFade.png</texture>
+									<visible>!Container.Content(episodes)</visible>
+								</control>
+							</control>
+							<control type="group">
+								<right>SpacePadding</right>
+								<top>1110</top>
+								<include>openclosevisible</include>
+								<visible>Skin.HasSetting(CommonPageCount)</visible>
+								<control type="label">
+									<description>Page Count Label</description>
+									<left>780r</left>
+									<top>0</top>
+									<width>750</width>
+									<height>30</height>
+									<font>font16</font>
+									<textcolor>grey</textcolor>
+									<scroll>false</scroll>
+									<align>right</align>
+									<aligny>center</aligny>
+									<label>$INFO[Container.TotalTime,$LOCALIZE[31003] ([COLOR=selected],[/COLOR]) • ]$INFO[Container.NumItems,([COLOR=selected],[/COLOR]) $LOCALIZE[31009]]$INFO[Container.CurrentPage, - $LOCALIZE[31008] ([COLOR=selected]]$INFO[Container.NumPages,/,[/COLOR])]</label>
+								</control>
+							</control>
+							<control type="group">
+								<visible>!Container.Content(episodes)</visible>
+								<left>243</left>
+								<top>0</top>
+								<control type="image">
+									<left>138</left>
+									<top>530</top>
+									<width>2025</width>
+									<height>3</height>
+									<colordiffuse>fanartdiffuse</colordiffuse>
+									<texture>White.png</texture>
+								</control>
+								<control type="image">
+									<left>138</left>
+									<top>531</top>
+									<width>2</width>
+									<height>40</height>
+									<colordiffuse>fanartdiffuse</colordiffuse>
+									<texture>White.png</texture>
+								</control>
+							</control>
+							<control type="group">
+								<visible>Container.Content(episodes)</visible>
+								<left>180</left>
+								<top>36</top>
+								<control type="image">
+									<left>138</left>
+									<top>530</top>
+									<width>2025</width>
+									<height>1</height>
+									<colordiffuse>fanartdiffuse</colordiffuse>
+									<texture>White.png</texture>
+								</control>
+								<control type="image">
+									<left>138</left>
+									<top>531</top>
+									<width>1</width>
+									<height>40</height>
+									<colordiffuse>fanartdiffuse</colordiffuse>
+									<texture>White.png</texture>
+								</control>
+							</control>
+						</control>
+						<control type="wraplist" id="$PARAM[viewid]">
+							<animation effect="rotatey" start="0" end="-10" center="left" time="100" condition="true">Conditional</animation>
+							<animation effect="slide" end="-50" condition="Skin.HasSetting(hideMovieCases)+!Container.Content(episodes)">Conditional</animation>
+							<left>-255</left>
+							<top>580</top>
+							<width>200%</width>
+							<height>520</height>
+							<!-- <height>1575</height> -->
+							<onleft>$PARAM[viewid]</onleft>
+							<onright>$PARAM[viewid]</onright>
+							<onup condition="!Control.IsVisible(2000)">9000</onup>
+							<onup condition="Control.IsVisible(2000)">2000</onup>
+							<ondown condition="Control.IsVisible($PARAM[viewid]1)">$PARAM[viewid]1</ondown>
+							<ondown condition="!Control.IsVisible($PARAM[viewid]1)+Control.IsVisible(17000)">17000</ondown>
+							<ondown condition="!Control.IsVisible($PARAM[viewid]1)+!Control.IsVisible(17000)">732</ondown>
+							<viewtype label="Perspective">wraplist</viewtype>
+							<pagecontrol>$PARAM[viewid]1</pagecontrol>
+							<scrolltime tween="circle">800</scrolltime>
+							<focusposition>2</focusposition>
+							<orientation>horizontal</orientation>
+							<preloaditems>PreloadItems</preloaditems>
+							<visible>Window.IsVisible(videos)</visible>
+							<visible>!String.StartsWith(Container.FolderPath,plugin://)+!Container.Content(Addons)</visible>
+							<itemlayout condition="[Container.Content(Movies)|Container.Content(Sets)|Container.Content(Seasons)|Container.Content(tvshows)|Container.Content(musicvideos)]" height="auto" width="270">
+								<include>View562LayoutItemlayout</include>
+							</itemlayout>
+							<focusedlayout condition="[Container.Content(Movies)|Container.Content(Sets)|Container.Content(Seasons)|Container.Content(tvshows)|Container.Content(musicvideos)]" height="460" width="320">
+								<include>View562LayoutFocused</include>
+							</focusedlayout>
+							<!-- <itemlayout condition="!Skin.HasSetting(hideMovieCases)+!Container.Content(episodes)" height="488" width="335">
+								<control type="group">
+									<left>-50</left>
+									<top>0</top>
+									<visible>!Skin.HasSetting(hideMovieCases)</visible>
+									<control type="image">
+										<left>10</left>
+										<top>213</top>
+										<width>295</width>
+										<height>435</height>
+										<aspectratio>stretch</aspectratio>
+										<colordiffuse>$VAR[CoverDim]</colordiffuse>
+										<texture diffuse="clear-cases/clearcase_inlay.png" fallback="FallbackCover.png">$VAR[PosterThumb]</texture>
+										<visible>!ListItem.IsParentFolder</visible>
+									</control>
+									<control type="image">
+										<left>10</left>
+										<top>213</top>
+										<width>295</width>
+										<height>435</height>
+										<aspectratio>keep</aspectratio>
+										<colordiffuse>$VAR[CoverDim]</colordiffuse>
+										<texture diffuse="clear-cases/clearcase_inlay.png" fallback="FallbackCover.png">$VAR[PosterThumb]</texture>
+										<visible>ListItem.IsParentFolder</visible>
+									</control>
+									<control type="image">
+										<left>0</left>
+										<top>213</top>
+										<width>305</width>
+										<height>435</height>
+										<aspectratio>stretch</aspectratio>
+										<colordiffuse>dustdiffuse</colordiffuse>
+										<texture diffuse="clear-cases/clearcase_inlay.png">Dust.png</texture>
+										<visible>Skin.HasSetting(dust)+!ListItem.IsParentFolder</visible>
+									</control>
+									<control type="image">
+										<left>-27</left>
+										<top>213</top>
+										<width>335</width>
+										<height>435</height>
+										<aspectratio>stretch</aspectratio>
+										<colordiffuse>$VAR[CoverDim]</colordiffuse>
+										<texture fallback="clear-cases/fallback.png">$VAR[clearcase]</texture>
+									</control>
+									<control type="image">
+										<left>11</left>
+										<top>651</top>
+										<width>295</width>
+										<height>102</height>
+										<aspectratio>stretch</aspectratio>
+										<colordiffuse>$VAR[CoverDim]</colordiffuse>
+										<texture flipy="true" diffuse="ContentPanelMirror3.png" fallback="FallbackCover.png">$VAR[PosterThumb]</texture>
+										<visible>Skin.HasSetting(animation)</visible>
+										<visible>!ListItem.IsParentFolder</visible>
+									</control>
+									<control type="image">
+										<left>1</left>
+										<top>651</top>
+										<width>305</width>
+										<height>102</height>
+										<aspectratio>stretch</aspectratio>
+										<colordiffuse>dustdiffuse</colordiffuse>
+										<texture flipy="true" diffuse="ContentPanelMirror3.png">Dust.png</texture>
+										<visible>Skin.HasSetting(dust)+!ListItem.IsParentFolder</visible>
+									</control>
+									<control type="image">
+										<left>-27</left>
+										<top>650</top>
+										<width>335</width>
+										<height>102</height>
+										<aspectratio>stretch</aspectratio>
+										<colordiffuse>$VAR[CoverDim]</colordiffuse>
+										<texture fallback="clear-cases/fallback.png" flipy="true" diffuse="ContentPanelMirror3.png">$VAR[clearcase]</texture>
+										<visible>Skin.HasSetting(animation)</visible>
+									</control>
+									<control type="image">
+										<left>-27</left>
+										<top>640</top>
+										<width>335</width>
+										<height>102</height>
+										<texture>ContentPanelMirror.png</texture>
+										<visible>!Skin.HasSetting(animation)</visible>
+									</control>
+									<control type="image">
+										<description>3D Image</description>
+										<left>0</left>
+										<top>608</top>
+										<width>75</width>
+										<height>38</height>
+										<colordiffuse>$VAR[CoverDim]</colordiffuse>
+										<aspectratio>keep</aspectratio>
+										<texture>flagging/video/3d.png</texture>
+										<visible>ListItem.IsStereoscopic</visible>
+									</control>
+									<control type="group">
+										<left>8</left>
+										<top>218</top>
+										<include>Flagg_LeftCorner</include>
+									</control>
+								</control>
+							</itemlayout> -->
+							<!-- <itemlayout condition="Skin.HasSetting(hideMovieCases)+!Container.Content(episodes)" height="488" width="306">
+								<control type="group">
+									<left>48</left>
+									<top>0</top>
+									<visible>Skin.HasSetting(hideMovieCases)</visible>
+									<control type="image">
+										<left>0</left>
+										<top>213</top>
+										<width>305</width>
+										<height>435</height>
+										<aspectratio>stretch</aspectratio>
+										<colordiffuse>$VAR[CoverDim]</colordiffuse>
+										<texture diffuse="masks/mask_round.png" fallback="FallbackCover.png">$VAR[PosterThumb]</texture>
+										<visible>!ListItem.IsParentFolder</visible>
+									</control>
+									<control type="image">
+										<left>0</left>
+										<top>213</top>
+										<width>305</width>
+										<height>435</height>
+										<aspectratio>keep</aspectratio>
+										<colordiffuse>$VAR[CoverDim]</colordiffuse>
+										<texture diffuse="masks/mask_round.png" fallback="FallbackCover.png">$VAR[PosterThumb]</texture>
+										<visible>ListItem.IsParentFolder</visible>
+									</control>
+									<control type="group">
+										<left>184</left>
+										<top>528</top>
+										<include>Set_Flagg</include>
+									</control>
+									<control type="image">
+										<left>0</left>
+										<top>213</top>
+										<width>305</width>
+										<height>435</height>
+										<aspectratio>stretch</aspectratio>
+										<colordiffuse>$VAR[CoverDim]</colordiffuse>
+										<texture border="2">masks/Default_round.png</texture>
+										<visible>Skin.HasSetting(animation)</visible>
+									</control>
+									<control type="image">
+										<left>0</left>
+										<top>650</top>
+										<width>305</width>
+										<height>102</height>
+										<aspectratio>stretch</aspectratio>
+										<colordiffuse>$VAR[CoverDim]</colordiffuse>
+										<texture flipy="true" diffuse="ContentPanelMirror3.png" fallback="FallbackCover.png">$VAR[PosterThumb]</texture>
+										<visible>Skin.HasSetting(animation)</visible>
+										<visible>!ListItem.IsParentFolder</visible>
+									</control>
+									<control type="image">
+										<left>0</left>
+										<top>650</top>
+										<width>305</width>
+										<height>102</height>
+										<colordiffuse>$VAR[CoverDim]</colordiffuse>
+										<texture>ContentPanelMirror.png</texture>
+										<visible>!Skin.HasSetting(animation)</visible>
+									</control>
+									<control type="image">
+										<description>3D Image</description>
+										<left>0</left>
+										<top>608</top>
+										<width>75</width>
+										<height>38</height>
+										<aspectratio>keep</aspectratio>
+										<colordiffuse>$VAR[CoverDim]</colordiffuse>
+										<texture>flagging/video/3d.png</texture>
+										<visible>ListItem.IsStereoscopic</visible>
+									</control>
+									<control type="group">
+										<left>1</left>
+										<top>213</top>
+										<include>Flagg_LeftCorner</include>
+									</control>
+								</control>
+							</itemlayout> -->
+							<itemlayout condition="Container.Content(episodes)" height="356" width="476">
+								<control type="group">
+									<left>-440</left>
+									<top>40</top>
+									<control type="image">
+										<left>0</left>
+										<top>213</top>
+										<width>475</width>
+										<height>355</height>
+										<aspectratio>stretch</aspectratio>
+										<colordiffuse>$VAR[CoverDim]</colordiffuse>
+										<texture diffuse="masks/mask_round.png" fallback="FallbackCover.png">$VAR[PosterThumb]</texture>
+										<visible>!ListItem.IsParentFolder</visible>
+									</control>
+									<control type="image">
+										<left>0</left>
+										<top>213</top>
+										<width>475</width>
+										<height>355</height>
+										<aspectratio>keep</aspectratio>
+										<colordiffuse>$VAR[CoverDim]</colordiffuse>
+										<texture diffuse="masks/mask_round.png" fallback="FallbackCover.png">$VAR[PosterThumb]</texture>
+										<visible>ListItem.IsParentFolder</visible>
+									</control>
+									<control type="group">
+										<left>0</left>
+										<top>214</top>
+										<include>Flagg_LeftCorner</include>
+									</control>
+									<control type="image">
+										<left>0</left>
+										<top>213</top>
+										<width>475</width>
+										<height>355</height>
+										<aspectratio>stretch</aspectratio>
+										<colordiffuse>$VAR[CoverDim]</colordiffuse>
+										<texture border="2">masks/Default_round.png</texture>
+										<visible>Skin.HasSetting(animation)</visible>
+									</control>
+									<control type="image">
+										<left>0</left>
+										<top>570</top>
+										<width>475</width>
+										<height>102</height>
+										<aspectratio>stretch</aspectratio>
+										<colordiffuse>$VAR[CoverDim]</colordiffuse>
+										<texture flipy="true" diffuse="ContentPanelMirror3.png" fallback="FallbackCover.png">$VAR[PosterThumb]</texture>
+										<visible>Skin.HasSetting(animation)</visible>
+										<visible>!ListItem.IsParentFolder</visible>
+									</control>
+									<control type="image">
+										<left>0</left>
+										<top>570</top>
+										<width>475</width>
+										<height>102</height>
+										<colordiffuse>$VAR[CoverDim]</colordiffuse>
+										<texture>ContentPanelMirror.png</texture>
+										<visible>!Skin.HasSetting(animation)</visible>
+									</control>
+								</control>
+							</itemlayout>
+							<!-- <focusedlayout condition="!Skin.HasSetting(hideMovieCases)+!Container.Content(episodes)" height="478" width="335">
+								<control type="group">
+									<left>-90</left>
+									<control type="image">
+										<left>-8</left>
+										<top>190</top>
+										<width>374</width>
+										<height>510</height>
+										<colordiffuse>description</colordiffuse>
+										<texture border="8" flipy="true" diffuse="ShadowWhite.png">ThumbShadowWhite.png</texture>
+									</control>
+									<control type="image">
+										<left>4</left>
+										<top>202</top>
+										<width>350</width>
+										<height>363</height>
+										<colordiffuse>description</colordiffuse>
+										<texture border="8" diffuse="WhiteBack.png">ShadowWhiteFlipy.png</texture>
+									</control>
+									<control type="image">
+										<left>-33</left>
+										<top>238</top>
+										<width>425</width>
+										<height>363</height>
+										<colordiffuse>menudiffuse</colordiffuse>
+										<animation effect="rotate" start="0" end="90" center="auto" time="0" condition="true">Conditional</animation>
+										<texture border="10">buttons/ButtonNFhalf_round.png</texture>
+									</control>
+									<control type="image">
+										<left>50</left>
+										<top>213</top>
+										<width>295</width>
+										<height>435</height>
+										<aspectratio>stretch</aspectratio>
+										<texture diffuse="clear-cases/clearcase_inlay.png" fallback="FallbackCover.png">$VAR[PosterThumb]</texture>
+										<visible>!ListItem.IsParentFolder</visible>
+									</control>
+									<control type="image">
+										<left>50</left>
+										<top>213</top>
+										<width>295</width>
+										<height>435</height>
+										<aspectratio>keep</aspectratio>
+										<texture diffuse="clear-cases/clearcase_inlay.png" fallback="FallbackCover.png">$VAR[PosterThumb]</texture>
+										<visible>ListItem.IsParentFolder</visible>
+									</control>
+									<control type="image">
+										<left>14</left>
+										<top>213</top>
+										<width>335</width>
+										<height>435</height>
+										<aspectratio>stretch</aspectratio>
+										<texture fallback="clear-cases/fallback.png">$VAR[clearcase]</texture>
+									</control>
+									<control type="image">
+										<left>50</left>
+										<top>651</top>
+										<width>295</width>
+										<height>102</height>
+										<aspectratio>stretch</aspectratio>
+										<texture flipy="true" diffuse="ContentPanelMirror3.png" fallback="FallbackCover.png">$VAR[PosterThumb]</texture>
+										<visible>Skin.HasSetting(animation)</visible>
+										<visible>!ListItem.IsParentFolder</visible>
+									</control>
+									<control type="image">
+										<left>40</left>
+										<top>651</top>
+										<width>305</width>
+										<height>102</height>
+										<aspectratio>stretch</aspectratio>
+										<colordiffuse>dustdiffuse</colordiffuse>
+										<texture flipy="true" diffuse="ContentPanelMirror3.png">Dust.png</texture>
+										<visible>Skin.HasSetting(dust)+!ListItem.IsParentFolder</visible>
+									</control>
+									<control type="image">
+										<left>14</left>
+										<top>650</top>
+										<width>335</width>
+										<height>102</height>
+										<aspectratio>stretch</aspectratio>
+										<texture fallback="clear-cases/fallback.png" flipy="true" diffuse="ContentPanelMirror3.png">$VAR[clearcase]</texture>
+										<visible>Skin.HasSetting(animation)</visible>
+									</control>
+									<control type="image">
+										<left>40</left>
+										<top>640</top>
+										<width>335</width>
+										<height>102</height>
+										<texture>ContentPanelMirror.png</texture>
+										<visible>!Skin.HasSetting(animation)</visible>
+									</control>
+									<control type="image">
+										<description>3D Image</description>
+										<left>46</left>
+										<top>608</top>
+										<width>75</width>
+										<height>38</height>
+										<aspectratio>keep</aspectratio>
+										<texture>flagging/video/3d.png</texture>
+										<visible>ListItem.IsStereoscopic</visible>
+									</control>
+									<control type="group">
+										<left>50</left>
+										<top>218</top>
+										<include>Flagg_LeftCorner</include>
+									</control>
+								</control>
+							</focusedlayout> -->
+							<!-- <focusedlayout condition="Skin.HasSetting(hideMovieCases)+!Container.Content(episodes)" height="488" width="306">
+								<control type="group">
+									<control type="image">
+										<left>27</left>
+										<top>190</top>
+										<width>346</width>
+										<height>510</height>
+										<colordiffuse>description</colordiffuse>
+										<texture border="8" flipy="true" diffuse="ShadowWhite.png">ThumbShadowWhite.png</texture>
+									</control>
+									<control type="image">
+										<left>39</left>
+										<top>202</top>
+										<width>323</width>
+										<height>480</height>
+										<colordiffuse>description</colordiffuse>
+										<texture diffuse="WhiteBack.png">ShadowWhiteFlipy.png</texture>
+									</control>
+									<control type="image">
+										<left>-12</left>
+										<top>252</top>
+										<width>425</width>
+										<height>333</height>
+										<colordiffuse>menudiffuse</colordiffuse>
+										<animation effect="rotate" start="0" end="90" center="auto" time="0" condition="true">Conditional</animation>
+										<texture border="10">buttons/ButtonNFhalf_round.png</texture>
+									</control>
+									<control type="group">
+										<left>48</left>
+										<visible>Skin.HasSetting(hideMovieCases)</visible>
+										<control type="image">
+											<left>0</left>
+											<top>213</top>
+											<width>305</width>
+											<height>435</height>
+											<aspectratio>stretch</aspectratio>
+											<texture diffuse="masks/mask_round.png" fallback="FallbackCover.png">$VAR[PosterThumb]</texture>
+											<visible>!ListItem.IsParentFolder</visible>
+										</control>
+										<control type="image">
+											<left>0</left>
+											<top>213</top>
+											<width>305</width>
+											<height>435</height>
+											<aspectratio>keep</aspectratio>
+											<texture diffuse="masks/mask_round.png" fallback="FallbackCover.png">$VAR[PosterThumb]</texture>
+											<visible>ListItem.IsParentFolder</visible>
+										</control>
+										<control type="group">
+											<left>0</left>
+											<top>213</top>
+											<include>Flagg_LeftCorner</include>
+										</control>
+										<control type="group">
+											<left>185</left>
+											<top>528</top>
+											<include>Set_Flagg</include>
+										</control>
+										<control type="image">
+											<left>0</left>
+											<top>213</top>
+											<width>305</width>
+											<height>435</height>
+											<aspectratio>stretch</aspectratio>
+											<texture border="2">masks/Default_round.png</texture>
+											<visible>Skin.HasSetting(animation)</visible>
+										</control>
+										<control type="image">
+											<left>0</left>
+											<top>650</top>
+											<width>305</width>
+											<height>102</height>
+											<aspectratio>stretch</aspectratio>
+											<texture flipy="true" diffuse="ContentPanelMirror3.png" fallback="FallbackCover.png">$VAR[PosterThumb]</texture>
+											<visible>Skin.HasSetting(animation)</visible>
+											<visible>!ListItem.IsParentFolder</visible>
+										</control>
+										<control type="image">
+											<left>0</left>
+											<top>650</top>
+											<width>305</width>
+											<height>102</height>
+											<texture>ContentPanelMirror.png</texture>
+											<visible>!Skin.HasSetting(animation)</visible>
+										</control>
+										<control type="image">
+											<description>3D Image</description>
+											<left>0</left>
+											<top>608</top>
+											<width>75</width>
+											<height>38</height>
+											<aspectratio>keep</aspectratio>
+											<texture>flagging/video/3d.png</texture>
+											<visible>ListItem.IsStereoscopic</visible>
+										</control>
+									</control>
+								</control>
+							</focusedlayout> -->
+							<focusedlayout condition="Container.Content(episodes)" height="356" width="476">
+								<control type="group">
+									<left>-488</left>
+									<top>40</top>
+									<control type="image">
+										<left>27</left>
+										<top>190</top>
+										<width>516</width>
+										<height>325</height>
+										<colordiffuse>description</colordiffuse>
+										<texture border="8" flipy="true" diffuse="ShadowWhite.png">ThumbShadowWhite.png</texture>
+									</control>
+									<control type="image">
+										<left>39</left>
+										<top>202</top>
+										<width>493</width>
+										<height>325</height>
+										<colordiffuse>description</colordiffuse>
+										<texture diffuse="WhiteBack.png">ShadowWhiteFlipy.png</texture>
+									</control>
+									<control type="group">
+										<!-- <include>focuseffect</include> -->
+										<left>48</left>
+										<control type="image">
+											<left>0</left>
+											<top>213</top>
+											<width>475</width>
+											<height>355</height>
+											<aspectratio>stretch</aspectratio>
+											<texture diffuse="masks/mask_round.png" fallback="FallbackCover.png">$VAR[PosterThumb]</texture>
+											<visible>!ListItem.IsParentFolder</visible>
+										</control>
+										<control type="image">
+											<left>0</left>
+											<top>213</top>
+											<width>475</width>
+											<height>355</height>
+											<aspectratio>keep</aspectratio>
+											<texture diffuse="masks/mask_round.png" fallback="FallbackCover.png">$VAR[PosterThumb]</texture>
+											<visible>ListItem.IsParentFolder</visible>
+										</control>
+										<control type="group">
+											<left>0</left>
+											<top>214</top>
+											<include>Flagg_LeftCorner</include>
+										</control>
+										<control type="image">
+											<left>0</left>
+											<top>213</top>
+											<width>475</width>
+											<height>355</height>
+											<aspectratio>stretch</aspectratio>
+											<texture border="2">masks/Default_round.png</texture>
+											<visible>Skin.HasSetting(animation)</visible>
+										</control>
+										<control type="image">
+											<left>0</left>
+											<top>570</top>
+											<width>475</width>
+											<height>102</height>
+											<aspectratio>stretch</aspectratio>
+											<texture flipy="true" diffuse="ContentPanelMirror3.png" fallback="FallbackCover.png">$VAR[PosterThumb]</texture>
+											<visible>Skin.HasSetting(animation)</visible>
+											<visible>!ListItem.IsParentFolder</visible>
+										</control>
+										<control type="image">
+											<left>0</left>
+											<top>570</top>
+											<width>475</width>
+											<height>102</height>
+											<texture>ContentPanelMirror.png</texture>
+											<visible>!Skin.HasSetting(animation)</visible>
+										</control>
+									</control>
+								</control>
+							</focusedlayout>
+						</control>
+						<control type="group"> <!-- Movie Title and Studiologo -->
+							<left>315</left>
+							<top>40</top>
+							<control type="label">
+								<description>item label</description>
+								<left>330</left>
+								<top>417</top>
+								<width>1350</width>
+								<height>42</height>
+								<align>left</align>
+								<aligny>center</aligny>
+								<font>impacted18</font>
+								<textcolor>grey1</textcolor>
+								<shadowcolor/>
+								<label>$INFO[ListItem.Tagline]</label>
+								<visible>!Container.Content(episodes)</visible>
+							</control>
+							<control type="label">
+								<description>item label</description>
+								<left>330</left>
+								<top>462</top>
+								<width>1350</width>
+								<height>42</height>
+								<align>left</align>
+								<aligny>center</aligny>
+								<font>impacted30</font>
+								<textcolor>white</textcolor>
+								<shadowcolor>black</shadowcolor>
+								<label>$VAR[OriginalTitle]$INFO[ListItem.Year, (,)]</label>
+								<visible>!Container.Content(episodes)</visible>
+							</control>
+							<control type="group">
+								<left>255</left>
+								<top>450</top>
+								<visible>Container.Content(episodes)</visible>
+								<control type="label">
+									<description>item label</description>
+									<left>0</left>
+									<top>45</top>
+									<width>1350</width>
+									<height>42</height>
+									<align>left</align>
+									<aligny>center</aligny>
+									<font>impacted30</font>
+									<textcolor>white</textcolor>
+									<shadowcolor>black</shadowcolor>
+									<label>$VAR[OriginalTitle]$INFO[ListItem.Year, (,)]</label>
+								</control>
+								<control type="label">
+									<description>item label</description>
+									<left>0</left>
+									<top>0</top>
+									<width>1350</width>
+									<height>42</height>
+									<align>left</align>
+									<aligny>center</aligny>
+									<textcolor>grey</textcolor>
+									<shadowcolor>black</shadowcolor>
+									<label>$INFO[ListItem.Season,$LOCALIZE[20373] , • ]$INFO[ListItem.Episode,$LOCALIZE[20452] , • ]$VAR[EpisodeSubTitleVar]</label>
+								</control>
+							</control>
+						</control>
+						<control type="group"> <!-- Movie Info Panel -->
+							<visible>Container.Content(Movies)|Container.Content(Sets)|Container.Content(episodes)|Container.Content(Seasons)|Container.Content(tvshows)|Container.Content(musicvideos)</visible>
+							<visible>!ListItem.IsParentFolder</visible>
+							<animation effect="slide" start="0" end="-75,120" time="0" condition="Container.Content(episodes)">Conditional</animation>
+							<control type="grouplist">
+								<left>660</left>
+								<top>1090</top>
+								<width>1400</width>
+								<height>45</height>
+								<itemgap>12</itemgap>
+								<align>left</align>
+								<orientation>horizontal</orientation>
+								<include>FlagVideo</include>
+								<include>FlagVideoAudioStream1</include>
+								<include>FlagVideoAudioStream2</include>
+								<include>FlagVideoSubtitles</include>
+							</control>
+						</control>
+					</control>
+					<include content="sidefade_shadow">
+						<param name="id" value="$PARAM[viewid]" />
+					</include>
+					<include content="TMDbhelper_Provider_Icon">
+						<param name="align" value="center"/>
+						<param name="left" value="50"/>
+						<param name="top" value="0"/>
+						<param name="width" value="50"/>
+						<param name="height" value="1080"/>
+						<param name="orientation" value="vertical"/>
+						<param name="id" value="$PARAM[viewid]"/>
+					</include>
+				</control>
+				<control type="group"> <!-- incl. extended movieinfos -->
+					<left>158</left>
+					<top>-128</top>
+					<visible>Control.IsVisible($PARAM[viewid])+!Control.HasFocus(666)</visible>
+					<animation effect="rotatey" start="0" end="-10" center="left" time="250" condition="!Control.HasFocus(2000)">Conditional</animation>
+					<animation effect="slide" start="0" end="-120" time="250" condition="Control.HasFocus(2000)">Conditional</animation>
+					<include>opencloseslidedown</include>
+					<visible>ListItem.IsCollection|Container.Content(sets)</visible>
+					<visible>!String.Contains(ListItem.Label,..)</visible>
+					<control type="image">
+						<left>-15</left>
+						<top>202</top>
+						<width>1875</width>
+						<height>360</height>
+						<texture diffuse="masks/mask_round.png">BlackBack.png</texture>
+						<visible>!Control.HasFocus(2000)</visible>
+					</control>
+					<control type="image">
+						<left>-15</left>
+						<top>202</top>
+						<width>1875</width>
+						<height>360</height>
+						<colordiffuse>red</colordiffuse>
+						<texture diffuse="masks/mask_round.png" border="1">WhiteBack.png</texture>
+						<visible>Control.HasFocus(2000)</visible>
+					</control>
+					<control type="image">
+						<left>-15</left>
+						<top>202</top>
+						<width>1875</width>
+						<height>360</height>
+						<texture border="4">masks/Default_round.png</texture>
+					</control>
+					<include content="MovieSetInformationCover">
+						<param name="left" value="0"/>
+						<param name="top" value="225" />
+						<param name="LabelLeft" value="0"/>
+						<param name="LabelTop" value="555" />
+					</include>
+				</control>
+				<control type="group">
+					<top>35</top>
+					<include>opencloseslideleft</include>
+					<visible>Control.IsVisible($PARAM[viewid])+!Control.HasFocus(666)+!Control.HasFocus(2000)</visible>
+					<visible>Skin.HasSetting(RightlistPlot)+!String.IsEmpty(Container($PARAM[viewid]).ListItem.Plot)</visible>
+					<control type="image">
+						<left>1290</left>
+						<top>75</top>
+						<width>630</width>
+						<height>360</height>
+						<colordiffuse>black</colordiffuse>
+						<texture diffuse="WhiteBack.png" border="4">masks/mask_round.png</texture>
+					</control>
+					<control type="image">
+						<left>1290</left>
+						<top>75</top>
+						<width>660</width>
+						<height>360</height>
+						<texture border="4">masks/Default_round.png</texture>
+					</control>
+					<control type="textbox">
+						<left>1305</left>
+						<top>82</top>
+						<width>585</width>
+						<height>342</height>
+						<include condition="!Skin.HasSetting(BigPlotText)">PlotText16Var</include>
+						<include condition="Skin.HasSetting(BigPlotText)">PlotTextBigVar</include>
+						<label>$INFO[Container($PARAM[viewid]).ListItem.Plot]</label>
+					</control>
+				</control>
+				<include content="AlphaBarH" condition="!Skin.HasSetting(HideJumpSMSBar)"><param name="id" value="$PARAM[viewid]"/></include>
+			</control>
+		</definition>
+    </include>
+</includes>

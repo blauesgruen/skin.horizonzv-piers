@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<includes>
+    <include name="WeatherContentDefaultItem">
+        <item>
+            <label>$INFO[Window(Weather).Property(Day$PARAM[day_id].Title)]</label>
+            <label2>$INFO[Window(Weather).Property(Day$PARAM[day_id].LowTemp)]$INFO[System.TemperatureUnits] / $INFO[Window(Weather).Property(Day$PARAM[day_id].HighTemp)]$INFO[System.TemperatureUnits]</label2>
+            <icon>$VAR[WeatherIconVar]$INFO[Window(Weather).Property(Day$PARAM[day_id].Fanartcode)]$VAR[WeatherIconFolderVar]</icon>
+            <onclick>ActivateWindow(weather)</onclick>
+            <visible>Weather.IsFetched + String.IsEmpty(Window.Property(Daily.IsFetched))</visible>
+            <visible>$PARAM[visible]</visible>
+        </item>
+    </include>
+    <include name="WeatherContentDailyItem">
+        <item>
+            <label>$INFO[Window.Property(Daily.$PARAM[day_id].ShortDay)]</label>
+            <label2>$INFO[Window.Property(Daily.$PARAM[day_id].HighTemperature),, 7] $INFO[Window.Property(Daily.$PARAM[day_id].LowTemperature)]</label2>
+            <icon>$VAR[WeatherIconVar]$INFO[Window(Weather).Property(Daily.$PARAM[day_id].FanartCode)]$VAR[WeatherIconFolderVar]</icon>
+            <onclick>ActivateWindow(weather)</onclick>
+            <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Daily.IsFetched))</visible>
+            <visible>$PARAM[visible]</visible>
+        </item>
+    </include>
+</includes>

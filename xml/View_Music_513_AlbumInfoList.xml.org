@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <include name="View_513_InfoListAlbum">
+        <param name="viewid">513</param>
+        <definition>
+            <control type="group">
+                <include>openclose</include>
+                <visible>Control.IsVisible($PARAM[viewid])+!Control.HasFocus(666)</visible>
+                <control type="button" id="888">
+                    <onleft>Control.SetFocus(9000)</onleft>
+                    <onright>Control.SetFocus($PARAM[viewid])</onright>
+                    <ondown>Control.SetFocus($PARAM[viewid])</ondown>
+                    <include>HiddenButton</include>
+                </control>
+                <include>DialogBackgroundSimple</include>
+                <control type="group">
+                    <left>100</left>
+                    <right>100</right>
+                    <top>100</top>
+                    <bottom>100</bottom>
+                    <include>openclosebox</include>
+                    <visible>Control.IsVisible($PARAM[viewid])+!Control.HasFocus(666)</visible>
+                    <include content="DialogBackgroundCommons">
+                        <param name="header_id" value="" />
+                        <param name="header_label" value="$INFO[ListItem.Label2]" />
+                    </include>
+                    <control type="group">
+                        <left>SpacePadding</left>
+                        <top>70</top>
+                        <bottom>70</bottom>
+                        <control type="list" id="$PARAM[viewid]">
+                            <right>30%</right>
+                            <onleft>9000</onleft>
+                            <onright condition="Control.IsVisible($PARAM[viewid]1)">$PARAM[viewid]1</onright>
+                            <onright condition="!Control.IsVisible($PARAM[viewid]1)+Control.IsVisible(15000)">15000</onright>
+                            <onright condition="!Control.IsVisible($PARAM[viewid]1)+!Control.IsVisible(15000)">732</onright>
+                            <onup>$PARAM[viewid]</onup>
+                            <ondown>$PARAM[viewid]</ondown>
+                            <viewtype label="$LOCALIZE[10523]">list</viewtype>
+                            <pagecontrol>$PARAM[viewid]1</pagecontrol>
+                            <scrolltime>200</scrolltime>
+                            <visible>Container.Content(Albums)</visible>
+                            <itemlayout height="60" width="auto">
+                                <control type="label">
+                                    <left>15</left>
+                                    <height>60</height>
+                                    <textcolor>grey</textcolor>
+                                    <align>left</align>
+                                    <aligny>center</aligny>
+                                    <label>$INFO[ListItem.Label]</label>
+                                </control>
+                                <control type="label">
+                                    <left>45</left>
+                                    <height>60</height>
+                                    <textcolor>grey</textcolor>
+                                    <align>right</align>
+                                    <aligny>center</aligny>
+                                    <label>$INFO[ListItem.Label2]</label>
+                                </control>
+                            </itemlayout>
+                            <focusedlayout height="60" width="auto">
+                                <control type="group">
+                                    <!-- <include>focuseffect</include> -->
+                                    <control type="image">
+                                        <height>62</height>
+                                        <colordiffuse>grey1</colordiffuse>
+                                        <texture border="5">buttons/ButtonFOlightGlow.png</texture>
+                                        <visible>!Control.HasFocus($PARAM[viewid])</visible>
+                                    </control>
+                                    <control type="image">
+                                        <height>62</height>
+                                        <colordiffuse>grey1</colordiffuse>
+                                        <texture border="5">buttons/ButtonFOlightGlow.png</texture>
+                                        <visible>Control.HasFocus($PARAM[viewid])</visible>
+                                    </control>
+                                    <control type="label">
+                                        <left>15</left>
+                                        <height>60</height>
+                                        <textcolor>white</textcolor>
+                                        <shadowcolor>black</shadowcolor>
+                                        <align>left</align>
+                                        <aligny>center</aligny>
+                                        <label>$INFO[ListItem.Label]</label>
+                                    </control>
+                                    <control type="label">
+                                        <left>45</left>
+                                        <height>60</height>
+                                        <textcolor>white</textcolor>
+                                        <shadowcolor>black</shadowcolor>
+                                        <align>right</align>
+                                        <aligny>center</aligny>
+                                        <label>$INFO[ListItem.Label2]</label>
+                                    </control>
+                                </control>
+                            </focusedlayout>
+                        </control>
+                        <control type="scrollbar" id="$PARAM[viewid]1">
+                            <right>29%</right>
+                            <height>100%</height>
+                            <onleft>$PARAM[viewid]</onleft>
+                            <onright condition="!Skin.HasSetting(HideJumpSMSBar)">15000</onright>
+                            <onright condition="Skin.HasSetting(HideJumpSMSBar)">732</onright>
+                            <showonepage>false</showonepage>
+                            <orientation>vertical</orientation>
+                        </control>
+                        <control type="group">
+                            <right>0</right>
+                            <width>28%</width>
+                            <control type="image">
+                                <height>360</height>
+                                <aspectratio aligny="center" align="center">keep</aspectratio>
+                                <texture>$INFO[ListItem.Icon]</texture>
+                                <bordertexture border="8">ThumbShadow.png</bordertexture>
+                                <bordersize>8</bordersize>
+                            </control>
+                            <control type="grouplist">
+                                <left>20</left>
+                                <right>20</right>
+                                <top>380</top>
+                                <bottom>20</bottom>
+                                <orientation>vertical</orientation>
+                                <include>openclosemedium</include>
+                                <visible>Container.Content(Albums)</visible>
+                                <visible>!ListItem.IsParentFolder</visible>
+                                <control type="label">
+                                    <height>45</height>
+                                    <scroll>true</scroll>
+                                    <align>left</align>
+                                    <label>$LOCALIZE[515]: $INFO[ListItem.Genre]</label>
+                                </control>
+                                <control type="label">
+                                    <height>45</height>
+                                    <scroll>true</scroll>
+                                    <align>left</align>
+                                    <label>$LOCALIZE[562]: $INFO[ListItem.Year]</label>
+                                </control>
+                                <control type="label">
+                                    <height>45</height>
+                                    <scroll>true</scroll>
+                                    <label>$LOCALIZE[180]: $INFO[ListItem.Property(Album_Duration)]</label>
+                                </control>
+                                <control type="label">
+                                    <height>45</height>
+                                    <scroll>true</scroll>
+                                    <label>$LOCALIZE[21899]: $INFO[ListItem.Property(Album_Label)]</label>
+                                    <visible>!String.IsEmpty(ListItem.Property(Album_Label))</visible>
+                                </control>
+                                <control type="label">
+                                    <height>45</height>
+                                    <scroll>true</scroll>
+                                    <label>$LOCALIZE[175]: $INFO[ListItem.Property(Album_Mood)]</label>
+                                    <visible>!String.IsEmpty(ListItem.Property(Album_Mood))</visible>
+                                </control>
+                                <control type="label">
+                                    <height>45</height>
+                                    <scroll>true</scroll>
+                                    <label>$LOCALIZE[176]: $INFO[ListItem.Property(Album_Style)]</label>
+                                    <visible>!String.IsEmpty(ListItem.Property(Album_Style))</visible>
+                                </control>
+                                <control type="label">
+                                    <height>45</height>
+                                    <scroll>true</scroll>
+                                    <label>$LOCALIZE[15111]: $INFO[ListItem.Property(Album_Theme)]</label>
+                                    <visible>!String.IsEmpty(ListItem.Property(Album_Theme))</visible>
+                                </control>
+                                <control type="label">
+                                    <height>45</height>
+                                    <scroll>true</scroll>
+                                    <label>$LOCALIZE[467]: $INFO[ListItem.Property(Album_Type)]</label>
+                                    <visible>!String.IsEmpty(ListItem.Property(Album_Type))</visible>
+                                </control>
+                                <control type="fadelabel">
+                                    <width>600</width>
+                                    <height>45</height>
+                                    <scroll>true</scroll>
+                                    <align>left</align>
+                                    <aligny>center</aligny>
+                                    <label>$LOCALIZE[858] $LOCALIZE[563]: $INFO[ListItem.UserRating] $INFO[ListItem.Property(Album_Rating), / $LOCALIZE[563]:,]</label>
+                                    <scrollout>false</scrollout>
+                                    <pauseatend>2000</pauseatend>
+                                    <visible>!String.IsEmpty(ListItem.UserRating)|!String.IsEmpty(ListItem.Property(Album_Rating))</visible>
+                                </control>
+                                <control type="image">
+                                    <description>Rating value</description>
+                                    <height>39</height>
+                                    <aspectratio align="left">keep</aspectratio>
+                                    <texture>$INFO[ListItem.UserRating,leftuserrating/,.png]</texture>
+                                </control>
+                            </control>
+                        </control>
+                    </control>
+                </control>
+                <include>CommonPageCount</include>
+                <include content="ScrollOffsetLabel">
+                    <param name="left">-10</param>
+                    <param name="top">100</param>
+                </include>
+				<include content="AlphaBarH" condition="!Skin.HasSetting(HideJumpSMSBar)"><param name="id" value="$PARAM[viewid]"/></include>
+				<control type="button" id="777">
+					<include>HiddenButton</include>
+					<onfocus>Control.SetFocus($PARAM[viewid])</onfocus>
+				</control>
+            </control>
+        </definition>
+    </include>
+</includes>

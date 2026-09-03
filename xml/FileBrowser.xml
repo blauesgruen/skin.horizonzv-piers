@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+    <defaultcontrol always="true">450</defaultcontrol>
+	<backgroundcolor>grey3</backgroundcolor>
+    <include>openclose</include>
+    <controls>
+        <include>DialogBackgroundSimple</include>
+		<control type="group">
+			<include>openclosebox</include>
+			<include content="DialogBackgroundCommons">
+				<param name="width" value="1300" />
+				<param name="height" value="80%" />
+				<param name="header_id" value="411" />
+				<param name="header_label" value="1023" />
+			</include>
+			<control type="group">
+				<include>openclosefanart</include>
+				<left>SpacePadding</left>
+				<right>SpacePadding</right>
+				<top>SpacePaddingXL</top>
+				<bottom>SpacePaddingXL</bottom>
+				<control type="grouplist" id="9000">
+					<right>0</right>
+					<width>300</width>
+					<itemgap>8</itemgap>
+					<orientation>vertical</orientation>
+					<onleft>450</onleft>
+					<onright>450</onright>
+					<onup>9000</onup>
+					<ondown>9000</ondown>
+					<include content="DefaultDialogButton">
+						<param name="id" value="413" />
+						<param name="width" value="100%" />
+						<param name="label" value="$LOCALIZE[186]" />
+						<param name="font" value="impacted18" />
+						<param name="onleft" value="450" />
+						<param name="onright" value="450" />
+					</include>
+					<include content="DefaultDialogButton">
+						<param name="id" value="414" />
+						<param name="width" value="100%" />
+						<param name="label" value="$LOCALIZE[222]" />
+						<param name="font" value="impacted18" />
+						<param name="onleft" value="450" />
+						<param name="onright" value="450" />
+					</include>
+					<include content="DefaultDialogButton">
+						<param name="id" value="415" />
+						<param name="width" value="100%" />
+						<param name="label" value="$LOCALIZE[119]" />
+						<param name="font" value="impacted18" />
+						<param name="onleft" value="450" />
+						<param name="onright" value="450" />
+						<param name="visible" value="Control.IsEnabled(415)" />
+					</include>
+					<include content="DefaultDialogButton">
+						<param name="id" value="416" />
+						<param name="width" value="100%" />
+						<param name="label" value="$LOCALIZE[749]" />
+						<param name="font" value="impacted18" />
+						<param name="onleft" value="450" />
+						<param name="onright" value="450" />
+						<param name="visible" value="Control.IsEnabled(416)" />
+					</include>
+				</control>
+				<control type="group">
+					<right>0</right>
+					<bottom>0</bottom>
+					<width>316</width>
+					<height>450</height>
+					<control type="image">
+						<aspectratio aligny="bottom">keep</aspectratio>
+						<texture>$INFO[ListItem.Icon]</texture>
+						<visible>!String.Contains(Control.GetLabel(416),*)</visible>
+					</control>
+					<control type="image">
+						<aspectratio aligny="bottom">keep</aspectratio>
+						<texture flipx="true">$INFO[ListItem.Icon]</texture>
+						<visible>String.Contains(Control.GetLabel(416),*)</visible>
+					</control>
+				</control>
+				<control type="group">
+					<right>340</right>
+					<control type="panel" id="450">
+						<onleft>9000</onleft>
+						<onright>60</onright>
+						<onup>450</onup>
+						<ondown>450</ondown>
+						<pagecontrol>60</pagecontrol>
+						<scrolltime>200</scrolltime>
+						<include content="DefaultMediaInfoListLayout">
+							<param name="list_id" value="450" />
+							<param name="width" value="890" />
+							<param name="height" value="60" />
+							<param name="label_1" value="$INFO[ListItem.Label]" />
+							<param name="label_2" />
+							<param name="label_3" />
+						</include>
+					</control>
+					<control type="panel" id="451">
+						<onleft>9000</onleft>
+						<onright>60</onright>
+						<onup>451</onup>
+						<ondown>451</ondown>
+						<pagecontrol>60</pagecontrol>
+						<scrolltime>200</scrolltime>
+						<include content="DefaultMediaInfoListLayout">
+							<param name="list_id" value="451" />
+							<param name="width" value="890" />
+							<param name="height" value="80" />
+							<param name="label_1" value="$INFO[ListItem.Label]" />
+							<param name="label_2" />
+							<param name="label_3" />
+						</include>
+					</control>
+					<control type="scrollbar" id="60">
+						<left>100%</left>
+						<height>100%</height>
+						<onleft>450</onleft>
+						<onright>9000</onright>
+						<showonepage>true</showonepage>
+						<orientation>vertical</orientation>
+					</control>
+				</control>
+			</control>
+			<control type="group">
+				<bottom>6</bottom>
+				<height>45</height>
+				<control type="group">
+					<right>15</right>
+					<width>50%</width>
+					<control type="label">
+						<description>Page label</description>
+						<align>right</align>
+						<aligny>center</aligny>
+						<font>impacted18</font>
+						<textcolor>grey</textcolor>
+						<label>([COLOR=white]$INFO[Container(450).NumItems][/COLOR]) $LOCALIZE[31009] - $LOCALIZE[31008] ([COLOR=white]$INFO[Container(450).CurrentPage]/$INFO[Container(450).NumPages][/COLOR])</label>
+						<wrapmultiline>true</wrapmultiline>
+						<visible>!Control.IsVisible(451)</visible>
+					</control>
+					<control type="label">
+						<description>Page label</description>
+						<align>right</align>
+						<aligny>center</aligny>
+						<font>impacted18</font>
+						<textcolor>grey</textcolor>
+						<label>([COLOR=white]$INFO[Container(451).NumItems][/COLOR]) $LOCALIZE[31009] - $LOCALIZE[31008] ([COLOR=white]$INFO[Container(451).CurrentPage]/$INFO[Container(451).NumPages][/COLOR])</label>
+						<wrapmultiline>true</wrapmultiline>
+						<visible>Control.IsVisible(451)</visible>
+					</control>
+				</control>
+				<control type="label" id="412">
+					<description>Path label</description>
+					<left>15</left>
+					<width>50%</width>
+					<height>45</height>
+					<haspath>true</haspath>
+					<align>left</align>
+					<font>impacted18</font>
+					<textcolor>white</textcolor>
+				</control>
+			</control>
+		</control>
+        <control type="group">
+            <include>Clock</include>
+        </control>
+    </controls>
+</window>

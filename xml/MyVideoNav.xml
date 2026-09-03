@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+    <defaultcontrol always="true">50</defaultcontrol>
+	<backgroundcolor>grey3</backgroundcolor>
+    <menucontrol>9000</menucontrol>
+    <include>ViewidVideo</include>
+    <controls>
+		<include condition="System.HasAddon(plugin.video.themoviedb.helper)">TMDbhelperListButton</include>
+        <include>fakebutton_visible_bkg</include>
+        <include>BackgroundMyNavs</include>
+        <include>ViewsVideo</include>
+        <control type="group">
+            <include>SidePanelBackgroundOverlay</include>
+            <control type="group">
+                <visible>!Skin.HasSetting(KioskMode)</visible>
+                <include>SidePanelAnimation</include>
+                <include>SidePanelBackground</include>
+                <control type="grouplist" id="9000">
+                    <include>SidePanelProperty</include>
+                    <control type="button" id="1">
+                        <description>View</description>
+                        <label>31002</label>
+                        <include>SidePanelButton</include>
+                        <onclick>Control.SetFocus(9001)</onclick>
+                    </control>
+                    <!-- <control type="button" id="2">
+                        <description>Sort by button</description>
+                        <include>SidePanelButton</include>
+                        <label>Views</label>
+                    </control> -->
+                    <control type="button" id="3">
+                        <description>Sort by button</description>
+                        <include>SidePanelButton</include>
+                        <label>103</label>
+                    </control>
+                    <control type="togglebutton" id="4">
+                        <description>Sort asc</description>
+                        <include>SidePanelToggleButton</include>
+                        <label>31024</label>
+                        <altlabel>31023</altlabel>
+                        <usealttexture>Container.SortDirection(Ascending)</usealttexture>
+                    </control>
+                    <control type="edit" id="19">
+                        <visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>
+                        <description>Filter</description>
+                        <textwidth>345</textwidth>
+                        <include>SidePanelButton</include>
+                        <label>587</label>
+                    </control>
+                    <control type="radiobutton" id="98">
+                        <visible>Container.CanFilterAdvanced</visible>
+                        <description>Filter</description>
+                        <include>SidePanelToggleButton</include>
+                        <label>587</label>
+                        <selected>Container.Filtered</selected>
+                        <onclick>right</onclick>
+                        <onclick>Filter</onclick>
+                    </control>
+                    <control type="radiobutton" id="99">
+                        <description>Show Info Toggle</description>
+                        <include>SidePanelToggleButton</include>
+                        <label>31005</label>
+                        <onclick>Skin.ToggleSetting(View508HideInfo)</onclick>
+                        <selected>Skin.HasSetting(View508HideInfo)</selected>
+                        <visible>Control.IsVisible(508)</visible>
+                    </control>
+                    <!-- <control type="radiobutton" id="14">
+                        <description>Watched Toggle</description>
+                        <include>SidePanelToggleButton</include>
+                        <label>20367</label>
+                    </control> -->
+                    <control type="button" id="10">
+                        <description>Watched Toggle</description>
+                        <include>SidePanelToggleButton</include>
+                        <label2>$INFO[Container.NumItems]</label2>
+                    </control>
+                    <control type="button" id="8">
+                        <description>Search</description>
+                        <include>SidePanelButton</include>
+                        <label>137</label>
+                    </control>
+                    <control type="radiobutton" id="16">
+                        <description>PartyMode</description>
+                        <label>589</label>
+                        <include>SidePanelToggleButton</include>
+                        <visible>Container.Content(MusicVideos)</visible>
+                    </control>
+                    <control type="radiobutton" id="11">
+                        <description>Unlock Shares</description>
+                        <include>SidePanelToggleButton</include>
+                        <label>20336</label>
+                        <onclick>mastermode</onclick>
+                        <selected>system.ismaster</selected>
+                        <visible>system.haslocks</visible>
+                    </control>
+                    <control type="togglebutton" id="20">
+                        <description>Update library</description>
+                        <include>SidePanelToggleButton</include>
+                        <label>653</label>
+                        <altlabel>13353</altlabel>
+                        <usealttexture>library.isscanningvideo</usealttexture>
+                    </control>
+                    <control type="button" id="210">
+                        <description>Select genre icons</description>
+                        <include>SidePanelButton</include>
+                        <label>301512</label>
+                        <onclick>RunScript(script.image.resource.select,property=moviegenreicons&amp;type=resource.images.moviegenreicons)</onclick>
+                        <visible>System.HasAddon(script.image.resource.select)+Container.Content(genres)</visible>
+                    </control>
+                    <control type="button" id="212">
+                        <description>Select Studio icons</description>
+                        <include>SidePanelButton</include>
+                        <label>301510</label>
+                        <onclick>RunScript(script.image.resource.select,property=studiologos&amp;type=resource.images.studios)</onclick>
+                        <visible>System.HasAddon(script.image.resource.select)+[Control.IsVisible(9898)|Container.Content(studios)]</visible>
+                    </control>
+                    <control type="button" id="624">
+                        <description>Addon Settings</description>
+                        <include>SidePanelButton</include>
+                        <label>$LOCALIZE[10140]</label>
+                        <onclick>Addon.OpenSettings($INFO[Container.PluginName])</onclick>
+                        <visible>!String.IsEmpty(Container.PluginName)</visible>
+                    </control>
+                </control>
+                <include>SidePanelNavigation</include>
+                <control type="image">
+                    <width>akzentline_size</width>
+                    <left>SidePanelLeftWidth</left>
+                    <colordiffuse>$VAR[BackgroundOverlayColorDialog]</colordiffuse>
+                    <texture>White.png</texture>
+                    <animation effect="slide" end="-2" time="0" condition="true">Conditional</animation>
+                </control>
+            </control>
+        </control>
+        <include>FakeLabelStudioClearartRating</include>
+        <include>SidePanelShortcuts</include>
+        <include>ViewTypeList</include>
+        <include>cs_rightpanel</include>
+        <include>Clock</include>
+        <control type="group">
+            <include>NavInfo</include>
+            <visible>!Control.IsVisible(740)</visible>
+        </control>
+        <include>BehindDialogFadeOut</include>
+        <include>TouchButtons</include>
+        <!-- <include content="MovieSetInformationList">
+            <param name="list_id">2002</param>
+            <param name="textcolor">white</param>
+        </include>
+        <control type="label" id="2003">
+            <left>50%</left>
+            <top>200</top>
+            <label>ANZAHL: $INFO[Container(2002).NumItems]</label>
+        </control> -->
+    </controls>
+</window>

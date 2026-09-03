@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="skin.horizonzv" name="Horizonz V" version="1.22.0.0" provider-name="blauesgruen">
+	<requires>
+		<import addon="xbmc.gui" version="5.17.0"/>
+	</requires>
+	<extension point="xbmc.gui.skin" debugging="false" effectslowdown="0.60">
+		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
+		<res width="1920" height="1280" aspect="3:2" default="false" folder="xml" />
+		<res width="1920" height="1200" aspect="16:10" default="false" folder="xml" />
+		<res width="2040" height="1080" aspect="17:9" default="false" folder="xml" />
+		<res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
+		<res width="2560" height="1080" aspect="21:9" default="false" folder="xml" />
+		<res width="2338" height="1080" aspect="19.5:9" default="false" folder="xml" />
+		<res width="2160" height="1080" aspect="18:9" default="false" folder="xml" />
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary>Skin von blauesgruen</summary>
+		<description>Unterstütze Addons:[CR]Auto Completition, Artist Slide Show, Artwork Beef, CDArt Manager, Extended Info Script, Global Search, Fritz Smart Home (by Birger Jesch), German Telecast Offers (by Birger Jesch), KN Switchtimer Service (by Birger Jesch), Library Node Editor, Skinhelper Ping (by _Andy_) ...</description>
+		<disclaimer>Ursprünglich basierte der Skin auf den Mockups von xb2iris Skin "Horizonz".</disclaimer>
+		<language>de</language>
+		<platform>all</platform>
+		<license>CC BY-SA 4.0, GNU GENERAL PUBLIC LICENSE Version 2.0</license>
+        <email></email>
+		<news>v 1.22.0.0
+- Fix: Sichtbarkeit der TV Wall auf Internetstream und PVR-Radio reduziert
+v 1.21.3.30
+- Fix: Sichtbarkeit der Logos in Musicvisualisierung verbessert
+- Fix: Sichtbarkeit der Senderlogos im PVR-Bereich verbessert (Senderlogo-Hintergrund abschaltbar in SkinSettings - Design)
+- Fix: Radioansicht wechselt nicht mehr zur Playerinfo (umschaltbar in Musik OSD - Titelinformationen) -  betrifft nur den Radioview in Musicvisualisierung
+v 1.21.3.29
+- Fix: PVR-Senderkanalnummer wird nun auch angezeigt, wenn die neue Option des ASM-QF Addons genutzt wird.
+- Neu: TV-Wall-Hintergrund bei Radiowiedergabe eingebaut. Abschaltbar.
+v 1.21.3.28
+- Fix: Überblendzeit für Artistslideshow erhöht
+v 1.21.3.27
+- Fix: Radioschatten in Musicvisualisierung korrigiert
+- Fix: Farben des Radiodisplayhintergrundes und des Textes in Musicvisualisierung für bessere Sichtbarkeit verändert</news>
+		<forum>https://www.kodinerds.net/board/100-horizonz-v/</forum>
+		<source>https://github.com/blauesgruen/skin.horizonzv-omega</source>
+			<assets>
+				<icon>resources/icon.png</icon>
+				<fanart>resources/fanart.jpg</fanart>
+				<screenshot>resources/screenshot-01.jpg</screenshot>
+				<screenshot>resources/screenshot-02.jpg</screenshot>
+				<screenshot>resources/screenshot-03.jpg</screenshot>
+				<screenshot>resources/screenshot-04.jpg</screenshot>
+				<screenshot>resources/screenshot-05.jpg</screenshot>
+				<screenshot>resources/screenshot-06.jpg</screenshot>
+				<screenshot>resources/screenshot-07.jpg</screenshot>
+				<screenshot>resources/screenshot-08.jpg</screenshot>
+			</assets>
+	</extension>
+</addon>

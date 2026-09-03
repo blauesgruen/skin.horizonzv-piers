@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+	<variable name="DashboardRow5_Label">
+		<value condition="Skin.HasSetting(Row5_Weather)">$LOCALIZE[301608]</value>
+		<value condition="Skin.HasSetting(Row5_GTO)">$LOCALIZE[301610]</value>
+		<value condition="Skin.HasSetting(Row5_Path)">$LOCALIZE[573]</value>
+		<value condition="Skin.HasSetting(Row5_Fav)">$LOCALIZE[1036]</value>
+		<value condition="Skin.HasSetting(Row5_Fritzact)">$LOCALIZE[301612]</value>
+		<value condition="Skin.HasSetting(Row5_off)">$LOCALIZE[351]</value>
+	</variable>
+	<variable name="DashboardRow4_Label">
+		<value condition="Skin.HasSetting(Row4_Weather)">$LOCALIZE[301608]</value>
+		<value condition="Skin.HasSetting(Row4_GTO)">$LOCALIZE[301610]</value>
+		<value condition="Skin.HasSetting(Row4_Path)">$LOCALIZE[573]</value>
+		<value condition="Skin.HasSetting(Row4_Fav)">$LOCALIZE[1036]</value>
+		<value condition="Skin.HasSetting(Row4_Fritzact)">$LOCALIZE[301612]</value>
+		<value condition="Skin.HasSetting(Row4_off)">$LOCALIZE[351]</value>
+	</variable>
+	<variable name="DashboardRow3_Label">
+		<value condition="Skin.HasSetting(Row3_Weather)">$LOCALIZE[301608]</value>
+		<value condition="Skin.HasSetting(Row3_GTO)">$LOCALIZE[301610]</value>
+		<value condition="Skin.HasSetting(Row3_Path)">$LOCALIZE[573]</value>
+		<value condition="Skin.HasSetting(Row3_Fav)">$LOCALIZE[1036]</value>
+		<value condition="Skin.HasSetting(Row3_Fritzact)">$LOCALIZE[301612]</value>
+		<value condition="Skin.HasSetting(Row3_off)">$LOCALIZE[351]</value>
+	</variable>
+	<variable name="DashboardRow2_Label">
+		<value condition="Skin.HasSetting(Row2_Weather)">$LOCALIZE[301608]</value>
+		<value condition="Skin.HasSetting(Row2_GTO)">$LOCALIZE[301610]</value>
+		<value condition="Skin.HasSetting(Row2_Path)">$LOCALIZE[573]</value>
+		<value condition="Skin.HasSetting(Row2_Fav)">$LOCALIZE[1036]</value>
+		<value condition="Skin.HasSetting(Row2_Fritzact)">$LOCALIZE[301612]</value>
+		<value condition="Skin.HasSetting(Row2_off)">$LOCALIZE[351]</value>
+	</variable>
+	<variable name="DashboardRow1_Label">
+		<value condition="Skin.HasSetting(AddonDashboard)">$LOCALIZE[24001]</value>
+		<value condition="Skin.HasSetting(FavDashboard)">$LOCALIZE[1036]</value>
+	</variable>
+	<variable name="WidgetTarget_Dash">
+		<value condition="String.Contains(ListItem.DBTYPE,music)">music</value>
+		<value condition="String.Contains(ListItem.DBTYPE,song)">music</value>
+		<value condition="String.Contains(ListItem.DBTYPE,album)">music</value>
+		<value condition="String.Contains(ListItem.DBTYPE,artist)">music</value>
+		<value condition="String.Contains(ListItem.FolderPath,audio)">music</value>
+		<value condition="String.Contains(ListItem.DBTYPE,video)">videos</value>
+		<value condition="String.Contains(ListItem.DBTYPE,movie)">videos</value>
+		<value condition="String.Contains(ListItem.DBTYPE,set)">videos</value>
+		<value condition="String.Contains(ListItem.DBTYPE,tvshow)">videos</value>
+		<value condition="String.Contains(ListItem.DBTYPE,season)">videos</value>
+		<value condition="String.Contains(ListItem.DBTYPE,episode)">videos</value>
+		<value condition="String.Contains(ListItem.DBTYPE,musicvideo)">videos</value>
+		<value condition="String.Contains(Container(9000).ListItem.Property(homemenu_id),games)">games</value>
+		<value condition="String.Contains(ListItem.FolderPath,pvr://recordings)">tvrecordings</value>
+		<value condition="String.Contains(ListItem.FolderPath,pvr://timers)">pvr</value>
+		<value condition="String.Contains(ListItem.FolderPath,pvr://channels)">tvchannels</value>
+		<value condition="String.Contains(Window(home).Property(WidgetLabel),$LOCALIZE[20094])">videos</value>
+		<value condition="String.Contains(ListItem.FolderPath,addons://)">addonbrowser</value>
+		<value condition="String.Contains(ListItem.FolderPath,favourites://)">favourites</value>
+		<value condition="String.Contains(ListItem.FolderPath,movie)">videos</value>
+		<value condition="String.Contains(ListItem.FolderPath,episodes)">videos</value>
+		<value condition="String.Contains(ListItem.FolderPath,video)">videos</value>
+		<value condition="String.Contains(ListItem.FolderPath,plugin://)">addons</value>
+	</variable>
+	<variable name="WidgetTarget_Dash_FirstItem">
+		<value condition="String.Contains(Container.ListItem(1).DBTYPE,music)">music</value>
+		<value condition="String.Contains(Container.ListItem(1).DBTYPE,song)">music</value>
+		<value condition="String.Contains(Container.ListItem(1).DBTYPE,album)">music</value>
+		<value condition="String.Contains(Container.ListItem(1).DBTYPE,artist)">music</value>
+		<value condition="String.Contains(Container.ListItem(1).FolderPath,audio)">music</value>
+		<value condition="String.Contains(Container.ListItem(1).DBTYPE,video)">videos</value>
+		<value condition="String.Contains(Container.ListItem(1).DBTYPE,movie)">videos</value>
+		<value condition="String.Contains(Container.ListItem(1).DBTYPE,set)">videos</value>
+		<value condition="String.Contains(Container.ListItem(1).DBTYPE,tvshow)">videos</value>
+		<value condition="String.Contains(Container.ListItem(1).DBTYPE,season)">videos</value>
+		<value condition="String.Contains(Container.ListItem(1).DBTYPE,episode)">videos</value>
+		<value condition="String.Contains(Container.ListItem(1).DBTYPE,musicvideo)">videos</value>
+		<value condition="String.Contains(Container(9000).ListItem(1).Property(homemenu_id),games)">games</value>
+		<value condition="String.Contains(Container.ListItem(1).FolderPath,pvr://recordings)">tvrecordings</value>
+		<value condition="String.Contains(Container.ListItem(1).FolderPath,pvr://timers)">pvr</value>
+		<value condition="String.Contains(Container.ListItem(1).FolderPath,pvr://channels)">tvchannels</value>
+		<value condition="String.Contains(Window(home).Property(WidgetLabel),$LOCALIZE[20094])">videos</value>
+		<value condition="String.Contains(Container.ListItem(1).FolderPath,addons://)">addonbrowser</value>
+		<value condition="String.Contains(Container.ListItem(1).FolderPath,favourites://)">favourites</value>
+		<value condition="String.Contains(Container.ListItem(1).FolderPath,movie)">videos</value>
+		<value condition="String.Contains(Container.ListItem(1).FolderPath,episodes)">videos</value>
+		<value condition="String.Contains(Container.ListItem(1).FolderPath,video)">videos</value>
+		<value condition="String.Contains(Container.ListItem(1).FolderPath,plugin://)">addons</value>
+		<!-- <value>videos</value> -->
+	</variable>
+</includes>

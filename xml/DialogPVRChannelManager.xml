@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+    <defaultcontrol always="true">20</defaultcontrol>
+	<backgroundcolor>grey3</backgroundcolor>
+    <include>openclose</include>
+    <include>openclosebox</include>
+    <controls>
+        <include>DialogBackgroundSimple</include>
+        <control type="group">
+			<include content="DialogBackgroundCommons">
+				<param name="width" value="90%" />
+				<param name="height" value="90%" />
+				<param name="header_id" value="2" />
+				<param name="header_label" value="$VAR[PVRChannelMgrHeader]" />
+			</include>
+            <control type="group">
+                <left>SpacePadding</left>
+                <right>SpacePadding</right>
+                <top>SpacePaddingXL</top>
+                <bottom>SpacePaddingXL</bottom>
+                <control type="group">
+                    <right>350</right>
+                    <control type="group"> <!-- Channel list group left side -->
+                        <width>48%</width>
+                        <control type="scrollbar" id="60">
+                            <left>100%</left>
+                            <height>100%</height>
+                            <onleft>20</onleft>
+                            <onright>9002</onright>
+                            <showonepage>false</showonepage>
+                            <orientation>vertical</orientation>
+                        </control>
+                        <control type="group">
+                            <right>5</right>
+                            <control type="image">
+                                <colordiffuse>fanartdiffuse</colordiffuse>
+                                <texture border="5">buttons/KeyboardEditArea.png</texture>
+                            </control>
+                            <control type="list" id="20">
+                                <left>10</left>
+                                <right>10</right>
+                                <top>10</top>
+                                <bottom>10</bottom>
+                                <onup>20</onup>
+                                <ondown>20</ondown>
+                                <onleft>9000</onleft>
+                                <onright>60</onright>
+                                <itemgap>4</itemgap>
+                                <pagecontrol>60</pagecontrol>
+                                <scrolltime>200</scrolltime>
+                                <itemlayout height="98">
+                                    <control type="image">
+                                        <left>10</left>
+                                        <width>60</width>
+                                        <texture>$INFO[ListItem.Property(Icon)]</texture>
+                                        <aspectratio aligny="center" align="left">keep</aspectratio>
+                                    </control>
+                                    <control type="label">
+                                        <left>85</left>
+                                        <height>60</height>
+                                        <label>$INFO[ListItem.Property(Number),(,) - ]$INFO[ListItem.Property(Name)]</label>
+                                        <visible>ListItem.Property(ActiveChannel)</visible>
+                                    </control>
+                                    <control type="label">
+                                        <left>85</left>
+                                        <height>60</height>
+                                        <font>font12</font>
+                                        <textcolor>grey1</textcolor>
+                                        <label>$INFO[ListItem.Property(Number),(,) - ]$INFO[ListItem.Property(Name)]</label>
+                                        <visible>!ListItem.Property(ActiveChannel)</visible>
+                                    </control>
+                                    <control type="image">
+                                        <right>20</right>
+                                        <texture>OverlayWatched.png</texture>
+                                        <aspectratio align="right">keep</aspectratio>
+                                        <visible>ListItem.Property(Changed)</visible>
+                                    </control>
+                                    <control type="label">
+                                        <left>85</left>
+                                        <top>45</top>
+                                        <height>45</height>
+                                        <font>font12</font>
+                                        <textcolor>grey</textcolor>
+                                        <shadowcolor>grey3</shadowcolor>
+                                        <label>$LOCALIZE[19210]: $INFO[ListItem.Property(ClientName)]</label>
+                                    </control>
+                                </itemlayout>
+                                <focusedlayout height="98">
+                                    <control type="image">
+                                        <include>DialogButtonTextureFocus</include>
+                                        <visible>Control.HasFocus(20)</visible>
+                                    </control>
+                                    <control type="image">
+                                        <include>DialogButtonTextureNoFocus</include>
+                                        <visible>!Control.HasFocus(20)</visible>
+                                    </control>
+                                    <control type="image">
+                                        <left>10</left>
+                                        <width>60</width>
+                                        <texture>$INFO[ListItem.Property(Icon)]</texture>
+                                        <aspectratio aligny="center" align="left">keep</aspectratio>
+                                    </control>
+                                    <control type="label">
+                                        <left>85</left>
+                                        <height>60</height>
+                                        <textcolor>black</textcolor>
+                                        <label>$INFO[ListItem.Property(Number),(,) - ]$INFO[ListItem.Property(Name)]</label>
+                                        <visible>ListItem.Property(ActiveChannel)</visible>
+                                        <visible>Control.HasFocus(20)</visible>
+                                    </control>
+                                    <control type="label">
+                                        <left>85</left>
+                                        <height>60</height>
+                                        <font>font12</font>
+                                        <align>left</align>
+                                        <textcolor>black</textcolor>
+                                        <label>$INFO[ListItem.Property(Number),(,) - ]$INFO[ListItem.Property(Name)]</label>
+                                        <visible>!ListItem.Property(ActiveChannel)</visible>
+                                        <visible>Control.HasFocus(20)</visible>
+                                    </control>
+                                    <control type="image">
+                                        <right>20</right>
+                                        <texture>OverlayWatched.png</texture>
+                                        <aspectratio align="right">keep</aspectratio>
+                                        <visible>ListItem.Property(Changed)</visible>
+                                    </control>
+                                    <control type="label">
+                                        <left>85</left>
+                                        <top>45</top>
+                                        <height>45</height>
+                                        <font>font12</font>
+                                        <textcolor>grey3</textcolor>
+                                        <label>$LOCALIZE[19210]: $INFO[ListItem.Property(ClientName)]</label>
+                                        <visible>Control.HasFocus(20)</visible>
+                                    </control>
+                                    <!-- unfocus -->
+                                    <control type="label">
+                                        <left>85</left>
+                                        <height>60</height>
+                                        <textcolor>white</textcolor>
+                                        <label>$INFO[ListItem.Property(Number),(,) - ]$INFO[ListItem.Property(Name)]</label>
+                                        <visible>ListItem.Property(ActiveChannel)</visible>
+                                        <visible>!Control.HasFocus(20)</visible>
+                                    </control>
+                                    <control type="label">
+                                        <left>85</left>
+                                        <height>60</height>
+                                        <font>font12</font>
+                                        <align>left</align>
+                                        <textcolor>white</textcolor>
+                                        <label>$INFO[ListItem.Property(Number),(,) - ]$INFO[ListItem.Property(Name)]</label>
+                                        <visible>!ListItem.Property(ActiveChannel)</visible>
+                                        <visible>!Control.HasFocus(20)</visible>
+                                    </control>
+                                    <control type="label">
+                                        <left>85</left>
+                                        <top>45</top>
+                                        <height>45</height>
+                                        <font>font12</font>
+                                        <textcolor>white</textcolor>
+                                        <label>$LOCALIZE[19210]: $INFO[ListItem.Property(ClientName)]</label>
+                                        <visible>!Control.HasFocus(20)</visible>
+                                    </control>
+                                </focusedlayout>
+                            </control>
+                        </control>
+                    </control>
+                    <control type="group"> <!-- Channel Settings middle -->
+                        <left>50%</left>
+                        <right>0</right>
+                        <control type="image">
+                            <colordiffuse>fanartdiffuse</colordiffuse>
+                            <texture border="5">buttons/KeyboardEditArea.png</texture>
+                        </control>
+                        <control type="group">
+                            <left>10</left>
+                            <right>10</right>
+                            <top>10</top>
+                            <bottom>10</bottom>
+                            <control type="grouplist" id="9002">
+                                <onleft>60</onleft>
+                                <onright>9000</onright>
+                                <onup>34</onup>
+                                <ondown>9003</ondown>
+                                <itemgap>dialogbuttons_itemgap</itemgap>
+                                <control type="label" id="9001">
+                                    <description>channel options Header</description>
+                                    <height>38</height>
+                                    <label>$LOCALIZE[31077]</label>
+                                    <align>center</align>
+                                    <textcolor>selected</textcolor>
+                                    <shadowcolor>black</shadowcolor>
+                                </control>
+                                <include content="DialogRadioButton">
+                                    <param name="id" value="7" />
+                                    <param name="width" value="100%" />
+                                    <param name="label" value="$LOCALIZE[19074]" />
+                                    <param name="align" value="left" />
+                                    <param name="onleft" value="60" />
+                                    <param name="onright" value="9000" />
+                                    <param name="nofocus" />
+                                </include>
+                                <include content="DialogEditButton">
+                                    <param name="id" value="8" />
+                                    <param name="width" value="100%" />
+                                    <param name="label" value="$LOCALIZE[19201]" />
+                                    <param name="align" value="left" />
+                                    <param name="onleft" value="60" />
+                                    <param name="onright" value="9000" />
+                                    <param name="nofocus" />
+                                </include>
+                                <include content="DefaultDialogButton">
+                                    <param name="id" value="9" />
+                                    <param name="width" value="100%" />
+                                    <param name="label" value="$LOCALIZE[19202]" />
+                                    <param name="label2" value="$INFO[ListItem.Property(Icon)]" />
+                                    <param name="align" value="left" />
+                                    <param name="onleft" value="60" />
+                                    <param name="onright" value="9000" />
+                                    <param name="nofocus" />
+                                </include>
+                                <include content="DialogRadioButton">
+                                    <param name="id" value="12" />
+                                    <param name="width" value="100%" />
+                                    <param name="label" value="$LOCALIZE[19206]" />
+                                    <param name="align" value="left" />
+                                    <param name="onleft" value="60" />
+                                    <param name="onright" value="9000" />
+                                    <param name="nofocus" />
+                                </include>
+                                <include content="DialogSpinButton">
+                                    <param name="id" value="13" />
+                                    <param name="width" value="100%" />
+                                    <param name="label" value="$LOCALIZE[19200]" />
+                                    <param name="align" value="left" />
+                                    <param name="onleft" value="60" />
+                                    <param name="onright" value="9000" />
+                                    <param name="nofocus" />
+                                </include>
+                                <include content="DialogRadioButton">
+                                    <param name="id" value="15" />
+                                    <param name="width" value="100%" />
+                                    <param name="label" value="$LOCALIZE[19267]" />
+                                    <param name="align" value="left" />
+                                    <param name="onleft" value="60" />
+                                    <param name="onright" value="9000" />
+                                    <param name="nofocus" />
+                                </include>
+                            </control>
+                            <control type="grouplist" id="9003">
+                                <bottom>0</bottom>
+                                <height>220</height>
+                                <itemgap>dialogbuttons_itemgap</itemgap>
+                                <onleft>60</onleft>
+                                <onright>9000</onright>
+                                <onup>9002</onup>
+                                <ondown>9002</ondown>
+                                <animation effect="slide" start="0,0" end="0,68" time="0" condition="!Control.IsVisible(31)">Conditional</animation>
+                                <control type="label" id="40">
+                                    <description>channel options Header</description>
+                                    <width>100%</width>
+                                    <label>$LOCALIZE[31005]</label>
+                                    <align>center</align>
+                                    <textcolor>selected</textcolor>
+                                </control>
+                                <include content="DefaultDialogButton">
+                                    <param name="id" value="31" />
+                                    <param name="width" value="100%" />
+                                    <param name="label" value="$LOCALIZE[19204]" />
+                                    <param name="onleft" value="60" />
+                                    <param name="onright" value="9000" />
+                                    <param name="nofocus" />
+                                </include>
+                                <include content="DefaultDialogButton">
+                                    <param name="id" value="30" />
+                                    <param name="width" value="100%" />
+                                    <param name="label" value="$LOCALIZE[19205]" />
+                                    <param name="onleft" value="60" />
+                                    <param name="onright" value="9000" />
+                                    <param name="nofocus" />
+                                </include>
+                                <include content="DialogToggleButton">
+                                    <param name="id" value="34" />
+                                    <param name="width" value="100%" />
+                                    <param name="label" value="$LOCALIZE[19024]" />
+                                    <param name="altlabel" value="$LOCALIZE[19023]" />
+                                    <param name="onleft" value="60" />
+                                    <param name="onright" value="9000" />
+                                    <param name="nofocus" />
+                                </include>
+                            </control>
+                        </control>
+                    </control>
+                </control>
+                <control type="group"> <!-- Channel preview right side -->
+                    <right>0</right>
+                    <width>315</width>
+                    <control type="grouplist" id="9000">
+                        <onleft>9002</onleft>
+                        <onright>20</onright>
+                        <itemgap>dialogbuttons_itemgap</itemgap>
+                        <include content="DefaultDialogButton">
+                            <param name="id" value="4" />
+                            <param name="width" value="100%" />
+                            <param name="label" value="$LOCALIZE[186]" />
+                            <param name="font" value="impacted18" />
+                            <param name="onleft" value="9002" />
+                            <param name="onright" value="20" />
+                        </include>
+                        <include content="DefaultDialogButton">
+                            <param name="id" value="5" />
+                            <param name="width" value="100%" />
+                            <param name="label" value="$LOCALIZE[14070]" />
+                            <param name="font" value="impacted18" />
+                            <param name="onleft" value="9002" />
+                            <param name="onright" value="20" />
+                        </include>
+                        <include content="DefaultDialogButton">
+                            <param name="id" value="6" />
+                            <param name="width" value="100%" />
+                            <param name="label" value="$LOCALIZE[222]" />
+                            <param name="font" value="impacted18" />
+                            <param name="onleft" value="9002" />
+                            <param name="onright" value="20" />
+                        </include>
+                    </control>
+                    <control type="group">
+                        <bottom>0</bottom>
+                        <height>315</height>
+                        <control type="image">
+                            <width>315</width>
+                            <colordiffuse>fanartdiffuse</colordiffuse>
+                            <texture border="5">buttons/KeyboardEditArea.png</texture>
+                        </control>
+                        <control type="image">
+                            <left>8</left>
+                            <top>8</top>
+                            <width>300</width>
+                            <height>300</height>
+                            <aspectratio aligny="center">keep</aspectratio>
+                            <texture>$INFO[Container(20).ListItem.Icon]</texture>
+                        </control>
+                    </control>
+                </control>
+            </control>
+            <control type="group">
+                <centerleft>50%</centerleft>
+                <bottom>0</bottom>
+                <width>80%</width>
+                <height>50</height>
+                <control type="label">
+                    <description>Page Count Label</description>
+                    <font>impacted18</font>
+                    <textcolor>grey</textcolor>
+                    <scroll>false</scroll>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <label>([COLOR=selected]$INFO[Container(20).NumItems][/COLOR]) $LOCALIZE[19019] - $LOCALIZE[31008] ([COLOR=selected]$INFO[Container(20).CurrentPage]/$INFO[Container(20).NumPages][/COLOR])</label>
+                    <wrapmultiline>true</wrapmultiline>
+                </control>
+            </control>
+        </control>
+    </controls>
+</window>

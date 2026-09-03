@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <include name="InfoListPanel">
+        <param name="left">0</param>
+        <param name="right">0</param>
+        <param name="top">InlayTop</param>
+        <param name="bottom">InlayBottom</param>
+        <definition>
+            <control type="group">	<!-- Mirror Bottom -->
+                <left>$PARAM[left]</left>
+                <right>$PARAM[right]</right>
+                <bottom>15</bottom>
+                <height>75</height>
+                <control type="image">
+                    <left>5</left>
+                    <right>5</right>
+                    <height>75</height>
+                    <texture border="25">ContentPanelMirror.png</texture>
+                </control>
+            </control>
+            <control type="group">
+                <left>$PARAM[left]</left>
+                <right>$PARAM[right]</right>
+                <top>$PARAM[top]</top>
+                <bottom>$PARAM[bottom]</bottom>
+                <control type="image">
+                    <texture border="25">InlayDark.png</texture>
+                </control>
+                <control type="image">
+                    <left>40</left>
+                    <top>40</top>
+                    <height>22</height>
+                    <aspectratio align="left" aligny="top">keep</aspectratio>
+                    <texture>Pin.png</texture>
+                </control>
+                <control type="image">
+                    <right>40</right>
+                    <top>40</top>
+                    <height>22</height>
+                    <aspectratio align="right" aligny="top">keep</aspectratio>
+                    <texture>Pin.png</texture>
+                </control>
+                <control type="group">
+                    <bottom>40</bottom>
+                    <height>22</height>
+                    <control type="image">
+                        <left>40</left>
+                        <aspectratio align="left" aligny="bottom">keep</aspectratio>
+                        <texture>Pin.png</texture>
+                    </control>
+                    <control type="image">
+                        <right>40</right>
+                        <aspectratio align="right" aligny="bottom">keep</aspectratio>
+                        <texture>Pin.png</texture>
+                    </control>
+                </control>
+            </control>
+        </definition>
+    </include>
+    <include name="InfoListLeft">
+        <control type="group">	<!-- Mirror Bottom -->
+            <left>InlayLeft</left>
+            <right>InlayRight</right>
+            <bottom>15</bottom>
+            <height>75</height>
+            <control type="image">
+                <left>5</left>
+                <right>5</right>
+                <height>75</height>
+                <texture border="25">ContentPanelMirror.png</texture>
+            </control>
+        </control>
+        <control type="group">
+            <left>InlayLeft</left>
+            <right>InlayRight</right>
+            <top>InlayTop</top>
+            <bottom>InlayBottom</bottom>
+            <control type="image">
+                <texture border="25">InlayDark.png</texture>
+            </control>
+            <control type="image">
+                <left>40</left>
+                <top>40</top>
+                <height>22</height>
+                <aspectratio align="left" aligny="top">keep</aspectratio>
+                <texture>Pin.png</texture>
+            </control>
+            <control type="image">
+                <right>40</right>
+                <top>40</top>
+                <height>22</height>
+                <aspectratio align="right" aligny="top">keep</aspectratio>
+                <texture>Pin.png</texture>
+            </control>
+            <control type="group">
+                <bottom>40</bottom>
+                <height>22</height>
+                <control type="image">
+                    <left>40</left>
+                    <aspectratio align="left" aligny="bottom">keep</aspectratio>
+                    <texture>Pin.png</texture>
+                </control>
+                <control type="image">
+                    <right>40</right>
+                    <aspectratio align="right" aligny="bottom">keep</aspectratio>
+                    <texture>Pin.png</texture>
+                </control>
+            </control>
+        </control>
+    </include>
+    <include name="InfoListRight">
+        <control type="group">
+            <left>SpacePadding</left>
+            <right>SpacePadding</right>
+            <control type="image">
+                <texture border="25">InlayDark.png</texture>
+            </control>
+            <control type="image">
+                <left>40</left>
+                <top>40</top>
+                <height>22</height>
+                <aspectratio align="left" aligny="top">keep</aspectratio>
+                <texture>Pin.png</texture>
+            </control>
+            <control type="image">
+                <right>40</right>
+                <top>40</top>
+                <height>22</height>
+                <aspectratio align="right" aligny="top">keep</aspectratio>
+                <texture>Pin.png</texture>
+            </control>
+            <control type="group">
+                <bottom>40</bottom>
+                <height>22</height>
+                <control type="image">
+                    <left>40</left>
+                    <aspectratio align="left" aligny="bottom">keep</aspectratio>
+                    <texture>Pin.png</texture>
+                </control>
+                <control type="image">
+                    <right>40</right>
+                    <aspectratio align="right" aligny="bottom">keep</aspectratio>
+                    <texture>Pin.png</texture>
+                </control>
+            </control>
+        </control>
+    </include>
+    <include name="DialogWide">
+        <control type="group">
+            <centertop>50%</centertop>
+            <height>DialogHeight</height>
+            <control type="image">
+                <width>100%</width>
+                <texture>ContentPanel_Wide.png</texture>
+            </control>
+        </control>
+    </include>
+    <include name="MediaOverlay">
+        <control type="image">
+            <include>openclosevisible</include>
+            <width>101%</width>
+            <texture>special://skin/backgrounds/media-overlay.jpg</texture>
+        </control>
+    </include>
+    <include name="DialogBackgroundCommons">
+		<param name="centerleft">50%</param>
+		<param name="centertop">50%</param>
+        <param name="width">100%</param>
+        <param name="height">100%</param>
+        <param name="stripe_height">60</param>
+		<definition>
+            <centerleft>$PARAM[centerleft]</centerleft>
+            <centertop>$PARAM[centertop]</centertop>
+            <width>$PARAM[width]</width>
+            <height>$PARAM[height]</height>
+            <include>openclosevisible</include>
+            <control type="image">
+                <colordiffuse>$VAR[BackgroundOverlayColorDialog]</colordiffuse>
+                <texture border="5">WhiteBack.png</texture>
+            </control>
+            <control type="image">
+                <colordiffuse>grey2</colordiffuse>
+                <include>DialogButtonTextureFocus</include>
+            </control>
+            <control type="image">
+                <colordiffuse>menudiffuse</colordiffuse>
+                <texture border="5">Underlay2.png</texture>
+            </control>
+            <control type="image">
+                <height>$PARAM[stripe_height]</height>
+                <colordiffuse>$VAR[BackgroundOverlayColorDialog]</colordiffuse>
+                <texture>WhiteBack.png</texture>
+            </control>
+            <control type="group">
+                <bottom>0</bottom>
+                <height>$PARAM[stripe_height]</height>
+                <control type="image">
+                    <colordiffuse>$VAR[BackgroundOverlayColorDialog]</colordiffuse>
+                    <texture>WhiteBack.png</texture>
+                </control>
+            </control>
+            <control type="image">
+                <colordiffuse>fanartdiffuse</colordiffuse>
+                <texture border="5">$VAR[SelectBack2]</texture>
+            </control>
+            <control type="label" id="$PARAM[header_id]">
+                <description>header label</description>
+                <height>$PARAM[stripe_height]</height>
+                <font>impacted26</font>
+                <label>$PARAM[header_label]</label>
+                <align>center</align>
+                <aligny>center</aligny>
+            </control>
+            <control type="image">
+                <height>1</height>
+                <colordiffuse>grey</colordiffuse>
+                <texture>Separator2.png</texture>
+            </control>
+            <control type="image">
+                <top>$PARAM[stripe_height]</top>
+                <height>1</height>
+                <colordiffuse>grey</colordiffuse>
+                <texture>Separator2.png</texture>
+            </control>
+            <control type="group">
+                <bottom>$PARAM[stripe_height]</bottom>
+                <height>1</height>
+                <control type="image">
+                    <colordiffuse>grey</colordiffuse>
+                    <texture>Separator2.png</texture>
+                </control>
+            </control>
+            <control type="group">
+                <bottom>0</bottom>
+                <height>1</height>
+                <control type="image">
+                    <colordiffuse>grey</colordiffuse>
+                    <texture>Separator2.png</texture>
+                </control>
+            </control>
+		</definition>
+    </include>
+    <include name="InfoSidePanelBackground">
+        <param name="stripes_height">45</param>
+        <param name="bottom_top">30</param>
+        <param name="header_label">$LOCALIZE[19047]</param>
+        <param name="bottom_label"></param>
+        <param name="visible_arrows">false</param>
+        <definition>
+            <control type="group">
+                <control type="image">
+                    <width>20</width>
+                    <colordiffuse>menudiffuse</colordiffuse>
+                    <texture flipx="true">SideFade.png</texture>
+                </control>
+                <control type="group">
+                    <right>0</right>
+                    <width>20</width>
+                    <control type="image">
+                        <colordiffuse>menudiffuse</colordiffuse>
+                        <texture>SideFade.png</texture>
+                    </control>
+                </control>
+                <control type="group">
+                    <left>20</left>
+                    <right>20</right>
+                    <control type="image">
+                        <texture>BlackBack.png</texture>
+                    </control>
+                    <control type="image">
+                        <colordiffuse>grey3</colordiffuse>
+                        <texture>White.png</texture>
+                    </control>
+                    <control type="image">
+                        <description>background image</description>
+                        <left>0</left>
+                        <top>$PARAM[bottom_top]</top>
+                        <height>$PARAM[stripes_height]</height>
+                        <colordiffuse>$VAR[BackgroundOverlayColorDialog]</colordiffuse>
+                        <texture>WhiteBack.png</texture>
+                    </control>
+                    <control type="group">
+                        <bottom>$PARAM[bottom_top]</bottom>
+                        <height>$PARAM[stripes_height]</height>
+                        <control type="image">
+                            <description>background image</description>
+                            <colordiffuse>$VAR[BackgroundOverlayColorDialog]</colordiffuse>
+                            <texture>WhiteBack.png</texture>
+                        </control>
+                    </control>
+                    <control type="group">
+                        <top>$PARAM[bottom_top]</top>
+                        <height>$PARAM[stripes_height]</height>
+                        <visible>$PARAM[visible_arrows]</visible>
+                        <control type="group">
+                            <centertop>50%</centertop>
+                            <height>25</height>
+                            <control type="image">
+                                <description>background image</description>
+                                <width>20</width>
+                                <texture>ArrowBig.png</texture>
+                            </control>
+                            <control type="image">
+                                <description>background image</description>
+                                <left>20r</left>
+                                <width>20</width>
+                                <texture flipx="true">ArrowBig.png</texture>
+                            </control>
+                        </control>
+                    </control>
+                </control>
+                <control type="label">
+                    <description>header label</description>
+                    <left>SpacePadding</left>
+                    <right>SpacePadding</right>
+                    <top>$PARAM[bottom_top]</top>
+                    <height>$PARAM[stripes_height]</height>
+                    <font>impacted26</font>
+                    <label>$PARAM[header_label]</label>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <shadowcolor/>
+                </control>
+                <control type="group">
+                    <bottom>$PARAM[bottom_top]</bottom>
+                    <height>$PARAM[stripes_height]</height>
+                    <control type="label">
+                        <description>header label</description>
+                        <height>$PARAM[stripes_height]</height>
+                        <font>impacted21</font>
+                        <label>$PARAM[bottom_label]</label>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <shadowcolor/>
+                    </control>
+                </control>
+            </control>
+        </definition>
+    </include>
+</includes>

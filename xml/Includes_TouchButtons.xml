@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <include name="TouchButtons" id="1001">
+        <control type="button">
+            <left>0</left>
+            <top>0</top>
+            <width>300</width>
+            <height>60</height>
+            <label>touch me</label>
+            <textcolor>00FFFFFF</textcolor>
+            <focusedcolor>description</focusedcolor>
+            <texturenofocus/>
+            <texturefocus border="2">buttons/ButtonNF.png</texturefocus>
+            <onclick>Action(menu)</onclick>
+            <visible>!Window.IsVisible(Home)</visible>
+        </control>
+        <control type="button" id="1002">
+            <left>0</left>
+            <top>75</top>
+            <width>420</width>
+            <height>60</height>
+            <label>touch me</label>
+            <textcolor>00FFFFFF</textcolor>
+            <focusedcolor>description</focusedcolor>
+            <texturenofocus/>
+            <texturefocus border="2">buttons/ButtonNF.png</texturefocus>
+            <onclick>SetFocus(9002)</onclick>
+            <visible>ControlGroup(9000).HasFocus()</visible>
+        </control>
+        <control type="button" id="1003">
+            <left>300r</left>
+            <top>0</top>
+            <width>300</width>
+            <height>60</height>
+            <label>touch me</label>
+            <textcolor>00FFFFFF</textcolor>
+            <focusedcolor>description</focusedcolor>
+            <texturenofocus/>
+            <texturefocus border="2">buttons/ButtonNF.png</texturefocus>
+            <onclick>Control.SetFocus(732)</onclick>
+            <visible>!Window.IsVisible(Home)</visible>
+        </control>
+        <control type="group">
+            <centerleft>50%</centerleft>
+            <width>600</width>
+            <control type="button" id="1004">
+                <width/>
+                <top>60</top>
+                <height>90</height>
+                <label>touch me</label>
+                <textcolor>00FFFFFF</textcolor>
+                <focusedcolor>description</focusedcolor>
+                <texturenofocus/>
+                <texturefocus border="2">buttons/ButtonNF.png</texturefocus>
+                <onclick>Control.SetFocus(9001)</onclick>
+                <onclick>SetProperty(TouchButtonSubmenu,1,home)</onclick>
+                <visible>Window.IsVisible(Home)</visible>
+            </control>
+        </control>
+        <control type="group">
+            <bottom>SpacePaddingLarge</bottom>
+            <height>90</height>
+            <control type="button" id="1005">
+                <left>SpacePaddingLarge</left>
+                <right>SpacePaddingLarge</right>
+                <width/>
+                <height/>
+                <label>touch me</label>
+                <textcolor>00FFFFFF</textcolor>
+                <focusedcolor>description</focusedcolor>
+                <texturenofocus/>
+                <texturefocus border="30">buttons/ButtonNF.png</texturefocus>
+                <onclick>Control.SetFocus(200)</onclick>
+                <visible>!Control.HasFocus(200)+Window.IsVisible(Home)</visible>
+            </control>
+        </control>
+        <control type="group">
+            <bottom>0</bottom>
+            <height>HomeMenuBoxHeight</height>
+            <!-- <height>120</height> -->
+            <control type="button" id="1006">
+                <top>52</top>
+                <width>10%</width>
+                <height>95</height>
+                <!-- <label>scroll left</label> -->
+                <textcolor>00FFFFFF</textcolor>
+                <focusedcolor>description</focusedcolor>
+                <aspectratio>keep</aspectratio>
+                <texturenofocus/>
+                <texturefocus align="left">ArrowBig.png</texturefocus>
+                <onclick>Control.Move(9000,-1)</onclick>
+                <visible>!Control.HasFocus(200)+Window.IsVisible(Home)</visible>
+            </control>
+            <control type="group">
+                <right>0</right>
+                <width>10%</width>
+                <control type="button" id="1007">
+                    <top>52</top>
+                    <height>95</height>
+                    <width/>
+                    <!-- <label>scroll right</label> -->
+                    <textcolor>00FFFFFF</textcolor>
+                    <focusedcolor>description</focusedcolor>
+                    <texturenofocus/>
+                    <texturefocus flipx="true">ArrowBig.png</texturefocus>
+                    <onclick>Control.Move(9000,1)</onclick>
+                    <visible>!Control.HasFocus(200)+Window.IsVisible(Home)</visible>
+                </control>
+            </control>
+        </control>
+		<include>fakevideowindow</include>
+    </include>
+</includes>

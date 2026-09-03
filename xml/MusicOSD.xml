@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+    <defaultcontrol always="true">99</defaultcontrol>
+    <include>openclose</include>
+    <include>opencloseslidedown</include>
+    <controls>
+        <control type="image">
+            <!-- <visible>!Window.IsVisible(script-XBMC_Lyrics-main.xml)+!Window.IsVisible(script-cu-lrclyrics-main.xml)+!Window.IsActive(visualisationpresetlist)</visible> -->
+            <visible>![Window.IsVisible(AddonSettings)|Window.IsVisible(SelectDialog)|Window.IsVisible(VisualisationPresetList)]</visible>
+            <top>70</top>
+            <width>101%</width>
+            <height>300</height>
+            <animation effect="fade" end="50" condition="true">Conditional</animation>
+            <colordiffuse>$VAR[BackgroundOverlayColorDialog]</colordiffuse>
+            <texture flipy="true">ShadowWhite.png</texture>
+        </control>
+        <control type="button" id="99">
+            <include>HiddenButton</include>
+            <onfocus>Control.SetFocus(100,2)</onfocus>
+        </control>
+        <control type="group">
+            <height>300</height>
+            <control type="group">
+                <left>165</left>
+                <top>100</top>
+                <width>450</width>
+                <height>580</height>
+                <control type="group">
+                    <include>opencloseslidedown</include>
+                    <visible>ControlGroup(240).HasFocus()</visible>
+                    <control type="grouplist" id="240">
+                        <description>Control Area</description>
+                        <itemgap>0</itemgap>
+                        <onup>240</onup>
+                        <ondown>240</ondown>
+                        <onleft>705</onleft>
+                        <onright>705</onright>
+                        <orientation>vertical</orientation>
+                        <control type="radiobutton" id="242">
+                            <description>Playlist Toggle</description>
+                            <width>100%</width>
+                            <align>left</align>
+                            <include>DialogButtonTextureFocus</include>
+                            <texturenofocus colordiffuse="menudiffuse">Black.png</texturenofocus>
+                            <font>font16</font>
+                            <textcolor>white</textcolor>
+                            <focusedcolor>black</focusedcolor>
+                            <label>"NextTrackPlaylist"</label>
+                            <onclick>Skin.ToggleSetting(playlist)</onclick>
+                            <selected>Skin.HasSetting(playlist)</selected>
+                        </control>
+                        <control type="radiobutton" id="850">
+                            <description>No Radioview</description>
+                            <width>100%</width>
+                            <align>left</align>
+                            <include>DialogButtonTextureFocus</include>
+                            <include>DialogButtonTextureFocus</include>
+                            <texturenofocus colordiffuse="menudiffuse">Black.png</texturenofocus>
+                            <font>font16</font>
+                            <textcolor>white</textcolor>
+                            <focusedcolor>black</focusedcolor>
+                            <label>301330</label>
+                            <onclick>Skin.ToggleSetting(noradioviz)</onclick>
+                            <onclick condition="Skin.HasSetting(radioview)">Skin.Reset(radioview)</onclick>
+                            <onclick condition="!Skin.HasSetting(noradioviz)">Skin.Reset(vinylview)</onclick>
+                            <selected>Skin.HasSetting(noradioviz)</selected>
+                        </control>
+                        <control type="radiobutton" id="851">
+                            <description>No Radioview</description>
+                            <width>100%</width>
+                            <align>left</align>
+                            <include>DialogButtonTextureFocus</include>
+                            <include>DialogButtonTextureFocus</include>
+                            <texturenofocus colordiffuse="menudiffuse">Black.png</texturenofocus>
+                            <font>font16</font>
+                            <textcolor>white</textcolor>
+                            <focusedcolor>black</focusedcolor>
+                            <label>301331</label>
+                            <onclick>Skin.ToggleSetting(notvwall)</onclick>
+                            <selected>Skin.HasSetting(notvwall)</selected>
+                            <visible>!Skin.HasSetting(noradioviz)</visible>
+                        </control>
+                        <control type="button" id="852">
+                            <description>AltVis</description>
+                            <width>100%</width>
+                            <align>left</align>
+                            <include>DialogButtonTextureFocus</include>
+                            <texturenofocus colordiffuse="menudiffuse">Black.png</texturenofocus>
+                            <font>font16</font>
+                            <textcolor>white</textcolor>
+                            <focusedcolor>black</focusedcolor>
+                            <label>301332</label>
+                            <label2>$VAR[MusicVisualisierung]</label2>
+                            <onclick>Skin.SelectBool(301332, 301578|radioview, 301576|vinylview, 301580|standardnowplaying)</onclick>
+                            <visible>!Skin.HasSetting(noradioviz)</visible>
+                            <enable>!Player.IsInternetStream</enable>
+                        </control>
+                        <control type="button" id="854">
+                            <description>AltVis</description>
+                            <width>100%</width>
+                            <align>left</align>
+                            <include>DialogButtonTextureFocus</include>
+                            <texturenofocus colordiffuse="menudiffuse">Black.png</texturenofocus>
+                            <font>font16</font>
+                            <textcolor>white</textcolor>
+                            <focusedcolor>black</focusedcolor>
+                            <label>301332</label>
+                            <label2>$VAR[MusicVisualisierung]</label2>
+                            <onclick>Skin.ToggleSetting(vinylview)</onclick>
+                            <onclick condition="Skin.HasSetting(radioview)">Skin.Reset(radioview)</onclick>
+                            <visible>Skin.HasSetting(noradioviz)</visible>
+                        </control>
+                        <control type="radiobutton" id="245">
+                            <description>Toggle Fanart</description>
+                            <width>100%</width>
+                            <align>left</align>
+                            <include>DialogButtonTextureFocus</include>
+                            <texturenofocus colordiffuse="menudiffuse">Black.png</texturenofocus>
+                            <font>font16</font>
+                            <textcolor>white</textcolor>
+                            <focusedcolor>black</focusedcolor>
+                            <label>20445</label>
+                            <onclick>Skin.ToggleSetting(fanart)</onclick>
+                            <selected>Skin.HasSetting(fanart)</selected>
+                        </control>
+                        <control type="radiobutton" id="247">
+                            <description>Toggle Bandlogos</description>
+                            <width>100%</width>
+                            <align>left</align>
+                            <include>DialogButtonTextureFocus</include>
+                            <texturenofocus colordiffuse="menudiffuse">Black.png</texturenofocus>
+                            <font>font16</font>
+                            <textcolor>white</textcolor>
+                            <focusedcolor>black</focusedcolor>
+                            <label>301336</label>
+                            <onclick>Skin.ToggleSetting(NoDate)</onclick>
+                            <selected>!Skin.HasSetting(NoDate)</selected>
+                        </control>
+                        <control type="button" id="248">
+                            <description>fanartdiffuse</description>
+                            <width>100%</width>
+                            <align>left</align>
+                            <include>DialogButtonTextureFocus</include>
+                            <texturenofocus colordiffuse="menudiffuse">Black.png</texturenofocus>
+                            <font>font16</font>
+                            <textcolor>white</textcolor>
+                            <focusedcolor>black</focusedcolor>
+                            <label>301286</label>
+                            <label2>$VAR[BackgroundDimLabel]</label2>
+                            <onclick>Skin.SelectBool(301286, 301460|background_dim_1, 301462|background_dim_2, 301464|background_dim_3, 594|background_dim_no)</onclick>
+                        </control>
+                        <control type="radiobutton" id="250">
+                            <description>CurrentButtonLabel</description>
+                            <width>100%</width>
+                            <align>left</align>
+                            <include>DialogButtonTextureFocus</include>
+                            <texturenofocus colordiffuse="menudiffuse">Black.png</texturenofocus>
+                            <font>font16</font>
+                            <textcolor>white</textcolor>
+                            <focusedcolor>black</focusedcolor>
+                            <label>301338</label>
+                            <onclick>Skin.ToggleSetting(CurrentButtonLabel)</onclick>
+                            <selected>Skin.HasSetting(CurrentButtonLabel)</selected>
+                        </control>
+                        <control type="radiobutton" id="251">
+                            <description>VizPanel</description>
+                            <width>100%</width>
+                            <align>left</align>
+                            <include>DialogButtonTextureFocus</include>
+                            <texturenofocus colordiffuse="menudiffuse">Black.png</texturenofocus>
+                            <font>font16</font>
+                            <textcolor>white</textcolor>
+                            <focusedcolor>black</focusedcolor>
+                            <label>301340</label>
+                            <onclick>Skin.ToggleSetting(VizPanel)</onclick>
+                            <selected>Skin.HasSetting(VizPanel)</selected>
+                            <!-- <visible>[Player.IsInternetStream|Skin.HasSetting(radioview)]</visible> -->
+                            <enable>!Control.IsVisible(996)</enable>
+                        </control>
+                        <control type="button" id="254">
+                            <description>BackgroundOverlayColor</description>
+                            <width>100%</width>
+                            <align>left</align>
+                            <include>DialogButtonTextureFocus</include>
+                            <texturenofocus colordiffuse="menudiffuse">Black.png</texturenofocus>
+                            <font>font16</font>
+                            <textcolor>white</textcolor>
+                            <focusedcolor>black</focusedcolor>
+                            <label>301342</label>
+                            <label2>$VAR[BackgroundOverlayColorLabel]</label2>
+                            <onclick>Skin.SelectBool(301416, $VAR[ColorAkzentVar])</onclick>
+                            <visible>Player.IsInternetStream+!Visualisation.Enabled</visible>
+                        </control>
+                        <control type="radiobutton" id="255">
+                            <description>non Player.Info</description>
+                            <width>100%</width>
+                            <align>left</align>
+                            <include>DialogButtonTextureFocus</include>
+                            <texturenofocus colordiffuse="menudiffuse">Black.png</texturenofocus>
+                            <font>font16</font>
+                            <textcolor>white</textcolor>
+                            <focusedcolor>black</focusedcolor>
+                            <label>658</label>
+                            <onclick>Skin.ToggleSetting(musicoverlay_stream)</onclick>
+                            <selected>Skin.HasSetting(musicoverlay_stream)</selected>
+                        </control>
+                        <control type="button" id="256">
+                            <description>Artist Info</description>
+                            <width>100%</width>
+                            <align>left</align>
+                            <include>DialogButtonTextureFocus</include>
+                            <texturenofocus colordiffuse="menudiffuse">Black.png</texturenofocus>
+                            <font>font16</font>
+                            <textcolor>white</textcolor>
+                            <focusedcolor>black</focusedcolor>
+                            <label>Artist Infos</label>
+                            <onclick>ActivateWindow(1101)</onclick>
+                            <visible>System.HasAddon(script.artistslideshow)</visible>
+                        </control>
+                    </control>
+                </control>
+                <control type="group">
+                    <include>opencloseslidedown</include>
+                    <visible>ControlGroup(2400).HasFocus()|Control.HasFocus(2400)</visible>
+                    <control type="grouplist" id="2400">
+                        <description>Control Area</description>
+                        <itemgap>0</itemgap>
+                        <onup>2400</onup>
+                        <ondown>2400</ondown>
+                        <onleft>701</onleft>
+                        <onright>701</onright>
+                        <orientation>vertical</orientation>
+                        <include>opencloseslidedown</include>
+                        <control type="radiobutton" id="2401">
+                            <description>Lyrics on off</description>
+                            <width>100%</width>
+                            <align>center</align>
+                            <include>DialogButtonTextureFocus</include>
+                            <texturenofocus colordiffuse="menudiffuse">Black.png</texturenofocus>
+                            <font>font16</font>
+                            <textcolor>white</textcolor>
+                            <focusedcolor>black</focusedcolor>
+                            <label>$LOCALIZE[24013]</label>
+                            <onclick>Skin.ToggleSetting(Lyrics)</onclick>
+                            <onclick condition="!Skin.HasSetting(Lyrics)">RunScript($INFO[Skin.String(LyricScript_Path)])</onclick>
+                            <onclick condition="Skin.HasSetting(Lyrics)">StopScript($INFO[Skin.String(LyricScript_Path)])</onclick>
+                            <selected>Skin.HasSetting(Lyrics)</selected>
+                        </control>
+                        <control type="button" id="2402">
+                            <description>Lyrics Stop</description>
+                            <width>100%</width>
+                            <align>center</align>
+                            <include>DialogButtonTextureFocus</include>
+                            <texturenofocus colordiffuse="menudiffuse">Black.png</texturenofocus>
+                            <font>font16</font>
+                            <textcolor>white</textcolor>
+                            <focusedcolor>black</focusedcolor>
+                            <label>$LOCALIZE[24009] $LOCALIZE[13009]</label>
+                            <onclick>StopScript($INFO[Skin.String(LyricScript_Path)])</onclick>
+                            <onclick>Notification(Lyrics, wird gestoppt..., 1000, DefaultIconInfo.png)</onclick>
+                        </control>
+                    </control>
+                </control>
+            </control>
+            <control type="group">
+                <description>OSD Background</description>
+                <visible>![Window.IsVisible(AddonSettings)|Window.IsVisible(SelectDialog)|Window.IsVisible(VisualisationPresetList)]</visible>
+                <control type="group"> <!-- Current Control Label -->
+                    <right>0</right>
+                    <width>510</width>
+                    <height>45</height>
+                    <top>92</top>
+                    <include>opencloseslideleft</include>
+                    <visible>Skin.HasSetting(CurrentButtonLabel)</visible>
+                    <control type="image">
+                        <description>Current Control Background</description>
+                        <aspectratio>keep</aspectratio>
+                        <texture>osd/CurrentOSDLabel.png</texture>
+                    </control>
+                    <control type="label">
+                        <description>Current Control</description>
+                        <left>20</left>
+                        <right>20</right>
+                        <top>1</top>
+                        <height>100%</height>
+                        <align>right</align>
+                        <font>font16</font>
+                        <textcolor>white</textcolor>
+                        <label>[UPPERCASE]$INFO[System.CurrentControl][/UPPERCASE]</label>
+                    </control>
+                </control>
+                <control type="group"> <!-- toast back -->
+                    <control type="image">
+                        <height>80</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture>BlackBack.png</texture>
+                    </control>
+                    <control type="group">
+                        <left>550</left>
+                        <right>-8</right>
+                        <height>93</height>
+                        <control type="image">
+                            <aspectratio>scale</aspectratio>
+                            <colordiffuse>$VAR[BackgroundOverlayColorDialog]</colordiffuse>
+                            <texture flipy="true">KaiToastBack.png</texture>
+                        </control>
+                        <control type="image"> <!-- needed -->
+                            <aspectratio>scale</aspectratio>
+                            <texture flipy="true">KaiToastBack.png</texture>
+                        </control>
+                    </control>
+                </control>
+                <control type="image">
+                    <visible>[Control.HasFocus(705)+!ControlGroup(240).HasFocus()]|[Control.HasFocus(701)+!ControlGroup(2400).HasFocus()]</visible>
+                    <top>78</top>
+					<width>640</width>
+                    <height>20</height>
+                    <aspectratio>keep</aspectratio>
+                    <animation effect="slide" start="0" end="0,8" time="1000" delay="0" loop="true" condition="true">Conditional</animation>
+                    <animation effect="rotate" start="0" end="90" time="0" delay="0" center="auto" condition="true">Conditional</animation>
+                    <texture>ArrowBig.png</texture>
+                </control>
+                <control type="group"> <!-- time label -->
+                    <description>time label</description>
+                    <right>20</right>
+                    <top>4</top>
+                    <width>465</width>
+                    <animation effect="fade" time="200">VisibleChange</animation>
+                    <control type="label">
+                        <align>right</align>
+                        <aligny>center</aligny>
+                        <font>impacted30</font>
+                        <textcolor>grey2</textcolor>
+                        <shadowcolor/>
+                        <label>$INFO[System.Time]</label>
+                    </control>
+                    <control type="label">
+                        <top>45</top>
+                        <align>right</align>
+                        <aligny>center</aligny>
+                        <font>impacted21</font>
+                        <textcolor>grey3</textcolor>
+                        <shadowcolor/>
+                        <label>$INFO[System.Date]</label>
+                        <visible>!Skin.HasSetting(NoDate)</visible>
+                    </control>
+                </control>
+            </control>
+            <!-- <control type="slider" id="87">
+				<description>Seek Slider</description>
+				<left>430</left>
+				<top>82r</top>
+				<width>720</width>
+				<height>16</height>
+				<onup>702</onup>
+				<ondown>26</ondown>
+				<action>seek</action>
+				<animation effect="fade" time="200">VisibleChange</animation>
+				<visible>![Window.IsVisible(AddonSettings)|Window.IsVisible(SelectDialog)|Window.IsVisible(VisualisationPresetList)]</visible>
+			</control> -->
+            <control type="group">
+                <centerleft>52%</centerleft>
+                <width>738</width>
+                <height>80</height>
+                <animation effect="fade" time="200">VisibleChange</animation>
+                <visible>![Window.IsVisible(AddonSettings)|Window.IsVisible(SelectDialog)|Window.IsVisible(VisualisationPresetList)]</visible>
+                <control type="list" id="100">
+                    <top>12</top>
+                    <onup/>
+                    <ondown/>
+                    <onleft>706</onleft>
+                    <onright>701</onright>
+                    <viewtype label="list">list</viewtype>
+                    <orientation>horizontal</orientation>
+                    <itemgap>6</itemgap>
+                    <itemlayout width="82" height="68">
+                        <control type="image">
+                            <left>6</left>
+                            <top>6</top>
+                            <width>56</width>
+                            <height>56</height>
+                            <aspectratio>keep</aspectratio>
+                            <texture>osd/Ring.png</texture>
+                        </control>
+                        <control type="image">
+                            <width>68</width>
+                            <aspectratio>keep</aspectratio>
+                            <colordiffuse>grey2</colordiffuse>
+                            <texture>osd/Ring.png</texture>
+                        </control>
+                        <control type="image">
+                            <left>6</left>
+                            <top>6</top>
+                            <width>56</width>
+                            <height>56</height>
+                            <colordiffuse>grey1</colordiffuse>
+                            <texture>$INFO[ListItem.Icon]</texture>
+                        </control>
+                        <control type="image">
+                            <left>0</left>
+                            <top>0</top>
+                            <width>68</width>
+                            <height>68</height>
+                            <texture>$INFO[ListItem.Property(symbol)]</texture>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout width="82" height="68">
+                        <control type="image">
+                            <left>0</left>
+                            <top>0</top>
+                            <width>68</width>
+                            <height>68</height>
+                            <colordiffuse>description</colordiffuse>
+                            <aspectratio>keep</aspectratio>
+                            <texture>osd/Ring.png</texture>
+                            <visible>Control.HasFocus(100)</visible>
+                        </control>
+                        <control type="image">
+                            <left>0</left>
+                            <top>0</top>
+                            <width>68</width>
+                            <height>68</height>
+                            <colordiffuse>grey2</colordiffuse>
+                            <aspectratio>keep</aspectratio>
+                            <texture>osd/Ring.png</texture>
+                            <visible>!Control.HasFocus(100)</visible>
+                        </control>
+                        <control type="image">
+                            <left>6</left>
+                            <top>6</top>
+                            <width>56</width>
+                            <height>56</height>
+                            <aspectratio>keep</aspectratio>
+                            <texture>osd/Ring.png</texture>
+                            <visible>!Control.HasFocus(100)</visible>
+                        </control>
+                        <control type="image">
+                            <left>0</left>
+                            <top>0</top>
+                            <width>68</width>
+                            <height>68</height>
+                            <colordiffuse>description</colordiffuse>
+                            <texture>$INFO[ListItem.Icon]</texture>
+                            <visible>Control.HasFocus(100)</visible>
+                        </control>
+                        <control type="image">
+                            <left>0</left>
+                            <top>0</top>
+                            <width>68</width>
+                            <height>68</height>
+                            <colordiffuse>grey1</colordiffuse>
+                            <texture>$INFO[ListItem.Icon]</texture>
+                            <visible>!Control.HasFocus(100)</visible>
+                        </control>
+                        <control type="image">
+                            <left>0</left>
+                            <top>0</top>
+                            <width>68</width>
+                            <height>68</height>
+                            <texture>$INFO[ListItem.Property(symbol)]</texture>
+                        </control>
+                    </focusedlayout>
+                    <content>
+                        <item id="0">
+                            <label>210</label>
+                            <icon>osd/PrevTrack.png</icon>
+                            <onclick>PlayerControl(Previous)</onclick>
+                        </item>
+                        <item id="1">
+                            <label>31061</label>
+                            <icon>osd/Rewind.png</icon>
+                            <onclick>PlayerControl(Rewind)</onclick>
+                        </item>
+                        <item id="2">
+                            <label>112</label>
+                            <icon>osd/Pause.png</icon>
+                            <onclick>PlayerControl(Play)</onclick>
+                            <visible>![Player.Paused|Player.Forwarding|Player.Rewinding]</visible>
+                        </item>
+                        <item id="3">
+                            <label>208</label>
+                            <icon>osd/Play.png</icon>
+                            <onclick>PlayerControl(Play)</onclick>
+                            <visible>Player.Paused|Player.Forwarding|Player.Rewinding</visible>
+                        </item>
+                        <item id="4">
+                            <label>31059</label>
+                            <icon>osd/Stop.png</icon>
+                            <onclick>PlayerControl(Stop)</onclick>
+                        </item>
+                        <item id="5">
+                            <label>31060</label>
+                            <icon>osd/Forward.png</icon>
+                            <onclick>PlayerControl(Forward)</onclick>
+                        </item>
+                        <item id="6">
+                            <label>209</label>
+                            <icon>osd/NextTrack.png</icon>
+                            <onclick>PlayerControl(Next)</onclick>
+                        </item>
+                        <item id="7">
+                            <label>$LOCALIZE[486]$INFO[Playlist.Repeat, : ]</label>
+                            <icon>osd/RepeatOff.png</icon>
+                            <onclick>PlayerControl(Repeat)</onclick>
+                            <visible>!Playlist.IsRepeat + !Playlist.IsRepeatOne</visible>
+                        </item>
+                        <item id="8">
+                            <label>$LOCALIZE[486]$INFO[Playlist.Repeat, : ]</label>
+                            <icon>osd/RepeatOne.png</icon>
+                            <!-- <property name="symbol">osd/RepeatOnePoint.png</property> -->
+                            <onclick>PlayerControl(Repeat)</onclick>
+                            <visible>Playlist.IsRepeatOne</visible>
+                        </item>
+                        <item id="9">
+                            <label>$LOCALIZE[486]$INFO[Playlist.Repeat, : ]</label>
+                            <icon>osd/RepeatAll.png</icon>
+                            <!-- <property name="symbol">osd/RepeatAllPoint.png</property> -->
+                            <onclick>PlayerControl(Repeat)</onclick>
+                            <visible>Playlist.IsRepeat</visible>
+                        </item>
+                        <item id="10">
+                            <label>$LOCALIZE[590]$INFO[Playlist.Random, : ]</label>
+                            <icon>osd/RandomOff.png</icon>
+                            <onclick>PlayerControl(Random)</onclick>
+                            <visible>!Playlist.IsRandom</visible>
+                        </item>
+                        <item id="11">
+                            <label>$LOCALIZE[590]$INFO[Playlist.Random, : ]</label>
+                            <icon>osd/RandomOn.png</icon>
+                            <!-- <property name="symbol">osd/RepeatAllPoint.png</property> -->
+                            <onclick>PlayerControl(Random)</onclick>
+                            <visible>Playlist.IsRandom</visible>
+                        </item>
+                        <item id="12">
+                            <label>$LOCALIZE[563]$INFO[MusicPlayer.UserRating, (,)]</label>
+                            <icon>osd/Rating.png</icon>
+                            <onclick>SetRating</onclick>
+                        </item>
+                    </content>
+                </control>
+            </control>
+            <control type="grouplist" id="101">
+                <top>12</top>
+                <width>640</width>
+                <height>60</height>
+                <itemgap>20</itemgap>
+                <onright>SetFocus(100,0)</onright>
+                <onleft>SetFocus(100,9)</onleft>
+                <orientation>horizontal</orientation>
+                <align>center</align>
+                <animation effect="fade" time="200">VisibleChange</animation>
+                <visible>![Window.IsVisible(AddonSettings)|Window.IsVisible(SelectDialog)|Window.IsVisible(VisualisationPresetList)]</visible>
+                <control type="togglebutton" id="701">
+                    <width>60</width>
+                    <height>100%</height>
+                    <label>24013</label>
+                    <font/>
+                    <texturefocus colordiffuse="description">osd/Lyrics.png</texturefocus>
+                    <texturenofocus colordiffuse="grey">osd/Lyrics.png</texturenofocus>
+                    <alttexturefocus colordiffuse="description">osd/Lyrics.png</alttexturefocus>
+                    <alttexturenofocus colordiffuse="grey">osd/Lyrics.png</alttexturenofocus>
+                    <ondown>Control.SetFocus(2400)</ondown>
+                    <onleft>Control.SetFocus(100,8)</onleft>
+                    <onright>707</onright>
+					<onclick>Close</onclick>
+					<onclick condition="!String.IsEmpty(Skin.String(LyricScript_Path))">RunScript($INFO[Skin.String(LyricScript_Path)])</onclick>
+					<onclick condition="String.IsEmpty(Skin.String(LyricScript_Path))">Skin.SetAddon(LyricScript_Path,xbmc.python.lyrics)</onclick>
+					<onclick condition="String.IsEmpty(Skin.String(LyricScript_Path))">Close</onclick>
+					<onclick condition="String.IsEmpty(Skin.String(LyricScript_Path))">RunScript($INFO[Skin.String(LyricScript_Path)])</onclick>
+                    <usealttexture>String.IsEmpty(Skin.String(LyricScript_Path))</usealttexture>
+                    <animation effect="zoom" start="90" center="auto" end="130" time="50">Focus</animation>
+                </control>
+                <control type="button" id="707">
+                    <width>60</width>
+                    <height>100%</height>
+                    <label>$LOCALIZE[5] -&gt; $LOCALIZE[14200] -&gt; $LOCALIZE[2] -&gt; $LOCALIZE[250]</label>
+                    <font/>
+                    <texturefocus colordiffuse="description">osd/settings-audiovis.png</texturefocus>
+                    <texturenofocus colordiffuse="grey">osd/settings-audiovis.png</texturenofocus>
+                    <onleft>701</onleft>
+                    <onright>702</onright>
+                    <onup>1000</onup>
+                    <ondown>1000</ondown>
+					<onclick>Close</onclick>
+                    <onclick>ActivateWindowAndFocus(playersettings, -199,, -172,)</onclick>
+                    <animation effect="zoom" start="90" center="auto" end="130" time="50">Focus</animation>
+                </control>
+                <control type="button" id="702">
+                    <width>60</width>
+                    <height>100%</height>
+                    <label>$LOCALIZE[250] $LOCALIZE[21417]</label>
+                    <font/>
+                    <texturefocus colordiffuse="description">osd/settings-vis2.png</texturefocus>
+                    <texturenofocus colordiffuse="grey">osd/settings-vis2.png</texturenofocus>
+                    <onleft>707</onleft>
+                    <onright>703</onright>
+                    <onup>1000</onup>
+                    <ondown>1000</ondown>
+                    <onclick>Addon.Default.OpenSettings(xbmc.player.musicviz)</onclick>
+                    <animation effect="zoom" start="90" center="auto" end="130" time="50">Focus</animation>
+                </control>
+                <control type="button" id="703">
+                    <width>60</width>
+                    <height>100%</height>
+                    <label>31022</label>
+                    <font/>
+                    <texturefocus colordiffuse="description">osd/settings-vis.png</texturefocus>
+                    <texturenofocus colordiffuse="grey">osd/settings-vis.png</texturenofocus>
+                    <onleft>702</onleft>
+                    <onright>705</onright>
+                    <onup>1000</onup>
+                    <ondown>1000</ondown>
+                    <onclick>ActivateWindow(122)</onclick>
+                    <animation effect="zoom" start="90" center="auto" end="130" time="50">Focus</animation>
+                </control>
+                <control type="button" id="705">
+                    <description>Settings</description>
+                    <width>60</width>
+                    <height>60</height>
+                    <onright>706</onright>
+                    <onleft>703</onleft>
+                    <ondown>Control.SetFocus(240)</ondown>
+                    <onclick>Control.SetFocus(240)</onclick>
+                    <label>10004</label>
+                    <font/>
+                    <texturefocus colordiffuse="description">osd/settings.png</texturefocus>
+                    <texturenofocus colordiffuse="grey">osd/settings.png</texturenofocus>
+                    <animation effect="zoom" start="90" center="auto" end="130" time="50">Focus</animation>
+                </control>
+                <control type="button" id="706">
+                    <description>Playlist</description>
+                    <width>60</width>
+                    <height>100%</height>
+                    <onleft>705</onleft>
+                    <onright>100</onright>
+                    <onup/>
+                    <ondown/>
+                    <label>31025</label>
+                    <font/>
+                    <texturefocus colordiffuse="description">osd/playlist.png</texturefocus>
+                    <texturenofocus colordiffuse="grey">osd/playlist.png</texturenofocus>
+                    <animation effect="zoom" start="90" center="auto" end="130" time="50">Focus</animation>
+                    <onclick>Dialog.Close(all, true)</onclick>
+                    <onclick>ActivateWindow(musicplaylist)</onclick>
+                    <visible>Integer.IsGreater(Playlist.Length(music),0)</visible>
+                </control>
+            </control>
+        </control>
+    </controls>
+</window>

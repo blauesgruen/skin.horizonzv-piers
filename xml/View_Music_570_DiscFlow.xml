@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <include name="View_570_DiscFlowMusic">
+		<param name="viewid">570</param>
+		<definition>
+			<control type="group" id="777">
+				<visible>Control.IsVisible($PARAM[viewid])+!Control.HasFocus(666)</visible>
+				<include>openclose</include>
+				<control type="group">
+					<include>openclose</include>
+					<include>openclosevisible</include>
+					<visible>Control.IsVisible($PARAM[viewid])+!Control.HasFocus(666)</visible>
+					<include content="WhiteGrunge">
+						<param name="colordiffuse" value="$VAR[BackgroundOverlayColorDialog]"/>
+					</include>
+					<include condition="String.EndsWith(Skin.AspectRatio,16:9)">VideoGrid</include>
+				</control>
+				<control type="group">
+					<centerleft>60%</centerleft>
+					<top>140</top>
+					<height>300</height>
+					<width>500</width>
+					<include>openclosevisible</include>
+					<visible>Skin.HasSetting(EnableExtendedArt)</visible>
+					<control type="image" id="5700">
+						<aspectratio align="right" aligny="top">keep</aspectratio>
+						<texture diffuse="masks/mask_flagging.png">$VAR[ClearlogoVAR]</texture>
+					</control>
+				</control>
+				<control type="group"> <!-- left side -->
+					<width>50%</width>
+					<control type="group">
+						<right>100</right>
+						<visible>Control.IsVisible($PARAM[viewid])+!Control.HasFocus(666)</visible>
+						<include>opencloseslideright</include>
+						<include content="sidefade_shadow">
+							<param name="id" value="$PARAM[viewid]1" />
+							<param name="visible" value="Control.HasFocus($PARAM[viewid]1)" />
+						</include>
+						<control type="image">
+							<aspectratio>scale</aspectratio>
+							<texture>DiscFlowPanel.png</texture>
+						</control>
+						<control type="group">
+							<animation effect="slide" end="-30" time="200" condition="!Control.HasFocus($PARAM[viewid]1)">Conditional</animation>
+							<control type="fixedlist" id="$PARAM[viewid]">
+								<left>55</left>
+								<right>100</right>
+								<top>52</top>
+								<bottom>75</bottom>
+								<onleft condition="Control.IsVisible($PARAM[viewid]1)">$PARAM[viewid]1</onleft>
+								<onleft condition="!Control.IsVisible($PARAM[viewid]1)">9000</onleft>
+								<onright condition="Skin.HasSetting(HideJumpSMSBar)">732</onright>
+								<onright condition="!Skin.HasSetting(HideJumpSMSBar)">15000</onright>
+								<onup>$PARAM[viewid]</onup>
+								<ondown>$PARAM[viewid]</ondown>
+								<viewtype label="DiscFlow">fixed</viewtype>
+								<focusposition>10</focusposition>
+								<preloaditems>PreloadItems</preloaditems>
+								<movement>4</movement>
+								<wraparound>true</wraparound>
+								<pagecontrol>$PARAM[viewid]1</pagecontrol>
+								<scrolltime tween="Quadratic" easing="out">300</scrolltime>
+								<visible>Container.Content(songs)|Container.Content(artists)|Container.Content(Albums)</visible>
+								<itemlayout height="45" width="auto">
+									<control type="label">
+										<top>15</top>
+										<height>45</height>
+										<textoffsetx>9</textoffsetx>
+										<label>$INFO[ListItem.Label]</label>
+										<visible>!Container.Content(songs)</visible>
+									</control>
+									<control type="label">
+										<top>15</top>
+										<height>45</height>
+										<textoffsetx>9</textoffsetx>
+										<label>$INFO[ListItem.Title]</label>
+										<visible>Container.Content(songs)</visible>
+									</control>
+								</itemlayout>
+								<focusedlayout height="75" width="auto">
+									<control type="group">
+										<control type="image">
+											<top>15</top>
+											<height>75</height>
+											<colordiffuse>grey1</colordiffuse>
+											<texture border="5">buttons/ButtonFOlightGlow.png</texture>
+										</control>
+										<control type="label">
+											<top>15</top>
+											<height>45</height>
+											<textoffsetx>9</textoffsetx>
+											<label>$INFO[ListItem.Label]</label>
+											<visible>!Container.Content(songs)</visible>
+										</control>
+										<control type="label">
+											<top>15</top>
+											<height>45</height>
+											<textoffsetx>9</textoffsetx>
+											<label>$INFO[ListItem.Title]</label>
+											<visible>Container.Content(songs)</visible>
+										</control>
+										<control type="label">
+											<top>45</top>
+											<height>48</height>
+											<align>left</align>
+											<textoffsetx>9</textoffsetx>
+											<textcolor>grey</textcolor>
+											<selectedcolor>grey</selectedcolor>
+											<label>$VAR[InfoWallBottomLabel1Var]</label>
+											<visible>!Container.Content(Artists)</visible>
+										</control>
+										<control type="label">
+											<top>45</top>
+											<height>48</height>
+											<align>left</align>
+											<textoffsetx>9</textoffsetx>
+											<textcolor>grey</textcolor>
+											<selectedcolor>grey</selectedcolor>
+											<label>$VAR[ListItemLabel2]</label>
+											<visible>Container.Content(Artists)</visible>
+										</control>
+									</control>
+								</focusedlayout>
+							</control>
+							<include content="DefaultScrollbar">
+								<param name="id" value="$PARAM[viewid]1" />
+								<param name="left" value="15" />
+								<param name="top" value="120" />
+								<param name="height" value="832" />
+								<param name="onleft" value="9000" />
+								<param name="onright1" value="$PARAM[viewid]" />
+								<param name="onright1_condi" value="true" />
+							</include>
+						</control>
+						<include content="ScrollOffsetLabel">
+							<param name="left">-10</param>
+							<param name="top">120</param>
+						</include>
+						<control type="group"> <!-- Flagging -->
+							<bottom>0</bottom>
+							<height>75</height>
+							<include>opencloseslideup</include>
+							<visible>!ListItem.IsParentFolder</visible>
+							<visible>Control.IsVisible($PARAM[viewid])+!Control.HasFocus(666)</visible>
+							<control type="image">
+								<left>-50%</left>
+								<right>100</right>
+								<height>1</height>
+								<texture>Separator2.png</texture>
+							</control>
+							<control type="grouplist">
+								<left>SpacePadding</left>
+								<right>100</right>
+								<top>25</top>
+								<itemgap>15</itemgap>
+								<align>left</align>
+								<orientation>horizontal</orientation>
+								<include>FlagMusic</include>
+							</control>
+						</control>
+					</control>
+				</control>
+				<control type="group"> <!-- right side -->
+					<right>0</right>
+					<width>50%</width>
+					<include>openclose</include>
+					<include>openclosevisible</include>
+					<visible>Control.IsVisible($PARAM[viewid])+!Control.HasFocus(666)</visible>
+					<control type="group">
+						<animation effect="rotate" center="auto" start="0" end="360" time="22000" loop="true" condition="Skin.HasSetting(animation)">Conditional</animation>
+						<right>-650</right>
+						<bottom>-650</bottom>
+						<width>1300</width>
+						<height>1300</height>
+						<control type="image">
+							<include>opencloseslideleft</include>
+							<include content="DiscartTexture">
+								<param name="fallback_cdart" value="cdart/default_glass.png" />
+								<param name="diffuse_cdart" value="masks/mask_cdart.png" />
+							</include>
+						</control>
+					</control>
+					<control type="group">
+						<right>0</right>
+						<height>1080</height>
+						<width>1080</width>
+						<bottom>0</bottom>
+						<control type="group"> <!-- OnNextFlow -->
+							<animation effect="fade" start="100" end="0" time="250" delay="0" reversible="false">Hidden</animation>
+							<control type="image">
+								<visible>Container.OnNext</visible>
+								<animation type="Hidden">
+									<effect type="slide" start="0" end="-188,30" time="250" />
+									<effect type="rotate" center="auto" start="0" end="5" time="250" />
+								</animation>
+								<animation effect="rotate" center="auto" start="0" end="5" time="0" condition="true">Conditional</animation>
+								<left>1050</left>
+								<top>105</top>
+								<width>270</width>
+								<height>270</height>
+								<texture diffuse="masks/mask_round.png">$INFO[Container($PARAM[viewid]).ListItem(4).Icon]</texture>
+								<bordertexture border="1">ThumbShadow.png</bordertexture>
+								<bordersize>12</bordersize>
+								<aspectratio>stretch</aspectratio>
+							</control>
+							<control type="image">
+								<visible>Container.OnNext</visible>
+								<animation type="Hidden">
+									<effect type="slide" start="0" end="-188,30" time="250" />
+									<effect type="rotate" center="auto" start="0" end="10" time="250" />
+								</animation>
+								<animation effect="rotate" center="auto" start="0" end="5" time="0" condition="true">Conditional</animation>
+								<left>862</left>
+								<top>135</top>
+								<width>270</width>
+								<height>270</height>
+								<texture diffuse="masks/mask_round.png">$INFO[Container($PARAM[viewid]).ListItem(3).Icon]</texture>
+								<bordertexture border="1">ThumbShadow.png</bordertexture>
+								<bordersize>12</bordersize>
+								<aspectratio>stretch</aspectratio>
+							</control>
+							<control type="image">
+								<visible>Container.OnNext</visible>
+								<animation type="Hidden">
+									<effect type="slide" start="0" end="-188,75" time="250" />
+									<effect type="rotate" center="auto" start="0" end="16" time="250" />
+								</animation>
+								<animation effect="rotate" center="auto" start="0" end="15" time="0" condition="true">Conditional</animation>
+								<left>675</left>
+								<top>165</top>
+								<width>270</width>
+								<height>270</height>
+								<texture diffuse="masks/mask_round.png">$INFO[Container($PARAM[viewid]).ListItem(2).Icon]</texture>
+								<bordertexture border="1">ThumbShadow.png</bordertexture>
+								<bordersize>12</bordersize>
+								<aspectratio>stretch</aspectratio>
+							</control>
+							<control type="image">
+								<visible>Container.OnNext</visible>
+								<animation type="Hidden">
+									<effect type="slide" start="0" end="-150,120" time="250" />
+									<effect type="rotate" center="auto" start="0" end="15" time="250" />
+								</animation>
+								<animation effect="rotate" center="auto" start="0" end="31" time="0" condition="true">Conditional</animation>
+								<left>488</left>
+								<top>240</top>
+								<width>270</width>
+								<height>270</height>
+								<texture diffuse="masks/mask_round.png">$INFO[Container($PARAM[viewid]).ListItem(1).Icon]</texture>
+								<bordertexture border="1">ThumbShadow.png</bordertexture>
+								<bordersize>12</bordersize>
+								<aspectratio>stretch</aspectratio>
+							</control>
+							<control type="image">
+								<visible>Container.OnNext</visible>
+								<animation effect="slide" start="0" end="-390,375" time="250">Hidden</animation>
+								<animation effect="rotate" center="auto" start="0" end="46" time="0" condition="true">Conditional</animation>
+								<left>338</left>
+								<top>360</top>
+								<width>270</width>
+								<height>270</height>
+								<texture diffuse="masks/mask_round.png">$INFO[Container($PARAM[viewid]).ListItem(0).Icon]</texture>
+								<bordertexture border="1">ThumbShadow.png</bordertexture>
+								<bordersize>12</bordersize>
+								<aspectratio>stretch</aspectratio>
+							</control>
+						</control>
+						<control type="group"> <!-- OnPreviousFlow -->
+							<animation effect="fade" start="100" end="0" time="250" delay="0" reversible="false">Hidden</animation>
+							<control type="image">
+								<visible>Container.OnPrevious</visible>
+								<animation type="Hidden">
+									<effect type="slide" start="0" end="188,-8" time="250" />
+									<effect type="rotate" center="auto" start="0" end="-10" time="250" />
+								</animation>
+								<animation effect="rotate" center="auto" start="0" end="5" time="0" condition="true">Conditional</animation>
+								<left>862</left>
+								<top>135</top>
+								<width>270</width>
+								<height>270</height>
+								<texture diffuse="masks/mask_round.png">$INFO[Container($PARAM[viewid]).ListItem(5).Icon]</texture>
+								<bordertexture border="1">ThumbShadow.png</bordertexture>
+								<bordersize>12</bordersize>
+								<aspectratio>stretch</aspectratio>
+							</control>
+							<control type="image">
+								<visible>Container.OnPrevious</visible>
+								<animation type="Hidden">
+									<effect type="slide" start="0" end="188,-30" time="250" />
+									<effect type="rotate" center="auto" start="0" end="-10" time="250" />
+								</animation>
+								<animation effect="rotate" center="auto" start="0" end="15" time="0" condition="true">Conditional</animation>
+								<left>675</left>
+								<top>165</top>
+								<width>270</width>
+								<height>270</height>
+								<texture diffuse="masks/mask_round.png">$INFO[Container($PARAM[viewid]).ListItem(4).Icon]</texture>
+								<bordertexture border="1">ThumbShadow.png</bordertexture>
+								<bordersize>12</bordersize>
+								<aspectratio>stretch</aspectratio>
+							</control>
+							<control type="image">
+								<visible>Container.OnPrevious</visible>
+								<animation type="Hidden">
+									<effect type="slide" start="0" end="188,-82" time="250" />
+									<effect type="rotate" center="auto" start="0" end="-16" time="250" />
+								</animation>
+								<animation effect="rotate" center="auto" start="0" end="31" time="0" condition="true">Conditional</animation>
+								<left>488</left>
+								<top>240</top>
+								<width>270</width>
+								<height>270</height>
+								<texture diffuse="masks/mask_round.png">$INFO[Container($PARAM[viewid]).ListItem(3).Icon]</texture>
+								<bordertexture border="1">ThumbShadow.png</bordertexture>
+								<bordersize>12</bordersize>
+								<aspectratio>stretch</aspectratio>
+							</control>
+							<control type="image">
+								<visible>Container.OnPrevious</visible>
+								<animation type="Hidden">
+									<effect type="slide" start="0" end="150,-128" time="250" />
+									<effect type="rotate" center="auto" start="0" end="-15" time="250" />
+								</animation>
+								<animation effect="rotate" center="auto" start="0" end="46" time="0" condition="true">Conditional</animation>
+								<left>338</left>
+								<top>360</top>
+								<width>270</width>
+								<height>270</height>
+								<texture diffuse="masks/mask_round.png">$INFO[Container($PARAM[viewid]).ListItem(2).Icon]</texture>
+								<bordertexture border="1">ThumbShadow.png</bordertexture>
+								<bordersize>12</bordersize>
+								<aspectratio>stretch</aspectratio>
+							</control>
+							<control type="image">
+								<visible>Container.OnPrevious</visible>
+								<animation effect="slide" start="0" end="338,-225" time="250">Hidden</animation>
+								<animation effect="rotate" center="auto" start="0" end="46" time="0" condition="true">Conditional</animation>
+								<left>0</left>
+								<top>585</top>
+								<width>270</width>
+								<height>270</height>
+								<texture diffuse="masks/mask_round.png">$INFO[Container($PARAM[viewid]).ListItem(1).Icon]</texture>
+								<bordertexture border="1">ThumbShadow.png</bordertexture>
+								<bordersize>12</bordersize>
+								<aspectratio>stretch</aspectratio>
+							</control>
+						</control>
+						<control type="group"> <!-- OnNextVisible -->
+							<animation effect="slide" start="1500" end="0,0" time="500" delay="400" tween="cubic" easing="out" condition="Skin.HasSetting(animation)">WindowOpen</animation>
+							<animation effect="slide" start="0,0" end="1500" time="500" tween="cubic" easing="out" condition="Skin.HasSetting(animation)">WindowClose</animation>
+							<visible>!Container.OnNext</visible>
+							<visible>!Container.OnPrevious</visible>
+							<animation effect="fade" start="0" end="100" delay="200" time="20" reversible="false" condition="!Container.OnNext|!Container.OnNext">Visible</animation>
+							<control type="image">
+								<animation effect="rotate" center="auto" start="0" end="5" time="0" condition="true">Conditional</animation>
+								<left>862</left>
+								<top>135</top>
+								<width>270</width>
+								<height>270</height>
+								<texture diffuse="masks/mask_round.png">$INFO[ListItem(4).Icon]</texture>
+								<bordertexture border="1">ThumbShadow.png</bordertexture>
+								<bordersize>12</bordersize>
+								<aspectratio>stretch</aspectratio>
+							</control>
+							<control type="image">
+								<animation effect="rotate" center="auto" start="0" end="15" time="0" condition="true">Conditional</animation>
+								<left>675</left>
+								<top>165</top>
+								<width>270</width>
+								<height>270</height>
+								<texture diffuse="masks/mask_round.png">$INFO[ListItem(3).Icon]</texture>
+								<bordertexture border="1">ThumbShadow.png</bordertexture>
+								<bordersize>12</bordersize>
+								<aspectratio>stretch</aspectratio>
+							</control>
+							<control type="image">
+								<animation effect="rotate" center="auto" start="0" end="31" time="0" condition="true">Conditional</animation>
+								<left>488</left>
+								<top>240</top>
+								<width>270</width>
+								<height>270</height>
+								<texture diffuse="masks/mask_round.png">$INFO[ListItem(2).Icon]</texture>
+								<bordertexture border="1">ThumbShadow.png</bordertexture>
+								<bordersize>12</bordersize>
+								<aspectratio>stretch</aspectratio>
+							</control>
+							<control type="image">
+								<animation effect="rotate" center="auto" start="0" end="46" time="0" easing="out" condition="true">Conditional</animation>
+								<left>338</left>
+								<top>360</top>
+								<width>270</width>
+								<height>270</height>
+								<texture diffuse="masks/mask_round.png">$INFO[Container($PARAM[viewid]).ListItem(1).Icon]</texture>
+								<bordertexture border="1">ThumbShadow.png</bordertexture>
+								<bordersize>12</bordersize>
+								<aspectratio>scale</aspectratio>
+							</control>
+						</control>
+						<!-- <control type="group">
+							<animation effect="slide" start="0" end="0,1200" time="500">Hidden</animation>
+							<visible>Container.OnNext</visible>
+							<left>119</left>
+							<top>8</top>
+							<control type="image">
+								<left>0</left>
+								<top>525</top>
+								<width>480</width>
+								<height>480</height>
+								<texture>masks/mask_frame.png</texture>
+							</control>
+							<control type="image">
+								<left>22</left>
+								<top>548</top>
+								<width>435</width>
+								<height>435</height>
+								<texture diffuse="masks/mask_round.png">$INFO[ListItem(0).Icon]</texture>
+								<aspectratio>stretch</aspectratio>
+							</control>
+						</control>
+						<control type="group">
+							<animation effect="slide" start="0,600" end="0,0" time="300">Hidden</animation>
+							<visible>Container.OnPrevious</visible>
+							<left>119</left>
+							<top>8</top>
+							<control type="image">
+								<left>0</left>
+								<top>525</top>
+								<width>480</width>
+								<height>480</height>
+								<texture>masks/mask_frame.png</texture>
+							</control>
+							<control type="image">
+								<left>22</left>
+								<top>548</top>
+								<width>435</width>
+								<height>435</height>
+								<texture diffuse="masks/mask_round.png">$INFO[ListItem(0).Icon]</texture>
+								<aspectratio>stretch</aspectratio>
+							</control>
+						</control> -->
+						<control type="group">
+							<animation effect="slide" start="0,600" end="0,0" time="500" delay="400" tween="cubic" easing="out" condition="Skin.HasSetting(animation)">WindowOpen</animation>
+							<animation effect="slide" start="0,0" end="0,600" time="500" tween="cubic" easing="out" condition="Skin.HasSetting(animation)">WindowClose</animation>
+							<animation effect="fade" start="0" end="100" delay="210" time="100">Visible</animation>
+							<visible>!Container.OnNext+!Container.OnPrevious</visible>
+							<left>0</left>
+							<top>8</top>
+							<control type="image">
+								<top>525</top>
+								<width>400</width>
+								<height>400</height>
+								<texture>masks/mask_frame.png</texture>
+							</control>
+							<control type="image">
+								<left>22</left>
+								<top>548</top>
+								<width>355</width>
+								<height>355</height>
+								<texture diffuse="masks/mask_round.png">$INFO[ListItem(0).Icon]</texture>
+								<aspectratio>stretch</aspectratio>
+							</control>
+						</control>
+						<control type="group">
+							<animation effect="zoom" center="1050,750" start="100" end="50" delay="0" time="200" reversible="true" condition="true">Conditions</animation>
+							<visible>Container.OnPrevious</visible>
+							<control type="image">
+								<left>0</left>
+								<top>525</top>
+								<width>400</width>
+								<height>400</height>
+								<texture>masks/mask_frame.png</texture>
+							</control>
+							<control type="image">
+								<left>22</left>
+								<top>548</top>
+								<width>355</width>
+								<height>355</height>
+								<texture diffuse="masks/mask_round.png">$INFO[ListItem(0).Icon]</texture>
+								<aspectratio>stretch</aspectratio>
+							</control>
+						</control>
+					</control>
+				</control>
+				<include content="AlphaBarV" condition="!Skin.HasSetting(HideJumpSMSBar)"><param name="id" value="$PARAM[viewid]"/></include>
+			</control>
+		</definition>
+    </include>
+</includes>

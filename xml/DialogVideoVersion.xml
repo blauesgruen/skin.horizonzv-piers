@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+	<defaultcontrol always="true">200</defaultcontrol>
+	<onload condition="Window.IsActive(videoversionselect)">Control.SetFocus(50)</onload>
+	<backgroundcolor>grey3</backgroundcolor>
+    <include>openclose</include>
+	<controls>
+        <include>BlackBack</include>
+		<include condition="Window.IsActive(videoversion)">DialogVideoVersionLayout</include>
+		<include condition="Window.IsActive(videoversionselect)">DialogVideoVersionSelectLayout</include>
+	</controls>
+</window>

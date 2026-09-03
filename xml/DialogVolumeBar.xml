@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window>
+	<controls>
+		<control type="group">
+			<visible>!Window.IsActive(startup)</visible>
+			<right>0</right>
+			<width>200</width>
+			<top>60</top>
+            <animation type="WindowOpen" condition="Skin.HasSetting(animation)">
+                <effect type="fade" start="0" end="100" time="300"/>
+                <effect type="slide" start="300,0" end="0,0" time="500"/>
+            </animation>
+            <animation type="WindowClose" condition="Skin.HasSetting(animation)">
+                <effect type="fade" start="100" end="0" time="500" delay="200" />
+                <effect type="slide" start="0,0" end="300,0" time="1000" delay="200" />
+            </animation>
+			<animation effect="slide" end="0,100" time="250" delay="20" condition="Window.IsVisible(musicosd)|Window.IsVisible(videoosd)">Conditional</animation>
+			<control type="progress" id="29999">
+				<include>HiddenButton</include>
+				<info>Player.Volume</info>
+			</control>
+			<control type="image">
+				<description>Mute Image</description>
+				<left>54</left>
+				<top>10</top>
+				<width>200</width>
+				<height>82</height>
+				<colordiffuse>grey1</colordiffuse>
+				<texture border="10">OverlayDialogBackground.png</texture>
+			</control>
+			<control type="image">
+				<description>Mute Image</description>
+				<left>3</left>
+				<top>0</top>
+				<width>104</width>
+				<height>102</height>
+				<colordiffuse>grey1</colordiffuse>
+				<texture>Pin.png</texture>
+			</control>
+			<control type="image">
+				<left>13</left>
+				<top>9</top>
+				<width>84</width>
+				<height>84</height>
+				<colordiffuse>grey3</colordiffuse>
+				<texture>dialogs/volume/progress/p100.png</texture>
+			</control>
+			<control type="image">
+				<left>13</left>
+				<top>9</top>
+				<width>84</width>
+				<height>84</height>
+				<fadetime>0</fadetime>
+				<colordiffuse>description</colordiffuse>
+				<texture>$INFO[Control.GetLabel(29999),dialogs/volume/progress/p,.png]</texture>
+				<animation effect="fade" start="100" end="0" delay="300" time="500" tween="sine" condition="Player.Muted">Conditional</animation>
+			</control>
+			<control type="image">
+				<left>21</left>
+				<top>16</top>
+				<width>68</width>
+				<height>68</height>
+				<fadetime>150</fadetime>
+				<texture>$VAR[VolumeIconVar]</texture>
+			</control>
+		</control>
+	</controls>
+</window>

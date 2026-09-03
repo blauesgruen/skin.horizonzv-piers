@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+	<include name="DebugInfo"><!-- Global debug grid -->
+        <control type="image">
+            <left>0</left>
+            <top>0</top>
+            <width>100%</width>
+            <height>1080</height>
+            <texture>special://skin/backgrounds/debuggrid720.png</texture>
+            <visible>Skin.HasSetting(DebugGrid)</visible>
+        </control>
+        <!-- Window/Dialog debug -->
+        <control type="grouplist">
+            <left>15</left>
+            <top>15</top>
+            <width>100%</width>
+            <height>1080</height>
+            <itemgap>12</itemgap>
+            <visible>Skin.HasSetting(DebugInfo)</visible>
+            <!-- Window labels -->
+            <control type="label">
+                <include>WindowID</include>
+                <label>AddonBrowser.xml</label>
+                <visible>Window.IsVisible(AddonBrowser.xml)</visible>
+            </control>
+            <control type="label">
+                <include>WindowID</include>
+                <label>CustomSettings.xml</label>
+                <visible>Window.IsVisible(CustomSettings.xml)</visible>
+            </control>
+            <control type="label">
+                <include>WindowID</include>
+                <label>FileManager.xml</label>
+                <visible>Window.IsVisible(FileManager.xml)</visible>
+            </control>
+            <control type="label">
+                <include>WindowID</include>
+                <label>Home.xml</label>
+                <visible>Window.IsVisible(Home.xml)</visible>
+            </control>
+            <control type="label">
+                <include>WindowID</include>
+                <label>LoginScreen.xml</label>
+                <visible>Window.IsVisible(LoginScreen.xml)</visible>
+            </control>
+            <control type="label">
+                <include>WindowID</include>
+                <label>MyMusicNav.xml</label>
+                <visible>Window.IsVisible(MyMusicNav.xml)</visible>
+            </control>
+            <control type="label">
+                <include>WindowID</include>
+                <label>MyMusicPlaylist.xml</label>
+                <visible>Window.IsVisible(MyMusicPlaylist.xml)</visible>
+            </control>
+            <control type="label">
+                <include>WindowID</include>
+                <label>MyMusicPlaylistEditor.xml</label>
+                <visible>Window.IsVisible(MyMusicPlaylistEditor.xml)</visible>
+            </control>
+            <control type="label">
+                <include>WindowID</include>
+                <label>MyMusicSongs.xml</label>
+                <visible>Window.IsVisible(MyMusicSongs.xml)</visible>
+            </control>
+            <control type="label">
+                <include>WindowID</include>
+                <label>MyPics.xml</label>
+                <visible>Window.IsVisible(MyPics.xml)</visible>
+            </control>
+            <control type="label">
+                <include>WindowID</include>
+                <label>MyPrograms.xml</label>
+                <visible>Window.IsVisible(MyPrograms.xml)</visible>
+            </control>
+            <control type="label">
+                <include>WindowID</include>
+                <label>MyVideoNav.xml</label>
+                <visible>Window.IsVisible(MyVideoNav.xml)</visible>
+            </control>
+            <control type="label">
+                <include>WindowID</include>
+                <label>MyVideoPlaylist.xml</label>
+                <visible>Window.IsVisible(MyVideoPlaylist.xml)</visible>
+            </control>
+            <control type="label">
+                <include>WindowID</include>
+                <label>MyWeather.xml</label>
+                <visible>Window.IsVisible(MyWeather.xml)</visible>
+            </control>
+            <control type="label">
+                <include>WindowID</include>
+                <label>Settings.xml</label>
+                <visible>Window.IsVisible(Settings.xml)</visible>
+            </control>
+            <control type="label">
+                <include>WindowID</include>
+                <label>SettingsCategory.xml</label>
+                <visible>Window.IsVisible(SettingsCategory.xml)</visible>
+            </control>
+            <control type="label">
+                <include>WindowID</include>
+                <label>SettingsProfile.xml</label>
+                <visible>Window.IsVisible(SettingsProfile.xml)</visible>
+            </control>
+            <control type="label">
+                <include>WindowID</include>
+                <label>VideoFullScreen.xml</label>
+                <visible>Window.IsVisible(VideoFullScreen.xml)</visible>
+            </control>
+            <!-- Dialog labels -->
+            <control type="label">
+                <include>DialogID</include>
+                <label>DialogAddonInfo.xml</label>
+                <visible>Window.IsVisible(DialogAddonInfo.xml)</visible>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>DialogAddonSettings.xml</label>
+                <visible>Window.IsVisible(DialogAddonSettings.xml)</visible>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>DialogAlbumInfo.xml</label>
+                <visible>Window.IsVisible(DialogAlbumInfo.xml)</visible>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>DialogBusy.xml</label>
+                <visible>Window.IsVisible(DialogBusy.xml)</visible>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>DialogButtonMenu.xml</label>
+                <visible>Window.IsVisible(DialogButtonMenu.xml)</visible>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>DialogContentSettings.xml</label>
+                <visible>Window.IsVisible(DialogContentSettings.xml)</visible>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>DialogContextMenu.xml</label>
+                <visible>Window.IsVisible(DialogContextMenu.xml)</visible>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>DialogFileStacking.xml</label>
+                <visible>Window.IsVisible(DialogFileStacking.xml)</visible>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>DialogFullScreenInfo.xml</label>
+                <visible>Window.IsVisible(DialogFullScreenInfo.xml)</visible>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>DialogKaiToast.xml</label>
+                <visible>Window.IsVisible(DialogKaiToast.xml)</visible>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>DialogKaraokeSongSelector.xml</label>
+                <visible>Window.IsVisible(DialogKaraokeSongSelector.xml)</visible>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>DialogKaraokeSongSelectorLarge.xml</label>
+                <visible>Window.IsVisible(DialogKaraokeSongSelectorLarge.xml)</visible>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>DialogKeyboard.xml</label>
+                <visible>Window.IsVisible(DialogKeyboard.xml)</visible>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>DialogMediaSource.xml</label>
+                <visible>Window.IsVisible(DialogMediaSource.xml)</visible>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>DialogMusicScan.xml</label>
+                <visible>Window.IsVisible(DialogMusicScan.xml)</visible>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>DialogMuteBug.xml</label>
+                <visible>Window.IsVisible(DialogMuteBug.xml)</visible>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>DialogNetworkSetup.xml</label>
+                <visible>Window.IsVisible(DialogNetworkSetup.xml)</visible>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>DialogNumeric.xml</label>
+                <visible>Window.IsVisible(DialogNumeric.xml)</visible>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>DialogOk.xml</label>
+                <visible>Window.IsVisible(DialogOk.xml)</visible>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>DialogPeripheralManager.xml</label>
+                <visible>Window.IsVisible(DialogPeripheralManager.xml)</visible>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>DialogPeripheralSettings.xml</label>
+                <visible>Window.IsVisible(DialogPeripheralSettings.xml)</visible>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>DialogPictureInfo.xml</label>
+                <visible>Window.IsVisible(DialogPictureInfo.xml)</visible>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>DialogProgress.xml</label>
+                <visible>Window.IsVisible(DialogProgress.xml)</visible>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>DialogSeekBar.xml</label>
+                <visible>Window.IsVisible(DialogSeekbar.xml)</visible>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>DialogSelect.xml</label>
+                <visible>Window.IsVisible(DialogSelect.xml)</visible>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>DialogSlider.xml</label>
+                <visible>Window.IsVisible(DialogSlider.xml)</visible>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>DialogSongInfo.xml</label>
+                <visible>Window.IsVisible(DialogSongInfo.xml)</visible>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>DialogTextViewer.xml</label>
+                <visible>Window.IsVisible(DialogTextViewer.xml)</visible>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>DialogVideoInfo.xml</label>
+                <visible>Window.IsVisible(DialogVideoInfo.xml)</visible>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>DialogVideoScan.xml</label>
+                <visible>Window.IsVisible(DialogVideoScan.xml)</visible>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>DialogVolumeBar.xml</label>
+                <visible>Window.IsVisible(DialogVolumeBar.xml)</visible>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>DialogYesNo.xml</label>
+                <visible>Window.IsVisible(DialogYesNo.xml)</visible>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>FileBrowser.xml</label>
+                <visible>Window.IsVisible(FileBrowser.xml)</visible>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>LockSettings.xml</label>
+                <visible>Window.IsVisible(LockSettings.xml)</visible>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>MusicKaraokeLyrics.xml</label>
+                <visible>Window.IsVisible(MusicKaraokeLyrics.xml)</visible>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>MusicOSD.xml</label>
+                <visible>Window.IsVisible(MusicOSD.xml)</visible>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>MusicOverlay.xml</label>
+                <visible>Window.IsVisible(MusicOverlay.xml)</visible>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>MusicVisualisation.xml</label>
+                <visible>Window.IsVisible(MusicVisualisation.xml)</visible>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>PlayerControls.xml</label>
+                <visible>Window.IsVisible(PlayerControls.xml)</visible>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>ProfileSettings.xml</label>
+                <visible>Window.IsVisible(ProfileSettings.xml)</visible>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>SettingsScreenCalibration.xml</label>
+                <visible>Window.IsVisible(SettingsScreenCalibration.xml)</visible>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>SettingsSystemInfo.xml</label>
+                <visible>Window.IsVisible(SettingsSystemInfo.xml)</visible>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>SlideShow.xml</label>
+                <visible>Window.IsVisible(SlideShow.xml)</visible>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>SmartPlaylistEditor.xml</label>
+                <visible>Window.IsVisible(SmartPlaylistEditor.xml)</visible>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>SmartPlaylistRule.xml</label>
+                <visible>Window.IsVisible(SmartPlaylistRule.xml)</visible>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>VideoOSD.xml</label>
+                <visible>Window.IsVisible(VideoOSD.xml)</visible>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>VideoOSDBookmarks.xml</label>
+                <visible>Window.IsVisible(VideoOSDBookmarks.xml)</visible>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>VideoOSDSettings.xml</label>
+                <visible>Window.IsVisible(VideoOSDSettings.xml)</visible>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>VideoOverlay.xml</label>
+                <visible>Window.IsVisible(VideoOverlay.xml)</visible>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>VisualisationPresetList.xml</label>
+                <visible>Window.IsVisible(VisualisationPresetList.xml)</visible>
+            </control>
+		</control>
+        
+        <control type="image">
+            <include>Dimensions_Fullscreen</include>
+            <texture>SideFade.png</texture>
+            <visible>Skin.HasSetting(DebugInfo)</visible>
+        </control>
+
+        <control type="grouplist"> <!-- Debuginfos -->
+            <visible>Skin.HasSetting(DebugInfo)</visible>
+            <left>SpacePadding</left>
+            <right>SpacePadding</right>
+            <top>SpacePaddingLarge</top>
+            <bottom>SpacePadding</bottom>
+            <orientation>vertical</orientation>
+            <itemgap>8</itemgap>
+            <!-- <control type="label">
+                <include>DialogID</include>
+                <label>WidgetTarget: $VAR[WidgetTarget]</label>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>WidgetTarget_Dash: $VAR[WidgetTarget_Dash]</label>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>ListItem.Art(banner): $INFO[ListItem.Art(banner)]</label>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>ListItem.Art(tvshow.banner): $INFO[ListItem.Art(tvshow.banner)]</label>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>ListItem.Art(set.poster): $INFO[ListItem.Art(set.poster)]</label>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>extraart_listitem_rule: $VAR[extraart_listitem_rule]</label>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>discart: $INFO[Player.Art(discart)]</label>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>DiscartPlayerVAR: $VAR[DiscartPlayerVAR]</label>
+            </control> -->
+			<!-- Control label -->
+            <!-- <control type="label">
+                <include>DialogID</include>
+                <label>ListItem Icon: $INFO[ListItem.Icon]</label>
+            </control>
+			<control type="label">
+				<include>DialogID</include>
+				<label>System.CurrentControl: $INFO[System.CurrentControl] System.CurrentControlID: $INFO[System.CurrentControlID]</label>
+			</control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>homemenu_id: $INFO[Container(9000).ListItem.Property(homemenu_id)]</label>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>homemenu_icon: $INFO[Container(9000).ListItem.Icon]</label>
+            </control>
+			<control type="label">
+				<include>DialogID</include>
+				<label>Container.FolderPath: $INFO[Container.FolderPath] | Container.FolderName: $INFO[Container.FolderName]</label>
+			</control>
+			<control type="label">
+				<include>DialogID</include>
+				<label>Container.ListItem.FolderPath: $INFO[Container.ListItem.FolderPath]</label>
+			</control> -->
+			<control type="label">
+				<include>DialogID</include>
+				<label>ListItem.FolderPath: $INFO[ListItem.FolderPath] | ListItem.FolderName: $INFO[ListItem.FolderName]</label>
+			</control>
+			<!-- <control type="label">
+				<include>DialogID</include>
+				<label>ListItem.LastPlayed: $INFO[ListItem.LastPlayed]</label>
+			</control>
+			<control type="label">
+				<include>DialogID</include>
+				<label>Place1 Label: $VAR[WidgetInProgressRow1_Label]</label>
+			</control>
+			<control type="label">
+				<include>DialogID</include>
+				<label>Container.Content: $INFO[Container.Content] | ListItem.Content: $INFO[ListItem.Content]</label>
+			</control>
+			<control type="label">
+				<include>DialogID</include>
+				<label>ListItem.IsResumable: $INFO[ListItem.IsResumable]</label>
+			</control>
+			<control type="label">
+				<include>DialogID</include>
+				<label>$INFO[Skin.String(moviegenreicons.path)]$INFO[ListItem.Label]$INFO[Skin.String(moviegenreicons.ext)]</label>
+				<visible>!String.IsEmpty(Skin.String(moviegenreicons.name))+Container.Content(genres)</visible>
+			</control>
+			<control type="label">
+				<include>DialogID</include>
+                <textcolor>0xFFFFA500</textcolor>
+				<label>$INFO[Skin.String(studiologos.path)]$INFO[ListItem.Studio]$INFO[Skin.String(studiologos.ext)]</label>
+				<visible>!String.IsEmpty(Skin.String(studiologos.name))+Skin.HasAddon()</visible>
+			</control>
+			<control type="label">
+				<include>DialogID</include>
+				<label>ListItem.DBID: $INFO[ListItem.DBID] | ListItem.DBTYPE: $INFO[ListItem.DBTYPE]</label>
+			</control>
+			<control type="label">
+				<include>DialogID</include>
+				<label>ListItem.FileExtension: $INFO[ListItem.FileExtension] VAR ListFlag: $VAR[ListFlag]</label>
+			</control>
+			<control type="label">
+				<include>DialogID</include>
+				<label>Posterthumb LABEL: $VAR[PosterThumbDebugLabel]</label>
+			</control>
+			<control type="label">
+				<include>DialogID</include>
+				<label>Live TV läuft</label>
+				<visible>PVR.IsPlayingTv</visible>
+			</control>
+			<control type="label">
+				<include>DialogID</include>
+				<label>Radio läuft</label>
+				<visible>PVR.IsPlayingRadio</visible>
+			</control>
+			<control type="label">
+				<include>DialogID</include>
+				<label>SET ID: $INFO[ListItem.SetID]</label>
+			</control>
+			<control type="label">
+				<include>DialogID</include>
+				<label>IsCollection</label>
+				<visible>ListItem.IsCollection</visible>
+			</control> -->
+			<control type="grouplist">
+				<orientation>horizontal</orientation>
+				<itemgap>8</itemgap>
+				<control type="image">
+                    <width>100</width>
+                    <height>80</height>
+                    <aspectratio>keep</aspectratio>
+					<texture fallback="White.png">$INFO[Player.Art(thumb)]</texture>
+				</control>
+				<control type="image">
+                    <width>100</width>
+                    <height>80</height>
+                    <aspectratio>keep</aspectratio>
+					<texture fallback="White.png">$INFO[Player.Icon]</texture>
+				</control>
+				<itemgap>8</itemgap>
+				<control type="image">
+                    <width>100</width>
+                    <height>80</height>
+                    <aspectratio>keep</aspectratio>
+					<texture fallback="White.png">$INFO[Window(Home).Property(RadioMonitor.Logo)]</texture>
+				</control>
+				<control type="image">
+                    <width>100</width>
+                    <height>80</height>
+                    <aspectratio>keep</aspectratio>
+					<texture fallback="White.png">$INFO[Window(Home).Property(RadioDE.StationLogo)]</texture>
+				</control>
+			</control>
+			<control type="label">
+                <height>80</height>
+				<include>DialogID</include>
+				<label/>
+			</control>
+			<control type="label">
+                <textcolor>FFFFA500</textcolor>
+				<include>DialogID</include>
+				<label>--- PlayerInfos ---</label>
+			</control>
+			<control type="label">
+				<include>DialogID</include>
+				<label>MusicPlayer.Artist: $INFO[MusicPlayer.Artist,[COLOR=FFFFA500],[/COLOR]] MusicPlayer.Title: $INFO[MusicPlayer.Title,[COLOR=FFFFA500],[/COLOR]]</label>
+			</control>
+			<control type="label">
+				<include>DialogID</include>
+				<label>Player.Icon: $INFO[Player.Icon]</label>
+			</control>
+			<control type="label">
+                <textcolor>FFFFA500</textcolor>
+				<include>DialogID</include>
+				<label>--- Rohdaten ---</label>
+			</control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>.Source.StreamUrl: $INFO[Window(Home).Property(RadioMonitor.Source.StreamUrl)]</label>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>.Source.PluginPlaybackUrl: $INFO[Window(Home).Property(RadioMonitor.Source.PluginPlaybackUrl)]</label>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>.Source.StreamHeaders: $INFO[Window(Home).Property(RadioMonitor.Source.StreamHeaders)]</label>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>.Source.IcyMetadataRaw: $INFO[Window(Home).Property(RadioMonitor.Source.IcyMetadataRaw),[COLOR=FFFFA500],[/COLOR]]</label>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>.Source.IcyStreamTitleRaw: $INFO[Window(Home).Property(RadioMonitor.Source.IcyStreamTitleRaw)]</label>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>.Source.IcyParsed: $INFO[Window(Home).Property(RadioMonitor.Source.IcyParsed),[COLOR=FFFFA500],[/COLOR]]</label>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>.Source.PlayingItemRaw: $INFO[Window(Home).Property(RadioMonitor.Source.PlayingItemRaw)]</label>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>.Source.JsonRpcPlayerRaw: $INFO[Window(Home).Property(RadioMonitor.Source.JsonRpcPlayerRaw)]</label>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>.Source.ListItemRaw: $INFO[Window(Home).Property(RadioMonitor.Source.ListItemRaw)]</label>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>.Source.Api.RadioDeNowPlayingRaw: $INFO[Window(Home).Property(RadioMonitor.Source.Api.RadioDeNowPlayingRaw),[COLOR=FFFFA500],[/COLOR]]</label>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>.Source.Api.TuneInJsonRaw: $INFO[Window(Home).Property(RadioMonitor.Source.Api.TuneInJsonRaw)]</label>
+                <visible>!String.IsEmpty(Window(Home).Property(RadioMonitor.Source.Api.TuneInJsonRaw))</visible>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>.Source.Api.TuneInTextRaw: $INFO[Window(Home).Property(RadioMonitor.Source.Api.TuneInTextRaw)]</label>
+                <visible>!String.IsEmpty(Window(Home).Property(RadioMonitor.Source.Api.TuneInTextRaw))</visible>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>[COLOR=FFFFA500].VerifiedSourceUrl[/COLOR]: $INFO[Window(Home).Property(RadioMonitor.VerifiedSourceUrl)]</label>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>[COLOR=FFFFA500].VerifiedSourceBy[/COLOR]: $INFO[Window(Home).Property(RadioMonitor.VerifiedSourceBy)]</label>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>[COLOR=FFFFA500].VerifiedSourceConfidence[/COLOR]: $INFO[Window(Home).Property(RadioMonitor.VerifiedSourceConfidence)]</label>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>[COLOR=white].SourceSwapStatus[/COLOR]: $INFO[Window(Home).Property(RadioMonitor.SourceSwapStatus)]</label>
+            </control>
+            <!-- <control type="grouplist">
+                <visible>String.IsEqual(Window(Home).Property(RadioMonitor.QF.Enabled),true)</visible>
+                <height>500</height>
+                <control type="label">
+                    <include>DialogID</include>
+                    <label>[COLOR=FFFFA500].QF.Request.Id[/COLOR]: $INFO[Window(Home).Property(RadioMonitor.QF.Request.Id)] [COLOR=FFFFA500].QF.Response.Id[/COLOR]: $INFO[Window(Home).Property(RadioMonitor.QF.Response.Id)]</label>
+                </control>
+                <control type="label">
+                    <include>DialogID</include>
+                    <label>[COLOR=white].QF.Request.Station[/COLOR]: $INFO[Window(Home).Property(RadioMonitor.QF.Request.Station)][COLOR=white] | .QF.Request.StationId[/COLOR]: $INFO[Window(Home).Property(RadioMonitor.QF.Request.StationId)][COLOR=white] | .QF.Response.StationUsed[/COLOR]: $INFO[Window(Home).Property(RadioMonitor.QF.Response.StationUsed)]</label>
+                </control>
+                <control type="label">
+                    <include>DialogID</include>
+                    <label>[COLOR=FFFFA500].QF.Response.Status[/COLOR]: $INFO[Window(Home).Property(RadioMonitor.QF.Response.Status)]</label>
+                </control>
+                <control type="label">
+                    <include>DialogID</include>
+                    <label>.QF.Response.Artist: $INFO[Window(Home).Property(RadioMonitor.QF.Response.Artist),[COLOR=white],[/COLOR]] .QF.Response.Title: $INFO[Window(Home).Property(RadioMonitor.QF.Response.Title),[COLOR=white],[/COLOR]]</label>
+                </control>
+                <control type="label">
+                    <include>DialogID</include>
+                    <label>[COLOR=FFFFA500].QF.Response.Source[/COLOR]: $INFO[Window(Home).Property(RadioMonitor.QF.Response.Source)] [COLOR=FFFFA500].QF.Response.Reason[/COLOR]: $INFO[Window(Home).Property(RadioMonitor.QF.Response.Reason)]</label>
+                </control>
+                <control type="label"> 
+                    <include>DialogID</include>
+                    <label>[COLOR=FFFFA500].QF.Response.Meta[/COLOR]: $INFO[Window(Home).Property(RadioMonitor.QF.Response.Meta)]</label>
+                </control>
+                <control type="label">
+                    <include>DialogID</include>
+                    <label>[COLOR=FFFFA500].QF.Response.Ts[/COLOR]: $INFO[Window(Home).Property(RadioMonitor.QF.Response.Ts)]</label>
+                </control>
+                <control type="label">
+                    <include>DialogID</include>
+                    <label>[COLOR=FFFFA500].QF.Result[/COLOR]: $INFO[Window(Home).Property(RadioMonitor.QF.Result)]</label>
+                </control>
+            </control> -->
+            <control type="label">
+                <include>DialogID</include>
+                <label>.Source.Analysis.TraceId: $INFO[Window(Home).Property(RadioMonitor.Analysis.TraceId)]</label>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>.Source.Analysis.Trigger: $INFO[Window(Home).Property(RadioMonitor.Analysis.Trigger),[COLOR=FFFFA500],[/COLOR]] WinnerSource: $INFO[Window(Home).Property(RadioMonitor.Analysis.WinnerSource),[COLOR=FFFFA500],[/COLOR]] WinnerPair: $INFO[Window(Home).Property(RadioMonitor.Analysis.WinnerPair),[COLOR=FFFFA500],[/COLOR]]</label>
+            </control>
+            <control type="label">
+                <include>DialogID</include>
+                <label>.Source.Analysis.LastEvent: $INFO[Window(Home).Property(RadioMonitor.Analysis.LastEvent)]</label>
+            </control>
+			<control type="label">
+                <textcolor>FFFFA500</textcolor>
+				<include>DialogID</include>
+				<label>--- RadioMonitor ---</label>
+			</control>
+			<control type="label">
+				<include>DialogID</include>
+				<label>RadioMonitor.Station: $INFO[Window(Home).Property(RadioMonitor.Station)]$INFO[Window(Home).Property(RadioDE.StationName),[COLOR=FFFFA500] | [/COLOR]RadioDE.StationName: ,]$INFO[Window(Home).Property(RadioMonitor.StreamTitle),[COLOR=FFFFA500] | [/COLOR],]</label>
+			</control>
+			<control type="label">
+				<include>DialogID</include>
+				<label>RadioMonitor.IcyNowPlaying: $INFO[Window(Home).Property(RadioMonitor.IcyNowPlaying)]</label>
+			</control>
+			<control type="label">
+				<include>DialogID</include>
+				<label>RadioMonitor.ApiNowPlaying: $INFO[Window(Home).Property(RadioMonitor.ApiNowPlaying)]</label>
+			</control>
+			<control type="label">
+				<include>DialogID</include>
+				<label>RadioMonitor.Playing: $INFO[Window(Home).Property(RadioMonitor.Playing)]$INFO[Window(Home).Property(RadioMonitor.SourceDetail),[COLOR=FFFFA500] | [/COLOR]RadioMonitor.SourceDetail: ,]</label>
+			</control>
+			<control type="label">
+				<include>DialogID</include>
+				<label>RadioMonitor.Source: $INFO[Window(Home).Property(RadioMonitor.Source),[COLOR=FFFFA500],[/COLOR]] RadioMonitor.Artist: $INFO[Window(Home).Property(RadioMonitor.Artist),[COLOR=white],[/COLOR]]$INFO[Window(Home).Property(RadioMonitor.BandFormed), (,)][COLOR=FFFFA500] | [/COLOR]RadioMonitor.ArtistDisplay: $INFO[Window(Home).Property(RadioMonitor.ArtistDisplay),[COLOR=white],[/COLOR]][COLOR=FFFFA500] | [/COLOR]RadioMonitor.Title: $INFO[Window(Home).Property(RadioMonitor.Title),[COLOR=white],[/COLOR]]$INFO[Window(Home).Property(RadioMonitor.BandMembers),[COLOR=FFFFA500] | [/COLOR]RadioMonitor.BandMembers: ,]</label>
+			</control>
+			<control type="label">
+				<include>DialogID</include>
+				<label>RadioMonitor.ArtistMBID: $INFO[Window(Home).Property(RadioMonitor.ArtistMBID)]</label>
+			</control>
+			<control type="label">
+				<include>DialogID</include>
+				<label>RadioMonitor.Album: $INFO[Window(Home).Property(RadioMonitor.Album)] $INFO[Window(Home).Property(RadioMonitor.AlbumDate),(,)] RadioMonitor.FirstRelease: $INFO[Window(Home).Property(RadioMonitor.FirstRelease)] RadioMonitor.Genre: $INFO[Window(Home).Property(RadioMonitor.Genre)]</label>
+			</control>
+			<control type="label">
+				<include>DialogID</include>
+                <label>RadioMonitor.MBDurationS: $INFO[Window(Home).Property(RadioMonitor.MBDurationS),[COLOR=FFFFA500], s[/COLOR] | ] RadioMonitor.TimeoutRemaining / TimeoutTotal: $INFO[Window(Home).Property(RadioMonitor.TimeoutRemaining),[COLOR=FFFFA500],[/COLOR] / ]$INFO[Window(Home).Property(RadioMonitor.TimeoutTotal),[COLOR=FFFFA500], s[/COLOR]]</label>
+			</control>
+			<control type="label">
+                <textcolor>FFFFA500</textcolor>
+				<include>DialogID</include>
+				<label>--- Artistslideshow ---</label>
+			</control>
+			<control type="label">
+				<include>DialogID</include>
+                <label>AS läuft: $INFO[Window.Property(ArtistSlideshowRunning)] | Bild: $INFO[Window.Property(ArtistSlideshow.Image)]</label>
+			</control>
+		</control>
+	</include>
+</includes>

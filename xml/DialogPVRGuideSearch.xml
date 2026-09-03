@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+    <defaultcontrol always="true">9</defaultcontrol>
+    <include>openclose</include>
+    <controls>
+        <include>DialogBackgroundSimple</include>
+		<visible>!Window.IsVisible(FileBrowser)</visible>
+        <control type="group">
+            <include>openclosebox</include>
+            <include content="DialogBackgroundCommons">
+				<param name="width" value="60%" />
+				<param name="height" value="76%" />
+                <param name="header_id" value="1" />
+                <param name="header_label" value="$LOCALIZE[19142]" />
+            </include>
+            <control type="group">
+                <left>SpacePadding</left>
+				<right>SpacePadding</right>
+                <top>SpacePaddingXL</top>
+				<bottom>SpacePaddingXL</bottom>
+                <control type="image">
+                    <texture border="15">osd/ProgressBack.png</texture>
+                </control>
+                <control type="group">
+					<left>SpacePadding</left>
+					<right>SpacePadding</right>
+					<top>SpacePadding</top>
+					<bottom>SpacePadding</bottom>
+					<control type="image">
+						<height>75</height>
+						<aspectratio>stretch</aspectratio>
+						<texture border="20">buttons/KeyboardEditArea.png</texture>
+					</control>
+					<control type="edit" id="9">
+						<description>Search string</description>
+						<width>100%</width>
+						<height>75</height>
+						<align>left</align>
+						<onleft>9</onleft>
+						<onright>9</onright>
+						<onup>9000</onup>
+						<ondown>10</ondown>
+						<textcolor>white</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus></texturefocus>
+						<texturenofocus></texturenofocus>
+					</control>
+					<control type="textbox">
+						<description>Search help</description>
+						<top>80</top>
+						<height>100</height>
+						<align>left</align>
+						<textcolor>description</textcolor>
+						<font>ubuntu-r13b</font>
+						<label>$LOCALIZE[19001] $LOCALIZE[19002]</label>
+					</control>
+					<control type="grouplist" id="9002">
+						<top>160</top>
+						<width>50%</width>
+						<onup>9</onup>
+						<ondown>9000</ondown>
+						<onleft>9001</onleft>
+						<onright>9001</onright>
+						<itemgap>0</itemgap>
+						<include content="DialogRadioButton">
+							<param name="id" value="10" />
+							<param name="width" value="100%" />
+							<param name="height" value="52" />
+							<param name="label" value="$LOCALIZE[19134]" />
+							<param name="align" value="left" />
+							<param name="onright" value="9001" />
+							<param name="nofocus" />
+						</include>
+						<include content="DialogRadioButton">
+							<param name="id" value="11" />
+							<param name="width" value="100%" />
+							<param name="height" value="52" />
+							<param name="label" value="$LOCALIZE[19135]" />
+							<param name="align" value="left" />
+							<param name="onright" value="9001" />
+							<param name="nofocus" />
+						</include>
+						<include content="DialogEditButton">
+							<param name="id" value="14" />
+							<param name="width" value="100%" />
+							<param name="height" value="52" />
+							<param name="label" value="$LOCALIZE[19128]" />
+							<param name="align" value="left" />
+							<param name="onright" value="9001" />
+							<param name="nofocus" />
+						</include>
+						<include content="DialogEditButton">
+							<param name="id" value="15" />
+							<param name="width" value="100%" />
+							<param name="height" value="52" />
+							<param name="label" value="$LOCALIZE[19129]" />
+							<param name="align" value="left" />
+							<param name="onright" value="9001" />
+							<param name="nofocus" />
+						</include>
+						<include content="DialogSpinButton">
+							<param name="id" value="18" />
+							<param name="width" value="100%" />
+							<param name="height" value="52" />
+							<param name="label" value="$LOCALIZE[515]" />
+							<param name="align" value="left" />
+							<param name="onright" value="9001" />
+							<param name="nofocus" />
+						</include>
+						<include content="DialogRadioButton">
+							<param name="id" value="20" />
+							<param name="width" value="100%" />
+							<param name="height" value="52" />
+							<param name="label" value="$LOCALIZE[19132]" />
+							<param name="align" value="left" />
+							<param name="onright" value="9001" />
+							<param name="nofocus" />
+						</include>
+						<include content="DialogRadioButton">
+							<param name="id" value="22" />
+							<param name="width" value="100%" />
+							<param name="height" value="52" />
+							<param name="label" value="$LOCALIZE[19123]" />
+							<param name="align" value="left" />
+							<param name="onright" value="9001" />
+							<param name="nofocus" />
+						</include>
+						<include content="DialogRadioButton">
+							<param name="id" value="24" />
+							<param name="width" value="100%" />
+							<param name="height" value="52" />
+							<param name="label" value="$LOCALIZE[19124]" />
+							<param name="align" value="left" />
+							<param name="onright" value="9001" />
+							<param name="nofocus" />
+						</include>
+					</control>
+					<control type="grouplist" id="9001">
+						<right>0</right>
+						<width>50%</width>
+						<top>160</top>
+						<onup>9</onup>
+						<ondown>9000</ondown>
+						<onleft>9002</onleft>
+						<onright>9002</onright>
+						<itemgap>0</itemgap>
+						<include content="DialogSpinButton">
+							<param name="id" value="12" />
+							<param name="width" value="100%" />
+							<param name="height" value="52" />
+							<param name="label" value="$LOCALIZE[19130]" />
+							<param name="align" value="left" />
+							<param name="onleft" value="9002" />
+							<param name="nofocus" />
+						</include>
+						<include content="DialogSpinButton">
+							<param name="id" value="13" />
+							<param name="width" value="100%" />
+							<param name="height" value="52" />
+							<param name="label" value="$LOCALIZE[19131]" />
+							<param name="align" value="left" />
+							<param name="onleft" value="9002" />
+							<param name="nofocus" />
+						</include>
+						<include content="DialogEditButton">
+							<param name="id" value="16" />
+							<param name="width" value="100%" />
+							<param name="height" value="52" />
+							<param name="label" value="$LOCALIZE[19126]" />
+							<param name="align" value="left" />
+							<param name="onleft" value="9002" />
+							<param name="nofocus" />
+						</include>
+						<include content="DialogEditButton">
+							<param name="id" value="17" />
+							<param name="width" value="100%" />
+							<param name="height" value="52" />
+							<param name="label" value="$LOCALIZE[19127]" />
+							<param name="align" value="left" />
+							<param name="onleft" value="9002" />
+							<param name="nofocus" />
+						</include>
+						<include content="DialogRadioButton">
+							<param name="id" value="19" />
+							<param name="width" value="100%" />
+							<param name="height" value="52" />
+							<param name="label" value="$LOCALIZE[19121]" />
+							<param name="align" value="left" />
+							<param name="onleft" value="9002" />
+							<param name="nofocus" />
+						</include>
+						<include content="DialogSpinButton">
+							<param name="id" value="21" />
+							<param name="width" value="100%" />
+							<param name="height" value="52" />
+							<param name="label" value="$LOCALIZE[19141]" />
+							<param name="align" value="left" />
+							<param name="onleft" value="9002" />
+							<param name="nofocus" />
+						</include>
+						<include content="DialogSpinButton">
+							<param name="id" value="23" />
+							<param name="width" value="100%" />
+							<param name="height" value="52" />
+							<param name="label" value="$LOCALIZE[19148]" />
+							<param name="align" value="left" />
+							<param name="onleft" value="9002" />
+							<param name="nofocus" />
+						</include>
+						<include content="DialogRadioButton">
+							<param name="id" value="27" />
+							<param name="width" value="100%" />
+							<param name="height" value="52" />
+							<param name="label" value="$LOCALIZE[19125]" />
+							<param name="align" value="left" />
+							<param name="onleft" value="9002" />
+							<param name="nofocus" />
+						</include>
+					</control>
+				</control>
+			</control>
+			<control type="grouplist" id="9000">
+				<centerleft>50%</centerleft>
+				<bottom>4</bottom>
+				<height>48</height>
+				<width>1070</width>
+				<align>center</align>
+				<itemgap>dialogbuttons_itemgap</itemgap>
+				<orientation>horizontal</orientation>
+				<include content="DefaultDialogButton">
+					<param name="id" value="26" />
+					<param name="label" value="$LOCALIZE[137]" />
+					<param name="onup" value="9002" />
+					<param name="ondown" value="9" />
+				</include>
+				<include content="DefaultDialogButton">
+					<param name="id" value="29" />
+					<param name="label" value="$LOCALIZE[190]" />
+					<param name="onup" value="9002" />
+					<param name="ondown" value="9" />
+				</include>
+				<include content="DefaultDialogButton">
+					<param name="id" value="28" />
+					<param name="label" value="$LOCALIZE[13007]" />
+					<param name="onup" value="9001" />
+					<param name="ondown" value="9" />
+				</include>
+				<include content="DefaultDialogButton">
+					<param name="id" value="25" />
+					<param name="label" value="$LOCALIZE[222]" />
+					<param name="onup" value="9001" />
+					<param name="ondown" value="9" />
+				</include>
+			</control>
+        </control>
+    </controls>
+</window>

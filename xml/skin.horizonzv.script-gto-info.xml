@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window id="1900">
+    <defaultcontrol always="true">10</defaultcontrol>
+    <include>openclose</include>
+    <controls>
+		<centerleft>50%</centerleft>
+		<centertop>50%</centertop>
+        <control type="group">
+			<include content="DefaultPopupLayout">
+				<param name="PopupHeaderTitle">$INFO[Window(Home).Property(GTO.Info.Channel)]</param>
+				<param name="PopupTitle">[UPPERCASE]$INFO[Window(Home).Property(GTO.Info.Title)][/UPPERCASE]</param>
+			</include>
+            <include>openclosebox</include>
+            <include>openclosevisible</include>
+            <visible>!Window.IsVisible(Custom_4111_Switchtimer.xml)</visible>
+            <control type="group" id="576757">
+                <width>1120</width>
+                <height>675</height>
+                <control type="group">
+                    <top>75</top>
+                    <control type="group">
+                        <animation effect="slide" end="-300" condition="String.IsEmpty(Window(Home).Property(GTO.Info.Cast))">Conditional</animation>
+                        <control type="image">
+                            <left>675</left>
+                            <top>105</top>
+                            <width>480</width>
+                            <height>270</height>
+                            <texture border="2">$INFO[Window(Home).Property(GTO.Info.Picture)]</texture>
+                            <aspectratio>scale</aspectratio>
+                        </control>
+                        <control type="image">
+                            <description>Channel Logo</description>
+                            <left>1065</left>
+                            <top>112</top>
+                            <width>75</width>
+                            <height>75</height>
+                            <texture>$INFO[Window(Home).Property(GTO.Info.Logo)]</texture>
+                            <aspectratio align="right" aligny="top">keep</aspectratio>
+                        </control>
+                        <control type="image">
+                            <left>675</left>
+                            <top>105</top>
+                            <width>480</width>
+                            <height>270</height>
+                            <colordiffuse>menudiffuse</colordiffuse>
+                            <texture border="2">Shadow.png</texture>
+                        </control>
+                        <control type="label">
+                            <left>675</left>
+                            <top>345</top>
+                            <width>480</width>
+                            <height>15</height>
+                            <font>font12</font>
+							<shadowcolor>black</shadowcolor>
+                            <label>$INFO[Window(Home).Property(GTO.Info.Date)]$INFO[Window(Home).Property(GTO.Info.EndTime), - ,]</label>
+                            <align>center</align>
+                            <scroll>true</scroll>
+                        </control>
+                    </control>
+                    <control type="label">
+                        <left>75</left>
+                        <top>105</top>
+                        <width>465</width>
+                        <height>22</height>
+                        <label>Cast:</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <visible>!String.IsEmpty(Window(Home).Property(GTO.Info.Cast))</visible>
+                    </control>
+                    <control type="textbox">
+                        <left>120</left>
+                        <top>150</top>
+                        <width>450</width>
+                        <height>270</height>
+						<shadowcolor>grey3</shadowcolor>
+                        <label>$INFO[Window(Home).Property(GTO.Info.Cast)]</label>
+                        <align>left</align>
+                        <visible>!String.IsEmpty(Window(Home).Property(GTO.Info.Cast))</visible>
+                    </control>
+                    <control type="label">
+                        <left>75</left>
+                        <top>398</top>
+                        <width>1050</width>
+                        <height>22</height>
+                        <label>$INFO[Window(Home).Property(GTO.Info.Genre)]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                    </control>
+                    <control type="textbox">
+                        <left>120</left>
+                        <top>440</top>
+                        <width>1005</width>
+                        <height>280</height>
+                        <include condition="!Skin.HasSetting(BigPlotText)">PlotText16Var</include>
+                        <include condition="Skin.HasSetting(BigPlotText)">PlotTextBigVar</include>
+						<shadowcolor>grey3</shadowcolor>
+                        <align>left</align>
+						<autoscroll delay="5000" time="5000" repeat="10000">!IsEmpty(Window(Home).Property(GTO.Info.Description))</autoscroll>
+						<label>$INFO[Window(Home).Property(GTO.Info.Description)]</label>
+                    </control>
+                </control>
+                <control type="grouplist" id="10">
+                    <top>820</top>
+                    <width>1222</width>
+                    <height>45</height>
+                    <align>center</align>
+                    <itemgap>8</itemgap>
+                    <orientation>horizontal</orientation>
+                    <control type="button" id="21">
+                        <description>Switch button</description>
+                        <width min="225" max="300">auto</width>
+                        <label>$ADDON[script.service.gto 30108]</label>
+						<include>DialogButtonTextureFocus</include>
+                        <texturenofocus/>
+                        <align>center</align>
+                        <enable>String.IsEqual(Window(Home).Property(GTO.Info.isRunning),True) + !String.IsEqual(Window(Home).Property(GTO.Info.ChannelID),False)</enable>
+                        <onclick>RunPlugin(plugin://script.service.gto?action=switch_channel&amp;pvrid=$INFO[Window(Home).Property(GTO.Info.ChannelID)]&amp;item=$INFO[Window(Home).Property(GTO.Info.Item)])</onclick>
+                        <onclick>Dialog.Close(all)</onclick>
+                    </control>
+                    <control type="button" id="22">
+                        <description>Record button</description>
+                        <width min="225" max="300">auto</width>
+                        <label>$ADDON[script.service.gto 30112]</label>
+						<include>DialogButtonTextureFocus</include>
+                        <texturenofocus/>
+                        <align>center</align>
+                        <enable>!String.IsEmpty(Window(Home).Property(GTO.Info.BroadcastID)) + String.IsEqual(Window(Home).Property(GTO.Info.hasTimer),False)</enable>
+                        <onclick>RunPlugin(plugin://script.service.gto?action=record&amp;broadcastid=$INFO[Window(Home).Property(GTO.Info.BroadcastID)]&amp;item=$INFO[Window(Home).Property(GTO.Info.Item)])</onclick>
+                        <onclick>Dialog.Close(all)</onclick>
+                    </control>
+                    <control type="button" id="23">
+                        <description>Cancel button</description>
+                        <width min="225" max="300">auto</width>
+                        <label>$ADDON[script.service.gto 30119]</label>
+						<include>DialogButtonTextureFocus</include>
+                        <texturenofocus/>
+                        <align>center</align>
+						<onclick>RunPlugin(plugin://script.service.gto?action=getcontent)</onclick>
+                        <onclick>Dialog.Close(all)</onclick>
+                    </control>
+                </control>
+            </control>
+        </control>
+    </controls>
+</window>

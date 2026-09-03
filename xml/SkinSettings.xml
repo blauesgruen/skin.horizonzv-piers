@@ -1,0 +1,2049 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="56">
+    <defaultcontrol always="true">8000</defaultcontrol>
+	<backgroundcolor>grey3</backgroundcolor>
+	<onload>ClearProperty(SSD)</onload>
+	<onunload>ClearProperty(SSD)</onunload>
+    <controls>
+        <control type="group">
+            <include>Multiimage</include>
+			<control type="multiimage">
+				<include>Dimensions_Fullscreen</include>
+				<timeperimage>4000</timeperimage>
+				<fadetime>800</fadetime>
+				<randomize>true</randomize>
+				<aspectratio>scale</aspectratio>
+				<imagepath colordiffuse="grey1">$VAR[Infobox_Grafik]</imagepath>
+				<visible>Control.HasFocus(824)|[[Control.HasFocus(810)|Control.HasFocus(811)]+Skin.HasSetting(onlyone)]</visible>
+				<visible>Container(8000).HasFocus(6)</visible>
+				<include>openclose</include>
+				<include>openclosevisible</include>
+			</control>
+            <control type="group">
+                <control type="group"> <!-- Main List 8000 -->
+                    <include>opencloseslideright</include>
+                    <include>openclosevisible</include>
+                    <width>510</width>
+                    <control type="image">
+                        <include>openclose</include>
+                        <include>openclosevisible</include>
+                        <texture>BlackBack.png</texture>
+                    </control>
+                    <control type="list" id="8000">
+                        <top>SpacePaddingXL</top>
+                        <description>List</description>
+                        <left>-1</left>
+                        <onup>8000</onup>
+                        <ondown>8000</ondown>
+                        <onleft/>
+                        <onright>99</onright>
+                        <onunfocus>ClearProperty(SSD)</onunfocus>
+                        <scrolltime>0</scrolltime>
+                        <orientation>vertical</orientation>
+                        <pagecontrol/>
+                        <itemlayout height="60" width="auto">
+                            <control type="label">
+                                <left>15</left>
+                                <right>15</right>
+                                <height>48</height>
+                                <font>ubuntu-r19b</font>
+                                <label>$INFO[ListItem.Label]</label>
+                            </control>
+                        </itemlayout>
+                        <focusedlayout height="60" width="auto">
+                            <control type="image">
+                                <height>48</height>
+                                <include content="DialogButtonTextureFocus">
+                                    <param name="color" value="grey" />
+                                </include>
+                                <visible>!Control.HasFocus(8000)</visible>
+                            </control>
+                            <control type="image">
+                                <height>48</height>
+                                <include>DialogButtonTextureFocus</include>
+                                <visible>Control.HasFocus(8000)</visible>
+                            </control>
+                            <control type="label">
+                                <left>15</left>
+                                <right>15</right>
+                                <height>48</height>
+                                <textcolor>black</textcolor>
+                                <font>ubuntu-r19b</font>
+                                <label>$INFO[ListItem.Label]</label>
+                                <visible>Control.HasFocus(8000)</visible>
+                            </control>
+                            <control type="label">
+                                <left>15</left>
+                                <right>15</right>
+                                <height>48</height>
+                                <textcolor>white</textcolor>
+                                <font>ubuntu-r19b</font>
+                                <label>$INFO[ListItem.Label]</label>
+                                <visible>!Control.HasFocus(8000)</visible>
+                            </control>
+                        </focusedlayout>
+                        <content>
+                            <item id="2">
+                                <description>Homebutton Settings</description>
+                                <label>301346</label>
+                                <onclick/>
+                            </item>
+                            <item id="9">
+                                <description>Submenu Settings</description>
+                                <label>301348</label>
+                                <onclick/>
+                            </item>
+                            <item id="4">
+                                <label>301350</label>
+                                <onclick/>
+                            </item>
+                            <item id="5">
+                                <description>Widget Settings</description>
+                                <label>301351</label>
+                                <onclick/>
+                            </item>
+                            <item id="6">
+                                <description>Design / Performance</description>
+                                <label>301352</label>
+                                <onclick/>
+                            </item>
+                            <item id="7">
+                                <description>Extra Art Settings</description>
+                                <label>301354</label>
+                                <onclick/>
+                            </item>
+                            <item id="1">
+                                <description>Admin Menu</description>
+                                <label>301356</label>
+                                <onclick/>
+                            </item>
+                            <item id="10">
+                                <description>Shutdown Menu</description>
+                                <label>301357</label>
+                                <onclick/>
+                            </item>
+                            <item id="11">
+                                <description>Addon Menu</description>
+                                <label>$LOCALIZE[24001]</label>
+                                <onclick/>
+                            </item>
+                        </content>
+                    </control>
+                    <control type="group">
+                        <right>0</right>
+                        <width>akzentline_size</width>
+                        <control type="image">
+                            <colordiffuse>$VAR[BackgroundOverlayColorDialog]</colordiffuse>
+                            <texture>White.png</texture>
+                        </control>
+                    </control>
+                </control>
+                <control type="group">
+                    <left>540</left>
+                    <top>SpacePaddingXL</top>
+                    <bottom>220</bottom>
+                    <control type="group" id="99">
+                        <right>SpacePaddingLarge</right>
+                        <include>openclosemedium</include>
+                        <control type="grouplist" id="100"> <!-- Shutdown -->
+                            <description>Control Area</description>
+                            <itemgap>3</itemgap>
+                            <onleft>8000</onleft>
+                            <onright>70</onright>
+                            <orientation>vertical</orientation>
+                            <pagecontrol>70</pagecontrol>
+                            <visible>Container(8000).Hasfocus(10)</visible>
+                            <control type="radiobutton" id="110">
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>$LOCALIZE[301584] "$LOCALIZE[13012]" $LOCALIZE[301588]</label>
+                                <onclick>Skin.ToggleSetting(Shutdown_noexit)</onclick>
+                                <selected>Skin.HasSetting(Shutdown_noexit)</selected>
+                            </control>
+                            <control type="radiobutton" id="111">
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>$LOCALIZE[301584] "$LOCALIZE[13016]" $LOCALIZE[301588]</label>
+                                <onclick>Skin.ToggleSetting(Shutdown_noshutdown)</onclick>
+                                <selected>Skin.HasSetting(Shutdown_noshutdown)</selected>
+                            </control>
+                            <control type="radiobutton" id="112">
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>$LOCALIZE[301584] "$LOCALIZE[20150]" $LOCALIZE[301588]</label>
+                                <onclick>Skin.ToggleSetting(Shutdown_notimer)</onclick>
+                                <selected>Skin.HasSetting(Shutdown_notimer)</selected>
+                            </control>
+                            <control type="radiobutton" id="113">
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>$LOCALIZE[301584] "$LOCALIZE[13011]" $LOCALIZE[301588]</label>
+                                <onclick>Skin.ToggleSetting(Shutdown_nosuspent)</onclick>
+                                <selected>Skin.HasSetting(Shutdown_nosuspent)</selected>
+                            </control>
+                            <control type="radiobutton" id="114">
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>$LOCALIZE[301584] "$LOCALIZE[13010]" $LOCALIZE[301588]</label>
+                                <onclick>Skin.ToggleSetting(Shutdown_nohibernate)</onclick>
+                                <selected>Skin.HasSetting(Shutdown_nohibernate)</selected>
+                            </control>
+                            <control type="radiobutton" id="115">
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>$LOCALIZE[301584] "$LOCALIZE[13013]" $LOCALIZE[301588]</label>
+                                <onclick>Skin.ToggleSetting(Shutdown_noreboot)</onclick>
+                                <selected>Skin.HasSetting(Shutdown_noreboot)</selected>
+                            </control>
+                            <control type="radiobutton" id="116">
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>$LOCALIZE[301584] "$LOCALIZE[13017]" $LOCALIZE[301588]</label>
+                                <onclick>Skin.ToggleSetting(shutdown_noinhibitidle)</onclick>
+                                <selected>Skin.HasSetting(shutdown_noinhibitidle)</selected>
+                            </control>
+                            <control type="radiobutton" id="117">
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>$LOCALIZE[301584] "$LOCALIZE[13018]" $LOCALIZE[301588]</label>
+                                <onclick>Skin.ToggleSetting(shutdown_noallowidle)</onclick>
+                                <selected>Skin.HasSetting(shutdown_noallowidle)</selected>
+                            </control>
+                            <control type="label" id="118">
+                                <width>100%</width>
+                                <height>18</height>
+                                <align>center</align>
+                                <label/>
+                            </control>
+                            <control type="image" id="119">
+                                <width>100%</width>
+                                <height>1</height>
+                                <align>center</align>
+                                <texture>Separator2.png</texture>
+                                <colordiffuse>description</colordiffuse>
+                            </control>
+                            <control type="label" id="120">
+                                <!-- Extra Buttons -->
+                                <width>100%</width>
+                                <height>18</height>
+                                <align>center</align>
+                                <label/>
+                            </control>
+                            <control type="radiobutton" id="121">
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>$LOCALIZE[301586] "$LOCALIZE[301592]" $LOCALIZE[301588]</label>
+                                <onclick>Skin.ToggleSetting(shutdown_restart)</onclick>
+                                <selected>Skin.HasSetting(shutdown_restart)</selected>
+                            </control>
+                            <control type="radiobutton" id="122">
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>$LOCALIZE[301586] "$LOCALIZE[301590]" $LOCALIZE[301588]</label>
+                                <onclick>Skin.ToggleSetting(shutdown_reload)</onclick>
+                                <selected>Skin.HasSetting(shutdown_reload)</selected>
+                            </control>
+                            <control type="radiobutton" id="123">
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>$LOCALIZE[301586] "$LOCALIZE[13013] $LOCALIZE[19156] Nand" $LOCALIZE[301588]</label>
+                                <onclick>Skin.ToggleSetting(shutdown_nand)</onclick>
+                                <selected>Skin.HasSetting(shutdown_nand)</selected>
+                            </control>
+                            <control type="radiobutton" id="124">
+                                <width>100%</width>
+                                <align>left</align>
+                                <label>Addon</label>
+                                <include>DialogButtonTextureFocus</include>
+                                <onclick>Skin.ToggleSetting(shutdown_addon)</onclick>
+                                <selected>Skin.HasSetting(shutdown_addon)</selected>
+                            </control>
+                            <control type="button" id="125">
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label> - Addon wählen</label>
+                                <label2>$INFO[Skin.String(shutdown_addon1)]</label2>
+                                <onclick>Skin.SetAddon(shutdown_addon1,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.executable,xbmc.addon.image,kodi.gameclient)</onclick>
+                                <visible>Skin.HasSetting(shutdown_addon)</visible>
+                            </control>
+                            <control type="button" id="126">
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label> - eigenes Label festlegen</label>
+                                <label2>$INFO[Skin.String(shutdown_addon1_label)]</label2>
+                                <onclick>Skin.SetString(shutdown_addon1_label)</onclick>
+                                <visible>Skin.HasSetting(shutdown_addon)</visible>
+                            </control>
+                            <control type="radiobutton" id="127">
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>$LOCALIZE[301622] $LOCALIZE[301624]</label>
+                                <label>301622</label>
+                                <onclick>Skin.ToggleSetting(videolibrary_export)</onclick>
+                                <selected>Skin.HasSetting(videolibrary_export)</selected>
+                            </control>
+                        </control>
+                        <control type="grouplist" id="200"> <!-- Admin -->
+                            <description>Control Area</description>
+                            <itemgap>3</itemgap>
+                            <onup>200</onup>
+                            <ondown>200</ondown>
+                            <onleft>8000</onleft>
+                            <onright>70</onright>
+                            <orientation>vertical</orientation>
+                            <pagecontrol>70</pagecontrol>
+                            <visible>Container(8000).Hasfocus(1)</visible>
+                            <control type="radiobutton" id="202">
+                                <description>visible Debug Grid</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>301358</label>
+                                <onclick>Skin.ToggleSetting(DebugGrid)</onclick>
+                                <selected>Skin.HasSetting(DebugGrid)</selected>
+                            </control>
+                            <control type="radiobutton" id="204">
+                                <description>Disable Debug Info</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>301360</label>
+                                <onclick>Skin.ToggleSetting(DebugInfo)</onclick>
+                                <selected>Skin.HasSetting(DebugInfo)</selected>
+                            </control>
+                            <control type="radiobutton" id="208">
+                                <description>Firstrun</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>301362</label>
+                                <onclick>Skin.ToggleSetting(firstrun_horizonzv)</onclick>
+                                <onclick>Skin.ToggleSetting(firstrun1_horizonzv)</onclick>
+                                <selected>!Skin.HasSetting(firstrun_horizonzv)</selected>
+                            </control>
+                            <control type="button" id="210">
+                                <description>Systemleistung</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>301364</label>
+                                <onclick>ActivateWindow(home)</onclick>
+                                <onclick>ActivateWindow(1155)</onclick>
+                            </control>
+                            <control type="button" id="212">
+                                <description>Reset all Settings</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>$LOCALIZE[10035] $LOCALIZE[13007]</label>
+                                <onclick>ActivateWindow(1154)</onclick>
+                            </control>
+                            <control type="radiobutton" id="214">
+                                <description>Mousearrow Settings</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>301366</label>
+                                <onclick>Skin.ToggleSetting(mousearrow)</onclick>
+                                <selected>Skin.HasSetting(mousearrow)</selected>
+                            </control>
+                            <control type="radiobutton" id="216">
+                                <description>Kiosk Mode</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>Kiosk Mode</label>
+                                <onclick>Skin.ToggleSetting(kioskmode)</onclick>
+                                <selected>Skin.HasSetting(kioskmode)</selected>
+                            </control>
+                        </control>
+                        <control type="grouplist" id="300"> <!-- Homebuttons Setting -->
+                            <description>Control Area</description>
+                            <itemgap>3</itemgap>
+                            <onup>300</onup>
+                            <ondown>300</ondown>
+                            <onleft>8000</onleft>
+                            <onright>70</onright>
+                            <orientation>vertical</orientation>
+                            <pagecontrol>70</pagecontrol>
+                            <visible>Container(8000).HasFocus(2)</visible>
+                            <include>openclosevisible</include>
+                            <control type="button" id="299">
+                                <description>User Focus</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>301368</label>
+                                <focusedcolor>black</focusedcolor>
+                                <onclick>ActivateWindow(1301)</onclick>
+                            </control>
+                            <control type="button" id="301">
+                                <description>User Focus</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>301370</label>
+                                <label2>$INFO[Skin.String(homemenufocus)]</label2>
+                                <focusedcolor>black</focusedcolor>
+                                <onclick>Skin.SetString(homemenufocus)</onclick>
+                            </control>
+                            <control type="button" id="302">
+                                <description>Music Button</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>$VAR[Home_music_Label]</label>
+                                <onclick>SetProperty(HomeButton,music,home)</onclick>
+                                <onclick>ActivateWindow(1501)</onclick>
+                                <!-- <enable>Library.HasContent(Music)</enable> -->
+                            </control>
+                            <control type="button" id="303">
+                                <description>Video Button</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>$VAR[Home_videos_Label]</label>
+                                <onclick>SetProperty(HomeButton,videos,home)</onclick>
+                                <onclick>ActivateWindow(1501)</onclick>
+                            </control>
+                            <control type="button" id="304">
+                                <description>Movie Button</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>$VAR[Home_movies_Label]</label>
+                                <onclick>SetProperty(HomeButton,movies,home)</onclick>
+                                <onclick>ActivateWindow(1501)</onclick>
+                                <!-- <enable>Library.HasContent(Movies)</enable> -->
+                            </control>
+                            <control type="button" id="305">
+                                <description>Game Button</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>$LOCALIZE[15016]</label>
+                                <focusedcolor>black</focusedcolor>
+                                <onclick>SetProperty(HomeButton,games,home)</onclick>
+                                <onclick>ActivateWindow(1501)</onclick>
+                                <!-- <visible>System.GetBool(gamesgeneral.enable)</visible> -->
+                            </control>
+                            <control type="button" id="306">
+                                <description>Dashboard Button</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>301371</label>
+                                <onclick>SetProperty(HomeButton,dashboard,home)</onclick>
+                                <onclick>ActivateWindow(1501)</onclick>
+                            </control>
+                            <control type="button" id="307">
+                                <description>TVShow Button</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>$VAR[Home_tvshow_Label]</label>
+                                <onclick>SetProperty(HomeButton,tvshow,home)</onclick>
+                                <onclick>ActivateWindow(1501)</onclick>
+                            </control>
+                            <control type="button" id="308">
+                                <description>MusicVideo Button</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>$VAR[Home_musicvideo_Label]</label>
+                                <onclick>SetProperty(HomeButton,musicvideo,home)</onclick>
+                                <onclick>ActivateWindow(1501)</onclick>
+                            </control>
+                            <control type="button" id="309">
+                                <description>Picture Button</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>$VAR[Home_picture_Label]</label>
+                                <onclick>SetProperty(HomeButton,picture,home)</onclick>
+                                <onclick>ActivateWindow(1501)</onclick>
+                            </control>
+                            <control type="radiobutton" id="310">
+                                <description>Weather Button</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>$LOCALIZE[8]</label>
+                                <focusedcolor>black</focusedcolor>
+                                <onclick>Skin.ToggleSetting(HomeMenuNoWeatherButton)</onclick>
+                                <selected>!Skin.HasSetting(HomeMenuNoWeatherButton)</selected>
+                            </control>
+                            <control type="radiobutton" id="432">
+                                <description>Weather Fadeout</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label> - $LOCALIZE[301372]</label>
+                                <focusedcolor>black</focusedcolor>
+                                <onclick>Skin.ToggleSetting(HomeMenuWeatherFadeout)</onclick>
+                                <selected>Skin.HasSetting(HomeMenuWeatherFadeout)</selected>
+                                <visible>!Skin.HasSetting(HomeMenuNoWeatherButton)</visible>
+                            </control>
+                            <control type="button" id="434">
+                                <description>Weather Timer</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label> - $LOCALIZE[301374]</label>
+                                <label2>$INFO[Skin.String(hidehomemenu_timer),, sec]</label2>
+                                <focusedcolor>black</focusedcolor>
+                                <onclick>Skin.SetNumeric(hidehomemenu_timer)</onclick>
+                                <visible>Skin.HasSetting(HomeMenuWeatherFadeout)</visible>
+                                <visible>!Skin.HasSetting(HomeMenuNoWeatherButton)</visible>
+                            </control>
+                            <control type="radiobutton" id="436">
+                                <description>Weather Toggle Fanart Home</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label> - $LOCALIZE[301428]</label>
+                                <focusedcolor>black</focusedcolor>
+                                <onclick>Skin.ToggleSetting(WeatherFanartHome)</onclick>
+                                <selected>Skin.HasSetting(WeatherFanartHome)</selected>
+                                <visible>!Skin.HasSetting(HomeMenuNoWeatherButton)</visible>
+                                <visible>System.HasAddon(script.image.resource.select)</visible>
+                            </control>
+                            <control type="button" id="438">
+                                <description>Weather Fanart Path</description>
+                                <include>openclosevisible</include>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <focusedcolor>black</focusedcolor>
+                                <label>    $LOCALIZE[301516]</label>
+                                <label2>$INFO[Skin.String(weatherfanart.path)]</label2>
+                                <onclick>RunScript(script.image.resource.select,property=weatherfanart&amp;type=resource.images.weatherfanart)</onclick>
+                                <onclick>RunScript(script.image.resource.select,property=weatherfanart&amp;type=resource.images.weatherfanart)</onclick>
+                                <visible>Skin.HasSetting(WeatherFanartHome)</visible>
+                                <visible>!Skin.HasSetting(HomeMenuNoWeatherButton)</visible>
+                                <visible>System.HasAddon(script.image.resource.select)</visible>
+                            </control>
+                            <control type="button" id="311">
+                                <description>PlayDisc Button</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <label>427</label>
+                                <include>DialogButtonTextureFocus</include>
+                                <onclick>SetProperty(HomeButton,playdisc,home)</onclick>
+                                <onclick>ActivateWindow(1501)</onclick>
+                            </control>
+                            <control type="label" id="312">
+                                <!-- Extra Buttons -->
+                                <width>100%</width>
+                                <height>18</height>
+                                <align>center</align>
+                                <label/>
+                            </control>
+                            <control type="image" id="313">
+                                <width>100%</width>
+                                <height>1</height>
+                                <align>center</align>
+                                <texture>Separator2.png</texture>
+                                <colordiffuse>description</colordiffuse>
+                            </control>
+                            <control type="button" id="314">
+                                <description>Custom1</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <focusedcolor>black</focusedcolor>
+                                <label>$VAR[Home_custom1_Label]</label>
+                                <label2>($LOCALIZE[31611])</label2>
+                                <onclick>SetProperty(HomeButton,custom1,home)</onclick>
+                                <onclick>ActivateWindow(1501)</onclick>
+                            </control>
+                            <control type="button" id="315">
+                                <description>Custom2</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <focusedcolor>black</focusedcolor>
+                                <label>$VAR[Home_custom2_Label]</label>
+                                <onclick>SetProperty(HomeButton,custom2,home)</onclick>
+                                <onclick>ActivateWindow(1501)</onclick>
+                            </control>
+                            <control type="button" id="316">
+                                <description>Custom3</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <focusedcolor>black</focusedcolor>
+                                <label>$VAR[Home_custom3_Label]</label>
+                                <onclick>SetProperty(HomeButton,custom3,home)</onclick>
+                                <onclick>ActivateWindow(1501)</onclick>
+                            </control>
+                            <control type="button" id="317">
+                                <description>Custom4</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <focusedcolor>black</focusedcolor>
+                                <label>$VAR[Home_custom4_Label]</label>
+                                <onclick>SetProperty(HomeButton,custom4,home)</onclick>
+                                <onclick>ActivateWindow(1501)</onclick>
+                            </control>
+                            <control type="button" id="318">
+                                <description>Custom5</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <focusedcolor>black</focusedcolor>
+                                <label>$VAR[Home_custom5_Label]</label>
+                                <onclick>SetProperty(HomeButton,custom5,home)</onclick>
+                                <onclick>ActivateWindow(1501)</onclick>
+                            </control>
+                            <control type="button" id="319">
+                                <description>Custom6</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <focusedcolor>black</focusedcolor>
+                                <label>$VAR[Home_custom6_Label]</label>
+                                <onclick>SetProperty(HomeButton,custom6,home)</onclick>
+                                <onclick>ActivateWindow(1501)</onclick>
+                            </control>
+                            <control type="button" id="320">
+                                <description>Custom7</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <focusedcolor>black</focusedcolor>
+                                <label>$VAR[Home_custom7_Label]</label>
+                                <onclick>SetProperty(HomeButton,custom7,home)</onclick>
+                                <onclick>ActivateWindow(1501)</onclick>
+                            </control>
+                            <control type="button" id="321">
+                                <description>Custom8</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <focusedcolor>black</focusedcolor>
+                                <label>$VAR[Home_custom8_Label]</label>
+                                <onclick>SetProperty(HomeButton,custom8,home)</onclick>
+                                <onclick>ActivateWindow(1501)</onclick>
+                            </control>
+                            <control type="button" id="322">
+                                <description>Custom9</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <focusedcolor>black</focusedcolor>
+                                <label>$VAR[Home_custom9_Label]</label>
+                                <onclick>SetProperty(HomeButton,custom9,home)</onclick>
+                                <onclick>ActivateWindow(1501)</onclick>
+                            </control>
+                            <control type="label" id="323">
+                                <!-- Extra Buttons -->
+                                <width>100%</width>
+                                <height>8</height>
+                                <align>center</align>
+                                <label/>
+                                <textcolor>description</textcolor>
+                            </control>
+                            <control type="image" id="324">
+                                <width>100%</width>
+                                <height>1</height>
+                                <align>center</align>
+                                <texture>Separator2.png</texture>
+                                <colordiffuse>description</colordiffuse>
+                            </control>
+                            <control type="label" id="325">
+                                <width>100%</width>
+                                <height>8</height>
+                                <align>center</align>
+                                <label/>
+                                <textcolor>description</textcolor>
+                            </control>
+                            <control type="button" id="326">
+                                <description>Settings Button</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>13000</label>
+                                <onclick>SetProperty(HomeButton,setting,home)</onclick>
+                                <onclick>ActivateWindow(1501)</onclick>
+                            </control>
+                            <control type="button" id="327">
+                                <description>PVR Button</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>19020</label>
+                                <onclick>SetProperty(HomeButton,pvr,home)</onclick>
+                                <onclick>ActivateWindow(1501)</onclick>
+                            </control>
+                            <control type="button" id="328">
+                                <description>Radio Button</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>19183</label>
+                                <onclick>SetProperty(HomeButton,radio,home)</onclick>
+                                <onclick>ActivateWindow(1501)</onclick>
+                            </control>
+                        </control>
+                        <control type="grouplist" id="900"> <!-- Submenubuttons Setting -->
+                            <description>Control Area</description>
+                            <width>50%</width>
+                            <itemgap>3</itemgap>
+                            <onup>900</onup>
+                            <ondown>900</ondown>
+                            <onleft>8000</onleft>
+                            <onright>901</onright>
+                            <orientation>vertical</orientation>
+                            <visible>Container(8000).HasFocus(9)</visible>
+                            <include>openclosevisible</include>
+                            <control type="button" id="910">
+                                <description>Video Button</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>3</label>
+                                <focusedcolor>black</focusedcolor>
+                            </control>
+                            <control type="button" id="911">
+                                <description>Movie Button</description>
+                                <width>600</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>20342</label>
+                                <focusedcolor>black</focusedcolor>
+                            </control>
+                            <control type="button" id="912">
+                                <description>Musicvideo Button</description>
+                                <width>600</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>20389</label>
+                                <focusedcolor>black</focusedcolor>
+                            </control>
+                            <control type="button" id="913">
+                                <description>TVShow Button</description>
+                                <width>600</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>20343</label>
+                                <focusedcolor>black</focusedcolor>
+                            </control>
+                            <control type="button" id="914">
+                                <description>Music Button</description>
+                                <width>600</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>2</label>
+                                <focusedcolor>black</focusedcolor>
+                            </control>
+                            <control type="button" id="915">
+                                <description>System Button</description>
+                                <width>600</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>13000</label>
+                                <focusedcolor>black</focusedcolor>
+                            </control>
+                        </control>
+                        <control type="grouplist" id="901"> <!-- SubSubmenubuttons Setting -->
+                            <description>Control Area</description>
+                            <left>50%</left>
+                            <width>50%</width>
+                            <itemgap>3</itemgap>
+                            <onup>901</onup>
+                            <ondown>901</ondown>
+                            <onleft>900</onleft>
+                            <onright>70</onright>
+                            <pagecontrol>70</pagecontrol>
+                            <orientation>vertical</orientation>
+                            <visible>[ControlGroup(900).HasFocus()+!Control.HasFocus(8000)]|ControlGroup(901).HasFocus()</visible>
+                            <include>openclosevisible</include>
+                            <control type="radiobutton" id="930">
+                                <!-- Videos -->
+                                <description>Movie</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>$LOCALIZE[342]</label>
+                                <focusedcolor>black</focusedcolor>
+                                <onclick>Skin.ToggleSetting(SubMenu_videos_No_movies_sButton)</onclick>
+                                <selected>!Skin.HasSetting(SubMenu_videos_No_movies_sButton)</selected>
+                                <visible>ControlGroup(900).HasFocus(910)</visible>
+                            </control>
+                            <control type="radiobutton" id="931">
+                                <description>TVShow</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>$LOCALIZE[20343]</label>
+                                <focusedcolor>black</focusedcolor>
+                                <onclick>Skin.ToggleSetting(SubMenu_videos_No_tvshow_Button)</onclick>
+                                <selected>!Skin.HasSetting(SubMenu_videos_No_tvshow_Button)</selected>
+                                <visible>ControlGroup(900).HasFocus(910)</visible>
+                            </control>
+                            <control type="radiobutton" id="932">
+                                <description>Musicvideo</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>$LOCALIZE[20389]</label>
+                                <focusedcolor>black</focusedcolor>
+                                <onclick>Skin.ToggleSetting(SubMenu_videos_No_music_videoButton)</onclick>
+                                <selected>!Skin.HasSetting(SubMenu_videos_No_music_videoButton)</selected>
+                                <visible>ControlGroup(900).HasFocus(910)</visible>
+                            </control>
+                            <control type="radiobutton" id="933">
+                                <description>Library</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>$LOCALIZE[14022]</label>
+                                <focusedcolor>black</focusedcolor>
+                                <onclick>Skin.ToggleSetting(SubMenu_videos_NoLibraryButton)</onclick>
+                                <selected>!Skin.HasSetting(SubMenu_videos_NoLibraryButton)</selected>
+                                <visible>ControlGroup(900).HasFocus(910)</visible>
+                            </control>
+                            <control type="radiobutton" id="934">
+                                <description>Addon</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>$LOCALIZE[24001]</label>
+                                <focusedcolor>black</focusedcolor>
+                                <onclick>Skin.ToggleSetting(SubMenu_videos_NoVideoAddonButton)</onclick>
+                                <selected>!Skin.HasSetting(SubMenu_videos_NoVideoAddonButton)</selected>
+                                <visible>ControlGroup(900).HasFocus(910)</visible>
+                            </control>
+                            <control type="radiobutton" id="935">
+                                <!-- Movies -->
+                                <description>Set</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>$LOCALIZE[20434]</label>
+                                <focusedcolor>black</focusedcolor>
+                                <onclick>Skin.ToggleSetting(SubMenu_movies_NoSetButton)</onclick>
+                                <selected>!Skin.HasSetting(SubMenu_movies_NoSetButton)</selected>
+                                <visible>ControlGroup(900).HasFocus(911)</visible>
+                            </control>
+                            <control type="radiobutton" id="936">
+                                <description>Title</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>$LOCALIZE[369]</label>
+                                <focusedcolor>black</focusedcolor>
+                                <onclick>Skin.ToggleSetting(SubMenu_movies_NoTitleButton)</onclick>
+                                <selected>!Skin.HasSetting(SubMenu_movies_NoTitleButton)</selected>
+                                <visible>ControlGroup(900).HasFocus(911)</visible>
+                            </control>
+                            <control type="radiobutton" id="937">
+                                <description>Genre</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>$LOCALIZE[135]</label>
+                                <focusedcolor>black</focusedcolor>
+                                <onclick>Skin.ToggleSetting(SubMenu_movies_NoGenreButton)</onclick>
+                                <selected>!Skin.HasSetting(SubMenu_movies_NoGenreButton)</selected>
+                                <visible>ControlGroup(900).HasFocus(911)</visible>
+                            </control>
+                            <control type="radiobutton" id="938">
+                                <description>Year</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>$LOCALIZE[652]</label>
+                                <focusedcolor>black</focusedcolor>
+                                <onclick>Skin.ToggleSetting(SubMenu_movies_NoYearButton)</onclick>
+                                <selected>!Skin.HasSetting(SubMenu_movies_NoYearButton)</selected>
+                                <visible>ControlGroup(900).HasFocus(911)</visible>
+                            </control>
+                            <control type="radiobutton" id="939">
+                                <description>Actor</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>$LOCALIZE[344]</label>
+                                <focusedcolor>black</focusedcolor>
+                                <onclick>Skin.ToggleSetting(SubMenu_movies_NoActorButton)</onclick>
+                                <selected>!Skin.HasSetting(SubMenu_movies_NoActorButton)</selected>
+                                <visible>ControlGroup(900).HasFocus(911)</visible>
+                            </control>
+                            <control type="radiobutton" id="940">
+                                <description>Addon</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>$LOCALIZE[24001]</label>
+                                <focusedcolor>black</focusedcolor>
+                                <onclick>Skin.ToggleSetting(SubMenu_movies_NoAddonButton)</onclick>
+                                <selected>!Skin.HasSetting(SubMenu_movies_NoAddonButton)</selected>
+                                <visible>ControlGroup(900).HasFocus(911)</visible>
+                            </control>
+                            <control type="radiobutton" id="941">
+                                <!-- MusicVideos -->
+                                <description>Title</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>$LOCALIZE[369]</label>
+                                <focusedcolor>black</focusedcolor>
+                                <onclick>Skin.ToggleSetting(SubMenu_musicvideo_NoTitleButton)</onclick>
+                                <selected>!Skin.HasSetting(SubMenu_musicvideo_NoTitleButton)</selected>
+                                <visible>ControlGroup(900).HasFocus(912)</visible>
+                            </control>
+                            <control type="radiobutton" id="942">
+                                <description>Genre</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>$LOCALIZE[135]</label>
+                                <focusedcolor>black</focusedcolor>
+                                <onclick>Skin.ToggleSetting(SubMenu_musicvideo_NoGenreButton)</onclick>
+                                <selected>!Skin.HasSetting(SubMenu_musicvideo_NoGenreButton)</selected>
+                                <visible>ControlGroup(900).HasFocus(912)</visible>
+                            </control>
+                            <control type="radiobutton" id="943">
+                                <!-- TVShows -->
+                                <description>Title</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>369</label>
+                                <focusedcolor>black</focusedcolor>
+                                <onclick>Skin.ToggleSetting(SubMenu_tvshow_NoTitleButton)</onclick>
+                                <selected>!Skin.HasSetting(SubMenu_tvshow_NoTitleButton)</selected>
+                                <visible>ControlGroup(900).HasFocus(913)</visible>
+                            </control>
+                            <control type="radiobutton" id="944">
+                                <description>Genre</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>135</label>
+                                <focusedcolor>black</focusedcolor>
+                                <onclick>Skin.ToggleSetting(SubMenu_tvshow_NoGenreButton)</onclick>
+                                <selected>!Skin.HasSetting(SubMenu_tvshow_NoGenreButton)</selected>
+                                <visible>ControlGroup(900).HasFocus(913)</visible>
+                            </control>
+                            <control type="radiobutton" id="945">
+                                <description>Year</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>652</label>
+                                <focusedcolor>black</focusedcolor>
+                                <onclick>Skin.ToggleSetting(SubMenu_tvshow_NoYearButton)</onclick>
+                                <selected>!Skin.HasSetting(SubMenu_tvshow_NoYearButton)</selected>
+                                <visible>ControlGroup(900).HasFocus(913)</visible>
+                            </control>
+                            <control type="radiobutton" id="946">
+                                <description>Actor</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>344</label>
+                                <focusedcolor>black</focusedcolor>
+                                <onclick>Skin.ToggleSetting(SubMenu_tvshow_NoActorButton)</onclick>
+                                <selected>!Skin.HasSetting(SubMenu_tvshow_NoActorButton)</selected>
+                                <visible>ControlGroup(900).HasFocus(913)</visible>
+                            </control>
+                            <control type="radiobutton" id="947">
+                                <!-- Music -->
+                                <description>Partymode</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>589</label>
+                                <focusedcolor>black</focusedcolor>
+                                <onclick>Skin.ToggleSetting(SubMenu_music_NoPartymodeButton)</onclick>
+                                <selected>!Skin.HasSetting(SubMenu_music_NoPartymodeButton)</selected>
+                                <visible>ControlGroup(900).HasFocus(914)</visible>
+                            </control>
+                            <control type="radiobutton" id="948">
+                                <description>Artist</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>133</label>
+                                <focusedcolor>black</focusedcolor>
+                                <onclick>Skin.ToggleSetting(SubMenu_music_NoArtistButton)</onclick>
+                                <selected>!Skin.HasSetting(SubMenu_music_NoArtistButton)</selected>
+                                <visible>ControlGroup(900).HasFocus(914)</visible>
+                            </control>
+                            <control type="radiobutton" id="949">
+                                <description>Artist</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>132</label>
+                                <focusedcolor>black</focusedcolor>
+                                <onclick>Skin.ToggleSetting(SubMenu_music_NoAlbumButton)</onclick>
+                                <selected>!Skin.HasSetting(SubMenu_music_NoAlbumButton)</selected>
+                                <visible>ControlGroup(900).HasFocus(914)</visible>
+                            </control>
+                            <control type="radiobutton" id="950">
+                                <description>Songs</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>134</label>
+                                <focusedcolor>black</focusedcolor>
+                                <onclick>Skin.ToggleSetting(SubMenu_music_NoSongsButton)</onclick>
+                                <selected>!Skin.HasSetting(SubMenu_music_NoSongsButton)</selected>
+                                <visible>ControlGroup(900).HasFocus(914)</visible>
+                            </control>
+                            <control type="radiobutton" id="951">
+                                <description>Library</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>14022</label>
+                                <focusedcolor>black</focusedcolor>
+                                <onclick>Skin.ToggleSetting(SubMenu_music_NoLibraryButton)</onclick>
+                                <selected>!Skin.HasSetting(SubMenu_music_NoLibraryButton)</selected>
+                                <visible>ControlGroup(900).HasFocus(914)</visible>
+                            </control>
+                            <control type="radiobutton" id="952">
+                                <description>Addon</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>24001</label>
+                                <focusedcolor>black</focusedcolor>
+                                <onclick>Skin.ToggleSetting(SubMenu_music_NoAddonButton)</onclick>
+                                <selected>!Skin.HasSetting(SubMenu_music_NoAddonButton)</selected>
+                                <visible>ControlGroup(900).HasFocus(914)</visible>
+                            </control>
+                            <control type="radiobutton" id="953">
+                                <!-- System -->
+                                <description>SkinSetting</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>20077</label>
+                                <focusedcolor>black</focusedcolor>
+                                <onclick>Skin.ToggleSetting(SubMenu_music_NoSkinSettingButton)</onclick>
+                                <selected>!Skin.HasSetting(SubMenu_music_NoSkinSettingButton)</selected>
+                                <visible>ControlGroup(900).HasFocus(915)</visible>
+                            </control>
+                            <control type="radiobutton" id="954">
+                                <description>Libreelec</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>LibreELEC</label>
+                                <focusedcolor>black</focusedcolor>
+                                <onclick>Skin.ToggleSetting(SubMenu_music_NoLibreelecButton)</onclick>
+                                <selected>!Skin.HasSetting(SubMenu_music_NoLibreelecButton)</selected>
+                                <visible>System.HasAddon(service.libreelec.settings)</visible>
+                                <visible>ControlGroup(900).HasFocus(915)</visible>
+                            </control>
+                            <control type="radiobutton" id="955">
+                                <description>Filemanager</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>7</label>
+                                <focusedcolor>black</focusedcolor>
+                                <onclick>Skin.ToggleSetting(SubMenu_music_NoFilemanagerButton)</onclick>
+                                <selected>!Skin.HasSetting(SubMenu_music_NoFilemanagerButton)</selected>
+                                <visible>ControlGroup(900).HasFocus(915)</visible>
+                            </control>
+                            <control type="radiobutton" id="956">
+                                <description>Profil</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>13200</label>
+                                <focusedcolor>black</focusedcolor>
+                                <onclick>Skin.ToggleSetting(SubMenu_music_NoProfileButton)</onclick>
+                                <selected>!Skin.HasSetting(SubMenu_music_NoProfileButton)</selected>
+                                <visible>ControlGroup(900).HasFocus(915)</visible>
+                            </control>
+                            <control type="radiobutton" id="957">
+                                <description>Systeminfo</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>130</label>
+                                <focusedcolor>black</focusedcolor>
+                                <onclick>Skin.ToggleSetting(SubMenu_music_NoSystemInfoButton)</onclick>
+                                <selected>!Skin.HasSetting(SubMenu_music_NoSystemInfoButton)</selected>
+                                <visible>ControlGroup(900).HasFocus(915)</visible>
+                            </control>
+                        </control>
+                        <control type="grouplist" id="500"> <!-- Functions Setting -->
+                            <description>Control Area</description>
+                            <itemgap>3</itemgap>
+                            <onup>500</onup>
+                            <ondown>500</ondown>
+                            <onleft>8000</onleft>
+                            <onright>70</onright>
+                            <orientation>vertical</orientation>
+                            <pagecontrol>70</pagecontrol>
+                            <visible>Container(8000).HasFocus(4)</visible>
+                            <include>openclosevisible</include>
+                            <control type="label" id="501">
+                                <!-- Video Settings -->
+                                <width>100%</width>
+                                <height>30</height>
+                                <align>center</align>
+                                <label>1212</label>
+                                <textcolor>description</textcolor>
+                            </control>
+                            <control type="image" id="502">
+                                <width>100%</width>
+                                <height>1</height>
+                                <align>center</align>
+                                <texture>Separator2.png</texture>
+                                <colordiffuse>description</colordiffuse>
+                            </control>
+                            <control type="radiobutton" id="503">
+                                <description>Background Video</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>301376</label>
+                                <onclick>Skin.ToggleSetting(BackgroundVideo)</onclick>
+                                <onfocus>SetProperty(SSD,"$LOCALIZE[301126]",skinsettings)</onfocus>
+                                <onunfocus>ClearProperty(SSD)</onunfocus>
+                                <selected>Skin.HasSetting(BackgroundVideo)</selected>
+                            </control>
+                            <control type="button" id="507">
+                                <description>FSK</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>301378</label>
+                                <label2>$VAR[rated_language]</label2>
+                                <focusedcolor>black</focusedcolor>
+                                <onfocus>SetProperty(SSD,"$LOCALIZE[301132]",skinsettings)</onfocus>
+                                <onunfocus>ClearProperty(SSD)</onunfocus>
+                                <onclick>Skin.SelectBool(301378, 301544|rated_de, 301546|rated_us, 301548|rated_uk, 301550|rated_fr)</onclick>
+                            </control>
+                            <control type="radiobutton" id="508">
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>301380</label>
+                                <onclick>Skin.ToggleSetting(WindowedTrailer)</onclick>
+                                <onfocus>SetProperty(SSD,"$LOCALIZE[301134]",skinsettings)</onfocus>
+                                <onunfocus>ClearProperty(SSD)</onunfocus>
+                                <selected>!Skin.HasSetting(WindowedTrailer)</selected>
+                            </control>
+                            <control type="label" id="520">
+                                <!-- Music Settings -->
+                                <width>100%</width>
+                                <height>28</height>
+                                <align>center</align>
+                                <label/>
+                            </control>
+                            <control type="label" id="521">
+                                <width>100%</width>
+                                <height>30</height>
+                                <align>center</align>
+                                <label>14221</label>
+                                <textcolor>description</textcolor>
+                            </control>
+                            <control type="image" id="522">
+                                <width>100%</width>
+                                <height>1</height>
+                                <align>center</align>
+                                <texture>Separator2.png</texture>
+                                <colordiffuse>description</colordiffuse>
+                            </control>
+                            <control type="radiobutton" id="524">
+                                <description>Playlist Toggle</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>$LOCALIZE[12006] ($LOCALIZE[10000])</label>
+                                <onfocus>SetProperty(SSD,"$LOCALIZE[301135]",skinsettings)</onfocus>
+                                <onunfocus>ClearProperty(SSD)</onunfocus>
+                                <onclick>Skin.ToggleSetting(ShowBackgroundVis)</onclick>
+                                <selected>Skin.HasSetting(ShowBackgroundVis)</selected>
+                            </control>
+                            <control type="radiobutton" id="525">
+                                <description>Playlist Toggle</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>301382</label>
+                                <onclick>Skin.ToggleSetting(playlist)</onclick>
+                                <onfocus>SetProperty(SSD,"$LOCALIZE[301136]",skinsettings)</onfocus>
+                                <onunfocus>ClearProperty(SSD)</onunfocus>
+                                <selected>Skin.HasSetting(playlist)</selected>
+                            </control>
+                            <control type="label" id="532">
+                                <!-- General Settings -->
+                                <width>100%</width>
+                                <height>30</height>
+                                <align>center</align>
+                                <label/>
+                            </control>
+                            <control type="label" id="533">
+                                <width>100%</width>
+                                <height>30</height>
+                                <align>center</align>
+                                <label>16000</label>
+                                <textcolor>description</textcolor>
+                            </control>
+                            <control type="image" id="534">
+                                <width>100%</width>
+                                <height>1</height>
+                                <align>center</align>
+                                <texture>Separator2.png</texture>
+                                <colordiffuse>description</colordiffuse>
+                            </control>
+                            <control type="button" id="542">
+                                <description>Current Button Label</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>301384</label>
+                                <label2>$INFO[Skin.String(start_volume),,%]</label2>
+                                <onclick>Skin.SetNumeric(start_volume)</onclick>
+                                <onclick>Skin.ToggleSetting(startvolume)</onclick>
+                                <onfocus>SetProperty(SSD,"$LOCALIZE[301140]",skinsettings)</onfocus>
+                                <onunfocus>ClearProperty(SSD)</onunfocus>
+                            </control>
+                            <control type="radiobutton" id="543">
+                                <description>Hide JumpSMSBar</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>301386</label>
+                                <onclick>Skin.ToggleSetting(HideJumpSMSBar)</onclick>
+                                <onfocus>SetProperty(SSD,"$LOCALIZE[301142]",skinsettings)</onfocus>
+                                <onunfocus>ClearProperty(SSD)</onunfocus>
+                                <selected>Skin.HasSetting(HideJumpSMSBar)</selected>
+                            </control>
+                            <control type="radiobutton" id="546">
+                                <description>Wol Zentrale</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>301388</label>
+                                <focusedcolor>black</focusedcolor>
+                                <onclick>Skin.ToggleSetting(hidewolhome)</onclick>
+                                <selected>Skin.HasSetting(hidewolhome)</selected>
+                                <onclick condition="System.HasAddon(script.skinhelper.ping)+String.IsEmpty(Window(Home).Property(SkinHelperPING.mac1))">Addon.OpenSettings(script.skinhelper.ping)</onclick>
+                                <onclick condition="!System.HasAddon(script.skinhelper.ping)">InstallAddon(script.skinhelper.ping)</onclick>
+                                <onfocus>SetProperty(SSD,"$LOCALIZE[301143]",skinsettings)</onfocus>
+                                <onunfocus>ClearProperty(SSD)</onunfocus>
+                            </control>
+                            <control type="radiobutton" id="549">
+                                <description>Startup Playlist</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>31067</label>
+                                <onclick>Skin.ToggleSetting(Use_Startup_Playlist)</onclick>
+                                <onfocus>SetProperty(SSD,"$LOCALIZE[301144]",skinsettings)</onfocus>
+                                <onunfocus>ClearProperty(SSD)</onunfocus>
+                                <selected>Skin.HasSetting(Use_Startup_Playlist)</selected>
+                            </control>
+                            <control type="button" id="550">
+                                <description>Startup Playlist Path</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>- $LOCALIZE[15311]</label>
+                                <label2>$INFO[Skin.String(Startup_Playlist_Path)]</label2>
+                                <onclick>Skin.SetFile(Startup_Playlist_Path,,special://musicplaylists/)</onclick>
+                                <visible>Skin.HasSetting(Use_Startup_Playlist)</visible>
+                            </control>
+                            <control type="radiobutton" id="552">
+                                <description>Custom Contextmenu Globalsearch</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>301390</label>
+                                <onclick>Skin.ToggleSetting(context_globalsearch)</onclick>
+                                <onfocus>SetProperty(SSD,"$LOCALIZE[301145]",skinsettings)</onfocus>
+                                <onunfocus>ClearProperty(SSD)</onunfocus>
+                                <selected>Skin.HasSetting(context_globalsearch)</selected>
+                                <visible>System.HasAddon(script.globalsearch)</visible>
+                            </control>
+                            <control type="radiobutton" id="553">
+                                <description>Media Statistic</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>301392</label>
+                                <onclick>Skin.ToggleSetting(statistic)</onclick>
+                                <onfocus>SetProperty(SSD,"$LOCALIZE[301146]",skinsettings)</onfocus>
+                                <onunfocus>ClearProperty(SSD)</onunfocus>
+                                <selected>Skin.HasSetting(statistic)</selected>
+                            </control>
+                            <!-- <control type="radiobutton" id="554">
+                                <description>Favouriten</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>301394</label>
+                                <onclick>Skin.ToggleSetting(hide_fav)</onclick>
+                                <onfocus>SetProperty(SSD,"$LOCALIZE[301147]",skinsettings)</onfocus>
+                                <onunfocus>ClearProperty(SSD)</onunfocus>
+                                <selected>Skin.HasSetting(hide_fav)</selected>
+                            </control> -->
+                            <control type="radiobutton" id="555">
+                                <description>Favouriten</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>301396</label>
+                                <onclick>Skin.ToggleSetting(hide_central)</onclick>
+                                <onfocus>SetProperty(SSD,"$LOCALIZE[301148]",skinsettings)</onfocus>
+                                <onunfocus>ClearProperty(SSD)</onunfocus>
+                                <selected>Skin.HasSetting(hide_central)</selected>
+                            </control>
+                            <control type="radiobutton" id="556">
+                                <description>Profil Name</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>301502</label>
+                                <onclick>Skin.ToggleSetting(profilname)</onclick>
+                                <selected>Skin.HasSetting(profilname)</selected>
+                                <visible>Integer.IsGreater(System.ProfileCount,1)</visible>
+                            </control>
+                            <control type="radiobutton" id="557">
+                                <description>Battery Level Icon</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>$LOCALIZE[301534] $LOCALIZE[301620]</label>
+                                <onclick>Skin.ToggleSetting(BatteryLevel)</onclick>
+                                <onfocus>SetProperty(SSD,"$LOCALIZE[301150]",skinsettings)</onfocus>
+                                <onunfocus>ClearProperty(SSD)</onunfocus>
+                                <selected>Skin.HasSetting(BatteryLevel)</selected>
+                            </control>
+                        </control>
+                        <control type="grouplist" id="600"> <!-- Widget Settings -->
+                            <description>Control Area</description>
+                            <itemgap>3</itemgap>
+                            <onup>600</onup>
+                            <ondown>600</ondown>
+                            <onleft>8000</onleft>
+                            <orientation>vertical</orientation>
+                            <visible>Container(8000).Hasfocus(5)</visible>
+                            <include>openclosevisible</include>
+                            <control type="label" id="6001">
+                                <!-- General Settings -->
+                                <width>100%</width>
+                                <height>8</height>
+                                <align>center</align>
+                                <label/>
+                            </control>
+                            <control type="label" id="6002">
+                                <width>100%</width>
+                                <height>30</height>
+                                <align>center</align>
+                                <label>16000</label>
+                                <textcolor>description</textcolor>
+                            </control>
+                            <control type="image" id="6003">
+                                <width>100%</width>
+                                <height>1</height>
+                                <align>center</align>
+                                <texture>Separator2.png</texture>
+                                <colordiffuse>description</colordiffuse>
+                            </control>
+                            <control type="radiobutton" id="602">
+                                <description>Settings Button</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>301306</label>
+                                <focusedcolor>black</focusedcolor>
+                                <onclick>Skin.ToggleSetting(WidgetDim)</onclick>
+                                <onfocus>SetProperty(SSD,"$LOCALIZE[301152]",skinsettings)</onfocus>
+                                <onunfocus>ClearProperty(SSD)</onunfocus>
+                                <selected>Skin.HasSetting(WidgetDim)</selected>
+                            </control>
+                            <control type="radiobutton" id="604">
+                                <description>Settings Button</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>301598</label>
+                                <focusedcolor>black</focusedcolor>
+                                <onclick>Skin.ToggleSetting(WidgetNoPercentPlayedBar)</onclick>
+                                <onfocus>SetProperty(SSD,"$LOCALIZE[301153]",skinsettings)</onfocus>
+                                <onunfocus>ClearProperty(SSD)</onunfocus>
+                                <selected>Skin.HasSetting(WidgetNoPercentPlayedBar)</selected>
+                            </control>
+                            <control type="label" id="6004">
+                                <width>100%</width>
+                                <height>8</height>
+                                <align>center</align>
+                                <label/>
+                            </control>
+                            <control type="label" id="6005">
+                                <width>100%</width>
+                                <height>30</height>
+                                <align>center</align>
+                                <label>301351</label>
+                                <textcolor>description</textcolor>
+                            </control>
+                            <control type="image" id="6006">
+                                <width>100%</width>
+                                <height>1</height>
+                                <align>center</align>
+                                <texture>Separator2.png</texture>
+                                <colordiffuse>description</colordiffuse>
+                            </control>
+                            <control type="label" id="6007">
+                                <width>100%</width>
+                                <height>16</height>
+                                <align>center</align>
+                                <label/>
+                            </control>
+                            <control type="label" id="6008">
+                                <width>100%</width>
+                                <height>30</height>
+                                <align>center</align>
+                                <label>301151</label>
+                                <textcolor>white</textcolor>
+                            </control>
+                        </control>
+                        <control type="grouplist" id="800"> <!-- Design/Performance Settings -->
+                            <description>Control Area</description>
+                            <itemgap>3</itemgap>
+                            <onup>800</onup>
+                            <ondown>800</ondown>
+                            <onleft>8000</onleft>
+                            <onright>70</onright>
+                            <orientation>vertical</orientation>
+                            <pagecontrol>70</pagecontrol>
+                            <visible>Container(8000).HasFocus(6)</visible>
+                            <include>openclosevisible</include>
+                            <control type="label" id="8001">
+                                <!-- General Settings -->
+                                <width>100%</width>
+                                <height>8</height>
+                                <align>center</align>
+                                <label/>
+                            </control>
+                            <control type="label" id="8002">
+                                <width>100%</width>
+                                <height>30</height>
+                                <align>center</align>
+                                <label>16000</label>
+                                <textcolor>description</textcolor>
+                            </control>
+                            <control type="image" id="8003">
+                                <width>100%</width>
+                                <height>1</height>
+                                <align>center</align>
+                                <texture>Separator2.png</texture>
+                                <colordiffuse>description</colordiffuse>
+                            </control>
+                            <control type="radiobutton" id="802">
+                                <description>Toggle Animations</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>301402</label>
+                                <onclick>Skin.ToggleSetting(animation)</onclick>
+                                <onfocus>SetProperty(SSD,"$LOCALIZE[301166]",skinsettings)</onfocus>
+                                <onunfocus>ClearProperty(SSD)</onunfocus>
+                                <selected>Skin.HasSetting(animation)</selected>
+                            </control>
+                            <control type="radiobutton" id="804">
+                                <description>Navigations Info</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>301404</label>
+                                <onclick>Skin.ToggleSetting(NavInfo)</onclick>
+                                <onfocus>SetProperty(SSD,"$LOCALIZE[301168]",skinsettings)</onfocus>
+                                <onunfocus>ClearProperty(SSD)</onunfocus>
+                                <selected>Skin.HasSetting(NavInfo)</selected>
+                            </control>
+                            <control type="radiobutton" id="806">
+                                <description>Date</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <focusedcolor>black</focusedcolor>
+                                <label>301408</label>
+                                <onclick>Skin.ToggleSetting(NoDate)</onclick>
+                                <onfocus>SetProperty(SSD,"$LOCALIZE[301169]",skinsettings)</onfocus>
+                                <onunfocus>ClearProperty(SSD)</onunfocus>
+                                <selected>Skin.HasSetting(NoDate)</selected>
+                            </control>
+                            <control type="radiobutton" id="808">
+                                <description>Fanart</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <label>$LOCALIZE[20445]</label>
+                                <onclick>Skin.ToggleSetting(fanart)</onclick>
+                                <onfocus>SetProperty(SSD,"$LOCALIZE[301170]",skinsettings)</onfocus>
+                                <onunfocus>ClearProperty(SSD)</onunfocus>
+                                <selected>Skin.HasSetting(fanart)</selected>
+                            </control>
+                            <control type="radiobutton" id="810">
+                                <description>Only one Background</description>
+                                <label>301410</label>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <onfocus>SetProperty(SSD,"$LOCALIZE[301171]",skinsettings)</onfocus>
+                                <onunfocus>ClearProperty(SSD)</onunfocus>
+                                <onclick>Skin.ToggleSetting(onlyone)</onclick>
+                                <selected>Skin.HasSetting(onlyone)</selected>
+                            </control>
+                            <control type="button" id="812">
+                                <include>openclosevisible</include>
+                                <description>Only One Backgroundfolder</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>301412</label>
+                                <label2>$INFO[Skin.String(Home_Custom_Back_picture_OnlyOne)]</label2>
+                                <focusedcolor>black</focusedcolor>
+                                <onclick condition="Skin.String(Home_Custom_Back_picture_OnlyOne)">Skin.Reset(Home_Custom_Back_picture_OnlyOne)</onclick>
+                                <onclick condition="!Skin.HasSetting(Home_Custom_Back_picture_OnlyOne_Path)+String.IsEmpty(Skin.String(Home_Custom_Back_picture_OnlyOne))">Skin.SetImage(Home_Custom_Back_picture_OnlyOne,smb://)</onclick>
+                                <onclick condition="Skin.HasSetting(Home_Custom_Back_picture_OnlyOne_Path)+String.IsEmpty(Skin.String(Home_Custom_Back_picture_OnlyOne))">Skin.SetPath(Home_Custom_Back_picture_OnlyOne)</onclick>
+                                <onfocus>SetProperty(SSD,"$LOCALIZE[301172]",skinsettings)</onfocus>
+                                <onunfocus>ClearProperty(SSD)</onunfocus>
+                                <visible>Skin.HasSetting(onlyone)</visible>
+                            </control>
+                            <control type="radiobutton" id="814">
+                                <include>openclosevisible</include>
+                                <description>Only one Background</description>
+                                <label>301414</label>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <onclick condition="Skin.HasSetting(Home_Custom_Back_picture_OnlyOne_Path)">Skin.Reset(Home_Custom_Back_picture_OnlyOne)</onclick>
+                                <onclick>Skin.ToggleSetting(Home_Custom_Back_picture_OnlyOne_Path)</onclick>
+                                <selected>Skin.HasSetting(Home_Custom_Back_picture_OnlyOne_Path)</selected>
+                                <visible>Skin.HasSetting(onlyone)</visible>
+                            </control>
+                            <control type="radiobutton" id="816">
+                                <include>openclosevisible</include>
+                                <description>Diashow Movie TVShow Musik</description>
+                                <label>Fanart-Diashow</label>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <onclick>Skin.ToggleSetting(HomeFanartDiashow)</onclick>
+                                <onfocus>SetProperty(SSD,"$LOCALIZE[301173]",skinsettings)</onfocus>
+                                <onunfocus>ClearProperty(SSD)</onunfocus>
+                                <selected>Skin.HasSetting(HomeFanartDiashow)</selected>
+                            </control>
+                            <control type="button" id="820">
+                                <description>Background DIM</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <focusedcolor>black</focusedcolor>
+                                <label>301286</label>
+                                <label2>$VAR[BackgroundDimLabel]</label2>
+                                <onclick>Skin.SelectBool(301286, 301460|background_dim_1, 301462|background_dim_2, 301464|background_dim_3, 594|background_dim_no)</onclick>
+                                <onfocus>SetProperty(SSD,"$LOCALIZE[301174]",skinsettings)</onfocus>
+                                <onunfocus>ClearProperty(SSD)</onunfocus>
+                            </control>
+                            <control type="button" id="822">
+                                <description>Color</description>
+                                <include>openclosevisible</include>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <focusedcolor>black</focusedcolor>
+                                <label>301416</label>
+                                <label2>$VAR[BackgroundOverlayColorLabel]</label2>
+                                <onclick>Skin.SelectBool(301416, $VAR[ColorAkzentVar])</onclick>
+                                <onfocus>SetProperty(SSD,"$LOCALIZE[301175]",skinsettings)</onfocus>
+                                <onunfocus>ClearProperty(SSD)</onunfocus>
+                            </control>
+                            <control type="button" id="824">
+                                <description>BackgroundOverlayColor</description>
+                                <include>openclosevisible</include>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <focusedcolor>black</focusedcolor>
+                                <label> - $LOCALIZE[301570]</label>
+                                <label2>$INFO[Skin.String(MySkinColor)]</label2>
+                                <onclick>RunScript(script.skin.helper.colorpicker.bg,skinstring=MySkinColor)</onclick>
+                                <!-- <onfocus>SetProperty(SSD,"$LOCALIZE[301176]",skinsettings)</onfocus> -->
+                                <onunfocus>ClearProperty(SSD)</onunfocus>
+                                <visible>Skin.HasSetting(color_custom)</visible>
+                                <visible>System.HasAddon(script.skin.helper.colorpicker.bg)+System.AddonIsEnabled(script.skin.helper.colorpicker.bg)</visible>
+                            </control>
+                            <control type="button" id="825">
+                                <description>BackgroundOverlayColor</description>
+                                <include>openclosevisible</include>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <focusedcolor>black</focusedcolor>
+                                <label> - $LOCALIZE[301570]</label>
+                                <label2>$LOCALIZE[24038]</label2>
+                                <onclick condition="!System.HasAddon(script.skin.helper.colorpicker.bg)">InstallAddon(script.skin.helper.colorpicker.bg)</onclick>
+                                <onclick condition="System.HasAddon(script.skin.helper.colorpicker.bg)+!System.AddonIsEnabled(script.skin.helper.colorpicker.bg)">EnableAddon(script.skin.helper.colorpicker.bg)</onclick>
+                                <onfocus>SetProperty(SSD,"$LOCALIZE[301176]",skinsettings)</onfocus>
+                                <onunfocus>ClearProperty(SSD)</onunfocus>
+                                <visible>Skin.HasSetting(color_custom)</visible>
+                                <visible>![System.HasAddon(script.skin.helper.colorpicker.bg)+System.AddonIsEnabled(script.skin.helper.colorpicker.bg)]</visible>
+                            </control>
+                            <control type="radiobutton" id="826">
+                                <description>Page Count</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>301288</label>
+                                <focusedcolor>black</focusedcolor>
+                                <onclick>Skin.ToggleSetting(CommonPageCount)</onclick>
+                                <onfocus>SetProperty(SSD,"$LOCALIZE[301177]",skinsettings)</onfocus>
+                                <onunfocus>ClearProperty(SSD)</onunfocus>
+                                <selected>!Skin.HasSetting(CommonPageCount)</selected>
+                            </control>
+                            <control type="radiobutton" id="828">
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>abgerundete Ecken</label>
+                                <focusedcolor>black</focusedcolor>
+                                <onclick>Skin.ToggleSetting(roundcorner)</onclick>
+                                <selected>Skin.HasSetting(roundcorner)</selected>
+                            </control>
+                            <control type="label" id="2000">
+                                <!-- Homemenu Settings -->
+                                <width>100%</width>
+                                <height>8</height>
+                                <align>center</align>
+                                <label/>
+                            </control>
+                            <control type="label" id="2001">
+                                <width>100%</width>
+                                <height>30</height>
+                                <align>center</align>
+                                <label>10000</label>
+                                <textcolor>description</textcolor>
+                            </control>
+                            <control type="image" id="2002">
+                                <width>100%</width>
+                                <height>1</height>
+                                <align>center</align>
+                                <texture>Separator2.png</texture>
+                                <colordiffuse>description</colordiffuse>
+                            </control>
+                            <control type="radiobutton" id="830">
+                                <description>NeoSlide</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>Neon Slide</label>
+                                <onfocus>SetProperty(SSD,"$LOCALIZE[301178]",skinsettings)</onfocus>
+                                <onunfocus>ClearProperty(SSD)</onunfocus>
+                                <onclick>Skin.ToggleSetting(NeonSlide)</onclick>
+                                <selected>Skin.HasSetting(NeonSlide)</selected>
+                            </control>
+                            <control type="button" id="832">
+                                <description>Avengers Background</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>301418</label>
+                                <label2>$VAR[backgroundfolder_label]</label2>
+                                <focusedcolor>black</focusedcolor>
+                                <onclick>Skin.SelectBool(301416, 15112|standard_bkg, 301572|avengers_sw, 301574|gambit_background)</onclick>
+                                <onfocus>SetProperty(SSD,"$LOCALIZE[301180]",skinsettings)</onfocus>
+                                <onunfocus>ClearProperty(SSD)</onunfocus>
+                                <visible>!Skin.HasSetting(onlyone)</visible>
+                            </control>
+                            <control type="radiobutton" id="840">
+                                <description>Diffuse Overlay Image</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>301424</label>
+                                <focusedcolor>black</focusedcolor>
+                                <onclick>Skin.ToggleSetting(BackgroundDiffuseOverlay)</onclick>
+                                <onfocus>SetProperty(SSD,"$LOCALIZE[301184]",skinsettings)</onfocus>
+                                <onunfocus>ClearProperty(SSD)</onunfocus>
+                                <selected>Skin.HasSetting(BackgroundDiffuseOverlay)</selected>
+                            </control>
+                            <control type="radiobutton" id="842">
+                                <description>Toggle Playercontrols Homescreen</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>301426</label>
+                                <focusedcolor>black</focusedcolor>
+                                <onfocus>SetProperty(SSD,"$LOCALIZE[301186]",skinsettings)</onfocus>
+                                <onunfocus>ClearProperty(SSD)</onunfocus>
+                                <onclick>Skin.ToggleSetting(HidePlayerControlsHome)</onclick>
+                                <selected>!Skin.HasSetting(HidePlayerControlsHome)</selected>
+                            </control>
+                            <control type="radiobutton" id="844">
+                                <description>Homepage Weatherinfo</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>301406</label>
+                                <onclick>Skin.ToggleSetting(homepageNOWeatherinfo)</onclick>
+                                <onfocus>SetProperty(SSD,"$LOCALIZE[301188]",skinsettings)</onfocus>
+                                <onunfocus>ClearProperty(SSD)</onunfocus>
+                                <selected>!Skin.HasSetting(homepageNOWeatherinfo)</selected>
+                            </control>
+                            <control type="label" id="848">
+                                <!-- Music Settings -->
+                                <width>100%</width>
+                                <height>8</height>
+                                <align>center</align>
+                                <label/>
+                            </control>
+                            <control type="label" id="850">
+                                <width>100%</width>
+                                <height>30</height>
+                                <align>center</align>
+                                <label>2</label>
+                                <textcolor>description</textcolor>
+                            </control>
+                            <control type="image" id="852">
+                                <width>100%</width>
+                                <height>1</height>
+                                <align>center</align>
+                                <texture>Separator2.png</texture>
+                                <colordiffuse>description</colordiffuse>
+                            </control>
+                            <control type="radiobutton" id="854">
+                                <description>No Radioview</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <label>301330</label>
+                                <onclick>Skin.ToggleSetting(noradioviz)</onclick>
+                                <onclick condition="Skin.HasSetting(radioview)">Skin.Reset(radioview)</onclick>
+                                <onclick condition="!Skin.HasSetting(noradioviz)">Skin.Reset(vinylview)</onclick>
+                                <onfocus>SetProperty(SSD,"$LOCALIZE[301190]",skinsettings)</onfocus>
+                                <onunfocus>ClearProperty(SSD)</onunfocus>
+                                <selected>Skin.HasSetting(noradioviz)</selected>
+                            </control>
+                            <control type="button" id="856">
+                                <description>AltVis</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <label>301332</label>
+                                <label2>$VAR[MusicVisualisierung]</label2>
+                                <onclick>Skin.SelectBool(301332, 301578|radioview, 301576|vinylview, 301580|standardnowplaying)</onclick>
+                                <onfocus>SetProperty(SSD,"$LOCALIZE[301192]",skinsettings)</onfocus>
+                                <onunfocus>ClearProperty(SSD)</onunfocus>
+                                <visible>!Skin.HasSetting(noradioviz)</visible>
+                            </control>
+                            <control type="button" id="858">
+                                <description>AltVis</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>black</focusedcolor>
+                                <label>301332</label>
+                                <label2>$VAR[MusicVisualisierung]</label2>
+                                <onclick>Skin.ToggleSetting(vinylview)</onclick>
+                                <onclick condition="Skin.HasSetting(radioview)">Skin.Reset(radioview)</onclick>
+                                <onfocus>SetProperty(SSD,"$LOCALIZE[301194]",skinsettings)</onfocus>
+                                <onunfocus>ClearProperty(SSD)</onunfocus>
+                                <visible>Skin.HasSetting(noradioviz)</visible>
+                            </control>
+                            <control type="radiobutton" id="860">
+                                <description>Radio Senderinfo</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>658</label>
+                                <focusedcolor>black</focusedcolor>
+                                <onclick>Skin.ToggleSetting(musicoverlay_stream)</onclick>
+                                <onfocus>SetProperty(SSD,"$LOCALIZE[301196]",skinsettings)</onfocus>
+                                <onunfocus>ClearProperty(SSD)</onunfocus>
+                                <selected>Skin.HasSetting(musicoverlay_stream)</selected>
+                            </control>
+                            <control type="label" id="862">
+                                <!-- Video Settings -->
+                                <width>100%</width>
+                                <height>8</height>
+                                <align>center</align>
+                                <label/>
+                            </control>
+                            <control type="label" id="864">
+                                <width>100%</width>
+                                <height>30</height>
+                                <align>center</align>
+                                <label>20342</label>
+                                <textcolor>description</textcolor>
+                            </control>
+                            <control type="image" id="866">
+                                <width>100%</width>
+                                <height>1</height>
+                                <align>center</align>
+                                <texture>Separator2.png</texture>
+                                <colordiffuse>description</colordiffuse>
+                            </control>
+                            <control type="radiobutton" id="870">
+                                <description>Pause Videoscreen</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>301430</label>
+                                <focusedcolor>black</focusedcolor>
+                                <onclick>Skin.ToggleSetting(pause_light)</onclick>
+                                <onfocus>Skin.SetBool(color_orange)</onfocus>
+                                <onunfocus>Skin.SelectBool(color_red)</onunfocus>
+                                <onfocus>SetProperty(SSD,"$LOCALIZE[301198]",skinsettings)</onfocus>
+                                <onunfocus>ClearProperty(SSD)</onunfocus>
+                                <selected>Skin.HasSetting(pause_light)</selected>
+                            </control>
+                            <control type="radiobutton" id="872">
+                                <description>Pause Videoscreen</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>301432</label>
+                                <focusedcolor>black</focusedcolor>
+                                <onclick>Skin.ToggleSetting(pause_light_hideinfos)</onclick>
+                                <onfocus>Activate(1155)</onfocus>
+                                <onfocus>SetProperty(SSD,"$LOCALIZE[301200]",skinsettings)</onfocus>
+                                <onunfocus>ClearProperty(SSD)</onunfocus>
+                                <selected>!Skin.HasSetting(pause_light_hideinfos)</selected>
+                                <visible>Skin.HasSetting(pause_light)</visible>
+                            </control>
+                            <control type="radiobutton" id="873">
+                                <description>BigPlotText</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>$LOCALIZE[301586] größere Schrift im Plot</label>
+                                <focusedcolor>black</focusedcolor>
+                                <onclick>Skin.ToggleSetting(BigPlotText)</onclick>
+                                <selected>Skin.HasSetting(BigPlotText)</selected>
+                            </control>
+                            <control type="label" id="874">
+                                <width>100%</width>
+                                <height>30</height>
+                                <align>center</align>
+                                <label>PVR</label>
+                                <textcolor>description</textcolor>
+                            </control>
+                            <control type="image" id="875">
+                                <width>100%</width>
+                                <height>1</height>
+                                <align>center</align>
+                                <texture>Separator2.png</texture>
+                                <colordiffuse>description</colordiffuse>
+                            </control>
+                            <control type="radiobutton" id="876">
+                                <description>no_tvlogo_back</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>TV-Logo-Hintergrund $LOCALIZE[844]</label>
+                                <focusedcolor>black</focusedcolor>
+                                <onclick>Skin.ToggleSetting(no_tvlogo_back)</onclick>
+                                <selected>Skin.HasSetting(no_tvlogo_back)</selected>
+                            </control>
+                        </control>
+                        <control type="grouplist" id="1000"> <!-- Extra Art's Settings -->
+                            <description>Control Area</description>
+                            <itemgap>3</itemgap>
+                            <onup>1000</onup>
+                            <ondown>1000</ondown>
+                            <onleft>8000</onleft>
+                            <orientation>vertical</orientation>
+                            <visible>Container(8000).Hasfocus(7)</visible>
+                            <include>openclosevisible</include>
+                            <control type="label" id="1001">
+                                <width>100%</width>
+                                <height>15</height>
+                                <align>center</align>
+                                <label/>
+                            </control>
+                            <control type="label" id="1002">
+                                <width>100%</width>
+                                <height>30</height>
+                                <align>center</align>
+                                <label>$LOCALIZE[342] + $LOCALIZE[20343] + $LOCALIZE[2]</label>
+                                <textcolor>description</textcolor>
+                            </control>
+                            <control type="image" id="1003">
+                                <width>100%</width>
+                                <height>1</height>
+                                <align>center</align>
+                                <texture>Separator2.png</texture>
+                                <colordiffuse>description</colordiffuse>
+                            </control>
+                            <control type="radiobutton" id="1004">
+                                <description>Extra Art's</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <focusedcolor>black</focusedcolor>
+                                <label>301492</label>
+                                <onclick>Skin.ToggleSetting(EnableExtendedArt)</onclick>
+                                <onfocus>SetProperty(SSD,"$LOCALIZE[301202]",skinsettings)</onfocus>
+                                <onunfocus>ClearProperty(SSD)</onunfocus>
+                                <selected>Skin.HasSetting(EnableExtendedArt)</selected>
+                            </control>
+                            <control type="label" id="1005">
+                                <!-- Music Settings -->
+                                <width>100%</width>
+                                <height>15</height>
+                                <align>center</align>
+                                <label/>
+                            </control>
+                            <control type="label" id="1006">
+                                <width>100%</width>
+                                <height>30</height>
+                                <align>center</align>
+                                <label>2</label>
+                                <textcolor>description</textcolor>
+                            </control>
+                            <control type="image" id="1007">
+                                <width>100%</width>
+                                <height>1</height>
+                                <align>center</align>
+                                <texture>Separator2.png</texture>
+                                <colordiffuse>description</colordiffuse>
+                            </control>
+                            <control type="button" id="1008">
+                                <description>CDArt Fallback</description>
+                                <width>100%</width>
+                                <align>left</align>
+                                <include>DialogButtonTextureFocus</include>
+                                <label>301434</label>
+                                <label2>$VAR[CDArtStyle_Label]</label2>
+                                <focusedcolor>black</focusedcolor>
+                                <onclick>Skin.SelectBool(301434, 301456|cdart_glass, 301458|cdart_rohling, 36554|cdart_off)</onclick>
+                                <onfocus>SetProperty(SSD,"$LOCALIZE[301204]",skinsettings)</onfocus>
+                                <onunfocus>ClearProperty(SSD)</onunfocus>
+                            </control>
+                        </control>
+                        <include content="SkinAddonListLayout"> <!-- SkinAddons -->
+                            <param name="id" value="1100"/>
+                            <param name="left" value="0"/>
+                            <param name="width" value="100%"/>
+                            <param name="height" value="100%"/>
+                            <param name="onleft" value="8000"/>
+                            <param name="visible" value="Container(8000).Hasfocus(11)"/>
+                            <param name="itemgap" value="6"/>
+                            <param name="focusedtextcolor" value="black"/>
+                            <param name="focusedbuttonvisible" value="true"/>
+                        </include>
+                    </control>
+                    <control type="group"> <!-- Scrollbar for Homebuttons Setting -->
+                        <right>0</right>
+                        <width>60</width>
+                        <include content="DefaultScrollbar">
+                            <param name="id">70</param>
+                            <param name="left">50r</param>
+                            <param name="onleft">99</param>
+                            <!-- <param name="showonpage">true</param> -->
+                            <param name="visible">ControlGroup(100).HasFocus()|ControlGroup(200).HasFocus()|ControlGroup(300).HasFocus()|ControlGroup(500).HasFocus()|ControlGroup(600).HasFocus()|ControlGroup(800).HasFocus()|ControlGroup(900).HasFocus()|ControlGroup(901).HasFocus()|ControlGroup(1000).HasFocus()|ControlGroup(1100).HasFocus()|Control.HasFocus(70)</param>
+                        </include>
+                    </control>
+                </control>
+            </control>
+            <control type="group"> <!-- Infobox -->
+                <include>opencloseslideup</include>
+                <left>540</left>
+                <right>SpacePadding</right>
+                <bottom>0</bottom>
+                <height>200</height>
+                <control type="image">
+                    <texture>BlackBack.png</texture>
+                </control>
+                <control type="image">
+                    <height>akzentline_size</height>
+                    <colordiffuse>$VAR[BackgroundOverlayColorDialog]</colordiffuse>
+                    <texture>White.png</texture>
+                </control>
+                <control type="label">
+                    <left>SpacePadding</left>
+                    <right>SpacePadding</right>
+                    <top>10</top>
+                    <height>40</height>
+                    <font>ubuntu-r16b</font>
+                    <textcolor>grey</textcolor>
+                    <label>$INFO[Container(8000).ListItem.Label]</label>
+                </control>
+                <control type="textbox">
+                    <left>SpacePadding</left>
+                    <right>SpacePadding</right>
+                    <top>SpacePadding</top>
+                    <bottom>15</bottom>
+                    <font>ubuntu-r16b</font>
+                    <textcolor>description</textcolor>
+                    <label>[CR]$INFO[Window(skinsettings).Property(SSD)]$INFO[Container((1100).ListItem.Property(beschreibung)]</label>
+                </control>
+            </control>                                                                                                                                              
+            <include>Clock</include>
+            <control type="group"> <!-- Navigation Bar -->
+                <left>0</left>
+                <top>0</top>
+                <include>openclose</include>
+                <include>opencloseslideright</include>
+                <visible>Skin.HasSetting(NavInfo)</visible>
+                <visible>!Window.IsVisible(1400)+!Window.IsVisible(1401)</visible>
+                <animation effect="slide" start="0" end="45" condition="PVR.IsRecordingPlayingChannel|Pvr.HasTimer">Conditional</animation>
+                <animation effect="slide" start="0" end="48" condition="!String.IsEmpty(Window(Home).Property(t0:title))">Conditional</animation>
+                <control type="image">
+                    <left>-60</left>
+                    <top>48</top>
+                    <width>525</width>
+                    <height>1</height>
+                    <texture>Separator2.png</texture>
+                </control>
+                <control type="label">
+                    <description>Navigation label</description>
+                    <left>15</left>
+                    <top>3</top>
+                    <width>480</width>
+					<height>45</height>
+                    <label>20077</label>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <font>impacted24</font>
+                    <textcolor>white</textcolor>
+                </control>
+            </control>
+        </control>
+        <include>BehindDialogFadeOut</include>
+    </controls>
+</window>

@@ -1,0 +1,1172 @@
+﻿# Kodi Media Center language file
+# Addon Name: HorizonzV
+# Addon id: skin.horizonzv
+# Addon Provider: blauesgruen
+msgid ""
+msgstr ""
+"Project-Id-Version: KODI Main\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2022-11-25 22:40+0000\n"
+"Language-Team: Italian <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-estuary/it_it/>\n"
+"Language: it_it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.14.2\n"
+
+msgctxt "#31000"
+msgid ""
+msgstr "Ajustes de energía"
+
+msgctxt "#31002"
+msgid ""
+msgstr "Ver configuración"
+
+msgctxt "#31003"
+msgid ""
+msgstr "Duración total"
+
+msgctxt "#31005"
+msgid ""
+msgstr "Otros ajustes"
+
+msgctxt "#31007"
+msgid ""
+msgstr "Se está ejecutando"
+
+msgctxt "#31008"
+msgid ""
+msgstr "Página"
+
+msgctxt "#31009"
+msgid ""
+msgstr "Entradas"
+
+msgctxt "#31012"
+msgid ""
+msgstr "Uso de memoria"
+
+msgctxt "#31013"
+msgid ""
+msgstr "Miniaturas"
+
+msgctxt "#31014"
+msgid ""
+msgstr "orden"
+
+msgctxt "#31016"
+msgid ""
+msgstr "Información ampliada"
+
+msgctxt "#31017"
+msgid ""
+msgstr "ESTÁ EN MARCHA"
+
+msgctxt "#31022"
+msgid ""
+msgstr "Preferencias de visualización"
+
+msgctxt "#31023"
+msgid ""
+msgstr "Ordenar: Ascendente"
+
+msgctxt "#31024"
+msgid ""
+msgstr "Ordenar: Descendiendo"
+
+msgctxt "#31025"
+msgid ""
+msgstr "Abrir lista de reproducción"
+
+msgctxt "#31026"
+msgid ""
+msgstr "Guardar lista de reproducción"
+
+msgctxt "#31027"
+msgid ""
+msgstr "Cerrar lista de reproducción"
+
+msgctxt "#31032"
+msgid ""
+msgstr "Seleccionado actualmente"
+
+msgctxt "#31033"
+msgid ""
+msgstr "Tráiler de búsqueda"
+
+msgctxt "#31035"
+msgid ""
+msgstr "Buscar en YouTube"
+
+msgctxt "#31036"
+msgid ""
+msgstr "Películas del director"
+
+msgctxt "#31043"
+msgid ""
+msgstr "Seleccionar canción"
+
+msgctxt "#31044"
+msgid ""
+msgstr "Fuente de la letra"
+
+msgctxt "#31046"
+msgid ""
+msgstr "Fuente"
+
+msgctxt "#31047"
+msgid ""
+msgstr "Ocultar fanart"
+
+msgctxt "#31048"
+msgid ""
+msgstr "Consumo de memoria:"
+
+msgctxt "#31049"
+msgid ""
+msgstr "Número de título"
+
+msgctxt "#31050"
+msgid ""
+msgstr "Seleccionar perfil"
+
+msgctxt "#31051"
+msgid ""
+msgstr "Última sesión iniciada"
+
+msgctxt "#31052"
+msgid ""
+msgstr "Emitido"
+
+msgctxt "#31053"
+msgid ""
+msgstr "Ajustes de la lista de reproducción"
+
+msgctxt "#31054"
+msgid ""
+msgstr "Creado"
+
+msgctxt "#31056"
+msgid ""
+msgstr "¡Temporizador de apagado activo! [COLOR=grey1] - Tiempo hasta la desconexión:[/COLOR]"
+
+msgctxt "#31057"
+msgid ""
+msgstr "Haz clic en el botón para reproducir[CR][CR]el tráiler de la película"
+
+msgctxt "#31059"
+msgid ""
+msgstr "Detener"
+
+msgctxt "#31060"
+msgid ""
+msgstr "Avance rápido"
+
+msgctxt "#31061"
+msgid ""
+msgstr "Rebobinar"
+
+msgctxt "#31062"
+msgid ""
+msgstr "Menú Película"
+
+msgctxt "#31063"
+msgid ""
+msgstr "Descargar subtítulos"
+
+msgctxt "#31064"
+msgid ""
+msgstr "Ver en 2D"
+
+msgctxt "#31065"
+msgid ""
+msgstr "Cambiar modo"
+
+msgctxt "#31067"
+msgid ""
+msgstr "Lista de reproducción propia al inicio"
+
+msgctxt "#31068"
+msgid ""
+msgstr "Subtítulos locales disponibles"
+
+msgctxt "#31069"
+msgid ""
+msgstr "Por favor, selecciona el perfil de usuario de Kodi para continuar."
+
+msgctxt "#31072"
+msgid ""
+msgstr "Añadir grupo"
+
+msgctxt "#31073"
+msgid ""
+msgstr "Renombrar grupo"
+
+msgctxt "#31074"
+msgid ""
+msgstr "Eliminar grupo"
+
+msgctxt "#31075"
+msgid ""
+msgstr "Grupos[CR]disponibles"
+
+msgctxt "#31076"
+msgid ""
+msgstr "Temporizador activado"
+
+msgctxt "#31077"
+msgid ""
+msgstr "Ajustes del canal"
+
+msgctxt "#31078"
+msgid ""
+msgstr "Previsión 36 horas"
+
+msgctxt "#31079"
+msgid ""
+msgstr "Previsión horaria"
+
+msgctxt "#31080"
+msgid ""
+msgstr "Previsión fin de semana"
+
+msgctxt "#31081"
+msgid ""
+msgstr "Previsión diaria"
+
+msgctxt "#31083"
+msgid ""
+msgstr "Se están recuperando datos de previsión..."
+
+# Horizonz
+
+msgctxt "#301126"
+msgid ""
+msgstr "Activa el vídeo de fondo en el menú principal."
+
+msgctxt "#301132"
+msgid ""
+msgstr "Selecciona el país para la clasificación por edades (definido en el scrapper).[CR]Se admiten DE, US, UK, FR.[CR]Si sólo están disponibles las clasificaciones de US, se mostrarán."
+
+msgctxt "#301134"
+msgid ""
+msgstr "Los trailers se muestran directamente en la información de la película o a pantalla completa."
+
+msgctxt "#301135"
+msgid ""
+msgstr "Si se selecciona una visualización para la reproducción de música, también se muestra en el menú principal."
+
+msgctxt "#301136"
+msgid ""
+msgstr "Muestra una lista de reproducción de las 9 pistas siguientes en el menú principal y a pantalla completa."
+
+msgctxt "#301140"
+msgid ""
+msgstr "Establece el volumen en porcentaje que se reproducirá cada vez que se inicie KODI.[CR]Especifica un número de 0 a 100."
+
+msgctxt "#301142"
+msgid ""
+msgstr "Desactiva la lista de saltos alfanuméricos estilo SMS.[CR][COLOR=gris]Importado de skin \'Alaska\'[/COLOR]"
+
+msgctxt "#301143"
+msgid ""
+msgstr "Para usar esta función se necesita el addon \'Skinhelper Ping\' de _Andy_/PvD.[CR][COLOR=grey]Se puede instalar aquí en Addons o a través de la Kodinerds Repo.[/COLOR]"
+
+msgctxt "#301144"
+msgid ""
+msgstr "Inicia la lista de reproducción seleccionada después de iniciar KODI."
+
+msgctxt "#301145"
+msgid ""
+msgstr "Para utilizar esta función se requiere el addon \'Búsqueda Global\' del repositorio oficial."
+
+msgctxt "#301146"
+msgid ""
+msgstr "Muestra una pequeña estadística sobre las entradas de la base de datos en la parte inferior derecha del menú principal."
+
+msgctxt "#301147"
+msgid ""
+msgstr "Muestra los favoritos debajo del menú principal en lugar de directamente la \'Central\'.[CR]De lo contrario, se puede acceder a ellos a través de la \'Central\'."
+
+msgctxt "#301148"
+msgid ""
+msgstr "Oculta la \'Central\' situada debajo del menú principal."
+
+msgctxt "#301150"
+msgid ""
+msgstr "Activa un icono en la esquina superior derecha que muestra el estado de carga de la batería.[CR][COLOR=blanco]La visualización incorrecta se produce en ordenadores sin batería.[/COLOR]"
+
+msgctxt "#301151"
+msgid ""
+msgstr "Los ajustes del widget están en el submenú correspondiente del menú principal."
+
+msgctxt "#301152"
+msgid ""
+msgstr "Atenúa todas las portadas no enfocadas."
+
+msgctxt "#301153"
+msgid ""
+msgstr "Oculta la barra verde de progreso en las portadas."
+
+msgctxt "#301166"
+msgid ""
+msgstr "Este skin contiene varios efectos de animación.[CR]Utiliza este interruptor para desactivarlos. En su lugar se utiliza un simple efecto de desvanecimiento.[CR]Esto puede mejorar el rendimiento en sistemas lentos."
+
+msgctxt "#301168"
+msgid ""
+msgstr "Muestra dónde estás en la esquina superior izquierda"
+
+msgctxt "#301169"
+msgid ""
+msgstr "Oculta la visualización de la fecha en la esquina superior derecha."
+
+msgctxt "#301170"
+msgid ""
+msgstr "Activa el fanart en todas las áreas."
+
+msgctxt "#301171"
+msgid ""
+msgstr "Desactiva el cambio de imágenes de fondo.[CR][COLOR=blanco]Elige tu propia imagen o ruta.[/COLOR]"
+
+msgctxt "#301172"
+msgid ""
+msgstr "Selecciona una imagen aquí.[CR]Si no se especifica ninguna imagen, se mostrará una imagen por defecto.[CR][COLOR=blanco]Haz clic de nuevo para eliminarla.[/COLOR]"
+
+msgctxt "#301173"
+msgid ""
+msgstr "Muestra un pase de diapositivas en segundo plano, basado en la biblioteca KODI.[CR][COLOR=blanco]Visible en el menú principal bajo: Películas, series y música[/COLOR]"
+
+msgctxt "#301174"
+msgid ""
+msgstr "Activa el oscurecimiento del fondo en todas las zonas.[CR][COLOR=blanco]Posibles niveles de oscurecimiento: APAGADO, LIGERO, MEDIO, PESADO[/COLOR]"
+
+msgctxt "#301175"
+msgid ""
+msgstr "Elige un color de acento que aparezca en muchas zonas de la piel.[CR][COLOR=grey]Personalizado: Los códigos de color deben especificarse en formato hexadecimal AARRGGBB.[CR]Un ejemplo de [/COLOR][COLOR=ffffffff]Blanco[/COLOR]: FFFFFFFF"
+
+msgctxt "#301176"
+msgid ""
+msgstr "Installa l addon ColorPicker dal repository Kodinerds per poter selezionare i colori con un clic."
+
+msgctxt "#301177"
+msgid ""
+msgstr "En las vistas de la base de datos, muestra el número y el tiempo total de ejecución de las entradas."
+
+msgctxt "#301178"
+msgid ""
+msgstr "Activa un efecto de luz a lo largo del menú principal."
+
+msgctxt "#301180"
+msgid ""
+msgstr "Selecciona uno de los temas de fondo. Cambia fuertemente la impresión general del menú principal.[CR][COLOR=white]Se desactivará en cuanto \'sólo una imagen de fondo\' esté activa.[/COLOR][COLOR=grey][CR]El tema \'Gambit\' tiene la ventaja de que proporciona un mejor rendimiento en sistemas más débiles.[CR]Este tema fue amablemente proporcionado por \'G4mbit\' del foro KODINERDS.[/COLOR]"
+
+msgctxt "#301184"
+msgid ""
+msgstr "Pone una textura sobre la imagen de fondo."
+
+msgctxt "#301186"
+msgid ""
+msgstr "Muestra los controles del reproductor durante la reproducción a la izquierda, debajo del menú principal."
+
+msgctxt "#301188"
+msgid ""
+msgstr "Muestra el tiempo actual en la esquina superior izquierda."
+
+msgctxt "#301190"
+msgid ""
+msgstr "\'Radio\', una de las 3 vistas durante la reproducción a pantalla completa, puede desactivarse aquí."
+
+msgctxt "#301192"
+msgid ""
+msgstr "Elige entre las vistas Estándar, Alternativa y Radio.[CR][COLOR=grey]\'Radio\' se utiliza siempre para las transmisiones de música en línea. Pero se puede desactivar[/COLOR]"
+
+msgctxt "#301194"
+msgid ""
+msgstr "Elige entre las vistas Estándar y Alternativa.[CR][COLOR=blanco]Información: Se ha desactivado la radio.[/COLOR]"
+
+msgctxt "#301196"
+msgid ""
+msgstr "Muestra información básica de la pista a pantalla completa durante la reproducción de música en la esquina inferior izquierda.[CR][COLOR=whithe]Visible cuando el OSD no está visible.[/COLOR]"
+
+msgctxt "#301198"
+msgid ""
+msgstr "Muestra una versión discreta y estrecha de la pantalla de pausa."
+
+msgctxt "#301200"
+msgid ""
+msgstr "No se muestra información como capítulos, subtítulos, barras de tiempo de ejecución, etc.[CR][COLOR=grey]Studiologos y Extra Arts también están ocultos.[/COLOR]"
+
+msgctxt "#301202"
+msgid ""
+msgstr "Mostrar todos los artworks de películas y series disponibles.[CR][COLOR=white]Desde Kodi 19 los artworks se cargan con el scrapper \'The Movie Database PYTHON\'.[/COLOR][COLOR=grey][CR]\'Artwork Beef\' o un addon similar puede seguir utilizándose.[/COLOR]"
+
+msgctxt "#301204"
+msgid ""
+msgstr "Selecciona aquí el aspecto del CD si no se encuentra ningún CDArt.[CR][COLOR=white]Los CDArts deben estar listos en una carpeta. Especifícalo en la configuración del sistema (Medios->Música)[/COLOR]"
+
+msgctxt "#301210"
+msgid ""
+msgstr "Activa todas las ilustraciones PVR disponibles.[CR][COLOR=blanco]\'Se requiere el servicio Skin Helper\'.[/COLOR]"
+
+msgctxt "#301218"
+msgid ""
+msgstr "Elige una imagen de fondo"
+
+msgctxt "#301240"
+msgid ""
+msgstr "Reiniciar"
+
+msgctxt "#301244"
+msgid ""
+msgstr "Establece el valor predeterminado para este skin.[CR]Afecta sólo a los ajustes personalizados."
+
+msgctxt "#301246"
+msgid ""
+msgstr "Débil"
+
+msgctxt "#301248"
+msgid ""
+msgstr "Medio"
+
+msgctxt "#301250"
+msgid ""
+msgstr "Rápido"
+
+msgctxt "#301268"
+msgid ""
+msgstr "[UPPERCASE]¿Restablecer la configuración de la piel?[/UPPERCASE]"
+
+msgctxt "#301270"
+msgid ""
+msgstr "Portada"
+
+msgctxt "#301272"
+msgid ""
+msgstr "No hay favoritos disponibles"
+
+msgctxt "#301274"
+msgid ""
+msgstr "[B]KODI SUBTITLE[/B]"
+
+msgctxt "#301276"
+msgid ""
+msgstr "panel de la página"
+
+msgctxt "#301278"
+msgid ""
+msgstr "Establecer información"
+
+msgctxt "#301280"
+msgid ""
+msgstr "Conciertos"
+
+msgctxt "#301282"
+msgid ""
+msgstr "Idioma (clasificación por edades)"
+
+msgctxt "#301284"
+msgid ""
+msgstr "Banderas en forma de texto"
+
+msgctxt "#301286"
+msgid ""
+msgstr "Dim fondo"
+
+msgctxt "#301288"
+msgid ""
+msgstr "Contador de páginas"
+
+msgctxt "#301290"
+msgid ""
+msgstr "Sobres"
+
+msgctxt "#301292"
+msgid ""
+msgstr "Ocultar portada grande"
+
+msgctxt "#301294"
+msgid ""
+msgstr "Logotipo en lugar de título"
+
+msgctxt "#301296"
+msgid ""
+msgstr "Información"
+
+msgctxt "#301300"
+msgid ""
+msgstr "Ocultar icono \'NUEVO\'"
+
+msgctxt "#301302"
+msgid ""
+msgstr "Efecto Polvo (Envolvente)"
+
+msgctxt "#301304"
+msgid ""
+msgstr "Desactivar animación de portada"
+
+msgctxt "#301306"
+msgid ""
+msgstr "Dim portada"
+
+msgctxt "#301308"
+msgid ""
+msgstr "Lista"
+
+msgctxt "#301310"
+msgid ""
+msgstr "Lista de información"
+
+msgctxt "#301312"
+msgid ""
+msgstr "Vista de pulgares"
+
+msgctxt "#301314"
+msgid ""
+msgstr "Banner"
+
+msgctxt "#301316"
+msgid ""
+msgstr "Escaparate"
+
+msgctxt "#301318"
+msgid ""
+msgstr "Perspectiva"
+
+msgctxt "#301320"
+msgid ""
+msgstr "Flujo del disco"
+
+msgctxt "#301322"
+msgid ""
+msgstr "Lista derecha"
+
+msgctxt "#301324"
+msgid ""
+msgstr "Cubrir pared (Pantalla completa)"
+
+msgctxt "#301326"
+msgid ""
+msgstr "Cubrir pared"
+
+msgctxt "#301328"
+msgid ""
+msgstr "Cubrir pared"
+
+msgctxt "#301330"
+msgid ""
+msgstr "Desactivar vista de radio"
+
+msgctxt "#301331"
+msgid ""
+msgstr " - Disabilita TV Wall"
+
+msgctxt "#301332"
+msgid ""
+msgstr "Visualización de música"
+
+msgctxt "#301334"
+msgid ""
+msgstr "Música Extra Artes"
+
+msgctxt "#301336"
+msgid ""
+msgstr "Visualización de la fecha"
+
+msgctxt "#301338"
+msgid ""
+msgstr "Descripción de la clave"
+
+msgctxt "#301340"
+msgid ""
+msgstr "Infopanel"
+
+msgctxt "#301344"
+msgid ""
+msgstr "volver"
+
+msgctxt "#301346"
+msgid ""
+msgstr "Botones del menú principal"
+
+msgctxt "#301348"
+msgid ""
+msgstr "Botones del submenú"
+
+msgctxt "#301350"
+msgid ""
+msgstr "Funzioni"
+
+msgctxt "#301351"
+msgid ""
+msgstr "Widget"
+
+msgctxt "#301352"
+msgid ""
+msgstr "Design / Prestazioni"
+
+msgctxt "#301354"
+msgid ""
+msgstr "Artes extra"
+
+msgctxt "#301356"
+msgid ""
+msgstr "Admin"
+
+msgctxt "#301357"
+msgid ""
+msgstr "Menú Apagar"
+
+msgctxt "#301358"
+msgid ""
+msgstr "Activar cuadrícula"
+
+msgctxt "#301360"
+msgid ""
+msgstr "Información de depuración"
+
+msgctxt "#301362"
+msgid ""
+msgstr "Activar primer inicio"
+
+msgctxt "#301364"
+msgid ""
+msgstr "Elige el rendimiento de tu sistema"
+
+msgctxt "#301366"
+msgid ""
+msgstr "puntero del ratón"
+
+msgctxt "#301368"
+msgid ""
+msgstr "Fijar posiciones"
+
+msgctxt "#301370"
+msgid ""
+msgstr "Mover el foco"
+
+msgctxt "#301371"
+msgid ""
+msgstr "Panel de control"
+
+msgctxt "#301372"
+msgid ""
+msgstr "Ocultar el menú principal automáticamente"
+
+msgctxt "#301374"
+msgid ""
+msgstr "Tiempo hasta ocultar"
+
+msgctxt "#301376"
+msgid ""
+msgstr "Vídeo de fondo"
+
+msgctxt "#301378"
+msgid ""
+msgstr "Selecciona el país de clasificación por edades"
+
+msgctxt "#301380"
+msgid ""
+msgstr "NO reproducir el trailer en la ventana"
+
+msgctxt "#301382"
+msgid ""
+msgstr "Lista de reproducción de la pista siguiente"
+
+msgctxt "#301384"
+msgid ""
+msgstr "Establecer volumen inicial"
+
+msgctxt "#301386"
+msgid ""
+msgstr "Desactivar la barra de salto alfanumérica"
+
+msgctxt "#301388"
+msgid ""
+msgstr "Ocultar interruptor wake on lan en \'Sede\'"
+
+msgctxt "#301390"
+msgid ""
+msgstr "Búsqueda global en el menú contextual"
+
+msgctxt "#301392"
+msgid ""
+msgstr "Mostrar estadísticas en el menú principal"
+
+msgctxt "#301394"
+msgid ""
+msgstr "Mostrar ventana de favoritos en el menú principal"
+
+msgctxt "#301396"
+msgid ""
+msgstr "\'desactivar central\'"
+
+msgctxt "#301389"
+msgid ""
+msgstr "- Carpeta"
+
+msgctxt "#301400"
+msgid ""
+msgstr "Disco"
+
+msgctxt "#301402"
+msgid ""
+msgstr "Animaciones (alta carga de CPU)"
+
+msgctxt "#301404"
+msgid ""
+msgstr "Información de navegación"
+
+msgctxt "#301406"
+msgid ""
+msgstr "Pequeña información meteorológica"
+
+msgctxt "#301408"
+msgid ""
+msgstr "Ocultar visualización de fecha"
+
+msgctxt "#301410"
+msgid ""
+msgstr "Sólo una imagen de fondo"
+
+msgctxt "#301412"
+msgid ""
+msgstr "- imagen / ruta"
+
+msgctxt "#301414"
+msgid ""
+msgstr "- Presentación de diapositivas en lugar de imagen fija"
+
+msgctxt "#301416"
+msgid ""
+msgstr "Acentos de color"
+
+msgctxt "#301418"
+msgid ""
+msgstr "Tema de fondo"
+
+msgctxt "#301424"
+msgid ""
+msgstr "Estructura en el menú principal"
+
+msgctxt "#301426"
+msgid ""
+msgstr "Controles del reproductor"
+
+msgctxt "#301428"
+msgid ""
+msgstr "Tiempo Fanarts"
+
+msgctxt "#301430"
+msgid ""
+msgstr "Versión ligera de la pantalla de pausa"
+
+msgctxt "#301432"
+msgid ""
+msgstr "Ocultar detalles del vídeo"
+
+msgctxt "#301434"
+msgid ""
+msgstr "Estilo CD"
+
+msgctxt "#301436"
+msgid ""
+msgstr "escuchar"
+
+msgctxt "#301438"
+msgid ""
+msgstr "gestiona tu"
+
+msgctxt "#301440"
+msgid ""
+msgstr "experimenta tu"
+
+msgctxt "#301442"
+msgid ""
+msgstr "explora tu"
+
+msgctxt "#301444"
+msgid ""
+msgstr "déjalo girar"
+
+msgctxt "#301446"
+msgid ""
+msgstr "ir a"
+
+msgctxt "#301448"
+msgid ""
+msgstr "cambia tu"
+
+msgctxt "#301456"
+msgid ""
+msgstr "vaso"
+
+msgctxt "#301458"
+msgid ""
+msgstr "en blanco"
+
+msgctxt "#301460"
+msgid ""
+msgstr "luz"
+
+msgctxt "#301462"
+msgid ""
+msgstr "medio"
+
+msgctxt "#301464"
+msgid ""
+msgstr "fuerte"
+
+msgctxt "#301466"
+msgid ""
+msgstr "central"
+
+msgctxt "#301468"
+msgid ""
+msgstr "otro/desconocido"
+
+msgctxt "#301470"
+msgid ""
+msgstr "película drama"
+
+msgctxt "#301472"
+msgid ""
+msgstr "Noticias"
+
+msgctxt "#301474"
+msgid ""
+msgstr "Mostrar"
+
+msgctxt "#301476"
+msgid ""
+msgstr "Deporte"
+
+msgctxt "#301478"
+msgid ""
+msgstr "Niños"
+
+msgctxt "#301480"
+msgid ""
+msgstr "música"
+
+msgctxt "#301482"
+msgid ""
+msgstr "Arte"
+
+msgctxt "#301484"
+msgid ""
+msgstr "Empresa"
+
+msgctxt "#301486"
+msgid ""
+msgstr "Ciencia"
+
+msgctxt "#301488"
+msgid ""
+msgstr "Especial"
+
+msgctxt "#301490"
+msgid ""
+msgstr "Afición"
+
+msgctxt "#301492"
+msgid ""
+msgstr "cargar ilustraciones"
+
+msgctxt "#301494"
+msgid ""
+msgstr "Series de TV añadidas recientemente"
+
+msgctxt "#301496"
+msgid ""
+msgstr "Previsión"
+
+msgctxt "#301498"
+msgid ""
+msgstr "Establece aquí la posición de cada elemento del menú principal.[CR]Utiliza los números de elemento del 1 al 22."
+
+msgctxt "#301500"
+msgid ""
+msgstr "saltar directamente a los archivos de vídeo"
+
+msgctxt "#301502"
+msgid ""
+msgstr "Mostrar nombres de perfil"
+
+msgctxt "#301504"
+msgid ""
+msgstr "Kodi se está ejecutando:"
+
+msgctxt "#301506"
+msgid ""
+msgstr "<"
+
+msgctxt "#301508"
+msgid ""
+msgstr "<<"
+
+msgctxt "#301510"
+msgid ""
+msgstr "Símbolos del estudio ..."
+
+msgctxt "#301512"
+msgid ""
+msgstr "Símbolos de género ..."
+
+msgctxt "#301514"
+msgid ""
+msgstr "Símbolos meteorológicos ..."
+
+msgctxt "#301516"
+msgid ""
+msgstr "Fanart del tiempo ..."
+
+msgctxt "#301520"
+msgid ""
+msgstr "Para programar un temporizador de conmutación se necesita el \'Servicio KN Conmutador\'. Descarga a través del repositorio Kodinerds"
+
+msgctxt "#301522"
+msgid ""
+msgstr "borrar todos los temporizadores"
+
+msgctxt "#301524"
+msgid ""
+msgstr "borrar"
+
+msgctxt "#301526"
+msgid ""
+msgstr "gestionar"
+
+msgctxt "#301528"
+msgid ""
+msgstr "Activar temporizador"
+
+msgctxt "#301530"
+msgid ""
+msgstr "Visión general del temporizador"
+
+msgctxt "#301532"
+msgid ""
+msgstr "Hoy"
+
+msgctxt "#301534"
+msgid ""
+msgstr "Mostrar"
+
+msgctxt "#301536"
+msgid ""
+msgstr "Canales"
+
+msgctxt "#301538"
+msgid ""
+msgstr "Ambos"
+
+msgctxt "#301540"
+msgid ""
+msgstr "Original"
+
+msgctxt "#301542"
+msgid ""
+msgstr "Bandera HorizonzV"
+
+msgctxt "#301544"
+msgid ""
+msgstr "Alemania"
+
+msgctxt "#301546"
+msgid ""
+msgstr "Estados Unidos"
+
+msgctxt "#301548"
+msgid ""
+msgstr "Reino Unido"
+
+msgctxt "#301550"
+msgid ""
+msgstr "Francia"
+
+msgctxt "#301551"
+msgid ""
+msgstr "Serge Azul"
+
+msgctxt "#301552"
+msgid ""
+msgstr "Gris Azul"
+
+msgctxt "#301554"
+msgid ""
+msgstr "Turquesa"
+
+msgctxt "#301558"
+msgid ""
+msgstr "Verde mar"
+
+msgctxt "#301560"
+msgid ""
+msgstr "Rojo"
+
+msgctxt "#301562"
+msgid ""
+msgstr "Gris claro"
+
+msgctxt "#301564"
+msgid ""
+msgstr "Oro oscuro"
+
+msgctxt "#301566"
+msgid ""
+msgstr "Sandy Brown"
+
+msgctxt "#301570"
+msgid ""
+msgstr "ColorPicker"
+
+msgctxt "#301572"
+msgid ""
+msgstr "Vengadores B/N"
+
+msgctxt "#301574"
+msgid ""
+msgstr "Gambito"
+
+msgctxt "#301576"
+msgid ""
+msgstr "Vista del vinilo"
+
+msgctxt "#301578"
+msgid ""
+msgstr "Vista de radio"
+
+msgctxt "#301580"
+msgid ""
+msgstr "Vista estándar"
+
+msgctxt "#301582"
+msgid ""
+msgstr "Se iniciará ..."
+
+msgctxt "#301584"
+msgid ""
+msgstr "ocultar"
+
+msgctxt "#301586"
+msgid ""
+msgstr "mostrar"
+
+msgctxt "#301588"
+msgid ""
+msgstr "cambiar"
+
+msgctxt "#301590"
+msgid ""
+msgstr "Recargar skin"
+
+msgctxt "#301592"
+msgid ""
+msgstr "Reinicia la APP KODI"
+
+msgctxt "#301596"
+msgid ""
+msgstr "Visible"
+
+msgctxt "#301598"
+msgid ""
+msgstr "No hay barra de progreso en el widget (barra verde en la portada)"
+
+msgctxt "#301600"
+msgid ""
+msgstr "Última película iniciada en la posición 1"
+
+msgctxt "#301602"
+msgid ""
+msgstr "último álbum escuchado clasificado nº 1"
+
+msgctxt "#301604"
+msgid ""
+msgstr "próximo episodio en el número 1"
+
+msgctxt "#301606"
+msgid ""
+msgstr "último vídeo iniciado en la posición 1"
+
+msgctxt "#301608"
+msgid ""
+msgstr "5 días de tiempo"
+
+msgctxt "#301610"
+msgid ""
+msgstr "Ofertas de retransmisión en alemán (GTO)"
+
+msgctxt "#301612"
+msgid ""
+msgstr "Fritz Smart Home"
+
+msgctxt "#301614"
+msgid ""
+msgstr "Elige un contenido para la fila"
+
+msgctxt "#301616"
+msgid ""
+msgstr "an"
+
+msgctxt "#301618"
+msgid ""
+msgstr "desactivado"
+
+msgctxt "#301620"
+msgid ""
+msgstr "Nivel de carga de la batería"
+
+msgctxt "#301622"
+msgid ""
+msgstr "Exportar videoteca"
+
+msgctxt "#301624"
+msgid ""
+msgstr "(NFO único, sin imágenes, sobrescribir datos antiguos)"
+
+# msgctxt "#xyxyxyxy"
+# msgid ""
+# msgstr "Tras ocultar el infopanel en pantalla completa, se muestra una discreta información del título."
+
+msgctxt "#31030"
+msgid ""
+msgstr "Uso de la memoria del sistema"
+
+#~ msgctxt "#31137"
+#~ msgid ""
+#~ msgstr "Información PVR"
+
+msgctxt "#31139"
+msgid ""
+msgstr "Descodificador de vídeo"
+
+msgctxt "#31140"
+msgid ""
+msgstr "Formato de píxel"
+
+msgctxt "#31607"
+msgid ""
+msgstr "Resolución de pantalla"
+
+msgctxt "#31608"
+msgid ""
+msgstr "Velocidad de renderizado"
+
+msgctxt "#31609"
+msgid ""
+msgstr "Carga de la CPU"
+
+msgctxt "#31611"
+msgid ""
+msgstr "Linea di codice"
+
+msgctxt "#31613"
+msgid ""
+msgstr "inserire qui la categoria della playlist ..."
+
+msgctxt "#35500"
+msgid "Location"
+msgstr "Posizione"
+

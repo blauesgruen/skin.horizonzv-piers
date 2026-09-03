@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<smartplaylist type="albums">
+    <name>Music Albums (recommended) [COLOR=FFFF0000]!! DO NOT CHANGE !![/COLOR]</name>
+    <match>all</match>
+    <rule field="userrating" operator="greaterthan">
+        <value>7</value>
+    </rule>
+    <rule field="playcount" operator="lessthan">
+        <value>5</value>
+    </rule>
+    <limit>10</limit>
+    <order direction="ascending">random</order>
+</smartplaylist>

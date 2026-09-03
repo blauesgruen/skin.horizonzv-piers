@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="502">
+    <defaultcontrol always="true">777</defaultcontrol>
+	<backgroundcolor>grey3</backgroundcolor>
+    <menucontrol>9000</menucontrol>
+    <include>ViewidAudio</include>
+    <!-- <onload condition="!Skin.HasSetting(firstrun1_horizonzv)">ActivateWindow(1140)</onload> -->
+    <controls>
+        <include>fakebutton_visible_bkg</include>
+        <include>BackgroundMyNavs</include>
+        <include>ViewsAudio</include>
+        <control type="group">
+            <include>SidePanelBackgroundOverlay</include>
+            <control type="group">
+                <visible>!Skin.HasSetting(KioskMode)</visible>
+                <include>SidePanelAnimation</include>
+                <include>SidePanelBackground</include>
+                <control type="grouplist" id="9000">
+                    <include>SidePanelProperty</include>
+                    <control type="button" id="1">
+                        <description>View</description>
+                        <label>31002</label>
+                        <include>SidePanelButton</include>
+                        <onclick>Control.SetFocus(9001)</onclick>
+                    </control>
+                    <control type="button" id="3">
+                        <description>Sort by button</description>
+                        <include>SidePanelButton</include>
+                        <label>103</label>
+                    </control>
+                    <control type="togglebutton" id="4">
+                        <description>Sort asc</description>
+                        <include>SidePanelToggleButton</include>
+                        <label>31024</label>
+                        <altlabel>31023</altlabel>
+                        <usealttexture>Container.SortDirection(Ascending)</usealttexture>
+                    </control>
+                    <control type="edit" id="19">
+                        <visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>
+                        <description>Filter</description>
+                        <include>SidePanelButton</include>
+                        <label>587</label>
+                    </control>
+                    <control type="radiobutton" id="98">
+                        <visible>Container.CanFilterAdvanced</visible>
+                        <description>Filter</description>
+                        <include>SidePanelToggleButton</include>
+                        <label>587</label>
+                        <selected>Container.Filtered</selected>
+                        <onclick>right</onclick>
+                        <onclick>Filter</onclick>
+                    </control>
+                    <control type="radiobutton" id="100">
+                        <description>Show Info Toggle</description>
+                        <include>SidePanelToggleButton</include>
+                        <label>31005</label>
+                        <onclick>Skin.ToggleSetting(View509HideInfo)</onclick>
+                        <selected>Skin.HasSetting(View509HideInfo)</selected>
+                        <visible>Control.IsVisible(509)</visible>
+                    </control>
+                    <control type="button" id="8">
+                        <description>Search</description>
+                        <include>SidePanelButton</include>
+                        <label>137</label>
+                    </control>
+                    <control type="radiobutton" id="16">
+                        <description>PartyMode</description>
+                        <label>589</label>
+                        <include>SidePanelToggleButton</include>
+                    </control>
+                    <control type="togglebutton" id="20">
+                        <description>Update library</description>
+                        <include>SidePanelToggleButton</include>
+                        <label>653</label>
+                        <altlabel>13353</altlabel>
+                        <usealttexture>library.isscanningmusic</usealttexture>
+                    </control>
+                    <control type="button" id="624">
+                        <description>Addon Settings</description>
+                        <include>SidePanelButton</include>
+                        <label>$LOCALIZE[10140]</label>
+                        <onclick>Addon.OpenSettings($INFO[Container.PluginName])</onclick>
+                        <visible>!String.IsEmpty(Container.PluginName)</visible>
+                    </control>
+                </control>
+                <include>SidePanelNavigation</include>
+                <control type="image">
+                    <width>akzentline_size</width>
+                    <left>SidePanelLeftWidth</left>
+                    <colordiffuse>$VAR[BackgroundOverlayColorDialog]</colordiffuse>
+                    <texture>White.png</texture>
+                    <animation effect="slide" end="-2" time="0" condition="true">Conditional</animation>
+                </control>
+            </control>
+        </control>
+        <include>SidePanelShortcuts</include>
+        <include>ViewTypeList</include>
+        <include>cs_rightpanel</include>
+        <include>Clock</include>
+        <include>NavInfo</include>
+        <include>BehindDialogFadeOut</include>
+        <include>TouchButtons</include>
+    </controls>
+</window>

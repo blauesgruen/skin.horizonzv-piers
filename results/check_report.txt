@@ -1,0 +1,39 @@
+KODI SKIN CHECK REPORT
+
+XML files scanned: 170
+XML parse errors: 0
+
+Include references pointing to missing files: 1
+ - in D:\Program Files\Kodi21\portable_data\addons\skin.horizonzv-omega\xml\Includes.xml include file="Includes_KNSwitcher_Content.xml" resolved to D:\Program Files\Kodi21\portable_data\addons\skin.horizonzv-omega\xml\Includes_KNSwitcher_Content.xml (NOT FOUND)
+
+Translation report:
+ Master used: resource.language.en_gb
+ - resource.language.cs_cz: missing=283 empty=0
+    missing examples: ['(single NFO, without images, overwrite old data)', '- Path', '- Picture / Path', '- Slideshow instead of image', '36-hour forecast', '5 Day Weather', '<', '<<', "Activates an icon in the upper right corner that shows the battery's charge status.[CR][COLOR=white]An incorrect display occurs on computers without a battery.[/COLOR]", 'Activates background video in the main menu.']
+ - resource.language.da_dk: missing=283 empty=0
+    missing examples: ['(single NFO, without images, overwrite old data)', '- Path', '- Picture / Path', '- Slideshow instead of image', '36-hour forecast', '5 Day Weather', '<', '<<', "Activates an icon in the upper right corner that shows the battery's charge status.[CR][COLOR=white]An incorrect display occurs on computers without a battery.[/COLOR]", 'Activates background video in the main menu.']
+ - resource.language.de_de: missing=1 empty=1
+    missing examples: ['Choose an accent colour that shows up in many areas of the skin.[CR][COLOR=grey]Custom: Colour codes must be specified in AARRGGBB hex format.[CR]An example for [/COLOR][COLOR=ffffffff]White:[/COLOR] FFFFFFFF']
+    empty examples: ['Widgets']
+ - resource.language.el_gr: missing=283 empty=0
+    missing examples: ['(single NFO, without images, overwrite old data)', '- Path', '- Picture / Path', '- Slideshow instead of image', '36-hour forecast', '5 Day Weather', '<', '<<', "Activates an icon in the upper right corner that shows the battery's charge status.[CR][COLOR=white]An incorrect display occurs on computers without a battery.[/COLOR]", 'Activates background video in the main menu.']
+ - resource.language.en_gb: missing=0 empty=283
+    empty examples: ['Custom', 'forecast', 'Show all available movie & series artworks.[CR][COLOR=white]Since Kodi 19 artworks are loaded with the scrapper "The Movie Database PYTHON".[/COLOR][COLOR=grey][CR]"Artwork Beef" or a similar addon can still be used.[/COLOR]', 'Channel options', 'Submenu buttons', 'Statistic show in mainmenu', 'Choose a content for row', 'Animations (high cpu load)', 'Shows the favourites below the main menu instead of directly the "Central". [CR]These are otherwise accessible via the "Central".', 'Dusteffect (case)']
+ - resource.language.es_es: missing=283 empty=0
+    missing examples: ['(single NFO, without images, overwrite old data)', '- Path', '- Picture / Path', '- Slideshow instead of image', '36-hour forecast', '5 Day Weather', '<', '<<', "Activates an icon in the upper right corner that shows the battery's charge status.[CR][COLOR=white]An incorrect display occurs on computers without a battery.[/COLOR]", 'Activates background video in the main menu.']
+ - resource.language.fi_fi: missing=283 empty=0
+    missing examples: ['(single NFO, without images, overwrite old data)', '- Path', '- Picture / Path', '- Slideshow instead of image', '36-hour forecast', '5 Day Weather', '<', '<<', "Activates an icon in the upper right corner that shows the battery's charge status.[CR][COLOR=white]An incorrect display occurs on computers without a battery.[/COLOR]", 'Activates background video in the main menu.']
+ - resource.language.fr_fr: missing=283 empty=0
+    missing examples: ['(single NFO, without images, overwrite old data)', '- Path', '- Picture / Path', '- Slideshow instead of image', '36-hour forecast', '5 Day Weather', '<', '<<', "Activates an icon in the upper right corner that shows the battery's charge status.[CR][COLOR=white]An incorrect display occurs on computers without a battery.[/COLOR]", 'Activates background video in the main menu.']
+ - resource.language.it_it: missing=283 empty=0
+    missing examples: ['(single NFO, without images, overwrite old data)', '- Path', '- Picture / Path', '- Slideshow instead of image', '36-hour forecast', '5 Day Weather', '<', '<<', "Activates an icon in the upper right corner that shows the battery's charge status.[CR][COLOR=white]An incorrect display occurs on computers without a battery.[/COLOR]", 'Activates background video in the main menu.']
+ - resource.language.nb_no: missing=283 empty=0
+    missing examples: ['(single NFO, without images, overwrite old data)', '- Path', '- Picture / Path', '- Slideshow instead of image', '36-hour forecast', '5 Day Weather', '<', '<<', "Activates an icon in the upper right corner that shows the battery's charge status.[CR][COLOR=white]An incorrect display occurs on computers without a battery.[/COLOR]", 'Activates background video in the main menu.']
+ - resource.language.nl_nl: missing=283 empty=0
+    missing examples: ['(single NFO, without images, overwrite old data)', '- Path', '- Picture / Path', '- Slideshow instead of image', '36-hour forecast', '5 Day Weather', '<', '<<', "Activates an icon in the upper right corner that shows the battery's charge status.[CR][COLOR=white]An incorrect display occurs on computers without a battery.[/COLOR]", 'Activates background video in the main menu.']
+ - resource.language.pl_pl: missing=18 empty=0
+    missing examples: ['Blank', 'Choose an accent colour that shows up in many areas of the skin.[CR][COLOR=grey]Custom: Colour codes must be specified in AARRGGBB hex format.[CR]An example for [/COLOR][COLOR=ffffffff]White:[/COLOR] FFFFFFFF', 'Code line', 'Dectivate alphanumeric jumpbar', 'Enables an effect of light along the main menu.', 'Enables the dimming of the background in all areas.[CR][COLOR=white]Possible dimming steps: OFF, LIGHT, MEDIUM, STRONG.[/COLOR]', 'Glass', 'Mousepointer', 'Select between the views Standard, Alternative and Radio.[CR][COLOR=white]Information: "Radio" was disabled.[/COLOR]', 'Set the position of each mein menu fixed points.[CR]Using position numbers from 1 - 23.']
+ - resource.language.sv_se: missing=283 empty=0
+    missing examples: ['(single NFO, without images, overwrite old data)', '- Path', '- Picture / Path', '- Slideshow instead of image', '36-hour forecast', '5 Day Weather', '<', '<<', "Activates an icon in the upper right corner that shows the battery's charge status.[CR][COLOR=white]An incorrect display occurs on computers without a battery.[/COLOR]", 'Activates background video in the main menu.']
+ - resource.language.uk_ua: missing=283 empty=0
+    missing examples: ['(single NFO, without images, overwrite old data)', '- Path', '- Picture / Path', '- Slideshow instead of image', '36-hour forecast', '5 Day Weather', '<', '<<', "Activates an icon in the upper right corner that shows the battery's charge status.[CR][COLOR=white]An incorrect display occurs on computers without a battery.[/COLOR]", 'Activates background video in the main menu.']

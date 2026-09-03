@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+	<variable name="WidgetTarget">
+		<value condition="String.Contains(Container.ListItem.DBTYPE,music)">music</value>
+		<value condition="String.Contains(Container.ListItem.DBTYPE,song)">music</value>
+		<value condition="String.Contains(Container.ListItem.DBTYPE,album)">music</value>
+		<value condition="String.Contains(Container.ListItem.DBTYPE,artist)">music</value>
+		<value condition="String.Contains(Container.ListItem.FolderPath,audio)">music</value>
+		<value condition="String.Contains(Container.ListItem.DBTYPE,video)">videos</value>
+		<value condition="String.Contains(Container.ListItem.DBTYPE,movies)">videos</value>
+		<value condition="String.Contains(Container.ListItem.DBTYPE,set)">videos</value>
+		<value condition="String.Contains(Container.ListItem.DBTYPE,tvshow)">videos</value>
+		<value condition="String.Contains(Container.ListItem.DBTYPE,season)">videos</value>
+		<value condition="String.Contains(Container.ListItem.DBTYPE,episode)">videos</value>
+		<value condition="String.Contains(Container.ListItem.DBTYPE,musicvideo)">videos</value>
+		<value condition="String.Contains(Container(9000).ListItem.Property(homemenu_id),games)">games</value>
+		<value condition="String.Contains(Container.ListItem.FolderPath,pvr://recordings)">tvrecordings</value>
+		<value condition="String.Contains(Container.ListItem.FolderPath,pvr://timers)">pvr</value>
+		<value condition="String.Contains(Container.ListItem.FolderPath,pvr://channels)">tvchannels</value>
+		<value condition="String.Contains(Window(home).Property(WidgetLabel),$LOCALIZE[20094])">videos</value>
+		<value condition="String.Contains(Container.ListItem.FolderPath,addons://)">addonbrowser</value>
+		<value condition="String.Contains(Container.ListItem.FolderPath,movies)">videos</value>
+		<value condition="String.Contains(Container.ListItem.FolderPath,episodes)">videos</value>
+		<value condition="String.Contains(Container.ListItem.FolderPath,video)">videos</value>
+		<!-- <value>videos</value> -->
+	</variable>
+    <variable name="WidgetPropertyLabel">
+        <value condition="String.IsEqual(Window(Home).Property(HomeButton),music)">$LOCALIZE[2]</value>
+        <value condition="String.IsEqual(Window(Home).Property(HomeButton),videos)">$LOCALIZE[3]</value>
+        <value condition="String.IsEqual(Window(Home).Property(HomeButton),movies)">$LOCALIZE[20342]</value>
+        <value condition="String.IsEqual(Window(Home).Property(HomeButton),tvshow)">$LOCALIZE[20343]</value>
+        <value condition="String.IsEqual(Window(Home).Property(HomeButton),musicvideo)">$LOCALIZE[20389]</value>
+        <value condition="String.IsEqual(Window(Home).Property(HomeButton),picture)">$LOCALIZE[1]</value>
+        <value condition="String.IsEqual(Window(Home).Property(HomeButton),playdisc)">$LOCALIZE[427]</value>
+        <value condition="String.IsEqual(Window(Home).Property(HomeButton),livetv)">$LOCALIZE[19020]</value>
+        <value condition="String.IsEqual(Window(Home).Property(HomeButton),radio)">$LOCALIZE[19021]</value>
+        <value condition="String.IsEqual(Window(Home).Property(HomeButton),weather)">$LOCALIZE[8]</value>
+        <value condition="String.IsEqual(Window(Home).Property(HomeButton),custom1)">$LOCALIZE[636] 1</value>
+        <value condition="String.IsEqual(Window(Home).Property(HomeButton),custom2)">$LOCALIZE[636] 2</value>
+        <value condition="String.IsEqual(Window(Home).Property(HomeButton),custom3)">$LOCALIZE[636] 3</value>
+        <value condition="String.IsEqual(Window(Home).Property(HomeButton),custom4)">$LOCALIZE[636] 4</value>
+        <value condition="String.IsEqual(Window(Home).Property(HomeButton),custom5)">$LOCALIZE[636] 5</value>
+        <value condition="String.IsEqual(Window(Home).Property(HomeButton),custom6)">$LOCALIZE[636] 6</value>
+        <value condition="String.IsEqual(Window(Home).Property(HomeButton),custom7)">$LOCALIZE[636] 7</value>
+        <value condition="String.IsEqual(Window(Home).Property(HomeButton),custom8)">$LOCALIZE[636] 8</value>
+        <value condition="String.IsEqual(Window(Home).Property(HomeButton),custom9)">$LOCALIZE[636] 9</value>
+        <value condition="String.IsEqual(Window(Home).Property(HomeButton),dashboard)">Dashboard</value>
+        <value condition="String.IsEqual(Window(Home).Property(HomeButton),setting)">$LOCALIZE[13000]</value>
+        <value condition="String.IsEqual(Window(Home).Property(HomeButton),pvr)">$LOCALIZE[19020]</value>
+        <value condition="String.IsEqual(Window(Home).Property(HomeButton),radio)">[UPPERCASE]$LOCALIZE[19021][/UPPERCASE]</value>
+        <value condition="String.IsEqual(Window(Home).Property(HomeButton),games)">$LOCALIZE[10821]</value>
+    </variable>
+    <variable name="WidgetInProgressPlace1">
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),movies)+Skin.HasSetting(Widget_inProgress_movies_Place1)">special://skin/playlists/Videos_inprogress.xsp</value>
+        <!-- <value condition="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),tvshow)+Skin.HasSetting(Widget_inProgress_tvshow_Place1)">special://skin/playlists/Episodes_inprogress.xsp</value> --> <!-- zeigt leider nicht die episode an, die man als nächstes schauen sollte -->
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),tvshow)+Skin.HasSetting(Widget_inProgress_tvshow_Place1)">plugin://service.library.data.provider?type=recommendedepisodes&amp;reload=$INFO[Window.Property(recommendedepisodes)]&amp;limit=1</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),musicvideo)+Skin.HasSetting(Widget_inProgress_musicvideo_Place1)">videodb://musicvideos/titles</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),music)+Skin.HasSetting(Widget_inProgress_musicAlbum_Place1)">special://skin/playlists/Music_Albums_recently_place1.xsp</value>
+    </variable>
+    <variable name="WidgetInProgressRow1_Label">
+        <value condition="!String.IsEmpty(Container.ListItem.Property(type))">$INFO[Container.ListItem.Property(type)]</value>
+        <value condition="String.IsEqual(Container.ListItem.DBTYPE,set)">$INFO[Container.ListItem.DBTYPE]</value>
+        <value condition="String.Contains(Container.ListItem.FolderPath,inprogress)">$LOCALIZE[575]</value>
+        <value condition="String.Contains(Container.ListItem.FolderPath,emby)">EMBY</value>
+        <value>$INFO[Window(home).Property(WidgetLabel)]</value>
+    </variable>
+</includes>

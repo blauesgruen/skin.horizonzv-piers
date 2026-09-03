@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="1155">
+    <defaultcontrol always="true">10</defaultcontrol>
+    <onload condition="!Skin.HasSetting(systemlevel_set)">Skin.Reset(systemlevel_set)</onload>
+    <onunload condition="!Skin.HasSetting(systemlevel_set)">Skin.SetBool(standard_bkg)</onunload>
+    <onunload condition="!Skin.HasSetting(systemlevel_set)">Skin.SetBool(color_grey)</onunload>
+    <onunload condition="!Skin.HasSetting(systemlevel_set)">Skin.SetBool(background_dim_1)</onunload>
+    <onunload>Skin.SetBool(HomeMenuNo_games_Button)</onunload>
+    <onunload>Skin.SetBool(rated_de)</onunload>
+    <onunload>CancelAlarm(back,true)</onunload>
+    <include>openclose</include>
+	<include>openclosebox</include>
+    <controls>
+        <include>DialogBackgroundSimple</include>
+        <include>BlackStripes</include>
+		<control type="group">
+			<include content="DialogBackgroundCommons">
+				<param name="width" value="900" />
+				<param name="height" value="450" />
+				<param name="bottomimage" value="390" />
+				<param name="header_label" value="301364" />
+				<param name="header_id" value="1" />
+			</include>
+			<control type="group">
+				<left>15</left>
+				<right>15</right>
+				<top>80</top>
+				<bottom>80</bottom>
+				<control type="label">
+					<description>dialog line</description>
+					<width>100%</width>
+					<height>100%</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<wrapmultiline>true</wrapmultiline>
+					<label>$LOCALIZE[301244][CR][CR]$VAR[FirstRun_Label]</label>
+					<font>ubuntu-r19b</font>
+				</control>
+			</control>
+			<control type="grouplist" id="10">
+				<centerleft>50%</centerleft>
+				<bottom>10</bottom>
+				<width>660</width>
+				<height>40</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<itemgap>20</itemgap>
+				<onleft>10</onleft>
+				<onright>10</onright>
+				<orientation>horizontal</orientation>
+				<control type="button" id="11">
+					<description>low profil button</description>
+					<width>200</width>
+					<height>100%</height>
+					<textwidth>270</textwidth>
+					<font>impacted18</font>
+					<disabledcolor>selectedhome</disabledcolor>
+					<texturenofocus/>
+					<label>301246</label>
+					<onclick>Skin.ResetSettings</onclick>
+					<onclick>Skin.SetBool(color_grey)</onclick>
+					<onclick>Skin.SetBool(hideMovieCases)</onclick>
+					<onclick>Skin.SetBool(gambit_background)</onclick>
+					<onclick>Skin.SetBool(HomeMenuNoWeatherButton)</onclick>
+					<onclick>Skin.SetBool(HomeMenuWeatherFadeout)</onclick>
+					<onclick>Skin.SetBool(WindowedTrailer)</onclick>
+					<onclick>Skin.SetBool(HideOverlayIconNew)</onclick>
+					<onclick>Skin.SetBool(Episode_HideCover)</onclick>
+					<onclick>Skin.SetBool(hideInfoPanel)</onclick>
+					<onclick>Skin.SetBool(CoverDim)</onclick>
+					<onclick>Skin.SetBool(systemlevel_set)</onclick>
+					<onclick>Notification(schwaches System, wurde ausgewählt:, 10000, DefaultIconInfo.png)</onclick>
+					<onclick>Skin.SetBool(firstrun_horizonzv)</onclick>
+					<onclick>Skin.SetBool(FirstRun_low)</onclick>
+					<onclick>Action(back)</onclick>
+				</control>
+				<control type="button" id="12">
+					<description>medium profil button</description>
+					<width>200</width>
+					<height>100%</height>
+					<textwidth>270</textwidth>
+					<font>impacted18</font>
+					<disabledcolor>selectedhome</disabledcolor>
+					<texturenofocus/>
+					<label>301248</label>
+					<onclick>Skin.ResetSettings</onclick>
+					<onclick>Skin.SetBool(animation)</onclick>
+					<onclick>Skin.SetBool(EnableExtendedArt)</onclick>
+					<onclick>Skin.SetBool(NavInfo)</onclick>
+					<onclick>Skin.SetBool(color_red)</onclick>
+					<onclick>Skin.SetBool(NoDate)</onclick>
+					<onclick>Skin.SetBool(background_dim_1)</onclick>
+					<onclick>Skin.SetBool(standard_bkg)</onclick>
+					<onclick>Skin.SetBool(HideSysteminfo)</onclick>
+					<onclick>Skin.SetBool(HomeMenuNoWeatherButton)</onclick>
+					<onclick>Skin.SetBool(BackgroundVideo)</onclick>
+					<onclick>Skin.SetBool(WindowedTrailer)</onclick>
+					<onclick>Skin.SetBool(playlist)</onclick>
+					<onclick>Skin.SetBool(CurrentButtonLabel)</onclick>
+					<onclick>Skin.SetBool(context_ad)</onclick>
+					<onclick>Skin.SetBool(context_globalsearch)</onclick>
+					<onclick>Skin.SetBool(WidgetDim)</onclick>
+					<onclick>Skin.SetBool(fanart)</onclick>
+					<onclick>Skin.SetBool(CommonPageCount)</onclick>
+					<onclick>Skin.SetBool(HideOverlayIconNew)</onclick>
+					<onclick>Skin.SetBool(hideInfoPanel)</onclick>
+					<onclick>Skin.SetBool(CoverDim)</onclick>
+					<onclick>Skin.SetBool(systemlevel_set)</onclick>
+					<onclick>Notification(gutes System, wurde ausgewählt:, 10000, DefaultIconInfo.png)</onclick>
+					<onclick>Skin.SetBool(firstrun_horizonzv)</onclick>
+					<onclick>Skin.SetBool(FirstRun_medium)</onclick>
+					<onclick>Action(back)</onclick>
+				</control>
+				<control type="button" id="13">
+					<description>high profil button</description>
+					<width>200</width>
+					<height>100%</height>
+					<textwidth>270</textwidth>
+					<font>impacted18</font>
+					<disabledcolor>selectedhome</disabledcolor>
+					<texturenofocus/>
+					<label>301250</label>
+					<onclick>Skin.ResetSettings</onclick>
+					<onclick>Skin.SetBool(animation)</onclick>
+					<onclick>Skin.SetBool(EnableExtendedArt)</onclick>
+					<onclick>Skin.SetBool(NavInfo)</onclick>
+					<onclick>Skin.SetBool(color_orange)</onclick>
+					<onclick>Skin.SetBool(background_dim_1)</onclick>
+					<onclick>Skin.SetBool(background_dim_2)</onclick>
+					<onclick>Skin.SetBool(background_dim_3)</onclick>
+					<onclick>Skin.SetBool(HideSysteminfo)</onclick>
+					<onclick>Skin.SetBool(NeonSlide)</onclick>
+					<onclick>Skin.SetBool(HideNavArrow)</onclick>
+					<onclick>Skin.SetBool(HomeMenuWeatherFadeout)</onclick>
+					<onclick>Skin.SetBool(playlist)</onclick>
+					<onclick>Skin.SetBool(CurrentButtonLabel)</onclick>
+					<onclick>Skin.SetBool(context_ad)</onclick>
+					<onclick>Skin.SetBool(context_globalsearch)</onclick>
+					<onclick>Skin.SetBool(Widget_RecentMovies)</onclick>
+					<onclick>Skin.SetBool(Widget_RecentMusicVideos)</onclick>
+					<onclick>Skin.SetBool(Widget_RecentAlbums)</onclick>
+					<onclick>Skin.SetBool(Widget_RecentTVShows)</onclick>
+					<onclick>Skin.SetBool(HomeWeatherWidgetToday)</onclick>
+					<onclick>Skin.SetBool(Widget_Systeminfo)</onclick>
+					<onclick>Skin.SetBool(Widget_DVDLabel)</onclick>
+					<onclick>Skin.SetBool(Widget_PVRTimers)</onclick>
+					<onclick>Skin.SetBool(fanart)</onclick>
+					<onclick>Skin.SetBool(CommonPageCount)</onclick>
+					<onclick>Skin.SetBool(standard_bkg)</onclick>
+					<onclick>Skin.SetBool(WeatherFanartHome)</onclick>
+					<onclick>Skin.SetBool(musicoverlay_stream)</onclick>
+					<onclick>Skin.SetBool(HideOverlayIconNew)</onclick>
+					<onclick>Skin.SetBool(statistic)</onclick>
+					<onclick>Skin.SetBool(systemlevel_set)</onclick>
+					<onclick>Notification(schnelles System, wurde ausgewählt:, 10000, DefaultIconInfo.png)</onclick>
+					<onclick>Skin.SetBool(firstrun_horizonzv)</onclick>
+					<onclick>Skin.SetBool(FirstRun_high)</onclick>
+					<onclick>Action(back)</onclick>
+				</control>
+			</control>
+		</control>
+    </controls>
+</window>

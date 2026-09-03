@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+    <defaultcontrol always="true">9000</defaultcontrol>
+	<backgroundcolor>grey3</backgroundcolor>
+    <include>openclose</include>
+    <controls>
+        <control type="group">
+            <visible>!Window.IsVisible(FileBrowser) + !Window.isVisible(AddonSettings) + !Window.IsActive(TextViewer)</visible>
+            <control type="group">
+                <include>openclosefanart</include>
+                <include>DialogBackground</include>
+                <include>WhiteGrunge</include>
+            </control>
+            <control type="group">
+                <include>openclosebox</include>
+                <include>DialogWide</include>
+				<control type="group">
+					<left>SpacePadding</left>
+					<right>SpacePadding</right>
+					<centertop>50%</centertop>
+					<height>DialogHeight</height>
+                    <control type="label">
+                        <description>Addon Title value</description>
+						<top>40</top>
+						<description>Title</description>
+						<width>DialogLeft</width>
+						<height>45</height>
+						<font>impacted31</font>
+                        <label>$INFO[ListItem.Property(Addon.Name)]</label>
+                        <scroll>true</scroll>
+                    </control>
+					<control type="group"> <!-- left side -->
+                        <top>120</top>
+                        <bottom>160</bottom>
+                        <width>DialogLeft</width>
+                        <include>openclosevisible</include>
+                        <control type="image">
+                            <left>100%</left>
+                            <width>3</width>
+                            <colordiffuse>fanartdiffuse</colordiffuse>
+                            <texture>Separator4.png</texture>
+                        </control>
+                        <control type="grouplist">
+                            <right>SpacePadding</right>
+                            <align>left</align>
+                            <orientation>vertical</orientation>
+                            <include content="AddonInfoList">
+                                <param name="height" value="30" />
+                            </include>
+                        </control>
+                    </control>
+                    <control type="group"> <!-- right side -->
+                        <left>DialogLeft</left>
+                        <top>120</top>
+                        <bottom>160</bottom>
+                        <width>DialogRight</width>
+                        <include>openclosevisible</include>
+                        <control type="group"> <!-- Cover & Infos -->
+                            <left>SpacePadding</left>
+                            <include>openclosevisible</include>
+                            <control type="group">
+                                <width>45%</width>
+                                <control type="image">
+                                    <include>openclosevisible</include>
+                                    <aspectratio align="left" aligny="top">keep</aspectratio>
+                                    <bordertexture border="10">ThumbShadow.png</bordertexture>
+                                    <bordersize>7</bordersize>
+                                    <texture>$INFO[ListItem.Icon]</texture>
+                                    <visible>String.IsEmpty(ListItem.AddonBroken)</visible>
+                                </control>
+                                <control type="image">
+                                    <include>openclosevisible</include>
+                                    <aspectratio align="left" aligny="top">keep</aspectratio>
+                                    <colordiffuse>grey2</colordiffuse>
+                                    <bordertexture border="10">ThumbShadow.png</bordertexture>
+                                    <bordersize>7</bordersize>
+                                    <texture>$INFO[ListItem.Icon]</texture>
+                                    <visible>!String.IsEmpty(ListItem.AddonBroken)</visible>
+                                </control>
+                                <control type="image">
+                                    <left>10</left>
+                                    <right>10</right>
+                                    <top>10</top>
+                                    <bottom>10</bottom>
+                                    <aspectratio align="left" aligny="top">keep</aspectratio>
+                                    <texture>Broken.png</texture>
+                                    <visible>!String.IsEmpty(ListItem.AddonBroken)</visible>
+                                </control>
+                            </control>
+                            <control type="group">
+                                <left>48%</left>
+                                <control type="label">
+                                    <description>Description txt</description>
+                                    <height>38</height>
+                                    <label>$LOCALIZE[21821]</label>
+                                    <align>left</align>
+                                    <aligny>center</aligny>
+                                    <font>impacted18</font>
+                                    <textcolor>selectedhome</textcolor>
+                                </control>
+                                <control type="group">
+                                    <visible>Container.HasPages(401)</visible>
+                                    <control type="label">
+                                        <right>60</right>
+                                        <description>Description Page Count</description>
+                                        <height>38</height>
+                                        <label>$INFO[Container(401).CurrentPage, $LOCALIZE[31008] [COLOR=selectedhome]([/COLOR]]$INFO[Container(401).NumPages,/,[COLOR=selectedhome])[/COLOR]]</label>
+                                        <align>right</align>
+                                        <aligny>center</aligny>
+                                        <font>font16</font>
+                                        <textcolor>grey2</textcolor>
+                                    </control>
+                                    <control type="group">
+                                        <top>10</top>
+                                        <right>25</right>
+                                        <width>60</width>
+                                        <control type="spincontrol" id="60">
+                                            <description>Next page button</description>
+                                            <subtype>page</subtype>
+                                            <font/>
+                                            <onleft>60</onleft>
+                                            <onright>60</onright>
+                                            <ondown>9000</ondown>
+                                            <onup>49</onup>
+                                            <textcolor/>
+                                            <showonepage>true</showonepage>
+                                        </control>
+                                    </control>
+                                </control>
+                                <control type="textbox" id="400">
+                                    <description>Description</description>
+                                    <top>40</top>
+                                    <font>font12</font>
+                                    <align>justify</align>
+                                    <textcolor>grey3</textcolor>
+                                    <label>$INFO[ListItem.AddonDescription]</label>
+                                    <pagecontrol>60</pagecontrol>
+                                </control>
+                            </control>
+                        </control>
+                    </control>
+                    <control type="group">
+                        <left>DialogLeft</left>
+                        <top>20</top>
+                        <visible>!String.IsEmpty(ListItem.AddonBroken)</visible>
+                        <control type="group">
+                            <right>SpacePadding</right>
+                            <left>100</left>
+                            <control type="image">
+                                <description>Icon image</description>
+                                <width>60</width>
+                                <height>60</height>
+                                <texture>DefaultIconError.png</texture>
+                            </control>
+                            <control type="group">
+                                <left>80</left>
+                                <control type="label">
+                                    <description>header label</description>
+                                    <height>38</height>
+                                    <font>ubuntu-r13</font>
+                                    <label>24096</label>
+                                    <align>left</align>
+                                    <aligny>center</aligny>
+                                    <textcolor>grey3</textcolor>
+                                </control>
+                                <control type="textbox">
+                                    <description>Reason label</description>
+                                    <top>30</top>
+                                    <height>38</height>
+                                    <font>ubuntu-r13</font>
+                                    <label>$INFO[ListItem.AddonBroken]</label>
+                                    <align>left</align>
+                                    <textcolor>selectedhome</textcolor>
+                                </control>
+                            </control>
+                        </control>
+                        <control type="image">
+                            <left>60</left>
+                            <top>76</top>
+                            <height>3</height>
+                            <colordiffuse>fanartdiffuse</colordiffuse>
+                            <texture>Separator1.png</texture>
+                        </control>
+                    </control>
+                    <control type="group"> <!-- Disclaimer -->
+                        <height>40</height>
+                        <bottom>100</bottom>
+                        <control type="image">
+                            <height>3</height>
+                            <colordiffuse>fanartdiffuse</colordiffuse>
+                            <texture>Separator1.png</texture>
+                        </control>
+                        <control type="label">
+                            <description>Disclaimer txt</description>
+                            <top>5</top>
+                            <scroll>true</scroll>
+                            <label>$INFO[ListItem.AddonDisclaimer]</label>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <font>impacted18</font>
+                            <textcolor>grey3</textcolor>
+                        </control>
+                    </control>
+                    <control type="group"> <!-- Buttons -->
+                        <centertop>50%</centertop>
+                        <height>DialogHeight</height>
+                        <left>SpacePadding</left>
+                        <right>SpacePadding</right>
+                        <control type="grouplist" id="9000">
+                            <bottom>-10</bottom>
+                            <height>75</height>
+                            <itemgap>10</itemgap>
+                            <align>center</align>
+                            <orientation>horizontal</orientation>
+                            <onup condition="Control.HasFocus(15)">50</onup>
+                            <onup condition="Control.IsVisible(138)">138</onup>
+                            <onup condition="Control.HasFocus(30)">61</onup>
+                            <ondown/>
+                            <include content="DefaultDialogButton">
+                                <param name="id" value="9" />
+                                <param name="width" value="auto" />
+                                <param name="label" value="$LOCALIZE[24020]" />
+                                <param name="font" value="bebas19" />
+                                <param name="nofocus" />
+                            </include>
+                            <include content="DefaultDialogButton">
+                                <param name="id" value="12" />
+                                <param name="width" value="auto" />
+                                <param name="label" value="$LOCALIZE[518]" />
+                                <param name="font" value="bebas19" />
+                                <param name="nofocus" />
+                            </include>
+                            <include content="DefaultDialogButton">
+                                <param name="id" value="6" />
+                                <param name="width" value="auto" />
+                                <param name="label" value="$LOCALIZE[24022]" />
+                                <param name="font" value="bebas19" />
+                                <param name="nofocus" />
+                            </include>
+                            <include content="DefaultDialogButton">
+                                <param name="id" value="7" />
+                                <param name="width" value="auto" />
+                                <param name="font" value="bebas19" />
+                                <param name="nofocus" />
+                            </include>
+                            <include content="DialogRadioButton">
+                                <param name="id" value="13" />
+                                <param name="width" value="380" />
+                                <param name="label" value="$LOCALIZE[24022]" />
+                                <param name="font" value="bebas19" />
+                                <param name="align" value="left" />
+                                <param name="nofocus" />
+                            </include>
+                            <include content="DefaultDialogButton">
+                                <param name="id" value="10" />
+                                <param name="width" value="auto" />
+                                <param name="label" value="$LOCALIZE[39024]" />
+                                <param name="font" value="bebas19" />
+                                <param name="nofocus" />
+                            </include>
+                            <include content="DefaultDialogButton">
+                                <param name="id" value="14" />
+                                <param name="width" value="auto" />
+                                <param name="label" value="$LOCALIZE[24069]" />
+                                <param name="font" value="bebas19" />
+                                <param name="nofocus" />
+                            </include>
+                            <include content="DefaultDialogButton">
+                                <param name="id" value="8" />
+                                <param name="width" value="auto" />
+                                <param name="label" value="$LOCALIZE[24069]" />
+                                <param name="font" value="bebas19" />
+                                <param name="nofocus" />
+                            </include>
+                        </control>
+                    </control>
+                </control>
+            </control>
+        </control>
+    </controls>
+</window>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="142">
+    <defaultcontrol always="true">603</defaultcontrol>
+    <controls>
+        <control type="group">
+            <visible>!Window.IsVisible(VideoOSD)</visible>
+            <control type="group">
+                <include>openclosemediumnodelay</include>
+                <visible>Player.Paused</visible>
+                <control type="image">
+                    <include>Dimensions_Fullscreen</include>
+                    <colordiffuse>fanartdiffuse</colordiffuse>
+                    <texture>SideFadeWhite.png</texture>
+                </control>
+            </control>
+            <control type="group">
+                <include>opencloseslideleft</include>
+                <right>InfoSidePanel_Right</right>
+                <width>InfoSidePanel_Width</width>
+                <include content="InfoSidePanelBackground">
+                    <param name="header_label">$VAR[VideoPlayerTitle]</param>
+                </include>
+                <control type="group">
+                    <left>40</left>
+                    <right>40</right>
+                    <!-- <control type="image" id="testimage">
+                        <texture>WhiteBack.png</texture>
+                    </control> -->
+                    <control type="group"> <!-- extraart movies -->
+                        <top>90</top>
+                        <height>320</height>
+                        <control type="group">
+                            <height>300</height>
+                            <bottom>20</bottom>
+                            <control type="group">
+                                <visible>VideoPlayer.Content(Movies)</visible>
+                                <control type="image" id="71">
+                                    <aspectratio align="center" aligny="center">keep</aspectratio>
+                                    <texture>$VAR[extraart_player_rule]</texture>
+                                    <visible>Skin.HasSetting(EnableExtendedArt)</visible>
+                                </control>
+                                <control type="group">
+                                    <visible>!Skin.HasSetting(EnableExtendedArt)|[String.IsEmpty(Control.GetLabel(71))]</visible>
+                                    <control type="image" id="72">
+                                        <aspectratio align="center" aligny="center">keep</aspectratio>
+                                        <texture>$INFO[Player.Art(fanart)]</texture>
+                                        <bordertexture border="4">buttons/ButtonNF.png</bordertexture>
+                                        <bordersize>8</bordersize>
+                                    </control>
+                                    <control type="image" id="73">
+                                        <aspectratio align="center" aligny="center">keep</aspectratio>
+                                        <texture>$INFO[VideoPlayer.Cover]</texture>
+                                        <bordertexture border="4">buttons/ButtonNF.png</bordertexture>
+                                        <bordersize>8</bordersize>
+                                        <visible>String.IsEmpty(Control.GetLabel(72))</visible>
+                                    </control>
+                                </control>
+                            </control>
+                            <control type="image"> <!-- extraart tvshows -->
+                                <description>Non Movie cover image</description>
+                                <aspectratio align="center" aligny="center">keep</aspectratio>
+                                <texture diffuse="masks/mask_landscape_round.png">$INFO[VideoPlayer.Cover]</texture>
+                                <bordersize>icon_padding_m</bordersize>
+                                <visible>VideoPlayer.Content(episodes)|VideoPlayer.Content(musicvideos)|Pvr.IsPlayingTv</visible>
+                            </control>
+                        </control>
+                        <control type="group">
+                            <bottom>0</bottom>
+                            <height>1</height>
+                            <control type="image">
+                                <height>1</height>
+                                <texture>Separator2.png</texture>
+                            </control>
+                        </control>
+                    </control>
+                    <control type="group">
+                        <top>420</top>
+                        <bottom>200</bottom>
+                        <control type="textbox">
+                            <include condition="!Skin.HasSetting(BigPlotText)">PlotText16Var</include>
+                            <include condition="Skin.HasSetting(BigPlotText)">PlotTextBigVar</include>
+                            <label fallback="">$INFO[VideoPlayer.Plot]</label>
+                        </control>
+                        <control type="textbox">
+                            <align>left</align>
+                            <shadowcolor/>
+                            <label>$LOCALIZE[19055]</label>
+                            <visible>String.IsEmpty(VideoPlayer.Plot)</visible>
+                        </control>
+                    </control>
+                    <control type="group">
+                        <height>160</height>
+                        <bottom>30</bottom>
+                        <control type="image">
+                            <height>1</height>
+                            <texture>Separator2.png</texture>
+                        </control>
+                        <control type="group">
+                            <top>10</top>
+                            <height>45</height>
+                            <control type="label">
+                                <description>Player Times</description>
+                                <font>ubuntu-r16b</font>
+                                <label>$INFO[Player.Time]$INFO[Player.Duration,[COLOR=grey1] / [/COLOR]]</label>
+                                <align>left</align>
+                            </control>
+                            <control type="label">
+                                <description>Current Video End Time</description>
+                                <font>ubuntu-r16b</font>
+                                <label>$VAR[SeekTimeRemainingLabelVar]</label>
+                                <align>right</align>
+                                <shadowcolor/>
+                            </control>
+                        </control>
+                        <control type="group">
+                            <top>50</top>
+                            <height>15</height>
+                            <control type="progress">
+                                <description>Progressbar</description>
+                                <height>15</height>
+                                <info>Pvr.EpgEventProgress</info>
+                                <visible>VideoPlayer.HasEpg</visible>
+                            </control>
+                            <control type="progress">
+                                <description>Progressbar</description>
+                                <height>15</height>
+                                <info>Player.Progress</info>
+                                <visible>!VideoPlayer.HasEpg</visible>
+                            </control>
+                        </control>
+                        <control type="group">
+                            <top>70</top>
+                            <height>45</height>
+                            <control type="label">
+                                <height>45</height>
+                                <font>ubuntu-r16b</font>
+                                <align>center</align>
+                                <textcolor>white</textcolor>
+                                <label>•  $INFO[VideoPlayer.NextTitle,[COLOR=grey]$LOCALIZE[19031]: [/COLOR],]  •</label>
+                                <visible>Pvr.IsPlayingTv|VideoPlayer.Content(livetv)</visible>
+                            </control>
+                            <control type="label">
+                                <description>Chapter Count</description>
+                                <font>ubuntu-r16b</font>
+                                <label>$INFO[Player.Chapter,[COLOR=grey1]$LOCALIZE[21396]:[/COLOR] ]$INFO[Player.ChapterCount, / ]</label>
+                                <align>right</align>
+                                <visible>Player.ChapterCount+!Pvr.IsPlayingTv</visible>
+                            </control>
+                        </control>
+                        <control type="group">
+                            <top>125</top>
+                            <height>45</height>
+                            <control type="grouplist">
+                                <itemgap>6</itemgap>
+                                <align>center</align>
+                                <orientation>horizontal</orientation>
+                                <include>FlagVideo_Player</include>
+                            </control>
+                        </control>
+                    </control>
+                </control>
+            </control>
+        </control>
+    </controls>
+</window>

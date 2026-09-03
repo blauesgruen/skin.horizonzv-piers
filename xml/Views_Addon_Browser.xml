@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <include name="View_550_InfoListAddon">
+		<param name="viewid">550</param>
+		<definition>
+			<control type="group" id="777">
+				<visible>Control.IsVisible($PARAM[viewid])</visible>
+				<include>openclose</include>
+				<include>MirrorPanel</include>
+				<control type="group"> <!-- Left Panel -->
+					<include>opencloseslideright</include>
+					<include content="InfoListPanel">
+						<param name="left" value="InlayLeftSmall" />
+						<param name="right" value="InlayRightSmall" />
+					</include>
+					<control type="group">
+						<left>InlayLeftSmall</left>
+						<right>InlayRightSmall</right>
+						<top>InlayTop</top>
+						<bottom>InlayBottom</bottom>
+						<control type="list" id="$PARAM[viewid]">
+							<left>60</left>
+							<right>75</right>
+							<top>80</top>
+							<bottom>80</bottom>
+							<onleft>9000</onleft>
+							<onright condition="Control.IsVisible($PARAM[viewid]1)">$PARAM[viewid]1</onright>
+							<onright condition="!Control.IsVisible($PARAM[viewid]1)+Control.IsVisible(15000)">15000</onright>
+							<onright condition="!Control.IsVisible($PARAM[viewid]1)+!Control.IsVisible(15000)">732</onright>
+							<onup>$PARAM[viewid]</onup>
+							<ondown>$PARAM[viewid]</ondown>
+							<viewtype label="$LOCALIZE[301310]">info</viewtype>
+							<visible>Window.IsVisible(AddonBrowser)|Container.Content(Addons)</visible>
+							<pagecontrol>$PARAM[viewid]1</pagecontrol>
+							<scrolltime>200</scrolltime>
+							<itemlayout height="60" width="auto">
+								<control type="label">
+									<left>15</left>
+									<top>3</top>
+									<height>60</height>
+									<textcolor>grey</textcolor>
+									<align>left</align>
+									<aligny>center</aligny>
+									<label>$INFO[ListItem.Label]</label>
+								</control>
+								<control type="label">
+									<left>82</left>
+									<top>3</top>
+									<height>60</height>
+									<textcolor>grey</textcolor>
+									<align>right</align>
+									<aligny>center</aligny>
+									<font>font16</font>
+									<label>$INFO[ListItem.Property(Addon.Status)]$INFO[ListItem.AddonVersion, (,) ]</label>
+								</control>
+							</itemlayout>
+							<focusedlayout height="60" width="auto">
+								<control type="group">
+									<control type="image">
+										<left>0</left>
+										<top>3</top>
+										<height>60</height>
+										<colordiffuse>grey2</colordiffuse>
+										<texture border="5">buttons/ButtonFOlightGlow.png</texture>
+										<visible>!Control.HasFocus($PARAM[viewid])</visible>
+										<include>openclosevisible</include>
+									</control>
+									<control type="image">
+										<left>0</left>
+										<top>3</top>
+										<height>60</height>
+										<colordiffuse>grey1</colordiffuse>
+										<texture border="5">buttons/ButtonFOlightGlow.png</texture>
+										<visible>Control.HasFocus($PARAM[viewid])</visible>
+										<include>openclosevisible</include>
+									</control>
+									<control type="label">
+										<left>15</left>
+										<top>3</top>
+										<height>60</height>
+										<textcolor>white</textcolor>
+										<align>left</align>
+										<aligny>center</aligny>
+										<label>$INFO[ListItem.Label]</label>
+										<shadowcolor>black</shadowcolor>
+									</control>
+									<control type="label">
+										<left>82</left>
+										<top>3</top>
+										<height>60</height>
+										<textcolor>white</textcolor>
+										<align>right</align>
+										<aligny>center</aligny>
+										<font>font16</font>
+										<shadowcolor>black</shadowcolor>
+										<label>$INFO[ListItem.Property(Addon.Status)]$INFO[ListItem.AddonVersion, (,) ]</label>
+									</control>
+								</control>
+							</focusedlayout>
+						</control>
+						<include content="DefaultScrollbar">
+							<param name="top" value="80" />
+							<param name="bottom" value="80" />
+							<param name="id" value="$PARAM[viewid]1" />
+							<param name="left" value="60r" />
+							<param name="height" value="100%" />
+							<param name="onleft" value="$PARAM[viewid]" />
+						</include>
+					</control>
+				</control>
+				<control type="group"> <!-- Right Panel -->
+					<include>opencloseslideleft</include>
+					<include content="InfoListPanel">
+						<param name="left" value="InlayRest" />
+						<param name="right" value="InlayLeftSmall" />
+					</include>
+					<control type="group">
+						<left>InlayRest</left>
+						<right>InlayLeftSmall</right>
+						<top>60</top>
+						<bottom>60</bottom>
+						<control type="group">
+							<left>SpacePaddingLarge</left>
+							<right>SpacePaddingLarge</right>
+							<top>SpacePaddingLarge</top>
+							<bottom>SpacePaddingXL</bottom>
+							<control type="group">
+								<top>20</top>
+								<height>280</height>
+								<!-- <control type="image" id="testimage">
+									<texture>White.png</texture>
+								</control> -->
+								<control type="image">
+									<aspectratio>keep</aspectratio>
+									<texture border="4">$VAR[PosterThumb]</texture>
+									<visible>String.IsEmpty(ListItem.AddonBroken)</visible>
+								</control>
+								<control type="image">
+									<aspectratio>keep</aspectratio>
+									<colordiffuse>grey2</colordiffuse>
+									<texture border="4">$VAR[PosterThumb]</texture>
+									<visible>!String.IsEmpty(ListItem.AddonBroken)</visible>
+								</control>
+								<control type="image">
+									<left>7</left>
+									<right>7</right>
+									<top>8</top>
+									<bottom>8</bottom>
+									<aspectratio>keep</aspectratio>
+									<texture>Broken.png</texture>
+									<visible>!String.IsEmpty(ListItem.AddonBroken)</visible>
+								</control>
+							</control>
+							<control type="group">
+								<top>340</top>
+								<control type="label">
+									<description>Author txt</description>
+									<width>210</width>
+									<height>30</height>
+									<label>$LOCALIZE[21863]:</label>
+									<textcolor>selected</textcolor>
+									<align>right</align>
+									<aligny>center</aligny>
+									<visible>!String.IsEmpty(ListItem.AddonCreator)</visible>
+								</control>
+								<control type="fadelabel">
+									<description>Author Value</description>
+									<left>220</left>
+									<height>30</height>
+									<label fallback="416">$INFO[ListItem.AddonCreator]</label>
+									<align>left</align>
+									<aligny>center</aligny>
+									<scrollout>false</scrollout>
+									<pauseatend>1000</pauseatend>
+									<visible>!String.IsEmpty(ListItem.AddonCreator)</visible>
+								</control>
+								<control type="label">
+									<description>Version txt</description>
+									<top>27</top>
+									<width>210</width>
+									<height>30</height>
+									<label>$LOCALIZE[24051]</label>
+									<textcolor>selected</textcolor>
+									<align>right</align>
+									<aligny>center</aligny>
+									<visible>!String.IsEmpty(ListItem.AddonVersion)</visible>
+								</control>
+								<control type="label">
+									<description>Version Value</description>
+									<left>220</left>
+									<top>27</top>
+									<height>30</height>
+									<label fallback="416">$INFO[ListItem.AddonVersion]</label>
+									<align>left</align>
+									<aligny>center</aligny>
+									<scroll>true</scroll>
+									<visible>!String.IsEmpty(ListItem.AddonVersion)</visible>
+								</control>
+								<control type="group">
+									<visible>!String.IsEmpty(ListItem.AddonDescription)</visible>
+									<control type="image">
+										<top>70</top>
+										<height>4</height>
+										<colordiffuse>fanartdiffuse</colordiffuse>
+										<texture border="4">Separator1.png</texture>
+									</control>
+									<control type="textbox">
+										<description>Description</description>
+										<top>90</top>
+										<bottom>10</bottom>
+										<font>font16</font>
+										<aligny>top</aligny>
+										<textcolor>white</textcolor>
+										<label>$INFO[ListItem.AddonDescription]</label>
+									</control>
+								</control>
+							</control>
+						</control>
+					</control>
+				</control>
+				<include>CommonPageCount</include>
+				<include content="AlphaBarV" condition="!Skin.HasSetting(HideJumpSMSBar)"><param name="id" value="$PARAM[viewid]"/></include>
+			</control>
+        </definition>
+    </include>
+    <include name="View_551_InfoThumbAddon">
+		<param name="viewid">551</param>
+		<definition>
+			<control type="group" id="777">
+				<visible>Control.IsVisible($PARAM[viewid])</visible>
+				<include>openclose</include>
+				<control type="group">
+					<visible>Control.IsVisible($PARAM[viewid])+!Control.HasFocus(666)</visible>
+					<include>openclosevisible</include>
+					<include>WhiteGrunge</include>
+					<include content="sidefade_shadow">
+						<param name="left" value="165r" />
+						<param name="flipx" value="true" />
+						<param name="id" value="$PARAM[viewid]1" />
+						<param name="colordiffuse" value="grey3" />
+						<param name="visible" value="Control.HasFocus($PARAM[viewid]1)" />
+					</include>
+					<control type="group"> <!-- Top Thumb View Panel -->
+						<height>70.5%</height>
+						<control type="group">
+							<left>SpacePaddingXL</left>
+							<right>SpacePaddingXL</right>
+							<top>SpacePaddingXL</top>
+							<bottom>SpacePaddingXL</bottom>
+							<control type="panel" id="$PARAM[viewid]">
+								<onleft>9000</onleft>
+								<onright condition="Control.IsVisible($PARAM[viewid]1)">$PARAM[viewid]1</onright>
+								<onright condition="!Control.IsVisible($PARAM[viewid]1)+Control.IsVisible(15000)">15000</onright>
+								<onup>$PARAM[viewid]</onup>
+								<ondown>$PARAM[viewid]</ondown>
+								<viewtype label="$LOCALIZE[301312]">thumbview</viewtype>
+								<visible>Window.IsVisible(AddonBrowser)|Container.Content(Addons)</visible>
+								<pagecontrol>$PARAM[viewid]1</pagecontrol>
+								<scrolltime>200</scrolltime>
+								<itemlayout height="290" width="310">
+									<control type="image">
+										<left>5</left>
+										<right>5</right>
+										<top>5</top>
+										<bottom>55</bottom>
+										<colordiffuse>grey</colordiffuse>
+										<bordertexture border="10">BlackBack.png</bordertexture>
+										<bordersize>6</bordersize>
+										<texture>$VAR[PosterThumb]</texture>
+										<visible>String.IsEmpty(ListItem.AddonBroken)</visible>
+										<aspectratio>keep</aspectratio>
+									</control>
+									<control type="image">
+										<left>5</left>
+										<right>5</right>
+										<top>5</top>
+										<bottom>55</bottom>
+										<colordiffuse>grey2</colordiffuse>
+										<bordertexture border="10">BlackBack.png</bordertexture>
+										<bordersize>6</bordersize>
+										<texture>$VAR[PosterThumb]</texture>
+										<visible>!String.IsEmpty(ListItem.AddonBroken)</visible>
+										<aspectratio>keep</aspectratio>
+									</control>
+									<control type="image">
+										<left>45</left>
+										<right>45</right>
+										<top>45</top>
+										<bottom>95</bottom>
+										<texture>Broken.png</texture>
+										<visible>!String.IsEmpty(ListItem.AddonBroken)</visible>
+									</control>
+									<control type="group">
+										<left>10</left>
+										<right>10</right>
+										<bottom>15</bottom>
+										<height>38</height>
+										<control type="label">
+											<textcolor>white</textcolor>
+											<shadowcolor>black</shadowcolor>
+											<align>center</align>
+											<aligny>center</aligny>
+											<info>ListItem.Label</info>
+										</control>
+									</control>
+								</itemlayout>
+								<focusedlayout height="290" width="310">
+									<animation effect="zoom" center="auto" start="90" end="100" time="300" delay="100" tween="quadratic" reversible="false" condition="Skin.HasSetting(animation)+Control.HasFocus($PARAM[viewid])">Focus</animation>
+									<animation effect="zoom" center="auto" start="100" end="90" time="100" tween="quadratic" reversible="false" condition="Skin.HasSetting(animation)+Control.HasFocus($PARAM[viewid])">Unfocus</animation>
+									<control type="image">
+										<left>0</left>
+										<right>0</right>
+										<top>0</top>
+										<bottom>40</bottom>
+										<bordertexture border="7">BlackBack.png</bordertexture>
+										<bordersize>9</bordersize>
+										<texture>$VAR[PosterThumb]</texture>
+										<visible>String.IsEmpty(ListItem.AddonBroken)</visible>
+										<aspectratio>keep</aspectratio>
+									</control>
+									<control type="image">
+										<left>0</left>
+										<right>0</right>
+										<top>0</top>
+										<bottom>40</bottom>
+										<bordertexture border="7">BlackBack.png</bordertexture>
+										<bordersize>9</bordersize>
+										<texture colordiffuse="grey2">$VAR[PosterThumb]</texture>
+										<visible>!String.IsEmpty(ListItem.AddonBroken)</visible>
+										<aspectratio>keep</aspectratio>
+									</control>
+									<control type="image">
+										<left>30</left>
+										<right>30</right>
+										<top>30</top>
+										<bottom>80</bottom>
+										<texture>Broken.png</texture>
+										<visible>!String.IsEmpty(ListItem.AddonBroken)</visible>
+									</control>
+									<control type="group">
+										<left>10</left>
+										<right>10</right>
+										<bottom>5</bottom>
+										<height>38</height>
+										<control type="label">
+											<textcolor>white</textcolor>
+											<shadowcolor>black</shadowcolor>
+											<align>center</align>
+											<aligny>center</aligny>
+											<info>ListItem.Label</info>
+										</control>
+									</control>
+								</focusedlayout>
+							</control>
+						</control>
+						<control type="group">
+							<top>SpacePaddingXL</top>
+							<bottom>SpacePaddingXL</bottom>
+							<include content="DefaultScrollbar">
+								<param name="id" value="$PARAM[viewid]1" />
+								<param name="left" value="60r" />
+								<param name="top" value="0" />
+								<param name="height" value="100%" />
+								<param name="onleft" value="$PARAM[viewid]" />
+								<param name="visible" value="Control.IsVisible($PARAM[viewid])+!Control.HasFocus(666)" />
+							</include>
+						</control>
+					</control>
+					<control type="group"> <!-- Bottom Info Panel -->
+						<top>70%</top>
+						<!-- <height>30%</height> -->
+						<include content="MirrorPanel">
+							<param name="top" value="0" />
+						</include>
+						<control type="group">
+							<left>SpacePaddingLarge</left>
+							<top>SpacePadding</top>
+							<bottom>SpacePadding</bottom>
+							<include>openclosevisible</include>
+							<visible>!ListItem.IsParentFolder</visible>
+							<control type="group">
+								<width>30%</width>
+								<control type="label">
+									<description>Show Title txt</description>
+									<font>impacted30</font>
+									<label>$INFO[ListItem.Property(Addon.Name)]</label>
+									<align>left</align>
+									<aligny>center</aligny>
+									<textcolor>white</textcolor>
+									<shadowcolor>black</shadowcolor>
+									<wrapmultiline>true</wrapmultiline>
+								</control>
+								<control type="image">
+									<left>3r</left>
+									<width>3</width>
+									<colordiffuse>fanartdiffuse</colordiffuse>
+									<texture>Separator4.png</texture>
+								</control>
+								<control type="group">
+									<top>55</top>
+									<control type="grouplist">
+										<right>SpacePadding</right>
+										<align>left</align>
+										<orientation>vertical</orientation>
+										<include content="AddonInfoList">
+											<param name="height" value="30" />
+											<param name="color1" value="selected" />
+											<param name="color2" value="white" />
+											<param name="visible_summary" value="false" />
+											<param name="visible_news" value="false" />
+											<param name="font" value="font16" />
+										</include>
+									</control>
+								</control>
+							</control>
+							<control type="group">
+								<left>30%</left>
+								<right>30%</right>
+								<control type="image">
+									<left>3r</left>
+									<width>3</width>
+									<colordiffuse>fanartdiffuse</colordiffuse>
+									<texture>Separator4.png</texture>
+								</control>
+								<control type="textbox">
+									<description>Description</description>
+									<left>SpacePadding</left>
+									<right>SpacePadding</right>
+									<textcolor>white</textcolor>
+									<label>$INFO[ListItem.AddonDescription]</label>
+								</control>
+							</control>
+							<control type="group">
+								<right>0</right>
+								<width>30%</width>
+								<control type="group">
+									<left>SpacePadding</left>
+									<right>SpacePadding</right>
+									<control type="group">
+										<centerleft>50%</centerleft>
+										<centertop>50%</centertop>
+										<control type="image">
+											<aspectratio>keep</aspectratio>
+											<include>openclosevisible</include>
+											<bordertexture border="30">ThumbShadow.png</bordertexture>
+											<bordersize>6</bordersize>
+											<texture>$INFO[Container($PARAM[viewid]).Listitem.Icon]</texture>
+											<visible>String.IsEmpty(ListItem.AddonBroken)</visible>
+										</control>
+										<control type="image">
+											<include>openclosevisible</include>
+											<aspectratio>keep</aspectratio>
+											<bordertexture border="30">ThumbShadow.png</bordertexture>
+											<bordersize>6</bordersize>
+											<colordiffuse>grey2</colordiffuse>
+											<texture>$VAR[PosterThumb]</texture>
+											<visible>!String.IsEmpty(ListItem.AddonBroken)</visible>
+										</control>
+										<control type="image">
+											<include>openclosevisible</include>
+											<aspectratio>keep</aspectratio>
+											<top>10</top>
+											<bottom>10</bottom>
+											<texture>Broken.png</texture>
+											<visible>!String.IsEmpty(ListItem.AddonBroken)</visible>
+										</control>
+									</control>
+								</control>
+							</control>
+						</control>
+					</control>
+					<!-- <include condition="!Skin.HasSetting(HideJumpSMSBar)">AlphaBarV</include> -->
+				</control>
+			</control>
+		</definition>
+    </include>
+</includes>

@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <include name="View_721_RightList">
+		<param name="viewid">721</param>
+		<definition>
+			<control type="group">
+				<include>openclose</include>
+				<visible>Control.IsVisible($PARAM[viewid])</visible>
+				<control type="group">
+					<include content="FakeButton444">
+						<param name="visible" value="Control.IsVisible($PARAM[viewid])"/>
+					</include>
+					<include>openclosevisible</include>
+					<visible>Control.IsVisible($PARAM[viewid])+!Control.HasFocus(666)</visible>
+					<include>BlackGrunge</include>
+				</control>
+				<include content="sidefade_shadow">
+					<param name="left" value="165r" />
+					<param name="flipx" value="true" />
+					<param name="id" value="$PARAM[viewid]1" />
+					<param name="visible" value="Control.HasFocus($PARAM[viewid]1)" />
+				</include>
+				<control type="group"> <!-- List Section -->
+					<right>0</right>
+					<width>43%</width>
+					<control type="group">
+						<left>10</left>
+						<right>SpacePadding</right>
+						<include>opencloseslideleft</include>
+						<visible>Control.IsVisible($PARAM[viewid])+!Control.HasFocus(666)</visible>
+						<animation effect="slide" end="-15,0" time="300" condition="Control.HasFocus($PARAM[viewid]1)">Conditional</animation>
+						<control type="image">
+							<colordiffuse>grey2</colordiffuse>
+							<texture>Underlay2.png</texture>
+						</control>
+						<control type="image">
+							<left>-3</left>
+							<width>akzentline_size</width>
+							<colordiffuse>$VAR[BackgroundOverlayColorDialog]</colordiffuse>
+							<texture>White.png</texture>
+						</control>
+						<control type="image">
+							<left>0r</left>
+							<width>akzentline_size</width>
+							<colordiffuse>$VAR[BackgroundOverlayColorDialog]</colordiffuse>
+							<texture>White.png</texture>
+						</control>
+						<control type="image">
+							<left>22</left>
+							<right>22</right>
+							<top>100r</top>
+							<height>3</height>
+							<colordiffuse>fanartdiffuse</colordiffuse>
+							<texture border="1">Separator1.png</texture>
+						</control>
+						<control type="list" id="$PARAM[viewid]">
+							<left>0</left>
+							<top>105</top>
+							<bottom>105</bottom>
+							<onleft>9000</onleft>
+							<onright condition="Control.IsVisible($PARAM[viewid]1)">$PARAM[viewid]1</onright>
+							<onright condition="!Control.IsVisible($PARAM[viewid]1)+Control.IsVisible(15000)">15000</onright>
+							<onright condition="!Control.IsVisible($PARAM[viewid]1)+!Control.IsVisible(15000)">732</onright>
+							<onup>$PARAM[viewid]</onup>
+							<ondown>$PARAM[viewid]</ondown>
+							<viewtype label="View_721_RightList">list</viewtype>
+							<pagecontrol>$PARAM[viewid]1</pagecontrol>
+							<scrolltime>200</scrolltime>
+							<visible>Container.Content(Sets)|Container.Content(Musicvideos)|Container.Content(Movies)|Container.Content(TVShows)|Container.Content(episodes)|Container.Content(Seasons)</visible>
+							<itemlayout width="auto" height="50">
+								<control type="label">
+									<left>50</left>
+									<right>50</right>
+									<align>left</align>
+									<textcolor>grey</textcolor>
+									<label>$VAR[OriginalTitle]</label>
+								</control>
+								<control type="label">
+									<right>50</right>
+									<align>right</align>
+									<textcolor>grey</textcolor>
+									<font>ubuntu-r16b</font>
+									<label>$VAR[ListItemLabel2]</label>
+									<visible>!Container.Content(Addons)</visible>
+									<animation effect="slide" end="38" condition="Window.IsVisible(music)">Conditional</animation>
+								</control>
+								<control type="label">
+									<right>50</right>
+									<align>right</align>
+									<textcolor>grey</textcolor>
+									<font>ubuntu-r16b</font>
+									<label>$INFO[ListItem.Property(Addon.Status)]$INFO[ListItem.AddonVersion, (,) ]</label>
+									<visible>Container.Content(Addons)</visible>
+								</control>
+								<control type="image">
+									<left>10</left>
+									<top>10</top>
+									<height>30</height>
+									<width>30</width>
+									<aspectratio align="left">keep</aspectratio>
+									<texture>$VAR[ListFlag]</texture>
+									<visible>!ListItem.IsFolder|ListItem.IsCollection</visible>
+								</control>
+								<control type="image">
+									<left>40r</left>
+									<width>30</width>
+									<aspectratio>keep</aspectratio>
+									<texture>$INFO[ListItem.Overlay]</texture>
+									<visible>!ListItem.IsResumable</visible>
+								</control>
+								<control type="image">
+									<left>40r</left>
+									<width>30</width>
+									<aspectratio>keep</aspectratio>
+									<texture>OverlayWatching.png</texture>
+									<visible>ListItem.IsResumable</visible>
+								</control>
+								<control type="image">
+									<left>40r</left>
+									<width>30</width>
+									<aspectratio>keep</aspectratio>
+									<texture>OverlayRAR.png</texture>
+									<visible>String.Contains(ListItem.Property(Addon.Status),$LOCALIZE[13413])</visible>
+								</control>
+							</itemlayout>
+							<focusedlayout width="auto" height="75">
+								<control type="image">
+									<left>1</left>
+									<right>1</right>
+									<include>DialogButtonTextureFocus</include>
+									<visible>Control.HasFocus($PARAM[viewid])</visible>
+								</control>
+								<control type="image">
+									<left>1</left>
+									<right>1</right>
+									<include>DialogButtonTextureNoFocus</include>
+									<visible>!Control.HasFocus($PARAM[viewid])</visible>
+								</control>
+								<control type="label">
+									<left>50</left>
+									<right>50</right>
+									<height>50</height>
+									<align>left</align>
+									<textcolor>$VAR[textcolor_focused_view]</textcolor>
+									<label>$VAR[OriginalTitle]</label>
+								</control>
+								<control type="label">
+									<right>50</right>
+									<height>50</height>
+									<align>right</align>
+									<textcolor>$VAR[textcolor_focused_view]</textcolor>
+									<font>ubuntu-r16b</font>
+									<label>$VAR[ListItemLabel2]</label>
+									<visible>!Container.Content(Addons)</visible>
+									<animation effect="slide" end="38" condition="Window.IsVisible(music)">Conditional</animation>
+								</control>
+								<control type="label">
+									<right>50</right>
+									<height>50</height>
+									<align>right</align>
+									<textcolor>$VAR[textcolor_focused_view]</textcolor>
+									<font>font16</font>
+									<label>$INFO[ListItem.Property(Addon.Status)]$INFO[ListItem.AddonVersion, (,) ]</label>
+									<visible>Container.Content(Addons)</visible>
+								</control>
+								<control type="label">
+									<left>50</left>
+									<right>50</right>
+									<top>34</top>
+									<!-- <height>33</height> -->
+									<align>left</align>
+									<scroll>false</scroll>
+									<textcolor>$VAR[textcolor_focused_view]</textcolor>
+									<font>clock-22b</font>
+									<label>$VAR[WideView_InfosVar,, ]$INFO[ListItem.Genre,❖ ,]</label>
+									<visible>!ListItem.IsFolder|ListItem.IsCollection</visible>
+								</control>
+								<control type="image">
+									<left>10</left>
+									<top>10</top>
+									<height>30</height>
+									<width>30</width>
+									<aspectratio align="left">keep</aspectratio>
+									<texture>$VAR[ListFlag]</texture>
+									<visible>!ListItem.IsFolder|ListItem.IsCollection</visible>
+								</control>
+								<control type="image">
+									<left>40r</left>
+									<width>30</width>
+									<height>50</height>
+									<aspectratio>keep</aspectratio>
+									<colordiffuse>black</colordiffuse>
+									<texture>$INFO[ListItem.Overlay]</texture>
+									<visible>!ListItem.IsResumable</visible>
+								</control>
+								<control type="image">
+									<left>40r</left>
+									<width>30</width>
+									<height>50</height>
+									<aspectratio>keep</aspectratio>
+									<colordiffuse>black</colordiffuse>
+									<texture>OverlayWatching.png</texture>
+									<visible>ListItem.IsResumable</visible>
+								</control>
+								<control type="image">
+									<left>40r</left>
+									<width>30</width>
+									<height>50</height>
+									<aspectratio>keep</aspectratio>
+									<colordiffuse>black</colordiffuse>
+									<texture>OverlayRAR.png</texture>
+									<visible>String.Contains(ListItem.Property(Addon.Status),$LOCALIZE[13413])</visible>
+								</control>
+							</focusedlayout>
+						</control>
+						<control type="group">
+							<left>22</left>
+							<bottom>22</bottom>
+							<height>60</height>
+							<control type="image">
+								<!-- <top>453</top> -->
+								<width>225</width>
+								<aspectratio align="left" aligny="bottom">keep</aspectratio>
+								<texture>$VAR[Furniture_VideoRating]</texture>
+							</control>
+						</control>
+					</control>
+					<include content="CommonPageCount">
+						<param name="bottom">20</param>
+						<param name="right">SpacePaddingLarge</param>
+						<param name="width">100%</param>
+					</include>
+				</control>
+				<control type="group">
+					<animation effect="slide" end="-20,0" time="300">Focus</animation>
+					<include content="DefaultScrollbar">
+						<param name="id" value="$PARAM[viewid]1" />
+						<param name="left" value="0r" />
+						<param name="top" value="105" />
+						<param name="bottom" value="105" />
+						<param name="onleft" value="$PARAM[viewid]" />
+						<param name="visible" value="Control.IsVisible($PARAM[viewid])+!Control.HasFocus(666)" />
+					</include>
+				</control>
+				<control type="group"> <!-- Detail Section Left Down -->
+					<width>57%</width>
+					<control type="grouplist"> <!-- Set Information -->
+						<visible>Control.IsVisible($PARAM[viewid])+!Control.HasFocus(666)</visible>
+						<visible>ListItem.IsCollection</visible>
+						<visible>Skin.HasSetting(EnableExtendedArt)</visible>
+						<include>openclosemedium</include>
+						<left>SpacePadding</left>
+						<height>180</height>
+						<bottom>515</bottom>
+						<include content="MovieSetInformationCover">
+							<param name="visible_label" value="false"/>
+						</include>
+					</control>
+					<control type="group"> <!-- Details Art/etc-->
+						<visible>!ListItem.IsParentFolder</visible>
+						<include>openclosevisible</include>
+						<include>opencloseslideright</include>
+						<visible>Control.IsVisible($PARAM[viewid])+!Control.HasFocus(666)</visible>
+						<control type="group">
+							<left>SpacePadding</left>
+							<right>SpacePadding</right>
+							<bottom>SpacePadding</bottom>
+							<height>520</height>
+							<control type="group">
+								<top>SpacePadding</top>
+								<control type="group">
+									<height>518</height>
+									<bottom>0</bottom>
+									<control type="group">
+										<top>30</top>
+										<control type="image">
+											<height>3</height>
+											<texture border="1">Separator1.png</texture>
+										</control>
+										<control type="image">
+											<top>420</top>
+											<height>3</height>
+											<texture border="1">Separator1.png</texture>
+										</control>
+									</control>
+									<control type="label">
+										<width>525</width>
+										<height>30</height>
+										<textcolor>grey</textcolor>
+										<label>$LOCALIZE[572]: $INFO[ListItem.Studio]</label>
+										<visible>!String.IsEmpty(ListItem.Studio)</visible>
+									</control>
+									<control type="label">
+										<top>0</top>
+										<width>525</width>
+										<height>30</height>
+										<textcolor>grey</textcolor>
+										<label>$LOCALIZE[20457]</label>
+										<visible>ListItem.IsCollection+!Skin.HasSetting(EnableExtendedArt)</visible>
+									</control>
+									<control type="label">
+										<right>190</right>
+										<height>28</height>
+										<align>right</align>
+										<textcolor>grey</textcolor>
+										<label>$INFO[ListItem.Votes ,✓ , $LOCALIZE[205] ]</label>
+										<visible>!ListItem.IsCollection</visible>
+									</control>
+									<control type="group">
+										<right>0</right>
+										<width>180</width>
+										<control type="image">
+											<description>Rated</description>
+											<height>30</height>
+											<aspectratio align="right" aligny="top">stretch</aspectratio>
+											<texture>$INFO[ListItem.Rating,leftratingvideo/,.png]</texture>
+											<visible>!ListItem.IsCollection</visible>
+											<visible>!String.IsEmpty(ListItem.Rating)</visible>
+										</control>
+									</control>
+									<control type="grouplist"> <!-- Movie Cover and Extra Art-->
+										<top>48</top>
+										<align>center</align>
+										<orientation>horizontal</orientation>
+										<control type="group"> <!-- Movie Cover Art -->
+											<width>303</width>
+											<control type="group"> <!-- Movie Cover with case -->
+												<top>-3</top>
+												<visible>!Skin.HasSetting(hideMovieCases)</visible>
+												<control type="image">
+													<description>case by resolution</description>
+													<left>33</left>
+													<top>4</top>
+													<width>267</width>
+													<height>381</height>
+													<texture diffuse="clear-cases/clearcase_inlay.png" fallback="FallbackCover.png">$VAR[PosterThumb]</texture>
+													<aspectratio>stretch</aspectratio>
+													<visible>!Container.Content(episodes)</visible>
+													<visible>![String.StartsWith(ListItem.Label,*)|String.IsEqual(ListItem.Label,..)|String.StartsWith(ListItem.FolderPath,plugin://)]</visible>
+												</control>
+												<control type="image">
+													<description>case by resolution</description>
+													<left>33</left>
+													<top>4</top>
+													<width>267</width>
+													<height>381</height>
+													<texture diffuse="clear-cases/clearcase_inlay.png" fallback="FallbackCover.png">$VAR[PosterThumb]</texture>
+													<aspectratio>keep</aspectratio>
+													<visible>!Container.Content(episodes)</visible>
+													<visible>String.StartsWith(ListItem.Label,*)|String.IsEqual(ListItem.Label,..)|String.StartsWith(ListItem.FolderPath,plugin://)</visible>
+												</control>
+												<control type="image">
+													<description>case by resolution</description>
+													<left>33</left>
+													<top>4</top>
+													<width>267</width>
+													<height>381</height>
+													<texture diffuse="clear-cases/clearcase_inlay.png" fallback="FallbackCover.png">$INFO[ListItem.Art(tvshow.poster)]</texture>
+													<aspectratio>stretch</aspectratio>
+													<visible>Container.Content(episodes)</visible>
+												</control>
+												<control type="image">
+													<description>case by resolution</description>
+													<width>303</width>
+													<height>390</height>
+													<texture fallback="clear-cases/fallback.png">$VAR[clearcase]</texture>
+												</control>
+											</control>
+											<control type="group"> <!-- Movie Cover without case -->
+												<left>10</left>
+												<width>285</width>
+												<height>390</height>
+												<visible>Skin.HasSetting(hideMovieCases)</visible>
+												<control type="image">
+													<description>Movie cover image</description>
+													<include condition="Skin.HasSetting(roundcorner)" content="cornersetting_round"></include>
+													<include condition="!Skin.HasSetting(roundcorner)" content="cornersetting_sharp"></include>
+													<aspectratio>stretch</aspectratio>
+													<visible>!Container.Content(episodes)|String.IsEmpty(ListItem.Art(tvshow.poster))</visible>
+													<visible>![String.StartsWith(ListItem.Label,*)|String.IsEqual(ListItem.Label,..)|String.StartsWith(ListItem.FolderPath,plugin://)]</visible>
+												</control>
+												<control type="image">
+													<description>Movie cover image</description>
+													<include condition="Skin.HasSetting(roundcorner)" content="cornersetting_round"></include>
+													<include condition="!Skin.HasSetting(roundcorner)" content="cornersetting_sharp"></include>
+													<aspectratio>keep</aspectratio>
+													<visible>!Container.Content(episodes)|String.IsEmpty(ListItem.Art(tvshow.poster))</visible>
+													<visible>String.StartsWith(ListItem.Label,*)|String.IsEqual(ListItem.Label,..)|String.StartsWith(ListItem.FolderPath,plugin://)</visible>
+												</control>
+												<control type="image">
+													<description>Movie cover image</description>
+													<include condition="Skin.HasSetting(roundcorner)" content="cornersetting_round"><param name="image" value="$INFO[ListItem.Art(tvshow.poster)]"/></include>
+													<include condition="!Skin.HasSetting(roundcorner)" content="cornersetting_sharp"><param name="image" value="$INFO[ListItem.Art(tvshow.poster)]"/></include>
+													<aspectratio>stretch</aspectratio>
+													<visible>Container.Content(episodes)+!String.IsEmpty(ListItem.FileExtension)</visible>
+												</control>
+												<control type="image">
+													<texture border="8">masks/Default$VAR[CornerSettingVar].png</texture>
+												</control>
+											</control>
+										</control>
+										<control type="image"> <!-- Spacer -->
+											<width>10</width>
+											<texture/>
+										</control>
+										<control type="image"> <!-- Separator -->
+											<top>16</top>
+											<width>1</width>
+											<height>390</height>
+											<texture>Separator3.png</texture>
+										</control>
+										<control type="image"> <!-- Spacer -->
+											<width>10</width>
+											<texture/>
+										</control>
+										<control type="group"> <!-- Provider Icon -->
+											<width>70</width>
+											<visible>!ListItem.IsCollection</visible>
+											<visible>!String.IsEmpty(Container(99950).ListItem.Property(Provider.1.Icon))</visible>
+											<include content="TMDbhelper_Provider_Icon">
+												<param name="left" value="5"/>
+												<param name="top" value="0"/>
+												<param name="height" value="390" />
+												<param name="width" value="100%"/>
+												<param name="box" value="40"/>
+												<param name="height" value="100%"/>
+												<param name="itemgap" value="10"/>
+											</include>
+										</control>
+										<control type="group"> <!-- Separator -->
+											<top>16</top>
+											<width>13</width>
+											<visible>!ListItem.IsCollection</visible>
+											<visible>!String.IsEmpty(Container(99950).ListItem.Property(Provider.1.Icon))</visible>
+											<control type="image">
+												<width>1</width>
+												<height>390</height>
+												<texture>Separator3.png</texture>
+											</control>
+											<control type="image"> <!-- Spacer -->
+												<width>10</width>
+												<texture/>
+											</control>
+										</control>
+										<control type="group"> <!-- Extra Art -->
+											<top>40</top>
+											<bottom>45</bottom>
+											<width>580</width>
+											<include>openclosevisible</include>
+											<visible>!ListItem.IsParentFolder</visible>
+											<control type="image">
+												<aspectratio>keep</aspectratio>
+												<texture>$VAR[extraart_listitem_rule]</texture>
+												<bordersize>4</bordersize>
+												<visible>!Container.Content(episodes)</visible>
+												<visible>Skin.HasSetting(EnableExtendedArt)</visible>
+											</control>
+											<control type="image">
+												<visible>Container.Content(episodes)</visible>
+												<aspectratio>keep</aspectratio>
+												<include condition="Skin.HasSetting(roundcorner)" content="cornersetting_round"><param name="diffuse" value="masks/mask_landscape_round.png"/><param name="image" value="$INFO[ListItem.Icon]"/></include>
+												<include condition="!Skin.HasSetting(roundcorner)" content="cornersetting_sharp"><param name="image" value="$INFO[ListItem.Icon]"/></include>
+											</control>
+										</control>
+									</control>
+									<control type="grouplist">
+										<top>470</top>
+										<right>SpacePadding</right>
+										<height>45</height>
+										<itemgap>12</itemgap>
+										<align>left</align>
+										<scrolltime tween="sine" easing="out">200</scrolltime>
+										<orientation>horizontal</orientation>
+										<include>FlagVideo</include>
+										<include>FlagVideoAudioStream1</include>
+										<include>opencloseslideup</include>
+										<visible>Control.IsVisible($PARAM[viewid])+!Control.HasFocus(666)</visible>
+									</control>
+								</control>
+							</control>
+						</control>
+						<control type="group"> <!-- Plot -->
+							<top>SpacePaddingLarge</top>
+							<left>SpacePadding</left>
+							<right>SpacePadding</right>
+							<bottom>552</bottom>
+							<include>openclosevisible</include>
+							<visible>Skin.HasSetting(RightListPlot)+!String.IsEmpty(ListItem.Plot)</visible>
+							<control type="image">
+								<top>3r</top>
+								<height>3</height>
+								<colordiffuse>fanartdiffuse</colordiffuse>
+								<texture border="1">Separator1.png</texture>
+								<animation effect="slide" end="0,-95" time="0" condition="ListItem.IsCollection+Skin.HasSetting(EnableExtendedArt)">Conditional</animation>
+							</control>
+							<control type="textbox">
+								<shadowcolor>black</shadowcolor>
+								<include condition="!Skin.HasSetting(BigPlotText)">PlotText16Var</include>
+								<include condition="Skin.HasSetting(BigPlotText)">PlotTextBigVar</include>
+								<label fallback="195">$INFO[ListItem.Plot]</label>
+								<visible>![ListItem.IsCollection+Skin.HasSetting(EnableExtendedArt)]</visible>
+							</control>
+							<control type="textbox">
+								<bottom>80</bottom>
+								<shadowcolor>black</shadowcolor>
+								<include condition="!Skin.HasSetting(BigPlotText)">PlotText16Var</include>
+								<include condition="Skin.HasSetting(BigPlotText)">PlotTextBigVar</include>
+								<label fallback="195">$INFO[ListItem.Plot]</label>
+								<visible>ListItem.IsCollection+Skin.HasSetting(EnableExtendedArt)</visible>
+							</control>
+						</control>
+					</control>
+				</control>
+                <include content="ScrollOffsetLabel">
+                    <param name="left">-10</param>
+                    <param name="top">110</param>
+                </include>
+				<include content="AlphaBarV" condition="!Skin.HasSetting(HideJumpSMSBar)"><param name="id" value="$PARAM[viewid]"/></include>
+				<control type="button" id="777">
+					<include>HiddenButton</include>
+					<onfocus>Control.SetFocus($PARAM[viewid])</onfocus>
+				</control>
+			</control>
+		</definition>
+    </include>
+</includes>

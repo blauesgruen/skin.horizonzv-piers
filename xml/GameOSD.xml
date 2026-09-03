@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window>
+	<defaultcontrol always="true">1103</defaultcontrol>
+	<include>openclosevisible</include>
+	<depth>DepthOSD</depth>
+	<controls>
+		<include>BlackBack</include>
+        <control type="group">
+            <include>openclosebox</include>
+            <include content="DialogBackgroundCommons">
+                <param name="header_id" value="1" />
+				<param name="width" value="850" />
+				<param name="height" value="670" />
+                <param name="header_label" value="$LOCALIZE[35221]" />
+            </include>
+			<visible>!Window.IsActive(1101) + !Window.IsActive(GameVideoFilter) + !Window.IsActive(GameStretchMode) + !Window.IsActive(GameControllers) + !Window.IsActive(GameVideoRotation)</visible>
+            <control type="group" id="1">
+                <left>SpacePadding</left>
+				<right>SpacePadding</right>
+                <top>SpacePaddingXL</top>
+				<bottom>SpacePaddingXL</bottom>
+				<control type="group" id="10">
+					<visible>System.GetBool(gamesgeneral.showosdhelp)</visible>
+					<control type="group" id="1000">
+						<control type="group" id="1100">
+							<control type="textbox" id="1101">
+								<description>Help text</description>
+								<font>impacted18</font>
+								<align>center</align>
+							</control>
+							<control type="gamecontroller" id="1102">
+								<top>102</top>
+								<left>30</left>
+								<width>640</width>
+								<height>640</height>
+							</control>
+							<control type="textbox">
+								<description>Additional help text. This will be removed in future versions.</description>
+								<bottom>200</bottom>
+								<left>30</left>
+								<right>30</right>
+								<height>130</height>
+								<label>$LOCALIZE[35236]</label>
+							</control>
+							<control type="button">
+								<description>Button to close the dialog</description>
+								<top>0</top>
+								<bottom>0</bottom>
+								<left>0</left>
+								<right>0</right>
+								<texturefocus />
+								<texturenofocus />
+								<onclick>Action(close)</onclick>
+							</control>
+						</control>
+					</control>
+				</control>
+				<control type="group" id="20">
+					<visible>!System.GetBool(gamesgeneral.showosdhelp)</visible>
+					<control type="group" id="2000">
+						<control type="list" id="1103">
+							<aligny>center</aligny>
+							<orientation>vertical</orientation>
+							<pagecontrol>2200</pagecontrol>
+							<onright>2200</onright>
+							<itemlayout width="auto" height="80">
+								<control type="image">
+									<left>10</left>
+									<width>64</width>
+									<aspectratio>keep</aspectratio>
+									<info>ListItem.Icon</info>
+								</control>
+								<control type="label">
+									<left>80</left>
+									<right>30</right>
+									<height>100%</height>
+									<info>ListItem.Label</info>
+								</control>
+								<control type="label">
+									<right>20</right>
+									<align>right</align>
+									<width>auto</width>
+									<height>100%</height>
+									<info>ListItem.Label2</info>
+								</control>
+							</itemlayout>
+							<focusedlayout width="auto" height="80">
+								<control type="image">
+									<include>DialogButtonTextureFocus</include>
+								</control>
+								<control type="image">
+									<left>10</left>
+									<width>64</width>
+									<aspectratio>keep</aspectratio>
+									<info>ListItem.Icon</info>
+									<colordiffuse>grey2</colordiffuse>
+								</control>
+								<control type="label">
+									<left>80</left>
+									<right>30</right>
+									<height>100%</height>
+									<textcolor>black</textcolor>
+									<shadowcolor>grey</shadowcolor>
+									<info>ListItem.Label</info>
+								</control>
+								<control type="label">
+									<right>20</right>
+									<align>right</align>
+									<width>auto</width>
+									<height>100%</height>
+									<textcolor>black</textcolor>
+									<shadowcolor>grey</shadowcolor>
+									<info>ListItem.Label2</info>
+								</control>
+							</focusedlayout>
+							<content>
+								<item>
+									<description>Pause / Resume button</description>
+									<label>$LOCALIZE[35224]</label>
+									<label2>$FEATURE[select,game.controller.snes] + $FEATURE[x,game.controller.default]</label2>
+									<icon>osd/Play.png</icon>
+									<onclick>Play</onclick>
+								</item>
+								<item>
+									<description>Save / Load button</description>
+									<label>$LOCALIZE[35249]</label>
+									<icon>osd/saves.png</icon>
+									<onclick>ActivateWindow(InGameSaves)</onclick>
+								</item>
+								<item>
+									<description>Players button</description>
+									<label>$LOCALIZE[35172]</label>
+									<icon>osd/agent.png</icon>
+									<onclick>ActivateWindow(GameAgents)</onclick>
+								</item>
+								<item>
+									<description>Reset button</description>
+									<label>$LOCALIZE[13007]</label>
+									<icon>osd/PrevTrack.png</icon>
+									<onclick>PlayerControl(Reset)</onclick>
+								</item>
+								<item>
+									<description>Stop button</description>
+									<label>$LOCALIZE[35222]</label>
+									<label2>$FEATURE[select,game.controller.snes] + $FEATURE[start,game.controller.default]</label2>
+									<icon>osd/Stop.png</icon>
+									<onclick>Stop</onclick>
+								</item>
+								<item>
+									<description>Settings button</description>
+									<label>$LOCALIZE[5]</label>
+									<icon>osd/settings.png</icon>
+									<onclick>SetProperty(settingslist_content,games,home)</onclick>
+									<onclick>SetProperty(settingslist_header,$LOCALIZE[5],home)</onclick>
+									<onclick>ActivateWindow(1104)</onclick>
+								</item>
+							</content>
+						</control>
+						<control type="scrollbar" id="2200">
+							<top>-10</top>
+							<right>0</right>
+							<width>12</width>
+							<height>100%</height>
+							<onleft>1103</onleft>
+							<showonepage>false</showonepage>
+							<orientation>vertical</orientation>
+						</control>
+					</control>
+				</control>
+			</control>
+		</control>
+	</controls>
+</window>

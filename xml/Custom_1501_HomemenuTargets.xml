@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="1501" type="dialog">
+    <defaultcontrol always="true">36001</defaultcontrol>
+	<backgroundcolor>grey3</backgroundcolor>
+    <onunload>ClearProperty(HomeButton)</onunload>
+    <controls>
+		<control type="group">
+			<!-- <include>BlackBack</include> -->
+			<include>openclose</include>
+			<visible>!Window.IsVisible(1500)</visible>
+			<control type="group">
+				<include>openclosebox</include>
+				<include content="DefaultPopupLayout">
+					<param name="PopupHeaderTitle">$LOCALIZE[10000] $LOCALIZE[1397] Widget $LOCALIZE[5]</param>
+					<param name="PopupIcon">Design-Scripticon.png</param>
+					<param name="PopupTitle">[UPPERCASE]$VAR[WidgetPropertyLabel][/UPPERCASE]</param>
+				</include>
+				<control type="group" id="36001">
+					<!-- music -->
+					<include content="DefaultGrouplistHomemenuTargets">
+						<param name="homemenu_name">music</param>
+						<param name="id">1</param>
+						<param name="grouplist_id">36100</param>
+					</include>
+					<!-- videos -->
+					<include content="DefaultGrouplistHomemenuTargets">
+						<param name="homemenu_name">videos</param>
+						<param name="id">2</param>
+						<param name="grouplist_id">36101</param>
+					</include>
+					<!-- movies -->
+					<include content="DefaultGrouplistHomemenuTargets">
+						<param name="homemenu_name">movies</param>
+						<param name="id">3</param>
+						<param name="grouplist_id">36102</param>
+					</include>
+					<!-- tvshow -->
+					<include content="DefaultGrouplistHomemenuTargets">
+						<param name="homemenu_name">tvshow</param>
+						<param name="id">4</param>
+						<param name="grouplist_id">36103</param>
+					</include>
+					<!-- musicvideo -->
+					<include content="DefaultGrouplistHomemenuTargets">
+						<param name="homemenu_name">musicvideo</param>
+						<param name="id">5</param>
+						<param name="grouplist_id">36104</param>
+					</include>
+					<!-- picture -->
+					<include content="DefaultGrouplistHomemenuTargets">
+						<param name="homemenu_name">picture</param>
+						<param name="id">6</param>
+						<param name="grouplist_id">36105</param>
+					</include>
+					<!-- playdisc -->
+					<include content="DefaultGrouplistHomemenuTargets">
+						<param name="homemenu_name">playdisc</param>
+						<param name="id">7</param>
+						<param name="grouplist_id">36106</param>
+					</include>
+					<!-- custom1 -->
+					<include content="DefaultGrouplistHomemenuTargets">
+						<param name="homemenu_name">custom1</param>
+						<param name="id">8</param>
+						<param name="grouplist_id">36107</param>
+					</include>
+					<!-- custom2 -->
+					<include content="DefaultGrouplistHomemenuTargets">
+						<param name="homemenu_name">custom2</param>
+						<param name="id">9</param>
+						<param name="grouplist_id">36108</param>
+					</include>
+					<!-- custom3 -->
+					<include content="DefaultGrouplistHomemenuTargets">
+						<param name="homemenu_name">custom3</param>
+						<param name="id">10</param>
+						<param name="grouplist_id">36109</param>
+					</include>
+					<!-- custom4 -->
+					<include content="DefaultGrouplistHomemenuTargets">
+						<param name="homemenu_name">custom4</param>
+						<param name="id">11</param>
+						<param name="grouplist_id">36110</param>
+					</include>
+					<!-- custom5 -->
+					<include content="DefaultGrouplistHomemenuTargets">
+						<param name="homemenu_name">custom5</param>
+						<param name="id">12</param>
+						<param name="grouplist_id">36111</param>
+					</include>
+					<!-- custom6 -->
+					<include content="DefaultGrouplistHomemenuTargets">
+						<param name="homemenu_name">custom6</param>
+						<param name="id">13</param>
+						<param name="grouplist_id">36112</param>
+					</include>
+					<!-- custom7 -->
+					<include content="DefaultGrouplistHomemenuTargets">
+						<param name="homemenu_name">custom7</param>
+						<param name="id">14</param>
+						<param name="grouplist_id">36113</param>
+					</include>
+					<!-- custom8 -->
+					<include content="DefaultGrouplistHomemenuTargets">
+						<param name="homemenu_name">custom8</param>
+						<param name="id">15</param>
+						<param name="grouplist_id">36114</param>
+					</include>
+					<!-- custom9 -->
+					<include content="DefaultGrouplistHomemenuTargets">
+						<param name="homemenu_name">custom9</param>
+						<param name="id">16</param>
+						<param name="grouplist_id">36115</param>
+					</include>
+					<!-- setting -->
+					<include content="DefaultGrouplistHomemenuTargets">
+						<param name="homemenu_name">setting</param>
+						<param name="id">17</param>
+						<param name="grouplist_id">36116</param>
+					</include>
+					<!-- dashboard -->
+					<include content="DefaultGrouplistHomemenuTargets">
+						<param name="homemenu_name">dashboard</param>
+						<param name="id">18</param>
+						<param name="grouplist_id">36117</param>
+					</include>
+					<!-- games -->
+					<include content="DefaultGrouplistHomemenuTargets">
+						<param name="homemenu_name">games</param>
+						<param name="id">19</param>
+						<param name="grouplist_id">36118</param>
+					</include>
+				</control>
+			</control>
+		</control>
+	</controls>
+</window>

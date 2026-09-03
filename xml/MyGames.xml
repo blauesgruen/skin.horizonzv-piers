@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+	<defaultcontrol always="true">50</defaultcontrol>
+	<backgroundcolor>grey3</backgroundcolor>
+    <menucontrol>9000</menucontrol>
+    <include>ViewidAddons</include>
+    <controls>
+        <include>fakebutton_visible_bkg</include>
+        <include>BackgroundMyNavs</include>
+        <include>ViewsAddons</include>
+        <control type="group">
+            <include>SidePanelBackgroundOverlay</include>
+			<control type="group">
+				<visible>!Skin.HasSetting(KioskMode)</visible>
+				<include>SidePanelAnimation</include>
+				<include>SidePanelBackground</include>
+				<control type="grouplist" id="9000">
+					<include>SidePanelProperty</include>
+					<control type="button" id="1">
+						<description>View</description>
+						<label>31002</label>
+						<include>SidePanelButton</include>
+						<onclick>Control.SetFocus(9001)</onclick>
+					</control>
+					<control type="label" id="203">
+						<description>Actions</description>
+						<include>SidePanelButton</include>
+						<label>14230</label>
+						<visible>Control.IsVisible(621) | Control.IsVisible(624)</visible>
+					</control>
+					<control type="button" id="624">
+						<include>SidePanelButton</include>
+						<label>$LOCALIZE[10140]</label>
+						<onclick>Addon.OpenSettings($INFO[Container.PluginName])</onclick>
+						<visible>!String.IsEmpty(Container.PluginName)</visible>
+					</control>
+					<control type="button" id="621">
+						<description>Get more</description>
+						<include>SidePanelButton</include>
+						<label>$LOCALIZE[21452]</label>
+						<onclick>ActivateWindow(addonbrowser,addons://more/game/,return)</onclick>
+						<visible>Container.Content(addons)</visible>
+					</control>
+					<control type="button" id="624">
+						<description>Addon Settings</description>
+						<include>SidePanelButton</include>
+						<label>$LOCALIZE[10140]</label>
+						<onclick>Addon.OpenSettings($INFO[Container.PluginName])</onclick>
+						<visible>!String.IsEmpty(Container.PluginName)</visible>
+					</control>
+				</control>
+                <include>SidePanelNavigation</include>
+                <control type="image">
+                    <width>akzentline_size</width>
+                    <left>SidePanelLeftWidth</left>
+                    <colordiffuse>$VAR[BackgroundOverlayColorDialog]</colordiffuse>
+                    <texture>White.png</texture>
+                    <animation effect="slide" end="-2" time="0" condition="true">Conditional</animation>
+                </control>
+			</control>
+		</control>
+        <include>SidePanelShortcuts</include>
+        <include>ViewTypeList</include>
+        <include>cs_rightpanel</include>
+        <include>Clock</include>
+        <include>NavInfo</include>
+        <include>BehindDialogFadeOut</include>
+        <include>TouchButtons</include>
+	</controls>
+</window>

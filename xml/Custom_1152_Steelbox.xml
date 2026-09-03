@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="buttonmenu" id="1152">
+    <defaultcontrol always="true">100</defaultcontrol>
+    <include>openclose</include>
+    <include>openclosebox</include>
+    <controls>
+        <include>MediaOverlay</include>
+        <control type="image">
+            <include>Dimensions_Fullscreen</include>
+            <colordiffuse>grey1</colordiffuse>
+            <texture>$VAR[FanartVAR]</texture>
+        </control>
+        <include>BlackGrunge</include>
+        <include>VideoGrid</include>
+        <control type="image">
+            <left>-15</left>
+            <top>750</top>
+            <width>100%</width>
+            <height>345</height>
+            <texture>Shadow.png</texture>
+        </control>
+        <control type="group">
+            <left>0</left>
+            <top>0</top>
+            <control type="group">
+                <left>0</left>
+                <top>15</top>
+                <control type="image">
+                    <left>333</left>
+                    <top>0</top>
+                    <width>303</width>
+                    <height>164</height>
+                    <texture>BlackBack.png</texture>
+                </control>
+                <control type="image">
+                    <description>Clearlogo Image</description>
+                    <left>333</left>
+                    <top>1</top>
+                    <width>303</width>
+                    <height>162</height>
+                    <texture>$VAR[ClearlogoVAR]</texture>
+                    <aspectratio align="center" aligny="center">keep</aspectratio>
+                </control>
+            </control>
+            <control type="group">
+                <left>316</left>
+                <top>190</top>
+                <control type="image">
+                    <left>333</left>
+                    <top>0</top>
+                    <width>303</width>
+                    <height>164</height>
+                    <texture>BlackBack.png</texture>
+                </control>
+                <control type="image">
+                    <description>Clearart Image</description>
+                    <left>333</left>
+                    <top>1</top>
+                    <width>303</width>
+                    <height>162</height>
+                    <texture>$VAR[ClearartVAR]</texture>
+                    <aspectratio align="center" aligny="center">keep</aspectratio>
+                </control>
+            </control>
+            <control type="group">
+                <left>634</left>
+                <top>176</top>
+                <control type="image">
+                    <left>333</left>
+                    <top>190</top>
+                    <width>304</width>
+                    <height>165</height>
+                    <texture>BlackBack.png</texture>
+                </control>
+                <control type="image">
+                    <description>Landscape Image</description>
+                    <left>333</left>
+                    <top>192</top>
+                    <width>304</width>
+                    <height>164</height>
+                    <texture>$VAR[LandscapeVAR]</texture>
+                    <aspectratio align="center" aligny="center">keep</aspectratio>
+                </control>
+            </control>
+            <control type="group">
+                <left>634</left>
+                <top>531</top>
+                <control type="image">
+                    <left>333</left>
+                    <top>190</top>
+                    <width>621</width>
+                    <height>166</height>
+                    <texture>BlackBack.png</texture>
+                </control>
+                <control type="image">
+                    <description>Banner Image</description>
+                    <left>334</left>
+                    <top>192</top>
+                    <width>616</width>
+                    <height>164</height>
+                    <texture>$VAR[BannerVAR]</texture>
+                    <aspectratio align="center" aligny="center">keep</aspectratio>
+                </control>
+            </control>
+            <control type="group">
+                <left>0</left>
+                <top>354</top>
+				<visible>![String.IsEmpty(ListItem.Art(discart))|String.IsEmpty(ListItem.Art(disc))]</visible>
+                <control type="image">
+                    <left>333</left>
+                    <top>190</top>
+                    <width>621</width>
+                    <height>344</height>
+                    <texture>BlackBack.png</texture>
+                </control>
+                <control type="image">
+                    <description>Discart Image</description>
+                    <left>548</left>
+                    <top>190</top>
+                    <width>344</width>
+                    <height>344</height>
+					<include>DiscartTexture</include>
+                    <aspectratio align="right" aligny="center">keep</aspectratio>
+                </control>
+            </control>
+            <control type="group">
+                <left>952</left>
+                <top>712</top>
+                <control type="image">
+                    <left>333</left>
+                    <top>190</top>
+                    <width>304</width>
+                    <height>165</height>
+                    <texture>BlackBack.png</texture>
+                </control>
+                <control type="image">
+                    <description>Character Image</description>
+                    <left>333</left>
+                    <top>192</top>
+                    <width>304</width>
+                    <height>164</height>
+                    <texture>$VAR[CharacterArtVAR]</texture>
+                    <aspectratio align="center" aligny="center">keep</aspectratio>
+                </control>
+            </control>
+        </control>
+        <control type="image">
+            <description>Steelbox</description>
+            <left>75</left>
+            <top>420</top>
+            <width>420</width>
+            <height>662</height>
+            <colordiffuse>grey</colordiffuse>
+            <texture>clear-cases/steelbox_shadow.png</texture>
+            <aspectratio>keep</aspectratio>
+        </control>
+        <control type="image">
+            <description>Steelbox Empty</description>
+            <left>92</left>
+            <top>420</top>
+            <width>387</width>
+            <height>662</height>
+            <colordiffuse>grey2</colordiffuse>
+            <texture>clear-cases/steelbox.png</texture>
+            <!-- <visible>String.IsEmpty(ListItem.Art(fanart))</visible> -->
+        </control>
+        <control type="image">
+            <description>Steelbox Fanart</description>
+            <left>92</left>
+            <top>420</top>
+            <width>387</width>
+            <height>662</height>
+            <colordiffuse>grey1</colordiffuse>
+            <texture diffuse="clear-cases/steelbox.png">$VAR[FanartVAR]</texture>
+            <!-- <visible>!String.IsEmpty(ListItem.Art(fanart))</visible> -->
+        </control>
+        <control type="image">
+            <description>Cover Image</description>
+            <left>148</left>
+            <top>406</top>
+            <width>320</width>
+            <height>674</height>
+            <texture diffuse="clear-cases/steelbox_diffuse.png">$VAR[PosterThumb]</texture>
+            <animation effect="rotatey" start="0" end="-45" condition="true">Conditional</animation>
+        </control>
+        <control type="label">
+            <description>Cover Label</description>
+            <left>148</left>
+            <top>406</top>
+            <width>320</width>
+            <height>674</height>
+            <align>center</align>
+            <aligny>center</aligny>
+            <label>301270</label>
+            <textcolor>grey</textcolor>
+            <font>impacted26</font>
+            <animation effect="rotatey" start="0" end="-45">WindowOpen</animation>
+            <visible>String.IsEmpty(ListItem.Icon)</visible>
+        </control>
+    </controls>
+</window>

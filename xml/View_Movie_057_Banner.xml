@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+	<constant name="IconLeft">36</constant>
+	<constant name="IconTop">5</constant>
+    <include name="View_57_Banner">
+		<param name="viewid">57</param>
+		<definition>
+			<control type="group">
+				<visible>Control.IsVisible($PARAM[viewid])</visible>
+				<include>openclosemedium</include>
+				<control type="group">
+					<include>openclosevisible</include>
+					<include content="FakeButton444">
+						<param name="visible" value="Control.IsVisible($PARAM[viewid])"/>
+					</include>
+					<visible>Control.IsVisible($PARAM[viewid])+!Control.HasFocus(666)</visible>
+					<include>WhiteGrunge</include>
+					<!-- <include>VideoGrid</include> -->
+					<control type="group">
+						<left>33%</left>
+						<right>12%</right>
+						<control type="image">
+							<colordiffuse>$VAR[BackgroundOverlayColorDialog]</colordiffuse>
+							<texture>WhiteBack.png</texture>
+							<animation effect="fade" end="40" condition="true">Conditional</animation>
+							<visible>Skin.HasSetting(animation)</visible>
+						</control>
+						<control type="image">
+							<texture>BlackBack.png</texture>
+						</control>
+						<control type="image">
+							<width>akzentline_size</width>
+							<colordiffuse>$VAR[BackgroundOverlayColorDialog]</colordiffuse>
+							<texture>White.png</texture>
+						</control>
+						<control type="group">
+							<right>0</right>
+							<width>akzentline_size</width>
+							<control type="image">
+								<colordiffuse>$VAR[BackgroundOverlayColorDialog]</colordiffuse>
+								<texture>White.png</texture>
+							</control>
+						</control>
+						<include content="TMDbhelper_Provider_Icon">
+							<param name="align" value="center"/>
+							<param name="left" value="0"/>
+							<param name="right" value="0"/>
+							<param name="top" value="42"/>
+							<param name="width" value="100%"/>
+							<param name="box" value="40"/>
+							<param name="orientation" value="horizontal"/>
+							<param name="id" value="$PARAM[viewid]"/>
+							<param name="visible" value="!Player.HasMedia"/>
+						</include>
+						<control type="grouplist"> <!-- Movie Flagging -->
+							<include>opencloseslideup</include>
+							<left>SpacePadding</left>
+							<right>SpacePadding</right>
+							<top>90r</top>
+							<height>120</height>
+							<itemgap>8</itemgap>
+							<align>center</align>
+							<orientation>horizontal</orientation>
+							<include>FlagVideo</include>
+							<include>FlagVideoAudioStream1</include>
+							<include>FlagVideoSubtitles</include>
+							<visible>Control.IsVisible($PARAM[viewid])+!Control.HasFocus(666)</visible>
+							<visible>!ListItem.IsParentFolder+!Container.Content(tvshows)+!Container.Content(seasons)</visible>
+						</control>
+						<include content="CommonPageCount">
+							<param name="height" value="40"/>
+							<param name="visiblemore" value="false"/>
+						</include>
+					</control>
+				</control>
+				<control type="group">
+					<left>35%</left>
+					<right>15%</right>
+					<height>100%</height>
+					<include>openclosebox</include>
+					<visible>Control.IsVisible($PARAM[viewid])+!Control.HasFocus(666)</visible>
+					<animation effect="slide" end="10" condition="!Control.IsVisible($PARAM[viewid]1)">Conditional</animation>
+					<control type="fixedlist" id="$PARAM[viewid]">
+						<centerleft>50%</centerleft>
+						<top>110</top>
+						<bottom>110</bottom>
+						<onleft>9000</onleft>
+						<onright condition="Control.IsVisible($PARAM[viewid]1)">$PARAM[viewid]1</onright>
+						<onright condition="!Control.IsVisible($PARAM[viewid]1)+Control.IsVisible(15000)">15000</onright>
+						<onright condition="!Control.IsVisible($PARAM[viewid]1)+!Control.IsVisible(15000)">732</onright>
+						<onup>$PARAM[viewid]</onup>
+						<ondown>$PARAM[viewid]</ondown>
+						<viewtype label="57">list</viewtype>
+						<pagecontrol>$PARAM[viewid]1</pagecontrol>
+						<focusposition>2</focusposition>
+						<preloaditems>PreloadItems</preloaditems>
+						<movement>2</movement>
+						<wraparound>true</wraparound>
+						<scrolltime tween="Quadratic" easing="out">300</scrolltime>
+						<visible>Container.Content(Sets)|Container.Content(Movies)|Container.Content(TVShows)|Container.Content(Seasons)|Container.Content(episodes)|Window.IsVisible(VideoPlaylist)|Container.Content(favourites)</visible>
+						<visible>!String.StartsWith(Container.FolderPath,plugin://)+!Container.Content(Addons)</visible>
+						<itemlayout width="auto" height="90">
+							<control type="group">
+								<top>5</top>
+								<bottom>5</bottom>
+								<control type="label">
+									<left>60</left>
+									<right>SpacePadding</right>
+									<height>45</height>
+									<label>$VAR[OriginalTitle]</label>
+									<shadowcolor>black</shadowcolor>
+								</control>
+								<control type="label">
+									<left>60</left>
+									<right>SpacePadding</right>
+									<top>34</top>
+									<height>45</height>
+									<font>clock-24b</font>
+									<label>$VAR[EpisodeSubTitleVar]</label>
+									<textcolor>grey</textcolor>
+									<shadowcolor>black</shadowcolor>
+								</control>
+								<control type="image">
+									<right>SpacePadding</right>
+									<top>14</top>
+									<height>30</height>
+									<aspectratio align="right">keep</aspectratio>
+									<texture>$VAR[ListFlag]</texture>
+									<visible>Window.IsVisible(Videos) + [Container.Content(Movies)|Container.Content(episodes)|Container.Content(MusicVideos)]</visible>
+								</control>
+								<control type="image">
+									<left>22</left>
+									<top>8</top>
+									<width>38</width>
+									<height>30</height>
+									<texture>$INFO[ListItem.Overlay]</texture>
+									<visible>!ListItem.IsResumable</visible>
+								</control>
+								<control type="image">
+									<left>22</left>
+									<top>8</top>
+									<width>30</width>
+									<height>30</height>
+									<texture>OverlayWatching.png</texture>
+									<visible>ListItem.IsResumable</visible>
+								</control>
+							</control>
+						</itemlayout>
+						<focusedlayout condition="![Container.Content(TVShows)|Container.Content(Seasons)|Container.Content(episodes)]" width="auto" height="390">
+							<control type="group">
+								<animation effect="zoom" center="auto" start="98" end="100" time="300" delay="100" tween="quadratic" reversible="false" condition="Skin.HasSetting(animation)+Control.HasFocus($PARAM[viewid])">Focus</animation>
+								<control type="image">
+									<texture border="30">InlayDark.png</texture>
+								</control>
+								<control type="group">
+									<top>14</top>
+									<control type="image">
+										<left>32</left>
+										<right>32</right>
+										<top>32</top>
+										<bottom>32</bottom>
+										<aspectratio>keep</aspectratio>
+										<texture>$INFO[ListItem.Icon]</texture>
+										<visible>ListItem.IsParentFolder</visible>
+									</control>
+									<control type="group">
+										<left>15</left>
+										<right>5</right>
+										<visible>!ListItem.IsParentFolder</visible>
+										<control type="group">
+											<bottom>12</bottom>
+											<control type="group">
+												<centertop>50%</centertop>
+												<width>220</width>
+												<height>303</height>
+												<left>20</left>
+												<visible>!Skin.HasSetting(hideMovieCases)</visible>
+												<control type="image">
+													<description>case by resolution</description>
+													<left>22</left>
+													<right>2</right>
+													<top>3</top>
+													<bottom>3</bottom>
+													<texture diffuse="clear-cases/clearcase_inlay.png" fallback="FallbackCover.png">$VAR[PosterThumb]</texture>
+													<aspectratio align="left" aligny="top">stretch</aspectratio>
+												</control>
+												<control type="image">
+													<description>case by resolution</description>
+													<texture fallback="clear-cases/fallback.png">$VAR[clearcase]</texture>
+													<aspectratio align="left" aligny="top">stretch</aspectratio>
+												</control>
+												<include content="Flagg_LeftCorner">
+													<param name="left" value="23"/>
+													<param name="top" value="3"/>
+													<param name="height" value="75"/>
+													<param name="width" value="75"/>
+												</include>
+											</control>
+											<control type="group">
+												<centertop>50%</centertop>
+												<left>25</left>
+												<width>214</width>
+												<height>314</height>
+												<visible>Skin.HasSetting(hideMovieCases)</visible>
+												<control type="group">
+													<visible>!Container.Content(episodes)|String.IsEmpty(ListItem.Art(tvshow.poster))</visible>
+													<control type="image">
+														<left>6</left>
+														<right>6</right>
+														<top>6</top>
+														<bottom>6</bottom>
+														<aspectratio align="center" aligny="center">stretch</aspectratio>
+														<include condition="Skin.HasSetting(roundcorner)">cornersetting_round</include>
+														<include condition="!Skin.HasSetting(roundcorner)">cornersetting_sharp</include>
+													</control>
+													<control type="image">
+														<aspectratio align="center" aligny="center">stretch</aspectratio>
+														<texture border="12">buttons/ButtonNF$VAR[CornerSettingVar].png</texture>
+													</control>
+												</control>
+												<include content="Flagg_LeftCorner">
+													<param name="top" value="6"/>
+													<param name="left" value="6"/>
+													<param name="height" value="75"/>
+													<param name="width" value="75"/>
+												</include>
+												<include content="Set_Flagg">
+													<param name="bottom" value="6"/>
+													<param name="right" value="6"/>
+													<param name="height" value="75"/>
+													<param name="width" value="75"/>
+												</include>
+											</control>
+										</control>
+										<control type="label">
+											<left>270</left>
+											<right>SpacePadding</right>
+											<top>10</top>
+											<height>45</height>
+											<textcolor>white</textcolor>
+											<align>left</align>
+											<label>$VAR[OriginalTitle]</label>
+										</control>
+										<control type="label">
+											<left>270</left>
+											<right>SpacePadding</right>
+											<top>42</top>
+											<height>45</height>
+											<align>left</align>
+											<font>clock-24</font>
+											<textcolor>grey</textcolor>
+											<label>$VAR[EpisodeSubTitleVar]</label>
+										</control>
+										<control type="image">
+											<description>Rated</description>
+											<left>270</left>
+											<right>SpacePadding</right>
+											<top>82</top>
+											<height>3</height>
+											<colordiffuse>fanartdiffuse</colordiffuse>
+											<texture border="1">Separator1.png</texture>
+										</control>
+										<control type="textbox">
+											<left>270</left>
+											<right>SpacePadding</right>
+											<top>92</top>
+											<height>207</height>
+											<include condition="!Skin.HasSetting(BigPlotText)">PlotText16Var</include>
+											<include condition="Skin.HasSetting(BigPlotText)">PlotTextBigVar</include>
+											<label fallback="195">$INFO[ListItem.Plot]</label>
+											<visible>!String.IsEmpty(ListItem.Plot)</visible>
+										</control>
+										<control type="label">
+											<left>270</left>
+											<right>SpacePadding</right>
+											<top>168</top>
+											<height>30</height>
+											<align>center</align>
+											<font>menufontimpacted</font>
+											<textcolor>grey1</textcolor>
+											<label>20457</label>
+											<visible>ListItem.IsCollection+String.IsEmpty(ListItem.Plot)</visible>
+										</control>
+										<control type="image">
+											<description>Rated</description>
+											<left>264</left>
+											<top>317</top>
+											<width>150</width>
+											<height>33</height>
+											<aspectratio align="left">stretch</aspectratio>
+											<texture fallback="leftratingvideo/0.0.png">$INFO[ListItem.Rating,leftratingvideo/,.png]</texture>
+											<visible>!ListItem.IsCollection</visible>
+										</control>
+										<control type="image">
+											<left>420</left>
+											<top>320</top>
+											<width>42</width>
+											<height>26</height>
+											<aspectratio align="left" aligny="bottom">keep</aspectratio>
+											<texture>$VAR[ListFlag]</texture>
+											<visible>Window.IsVisible(Videos) + [Container.Content(Movies)|Container.Content(episodes)|Container.Content(MusicVideos)]</visible>
+											<animation effect="slide" end="-150,0" time="0" condition="ListItem.IsCollection">Conditional</animation>
+										</control>
+										<control type="image">
+											<include>openclosevisible</include>
+											<right>SpacePadding</right>
+											<top>317</top>
+											<height>33</height>
+											<aspectratio align="right" aligny="bottom">keep</aspectratio>
+											<texture>$VAR[Furniture_VideoRating]</texture>
+											<!-- <visible>Skin.HasSetting(fsk_original)|Skin.HasSetting(fsk_dual)</visible> -->
+										</control>
+									</control>
+								</control>
+							</control>
+						</focusedlayout>
+						<focusedlayout condition="Container.Content(TVShows)|Container.Content(Seasons)" width="auto" height="390">
+							<control type="group">
+								<animation effect="zoom" center="auto" start="98" end="100" time="300" delay="100" tween="quadratic" reversible="false" condition="Skin.HasSetting(animation)+Control.HasFocus($PARAM[viewid])">Focus</animation>
+								<control type="image">
+									<texture border="30">InlayDark.png</texture>
+								</control>
+								<control type="image">
+									<left>32</left>
+									<right>32</right>
+									<top>32</top>
+									<bottom>32</bottom>
+									<aspectratio>keep</aspectratio>
+									<texture>$INFO[ListItem.Icon]</texture>
+									<visible>ListItem.IsParentFolder</visible>
+								</control>
+								<control type="image">
+									<top>23</top>
+									<left>24</left>
+									<right>23</right>
+									<height>195</height>
+									<aspectratio align="center">scale</aspectratio>
+									<texture border="10" diffuse="ShadowWhiteFlipy.png" fallback="FallbackBanner2.png">$VAR[BannerVAR]</texture>
+									<visible>!ListItem.IsParentFolder</visible>
+								</control>
+								<include content="Flagg_LeftCorner">
+									<param name="left" value="24"/>
+									<param name="top" value="23"/>
+									<param name="height" value="75"/>
+									<param name="width" value="75"/>
+								</include>
+								<include content="UnwatchedIcon">
+									<param name="top" value="23"/>
+									<param name="right" value="30"/>
+								</include>
+								<control type="group">
+									<left>SpacePadding</left>
+									<right>SpacePadding</right>
+									<top>50</top>
+									<visible>!ListItem.IsParentFolder</visible>
+									<control type="label">
+										<right>150</right>
+										<top>48</top>
+										<textcolor>white</textcolor>
+										<align>left</align>
+										<label>$VAR[OriginalTitle]</label>
+										<animation effect="slide" end="0,27" time="0" condition="Container.Content(seasons)">Conditional</animation>
+									</control>
+									<control type="label">
+										<right>150</right>
+										<top>80</top>
+										<align>left</align>
+										<font>clock-22</font>
+										<textcolor>grey</textcolor>
+										<label>$VAR[EpisodeSubTitleVar]$INFO[ListItem.Votes, ✓ $LOCALIZE[205] ,]</label>
+										<visible>!Container.Content(Seasons)</visible>
+									</control>
+									<control type="image">
+										<description>Rated</description>
+										<top>123</top>
+										<height>3</height>
+										<colordiffuse>fanartdiffuse</colordiffuse>
+										<texture border="1">Separator1.png</texture>
+									</control>
+									<control type="textbox">
+										<top>132</top>
+										<bottom>23</bottom>
+										<include condition="!Skin.HasSetting(BigPlotText)">PlotText16Var</include>
+										<include condition="Skin.HasSetting(BigPlotText)">PlotTextBigVar</include>
+										<label fallback="195">$INFO[ListItem.Plot]</label>
+									</control>
+									<control type="image">
+										<description>Rated</description>
+										<top>86</top>
+										<height>33</height>
+										<aspectratio align="right" aligny="bottom">keep</aspectratio>
+										<texture fallback="leftratingvideo/0.0.png">$INFO[ListItem.Rating,leftratingvideo/,.png]</texture>
+										<visible>!Container.Content(seasons)</visible>
+									</control>
+									<control type="image">
+										<animation effect="slide" end="0,33" time="0" condition="Container.Content(seasons)">Conditional</animation>
+										<include>openclosevisible</include>
+										<right>5</right>
+										<top>44</top>
+										<height>33</height>
+										<aspectratio align="right" aligny="bottom">keep</aspectratio>
+										<texture>$VAR[Furniture_VideoRating]</texture>
+										<!-- <visible>Skin.HasSetting(fsk_original)|Skin.HasSetting(fsk_dual)</visible> -->
+									</control>
+								</control>
+							</control>
+						</focusedlayout>
+						<focusedlayout condition="Container.Content(episodes)" width="auto" height="390">
+							<control type="group">
+								<animation effect="zoom" center="auto" start="98" end="100" time="300" delay="100" tween="quadratic" reversible="false" condition="Skin.HasSetting(animation)+Control.HasFocus($PARAM[viewid])">Focus</animation>
+								<control type="image">
+									<texture border="30">InlayDark.png</texture>
+								</control>
+								<control type="image">
+									<left>32</left>
+									<right>32</right>
+									<top>32</top>
+									<bottom>32</bottom>
+									<aspectratio>keep</aspectratio>
+									<texture>$INFO[ListItem.Icon]</texture>
+									<visible>ListItem.IsParentFolder</visible>
+								</control>
+								<control type="image">
+									<top>22</top>
+									<left>23</left>
+									<right>21</right>
+									<bottom>23</bottom>
+									<colordiffuse>grey</colordiffuse>
+									<texture diffuse="SideFadeWhite_round.png">$INFO[ListItem.Art(thumb)]</texture>
+									<aspectratio align="right" aligny="top">keep</aspectratio>
+								</control>
+								<control type="group">
+									<left>SpacePadding</left>
+									<right>SpacePadding</right>
+									<visible>!ListItem.IsParentFolder</visible>
+									<control type="group">
+										<top>80</top>
+										<!-- <animation effect="slide" end="84" time="0" condition="ListItem.IsResumable|String.IsEqual(ListItem.Overlay,OverlayWatched.png)|!Skin.HasSetting(HideOverlayIconNew)">Conditional</animation> -->
+										<control type="label">
+											<right>200</right>
+											<textcolor>grey</textcolor>
+											<align>left</align>
+											<font>clock-22</font>
+											<shadowcolor>black</shadowcolor>
+											<label>$INFO[ListItem.TVShowTitle,[COLOR white][B],[/B][/COLOR]] $VAR[WideView_InfosVar]</label>
+										</control>
+										<control type="label">
+											<right>200</right>
+											<top>30</top>
+											<height>40</height>
+											<align>left</align>
+											<font>clock-22</font>
+											<shadowcolor>black</shadowcolor>
+											<textcolor>grey</textcolor>
+											<label>$VAR[EpisodeSubTitleVar]$INFO[ListItem.Votes, ✓ $LOCALIZE[205] ,]</label>
+										</control>
+										<control type="label">
+											<right>200</right>
+											<top>60</top>
+											<textcolor>white</textcolor>
+											<align>left</align>
+											<shadowcolor>black</shadowcolor>
+											<label>$VAR[OriginalTitle]</label>
+										</control>
+										<control type="image">
+											<top>100</top>
+											<height>3</height>
+											<colordiffuse>fanartdiffuse</colordiffuse>
+											<texture border="1">Separator1.png</texture>
+										</control>
+										<control type="textbox">
+											<top>110</top>
+											<bottom>23</bottom>
+											<include condition="!Skin.HasSetting(BigPlotText)">PlotText16Var</include>
+											<include condition="Skin.HasSetting(BigPlotText)">PlotTextBigVar</include>
+											<shadowcolor>black</shadowcolor>
+											<label fallback="195">$INFO[ListItem.Plot]</label>
+										</control>
+									</control>
+									<control type="group">
+										<top>33</top>
+										<control type="image">
+											<!-- <right>5</right> -->
+											<height>30</height>
+											<aspectratio align="right" aligny="bottom">keep</aspectratio>
+											<texture>$INFO[ListItem.VideoResolution,flagging/lists/,.png]</texture>
+											<visible>Window.IsVisible(Videos) + [Container.Content(Movies)|Container.Content(episodes)|Container.Content(MusicVideos)]</visible>
+											<visible>!ListItem.IsStereoscopic</visible>
+										</control>
+										<control type="image">
+											<!-- <right>5</right> -->
+											<top>50</top>
+											<height>33</height>
+											<aspectratio align="right" aligny="bottom">keep</aspectratio>
+											<texture>$VAR[Furniture_VideoRating]</texture>
+											<!-- <visible>Skin.HasSetting(fsk_original)|Skin.HasSetting(fsk_dual)</visible> -->
+										</control>
+										<control type="image">
+											<description>Rated</description>
+											<left>150r</left>
+											<top>110</top>
+											<height>30</height>
+											<aspectratio align="right" aligny="bottom">keep</aspectratio>
+											<texture fallback="leftratingvideo/0.0.png">$INFO[ListItem.Rating,leftratingvideo/,.png]</texture>
+											<visible>!Container.Content(seasons)</visible>
+										</control>
+									</control>
+								</control>
+								<include content="Flagg_LeftCorner">
+									<param name="top" value="22"/>
+									<param name="left" value="22"/>
+									<param name="height" value="75"/>
+									<param name="width" value="75"/>
+								</include>
+							</control>
+						</focusedlayout>
+					</control>
+					<control type="image">
+						<top>105</top>
+						<height>1</height>
+						<colordiffuse>dustdiffuse</colordiffuse>
+						<texture>Separator2.png</texture>
+					</control>
+					<control type="image">
+						<top>110r</top>
+						<height>1</height>
+						<colordiffuse>dustdiffuse</colordiffuse>
+						<texture>Separator2.png</texture>
+					</control>
+					<include content="DefaultScrollbar">
+						<param name="id" value="$PARAM[viewid]1" />
+						<param name="top" value="155" />
+						<param name="height" value="764" />
+						<param name="left" value="-10r" />
+						<param name="onleft" value="$PARAM[viewid]" />
+					</include>
+				</control>
+				<control type="group">
+					<centerleft>16%</centerleft>
+					<width>20%</width>
+					<aligny>center</aligny>
+					<include>openclosevisible</include>
+					<visible>Control.IsVisible($PARAM[viewid])+!Control.HasFocus(666)</visible>
+					<control type="grouplist">
+						<centertop>55%</centertop>
+						<height>463</height>
+						<right>SpacePadding</right>
+						<orientation>vertical</orientation>
+						<itemgap>30</itemgap>
+						<control type="image">
+							<height>200</height>
+							<aspectratio>keep</aspectratio>
+							<texture>$VAR[ClearlogoVAR]</texture>
+							<visible>Skin.HasSetting(EnableExtendedArt)+!String.IsEmpty(Control.GetLabel(9998))</visible>
+							<include>openclosevisible</include>
+						</control>
+						<control type="image">
+							<height>3</height>
+							<texture border="1">Separator3.png</texture>
+							<visible>!String.Contains(Control.GetLabel(9999),Empty.png)+!String.IsEmpty(Control.GetLabel(9998))</visible>
+							<include>openclosevisible</include>
+						</control>
+						<control type="image">
+							<height>200</height>
+							<aspectratio>keep</aspectratio>
+							<texture>$VAR[MovieStudioLogoVar]$INFO[ListItem.Studio,,.png]</texture>
+							<visible>!String.Contains(Control.GetLabel(9999),Empty.png)</visible>
+							<include>openclosevisible</include>
+						</control>
+					</control>
+				</control>
+				<!-- <control type="group">
+					<centerleft>16%</centerleft>
+					<width>20%</width>
+					<height>100%</height>
+					<include>openclosevisible</include>
+					<visible>Control.IsVisible($PARAM[viewid])+!Control.HasFocus(666)</visible>
+					<control type="image" id="3203">
+						<include>openclosevisible</include>
+						<centertop>42%</centertop>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<texture>$VAR[extraart_listitem_rule]</texture>
+						<visible>!String.IsEmpty(Control.GetLabel(3203))</visible>
+						<visible>Skin.HasSetting(EnableExtendedArt)</visible>
+					</control>
+				</control> -->
+				<include content="AlphabetScrollerContainer">
+					<param name="right" value="10"/>
+					<param name="width" value="40"/>
+					<param name="visible_background" value="$VAR[WideView_AlphabetScroller_BackgroundVar]"/>
+				</include>
+				<include content="sidefade_shadow">
+					<param name="left" value="100"/>
+					<param name="id" value="$PARAM[viewid]" />
+					<param name="flipx" value="true" />
+					<param name="visible" value="$VAR[WideView_AlphabetScroller_BackgroundVar]"/>
+				</include>
+                <include content="ScrollOffsetLabel">
+                    <param name="left">-10</param>
+                    <param name="top">PanelTop</param>
+                </include>
+				<include content="AlphaBarV" condition="!Skin.HasSetting(HideJumpSMSBar)"><param name="id" value="$PARAM[viewid]"/></include>
+				<control type="button" id="777">
+					<include>HiddenButton</include>
+					<onfocus>Control.SetFocus($PARAM[viewid])</onfocus>
+				</control>
+			</control>
+		</definition>
+    </include>
+</includes>

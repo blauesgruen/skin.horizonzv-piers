@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window>
+	<animation effect="fade" start="0" end="100" time="800">WindowOpen</animation>
+	<animation effect="fade" start="100" end="0" time="240">WindowClose</animation>
+	<animation effect="fade" start="0" end="100" time="800">Visible</animation>
+	<animation effect="fade" start="100" end="0" time="240">Hidden</animation>
+    <controls>
+        <control type="group">
+			<include>openclosemediumnodelay</include>
+			<centerleft>50%</centerleft>
+			<centertop>50%</centertop>
+			<height>180</height>
+			<visible>!Window.IsActive(startup)</visible>
+			<control type="group">
+				<depth>DepthMax</depth>
+                <control type="image">
+                    <description>Busy animation</description>
+                    <texture>BlackBack.png</texture>
+                </control>
+                <control type="image">
+                    <description>Busy animation</description>
+                    <height>1</height>
+                    <texture>Separator2.png</texture>
+                </control>
+                <control type="image">
+                    <description>Busy animation</description>
+                    <top>180</top>
+                    <height>1</height>
+                    <texture>Separator2.png</texture>
+                </control>
+                <control type="image">
+                    <description>Busy animation</description>
+                    <top>20</top>
+                    <centerleft>50%</centerleft>
+                    <centertop>50%</centertop>
+                    <texture>Busy.png</texture>
+                    <aspectratio>keep</aspectratio>
+                    <animation effect="rotate" start="0" end="360" center="auto" time="4500" loop="true" condition="true">conditional</animation>
+                </control>
+                <control type="image">
+                    <description>Busy animation</description>
+                    <top>38</top>
+                    <centerleft>50%</centerleft>
+                    <centertop>50%</centertop>
+                    <texture>Busy.png</texture>
+                    <aspectratio>keep</aspectratio>
+                    <colordiffuse>grey</colordiffuse>
+                    <animation effect="rotate" start="0" end="-360" center="auto" time="4000" loop="true" condition="true">conditional</animation>
+                </control>
+            </control>
+        </control>
+    </controls>
+</window>

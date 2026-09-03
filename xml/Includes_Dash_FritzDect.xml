@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+	<include name="FritzDect">
+		<control type="panel" id="$PARAM[id]">
+			<include>openclosefanart</include>
+			<left>0</left>
+			<top>0</top>
+			<width>1800</width>
+			<height>105</height>
+			<orientation>horizontal</orientation>
+			<visible>$PARAM[visible]</visible>
+			<onclick condition="String.IsEqual(ListItem.Property(type),switch)">RunScript(script.program.fritzact,action=toggle&amp;ain=$INFO[ListItem.Label2])</onclick>
+			<onclick condition="String.IsEqual(ListItem.Property(type),group)">RunScript(script.program.fritzact,action=toggle&amp;ain=$INFO[ListItem.Label2])</onclick>
+			<onclick condition="String.IsEqual(ListItem.Property(type),thermostat)">RunScript(script.program.fritzact,action=temp&amp;ain=$INFO[ListItem.Label2])</onclick>
+			<onclick>Notification(wird geschaltet ...,FritzDect ($INFO[ListItem.Label]),2000)</onclick>
+			<itemlayout height="105" width="360">
+				<control type="group">
+					<left>5</left>
+					<right>5</right>
+					<control type="image">
+						<description>background</description>
+						<colordiffuse>green</colordiffuse>
+						<animation effect="fade" end="40" condition="true">Conditional</animation>
+						<texture border="4">WhiteBack$VAR[CornerSettingVar].png</texture>
+						<visible>String.Contains(ListItem.Property(state),$LOCALIZE[301616])</visible>
+					</control>
+					<control type="image">
+						<description>background</description>
+						<colordiffuse>red</colordiffuse>
+						<animation effect="fade" end="40" condition="true">Conditional</animation>
+						<texture border="4">WhiteBack$VAR[CornerSettingVar].png</texture>
+						<visible>String.Contains(ListItem.Property(state),$LOCALIZE[301618])</visible>
+					</control>
+					<include>FritzDect_layout</include>
+					<control type="image">
+						<left>1</left>
+						<right>1</right>
+						<top>1</top>
+						<bottom>1</bottom>
+						<colordiffuse>menudiffuse</colordiffuse>
+						<texture border="4">BlackBack$VAR[CornerSettingVar].png</texture>
+						<visible>Skin.HasSetting(WidgetDimDashrows)|Control.HasFocus($PARAM[id])</visible>
+					</control>
+					<control type="group">
+						<left>20</left>
+						<top>10</top>
+						<bottom>10</bottom>
+						<width>40</width>
+						<control type="image">
+							<description>busy</description>
+							<aspectratio>keep</aspectratio>
+							<texture>$INFO[ListItem.Property(BusyIcon)]</texture>
+							<animation effect="rotate" start="0" end="360" center="auto" time="3500" loop="true" condition="true">conditional</animation>
+							<visible>String.IsEmpty(Container($PARAM[id]).ListItem(1).Label)</visible>
+						</control>
+					</control>
+				</control>
+			</itemlayout>
+			<focusedlayout height="105" width="360">
+				<control type="group">
+					<animation effect="zoom" center="auto" start="90" end="100" time="300" delay="100" tween="quadratic" reversible="false" condition="Skin.HasSetting(animation)">Focus</animation>
+					<left>5</left>
+					<right>5</right>
+					<control type="image">
+						<description>background</description>
+						<colordiffuse>green</colordiffuse>
+						<texture border="4">WhiteBack$VAR[CornerSettingVar].png</texture>
+						<visible>String.Contains(ListItem.Property(state),$LOCALIZE[301616])</visible>
+						<visible>!Control.HasFocus($PARAM[id])</visible>
+					</control>
+					<control type="image">
+						<description>background</description>
+						<colordiffuse>red</colordiffuse>
+						<texture border="4">WhiteBack$VAR[CornerSettingVar].png</texture>
+						<visible>String.Contains(ListItem.Property(state),$LOCALIZE[301618])</visible>
+						<visible>!Control.HasFocus($PARAM[id])</visible>
+					</control>
+					<control type="image">
+						<description>background</description>
+						<colordiffuse>description</colordiffuse>
+						<texture border="4">WhiteBack$VAR[CornerSettingVar].png</texture>
+						<visible>Control.HasFocus($PARAM[id])</visible>
+					</control>
+					<include content="FritzDect_layout">
+						<param name="fritzid" value="$PARAM[id]"/>
+					</include>
+					<control type="group">
+						<left>20</left>
+						<top>10</top>
+						<bottom>10</bottom>
+						<width>40</width>
+						<control type="image">
+							<description>busy</description>
+							<aspectratio>keep</aspectratio>
+							<texture>$INFO[ListItem.Property(BusyIcon)]</texture>
+							<animation effect="rotate" start="0" end="360" center="auto" time="3500" loop="true" condition="true">conditional</animation>
+							<visible>String.IsEmpty(Container($PARAM[id]).ListItem(1).Label)</visible>
+						</control>
+					</control>
+				</control>
+			</focusedlayout>
+			<content>
+				<item>
+					<label/>
+					<property name="BusyIcon">Busy.png</property>
+					<visible>String.IsEmpty(Container($PARAM[id]).ListItem(1).Label)</visible>
+				</item>
+			</content>
+			<include condition="System.HasAddon(script.program.fritzact)">FritzdectContent</include>
+			<!-- <include content="BusyItem">
+				<param name="id" value="$PARAM[id]"/>
+				<param name="icon" value="Busy.png"/>
+			</include> -->
+		</control>
+	</include>
+	<include name="FritzDect_layout">
+		<definition>
+			<control type="group">
+				<control type="image">
+					<include condition="Skin.HasSetting(roundcorner)" content="cornersetting_round"><param name="diffuse" value="masks/mask_landscape_round.png"/><param name="border" value="15"/><param name="image" value="Shadow.png"/></include>
+					<include condition="!Skin.HasSetting(roundcorner)" content="cornersetting_sharp"><param name="image" value="Shadow.png"/></include>
+					<!-- <texture>Shadow.png</texture> -->
+					<include>openclosevisible</include>
+				</control>
+				<control type="image">
+					<colordiffuse>menudiffuse</colordiffuse>
+					<texture border="4">masks/Default$VAR[CornerSettingVar].png</texture>
+					<visible>!Control.HasFocus($PARAM[fritzid])</visible>
+				</control>
+				<control type="image">
+					<colordiffuse>menudiffuse</colordiffuse>
+					<texture>buttons/ButtonNF$VAR[CornerSettingVar].png</texture>
+					<visible>Control.HasFocus($PARAM[fritzid])</visible>
+				</control>
+				<control type="label">
+					<left>80</left>
+					<right>5</right>
+					<top>4</top>
+					<height>30</height>
+					<font>bebas24</font>
+					<align>left</align>
+					<textcolor>white</textcolor>
+					<label>$INFO[ListItem.Property(state)]$INFO[ListItem.Property(mode), - ,]</label>
+					<visible>String.IsEqual(ListItem.Property(type),switch)</visible>
+				</control>
+				<control type="label">
+					<left>80</left>
+					<right>15</right>
+					<top>34</top>
+					<height>30</height>
+					<font>bebas24</font>
+					<align>left</align>
+					<textcolor>white</textcolor>
+					<label>$INFO[ListItem.Property(temperature),,]$INFO[ListItem.Property(power), / ,]$INFO[ListItem.Property(energy), / ,]</label>
+					<visible>String.IsEqual(ListItem.Property(type),switch)</visible>
+				</control>
+				<control type="label">
+					<left>80</left>
+					<right>15</right>
+					<top>8</top>
+					<height>30</height>
+					<font>bebas24</font>
+					<align>left</align>
+					<textcolor>white</textcolor>
+					<label>$INFO[ListItem.Property(battery),, $LOCALIZE[301620]]</label>
+					<visible>String.IsEqual(ListItem.Property(type),thermostat)</visible>
+				</control>
+				<control type="label">
+					<left>80</left>
+					<right>15</right>
+					<top>34</top>
+					<height>30</height>
+					<font>bebas24</font>
+					<align>left</align>
+					<textcolor>white</textcolor>
+					<label>$INFO[ListItem.Property(temperature),,]$INFO[ListItem.Property(set_temp), / ,]</label>
+					<visible>String.IsEqual(ListItem.Property(type),thermostat)</visible>
+				</control>
+				<control type="image">
+					<description>background</description>
+					<left>80</left>
+					<right>15</right>
+					<top>66</top>
+					<height>2</height>
+					<colordiffuse>menudiffuse</colordiffuse>
+					<texture border="1">Separator1.png</texture>
+				</control>
+				<control type="label">
+					<left>80</left>
+					<right>15</right>
+					<top>70</top>
+					<height>30</height>
+					<font>bebas24</font>
+					<align>left</align>
+					<textcolor>white</textcolor>
+					<label>$INFO[ListItem.Label]</label>
+				</control>
+				<control type="image">
+					<description>background</description>
+					<left>5</left>
+					<top>8</top>
+					<width>70</width>
+					<height>90</height>
+					<aspectratio>keep</aspectratio>
+					<texture>$INFO[ListItem.Icon]</texture>
+				</control>
+			</control>
+		</definition>
+	</include>
+	<include name="FritzdectContent">
+		<content target="programs">plugin://script.program.fritzact?ts=$INFO[Window(Home).Property(fritzact.timestamp)]</content>
+	</include>
+</includes>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+    <defaultcontrol always="true">9001</defaultcontrol>
+    <include>openclose</include>
+    <include>openclosefanart</include>
+    <controls>
+		<include>DialogBackgroundSimple</include>
+        <control type="group">
+            <include>openclosebox</include>
+            <include content="DialogBackgroundCommons">
+                <param name="header_id" value="2" />
+                <param name="width" value="1200" />
+                <param name="height" value="400" />
+                <param name="header_label" value="$LOCALIZE[21421]" />
+            </include>
+            <control type="group">
+                <left>SpacePadding</left>
+				<right>SpacePadding</right>
+                <top>SpacePaddingXL</top>
+				<bottom>SpacePaddingXL</bottom>
+				<control type="group">
+					<centertop>50%</centertop>
+					<height>200</height>
+					<control type="label">
+						<description>Rule match label</description>
+						<height>50</height>
+						<align>center</align>
+						<aligny>center</aligny>
+						<textcolor>selected</textcolor>
+						<label>21422</label>
+					</control>
+					<control type="grouplist" id="9001">
+						<top>70</top>
+						<align>center</align>
+						<itemgap>10</itemgap>
+						<orientation>horizontal</orientation>
+						<onup>9000</onup>
+						<ondown>17</ondown>
+						<include content="DefaultDialogButton">
+							<param name="id" value="15" />
+							<param name="left" value="0" />
+							<param name="top" value="15" />
+							<param name="width" value="560" />
+							<param name="onup" value="9000" />
+							<param name="ondown" value="17" />
+						</include>
+						<include content="DefaultDialogButton">
+							<param name="id" value="16" />
+							<param name="left" value="0" />
+							<param name="top" value="15" />
+							<param name="width" value="560" />
+							<param name="onup" value="9000" />
+							<param name="ondown" value="17" />
+						</include>
+					</control>
+					<control type="grouplist" id="9002">
+						<top>150</top>
+						<align>center</align>
+						<itemgap>10</itemgap>
+						<orientation>horizontal</orientation>
+						<include content="DialogEditButton">
+							<param name="id" value="17" />
+							<param name="width" value="860" />
+							<param name="hinttext" value="31103" />
+							<param name="onup" value="9001" />
+							<param name="ondown" value="9000" />
+						</include>
+						<include content="DefaultDialogButton">
+							<param name="id" value="20" />
+							<param name="label" value="$LOCALIZE[1024]" />
+							<param name="onup" value="9001" />
+							<param name="ondown" value="9000" />
+						</include>
+					</control>
+				</control>
+			</control>
+			<control type="grouplist" id="9000">
+				<bottom>3</bottom>
+				<height>50</height>
+				<align>center</align>
+				<onup>17</onup>
+				<ondown>9001</ondown>
+				<orientation>horizontal</orientation>
+				<itemgap>dialogbuttons_itemgap</itemgap>
+				<include content="DefaultDialogButton">
+					<param name="id" value="18" />
+					<param name="label" value="$LOCALIZE[186]" />
+					<param name="font" value="impacted18" />
+					<param name="onup" value="17" />
+					<param name="ondown" value="9001" />
+				</include>
+				<include content="DefaultDialogButton">
+					<param name="id" value="19" />
+					<param name="label" value="$LOCALIZE[222]" />
+					<param name="font" value="impacted18" />
+					<param name="onup" value="17" />
+					<param name="ondown" value="9001" />
+				</include>
+			</control>
+        </control>
+    </controls>
+</window>

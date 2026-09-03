@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <include name="MovieSetInformationCover">
+		<param name="list_id">2000</param>
+		<param name="top">0</param>
+		<param name="height">365</param>
+		<param name="ListTop">50</param>
+		<param name="ListBottom">0</param>
+		<param name="cover_width">220</param>
+		<param name="GroupTop">SpacePadding</param>
+		<param name="GroupBottom">SpacePadding</param>
+		<param name="GroupLeft">SpacePadding</param>
+		<param name="GroupRight">SpacePadding</param>
+		<param name="LabelLeft">0</param>
+		<param name="LabelTop">0</param>
+		<param name="visible_label">true</param>
+		<param name="visible_cdart">true</param>
+		<param name="color">white</param>
+		<param name="ondown"></param>
+		<param name="aspectratio">stretch</param>
+		<definition>
+			<control type="group">
+				<top>$PARAM[top]</top>
+				<bottom>$PARAM[GroupBottom]</bottom>
+				<left>$PARAM[GroupLeft]</left>
+				<right>$PARAM[GroupRight]</right>
+				<visible>ListItem.IsCollection</visible>
+				<control type="group">
+					<top>$PARAM[GroupTop]</top>
+					<height>$PARAM[height]</height>
+					<control type="label">
+						<left>$PARAM[LabelLeft]</left>
+						<top>$PARAM[LabelTop]</top>
+						<height>45</height>
+						<width>auto</width>
+						<align>center</align>
+						<textcolor>grey1</textcolor>
+						<font>impacted21</font>
+						<label>$INFO[Container($PARAM[list_id]).NumItems, [COLOR=$PARAM[color]],[/COLOR]] $LOCALIZE[342][COLOR=$PARAM[color]]$VAR[NumItemLabel][/COLOR]</label>
+						<include>openclosevisible</include>
+						<visible>ListItem.IsCollection</visible>
+						<visible>$PARAM[visible_label]</visible>
+						<!-- <visible>Control.IsVisible(2000)+!Integer.IsGreater(Container(2000).NumItems,7)</visible> -->
+						<visible>!Control.IsVisible(503)+!Control.IsVisible(515)+!Control.IsVisible(502)+!Control.IsVisible(721)+!Control.IsVisible(740)+!Control.IsVisible(742)</visible>
+					</control>
+					<control type="list" id="$PARAM[list_id]">
+						<top>$PARAM[ListTop]</top>
+						<bottom>$PARAM[ListBottom]</bottom>
+						<visible>ListItem.IsCollection</visible>
+						<ondown>$PARAM[ondown]</ondown>
+						<onup condition="Control.IsVisible(401)">9000</onup>
+						<onup condition="Control.IsVisible(562)">562</onup>
+						<onup condition="Control.IsVisible(500)">500</onup>
+						<ondown condition="Control.IsVisible(17000)+Control.IsVisible(562)">17000</ondown>
+						<ondown condition="Control.IsVisible(17000)+Control.IsVisible(500)">17000</ondown>
+						<ondown condition="!Control.IsVisible(17000)+Control.IsVisible(562)">732</ondown>
+						<ondown condition="!Control.IsVisible(17000)+Control.IsVisible(500)">732</ondown>
+						<ondown condition="Control.IsVisible(401)">401</ondown>
+						<include>openclosemedium</include>
+						<scrolltime tween="cubic" easing="in">400</scrolltime>
+						<orientation>horizontal</orientation>
+						<itemgap>0</itemgap>
+						<itemlayout width="$PARAM[cover_width]" height="auto" condition="![Control.IsVisible(503)|Control.IsVisible(515)|Control.IsVisible(502)|Control.IsVisible(721)|Control.IsVisible(742)|Control.IsVisible(740)]">
+							<control type="image">
+								<right>8</right>
+								<aspectratio>$PARAM[aspectratio]</aspectratio>
+								<include condition="Skin.HasSetting(roundcorner)">cornersetting_round</include>
+								<include condition="!Skin.HasSetting(roundcorner)">cornersetting_sharp</include>
+							</control>
+							<control type="image">
+								<right>8</right>
+								<colordiffuse>menudiffuse</colordiffuse>
+								<texture>Shadow.png</texture>
+							</control>
+							<control type="image">
+								<left>90r</left>
+								<top>82r</top>
+								<width>82</width>
+								<height>158</height>
+								<aspectratio align="left">scale</aspectratio>
+								<include>DiscartTexture</include>
+								<visible>$PARAM[visible_cdart]</visible>
+							</control>
+							<include content="WidgetDimImage">
+								<param name="visible" value="Control.HasFocus(2000)"/>
+							</include>
+							<include content="WidgetDimImage">
+								<param name="visible" value="Control.HasFocus(2000)"/>
+							</include>
+							<control type="image">
+								<description>background</description>
+								<right>8</right>
+								<texture border="2">masks/Default$VAR[CornerSettingVar].png</texture>
+							</control>
+							<control type="label">
+								<left>12</left>
+								<top>36r</top>
+								<width>195</width>
+								<height>30</height>
+								<font>ubuntu-r13b</font>
+								<label>$INFO[ListItem.Year]</label>
+							</control>
+						</itemlayout>
+						<focusedlayout width="$PARAM[cover_width]" height="auto" condition="![Control.IsVisible(503)|Control.IsVisible(515)|Control.IsVisible(502)|Control.IsVisible(721)|Control.IsVisible(742)|Control.IsVisible(740)]">
+							<control type="group">
+								<control type="image">
+									<right>8</right>
+									<aspectratio>$PARAM[aspectratio]</aspectratio>
+									<include condition="Skin.HasSetting(roundcorner)">cornersetting_round</include>
+									<include condition="!Skin.HasSetting(roundcorner)">cornersetting_sharp</include>
+								</control>
+								<control type="image">
+									<right>8</right>
+									<colordiffuse>menudiffuse</colordiffuse>
+									<texture>Shadow.png</texture>
+								</control>
+								<control type="image">
+									<left>90r</left>
+									<top>82r</top>
+									<width>82</width>
+									<height>158</height>
+									<aspectratio align="left">scale</aspectratio>
+									<include>DiscartTexture</include>
+									<visible>$PARAM[visible_cdart]</visible>
+								</control>
+								<control type="image">
+									<description>background</description>
+									<right>8</right>
+									<texture border="2">masks/Default$VAR[CornerSettingVar].png</texture>
+									<!-- <texture border="4">masks/Default.png</texture> -->
+									<visible>!Control.HasFocus($PARAM[list_id])</visible>
+								</control>
+								<control type="image">
+									<description>background</description>
+									<right>8</right>
+									<texture border="8">buttons/ButtonNF$VAR[CornerSettingVar].png</texture>
+									<visible>Control.HasFocus($PARAM[list_id])</visible>
+								</control>
+								<control type="label">
+									<left>12</left>
+									<top>36r</top>
+									<width>195</width>
+									<height>30</height>
+									<font>ubuntu-r13b</font>
+									<label>$INFO[ListItem.Year]</label>
+								</control>
+							</control>
+						</focusedlayout>
+						<itemlayout width="135" height="auto" condition="Control.IsVisible(503)|Control.IsVisible(515)|Control.IsVisible(502)|Control.IsVisible(721)|Control.IsVisible(742)|Control.IsVisible(740)">
+							<control type="image">
+								<width>195</width>
+								<height>195</height>
+								<aspectratio>keep</aspectratio>
+								<include>DiscartTexture</include>
+							</control>
+							<control type="label">
+								<top>158</top>
+								<width>195</width>
+								<height>30</height>
+								<align>center</align>
+								<font>ubuntu-r13b</font>
+								<label>$INFO[ListItem.Year]</label>
+							</control>
+						</itemlayout>
+						<focusedlayout width="135" height="auto" condition="Control.IsVisible(503)|Control.IsVisible(515)|Control.IsVisible(502)|Control.IsVisible(721)|Control.IsVisible(742)|Control.IsVisible(740)">
+							<control type="image">
+								<width>195</width>
+								<height>195</height>
+								<aspectratio>keep</aspectratio>
+								<include>DiscartTexture</include>
+							</control>
+							<control type="label">
+								<top>158</top>
+								<width>195</width>
+								<height>30</height>
+								<align>center</align>
+								<font>ubuntu-r13b</font>
+								<label>$INFO[ListItem.Year]</label>
+							</control>
+						</focusedlayout>
+						<content target="videos" sortby="year">$INFO[ListItem.FolderPath]</content>
+					</control>
+				</control>
+			</control>
+		</definition>
+    </include>
+    <include name="MovieSetInformationList">
+		<param name="list_id">2001</param>
+		<param name="top">0</param>
+		<param name="bottom">0</param>
+		<param name="textcolor">black</param>
+		<param name="visible">true</param>
+		<param name="visible_labels">true</param>
+		<param name="orientation">vertical</param>
+		<definition>
+			<control type="list" id="$PARAM[list_id]">
+				<top>$PARAM[top]</top>
+				<bottom>$PARAM[bottom]</bottom>
+				<orientation>$PARAM[orientation]</orientation>
+				<include>openclosevisible</include>
+				<visible>$PARAM[visible]</visible>
+				<visible>ListItem.IsCollection</visible>
+				<itemlayout height="50">
+					<control type="label">
+						<textcolor>$PARAM[textcolor]</textcolor>
+						<font>font16</font>
+						<label>$INFO[ListItem.Year,, - ]$VAR[OriginalTitle]</label>
+						<visible>$PARAM[visible_labels]</visible>
+					</control>
+				</itemlayout>
+				<focusedlayout height="50">
+					<control type="label">
+						<textcolor>$PARAM[textcolor]</textcolor>
+						<font>font16</font>
+						<label>$INFO[ListItem.Year,, - ]$VAR[OriginalTitle]</label>
+						<visible>$PARAM[visible_labels]</visible>
+					</control>
+				</focusedlayout>
+				<content target="videos" sortby="year">$INFO[Container.ListItem.FolderPath]</content>
+			</control>
+		</definition>
+	</include>
+</includes>

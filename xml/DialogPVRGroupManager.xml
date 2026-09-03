@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+    <defaultcontrol always="true">13</defaultcontrol>
+	<backgroundcolor>grey3</backgroundcolor>
+    <include>openclose</include>
+    <controls>
+        <include>DialogBackgroundSimple</include>
+        <control type="group">
+			<include>openclosebox</include>
+            <visible>!Window.IsVisible(FileBrowser)</visible>
+			<include content="DialogBackgroundCommons">
+				<param name="width" value="90%" />
+				<param name="height" value="90%" />
+				<param name="header_id" value="1" />
+				<param name="header_label" value="19143" />
+			</include>
+            <control type="group">
+                <left>SpacePadding</left>
+                <right>SpacePadding</right>
+                <top>SpacePaddingXL</top>
+                <bottom>SpacePaddingXL</bottom>
+                <control type="group" id="10">
+                    <right>350</right>
+                    <control type="group"> <!-- left -->
+                        <description>Group list</description>
+                        <width>32%</width>
+                        <control type="label">
+                            <description>name label</description>
+                            <height>80</height>
+                            <label>31075</label>
+                            <align>center</align>
+                            <textcolor>selected</textcolor>
+                        </control>
+                        <control type="group">
+                            <top>90</top>
+                            <right>5</right>
+                            <control type="image">
+                                <colordiffuse>fanartdiffuse</colordiffuse>
+                                <texture border="5">buttons/KeyboardEditArea.png</texture>
+                            </control>
+                            <control type="list" id="13">
+                                <left>10</left>
+                                <right>10</right>
+                                <top>10</top>
+                                <bottom>10</bottom>
+                                <onup>13</onup>
+                                <ondown>13</ondown>
+                                <onleft>9000</onleft>
+                                <onright>73</onright>
+                                <pagecontrol>73</pagecontrol>
+                                <scrolltime>200</scrolltime>
+                                <include content="DefaultLabelListLayout">
+                                    <param name="list_id" value="13" />
+                                </include>
+                            </control>
+                        </control>
+                        <control type="group">
+                            <top>90</top>
+                            <control type="scrollbar" id="73">
+                                <left>100%</left>
+                                <height>100%</height>
+                                <onleft>13</onleft>
+                                <onright>11</onright>
+                                <ondown>73</ondown>
+                                <onup>73</onup>
+                                <showonepage>false</showonepage>
+                                <orientation>vertical</orientation>
+                            </control>
+                        </control>
+                    </control>
+                    <control type="group"> <!-- center -->
+                        <description>Channels list</description>
+                        <centerleft>50%</centerleft>
+                        <width>32%</width>
+                        <control type="label" id="21">
+                            <description>name label</description>
+                            <height>80</height>
+                            <align>center</align>
+                            <textcolor>selected</textcolor>
+                        </control>
+                        <control type="group">
+                            <top>90</top>
+                            <right>5</right>
+                            <control type="image">
+                                <colordiffuse>fanartdiffuse</colordiffuse>
+                                <texture border="5">buttons/KeyboardEditArea.png</texture>
+                            </control>
+                            <control type="list" id="11">
+                                <left>10</left>
+                                <right>10</right>
+                                <top>10</top>
+                                <bottom>10</bottom>
+                                <onup>11</onup>
+                                <ondown>11</ondown>
+                                <onleft>13</onleft>
+                                <onright>71</onright>
+                                <pagecontrol>71</pagecontrol>
+                                <scrolltime>200</scrolltime>
+                                <include content="PVRGroupManagerListLayout">
+                                    <param name="list_id" value="11" />
+                                </include>
+                            </control>
+                        </control>
+                        <control type="group">
+                            <top>90</top>
+                            <control type="scrollbar" id="71">
+                                <left>100%</left>
+                                <height>100%</height>
+                                <onleft>13</onleft>
+                                <onright>12</onright>
+                                <ondown>71</ondown>
+                                <onup>71</onup>
+                                <showonepage>false</showonepage>
+                                <orientation>vertical</orientation>
+                            </control>
+                        </control>
+                    </control>
+                    <control type="group"> <!-- right -->
+                        <description>Channels list</description>
+                        <right>0</right>
+                        <width>32%</width>
+                        <control type="label" id="22">
+                            <description>name label</description>
+                            <height>80</height>
+                            <align>center</align>
+                            <textcolor>selected</textcolor>
+                        </control>
+                        <control type="group">
+                            <top>90</top>
+                            <right>5</right>
+                            <control type="image">
+                                <colordiffuse>fanartdiffuse</colordiffuse>
+                                <texture border="5">buttons/KeyboardEditArea.png</texture>
+                            </control>
+                            <control type="list" id="12">
+                                <left>10</left>
+                                <right>10</right>
+                                <top>10</top>
+                                <bottom>10</bottom>
+                                <onup>12</onup>
+                                <ondown>12</ondown>
+                                <onleft>11</onleft>
+                                <onright>72</onright>
+                                <pagecontrol>72</pagecontrol>
+                                <scrolltime>200</scrolltime>
+                                <include content="PVRGroupManagerListLayout">
+                                    <param name="list_id" value="12" />
+                                </include>
+                            </control>
+                        </control>
+                        <control type="group">
+                            <top>90</top>
+                            <control type="scrollbar" id="72">
+                                <left>100%</left>
+                                <height>100%</height>
+                                <onleft>12</onleft>
+                                <onright>9000</onright>
+                                <ondown>72</ondown>
+                                <onup>72</onup>
+                                <showonepage>false</showonepage>
+                                <orientation>vertical</orientation>
+                            </control>
+                        </control>
+                    </control>
+                </control>
+                <control type="group">
+                    <right>0</right>
+                    <width>300</width>
+                    <control type="grouplist" id="9000">
+                        <top>90</top>
+                        <onleft>12</onleft>
+                        <onright>13</onright>
+                        <align>top</align>
+                        <itemgap>dialogbuttons_itemgap</itemgap>
+                        <include content="DefaultDialogButton">
+                            <param name="id" value="26" />
+                            <param name="width" value="100%" />
+                            <param name="label" value="$LOCALIZE[31072]" />
+                            <param name="font" value="impacted18" />
+                            <param name="onleft" value="12" />
+                            <param name="onright" value="13" />
+                        </include>
+                        <include content="DefaultDialogButton">
+                            <param name="id" value="27" />
+                            <param name="width" value="100%" />
+                            <param name="label" value="$LOCALIZE[31073]" />
+                            <param name="font" value="impacted18" />
+                            <param name="onleft" value="12" />
+                            <param name="onright" value="13" />
+                        </include>
+                        <include content="DialogRadioButton">
+                            <param name="id" value="25" />
+                            <param name="width" value="100%" />
+                            <param name="label" value="$LOCALIZE[19289]" />
+                            <param name="font" value="impacted18" />
+                            <param name="align" value="left" />
+                            <param name="onleft" value="12" />
+                            <param name="onright" value="13" />
+                        </include>
+                        <include content="DefaultDialogButton">
+                            <param name="id" value="28" />
+                            <param name="width" value="100%" />
+                            <param name="label" value="$LOCALIZE[31074]" />
+                            <param name="font" value="impacted18" />
+                            <param name="onleft" value="12" />
+                            <param name="onright" value="13" />
+                        </include>
+                        <include content="DialogToggleButton">
+                            <param name="id" value="34" />
+                            <param name="width" value="100%" />
+                            <param name="label" value="$LOCALIZE[19174]" />
+                            <param name="altlabel" value="$LOCALIZE[19173]" />
+                            <param name="font" value="impacted18" />
+                            <param name="onleft" value="12" />
+                            <param name="onright" value="13" />
+                        </include>
+                        <include content="DefaultDialogButton">
+                            <param name="id" value="29" />
+                            <param name="width" value="100%" />
+                            <param name="label" value="$LOCALIZE[186]" />
+                            <param name="font" value="impacted18" />
+                            <param name="onleft" value="12" />
+                            <param name="onright" value="13" />
+                        </include>
+                    </control>
+                    <control type="group">
+                        <bottom>8</bottom>
+                        <height>300</height>
+                        <include>openclosevisible</include>
+                        <visible>Control.HasFocus(11) | Control.HasFocus(71) | Control.HasFocus(12) | Control.HasFocus(72)</visible>
+                        <control type="group">
+                            <left>8</left>
+                            <right>8</right>
+                            <top>8</top>
+                            <control type="image">
+                                <aspectratio aligny="center" align="center">keep</aspectratio>
+                                <texture>$INFO[Container(11).ListItem.Icon]</texture>
+                                <visible>Control.HasFocus(11) | Control.HasFocus(71)</visible>
+                                <include>openclosevisible</include>
+                            </control>
+                            <control type="image">
+                                <aspectratio aligny="center" align="center">keep</aspectratio>
+                                <texture>$INFO[Container(12).ListItem.Icon]</texture>
+                                <visible>Control.HasFocus(12) | Control.HasFocus(72)</visible>
+                                <include>openclosevisible</include>
+                            </control>
+                        </control>
+                    </control>
+                </control>
+            </control>
+            <control type="group">
+                <bottom>0</bottom>
+                <height>52</height>
+                <control type="label">
+                    <description>Page Count Label</description>
+                    <width>100%</width>
+                    <font>impacted18</font>
+                    <textcolor>grey</textcolor>
+                    <scroll>false</scroll>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <label>([COLOR=selected]$INFO[Container(12).NumItems][/COLOR]) $LOCALIZE[19019] - $LOCALIZE[31008] ([COLOR=selected]$INFO[Container(12).CurrentPage]/$INFO[Container(12).NumPages][/COLOR])</label>
+                    <wrapmultiline>true</wrapmultiline>
+                </control>
+            </control>
+        </control>
+        <include>Clock</include>
+        <control type="label" id="20">
+            <description>Fake Label used to pass on name label</description>
+            <visible>false</visible>
+        </control>
+    </controls>
+</window>

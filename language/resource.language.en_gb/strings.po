@@ -1,0 +1,1170 @@
+﻿# Kodi Media Center language file
+# Addon Name: HorizonzV
+# Addon id: skin.horizonzv
+# Addon Provider: blauesgruen
+msgid ""
+msgstr ""
+"Project-Id-Version: KODI Main\n"
+"Report-Msgid-Bugs-To: https://github.com/xbmc/xbmc/issues/\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Language-Team: English (United Kingdom) (http://www.transifex.com/projects/p/kodi-main/language/en_GB/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en_GB\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "#31000"
+msgid "Power options"
+msgstr ""
+
+msgctxt "#31002"
+msgid "View options"
+msgstr ""
+
+msgctxt "#31003"
+msgid "Total duration"
+msgstr ""
+
+msgctxt "#31005"
+msgid "Misc options"
+msgstr ""
+
+msgctxt "#31007"
+msgid "Playing"
+msgstr ""
+
+msgctxt "#31008"
+msgid "Page"
+msgstr ""
+
+msgctxt "#31009"
+msgid "Items"
+msgstr ""
+
+msgctxt "#31012"
+msgid "Memory used"
+msgstr ""
+
+msgctxt "#31013"
+msgid "Pic thumbs"
+msgstr ""
+
+msgctxt "#31014"
+msgid "Order"
+msgstr ""
+
+msgctxt "#31016"
+msgid "Extended info"
+msgstr ""
+
+msgctxt "#31017"
+msgid "PLAYING"
+msgstr ""
+
+msgctxt "#31022"
+msgid "Visualisation presets"
+msgstr ""
+
+msgctxt "#31023"
+msgid "Sort: Ascending"
+msgstr ""
+
+msgctxt "#31024"
+msgid "Sort: Descending"
+msgstr ""
+
+msgctxt "#31025"
+msgid "Open playlist"
+msgstr ""
+
+msgctxt "#31026"
+msgid "Save playlist"
+msgstr ""
+
+msgctxt "#31027"
+msgid "Close playlist"
+msgstr ""
+
+msgctxt "#31032"
+msgid "Current selected"
+msgstr ""
+
+msgctxt "#31033"
+msgid "Search trailer"
+msgstr ""
+
+msgctxt "#31035"
+msgid "Search YouTube"
+msgstr ""
+
+msgctxt "#31036"
+msgid "Same director"
+msgstr ""
+
+msgctxt "#31043"
+msgid "Choose your song"
+msgstr ""
+
+msgctxt "#31044"
+msgid "Lyrics source"
+msgstr ""
+
+msgctxt "#31046"
+msgid "Data provider"
+msgstr ""
+
+msgctxt "#31047"
+msgid "Hide fanart"
+msgstr ""
+
+msgctxt "#31048"
+msgid "Memory used:"
+msgstr ""
+
+msgctxt "#31049"
+msgid "Track number"
+msgstr ""
+
+msgctxt "#31050"
+msgid "Selected profile"
+msgstr ""
+
+msgctxt "#31051"
+msgid "Last logged in"
+msgstr ""
+
+msgctxt "#31052"
+msgid "Aired"
+msgstr ""
+
+msgctxt "#31053"
+msgid "Playlist options"
+msgstr ""
+
+msgctxt "#31054"
+msgid "Created"
+msgstr ""
+
+msgctxt "#31056"
+msgid "Timer set! [COLOR=grey1] - System auto shutdown in[/COLOR]"
+msgstr ""
+
+msgctxt "#31057"
+msgid "Click button to play[CR][CR]movie trailer"
+msgstr ""
+
+msgctxt "#31059"
+msgid "Stop"
+msgstr ""
+
+msgctxt "#31060"
+msgid "Fast forward"
+msgstr ""
+
+msgctxt "#31061"
+msgid "Rewind"
+msgstr ""
+
+msgctxt "#31062"
+msgid "Movie menu"
+msgstr ""
+
+msgctxt "#31063"
+msgid "Download subtitles"
+msgstr ""
+
+msgctxt "#31064"
+msgid "Watch as 2D"
+msgstr ""
+
+msgctxt "#31065"
+msgid "Change mode"
+msgstr ""
+
+msgctxt "#31067"
+msgid "Playlist at startup"
+msgstr ""
+
+msgctxt "#31068"
+msgid "Local subtitle available"
+msgstr ""
+
+msgctxt "#31069"
+msgid "Select your Kodi user profile to login and continue"
+msgstr ""
+
+msgctxt "#31072"
+msgid "Add group"
+msgstr ""
+
+msgctxt "#31073"
+msgid "Rename group"
+msgstr ""
+
+msgctxt "#31074"
+msgid "Delete group"
+msgstr ""
+
+msgctxt "#31075"
+msgid "Available[CR]Groups"
+msgstr ""
+
+msgctxt "#31076"
+msgid "Timer set"
+msgstr ""
+
+msgctxt "#31077"
+msgid "Channel options"
+msgstr ""
+
+msgctxt "#31078"
+msgid "36-hour forecast"
+msgstr ""
+
+msgctxt "#31079"
+msgid "Hourly forecast"
+msgstr ""
+
+msgctxt "#31080"
+msgid "Weekend forecast"
+msgstr ""
+
+msgctxt "#31081"
+msgid "Daily forecast"
+msgstr ""
+
+msgctxt "#31083"
+msgid "Fetching forecast info..."
+msgstr ""
+
+# Horizonz
+
+msgctxt "#301126"
+msgid "Activates background video in the main menu."
+msgstr ""
+
+msgctxt "#301132"
+msgid "Select the country for the age rating (defined in the scrapper).[CR]Supported are DE, US, UK, FR.[CR]If only US ratings are available, these are displayed."
+msgstr ""
+
+msgctxt "#301134"
+msgid "Trailer are directly displayed in the movie information or in fullscreen mode."
+msgstr ""
+
+msgctxt "#301135"
+msgid "If a visualization is selected for music playback, it will also be displayed in the main menu."
+msgstr ""
+
+msgctxt "#301136"
+msgid "Displays playlist of the next 9 titles in main menu and in fullscreen mode."
+msgstr ""
+
+msgctxt "#301140"
+msgid "Define the volume in percent, which will be played on any start of KODI.[CR]Quote a figure between 0 and 100."
+msgstr ""
+
+msgctxt "#301142"
+msgid "Disable alphanumeric jump list in SMS style.[CR][COLOR=grey]Imported from the skin \'Alaska\'[/COLOR]."
+msgstr ""
+
+msgctxt "#301143"
+msgid "To use this function you need the addon \'Skinhelper Ping\' by _Andy_/PvD.[CR][COLOR=white]It can be installed here under Addons or via the Kodinerds Repo[/COLOR]."
+msgstr ""
+
+msgctxt "#301144"
+msgid "Starts the selected playlist after starting KODI."
+msgstr ""
+
+msgctxt "#301145"
+msgid "To use this function, the addon \'Global Search\' from the official repository is required."
+msgstr ""
+
+msgctxt "#301146"
+msgid "Shows a small statistic about the database entries in the lower right corner of the main menu."
+msgstr ""
+
+msgctxt "#301147"
+msgid "Shows the favourites below the main menu instead of directly the \'Central\'. [CR]These are otherwise accessible via the \'Central\'."
+msgstr ""
+
+msgctxt "#301148"
+msgid "Hides the \'Central\' located below the main menu."
+msgstr ""
+
+msgctxt "#301150"
+msgid "Activates an icon in the upper right corner that shows the battery's charge status.[CR][COLOR=white]An incorrect display occurs on computers without a battery.[/COLOR]"
+msgstr ""
+
+msgctxt "#301151"
+msgid "The settings for the widget are in the respective submenu of the main menus."
+msgstr ""
+
+msgctxt "#301152"
+msgid "Dims all unfocused covers."
+msgstr ""
+
+msgctxt "#301153"
+msgid "Hides the green progress bar on the covers."
+msgstr ""
+
+msgctxt "#301166"
+msgid "This skin contains various animation effects.[CR]With this switch you can deactivate them. Instead, a simple fade effect is used.[CR]This can lead to better performance on slow systems."
+msgstr ""
+
+msgctxt "#301168"
+msgid "Displays in the upper left corner, where you are."
+msgstr ""
+
+msgctxt "#301169"
+msgid "Hides the date display in the upper right corner."
+msgstr ""
+
+msgctxt "#301170"
+msgid "Activates fanart in all areas."
+msgstr ""
+
+msgctxt "#301171"
+msgid "Disables changing background pictures.[CR]Select an own picture or path."
+msgstr ""
+
+msgctxt "#301172"
+msgid "Select a picture. If no pictures is chosen, a standard picture will be displayed.[CR][COLOR=white]Click again for deleting.[/COLOR]"
+msgstr ""
+
+msgctxt "#301173"
+msgid "Shows a slideshow in the background, based on the KODI library.[CR][COLOR=white]Visible in the main menu under: Movies, Series and Music.[/COLOR]"
+msgstr ""
+
+msgctxt "#301174"
+msgid "Enables the dimming of the background in all areas.[CR][COLOR=white]Possible dimming steps: OFF, LIGHT, MEDIUM, STRONG.[/COLOR]"
+msgstr ""
+
+msgctxt "#301175"
+msgid "Choose an accent colour that shows up in many areas of the skin.[CR][COLOR=grey]Custom: Colour codes must be specified in AARRGGBB hex format.[CR]An example for [/COLOR][COLOR=ffffffff]White:[/COLOR] FFFFFFFF"
+msgstr ""
+
+msgctxt "#301176"
+msgid "Install the ColorPicker addon from the Kodinerds repository to be able to select colors with one click."
+msgstr ""
+
+msgctxt "#301177"
+msgid "Shows the number and total running time of the entries in the database views."
+msgstr ""
+
+msgctxt "#301178"
+msgid "Enables an effect of light along the main menu."
+msgstr ""
+
+msgctxt "#301180"
+msgid "Select one of the background themes. It strongly changes the overall impression of the main menu.[CR][COLOR=white]Will be deactivated as soon as \'only one background image\' is active.[/COLOR][COLOR=grey][CR]The theme \'Gambit\' has the advantage that it provides better performance on weaker systems.[CR]This theme was kindly provided by \'G4mbit\' from the KODINERDS forum.[/COLOR]"
+msgstr ""
+
+msgctxt "#301184"
+msgid "Places a structure over the background image."
+msgstr ""
+
+msgctxt "#301186"
+msgid "The player controls are displayed on the left side under the mainmenu during the playing mode."
+msgstr ""
+
+msgctxt "#301188"
+msgid "Shows in the upper left corner of the current weather."
+msgstr ""
+
+msgctxt "#301190"
+msgid "It is possible to disable \'Radio\', which is one of 3 views during the playing mode in full screen."
+msgstr ""
+
+msgctxt "#301192"
+msgid "Select between the views Standard, Alternative and Radio.[CR][COLOR=grey]\'Radio\' is always used for online music streams. It is possible to disable it.[/COLOR]"
+msgstr ""
+
+msgctxt "#301194"
+msgid "Select between the views Standard, Alternative and Radio.[CR][COLOR=white]Information: \'Radio\' was disabled.[/COLOR]"
+msgstr ""
+
+msgctxt "#301196"
+msgid "Displays basic track information in full screen during music playback in the lower left corner.[CR][COLOR=whithe]Visible when OSD is not visible[/COLOR]."
+msgstr ""
+
+msgctxt "#301198"
+msgid "Displays a discreet narrow variation of the screen in \'pause\'."
+msgstr ""
+
+msgctxt "#301200"
+msgid "Information like chapter, subtitle, current time bar etc. are not displayed.[CR][COLOR=grey]Studio logos and extra arts are faded out.[/COLOR]"
+msgstr ""
+
+msgctxt "#301202"
+msgid "Show all available movie & series artworks.[CR][COLOR=white]Since Kodi 19 artworks are loaded with the scrapper \'The Movie Database PYTHON\'.[/COLOR][COLOR=grey][CR]\'Artwork Beef\' or a similar addon can still be used.[/COLOR]"
+msgstr ""
+
+msgctxt "#301204"
+msgid "Select the appearance of the CD here if no CDArt is found.[CR][COLOR=white]CDArts must be available in a folder. This is specified in the system settings (Media->Music).[/COLOR]"
+msgstr ""
+
+msgctxt "#301210"
+msgid "Enables all PVR available artwork.[CR][COLOR=white]\'Skin Helper Service\' is required.[/COLOR]"
+msgstr ""
+
+msgctxt "#301218"
+msgid "Select a background picture."
+msgstr ""
+
+msgctxt "#301240"
+msgid "Reset"
+msgstr ""
+
+msgctxt "#301244"
+msgid "Defines the default for this skin.[CR]This refers only to customized options."
+msgstr ""
+
+msgctxt "#301246"
+msgid "Weak"
+msgstr ""
+
+msgctxt "#301248"
+msgid "Medium"
+msgstr ""
+
+msgctxt "#301250"
+msgid "Fast"
+msgstr ""
+
+msgctxt "#301268"
+msgid "[UPPERCASE]Skin settings reset ?[/UPPERCASE]"
+msgstr ""
+
+msgctxt "#301270"
+msgid "Cover"
+msgstr ""
+
+msgctxt "#301272"
+msgid "no defined favourites"
+msgstr ""
+
+msgctxt "#301274"
+msgid "[B]KODI SUBTITLES[/B]"
+msgstr ""
+
+msgctxt "#301276"
+msgid "Sidepanel"
+msgstr ""
+
+msgctxt "#301278"
+msgid "Set Information"
+msgstr ""
+
+msgctxt "#301280"
+msgid "Concerts"
+msgstr ""
+
+msgctxt "#301282"
+msgid "Language (age rating)"
+msgstr ""
+
+msgctxt "#301284"
+msgid "Flags in text form"
+msgstr ""
+
+msgctxt "#301286"
+msgid "Dim background"
+msgstr ""
+
+msgctxt "#301288"
+msgid "Page Count"
+msgstr ""
+
+msgctxt "#301290"
+msgid "Cases"
+msgstr ""
+
+msgctxt "#301292"
+msgid "Hide big cover"
+msgstr ""
+
+msgctxt "#301294"
+msgid "Logo in place title"
+msgstr ""
+
+msgctxt "#301296"
+msgid "Information"
+msgstr ""
+
+msgctxt "#301300"
+msgid "Hide \'NEW\' Logo"
+msgstr ""
+
+msgctxt "#301302"
+msgid "Dusteffect (case)"
+msgstr ""
+
+msgctxt "#301304"
+msgid "Disable Cover animations"
+msgstr ""
+
+msgctxt "#301306"
+msgid "Dim cover"
+msgstr ""
+
+msgctxt "#301308"
+msgid "List"
+msgstr ""
+
+msgctxt "#301310"
+msgid "Info List"
+msgstr ""
+
+msgctxt "#301312"
+msgid "Thumbview"
+msgstr ""
+
+msgctxt "#301314"
+msgid "Banner"
+msgstr ""
+
+msgctxt "#301316"
+msgid "Showcase"
+msgstr ""
+
+msgctxt "#301318"
+msgid "Perspective"
+msgstr ""
+
+msgctxt "#301320"
+msgid "Disc Flow"
+msgstr ""
+
+msgctxt "#301322"
+msgid "Rightlist"
+msgstr ""
+
+msgctxt "#301324"
+msgid "Cover Wall (fullsize)"
+msgstr ""
+
+msgctxt "#301326"
+msgid "Cover Wall"
+msgstr ""
+
+msgctxt "#301328"
+msgid "Picture wall"
+msgstr ""
+
+msgctxt "#301330"
+msgid "Disable radio view"
+msgstr ""
+
+msgctxt "#301331"
+msgid " - Disable TV Wall"
+msgstr ""
+
+msgctxt "#301332"
+msgid "Music visualisation"
+msgstr ""
+
+msgctxt "#301334"
+msgid "Music extra arts"
+msgstr ""
+
+msgctxt "#301336"
+msgid "Date display"
+msgstr ""
+
+msgctxt "#301338"
+msgid "Button description"
+msgstr ""
+
+msgctxt "#301340"
+msgid "Information panel"
+msgstr ""
+
+msgctxt "#301344"
+msgid "back"
+msgstr ""
+
+msgctxt "#301346"
+msgid "Mainmenu buttons"
+msgstr ""
+
+msgctxt "#301348"
+msgid "Submenu buttons"
+msgstr ""
+
+msgctxt "#301350"
+msgid "Functions"
+msgstr ""
+
+msgctxt "#301351"
+msgid "Widgets"
+msgstr ""
+
+msgctxt "#301352"
+msgid "Design / Performance"
+msgstr ""
+
+msgctxt "#301354"
+msgid "Extra arts"
+msgstr ""
+
+msgctxt "#301356"
+msgid "Admin"
+msgstr ""
+
+msgctxt "#301357"
+msgid "Shutdown Menu"
+msgstr ""
+
+msgctxt "#301358"
+msgid "Enable debug grid"
+msgstr ""
+
+msgctxt "#301360"
+msgid "Debug Information"
+msgstr ""
+
+msgctxt "#301362"
+msgid "Enable First start"
+msgstr ""
+
+msgctxt "#301364"
+msgid "Choose your system performance"
+msgstr ""
+
+msgctxt "#301366"
+msgid "Mousepointer"
+msgstr ""
+
+msgctxt "#301368"
+msgid "Set positions"
+msgstr ""
+
+msgctxt "#301370"
+msgid "Move focus"
+msgstr ""
+
+msgctxt "#301371"
+msgid "Dashboard"
+msgstr ""
+
+msgctxt "#301372"
+msgid "Auto-hide the mainmenu"
+msgstr ""
+
+msgctxt "#301374"
+msgid "Time to hide"
+msgstr ""
+
+msgctxt "#301376"
+msgid "Background video"
+msgstr ""
+
+msgctxt "#301378"
+msgid "Choose the country for age rating"
+msgstr ""
+
+msgctxt "#301380"
+msgid "Play trailer in fullscreen"
+msgstr ""
+
+msgctxt "#301382"
+msgid "Next track playlist"
+msgstr ""
+
+msgctxt "#301384"
+msgid "Set startup volume"
+msgstr ""
+
+msgctxt "#301386"
+msgid "Dectivate alphanumeric jumpbar"
+msgstr ""
+
+msgctxt "#301388"
+msgid "Hide wake on lan switch in \'Central\'"
+msgstr ""
+
+msgctxt "#301390"
+msgid "Globalsearch in contextmenu"
+msgstr ""
+
+msgctxt "#301392"
+msgid "Statistic show in mainmenu"
+msgstr ""
+
+msgctxt "#301394"
+msgid "Show favorites window in main menu"
+msgstr ""
+
+msgctxt "#301396"
+msgid "Disable \'Central\'"
+msgstr ""
+
+msgctxt "#301389"
+msgid "- Path"
+msgstr ""
+
+msgctxt "#301400"
+msgid "Disc"
+msgstr ""
+
+msgctxt "#301402"
+msgid "Animations (high cpu load)"
+msgstr ""
+
+msgctxt "#301404"
+msgid "Navigation information"
+msgstr ""
+
+msgctxt "#301406"
+msgid "Small Weather-Information"
+msgstr ""
+
+msgctxt "#301408"
+msgid "Hide date display"
+msgstr ""
+
+msgctxt "#301410"
+msgid "Just a background image"
+msgstr ""
+
+msgctxt "#301412"
+msgid "- Picture / Path"
+msgstr ""
+
+msgctxt "#301414"
+msgid "- Slideshow instead of image"
+msgstr ""
+
+msgctxt "#301416"
+msgid "Color Accents"
+msgstr ""
+
+msgctxt "#301418"
+msgid "Background theme"
+msgstr ""
+
+msgctxt "#301424"
+msgid "Structur in mainmenu"
+msgstr ""
+
+msgctxt "#301426"
+msgid "Player Controls"
+msgstr ""
+
+msgctxt "#301428"
+msgid "Weather fanarts"
+msgstr ""
+
+msgctxt "#301430"
+msgid "Lightweight version of the break screen"
+msgstr ""
+
+msgctxt "#301432"
+msgid "Hide video details"
+msgstr ""
+
+msgctxt "#301434"
+msgid "CD Style"
+msgstr ""
+
+msgctxt "#301436"
+msgid "hear"
+msgstr ""
+
+msgctxt "#301438"
+msgid "manage your"
+msgstr ""
+
+msgctxt "#301440"
+msgid "experience your"
+msgstr ""
+
+msgctxt "#301442"
+msgid "check out the"
+msgstr ""
+
+msgctxt "#301444"
+msgid "let them rotate"
+msgstr ""
+
+msgctxt "#301446"
+msgid "go to"
+msgstr ""
+
+msgctxt "#301448"
+msgid "change your"
+msgstr ""
+
+msgctxt "#301456"
+msgid "Glass"
+msgstr ""
+
+msgctxt "#301458"
+msgid "Blank"
+msgstr ""
+
+msgctxt "#301460"
+msgid "low"
+msgstr ""
+
+msgctxt "#301462"
+msgid "medium"
+msgstr ""
+
+msgctxt "#301464"
+msgid "strongly"
+msgstr ""
+
+msgctxt "#301466"
+msgid "Central"
+msgstr ""
+
+msgctxt "#301468"
+msgid "other/unknown"
+msgstr ""
+
+msgctxt "#301470"
+msgid "Moviedrama"
+msgstr ""
+
+msgctxt "#301472"
+msgid "News"
+msgstr ""
+
+msgctxt "#301474"
+msgid "Show"
+msgstr ""
+
+msgctxt "#301476"
+msgid "Sports"
+msgstr ""
+
+msgctxt "#301478"
+msgid "Child"
+msgstr ""
+
+msgctxt "#301480"
+msgid "Music"
+msgstr ""
+
+msgctxt "#301482"
+msgid "Arts"
+msgstr ""
+
+msgctxt "#301484"
+msgid "Social"
+msgstr ""
+
+msgctxt "#301486"
+msgid "Science"
+msgstr ""
+
+msgctxt "#301488"
+msgid "Special"
+msgstr ""
+
+msgctxt "#301490"
+msgid "Hobby"
+msgstr ""
+
+msgctxt "#301492"
+msgid "download artwork"
+msgstr ""
+
+msgctxt "#301494"
+msgid "Recently added TVShows"
+msgstr ""
+
+msgctxt "#301496"
+msgid "forecast"
+msgstr ""
+
+msgctxt "#301498"
+msgid "Set the position of each mein menu fixed points.[CR]Using position numbers from 1 - 22."
+msgstr ""
+
+msgctxt "#301500"
+msgid "go directly to video files"
+msgstr ""
+
+msgctxt "#301502"
+msgid "Show profil name"
+msgstr ""
+
+msgctxt "#301504"
+msgid "Kodi runs:"
+msgstr ""
+
+msgctxt "#301506"
+msgid "<"
+msgstr ""
+
+msgctxt "#301508"
+msgid "<<"
+msgstr ""
+
+msgctxt "#301510"
+msgid "Studio symbols ..."
+msgstr ""
+
+msgctxt "#301512"
+msgid "Genre icons ..."
+msgstr ""
+
+msgctxt "#301514"
+msgid "Weather icons ..."
+msgstr ""
+
+msgctxt "#301516"
+msgid "Weather fanart ..."
+msgstr ""
+
+msgctxt "#301520"
+msgid "In order to set an Timer the \'KN Switcher Service\' is required. Download via Kodinerds repository."
+msgstr ""
+
+msgctxt "#301522"
+msgid "delete all timers"
+msgstr ""
+
+msgctxt "#301524"
+msgid "delete"
+msgstr ""
+
+msgctxt "#301526"
+msgid "administration"
+msgstr ""
+
+msgctxt "#301528"
+msgid "Switchtimer"
+msgstr ""
+
+msgctxt "#301530"
+msgid "Timer overview"
+msgstr ""
+
+msgctxt "#301532"
+msgid "Today"
+msgstr ""
+
+msgctxt "#301534"
+msgid "Enable"
+msgstr ""
+
+msgctxt "#301536"
+msgid "Channels"
+msgstr ""
+
+msgctxt "#301538"
+msgid "both"
+msgstr ""
+
+msgctxt "#301540"
+msgid "original"
+msgstr ""
+
+msgctxt "#301542"
+msgid "HorizonzV Flag"
+msgstr ""
+
+msgctxt "#301544"
+msgid "Germany"
+msgstr ""
+
+msgctxt "#301546"
+msgid "United States"
+msgstr ""
+
+msgctxt "#301548"
+msgid "United Kingdom"
+msgstr ""
+
+msgctxt "#301550"
+msgid "France"
+msgstr ""
+
+msgctxt "#301551"
+msgid "Serge Blue"
+msgstr ""
+
+msgctxt "#301552"
+msgid "Grey Blue"
+msgstr ""
+
+msgctxt "#301554"
+msgid "Turquoise"
+msgstr ""
+
+msgctxt "#301558"
+msgid "Sea Green"
+msgstr ""
+
+msgctxt "#301560"
+msgid "Red"
+msgstr ""
+
+msgctxt "#301562"
+msgid "Light Grey"
+msgstr ""
+
+msgctxt "#301564"
+msgid "Dark Gold"
+msgstr ""
+
+msgctxt "#301566"
+msgid "Sandy Brown"
+msgstr ""
+
+msgctxt "#301570"
+msgid "ColorPicker"
+msgstr ""
+
+msgctxt "#301572"
+msgid "Avengers B/W"
+msgstr ""
+
+msgctxt "#301574"
+msgid "Gambit"
+msgstr ""
+
+msgctxt "#301576"
+msgid "Vinyl View"
+msgstr ""
+
+msgctxt "#301578"
+msgid "Radio View"
+msgstr ""
+
+msgctxt "#301580"
+msgid "Standard View"
+msgstr ""
+
+msgctxt "#301582"
+msgid "starting ..."
+msgstr ""
+
+msgctxt "#301584"
+msgid "hide"
+msgstr ""
+
+msgctxt "#301586"
+msgid "show"
+msgstr ""
+
+msgctxt "#301588"
+msgid "button"
+msgstr ""
+
+msgctxt "#301590"
+msgid "skin reload"
+msgstr ""
+
+msgctxt "#301592"
+msgid "KODI APP reload"
+msgstr ""
+
+msgctxt "#301596"
+msgid "Visible"
+msgstr ""
+
+msgctxt "#301598"
+msgid "no progressbar in the widget (green bar on the cover)"
+msgstr ""
+
+msgctxt "#301600"
+msgid "last film started in 1st place"
+msgstr "last film started in 1st place"
+
+msgctxt "#301602"
+msgid "last album belonged to number 1"
+msgstr "last album listened to ranked #1"
+
+msgctxt "#301604"
+msgid "next episode in 1st place"
+msgstr "next episode in 1st place"
+
+msgctxt "#301606"
+msgid "last started video at number 1"
+msgstr ""
+
+msgctxt "#301608"
+msgid "5 Day Weather"
+msgstr ""
+
+msgctxt "#301610"
+msgid "German Telecast Offers (GTO)"
+msgstr ""
+
+msgctxt "#301612"
+msgid "Fritz Smart Home"
+msgstr ""
+
+msgctxt "#301614"
+msgid "Choose a content for row"
+msgstr ""
+
+msgctxt "#301616"
+msgid "on"
+msgstr ""
+
+msgctxt "#301618"
+msgid "off"
+msgstr ""
+
+msgctxt "#301620"
+msgid "Battery level"
+msgstr ""
+
+msgctxt "#301622"
+msgid "Export video library"
+msgstr ""
+
+msgctxt "#301624"
+msgid "(single NFO, without images, overwrite old data)"
+msgstr ""
+
+# msgctxt "#xyxyxyxy"
+# msgid "A discreet presentation of the title information is displayed after fading out the info panel in full screen."
+
+msgctxt "#31030"
+msgid "System memory usage"
+msgstr ""
+
+#~ msgctxt "#31137"
+#~ msgid "PVR info"
+#~ msgstr ""
+
+msgctxt "#31139"
+msgid "Video decoder"
+msgstr ""
+
+msgctxt "#31140"
+msgid "Pixel format"
+msgstr ""
+
+msgctxt "#31607"
+msgid "Screen resolution"
+msgstr ""
+
+msgctxt "#31608"
+msgid "System rendering speed"
+msgstr ""
+
+msgctxt "#31609"
+msgid "System CPU usage"
+msgstr ""
+
+msgctxt "#31611"
+msgid "Code line"
+msgstr ""
+
+msgctxt "#31613"
+msgid "enter the category of the playlist here ..."
+msgstr ""
+
+msgctxt "#35500"
+msgid "Location"
+msgstr ""
+

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <include name="RecordtimerItem">
+        <item>
+            <label>$INFO[Skin.String($PARAM[knswitcheritem_id]:date)]</label>
+            <label2>$INFO[Skin.String($PARAM[knswitcheritem_id]:channel)]</label2>
+            <onclick>RunScript(service.kn.switchtimer,action=del,timer=$PARAM[knswitcheritem_id])</onclick>
+            <property name="Title">$INFO[Skin.String($PARAM[knswitcheritem_id]:title)]</property>
+            <property name="Icon">PVR-Switchtimer.png</property>
+            <visible>!String.IsEmpty(Skin.String($PARAM[knswitcheritem_id]:date))</visible>
+        </item>
+    </include>
+    <include name="RecordTimerContent">
+        <content>
+            <include content="KNSwitcherItem">
+                <param name="knswitcheritem_id" value="t0" />
+            </include>
+            <include content="KNSwitcherItem">
+                <param name="knswitcheritem_id" value="t1" />
+            </include>
+            <include content="KNSwitcherItem">
+                <param name="knswitcheritem_id" value="t2" />
+            </include>
+            <include content="KNSwitcherItem">
+                <param name="knswitcheritem_id" value="t3" />
+            </include>
+            <include content="KNSwitcherItem">
+                <param name="knswitcheritem_id" value="t4" />
+            </include>
+            <include content="KNSwitcherItem">
+                <param name="knswitcheritem_id" value="t5" />
+            </include>
+            <include content="KNSwitcherItem">
+                <param name="knswitcheritem_id" value="t6" />
+            </include>
+            <include content="KNSwitcherItem">
+                <param name="knswitcheritem_id" value="t7" />
+            </include>
+            <include content="KNSwitcherItem">
+                <param name="knswitcheritem_id" value="t8" />
+            </include>
+        </content>
+    </include>
+</includes>

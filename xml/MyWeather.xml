@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+    <defaultcontrol always="true">9000</defaultcontrol>
+	<backgroundcolor>grey3</backgroundcolor>
+    <menucontrol>9000</menucontrol>
+    <include>openclose</include>
+    <controls>
+        <control type="group">
+            <visible>!Window.IsVisible(FileBrowser)</visible>
+            <control type="group">
+                <include>openclosefanart</include>
+                <control type="multiimage">
+                    <include>openclosevisible</include>
+                    <include>Dimensions_Fullscreen</include>
+                    <imagepath>$VAR[WeatherFanartVar]</imagepath>
+                    <timeperimage>10000</timeperimage>
+                    <randomize>true</randomize>
+                    <colordiffuse>$VAR[BackgroundDim]</colordiffuse>
+                    <visible>Skin.HasSetting(ShowWeatherFanart)+!String.IsEmpty(Skin.String(weatherfanart.path))</visible>
+                </control>
+                <control type="image">
+                    <include>openclosefanart</include>
+                    <include>Dimensions_Fullscreen</include>
+                    <aspectratio>scale</aspectratio>
+                    <texture>special://skin/backgrounds/weather.jpg</texture>
+                    <visible>!Skin.HasSetting(ShowWeatherFanart)|String.IsEmpty(Skin.String(weatherfanart.path))</visible>
+                </control>
+            </control>
+            <control type="group">
+                <include>openclosebox</include>
+                <control type="group">
+                    <include>DialogWide</include>
+                    <control type="label">
+                        <description>Provider Text</description>
+                        <left>30</left>
+                        <top>862</top>
+                        <width>690</width>
+                        <height>52</height>
+                        <!-- <font>impacted24</font> -->
+                        <textcolor>grey2</textcolor>
+                        <scroll>true</scroll>
+                        <align>left</align>
+                        <label>$LOCALIZE[31046]: [COLOR=grey]$INFO[Window.Property(WeatherProvider)][/COLOR]</label>
+                    </control>
+                    <control type="image">
+                        <left>330r</left>
+                        <top>862</top>
+                        <width>300</width>
+                        <height>64</height>
+                        <aspectratio align="right" aligny="bottom">keep</aspectratio>
+                        <texture>$INFO[Window.Property(WeatherProviderLogo)]</texture>
+                    </control>
+                    <control type="group">
+                        <!-- infos leftside -->
+                        <left>0</left>
+                        <top>165</top>
+                        <control type="label">
+                            <description>weather location label</description>
+                            <left>30</left>
+                            <top>20</top>
+                            <width>990</width>
+                            <height>45</height>
+                            <font>impacted36</font>
+                            <label>$INFO[Window.Property(Location)]</label>
+                            <align>left</align>
+                        </control>
+                        <control type="multiimage">
+                            <description>current weather icon</description>
+                            <left>675</left>
+                            <top>165</top>
+                            <width>300</width>
+                            <height>300</height>
+                            <imagepath>$VAR[WeatherIconVar]$INFO[Window.Property(Current.FanartCode)]$VAR[WeatherIconFolderVar]</imagepath>
+                            <timeperimage>100</timeperimage>
+                            <randomize>false</randomize>
+                            <fadetime>10</fadetime>
+                            <aspectratio>keep</aspectratio>
+                        </control>
+                        <control type="list" id="40">
+                            <left>120</left>
+                            <top>158</top>
+                            <width>900</width>
+                            <height>495</height>
+                            <onleft>49</onleft>
+                            <onright>49</onright>
+                            <onup>9000</onup>
+                            <ondown>61</ondown>
+                            <aligny>center</aligny>
+                            <pagecontrol/>
+                            <scrolltime>200</scrolltime>
+                            <itemlayout height="45">
+                                <control type="label">
+                                    <left>8</left>
+                                    <top>0</top>
+                                    <width>255</width>
+                                    <height>45</height>
+                                    <font>impacted21</font>
+                                    <align>right</align>
+                                    <textcolor>selectedhome</textcolor>
+                                    <selectedcolor>selectedhome</selectedcolor>
+                                    <info>ListItem.Label</info>
+                                </control>
+                                <control type="label">
+                                    <left>278</left>
+                                    <top>0</top>
+                                    <width>600</width>
+                                    <height>45</height>
+                                    <font>impacted21</font>
+                                    <align>left</align>
+                                    <textcolor>grey3</textcolor>
+                                    <selectedcolor>grey3</selectedcolor>
+                                    <info>ListItem.Label2</info>
+                                </control>
+                            </itemlayout>
+                            <focusedlayout height="45">
+                                <control type="label">
+                                    <left>8</left>
+                                    <top>0</top>
+                                    <width>255</width>
+                                    <height>45</height>
+                                    <font>impacted21</font>
+                                    <align>right</align>
+                                    <aligny>center</aligny>
+                                    <textcolor>selectedhome</textcolor>
+                                    <selectedcolor>selectedhome</selectedcolor>
+                                    <info>ListItem.Label</info>
+                                </control>
+                                <control type="label">
+                                    <left>278</left>
+                                    <top>0</top>
+                                    <width>600</width>
+                                    <height>45</height>
+                                    <font>impacted21</font>
+                                    <align>left</align>
+                                    <aligny>center</aligny>
+                                    <textcolor>grey3</textcolor>
+                                    <selectedcolor>grey3</selectedcolor>
+                                    <info>ListItem.Label2</info>
+                                </control>
+                            </focusedlayout>
+                            <content>
+                                <item>
+                                    <label>$LOCALIZE[12014]:</label>
+                                    <label2>$INFO[Window.Property(Updated)]</label2>
+                                    <onclick/>
+                                </item>
+                                <item>
+                                    <label>$LOCALIZE[401]:</label>
+                                    <label2>$INFO[Window.Property(Current.Temperature)]$INFO[System.TemperatureUnits]</label2>
+                                    <onclick/>
+                                    <visible>!String.StartsWith(Weather.Plugin,weather.openweathermap)</visible>
+                                </item>
+                                <item>
+                                    <label>$LOCALIZE[401]:</label>
+                                    <label2>$INFO[Window.Property(Current.LowTemperature),[COLOR=reddiffuse],[/COLOR] / ]$INFO[Window.Property(Current.HighTemperature),[COLOR=selected],[/COLOR]]</label2>
+                                    <onclick/>
+                                    <visible>String.StartsWith(Weather.Plugin,weather.openweathermap)</visible>
+                                </item>
+                                <item>
+                                    <label>$LOCALIZE[33020]:</label>
+                                    <label2>$INFO[Window.Property(Current.Condition)]</label2>
+                                    <onclick/>
+                                </item>
+                                <item>
+                                    <label>$LOCALIZE[402]:</label>
+                                    <label2>$INFO[Window.Property(Current.FeelsLike)]$INFO[System.TemperatureUnits]</label2>
+                                    <onclick/>
+                                </item>
+                                <item>
+                                    <label>$LOCALIZE[405]:</label>
+                                    <label2>$INFO[Window.Property(Current.DewPoint)]$INFO[System.TemperatureUnits]</label2>
+                                    <onclick/>
+                                </item>
+                                <item>
+                                    <label>$LOCALIZE[406]:</label>
+                                    <label2>$INFO[Window.Property(Current.Humidity)]</label2>
+                                    <onclick/>
+                                </item>
+                                <item>
+                                    <label>$LOCALIZE[403]:</label>
+                                    <label2>$INFO[Window.Property(Current.UVIndex)]</label2>
+                                    <onclick/>
+                                    <visible>!String.StartsWith(Weather.Plugin,weather.openweathermap)</visible>
+                                </item>
+                                <item>
+                                    <label>$LOCALIZE[404]:</label>
+                                    <label2>$INFO[Window.Property(Current.Wind)]</label2>
+                                    <onclick/>
+                                </item>
+                                <item>
+                                    <label>$LOCALIZE[33027]:</label>
+                                    <label2>$INFO[Window.Property(Today.Sunrise)]</label2>
+                                    <onclick/>
+                                    <visible>[String.IsEqual(Weather.Plugin,weather.wunderground)|String.StartsWith(Weather.Plugin,weather.openweathermap)] + !String.IsEmpty(Window.Property(36Hour.IsFetched))</visible>
+                                </item>
+                                <item>
+                                    <label>$LOCALIZE[33028]:</label>
+                                    <label2>$INFO[Window.Property(Today.Sunset)]</label2>
+                                    <onclick/>
+                                    <visible>[String.IsEqual(Weather.Plugin,weather.wunderground)|String.StartsWith(Weather.Plugin,weather.openweathermap)] + !String.IsEmpty(Window.Property(36Hour.IsFetched))</visible>
+                                </item>
+                            </content>
+                        </control>
+                        <control type="image">
+                            <left>1020</left>
+                            <top>120</top>
+                            <width>3</width>
+                            <height>525</height>
+                            <colordiffuse>fanartdiffuse</colordiffuse>
+                            <texture>Separator4.png</texture>
+                        </control>
+                    </control>
+                    <control type="group">
+                        <left>1050</left>
+                        <top>165</top>
+                        <control type="label">
+                            <description>header label</description>
+                            <left>52</left>
+                            <top>20</top>
+                            <width>795</width>
+                            <height>45</height>
+                            <label>10508</label>
+                            <font>impacted26</font>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <textcolor>grey3</textcolor>
+                            <visible>Control.IsVisible(51)</visible>
+                        </control>
+                        <include>WeatherDaily</include>
+                        <include>Weather36Hour</include>
+                        <include>WeatherWeekend</include>
+                        <include>WeatherHourly</include>
+                        <include>WeatherMaps</include>
+                        <!-- <include>WeatherAlerts</include> -->
+                        <control type="label">
+                            <description>number of files/pages</description>
+                            <left>0</left>
+                            <top>142r</top>
+                            <width>825</width>
+                            <align>right</align>
+                            <font>ubuntu-r16b</font>
+                            <scroll>true</scroll>
+                            <textcolor>grey</textcolor>
+                            <label>$INFO[Container(51).CurrentPage,$LOCALIZE[31008] ([COLOR=selected],[/COLOR]]$INFO[Container(51).NumPages,[COLOR=selected]/,[/COLOR])]</label>
+                            <visible>Control.IsVisible(51)+Container(51).HasFocus()</visible>
+                        </control>
+                        <control type="label">
+                            <description>number of files/pages</description>
+                            <left>0</left>
+                            <top>142r</top>
+                            <width>825</width>
+                            <align>right</align>
+                            <font>ubuntu-r16b</font>
+                            <scroll>true</scroll>
+                            <textcolor>grey</textcolor>
+                            <label>$INFO[Container(52).CurrentPage,$LOCALIZE[31008] ([COLOR=selected],[/COLOR]]$INFO[Container(52).NumPages,[COLOR=selected]/,[/COLOR])]</label>
+                            <visible>Control.IsVisible(52)+Container(52).HasFocus()</visible>
+                        </control>
+                        <control type="label">
+                            <description>number of files/pages</description>
+                            <left>0</left>
+                            <top>142r</top>
+                            <width>825</width>
+                            <align>right</align>
+                            <font>ubuntu-r16b</font>
+                            <scroll>true</scroll>
+                            <textcolor>grey</textcolor>
+                            <label>$INFO[Container(53).CurrentPage,$LOCALIZE[31008] ([COLOR=selected],[/COLOR]]$INFO[Container(53).NumPages,[COLOR=selected]/,[/COLOR])]</label>
+                            <visible>Control.IsVisible(53)+Container(53).HasFocus()</visible>
+                        </control>
+                    </control>
+                </control>
+            </control>
+            <control type="group">
+                <include>SidePanelBackgroundOverlay</include>
+                <control type="group">
+                    <!-- Sidepanel -->
+                    <visible>!Skin.HasSetting(KioskMode)</visible>
+                    <include>SidePanelAnimation</include>
+                    <include>SidePanelBackground</include>
+                    <control type="grouplist" id="9000">
+                        <onright>777</onright>
+                        <include>SidePanelProperty</include>
+                        <control type="label" id="200">
+                            <textcolor>focused</textcolor>
+                            <width>428</width>
+                            <height>38</height>
+                            <textoffsetx>22</textoffsetx>
+                            <align>center</align>
+                            <font>bebas19</font>
+                            <label>31002</label>
+                        </control>
+                        <control type="group" id="300">
+                            <include>SidePanelButton</include>
+                            <control type="spincontrolex" id="3">
+                                <description>change location button</description>
+                                <include>SidePanelToggleButton</include>
+                                <onleft>9002</onleft>
+                                <onright>777</onright>
+                                <onup>200</onup>
+                                <ondown>302</ondown>
+                                <onback>777</onback>
+                            </control>
+                        </control>
+                        <control type="button" id="302">
+                            <description>10 day forcast button</description>
+                            <textwidth>352</textwidth>
+                            <include>SidePanelButton</include>
+                            <label>31081</label>
+                            <onfocus>ClearProperty(Weather.CurrentView)</onfocus>
+                            <visible>!String.IsEmpty(Window.Property(Daily.IsFetched))</visible>
+                        </control>
+                        <control type="button" id="303">
+                            <description>36 hour forcast button</description>
+                            <textwidth>352</textwidth>
+                            <include>SidePanelButton</include>
+                            <label>31078</label>
+                            <onfocus>SetProperty(Weather.CurrentView,36hour)</onfocus>
+                            <visible>!String.IsEmpty(Window.Property(36Hour.IsFetched))</visible>
+                        </control>
+                        <control type="button" id="304">
+                            <description>Weekend forcast button</description>
+                            <textwidth>352</textwidth>
+                            <include>SidePanelButton</include>
+                            <label>31080</label>
+                            <onfocus>SetProperty(Weather.CurrentView,weekend)</onfocus>
+                            <visible>!String.IsEmpty(Window.Property(Weekend.IsFetched))</visible>
+                        </control>
+                        <control type="button" id="305">
+                            <description>Hourly forcast button</description>
+                            <textwidth>352</textwidth>
+                            <include>SidePanelButton</include>
+                            <label>31079</label>
+                            <onfocus>SetProperty(Weather.CurrentView,hourly)</onfocus>
+                            <visible>!String.IsEmpty(Window.Property(Hourly.IsFetched))</visible>
+                        </control>
+                        <control type="button" id="306">
+                            <description>Hourly forcast button</description>
+                            <textwidth>352</textwidth>
+                            <include>SidePanelButton</include>
+                            <label>33035</label>
+                            <onfocus>SetProperty(Weather.CurrentView,map)</onfocus>
+                            <visible>!String.IsEmpty(Window.Property(Map.IsFetched))</visible>
+                        </control>
+                        <control type="button" id="307">
+                            <description>Alerts button</description>
+                            <textwidth>352</textwidth>
+                            <include>SidePanelButton</include>
+                            <label>33050</label>
+                            <onfocus>SetProperty(Weather.CurrentView,alerts)</onfocus>
+                            <visible>!String.IsEmpty(Window.Property(Alerts.IsFetched))</visible>
+                        </control>
+                        <control type="label" id="201">
+                            <textcolor>focused</textcolor>
+                            <width>428</width>
+                            <height>38</height>
+                            <textoffsetx>22</textoffsetx>
+                            <align>center</align>
+                            <font>bebas19</font>
+                            <label>31005</label>
+                        </control>
+                        <control type="button" id="2">
+                            <description>Refresh button</description>
+                            <textwidth>352</textwidth>
+                            <include>SidePanelButton</include>
+                            <label>103</label>
+                        </control>
+                        <control type="button" id="4">
+                            <description>Settings button</description>
+                            <label>5</label>
+                            <!-- <label2>$INFO[Weather.Plugin]</label2> -->
+                            <onclick>ActivateWindow(servicesettings,weather)</onclick>
+                            <textwidth>352</textwidth>
+                            <include>SidePanelButton</include>
+                        </control>
+                        <control type="radiobutton" id="250">
+                            <description>Fanart Toggle</description>
+                            <include>SidePanelButton</include>
+                            <label>31047</label>
+                            <onclick>Skin.ToggleSetting(ShowWeatherFanart)</onclick>
+                            <selected>!Skin.HasSetting(ShowWeatherFanart)</selected>
+                            <enable>!String.IsEmpty(Weather.Plugin)+!String.IsEmpty(Skin.String(weatherfanart.path))</enable>
+                        </control>
+                        <control type="button" id="209">
+                            <description>Select weather fanart</description>
+                            <include>SidePanelButton</include>
+                            <label>301516</label>
+                            <onclick>RunScript(script.image.resource.select,property=weatherfanart&amp;type=resource.images.weatherfanart)</onclick>
+                            <visible>System.HasAddon(script.image.resource.select)</visible>
+                        </control>
+                        <control type="button" id="211">
+                            <description>Select weather icons</description>
+                            <include>SidePanelButton</include>
+                            <label>301514</label>
+                            <onclick>RunScript(script.image.resource.select,property=weathericons&amp;type=resource.images.weathericons)</onclick>
+                            <visible>System.HasAddon(script.image.resource.select)</visible>
+                        </control>
+                    </control>
+                    <include>SidePanelNavigation</include>
+                    <control type="image">
+                        <width>akzentline_size</width>
+                        <left>SidePanelLeftWidth</left>
+                        <colordiffuse>$VAR[BackgroundOverlayColorDialog]</colordiffuse>
+                        <texture>White.png</texture>
+                        <animation effect="slide" end="-2" time="0" condition="true">Conditional</animation>
+                    </control>
+                </control>
+            </control>
+            <include>SidePanelShortcuts</include>
+            <include>Clock</include>
+            <include>NavInfo</include>
+            <include>TouchButtons</include>
+        </control>
+    </controls>
+</window>

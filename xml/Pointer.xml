@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="105">
+	<controls>
+        <control type="image" id="1">
+            <description>Pointer Image</description>
+            <left>0</left>
+            <top>0</top>
+            <width>30</width>
+            <height>30</height>
+            <texture>pointer-nofocus$VAR[pointer].png</texture>
+        </control>
+        <control type="image" id="2">
+            <description>Pointer Focus Image</description>
+            <left>0</left>
+            <top>0</top>
+            <width>30</width>
+            <height>30</height>
+            <texture>pointer-focus$VAR[pointer].png</texture>
+        </control>
+        <control type="image" id="3">
+            <description>Pointer Drag Image</description>
+            <left>0</left>
+            <top>0</top>
+            <width>30</width>
+            <height>30</height>
+            <texture>pointer-focus-drag$VAR[pointer].png</texture>
+        </control>
+        <control type="image" id="4">
+            <description>Pointer Click Image</description>
+            <left>0</left>
+            <top>0</top>
+            <width>30</width>
+            <height>30</height>
+            <texture>pointer-focus-click$VAR[pointer].png</texture>
+        </control>
+    </controls>
+</window>

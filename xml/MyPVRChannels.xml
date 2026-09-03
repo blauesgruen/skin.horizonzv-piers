@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+    <defaultcontrol always="true">777</defaultcontrol>
+	<backgroundcolor>grey3</backgroundcolor>
+    <menucontrol>9000</menucontrol>
+    <include>ViewsidPVR</include>
+    <controls>
+        <include>GlobalOverlay</include>
+        <include>FakeButton777_PVR</include>
+        <include>PVRInfoTopPanel</include>
+        <include>ViewsPVR</include>
+        <control type="group">
+            <include>SidePanelBackgroundOverlay</include>
+            <control type="group">
+                <include>SidePanelAnimation</include>
+                <include>SidePanelBackground</include>
+                <control type="grouplist" id="9000">
+                    <include>SidePanelProperty</include>
+                    <include>SidePanelContent_PVR</include>
+                </control>
+                <include>SidePanelNavigation</include>
+                <control type="image">
+                    <width>akzentline_size</width>
+                    <left>SidePanelLeftWidth</left>
+                    <colordiffuse>$VAR[BackgroundOverlayColorDialog]</colordiffuse>
+                    <texture>White.png</texture>
+                    <animation effect="slide" end="-2" time="0" condition="true">Conditional</animation>
+                </control>
+            </control>
+        </control>
+        <control type="group">
+            <left>-75</left>
+            <top>34</top>
+            <include>CommonPageCount</include>
+        </control>
+        <include>SidePanelShortcuts</include>
+        <include>Clock</include>
+        <include>NavInfo</include>
+        <include>BehindDialogFadeOut</include>
+        <include>TouchButtons</include>
+    </controls>
+</window>

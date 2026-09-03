@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <include name="NextTracksPlaylist">
+        <control type="group">
+            <control type="group">
+                <left>SpacePadding</left>
+                <right>SpacePadding</right>
+                <!-- Home -->
+                <visible>Skin.HasSetting(playlist)+Player.HasAudio</visible>
+                <visible>!Control.HasFocus(20)+!String.IsEqual(Container(9000).ListItem.Property(homemenu_id),dashboard)</visible>
+                <visible>![String.IsEqual(Container(9000).ListItem.Property(homemenu_id),pvr)+Skin.HasSetting(Widget_LiveTVHighlights)+String.Contains(Window.Property(TVHighlightsToday.Mode),splitmode)]</visible>
+                <visible>!String.IsEmpty(MusicPlayer.Offset(1).Title)</visible>
+                <visible>Window.IsActive(Home)</visible>
+                <visible>Player.HasMedia</visible>
+                <include>openclose</include>
+                <include>opencloseslideleft</include>
+                <control type="group">
+                    <right>0</right>
+                    <top>0</top>
+                    <width>818</width>
+                    <control type="image">
+                        <right>0</right>
+                        <height>100%</height>
+                        <colordiffuse>menudiffuse</colordiffuse>
+                        <aspectratio align="right">stretch</aspectratio>
+                        <texture border="2">BlackBack.png</texture>
+                        <visible>!Control.HasFocus(666)</visible>
+                    </control>
+                    <control type="image">
+                        <texture>Shadow.png</texture>
+                        <visible>Control.HasFocus(666)</visible>
+                        <include>openclosevisible</include>
+                    </control>
+                    <control type="group">
+                        <left>SpacePadding</left>
+                        <animation effect="slide" start="0" end="0,270" time="400" condition="Control.HasFocus(666)">conditional</animation>
+                        <top>75</top>
+                        <control type="image">
+                            <left>-22</left>
+                            <top>70</top>
+                            <width>20</width>
+                            <height>20</height>
+                            <texture>OverlayWatching.png</texture>
+                            <visible>Control.HasFocus(666)</visible>
+                            <visible>!String.IsEmpty(MusicPlayer.Title)+Control.HasFocus(666)</visible>
+                        </control>
+                        <control type="image">
+                            <description>Partymode Header Image</description>
+                            <top>6</top>
+                            <width>30</width>
+                            <aspectratio align="left" aligny="top">keep</aspectratio>
+                            <texture>icons/PartyMode.png</texture>
+                            <visible>MusicPartyMode.Enabled</visible>
+                        </control>
+                        <control type="label">
+                            <width>1350</width>
+                            <height>45</height>
+                            <align>left</align>
+                            <label>559</label>
+                            <font>font16</font>
+                            <textcolor>white</textcolor>
+                            <shadowcolor>black</shadowcolor>
+                            <animation effect="slide" start="0" end="40" time="400" condition="MusicPartyMode.Enabled">conditional</animation>
+                        </control>
+                        <control type="grouplist" id="555">
+                            <right>SpacePadding</right>
+                            <top>60</top>
+                            <align>left</align>
+                            <itemgap>-2</itemgap>
+                            <orientation>vertical</orientation>
+                            <include>NextTracksPlaylist_Content</include>
+                        </control>
+                    </control>
+                </control>
+            </control>
+            <control type="group"> <!-- Visualisation -->                
+                <visible>Skin.HasSetting(playlist)+Player.HasAudio</visible>
+                <visible>!Window.IsVisible(script-XBMC_Lyrics-main.xml)+!Window.IsVisible(script-cu-lrclyrics-main.xml)</visible>
+                <visible>!String.IsEmpty(MusicPlayer.Offset(1).Title)</visible>
+                <visible>Window.IsActive(visualisation)</visible>
+                <visible>Player.HasMedia</visible>
+                <include>openclose</include>
+                <include>openclosevisible</include>
+                <control type="group">
+                    <top>600r</top>
+                    <animation effect="slide" start="0,0" end="0,62" time="300" condition="![Player.ShowInfo|Window.IsActive(MusicOSD)|Player.Paused|Player.Forwarding|Player.Rewinding]+!Skin.HasSetting(vinylview)">Conditional</animation>
+                    <animation effect="slide" start="0,0" end="0,115" time="400" condition="![Player.ShowInfo|Window.IsActive(MusicOSD)|Player.Paused|Player.Forwarding|Player.Rewinding]+Skin.HasSetting(vinylview)">Conditional</animation>
+                    <animation effect="slide" start="0,0" end="0,70" time="300" condition="Window.IsVisible(Visualisation)+!Skin.HasSetting(vinylview)">Conditional</animation>
+                    <animation effect="slide" start="0,0" end="0,25" time="300" condition="Window.IsVisible(Visualisation)+Skin.HasSetting(vinylview)">Conditional</animation>
+                    <control type="group">
+                        <include>opencloseslideup</include>
+                        <visible>Player.ShowInfo|Window.IsActive(MusicOSD)|Player.Paused|Player.Forwarding|Player.Rewinding</visible>
+                        <control type="image">
+                            <width>100%</width>
+                            <height>15</height>
+                            <colordiffuse>fanartdiffuse</colordiffuse>
+                            <texture>Shadow.png</texture>
+                        </control>
+                        <control type="image">
+                            <top>15</top>
+                            <width>100%</width>
+                            <height>660</height>
+                            <colordiffuse>fanartdiffuse</colordiffuse>
+                            <texture>BlackBack.png</texture>
+                        </control>
+                        <control type="image">
+                            <top>15</top>
+                            <width>100%</width>
+                            <height>3</height>
+                            <colordiffuse>menudiffuse</colordiffuse>
+                            <texture border="1">Separator1.png</texture>
+                        </control>
+                    </control>
+                    <control type="group">
+                        <right>0</right>
+                        <top>40</top>
+                        <width>40%</width>
+                        <control type="group">
+                            <right>SpacePadding</right>
+                            <height>385</height>
+                            <!-- <visible>![Player.ShowInfo|Window.IsActive(MusicOSD)|Player.Paused|Player.Forwarding|Player.Rewinding]</visible>
+							<include>openclosevisible</include> -->
+                            <control type="image">
+                                <!-- <visible>!Skin.HasSetting(background_dim_2)+!Skin.HasSetting(background_dim_3)</visible> -->
+                                <top>1</top>
+                                <bottom>1</bottom>
+                                <texture border="6" diffuse="masks/mask_round.png">BlackBack.png</texture>
+                                <visible>![Player.ShowInfo | Window.IsActive(MusicOSD)|Player.Paused|Player.Forwarding|Player.Rewinding]</visible>
+                            </control>
+                            <control type="image">
+                                <colordiffuse>fanartdiffuse</colordiffuse>
+                                <texture border="6">masks/Default_round.png</texture>
+                                <visible>![Player.ShowInfo | Window.IsActive(MusicOSD)|Player.Paused|Player.Forwarding|Player.Rewinding]</visible>
+                                <include>openclosevisible</include>
+                            </control>
+                        </control>
+                        <control type="group">
+                            <left>10</left>
+                            <right>SpacePadding</right>
+                            <top>6</top>
+                            <width>93%</width>
+                            <control type="label">
+                                <top>0</top>
+                                <height>45</height>
+                                <align>left</align>
+                                <label>559</label>
+                                <font>font12</font>
+                                <textcolor>white</textcolor>
+                                <shadowcolor>black</shadowcolor>
+                            </control>
+                            <control type="grouplist" id="555">
+                                <right>SpacePadding</right>
+                                <top>60</top>
+                                <align>left</align>
+                                <itemgap>-2</itemgap>
+                                <orientation>vertical</orientation>
+                                <include>NextTracksPlaylist_Content</include>
+                            </control>
+                            <control type="group">
+                                <top>8</top>
+                                <right>0</right>
+                                <width>30</width>
+                                <height>30</height>
+                                <control type="image">
+                                    <description>Partymode Header label</description>
+                                    <texture>icons/PartyMode.png</texture>
+                                    <visible>MusicPartyMode.Enabled</visible>
+                                </control>
+                            </control>
+                        </control>
+                    </control>
+                </control>
+            </control>
+        </control>
+    </include>
+    <include name="NextTracksPlaylist_Content">
+        <control type="label" id="0">
+            <height>36</height>
+            <align>left</align>
+            <label>[CAPITALIZE]$INFO[MusicPlayer.Artist] - [B]$INFO[MusicPlayer.Title][/CAPITALIZE][/B]</label>
+            <font>font12</font>
+            <textcolor>description</textcolor>
+            <shadowcolor>black</shadowcolor>
+            <visible>!String.IsEmpty(MusicPlayer.Title)+Control.HasFocus(666)+Window.IsVisible(Home)</visible>
+        </control>
+        <control type="label" id="1">
+            <height>36</height>
+            <align>left</align>
+            <label>[CAPITALIZE]$INFO[MusicPlayer.Offset(1).Artist] - [B]$INFO[MusicPlayer.Offset(1).Title][/CAPITALIZE][/B]</label>
+            <font>font12</font>
+            <textcolor>white</textcolor>
+            <shadowcolor>black</shadowcolor>
+            <visible>!String.IsEmpty(MusicPlayer.Offset(1).Title)</visible>
+        </control>
+        <control type="label">
+            <height>36</height>
+            <align>left</align>
+            <label>[CAPITALIZE]$INFO[MusicPlayer.Offset(2).Artist] - [B]$INFO[MusicPlayer.Offset(2).Title][/CAPITALIZE][/B]</label>
+            <font>font12</font>
+            <textcolor>white</textcolor>
+            <shadowcolor>black</shadowcolor>
+            <visible>!String.IsEmpty(MusicPlayer.Offset(2).Title)</visible>
+        </control>
+        <control type="label">
+            <height>36</height>
+            <align>left</align>
+            <label>[CAPITALIZE]$INFO[MusicPlayer.Offset(3).Artist] - [B]$INFO[MusicPlayer.Offset(3).Title][/CAPITALIZE][/B]</label>
+            <font>font12</font>
+            <textcolor>white</textcolor>
+            <shadowcolor>black</shadowcolor>
+            <visible>!String.IsEmpty(MusicPlayer.Offset(3).Title)</visible>
+        </control>
+        <control type="label">
+            <height>36</height>
+            <align>left</align>
+            <label>[CAPITALIZE]$INFO[MusicPlayer.Offset(4).Artist] - [B]$INFO[MusicPlayer.Offset(4).Title][/CAPITALIZE][/B]</label>
+            <font>font12</font>
+            <textcolor>white</textcolor>
+            <shadowcolor>black</shadowcolor>
+            <visible>!String.IsEmpty(MusicPlayer.Offset(4).Title)</visible>
+        </control>
+        <control type="label">
+            <height>36</height>
+            <align>left</align>
+            <label>[CAPITALIZE]$INFO[MusicPlayer.Offset(5).Artist] - [B]$INFO[MusicPlayer.Offset(5).Title][/CAPITALIZE][/B]</label>
+            <font>font12</font>
+            <textcolor>white</textcolor>
+            <shadowcolor>black</shadowcolor>
+            <visible>!String.IsEmpty(MusicPlayer.Offset(5).Title)</visible>
+        </control>
+        <control type="label">
+            <height>36</height>
+            <align>left</align>
+            <label>[CAPITALIZE]$INFO[MusicPlayer.Offset(6).Artist] - [B]$INFO[MusicPlayer.Offset(6).Title][/CAPITALIZE][/B]</label>
+            <font>font12</font>
+            <textcolor>white</textcolor>
+            <shadowcolor>black</shadowcolor>
+            <visible>!String.IsEmpty(MusicPlayer.Offset(6).Title)</visible>
+        </control>
+        <control type="label">
+            <height>36</height>
+            <align>left</align>
+            <label>[CAPITALIZE]$INFO[MusicPlayer.Offset(7).Artist] - [B]$INFO[MusicPlayer.Offset(7).Title][/CAPITALIZE][/B]</label>
+            <font>font12</font>
+            <textcolor>white</textcolor>
+            <shadowcolor>black</shadowcolor>
+            <visible>!String.IsEmpty(MusicPlayer.Offset(7).Title)</visible>
+        </control>
+        <control type="label">
+            <height>36</height>
+            <align>left</align>
+            <label>[CAPITALIZE]$INFO[MusicPlayer.Offset(8).Artist] - [B]$INFO[MusicPlayer.Offset(8).Title][/CAPITALIZE][/B]</label>
+            <font>font12</font>
+            <textcolor>white</textcolor>
+            <shadowcolor>black</shadowcolor>
+            <visible>!String.IsEmpty(MusicPlayer.Offset(8).Title)</visible>
+        </control>
+        <control type="label">
+            <height>36</height>
+            <align>left</align>
+            <label>[CAPITALIZE]$INFO[MusicPlayer.Offset(9).Artist] - [B]$INFO[MusicPlayer.Offset(9).Title][/CAPITALIZE][/B]</label>
+            <font>font12</font>
+            <textcolor>white</textcolor>
+            <shadowcolor>black</shadowcolor>
+            <visible>!String.IsEmpty(MusicPlayer.Offset(9).Title)</visible>
+        </control>
+    </include>
+</includes>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="1151" type="dialog">
+    <defaultcontrol always="true">36110</defaultcontrol>
+	<backgroundcolor>grey3</backgroundcolor>
+    <onunload>ClearProperty(HomeButton)</onunload>
+    <controls>
+        <control type="group" id="576757">
+            <include>openclosebox</include>
+			<include content="DefaultPopupLayout">
+				<param name="PopupHeaderTitle" value="WOL" />
+				<param name="PopupIcon" value="Design-Earthicon.png" />
+				<param name="PopupTitle"/>
+			</include>
+            <control type="list" id="36110">
+                <left>50</left>
+                <top>160</top>
+                <width>1110</width>
+                <height>100%</height>
+				<orientation>vertical</orientation>
+				<itemlayout height="55" width="1110">
+					<control type="image">
+						<left>50r</left>
+						<width>30</width>
+						<aspectratio align="right">keep</aspectratio>
+						<!-- <colordiffuse>green</colordiffuse> -->
+						<texture>OverlayWatched.png</texture>
+						<visible>String.IsEqual(ListItem.Label2,on)</visible>
+					</control>
+					<control type="label">
+						<left>20</left>
+						<right>20</right>
+						<height>55</height>
+						<label>$INFO[ListItem.Property(number)]$INFO[ListItem.Label]</label>
+					</control>
+				</itemlayout>
+				<focusedlayout height="55" width="1110">
+					<control type="image">
+						<include>DialogButtonTextureFocus</include>
+					</control>
+					<control type="image">
+						<left>50r</left>
+						<width>30</width>
+						<aspectratio align="right">keep</aspectratio>
+						<colordiffuse>grey3</colordiffuse>
+						<texture>OverlayWatched.png</texture>
+						<visible>String.IsEqual(ListItem.Label2,on)</visible>
+					</control>
+					<control type="label">
+						<left>20</left>
+						<right>20</right>
+						<height>55</height>
+						<textcolor>grey3</textcolor>
+						<label>$INFO[ListItem.Property(number)]$INFO[ListItem.Label]</label>
+					</control>
+				</focusedlayout>
+				<content>
+					<item id="1">
+						<description>WOL Button 1</description>
+						<property name="number">1. </property>
+						<property name="name">$INFO[Window(Home).Property(SkinHelperPING.servername1)]</property>
+						<property name="ip">$INFO[Window(Home).Property(SkinHelperPING.ip1)]</property>
+						<property name="mac">$INFO[Window(Home).Property(SkinHelperPING.mac1)]</property>
+						<label>$INFO[Window(Home).Property(SkinHelperPING.servername1)]</label>
+						<label2>$INFO[Window(Home).Property(SkinHelperPING.server1)]</label2>
+						<onclick condition="!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac1))">RunScript(script.skinhelper.ping,wol1)</onclick>
+						<onclick>Notification($INFO[Window(Home).Property(SkinHelperPING.servername1)],$LOCALIZE[301582],3000)</onclick>
+					</item>
+					<item id="2">
+						<description>WOL Button 2</description>
+						<property name="number">2. </property>
+						<property name="name">$INFO[Window(Home).Property(SkinHelperPING.servername2)]</property>
+						<property name="ip">$INFO[Window(Home).Property(SkinHelperPING.ip2)]</property>
+						<property name="mac">$INFO[Window(Home).Property(SkinHelperPING.mac2)]</property>
+						<label>$INFO[Window(Home).Property(SkinHelperPING.servername2)]</label>
+						<label2>$INFO[Window(Home).Property(SkinHelperPING.server2)]</label2>
+						<onclick condition="!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac2))">RunScript(script.skinhelper.ping,wol2)</onclick>
+						<onclick>Notification($INFO[Window(Home).Property(SkinHelperPING.servername2)],$LOCALIZE[301582],3000)</onclick>
+					</item>
+					<item id="3">
+						<description>WOL Button 3</description>
+						<property name="number">3. </property>
+						<property name="name">$INFO[Window(Home).Property(SkinHelperPING.servername3)]</property>
+						<property name="ip">$INFO[Window(Home).Property(SkinHelperPING.ip3)]</property>
+						<property name="mac">$INFO[Window(Home).Property(SkinHelperPING.mac3)]</property>
+						<label>$INFO[Window(Home).Property(SkinHelperPING.servername3)]</label>
+						<label2>$INFO[Window(Home).Property(SkinHelperPING.server3)]</label2>
+						<onclick condition="!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac3))">RunScript(script.skinhelper.ping,wol3)</onclick>
+						<onclick>Notification($INFO[Window(Home).Property(SkinHelperPING.servername3)],$LOCALIZE[301582],3000)</onclick>
+					</item>
+					<item id="4">
+						<description>WOL Button 4</description>
+						<property name="number">4. </property>
+						<property name="name">$INFO[Window(Home).Property(SkinHelperPING.servername4)]</property>
+						<property name="ip">$INFO[Window(Home).Property(SkinHelperPING.ip4)]</property>
+						<property name="mac">$INFO[Window(Home).Property(SkinHelperPING.mac4)]</property>
+						<label>$INFO[Window(Home).Property(SkinHelperPING.servername4)]</label>
+						<label2>$INFO[Window(Home).Property(SkinHelperPING.server4)]</label2>
+						<onclick condition="!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac4))">RunScript(script.skinhelper.ping,wol4)</onclick>
+						<onclick>Notification($INFO[Window(Home).Property(SkinHelperPING.servername4)],$LOCALIZE[301582],3000)</onclick>
+					</item>
+					<item id="5">
+						<description>WOL Button 5</description>
+						<property name="number">5. </property>
+						<property name="name">$INFO[Window(Home).Property(SkinHelperPING.servername5)]</property>
+						<property name="ip">$INFO[Window(Home).Property(SkinHelperPING.ip5)]</property>
+						<property name="mac">$INFO[Window(Home).Property(SkinHelperPING.mac5)]</property>
+						<label>$INFO[Window(Home).Property(SkinHelperPING.servername5)]</label>
+						<label2>$INFO[Window(Home).Property(SkinHelperPING.server5)]</label2>
+						<onclick condition="!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac5))">RunScript(script.skinhelper.ping,wol5)</onclick>
+						<onclick>Notification($INFO[Window(Home).Property(SkinHelperPING.servername5)],$LOCALIZE[301582],3000)</onclick>
+					</item>
+					<item id="6">
+						<description>WOL Button All</description>
+						<label>Alle starten $INFO[Window(Home).Property(SkinHelperPING.servercount),(,)]</label>
+						<onclick condition="!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac1))">RunScript(script.skinhelper.ping,wol1)</onclick>
+						<onclick condition="!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac2))">RunScript(script.skinhelper.ping,wol2)</onclick>
+						<onclick condition="!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac3))">RunScript(script.skinhelper.ping,wol3)</onclick>
+						<onclick condition="!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac4))">RunScript(script.skinhelper.ping,wol4)</onclick>
+						<onclick condition="!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac5))">RunScript(script.skinhelper.ping,wol5)</onclick>
+						<onclick>Notification(- $INFO[Window(Home).Property(SkinHelperPING.servername1),, - ]$INFO[Window(Home).Property(SkinHelperPING.servername2),, - ]$INFO[Window(Home).Property(SkinHelperPING.servername3),, - ]$INFO[Window(Home).Property(SkinHelperPING.servername4),, - ]$INFO[Window(Home).Property(SkinHelperPING.servername5)],$LOCALIZE[301582],6000)</onclick>
+						<visible>Integer.IsGreater(Window(Home).Property(SkinHelperPING.servercount),1)</visible>
+					</item>
+					<item id="7">
+						<description>Settings Button</description>
+						<label>5</label>
+						<onclick>Addon.OpenSettings(script.skinhelper.ping)</onclick>
+					</item>
+					<item id="8">
+						<description>Refresh Button</description>
+						<label>aktualisieren</label>
+						<onclick>RunScript(script.skinhelper.ping,status)</onclick>
+					</item>
+				</content>
+            </control>
+			<control type="image">
+				<left>50</left>
+				<right>50</right>
+				<top>620</top>
+				<height>2</height>
+				<texture>Separator1.png</texture>
+			</control>
+			<control type="grouplist">
+				<left>50</left>
+				<right>50</right>
+				<top>640</top>
+				<height>300</height>
+				<itemgap>10</itemgap>
+				<control type="label">
+					<height>40</height>
+					<textcolor>grey3</textcolor>
+					<label>$INFO[Container(36110).ListItem.Property(name),Name: ,]</label>
+				</control>
+				<control type="label">
+					<height>40</height>
+					<textcolor>grey3</textcolor>
+					<label>$INFO[Container(36110).ListItem.Property(ip),IP: ,]</label>
+				</control>
+				<control type="label">
+					<height>40</height>
+					<textcolor>grey3</textcolor>
+					<label>$INFO[Container(36110).ListItem.Property(mac),MAC: ,]</label>
+				</control>
+			</control>
+        </control>
+    </controls>
+</window>

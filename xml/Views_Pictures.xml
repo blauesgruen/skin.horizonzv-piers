@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <include name="View_510_WrapViewPicture">
+		<param name="viewid">510</param>
+			<definition>
+			<control type="group">
+				<include>openclose</include>
+				<visible>Control.IsVisible($PARAM[viewid])</visible>
+				<control type="group">
+					<include>openclosevisible</include>
+					<visible>Control.IsVisible($PARAM[viewid])+!Control.HasFocus(666)</visible>
+					<include>MirrorPanel</include>
+					<control type="group">
+						<bottom>20</bottom>
+						<height>375</height>
+						<include>opencloseslideup</include>
+						<visible>Control.IsVisible($PARAM[viewid])+!Control.HasFocus(666)</visible>
+						<control type="wraplist" id="$PARAM[viewid]">
+							<!-- <left>-5</left>
+							<width>1930</width> -->
+							<onleft>$PARAM[viewid]</onleft>
+							<onright>$PARAM[viewid]</onright>
+							<onup>9000</onup>
+							<ondown condition="Control.IsVisible($PARAM[viewid]1)">$PARAM[viewid]1</ondown>
+							<ondown condition="!Control.IsVisible($PARAM[viewid]1)+Control.IsVisible(17000)">17000</ondown>
+							<ondown condition="!Control.IsVisible($PARAM[viewid]1)+!Control.IsVisible(17000)">732</ondown>
+							<viewtype label="31014">wrap</viewtype>
+							<pagecontrol>$PARAM[viewid]1</pagecontrol>
+							<scrolltime>200</scrolltime>
+							<focusposition>3</focusposition>
+							<orientation>horizontal</orientation>
+							<preloaditems>PreloadItems</preloaditems>
+							<visible>Window.IsVisible(Pictures)</visible>
+							<itemlayout height="auto" width="280">
+								<control type="group">
+									<top>40</top>
+									<control type="image">
+										<left>10</left>
+										<width>260</width>
+										<height>240</height>
+										<aspectratio>scale</aspectratio>
+										<bordertexture border="10">ThumbShadow.png</bordertexture>
+										<bordersize>6</bordersize>
+										<texture border="4">Black.png</texture>
+									</control>
+									<control type="image">
+										<top>235</top>
+										<left>16</left>
+										<width>248</width>
+										<height>40</height>
+										<aspectratio>scale</aspectratio>
+										<texture flipy="true">Shadow.png</texture>
+									</control>
+									<control type="label">
+										<left>10</left>
+										<top>240</top>
+										<width>260</width>
+										<height>60</height>
+										<font>ubuntu-r16b</font>
+										<textcolor>grey</textcolor>
+										<align>center</align>
+										<label>$INFO[ListItem.Label]</label>
+									</control>
+									<control type="image">
+										<left>20</left>
+										<top>10</top>
+										<width>240</width>
+										<height>220</height>
+										<colordiffuse>grey</colordiffuse>
+										<aspectratio>keep</aspectratio>
+										<texture>$INFO[ListItem.Icon]</texture>
+									</control>
+								</control>
+							</itemlayout>
+							<focusedlayout height="auto" width="300">
+								<control type="group">
+									<animation effect="zoom" center="auto" start="90" end="100" time="300" delay="100" tween="quadratic" reversible="false" condition="Skin.HasSetting(animation)+Control.HasFocus($PARAM[viewid])">Focus</animation>
+									<animation effect="zoom" center="auto" start="100" end="90" time="100" tween="quadratic" reversible="false" condition="Skin.HasSetting(animation)+Control.HasFocus($PARAM[viewid])">Unfocus</animation>
+									<control type="image">
+										<left>10</left>
+										<width>280</width>
+										<height>280</height>
+										<aspectratio>scale</aspectratio>
+										<bordertexture border="10">ThumbShadowWhite.png</bordertexture>
+										<bordersize>6</bordersize>
+										<texture border="4">Black.png</texture>
+									</control>
+									<control type="image">
+										<left>20</left>
+										<top>10</top>
+										<width>260</width>
+										<height>260</height>
+										<aspectratio align="center" aligny="center">keep</aspectratio>
+										<texture>$INFO[ListItem.Icon]</texture>
+									</control>
+								</control>
+							</focusedlayout>
+						</control>
+					</control>
+					<control type="group">
+						<include content="DefaultScrollbar_horizontal">
+							<param name="bottom" value="10" />
+							<param name="id" value="$PARAM[viewid]1" />
+							<param name="onup" value="$PARAM[viewid]" />
+							<param name="ondown1" value="17000" />
+							<param name="ondown1_condi" value="Control.IsVisible(17000)" />
+							<param name="ondown2" value="732" />
+							<param name="ondown2_condi" value="!Control.IsVisible(17000)" />
+						</include>
+					</control>
+					<control type="group">
+						<right>15</right>
+						<width>750</width>
+						<top>615</top>
+						<include>openclose</include>
+						<include>openclosevisible</include>
+						<visible>Skin.HasSetting(CommonPageCount)</visible>
+						<control type="label">
+							<description>Page Count Label</description>
+							<height>30</height>
+							<font>font16</font>
+							<textcolor>grey</textcolor>
+							<scroll>false</scroll>
+							<align>right</align>
+							<aligny>center</aligny>
+							<label>$INFO[Container.TotalTime,$LOCALIZE[31003] ([COLOR=white],[/COLOR]) • ]$INFO[Container.NumItems,([COLOR=white],[/COLOR]) $LOCALIZE[31009]]$INFO[Container.CurrentPage, - $LOCALIZE[31008] ([COLOR=white]]$INFO[Container.NumPages,/,[/COLOR])]</label>
+						</control>
+					</control>
+					<control type="group">
+						<top>96</top>
+						<height>513</height>
+						<include>opencloseslidedown</include>
+						<control type="image">
+							<texture>BlackBack.png</texture>
+						</control>
+						<control type="image">
+							<height>akzentline_size</height>
+							<colordiffuse>$VAR[BackgroundOverlayColorDialog]</colordiffuse>
+							<texture>White.png</texture>
+						</control>
+						<control type="image">
+							<top>100%</top>
+							<height>akzentline_size</height>
+							<colordiffuse>$VAR[BackgroundOverlayColorDialog]</colordiffuse>
+							<texture>White.png</texture>
+						</control>
+						<control type="group">
+							<left>30</left>
+							<right>30</right>
+							<top>30</top>
+							<bottom>90</bottom>
+							<control type="image">
+								<aspectratio>keep</aspectratio>
+								<texture>$INFO[ListItem.FilenameandPath]</texture>
+							</control>
+						</control>
+						<control type="group">
+							<bottom>10</bottom>
+							<height>60</height>
+							<control type="label">
+								<left>30</left>
+								<width>80%</width>
+								<font>impacted44</font>
+								<label>$INFO[ListItem.Label]</label>
+							</control>
+							<control type="group">
+								<right>30</right>
+								<width>20%</width>
+								<control type="label">
+									<width>100%</width>
+									<font>impacted44</font>
+									<align>right</align>
+									<label>$INFO[ListItem.Label2]</label>
+								</control>
+							</control>
+						</control>
+					</control>
+				</control>
+				<include content="AlphaBarH" condition="!Skin.HasSetting(HideJumpSMSBar)"><param name="id" value="$PARAM[viewid]"/></include>
+				<control type="button" id="777">
+					<include>HiddenButton</include>
+					<onfocus>Control.SetFocus($PARAM[viewid])</onfocus>
+				</control>
+			</control>
+		</definition>
+    </include>
+    <include name="View_514_ThumbViewPicture">
+		<param name="viewid">514</param>
+			<definition>
+			<control type="group">
+				<include>openclose</include>
+				<visible>Control.IsVisible($PARAM[viewid])</visible>
+				<control type="group">
+					<include>openclosevisible</include>
+					<visible>Control.IsVisible($PARAM[viewid])</visible>
+					<control type="group">
+						<control type="group">
+							<include>opencloseslideright</include>
+							<left>SpacePadding</left>
+							<top>SpacePaddingLarge</top>
+							<bottom>SpacePadding</bottom>
+							<width>53%</width>
+							<control type="panel" id="$PARAM[viewid]">
+								<onleft>9000</onleft>
+								<onright condition="Control.IsVisible($PARAM[viewid]1)">$PARAM[viewid]1</onright>
+								<onright condition="!Control.IsVisible($PARAM[viewid]1)+Control.IsVisible(15000)">15000</onright>
+								<onright condition="!Control.IsVisible($PARAM[viewid]1)+!Control.IsVisible(15000)">732</onright>
+								<onup>$PARAM[viewid]</onup>
+								<ondown>$PARAM[viewid]</ondown>
+								<viewtype label="$LOCALIZE[31013]">list</viewtype>
+								<pagecontrol>$PARAM[viewid]1</pagecontrol>
+								<scrolltime>200</scrolltime>
+								<preloaditems>PreloadItems</preloaditems>
+								<visible>Window.IsVisible(Pictures)</visible>
+								<visible>!String.StartsWith(Container.FolderPath,plugin://)+!Container.Content(Addons)</visible>
+								<itemlayout height="216" width="216">
+									<control type="image">
+										<aspectratio>scale</aspectratio>
+										<texture border="4">special://skin/backgrounds/media-overlay.jpg</texture>
+										<bordertexture border="10">ThumbShadow.png</bordertexture>
+										<bordersize>8</bordersize>
+									</control>
+									<control type="image">
+										<left>15</left>
+										<right>15</right>
+										<top>15</top>
+										<bottom>15</bottom>
+										<colordiffuse>grey</colordiffuse>
+										<aspectratio>keep</aspectratio>
+										<texture>$INFO[ListItem.Icon]</texture>
+									</control>
+								</itemlayout>
+								<focusedlayout height="216" width="216">
+									<control type="image">
+										<aspectratio>scale</aspectratio>
+										<texture border="4" colordiffuse="grey2">White.png</texture>
+										<bordertexture border="10">ThumbShadowWhite.png</bordertexture>
+										<bordersize>8</bordersize>
+									</control>
+									<control type="image">
+										<left>15</left>
+										<right>15</right>
+										<top>15</top>
+										<bottom>15</bottom>
+										<aspectratio>keep</aspectratio>
+										<texture>$INFO[ListItem.Icon]</texture>
+									</control>
+								</focusedlayout>
+							</control>
+							<include content="DefaultScrollbar">
+								<param name="id" value="$PARAM[viewid]1" />
+								<param name="left" value="0" />
+								<param name="top" value="0" />
+								<param name="height" value="100%" />
+								<param name="onleft" value="$PARAM[viewid]" />
+							</include>
+						</control>
+						<control type="group">
+							<include>opencloseslideleft</include>
+							<right>SpacePadding</right>
+							<width>43%</width>
+							<control type="image">
+								<texture>BlackBack.png</texture>
+							</control>
+							<control type="image">
+								<left>100%</left>
+								<width>akzentline_size</width>
+								<colordiffuse>$VAR[BackgroundOverlayColorDialog]</colordiffuse>
+								<texture>White.png</texture>
+							</control>
+							<control type="image">
+								<width>akzentline_size</width>
+								<colordiffuse>$VAR[BackgroundOverlayColorDialog]</colordiffuse>
+								<texture>White.png</texture>
+							</control>
+							<control type="group">
+								<left>SpacePadding</left>
+								<right>SpacePadding</right>
+								<top>SpacePaddingXL</top>
+								<bottom>SpacePaddingLarge</bottom>
+								<control type="label">
+									<description>Title txt</description>
+									<height>22</height>
+									<label>$INFO[ListItem.Label]</label>
+									<align>center</align>
+									<aligny>center</aligny>
+									<font>impacted24</font>
+									<textcolor>grey</textcolor>
+									<shadowcolor>black</shadowcolor>
+								</control>
+								<control type="image">
+									<top>60</top>
+									<height>430</height>
+									<aspectratio aligny="top">keep</aspectratio>
+									<texture>$INFO[ListItem.FilenameandPath]</texture>
+								</control>
+								<include content="Infolabel_Picture">
+									<param name="left" value="0" />
+									<param name="top" value="520" />
+									<param name="width">100%</param>
+								</include>
+							</control>
+						</control>
+						<control type="group">
+							<right>15</right>
+							<top>22</top>
+							<include>CommonPageCount</include>
+						</control>
+					</control>
+					<include>cs_rightpanel</include>
+				</control>
+				<include content="AlphaBarH" condition="!Skin.HasSetting(HideJumpSMSBar)"><param name="id" value="$PARAM[viewid]"/></include>
+				<control type="button" id="777">
+					<include>HiddenButton</include>
+					<onfocus>Control.SetFocus($PARAM[viewid])</onfocus>
+				</control>
+			</control>
+		</definition>
+    </include>
+    <include name="View_516_WallViewPicture">
+		<param name="viewid">516</param>
+			<definition>
+			<control type="group">
+				<include>openclose</include>
+				<visible>Control.IsVisible($PARAM[viewid])</visible>
+				<control type="group">
+					<include>openclosevisible</include>
+					<visible>Control.IsVisible($PARAM[viewid])</visible>
+					<include>WhiteGrunge</include>
+					<control type="group">
+						<control type="group">
+							<include>opencloseslidedown</include>
+							<left>30</left>
+							<right>30</right>
+							<top>SpacePaddingXL</top>
+							<bottom>SpacePaddingXL</bottom>
+							<control type="panel" id="$PARAM[viewid]">
+								<left>15</left>
+								<right>15</right>
+								<top>15</top>
+								<bottom>15</bottom>
+								<onleft>9000</onleft>
+								<onright condition="Control.IsVisible($PARAM[viewid]1)">$PARAM[viewid]1</onright>
+								<onright condition="!Control.IsVisible($PARAM[viewid]1)+Control.IsVisible(15000)">15000</onright>
+								<onright condition="!Control.IsVisible($PARAM[viewid]1)+!Control.IsVisible(15000)">732</onright>
+								<onup>$PARAM[viewid]</onup>
+								<ondown>$PARAM[viewid]</ondown>
+								<viewtype label="$LOCALIZE[31013]">list</viewtype>
+								<pagecontrol>$PARAM[viewid]1</pagecontrol>
+								<scrolltime>200</scrolltime>
+								<preloaditems>PreloadItems</preloaditems>
+								<visible>Window.IsVisible(Pictures)</visible>
+								<visible>!String.StartsWith(Container.FolderPath,plugin://)+!Container.Content(Addons)</visible>
+								<itemlayout height="216" width="216">
+									<control type="image">
+									
+										<aspectratio>scale</aspectratio>
+										<texture border="4">special://skin/backgrounds/media-overlay.jpg</texture>
+										<bordertexture border="10">ThumbShadow.png</bordertexture>
+										<bordersize>8</bordersize>
+									</control>
+									<control type="image">
+										<left>15</left>
+										<right>15</right>
+										<top>15</top>
+										<bottom>15</bottom>
+										<colordiffuse>grey</colordiffuse>
+										<aspectratio>keep</aspectratio>
+										<texture>$INFO[ListItem.Icon]</texture>
+									</control>
+								</itemlayout>
+								<focusedlayout height="216" width="216">
+									<control type="image">
+										<aspectratio>scale</aspectratio>
+										<texture border="4" colordiffuse="grey2">White.png</texture>
+										<bordertexture border="10">ThumbShadowWhite.png</bordertexture>
+										<bordersize>8</bordersize>
+									</control>
+									<control type="image">
+										<left>15</left>
+										<right>15</right>
+										<top>15</top>
+										<bottom>15</bottom>
+										<aspectratio>keep</aspectratio>
+										<texture>$INFO[ListItem.Icon]</texture>
+									</control>
+								</focusedlayout>
+							</control>
+							<include content="DefaultScrollbar">
+								<param name="id" value="$PARAM[viewid]1" />
+								<param name="left" value="15r" />
+								<param name="top" value="0" />
+								<param name="height" value="100%" />
+								<param name="onleft" value="$PARAM[viewid]" />
+							</include>
+						</control>
+						<include content="MirrorPanel">
+							<param name="top" value="70r" />
+						</include>
+						<control type="group">
+							<include>opencloseslideup</include>
+							<control type="label">
+								<description>Title txt</description>
+								<left>45</left>
+								<top>1020</top>
+								<width>1000</width>
+								<height>45</height>
+								<label>$INFO[ListItem.FileName]</label>
+								<align>left</align>
+								<aligny>center</aligny>
+								<font>impacted24</font>
+								<textcolor>white</textcolor>
+							</control>
+						</control>
+					</control>
+					<include content="CommonPageCount">
+						<param name="bottom" value="15" />
+					</include>
+				</control>
+				<include content="AlphaBarV" condition="!Skin.HasSetting(HideJumpSMSBar)"><param name="id" value="$PARAM[viewid]"/></include>
+				<control type="button" id="777">
+					<include>HiddenButton</include>
+					<onfocus>Control.SetFocus($PARAM[viewid])</onfocus>
+				</control>
+			</control>
+		</definition>
+    </include>
+</includes>

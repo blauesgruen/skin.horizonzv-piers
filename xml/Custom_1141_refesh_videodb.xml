@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="1141">
+    <defaultcontrol always="true">11</defaultcontrol>
+    <include>openclose</include>
+    <include>opencloseslidedown</include>
+    <controls>
+        <include>DialogLayout</include>
+        <control type="group">
+            <width>100%</width>
+            <control type="label">
+                <description>Heading</description>
+                <left>SpacePadding</left>
+                <right>SpacePadding</right>
+                <top>9</top>
+                <label>$LOCALIZE[20314]</label>
+                <height>30</height>
+                <font>impacted24</font>
+                <shadowcolor>black</shadowcolor>
+                <textcolor>grey</textcolor>
+                <align>center</align>
+            </control>
+            <control type="group">
+                <top>126</top>
+                <control type="label" id="1">
+                    <description>dialog line</description>
+                    <left>SpacePadding</left>
+                    <right>SpacePadding</right>
+                    <label>$LOCALIZE[22080] ...</label>
+                    <height>30</height>
+                    <align>center</align>
+                    <font>impacted18</font>
+                </control>
+				<control type="grouplist" id="9">
+                    <top>100</top>
+					<height>50</height>
+					<align>center</align>
+					<itemgap>dialogbuttons_itemgap</itemgap>
+					<orientation>horizontal</orientation>
+					<include content="DefaultDialogButton">
+						<param name="id" value="10" />
+						<param name="width" value="330" />
+						<param name="label" value="$LOCALIZE[653]" />
+						<param name="onclick" value="Dialog.Close(1141,true)" />
+						<param name="onclick2" value="UpdateLibrary(video)" />
+						<param name="nofocus" />
+					</include>
+					<include content="DefaultDialogButton">
+						<param name="id" value="11" />
+						<param name="width" value="330" />
+						<param name="label" value="$LOCALIZE[10212]" />
+						<param name="onclick" value="Dialog.Close(1141,true)" />
+						<param name="nofocus" />
+					</include>
+					<include content="DefaultDialogButton">
+						<param name="id" value="12" />
+						<param name="width" value="330" />
+						<param name="label" value="$LOCALIZE[313]" />
+						<param name="onclick" value="Dialog.Close(1141,true)" />
+						<param name="onclick2" value="CleanLibrary(video)" />
+						<param name="nofocus" />
+					</include>
+                </control>
+            </control>
+        </control>
+    </controls>
+</window>

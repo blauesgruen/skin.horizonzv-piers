@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="1101" type="dialog">
+    <defaultcontrol always="true">1101</defaultcontrol>
+    <onunload>ClearProperty(HomeButton)</onunload>
+    <controls>
+        <include>BlackBack</include>
+        <control type="group" id="576757">
+            <include>openclosebox</include>
+            <centerleft>50%</centerleft>
+            <centertop>50%</centertop>
+            <width>1215</width>
+            <height>350</height>
+            <control type="image">
+                <description>background image</description>
+                <colordiffuse>grey1</colordiffuse>
+                <texture border="1">WhiteBack.png</texture>
+            </control>
+            <control type="image">
+                <description>background image</description>
+                <left>15</left>
+                <right>15</right>
+                <top>15</top>
+                <bottom>15</bottom>
+                <texture border="1">WhiteBack.png</texture>
+            </control>
+            <control type="label">
+                <description>header label</description>
+                <centerleft>50%</centerleft>
+                <top>22</top>
+                <width>1185</width>
+                <height>45</height>
+                <font>impacted21</font>
+                <label>Artist Infos</label>
+                <align>center</align>
+                <aligny>center</aligny>
+                <textcolor>grey2</textcolor>
+            </control>
+            <control type="grouplist">
+                <right>15</right>
+                <bottom>15</bottom>
+                <width>330</width>
+                <height>330</height>
+                <control type="image">
+                    <description>background image</description>
+                    <width>450</width>
+                    <height>450</height>
+                    <aspectratio align="left">keep</aspectratio>
+                    <colordiffuse>grey1</colordiffuse>
+                    <texture border="1">Design-Scripticon.png</texture>
+                </control>
+            </control>
+            <control type="grouplist" id="1101">
+                <left>SpacePadding</left>
+                <right>SpacePadding</right>
+                <top>120</top>
+                <bottom>SpacePadding</bottom>
+                <control type="radiobutton" id="10">
+                    <description>Artist Info</description>
+                    <width>100%</width>
+                    <height>52</height>
+                    <align>left</align>
+                    <label>Artist Biografie</label>
+                    <textcolor>grey3</textcolor>
+                    <texturenofocus/>
+                    <onclick>Skin.ToggleSetting(artistslideshow_artistinfos_bio)</onclick>
+                    <selected>Skin.HasSetting(artistslideshow_artistinfos_bio)</selected>
+                </control>
+                <control type="radiobutton" id="11">
+                    <description>Artist Info</description>
+                    <width>100%</width>
+                    <height>52</height>
+                    <align>left</align>
+                    <label>Artist Diskografie</label>
+                    <textcolor>grey3</textcolor>
+                    <texturenofocus/>
+                    <onclick>Skin.ToggleSetting(artistslideshow_artistinfos_albums)</onclick>
+                    <selected>Skin.HasSetting(artistslideshow_artistinfos_albums)</selected>
+                </control>
+                <control type="radiobutton" id="12">
+                    <description>Artist Info</description>
+                    <width>100%</width>
+                    <height>52</height>
+                    <align>left</align>
+                    <label>ähnliche Künstler</label>
+                    <textcolor>grey3</textcolor>
+                    <texturenofocus/>
+                    <onclick>Skin.ToggleSetting(artistslideshow_artistinfos_similar)</onclick>
+                    <selected>Skin.HasSetting(artistslideshow_artistinfos_similar)</selected>
+                </control>
+            </control>
+        </control>
+    </controls>
+</window>

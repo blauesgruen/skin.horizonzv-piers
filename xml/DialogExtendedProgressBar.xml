@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="151">
+    <include>openclose</include>
+    <include>opencloseslideup</include>
+    <defaultcontrol/>
+    <controls>
+        <control type="group">
+            <right>-900</right>
+            <bottom>0</bottom>
+            <width>1800</width>
+            <height>90</height>
+            <animation effect="slide" start="0" end="-780" time="100" condition="Window.IsVisible(107)">Conditional</animation>
+            <control type="image">
+                <description>background image</description>
+                <texture>KaiToastBack.png</texture>
+            </control>
+            <control type="image">
+                <description>Busy animation</description>
+                <left>90</left>
+                <top>20</top>
+                <width>55</width>
+                <height>55</height>
+                <texture>Busy.png</texture>
+                <aspectratio>keep</aspectratio>
+                <colordiffuse>grey2</colordiffuse>
+                <animation effect="rotate" start="0" end="360" center="auto" time="2500" loop="true" condition="true">conditional</animation>
+            </control>
+            <control type="group">
+                <left>160</left>
+                <width>720</width>
+                <top>8</top>
+                <control type="label" id="30">
+                    <description>Header Label</description>
+                    <height>27</height>
+                    <font>ubuntu-r16b</font>
+                    <shadowcolor/>
+                    <textcolor>black</textcolor>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                </control>
+                <control type="label" id="31">
+                    <description>Title Label</description>
+                    <top>25</top>
+                    <height>30</height>
+                    <font>ubuntu-r13b</font>
+                    <shadowcolor/>
+                    <textcolor>black</textcolor>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                </control>
+                <control type="progress" id="32">
+                    <description>progress control</description>
+                    <top>55</top>
+                    <width>720</width>
+                    <height>12</height>
+                </control>
+            </control>
+        </control>
+    </controls>
+</window>

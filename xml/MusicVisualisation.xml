@@ -1,0 +1,1398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+    <defaultcontrol/>
+	<backgroundcolor>grey3</backgroundcolor>
+    <onload condition="Skin.HasSetting(fanart)+System.HasAddon(script.artistslideshow)">RunScript(script.artistslideshow)</onload>
+    <!-- <onload condition="Skin.HasSetting(fanart)+System.HasAddon(script.artistslideshow)+!Visualisation.Enabled">RunScript(script.artistslideshow)</onload> -->
+    <include>openclose</include>
+    <controls>
+        <control type="group">
+            <control type="group"> <!-- TV Wall -->
+                <visible>!Skin.HasSetting(noradioviz)+!Skin.HasSetting(notvwall)</visible>
+                <visible>[Player.IsInternetStream|Skin.HasSetting(radioview)]</visible>
+                <include>openclosevisible</include>
+                <control type="image">
+                    <include>Dimensions_Fullscreen</include>
+                    <aspectratio>keep</aspectratio>
+                    <texture>special://skin/backgrounds/tv_wall.png</texture>
+                </control>
+                <control type="group">
+                    <top>40</top>
+                    <height>682</height>
+                    <width>1120</width>
+                    <centerleft>50%</centerleft>
+                    <control type="group">
+                        <top>75</top>
+                        <height>531</height>
+                        <width>1000</width>
+                        <centerleft>50%</centerleft>
+                        <control type="image">
+                            <colordiffuse>grey3</colordiffuse>
+                            <texture>White.png</texture>
+                        </control>
+                        <include>GlobalBackground</include>
+                    </control>
+                    <control type="image">
+                        <aspectratio>stretch</aspectratio>
+                        <texture>special://skin/backgrounds/tv.png</texture>
+                    </control>
+                </control>
+            </control>
+            <control type="group">
+                <visible>[Skin.HasSetting(noradioviz)|Skin.HasSetting(notvwall)]|![Player.IsInternetStream|Skin.HasSetting(radioview)]</visible>
+                <include>GlobalBackground</include>
+            </control>
+            <control type="group">
+                <visible>![Window.IsVisible(AddonSettings)|Window.IsVisible(SelectDialog)|Window.IsVisible(VisualisationPresetList)]</visible>
+                <include>opencloseslidedown</include>
+                <control type="group" id="3000"> <!-- Info Panels -->
+                    <top>45</top>
+                    <visible>!Window.IsVisible(script-XBMC_Lyrics-main.xml)+!Window.IsVisible(script-cu-lrclyrics-main.xml)+!Window.IsVisible(musicosd)</visible>
+                    <visible>Skin.HasSetting(VizPanel)</visible>
+                    <visible>Control.IsVisible(999)|Control.IsVisible(997)</visible>
+                    <include>opencloseslidedown</include>
+                    <control type="group"> <!-- SysteminfoPanel -->
+                        <top>80</top>
+                        <left>SpacePaddingLarge</left>
+                        <control type="group">
+                            <width>375</width>
+                            <height>375</height>
+                            <control type="image">
+                                <colordiffuse>menudiffuse</colordiffuse>
+                                <texture>BlackBack.png</texture>
+                            </control>
+                            <control type="grouplist">
+                                <visible>Player.IsInternetStream|Pvr.IsPlayingRadio</visible>
+                                <left>15</left>
+                                <right>15</right>
+                                <top>15</top>
+                                <bottom>15</bottom>
+                                <itemgap>-8</itemgap>
+                                <control type="label">
+                                    <description>XBMC XBE BUILD Version</description>
+                                    <width>100%</width>
+                                    <align>left</align>
+                                    <font>ubuntu-r13b</font>
+                                    <textcolor>grey</textcolor>
+                                    <shadowcolor>black</shadowcolor>
+                                    <label>$INFO[System.BuildVersion]</label>
+                                </control>
+                                <control type="label">
+                                    <description>Kernel</description>
+                                    <width>100%</width>
+                                    <align>left</align>
+                                    <font>ubuntu-r13b</font>
+                                    <textcolor>grey</textcolor>
+                                    <shadowcolor>black</shadowcolor>
+                                    <label>$INFO[System.KernelVersion]</label>
+                                </control>
+                                <control type="label">
+                                    <description>Screen</description>
+                                    <width>100%</width>
+                                    <align>left</align>
+                                    <font>ubuntu-r13b</font>
+                                    <textcolor>grey</textcolor>
+                                    <shadowcolor>black</shadowcolor>
+                                    <label>$INFO[System.ScreenMode]</label>
+                                </control>
+                                <control type="label">
+                                    <description>Network</description>
+                                    <width>100%</width>
+                                    <align>left</align>
+                                    <font>ubuntu-r13b</font>
+                                    <textcolor>grey</textcolor>
+                                    <shadowcolor>black</shadowcolor>
+                                    <label>$INFO[Network.IPAddress]$INFO[Network.MacAddress, | ,]</label>
+                                </control>
+                                <control type="label">
+                                    <description>FPS</description>
+                                    <width>100%</width>
+                                    <font>ubuntu-r13b</font>
+                                    <textcolor>grey</textcolor>
+                                    <shadowcolor>black</shadowcolor>
+                                    <label>FPS: $INFO[System.FPS]</label>
+                                </control>
+                                <control type="label">
+                                    <description>CpuFrequency</description>
+                                    <width>100%</width>
+                                    <font>ubuntu-r13b</font>
+                                    <textcolor>grey</textcolor>
+                                    <shadowcolor>black</shadowcolor>
+                                    <label>CPU: $INFO[System.CpuFrequency]</label>
+                                </control>
+                                <control type="label">
+                                    <description>CPU Text</description>
+                                    <width>100%</width>
+                                    <font>ubuntu-r13b</font>
+                                    <textcolor>grey</textcolor>
+                                    <shadowcolor>black</shadowcolor>
+                                    <label>$LOCALIZE[13271] $INFO[System.CPUUsage]</label>
+                                </control>
+                                <control type="label">
+                                    <description>Memory Text</description>
+                                    <width>100%</width>
+                                    <font>ubuntu-r13b</font>
+                                    <textcolor>grey</textcolor>
+                                    <shadowcolor>black</shadowcolor>
+                                    <label>$LOCALIZE[31048] $INFO[system.memory(used.percent)]</label>
+                                </control>
+                            </control>
+                            <control type="image">
+                                <left>20</left>
+                                <right>20</right>
+                                <visible>!Player.IsInternetStream+!Pvr.IsPlayingRadio</visible>
+                                <aspectratio>keep</aspectratio>
+                                <texture fallback="center/Center_Fav.png">$VAR[ClearlogoPlayerVAR]</texture>
+                            </control>
+                            <control type="image">
+                                <texture border="5">masks/Default_round.png</texture>
+                            </control>
+                        </control>
+                    </control>
+                    <control type="group"> <!-- Nexttrackplaylist / Weather -->
+                        <centerleft>50%</centerleft>
+                        <top>52</top>
+                        <width>957</width>
+                        <height>375</height>
+                        <include>opencloseslidedown</include>
+                        <control type="image">
+                            <colordiffuse>menudiffuse</colordiffuse>
+                            <texture>BlackBack.png</texture>
+                        </control>
+                        <control type="group">  <!-- Stream / Radio -->
+                            <visible>Player.IsInternetStream|Pvr.IsPlayingRadio</visible>
+                            <control type="group">
+                                <description>Control Area</description>
+                                <left>SpacePadding</left>
+                                <top>SpacePadding</top>
+                                <bottom>SpacePaddingXL</bottom>
+                                <width>380</width>
+                                <control type="multiimage">
+                                    <description>current weather icon</description>
+                                    <aspectratio>keep</aspectratio>
+                                    <imagepath>$VAR[WeatherIconVar]$INFO[Window(Weather).Property(Day0.FanartCode)]$VAR[WeatherIconFolderVar]</imagepath>
+                                    <timeperimage>100</timeperimage>
+                                    <randomize>false</randomize>
+                                    <fadetime>10</fadetime>
+                                    <aspectratio>keep</aspectratio>
+                                </control>
+                            </control>
+                            <control type="group">
+                                <left>SpacePadding</left>
+                                <bottom>SpacePadding</bottom>
+                                <width>150</width>
+                                <height>90</height>
+                                <control type="image">
+                                    <aspectratio align="left" aligny="bottom">keep</aspectratio>
+                                    <texture>$INFO[Window(Weather).Property(WeatherProviderLogo)]</texture>
+                                </control>
+                            </control>
+                            <control type="grouplist">
+                                <description>Control Area</description>
+                                <right>SpacePadding</right>
+                                <top>60</top>
+                                <itemgap>3</itemgap>
+                                <orientation>vertical</orientation>
+                                <control type="label">
+                                    <width>100%</width>
+                                    <height>30</height>
+                                    <font>ubuntu-r16b</font>
+                                    <textcolor>selected</textcolor>
+                                    <shadowcolor>black</shadowcolor>
+                                    <align>right</align>
+                                    <aligny>center</aligny>
+                                    <label>$INFO[Window(Weather).Property(Location),[COLOR=grey]$LOCALIZE[35500]: [/COLOR],]</label>
+                                    <visible>!String.IsEmpty(Window(Weather).Property(Location))</visible>
+                                </control>
+                                <control type="label">
+                                    <width>100%</width>
+                                    <height>30</height>
+                                    <font>ubuntu-r16b</font>
+                                    <textcolor>selected</textcolor>
+                                    <shadowcolor>black</shadowcolor>
+                                    <align>right</align>
+                                    <aligny>center</aligny>
+                                    <label>$INFO[Window(Weather).Property(Current.Condition),[COLOR=grey]$LOCALIZE[33020]: [/COLOR],]</label>
+                                    <visible>!String.IsEmpty(Window(Weather).Property(Current.Condition))</visible>
+                                </control>
+                                <control type="label">
+                                    <width>100%</width>
+                                    <height>30</height>
+                                    <font>ubuntu-r16b</font>
+                                    <textcolor>selected</textcolor>
+                                    <shadowcolor>black</shadowcolor>
+                                    <align>right</align>
+                                    <aligny>center</aligny>
+                                    <label>$INFO[Window(Weather).Property(Current.Temperature),[COLOR=grey]$LOCALIZE[143] [/COLOR],°]</label>
+                                    <visible>!String.IsEmpty(Window(Weather).Property(Current.Temperature))</visible>
+                                </control>
+                                <control type="label">
+                                    <width>100%</width>
+                                    <height>30</height>
+                                    <font>ubuntu-r16b</font>
+                                    <textcolor>selected</textcolor>
+                                    <shadowcolor>black</shadowcolor>
+                                    <align>right</align>
+                                    <aligny>center</aligny>
+                                    <label>$INFO[Window(Weather).Property(Daily.1.Precipitation),[COLOR=grey]$LOCALIZE[376]: [/COLOR],]</label>
+                                    <visible>!String.IsEmpty(Window(Weather).Property(Daily.1.Precipitation))</visible>
+                                </control>
+                                <control type="label">
+                                    <width>100%</width>
+                                    <height>30</height>
+                                    <font>ubuntu-r16b</font>
+                                    <textcolor>selected</textcolor>
+                                    <shadowcolor>black</shadowcolor>
+                                    <align>right</align>
+                                    <aligny>center</aligny>
+                                    <label>$INFO[Window(Weather).Property(Today.Sunrise),[COLOR=grey]$LOCALIZE[33027]: [/COLOR],]</label>
+                                    <visible>!String.IsEmpty(Window(Weather).Property(Today.Sunrise))</visible>
+                                </control>
+                                <control type="label">
+                                    <width>100%</width>
+                                    <height>30</height>
+                                    <font>ubuntu-r16b</font>
+                                    <textcolor>selected</textcolor>
+                                    <shadowcolor>black</shadowcolor>
+                                    <align>right</align>
+                                    <aligny>center</aligny>
+                                    <label>$INFO[Window(Weather).Property(Today.Sunset),[COLOR=grey]$LOCALIZE[33028]: [/COLOR],]</label>
+                                    <visible>!String.IsEmpty(Window(Weather).Property(Today.Sunset))</visible>
+                                </control>
+                                <control type="label">
+                                    <description>update label</description>
+                                    <width>100%</width>
+                                    <height>30</height>
+                                    <font>ubuntu-r16b</font>
+                                    <textcolor>selected</textcolor>
+                                    <shadowcolor>black</shadowcolor>
+                                    <align>right</align>
+                                    <aligny>center</aligny>
+                                    <label>$INFO[Window(Weather).Property(Updated),[COLOR=grey]$LOCALIZE[12014]: [/COLOR],]</label>
+                                    <visible>!String.IsEmpty(Window(Weather).Property(Updated))</visible>
+                                </control>
+                            </control>
+                        </control>
+                        <control type="group">
+                            <visible>!Player.IsInternetStream+!Pvr.IsPlayingRadio</visible>
+                            <control type="grouplist" id="555">
+                                <left>SpacePadding</left>
+                                <right>SpacePaddingLarge</right>
+                                <top>10</top>
+                                <bottom>10</bottom>
+                                <align>left</align>
+                                <itemgap>0</itemgap>
+                                <orientation>vertical</orientation>
+                                <include>NextTracksPlaylist_Content</include>
+                            </control>
+                            <control type="group">
+                                <centertop>50%</centertop>
+                                <right>130</right>
+                                <width>auto</width>
+                                <height>45</height>
+                                <control type="label">
+                                    <description>Partymode Header label</description>
+                                    <font>font16</font>
+                                    <align>center</align>
+                                    <angle>90</angle>
+                                    <textcolor>grey</textcolor>
+                                    <shadowcolor>black</shadowcolor>
+                                    <label>($LOCALIZE[589] [COLOR=selected]$LOCALIZE[16041][/COLOR])</label>
+                                    <visible>MusicPartyMode.Enabled</visible>
+                                </control>
+                            </control>
+                        </control>
+                        <control type="image">
+                            <texture border="5">masks/Default_round.png</texture>
+                        </control>
+                    </control>
+                    <control type="group"> <!-- Artistinfos / extrafanarts -->
+                        <control type="group">
+                            <right>SpacePaddingLarge</right>
+                            <top>80</top>
+                            <width>375</width>
+                            <height>375</height>
+                            <include>opencloseslidedown</include>
+                            <control type="image">
+                                <colordiffuse>menudiffuse</colordiffuse>
+                                <texture>BlackBack.png</texture>
+                            </control>
+                            <control type="grouplist">
+                                <description>Control Area</description>
+                                <left>15</left>
+                                <right>15</right>
+                                <top>15</top>
+                                <bottom>15</bottom>
+                                <itemgap>1</itemgap>
+                                <aligny>center</aligny>
+                                <orientation>vertical</orientation>
+                                <visible>!Player.IsInternetStream+!Pvr.IsPlayingRadio</visible>
+                                <control type="label">
+                                    <width>100%</width>
+                                    <height>30</height>
+                                    <font>font16</font>
+                                    <textcolor>selected</textcolor>
+                                    <shadowcolor>black</shadowcolor>
+                                    <align>right</align>
+                                    <aligny>center</aligny>
+                                    <label>[COLOR=grey]$LOCALIZE[35500]: [/COLOR]$INFO[Window(Weather).Property(Location)]</label>
+                                </control>
+                                <control type="label">
+                                    <width>100%</width>
+                                    <height>30</height>
+                                    <font>font16</font>
+                                    <textcolor>selected</textcolor>
+                                    <shadowcolor>black</shadowcolor>
+                                    <align>right</align>
+                                    <aligny>center</aligny>
+                                    <label>[COLOR=grey]$LOCALIZE[33020]: [/COLOR]$INFO[Window(Weather).Property(Current.Condition)]</label>
+                                </control>
+                                <control type="label">
+                                    <width>100%</width>
+                                    <height>30</height>
+                                    <font>font16</font>
+                                    <textcolor>selected</textcolor>
+                                    <shadowcolor>black</shadowcolor>
+                                    <align>right</align>
+                                    <aligny>center</aligny>
+                                    <label>[COLOR=grey]$LOCALIZE[143] [/COLOR]$INFO[Window(Weather).Property(Current.Temperature),,°]</label>
+                                </control>
+                                <control type="label">
+                                    <width>100%</width>
+                                    <height>30</height>
+                                    <font>font16</font>
+                                    <textcolor>selected</textcolor>
+                                    <shadowcolor>black</shadowcolor>
+                                    <align>right</align>
+                                    <aligny>center</aligny>
+                                    <label>[COLOR=grey]$LOCALIZE[376]: [/COLOR]$INFO[Window(Weather).Property(Daily.1.Precipitation),,]</label>
+                                </control>
+                                <control type="label">
+                                    <width>100%</width>
+                                    <height>30</height>
+                                    <font>font16</font>
+                                    <textcolor>selected</textcolor>
+                                    <shadowcolor>black</shadowcolor>
+                                    <align>right</align>
+                                    <aligny>center</aligny>
+                                    <label>[COLOR=grey]$LOCALIZE[33027]: [/COLOR]$INFO[Window(Weather).Property(Today.Sunrise),,]</label>
+                                </control>
+                                <control type="label">
+                                    <width>100%</width>
+                                    <height>30</height>
+                                    <font>font16</font>
+                                    <textcolor>selected</textcolor>
+                                    <shadowcolor>black</shadowcolor>
+                                    <align>right</align>
+                                    <aligny>center</aligny>
+                                    <label>[COLOR=grey]$LOCALIZE[33028]: [/COLOR]$INFO[Window(Weather).Property(Today.Sunset),,]</label>
+                                </control>
+                                <control type="label">
+                                    <description>update label</description>
+                                    <width>100%</width>
+                                    <height>30</height>
+                                    <font>font16</font>
+                                    <textcolor>selected</textcolor>
+                                    <shadowcolor>black</shadowcolor>
+                                    <align>right</align>
+                                    <aligny>center</aligny>
+                                    <label>[COLOR=grey]$LOCALIZE[12014]: [/COLOR]$INFO[Window(Weather).Property(Updated),,]</label>
+                                </control>
+                            </control>
+                            <control type="group">
+                                <left>15</left>
+                                <right>15</right>
+                                <top>15</top>
+                                <bottom>15</bottom>
+                                <control type="image">
+                                    <aspectratio>scale</aspectratio>
+                                    <texture fallback="center/Center_Fav.png">$VAR[NowPlayingPosterVar]</texture>
+                                    <visible>Pvr.IsPlayingRadio</visible>
+                                </control>
+                                <control type="image">
+                                    <left>15</left>
+                                    <right>15</right>
+                                    <top>15</top>
+                                    <bottom>15</bottom>
+                                    <aspectratio>keep</aspectratio>
+                                    <texture>DefaultAddonVisualization.png</texture>
+                                    <visible>Player.IsInternetStream</visible>
+                                </control>
+                            </control>
+                            <control type="image">
+                                <texture border="5">masks/Default_round.png</texture>
+                            </control>
+                        </control>
+                    </control>
+                </control>
+                <control type="group" id="1001"> <!-- Playlist -->
+                    <visible>!Control.IsVisible(997)+!Control.IsVisible(3000)</visible>
+                    <visible>!Player.IsInternetStream+!Pvr.IsPlayingRadio</visible>
+                    <visible>Skin.HasSetting(playlist)</visible>
+                    <include>opencloseslideup</include>
+                    <include>NextTracksPlaylist</include>
+                </control>
+                <control type="group">
+                    <visible>!Window.IsVisible(script-XBMC_Lyrics-main.xml)+!Window.IsVisible(script-cu-lrclyrics-main.xml)</visible>
+                    <include>NavInfo</include>
+                    <control type="group">
+                        <animation effect="slide" end="0,30" condition="system.getbool(lookandfeel.enablerssfeeds)">Conditional</animation>
+                        <visible>!Skin.HasSetting(VizPanel)</visible>
+                        <include>BandLogo</include>
+                    </control>
+                    <control type="group">
+                        <animation effect="fade" time="200">VisibleChange</animation>
+                        <visible>![Window.IsVisible(AddonSettings) | Window.IsVisible(SelectDialog) | Window.IsVisible(VisualisationPresetList)]</visible>
+                        <include>openclosevisible</include>
+                        <control type="group" id="999"> <!-- standart Nowplaying @ Fullscreen -->
+                            <visible>!Skin.HasSetting(radioview)+!Skin.HasSetting(vinylview)+[!Player.IsInternetStream|Skin.HasSetting(noradioviz)]</visible>
+                            <visible>Player.ShowInfo | Window.IsActive(MusicOSD)|Player.Paused|Player.Forwarding|Player.Rewinding</visible>
+                            <include>opencloseslideup</include>
+                            <control type="group">
+                                <bottom>0</bottom>
+                                <height>510</height>
+                                <control type="group">
+                                    <bottom>0</bottom>
+                                    <width>101%</width>
+                                    <height>270</height>
+                                    <control type="image">
+                                        <texture>Shadow.png</texture>
+                                        <include>opencloseslideup</include>
+                                        <visible>!Skin.HasSetting(playlist)|String.IsEmpty(MusicPlayer.Offset(1).Title)</visible>
+                                    </control>
+                                </control>
+                                <control type="group">
+                                    <top>40</top>
+                                    <control type="group"> <!-- cdart @ standart NowPlaying -->
+                                        <top>5</top>
+                                        <left>290</left>
+                                        <animation effect="slide" start="-150" end="0" time="900" tween="cubic" easing="out" delay="1500">WindowOpen</animation>
+                                        <animation effect="slide" start="-150" end="0" time="900" tween="cubic" easing="out" delay="1500">Visible</animation>
+                                        <animation type="WindowClose">
+                                            <effect type="slide" start="0" end="-1500" time="100" tween="cubic" easing="in" delay="0" />
+                                            <effect type="fade" start="100" end="0" time="50" />
+                                            <condition type="!Player.Playing" />
+                                        </animation>
+                                        <include>cdart_player</include>
+                                        <visible>Skin.HasSetting(EnableExtendedArt)</visible>
+                                        <visible>!Player.IsInternetStream</visible>
+                                        <animation effect="fade" time="200">VisibleChange</animation>
+                                    </control>
+                                    <control type="group">
+                                        <description>NowPlaying</description>
+                                        <left>8</left>
+                                        <top>-144</top>
+                                        <animation effect="fade" time="200">VisibleChange</animation>
+                                        <control type="image">
+                                            <left>124</left>
+                                            <top>144</top>
+                                            <width>278</width>
+                                            <height>278</height>
+                                            <aspectratio>scale</aspectratio>
+                                            <fadetime>400</fadetime>
+                                            <texture diffuse="masks/CdCoverMask.png" fallback="DefaultAlbumCover.png">$VAR[NowPlayingPosterVar]</texture>
+                                        </control>
+                                        <control type="image">
+                                            <left>0</left>
+                                            <top>0</top>
+                                            <height>540</height>
+                                            <width>900</width>
+                                            <texture>masks/NowPlayingHome.png</texture>
+                                        </control>
+                                        <control type="image">
+                                            <left>12</left>
+                                            <top>406</top>
+                                            <width>120</width>
+                                            <height>120</height>
+                                            <texture>$VAR[OSDTexture]</texture>
+                                        </control>
+                                        <control type="label">
+                                            <left>188</left>
+                                            <top>470</top>
+                                            <width>600</width>
+                                            <height>30</height>
+                                            <font>impacted21</font>
+                                            <shadowcolor/>
+                                            <label>$VAR[HomeOSDTitle]</label>
+                                        </control>
+                                        <control type="label">
+                                            <left>188</left>
+                                            <top>504</top>
+                                            <width>630</width>
+                                            <height>30</height>
+                                            <font>impacted21</font>
+                                            <shadowcolor/>
+                                            <label>$VAR[HomeOSDLabel]</label>
+                                        </control>
+                                        <control type="progress">
+                                            <description>Progressbar</description>
+                                            <left>186</left>
+                                            <top>438</top>
+                                            <width>483</width>
+                                            <height>15</height>
+                                            <info>Pvr.EpgEventProgress</info>
+                                            <visible>VideoPlayer.HasEpg</visible>
+                                        </control>
+                                        <control type="progress">
+                                            <description>Progressbar</description>
+                                            <left>186</left>
+                                            <top>438</top>
+                                            <width>483</width>
+                                            <height>15</height>
+                                            <info>Player.Progress</info>
+                                            <visible>!VideoPlayer.HasEpg</visible>
+                                        </control>
+                                        <control type="label">
+                                            <left>-2</left>
+                                            <top>240</top>
+                                            <width>225</width>
+                                            <height>45</height>
+                                            <align>left</align>
+                                            <aligny>bottom</aligny>
+                                            <font>impacted18</font>
+                                            <shadowcolor/>
+                                            <textcolor>white</textcolor>
+                                            <label>$INFO[MusicPlayer.Album]</label>
+                                            <animation effect="rotate" center="auto" end="90" time="0" condition="true">Conditional</animation>
+                                        </control>
+                                        <control type="image">
+                                            <left>-150</left>
+                                            <top>538</top>
+                                            <width>1230</width>
+                                            <height>1</height>
+                                            <texture>Separator2.png</texture>
+                                        </control>
+                                    </control>
+                                    <control type="group">
+                                        <top>50</top>
+                                        <animation effect="fade" time="200">VisibleChange</animation>
+                                        <control type="group">
+                                            <left>15</left>
+                                            <top>360</top>
+                                            <control type="image">
+                                                <description>Audio Codec Image</description>
+                                                <left>0</left>
+                                                <top>0</top>
+                                                <width>120</width>
+                                                <height>52</height>
+                                                <aspectratio align="right">keep</aspectratio>
+                                                <texture>$INFO[MusicPlayer.Channels,flagging/audio/,.png]</texture>
+                                            </control>
+                                            <control type="image">
+                                                <description>Audio Codec Image</description>
+                                                <left>135</left>
+                                                <top>0</top>
+                                                <width>120</width>
+                                                <height>52</height>
+                                                <aspectratio align="right">keep</aspectratio>
+                                                <texture>$INFO[MusicPlayer.Codec,flagging/audio/,.png]</texture>
+                                            </control>
+                                            <control type="label">
+                                                <description>Audio Codec Image</description>
+                                                <left>270</left>
+                                                <top>0</top>
+                                                <width>135</width>
+                                                <height>52</height>
+                                                <label>$INFO[MusicPlayer.BitRate,, kbit/s]</label>
+                                                <visible>!String.IsEmpty(MusicPlayer.BitRate)</visible>
+                                            </control>
+                                            <control type="label">
+                                                <description>Audio Codec Image</description>
+                                                <left>420</left>
+                                                <top>0</top>
+                                                <width>120</width>
+                                                <height>52</height>
+                                                <label>$INFO[MusicPlayer.SampleRate,,kHz]</label>
+                                                <visible>!String.IsEmpty(MusicPlayer.SampleRate)</visible>
+                                            </control>
+                                            <control type="image">
+                                                <description>Rating</description>
+                                                <left>540</left>
+                                                <top>0</top>
+                                                <width>165</width>
+                                                <height>52</height>
+                                                <aspectratio align="center">keep</aspectratio>
+                                                <texture fallback="leftrating/rating0.png">$INFO[Player.StarRating,leftrating/]</texture>
+                                                <visible>!Player.IsInternetStream</visible>
+                                            </control>
+                                        </control>
+                                        <control type="label">
+                                            <left>750r</left>
+                                            <top>351</top>
+                                            <width>720</width>
+                                            <height>30</height>
+                                            <align>right</align>
+                                            <font>impacted54</font>
+                                            <textcolor>white</textcolor>
+                                            <shadowcolor/>
+                                            <label>$VAR[SeekTimeLabelVar]$VAR[SeekDurationLabelVar,/,]</label>
+                                            <visible>!String.IsEmpty(Player.TimeRemaining)</visible>
+                                        </control>
+                                    </control>
+                                </control>
+                            </control>
+                        </control>
+                        <control type="group" id="998"> <!-- alternative Nowplaying @ Fullscreen -->
+                            <visible>!Skin.HasSetting(radioview)+Skin.HasSetting(vinylview)+[!Player.IsInternetStream|Skin.HasSetting(noradioviz)]</visible>
+                            <visible>Player.ShowInfo|Window.IsActive(MusicOSD)|Player.Paused|Player.Forwarding|Player.Rewinding</visible>
+                            <include>openclosevisible</include>
+                            <control type="group">
+                                <include>openclosebox</include>
+                                <control type="image">
+                                    <include>Dimensions_Fullscreen</include>
+                                    <colordiffuse>fanartdiffuse</colordiffuse>
+                                    <texture>extras/backgrounds/03.jpg</texture>
+                                    <visible>!Skin.HasSetting(playlist)|String.IsEmpty(MusicPlayer.Offset(1).Title)</visible>
+                                </control>
+                                <control type="group">
+                                    <bottom>0</bottom>
+                                    <height>300</height>
+                                    <control type="image">
+                                        <width>101%</width>
+                                        <texture>Shadow.png</texture>
+                                        <include>opencloseslideup</include>
+                                    </control>
+                                </control>
+                                <control type="group">
+                                    <centerleft>50%</centerleft>
+                                    <bottom>0</bottom>
+                                    <width>1040</width>
+                                    <height>1070</height>
+                                    <!-- <control type="image" id="testimage">
+                                        <texture>WhiteBack.png</texture>
+                                    </control> -->
+                                    <animation effect="slide" end="-400" time="200" condition="Skin.HasSetting(playlist)+!String.IsEmpty(MusicPlayer.Offset(1).Title)">Conditional</animation>
+                                    <control type="group">
+                                        <right>0</right>
+                                        <top>700</top>
+                                        <width>162</width>
+                                        <height>162</height>
+                                        <visible>!String.IsEmpty(Player.TimeRemaining)</visible>
+                                        <control type="image">
+                                            <aspectratio>keep</aspectratio>
+                                            <texture>cdart/circledisplay.png</texture>
+                                        </control>
+                                        <control type="label">
+                                            <width>100%</width>
+                                            <height>100%</height>
+                                            <align>center</align>
+                                            <font>impacted26</font>
+                                            <textcolor>grey3</textcolor>
+                                            <shadowcolor/>
+                                            <label>$VAR[SeekTimeRemainingLabelVar]</label>
+                                        </control>
+                                        <control type="group">
+                                            <include>openclosevisible</include>
+                                            <visible>Player.Forwarding|Player.Rewinding</visible>
+                                            <control type="label">
+                                                <width>100%</width>
+                                                <height>100%</height>
+                                                <align>center</align>
+                                                <font>impacted18</font>
+                                                <textcolor>grey3</textcolor>
+                                                <shadowcolor/>
+                                                <label>$VAR[OSDText][CR][CR]$VAR[PlayerOSDSeekLabel]</label>
+                                            </control>
+                                        </control>
+                                        <control type="label">
+                                            <include>openclosevisible</include>
+                                            <visible>Player.Paused</visible>
+                                            <width>100%</width>
+                                            <height>50%</height>
+                                            <align>center</align>
+                                            <font>impacted21</font>
+                                            <textcolor>grey3</textcolor>
+                                            <shadowcolor/>
+                                            <label>II</label>
+                                        </control>
+                                    </control>
+                                    <control type="group"> <!-- vinyle -->
+                                        <left>200</left>
+                                        <top>175</top>
+                                        <width>732</width>
+                                        <height>732</height>
+                                        <control type="image">
+                                            <aspectratio>keep</aspectratio>
+                                            <colordiffuse>$VAR[BackgroundOverlayColorDialog]</colordiffuse>
+                                            <texture>cdart/circle.png</texture>
+                                        </control>
+                                        <control type="group">
+                                            <visible>Player.HasAudio</visible>
+                                            <animation effect="rotate" end="-360" center="auto" time="8000" loop="true" reversible="true" condition="!Player.Paused">Conditional</animation>
+                                            <left>8</left>
+                                            <right>8</right>
+                                            <top>8</top>
+                                            <bottom>8</bottom>
+                                            <control type="image">
+                                                <aspectratio>keep</aspectratio>
+                                                <texture>cdart/default_vinyl.png</texture>
+                                            </control>
+                                            <control type="group">
+                                                <centerleft>50%</centerleft>
+                                                <centertop>50%</centertop>
+                                                <width>256</width>
+                                                <height>256</height>
+                                                <control type="image">
+                                                    <description>Cd Disc</description>
+                                                    <colordiffuse>grey3</colordiffuse>
+                                                    <aspectratio>keep</aspectratio>
+                                                    <texture diffuse="masks/mask_cdart.png">White.png</texture>
+                                                </control>
+                                                <control type="label" id="79"> <!-- fake label -->
+                                                    <include>HiddenButton</include>
+                                                    <label>$VAR[DiscartPlayerVAR]</label>
+                                                </control>
+                                                <control type="image" id="80">
+                                                    <description>Cd Disc</description>
+                                                    <aspectratio>keep</aspectratio>
+                                                    <texture diffuse="masks/mask_cdart.png">$VAR[DiscartPlayerVAR]</texture>
+                                                    <visible>![String.Contains(Control.GetLabel(79),$LOCALIZE[301456])|String.Contains(Control.GetLabel(79),$LOCALIZE[301458])]</visible>
+                                                </control>
+                                                <control type="image" id="81">
+                                                    <description>Poster</description>
+                                                    <top>14</top>
+                                                    <bottom>14</bottom>
+                                                    <aspectratio>scale</aspectratio>
+                                                    <texture diffuse="masks/mask_cdart.png">$VAR[NowPlayingPosterVar]</texture>
+                                                    <visible>String.Contains(Control.GetLabel(79),$LOCALIZE[301456])|String.Contains(Control.GetLabel(79),$LOCALIZE[301458])</visible>
+                                                </control>
+                                            </control>
+                                            <control type="group">
+                                                <centerleft>50%</centerleft>
+                                                <centertop>50%</centertop>
+                                                <width>25</width>
+                                                <height>25</height>
+                                                <control type="image">
+                                                    <description>Cd Disc</description>
+                                                    <aspectratio>keep</aspectratio>
+                                                    <texture>Pin.png</texture>
+                                                </control>
+                                            </control>
+                                            <control type="group">
+                                                <centerleft>50%</centerleft>
+                                                <centertop>50%</centertop>
+                                                <width>186</width>
+                                                <height>186</height>
+                                                <visible>!Player.IsInternetStream</visible>
+                                                <visible>String.IsEmpty(Control.GetLabel(80))+String.IsEmpty(Control.GetLabel(81))</visible>
+                                                <control type="label">
+                                                    <width>100%</width>
+                                                    <height>100%</height>
+                                                    <font>aaaiight14</font>
+                                                    <textcolor>white</textcolor>
+                                                    <shadowcolor/>
+                                                    <align>center</align>
+                                                    <aligny>top</aligny>
+                                                    <wrapmultiline>true</wrapmultiline>
+                                                    <label>$INFO[MusicPlayer.Artist]</label>
+                                                </control>
+                                                <control type="label">
+                                                    <animation effect="rotate" end="-180" center="auto" time="0" condition="true">Conditional</animation>
+                                                    <width>100%</width>
+                                                    <height>100%</height>
+                                                    <font>aaaiight14</font>
+                                                    <textcolor>white</textcolor>
+                                                    <shadowcolor/>
+                                                    <align>center</align>
+                                                    <aligny>top</aligny>
+                                                    <wrapmultiline>true</wrapmultiline>
+                                                    <label>$INFO[MusicPlayer.Album]</label>
+                                                </control>
+                                            </control>
+                                        </control>
+                                    </control>
+                                    <control type="image">
+                                        <top>285</top>
+                                        <width>357</width>
+                                        <height>660</height>
+                                        <texture flipy="true" flipx="true">cdart/arm.png</texture>
+                                        <animation effect="rotate" end="-6" center="auto" time="0" condition="true">Conditional</animation>
+                                    </control>
+                                    <control type="group">
+                                        <top>952</top>
+                                        <control type="image">
+                                            <top>53</top>
+                                            <height>1</height>
+                                            <colordiffuse>menudiffuse</colordiffuse>
+                                            <texture>Separator2.png</texture>
+                                            <include>opencloseslideup</include>
+                                        </control>
+                                        <control type="label">
+                                            <height>45</height>
+                                            <align>center</align>
+                                            <font>ubuntu-r26b</font>
+                                            <label>$VAR[HomeOSDTitle]</label>
+                                            <include>opencloseslideup</include>
+                                        </control>
+                                        <control type="label">
+                                            <top>53</top>
+                                            <height>45</height>
+                                            <align>center</align>
+                                            <font>ubuntu-r19b</font>
+                                            <textcolor>grey</textcolor>
+                                            <label>$VAR[HomeOSDLabel]</label>
+                                            <include>opencloseslideup</include>
+                                        </control>
+                                    </control>
+                                </control>
+                            </control>
+                            <control type="group">
+                                <centerleft>50%</centerleft>
+                                <top>105</top>
+                                <width>750</width>
+                                <height>50</height>
+                                <!-- <control type="image" id="testimage">
+                                    <texture>WhiteBack.png</texture>
+                                </control> -->
+                                <control type="grouplist">
+                                    <include>openclosemedium</include>
+                                    <itemgap>3</itemgap>
+                                    <align>center</align>
+                                    <orientation>horizontal</orientation>
+                                    <control type="image">
+                                        <description>Rating</description>
+                                        <width>165</width>
+                                        <aspectratio align="center">keep</aspectratio>
+                                        <texture fallback="leftrating/rating0.png">$INFO[Player.StarRating,leftrating/]</texture>
+                                        <visible>!Player.IsInternetStream</visible>
+                                    </control>
+                                    <control type="image">
+                                        <description>Audio Channels Image</description>
+                                        <width>120</width>
+                                        <aspectratio align="right">keep</aspectratio>
+                                        <texture>$INFO[MusicPlayer.Channels,flagging/audio/,.png]</texture>
+                                    </control>
+                                    <control type="image">
+                                        <description>Audio Codec Image</description>
+                                        <width>120</width>
+                                        <aspectratio align="right">keep</aspectratio>
+                                        <texture>$INFO[MusicPlayer.Codec,flagging/audio/,.png]</texture>
+                                    </control>
+                                    <control type="label">
+                                        <description>Audio BitRate Image</description>
+                                        <width>135</width>
+                                        <label>$INFO[MusicPlayer.BitRate,, kbit/s]</label>
+                                        <visible>!String.IsEmpty(MusicPlayer.BitRate)</visible>
+                                    </control>
+                                    <control type="label">
+                                        <description>Audio SampleRate Image</description>
+                                        <width>120</width>
+                                        <label>$INFO[MusicPlayer.SampleRate,,kHz]</label>
+                                        <visible>!String.IsEmpty(MusicPlayer.SampleRate)</visible>
+                                    </control>
+                                </control>
+                            </control>
+                        </control>
+                        <control type="group" id="997"> <!-- Onlinestream / Radioview @ Fullscreen -->
+                            <!-- <visible>[Player.ShowInfo|Window.IsActive(MusicOSD)|Player.Paused|Player.Forwarding|Player.Rewinding]</visible> -->
+                            <visible>Player.ShowInfo|[!Player.ShowInfo+!Skin.HasSetting(musicoverlay_stream)]</visible>
+                            <visible>[Player.IsInternetStream|Skin.HasSetting(radioview)]</visible>
+                            <visible>!Skin.HasSetting(noradioviz)</visible>
+                            <include>openclose</include>
+                            <include>opencloseslideup</include>
+                            <control type="group"> <!-- Background -->
+                                <animation effect="fade" start="100" end="50" time="200" condition="ControlGroup(9000).HasFocus()|ControlGroup(90000).HasFocus()|Control.HasFocus(9001)">Conditional</animation>
+                                <animation effect="fade" start="100" end="95" time="200" condition="Window.IsVisible(visualisation)">Conditional</animation>
+                                <control type="group">
+                                    <bottom>0</bottom>
+                                    <height>200</height>
+                                    <width>101%</width>
+                                    <control type="image">
+                                        <height>15</height>
+                                        <colordiffuse>fanartdiffuse</colordiffuse>
+                                        <texture>Shadow.png</texture>
+                                    </control>
+                                    <control type="image">
+                                        <top>13</top>
+                                        <texture>BackSilver.png</texture>
+                                    </control>
+                                    <control type="image">
+                                        <top>13</top>
+                                        <colordiffuse>dustdiffuse</colordiffuse>
+                                        <texture flipy="true">Shadow.png</texture>
+                                    </control>
+                                </control>
+                            </control>
+                            <control type="group">  <!-- Speakers -->
+                                <bottom>0</bottom>
+                                <height>700</height>
+                                <control type="group"> <!-- Speaker right -->
+                                    <left>0</left>
+                                    <width>350</width>
+                                    <include>opencloseslideright</include>
+                                    <control type="image">
+                                        <height>850</height>
+                                        <aspectratio>keep</aspectratio>
+                                        <texture border="8">masks/Speaker.png</texture>
+                                    </control>
+                                </control>
+                                <control type="group"> <!-- Speaker left -->
+                                    <right>0</right>
+                                    <width>350</width>
+                                    <include>opencloseslideleft</include>
+                                    <control type="image">
+                                        <height>850</height>
+                                        <aspectratio>keep</aspectratio>
+                                        <texture border="8" flipx="true">masks/Speaker.png</texture>
+                                    </control>
+                                </control>
+                            </control>
+                            <control type="group"> <!-- Radio Display -->
+                                <description>NowPlaying</description>
+                                <include>opencloseslideup</include>
+                                <centerleft>50%</centerleft>
+                                <bottom>0</bottom>
+                                <width>1080</width>
+                                <height>360</height>
+                                <control type="group"> <!-- RadioDisplay Background -->
+                                    <left>45</left>
+                                    <control type="image">
+                                        <top>300</top>
+                                        <width>987</width>
+                                        <height>264</height>
+                                        <aspectratio>stretch</aspectratio>
+                                        <texture border="15">masks/RadioShadow.png</texture>
+                                    </control>
+                                    <control type="image">
+                                        <top>150</top>
+                                        <left>45</left>
+                                        <width>887</width>
+                                        <height>150</height>
+                                        <aspectratio>stretch</aspectratio>
+                                        <texture border="10">Black.png</texture>
+                                    </control>
+                                    <control type="image">
+                                        <top>50</top>
+                                        <width>987</width>
+                                        <height>264</height>
+                                        <aspectratio>stretch</aspectratio>
+                                        <texture border="10">masks/Radio.png</texture>
+                                    </control>
+                                </control>
+                                <control type="group">
+                                    <control type="group">
+                                        <top>50</top>
+                                        <control type="group"> <!-- RadioDisplay -->
+                                            <animation effect="slide" start="0" end="45" time="0" reversible="true" condition="player.passthrough">Conditional</animation>
+                                            <control type="image">
+                                                <top>50</top>
+                                                <left>52</left>
+                                                <width>80</width>
+                                                <height>80</height>
+                                                <aspectratio>keep</aspectratio>
+                                                <colordiffuse>description</colordiffuse>
+                                                <texture>effects/supernova.png</texture>
+                                            </control>
+                                            <control type="image">
+                                                <left>130</left>
+                                                <top>58</top>
+                                                <width>722</width>
+                                                <height>130</height>
+                                                <aspectratio>stretch</aspectratio>
+                                                <colordiffuse>description</colordiffuse>
+                                                <!-- <colordiffuse>description_dark</colordiffuse> -->
+                                                <texture border="5">masks/Radiodisplay.png</texture>
+                                            </control>
+                                            <control type="image">
+                                                <left>134</left>
+                                                <top>62</top>
+                                                <width>711</width>
+                                                <height>120</height>
+                                                <colordiffuse>dustdiffuse</colordiffuse>
+                                                <texture border="10">BlackBack_round.png</texture>
+                                            </control>
+                                            <control type="image">
+                                                <left>546</left>
+                                                <top>72</top>
+                                                <width>3</width>
+                                                <height>102</height>
+                                                <colordiffuse>menudiffuse</colordiffuse>
+                                                <texture border="1">Separator4.png</texture>
+                                            </control>
+                                            <control type="image">
+                                                <left>723</left>
+                                                <top>72</top>
+                                                <width>3</width>
+                                                <height>102</height>
+                                                <colordiffuse>menudiffuse</colordiffuse>
+                                                <texture border="1">Separator4.png</texture>
+                                            </control>
+                                            <control type="image">
+                                                <left>734</left>
+                                                <top>69</top>
+                                                <width>105</width>
+                                                <height>105</height>
+                                                <aspectratio>keep</aspectratio>
+                                                <texture diffuse="masks/mask_round.png">$VAR[NowPlayingPosterVar]</texture>
+                                            </control>
+                                            <control type="image">
+                                                <left>134</left>
+                                                <top>62</top>
+                                                <width>711</width>
+                                                <height>120</height>
+                                                <colordiffuse>fanartdiffuse</colordiffuse>
+                                                <texture border="2">GlassOverlay.png</texture>
+                                            </control>
+                                        </control>
+                                        <control type="group"> <!-- Volume -->
+                                            <visible>!player.passthrough</visible>
+                                            <right>65</right>
+                                            <top>40</top>
+                                            <width>160</width>
+                                            <height>160</height>
+                                            <control type="image">
+                                                <description>Lite Volume Logo</description>
+                                                <left>2</left>
+                                                <right>2</right>
+                                                <top>2</top>
+                                                <bottom>2</bottom>
+                                                <aspectratio>keep</aspectratio>
+                                                <texture>VolumeButtonScala.png</texture>
+                                            </control>
+                                            <control type="image">
+                                                <description>Lite Volume Logo</description>
+                                                <include>PlayerVolume</include>
+                                                <aspectratio>keep</aspectratio>
+                                                <colordiffuse>grey1</colordiffuse>
+                                                <texture>VolumeButton.png</texture>
+                                            </control>
+                                        </control>
+                                        <control type="group"> <!-- StreamInfos OnlineStream -->
+                                            <visible>Player.IsInternetStream</visible>
+                                            <left>45</left>
+                                            <top>65</top>
+                                            <control type="group">
+                                                <control type="label">
+                                                    <left>516</left>
+                                                    <top>3</top>
+                                                    <width>150</width>
+                                                    <height>30</height>
+                                                    <align>right</align>
+                                                    <font>lcd14</font>
+                                                    <!-- <textcolor>grey3</textcolor> -->
+                                                    <label>$INFO[MusicPlayer.PlaylistPosition]$INFO[MusicPlayer.PlaylistLength,/,]</label>
+                                                    <visible>!String.IsEmpty(MusicPlayer.PlaylistPosition)</visible>
+                                                </control>
+                                                <control type="label">
+                                                    <left>516</left>
+                                                    <top>3</top>
+                                                    <width>150</width>
+                                                    <height>30</height>
+                                                    <align>right</align>
+                                                    <font>lcd14</font>
+                                                    <!-- <textcolor>grey3</textcolor> -->
+                                                    <label>$INFO[Window(Home).Property(RadioMonitor.Station)]</label>
+                                                    <visible>!String.IsEmpty(Window(Home).Property(RadioMonitor.Station))+String.IsEmpty(MusicPlayer.PlaylistPosition)</visible>
+                                                </control>
+                                                <control type="label">
+                                                    <description>Codec</description>
+                                                    <left>516</left>
+                                                    <top>27</top>
+                                                    <width>150</width>
+                                                    <height>30</height>
+                                                    <align>right</align>
+                                                    <label>$INFO[MusicPlayer.Codec]</label>
+                                                    <font>lcd14</font>
+                                                    <!-- <textcolor>grey3</textcolor> -->
+                                                    <textoffsetx>0</textoffsetx>
+                                                </control>
+                                                <control type="label">
+                                                    <description>Bitrate</description>
+                                                    <left>516</left>
+                                                    <top>54</top>
+                                                    <width>150</width>
+                                                    <height>30</height>
+                                                    <align>right</align>
+                                                    <label>$INFO[MusicPlayer.BitRate, , kbit/s]</label>
+                                                    <font>lcd14</font>
+                                                    <!-- <textcolor>grey3</textcolor> -->
+                                                    <textoffsetx>0</textoffsetx>
+                                                </control>
+                                                <control type="label">
+                                                    <description>Sample Channels</description>
+                                                    <left>516</left>
+                                                    <top>81</top>
+                                                    <width>150</width>
+                                                    <height>30</height>
+                                                    <align>right</align>
+                                                    <label>$INFO[MusicPlayer.SampleRate,, KHz]$INFO[MusicPlayer.Channels, , CH]</label>
+                                                    <font>lcd14</font>
+                                                    <!-- <textcolor>grey3</textcolor> -->
+                                                    <textoffsetx>0</textoffsetx>
+                                                </control>
+                                            </control>
+                                            <control type="label">
+                                                <description>variable Label Row 1</description>
+                                                <left>96</left>
+                                                <top>0</top>
+                                                <width>399</width>
+                                                <height>45</height>
+                                                <scroll>true</scroll>
+                                                <align>center</align>
+                                                <font>lcd21</font>
+                                                <label>$VAR[HomeOSDTitle]</label>
+                                            </control>
+                                            <control type="label">
+                                                <description>variable Label Row 2</description>
+                                                <left>96</left>
+                                                <top>39</top>
+                                                <width>399</width>
+                                                <height>45</height>
+                                                <scroll>true</scroll>
+                                                <align>center</align>
+                                                <font>lcd21</font>
+                                                <label>$VAR[HomeOSDLabel]</label>
+                                            </control>
+                                            <control type="fadelabel">
+                                                <description>GenreInfo</description>
+                                                <left>96</left>
+                                                <top>81</top>
+                                                <width>399</width>
+                                                <height>30</height>
+                                                <align>center</align>
+                                                <scroll>true</scroll>
+                                                <scrollout>true</scrollout>
+                                                <pauseatend>2000</pauseatend>
+                                                <label>$VAR[RadioDE_Genre]</label>
+                                                <font>lcd14</font>
+                                                <textcolor>grey</textcolor>
+                                                <textoffsetx>0</textoffsetx>
+                                            </control>
+                                        </control>
+                                        <control type="group"> <!-- StreamInfos non OnlineStream -->
+                                            <visible>!Player.IsInternetStream</visible>
+                                            <left>45</left>
+                                            <top>65</top>
+                                            <control type="group">
+                                                <control type="label">
+                                                    <left>516</left>
+                                                    <top>3</top>
+                                                    <width>150</width>
+                                                    <height>30</height>
+                                                    <align>right</align>
+                                                    <font>lcd14</font>
+                                                    <!-- <textcolor>grey3</textcolor> -->
+                                                    <label>$INFO[MusicPlayer.PlaylistPosition]$INFO[MusicPlayer.PlaylistLength,[COLOR=grey2]/[/COLOR],]</label>
+                                                </control>
+                                                <control type="label" id="5">
+                                                    <description>QualiInfo</description>
+                                                    <left>516</left>
+                                                    <top>27</top>
+                                                    <width>150</width>
+                                                    <height>30</height>
+                                                    <align>right</align>
+                                                    <label>$INFO[MusicPlayer.Codec]</label>
+                                                    <font>lcd14</font>
+                                                    <!-- <textcolor>grey3</textcolor> -->
+                                                    <textoffsetx>0</textoffsetx>
+                                                </control>
+                                                <control type="label" id="7">
+                                                    <description>QualiInfo</description>
+                                                    <left>516</left>
+                                                    <top>54</top>
+                                                    <width>150</width>
+                                                    <height>30</height>
+                                                    <align>right</align>
+                                                    <label>$INFO[MusicPlayer.BitRate, , kbit/s]</label>
+                                                    <font>lcd14</font>
+                                                    <!-- <textcolor>grey3</textcolor> -->
+                                                    <textoffsetx>0</textoffsetx>
+                                                </control>
+                                                <control type="label" id="8">
+                                                    <description>QualiInfo</description>
+                                                    <left>516</left>
+                                                    <top>81</top>
+                                                    <width>150</width>
+                                                    <height>30</height>
+                                                    <align>right</align>
+                                                    <label>$INFO[MusicPlayer.SampleRate,, KHz]$INFO[MusicPlayer.Channels, , CH]</label>
+                                                    <font>lcd14</font>
+                                                    <!-- <textcolor>grey3</textcolor> -->
+                                                    <textoffsetx>0</textoffsetx>
+                                                </control>
+                                            </control>
+                                            <control type="fadelabel" id="4">
+                                                <description>GenreInfo</description>
+                                                <left>96</left>
+                                                <top>81</top>
+                                                <width>399</width>
+                                                <height>30</height>
+                                                <align>center</align>
+                                                <scroll>true</scroll>
+                                                <scrollout>true</scrollout>
+                                                <pauseatend>2000</pauseatend>
+                                                <info>MusicPlayer.Genre</info>
+                                                <font>lcd14</font>
+                                                <!-- <textcolor>grey3</textcolor> -->
+                                                <textoffsetx>0</textoffsetx>
+                                            </control>
+                                            <control type="label" id="3">
+                                                <description>Artist</description>
+                                                <left>96</left>
+                                                <top>-3</top>
+                                                <width>399</width>
+                                                <height>45</height>
+                                                <scroll>true</scroll>
+                                                <align>center</align>
+                                                <font>lcd21</font>
+                                                <label>$VAR[HomeOSDTitle]</label>
+                                                <visible>!Player.IsInternetStream</visible>
+                                            </control>
+                                            <control type="label" id="2">
+                                                <description>Titel</description>
+                                                <left>96</left>
+                                                <top>33</top>
+                                                <width>399</width>
+                                                <height>45</height>
+                                                <scroll>true</scroll>
+                                                <align>center</align>
+                                                <font>lcd21</font>
+                                                <label>$VAR[HomeOSDLabel]</label>
+                                            </control>
+                                        </control>
+                                    </control>
+                                </control>
+                                <control type="label">
+                                    <left>375</left>
+                                    <top>360</top>
+                                    <width>338</width>
+                                    <height>45</height>
+                                    <align>center</align>
+                                    <font>lcd28</font>
+                                    <textcolor>grey</textcolor>
+                                    <label>$VAR[SeekTimeLabelVar,,]$VAR[SeekDurationLabelVar, / ,]</label>
+                                    <visible>!String.IsEmpty(Player.TimeRemaining)</visible>
+                                </control>
+                            </control>
+                        </control>
+                    </control>
+                </control>
+                <control type="group"> <!-- musicoverlay -->
+                    <visible>Skin.HasSetting(musicoverlay_stream)|Skin.HasSetting(noradioviz)</visible>
+                    <visible>![Player.ShowInfo|Window.IsActive(MusicOSD)|Player.Paused|Player.Forwarding|Player.Rewinding]</visible>
+                    <visible>!Window.IsVisible(script-XBMC_Lyrics-main.xml)+!Window.IsVisible(script-cu-lrclyrics-main.xml)</visible>
+                    <include>opencloseslideup</include>
+                    <left>SpacePaddingLarge</left>
+                    <right>SpacePaddingLarge</right>
+                    <bottom>SpacePaddingLarge</bottom>
+                    <control type="group">
+                        <height>200</height>
+                        <bottom>0</bottom>
+                        <control type="image">
+                            <aspectratio>stretch</aspectratio>
+                            <colordiffuse>grey3</colordiffuse>
+                            <texture border="20" flipx="true">SideFadeWhite$VAR[CornerSettingVar].png</texture>
+                            <visible>!Control.IsVisible(1001)</visible>
+                        </control>
+                        <control type="image">
+                            <aspectratio>stretch</aspectratio>
+                            <width>55%</width>
+                            <colordiffuse>grey3</colordiffuse>
+                            <texture border="20" flipx="true">SideFadeWhite$VAR[CornerSettingVar].png</texture>
+                            <visible>Control.IsVisible(1001)</visible>
+                        </control>
+                    </control>
+                    <control type="group">
+                        <control type="group">
+                            <bottom>0</bottom>
+                            <width>200</width>
+                            <height>200</height>
+                            <control type="image">
+                                <left>SpacePaddingIcon</left>
+                                <top>SpacePaddingIcon</top>
+                                <right>SpacePaddingIcon</right>
+                                <bottom>SpacePaddingIcon</bottom>
+                                <aspectratio>keep</aspectratio>
+                                <texture diffuse="masks/mask_round.png" fallback="DefaultAddonMusic.png">$VAR[NowPlayingPosterVar]</texture>
+                            </control>
+                            <control type="image">
+                                <aspectratio>stretch</aspectratio>
+                                <colordiffuse>menudiffuse</colordiffuse>
+                                <texture border="4">masks/Default$VAR[CornerSettingVar].png</texture>
+                            </control>
+                        </control>
+                        <control type="grouplist">
+                            <left>220</left>
+                            <height>196</height>
+                            <bottom>0</bottom>
+                            <control type="label">
+                                <description>Radio Station</description>
+                                <height>34</height>
+                                <align>left</align>
+                                <label>$INFO[Window(Home).Property(RadioMonitor.Station)]</label>
+                                <font>ubuntu-r19</font>
+                                <shadowcolor>grey3</shadowcolor>
+                                <visible>!String.IsEmpty(Window(Home).Property(RadioMonitor.ArtistDisplay))</visible>
+                            </control>
+                            <control type="label">
+                                <description>Platzhalter</description>
+                                <height>34</height>
+                                <align>left</align>
+                                <label/>
+                                <font>ubuntu-r19</font>
+                                <shadowcolor>grey3</shadowcolor>
+                                <visible>String.IsEmpty(Window(Home).Property(RadioMonitor.ArtistDisplay))</visible>
+                            </control>
+                            <control type="label">
+                                <description>Timelabel</description>
+                                <height>34</height>
+                                <align>left</align>
+                                <label>$VAR[SeekTimeRemainingLabelVar]</label>
+                                <font>ubuntu-r19</font>
+                                <shadowcolor>grey3</shadowcolor>
+                            </control>
+                            <control type="label">
+                                <height>34</height>
+                                <align>left</align>
+                                <label>$VAR[HomeOSDTitle]$INFO[Window(Home).Property(RadioMonitor.BandFormed), (,)]$INFO[Window(Home).Property(RadioMonitor.BandMembers),[COLOR=grey] - ,[/COLOR]]</label>
+                                <font>ubuntu-r19</font>
+                                <shadowcolor>grey3</shadowcolor>
+                            </control>
+                            <control type="label">
+                                <height>34</height>
+                                <align>left</align>
+                                <label>$VAR[HomeOSDLabel]</label>
+                                <font>ubuntu-r19</font>
+                                <shadowcolor>grey3</shadowcolor>
+                            </control>
+                            <control type="label">
+                                <height>34</height>
+                                <align>left</align>
+                                <label>$INFO[MusicPlayer.Album,$LOCALIZE[558]: ,]$INFO[MusicPlayer.Year, (,)]</label>
+                                <font>ubuntu-r19</font>
+                                <shadowcolor>grey3</shadowcolor>
+                                <visible>!Player.IsInternetStream</visible>
+                            </control>
+                            <control type="label">
+                                <height>34</height>
+                                <align>left</align>
+                                <label>$INFO[Window(Home).Property(RadioMonitor.Album),$LOCALIZE[558]: ,]</label>
+                                <font>ubuntu-r19</font>
+                                <shadowcolor>grey3</shadowcolor>
+                                <visible>!String.IsEmpty(Window(Home).Property(RadioMonitor.Album))</visible>
+                            </control>
+                        </control>
+                    </control>
+                </control>
+                <control type="group"> <!-- rss -->
+                    <left>-30</left>
+                    <top>45</top>
+                    <visible>!Window.IsActive(MusicOSD)</visible>
+                    <visible>!Window.IsVisible(script-XBMC_Lyrics-main.xml)+!Window.IsVisible(script-cu-lrclyrics-main.xml)</visible>
+                    <animation effect="slide" start="0" end="0,-45" time="200" condition="!Player.ShowInfo">Conditional</animation>
+                    <include>RSS</include>
+                </control>
+                <control type="group">
+                    <visible>!Window.IsVisible(script-XBMC_Lyrics-main.xml)+!Window.IsVisible(script-cu-lrclyrics-main.xml)</visible>
+                    <include>opencloseslidedown</include>
+                    <visible>Player.ShowInfo+!Window.IsActive(MusicOSD)</visible>
+                    <include>Clock</include>
+                </control>
+            </control>
+            <control type="group">
+                <visible>!Control.IsVisible(999)+!Control.IsVisible(998)</visible>
+                <include>OSDTexture</include>
+            </control>
+        </control>
+    </controls>
+</window>

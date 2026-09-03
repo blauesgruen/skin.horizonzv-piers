@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <include name="cs_rightpanel">
+        <control type="group">
+            <animation effect="slide" start="580" end="0" time="400" condition="ControlGroup(732).HasFocus">Conditional</animation>
+            <animation effect="fade" start="100" end="0" time="200" delay="150" condition="!ControlGroup(732).HasFocus">Conditional</animation>
+            <control type="group">
+                <right>0</right>
+                <width>SidePanelRightWidth</width>
+                <height>100%</height>
+                <control type="image">
+                    <description>SidePanel</description>
+                    <left>-20</left>
+                    <top>-8</top>
+                    <width>20</width>
+                    <colordiffuse>fanartdiffuse</colordiffuse>
+                    <texture flipx="true">SideFade.png</texture>
+                </control>
+                <control type="image">
+                    <colordiffuse>$VAR[BackgroundOverlayColorDialog]</colordiffuse>
+                    <texture>WhiteBack.png</texture>
+                    <animation effect="fade" end="80" time="0" condition="true">Conditional</animation>
+                </control>
+                <control type="image">
+                    <texture>Black.png</texture>
+                    <animation effect="fade" end="80" time="0" condition="true">Conditional</animation>
+                </control>
+                <control type="image">
+                    <left>-30</left>
+                    <top>50%</top>
+                    <width>18</width>
+                    <height>36</height>
+                    <texture flipy="true">ArrowBig.png</texture>
+                </control>
+                <control type="image">
+                    <include>openclosevisible</include>
+                    <left>30</left>
+                    <top>60</top>
+                    <width>18</width>
+                    <height>36</height>
+                    <texture>ArrowBig.png</texture>
+                    <animation effect="rotate" start="0" end="-90" center="auto" time="0" condition="true">Conditional</animation>
+                </control>
+                <control type="image">
+                    <include>openclosevisible</include>
+                    <top>56r</top>
+                    <left>30</left>
+                    <width>18</width>
+                    <height>36</height>
+                    <texture flipy="true">ArrowBig.png</texture>
+                    <animation effect="rotate" start="0" end="90" center="auto" time="0" condition="true">Conditional</animation>
+                </control>
+                <control type="grouplist" id="732">
+                    <right>-1</right>
+                    <top>105</top>
+                    <!-- <width>SidePanelRightWidth</width> -->
+                    <height>928</height>
+                    <onup>732</onup>
+                    <ondown>732</ondown>
+                    <onleft>50</onleft>
+                    <onright/>
+                    <itemgap>3</itemgap>
+                    <align>left</align>
+                    <orientation>vertical</orientation>
+                    <control type="image" id="1700"> <!-- Videos -->
+                        <height>3</height>
+                        <colordiffuse>fanartdiffuse</colordiffuse>
+                        <texture border="1">Separator1.png</texture>
+                        <visible>Window.IsVisible(videos)+![Container.Content(episodes)|Container.Content(tvshows)|Container.Content(seasons)]</visible>
+                    </control>
+                    <control type="label" id="1701">
+                        <height>33</height>
+                        <align>center</align>
+                        <textcolor>white</textcolor>
+                        <label>20342</label>
+                        <font>bebas19</font>
+                        <visible>Window.IsVisible(videos)+![Container.Content(episodes)|Container.Content(tvshows)|Container.Content(seasons)]</visible>
+                    </control>
+                    <control type="label" id="1702">
+                        <height>8</height>
+                        <label/>
+                        <visible>Window.IsVisible(videos)+![Container.Content(episodes)|Container.Content(tvshows)|Container.Content(seasons)]</visible>
+                    </control>
+                    <control type="radiobutton" id="1704">
+                        <description>OriginalTitle</description>
+                        <include>SidePanelButton</include>
+                        <label>20376</label>
+                        <onclick>Skin.ToggleSetting(OriginalTitle)</onclick>
+                        <onclick>Container.Refresh</onclick>
+                        <selected>Skin.HasSetting(OriginalTitle)</selected>
+                        <visible>Window.IsVisible(videos)+![Container.Content(episodes)|Container.Content(tvshows)|Container.Content(seasons)]</visible>
+                    </control>
+                    <control type="radiobutton" id="1706">
+                        <description>Video Extra Art</description>
+                        <include>SidePanelButton</include>
+                        <label>Extra Art</label>
+                        <onclick>Skin.ToggleSetting(EnableExtendedArt)</onclick>
+                        <selected>Skin.HasSetting(EnableExtendedArt)</selected>
+                        <!-- <enable>System.HasAddon(script.artwork.beef)</enable> -->
+                        <visible>Window.IsVisible(videos)</visible>
+                    </control>
+                    <control type="label" id="1750">
+                        <!-- Music -->
+                        <height>8</height>
+                        <label/>
+                        <visible>!Control.IsVisible(512)+!Control.IsVisible(506)</visible>
+                        <visible>Window.IsVisible(music)|Window.IsVisible(MusicPlaylist)</visible>
+                    </control>
+                    <control type="image" id="1751">
+                        <height>3</height>
+                        <colordiffuse>fanartdiffuse</colordiffuse>
+                        <texture border="1">Separator1.png</texture>
+                        <visible>!Control.IsVisible(512)+!Control.IsVisible(506)</visible>
+                        <visible>Window.IsVisible(music)|Window.IsVisible(MusicPlaylist)</visible>
+                    </control>
+                    <control type="label" id="1752">
+                        <height>33</height>
+                        <align>center</align>
+                        <textcolor>white</textcolor>
+                        <label>2</label>
+                        <font>bebas19</font>
+                        <visible>!Control.IsVisible(512)+!Control.IsVisible(506)</visible>
+                        <visible>Window.IsVisible(music)|Window.IsVisible(MusicPlaylist)</visible>
+                    </control>
+                    <control type="label" id="1753">
+                        <height>8</height>
+                        <label/>
+                        <visible>!Control.IsVisible(512)+!Control.IsVisible(506)</visible>
+                        <visible>Window.IsVisible(music)|Window.IsVisible(MusicPlaylist)</visible>
+                    </control>
+                    <control type="radiobutton" id="1754">
+                        <include>SidePanelButton</include>
+                        <label>$LOCALIZE[2] Extra Art</label>
+                        <onclick>Skin.ToggleSetting(EnableExtendedArt)</onclick>
+                        <selected>Skin.HasSetting(EnableExtendedArt)</selected>
+                        <!-- <enable>System.HasAddon(script.artwork.beef)</enable> -->
+                        <visible>!Control.IsVisible(512)+!Control.IsVisible(506)</visible>
+                        <visible>Window.IsVisible(music)|Window.IsVisible(MusicPlaylist)</visible>
+                    </control>
+                    <control type="radiobutton" id="1756"> <!-- kann in kodi 22 weg -->
+                        <description>extendedinfo music</description>
+                        <include>SidePanelButton</include>
+                        <label>301278</label>
+                        <onclick>Skin.Reset(extendedinfo_music)</onclick>
+                        <selected>Skin.HasSetting(extendedinfo_music)</selected>
+                        <visible>Skin.HasSetting(extendedinfo_music)</visible>
+                        <visible>Control.IsVisible(58)|Control.IsVisible(741)|Control.IsVisible(562)|Control.IsVisible(515)|Control.IsVisible(509)</visible>
+                        <visible>Container.Content(artists)</visible>
+                    </control>
+                    <control type="label" id="1770">
+                        <!-- General -->
+                        <height>8</height>
+                        <label/>
+                    </control>
+                    <control type="image" id="1771">
+                        <height>3</height>
+                        <colordiffuse>fanartdiffuse</colordiffuse>
+                        <texture border="1">Separator1.png</texture>
+                    </control>
+                    <control type="label" id="1772">
+                        <height>33</height>
+                        <align>center</align>
+                        <textcolor>white</textcolor>
+                        <label>128</label>
+                        <font>bebas19</font>
+                    </control>
+                    <control type="label" id="1773">
+                        <height>8</height>
+                        <label/>
+                    </control>
+                    <control type="button" id="1778">
+                        <description>FSK</description>
+                        <include>SidePanelButton</include>
+                        <label>301282</label>
+                        <label2>$VAR[rated_language]</label2>
+                        <onclick>Skin.SelectBool(301378, 301544|rated_de, 301546|rated_us, 301548|rated_uk, 301550|rated_fr)</onclick>
+                        <!-- <enable>Skin.HasSetting(fsk)|Skin.HasSetting(fsk_original)|Skin.HasSetting(fsk_dual)</enable> -->
+                        <visible>Window.IsVisible(videos)</visible>
+                    </control>
+                    <!-- <control type="radiobutton" id="1780">
+                        <description>Label Flagging</description>
+                        <include>SidePanelButton</include>
+                        <label>301284</label>
+                        <onclick>Skin.ToggleSetting(Label_Flagging)</onclick>
+                        <selected>Skin.HasSetting(Label_Flagging)</selected>
+                    </control> -->
+                    <control type="radiobutton" id="1782">
+                        <description>Fanart</description>
+                        <include>SidePanelButton</include>
+                        <label>$LOCALIZE[33068] $LOCALIZE[20445]</label>
+                        <onclick>Skin.ToggleSetting(fanart)</onclick>
+                        <selected>Skin.HasSetting(fanart)</selected>
+                        <enable>!Skin.HasSetting(onlyone)</enable>
+                        <visible>!Window.IsActive(pictures)</visible>
+                        <visible>!Control.IsVisible(562)+!Control.IsVisible(740)+!Control.IsVisible(741)+!Control.IsVisible(742)+!Control.IsVisible(551)+!Control.IsVisible(516)+!Control.IsVisible(514)</visible>
+                    </control>
+                    <control type="button" id="1784">
+                        <description>fanartdiffuse</description>
+                        <include>SidePanelButton</include>
+                        <label>301286</label>
+                        <label2>$VAR[BackgroundDimLabel]</label2>
+                        <onclick>Skin.SelectBool(301286, 301460|background_dim_1, 301462|background_dim_2, 301464|background_dim_3, 594|background_dim_no)</onclick>
+                    </control>
+                    <control type="radiobutton" id="1786">
+                        <description>Common Page Count</description>
+                        <include>SidePanelButton</include>
+                        <label>301288</label>
+                        <onclick>Skin.ToggleSetting(CommonPageCount)</onclick>
+                        <selected>Skin.HasSetting(CommonPageCount)</selected>
+                    </control>
+                    <control type="button" id="1788">
+                        <ondown>1700</ondown>
+                        <include>SidePanelButton</include>
+                        <textwidth>450</textwidth>
+                        <label>$LOCALIZE[33068]-$LOCALIZE[131]</label>
+                        <onclick>Control.SetFocus(666)</onclick>
+                        <visible>!Window.IsActive(pictures)</visible>
+                        <visible>!ListItem.IsParentFolder</visible>
+                        <visible>!Control.IsVisible(562)+!Control.IsVisible(740)+!Control.IsVisible(741)+!Control.IsVisible(742)+!Control.IsVisible(551)+!Control.IsVisible(516)+!Control.IsVisible(514)+!Control.IsVisible(500)</visible>
+                    </control>
+                    <control type="label" id="1800">
+                        <!-- View Settings -->
+                        <height>8</height>
+                        <label/>
+                        <visible>Control.IsVisible(444)</visible>
+                    </control>
+                    <control type="image" id="1801">
+                        <height>3</height>
+                        <colordiffuse>fanartdiffuse</colordiffuse>
+                        <texture border="1">Separator1.png</texture>
+                        <visible>Control.IsVisible(444)</visible>
+                    </control>
+                    <control type="label" id="1802">
+                        <height>33</height>
+                        <align>center</align>
+                        <textcolor>white</textcolor>
+                        <label>14018</label>
+                        <font>bebas19</font>
+                        <visible>Control.IsVisible(444)</visible>
+                    </control>
+                    <control type="radiobutton" id="1804">
+                        <description>Cases</description>
+                        <include>SidePanelButton</include>
+                        <label>301290</label>
+                        <onclick>Skin.ToggleSetting(hideMovieCases)</onclick>
+                        <selected>!Skin.HasSetting(hideMovieCases)</selected>
+                        <visible>Control.IsVisible(742)|Control.IsVisible(740)|Control.IsVisible(721)
+                        |Control.IsVisible(562)|Control.IsVisible(515)|Control.IsVisible(503)|Control.IsVisible(57)</visible> <!-- |[Control.IsVisible(541)+!Container.Content(episodes)] -->
+                        <visible>Window.IsVisible(videos)|Container.Content(Seasons)|Container.Content(tvshows)</visible>
+                    </control>
+                    <control type="radiobutton" id="1806">
+                        <include>SidePanelButton</include>
+                        <label>$LOCALIZE[16101] $LOCALIZE[20453]</label>
+                        <onclick>Skin.ToggleSetting(unwatchedicon)</onclick>
+                        <selected>Skin.HasSetting(unwatchedicon)</selected>
+                        <visible>Control.IsVisible(515)|Control.IsVisible(57)</visible>
+                        <visible>Container.Content(tvshows)|Container.Content(seasons)</visible>
+                    </control>
+                    <control type="radiobutton" id="1808">
+                        <include>SidePanelButton</include>
+                        <label>301292</label>
+                        <onclick>Skin.ToggleSetting(Episode_HideCover)</onclick>
+                        <selected>Skin.HasSetting(Episode_HideCover)</selected>
+                        <visible>Control.IsVisible(515)</visible>
+                        <visible>Window.IsVisible(videos)</visible>
+                    </control>
+                    <control type="radiobutton" id="1809">
+                        <description>Dust Effect</description>
+                        <include>SidePanelButton</include>
+                        <label>301302</label>
+                        <onclick>Skin.ToggleSetting(dust)</onclick>
+                        <selected>Skin.HasSetting(dust)</selected>
+                        <visible>Control.IsVisible(562)
+                        |Control.IsVisible(742)|Control.IsVisible(740)</visible><!-- [Control.IsVisible(541)+!Container.Content(episodes)] |--> 
+                        <enable>!Skin.HasSetting(hideMovieCases)</enable>
+                        <visible>Window.IsVisible(videos)</visible>
+                    </control>
+                    <control type="radiobutton" id="1810">
+                        <include>SidePanelButton</include>
+                        <label>301294</label>
+                        <onclick>Skin.ToggleSetting(Fanart_ClearlogoTitle)</onclick>
+                        <selected>Skin.HasSetting(Fanart_ClearlogoTitle)</selected>
+                        <visible>Control.IsVisible(401)</visible>
+                        <enable>Skin.HasSetting(EnableExtendedArt)</enable>
+                    </control>
+                    <control type="radiobutton" id="1811">
+                        <include>SidePanelButton</include>
+                        <label>301296</label>
+                        <onclick>$VAR[SidePanel_InformationToggleVar]</onclick>
+                        <onclick>Skin.ToggleSetting(smallinfo_off)</onclick>
+                        <selected>!Skin.HasSetting(smallinfo_off)</selected>
+                        <visible>Control.IsVisible(302)|Control.IsVisible(505)|Control.IsVisible(740)|Control.IsVisible(742)</visible>
+                    </control>
+                    <control type="radiobutton" id="1813">
+                        <include>SidePanelButton</include>
+                        <label>Alphabet Scroller</label>
+                        <onclick>Skin.ToggleSetting(alphabetscroller_off)</onclick>
+                        <selected>!Skin.HasSetting(alphabetscroller_off)</selected>
+                        <visible>Control.IsVisible(505) | Control.IsVisible(57)</visible>
+                        <visible>!Container.Content(episodes)</visible>
+                        <enable>String.IsEqual(Container.SortMethod,$LOCALIZE[369]) | String.IsEqual(Container.SortMethod,$LOCALIZE[556]) | String.IsEqual(Container.SortMethod,$LOCALIZE[551])</enable>
+                        <!-- <visible>Control.IsVisible(505)+[Container.Content(tvshows)|Container.Content(seasons)]</visible> -->
+                    </control>
+                    <control type="radiobutton" id="1814">
+                        <include>SidePanelButton</include>
+                        <label>3 $LOCALIZE[450]</label>
+                        <onclick>Skin.ToggleSetting(wideview_3itemsrow)</onclick>
+                        <selected>Skin.HasSetting(wideview_3itemsrow)</selected>
+                        <visible>Control.IsVisible(505)+!Container.Content(episodes)</visible>
+                    </control>
+                    <control type="radiobutton" id="1815">
+                        <include>SidePanelButton</include>
+                        <label>301296</label>
+                        <onclick>Skin.ToggleSetting(VideoInfo)</onclick>
+                        <selected>Skin.HasSetting(VideoInfo)</selected>
+                        <visible>Control.IsVisible(401)</visible>
+                    </control>
+                    <control type="radiobutton" id="1816">
+                        <include>SidePanelButton</include>
+                        <label>301296</label>
+                        <onclick>Skin.ToggleSetting(EpisodeInfo)</onclick>
+                        <selected>Skin.HasSetting(EpisodeInfo)</selected>
+                        <visible>Control.IsVisible(402)</visible>
+                    </control>
+                    <control type="radiobutton" id="1817">
+                        <description>Plot</description>
+                        <include>SidePanelButton</include>
+                        <label>207</label>
+                        <onclick>Skin.ToggleSetting(RightListPlot)</onclick>
+                        <selected>Skin.HasSetting(RightListPlot)</selected>
+                        <visible>Control.IsVisible(721)</visible> <!-- |Control.IsVisible(541) --> 
+                    </control>
+                    <control type="radiobutton" id="1818">
+                        <description>Wall Cover Animation</description>
+                        <include>SidePanelButton</include>
+                        <label>301300</label>
+                        <onclick>Skin.ToggleSetting(HideOverlayIconNew)</onclick>
+                        <selected>Skin.HasSetting(HideOverlayIconNew)</selected>
+                        <visible>Control.IsVisible(742)|Control.IsVisible(740)|Control.IsVisible(562)|Control.IsVisible(402)|Control.IsVisible(505)
+                        |Control.IsVisible(401)|Control.IsVisible(500)|Control.IsVisible(302)|Control.IsVisible(57)</visible> <!-- |Control.IsVisible(541) --> 
+                        <visible>Window.IsVisible(videos)</visible>
+                    </control>
+                    <control type="radiobutton" id="1822">
+                        <description>Cover except Fanart</description>
+                        <include>SidePanelButton</include>
+                        <label>Cover statt Fanart</label>
+                        <onclick>Skin.ToggleSetting(ShowCover)</onclick>
+                        <selected>Skin.HasSetting(ShowCover)</selected>
+                        <visible>Control.IsVisible(302)+Window.IsVisible(videos)</visible>
+                    </control>
+                    <!-- <control type="radiobutton" id="1824">
+                        <description>hideInfoPanel</description>
+                        <include>SidePanelButton</include>
+                        <label>301296</label>
+                        <onclick>Skin.ToggleSetting(hideInfoPanel)</onclick>
+                        <selected>!Skin.HasSetting(hideInfoPanel)</selected>
+                        <visible>Control.IsVisible(742)|Control.IsVisible(740)</visible>
+                    </control> -->
+                    <!-- generel -->
+                    <control type="radiobutton" id="1826">
+                        <description>Wall Cover Animation</description>
+                        <include>SidePanelButton</include>
+                        <label>301304</label>
+                        <onclick>Skin.ToggleSetting(no_wall_animation)</onclick>
+                        <selected>Skin.HasSetting(no_wall_animation)</selected>
+                        <visible>Control.IsVisible(741)|Control.IsVisible(742)|Control.IsVisible(740)|Control.IsVisible(562)</visible>
+                        <visible>Skin.HasSetting(animation)</visible>
+                    </control>
+                    <control type="radiobutton" id="1828">
+                        <description>Cover Dim</description>
+                        <include>SidePanelButton</include>
+                        <label>301306</label>
+                        <onclick>Skin.ToggleSetting(CoverDim)</onclick>
+                        <selected>Skin.HasSetting(CoverDim)</selected>
+                        <visible>Control.IsVisible(741)|Control.IsVisible(740)|Control.IsVisible(742)|Control.IsVisible(562)
+                        |Control.IsVisible(509)|Control.IsVisible(505)|Control.IsVisible(401)|Control.IsVisible(302)|Control.IsVisible(500)</visible>
+                    </control>
+                    <control type="radiobutton" id="1829">
+                        <description>Disc Rotation</description>
+                        <include>SidePanelButton</include>
+                        <label>$LOCALIZE[427] $LOCALIZE[35227]</label>
+                        <onclick>Skin.ToggleSetting(DiscRotation)</onclick>
+                        <selected>Skin.HasSetting(DiscRotation)</selected>
+                        <visible>Skin.HasSetting(animation)</visible>
+                        <visible>Control.IsVisible(562)|Control.IsVisible(401)|Control.IsVisible(742)|Control.IsVisible(740)</visible>
+                    </control>
+                    <!-- music -->
+                    <control type="radiobutton" id="1830">
+                        <include>SidePanelButton</include>
+                        <label>301296</label>
+                        <onclick>Skin.ToggleSetting(MusicInfo)</onclick>
+                        <selected>Skin.HasSetting(MusicInfo)</selected>
+                        <visible>Control.IsVisible(509)</visible>
+                    </control>
+                    <control type="radiobutton" id="1832">
+                        <include>SidePanelButton</include>
+                        <label>301290</label>
+                        <onclick>Skin.ToggleSetting(hideMusicCases)</onclick>
+                        <selected>!Skin.HasSetting(hideMusicCases)</selected>
+                        <visible>Control.IsVisible(741)|Control.IsVisible(58)</visible>
+                    </control>
+                    <control type="radiobutton" id="1834">
+                        <include>SidePanelButton</include>
+                        <label>301296</label>
+                        <onclick>Skin.ToggleSetting(InfoWall)</onclick>
+                        <selected>Skin.HasSetting(InfoWall)</selected>
+                        <visible>Control.IsVisible(741)</visible>
+                    </control>
+                    <control type="radiobutton" id="1836">
+                        <include>SidePanelButton</include>
+                        <label>20021</label>
+                        <onclick>Skin.ToggleSetting(wideview_season_poster)</onclick>
+                        <selected>Skin.HasSetting(wideview_season_poster)</selected>
+                        <visible>Control.IsVisible(505)+Container.Content(seasons)</visible>
+                    </control>
+                </control>
+                <control type="image">
+                    <left>-2</left>
+                    <width>akzentline_size</width>
+                    <colordiffuse>$VAR[BackgroundOverlayColorDialog]</colordiffuse>
+					<texture>White.png</texture>
+                </control>
+            </control>
+        </control>
+    </include>
+</includes>

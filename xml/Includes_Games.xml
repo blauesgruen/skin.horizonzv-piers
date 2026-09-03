@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+	<include name="GameDialogControllers">
+		<include>DialogBackgroundSimple</include>
+		<control type="group">
+			<include>openclosebox</include>
+			<include content="DialogBackgroundCommons">
+				<param name="width" value="90%" />
+				<param name="height" value="85%" />
+				<param name="bottomimage" value="810" />
+				<param name="header_id" value="2" />
+				<param name="header_label" value="35058" />
+			</include>
+			<control type="group">
+				<left>SpacePadding</left>
+				<right>SpacePadding</right>
+				<top>SpacePaddingXL</top>
+				<bottom>SpacePaddingXL</bottom>
+				<control type="group">
+					<right>350</right>
+					<control type="group">
+						<description>Controller list</description>
+						<width>33%</width>
+						<control type="label">
+							<description>Controller profiles grouplist heading</description>
+							<height>30</height>
+							<font>impacted18</font>
+							<label>$LOCALIZE[35050]</label>
+							<align>center</align>
+							<aligny>center</aligny>
+						</control>
+						<control type="group">
+							<top>50</top>
+							<control type="image">
+								<description>Controller profiles grouplist background</description>
+								<colordiffuse>fanartdiffuse</colordiffuse>
+								<texture border="5">buttons/KeyboardEditArea.png</texture>
+							</control>
+							<control type="group">
+								<top>10</top>
+								<bottom>10</bottom>
+								<control type="grouplist" id="3">
+									<description>Features grouplist</description>
+									<left>10</left>
+									<right>20</right>
+									<onleft>9001</onleft>
+									<onright>5</onright>
+									<onup>3</onup>
+									<ondown>3</ondown>
+									<pagecontrol>60</pagecontrol>
+								</control>
+								<control type="scrollbar" id="60">
+									<right>6</right>
+									<height>100%</height>
+									<width>12</width>
+									<onleft>3</onleft>
+									<onright>5</onright>
+									<showonepage>false</showonepage>
+									<orientation>vertical</orientation>
+								</control>
+							</control>
+						</control>
+						<control type="group">
+							<left>10</left>
+							<right>20</right>
+							<include content="DefaultDialogButton">
+								<param name="id" value="10" />
+								<param name="width" value="100%" />
+								<param name="textcolor" value="white" />
+								<param name="onleft" value="9001" />
+								<param name="onright" value="5" />
+								<param name="nofocus" />
+							</include>
+						</control>
+					</control>
+					<control type="gamecontroller" id="31">
+						<centerleft>50%</centerleft>
+						<top>50</top>
+						<width>30%</width>
+						<aspectratio>keep</aspectratio>
+					</control>
+					<control type="group">
+						<description>Feature list</description>
+						<right>20</right>
+						<width>33%</width>
+						<control type="label">
+							<description>Feature list heading</description>
+							<font>impacted18</font>
+							<label>$LOCALIZE[35059]</label>
+							<align>center</align>
+							<aligny>center</aligny>
+						</control>
+						<control type="group">
+							<top>50</top>
+							<control type="image">
+								<description>Controller profiles grouplist background</description>
+								<colordiffuse>fanartdiffuse</colordiffuse>
+								<texture border="5">buttons/KeyboardEditArea.png</texture>
+							</control>
+							<control type="group">
+								<top>10</top>
+								<bottom>10</bottom>
+								<control type="grouplist" id="5">
+									<description>Features grouplist</description>
+									<left>10</left>
+									<right>20</right>
+									<onleft>3</onleft>
+									<onright>9001</onright>
+									<onup>5</onup>
+									<ondown>5</ondown>
+									<pagecontrol>61</pagecontrol>
+								</control>
+								<control type="scrollbar" id="61">
+									<right>6</right>
+									<height>100%</height>
+									<width>12</width>
+									<onleft>5</onleft>
+									<onright>9001</onright>
+									<showonepage>false</showonepage>
+									<orientation>vertical</orientation>
+								</control>
+							</control>
+						</control>
+						<control type="group">
+							<left>10</left>
+							<right>20</right>
+							<include content="DefaultDialogButton">
+								<param name="id" value="7" />
+								<param name="width" value="100%" />
+								<param name="textcolor" value="white" />
+								<param name="onleft" value="3" />
+								<param name="onright" value="61" />
+								<param name="nofocus" />
+							</include>
+							<control type="label" id="8">
+								<description>Feature group title</description>
+								<width>100%</width>
+								<height>40</height>
+								<align>center</align>
+								<aligny>center</aligny>
+								<textcolor>grey</textcolor>
+								<shadowcolor>black</shadowcolor>
+							</control>
+							<control type="image" id="9">
+								<description>Feature separator image</description>
+								<height>1</height>
+								<texture border="1">Separator2.png</texture>
+							</control>
+						</control>
+					</control>
+				</control>
+				<control type="grouplist" id="9001">
+					<top>50</top>
+					<right>0</right>
+					<width>330</width>
+					<onleft>5</onleft>
+					<onright>3</onright>
+					<itemgap>dialogbuttons_itemgap</itemgap>
+					<include content="DefaultDialogButton">
+						<param name="width" value="100%" />
+						<param name="id" value="18" />
+						<param name="label" value="$LOCALIZE[186]" />
+						<param name="onleft" value="5" />
+						<param name="onright" value="3" />
+					</include>
+					<include content="DefaultDialogButton">
+						<param name="width" value="100%" />
+						<param name="id" value="19" />
+						<param name="label" value="$LOCALIZE[13007]" />
+						<param name="onleft" value="5" />
+						<param name="onright" value="3" />
+					</include>
+					<include content="DefaultDialogButton">
+						<param name="width" value="100%" />
+						<param name="id" value="20" />
+						<param name="label" value="$LOCALIZE[21452]" />
+						<param name="onleft" value="5" />
+						<param name="onright" value="3" />
+					</include>
+					<include content="DefaultDialogButton">
+						<param name="width" value="100%" />
+						<param name="id" value="22" />
+						<param name="label" value="$LOCALIZE[35021]" />
+						<param name="onleft" value="5" />
+						<param name="onright" value="3" />
+					</include>
+					<include content="DefaultDialogButton">
+						<param name="width" value="100%" />
+						<param name="id" value="17" />
+						<param name="label" value="$LOCALIZE[10043]" />
+						<param name="onleft" value="5" />
+						<param name="onright" value="3" />
+					</include>
+					<include content="DefaultDialogButton">
+						<param name="width" value="100%" />
+						<param name="id" value="21" />
+						<param name="label" value="$LOCALIZE[35019]" />
+						<param name="onleft" value="5" />
+						<param name="onright" value="3" />
+					</include>
+				</control>
+			</control>
+			<control type="group">
+				<description>Bottom controller description</description>
+				<left>SpacePadding</left>
+				<right>SpacePadding</right>
+				<control type="group">
+					<bottom>3</bottom>
+					<height>60</height>
+					<control type="textbox" id="32">
+						<description>Bottom controller description</description>
+						<align>center</align>
+						<aligny>center</aligny>
+						<description>Controller description</description>
+						<font>ubuntu-r13b</font>
+					</control>
+				</control>
+			</control>
+		</control>
+	</include>
+	<include name="GameDialogPorts">
+		<include>BlackBack</include>
+		<include>openclosebox</include>
+		<include>openclosevisible</include>
+		<control type="group">
+			<include content="DialogBackgroundCommons">
+				<param name="width" value="1320" />
+				<param name="height" value="830" />
+				<param name="header_label" value="" />
+				<param name="header_id" value="2" />
+			</include>
+			<control type="group">
+				<description>Content area</description>
+				<top>100</top>
+				<bottom>30</bottom>
+				<left>30</left>
+				<right>30</right>
+				<control type="group">
+					<description>Port list</description>
+					<width>1430</width>
+					<height>700</height>
+					<control type="image">
+						<description>Port list background</description>
+						<right>500</right>
+						<bottom>70</bottom>
+						<colordiffuse>fanartdiffuse</colordiffuse>
+						<texture border="15">buttons/KeyboardEditArea.png</texture>
+					</control>
+					<control type="list" id="3">
+						<description>Port item list</description>
+						<width>930</width>
+						<bottom>70</bottom>
+						<onright>9001</onright>
+						<onup>3</onup>
+						<ondown>3</ondown>
+						<pagecontrol>62</pagecontrol>
+						<scrolltime tween="sine">200</scrolltime>
+						<orientation>vertical</orientation>
+						<itemlayout height="100">
+							<control type="group">
+								<control type="label">
+									<left>20</left>
+									<height>100</height>
+									<label>$INFO[ListItem.Label]</label>
+									<align>left</align>
+								</control>
+								<control type="label">
+									<left>20</left>
+									<height>100</height>
+									<right>132</right>
+									<label>$INFO[ListItem.Label2]</label>
+									<align>right</align>
+								</control>
+								<control type="gamecontroller">
+									<right>20</right>
+									<width>100</width>
+									<texture>$INFO[ListItem.Icon]</texture>
+									<portaddress>$INFO[ListItem.FilenameAndPath]</portaddress>
+									<controllerdiffuse>button_focus</controllerdiffuse>
+								</control>
+							</control>
+						</itemlayout>
+						<focusedlayout height="100">
+							<control type="group">
+								<control type="image">
+									<top>2</top>
+									<left>2</left>
+									<right>2</right>
+									<include>DialogButtonTextureFocus</include>
+									<visible>Control.HasFocus(3)</visible>
+								</control>
+								<control type="label">
+									<left>20</left>
+									<height>100</height>
+									<label>$INFO[ListItem.Label]</label>
+									<align>left</align>
+								</control>
+								<control type="label">
+									<left>20</left>
+									<height>100</height>
+									<right>130</right>
+									<label>$INFO[ListItem.Label2]</label>
+									<align>right</align>
+								</control>
+								<control type="gamecontroller">
+									<right>20</right>
+									<width>100</width>
+									<texture>$INFO[ListItem.Icon]</texture>
+									<portaddress>$INFO[ListItem.FilenameAndPath]</portaddress>
+									<controllerdiffuse>button_focus</controllerdiffuse>
+								</control>
+							</control>
+						</focusedlayout>
+					</control>
+				</control>
+				<control type="scrollbar" id="62">
+					<top>10</top>
+					<right>315</right>
+					<width>12</width>
+					<height>610</height>
+					<showonepage>false</showonepage>
+					<orientation>vertical</orientation>
+				</control>
+				<control type="grouplist" id="9001">
+					<right>0</right>
+					<width>300</width>
+					<onleft>3</onleft>
+					<itemgap>dialogbuttons_itemgap</itemgap>
+					<include content="DefaultDialogButton">
+						<param name="width" value="300" />
+						<param name="id" value="18" />
+						<param name="label" value="$LOCALIZE[186]" />
+						<param name="onleft" value="3" />
+					</include>
+					<include content="DefaultDialogButton">
+						<param name="width" value="300" />
+						<param name="id" value="19" />
+						<param name="label" value="$LOCALIZE[13007]" />
+						<param name="onleft" value="3" />
+					</include>
+				</control>
+			</control>
+		</control>
+	</include>
+	<include name="GameDialogAgents">
+		<control type="group">
+			<include>openclosevisible</include>
+			<visible>!Window.IsVisible(gameports)</visible>
+			<include content="DialogBackgroundCommons">
+				<param name="width" value="1820" />
+				<param name="height" value="962" />
+				<param name="header_label" value="$LOCALIZE[35172]" />
+				<param name="header_id" value="2" />
+			</include>
+			<control type="group">
+				<description>Content area</description>
+				<left>SpacePadding</left>
+				<right>SpacePadding</right>
+				<top>SpacePaddingXL</top>
+				<bottom>SpacePaddingXL</bottom>
+				<control type="group">
+					<description>Area of the dialog for ports</description>
+					<control type="button" id="3">
+						<description>Ports button</description>
+						<onup>6</onup>
+						<ondown>5</ondown>
+						<label>$LOCALIZE[35110]</label>
+						<include>DialogButtonTextureFocus</include>
+						<include>DialogButtonTextureNoFocus</include>
+						<onclick>ActivateWindow(GamePorts)</onclick>
+					</control>
+					<control type="gamecontrollerlist" id="4">
+						<description>Active port list. Length should fit 13 listitems (12 controllers and one "controller disconnected" indicator).</description>
+						<top>50</top>
+						<height>96</height>
+						<orientation>horizontal</orientation>
+						<align>right</align>
+						<enable>false</enable>
+						<itemlayout width="96">
+							<control type="gamecontroller">
+								<texture>$INFO[ListItem.Icon]</texture>
+								<controllerid>$INFO[ListItem.Property(game.controllerid)]</controllerid>
+								<controlleraddress>$INFO[ListItem.FilenameAndPath]</controlleraddress>
+							</control>
+						</itemlayout>
+						<focusedlayout width="96">
+							<control type="gamecontroller">
+								<texture>$INFO[ListItem.Icon]</texture>
+								<controllerid>$INFO[ListItem.Property(game.controllerid)]</controllerid>
+								<controlleraddress>$INFO[ListItem.FilenameAndPath]</controlleraddress>
+							</control>
+						</focusedlayout>
+						
+							<!-- Note to skinners: this control can be populated
+							with static content for testing. -->
+						<!-- <content>
+							<item>
+								<icon>DefaultAddonNone.png</icon>
+							</item>
+							<item>
+								<property name="game.controllerid">game.controller.snes</property>
+							</item>
+							<item>
+								<property name="game.controllerid">game.controller.snes</property>
+							</item>
+							<item>
+								<property name="game.controllerid">game.controller.snes</property>
+							</item>
+							<item>
+								<property name="game.controllerid">game.controller.snes</property>
+							</item>
+							<item>
+								<property name="game.controllerid">game.controller.snes</property>
+							</item>
+							<item>
+								<property name="game.controllerid">game.controller.snes</property>
+							</item>
+							<item>
+								<property name="game.controllerid">game.controller.snes</property>
+							</item>
+							<item>
+								<property name="game.controllerid">game.controller.snes</property>
+							</item>
+							<item>
+								<property name="game.controllerid">game.controller.snes</property>
+							</item>
+							<item>
+								<property name="game.controllerid">game.controller.snes</property>
+							</item>
+							<item>
+								<property name="game.controllerid">game.controller.snes</property>
+							</item>
+							<item>
+								<property name="game.controllerid">game.controller.snes</property>
+							</item>
+						</content> -->
+						
+					</control>
+				</control>
+				<control type="group">
+					<description>Area of the dialog for players</description>
+					<top>140</top>
+					<control type="image">
+						<description>Player list background</description>
+						<colordiffuse>fanartdiffuse</colordiffuse>
+						<texture border="5">buttons/KeyboardEditArea.png</texture>
+					</control>
+					<control type="group">
+						<left>10</left>
+						<right>20</right>
+						<top>10</top>
+						<bottom>10</bottom>
+						<control type="list" id="5">
+							<description>Player list</description>
+							<onup>3</onup>
+							<ondown>6</ondown>
+							<pagecontrol>61</pagecontrol>
+							<scrolltime tween="sine">200</scrolltime>
+							<orientation>vertical</orientation>
+							<itemlayout width="1740" height="96">
+								<include>GameDialogAgentLayout</include>
+							</itemlayout>
+							<focusedlayout width="1740" height="96">
+								<control type="image">
+									<include>DialogButtonTextureFocus</include>
+									<visible>Control.HasFocus(5)</visible>
+								</control>
+								<include>GameDialogAgentLayout</include>
+							</focusedlayout>
+							
+								<!-- Note to skinners: this control can be populated
+								with static content for testing. -->
+							<!-- <content>
+								<item>
+									<label>Player 1</label>
+								</item>
+								<item>
+									<label>Player 2</label>
+								</item>
+								<item>
+									<label>Player 3</label>
+								</item>
+								<item>
+									<label>Player 4</label>
+								</item>
+								<item>
+									<label>Player 5</label>
+								</item>
+								<item>
+									<label>Player 6</label>
+								</item>
+								<item>
+									<label>Player 7</label>
+								</item>
+								<item>
+									<label>Player 8</label>
+								</item>
+								<item>
+									<label>Player 9</label>
+								</item>
+								<item>
+									<label>Player 10</label>
+								</item>
+								<item>
+									<label>Player 11</label>
+								</item>
+								<item>
+									<label>Player 12</label>
+								</item>
+							</content> -->
+							
+						</control>
+						<control type="scrollbar" id="61">
+							<description>Agent list scroll bar</description>
+							<height>100%</height>
+							<right>-18</right>
+							<width>12</width>
+							<orientation>vertical</orientation>
+						</control>
+					</control>
+				</control>
+			</control>
+			<control type="grouplist" id="6">
+				<description>Action buttons</description>
+				<centerleft>50%</centerleft>
+				<bottom>0</bottom>
+				<width>330</width>
+				<height>52</height>
+				<orientation>horizontal</orientation>
+				<itemgap>dialogbuttons_itemgap</itemgap>
+				<include content="DefaultDialogButton">
+					<param name="width" value="330" />
+					<param name="id" value="18" />
+					<param name="label" value="$LOCALIZE[186]" />
+					<param name="onup" value="5" />
+					<param name="ondown" value="3" />
+				</include>
+			</control>
+		</control>
+	</include>
+	<include name="GameDialogAgentLayout">
+		<control type="label">
+			<description>Player name</description>
+			<top>20</top>
+			<left>20</left>
+			<label>$INFO[ListItem.Label]</label>
+			<align>left</align>
+		</control>
+		<control type="gamecontrollerlist">
+			<description>Player's game controller list. Length should fit 13 listitems (12 players and one "input disabled" indicator).</description>
+			<right>0</right>
+			<width>1248</width>
+			<orientation>horizontal</orientation>
+			<align>right</align>
+			<enable>false</enable>
+			<itemlayout width="96" height="96">
+				<control type="gamecontroller">
+					<texture>$INFO[ListItem.Icon]</texture>
+					<controllerid>$INFO[ListItem.Property(game.controllerid)]</controllerid>
+					<peripherallocation>$INFO[ListItem.FilenameAndPath]</peripherallocation>
+				</control>
+			</itemlayout>
+			<focusedlayout width="96" height="96">
+				<control type="gamecontroller">
+					<texture>$INFO[ListItem.Icon]</texture>
+					<controllerid>$INFO[ListItem.Property(game.controllerid)]</controllerid>
+					<peripherallocation>$INFO[ListItem.FilenameAndPath]</peripherallocation>
+				</control>
+			</focusedlayout>
+			<!-- 
+				Note to skinners: this control can be populated
+				with static content for testing.
+			<content>
+				<item>
+					<icon>DefaultAddonNone.png</icon>
+				</item>
+				<item>
+					<property name="game.controllerid">game.controller.default</property>
+				</item>
+				<item>
+					<property name="game.controllerid">game.controller.default</property>
+				</item>
+				<item>
+					<property name="game.controllerid">game.controller.default</property>
+				</item>
+				<item>
+					<property name="game.controllerid">game.controller.default</property>
+				</item>
+				<item>
+					<property name="game.controllerid">game.controller.default</property>
+				</item>
+				<item>
+					<property name="game.controllerid">game.controller.default</property>
+				</item>
+				<item>
+					<property name="game.controllerid">game.controller.default</property>
+				</item>
+				<item>
+					<property name="game.controllerid">game.controller.default</property>
+				</item>
+				<item>
+					<property name="game.controllerid">game.controller.default</property>
+				</item>
+				<item>
+					<property name="game.controllerid">game.controller.default</property>
+				</item>
+				<item>
+					<property name="game.controllerid">game.controller.default</property>
+				</item>
+				<item>
+					<property name="game.controllerid">game.controller.default</property>
+				</item>
+			</content>
+			 -->
+		</control>
+	</include>
+</includes>

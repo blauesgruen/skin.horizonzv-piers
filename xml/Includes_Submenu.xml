@@ -1,0 +1,946 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <include name="HomeSubMenuCommonValues">
+        <left>SpacePadding</left>
+        <right>SpacePadding</right>
+        <top>5</top>
+        <width>100%</width>
+        <height>100%</height>
+        <align>center</align>
+        <onleft>9010</onleft>
+        <onright>9010</onright>
+        <onup>2900</onup>
+        <ondown>Control.SetFocus(9000)</ondown>
+        <itemgap>8</itemgap>
+        <orientation>Horizontal</orientation>
+    </include>
+    <include name="ButtonHomeSubCommonValues">
+        <width max="405" min="225">auto</width>
+        <textwidth>auto</textwidth>
+        <align>center</align>
+        <aligny>center</aligny>
+        <textcolor>grey3</textcolor>
+        <focusedcolor>white</focusedcolor>
+		<include content="DialogButtonTextureFocus">
+			<param name="color" value="black" />
+		</include>
+        <texturenofocus/>
+        <pulseonselect>false</pulseonselect>
+    </include>
+    <include name="HomeSubSettingsButton">
+		<control type="button" id="$PARAM[id1]">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>24001</label>
+			<onclick>ActivateWindow(Pictures,Addons,return)</onclick>
+			<visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_category),$LOCALIZE[1])|[!Skin.HasSetting(Home_picture_Button)+String.IsEqual(Container(9000).ListItem.Property(homemenu_id),picture)]</visible>
+		</control>
+		<control type="button" id="$PARAM[id2]">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>21417</label>
+			<onclick>SetProperty(HomeButton,$INFO[Container(9000).ListItem.Property(homemenu_id)],home)</onclick>
+			<onclick>ActivateWindow(1501)</onclick>
+		</control>
+	</include>
+    <include name="HomeSubMenuMusic">
+        <control type="grouplist" id="9010">
+            <include>HomeSubMenuCommonValues</include>
+            <onleft>9010</onleft>
+            <onright>9010</onright>
+            <onup>8002</onup>
+            <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),music)</visible>
+            <control type="button" id="80100">
+                <description>Refresh Button</description>
+                <include>SubmenuRefreshButton</include>
+                <onclick>Control.SetFocus(9000)</onclick>
+                <onclick>ActivateWindow(1142)</onclick>
+				<visible>[String.Contains(Container(9000).ListItem.Property(homemenu_path),music)|String.Contains(Container(9000).ListItem.Property(homemenu_path),audio)]|!Skin.HasSetting(Home_music_Button)</visible>
+            </control>
+            <control type="button" id="80101">
+                <description>Refresh Button</description>
+                <include>SubmenuRefreshButton</include>
+                <onclick>Control.SetFocus(9000)</onclick>
+                <onclick>ActivateWindow(1141)</onclick>
+				<visible>String.Contains(Container(9000).ListItem.Property(homemenu_path),video)+Skin.HasSetting(Home_music_Button)</visible>
+            </control>
+            <control type="button" id="80104">
+                <include>ButtonHomeSubCommonValues</include>
+                <label>589</label>
+                <onclick>PlayerControl(partymode(music))</onclick>
+                <onclick>fullscreen</onclick>
+                <visible>Library.HasContent(Music)</visible>
+                <visible>!Skin.HasSetting(SubMenu_music_NoPartymodeButton)</visible>
+				<visible>!Skin.HasSetting(Home_music_Button)</visible>
+            </control>
+            <control type="button" id="80105">
+                <include>ButtonHomeSubCommonValues</include>
+                <label>133</label>
+                <onclick>ActivateWindow(Music,Artists,return)</onclick>
+                <visible>Library.HasContent(Music)</visible>
+                <visible>!Skin.HasSetting(SubMenu_music_NoArtistButton)</visible>
+				<visible>!Skin.HasSetting(Home_music_Button)</visible>
+            </control>
+            <control type="button" id="80106">
+                <include>ButtonHomeSubCommonValues</include>
+                <label>132</label>
+                <onclick>ActivateWindow(music,Albums,return)</onclick>
+                <visible>Library.HasContent(Music)</visible>
+                <visible>!Skin.HasSetting(SubMenu_music_NoAlbumButton)</visible>
+				<visible>!Skin.HasSetting(Home_music_Button)</visible>
+            </control>
+            <control type="button" id="80107">
+                <include>ButtonHomeSubCommonValues</include>
+                <label>134</label>
+                <onclick>ActivateWindow(music,Songs,return)</onclick>
+                <visible>Library.HasContent(Music)</visible>
+                <visible>!Skin.HasSetting(SubMenu_music_NoSongsButton)</visible>
+				<visible>!Skin.HasSetting(Home_music_Button)</visible>
+            </control>
+            <control type="button" id="80108">
+                <include>ButtonHomeSubCommonValues</include>
+                <label>744</label>
+                <onclick>ActivateWindow(Music,Files,return)</onclick>
+				<visible>!Skin.HasSetting(Home_music_Button)</visible>
+            </control>
+            <control type="button" id="80109">
+                <include>ButtonHomeSubCommonValues</include>
+                <label>14022</label>
+                <onclick>ActivateWindow(music,root)</onclick>
+                <visible>Library.HasContent(Music)</visible>
+                <visible>!Skin.HasSetting(SubMenu_music_NoLibraryButton)</visible>
+				<visible>!Skin.HasSetting(Home_music_Button)</visible>
+            </control>
+            <control type="button" id="80110">
+                <include>ButtonHomeSubCommonValues</include>
+                <label>24001</label>
+                <onclick>ActivateWindow(music,Addons,return)</onclick>
+                <visible>Library.HasContent(Music)</visible>
+                <visible>!Skin.HasSetting(SubMenu_music_NoAddonButton)</visible>
+				<visible>!Skin.HasSetting(Home_music_Button)</visible>
+            </control>
+            <control type="button" id="80111">
+                <include>ButtonHomeSubCommonValues</include>
+                <label>24001</label>
+                <onclick>ActivateWindow(Music,Addons,return)</onclick>
+                <visible>!Library.HasContent(Music)</visible>
+                <visible>!Skin.HasSetting(SubMenu_music_NoAddonButton)</visible>
+				<visible>!Skin.HasSetting(Home_music_Button)</visible>
+            </control>
+			<include content="HomeSubSettingsButton">
+				<param name="id1" value="80112" />
+				<param name="id2" value="80113" />
+			</include>
+        </control>
+    </include>
+    <include name="HomeSubMenuVideos">
+        <control type="grouplist" id="9010">
+            <include>HomeSubMenuCommonValues</include>
+            <onleft>9010</onleft>
+            <onright>9010</onright>
+            <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),videos)</visible>
+            <control type="button" id="80115">
+                <description>Refresh Button</description>
+                <include>SubmenuRefreshButton</include>
+                <onclick>Control.SetFocus(9000)</onclick>
+                <onclick>ActivateWindow(1142)</onclick>
+				<visible>[String.Contains(Container(9000).ListItem.Property(homemenu_path),music)|String.Contains(Container(9000).ListItem.Property(homemenu_path),audio)]+Skin.HasSetting(Home_videos_Button)</visible>
+            </control>
+            <control type="button" id="80116">
+                <description>Refresh Button</description>
+                <include>SubmenuRefreshButton</include>
+                <onclick>Control.SetFocus(9000)</onclick>
+                <onclick>ActivateWindow(1141)</onclick>
+				<visible>String.Contains(Container(9000).ListItem.Property(homemenu_path),video)|!Skin.HasSetting(Home_videos_Button)</visible>
+            </control>
+            <control type="button" id="80117">
+                <include>ButtonHomeSubCommonValues</include>
+                <label>342</label>
+                <onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
+                <visible>Library.HasContent(Movies)</visible>
+                <visible>!Skin.HasSetting(SubMenu_videos_No_movies_sButton)</visible>
+				<visible>!Skin.HasSetting(Home_videos_Button)</visible>
+            </control>
+            <control type="button" id="80118">
+                <include>ButtonHomeSubCommonValues</include>
+                <label>20343</label>
+                <onclick>ActivateWindow(Videos,TvShowTitles,return)</onclick>
+                <visible>Library.HasContent(TVShows)</visible>
+                <visible>!Skin.HasSetting(SubMenu_videos_No_tvshow_Button)</visible>
+				<visible>!Skin.HasSetting(Home_videos_Button)</visible>
+            </control>
+            <control type="button" id="80119">
+                <include>ButtonHomeSubCommonValues</include>
+                <label>20389</label>
+                <onclick>ActivateWindow(Videos,MusicVideoTitles,return)</onclick>
+                <visible>Library.HasContent(MusicVideos)</visible>
+                <visible>!Skin.HasSetting(SubMenu_videos_No_music_videoButton)</visible>
+				<visible>!Skin.HasSetting(Home_videos_Button)</visible>
+            </control>
+            <control type="button" id="80120">
+                <include>ButtonHomeSubCommonValues</include>
+                <label>744</label>
+                <onclick>ActivateWindow(Videos,Files,return)</onclick>
+				<visible>!Skin.HasSetting(Home_videos_Button)</visible>
+            </control>
+            <control type="button" id="80121">
+                <include>ButtonHomeSubCommonValues</include>
+                <label>14022</label>
+                <onclick>ActivateWindow(Videos,Root)</onclick>
+                <visible>Library.HasContent(Video)</visible>
+                <visible>!Skin.HasSetting(SubMenu_videos_NoLibraryButton)</visible>
+				<visible>!Skin.HasSetting(Home_videos_Button)</visible>
+            </control>
+            <control type="button" id="80122">
+                <include>ButtonHomeSubCommonValues</include>
+                <label>24001</label>
+                <onclick>ActivateWindow(Videos,Addons,return)</onclick>
+                <visible>!Skin.HasSetting(SubMenu_videos_NoVideoAddonButton)</visible>
+				<visible>!Skin.HasSetting(Home_videos_Button)</visible>
+            </control>
+			<include content="HomeSubSettingsButton">
+				<param name="id1" value="80124" />
+				<param name="id2" value="80125" />
+			</include>
+        </control>
+    </include>
+    <include name="HomeSubMenuMovies">
+        <control type="grouplist" id="9010">
+            <include>HomeSubMenuCommonValues</include>
+            <onleft>9010</onleft>
+            <onright>9010</onright>
+            <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),movies)</visible>
+            <control type="button" id="80129">
+                <description>Refresh Button</description>
+                <include>SubmenuRefreshButton</include>
+                <onclick>Control.SetFocus(9000)</onclick>
+                <onclick>ActivateWindow(1142)</onclick>
+				<visible>[String.Contains(Container(9000).ListItem.Property(homemenu_path),music)|String.Contains(Container(9000).ListItem.Property(homemenu_path),audio)]+Skin.HasSetting(Home_movies_Button)</visible>
+            </control>
+            <control type="button" id="80130">
+                <description>Refresh Button</description>
+                <include>SubmenuRefreshButton</include>
+                <onclick>Control.SetFocus(9000)</onclick>
+                <onclick>ActivateWindow(1141)</onclick>
+				<visible>String.Contains(Container(9000).ListItem.Property(homemenu_path),video)|!Skin.HasSetting(Home_movies_Button)</visible>
+            </control>
+            <control type="button" id="80131">
+                <include>ButtonHomeSubCommonValues</include>
+                <label>20434</label>
+                <onclick>ActivateWindow(Videos,MovieSets,return)</onclick>
+                <visible>Library.HasContent(MovieSets)</visible>
+                <visible>!Skin.HasSetting(SubMenu_movies_NoSetButton)</visible>
+				<visible>!Skin.HasSetting(Home_movies_Button)</visible>
+            </control>
+            <control type="button" id="80132">
+                <include>ButtonHomeSubCommonValues</include>
+                <label>369</label>
+                <onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
+                <visible>!Skin.HasSetting(SubMenu_movies_NoTitleButton)</visible>
+				<visible>!Skin.HasSetting(Home_movies_Button)</visible>
+            </control>
+            <control type="button" id="80133">
+                <include>ButtonHomeSubCommonValues</include>
+                <label>135</label>
+                <onclick>ActivateWindow(Videos,MovieGenres,return)</onclick>
+                <visible>!Skin.HasSetting(SubMenu_movies_NoGenreButton)</visible>
+				<visible>!Skin.HasSetting(Home_movies_Button)</visible>
+            </control>
+            <control type="button" id="80134">
+                <include>ButtonHomeSubCommonValues</include>
+                <label>652</label>
+                <onclick>ActivateWindow(Videos,MovieYears,return)</onclick>
+                <visible>!Skin.HasSetting(SubMenu_movies_NoGenreButton)</visible>
+				<visible>!Skin.HasSetting(Home_movies_Button)</visible>
+            </control>
+            <control type="button" id="80135">
+                <include>ButtonHomeSubCommonValues</include>
+                <label>344</label>
+                <onclick>ActivateWindow(Videos,MovieActors,return)</onclick>
+                <visible>!Skin.HasSetting(SubMenu_movies_NoActorButton)</visible>
+				<visible>!Skin.HasSetting(Home_movies_Button)</visible>
+            </control>
+            <control type="button" id="80136">
+                <include>ButtonHomeSubCommonValues</include>
+                <label>24001</label>
+                <onclick>ActivateWindow(Videos,Addons,return)</onclick>
+                <visible>!Skin.HasSetting(SubMenu_movies_NoAddonButton)</visible>
+				<visible>!Skin.HasSetting(Home_movies_Button)</visible>
+            </control>
+            <control type="button" id="80137">
+                <include>ButtonHomeSubCommonValues</include>
+                <label>744</label>
+                <onclick>ActivateWindow(Videos,Files,return)</onclick>
+				<visible>!Skin.HasSetting(Home_movies_Button)</visible>
+            </control>
+			<include content="HomeSubSettingsButton">
+				<param name="id1" value="80138" />
+				<param name="id2" value="80139" />
+			</include>
+        </control>
+    </include>
+    <include name="HomeSubMenuDashboard">
+        <!-- Dashboard -->
+        <control type="grouplist" id="9010">
+			<onup>8009</onup>
+            <include>HomeSubMenuCommonValues</include>
+            <onleft>9010</onleft>
+            <onright>9010</onright>
+            <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),dashboard)</visible>
+            <control type="button" id="80140">
+                <include>ButtonHomeSubCommonValues</include>
+                <label>21417</label>
+                <onclick>SetProperty(HomeButton,dashboard)</onclick>
+                <onclick>ActivateWindow(1501)</onclick>
+            </control>
+            <!-- <control type="button" id="80141">
+                <include>ButtonHomeSubCommonValues</include>
+                <label>Skin Reset</label>
+                <onclick>Skin.ResetSettings</onclick>
+            </control> -->
+        </control>
+    </include>
+    <include name="HomeSubMenuTVShows">
+        <control type="grouplist" id="9010">
+            <include>HomeSubMenuCommonValues</include>
+            <onleft>9010</onleft>
+            <onright>9010</onright>
+            <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),tvshow)</visible>
+            <control type="button" id="80145">
+                <description>Refresh Button</description>
+                <width>42</width>
+                <align>center</align>
+                <aligny>center</aligny>
+                <aspectratio>keep</aspectratio>
+                <texturefocus>buttons/RefreshFO.png</texturefocus>
+                <texturenofocus>buttons/RefreshNF.png</texturenofocus>
+                <pulseonselect>false</pulseonselect>
+                <label/>
+                <onclick>Control.SetFocus(9000)</onclick>
+                <onclick>ActivateWindow(1142)</onclick>
+				<visible>[String.Contains(Container(9000).ListItem.Property(homemenu_path),music)|String.Contains(Container(9000).ListItem.Property(homemenu_path),audio)]+Skin.HasSetting(Home_tvshow_Button)</visible>
+            </control>
+            <control type="button" id="80146">
+                <description>Refresh Button</description>
+                <width>42</width>
+                <align>center</align>
+                <aligny>center</aligny>
+                <aspectratio>keep</aspectratio>
+                <texturefocus>buttons/RefreshFO.png</texturefocus>
+                <texturenofocus>buttons/RefreshNF.png</texturenofocus>
+                <pulseonselect>false</pulseonselect>
+                <label/>
+                <onclick>Control.SetFocus(9000)</onclick>
+                <onclick>ActivateWindow(1141)</onclick>
+				<visible>String.Contains(Container(9000).ListItem.Property(homemenu_path),video)|!Skin.HasSetting(Home_tvshow_Button)</visible>
+            </control>
+            <control type="button" id="80147">
+                <include>ButtonHomeSubCommonValues</include>
+                <label>369</label>
+                <onclick>ActivateWindow(Videos,TVShowTitles,return)</onclick>
+                <visible>!Skin.HasSetting(SubMenu_tvshow_NoTitleButton)</visible>
+				<visible>!Skin.HasSetting(Home_tvshow_Button)</visible>
+            </control>
+            <control type="button" id="80148">
+                <include>ButtonHomeSubCommonValues</include>
+                <label>135</label>
+                <onclick>ActivateWindow(Videos,TVShowGenres,return)</onclick>
+                <visible>!Skin.HasSetting(SubMenu_tvshow_NoGenreButton)</visible>
+				<visible>!Skin.HasSetting(Home_tvshow_Button)</visible>
+            </control>
+            <control type="button" id="80149">
+                <include>ButtonHomeSubCommonValues</include>
+                <label>652</label>
+                <onclick>ActivateWindow(Videos,TVShowYears,return)</onclick>
+                <visible>!Skin.HasSetting(SubMenu_tvshow_NoYearButton)</visible>
+				<visible>!Skin.HasSetting(Home_tvshow_Button)</visible>
+            </control>
+            <control type="button" id="80150">
+                <include>ButtonHomeSubCommonValues</include>
+                <label>344</label>
+                <onclick>ActivateWindow(Videos,TVShowActors,return)</onclick>
+                <visible>!Skin.HasSetting(SubMenu_tvshow_NoActorButton)</visible>
+				<visible>!Skin.HasSetting(Home_tvshow_Button)</visible>
+            </control>
+			<include content="HomeSubSettingsButton">
+				<param name="id1" value="80152" />
+				<param name="id2" value="80153" />
+			</include>
+        </control>
+    </include>
+    <include name="HomeSubMenuMusicVideos">
+        <control type="grouplist" id="9010">
+            <include>HomeSubMenuCommonValues</include>
+            <onleft>9010</onleft>
+            <onright>9010</onright>
+            <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),musicvideo)</visible>
+            <control type="button" id="80156">
+                <description>Refresh Button</description>
+                <include>SubmenuRefreshButton</include>
+                <onclick>Control.SetFocus(9000)</onclick>
+                <onclick>ActivateWindow(1142)</onclick>
+				<visible>[String.Contains(Container(9000).ListItem.Property(homemenu_path),music)|String.Contains(Container(9000).ListItem.Property(homemenu_path),audio)]+Skin.HasSetting(Home_musicvideo_Button)</visible>
+            </control>
+            <control type="button" id="80157">
+                <description>Refresh Button</description>
+                <include>SubmenuRefreshButton</include>
+                <onclick>Control.SetFocus(9000)</onclick>
+                <onclick>ActivateWindow(1141)</onclick>
+				<visible>String.Contains(Container(9000).ListItem.Property(homemenu_path),video)+!Skin.HasSetting(Home_music_Button)|!Skin.HasSetting(Home_musicvideo_Button)</visible>
+            </control>
+            <control type="button" id="80158">
+                <include>ButtonHomeSubCommonValues</include>
+                <label>369</label>
+                <onclick>ActivateWindow(Videos,MusicVideosTitles,return)</onclick>
+                <visible>!Skin.HasSetting(SubMenu_musicvideo_NoTitleButton)</visible>
+				<visible>!Skin.HasSetting(Home_musicvideo_Button)</visible>
+            </control>
+            <control type="button" id="80159">
+                <include>ButtonHomeSubCommonValues</include>
+                <label>135</label>
+                <onclick>ActivateWindow(Videos,MusicVideosGenres,return)</onclick>
+                <visible>!Skin.HasSetting(SubMenu_musicvideo_NoGenreButton)</visible>
+				<visible>!Skin.HasSetting(Home_musicvideo_Button)</visible>
+            </control>
+			<include content="HomeSubSettingsButton">
+				<param name="id1" value="80161" />
+				<param name="id2" value="80162" />
+			</include>
+        </control>
+    </include>
+    <include name="HomeSubMenuPictures">
+        <control type="grouplist" id="9010">
+            <include>HomeSubMenuCommonValues</include>
+            <onleft>9010</onleft>
+            <onright>9010</onright>
+            <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),picture)</visible>
+            <control type="button" id="80170">
+                <description>Refresh Button</description>
+                <include>SubmenuRefreshButton</include>
+                <onclick>Control.SetFocus(9000)</onclick>
+                <onclick>ActivateWindow(1142)</onclick>
+				<visible>String.Contains(Container(9000).ListItem.Property(homemenu_path),music)|String.Contains(Container(9000).ListItem.Property(homemenu_path),audio)</visible>
+            </control>
+            <control type="button" id="80171">
+                <description>Refresh Button</description>
+                <include>SubmenuRefreshButton</include>
+                <onclick>Control.SetFocus(9000)</onclick>
+                <onclick>ActivateWindow(1141)</onclick>
+				<visible>String.Contains(Container(9000).ListItem.Property(homemenu_path),video)</visible>
+            </control>
+			<include content="HomeSubSettingsButton">
+				<param name="id1" value="80172" />
+				<param name="id2" value="80173" />
+			</include>
+        </control>
+    </include>
+    <include name="HomeSubMenuWeather">
+        <control type="grouplist" id="9010">
+            <itemgap>75</itemgap>
+            <include>HomeSubMenuCommonValues</include>
+            <onleft>9010</onleft>
+            <onright>9010</onright>
+            <onup>3005</onup>
+            <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),weather)</visible>
+            <control type="radiobutton" id="80180">
+                <description>Toggle Weather Fanart Homemenu</description>
+				<height>42</height>
+				<width>240</width>
+				<textcolor>grey3</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<include content="DialogButtonTextureFocus">
+					<param name="color" value="black" />
+				</include>
+				<texturenofocus/>
+                <label>20445</label>
+				<align>left</align>
+                <onclick>Skin.ToggleSetting(WeatherFanartHome)</onclick>
+				<selected>Skin.HasSetting(WeatherFanartHome)</selected>
+                <enable>!String.IsEmpty(Weather.Plugin)+!String.IsEmpty(Skin.String(weatherfanart.path))+Weather.IsFetched</enable>
+            </control>
+            <control type="button" id="80181">
+                <description>Weather Fanart Select</description>
+                <include>ButtonHomeSubCommonValues</include>
+                <label>301516</label>
+                <onclick>RunScript(script.image.resource.select,property=weatherfanart&amp;type=resource.images.weatherfanart)</onclick>
+                <visible>System.HasAddon(script.image.resource.select)+Weather.IsFetched</visible>
+            </control>
+            <control type="button" id="80182">
+                <description>Weather Icons Select</description>
+                <include>ButtonHomeSubCommonValues</include>
+                <label>301514</label>
+                <onclick>RunScript(script.image.resource.select,property=weathericons&amp;type=resource.images.weathericons)</onclick>
+                <visible>System.HasAddon(script.image.resource.select)+Weather.IsFetched</visible>
+            </control>
+            <control type="button" id="80183">
+                <include>ButtonHomeSubCommonValues</include>
+                <label>Warnungen</label>
+                <onclick>ActivateWindow(1700)</onclick>
+            </control>
+            <control type="button" id="80184">
+                <include>ButtonHomeSubCommonValues</include>
+                <label>21417</label>
+                <onclick>SetProperty(HomeButton,weather)</onclick>
+                <onclick>ActivateWindow(1500)</onclick>
+            </control>
+        </control>
+    </include>
+    <include name="HomeSubMenuPlayDisc">
+        <control type="grouplist" id="9010">
+            <include>HomeSubMenuCommonValues</include>
+            <onleft>9010</onleft>
+            <onright>9010</onright>
+            <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),playdisc)</visible>
+            <control type="button" id="80190">
+                <include>ButtonHomeSubCommonValues</include>
+                <label>Rip</label>
+                <onclick>RipCD</onclick>
+				<visible>System.HasMediadvd</visible>
+            </control>
+            <control type="button" id="80191">
+                <include>ButtonHomeSubCommonValues</include>
+                <label>13391</label>
+                <onclick>EjectTray()</onclick>
+                <onclick>SetFocus(9000)</onclick>
+				<visible>System.HasMediadvd</visible>
+            </control>
+			<include content="HomeSubSettingsButton">
+				<param name="id1" value="80192" />
+				<param name="id2" value="80193" />
+			</include>
+        </control>
+    </include>
+    <include name="HomeSubMenuCustom1">
+        <control type="grouplist" id="9010">
+            <include>HomeSubMenuCommonValues</include>
+            <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),custom1)</visible>
+            <control type="button" id="80195">
+                <description>Refresh Button</description>
+                <include>SubmenuRefreshButton</include>
+                <onclick>Control.SetFocus(9000)</onclick>
+                <onclick>ActivateWindow(1142)</onclick>
+				<visible>String.Contains(Container(9000).ListItem.Property(homemenu_path),music)|String.Contains(Container(9000).ListItem.Property(homemenu_path),audio)</visible>
+            </control>
+            <control type="button" id="80196">
+                <description>Refresh Button</description>
+                <include>SubmenuRefreshButton</include>
+                <onclick>Control.SetFocus(9000)</onclick>
+                <onclick>ActivateWindow(1141)</onclick>
+				<visible>String.Contains(Container(9000).ListItem.Property(homemenu_path),video)</visible>
+            </control>
+			<include content="HomeSubSettingsButton">
+				<param name="id1" value="80198" />
+				<param name="id2" value="80199" />
+			</include>
+        </control>
+    </include>
+    <include name="HomeSubMenuCustom2">
+        <control type="grouplist" id="9010">
+            <include>HomeSubMenuCommonValues</include>
+            <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),custom2)</visible>
+            <control type="button" id="80200">
+                <description>Refresh Button</description>
+                <include>SubmenuRefreshButton</include>
+                <onclick>Control.SetFocus(9000)</onclick>
+                <onclick>ActivateWindow(1142)</onclick>
+				<visible>String.Contains(Container(9000).ListItem.Property(homemenu_path),music)|String.Contains(Container(9000).ListItem.Property(homemenu_path),audio)</visible>
+            </control>
+            <control type="button" id="80201">
+                <description>Refresh Button</description>
+                <include>SubmenuRefreshButton</include>
+                <onclick>Control.SetFocus(9000)</onclick>
+                <onclick>ActivateWindow(1141)</onclick>
+				<visible>String.Contains(Container(9000).ListItem.Property(homemenu_path),video)</visible>
+            </control>
+			<include content="HomeSubSettingsButton">
+				<param name="id1" value="80202" />
+				<param name="id2" value="80203" />
+			</include>
+        </control>
+    </include>
+    <include name="HomeSubMenuCustom3">
+        <control type="grouplist" id="9010">
+            <include>HomeSubMenuCommonValues</include>
+            <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),custom3)</visible>
+            <control type="button" id="80210">
+                <description>Refresh Button</description>
+                <include>SubmenuRefreshButton</include>
+                <onclick>Control.SetFocus(9000)</onclick>
+                <onclick>ActivateWindow(1142)</onclick>
+				<visible>String.Contains(Container(9000).ListItem.Property(homemenu_path),music)|String.Contains(Container(9000).ListItem.Property(homemenu_path),audio)</visible>
+            </control>
+            <control type="button" id="80211">
+                <description>Refresh Button</description>
+                <include>SubmenuRefreshButton</include>
+                <onclick>Control.SetFocus(9000)</onclick>
+                <onclick>ActivateWindow(1141)</onclick>
+				<visible>String.Contains(Container(9000).ListItem.Property(homemenu_path),video)</visible>
+            </control>
+			<include content="HomeSubSettingsButton">
+				<param name="id1" value="80212" />
+				<param name="id2" value="80213" />
+			</include>
+        </control>
+    </include>
+    <include name="HomeSubMenuCustom4">
+        <control type="grouplist" id="9010">
+            <include>HomeSubMenuCommonValues</include>
+            <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),custom4)</visible>
+            <control type="button" id="80220">
+                <description>Refresh Button</description>
+                <include>SubmenuRefreshButton</include>
+                <onclick>Control.SetFocus(9000)</onclick>
+                <onclick>ActivateWindow(1142)</onclick>
+				<visible>String.Contains(Container(9000).ListItem.Property(homemenu_path),music)|String.Contains(Container(9000).ListItem.Property(homemenu_path),audio)</visible>
+            </control>
+            <control type="button" id="80221">
+                <description>Refresh Button</description>
+                <include>SubmenuRefreshButton</include>
+                <onclick>Control.SetFocus(9000)</onclick>
+                <onclick>ActivateWindow(1141)</onclick>
+				<visible>String.Contains(Container(9000).ListItem.Property(homemenu_path),video)</visible>
+            </control>
+			<include content="HomeSubSettingsButton">
+				<param name="id1" value="80222" />
+				<param name="id2" value="80223" />
+			</include>
+        </control>
+    </include>
+    <include name="HomeSubMenuCustom5">
+        <control type="grouplist" id="9010">
+            <include>HomeSubMenuCommonValues</include>
+            <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),custom5)</visible>
+            <control type="button" id="80230">
+                <description>Refresh Button</description>
+                <include>SubmenuRefreshButton</include>
+                <onclick>Control.SetFocus(9000)</onclick>
+                <onclick>ActivateWindow(1142)</onclick>
+				<visible>String.Contains(Container(9000).ListItem.Property(homemenu_path),music)|String.Contains(Container(9000).ListItem.Property(homemenu_path),audio)</visible>
+            </control>
+            <control type="button" id="80231">
+                <description>Refresh Button</description>
+                <include>SubmenuRefreshButton</include>
+                <onclick>Control.SetFocus(9000)</onclick>
+                <onclick>ActivateWindow(1141)</onclick>
+				<visible>String.Contains(Container(9000).ListItem.Property(homemenu_path),video)</visible>
+            </control>
+			<include content="HomeSubSettingsButton">
+				<param name="id1" value="80232" />
+				<param name="id2" value="80233" />
+			</include>
+        </control>
+    </include>
+    <include name="HomeSubMenuCustom6">
+        <control type="grouplist" id="9010">
+            <include>HomeSubMenuCommonValues</include>
+            <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),custom6)</visible>
+            <control type="button" id="80240">
+                <description>Refresh Button</description>
+                <include>SubmenuRefreshButton</include>
+                <onclick>Control.SetFocus(9000)</onclick>
+                <onclick>ActivateWindow(1142)</onclick>
+				<visible>String.Contains(Container(9000).ListItem.Property(homemenu_path),music)|String.Contains(Container(9000).ListItem.Property(homemenu_path),audio)</visible>
+            </control>
+            <control type="button" id="80241">
+                <description>Refresh Button</description>
+                <include>SubmenuRefreshButton</include>
+                <onclick>Control.SetFocus(9000)</onclick>
+                <onclick>ActivateWindow(1141)</onclick>
+				<visible>String.Contains(Container(9000).ListItem.Property(homemenu_path),video)</visible>
+            </control>
+			<include content="HomeSubSettingsButton">
+				<param name="id1" value="80242" />
+				<param name="id2" value="80243" />
+			</include>
+        </control>
+    </include>
+    <include name="HomeSubMenuCustom7">
+        <control type="grouplist" id="9010">
+            <include>HomeSubMenuCommonValues</include>
+            <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),custom7)</visible>
+            <control type="button" id="80250">
+                <description>Refresh Button</description>
+                <include>SubmenuRefreshButton</include>
+                <onclick>Control.SetFocus(9000)</onclick>
+                <onclick>ActivateWindow(1142)</onclick>
+				<visible>String.Contains(Container(9000).ListItem.Property(homemenu_path),music)|String.Contains(Container(9000).ListItem.Property(homemenu_path),audio)</visible>
+            </control>
+            <control type="button" id="80251">
+                <description>Refresh Button</description>
+                <include>SubmenuRefreshButton</include>
+                <onclick>Control.SetFocus(9000)</onclick>
+                <onclick>ActivateWindow(1141)</onclick>
+				<visible>String.Contains(Container(9000).ListItem.Property(homemenu_path),video)</visible>
+            </control>
+			<include content="HomeSubSettingsButton">
+				<param name="id1" value="80252" />
+				<param name="id2" value="80253" />
+			</include>
+        </control>
+    </include>
+    <include name="HomeSubMenuCustom8">
+        <control type="grouplist" id="9010">
+            <include>HomeSubMenuCommonValues</include>
+            <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),custom8)</visible>
+            <control type="button" id="80260">
+                <description>Refresh Button</description>
+                <include>SubmenuRefreshButton</include>
+                <onclick>Control.SetFocus(9000)</onclick>
+                <onclick>ActivateWindow(1142)</onclick>
+				<visible>String.Contains(Container(9000).ListItem.Property(homemenu_path),music)|String.Contains(Container(9000).ListItem.Property(homemenu_path),audio)</visible>
+            </control>
+            <control type="button" id="80261">
+                <description>Refresh Button</description>
+                <include>SubmenuRefreshButton</include>
+                <onclick>Control.SetFocus(9000)</onclick>
+                <onclick>ActivateWindow(1141)</onclick>
+				<visible>String.Contains(Container(9000).ListItem.Property(homemenu_path),video)</visible>
+            </control>
+			<include content="HomeSubSettingsButton">
+				<param name="id1" value="80262" />
+				<param name="id2" value="80263" />
+			</include>
+        </control>
+    </include>
+    <include name="HomeSubMenuCustom9">
+        <control type="grouplist" id="9010">
+            <include>HomeSubMenuCommonValues</include>
+            <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),custom9)</visible>
+            <control type="button" id="80270">
+                <description>Refresh Button</description>
+                <include>SubmenuRefreshButton</include>
+                <onclick>Control.SetFocus(9000)</onclick>
+                <onclick>ActivateWindow(1142)</onclick>
+				<visible>String.Contains(Container(9000).ListItem.Property(homemenu_path),music)|String.Contains(Container(9000).ListItem.Property(homemenu_path),audio)</visible>
+            </control>
+            <control type="button" id="80271">
+                <description>Refresh Button</description>
+                <include>SubmenuRefreshButton</include>
+                <onclick>Control.SetFocus(9000)</onclick>
+                <onclick>ActivateWindow(1141)</onclick>
+				<visible>String.Contains(Container(9000).ListItem.Property(homemenu_path),video)</visible>
+            </control>
+			<include content="HomeSubSettingsButton">
+				<param name="id1" value="80272" />
+				<param name="id2" value="80273" />
+			</include>
+        </control>
+    </include>
+    <include name="HomeSubMenuSystem">
+		<control type="grouplist" id="9010">
+			<include>HomeSubMenuCommonValues</include>
+			<onleft>9010</onleft>
+			<onright>9010</onright>
+			<visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),setting)</visible>
+			<control type="button" id="80280">
+				<include>ButtonHomeSubCommonValues</include>
+				<label>20077</label>
+				<onclick>ActivateWindow(skinsettings)</onclick>
+				<visible>!Skin.HasSetting(SubMenu_music_NoSkinSettingButton)</visible>
+			</control>
+			<control type="button" id="80281">
+				<include>ButtonHomeSubCommonValues</include>
+				<label>LibreELEC</label>
+				<onclick>RunAddon(service.libreelec.settings)</onclick>
+				<visible>System.HasAddon(service.libreelec.settings)</visible>
+				<visible>!Skin.HasSetting(SubMenu_music_NoLibreelecButton)</visible>
+			</control>
+			<control type="button" id="80282">
+			<include>ButtonHomeSubCommonValues</include>
+				<label>OpenELEC</label>
+				<onclick>RunAddon(service.openelec.settings)</onclick>
+				<visible>System.HasAddon(service.openelec.settings)</visible>
+				<visible>!Skin.HasSetting(SubMenu_music_NoLibreelecButton)</visible>
+			</control>
+			<control type="button" id="80283">
+				<include>ButtonHomeSubCommonValues</include>
+				<label>CoreELEC</label>
+				<onclick>RunAddon(service.coreelec.settings)</onclick>
+				<visible>System.HasAddon(service.coreelec.settings)</visible>
+				<visible>!Skin.HasSetting(SubMenu_music_NoLibreelecButton)</visible>
+			</control>
+			<control type="button" id="80284">
+				<include>ButtonHomeSubCommonValues</include>
+				<label>7</label>
+				<onclick>ActivateWindow(FileManager)</onclick>
+				<visible>!Skin.HasSetting(SubMenu_music_NoFilemanagerButton)</visible>
+			</control>
+			<control type="button" id="80285">
+				<include>ButtonHomeSubCommonValues</include>
+				<label>13200</label>
+				<onclick>ActivateWindow(Profiles)</onclick>
+				<visible>!Skin.HasSetting(SubMenu_music_NoProfileButton)</visible>
+			</control>
+			<control type="button" id="80286">
+				<include>ButtonHomeSubCommonValues</include>
+				<label>130</label>
+				<onclick>ActivateWindow(SystemInfo)</onclick>
+				<visible>!Skin.HasSetting(SubMenu_music_NoSystemInfoButton)</visible>
+			</control>
+			<control type="button" id="80287">
+				<include>ButtonHomeSubCommonValues</include>
+				<label>14114</label>
+				<onclick>ActivateWindow(EventLog,events://,return)</onclick>
+				<visible>system.getbool(eventlog.enabled)</visible>
+			</control>
+			<include content="HomeSubSettingsButton">
+				<param name="id1" value="80288" />
+				<param name="id2" value="80289" />
+			</include>
+		</control>
+    </include>
+    <include name="HomeSubMenuLiveTV">
+        <control type="grouplist" id="9010">
+            <include>HomeSubMenuCommonValues</include>
+            <onleft>9010</onleft>
+            <onright>9010</onright>
+            <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),pvr)</visible>
+            <control type="button" id="80290">
+                <include>ButtonHomeSubCommonValues</include>
+                <label>19023</label>
+                <onclick>ActivateWindow(TVChannels)</onclick>
+            </control>
+            <control type="button" id="80291">
+                <include>ButtonHomeSubCommonValues</include>
+                <label>19069</label>
+                <onclick>ActivateWindow(TVGuide)</onclick>
+            </control>
+            <control type="button" id="80292">
+                <include>ButtonHomeSubCommonValues</include>
+                <label>19163</label>
+                <onclick>ActivateWindow(TVRecordings)</onclick>
+            </control>
+            <control type="button" id="80293">
+                <include>ButtonHomeSubCommonValues</include>
+                <label>19040</label>
+                <onclick>ActivateWindow(TVTimers)</onclick>
+            </control>
+            <control type="button" id="80294">
+                <include>ButtonHomeSubCommonValues</include>
+                <label>137</label>
+                <onclick>ActivateWindow(TVSearch)</onclick>
+            </control>
+            <control type="button" id="80295">
+                <include>ButtonHomeSubCommonValues</include>
+                <label>21417</label>
+                <onclick>SetProperty(HomeButton,pvr)</onclick>
+                <onclick>ActivateWindow(1500)</onclick>
+            </control>
+        </control>
+    </include>
+    <include name="HomeSubMenuRadio">
+        <control type="grouplist" id="9010">
+            <include>HomeSubMenuCommonValues</include>
+            <onleft>9010</onleft>
+            <onright>9010</onright>
+            <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),radio)</visible>
+            <control type="button" id="80300">
+                <include>ButtonHomeSubCommonValues</include>
+                <label>19019</label>
+                <onclick>ActivateWindow(RadioChannels)</onclick>
+            </control>
+            <control type="button" id="80301">
+                <include>ButtonHomeSubCommonValues</include>
+                <label>22020</label>
+                <onclick>ActivateWindow(RadioGuide)</onclick>
+            </control>
+            <control type="button" id="80302">
+                <include>ButtonHomeSubCommonValues</include>
+                <label>19163</label>
+                <onclick>ActivateWindow(RadioRecordings)</onclick>
+            </control>
+            <control type="button" id="80303">
+                <include>ButtonHomeSubCommonValues</include>
+                <label>19040</label>
+                <onclick>ActivateWindow(RadioTimers)</onclick>
+            </control>
+            <control type="button" id="80304">
+                <include>ButtonHomeSubCommonValues</include>
+                <label>137</label>
+                <onclick>ActivateWindow(RadioSearch)</onclick>
+            </control>
+            <control type="button" id="80305">
+                <include>ButtonHomeSubCommonValues</include>
+                <label>21417</label>
+                <onclick>SetProperty(HomeButton,radio)</onclick>
+                <onclick>ActivateWindow(1500)</onclick>
+            </control>
+        </control>
+    </include>
+    <include name="HomeSubMenuGames">
+        <control type="grouplist" id="9010">
+            <include>HomeSubMenuCommonValues</include>
+            <onleft>9010</onleft>
+            <onright>9010</onright>
+            <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),games)</visible>
+			<include content="HomeSubSettingsButton">
+				<param name="id1" value="80329" />
+				<param name="id2" value="80330" />
+			</include>
+        </control>
+    </include>
+    <include name="submenu"> <!-- Submenu Background -->
+        <control type="group">
+            <top>4</top>
+            <height>50</height>
+            <include>openclose</include>
+            <include>opencloseslideup</include>
+            <ondown>9000</ondown>
+            <control type="group">
+                <width>100%</width>
+                <control type="image">
+                    <texture>BackSilver.png</texture>
+                </control>
+                <control type="image">
+                    <height>1</height>
+                    <texture>Separator2.png</texture>
+                </control>
+                <control type="image">
+                    <width>300</width>
+                    <texture>SideFade.png</texture>
+                </control>
+                <control type="image">
+                    <left>300r</left>
+                    <width>300</width>
+                    <texture flipx="true">SideFade.png</texture>
+                </control>
+            </control>
+        </control>
+    </include>
+    <include name="submenucontent">
+        <control type="group" id="9001">
+            <include>openclose</include>
+            <include>opencloseslideup</include>
+            <ondown>9000</ondown>
+            <include>HomeSubMenuVideos</include>
+            <include>HomeSubMenuMovies</include>
+            <include>HomeSubMenuTVShows</include>
+            <include>HomeSubMenuMusicVideos</include>
+            <include>HomeSubMenuMusic</include>
+            <include>HomeSubMenuSystem</include>
+            <include>HomeSubMenuPlayDisc</include>
+            <include>HomeSubMenuPictures</include>
+            <include>HomeSubMenuLiveTV</include>
+            <include>HomeSubMenuRadio</include>
+            <include>HomeSubMenuWeather</include>
+            <include>HomeSubMenuDashboard</include>
+            <include>HomeSubMenuCustom1</include>
+            <include>HomeSubMenuCustom2</include>
+            <include>HomeSubMenuCustom3</include>
+            <include>HomeSubMenuCustom4</include>
+            <include>HomeSubMenuCustom6</include>
+            <include>HomeSubMenuCustom7</include>
+            <include>HomeSubMenuCustom8</include>
+            <include>HomeSubMenuCustom9</include>
+            <include>HomeSubMenuCustom5</include>
+            <include>HomeSubMenuGames</include>
+        </control>
+    </include>
+    <include name="SubmenuRefreshButton">
+        <width>42</width>
+        <align>center</align>
+        <aligny>center</aligny>
+        <texturefocus>buttons/RefreshFO.png</texturefocus>
+        <texturenofocus>buttons/RefreshNF.png</texturenofocus>
+        <pulseonselect>false</pulseonselect>
+        <label/>
+    </include>
+</includes>

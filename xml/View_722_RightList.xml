@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <variable name="description">
+        <value condition="Container.Content(Addons)">$INFO[ListItem.AddonDescription]</value>
+        <value condition="Container.Content(artists)">$INFO[ListItem.Property(Artist_Description)]</value>
+        <value condition="Container.Content(Albums)">$INFO[ListItem.Property(Album_Description)]</value>
+    </variable>
+    <include name="View_722_RightListAddons">
+		<param name="viewid">722</param>
+		<definition>
+			<control type="group">
+				<visible>Control.IsVisible($PARAM[viewid])</visible>
+				<include>openclosemedium</include>
+				<control type="group">
+					<include>openclose</include>
+					<visible>Control.IsVisible($PARAM[viewid])+!Control.HasFocus(666)</visible>
+					<include>BlackGrunge</include>
+				</control>
+				<control type="group">
+					<right>SpacePadding</right>
+					<width>840</width>
+					<include>opencloseslideleft</include>
+					<visible>Control.IsVisible($PARAM[viewid])+!Control.HasFocus(666)</visible>
+					<animation effect="slide" end="-15,0" time="300" condition="Control.HasFocus($PARAM[viewid]1)">Conditional</animation>
+					<control type="image">
+						<texture>BlackBack.png</texture>
+					</control>
+					<control type="group">
+						<left>SpacePadding</left>
+						<right>SpacePadding</right>
+						<height>3</height>
+						<bottom>98</bottom>
+						<control type="image">
+							<colordiffuse>fanartdiffuse</colordiffuse>
+							<texture border="1">Separator1.png</texture>
+						</control>
+					</control>
+					<control type="image">
+						<left>-3</left>
+						<width>akzentline_size</width>
+						<colordiffuse>$VAR[BackgroundOverlayColorDialog]</colordiffuse>
+						<texture>White.png</texture>
+					</control>
+					<control type="image">
+						<left>100%</left>
+						<width>akzentline_size</width>
+						<colordiffuse>$VAR[BackgroundOverlayColorDialog]</colordiffuse>
+						<texture>White.png</texture>
+					</control>
+					<control type="list" id="$PARAM[viewid]">
+						<left>0</left>
+						<right>0</right>
+						<top>65</top>
+						<bottom>105</bottom>
+						<onleft>9000</onleft>
+						<onright condition="Control.IsVisible($PARAM[viewid]1)">$PARAM[viewid]1</onright>
+						<onright condition="!Control.IsVisible($PARAM[viewid]1)+Control.IsVisible(15000)">15000</onright>
+						<onup>$PARAM[viewid]</onup>
+						<ondown>$PARAM[viewid]</ondown>
+						<viewtype label="View_721_RightList">list</viewtype>
+						<pagecontrol>$PARAM[viewid]1</pagecontrol>
+						<scrolltime>200</scrolltime>
+						<visible>![Container.Content(Sets)|Container.Content(Musicvideos)|Container.Content(Movies)|Container.Content(TVShows)|Container.Content(episodes)|Container.Content(Seasons)]</visible>
+						<include content="DefaultViewListLayout">
+							<param name="list_id" value="$PARAM[viewid]" />
+						</include>
+					</control>
+				</control>
+				<include content="sidefade_shadow">
+					<param name="left" value="165r" />
+					<param name="flipx" value="true" />
+					<param name="id" value="$PARAM[viewid]1" />
+					<param name="visible" value="Control.HasFocus($PARAM[viewid]1)" />
+				</include>
+				<control type="group">
+					<animation effect="slide" end="-35,0" time="300">Focus</animation>
+					<include content="DefaultScrollbar">
+						<param name="id" value="$PARAM[viewid]1" />
+						<param name="left" value="0r" />
+						<param name="top" value="105" />
+						<param name="height" value="870" />
+						<param name="onleft" value="$PARAM[viewid]" />
+						<param name="visible" value="Control.IsVisible($PARAM[viewid])+!Control.HasFocus(666)" />
+					</include>
+				</control>
+				<control type="group">
+					<include>opencloseslideright</include>
+					<visible>Control.IsVisible($PARAM[viewid])+!Control.HasFocus(666)</visible>
+					<control type="group"> <!-- Top Info Panel -->
+						<left>0</left>
+						<right>840</right>
+						<height>50%</height>
+						<control type="group">
+							<top>SpacePaddingLarge</top>
+							<left>SpacePadding</left>
+							<right>SpacePaddingLarge</right>
+							<include content="Infolabel_Picture">
+								<param name="left" value="0" />
+								<param name="top" value="SpacePadding" />
+								<param name="width">100%</param>
+								<param name="height">100%</param>
+							</include>
+							<control type="group">
+								<visible>!ListItem.IsParentFolder</visible>
+								<include>openclosemedium</include>
+								<left>SpacePadding</left>
+								<right>SpacePadding</right>
+								<top>SpacePadding</top>
+								<bottom>0</bottom>
+								<control type="image">
+									<texture>BlackBack.png</texture>
+									<bordertexture border="5">buttons/ButtonNF.png</bordertexture>
+									<bordersize>4</bordersize>
+									<visible>!String.IsEmpty(Control.GetLabel(6666))|Container.Content(songs)</visible>
+								</control>
+								<control type="textbox" id="6666"> <!-- Description Label -->
+									<left>SpacePadding</left>
+									<right>SpacePadding</right>
+									<top>SpacePadding</top>
+									<bottom>SpacePadding</bottom>
+									<include condition="!Skin.HasSetting(BigPlotText)">PlotText16Var</include>
+									<include condition="Skin.HasSetting(BigPlotText)">PlotTextBigVar</include>
+									<label>$VAR[description]</label>
+								</control>
+								<control type="image"> <!-- Clearlogo Image -->
+									<include>openclosevisibledelay</include>
+									<aspectratio>keep</aspectratio>
+									<texture>$VAR[ClearlogoVAR]</texture>
+									<visible>Container.Content(songs)|Container.Content(artists)|Container.Content(albums)</visible>
+									<visible>Skin.HasSetting(EnableExtendedArt)</visible>
+									<visible>String.IsEmpty(Control.GetLabel(6666))</visible>
+								</control>
+								<!-- <control type="label" id="6677" id="fake label needed for layout">
+									<left>2000</left>
+									<visible>Skin.HasSetting(EnableExtendedArt)</visible>
+									<visible>String.IsEmpty(Control.GetLabel(6666))</visible>
+									<label>.</label>
+								</control> -->
+								<control type="grouplist">
+									<orientation>vertical</orientation>
+									<left>SpacePadding</left>
+									<right>SpacePadding</right>
+									<top>SpacePadding</top>
+									<bottom>SpacePadding</bottom>
+									<include>openclosemedium</include>
+									<visible>Container.Content(Songs)</visible>
+									<visible>!ListItem.IsParentFolder</visible>
+									<include>MediaInfoContent_Music</include>
+								</control>
+							</control>
+						</control>
+					</control>
+					<control type="group"> <!-- Bottom Info Panel -->
+						<left>0</left>
+						<top>50%</top>
+						<right>840</right>
+						<height>50%</height>
+						<control type="group">
+							<top>15</top>
+							<left>SpacePadding</left>
+							<right>SpacePaddingLarge</right>
+							<bottom>98</bottom>
+							<control type="image">
+								<top>40</top>
+								<height>3</height>
+								<colordiffuse>menudiffuse</colordiffuse>
+								<texture border="2">Separator1.png</texture>
+							</control>
+							<control type="label">
+								<height>30</height>
+								<label>$LOCALIZE[21863]: $INFO[ListItem.AddonCreator]</label>
+								<visible>!String.IsEmpty(ListItem.AddonCreator)</visible>
+							</control>
+							<control type="label">
+								<height>30</height>
+								<label>$LOCALIZE[345]: $INFO[ListItem.Year]</label>
+								<visible>!String.IsEmpty(ListItem.Year)</visible>
+							</control>
+							<control type="group">
+								<height>3</height>
+								<bottom>0</bottom>
+								<control type="image">
+									<height>3</height>
+									<colordiffuse>menudiffuse</colordiffuse>
+									<texture border="2">Separator1.png</texture>
+								</control>
+							</control>
+							<control type="group">
+								<top>75</top>
+								<bottom>35</bottom>
+								<left>0</left>
+								<right>30</right>
+								<control type="group">
+									<!-- <top>SpacePadding</top>
+									<bottom>SpacePadding</bottom> -->
+									<width>48%</width>
+									<control type="image">
+										<include>openclosevisibledelay</include>
+										<aspectratio>keep</aspectratio>
+										<texture fallback="FallbackCover.png">$VAR[PosterThumb]</texture>
+										<bordertexture border="5">buttons/ButtonNF.png</bordertexture>
+										<bordersize>4</bordersize>
+										<visible>!Container.Content(images)</visible>
+									</control>
+									<control type="image">
+										<include>openclosevisibledelay</include>
+										<aspectratio>keep</aspectratio>
+										<texture fallback="FallbackCover.png">$VAR[PosterThumb]</texture>
+										<bordertexture border="5">buttons/ButtonNF.png</bordertexture>
+										<bordersize>4</bordersize>
+										<visible>Container.Content(images)</visible>
+									</control>
+								</control>
+								<control type="group">
+									<right>SpacePadding</right>
+									<width>43%</width>
+									<control type="image">
+										<include>openclosevisibledelay</include>
+										<aspectratio align="center" aligny="center">scale</aspectratio>
+										<texture fallback="$VAR[ClearlogoVAR]">$INFO[ListItem.Art(fanart)]</texture>
+										<bordertexture border="5">buttons/ButtonNF.png</bordertexture>
+										<bordersize>4</bordersize>
+										<visible>String.IsEmpty(Control.GetLabel(6666))</visible>
+									</control>
+									<control type="image">
+										<include>openclosevisibledelay</include>
+										<aspectratio align="right">keep</aspectratio>
+										<texture>$VAR[ClearlogoVAR]</texture>
+										<visible>Container.Content(songs)|Container.Content(artists)|Container.Content(albums)</visible>
+										<visible>Skin.HasSetting(EnableExtendedArt)</visible>
+										<visible>!String.IsEmpty(Control.GetLabel(6666))</visible>
+									</control>
+									<control type="label" id="6699"> <!-- fake label needed for layout -->
+										<visible>Skin.HasSetting(EnableExtendedArt)</visible>
+										<visible>!String.IsEmpty(Control.GetLabel(6666))</visible>
+										<label>.</label>
+									</control>
+								</control>
+								<control type="group">
+									<right>50%</right>
+									<width>3</width>
+									<control type="image">
+										<colordiffuse>menudiffuse</colordiffuse>
+										<texture>Separator4.png</texture>
+										<visible>Container.Content(songs)|Container.Content(artists)|Container.Content(albums)</visible>
+									</control>
+								</control>
+							</control>
+						</control>
+					</control>
+				</control>
+				<control type="group">
+					<right>5</right>
+					<visible>Control.IsVisible($PARAM[viewid])+!Control.HasFocus(666)</visible>
+					<include>opencloseslideup</include>
+					<include>CommonPageCount</include>
+				</control>
+				<control type="group">
+					<visible>Control.IsVisible($PARAM[viewid])+!Control.HasFocus(666)</visible>
+					<include>opencloseslideup</include>
+					<left>SpacePadding</left>
+					<right>840</right>
+					<height>98</height>
+					<bottom>0</bottom>
+					<!-- <control type="image" id="testimage">
+						<right>SpacePaddingLarge</right>
+						<texture>WhiteBack.png</texture>
+					</control> -->
+					<control type="grouplist">
+						<top>30</top>
+						<right>SpacePaddingLarge</right>
+						<itemgap>6</itemgap>
+						<align>left</align>
+						<aligny>center</aligny>
+						<scrolltime tween="sine" easing="out">200</scrolltime>
+						<orientation>horizontal</orientation>
+						<include>FlagMusic</include>
+						<visible>Container.Content(songs)|Container.Content(artists)|Container.Content(albums)</visible>
+					</control>
+				</control>
+				<include content="AlphaBarV" condition="!Skin.HasSetting(HideJumpSMSBar)"><param name="id" value="$PARAM[viewid]"/></include>
+				<control type="button" id="777">
+					<include>HiddenButton</include>
+					<onfocus>Control.SetFocus($PARAM[viewid])</onfocus>
+				</control>
+			</control>
+		</definition>
+    </include>
+</includes>

@@ -1,0 +1,1172 @@
+﻿# Kodi Media Center language file
+# Addon Name: HorizonzV
+# Addon id: skin.horizonzv
+# Addon Provider: blauesgruen
+msgid ""
+msgstr ""
+"Project-Id-Version: KODI Main\n"
+"Report-Msgid-Bugs-To: https://github.com/xbmc/xbmc/issues/\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2022-03-21 11:09+0000\n"
+"Language-Team: Czech <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-estuary/cs_cz/>\n"
+"Language: cs_cz\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n <= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
+"X-Generator: Weblate 4.11.2\n"
+
+msgctxt "#31000"
+msgid ""
+msgstr "Nastavení energie"
+
+msgctxt "#31002"
+msgid ""
+msgstr "Nastavení zobrazení"
+
+msgctxt "#31003"
+msgid ""
+msgstr "Celková doba trvání"
+
+msgctxt "#31005"
+msgid ""
+msgstr "Další nastavení"
+
+msgctxt "#31007"
+msgid ""
+msgstr "Běží"
+
+msgctxt "#31008"
+msgid ""
+msgstr "Stránka"
+
+msgctxt "#31009"
+msgid ""
+msgstr "Záznamy"
+
+msgctxt "#31012"
+msgid ""
+msgstr "Využití paměti"
+
+msgctxt "#31013"
+msgid ""
+msgstr "Miniatury"
+
+msgctxt "#31014"
+msgid ""
+msgstr "order"
+
+msgctxt "#31016"
+msgid ""
+msgstr "Rozšířené informace"
+
+msgctxt "#31017"
+msgid ""
+msgstr "IT'S RUNNING"
+
+msgctxt "#31022"
+msgid ""
+msgstr "Předvolby vizualizace"
+
+msgctxt "#31023"
+msgid ""
+msgstr "Třídit: Ascending"
+
+msgctxt "#31024"
+msgid ""
+msgstr "Třídit: Sestupující"
+
+msgctxt "#31025"
+msgid ""
+msgstr "Otevřít seznam skladeb"
+
+msgctxt "#31026"
+msgid ""
+msgstr "Uložit seznam skladeb"
+
+msgctxt "#31027"
+msgid ""
+msgstr "Zavřít playlist"
+
+msgctxt "#31032"
+msgid ""
+msgstr "Aktuálně vybráno"
+
+msgctxt "#31033"
+msgid ""
+msgstr "Search trailer"
+
+msgctxt "#31035"
+msgid ""
+msgstr "Hledat na YouTube"
+
+msgctxt "#31036"
+msgid ""
+msgstr "Režisérské filmy"
+
+msgctxt "#31043"
+msgid ""
+msgstr "Vybrat skladbu"
+
+msgctxt "#31044"
+msgid ""
+msgstr "Zdroj textů"
+
+msgctxt "#31046"
+msgid ""
+msgstr "Zdroj"
+
+msgctxt "#31047"
+msgid ""
+msgstr "Skrýt fanart"
+
+msgctxt "#31048"
+msgid ""
+msgstr "Spotřeba paměti:"
+
+msgctxt "#31049"
+msgid ""
+msgstr "Číslo titulu."
+
+msgctxt "#31050"
+msgid ""
+msgstr "Vybrat profil"
+
+msgctxt "#31051"
+msgid ""
+msgstr "Naposledy přihlášený"
+
+msgctxt "#31052"
+msgid ""
+msgstr "Emitted"
+
+msgctxt "#31053"
+msgid ""
+msgstr "Nastavení seznamu skladeb"
+
+msgctxt "#31054"
+msgid ""
+msgstr "Created"
+
+msgctxt "#31056"
+msgid ""
+msgstr "Časovač vypnutí aktivní! [COLOR=grey1] - Čas do vypnutí:[/COLOR]"
+
+msgctxt "#31057"
+msgid ""
+msgstr "Click button to play[CR][CR]movie trailer"
+
+msgctxt "#31059"
+msgid ""
+msgstr "Stop"
+
+msgctxt "#31060"
+msgid ""
+msgstr "Rychle vpřed"
+
+msgctxt "#31061"
+msgid ""
+msgstr "Přetáčení"
+
+msgctxt "#31062"
+msgid ""
+msgstr "Filmové menu"
+
+msgctxt "#31063"
+msgid ""
+msgstr "Stáhnout titulky"
+
+msgctxt "#31064"
+msgid ""
+msgstr "Zobrazení ve 2D"
+
+msgctxt "#31065"
+msgid ""
+msgstr "Změnit režim"
+
+msgctxt "#31067"
+msgid ""
+msgstr "Vlastní seznam skladeb na začátku"
+
+msgctxt "#31068"
+msgid ""
+msgstr "Místní titulky jsou k dispozici"
+
+msgctxt "#31069"
+msgid ""
+msgstr "Please select Kodi user profile to continue."
+
+msgctxt "#31072"
+msgid ""
+msgstr "Přidat skupinu"
+
+msgctxt "#31073"
+msgid ""
+msgstr "Přejmenovat skupinu"
+
+msgctxt "#31074"
+msgid ""
+msgstr "Smazat skupinu"
+
+msgctxt "#31075"
+msgid ""
+msgstr "Dostupné[CR]skupiny"
+
+msgctxt "#31076"
+msgid ""
+msgstr "Časovač aktivován"
+
+msgctxt "#31077"
+msgid ""
+msgstr "Nastavení kanálu"
+
+msgctxt "#31078"
+msgid ""
+msgstr "36hodinová předpověď"
+
+msgctxt "#31079"
+msgid ""
+msgstr "Hodinová předpověď"
+
+msgctxt "#31080"
+msgid ""
+msgstr "Víkendová předpověď"
+
+msgctxt "#31081"
+msgid ""
+msgstr "Denní předpověď"
+
+msgctxt "#31083"
+msgid ""
+msgstr "Forecast data being retrieved..."
+
+# Horizonz
+
+msgctxt "#301126"
+msgid ""
+msgstr "Povoluje video na pozadí v hlavní nabídce."
+
+msgctxt "#301132"
+msgid ""
+msgstr "Select the country for the age rating (defined in the scrapper).[CR]Supported are DE, US, UK, FR.[CR]If only US ratings are available, they will be displayed.\' (Pokud jsou k dispozici pouze americké ratingy, zobrazí se.)"
+
+msgctxt "#301134"
+msgid ""
+msgstr "Upoutávky se zobrazují přímo v informacích o filmu nebo na celé obrazovce."
+
+msgctxt "#301135"
+msgid ""
+msgstr "Pokud je pro přehrávání hudby vybrána vizualizace, zobrazí se také v hlavní nabídce."
+
+msgctxt "#301136"
+msgid ""
+msgstr "Zobrazí seznam skladeb následujících 9 skladeb v hlavní nabídce a na celé obrazovce."
+
+msgctxt "#301140"
+msgid ""
+msgstr "Nastavení hlasitosti v procentech, která se bude přehrávat při každém spuštění KODI.\'[CR]Zadejte číslo v rozsahu 0 - 100."
+
+msgctxt "#301142"
+msgid ""
+msgstr "Zakáže alfanumerický seznam skoků ve stylu SMS.[CR][COLOR=grey]Importováno ze skinu \'Aljaška.\'[/COLOR]"
+
+msgctxt "#301143"
+msgid ""
+msgstr "Pro použití této funkce je vyžadován doplněk \'Skinhelper Ping\' od _Andy_/PvD.[CR][COLOR=grey]Lze jej nainstalovat zde v části Addons nebo přes Kodinerds Repo.[/COLOR]"
+
+msgctxt "#301144"
+msgid ""
+msgstr "Spustí vybraný seznam skladeb po spuštění KODI."
+
+msgctxt "#301145"
+msgid ""
+msgstr "Pro použití této funkce je vyžadován doplněk \'Global Search\' z oficiálního repozitáře."
+
+msgctxt "#301146"
+msgid ""
+msgstr "Zobrazí malou statistiku záznamů v databázi v pravém dolním rohu hlavní nabídky."
+
+msgctxt "#301147"
+msgid ""
+msgstr "Zobrazí oblíbené položky pod hlavní nabídkou namísto přímo \'Centrální\'.[CR]Ty jsou jinak dostupné přes \'Centrální\'."
+
+msgctxt "#301148"
+msgid ""
+msgstr "Skryje \'Centrální\' umístěné pod hlavní nabídkou."
+
+msgctxt "#301150"
+msgid ""
+msgstr "Aktivuje ikonu v pravém horním rohu, která zobrazuje stav nabití baterie.[CR][COLOR=white]Na počítačích bez baterie dochází k nesprávnému zobrazení.[/COLOR]"
+
+msgctxt "#301151"
+msgid ""
+msgstr "Nastavení widgetu se nachází v příslušné podnabídce hlavní nabídky."
+
+msgctxt "#301152"
+msgid ""
+msgstr "Ztmaví všechny neostré obálky."
+
+msgctxt "#301153"
+msgid ""
+msgstr "Skryje zelený ukazatel průběhu na obálkách."
+
+msgctxt "#301166"
+msgid ""
+msgstr "Tento skin obsahuje různé animační efekty.[CR]Pomocí tohoto přepínače je můžete vypnout. Místo toho se používá jednoduchý efekt stmívání.[ČR]To může vést k lepšímu výkonu na pomalých systémech."
+
+msgctxt "#301168"
+msgid ""
+msgstr "Zobrazuje, kde se nacházíte v levém horním rohu."
+
+msgctxt "#301169"
+msgid ""
+msgstr "Skryje zobrazení data v pravém horním rohu."
+
+msgctxt "#301170"
+msgid ""
+msgstr "Povoluje fanart ve všech oblastech."
+
+msgctxt "#301171"
+msgid ""
+msgstr "Zakáže změnu obrázků na pozadí.[CR][COLOR=white]Vyberte si vlastní obrázek nebo cestu.[/COLOR]"
+
+msgctxt "#301172"
+msgid ""
+msgstr "Select an image here.[CR]If no image is specified, a default image is shown.[CR][COLOR=white]Kliknutím znovu jej odstraníte.[/COLOR]"
+
+msgctxt "#301173"
+msgid ""
+msgstr "Zobrazí prezentaci na pozadí, založenou na knihovně KODI.[CR][COLOR=white]Viditelné v hlavní nabídce pod: Filmy, seriály a hudba.[/COLOR]"
+
+msgctxt "#301174"
+msgid ""
+msgstr "Aktivuje ztmavení pozadí ve všech oblastech.[CR][COLOR=white]Možné úrovně ztmavení: VYPNUTO, LEHKÉ, STŘEDNÍ, TĚŽKÉ.[/COLOR]"
+
+msgctxt "#301175"
+msgid ""
+msgstr "Vyberte barvu akcentu, která se zobrazuje v mnoha oblastech kůže.[CR][COLOR=grey]Vlastní: Kódy barev musí být uvedeny v hexadecimálním formátu AARRGGBB.[CR]Příklad [/COLOR][COLOR=ffffffff]Bílá[/COLOR]: FFFFFFFF"
+
+msgctxt "#301176"
+msgid ""
+msgstr "Nainstalujte doplnek ColorPicker z repozitare Kodinerds, abyste mohli vybirat barvy jednim kliknutim."
+
+msgctxt "#301177"
+msgid ""
+msgstr "V databázových pohledech zobrazuje počet a celkovou dobu běhu záznamů."
+
+msgctxt "#301178"
+msgid ""
+msgstr "Aktivuje světelný efekt podél hlavní nabídky."
+
+msgctxt "#301180"
+msgid ""
+msgstr "Vyberte jeden z motivů pozadí. Silně mění celkový dojem z hlavního menu.[CR][COLOR=white]Bude deaktivováno, jakmile bude aktivní \'pouze jeden obrázek na pozadí\'.[/COLOR][COLOR=grey][CR]Téma \'Gambit\' má tu výhodu, že poskytuje lepší výkon na slabších systémech.[CR]Toto téma laskavě poskytl \'G4mbit\' z fóra KODINERDS.[/COLOR]"
+
+msgctxt "#301184"
+msgid ""
+msgstr "Puts a texture over the background image."
+
+msgctxt "#301186"
+msgid ""
+msgstr "Zobrazí ovládací prvky přehrávače během přehrávání vlevo pod hlavní nabídkou."
+
+msgctxt "#301188"
+msgid ""
+msgstr "Zobrazí aktuální počasí v levém horním rohu."
+
+msgctxt "#301190"
+msgid ""
+msgstr "\'Rádio\', jedno ze 3 zobrazení při přehrávání na celou obrazovku, lze zde deaktivovat."
+
+msgctxt "#301192"
+msgid ""
+msgstr "Choose between the views Standard, Alternative and Radio.[CR][COLOR=grey]\'Radio\' is always used for online music streams. Lze je však deaktivovat.[/COLOR]"
+
+msgctxt "#301194"
+msgid ""
+msgstr "Vyberte si mezi standardním a alternativním zobrazením.[CR][COLOR=white]Info: Rádio bylo vypnuto.[/COLOR]"
+
+msgctxt "#301196"
+msgid ""
+msgstr "Zobrazí základní informace o skladbě na celé obrazovce při přehrávání hudby v levém dolním rohu.[CR][COLOR=whithe]Viditelné, když není viditelné OSD.[/COLOR]"
+
+msgctxt "#301198"
+msgid ""
+msgstr "Zobrazí diskrétní, úzkou verzi obrazovky pauzy."
+
+msgctxt "#301200"
+msgid ""
+msgstr "Nejsou zobrazeny žádné informace, jako jsou kapitoly, titulky, lišty s dobou běhu atd.[CR][COLOR=grey]Skryty jsou také funkce Studiologos a Extra Arts.[/COLOR]"
+
+msgctxt "#301202"
+msgid ""
+msgstr "Zobrazit všechny dostupné artworky filmů a seriálů.[CR][COLOR=white]Od Kodi 19 jsou artworky načítány pomocí scrapperu \'The Movie Database PYTHON\'.[/COLOR][COLOR=grey][CR]\'Artwork Beef\' nebo podobný addon lze však stále použít.[/COLOR]"
+
+msgctxt "#301204"
+msgid ""
+msgstr "Select the appearance of the CD here if no CDArt is found.[CR][COLOR=white]CDArts must be ready in a folder. To určíte v nastavení systému (Média->Hudba).[/COLOR]"
+
+msgctxt "#301210"
+msgid ""
+msgstr "Aktivuje všechna dostupná umělecká díla PVR.[CR][COLOR=white]\'Skin Helper Service\' is required.[/COLOR]"
+
+msgctxt "#301218"
+msgid ""
+msgstr "Zvolte obrázek na pozadí"
+
+msgctxt "#301240"
+msgid ""
+msgstr "Reset"
+
+msgctxt "#301244"
+msgid ""
+msgstr "Nastaví výchozí nastavení pro tento skin.[CR]Ovlivňuje pouze vlastní nastavení."
+
+msgctxt "#301246"
+msgid ""
+msgstr "Slabý"
+
+msgctxt "#301248"
+msgid ""
+msgstr "Střední"
+
+msgctxt "#301250"
+msgid ""
+msgstr "Fast"
+
+msgctxt "#301268"
+msgid ""
+msgstr "[UPPERCASE]Obnovit nastavení skinu ?[/UPPERCASE]"
+
+msgctxt "#301270"
+msgid ""
+msgstr "Cover"
+
+msgctxt "#301272"
+msgid ""
+msgstr "Žádné oblíbené položky nejsou k dispozici"
+
+msgctxt "#301274"
+msgid ""
+msgstr "[B]KODI SUBTITLE[/B]"
+
+msgctxt "#301276"
+msgid ""
+msgstr "panel stránky"
+
+msgctxt "#301278"
+msgid ""
+msgstr "Nastavit informace"
+
+msgctxt "#301280"
+msgid ""
+msgstr "Koncerty"
+
+msgctxt "#301282"
+msgid ""
+msgstr "Jazyk (věkové hodnocení)"
+
+msgctxt "#301284"
+msgid ""
+msgstr "Příznaky v textové podobě"
+
+msgctxt "#301286"
+msgid ""
+msgstr "Dim background"
+
+msgctxt "#301288"
+msgid ""
+msgstr "Počítadlo stránek"
+
+msgctxt "#301290"
+msgid ""
+msgstr "Obálky"
+
+msgctxt "#301292"
+msgid ""
+msgstr "Skrýt velký kryt"
+
+msgctxt "#301294"
+msgid ""
+msgstr "Logo místo názvu"
+
+msgctxt "#301296"
+msgid ""
+msgstr "Informace"
+
+msgctxt "#301300"
+msgid ""
+msgstr "Skrýt ikonu \'NEW\'"
+
+msgctxt "#301302"
+msgid ""
+msgstr "Prachový efekt (obálka)"
+
+msgctxt "#301304"
+msgid ""
+msgstr "Zakázat animaci obálky"
+
+msgctxt "#301306"
+msgid ""
+msgstr "Dim cover"
+
+msgctxt "#301308"
+msgid ""
+msgstr "Seznam"
+
+msgctxt "#301310"
+msgid ""
+msgstr "Seznam informací"
+
+msgctxt "#301312"
+msgid ""
+msgstr "Thumbview"
+
+msgctxt "#301314"
+msgid ""
+msgstr "Banner"
+
+msgctxt "#301316"
+msgid ""
+msgstr "Vitrína"
+
+msgctxt "#301318"
+msgid ""
+msgstr "Perspektiva"
+
+msgctxt "#301320"
+msgid ""
+msgstr "Tok disku"
+
+msgctxt "#301322"
+msgid ""
+msgstr "Pravý seznam"
+
+msgctxt "#301324"
+msgid ""
+msgstr "Krycí zeď (přes celou obrazovku)"
+
+msgctxt "#301326"
+msgid ""
+msgstr "Krycí zeď"
+
+msgctxt "#301328"
+msgid ""
+msgstr "Krycí zeď"
+
+msgctxt "#301330"
+msgid ""
+msgstr "Zakázat zobrazení rádia"
+
+msgctxt "#301331"
+msgid ""
+msgstr " - Zakázat TV Wall"
+
+msgctxt "#301332"
+msgid ""
+msgstr "Vizualizace hudby"
+
+msgctxt "#301334"
+msgid ""
+msgstr "Music Extra Arts"
+
+msgctxt "#301336"
+msgid ""
+msgstr "Zobrazení data"
+
+msgctxt "#301338"
+msgid ""
+msgstr "Popis klíče"
+
+msgctxt "#301340"
+msgid ""
+msgstr "Infopanel"
+
+msgctxt "#301344"
+msgid ""
+msgstr "zpět"
+
+msgctxt "#301346"
+msgid ""
+msgstr "tlačítka hlavní nabídky"
+
+msgctxt "#301348"
+msgid ""
+msgstr "Tlačítka podnabídek"
+
+msgctxt "#301350"
+msgid ""
+msgstr "Funkce"
+
+msgctxt "#301351"
+msgid ""
+msgstr "Widgety"
+
+msgctxt "#301352"
+msgid ""
+msgstr "Design / Výkon"
+
+msgctxt "#301354"
+msgid ""
+msgstr "Extra umění"
+
+msgctxt "#301356"
+msgid ""
+msgstr "Admin"
+
+msgctxt "#301357"
+msgid ""
+msgstr "Nabídka vypnutí"
+
+msgctxt "#301358"
+msgid ""
+msgstr "Povolit mřížku"
+
+msgctxt "#301360"
+msgid ""
+msgstr "Informace o ladění"
+
+msgctxt "#301362"
+msgid ""
+msgstr "Aktivovat první spuštění"
+
+msgctxt "#301364"
+msgid ""
+msgstr "zvolte si výkon systému"
+
+msgctxt "#301366"
+msgid ""
+msgstr "ukazatel myši"
+
+msgctxt "#301368"
+msgid ""
+msgstr "Nastavit pozice"
+
+msgctxt "#301370"
+msgid ""
+msgstr "Přesunout zaostření"
+
+msgctxt "#301371"
+msgid ""
+msgstr "Dashboard"
+
+msgctxt "#301372"
+msgid ""
+msgstr "Automaticky skrýt hlavní nabídku"
+
+msgctxt "#301374"
+msgid ""
+msgstr "Čas do skrytí"
+
+msgctxt "#301376"
+msgid ""
+msgstr "Video na pozadí"
+
+msgctxt "#301378"
+msgid ""
+msgstr "Vyberte zemi hodnocení věku"
+
+msgctxt "#301380"
+msgid ""
+msgstr "Nepřehrávat upoutávku v okně"
+
+msgctxt "#301382"
+msgid ""
+msgstr "Další seznam skladeb"
+
+msgctxt "#301384"
+msgid ""
+msgstr "Nastavit počáteční hlasitost"
+
+msgctxt "#301386"
+msgid ""
+msgstr "Zakázat alfanumerický skokový řádek"
+
+msgctxt "#301388"
+msgid ""
+msgstr "Hide wake on lan switch in \'Headquarters\'"
+
+msgctxt "#301390"
+msgid ""
+msgstr "Globální vyhledávání v kontextové nabídce"
+
+msgctxt "#301392"
+msgid ""
+msgstr "Zobrazit statistiku v hlavní nabídce"
+
+msgctxt "#301394"
+msgid ""
+msgstr "zobrazit okno oblíbených položek v hlavní nabídce"
+
+msgctxt "#301396"
+msgid ""
+msgstr "\'zakázat centrální\'"
+
+msgctxt "#301389"
+msgid ""
+msgstr "- Složka"
+
+msgctxt "#301400"
+msgid ""
+msgstr "Disk"
+
+msgctxt "#301402"
+msgid ""
+msgstr "Animace (vysoké zatížení procesoru)"
+
+msgctxt "#301404"
+msgid ""
+msgstr "Informace o navigaci"
+
+msgctxt "#301406"
+msgid ""
+msgstr "Malé informace o počasí"
+
+msgctxt "#301408"
+msgid ""
+msgstr "Skrýt zobrazení data"
+
+msgctxt "#301410"
+msgid ""
+msgstr "Pouze jeden obrázek na pozadí"
+
+msgctxt "#301412"
+msgid ""
+msgstr "- obrázek / cesta"
+
+msgctxt "#301414"
+msgid ""
+msgstr "- Slide show místo statického obrázku"
+
+msgctxt "#301416"
+msgid ""
+msgstr "Barevné akcenty"
+
+msgctxt "#301418"
+msgid ""
+msgstr "téma pozadí"
+
+msgctxt "#301424"
+msgid ""
+msgstr "Struktura v hlavní nabídce"
+
+msgctxt "#301426"
+msgid ""
+msgstr "Ovládací prvky přehrávače"
+
+msgctxt "#301428"
+msgid ""
+msgstr "Fanarty počasí"
+
+msgctxt "#301430"
+msgid ""
+msgstr "Lehká verze obrazovky pauzy"
+
+msgctxt "#301432"
+msgid ""
+msgstr "skrýt detaily videa"
+
+msgctxt "#301434"
+msgid ""
+msgstr "Styl CD"
+
+msgctxt "#301436"
+msgid ""
+msgstr "listen"
+
+msgctxt "#301438"
+msgid ""
+msgstr "spravovat vaše"
+
+msgctxt "#301440"
+msgid ""
+msgstr "experience your"
+
+msgctxt "#301442"
+msgid ""
+msgstr "explore your"
+
+msgctxt "#301444"
+msgid ""
+msgstr "nechat otáčet"
+
+msgctxt "#301446"
+msgid ""
+msgstr "přejít na"
+
+msgctxt "#301448"
+msgid ""
+msgstr "změnit váš"
+
+msgctxt "#301456"
+msgid ""
+msgstr "glass"
+
+msgctxt "#301458"
+msgid ""
+msgstr "blank"
+
+msgctxt "#301460"
+msgid ""
+msgstr "light"
+
+msgctxt "#301462"
+msgid ""
+msgstr "medium"
+
+msgctxt "#301464"
+msgid ""
+msgstr "strong"
+
+msgctxt "#301466"
+msgid ""
+msgstr "centrální"
+
+msgctxt "#301468"
+msgid ""
+msgstr "jiný/neznámý"
+
+msgctxt "#301470"
+msgid ""
+msgstr "filmové drama"
+
+msgctxt "#301472"
+msgid ""
+msgstr "Novinky"
+
+msgctxt "#301474"
+msgid ""
+msgstr "Zobrazit"
+
+msgctxt "#301476"
+msgid ""
+msgstr "Sport"
+
+msgctxt "#301478"
+msgid ""
+msgstr "Děti"
+
+msgctxt "#301480"
+msgid ""
+msgstr "music"
+
+msgctxt "#301482"
+msgid ""
+msgstr "Umění"
+
+msgctxt "#301484"
+msgid ""
+msgstr "Společnost"
+
+msgctxt "#301486"
+msgid ""
+msgstr "Věda"
+
+msgctxt "#301488"
+msgid ""
+msgstr "Speciální"
+
+msgctxt "#301490"
+msgid ""
+msgstr "Hobby"
+
+msgctxt "#301492"
+msgid ""
+msgstr "load artwork"
+
+msgctxt "#301494"
+msgid ""
+msgstr "Nově přidané seriály"
+
+msgctxt "#301496"
+msgid ""
+msgstr "Předpověď"
+
+msgctxt "#301498"
+msgid ""
+msgstr "Zde nastavte pozici každé položky hlavní nabídky.[CR]Použijte čísla položek od 1 do 22."
+
+msgctxt "#301500"
+msgid ""
+msgstr "skočit přímo na video soubory"
+
+msgctxt "#301502"
+msgid ""
+msgstr "zobrazit názvy profilů"
+
+msgctxt "#301504"
+msgid ""
+msgstr "Kodi je spuštěn:"
+
+msgctxt "#301506"
+msgid ""
+msgstr "<"
+
+msgctxt "#301508"
+msgid ""
+msgstr "<<"
+
+msgctxt "#301510"
+msgid ""
+msgstr "Symboly studia ..."
+
+msgctxt "#301512"
+msgid ""
+msgstr "Symboly žánru ..."
+
+msgctxt "#301514"
+msgid ""
+msgstr "Symboly počasí ..."
+
+msgctxt "#301516"
+msgid ""
+msgstr "Weather fanart ..."
+
+msgctxt "#301520"
+msgid ""
+msgstr "Pro nastavení časovače přepínače je vyžadována služba \'KN Switcher Service\'. Stáhnout přes úložiště Kodinerds."
+
+msgctxt "#301522"
+msgid ""
+msgstr "smazat všechny časovače"
+
+msgctxt "#301524"
+msgid ""
+msgstr "delete"
+
+msgctxt "#301526"
+msgid ""
+msgstr "manage"
+
+msgctxt "#301528"
+msgid ""
+msgstr "přepnout časovač"
+
+msgctxt "#301530"
+msgid ""
+msgstr "Přehled časovače"
+
+msgctxt "#301532"
+msgid ""
+msgstr "Dnes"
+
+msgctxt "#301534"
+msgid ""
+msgstr "Zobrazit"
+
+msgctxt "#301536"
+msgid ""
+msgstr "Kanály"
+
+msgctxt "#301538"
+msgid ""
+msgstr "Obojí"
+
+msgctxt "#301540"
+msgid ""
+msgstr "Původní"
+
+msgctxt "#301542"
+msgid ""
+msgstr "HorizonzV Flag"
+
+msgctxt "#301544"
+msgid ""
+msgstr "Německo"
+
+msgctxt "#301546"
+msgid ""
+msgstr "Spojené státy"
+
+msgctxt "#301548"
+msgid ""
+msgstr "Spojené království"
+
+msgctxt "#301550"
+msgid ""
+msgstr "Francie"
+
+msgctxt "#301551"
+msgid ""
+msgstr "Serge Blue"
+
+msgctxt "#301552"
+msgid ""
+msgstr "Grey Blue"
+
+msgctxt "#301554"
+msgid ""
+msgstr "Tyrkysová"
+
+msgctxt "#301558"
+msgid ""
+msgstr "Mořská zeleň"
+
+msgctxt "#301560"
+msgid ""
+msgstr "Červená"
+
+msgctxt "#301562"
+msgid ""
+msgstr "Světle šedá"
+
+msgctxt "#301564"
+msgid ""
+msgstr "Tmavě zlatá"
+
+msgctxt "#301566"
+msgid ""
+msgstr "Sandy Brown"
+
+msgctxt "#301570"
+msgid ""
+msgstr "ColorPicker"
+
+msgctxt "#301572"
+msgid ""
+msgstr "Avengers B/W"
+
+msgctxt "#301574"
+msgid ""
+msgstr "Gambit"
+
+msgctxt "#301576"
+msgid ""
+msgstr "Vinyl View"
+
+msgctxt "#301578"
+msgid ""
+msgstr "Zobrazení rádia"
+
+msgctxt "#301580"
+msgid ""
+msgstr "Standardní zobrazení"
+
+msgctxt "#301582"
+msgid ""
+msgstr "bude spuštěn ..."
+
+msgctxt "#301584"
+msgid ""
+msgstr "skrývání"
+
+msgctxt "#301586"
+msgid ""
+msgstr "show"
+
+msgctxt "#301588"
+msgid ""
+msgstr "switch"
+
+msgctxt "#301590"
+msgid ""
+msgstr "Reload skin"
+
+msgctxt "#301592"
+msgid ""
+msgstr "Restartovat aplikaci KODI"
+
+msgctxt "#301596"
+msgid ""
+msgstr "Visible"
+
+msgctxt "#301598"
+msgid ""
+msgstr "no progress bar in widget (green bar on cover)"
+
+msgctxt "#301600"
+msgid ""
+msgstr "poslední film byl spuštěn na pozici 1"
+
+msgctxt "#301602"
+msgid ""
+msgstr "poslední poslouchané album na 1. místě"
+
+msgctxt "#301604"
+msgid ""
+msgstr "další epizoda pod číslem 1"
+
+msgctxt "#301606"
+msgid ""
+msgstr "poslední video spuštěné na pozici 1"
+
+msgctxt "#301608"
+msgid ""
+msgstr "5 dní počasí"
+
+msgctxt "#301610"
+msgid ""
+msgstr "Nabídky německého vysílání (GTO)"
+
+msgctxt "#301612"
+msgid ""
+msgstr "Fritz Smart Home"
+
+msgctxt "#301614"
+msgid ""
+msgstr "Zvolte obsah řádku"
+
+msgctxt "#301616"
+msgid ""
+msgstr "an"
+
+msgctxt "#301618"
+msgid ""
+msgstr "vypnuto"
+
+msgctxt "#301620"
+msgid ""
+msgstr "Úroveň nabití baterie"
+
+msgctxt "#301622"
+msgid ""
+msgstr "Exportovat knihovnu videí"
+
+msgctxt "#301624"
+msgid ""
+msgstr "(jeden NFO, bez obrázků, přepsat stará data)"
+
+# msgctxt "#xyxyxyxy"
+# msgid ""
+# msgstr "Po skrytí infopanelu na celou obrazovku se zobrazí diskrétní zobrazení informací o názvu."
+
+msgctxt "#31030"
+msgid ""
+msgstr "System memory usage."
+
+#~ msgctxt "#31137"
+#~ msgid ""
+#~ msgstr "Informace o PVR"
+
+msgctxt "#31139"
+msgid ""
+msgstr "Dekodér videa"
+
+msgctxt "#31140"
+msgid ""
+msgstr "Formát pixelu"
+
+msgctxt "#31607"
+msgid ""
+msgstr "Rozlišení obrazovky"
+
+msgctxt "#31608"
+msgid ""
+msgstr "Rychlost vykreslování"
+
+msgctxt "#31609"
+msgid ""
+msgstr "Zatížení procesoru"
+
+msgctxt "#31611"
+msgid ""
+msgstr "Řádek kódu"
+
+msgctxt "#31613"
+msgid ""
+msgstr "zde zadejte kategorii playlistu..."
+
+msgctxt "#35500"
+msgid "Location"
+msgstr "Umístění"
+

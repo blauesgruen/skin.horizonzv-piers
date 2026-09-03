@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+    <defaultcontrol always="false">99</defaultcontrol>
+    <controls>
+        <control type="button" id="99">
+            <include>HiddenButton</include>
+            <onfocus condition="!Skin.HasSetting(Lyrics)">Action(back)</onfocus>
+            <onfocus condition="Skin.HasSetting(Lyrics)">Control.SetFocus(101)</onfocus>
+        </control>
+        <control type="group">
+            <!-- musicoverlay -->
+            <include>opencloseslideup</include>
+            <control type="group">
+                <left>-1020</left>
+                <top>0</top>
+                <control type="group">
+                    <control type="image">
+                        <left>30</left>
+                        <top>330r</top>
+                        <width>300</width>
+                        <height>300</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture diffuse="masks/mask_round.png">$VAR[NowPlayingPosterVar]</texture>
+                    </control>
+                    <control type="image">
+                        <left>30</left>
+                        <top>330r</top>
+                        <width>300</width>
+                        <height>300</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture border="4">masks/Default_round.png</texture>
+                    </control>
+                    <control type="label">
+                        <description>Titel</description>
+                        <left>360</left>
+                        <top>168r</top>
+                        <width>645</width>
+                        <scroll>true</scroll>
+                        <align>left</align>
+                        <label>$INFO[MusicPlayer.Time(hh:mm:ss)]$INFO[Player.Duration(hh:mm:ss),/]</label>
+                        <font>lcd28</font>
+                        <shadowcolor>grey3</shadowcolor>
+                    </control>
+                    <control type="label">
+                        <description>Artist</description>
+                        <left>360</left>
+                        <top>120r</top>
+                        <width>645</width>
+                        <scroll>true</scroll>
+                        <align>left</align>
+                        <label>$INFO[MusicPlayer.Artist]</label>
+                        <font>lcd28</font>
+                        <shadowcolor>grey3</shadowcolor>
+                    </control>
+                    <control type="label">
+                        <description>Titel</description>
+                        <left>360</left>
+                        <top>75r</top>
+                        <width>645</width>
+                        <scroll>true</scroll>
+                        <align>left</align>
+                        <label>$INFO[MusicPlayer.Title]</label>
+                        <font>lcd28</font>
+                        <shadowcolor>grey3</shadowcolor>
+                    </control>
+                </control>
+            </control>
+        </control>
+        <control type="group">
+			<visible>!Window.IsVisible(musicosd)</visible>
+            <animation effect="slide" start="0,0" end="-900,0" time="200" tween="quadratic" easing="out">WindowClose</animation>
+            <left>0</left>
+            <top>0</top>
+            <width>825</width>
+            <height>1080</height>
+            <control type="image">
+                <description>media info background image</description>
+                <left>900</left>
+                <top>0</top>
+                <width>15</width>
+                <height>1080</height>
+                <colordiffuse>fanartdiffuse</colordiffuse>
+                <texture>SideFade.png</texture>
+            </control>
+            <control type="image">
+                <description>media info background image</description>
+                <left>0</left>
+                <top>0</top>
+                <width>900</width>
+                <height>1080</height>
+                <texture>BlackBack.png</texture>
+            </control>
+            <control type="label">
+                <description>Artist label</description>
+                <left>45</left>
+                <top>45</top>
+                <width>825</width>
+                <height>45</height>
+                <font>impacted24</font>
+                <label>$INFO[MusicPlayer.Artist]</label>
+                <align>center</align>
+                <aligny>center</aligny>
+                <textcolor>grey</textcolor>
+                <shadowcolor>black</shadowcolor>
+            </control>
+            <control type="label">
+                <description>Song label</description>
+                <left>45</left>
+                <top>100</top>
+                <width>825</width>
+                <height>45</height>
+                <font>impacted24</font>
+                <label>$INFO[MusicPlayer.Title]</label>
+                <align>center</align>
+                <aligny>center</aligny>
+                <textcolor>focused</textcolor>
+                <shadowcolor>black</shadowcolor>
+            </control>
+            <control type="image">
+                <left>45</left>
+                <top>180</top>
+                <width>825</width>
+                <height>1</height>
+                <colordiffuse>menudiffuse</colordiffuse>
+                <texture>Separator2.png</texture>
+            </control>
+            <!-- ** Required ** Do not change <id> or <type> (Text box for lyrics) -->
+            <control type="textbox" id="100">
+                <description>textarea</description>
+                <left>38</left>
+                <top>195</top>
+                <width>825</width>
+                <height>750</height>
+                <align>center</align>
+                <font>ubuntu-r19b</font>
+                <textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <onup>100</onup>
+                <ondown>100</ondown>
+                <onleft>101</onleft>
+                <onright>101</onright>
+                <pagecontrol>101</pagecontrol>
+            </control>
+            <control type="spincontrol" id="101">
+                <description>Next page button</description>
+                <left>630</left>
+                <top>975</top>
+                <subtype>page</subtype>
+                <font>ubuntu-r16b</font>
+                <onleft>110</onleft>
+                <onright>110</onright>
+                <ondown>110</ondown>
+                <onup>110</onup>
+                <textcolor>selected</textcolor>
+                <focusedcolor>selected</focusedcolor>
+                <textoffsetx>60</textoffsetx>
+                <showonepage>true</showonepage>
+                <visible>!Control.IsVisible(110)</visible>
+            </control>
+            <!-- ** Required ** Do not change <id> or <type> (Smooth scrolling list for lyrics) -->
+            <control type="list" id="110">
+                <left>45</left>
+                <top>195</top>
+                <width>825</width>
+                <height>750</height>
+                <onleft>111</onleft>
+                <onright>111</onright>
+                <onup>110</onup>
+                <ondown>110</ondown>
+                <pagecontrol>111</pagecontrol>
+                <scrolltime>200</scrolltime>
+                <itemlayout height="38">
+                    <control type="label">
+                        <left>0</left>
+                        <top>0</top>
+                        <width>825</width>
+                        <height>38</height>
+                        <font>ubuntu-r19b</font>
+                        <aligny>center</aligny>
+                        <align>center</align>
+                        <info>ListItem.Label</info>
+                    </control>
+                </itemlayout>
+                <focusedlayout height="38">
+                    <control type="label">
+                        <left>0</left>
+                        <top>0</top>
+                        <width>825</width>
+                        <height>38</height>
+                        <font>ubuntu-r19b</font>
+                        <aligny>center</aligny>
+                        <align>center</align>
+                        <shadowcolor>black</shadowcolor>
+                        <textcolor>white</textcolor>
+                        <label>$INFO[ListItem.Label]</label>
+                        <visible>!Control.HasFocus(110)</visible>
+                    </control>
+                    <control type="label">
+                        <left>0</left>
+                        <top>0</top>
+                        <width>825</width>
+                        <height>38</height>
+                        <font>ubuntu-r19b</font>
+                        <aligny>center</aligny>
+                        <align>center</align>
+                        <shadowcolor>black</shadowcolor>
+                        <textcolor>focused</textcolor>
+                        <label fallback="--">$INFO[ListItem.Label]</label>
+                        <visible>Control.HasFocus(110)</visible>
+                    </control>
+                </focusedlayout>
+            </control>
+            <control type="spincontrol" id="111">
+                <description>Next page button</description>
+                <left>630</left>
+                <top>975</top>
+                <subtype>page</subtype>
+                <font>ubuntu-r16b</font>
+                <onleft>110</onleft>
+                <onright>110</onright>
+                <ondown>110</ondown>
+                <onup>110</onup>
+                <textcolor>focused</textcolor>
+                <focusedcolor>selected</focusedcolor>
+                <textoffsetx>60</textoffsetx>
+                <showonepage>true</showonepage>
+                <visible>Control.IsVisible(110)</visible>
+            </control>
+            <control type="label" id="2">
+                <description>Pick label</description>
+                <left>45</left>
+                <top>195</top>
+                <width>825</width>
+                <height>45</height>
+                <align>center</align>
+                <aligny>center</aligny>
+                <font>ubuntu-r19b</font>
+                <label>31043</label>
+                <textcolor>white</textcolor>
+                <visible>Control.IsVisible(120) + ![Control.IsVisible(100)|Control.IsVisible(110)]</visible>
+            </control>
+            <control type="image">
+                <left>45</left>
+                <top>960</top>
+                <width>825</width>
+                <height>1</height>
+                <colordiffuse>menudiffuse</colordiffuse>
+                <texture>Separator2.png</texture>
+            </control>
+            <control type="label">
+                <description>header label</description>
+                <left>45</left>
+                <top>990</top>
+                <width>825</width>
+                <height>45</height>
+                <font>impacted30</font>
+                <label>$ADDON[script.cu.lrclyrics 32199]</label>
+                <font>font16</font>
+                <align>left</align>
+                <textcolor>grey</textcolor>
+                <shadowcolor>black</shadowcolor>
+            </control>
+            <control type="label">
+                <description>Scraper label</description>
+                <left>45</left>
+                <top>1028</top>
+                <width>825</width>
+                <height>45</height>
+                <label>$LOCALIZE[31044] - $INFO[Control.GetLabel(200)]</label>
+                <font>ubuntu-r19b</font>
+                <align>center</align>
+                <textcolor>grey</textcolor>
+                <shadowcolor>black</shadowcolor>
+            </control>
+            <control type="label" id="200">
+                <description>Scraper label</description>
+                <font>ubuntu-r19b</font>
+                <align>center</align>
+                <textcolor>grey</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <visible>false</visible>
+            </control>
+        </control>
+        <!-- ** Required ** Do not change <id> or <type> -->
+    </controls>
+</window>

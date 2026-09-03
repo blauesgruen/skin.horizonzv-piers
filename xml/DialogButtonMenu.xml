@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+    <defaultcontrol>9000</defaultcontrol>
+	<backgroundcolor>grey3</backgroundcolor>
+    <include>openclose</include>	<zorder>99</zorder>
+    <controls>
+        <!-- <control type="button" id="9001">
+            <description>Make sure we hit the first button in the group list and not the close window button</description>
+            <left>-24</left>
+            <top>-24</top>
+            <width>6</width>
+            <height>6</height>
+            <label/>
+            <font/>
+            <onfocus>down</onfocus>
+            <onleft>9000</onleft>
+            <onright>9000</onright>
+            <onup>9000</onup>
+            <ondown>2</ondown>
+        </control> -->
+        <include>BlackBack</include>
+        <include>DialogBackgroundSimple</include>
+        <control type="group">
+			<left>255</left>
+			<width>510</width>
+			<include>opencloseslideright</include>
+			<control type="image">
+				<description>background top image</description>
+				<texture>BlackBack.png</texture>
+			</control>
+        </control>
+        <control type="group">
+			<top>135</top>
+			<bottom>135</bottom>
+			<left>255</left>
+			<width>510</width>
+			<include>opencloseslideright</include>
+			<control type="group">
+				<animation effect="slide" end="0,300" condition="Integer.IsEqual(Container(9000).NumItems,1)">Conditional</animation>
+				<animation effect="slide" end="0,270" condition="Integer.IsEqual(Container(9000).NumItems,2)">Conditional</animation>
+				<animation effect="slide" end="0,240" condition="Integer.IsEqual(Container(9000).NumItems,3)">Conditional</animation>
+				<animation effect="slide" end="0,210" condition="Integer.IsEqual(Container(9000).NumItems,4)">Conditional</animation>
+				<animation effect="slide" end="0,180" condition="Integer.IsEqual(Container(9000).NumItems,5)">Conditional</animation>
+				<animation effect="slide" end="0,150" condition="Integer.IsEqual(Container(9000).NumItems,6)">Conditional</animation>
+				<animation effect="slide" end="0,120" condition="Integer.IsEqual(Container(9000).NumItems,7)">Conditional</animation>
+				<animation effect="slide" end="0,90" condition="Integer.IsEqual(Container(9000).NumItems,8)">Conditional</animation>
+				<animation effect="slide" end="0,60" condition="Integer.IsEqual(Container(9000).NumItems,9)">Conditional</animation>
+				<animation effect="slide" end="0,30" condition="Integer.IsEqual(Container(9000).NumItems,10)">Conditional</animation>
+				<control type="list" id="9000">
+					<centertop>50%</centertop>
+					<left>-1</left>
+					<right>-2</right>
+					<onleft>9000</onleft>
+					<onright>9000</onright>
+					<onup>9000</onup>
+					<ondown>9000</ondown>
+					<itemgap>0</itemgap>
+					<align>center</align>
+					<aligny>center</aligny>
+					<orientation>vertical</orientation>
+					<itemlayout width="auto" height="60">
+						<control type="label">
+							<height>60</height>
+							<align>center</align>
+							<textcolor>white</textcolor>
+							<shadowcolor/>
+							<textwidth>435</textwidth>
+							<label>$INFO[ListItem.Label]</label>
+						</control>
+						<control type="image">
+							<top>29</top>
+							<width>510</width>
+							<height>1</height>
+							<texture colordiffuse="menudiffuse">$INFO[ListItem.Property(separator)]</texture>
+							<visible>!String.IsEmpty(ListItem.Property(separator))</visible>
+						</control>
+					</itemlayout>
+					<focusedlayout width="auto" height="60">
+						<control type="image">
+							<left>1</left>
+							<right>1</right>
+							<include>DialogButtonTextureFocus</include>
+						</control>
+						<control type="image">
+							<top>29</top>
+							<height>1</height>
+							<texture colordiffuse="black">$INFO[ListItem.Property(separator)]</texture>
+							<visible>!String.IsEmpty(ListItem.Property(separator))</visible>
+						</control>
+						<control type="label">
+							<height>60</height>
+							<align>center</align>
+							<textcolor>black</textcolor>
+							<shadowcolor/>
+							<textwidth>435</textwidth>
+							<label>$INFO[ListItem.Label]</label>
+						</control>
+					</focusedlayout>
+					<content>
+						<item>
+							<label>$LOCALIZE[13012]</label>
+							<onclick>Quit()</onclick>
+							<visible>System.ShowExitButton</visible>
+							<visible>!Skin.HasSetting(Shutdown_noexit)</visible>
+						</item>
+						<item>
+							<label>$LOCALIZE[13016]</label>
+							<onclick>Powerdown()</onclick>
+							<visible>System.CanPowerDown</visible>
+							<visible>!Skin.HasSetting(Shutdown_noshutdown)</visible>
+						</item>
+						<item>
+							<label>$LOCALIZE[20150]</label>
+							<onclick>AlarmClock(shutdowntimer,Shutdown())</onclick>
+							<visible>!System.HasAlarm(shutdowntimer)</visible>
+							<visible>System.CanPowerDown | System.CanSuspend | System.CanHibernate</visible>
+							<visible>!Skin.HasSetting(Shutdown_notimer)</visible>
+						</item>
+						<item>
+							<label>$LOCALIZE[20151] $INFO[System.AlarmPos,(,)]</label>
+							<onclick>CancelAlarm(shutdowntimer)</onclick>
+							<visible>System.HasAlarm(shutdowntimer)</visible>
+						</item>
+						<item>
+							<label>$LOCALIZE[13011]</label>
+							<onclick>Suspend()</onclick>
+							<visible>System.CanSuspend</visible>
+							<visible>!Skin.HasSetting(Shutdown_nosuspent)</visible>
+						</item>
+						<item>
+							<label>$LOCALIZE[13010]</label>
+							<onclick>Hibernate()</onclick>
+							<visible>System.CanHibernate</visible>
+							<visible>!Skin.HasSetting(Shutdown_nohibernate)</visible>
+						</item>
+						<item>
+							<label>$LOCALIZE[13013]</label>
+							<onclick>Reset()</onclick>
+							<visible>System.CanReboot</visible>
+							<visible>!Skin.HasSetting(Shutdown_noreboot)</visible>
+						</item>
+						<item>
+							<label>$LOCALIZE[20126] $INFO[system.profilename]</label>
+							<onclick>dialog.close(all,true)</onclick>
+							<onclick>System.LogOff</onclick>
+							<visible>System.HasLoginScreen | Integer.IsGreater(System.ProfileCount,1)</visible>
+							<visible>System.Loggedon</visible>
+						</item>
+						<item>
+							<label>$VAR[MasterModeLabel]</label>
+							<onclick>mastermode</onclick>
+							<visible>System.HasLocks</visible>
+						</item>
+						<item>
+							<label>$LOCALIZE[13017]</label>
+							<onclick>InhibitIdleShutdown(true)</onclick>
+							<visible>System.HasShutdown +!System.IsInhibit</visible>
+							<visible>!Skin.HasSetting(shutdown_noinhibitidle)</visible>
+						</item>
+						<item>
+							<label>$LOCALIZE[13018]</label>
+							<onclick>InhibitIdleShutdown(false)</onclick>
+							<visible>System.HasShutdown + System.IsInhibit</visible>
+							<visible>!Skin.HasSetting(shutdown_noallowidle)</visible>
+						</item>
+						<item>
+							<label>$LOCALIZE[14261]</label>
+							<onclick>dialog.close(all,true)</onclick>
+							<onclick>ActivateWindow(skinsettings)</onclick>
+						</item>
+						<item>
+							<label></label>
+							<property name="separator">Separator2.png</property>
+							<onclick/>
+							<visible>Skin.HasSetting(shutdown_nand)|Skin.HasSetting(shutdown_restart)|Skin.HasSetting(shutdown_reload)|Skin.HasSetting(shutdown_addon)</visible>
+						</item>
+						<item>
+							<label>$LOCALIZE[301592]</label>
+							<onclick>RestartApp</onclick>
+							<visible>Skin.HasSetting(shutdown_restart)</visible>
+						</item>
+						<item>
+							<!-- <label>$LOCALIZE[13013] $LOCALIZE[19156] Nand</label> -->
+							<label>Reboot from internal</label>
+							<onclick>System.ExecWait("/usr/sbin/rebootfromnand")</onclick>
+							<onclick>Reset()</onclick>
+							<visible>System.CanReboot</visible>
+							<visible>Skin.HasSetting(shutdown_nand)</visible>
+						</item>
+						<item>
+							<label>$LOCALIZE[301590]</label>
+							<onclick>ReloadSkin()</onclick>
+							<visible>Skin.HasSetting(shutdown_reload)</visible>
+						</item>
+						<item>
+							<label>$VAR[shutdown_addon_var]</label>
+							<onclick>Dialog.Close(all)</onclick>
+							<onclick condition="!String.IsEmpty(Skin.String(shutdown_addon1))">RunAddon($INFO[Skin.String(shutdown_addon1)])</onclick>
+							<onclick condition="String.IsEmpty(Skin.String(shutdown_addon1))">Skin.SetAddon(shutdown_addon1,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.executable,xbmc.addon.image,kodi.gameclient)</onclick>
+							<visible>Skin.HasSetting(shutdown_addon)</visible>
+						</item>
+						<item>
+							<label>EXPORT</label>
+							<onclick>exportlibrary(video,true,false,true,false)</onclick>
+							<visible>Skin.HasSetting(videolibrary_export)</visible>
+						</item>
+					</content>
+				</control>
+			</control>
+			<control type="image">
+				<description>background top image</description>
+				<width>akzentline_size</width>
+				<colordiffuse>$VAR[BackgroundOverlayColorDialog]</colordiffuse>
+				<texture>White.png</texture>
+			</control>
+			<control type="image">
+				<description>background top image</description>
+				<left>100%</left>
+				<width>akzentline_size</width>
+				<colordiffuse>$VAR[BackgroundOverlayColorDialog]</colordiffuse>
+				<texture>White.png</texture>
+			</control>
+		</control>
+        <include>BlackStripes</include>
+        <control type="group">
+            <left>885</left>
+			<right>SpacePadding</right>
+            <top>230</top>
+			<bottom>165</bottom>
+            <include>openclosemedium</include>
+			<control type="ima ge"> <!-- testimage-->
+				<texture>WhiteBack.png</texture>
+			</control>
+			<control type="group"> <!-- Artistlogo -->
+				<right>0</right>
+				<bottom>0</bottom>
+				<width>510</width>
+				<height>180</height>
+				<control type="image">
+					<visible>Skin.HasSetting(EnableExtendedArt)</visible>
+					<include>openclosevisible</include>
+					<colordiffuse>menudiffuse</colordiffuse>
+					<aspectratio align="right" aligny="top">keep</aspectratio>
+					<texture>$VAR[ClearlogoPlayerVAR]</texture>
+					<visible>Player.HasMedia</visible>
+				</control>
+			</control>
+			<control type="grouplist">
+				<itemgap>itemgap</itemgap>
+				<control type="label">
+					<height>75</height>
+					<align>left</align>
+					<font>impacted44</font>
+					<textcolor>white</textcolor>
+					<shadowcolor/>
+					<label>$INFO[System.Date]</label>
+				</control>
+				<control type="label">
+					<height>75</height>
+					<align>left</align>
+					<font>impacted54</font>
+					<textcolor>white</textcolor>
+					<shadowcolor/>
+					<label>$INFO[System.Time]</label>
+				</control>
+				<control type="label">
+					<height>45</height>
+					<align>left</align>
+					<font>impacted24</font>
+					<textcolor>grey</textcolor>
+					<shadowcolor/>
+					<label>$INFO[System.Uptime,$LOCALIZE[301504]  ,] | CPU $INFO[System.CPUUsage] | Memory $INFO[system.memory(used.percent)]</label>
+				</control>
+				<control type="group">
+					<height>150</height>
+					<include content="MiniWeather">
+						<param name="left" value="0" />
+						<param name="top" value="-20" />
+					</include>
+				</control>
+				<control type="label">
+					<height>45</height>
+					<align>left</align>
+					<font>impacted24</font>
+					<textcolor>grey1</textcolor>
+					<shadowcolor/>
+					<label>$LOCALIZE[31007]:</label>
+					<visible>Player.HasMedia</visible>
+				</control>
+				<control type="label">
+					<height>45</height>
+					<align>left</align>
+					<font>impacted26</font>
+					<textcolor>white</textcolor>
+					<shadowcolor/>
+					<label>$INFO[Window(Home).Property(RadioMonitor.Station),, [COLOR=description]•[/COLOR] ]$VAR[HomeOSDTitle]$VAR[HomeOSDLabel, [COLOR=description]•[/COLOR] ,]</label>
+					<visible>Player.HasAudio</visible>
+				</control>
+				<control type="label">
+					<height>45</height>
+					<align>left</align>
+					<font>impacted26</font>
+					<textcolor>white</textcolor>
+					<shadowcolor/>
+					<label>$VAR[SeekTimeLabelVar]$VAR[SeekDurationLabelVar, / ,]</label>
+					<visible>Player.HasMedia</visible>
+				</control>
+			</control>
+        </control>
+        <control type="grouplist"> <!-- PVR Recording Info -->
+            <left>15</left>
+			<right>SpacePadding</right>
+            <top>10</top>
+            <orientation>vertical</orientation>
+            <itemgap>9</itemgap>
+            <include>opencloseslidedown</include>
+            <control type="label">
+                <height>30</height>
+                <label>$INFO[Pvr.NowRecordingTitle,[COLOR=red]$LOCALIZE[19158]: [/COLOR],]$INFO[Pvr.NowRecordingChannel, / ,]</label>
+                <visible>Pvr.IsRecording</visible>
+            </control>
+            <control type="label">
+                <height>30</height>
+                <label>$INFO[Pvr.NextRecordingTitle,[COLOR=red]$LOCALIZE[19157]: [/COLOR],]$INFO[Pvr.NextRecordingChannel, / ,]</label>
+                <visible>Pvr.HasNonRecordingTVTimer|Pvr.HasNonRecordingRadioTimer</visible>
+            </control>
+            <control type="label">
+                <height>30</height>
+                <label>[COLOR=red]nächster Umschalttimer: [/COLOR]$INFO[Window(Home).Property(t0:date)]$INFO[Window(Home).Property(t0:channel), / ,]</label>
+                <visible>!String.IsEmpty(Window(Home).Property(t0:date))</visible>
+            </control>
+        </control>
+        <control type="group"> <!-- Shutdown Timer Display -->
+			<left>SpacePadding</left>
+			<right>SpacePadding</right>
+			<bottom>0</bottom>
+			<height>135</height>
+			<control type="label">
+				<height>135</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>impacted26</font>
+				<textcolor>red</textcolor>
+				<label>$LOCALIZE[31056] $INFO[System.Alarmpos]</label>
+				<include>opencloseslideup</include>
+				<visible>System.HasAlarm(shutdowntimer)</visible>
+			</control>
+		</control>
+    </controls>
+</window>

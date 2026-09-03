@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="1800" type="dialog">
+    <defaultcontrol always="true">18000</defaultcontrol>
+    <controls>
+        <!-- <include>BlackBack</include> -->
+        <control type="group">
+            <include>openclosebox</include>
+			<include content="DefaultPopupLayout">
+				<param name="PopupHeaderTitle" value="unterstützte/bevorzugte Addons" />
+				<param name="PopupIcon" value="Design-Addonicon.png" />
+				<param name="PopupTitle" value="$LOCALIZE[24001] / $LOCALIZE[247]" />
+				<param name="PopupTitle2" value="Aktion" />
+			</include>
+			<control type="group">
+				<top>150</top>
+				<left>25</left>
+				<width>1175</width>
+				<control type="group">
+					<animation effect="slide" end="-10" condition="Control.IsVisible(70)">Conditional</animation>
+					<include content="SkinAddonListLayout">
+						<param name="left" />
+						<param name="top" value="0"/>
+						<param name="width" value="1150" />
+						<param name="pagecontrol" value="70"/>
+					</include>
+				</control>
+				<include content="DefaultScrollbar">
+					<param name="left" value="25r" />
+					<param name="top" value="0"/>
+					<param name="height" value="688"/>
+					<param name="onleft" value="18000"/>
+					<param name="visible" value="Control.IsVisible(18000)" />
+				</include>
+			</control>
+        </control>
+    </controls>
+</window>

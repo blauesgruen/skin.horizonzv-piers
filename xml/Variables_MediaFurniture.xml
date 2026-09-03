@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- HorizonzV -->
+<includes>
+    <variable name="rated_language">
+        <value condition="Skin.HasSetting(rated_de)">$LOCALIZE[301544]</value>
+        <value condition="Skin.HasSetting(rated_us)">$LOCALIZE[301546]</value>
+        <value condition="Skin.HasSetting(rated_uk)">$LOCALIZE[301548]</value>
+        <value condition="Skin.HasSetting(rated_fr)">$LOCALIZE[301550]</value>
+        <value condition="!Skin.HasSetting(rated_fr)+!Skin.HasSetting(rated_uk)+!Skin.HasSetting(rated_us)+!Skin.HasSetting(rated_de)">$LOCALIZE[22080]</value>
+    </variable>
+    <variable name="fsk_logo">
+        <value condition="Skin.HasSetting(fsk_original)">$LOCALIZE[301540]</value>
+        <value condition="Skin.HasSetting(fsk)">$LOCALIZE[301542]</value>
+        <value condition="Skin.HasSetting(fsk_dual)">$LOCALIZE[301538]</value>
+    </variable>
+    <!-- Aeon MQ 4 -->
+    <!-- ######################################################################### Variable Rating Flags ######################################################################### -->
+    <variable name="Furniture_VideoRating">
+        <!-- German -->
+        <value condition="Skin.HasSetting(rated_de)+[String.Contains(ListItem.mpaa,o.A.)|String.Contains(ListItem.mpaa,o.Al.)|String.Contains(ListItem.mpaa,FSK 0)|String.Contains(ListItem.mpaa,Rated 0)]">flagging/ratings/original/fsk-0.png</value>
+        <value condition="Skin.HasSetting(rated_de)+[String.Contains(ListItem.mpaa,Rated 6)|String.Contains(ListItem.mpaa,FSK 6)]">flagging/ratings/original/fsk-6.png</value>
+        <value condition="Skin.HasSetting(rated_de)+[String.Contains(ListItem.mpaa,Rated 12)|String.Contains(ListItem.mpaa,FSK 12)]">flagging/ratings/original/fsk-12.png</value>
+        <value condition="Skin.HasSetting(rated_de)+[String.Contains(ListItem.mpaa,Rated 16)|String.Contains(ListItem.mpaa,FSK 16)]">flagging/ratings/original/fsk-16.png</value>
+        <value condition="Skin.HasSetting(rated_de)+[String.Contains(ListItem.mpaa,Rated 18)|String.Contains(ListItem.mpaa,FSK 18)]">flagging/ratings/original/fsk-18.png</value>
+        <!-- German for EMM (not needed Setting) -->
+        <value condition="String.Contains(ListItem.mpaa,German:0)|String.Contains(ListItem.mpaa,German:o.Al.)|String.Contains(ListItem.mpaa,German:o.A.)">flagging/ratings/original/fsk-0.png</value>
+        <value condition="String.Contains(ListItem.mpaa,Germany:0)|String.Contains(ListItem.mpaa,Germany:o.Al.)|String.Contains(ListItem.mpaa,Germany:o.A.)">flagging/ratings/original/fsk-0.png</value>
+        <value condition="String.Contains(ListItem.mpaa,German:6)|String.Contains(ListItem.mpaa,Germany:6)">flagging/ratings/original/fsk-6.png</value>
+        <value condition="String.Contains(ListItem.mpaa,German:12)|String.Contains(ListItem.mpaa,Germany:12)">flagging/ratings/original/fsk-12.png</value>
+        <value condition="String.Contains(ListItem.mpaa,German:16)|String.Contains(ListItem.mpaa,Germany:16)">flagging/ratings/original/fsk-16.png</value>
+        <value condition="String.Contains(ListItem.mpaa,German:18)|String.Contains(ListItem.mpaa,Germany:18)">flagging/ratings/original/fsk-18.png</value>
+        <!-- USA (not needed Setting)-->
+        <value condition="String.Contains(ListItem.Mpaa,Rated NR)|String.Contains(ListItem.Mpaa,USA:NR)|String.Contains(ListItem.Mpaa,not rated)">flagging/ratings/original/mpaa_nr.png</value>
+        <value condition="String.Contains(ListItem.Mpaa,Rated G)|String.Contains(ListItem.Mpaa,USA:G)">flagging/ratings/original/mpaa_g.png</value>
+        <value condition="[String.Contains(ListItem.Mpaa,Rated PG)|String.Contains(ListItem.Mpaa,USA:PG)]+!String.Contains(ListItem.Mpaa,Rated PG-13)+!String.Contains(ListItem.Mpaa,Rated: PG-13)">flagging/ratings/original/mpaa_pg.png</value>
+        <value condition="String.Contains(ListItem.Mpaa,Rated PG-13)|String.Contains(ListItem.Mpaa,USA:PG-13)">flagging/ratings/original/mpaa_pg13.png</value>
+        <value condition="String.Contains(ListItem.Mpaa,Rated R)|String.Contains(ListItem.Mpaa,USA:R)">flagging/ratings/original/mpaa_r.png</value>
+        <value condition="String.Contains(ListItem.Mpaa,Rated NC-17)|String.Contains(ListItem.Mpaa,USA:NC-17)">flagging/ratings/original/mpaa_nc17.png</value>
+        <value condition="String.Contains(ListItem.Mpaa,TV-G)">flagging/ratings/original/tv-g.png</value>
+        <value condition="String.Contains(ListItem.Mpaa,TV-PG)">flagging/ratings/original/tv-pg.png</value>
+        <value condition="String.Contains(ListItem.Mpaa,TV-14)">flagging/ratings/original/tv-14.png</value>
+        <value condition="String.Contains(ListItem.Mpaa,TV-MA)">flagging/ratings/original/tv-ma.png</value>
+        <!-- UK -->
+        <value condition="Skin.HasSetting(rated_uk)+[String.IsEqual(ListItem.Mpaa,UK:U)|String.IsEqual(ListItem.Mpaa,Rated U)]">flagging/ratings/original/bbfc_u.png</value>
+        <value condition="Skin.HasSetting(rated_uk)+[String.IsEqual(ListItem.Mpaa,UK:PG)]">flagging/ratings/original/bbfc_pg.png</value>
+        <value condition="Skin.HasSetting(rated_uk)+[String.IsEqual(ListItem.Mpaa,UK:12)]">flagging/ratings/original/bbfc_12.png</value>
+        <value condition="Skin.HasSetting(rated_uk)+[String.IsEqual(ListItem.Mpaa,UK:12A)|String.IsEqual(ListItem.Mpaa,Rated 12A)]">flagging/ratings/original/bbfc_12a.png</value>
+        <value condition="Skin.HasSetting(rated_uk)+[String.IsEqual(ListItem.Mpaa,UK:15)|String.IsEqual(ListItem.Mpaa,Rated 15)]">flagging/ratings/original/bbfc_15.png</value>
+        <value condition="Skin.HasSetting(rated_uk)+[String.IsEqual(ListItem.Mpaa,UK:18)]">flagging/ratings/original/bbfc_18.png</value>
+        <!-- UK for EMM (not needed Setting) -->
+        <value condition="String.IsEqual(ListItem.Mpaa,UK:U)">flagging/ratings/original/bbfc_u.png</value>
+        <value condition="String.IsEqual(ListItem.Mpaa,UK:PG)">flagging/ratings/original/bbfc_pg.png</value>
+        <value condition="String.IsEqual(ListItem.Mpaa,UK:12)">flagging/ratings/original/bbfc_12.png</value>
+        <value condition="String.IsEqual(ListItem.Mpaa,UK:12A)">flagging/ratings/original/bbfc_12a.png</value>
+        <value condition="String.IsEqual(ListItem.Mpaa,UK:15)">flagging/ratings/original/bbfc_15.png</value>
+        <value condition="String.IsEqual(ListItem.Mpaa,UK:18)">flagging/ratings/original/bbfc_18.png</value>
+    </variable>
+</includes>

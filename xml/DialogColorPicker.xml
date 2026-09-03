@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window>
+	<defaultcontrol always="true">6</defaultcontrol>
+	<include>openclosevisible</include>
+	<depth>DepthOSD</depth>
+	<controls>
+		<control type="group">
+			<include>openclosebox</include>
+			<include content="DialogBackgroundCommons">
+				<param name="width" value="1200" />
+				<param name="height" value="816" />
+				<param name="header_id" value="0" />
+				<param name="header_label" value="$INFO[System.CurrentWindow]" />
+			</include>
+			<control type="group">
+				<left>SpacePadding</left>
+				<right>SpacePadding</right>
+				<top>SpacePaddingXL</top>
+				<bottom>SpacePaddingXL</bottom>
+				<control type="group" id="6">
+					<onup>6</onup>
+					<ondown>6</ondown>
+					<onleft>9001</onleft>
+					<onright>61</onright>
+					<orientation>vertical</orientation>
+					<pagecontrol>61</pagecontrol>
+					<viewtype label="100">icon</viewtype>
+					<itemlayout height="80" width="146">
+						<control type="group">
+							<control type="image">
+								<top>3</top>
+								<left>8</left>
+								<width>138</width>
+								<height>74</height>
+								<texture>buttons/color-back.png</texture>
+							</control>
+							<control type="image">
+								<top>3</top>
+								<left>8</left>
+								<width>138</width>
+								<height>74</height>
+								<texture border="0">White.png</texture>
+								<colordiffuse>$INFO[ListItem.Label2]</colordiffuse>
+								<aspectratio>stretch</aspectratio>
+							</control>
+						</control>
+					</itemlayout>
+					<focusedlayout height="80" width="146">
+						<control type="group">
+							<animation effect="zoom" time="200" tween="sine" easing="inout" start="100" end="124" center="auto">Focus</animation>
+							<control type="image">
+								<top>3</top>
+								<left>8</left>
+								<width>138</width>
+								<height>74</height>
+								<texture>BlackBack.png</texture>
+							</control>
+							<control type="image">
+								<top>3</top>
+								<left>8</left>
+								<width>138</width>
+								<height>74</height>
+								<texture border="0">White.png</texture>
+								<colordiffuse>$INFO[ListItem.Label2]</colordiffuse>
+								<aspectratio>stretch</aspectratio>
+							</control>
+						</control>
+					</focusedlayout>
+					<content>special://skin/playlists/Music_Albums_random.xsp</content>
+				</control>
+				<control type="scrollbar" id="61">
+					<left>850</left>
+					<width>12</width>
+					<height>100%</height>
+					<onleft condition="Control.IsVisible(6)">6</onleft>
+					<onright>9001</onright>
+					<orientation>vertical</orientation>
+				</control>
+				<control type="grouplist" id="9001">
+					<left>875</left>
+					<top>80</top>
+					<onleft>61</onleft>
+					<onright>6</onright>
+					<include content="DefaultDialogButton">
+						<param name="id" value="7" />
+						<param name="label" value="$LOCALIZE[222]" />
+					</include>
+				</control>
+			</control>
+			<control type="group">
+				<bottom>20</bottom>
+				<height>35</height>
+				<control type="label">
+					<left>15</left>
+					<width>50%</width>
+					<align>left</align>
+					<textcolor>grey</textcolor>
+					<label>$LOCALIZE[737]: $INFO[Container(6).ListItem.Label,, - ]$INFO[Container(6).ListItem.Label2,#,]</label>
+				</control>
+				<control type="label">
+					<width>50%</width>
+					<height>35</height>
+					<font>font12</font>
+					<align>right</align>
+					<textcolor>grey</textcolor>
+					<label>$VAR[SelectLabel]</label>
+				</control>
+			</control>
+		</control>
+	</controls>
+</window>

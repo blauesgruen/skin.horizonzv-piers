@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+	<include name="DefaultPopupLayout">
+		<param name="id">1</param>
+		<param name="height">900</param>
+		<param name="width">1215</param>
+		<definition>
+			<centertop>50%</centertop>
+			<centerleft>50%</centerleft>
+			<width>$PARAM[width]</width>
+			<height>$PARAM[height]</height>
+			<control type="group">
+				<animation effect="fade" end="90" condition="true">Conditional</animation>
+				<control type="image">
+					<description>popup background image</description>
+					<colordiffuse>$VAR[BackgroundOverlayColorDialog]</colordiffuse>
+					<texture border="20">masks/mask_round.png</texture>
+				</control>
+				<control type="image">
+					<description>popup background image</description>
+					<left>15</left>
+					<right>15</right>
+					<top>15</top>
+					<height>60</height>
+					<colordiffuse>grey1</colordiffuse>
+					<texture border="25">masks/mask_half_round.png</texture>
+				</control>
+				<control type="image">
+					<description>popup background image</description>
+					<left>15</left>
+					<right>15</right>
+					<top>135</top>
+					<bottom>15</bottom>
+					<colordiffuse>grey1</colordiffuse>
+					<texture border="20" flipy="true">masks/mask_half_round.png</texture>
+				</control>
+			</control>
+			<control type="label" id="$PARAM[id]">
+				<description>header label</description>
+				<left>60</left>
+				<right>60</right>
+				<top>22</top>
+				<height>45</height>
+				<font>impacted21</font>
+				<label>$PARAM[PopupHeaderTitle]</label>
+				<align>center</align>
+				<aligny>center</aligny>
+				<textcolor>white</textcolor>
+				<shadowcolor>grey3</shadowcolor>
+			</control>
+			<control type="grouplist">
+				<right>15</right>
+				<bottom>15</bottom>
+				<width>330</width>
+				<height>330</height>
+				<control type="image">
+					<description>background image</description>
+					<width>450</width>
+					<height>450</height>
+					<aspectratio align="left">keep</aspectratio>
+					<colordiffuse>grey2</colordiffuse>
+					<animation effect="fade" end="50" time="0" condition="true">Conditional</animation>
+					<texture border="1">$PARAM[PopupIcon]</texture>
+				</control>
+			</control>
+			<control type="label">
+				<description>Title label</description>
+				<left>38</left>
+				<top>82</top>
+				<width>1200</width>
+				<height>45</height>
+				<label>$PARAM[PopupTitle]</label>
+				<align>left</align>
+				<scroll>false</scroll>
+			</control>
+			<control type="label">
+				<description>Title label</description>
+				<left>1020</left>
+				<top>82</top>
+				<width>150</width>
+				<height>45</height>
+				<label>$PARAM[PopupTitle2]</label>
+				<align>right</align>
+				<aligny>center</aligny>
+				<scroll>false</scroll>
+			</control>
+		</definition>
+	</include>
+	<include name="DefaultDialogSelectLayout">
+		<control type="group">
+			<include content="DefaultPopupLayout">
+				<param name="PopupTitle">$LOCALIZE[22080] ...</param>
+			</include>
+			<control type="list" id="3">
+                <left>45</left>
+                <top>168</top>
+                <width>680</width>
+                <height>640</height>
+                <itemgap>0</itemgap>
+				<onup>3</onup>
+				<ondown>3</ondown>
+				<onleft>9001</onleft>
+				<onright>60</onright>
+				<pagecontrol>60</pagecontrol>
+				<scrolltime>200</scrolltime>
+				<include content="DefaultLabelListLayout">
+					<param name="list_id" value="3" />
+					<param name="height" value="60" />
+					<param name="label_2" />
+					<param name="visible_flags" value="true" />
+				</include>
+			</control>
+			<control type="list" id="6">
+                <left>45</left>
+                <top>168</top>
+                <width>680</width>
+                <height>637</height>
+                <itemgap>3</itemgap>
+				<onup>6</onup>
+				<ondown>6</ondown>
+				<onleft>9001</onleft>
+				<onright>60</onright>
+				<pagecontrol>60</pagecontrol>
+				<scrolltime>200</scrolltime>
+				<include content="DefaultMediaInfoListLayout">
+					<param name="list_id" value="6" />
+					<param name="height" value="125" />
+					<param name="label_2" value="$INFO[ListItem.Label2]" />
+					<param name="label_3" />
+				</include>
+			</control>
+			<control type="scrollbar" id="60">
+				<left>730</left>
+				<top>168</top>
+				<height>637</height>
+				<width>12</width>
+				<bottom>20</bottom>
+				<onleft>3</onleft>
+				<onright>9001</onright>
+				<orientation>vertical</orientation>
+				<visible>Control.IsVisible(3)</visible>
+			</control>
+			<control type="scrollbar" id="60">
+				<left>730</left>
+				<top>168</top>
+				<height>637</height>
+				<width>12</width>
+				<bottom>20</bottom>
+				<onleft>6</onleft>
+				<onright>9001</onright>
+				<orientation>vertical</orientation>
+				<visible>Control.IsVisible(6)</visible>
+			</control>
+			<control type="label">
+				<left>30</left>
+				<top>830</top>
+				<width>275</width>
+				<height>35</height>
+				<font>font12</font>
+				<align>left</align>
+				<textcolor>grey2</textcolor>
+				<label>$VAR[SelectLabel]</label>
+			</control>
+			<control type="grouplist" id="9001">
+				<left>820</left>
+				<top>168</top>
+				<onleft>60</onleft>
+				<itemgap>dialogbuttons_itemgap</itemgap>
+				<include content="DefaultDialogButton">
+					<param name="id" value="5" />
+					<param name="width" value="300" />
+					<param name="label" value="" />
+					<param name="font" value="impacted18" />
+					<param name="onleft" value="60" />
+				</include>
+				<include content="DefaultDialogButton">
+					<param name="id" value="8" />
+					<param name="width" value="300" />
+					<param name="label" value="" />
+					<param name="font" value="impacted18" />
+					<param name="onleft" value="60" />
+				</include>
+				<include content="DefaultDialogButton">
+					<param name="id" value="7" />
+					<param name="width" value="300" />
+					<param name="label" value="$LOCALIZE[222]" />
+					<param name="font" value="impacted18" />
+					<param name="onleft" value="60" />
+				</include>
+			</control>
+		</control>
+	</include>
+	<include name="GameDialogSelectSaveLayout">
+		<control type="group">
+			<include content="DialogBackgroundCommons">
+				<param name="width" value="1639" />
+				<param name="height" value="919" />
+				<param name="header_label" value="35260" />
+				<param name="header_id" value="10820" />
+			</include>
+			<control type="group">
+				<description>Content area</description>
+				<top>100</top>
+				<bottom>20</bottom>
+				<left>30</left>
+				<right>30</right>
+				<control type="group">
+					<description>Panel area, including scroll bar</description>
+					<width>1224</width>
+					<height>748</height>
+					<control type="image">
+						<left>-20</left>
+						<right>-20</right>
+						<top>-20</top>
+						<bottom>-20</bottom>
+						<texture border="40">White.png</texture>
+					</control>
+					<control type="panel" id="3">
+						<onright>9001</onright>
+						<pagecontrol>61</pagecontrol>
+						<scrolltime>200</scrolltime>
+						<itemlayout width="408" height="374">
+							<control type="image">
+								<left>10</left>
+								<right>10</right>
+								<top>10</top>
+								<height>256</height>
+								<texture>$INFO[ListItem.Art(screenshot)]</texture>
+								<aspectratio>keep</aspectratio>
+							</control>
+							<control type="label">
+								<left>10</left>
+								<right>10</right>
+								<top>286</top>
+								<height>20</height>
+								<align>center</align>
+								<aligny>center</aligny>
+								<scroll>true</scroll>
+								<font>font13</font>
+								<label>$INFO[ListItem.Label]</label>
+								<shadowcolor>text_shadow</shadowcolor>
+							</control>
+							<control type="label">
+								<left>10</left>
+								<right>10</right>
+								<top>322</top>
+								<height>20</height>
+								<align>center</align>
+								<aligny>center</aligny>
+								<scroll>true</scroll>
+								<font>font27</font>
+								<label>$INFO[ListItem.Label2]</label>
+								<shadowcolor>text_shadow</shadowcolor>
+							</control>
+						</itemlayout>
+						<focusedlayout width="408" height="374">
+							<control type="image">
+								<texture>White.png</texture>
+								<visible>Control.HasFocus(3)</visible>
+							</control>
+							<control type="image">
+								<left>10</left>
+								<right>10</right>
+								<top>10</top>
+								<height>256</height>
+								<texture>$INFO[ListItem.Art(screenshot)]</texture>
+								<aspectratio>keep</aspectratio>
+							</control>
+							<control type="label">
+								<left>10</left>
+								<right>10</right>
+								<top>286</top>
+								<height>20</height>
+								<align>center</align>
+								<aligny>center</aligny>
+								<scroll>true</scroll>
+								<font>font13</font>
+								<label>$INFO[ListItem.Label]</label>
+								<shadowcolor>text_shadow</shadowcolor>
+							</control>
+							<control type="label">
+								<left>10</left>
+								<right>10</right>
+								<top>322</top>
+								<height>20</height>
+								<align>center</align>
+								<aligny>center</aligny>
+								<scroll>true</scroll>
+								<font>font27</font>
+								<label>$INFO[ListItem.Label2]</label>
+								<shadowcolor>text_shadow</shadowcolor>
+							</control>
+						</focusedlayout>
+					</control>
+					<control type="scrollbar" id="61">
+						<description>Scroll bar</description>
+						<right>-20</right>
+						<width>12</width>
+						<orientation>vertical</orientation>
+					</control>
+				</control>
+				<control type="grouplist" id="9001">
+					<description>Buttons on the right</description>
+					<left>1302</left>
+					<top>-20</top>
+					<onleft>3</onleft>
+					<itemgap>dialogbuttons_itemgap</itemgap>
+					<include content="DefaultDialogButton">
+						<param name="id" value="10825" />
+						<param name="label" value="$LOCALIZE[35261]" />
+					</include>
+					<include content="DefaultDialogButton">
+						<param name="id" value="10826" />
+						<param name="label" value="$LOCALIZE[222]" />
+					</include>
+				</control>
+				<control type="group">
+					<description>Emulator name and icon</description>
+					<right>0</right>
+					<width>310</width>
+					<top>162</top>
+					<height>330</height>
+					<bottom>50</bottom>
+					<control type="group">
+						<left>52</left>
+						<control type="image">
+							<left>-20</left>
+							<right>-20</right>
+							<top>-20</top>
+							<bottom>-20</bottom>
+							<texture border="40">White.png</texture>
+						</control>
+						<control type="label">
+							<description>Label for Saved with: text</description>
+							<top>14</top>
+							<height>20</height>
+							<font>font16</font>
+							<shadowcolor>text_shadow</shadowcolor>
+							<label>35255</label>
+							<align>center</align>
+						</control>
+						<control type="label" id="10823">
+							<description>Emulator name</description>
+							<top>60</top>
+							<height>20</height>
+							<font>font23_narrow</font>
+							<textcolor>button_focus</textcolor>
+							<shadowcolor>text_shadow</shadowcolor>
+							<align>center</align>
+						</control>
+						<control type="image" id="10824">
+							<description>Emulator icon</description>
+							<top>108</top>
+							<height>192</height>
+							<right>33</right>
+							<width>192</width>
+							<aspectratio>keep</aspectratio>
+						</control>
+					</control>
+				</control>
+				<control type="group">
+					<description>Bottom bar of text area</description>
+					<height>40</height>
+					<bottom>0</bottom>
+					<control type="label" id="10822">
+						<description>Caption area</description>
+						<right>200</right>
+						<font>font12</font>
+						<align>left</align>
+						<aligny>center</aligny>
+						<shadowcolor>text_shadow</shadowcolor>
+					</control>
+					<control type="label">
+						<description>Item count</description>
+						<right>0</right>
+						<width>200</width>
+						<font>font12</font>
+						<align>right</align>
+						<aligny>center</aligny>
+						<textcolor>grey</textcolor>
+						<label>$VAR[SelectLabel]</label>
+					</control>
+				</control>
+			</control>
+		</control>
+	</include>
+	<include name="GameDialogSelectFilterLayout">
+		<control type="group">
+			<bottom>0</bottom>
+			<height>400</height>
+			<width>100%</width>
+			<control type="image">
+				<include>openclosevisible</include>
+				<include>DialogButtonTextureFocus</include>
+			</control>
+			<control type="panel" id="10811">
+				<left>20</left>
+				<top>30</top>
+				<scrolltime tween="sine">200</scrolltime>
+				<orientation>horizontal</orientation>
+				<itemlayout width="470" height="340">
+					<control type="group">
+						<control type="image">
+							<top>12</top>
+							<left>12</left>
+							<right>12</right>
+							<bottom>102</bottom>
+							<aspectratio>scale</aspectratio>
+							<texture border="4">DefaultVideo.png</texture>
+						</control>
+						<control type="gamewindow">
+							<top>12</top>
+							<left>12</left>
+							<right>12</right>
+							<bottom>102</bottom>
+							<videofilter>$INFO[ListItem.Property(game.videofilter)]</videofilter>
+							<stretchmode>$INFO[ListItem.Property(game.stretchmode)]</stretchmode>
+							<rotation>$INFO[ListItem.Property(game.videorotation)]</rotation>
+						</control>
+						<control type="label">
+							<top>250</top>
+							<left>12</left>
+							<right>12</right>
+							<height>80</height>
+							<label>$INFO[ListItem.Label][CR][COLOR grey1]$INFO[ListItem.Label2][/COLOR]</label>
+							<align>center</align>
+						</control>
+					</control>
+				</itemlayout>
+				<focusedlayout width="470" height="340">
+					<control type="group">
+					<control type="image">
+						<include content="DialogButtonTextureFocus">
+							<param name="color" value="grey2" />
+						</include>
+						<visible>Control.HasFocus(10811)</visible>
+					</control>
+						<control type="image">
+							<top>12</top>
+							<left>12</left>
+							<right>12</right>
+							<bottom>102</bottom>
+							<aspectratio>scale</aspectratio>
+							<texture border="4">DefaultVideo.png</texture>
+						</control>
+						<control type="gamewindow">
+							<top>12</top>
+							<left>12</left>
+							<right>12</right>
+							<bottom>102</bottom>
+							<videofilter>$INFO[ListItem.Property(game.videofilter)]</videofilter>
+							<stretchmode>$INFO[ListItem.Property(game.stretchmode)]</stretchmode>
+							<rotation>$INFO[ListItem.Property(game.videorotation)]</rotation>
+						</control>
+						<control type="label">
+							<top>250</top>
+							<left>12</left>
+							<right>12</right>
+							<height>80</height>
+							<label>$INFO[ListItem.Label][CR][COLOR grey]$INFO[ListItem.Label2][/COLOR]</label>
+							<align>center</align>
+						</control>
+					</control>
+				</focusedlayout>
+			</control>
+			<control type="textbox" id="10812">
+				<description>Description Area</description>
+				<top>410</top>
+				<left>100</left>
+				<right>100</right>
+				<height>200</height>
+				<align>justify</align>
+				<include condition="!Skin.HasSetting(BigPlotText)">PlotText16Var</include>
+				<include condition="Skin.HasSetting(BigPlotText)">PlotTextBigVar</include>
+				<autoscroll time="3000" delay="5000" repeat="5000">true</autoscroll>
+			</control>
+		</control>
+	</include>
+	<include name="GameDialogSelectViewLayout">
+		<control type="group">
+			<bottom>0</bottom>
+			<height>410</height>
+			<width>100%</width>
+			<control type="image">
+				<include>openclosevisible</include>
+				<include>DialogButtonTextureFocus</include>
+			</control>
+			<control type="panel" id="10811">
+				<left>20</left>
+				<right>20</right>
+				<top>30</top>
+				<scrolltime tween="sine">200</scrolltime>
+				<orientation>horizontal</orientation>
+				<itemlayout width="470" height="340">
+					<control type="image">
+						<top>12</top>
+						<left>12</left>
+						<right>12</right>
+						<bottom>102</bottom>
+						<aspectratio>scale</aspectratio>
+						<texture border="4">DefaultVideo.png</texture>
+					</control>
+					<control type="gamewindow">
+						<top>12</top>
+						<left>12</left>
+						<right>12</right>
+						<bottom>102</bottom>
+						<videofilter>$INFO[ListItem.Property(game.videofilter)]</videofilter>
+						<stretchmode>$INFO[ListItem.Property(game.stretchmode)]</stretchmode>
+						<rotation>$INFO[ListItem.Property(game.videorotation)]</rotation>
+					</control>
+					<control type="label">
+						<top>250</top>
+						<left>12</left>
+						<right>12</right>
+						<height>40</height>
+						<label>$INFO[ListItem.Label][CR][COLOR grey]$INFO[ListItem.Label2][/COLOR]</label>
+						<align>center</align>
+					</control>
+				</itemlayout>
+				<focusedlayout width="470" height="340">
+					<control type="image">
+						<include content="DialogButtonTextureFocus">
+							<param name="color" value="grey2" />
+						</include>
+						<visible>Control.HasFocus(10811)</visible>
+					</control>
+					<control type="image">
+						<top>12</top>
+						<left>12</left>
+						<right>12</right>
+						<bottom>102</bottom>
+						<aspectratio>scale</aspectratio>
+						<texture border="4">DefaultVideo.png</texture>
+					</control>
+					<control type="gamewindow">
+						<top>12</top>
+						<left>12</left>
+						<right>12</right>
+						<bottom>102</bottom>
+						<videofilter>$INFO[ListItem.Property(game.videofilter)]</videofilter>
+						<stretchmode>$INFO[ListItem.Property(game.stretchmode)]</stretchmode>
+						<rotation>$INFO[ListItem.Property(game.videorotation)]</rotation>
+					</control>
+					<control type="label">
+						<top>250</top>
+						<left>12</left>
+						<right>12</right>
+						<height>40</height>
+						<label>$INFO[ListItem.Label][CR][COLOR grey]$INFO[ListItem.Label2][/COLOR]</label>
+						<align>center</align>
+					</control>
+				</focusedlayout>
+			</control>
+		</control>
+	</include>
+	<include name="GameDialogSelectSaveInGameLayout">
+		<control type="group">
+			<bottom>0</bottom>
+			<height>540</height>
+			<width>100%</width>
+			<include>openclosevisible</include>
+			<control type="image">
+				<include>DialogButtonTextureFocus</include>
+			</control>
+			<control type="panel" id="10811">
+				<top>30</top>
+				<left>30</left>
+				<right>30</right>
+				<scrolltime tween="sine">200</scrolltime>
+				<orientation>horizontal</orientation>
+				<itemlayout width="465" height="340">
+					<control type="image">
+						<left>12</left>
+						<right>12</right>
+						<height>250</height>
+						<aspectratio>scale</aspectratio>
+						<texture border="4">$INFO[ListItem.Icon]</texture>
+					</control>
+					<control type="image">
+						<left>12</left>
+						<right>12</right>
+						<height>250</height>
+						<aspectratio>scale</aspectratio>
+						<texture border="4">$INFO[ListItem.Art(screenshot)]</texture>
+					</control>
+					<control type="gamewindow">
+						<left>12</left>
+						<right>12</right>
+						<height>250</height>
+						<pixels>$INFO[ListItem.FilenameAndPath]</pixels>
+					</control>
+					<control type="label">
+						<top>250</top>
+						<left>12</left>
+						<right>12</right>
+						<height>80</height>
+						<label>$INFO[ListItem.Label][CR][COLOR grey]$INFO[ListItem.Label2][/COLOR]</label>
+						<align>center</align>
+					</control>
+				</itemlayout>
+				<focusedlayout width="465" height="340">
+					<control type="image">
+						<left>10</left>
+						<right>10</right>
+						<include content="DialogButtonTextureFocus">
+							<param name="color" value="grey2" />
+						</include>
+					</control>
+					<control type="image">
+						<top>10</top>
+						<left>20</left>
+						<right>20</right>
+						<height>250</height>
+						<aspectratio>scale</aspectratio>
+						<texture border="4">$INFO[ListItem.Icon]</texture>
+					</control>
+					<control type="image">
+						<top>10</top>
+						<left>20</left>
+						<right>20</right>
+						<height>250</height>
+						<aspectratio>scale</aspectratio>
+						<texture border="4">$INFO[ListItem.Art(screenshot)]</texture>
+					</control>
+					<control type="gamewindow">
+						<top>10</top>
+						<left>20</left>
+						<right>20</right>
+						<height>250</height>
+						<pixels>$INFO[ListItem.FilenameAndPath]</pixels>
+					</control>
+					<control type="label">
+						<top>250</top>
+						<left>20</left>
+						<right>20</right>
+						<height>80</height>
+						<label>$INFO[ListItem.Label][CR][COLOR grey]$INFO[ListItem.Label2][/COLOR]</label>
+						<align>center</align>
+					</control>
+				</focusedlayout>
+			</control>
+			<control type="textbox" id="10812">
+				<description>Description Area</description>
+				<top>410</top>
+				<left>100</left>
+				<right>100</right>
+				<height>200</height>
+				<align>justify</align>
+				<textcolor>grey2</textcolor>
+				<include condition="!Skin.HasSetting(BigPlotText)">PlotText16Var</include>
+				<include condition="Skin.HasSetting(BigPlotText)">PlotTextBigVar</include>
+				<autoscroll time="3000" delay="5000" repeat="5000">true</autoscroll>
+				<label>$INFO[ListItem.Property(savestate.caption)]</label>
+			</control>
+		</control>
+	</include>
+</includes>

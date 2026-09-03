@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <variable name="Infobox_Grafik">
+        <value condition="!Skin.HasSetting(onlyone)+Skin.HasSetting(gambit_background)">special://skin/backgrounds/gambit/background.jpg</value>
+        <value condition="!Skin.HasSetting(onlyone)+Skin.HasSetting(avengers_sw)">special://skin/backgrounds/avengers_sw/home_video.jpg</value>
+        <value condition="!Skin.HasSetting(onlyone)+Skin.HasSetting(standard_bkg)">special://skin/backgrounds/home_video.jpg</value>
+        <value condition="Skin.HasSetting(onlyone)+!String.IsEmpty(Skin.String(Home_Custom_Back_picture_OnlyOne))">$INFO[Skin.String(Home_Custom_Back_picture_OnlyOne)]</value>
+        <value condition="Skin.HasSetting(onlyone)+String.IsEmpty(Skin.String(Home_Custom_Back_picture_OnlyOne))">special://skin/backgrounds/mediaoverlaywhite.jpg</value>
+    </variable>
+</includes>

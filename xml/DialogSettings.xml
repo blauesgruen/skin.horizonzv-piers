@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+    <defaultcontrol>5</defaultcontrol>
+    <include>openclose</include>
+    <controls>
+        <include>DialogBackgroundSimple</include>
+		<control type="group">
+			<include>openclosebox</include>
+			<visible>!Window.IsVisible(sliderdialog)</visible>
+			<visible>![Window.IsActive(osdaudiodspsettings) + Window.Is(osdaudiosettings)]</visible>
+			<include content="DialogBackgroundCommons">
+				<param name="width" value="1200" />
+				<param name="height" value="90%" />
+				<param name="header_id" value="0" />
+				<param name="header_label" value="$INFO[System.CurrentWindow]" />
+			</include>
+			<control type="group">
+				<left>SpacePadding</left>
+				<right>SpacePadding</right>
+				<top>SpacePaddingXL</top>
+				<bottom>SpacePaddingXL</bottom>
+				<control type="grouplist" id="5">
+					<description>control area</description>
+					<itemgap>8</itemgap>
+					<onup>9000</onup>
+					<ondown>9000</ondown>
+					<onleft>9000</onleft>
+					<onright>9000</onright>
+				</control>
+				<include content="DefaultDialogButton">
+					<param name="id" value="7" />
+					<param name="width" value="300" />
+					<param name="align" value="left" />
+					<param name="onup" value="5" />
+					<param name="ondown" value="5" />
+					<param name="nofocus" />
+				</include>
+				<include content="DialogRadioButton">
+					<param name="id" value="8" />
+					<param name="width" value="300" />
+					<param name="align" value="left" />
+					<param name="onup" value="5" />
+					<param name="ondown" value="5" />
+					<param name="nofocus" />
+				</include>
+				<include content="DialogSpinButton">
+					<param name="id" value="9" />
+					<param name="width" value="300" />
+					<param name="align" value="left" />
+					<param name="onup" value="5" />
+					<param name="ondown" value="5" />
+					<param name="nofocus" />
+				</include>
+				<control type="image" id="11">
+					<description>separator image</description>
+					<height>2</height>
+					<colordiffuse>fanartdiffuse</colordiffuse>
+					<texture border="2">Separator1.png</texture>
+				</control>
+				<include content="DialogEditButton">
+					<param name="id" value="12" />
+					<param name="width" value="300" />
+					<param name="align" value="left" />
+					<param name="onup" value="5" />
+					<param name="ondown" value="5" />
+					<param name="nofocus" />
+				</include>
+				<include content="DialogSliderexButton">
+					<param name="id" value="13" />
+					<param name="width" value="300" />
+					<param name="align" value="left" />
+					<param name="onup" value="5" />
+					<param name="ondown" value="5" />
+					<param name="nofocus" />
+				</include>
+				<control type="label" id="14">
+					<description>Default Label</description>
+					<align>left</align>
+				</control>
+			</control>
+			<control type="grouplist" id="9000">
+				<bottom>0</bottom>
+				<height>54</height>
+				<align>center</align>
+				<onup>5</onup>
+				<ondown>5</ondown>
+				<itemgap>dialogbuttons_itemgap</itemgap>
+				<orientation>horizontal</orientation>
+				<include content="DefaultDialogButton">
+					<param name="id" value="28" />
+					<param name="width" value="300" />
+					<param name="font" value="impacted18" />
+					<param name="onup" value="5" />
+					<param name="ondown" value="5" />
+					<param name="nofocus" />
+				</include>
+				<include content="DefaultDialogButton">
+					<param name="id" value="29" />
+					<param name="width" value="300" />
+					<param name="font" value="impacted18" />
+					<param name="onup" value="5" />
+					<param name="ondown" value="5" />
+					<param name="nofocus" />
+				</include>
+				<include content="DefaultDialogButton">
+					<param name="id" value="30" />
+					<param name="width" value="300" />
+					<param name="font" value="impacted18" />
+					<param name="onup" value="5" />
+					<param name="ondown" value="5" />
+					<param name="nofocus" />
+				</include>
+			</control>
+		</control>
+    </controls>
+</window>

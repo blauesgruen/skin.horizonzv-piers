@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <default type="label">
+        <left>0</left>
+        <top>0</top>
+        <label/>
+        <height>45</height>
+        <align>left</align>
+        <aligny>center</aligny>
+        <font>clock-26b</font>
+        <shadowcolor/>
+        <textcolor>white</textcolor>
+        <focusedcolor>black</focusedcolor>
+        <selectedcolor>focused</selectedcolor>
+        <disabledcolor>selectedhome</disabledcolor>
+		<!-- <scroll>false</scroll> -->
+        <scrollspeed>scrollspeed</scrollspeed>
+		<scrollsuffix> | </scrollsuffix>
+    </default>
+    <default type="fadelabel">
+        <left>0</left>
+        <top>0</top>
+        <height>45</height>
+        <label/>
+        <align>left</align>
+        <aligny>center</aligny>
+        <font>clock-26b</font>
+        <shadowcolor/>
+        <textcolor>white</textcolor>
+        <focusedcolor>black</focusedcolor>
+        <selectedcolor>selected</selectedcolor>
+        <disabledcolor>selectedhome</disabledcolor>
+        <scrollout>false</scrollout>
+        <pauseatend>2000</pauseatend>
+        <scrollspeed>scrollspeed</scrollspeed>
+    </default>
+    <default type="image">
+        <left>0</left>
+        <top>0</top>
+        <width/>
+        <height/>
+        <align>center</align>
+        <aligny>center</aligny>
+        <fadetime>FadeTime</fadetime>
+        <texture/>
+    </default>
+    <default type="button">
+        <left>0</left>
+        <top>0</top>
+        <height>45</height>
+        <width>255</width>
+        <align>center</align>
+        <aligny>center</aligny>
+        <font>clock-26b</font>
+        <label/>
+        <shadowcolor/>
+        <textoffsetx>15</textoffsetx>
+        <textoffsety>6</textoffsety>
+        <textcolor>white</textcolor>
+        <focusedcolor>black</focusedcolor>
+        <disabledcolor>selectedhome</disabledcolor>
+        <texturefocus border="5">White.png</texturefocus>
+        <!-- <texturenofocus border="5" colordiffuse="fanartdiffuse">buttons/ButtonNFlight.png</texturenofocus> -->
+        <pulseonselect>false</pulseonselect>
+        <scrollspeed>scrollspeed</scrollspeed>
+    </default>
+    <default type="togglebutton">
+        <left>0</left>
+        <top>0</top>
+        <width>450</width>
+        <height>45</height>
+        <label/>
+        <shadowcolor/>
+        <textoffsetx>15</textoffsetx>
+        <textoffsety>6</textoffsety>
+        <textcolor>white</textcolor>
+        <font>clock-26b</font>
+        <focusedcolor>black</focusedcolor>
+        <disabledcolor>selectedhome</disabledcolor>
+        <!-- <texturenofocus border="5" colordiffuse="fanartdiffuse">buttons/ButtonNFlight.png</texturenofocus> -->
+        <texturefocus border="5">White.png</texturefocus>
+        <!-- <alttexturenofocus border="5">buttons/ButtonNFlight.png</alttexturenofocus> -->
+        <alttexturefocus border="5">buttons/ButtonFO.png</alttexturefocus>
+        <align>center</align>
+        <aligny>center</aligny>
+        <pulseonselect>false</pulseonselect>
+        <scrollspeed>scrollspeed</scrollspeed>
+    </default>
+    <default type="radiobutton">
+        <left>0</left>
+        <top>0</top>
+        <width>450</width>
+        <height>45</height>
+        <align>center</align>
+        <aligny>center</aligny>
+        <font>clock-26b</font>
+        <label/>
+        <textoffsetx>15</textoffsetx>
+        <textoffsety>6</textoffsety>
+        <shadowcolor/>
+        <textcolor>white</textcolor>
+        <focusedcolor>black</focusedcolor>
+        <disabledcolor>selectedhome</disabledcolor>
+        <radiowidth>45</radiowidth>
+        <radioheight>18</radioheight>
+        <!-- <texturenofocus border="5" colordiffuse="fanartdiffuse">buttons/ButtonNFlight.png</texturenofocus> -->
+        <texturefocus border="5">White.png</texturefocus>
+        <textureradiofocus>buttons/RadioButtonON.png</textureradiofocus>
+        <textureradionofocus>buttons/RadioButtonOFF.png</textureradionofocus>
+        <textureradioonfocus>buttons/RadioButtonON.png</textureradioonfocus>
+        <textureradioonnofocus colordiffuse="grey">buttons/RadioButtonON.png</textureradioonnofocus>
+        <textureradioofffocus>buttons/RadioButtonOFF.png</textureradioofffocus>
+        <textureradiooffnofocus colordiffuse="grey">buttons/RadioButtonOFF.png</textureradiooffnofocus>
+        <textureradioondisabled colordiffuse="grey1">buttons/RadioButtonON.png</textureradioondisabled>
+        <textureradiooffdisabled colordiffuse="grey1">buttons/RadioButtonOFF.png</textureradiooffdisabled>
+        <pulseonselect>false</pulseonselect>
+        <scrollspeed>scrollspeed</scrollspeed>
+    </default>
+	<default type="colorbutton">
+		<colorwidth>150</colorwidth>
+		<colorheight>76</colorheight>
+		<texturecolormask>White.png</texturecolormask>
+		<texturecolordisabledmask colordiffuse="disabled">White.png</texturecolordisabledmask>
+		<font>font13</font>
+		<textcolor>white</textcolor>
+		<disabledcolor>disabled</disabledcolor>
+		<textoffsetx>7</textoffsetx>
+		<align>left</align>
+		<aligny>center</aligny>
+		<pulseonselect>false</pulseonselect>
+        <scrollspeed>scrollspeed</scrollspeed>
+	</default>
+    <default type="spincontrolex">
+        <left>0</left>
+        <top>0</top>
+        <width>450</width>
+        <height>45</height>
+        <label/>
+        <textoffsetx>15</textoffsetx>
+        <textoffsety>6</textoffsety>
+        <font>clock-26b</font>
+        <shadowcolor/>
+        <spinwidth>24</spinwidth>
+        <spinheight>24</spinheight>
+        <!-- <texturenofocus border="5" colordiffuse="fanartdiffuse">buttons/ButtonNFlight.png</texturenofocus> -->
+        <texturefocus border="5">White.png</texturefocus>
+        <textureup>ScrollUpNF.png</textureup>
+        <texturedown>ScrollDownNF.png</texturedown>
+        <textureupfocus>ScrollUpFO.png</textureupfocus>
+        <texturedownfocus>ScrollDownFO.png</texturedownfocus>
+        <textureupdisabled colordiffuse="grey1">ScrollUpFO.png</textureupdisabled>
+        <texturedowndisabled colordiffuse="grey1">ScrollDownFO.png</texturedowndisabled>
+        <textcolor>white</textcolor>
+        <focusedcolor>black</focusedcolor>
+        <disabledcolor>selectedhome</disabledcolor>
+        <align>left</align>
+        <aligny>center</aligny>
+        <reverse>yes</reverse>
+        <pulseonselect>false</pulseonselect>
+        <scrollspeed>scrollspeed</scrollspeed>
+    </default>
+    <default type="spincontrol">
+        <left>0</left>
+        <top>0</top>
+        <height>22</height>
+        <width>22</width>
+        <spinwidth>24</spinwidth>
+        <spinheight>24</spinheight>
+        <textureup>ScrollUpNF.png</textureup>
+        <texturedown>ScrollDownNF.png</texturedown>
+        <textureupfocus>ScrollUpFO.png</textureupfocus>
+        <texturedownfocus>ScrollDownFo.png</texturedownfocus>
+        <textureupdisabled colordiffuse="grey1">ScrollUpFO.png</textureupdisabled>
+        <texturedowndisabled colordiffuse="grey1">ScrollDownFO.png</texturedowndisabled>
+        <font>clock-26b</font>
+        <shadowcolor/>
+        <textcolor>white</textcolor>
+        <focusedcolor>black</focusedcolor>
+        <disabledcolor>selectedhome</disabledcolor>
+        <textoffsetx>15</textoffsetx>
+        <textoffsety>6</textoffsety>
+        <align>left</align>
+        <aligny>center</aligny>
+        <reverse>yes</reverse>
+        <pulseonselect>false</pulseonselect>
+        <scrollspeed>scrollspeed</scrollspeed>
+    </default>
+    <default type="sliderex">
+        <height>45</height>
+        <width>450</width>
+        <align>center</align>
+        <aligny>center</aligny>
+		<textwidth>920</textwidth>
+        <texturenofocus border="5" colordiffuse="fanartdiffuse">buttons/ButtonNFlight.png</texturenofocus>
+        <texturefocus border="5">White.png</texturefocus>
+        <sliderwidth>150</sliderwidth>
+        <sliderheight>10</sliderheight>
+        <texturesliderbar>osd/slider_bg.png</texturesliderbar>
+		<texturesliderbardisabled colordiffuse="selectedhome">osd/slider_bg.png</texturesliderbardisabled>
+        <textureslidernib border="2" colordiffuse="grey">osd/SliderNib.png</textureslidernib>
+        <textureslidernibfocus border="2">osd/SliderNib.png</textureslidernibfocus>
+		<textureslidernibdisabled border="2" colordiffuse="selectedhome">osd/SliderNib.png</textureslidernibdisabled>
+        <font>clock-26b</font>
+        <shadowcolor/>
+        <textcolor>white</textcolor>
+        <focusedcolor>black</focusedcolor>
+        <disabledcolor>selectedhome</disabledcolor>
+        <textoffsetx>15</textoffsetx>
+        <textoffsety>6</textoffsety>
+        <scrollspeed>scrollspeed</scrollspeed>
+    </default>
+    <default type="progress">
+        <left>0</left>
+        <top>0</top>
+        <height>15</height>
+        <texturebg border="2">osd/ProgressBack.png</texturebg>
+        <lefttexture/>
+        <righttexture/>
+        <midtexture border="1" colordiffuse="description">osd/ProgressMid.png</midtexture>
+        <overlaytexture/>
+    </default>
+    <default type="slider">
+        <controloffsetx>75</controloffsetx>
+        <controloffsety>0</controloffsety>
+        <texturesliderbar>osd/slider_bg.png</texturesliderbar>
+		<texturesliderbardisabled colordiffuse="selectedhome">osd/slider_bg.png</texturesliderbardisabled>
+        <textureslidernib colordiffuse="red">osd/SliderNib.png</textureslidernib>
+        <textureslidernibfocus colordiffuse="red">osd/SliderNib.png</textureslidernibfocus>
+		<textureslidernibdisabled colordiffuse="selectedhome">osd/SliderNib.png</textureslidernibdisabled>
+		<orientation>horizontal</orientation>
+    </default>
+    <default type="scrollbar">
+        <width>12</width>
+        <height>12</height>
+        <texturesliderbackground border="1">ScrollBarBackground.png</texturesliderbackground>
+        <texturesliderbar border="3">ScrollBar.png</texturesliderbar>
+        <texturesliderbarfocus colordiffuse="selectedcolor" border="3">ScrollBar.png</texturesliderbarfocus>
+        <textureslidernib/>
+        <textureslidernibfocus/>
+        <showonepage>true</showonepage>
+        <orientation>vertical</orientation>
+    </default>
+    <default type="textbox">
+        <label/>
+        <font>ubuntu-r19</font>
+        <textcolor>white</textcolor>
+        <shadowcolor/>
+        <pagecontrol/>
+        <align>justify</align>
+        <autoscroll time="8000" delay="10000" repeat="5000">true</autoscroll>
+    </default>
+    <default type="edit">
+        <left>0</left>
+        <top>0</top>
+        <width>450</width>
+        <height>45</height>
+        <texturefocus border="5">White.png</texturefocus>
+        <texturenofocus border="5" colordiffuse="fanartdiffuse">buttons/ButtonNFlight.png</texturenofocus>
+        <font>clock-26b</font>
+		<textoffsetx>15</textoffsetx>
+        <textcolor>white</textcolor>
+        <shadowcolor/>
+        <focusedcolor>black</focusedcolor>
+        <disabledcolor>selectedhome</disabledcolor>
+        <textoffsetx>30</textoffsetx>
+        <aligny>center</aligny>
+        <pulseonselect>false</pulseonselect>
+        <scrollspeed>scrollspeed</scrollspeed>
+    </default>
+</includes>

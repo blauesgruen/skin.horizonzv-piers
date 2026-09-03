@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="107">
+    <include>openclose</include>
+    <include>opencloseslideup</include>
+    <zorder>2</zorder>
+    <controls>
+        <control type="group">
+            <right>-900</right>
+            <bottom>0</bottom>
+            <width>1800</width>
+            <height>90</height>
+            <control type="image">
+                <description>background image</description>
+                <left>40</left>
+                <texture>KaiToastBack.png</texture>
+				<include>openclosevisible</include>
+                <visible>!Window.IsVisible(151)</visible>
+            </control>
+            <control type="group">
+                <left>130</left>
+                <control type="image">
+                    <description>Image</description>
+                    <top>10</top>
+                    <bottom>10</bottom>
+                    <width>1</width>
+                    <colordiffuse>grey3</colordiffuse>
+                    <texture>Separator3.png</texture>
+                    <visible>Window.IsVisible(151)</visible>
+                </control>
+                <control type="image" id="400">
+                    <description>Image</description>
+                    <left>20</left>
+                    <top>10</top>
+                    <bottom>10</bottom>
+                    <width>60</width>
+                    <aspectratio align="center" aligny="center">keep</aspectratio>
+                </control>
+                <control type="group">
+                    <left>90</left>
+                    <width>660</width>
+                    <height>74</height>
+                    <top>8</top>
+                    <control type="label" id="402">
+                        <description>message</description>
+                        <label/>
+                        <aligny>center</aligny>
+                        <font>ubuntu-r13</font>
+                        <wrapmultiline>false</wrapmultiline>
+                        <textcolor>black</textcolor>
+                        <shadowcolor/>
+                        <scroll>true</scroll>
+                        <label>Message A</label>
+                    </control>
+                    <control type="label" id="401">
+                        <description>heading</description>
+                        <top>26</top>
+                        <label/>
+                        <aligny>center</aligny>
+                        <font>ubuntu-r16b</font>
+                        <textcolor>black</textcolor>
+                        <shadowcolor/>
+                        <scroll>true</scroll>
+                        <label>Message B</label>
+                    </control>
+                </control>
+            </control>
+        </control>
+    </controls>
+</window>
