@@ -426,7 +426,7 @@
         <value>$INFO[ListItem.Date]$INFO[ListItem.Rating, ★ $LOCALIZE[563] ,]</value>
     </variable>
     <variable name="InfoWallBottomLabel1Var">
-        <value condition="Container.Content(movies)|Container.Content(episodes)">$INFO[ListItem.Director,$LOCALIZE[301156] ]</value>
+        <value condition="Container.Content(movies)|Container.Content(episodes)">$INFO[ListItem.Director,$LOCALIZE[20339] ]</value>
         <value condition="Container.Content(addons)">$INFO[ListItem.AddonVersion,$LOCALIZE[24051] ]</value>
         <value condition="Container.Content(albums)">$INFO[ListItem.Property(Album_Label),, • ]$INFO[ListItem.Artist] $INFO[ListItem.Year,(,)]</value>
         <value condition="Container.Content(artists) + !String.IsEmpty(ListItem.Property(Artist_YearsActive))">$INFO[ListItem.Property(Artist_YearsActive),$LOCALIZE[21898]: ]</value>
