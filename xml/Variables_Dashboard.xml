@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
 	<variable name="DashboardRow5_Label">
-		<value condition="Skin.HasSetting(Row5_Weather)">$LOCALIZE[301608]</value>
-		<value condition="Skin.HasSetting(Row5_GTO)">$LOCALIZE[301610]</value>
+		<value condition="Skin.HasSetting(Row5_Weather)">$LOCALIZE[31412]</value>
+		<value condition="Skin.HasSetting(Row5_GTO)">$LOCALIZE[31413]</value>
 		<value condition="Skin.HasSetting(Row5_Path)">$LOCALIZE[573]</value>
 		<value condition="Skin.HasSetting(Row5_Fav)">$LOCALIZE[1036]</value>
-		<value condition="Skin.HasSetting(Row5_Fritzact)">$LOCALIZE[301612]</value>
+		<value condition="Skin.HasSetting(Row5_Fritzact)">$LOCALIZE[31414]</value>
 		<value condition="Skin.HasSetting(Row5_off)">$LOCALIZE[351]</value>
 	</variable>
 	<variable name="DashboardRow4_Label">
-		<value condition="Skin.HasSetting(Row4_Weather)">$LOCALIZE[301608]</value>
-		<value condition="Skin.HasSetting(Row4_GTO)">$LOCALIZE[301610]</value>
+		<value condition="Skin.HasSetting(Row4_Weather)">$LOCALIZE[31412]</value>
+		<value condition="Skin.HasSetting(Row4_GTO)">$LOCALIZE[31413]</value>
 		<value condition="Skin.HasSetting(Row4_Path)">$LOCALIZE[573]</value>
 		<value condition="Skin.HasSetting(Row4_Fav)">$LOCALIZE[1036]</value>
-		<value condition="Skin.HasSetting(Row4_Fritzact)">$LOCALIZE[301612]</value>
+		<value condition="Skin.HasSetting(Row4_Fritzact)">$LOCALIZE[31414]</value>
 		<value condition="Skin.HasSetting(Row4_off)">$LOCALIZE[351]</value>
 	</variable>
 	<variable name="DashboardRow3_Label">
-		<value condition="Skin.HasSetting(Row3_Weather)">$LOCALIZE[301608]</value>
-		<value condition="Skin.HasSetting(Row3_GTO)">$LOCALIZE[301610]</value>
+		<value condition="Skin.HasSetting(Row3_Weather)">$LOCALIZE[31412]</value>
+		<value condition="Skin.HasSetting(Row3_GTO)">$LOCALIZE[31413]</value>
 		<value condition="Skin.HasSetting(Row3_Path)">$LOCALIZE[573]</value>
 		<value condition="Skin.HasSetting(Row3_Fav)">$LOCALIZE[1036]</value>
-		<value condition="Skin.HasSetting(Row3_Fritzact)">$LOCALIZE[301612]</value>
+		<value condition="Skin.HasSetting(Row3_Fritzact)">$LOCALIZE[31414]</value>
 		<value condition="Skin.HasSetting(Row3_off)">$LOCALIZE[351]</value>
 	</variable>
 	<variable name="DashboardRow2_Label">
-		<value condition="Skin.HasSetting(Row2_Weather)">$LOCALIZE[301608]</value>
-		<value condition="Skin.HasSetting(Row2_GTO)">$LOCALIZE[301610]</value>
+		<value condition="Skin.HasSetting(Row2_Weather)">$LOCALIZE[31412]</value>
+		<value condition="Skin.HasSetting(Row2_GTO)">$LOCALIZE[31413]</value>
 		<value condition="Skin.HasSetting(Row2_Path)">$LOCALIZE[573]</value>
 		<value condition="Skin.HasSetting(Row2_Fav)">$LOCALIZE[1036]</value>
-		<value condition="Skin.HasSetting(Row2_Fritzact)">$LOCALIZE[301612]</value>
+		<value condition="Skin.HasSetting(Row2_Fritzact)">$LOCALIZE[31414]</value>
 		<value condition="Skin.HasSetting(Row2_off)">$LOCALIZE[351]</value>
 	</variable>
 	<variable name="DashboardRow1_Label">

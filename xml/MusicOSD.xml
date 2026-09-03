@@ -59,7 +59,7 @@
                             <font>font16</font>
                             <textcolor>white</textcolor>
                             <focusedcolor>black</focusedcolor>
-                            <label>301330</label>
+                            <label>31278</label>
                             <onclick>Skin.ToggleSetting(noradioviz)</onclick>
                             <onclick condition="Skin.HasSetting(radioview)">Skin.Reset(radioview)</onclick>
                             <onclick condition="!Skin.HasSetting(noradioviz)">Skin.Reset(vinylview)</onclick>
@@ -75,7 +75,7 @@
                             <font>font16</font>
                             <textcolor>white</textcolor>
                             <focusedcolor>black</focusedcolor>
-                            <label>301331</label>
+                            <label>31279</label>
                             <onclick>Skin.ToggleSetting(notvwall)</onclick>
                             <selected>Skin.HasSetting(notvwall)</selected>
                             <visible>!Skin.HasSetting(noradioviz)</visible>
@@ -89,9 +89,9 @@
                             <font>font16</font>
                             <textcolor>white</textcolor>
                             <focusedcolor>black</focusedcolor>
-                            <label>301332</label>
+                            <label>31280</label>
                             <label2>$VAR[MusicVisualisierung]</label2>
-                            <onclick>Skin.SelectBool(301332, 301578|radioview, 301576|vinylview, 301580|standardnowplaying)</onclick>
+                            <onclick>Skin.SelectBool(31280, 31398|radioview, 31397|vinylview, 31399|standardnowplaying)</onclick>
                             <visible>!Skin.HasSetting(noradioviz)</visible>
                             <enable>!Player.IsInternetStream</enable>
                         </control>
@@ -104,7 +104,7 @@
                             <font>font16</font>
                             <textcolor>white</textcolor>
                             <focusedcolor>black</focusedcolor>
-                            <label>301332</label>
+                            <label>31280</label>
                             <label2>$VAR[MusicVisualisierung]</label2>
                             <onclick>Skin.ToggleSetting(vinylview)</onclick>
                             <onclick condition="Skin.HasSetting(radioview)">Skin.Reset(radioview)</onclick>
@@ -132,7 +132,7 @@
                             <font>font16</font>
                             <textcolor>white</textcolor>
                             <focusedcolor>black</focusedcolor>
-                            <label>301336</label>
+                            <label>31282</label>
                             <onclick>Skin.ToggleSetting(NoDate)</onclick>
                             <selected>!Skin.HasSetting(NoDate)</selected>
                         </control>
@@ -145,9 +145,9 @@
                             <font>font16</font>
                             <textcolor>white</textcolor>
                             <focusedcolor>black</focusedcolor>
-                            <label>301286</label>
+                            <label>31257</label>
                             <label2>$VAR[BackgroundDimLabel]</label2>
-                            <onclick>Skin.SelectBool(301286, 301460|background_dim_1, 301462|background_dim_2, 301464|background_dim_3, 594|background_dim_no)</onclick>
+                            <onclick>Skin.SelectBool(31257, 31341|background_dim_1, 31342|background_dim_2, 31343|background_dim_3, 594|background_dim_no)</onclick>
                         </control>
                         <control type="radiobutton" id="250">
                             <description>CurrentButtonLabel</description>
@@ -158,7 +158,7 @@
                             <font>font16</font>
                             <textcolor>white</textcolor>
                             <focusedcolor>black</focusedcolor>
-                            <label>301338</label>
+                            <label>31283</label>
                             <onclick>Skin.ToggleSetting(CurrentButtonLabel)</onclick>
                             <selected>Skin.HasSetting(CurrentButtonLabel)</selected>
                         </control>
@@ -171,7 +171,7 @@
                             <font>font16</font>
                             <textcolor>white</textcolor>
                             <focusedcolor>black</focusedcolor>
-                            <label>301340</label>
+                            <label>31284</label>
                             <onclick>Skin.ToggleSetting(VizPanel)</onclick>
                             <selected>Skin.HasSetting(VizPanel)</selected>
                             <!-- <visible>[Player.IsInternetStream|Skin.HasSetting(radioview)]</visible> -->
@@ -186,9 +186,9 @@
                             <font>font16</font>
                             <textcolor>white</textcolor>
                             <focusedcolor>black</focusedcolor>
-                            <label>301342</label>
+                            <label>$LOCALIZE[31324]</label>
                             <label2>$VAR[BackgroundOverlayColorLabel]</label2>
-                            <onclick>Skin.SelectBool(301416, $VAR[ColorAkzentVar])</onclick>
+                            <onclick>Skin.SelectBool(31324, $VAR[ColorAkzentVar])</onclick>
                             <visible>Player.IsInternetStream+!Visualisation.Enabled</visible>
                         </control>
                         <control type="radiobutton" id="255">

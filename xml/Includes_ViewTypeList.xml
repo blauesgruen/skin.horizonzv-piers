@@ -140,7 +140,7 @@
                 <scrolltime tween="sine" easing="out">200</scrolltime>
                 <control type="button" id="810">
                     <description>View</description>
-                    <label>301308</label>
+                    <label>31267</label>
                     <label2>$VAR[ViewIDLabel_List]</label2>
                     <onclick>Container.SetViewMode(50)</onclick>
                     <onclick>Action(down)</onclick>
@@ -149,7 +149,7 @@
                 </control>
                 <control type="button" id="812">
                     <description>View</description>
-                    <label>301310</label>
+                    <label>31268</label>
                     <onclick>Container.SetViewMode(550)</onclick>
                     <onclick>Action(down)</onclick>
                     <include>SidePanelButton</include>
@@ -157,7 +157,7 @@
                 </control>
                 <control type="button" id="814">
                     <description>View</description>
-                    <label>301312</label>
+                    <label>31269</label>
                     <onclick>Container.SetViewMode(551)</onclick>
                     <onclick>Action(down)</onclick>
                     <include>SidePanelButton</include>
@@ -165,7 +165,7 @@
                 </control>
                 <control type="button" id="816">
                     <description>View</description>
-                    <label>301314</label>
+                    <label>31270</label>
                     <onclick>Container.SetViewMode(58)</onclick>
                     <onclick>Action(down)</onclick>
                     <include>SidePanelButton</include>
@@ -173,7 +173,7 @@
                 </control>
                 <control type="button" id="818">
                     <description>View</description>
-                    <label>301316</label>
+                    <label>31271</label>
                     <label2>$VAR[ViewIDLabel_Showcase]</label2>
                     <onclick>Container.SetViewMode(562)</onclick>
                     <onclick>Action(down)</onclick>
@@ -184,7 +184,7 @@
                 </control>
                 <!-- <control type="button" id="817">
                     <description>View</description>
-                    <label>301318</label>
+                    <label>31272</label>
                     <onclick>Container.SetViewMode(541)</onclick>
                     <onclick>Action(down)</onclick>
                     <include>SidePanelButton</include>
@@ -193,7 +193,7 @@
                 </control> -->
                 <control type="button" id="820">
                     <description>View</description>
-                    <label>301320</label>
+                    <label>31273</label>
                     <onclick>Container.SetViewMode(570)</onclick>
                     <onclick>Action(down)</onclick>
                     <include>SidePanelButton</include>
@@ -233,7 +233,7 @@
                 </control>
                 <control type="button" id="828">
                     <description>Movie Poster Wrap</description>
-                    <label>301314</label>
+                    <label>31270</label>
                     <onclick>Container.SetViewMode(57)</onclick>
                     <onclick>Action(down)</onclick>
                     <include>SidePanelButton</include>
@@ -318,7 +318,7 @@
                 </control>
                 <control type="button" id="846">
                     <description>Movie View_721_RightList</description>
-                    <label>301322</label>
+                    <label>31274</label>
                     <label2>$VAR[ViewIDLabel_Rightlist]</label2>
                     <onclick>Container.SetViewMode(721)</onclick>
                     <onclick>Action(down)</onclick>
@@ -327,7 +327,7 @@
                 </control>
                 <control type="button" id="850">
                     <description>non Movie View_721_RightList</description>
-                    <label>301322</label>
+                    <label>31274</label>
                     <label2>$VAR[ViewIDLabel_Rightlist2]</label2>
                     <onclick>Container.SetViewMode(722)</onclick>
                     <onclick>Action(down)</onclick>
@@ -346,7 +346,7 @@
                 </control>
                 <control type="button" id="854">
                     <description>View</description>
-                    <label>301324</label>
+                    <label>31275</label>
                     <label2>$VAR[ViewIDLabel_BigWall]</label2>
                     <onclick>Container.SetViewMode(740)</onclick>
                     <onclick>Action(down)</onclick>
@@ -355,7 +355,7 @@
                 </control>
                 <control type="button" id="856">
                     <description>View</description>
-                    <label>301326</label>
+                    <label>31276</label>
                     <label2>$VAR[ViewIDLabel_MusicWall]</label2>
                     <onclick>Container.SetViewMode(741)</onclick>
                     <onclick>Action(down)</onclick>
@@ -382,7 +382,7 @@
                 </control>
                 <control type="button" id="862">
                     <description>View</description>
-                    <label>301328</label>
+                    <label>31277</label>
                     <onclick>Container.SetViewMode(516)</onclick>
                     <onclick>Action(down)</onclick>
                     <include>SidePanelButton</include>

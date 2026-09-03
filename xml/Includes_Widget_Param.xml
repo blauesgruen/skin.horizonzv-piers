@@ -281,7 +281,7 @@
 				<param name="HomePageWidget_list_id" value="233"/>
 				<param name="HomePageWidget_list_width" value="720"/>
 				<param name="HomePageWidget_list_onup" value="-"/>
-				<param name="HomePageWidget_list_onfocus" value="SetProperty(WidgetLabel,$LOCALIZE[301494],home)"/>
+				<param name="HomePageWidget_list_onfocus" value="SetProperty(WidgetLabel,$LOCALIZE[31358],home)"/>
 				<param name="HomePageWidget_list_onunfocus" value="ClearProperty(WidgetLabel)"/>
 				<param name="HomePageWidget_list_visible" value="Skin.HasSetting(Widget_RecentTVShows)+!Skin.HasSetting(Home_tvshow_Button)"/>
 				<param name="HomePageWidget_list_visible2" value="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),tvshow)+!Skin.HasSetting(Home_SeriesButton)"/>
@@ -296,7 +296,7 @@
 				<param name="HomePageWidget_list_id" value="234"/>
 				<param name="HomePageWidget_list_width" value="720"/>
 				<param name="HomePageWidget_list_onup" value="-"/>
-				<param name="HomePageWidget_list_onfocus" value="SetProperty(WidgetLabel,$LOCALIZE[301494],home)"/>
+				<param name="HomePageWidget_list_onfocus" value="SetProperty(WidgetLabel,$LOCALIZE[31358],home)"/>
 				<param name="HomePageWidget_list_onunfocus" value="ClearProperty(WidgetLabel)"/>
 				<param name="HomePageWidget_list_visible" value="Skin.HasSetting(Widget_RecentTVShows)+!Skin.HasSetting(Home_tvshow_Button)"/>
 				<param name="HomePageWidget_list_visible2" value="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),tvshow)+!Skin.HasSetting(Home_SeriesButton)"/>
@@ -536,7 +536,7 @@
                                     <shadowcolor>black</shadowcolor>
                                     <align>center</align>
                                     <aligny>center</aligny>
-                                    <label>$LOCALIZE[301366]</label>
+                                    <label>$LOCALIZE[31298]</label>
                                     <visible>!Weather.IsFetched</visible>
                                 </control>
                             </control>
@@ -606,7 +606,7 @@
                                     <shadowcolor>black</shadowcolor>
                                     <align>center</align>
                                     <aligny>center</aligny>
-                                    <label>$LOCALIZE[301366]</label>
+                                    <label>$LOCALIZE[31298]</label>
                                     <visible>!Weather.IsFetched</visible>
                                 </control>
                             </control>

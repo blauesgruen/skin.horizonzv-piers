@@ -384,14 +384,14 @@
                         <control type="button" id="209">
                             <description>Select weather fanart</description>
                             <include>SidePanelButton</include>
-                            <label>301516</label>
+                            <label>31369</label>
                             <onclick>RunScript(script.image.resource.select,property=weatherfanart&amp;type=resource.images.weatherfanart)</onclick>
                             <visible>System.HasAddon(script.image.resource.select)</visible>
                         </control>
                         <control type="button" id="211">
                             <description>Select weather icons</description>
                             <include>SidePanelButton</include>
-                            <label>301514</label>
+                            <label>31368</label>
                             <onclick>RunScript(script.image.resource.select,property=weathericons&amp;type=resource.images.weathericons)</onclick>
                             <visible>System.HasAddon(script.image.resource.select)</visible>
                         </control>

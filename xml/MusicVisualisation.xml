@@ -746,7 +746,7 @@
                                                     <description>Cd Disc</description>
                                                     <aspectratio>keep</aspectratio>
                                                     <texture diffuse="masks/mask_cdart.png">$VAR[DiscartPlayerVAR]</texture>
-                                                    <visible>![String.Contains(Control.GetLabel(79),$LOCALIZE[301456])|String.Contains(Control.GetLabel(79),$LOCALIZE[301458])]</visible>
+                                                    <visible>![String.Contains(Control.GetLabel(79),$LOCALIZE[31339])|String.Contains(Control.GetLabel(79),$LOCALIZE[31340])]</visible>
                                                 </control>
                                                 <control type="image" id="81">
                                                     <description>Poster</description>
@@ -754,7 +754,7 @@
                                                     <bottom>14</bottom>
                                                     <aspectratio>scale</aspectratio>
                                                     <texture diffuse="masks/mask_cdart.png">$VAR[NowPlayingPosterVar]</texture>
-                                                    <visible>String.Contains(Control.GetLabel(79),$LOCALIZE[301456])|String.Contains(Control.GetLabel(79),$LOCALIZE[301458])</visible>
+                                                    <visible>String.Contains(Control.GetLabel(79),$LOCALIZE[31339])|String.Contains(Control.GetLabel(79),$LOCALIZE[31340])</visible>
                                                 </control>
                                             </control>
                                             <control type="group">

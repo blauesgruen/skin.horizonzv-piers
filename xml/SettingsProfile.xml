@@ -87,7 +87,7 @@
                             <description>Cancel</description>
                             <width>100%</width>
                             <onclick>Action(back)</onclick>
-                            <label>301344</label>
+                            <label>31285</label>
                             <include>DialogButtonTextureFocus</include>
                             <include>DialogButtonTextureNoFocus</include>
                             <onleft/>

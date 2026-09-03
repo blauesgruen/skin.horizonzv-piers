@@ -29,7 +29,7 @@
 							<onright condition="!Control.IsVisible($PARAM[viewid]1)+!Control.IsVisible(15000)">732</onright>
 							<onup>$PARAM[viewid]</onup>
 							<ondown>$PARAM[viewid]</ondown>
-							<viewtype label="$LOCALIZE[301310]">info</viewtype>
+							<viewtype label="$LOCALIZE[31268]">info</viewtype>
 							<visible>Window.IsVisible(AddonBrowser)|Container.Content(Addons)</visible>
 							<pagecontrol>$PARAM[viewid]1</pagecontrol>
 							<scrolltime>200</scrolltime>
@@ -253,7 +253,7 @@
 								<onright condition="!Control.IsVisible($PARAM[viewid]1)+Control.IsVisible(15000)">15000</onright>
 								<onup>$PARAM[viewid]</onup>
 								<ondown>$PARAM[viewid]</ondown>
-								<viewtype label="$LOCALIZE[301312]">thumbview</viewtype>
+								<viewtype label="$LOCALIZE[31269]">thumbview</viewtype>
 								<visible>Window.IsVisible(AddonBrowser)|Container.Content(Addons)</visible>
 								<pagecontrol>$PARAM[viewid]1</pagecontrol>
 								<scrolltime>200</scrolltime>

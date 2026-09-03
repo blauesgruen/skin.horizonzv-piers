@@ -176,7 +176,7 @@
                     <control type="button" id="19">
                         <description>KN Uebersicht</description>
                         <width min="225" max="300">auto</width>
-                        <label>301528</label>
+                        <label>31374</label>
                         <texturenofocus/>
                         <textcolor>black</textcolor>
                         <align>center</align>
@@ -221,7 +221,7 @@
                     <height>22</height>
                     <font>ubuntu-r13</font>
                     <textcolor>grey1</textcolor>
-                    <label>301520</label>
+                    <label>31370</label>
                     <align>center</align>
                     <visible>!System.HasAddon(service.kn.switchtimer)</visible>
                 </control>

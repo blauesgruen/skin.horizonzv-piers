@@ -453,7 +453,7 @@
                         <font>ubuntu-r19</font>
                         <textcolor>grey3</textcolor>
                         <align>center</align>
-                        <label>$INFO[Window.Property(36hour.1.Outlook),[COLOR=grey2]$LOCALIZE[301496]: [/COLOR]]</label>
+                        <label>$INFO[Window.Property(36hour.1.Outlook),[COLOR=grey2]$LOCALIZE[31359]: [/COLOR]]</label>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -517,7 +517,7 @@
                         <font>ubuntu-r19</font>
                         <textcolor>grey3</textcolor>
                         <align>center</align>
-                        <label>$INFO[Window.Property(36hour.2.Outlook),[COLOR=grey2]$LOCALIZE[301496]: [/COLOR]]</label>
+                        <label>$INFO[Window.Property(36hour.2.Outlook),[COLOR=grey2]$LOCALIZE[31359]: [/COLOR]]</label>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -581,7 +581,7 @@
                         <font>ubuntu-r19</font>
                         <textcolor>grey3</textcolor>
                         <align>center</align>
-                        <label>$INFO[Window.Property(36hour.3.Outlook),[COLOR=grey2]$LOCALIZE[301496]: [/COLOR]]</label>
+                        <label>$INFO[Window.Property(36hour.3.Outlook),[COLOR=grey2]$LOCALIZE[31359]: [/COLOR]]</label>
                     </control>
                 </control>
             </control>
@@ -691,7 +691,7 @@
                         <selectedcolor>selected</selectedcolor>
                         <align>center</align>
                         <aligny>center</aligny>
-                        <label>$INFO[Window.Property(Weekend.1.Outlook),[COLOR=grey2]$LOCALIZE[301496]: [/COLOR]][CR]</label>
+                        <label>$INFO[Window.Property(Weekend.1.Outlook),[COLOR=grey2]$LOCALIZE[31359]: [/COLOR]][CR]</label>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -765,7 +765,7 @@
                         <selectedcolor>selected</selectedcolor>
                         <align>center</align>
                         <aligny>center</aligny>
-                        <label>$INFO[Window.Property(Weekend.2.Outlook),[COLOR=grey2]$LOCALIZE[301496]: [/COLOR]][CR]</label>
+                        <label>$INFO[Window.Property(Weekend.2.Outlook),[COLOR=grey2]$LOCALIZE[31359]: [/COLOR]][CR]</label>
                     </control>
                     <control type="image">
                         <left>0</left>

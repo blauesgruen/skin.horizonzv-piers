@@ -63,7 +63,7 @@
 						<label>$INFO[Window(Home).Property(SkinHelperPING.servername1)]</label>
 						<label2>$INFO[Window(Home).Property(SkinHelperPING.server1)]</label2>
 						<onclick condition="!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac1))">RunScript(script.skinhelper.ping,wol1)</onclick>
-						<onclick>Notification($INFO[Window(Home).Property(SkinHelperPING.servername1)],$LOCALIZE[301582],3000)</onclick>
+						<onclick>Notification($INFO[Window(Home).Property(SkinHelperPING.servername1)],$LOCALIZE[31400],3000)</onclick>
 					</item>
 					<item id="2">
 						<description>WOL Button 2</description>
@@ -74,7 +74,7 @@
 						<label>$INFO[Window(Home).Property(SkinHelperPING.servername2)]</label>
 						<label2>$INFO[Window(Home).Property(SkinHelperPING.server2)]</label2>
 						<onclick condition="!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac2))">RunScript(script.skinhelper.ping,wol2)</onclick>
-						<onclick>Notification($INFO[Window(Home).Property(SkinHelperPING.servername2)],$LOCALIZE[301582],3000)</onclick>
+						<onclick>Notification($INFO[Window(Home).Property(SkinHelperPING.servername2)],$LOCALIZE[31400],3000)</onclick>
 					</item>
 					<item id="3">
 						<description>WOL Button 3</description>
@@ -85,7 +85,7 @@
 						<label>$INFO[Window(Home).Property(SkinHelperPING.servername3)]</label>
 						<label2>$INFO[Window(Home).Property(SkinHelperPING.server3)]</label2>
 						<onclick condition="!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac3))">RunScript(script.skinhelper.ping,wol3)</onclick>
-						<onclick>Notification($INFO[Window(Home).Property(SkinHelperPING.servername3)],$LOCALIZE[301582],3000)</onclick>
+						<onclick>Notification($INFO[Window(Home).Property(SkinHelperPING.servername3)],$LOCALIZE[31400],3000)</onclick>
 					</item>
 					<item id="4">
 						<description>WOL Button 4</description>
@@ -96,7 +96,7 @@
 						<label>$INFO[Window(Home).Property(SkinHelperPING.servername4)]</label>
 						<label2>$INFO[Window(Home).Property(SkinHelperPING.server4)]</label2>
 						<onclick condition="!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac4))">RunScript(script.skinhelper.ping,wol4)</onclick>
-						<onclick>Notification($INFO[Window(Home).Property(SkinHelperPING.servername4)],$LOCALIZE[301582],3000)</onclick>
+						<onclick>Notification($INFO[Window(Home).Property(SkinHelperPING.servername4)],$LOCALIZE[31400],3000)</onclick>
 					</item>
 					<item id="5">
 						<description>WOL Button 5</description>
@@ -107,7 +107,7 @@
 						<label>$INFO[Window(Home).Property(SkinHelperPING.servername5)]</label>
 						<label2>$INFO[Window(Home).Property(SkinHelperPING.server5)]</label2>
 						<onclick condition="!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac5))">RunScript(script.skinhelper.ping,wol5)</onclick>
-						<onclick>Notification($INFO[Window(Home).Property(SkinHelperPING.servername5)],$LOCALIZE[301582],3000)</onclick>
+						<onclick>Notification($INFO[Window(Home).Property(SkinHelperPING.servername5)],$LOCALIZE[31400],3000)</onclick>
 					</item>
 					<item id="6">
 						<description>WOL Button All</description>
@@ -117,7 +117,7 @@
 						<onclick condition="!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac3))">RunScript(script.skinhelper.ping,wol3)</onclick>
 						<onclick condition="!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac4))">RunScript(script.skinhelper.ping,wol4)</onclick>
 						<onclick condition="!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac5))">RunScript(script.skinhelper.ping,wol5)</onclick>
-						<onclick>Notification(- $INFO[Window(Home).Property(SkinHelperPING.servername1),, - ]$INFO[Window(Home).Property(SkinHelperPING.servername2),, - ]$INFO[Window(Home).Property(SkinHelperPING.servername3),, - ]$INFO[Window(Home).Property(SkinHelperPING.servername4),, - ]$INFO[Window(Home).Property(SkinHelperPING.servername5)],$LOCALIZE[301582],6000)</onclick>
+						<onclick>Notification(- $INFO[Window(Home).Property(SkinHelperPING.servername1),, - ]$INFO[Window(Home).Property(SkinHelperPING.servername2),, - ]$INFO[Window(Home).Property(SkinHelperPING.servername3),, - ]$INFO[Window(Home).Property(SkinHelperPING.servername4),, - ]$INFO[Window(Home).Property(SkinHelperPING.servername5)],$LOCALIZE[31400],6000)</onclick>
 						<visible>Integer.IsGreater(Window(Home).Property(SkinHelperPING.servercount),1)</visible>
 					</item>
 					<item id="7">

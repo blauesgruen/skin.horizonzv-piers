@@ -622,7 +622,7 @@
     <include name="HomeMenuDashboard">
         <item id="5">
             <description>Addons</description>
-            <label>301371</label>
+            <label>31301</label>
             <label2>$VAR[backgroundfolder]home_addons$VAR[bkg_fileext]</label2>
             <icon>$INFO[Skin.String(user_bkg_dashboard)]</icon>
             <property name="homemenu_id">dashboard</property>
@@ -690,7 +690,7 @@
     <include name="HomeMenuPlayDisc">
         <item id="10">
             <description>PlayDVD</description>
-            <label>$LOCALIZE[301400]</label>
+            <label>$LOCALIZE[31316]</label>
             <label2>$VAR[backgroundfolder]home_disc$VAR[bkg_fileext]</label2>
             <icon>$INFO[Skin.String(user_bkg_playdisc)]</icon>
             <property name="homemenu_id">playdisc</property>

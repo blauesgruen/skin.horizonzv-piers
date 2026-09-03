@@ -22,14 +22,14 @@
 						<colordiffuse>green</colordiffuse>
 						<animation effect="fade" end="40" condition="true">Conditional</animation>
 						<texture border="4">WhiteBack$VAR[CornerSettingVar].png</texture>
-						<visible>String.Contains(ListItem.Property(state),$LOCALIZE[301616])</visible>
+						<visible>String.Contains(ListItem.Property(state),$LOCALIZE[31416])</visible>
 					</control>
 					<control type="image">
 						<description>background</description>
 						<colordiffuse>red</colordiffuse>
 						<animation effect="fade" end="40" condition="true">Conditional</animation>
 						<texture border="4">WhiteBack$VAR[CornerSettingVar].png</texture>
-						<visible>String.Contains(ListItem.Property(state),$LOCALIZE[301618])</visible>
+						<visible>String.Contains(ListItem.Property(state),$LOCALIZE[31417])</visible>
 					</control>
 					<include>FritzDect_layout</include>
 					<control type="image">
@@ -65,14 +65,14 @@
 						<description>background</description>
 						<colordiffuse>green</colordiffuse>
 						<texture border="4">WhiteBack$VAR[CornerSettingVar].png</texture>
-						<visible>String.Contains(ListItem.Property(state),$LOCALIZE[301616])</visible>
+						<visible>String.Contains(ListItem.Property(state),$LOCALIZE[31416])</visible>
 						<visible>!Control.HasFocus($PARAM[id])</visible>
 					</control>
 					<control type="image">
 						<description>background</description>
 						<colordiffuse>red</colordiffuse>
 						<texture border="4">WhiteBack$VAR[CornerSettingVar].png</texture>
-						<visible>String.Contains(ListItem.Property(state),$LOCALIZE[301618])</visible>
+						<visible>String.Contains(ListItem.Property(state),$LOCALIZE[31417])</visible>
 						<visible>!Control.HasFocus($PARAM[id])</visible>
 					</control>
 					<control type="image">
@@ -162,7 +162,7 @@
 					<font>bebas24</font>
 					<align>left</align>
 					<textcolor>white</textcolor>
-					<label>$INFO[ListItem.Property(battery),, $LOCALIZE[301620]]</label>
+					<label>$INFO[ListItem.Property(battery),, $LOCALIZE[31418]]</label>
 					<visible>String.IsEqual(ListItem.Property(type),thermostat)</visible>
 				</control>
 				<control type="label">

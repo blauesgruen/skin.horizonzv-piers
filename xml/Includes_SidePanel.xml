@@ -375,7 +375,7 @@
                 <top>90</top>
                 <height>38</height>
                 <font>impacted18</font>
-                <label>301276</label>
+                <label>31252</label>
                 <visible>ControlGroup(9001).HasFocus()</visible>
             </control>
             <control type="group">

@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(xxd language/resource.language.de_de/strings.po)",
+      "Bash(xxd xml/SkinSettings.xml)",
+      "Bash(xxd xml/MusicOSD.xml)",
+      "PowerShell(powershell -NoProfile -ExecutionPolicy Bypass -File \"C:\\\\Users\\\\zorno\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\d--Program-Files-Kodi22-portable-data-addons-skin-horizonzv-piers\\\\bf84d215-b12b-4d9f-bee9-4f1ecd45d0a3\\\\scratchpad\\\\migrate_ids.ps1\")"
+    ]
+  }
+}

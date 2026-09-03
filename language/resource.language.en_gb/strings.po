@@ -241,887 +241,887 @@ msgstr ""
 
 # Horizonz
 
-msgctxt "#301126"
+msgctxt "#31200"
 msgid "Activates background video in the main menu."
 msgstr ""
 
-msgctxt "#301132"
+msgctxt "#31201"
 msgid "Select the country for the age rating (defined in the scrapper).[CR]Supported are DE, US, UK, FR.[CR]If only US ratings are available, these are displayed."
 msgstr ""
 
-msgctxt "#301134"
+msgctxt "#31202"
 msgid "Trailer are directly displayed in the movie information or in fullscreen mode."
 msgstr ""
 
-msgctxt "#301135"
+msgctxt "#31203"
 msgid "If a visualization is selected for music playback, it will also be displayed in the main menu."
 msgstr ""
 
-msgctxt "#301136"
+msgctxt "#31204"
 msgid "Displays playlist of the next 9 titles in main menu and in fullscreen mode."
 msgstr ""
 
-msgctxt "#301140"
+msgctxt "#31205"
 msgid "Define the volume in percent, which will be played on any start of KODI.[CR]Quote a figure between 0 and 100."
 msgstr ""
 
-msgctxt "#301142"
+msgctxt "#31206"
 msgid "Disable alphanumeric jump list in SMS style.[CR][COLOR=grey]Imported from the skin \'Alaska\'[/COLOR]."
 msgstr ""
 
-msgctxt "#301143"
+msgctxt "#31207"
 msgid "To use this function you need the addon \'Skinhelper Ping\' by _Andy_/PvD.[CR][COLOR=white]It can be installed here under Addons or via the Kodinerds Repo[/COLOR]."
 msgstr ""
 
-msgctxt "#301144"
+msgctxt "#31208"
 msgid "Starts the selected playlist after starting KODI."
 msgstr ""
 
-msgctxt "#301145"
+msgctxt "#31209"
 msgid "To use this function, the addon \'Global Search\' from the official repository is required."
 msgstr ""
 
-msgctxt "#301146"
+msgctxt "#31210"
 msgid "Shows a small statistic about the database entries in the lower right corner of the main menu."
 msgstr ""
 
-msgctxt "#301147"
+msgctxt "#31211"
 msgid "Shows the favourites below the main menu instead of directly the \'Central\'. [CR]These are otherwise accessible via the \'Central\'."
 msgstr ""
 
-msgctxt "#301148"
+msgctxt "#31212"
 msgid "Hides the \'Central\' located below the main menu."
 msgstr ""
 
-msgctxt "#301150"
+msgctxt "#31213"
 msgid "Activates an icon in the upper right corner that shows the battery's charge status.[CR][COLOR=white]An incorrect display occurs on computers without a battery.[/COLOR]"
 msgstr ""
 
-msgctxt "#301151"
+msgctxt "#31214"
 msgid "The settings for the widget are in the respective submenu of the main menus."
 msgstr ""
 
-msgctxt "#301152"
+msgctxt "#31215"
 msgid "Dims all unfocused covers."
 msgstr ""
 
-msgctxt "#301153"
+msgctxt "#31216"
 msgid "Hides the green progress bar on the covers."
 msgstr ""
 
-msgctxt "#301166"
+msgctxt "#31217"
 msgid "This skin contains various animation effects.[CR]With this switch you can deactivate them. Instead, a simple fade effect is used.[CR]This can lead to better performance on slow systems."
 msgstr ""
 
-msgctxt "#301168"
+msgctxt "#31218"
 msgid "Displays in the upper left corner, where you are."
 msgstr ""
 
-msgctxt "#301169"
+msgctxt "#31219"
 msgid "Hides the date display in the upper right corner."
 msgstr ""
 
-msgctxt "#301170"
+msgctxt "#31220"
 msgid "Activates fanart in all areas."
 msgstr ""
 
-msgctxt "#301171"
+msgctxt "#31221"
 msgid "Disables changing background pictures.[CR]Select an own picture or path."
 msgstr ""
 
-msgctxt "#301172"
+msgctxt "#31222"
 msgid "Select a picture. If no pictures is chosen, a standard picture will be displayed.[CR][COLOR=white]Click again for deleting.[/COLOR]"
 msgstr ""
 
-msgctxt "#301173"
+msgctxt "#31223"
 msgid "Shows a slideshow in the background, based on the KODI library.[CR][COLOR=white]Visible in the main menu under: Movies, Series and Music.[/COLOR]"
 msgstr ""
 
-msgctxt "#301174"
+msgctxt "#31224"
 msgid "Enables the dimming of the background in all areas.[CR][COLOR=white]Possible dimming steps: OFF, LIGHT, MEDIUM, STRONG.[/COLOR]"
 msgstr ""
 
-msgctxt "#301175"
+msgctxt "#31225"
 msgid "Choose an accent colour that shows up in many areas of the skin.[CR][COLOR=grey]Custom: Colour codes must be specified in AARRGGBB hex format.[CR]An example for [/COLOR][COLOR=ffffffff]White:[/COLOR] FFFFFFFF"
 msgstr ""
 
-msgctxt "#301176"
+msgctxt "#31226"
 msgid "Install the ColorPicker addon from the Kodinerds repository to be able to select colors with one click."
 msgstr ""
 
-msgctxt "#301177"
+msgctxt "#31227"
 msgid "Shows the number and total running time of the entries in the database views."
 msgstr ""
 
-msgctxt "#301178"
+msgctxt "#31228"
 msgid "Enables an effect of light along the main menu."
 msgstr ""
 
-msgctxt "#301180"
+msgctxt "#31229"
 msgid "Select one of the background themes. It strongly changes the overall impression of the main menu.[CR][COLOR=white]Will be deactivated as soon as \'only one background image\' is active.[/COLOR][COLOR=grey][CR]The theme \'Gambit\' has the advantage that it provides better performance on weaker systems.[CR]This theme was kindly provided by \'G4mbit\' from the KODINERDS forum.[/COLOR]"
 msgstr ""
 
-msgctxt "#301184"
+msgctxt "#31230"
 msgid "Places a structure over the background image."
 msgstr ""
 
-msgctxt "#301186"
+msgctxt "#31231"
 msgid "The player controls are displayed on the left side under the mainmenu during the playing mode."
 msgstr ""
 
-msgctxt "#301188"
+msgctxt "#31232"
 msgid "Shows in the upper left corner of the current weather."
 msgstr ""
 
-msgctxt "#301190"
+msgctxt "#31233"
 msgid "It is possible to disable \'Radio\', which is one of 3 views during the playing mode in full screen."
 msgstr ""
 
-msgctxt "#301192"
+msgctxt "#31234"
 msgid "Select between the views Standard, Alternative and Radio.[CR][COLOR=grey]\'Radio\' is always used for online music streams. It is possible to disable it.[/COLOR]"
 msgstr ""
 
-msgctxt "#301194"
+msgctxt "#31235"
 msgid "Select between the views Standard, Alternative and Radio.[CR][COLOR=white]Information: \'Radio\' was disabled.[/COLOR]"
 msgstr ""
 
-msgctxt "#301196"
+msgctxt "#31236"
 msgid "Displays basic track information in full screen during music playback in the lower left corner.[CR][COLOR=whithe]Visible when OSD is not visible[/COLOR]."
 msgstr ""
 
-msgctxt "#301198"
+msgctxt "#31237"
 msgid "Displays a discreet narrow variation of the screen in \'pause\'."
 msgstr ""
 
-msgctxt "#301200"
+msgctxt "#31238"
 msgid "Information like chapter, subtitle, current time bar etc. are not displayed.[CR][COLOR=grey]Studio logos and extra arts are faded out.[/COLOR]"
 msgstr ""
 
-msgctxt "#301202"
+msgctxt "#31239"
 msgid "Show all available movie & series artworks.[CR][COLOR=white]Since Kodi 19 artworks are loaded with the scrapper \'The Movie Database PYTHON\'.[/COLOR][COLOR=grey][CR]\'Artwork Beef\' or a similar addon can still be used.[/COLOR]"
 msgstr ""
 
-msgctxt "#301204"
+msgctxt "#31240"
 msgid "Select the appearance of the CD here if no CDArt is found.[CR][COLOR=white]CDArts must be available in a folder. This is specified in the system settings (Media->Music).[/COLOR]"
 msgstr ""
 
-msgctxt "#301210"
+msgctxt "#31241"
 msgid "Enables all PVR available artwork.[CR][COLOR=white]\'Skin Helper Service\' is required.[/COLOR]"
 msgstr ""
 
-msgctxt "#301218"
+msgctxt "#31242"
 msgid "Select a background picture."
 msgstr ""
 
-msgctxt "#301240"
+msgctxt "#31243"
 msgid "Reset"
 msgstr ""
 
-msgctxt "#301244"
+msgctxt "#31244"
 msgid "Defines the default for this skin.[CR]This refers only to customized options."
 msgstr ""
 
-msgctxt "#301246"
+msgctxt "#31245"
 msgid "Weak"
 msgstr ""
 
-msgctxt "#301248"
+msgctxt "#31246"
 msgid "Medium"
 msgstr ""
 
-msgctxt "#301250"
+msgctxt "#31247"
 msgid "Fast"
 msgstr ""
 
-msgctxt "#301268"
+msgctxt "#31248"
 msgid "[UPPERCASE]Skin settings reset ?[/UPPERCASE]"
 msgstr ""
 
-msgctxt "#301270"
+msgctxt "#31249"
 msgid "Cover"
 msgstr ""
 
-msgctxt "#301272"
+msgctxt "#31250"
 msgid "no defined favourites"
 msgstr ""
 
-msgctxt "#301274"
+msgctxt "#31251"
 msgid "[B]KODI SUBTITLES[/B]"
 msgstr ""
 
-msgctxt "#301276"
+msgctxt "#31252"
 msgid "Sidepanel"
 msgstr ""
 
-msgctxt "#301278"
+msgctxt "#31253"
 msgid "Set Information"
 msgstr ""
 
-msgctxt "#301280"
+msgctxt "#31254"
 msgid "Concerts"
 msgstr ""
 
-msgctxt "#301282"
+msgctxt "#31255"
 msgid "Language (age rating)"
 msgstr ""
 
-msgctxt "#301284"
+msgctxt "#31256"
 msgid "Flags in text form"
 msgstr ""
 
-msgctxt "#301286"
+msgctxt "#31257"
 msgid "Dim background"
 msgstr ""
 
-msgctxt "#301288"
+msgctxt "#31258"
 msgid "Page Count"
 msgstr ""
 
-msgctxt "#301290"
+msgctxt "#31259"
 msgid "Cases"
 msgstr ""
 
-msgctxt "#301292"
+msgctxt "#31260"
 msgid "Hide big cover"
 msgstr ""
 
-msgctxt "#301294"
+msgctxt "#31261"
 msgid "Logo in place title"
 msgstr ""
 
-msgctxt "#301296"
+msgctxt "#31262"
 msgid "Information"
 msgstr ""
 
-msgctxt "#301300"
+msgctxt "#31263"
 msgid "Hide \'NEW\' Logo"
 msgstr ""
 
-msgctxt "#301302"
+msgctxt "#31264"
 msgid "Dusteffect (case)"
 msgstr ""
 
-msgctxt "#301304"
+msgctxt "#31265"
 msgid "Disable Cover animations"
 msgstr ""
 
-msgctxt "#301306"
+msgctxt "#31266"
 msgid "Dim cover"
 msgstr ""
 
-msgctxt "#301308"
+msgctxt "#31267"
 msgid "List"
 msgstr ""
 
-msgctxt "#301310"
+msgctxt "#31268"
 msgid "Info List"
 msgstr ""
 
-msgctxt "#301312"
+msgctxt "#31269"
 msgid "Thumbview"
 msgstr ""
 
-msgctxt "#301314"
+msgctxt "#31270"
 msgid "Banner"
 msgstr ""
 
-msgctxt "#301316"
+msgctxt "#31271"
 msgid "Showcase"
 msgstr ""
 
-msgctxt "#301318"
+msgctxt "#31272"
 msgid "Perspective"
 msgstr ""
 
-msgctxt "#301320"
+msgctxt "#31273"
 msgid "Disc Flow"
 msgstr ""
 
-msgctxt "#301322"
+msgctxt "#31274"
 msgid "Rightlist"
 msgstr ""
 
-msgctxt "#301324"
+msgctxt "#31275"
 msgid "Cover Wall (fullsize)"
 msgstr ""
 
-msgctxt "#301326"
+msgctxt "#31276"
 msgid "Cover Wall"
 msgstr ""
 
-msgctxt "#301328"
+msgctxt "#31277"
 msgid "Picture wall"
 msgstr ""
 
-msgctxt "#301330"
+msgctxt "#31278"
 msgid "Disable radio view"
 msgstr ""
 
-msgctxt "#301331"
+msgctxt "#31279"
 msgid " - Disable TV Wall"
 msgstr ""
 
-msgctxt "#301332"
+msgctxt "#31280"
 msgid "Music visualisation"
 msgstr ""
 
-msgctxt "#301334"
+msgctxt "#31281"
 msgid "Music extra arts"
 msgstr ""
 
-msgctxt "#301336"
+msgctxt "#31282"
 msgid "Date display"
 msgstr ""
 
-msgctxt "#301338"
+msgctxt "#31283"
 msgid "Button description"
 msgstr ""
 
-msgctxt "#301340"
+msgctxt "#31284"
 msgid "Information panel"
 msgstr ""
 
-msgctxt "#301344"
+msgctxt "#31285"
 msgid "back"
 msgstr ""
 
-msgctxt "#301346"
+msgctxt "#31286"
 msgid "Mainmenu buttons"
 msgstr ""
 
-msgctxt "#301348"
+msgctxt "#31287"
 msgid "Submenu buttons"
 msgstr ""
 
-msgctxt "#301350"
+msgctxt "#31288"
 msgid "Functions"
 msgstr ""
 
-msgctxt "#301351"
+msgctxt "#31289"
 msgid "Widgets"
 msgstr ""
 
-msgctxt "#301352"
+msgctxt "#31290"
 msgid "Design / Performance"
 msgstr ""
 
-msgctxt "#301354"
+msgctxt "#31291"
 msgid "Extra arts"
 msgstr ""
 
-msgctxt "#301356"
+msgctxt "#31292"
 msgid "Admin"
 msgstr ""
 
-msgctxt "#301357"
+msgctxt "#31293"
 msgid "Shutdown Menu"
 msgstr ""
 
-msgctxt "#301358"
+msgctxt "#31294"
 msgid "Enable debug grid"
 msgstr ""
 
-msgctxt "#301360"
+msgctxt "#31295"
 msgid "Debug Information"
 msgstr ""
 
-msgctxt "#301362"
+msgctxt "#31296"
 msgid "Enable First start"
 msgstr ""
 
-msgctxt "#301364"
+msgctxt "#31297"
 msgid "Choose your system performance"
 msgstr ""
 
-msgctxt "#301366"
+msgctxt "#31298"
 msgid "Mousepointer"
 msgstr ""
 
-msgctxt "#301368"
+msgctxt "#31299"
 msgid "Set positions"
 msgstr ""
 
-msgctxt "#301370"
+msgctxt "#31300"
 msgid "Move focus"
 msgstr ""
 
-msgctxt "#301371"
+msgctxt "#31301"
 msgid "Dashboard"
 msgstr ""
 
-msgctxt "#301372"
+msgctxt "#31302"
 msgid "Auto-hide the mainmenu"
 msgstr ""
 
-msgctxt "#301374"
+msgctxt "#31303"
 msgid "Time to hide"
 msgstr ""
 
-msgctxt "#301376"
+msgctxt "#31304"
 msgid "Background video"
 msgstr ""
 
-msgctxt "#301378"
+msgctxt "#31305"
 msgid "Choose the country for age rating"
 msgstr ""
 
-msgctxt "#301380"
+msgctxt "#31306"
 msgid "Play trailer in fullscreen"
 msgstr ""
 
-msgctxt "#301382"
+msgctxt "#31307"
 msgid "Next track playlist"
 msgstr ""
 
-msgctxt "#301384"
+msgctxt "#31308"
 msgid "Set startup volume"
 msgstr ""
 
-msgctxt "#301386"
+msgctxt "#31309"
 msgid "Dectivate alphanumeric jumpbar"
 msgstr ""
 
-msgctxt "#301388"
+msgctxt "#31310"
 msgid "Hide wake on lan switch in \'Central\'"
 msgstr ""
 
-msgctxt "#301390"
+msgctxt "#31312"
 msgid "Globalsearch in contextmenu"
 msgstr ""
 
-msgctxt "#301392"
+msgctxt "#31313"
 msgid "Statistic show in mainmenu"
 msgstr ""
 
-msgctxt "#301394"
+msgctxt "#31314"
 msgid "Show favorites window in main menu"
 msgstr ""
 
-msgctxt "#301396"
+msgctxt "#31315"
 msgid "Disable \'Central\'"
 msgstr ""
 
-msgctxt "#301389"
+msgctxt "#31311"
 msgid "- Path"
 msgstr ""
 
-msgctxt "#301400"
+msgctxt "#31316"
 msgid "Disc"
 msgstr ""
 
-msgctxt "#301402"
+msgctxt "#31317"
 msgid "Animations (high cpu load)"
 msgstr ""
 
-msgctxt "#301404"
+msgctxt "#31318"
 msgid "Navigation information"
 msgstr ""
 
-msgctxt "#301406"
+msgctxt "#31319"
 msgid "Small Weather-Information"
 msgstr ""
 
-msgctxt "#301408"
+msgctxt "#31320"
 msgid "Hide date display"
 msgstr ""
 
-msgctxt "#301410"
+msgctxt "#31321"
 msgid "Just a background image"
 msgstr ""
 
-msgctxt "#301412"
+msgctxt "#31322"
 msgid "- Picture / Path"
 msgstr ""
 
-msgctxt "#301414"
+msgctxt "#31323"
 msgid "- Slideshow instead of image"
 msgstr ""
 
-msgctxt "#301416"
+msgctxt "#31324"
 msgid "Color Accents"
 msgstr ""
 
-msgctxt "#301418"
+msgctxt "#31325"
 msgid "Background theme"
 msgstr ""
 
-msgctxt "#301424"
+msgctxt "#31326"
 msgid "Structur in mainmenu"
 msgstr ""
 
-msgctxt "#301426"
+msgctxt "#31327"
 msgid "Player Controls"
 msgstr ""
 
-msgctxt "#301428"
+msgctxt "#31328"
 msgid "Weather fanarts"
 msgstr ""
 
-msgctxt "#301430"
+msgctxt "#31329"
 msgid "Lightweight version of the break screen"
 msgstr ""
 
-msgctxt "#301432"
+msgctxt "#31330"
 msgid "Hide video details"
 msgstr ""
 
-msgctxt "#301434"
+msgctxt "#31331"
 msgid "CD Style"
 msgstr ""
 
-msgctxt "#301436"
+msgctxt "#31332"
 msgid "hear"
 msgstr ""
 
-msgctxt "#301438"
+msgctxt "#31333"
 msgid "manage your"
 msgstr ""
 
-msgctxt "#301440"
+msgctxt "#31334"
 msgid "experience your"
 msgstr ""
 
-msgctxt "#301442"
+msgctxt "#31335"
 msgid "check out the"
 msgstr ""
 
-msgctxt "#301444"
+msgctxt "#31336"
 msgid "let them rotate"
 msgstr ""
 
-msgctxt "#301446"
+msgctxt "#31337"
 msgid "go to"
 msgstr ""
 
-msgctxt "#301448"
+msgctxt "#31338"
 msgid "change your"
 msgstr ""
 
-msgctxt "#301456"
+msgctxt "#31339"
 msgid "Glass"
 msgstr ""
 
-msgctxt "#301458"
+msgctxt "#31340"
 msgid "Blank"
 msgstr ""
 
-msgctxt "#301460"
+msgctxt "#31341"
 msgid "low"
 msgstr ""
 
-msgctxt "#301462"
+msgctxt "#31342"
 msgid "medium"
 msgstr ""
 
-msgctxt "#301464"
+msgctxt "#31343"
 msgid "strongly"
 msgstr ""
 
-msgctxt "#301466"
+msgctxt "#31344"
 msgid "Central"
 msgstr ""
 
-msgctxt "#301468"
+msgctxt "#31345"
 msgid "other/unknown"
 msgstr ""
 
-msgctxt "#301470"
+msgctxt "#31346"
 msgid "Moviedrama"
 msgstr ""
 
-msgctxt "#301472"
+msgctxt "#31347"
 msgid "News"
 msgstr ""
 
-msgctxt "#301474"
+msgctxt "#31348"
 msgid "Show"
 msgstr ""
 
-msgctxt "#301476"
+msgctxt "#31349"
 msgid "Sports"
 msgstr ""
 
-msgctxt "#301478"
+msgctxt "#31350"
 msgid "Child"
 msgstr ""
 
-msgctxt "#301480"
+msgctxt "#31351"
 msgid "Music"
 msgstr ""
 
-msgctxt "#301482"
+msgctxt "#31352"
 msgid "Arts"
 msgstr ""
 
-msgctxt "#301484"
+msgctxt "#31353"
 msgid "Social"
 msgstr ""
 
-msgctxt "#301486"
+msgctxt "#31354"
 msgid "Science"
 msgstr ""
 
-msgctxt "#301488"
+msgctxt "#31355"
 msgid "Special"
 msgstr ""
 
-msgctxt "#301490"
+msgctxt "#31356"
 msgid "Hobby"
 msgstr ""
 
-msgctxt "#301492"
+msgctxt "#31357"
 msgid "download artwork"
 msgstr ""
 
-msgctxt "#301494"
+msgctxt "#31358"
 msgid "Recently added TVShows"
 msgstr ""
 
-msgctxt "#301496"
+msgctxt "#31359"
 msgid "forecast"
 msgstr ""
 
-msgctxt "#301498"
+msgctxt "#31360"
 msgid "Set the position of each mein menu fixed points.[CR]Using position numbers from 1 - 22."
 msgstr ""
 
-msgctxt "#301500"
+msgctxt "#31361"
 msgid "go directly to video files"
 msgstr ""
 
-msgctxt "#301502"
+msgctxt "#31362"
 msgid "Show profil name"
 msgstr ""
 
-msgctxt "#301504"
+msgctxt "#31363"
 msgid "Kodi runs:"
 msgstr ""
 
-msgctxt "#301506"
+msgctxt "#31364"
 msgid "<"
 msgstr ""
 
-msgctxt "#301508"
+msgctxt "#31365"
 msgid "<<"
 msgstr ""
 
-msgctxt "#301510"
+msgctxt "#31366"
 msgid "Studio symbols ..."
 msgstr ""
 
-msgctxt "#301512"
+msgctxt "#31367"
 msgid "Genre icons ..."
 msgstr ""
 
-msgctxt "#301514"
+msgctxt "#31368"
 msgid "Weather icons ..."
 msgstr ""
 
-msgctxt "#301516"
+msgctxt "#31369"
 msgid "Weather fanart ..."
 msgstr ""
 
-msgctxt "#301520"
+msgctxt "#31370"
 msgid "In order to set an Timer the \'KN Switcher Service\' is required. Download via Kodinerds repository."
 msgstr ""
 
-msgctxt "#301522"
+msgctxt "#31371"
 msgid "delete all timers"
 msgstr ""
 
-msgctxt "#301524"
+msgctxt "#31372"
 msgid "delete"
 msgstr ""
 
-msgctxt "#301526"
+msgctxt "#31373"
 msgid "administration"
 msgstr ""
 
-msgctxt "#301528"
+msgctxt "#31374"
 msgid "Switchtimer"
 msgstr ""
 
-msgctxt "#301530"
+msgctxt "#31375"
 msgid "Timer overview"
 msgstr ""
 
-msgctxt "#301532"
+msgctxt "#31376"
 msgid "Today"
 msgstr ""
 
-msgctxt "#301534"
+msgctxt "#31377"
 msgid "Enable"
 msgstr ""
 
-msgctxt "#301536"
+msgctxt "#31378"
 msgid "Channels"
 msgstr ""
 
-msgctxt "#301538"
+msgctxt "#31379"
 msgid "both"
 msgstr ""
 
-msgctxt "#301540"
+msgctxt "#31380"
 msgid "original"
 msgstr ""
 
-msgctxt "#301542"
+msgctxt "#31381"
 msgid "HorizonzV Flag"
 msgstr ""
 
-msgctxt "#301544"
+msgctxt "#31382"
 msgid "Germany"
 msgstr ""
 
-msgctxt "#301546"
+msgctxt "#31383"
 msgid "United States"
 msgstr ""
 
-msgctxt "#301548"
+msgctxt "#31384"
 msgid "United Kingdom"
 msgstr ""
 
-msgctxt "#301550"
+msgctxt "#31385"
 msgid "France"
 msgstr ""
 
-msgctxt "#301551"
+msgctxt "#31386"
 msgid "Serge Blue"
 msgstr ""
 
-msgctxt "#301552"
+msgctxt "#31387"
 msgid "Grey Blue"
 msgstr ""
 
-msgctxt "#301554"
+msgctxt "#31388"
 msgid "Turquoise"
 msgstr ""
 
-msgctxt "#301558"
+msgctxt "#31389"
 msgid "Sea Green"
 msgstr ""
 
-msgctxt "#301560"
+msgctxt "#31390"
 msgid "Red"
 msgstr ""
 
-msgctxt "#301562"
+msgctxt "#31391"
 msgid "Light Grey"
 msgstr ""
 
-msgctxt "#301564"
+msgctxt "#31392"
 msgid "Dark Gold"
 msgstr ""
 
-msgctxt "#301566"
+msgctxt "#31393"
 msgid "Sandy Brown"
 msgstr ""
 
-msgctxt "#301570"
+msgctxt "#31394"
 msgid "ColorPicker"
 msgstr ""
 
-msgctxt "#301572"
+msgctxt "#31395"
 msgid "Avengers B/W"
 msgstr ""
 
-msgctxt "#301574"
+msgctxt "#31396"
 msgid "Gambit"
 msgstr ""
 
-msgctxt "#301576"
+msgctxt "#31397"
 msgid "Vinyl View"
 msgstr ""
 
-msgctxt "#301578"
+msgctxt "#31398"
 msgid "Radio View"
 msgstr ""
 
-msgctxt "#301580"
+msgctxt "#31399"
 msgid "Standard View"
 msgstr ""
 
-msgctxt "#301582"
+msgctxt "#31400"
 msgid "starting ..."
 msgstr ""
 
-msgctxt "#301584"
+msgctxt "#31401"
 msgid "hide"
 msgstr ""
 
-msgctxt "#301586"
+msgctxt "#31402"
 msgid "show"
 msgstr ""
 
-msgctxt "#301588"
+msgctxt "#31403"
 msgid "button"
 msgstr ""
 
-msgctxt "#301590"
+msgctxt "#31404"
 msgid "skin reload"
 msgstr ""
 
-msgctxt "#301592"
+msgctxt "#31405"
 msgid "KODI APP reload"
 msgstr ""
 
-msgctxt "#301596"
+msgctxt "#31406"
 msgid "Visible"
 msgstr ""
 
-msgctxt "#301598"
+msgctxt "#31407"
 msgid "no progressbar in the widget (green bar on the cover)"
 msgstr ""
 
-msgctxt "#301600"
+msgctxt "#31408"
 msgid "last film started in 1st place"
 msgstr "last film started in 1st place"
 
-msgctxt "#301602"
+msgctxt "#31409"
 msgid "last album belonged to number 1"
 msgstr "last album listened to ranked #1"
 
-msgctxt "#301604"
+msgctxt "#31410"
 msgid "next episode in 1st place"
 msgstr "next episode in 1st place"
 
-msgctxt "#301606"
+msgctxt "#31411"
 msgid "last started video at number 1"
 msgstr ""
 
-msgctxt "#301608"
+msgctxt "#31412"
 msgid "5 Day Weather"
 msgstr ""
 
-msgctxt "#301610"
+msgctxt "#31413"
 msgid "German Telecast Offers (GTO)"
 msgstr ""
 
-msgctxt "#301612"
+msgctxt "#31414"
 msgid "Fritz Smart Home"
 msgstr ""
 
-msgctxt "#301614"
+msgctxt "#31415"
 msgid "Choose a content for row"
 msgstr ""
 
-msgctxt "#301616"
+msgctxt "#31416"
 msgid "on"
 msgstr ""
 
-msgctxt "#301618"
+msgctxt "#31417"
 msgid "off"
 msgstr ""
 
-msgctxt "#301620"
+msgctxt "#31418"
 msgid "Battery level"
 msgstr ""
 
-msgctxt "#301622"
+msgctxt "#31419"
 msgid "Export video library"
 msgstr ""
 
-msgctxt "#301624"
+msgctxt "#31420"
 msgid "(single NFO, without images, overwrite old data)"
 msgstr ""
 

@@ -336,7 +336,7 @@
                             <align>center</align>
                             <font>impacted26</font>
                             <textcolor>grey1</textcolor>
-                            <label>[COLOR=grey]$INFO[Container(200).ListItem.Label] |[/COLOR] $LOCALIZE[301466]</label>
+                            <label>[COLOR=grey]$INFO[Container(200).ListItem.Label] |[/COLOR] $LOCALIZE[31344]</label>
                         </control>
                         <control type="list" id="200">
                             <left>SpacePaddingLarge</left>

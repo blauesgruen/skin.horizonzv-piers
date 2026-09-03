@@ -2,16 +2,16 @@
 <!-- HorizonzV -->
 <includes>
     <variable name="rated_language">
-        <value condition="Skin.HasSetting(rated_de)">$LOCALIZE[301544]</value>
-        <value condition="Skin.HasSetting(rated_us)">$LOCALIZE[301546]</value>
-        <value condition="Skin.HasSetting(rated_uk)">$LOCALIZE[301548]</value>
-        <value condition="Skin.HasSetting(rated_fr)">$LOCALIZE[301550]</value>
+        <value condition="Skin.HasSetting(rated_de)">$LOCALIZE[31382]</value>
+        <value condition="Skin.HasSetting(rated_us)">$LOCALIZE[31383]</value>
+        <value condition="Skin.HasSetting(rated_uk)">$LOCALIZE[31384]</value>
+        <value condition="Skin.HasSetting(rated_fr)">$LOCALIZE[31385]</value>
         <value condition="!Skin.HasSetting(rated_fr)+!Skin.HasSetting(rated_uk)+!Skin.HasSetting(rated_us)+!Skin.HasSetting(rated_de)">$LOCALIZE[22080]</value>
     </variable>
     <variable name="fsk_logo">
-        <value condition="Skin.HasSetting(fsk_original)">$LOCALIZE[301540]</value>
-        <value condition="Skin.HasSetting(fsk)">$LOCALIZE[301542]</value>
-        <value condition="Skin.HasSetting(fsk_dual)">$LOCALIZE[301538]</value>
+        <value condition="Skin.HasSetting(fsk_original)">$LOCALIZE[31380]</value>
+        <value condition="Skin.HasSetting(fsk)">$LOCALIZE[31381]</value>
+        <value condition="Skin.HasSetting(fsk_dual)">$LOCALIZE[31379]</value>
     </variable>
     <!-- Aeon MQ 4 -->
     <!-- ######################################################################### Variable Rating Flags ######################################################################### -->

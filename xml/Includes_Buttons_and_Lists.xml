@@ -350,7 +350,7 @@
 				<include content="DialogRadioButton">
 					<param name="id" value="$PARAM[id]1" />
 					<param name="width" value="$PARAM[widthlist]" />
-					<param name="label" value="$LOCALIZE[301596]" />
+					<param name="label" value="$LOCALIZE[31406]" />
 					<param name="align" value="left" />
 					<param name="onclick" value="Skin.ToggleSetting(HomeMenuNo_$PARAM[homemenu_name]_Button)" />
 					<param name="selected" value="!Skin.HasSetting(HomeMenuNo_$PARAM[homemenu_name]_Button)" />
@@ -447,7 +447,7 @@
 				<include content="DialogRadioButton">
 					<param name="id" value="$PARAM[id]8" />
 					<param name="width" value="$PARAM[widthlist]" />
-					<param name="label" value="$LOCALIZE[301596]" />
+					<param name="label" value="$LOCALIZE[31406]" />
 					<param name="align" value="left" />
 					<param name="onclick" value="Skin.ToggleSetting(Home_$PARAM[homemenu_name]_Button)" />
 					<param name="selected" value="Skin.HasSetting(Home_$PARAM[homemenu_name]_Button)" />
@@ -688,7 +688,7 @@
 			<include content="DialogRadioButton">
 				<param name="id" value="$PARAM[id]996" />
 				<param name="width" value="1110" />
-				<param name="label" value="$LOCALIZE[301306]" />
+				<param name="label" value="$LOCALIZE[31266]" />
 				<param name="align" value="left" />
 				<param name="onclick" value="Skin.ToggleSetting(WidgetDim)" />
 				<param name="selected" value="Skin.HasSetting(WidgetDim)" />
@@ -697,7 +697,7 @@
 			<include content="DialogRadioButton">
 				<param name="id" value="$PARAM[id]997" />
 				<param name="width" value="1110" />
-				<param name="label" value="$LOCALIZE[301598]" />
+				<param name="label" value="$LOCALIZE[31407]" />
 				<param name="align" value="left" />
 				<param name="onclick" value="Skin.ToggleSetting(WidgetNoPercentPlayedBar)" />
 				<param name="selected" value="Skin.HasSetting(WidgetNoPercentPlayedBar)" />

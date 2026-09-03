@@ -175,7 +175,7 @@
 							<visible>Skin.HasSetting(shutdown_nand)|Skin.HasSetting(shutdown_restart)|Skin.HasSetting(shutdown_reload)|Skin.HasSetting(shutdown_addon)</visible>
 						</item>
 						<item>
-							<label>$LOCALIZE[301592]</label>
+							<label>$LOCALIZE[31405]</label>
 							<onclick>RestartApp</onclick>
 							<visible>Skin.HasSetting(shutdown_restart)</visible>
 						</item>
@@ -188,7 +188,7 @@
 							<visible>Skin.HasSetting(shutdown_nand)</visible>
 						</item>
 						<item>
-							<label>$LOCALIZE[301590]</label>
+							<label>$LOCALIZE[31404]</label>
 							<onclick>ReloadSkin()</onclick>
 							<visible>Skin.HasSetting(shutdown_reload)</visible>
 						</item>
@@ -269,7 +269,7 @@
 					<font>impacted24</font>
 					<textcolor>grey</textcolor>
 					<shadowcolor/>
-					<label>$INFO[System.Uptime,$LOCALIZE[301504]  ,] | CPU $INFO[System.CPUUsage] | Memory $INFO[system.memory(used.percent)]</label>
+					<label>$INFO[System.Uptime,$LOCALIZE[31363]  ,] | CPU $INFO[System.CPUUsage] | Memory $INFO[system.memory(used.percent)]</label>
 				</control>
 				<control type="group">
 					<height>150</height>

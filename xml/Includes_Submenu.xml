@@ -459,14 +459,14 @@
             <control type="button" id="80181">
                 <description>Weather Fanart Select</description>
                 <include>ButtonHomeSubCommonValues</include>
-                <label>301516</label>
+                <label>31369</label>
                 <onclick>RunScript(script.image.resource.select,property=weatherfanart&amp;type=resource.images.weatherfanart)</onclick>
                 <visible>System.HasAddon(script.image.resource.select)+Weather.IsFetched</visible>
             </control>
             <control type="button" id="80182">
                 <description>Weather Icons Select</description>
                 <include>ButtonHomeSubCommonValues</include>
-                <label>301514</label>
+                <label>31368</label>
                 <onclick>RunScript(script.image.resource.select,property=weathericons&amp;type=resource.images.weathericons)</onclick>
                 <visible>System.HasAddon(script.image.resource.select)+Weather.IsFetched</visible>
             </control>

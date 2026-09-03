@@ -140,7 +140,7 @@
                     <control type="radiobutton" id="1756"> <!-- kann in kodi 22 weg -->
                         <description>extendedinfo music</description>
                         <include>SidePanelButton</include>
-                        <label>301278</label>
+                        <label>31253</label>
                         <onclick>Skin.Reset(extendedinfo_music)</onclick>
                         <selected>Skin.HasSetting(extendedinfo_music)</selected>
                         <visible>Skin.HasSetting(extendedinfo_music)</visible>
@@ -171,16 +171,16 @@
                     <control type="button" id="1778">
                         <description>FSK</description>
                         <include>SidePanelButton</include>
-                        <label>301282</label>
+                        <label>31255</label>
                         <label2>$VAR[rated_language]</label2>
-                        <onclick>Skin.SelectBool(301378, 301544|rated_de, 301546|rated_us, 301548|rated_uk, 301550|rated_fr)</onclick>
+                        <onclick>Skin.SelectBool(31305, 31382|rated_de, 31383|rated_us, 31384|rated_uk, 31385|rated_fr)</onclick>
                         <!-- <enable>Skin.HasSetting(fsk)|Skin.HasSetting(fsk_original)|Skin.HasSetting(fsk_dual)</enable> -->
                         <visible>Window.IsVisible(videos)</visible>
                     </control>
                     <!-- <control type="radiobutton" id="1780">
                         <description>Label Flagging</description>
                         <include>SidePanelButton</include>
-                        <label>301284</label>
+                        <label>31256</label>
                         <onclick>Skin.ToggleSetting(Label_Flagging)</onclick>
                         <selected>Skin.HasSetting(Label_Flagging)</selected>
                     </control> -->
@@ -197,14 +197,14 @@
                     <control type="button" id="1784">
                         <description>fanartdiffuse</description>
                         <include>SidePanelButton</include>
-                        <label>301286</label>
+                        <label>31257</label>
                         <label2>$VAR[BackgroundDimLabel]</label2>
-                        <onclick>Skin.SelectBool(301286, 301460|background_dim_1, 301462|background_dim_2, 301464|background_dim_3, 594|background_dim_no)</onclick>
+                        <onclick>Skin.SelectBool(31257, 31341|background_dim_1, 31342|background_dim_2, 31343|background_dim_3, 594|background_dim_no)</onclick>
                     </control>
                     <control type="radiobutton" id="1786">
                         <description>Common Page Count</description>
                         <include>SidePanelButton</include>
-                        <label>301288</label>
+                        <label>31258</label>
                         <onclick>Skin.ToggleSetting(CommonPageCount)</onclick>
                         <selected>Skin.HasSetting(CommonPageCount)</selected>
                     </control>
@@ -241,7 +241,7 @@
                     <control type="radiobutton" id="1804">
                         <description>Cases</description>
                         <include>SidePanelButton</include>
-                        <label>301290</label>
+                        <label>31259</label>
                         <onclick>Skin.ToggleSetting(hideMovieCases)</onclick>
                         <selected>!Skin.HasSetting(hideMovieCases)</selected>
                         <visible>Control.IsVisible(742)|Control.IsVisible(740)|Control.IsVisible(721)
@@ -258,7 +258,7 @@
                     </control>
                     <control type="radiobutton" id="1808">
                         <include>SidePanelButton</include>
-                        <label>301292</label>
+                        <label>31260</label>
                         <onclick>Skin.ToggleSetting(Episode_HideCover)</onclick>
                         <selected>Skin.HasSetting(Episode_HideCover)</selected>
                         <visible>Control.IsVisible(515)</visible>
@@ -267,7 +267,7 @@
                     <control type="radiobutton" id="1809">
                         <description>Dust Effect</description>
                         <include>SidePanelButton</include>
-                        <label>301302</label>
+                        <label>31264</label>
                         <onclick>Skin.ToggleSetting(dust)</onclick>
                         <selected>Skin.HasSetting(dust)</selected>
                         <visible>Control.IsVisible(562)
@@ -277,7 +277,7 @@
                     </control>
                     <control type="radiobutton" id="1810">
                         <include>SidePanelButton</include>
-                        <label>301294</label>
+                        <label>31261</label>
                         <onclick>Skin.ToggleSetting(Fanart_ClearlogoTitle)</onclick>
                         <selected>Skin.HasSetting(Fanart_ClearlogoTitle)</selected>
                         <visible>Control.IsVisible(401)</visible>
@@ -285,7 +285,7 @@
                     </control>
                     <control type="radiobutton" id="1811">
                         <include>SidePanelButton</include>
-                        <label>301296</label>
+                        <label>31262</label>
                         <onclick>$VAR[SidePanel_InformationToggleVar]</onclick>
                         <onclick>Skin.ToggleSetting(smallinfo_off)</onclick>
                         <selected>!Skin.HasSetting(smallinfo_off)</selected>
@@ -310,14 +310,14 @@
                     </control>
                     <control type="radiobutton" id="1815">
                         <include>SidePanelButton</include>
-                        <label>301296</label>
+                        <label>31262</label>
                         <onclick>Skin.ToggleSetting(VideoInfo)</onclick>
                         <selected>Skin.HasSetting(VideoInfo)</selected>
                         <visible>Control.IsVisible(401)</visible>
                     </control>
                     <control type="radiobutton" id="1816">
                         <include>SidePanelButton</include>
-                        <label>301296</label>
+                        <label>31262</label>
                         <onclick>Skin.ToggleSetting(EpisodeInfo)</onclick>
                         <selected>Skin.HasSetting(EpisodeInfo)</selected>
                         <visible>Control.IsVisible(402)</visible>
@@ -333,7 +333,7 @@
                     <control type="radiobutton" id="1818">
                         <description>Wall Cover Animation</description>
                         <include>SidePanelButton</include>
-                        <label>301300</label>
+                        <label>31263</label>
                         <onclick>Skin.ToggleSetting(HideOverlayIconNew)</onclick>
                         <selected>Skin.HasSetting(HideOverlayIconNew)</selected>
                         <visible>Control.IsVisible(742)|Control.IsVisible(740)|Control.IsVisible(562)|Control.IsVisible(402)|Control.IsVisible(505)
@@ -351,7 +351,7 @@
                     <!-- <control type="radiobutton" id="1824">
                         <description>hideInfoPanel</description>
                         <include>SidePanelButton</include>
-                        <label>301296</label>
+                        <label>31262</label>
                         <onclick>Skin.ToggleSetting(hideInfoPanel)</onclick>
                         <selected>!Skin.HasSetting(hideInfoPanel)</selected>
                         <visible>Control.IsVisible(742)|Control.IsVisible(740)</visible>
@@ -360,7 +360,7 @@
                     <control type="radiobutton" id="1826">
                         <description>Wall Cover Animation</description>
                         <include>SidePanelButton</include>
-                        <label>301304</label>
+                        <label>31265</label>
                         <onclick>Skin.ToggleSetting(no_wall_animation)</onclick>
                         <selected>Skin.HasSetting(no_wall_animation)</selected>
                         <visible>Control.IsVisible(741)|Control.IsVisible(742)|Control.IsVisible(740)|Control.IsVisible(562)</visible>
@@ -369,7 +369,7 @@
                     <control type="radiobutton" id="1828">
                         <description>Cover Dim</description>
                         <include>SidePanelButton</include>
-                        <label>301306</label>
+                        <label>31266</label>
                         <onclick>Skin.ToggleSetting(CoverDim)</onclick>
                         <selected>Skin.HasSetting(CoverDim)</selected>
                         <visible>Control.IsVisible(741)|Control.IsVisible(740)|Control.IsVisible(742)|Control.IsVisible(562)
@@ -387,21 +387,21 @@
                     <!-- music -->
                     <control type="radiobutton" id="1830">
                         <include>SidePanelButton</include>
-                        <label>301296</label>
+                        <label>31262</label>
                         <onclick>Skin.ToggleSetting(MusicInfo)</onclick>
                         <selected>Skin.HasSetting(MusicInfo)</selected>
                         <visible>Control.IsVisible(509)</visible>
                     </control>
                     <control type="radiobutton" id="1832">
                         <include>SidePanelButton</include>
-                        <label>301290</label>
+                        <label>31259</label>
                         <onclick>Skin.ToggleSetting(hideMusicCases)</onclick>
                         <selected>!Skin.HasSetting(hideMusicCases)</selected>
                         <visible>Control.IsVisible(741)|Control.IsVisible(58)</visible>
                     </control>
                     <control type="radiobutton" id="1834">
                         <include>SidePanelButton</include>
-                        <label>301296</label>
+                        <label>31262</label>
                         <onclick>Skin.ToggleSetting(InfoWall)</onclick>
                         <selected>Skin.HasSetting(InfoWall)</selected>
                         <visible>Control.IsVisible(741)</visible>

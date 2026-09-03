@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
     <variable name="HomeScrollerDescription">
-        <value condition="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),dashboard)">$LOCALIZE[301438]</value>
-        <value condition="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),picture)">$LOCALIZE[301440]</value>
-        <value condition="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),weather)">$LOCALIZE[301442]</value>
-        <value condition="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),playdisc)">$LOCALIZE[301444]</value>
-        <value condition="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),pvr)">$LOCALIZE[301446]</value>
-        <value condition="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),radio)">$LOCALIZE[301436]</value>
-        <value condition="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),setting)">$LOCALIZE[301448]</value>
-        <value>$LOCALIZE[301446]</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),dashboard)">$LOCALIZE[31333]</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),picture)">$LOCALIZE[31334]</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),weather)">$LOCALIZE[31335]</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),playdisc)">$LOCALIZE[31336]</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),pvr)">$LOCALIZE[31337]</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),radio)">$LOCALIZE[31332]</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),setting)">$LOCALIZE[31338]</value>
+        <value>$LOCALIZE[31337]</value>
     </variable>
     <variable name="WeatherFadeout">
         <value condition="!String.IsEmpty(Weather.Plugin)+Skin.HasSetting(HomeMenuWeatherFadeout)+String.IsEqual(Container(9000).ListItem.Property(homemenu_id),weather)+String.IsEmpty(Skin.String(hidehomemenu_timer))">AlarmClock(HideMenu,Control.SetFocus(666),00:10,silent)</value>
@@ -74,14 +74,14 @@
     <variable name="PlayerOSDSeekLabel">
         <value condition="Player.Forwarding+![Player.Forwarding16x|Player.Forwarding32x]">&gt;</value>
         <value condition="Player.Forwarding16x|Player.Forwarding32x">&gt;&gt;</value>
-        <value condition="Player.Rewinding+![Player.Rewinding16x|Player.Rewinding32x]">$LOCALIZE[301506]</value>
-        <value condition="Player.Rewinding16x|Player.Rewinding32x">$LOCALIZE[301508]</value>
+        <value condition="Player.Rewinding+![Player.Rewinding16x|Player.Rewinding32x]">$LOCALIZE[31364]</value>
+        <value condition="Player.Rewinding16x|Player.Rewinding32x">$LOCALIZE[31365]</value>
         <!-- <value condition="true"></value> -->
     </variable>
     <variable name="backgroundfolder_label">
         <value condition="Skin.HasSetting(standard_bkg)">$LOCALIZE[15112]</value>
-        <value condition="Skin.HasSetting(avengers_sw)">$LOCALIZE[301572]</value>
-        <value condition="Skin.HasSetting(gambit_background)">$LOCALIZE[301574]</value>
+        <value condition="Skin.HasSetting(avengers_sw)">$LOCALIZE[31395]</value>
+        <value condition="Skin.HasSetting(gambit_background)">$LOCALIZE[31396]</value>
     </variable>
     <variable name="backgroundfolder">
         <value condition="Skin.HasSetting(standard_bkg)+!Skin.HasSetting(onlyone)">special://skin/backgrounds/</value>
@@ -132,9 +132,9 @@
         <value condition="Skin.HasSetting(background_dim_no)">66FFFFFF</value>
     </variable>
     <variable name="BackgroundDimLabel">
-        <value condition="Skin.HasSetting(background_dim_1)">$LOCALIZE[301460]</value>
-        <value condition="Skin.HasSetting(background_dim_2)">$LOCALIZE[301462]</value>
-        <value condition="Skin.HasSetting(background_dim_3)">$LOCALIZE[301464]</value>
+        <value condition="Skin.HasSetting(background_dim_1)">$LOCALIZE[31341]</value>
+        <value condition="Skin.HasSetting(background_dim_2)">$LOCALIZE[31342]</value>
+        <value condition="Skin.HasSetting(background_dim_3)">$LOCALIZE[31343]</value>
         <value>$LOCALIZE[594]</value>
     </variable>
     <variable name="BackgroundDim">
@@ -150,16 +150,16 @@
         <value>FFFFFFFF</value>
     </variable>
     <variable name="BackgroundOverlayColorLabel">
-        <value condition="Skin.HasSetting(color_blue)">$LOCALIZE[301551]</value>
-        <value condition="Skin.HasSetting(color_selectedhome)">$LOCALIZE[301552]</value>
-        <value condition="Skin.HasSetting(color_selected)">$LOCALIZE[301554]</value>
-        <value condition="Skin.HasSetting(color_green)">$LOCALIZE[301558]</value>
-        <value condition="Skin.HasSetting(color_red)">$LOCALIZE[301560]</value>
-        <value condition="Skin.HasSetting(color_grey)">$LOCALIZE[301562]</value>
-        <value condition="Skin.HasSetting(color_darkgold)">$LOCALIZE[301564]</value>
-        <value condition="Skin.HasSetting(color_orange)">$LOCALIZE[301566]</value>
-        <value condition="Skin.HasSetting(color_custom)">$LOCALIZE[301570]</value>
-        <!-- <value condition="Skin.HasSetting(color_custom)">$LOCALIZE[301570] $INFO[Skin.String(CustomColor),(,)]</value> -->
+        <value condition="Skin.HasSetting(color_blue)">$LOCALIZE[31386]</value>
+        <value condition="Skin.HasSetting(color_selectedhome)">$LOCALIZE[31387]</value>
+        <value condition="Skin.HasSetting(color_selected)">$LOCALIZE[31388]</value>
+        <value condition="Skin.HasSetting(color_green)">$LOCALIZE[31389]</value>
+        <value condition="Skin.HasSetting(color_red)">$LOCALIZE[31390]</value>
+        <value condition="Skin.HasSetting(color_grey)">$LOCALIZE[31391]</value>
+        <value condition="Skin.HasSetting(color_darkgold)">$LOCALIZE[31392]</value>
+        <value condition="Skin.HasSetting(color_orange)">$LOCALIZE[31393]</value>
+        <value condition="Skin.HasSetting(color_custom)">$LOCALIZE[31394]</value>
+        <!-- <value condition="Skin.HasSetting(color_custom)">$LOCALIZE[31394] $INFO[Skin.String(CustomColor),(,)]</value> -->
     </variable>
     <variable name="BackgroundOverlayColor">
         <value condition="Skin.HasSetting(color_blue)">blue</value>
@@ -213,9 +213,9 @@
         <value>grey2</value>
     </variable>
     <variable name="MusicVisualisierung">
-        <value condition="Skin.HasSetting(vinylview)">$LOCALIZE[301576]</value>
-        <value condition="Skin.HasSetting(radioview)">$LOCALIZE[301578]</value>
-        <value>$LOCALIZE[301580]</value>
+        <value condition="Skin.HasSetting(vinylview)">$LOCALIZE[31397]</value>
+        <value condition="Skin.HasSetting(radioview)">$LOCALIZE[31398]</value>
+        <value>$LOCALIZE[31399]</value>
     </variable>
     <variable name="homecover">
         <value condition="Player.HasAudio">masks/NowPlayingHome.png</value>
@@ -455,18 +455,18 @@
         <value/>
     </variable>
     <variable name="EpgGenreLabel">
-        <value condition="String.IsEqual(ListItem.Property(GenreType),0)|String.IsEqual(ListItem.Property(GenreType),192)&#xD;&#xA;&#x9;&#x9;|String.IsEqual(ListItem.Property(GenreType),208)|String.IsEqual(ListItem.Property(GenreType),224)&#xD;&#xA;&#x9;&#x9;|String.IsEqual(ListItem.Property(GenreType),240)|String.IsEqual(ListItem.Property(GenreType),256)">$LOCALIZE[301468]</value>
-        <value condition="String.IsEqual(ListItem.Property(GenreType),16)">$LOCALIZE[301470]</value>
-        <value condition="String.IsEqual(ListItem.Property(GenreType),32)">$LOCALIZE[301472]</value>
-        <value condition="String.IsEqual(ListItem.Property(GenreType),48)">$LOCALIZE[301474]</value>
-        <value condition="String.IsEqual(ListItem.Property(GenreType),64)">$LOCALIZE[301476]</value>
-        <value condition="String.IsEqual(ListItem.Property(GenreType),80)">$LOCALIZE[301478]</value>
-        <value condition="String.IsEqual(ListItem.Property(GenreType),96)">$LOCALIZE[301480]</value>
-        <value condition="String.IsEqual(ListItem.Property(GenreType),112)">$LOCALIZE[301482]</value>
-        <value condition="String.IsEqual(ListItem.Property(GenreType),128)">$LOCALIZE[301484]</value>
-        <value condition="String.IsEqual(ListItem.Property(GenreType),144)">$LOCALIZE[301486]</value>
-        <value condition="String.IsEqual(ListItem.Property(GenreType),160)">$LOCALIZE[301490]</value>
-        <value condition="String.IsEqual(ListItem.Property(GenreType),176)">$LOCALIZE[301488]</value>
+        <value condition="String.IsEqual(ListItem.Property(GenreType),0)|String.IsEqual(ListItem.Property(GenreType),192)&#xD;&#xA;&#x9;&#x9;|String.IsEqual(ListItem.Property(GenreType),208)|String.IsEqual(ListItem.Property(GenreType),224)&#xD;&#xA;&#x9;&#x9;|String.IsEqual(ListItem.Property(GenreType),240)|String.IsEqual(ListItem.Property(GenreType),256)">$LOCALIZE[31345]</value>
+        <value condition="String.IsEqual(ListItem.Property(GenreType),16)">$LOCALIZE[31346]</value>
+        <value condition="String.IsEqual(ListItem.Property(GenreType),32)">$LOCALIZE[31347]</value>
+        <value condition="String.IsEqual(ListItem.Property(GenreType),48)">$LOCALIZE[31348]</value>
+        <value condition="String.IsEqual(ListItem.Property(GenreType),64)">$LOCALIZE[31349]</value>
+        <value condition="String.IsEqual(ListItem.Property(GenreType),80)">$LOCALIZE[31350]</value>
+        <value condition="String.IsEqual(ListItem.Property(GenreType),96)">$LOCALIZE[31351]</value>
+        <value condition="String.IsEqual(ListItem.Property(GenreType),112)">$LOCALIZE[31352]</value>
+        <value condition="String.IsEqual(ListItem.Property(GenreType),128)">$LOCALIZE[31353]</value>
+        <value condition="String.IsEqual(ListItem.Property(GenreType),144)">$LOCALIZE[31354]</value>
+        <value condition="String.IsEqual(ListItem.Property(GenreType),160)">$LOCALIZE[31356]</value>
+        <value condition="String.IsEqual(ListItem.Property(GenreType),176)">$LOCALIZE[31355]</value>
         <value>$INFO[ListItem.Property(GenreType)]</value>
     </variable>
 	<variable name="ViewIDs">
@@ -888,8 +888,8 @@
         <value condition="Skin.HasSetting(cdart_off)|!Skin.HasSetting(EnableExtendedArt)" />
     </variable>
     <variable name="CDArtStyle_Label">
-        <value condition="Skin.HasSetting(cdart_glass)">$LOCALIZE[301456]</value>
-        <value condition="Skin.HasSetting(cdart_rohling)">$LOCALIZE[301458]</value>
+        <value condition="Skin.HasSetting(cdart_glass)">$LOCALIZE[31339]</value>
+        <value condition="Skin.HasSetting(cdart_rohling)">$LOCALIZE[31340]</value>
         <value condition="Skin.HasSetting(cdart_off)">$LOCALIZE[36554]</value>
     </variable>
 	<variable name="FanartVAR">
@@ -943,9 +943,9 @@
 		<value>$INFO[ListItem.FileNameAndPath]</value>
 	</variable>
 	<variable name="FirstRun_Label">
-		<value condition="Skin.HasSetting(FirstRun_low)">$LOCALIZE[143] $LOCALIZE[301246]</value>
-		<value condition="Skin.HasSetting(FirstRun_medium)">$LOCALIZE[143] $LOCALIZE[301248]</value>
-		<value condition="Skin.HasSetting(FirstRun_high)">$LOCALIZE[143] $LOCALIZE[301250]</value>
+		<value condition="Skin.HasSetting(FirstRun_low)">$LOCALIZE[143] $LOCALIZE[31245]</value>
+		<value condition="Skin.HasSetting(FirstRun_medium)">$LOCALIZE[143] $LOCALIZE[31246]</value>
+		<value condition="Skin.HasSetting(FirstRun_high)">$LOCALIZE[143] $LOCALIZE[31247]</value>
 	</variable>
 	<variable name="VideoCodecVar">
 		<value condition="String.IsEqual(ListItem.VideoCodec,av1)">AV1</value>
@@ -1183,6 +1183,6 @@
 		<value condition="Skin.HasSetting(roundcorner)">_round</value>
 	</variable>
 	<variable name="ColorAkzentVar">
-		<value>301551|color_blue, 301552|color_selectedhome, 301554|color_selected, 301558|color_green, 301560|color_red, 301562|color_grey, 301564|color_darkgold, 301566|color_orange, 301570|color_custom</value>
+		<value>31386|color_blue, 31387|color_selectedhome, 31388|color_selected, 31389|color_green, 31390|color_red, 31391|color_grey, 31392|color_darkgold, 31393|color_orange, 31394|color_custom</value>
 	</variable>
 </includes>

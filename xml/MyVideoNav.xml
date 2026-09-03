@@ -103,14 +103,14 @@
                     <control type="button" id="210">
                         <description>Select genre icons</description>
                         <include>SidePanelButton</include>
-                        <label>301512</label>
+                        <label>31367</label>
                         <onclick>RunScript(script.image.resource.select,property=moviegenreicons&amp;type=resource.images.moviegenreicons)</onclick>
                         <visible>System.HasAddon(script.image.resource.select)+Container.Content(genres)</visible>
                     </control>
                     <control type="button" id="212">
                         <description>Select Studio icons</description>
                         <include>SidePanelButton</include>
-                        <label>301510</label>
+                        <label>31366</label>
                         <onclick>RunScript(script.image.resource.select,property=studiologos&amp;type=resource.images.studios)</onclick>
                         <visible>System.HasAddon(script.image.resource.select)+[Control.IsVisible(9898)|Container.Content(studios)]</visible>
                     </control>
