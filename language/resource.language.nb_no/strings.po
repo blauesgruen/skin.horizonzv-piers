@@ -1,4 +1,4 @@
-﻿# Kodi Media Center language file
+# Kodi Media Center language file
 # Addon Name: HorizonzV
 # Addon id: skin.horizonzv
 # Addon Provider: blauesgruen
@@ -345,7 +345,7 @@ msgid "Choose an accent colour that shows up in many areas of the skin.[CR][COLO
 msgstr "Velg en aksentfarge som vises på mange områder av huden.[CR][COLOR=grey]Tilpasset: Fargekoder må spesifiseres i AARRGGBB hex-format[CR]Et eksempel på [/COLOR][COLOR=ffffffff]Hvit[/COLOR]: FFFFFFFF"
 
 msgctxt "#301176"
-msgid ""
+msgid "Install the ColorPicker addon from the Kodinerds repository to be able to select colors with one click."
 msgstr "Installer ColorPicker-tillegget fra Kodinerds-repositoriet for a kunne velge farger med ett klikk."
 
 msgctxt "#301177"
@@ -1017,7 +1017,7 @@ msgid "Sandy Brown"
 msgstr "Sandy Brown"
 
 msgctxt "#301570"
-msgid "Custom"
+msgid "ColorPicker"
 msgstr "ColorPicker"
 
 msgctxt "#301572"

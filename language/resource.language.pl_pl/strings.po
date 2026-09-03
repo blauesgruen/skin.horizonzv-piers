@@ -1,4 +1,4 @@
-﻿# Kodi Media Center language file
+# Kodi Media Center language file
 # Addon Name: HorizonzV
 # Addon id: skin.horizonzv
 # Addon Provider: blauesgruen
@@ -70,11 +70,11 @@ msgid "Visualisation presets"
 msgstr "Wstępne ustawienia wizualizacji"
 
 msgctxt "#31023"
-msgid "Sortowanie: rosnące"
+msgid "Sort: Ascending"
 msgstr "Sortuj: Ascending"
 
 msgctxt "#31024"
-msgid "Sortowanie: malejąco"
+msgid "Sort: Descending"
 msgstr "Sortuj: Descending"
 
 msgctxt "#31025"
@@ -150,7 +150,7 @@ msgid "Created"
 msgstr "Utworzony"
 
 msgctxt "#31056"
-msgid "Timer set! [COLOR=grey1] - Automatyczne wyłączenie systemu w[/COLOR]"
+msgid "Timer set! [COLOR=grey1] - System auto shutdown in[/COLOR]"
 msgstr "Timer wyłączenia aktywny! [COLOR=grey1] - Czas do wyłączenia:[/COLOR]"
 
 msgctxt "#31057"
@@ -194,7 +194,7 @@ msgid "Local subtitle available"
 msgstr "Dostępne są lokalne napisy"
 
 msgctxt "#31069"
-msgid "Select your Kodi user profile[CR]to login and continue"
+msgid "Select your Kodi user profile to login and continue"
 msgstr "Proszę wybrać swój profil użytkownika Kodi aby kontynuować"
 
 msgctxt "#31072"
@@ -342,15 +342,15 @@ msgid "Shows a slideshow in the background, based on the KODI library.[CR][COLOR
 msgstr "Pokazuje w tle pokaz slajdów, oparty na bibliotece KODI.[CR][COLOR=white]Widoczny w menu głównym pod: Filmy, Seriale i Muzyka[/COLOR]"
 
 msgctxt "#301174"
-msgid "Enable the dimming of background in all areas.[CR][COLOR=white]Possible dimming steps: OFF, LIGHT, MEDIUM, STRONG[/COLOR]"
+msgid "Enables the dimming of the background in all areas.[CR][COLOR=white]Possible dimming steps: OFF, LIGHT, MEDIUM, STRONG.[/COLOR]"
 msgstr "Włącza przyciemnianie tła we wszystkich obszarach.[CR][COLOR=white]Możliwe kroki przyciemniania: OFF, LIGHT, MEDIUM, HEAVY[/COLOR]"
 
 msgctxt "#301175"
-msgid "Choose an accent color that shows up in many areas of the skin.[CR][COLOR=grey]Custom: Colour codes must be specified in AARRGGBB hex format.[CR]An example for [/COLOR][COLOR=ffffff]White[/COLOR]: FFFFFFFF"
+msgid "Choose an accent colour that shows up in many areas of the skin.[CR][COLOR=grey]Custom: Colour codes must be specified in AARRGGBB hex format.[CR]An example for [/COLOR][COLOR=ffffffff]White:[/COLOR] FFFFFFFF"
 msgstr "Wybierz kolor akcentujący, który pojawia się w wielu obszarach skóry.[CR][COLOR=grey]Własny: Kody kolorów muszą być określone w formacie heksadecymalnym AARRGGBB.[CR]Przykład [/COLOR][COLOR=ffffff]White[/COLOR]: FFFFFFFF"
 
 msgctxt "#301176"
-msgid ""
+msgid "Install the ColorPicker addon from the Kodinerds repository to be able to select colors with one click."
 msgstr "Zainstaluj dodatek ColorPicker z repozytorium Kodinerds, aby wybierac kolory jednym kliknieciem."
 
 msgctxt "#301177"
@@ -358,7 +358,7 @@ msgid "Shows the number and total running time of the entries in the database vi
 msgstr "Pokazuje liczbę i całkowity czas działania wpisów w widokach bazy danych."
 
 msgctxt "#301178"
-msgid "Enable an effect of light along the main menu."
+msgid "Enables an effect of light along the main menu."
 msgstr "Włącza efekt światła wzdłuż głównego menu."
 
 msgctxt "#301180"
@@ -386,7 +386,7 @@ msgid "Select between the views Standard, Alternative and Radio.[CR][COLOR=grey]
 msgstr "Wybierz pomiędzy widokami Standardowy, Alternatywny i Radio.\'[CR][COLOR=szary]\'Radio\' jest zawsze używane dla strumieni muzyki online. Ale można je dezaktywować[/COLOR]"
 
 msgctxt "#301194"
-msgid "Select between the views Standard, Alternative and Radio.[CR][COLOR=white]Information: \'Radio\' was disabled[/COLOR]"
+msgid "Select between the views Standard, Alternative and Radio.[CR][COLOR=white]Information: \'Radio\' was disabled.[/COLOR]"
 msgstr "Wybierz pomiędzy widokami Standardowy i Alternatywny.[CR][COLOR=white]Informacja: Radio zostało wyłączone.[/COLOR]"
 
 msgctxt "#301196"
@@ -638,7 +638,7 @@ msgid "Choose your system performance"
 msgstr "wybierz wydajność swojego systemu"
 
 msgctxt "#301366"
-msgid "Mouse pointer"
+msgid "Mousepointer"
 msgstr "wskaźnik myszy"
 
 msgctxt "#301368"
@@ -682,7 +682,7 @@ msgid "Set startup volume"
 msgstr "Ustaw głośność startową"
 
 msgctxt "#301386"
-msgid "Deactivate alphanumeric jumpbar"
+msgid "Dectivate alphanumeric jumpbar"
 msgstr "Dezaktywuj alfanumeryczny pasek skoku"
 
 msgctxt "#301388"
@@ -698,7 +698,7 @@ msgid "Statistic show in mainmenu"
 msgstr "Pokaż statystykę w menu głównym"
 
 msgctxt "#301394"
-msgid "Show favourites window in main menu"
+msgid "Show favorites window in main menu"
 msgstr "pokaż okno ulubionych w menu głównym"
 
 msgctxt "#301396"
@@ -750,7 +750,7 @@ msgid "Background theme"
 msgstr "Motyw tła"
 
 msgctxt "#301424"
-msgid "Structure in mainmenu"
+msgid "Structur in mainmenu"
 msgstr "Struktura w menu głównym"
 
 msgctxt "#301426"
@@ -886,7 +886,7 @@ msgid "forecast"
 msgstr "Prognoza"
 
 msgctxt "#301498"
-msgid "Set the position of each my menu fixed points.[CR]Using position numbers from 1 - 22."
+msgid "Set the position of each mein menu fixed points.[CR]Using position numbers from 1 - 22."
 msgstr "Ustaw tutaj pozycję każdego z punktów stałych menu mein.[CR]Używając numerów pozycji od 1 - 22."
 
 msgctxt "#301500"
@@ -894,7 +894,7 @@ msgid "go directly to video files"
 msgstr "przejdź bezpośrednio do plików wideo"
 
 msgctxt "#301502"
-msgid "show profile name"
+msgid "Show profil name"
 msgstr "pokaż nazwę profilu"
 
 msgctxt "#301504"
@@ -1022,7 +1022,7 @@ msgid "Sandy Brown"
 msgstr "Sandy Brown"
 
 msgctxt "#301570"
-msgid "Custom"
+msgid "ColorPicker"
 msgstr "ColorPicker"
 
 msgctxt "#301572"
@@ -1162,11 +1162,11 @@ msgid "System CPU usage"
 msgstr "Użycie procesora"
 
 msgctxt "#31611"
-msgid ""
+msgid "Code line"
 msgstr "Linia kodu"
 
 msgctxt "#31613"
-msgid ""
+msgid "enter the category of the playlist here ..."
 msgstr "Wprowadź tutaj kategorię listy odtwarzania ..."
 
 msgctxt "#35500"

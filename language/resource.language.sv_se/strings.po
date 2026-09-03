@@ -1,4 +1,4 @@
-﻿# Kodi Media Center language file
+# Kodi Media Center language file
 # Addon Name: HorizonzV
 # Addon id: skin.horizonzv
 # Addon Provider: blauesgruen
@@ -18,1113 +18,1113 @@ msgstr ""
 "X-Generator: Weblate 4.11.2\n"
 
 msgctxt "#31000"
-msgid ""
+msgid "Power options"
 msgstr "Energiinställningar"
 
 msgctxt "#31002"
-msgid ""
+msgid "View options"
 msgstr "Visa inställningar"
 
 msgctxt "#31003"
-msgid ""
+msgid "Total duration"
 msgstr "Total varaktighet"
 
 msgctxt "#31005"
-msgid ""
+msgid "Misc options"
 msgstr "Andra inställningar"
 
 msgctxt "#31007"
-msgid ""
+msgid "Playing"
 msgstr "Den körs"
 
 msgctxt "#31008"
-msgid ""
+msgid "Page"
 msgstr "Sida"
 
 msgctxt "#31009"
-msgid ""
+msgid "Items"
 msgstr "Inkomster"
 
 msgctxt "#31012"
-msgid ""
+msgid "Memory used"
 msgstr "Minnesanvändning"
 
 msgctxt "#31013"
-msgid ""
+msgid "Pic thumbs"
 msgstr "Miniatyrbilder"
 
 msgctxt "#31014"
-msgid ""
+msgid "Order"
 msgstr "order"
 
 msgctxt "#31016"
-msgid ""
+msgid "Extended info"
 msgstr "Utökad information"
 
 msgctxt "#31017"
-msgid ""
+msgid "PLAYING"
 msgstr "DET KÖR"
 
 msgctxt "#31022"
-msgid ""
+msgid "Visualisation presets"
 msgstr "Visualiseringsinställningar"
 
 msgctxt "#31023"
-msgid ""
+msgid "Sort: Ascending"
 msgstr "Sortera: Uppstigande"
 
 msgctxt "#31024"
-msgid ""
+msgid "Sort: Descending"
 msgstr "Sortera: Nedåtgående"
 
 msgctxt "#31025"
-msgid ""
+msgid "Open playlist"
 msgstr "Öppna spellista"
 
 msgctxt "#31026"
-msgid ""
+msgid "Save playlist"
 msgstr "Spara spellista"
 
 msgctxt "#31027"
-msgid ""
+msgid "Close playlist"
 msgstr "Stäng spellistan"
 
 msgctxt "#31032"
-msgid ""
+msgid "Current selected"
 msgstr "För närvarande vald"
 
 msgctxt "#31033"
-msgid ""
+msgid "Search trailer"
 msgstr "Sök trailer"
 
 msgctxt "#31035"
-msgid ""
+msgid "Search YouTube"
 msgstr "Sök på YouTube"
 
 msgctxt "#31036"
-msgid ""
+msgid "Same director"
 msgstr "Regissörens filmer"
 
 msgctxt "#31043"
-msgid ""
+msgid "Choose your song"
 msgstr "Välj låt"
 
 msgctxt "#31044"
-msgid ""
+msgid "Lyrics source"
 msgstr "Textkälla"
 
 msgctxt "#31046"
-msgid ""
+msgid "Data provider"
 msgstr "Källa"
 
 msgctxt "#31047"
-msgid ""
+msgid "Hide fanart"
 msgstr "Dölj fanart"
 
 msgctxt "#31048"
-msgid ""
+msgid "Memory used:"
 msgstr "Minnesförbrukning:"
 
 msgctxt "#31049"
-msgid ""
+msgid "Track number"
 msgstr "Titelnummer."
 
 msgctxt "#31050"
-msgid ""
+msgid "Selected profile"
 msgstr "Välj profil"
 
 msgctxt "#31051"
-msgid ""
+msgid "Last logged in"
 msgstr "Senast inloggad"
 
 msgctxt "#31052"
-msgid ""
+msgid "Aired"
 msgstr "Utsänd"
 
 msgctxt "#31053"
-msgid ""
+msgid "Playlist options"
 msgstr "Inställningar för spellistor"
 
 msgctxt "#31054"
-msgid ""
+msgid "Created"
 msgstr "Skapad"
 
 msgctxt "#31056"
-msgid ""
+msgid "Timer set! [COLOR=grey1] - System auto shutdown in[/COLOR]"
 msgstr "Avstängningstimer aktiv! [COLOR=grey1] - Tid till avstängning:[/COLOR]"
 
 msgctxt "#31057"
-msgid ""
+msgid "Click button to play[CR][CR]movie trailer"
 msgstr "Klicka på knappen för att spela upp[CR][CR]filmtrailer"
 
 msgctxt "#31059"
-msgid ""
+msgid "Stop"
 msgstr "Stopp"
 
 msgctxt "#31060"
-msgid ""
+msgid "Fast forward"
 msgstr "Snabb framåt"
 
 msgctxt "#31061"
-msgid ""
+msgid "Rewind"
 msgstr "Spola tillbaka"
 
 msgctxt "#31062"
-msgid ""
+msgid "Movie menu"
 msgstr "Filmmeny"
 
 msgctxt "#31063"
-msgid ""
+msgid "Download subtitles"
 msgstr "Ladda ner undertexter"
 
 msgctxt "#31064"
-msgid ""
+msgid "Watch as 2D"
 msgstr "Visa i 2D"
 
 msgctxt "#31065"
-msgid ""
+msgid "Change mode"
 msgstr "Ändra läge"
 
 msgctxt "#31067"
-msgid ""
+msgid "Playlist at startup"
 msgstr "Egen spellista vid start"
 
 msgctxt "#31068"
-msgid ""
+msgid "Local subtitle available"
 msgstr "Lokal undertext tillgänglig"
 
 msgctxt "#31069"
-msgid ""
+msgid "Select your Kodi user profile to login and continue"
 msgstr "Välj Kodi användarprofil för att fortsätta."
 
 msgctxt "#31072"
-msgid ""
+msgid "Add group"
 msgstr "Lägg till grupp"
 
 msgctxt "#31073"
-msgid ""
+msgid "Rename group"
 msgstr "Byt namn på grupp"
 
 msgctxt "#31074"
-msgid ""
+msgid "Delete group"
 msgstr "Ta bort grupp"
 
 msgctxt "#31075"
-msgid ""
+msgid "Available[CR]Groups"
 msgstr "Tillgängliga[CR]grupper"
 
 msgctxt "#31076"
-msgid ""
+msgid "Timer set"
 msgstr "Timer aktiverad"
 
 msgctxt "#31077"
-msgid ""
+msgid "Channel options"
 msgstr "Kanalinställningar"
 
 msgctxt "#31078"
-msgid ""
+msgid "36-hour forecast"
 msgstr "36-timmarsprognos"
 
 msgctxt "#31079"
-msgid ""
+msgid "Hourly forecast"
 msgstr "Prognos per timme"
 
 msgctxt "#31080"
-msgid ""
+msgid "Weekend forecast"
 msgstr "Helgprognos"
 
 msgctxt "#31081"
-msgid ""
+msgid "Daily forecast"
 msgstr "Daglig prognos"
 
 msgctxt "#31083"
-msgid ""
+msgid "Fetching forecast info..."
 msgstr "Prognosdata hämtas..."
 
 # Horizonz
 
 msgctxt "#301126"
-msgid ""
+msgid "Activates background video in the main menu."
 msgstr "Aktiverar bakgrundsvideo i huvudmenyn."
 
 msgctxt "#301132"
-msgid ""
+msgid "Select the country for the age rating (defined in the scrapper).[CR]Supported are DE, US, UK, FR.[CR]If only US ratings are available, these are displayed."
 msgstr "Välj land för åldersklassificering (definierat i scrapper).[CR]Följande länder stöds: DE, US, UK, FR.[CR]Om endast amerikanska klassificeringar finns tillgängliga kommer de att visas."
 
 msgctxt "#301134"
-msgid ""
+msgid "Trailer are directly displayed in the movie information or in fullscreen mode."
 msgstr "Trailers visas direkt i filminformationen eller i helskärm."
 
 msgctxt "#301135"
-msgid ""
+msgid "If a visualization is selected for music playback, it will also be displayed in the main menu."
 msgstr "Om en visualisering är vald för musikuppspelning visas den också i huvudmenyn."
 
 msgctxt "#301136"
-msgid ""
+msgid "Displays playlist of the next 9 titles in main menu and in fullscreen mode."
 msgstr "Visar en spellista med de 9 följande spåren i huvudmenyn och på helskärm."
 
 msgctxt "#301140"
-msgid ""
+msgid "Define the volume in percent, which will be played on any start of KODI.[CR]Quote a figure between 0 and 100."
 msgstr "Ställ in volymen i procent som ska spelas upp varje gång KODI startas.[CR]Ange ett tal från 0 - 100."
 
 msgctxt "#301142"
-msgid ""
+msgid "Disable alphanumeric jump list in SMS style.[CR][COLOR=grey]Imported from the skin \'Alaska\'[/COLOR]."
 msgstr "Inaktiverar alfanumerisk hopplista i SMS-stil.[CR][COLOR=grey]Importerad från skin \'Alaska.\'[/COLOR]"
 
 msgctxt "#301143"
-msgid ""
+msgid "To use this function you need the addon \'Skinhelper Ping\' by _Andy_/PvD.[CR][COLOR=white]It can be installed here under Addons or via the Kodinerds Repo[/COLOR]."
 msgstr "För att använda den här funktionen krävs tillägget \'Skinhelper Ping\' av _Andy_/PvD.[CR][COLOR=grey]Det kan installeras här under Addons eller via Kodinerds Repo.[/COLOR]"
 
 msgctxt "#301144"
-msgid ""
+msgid "Starts the selected playlist after starting KODI."
 msgstr "Startar den valda spellistan efter att du startat KODI."
 
 msgctxt "#301145"
-msgid ""
+msgid "To use this function, the addon \'Global Search\' from the official repository is required."
 msgstr "För att använda den här funktionen krävs tillägget \'Global Search\' från det officiella arkivet."
 
 msgctxt "#301146"
-msgid ""
+msgid "Shows a small statistic about the database entries in the lower right corner of the main menu."
 msgstr "Visar en liten statistik om databasposterna längst ner till höger i huvudmenyn."
 
 msgctxt "#301147"
-msgid ""
+msgid "Shows the favourites below the main menu instead of directly the \'Central\'. [CR]These are otherwise accessible via the \'Central\'."
 msgstr "Visar favoriterna under huvudmenyn istället för direkt i \'Central\'.[CR]Dessa kan annars nås via \'Central\'."
 
 msgctxt "#301148"
-msgid ""
+msgid "Hides the \'Central\' located below the main menu."
 msgstr "Döljer \'Central\' under huvudmenyn."
 
 msgctxt "#301150"
-msgid ""
+msgid "Activates an icon in the upper right corner that shows the battery's charge status.[CR][COLOR=white]An incorrect display occurs on computers without a battery.[/COLOR]"
 msgstr "Aktiverar en ikon i det övre högra hörnet som visar batteriets laddningsstatus.[CR][COLOR=white]Felaktig visning förekommer på datorer utan batteri.[/COLOR]"
 
 msgctxt "#301151"
-msgid ""
+msgid "The settings for the widget are in the respective submenu of the main menus."
 msgstr "Inställningarna för widgeten finns i respektive undermeny i huvudmenyn."
 
 msgctxt "#301152"
-msgid ""
+msgid "Dims all unfocused covers."
 msgstr "Dämpar alla icke-fokuserade omslag."
 
 msgctxt "#301153"
-msgid ""
+msgid "Hides the green progress bar on the covers."
 msgstr "Döljer den gröna förloppsindikatorn på omslag."
 
 msgctxt "#301166"
-msgid ""
+msgid "This skin contains various animation effects.[CR]With this switch you can deactivate them. Instead, a simple fade effect is used.[CR]This can lead to better performance on slow systems."
 msgstr "Den här huden innehåller olika animationseffekter.[CR]Använd den här knappen för att inaktivera dem. En enkel blekningseffekt används istället.[CR]Detta kan ge bättre prestanda på långsamma system."
 
 msgctxt "#301168"
-msgid ""
+msgid "Displays in the upper left corner, where you are."
 msgstr "Visar var du befinner dig i det övre vänstra hörnet."
 
 msgctxt "#301169"
-msgid ""
+msgid "Hides the date display in the upper right corner."
 msgstr "Döljer datumvisningen i det övre högra hörnet."
 
 msgctxt "#301170"
-msgid ""
+msgid "Activates fanart in all areas."
 msgstr "Aktiverar fanart i alla områden."
 
 msgctxt "#301171"
-msgid ""
+msgid "Disables changing background pictures.[CR]Select an own picture or path."
 msgstr "Inaktiverar ändring av bakgrundsbilder.[CR][COLOR=white]Välj din egen bild eller sökväg.[/COLOR]"
 
 msgctxt "#301172"
-msgid ""
+msgid "Select a picture. If no pictures is chosen, a standard picture will be displayed.[CR][COLOR=white]Click again for deleting.[/COLOR]"
 msgstr "Välj en bild här.[CR]Om ingen bild anges visas en standardbild.[CR][COLOR=white]Klicka igen för att ta bort den.[/COLOR]"
 
 msgctxt "#301173"
-msgid ""
+msgid "Shows a slideshow in the background, based on the KODI library.[CR][COLOR=white]Visible in the main menu under: Movies, Series and Music.[/COLOR]"
 msgstr "Visar ett bildspel i bakgrunden, baserat på KODI-biblioteket.[CR][COLOR=white]Synlig i huvudmenyn under: Filmer, serier och musik.[/COLOR]"
 
 msgctxt "#301174"
-msgid ""
+msgid "Enables the dimming of the background in all areas.[CR][COLOR=white]Possible dimming steps: OFF, LIGHT, MEDIUM, STRONG.[/COLOR]"
 msgstr "Aktiverar mörkare bakgrund i alla områden.[CR][COLOR=white]Möjliga mörkare nivåer: AV, LÄTT, MEDEL, TUNG.[/COLOR]"
 
 msgctxt "#301175"
-msgid ""
+msgid "Choose an accent colour that shows up in many areas of the skin.[CR][COLOR=grey]Custom: Colour codes must be specified in AARRGGBB hex format.[CR]An example for [/COLOR][COLOR=ffffffff]White:[/COLOR] FFFFFFFF"
 msgstr "Välj en accentfärg som syns på många ställen i huden.[CR][COLOR=grey]Anpassad: Färgkoder måste anges i hexformat AARRGGBB.[CR]Ett exempel på [/COLOR][COLOR=ffffffffffffff]White[/COLOR]: FFFFFFFFFF"
 
 msgctxt "#301176"
-msgid ""
+msgid "Install the ColorPicker addon from the Kodinerds repository to be able to select colors with one click."
 msgstr "Installera tillagget ColorPicker fran Kodinerds-repot for att kunna valja farger med ett klick."
 
 msgctxt "#301177"
-msgid ""
+msgid "Shows the number and total running time of the entries in the database views."
 msgstr "I databasvyer visas antal och total körtid för poster."
 
 msgctxt "#301178"
-msgid ""
+msgid "Enables an effect of light along the main menu."
 msgstr "Aktiverar en ljuseffekt längs huvudmenyn."
 
 msgctxt "#301180"
-msgid ""
+msgid "Select one of the background themes. It strongly changes the overall impression of the main menu.[CR][COLOR=white]Will be deactivated as soon as \'only one background image\' is active.[/COLOR][COLOR=grey][CR]The theme \'Gambit\' has the advantage that it provides better performance on weaker systems.[CR]This theme was kindly provided by \'G4mbit\' from the KODINERDS forum.[/COLOR]"
 msgstr "Välj ett av bakgrundstemana. Det ändrar starkt helhetsintrycket av huvudmenyn.[CR][COLOR=white]Kommer att avaktiveras så snart \'endast en bakgrundsbild\' är aktiv.[/COLOR][COLOR=grey][CR]Temat \'Gambit\' har fördelen att det ger bättre prestanda på svagare system.[CR]Detta tema har vänligen tillhandahållits av \'G4mbit\' från KODINERDS-forumet.[/COLOR]"
 
 msgctxt "#301184"
-msgid ""
+msgid "Places a structure over the background image."
 msgstr "Lägger en textur över bakgrundsbilden."
 
 msgctxt "#301186"
-msgid ""
+msgid "The player controls are displayed on the left side under the mainmenu during the playing mode."
 msgstr "Visar spelarens kontroller under uppspelning till vänster, under huvudmenyn."
 
 msgctxt "#301188"
-msgid ""
+msgid "Shows in the upper left corner of the current weather."
 msgstr "Visar det aktuella vädret i det övre vänstra hörnet."
 
 msgctxt "#301190"
-msgid ""
+msgid "It is possible to disable \'Radio\', which is one of 3 views during the playing mode in full screen."
 msgstr "\'Radio\', en av tre vyer under uppspelning på helskärm, kan avaktiveras här."
 
 msgctxt "#301192"
-msgid ""
+msgid "Select between the views Standard, Alternative and Radio.[CR][COLOR=grey]\'Radio\' is always used for online music streams. It is possible to disable it.[/COLOR]"
 msgstr "Välj mellan vyerna Standard, Alternativ och Radio.[CR][COLOR=grey]\'Radio\' används alltid för musikströmmar online. Men kan avaktiveras.[/COLOR]"
 
 msgctxt "#301194"
-msgid ""
+msgid "Select between the views Standard, Alternative and Radio.[CR][COLOR=white]Information: \'Radio\' was disabled.[/COLOR]"
 msgstr "Välj mellan standard- och alternativvyer.[CR][COLOR=white]Info: Radio har inaktiverats.[/COLOR]"
 
 msgctxt "#301196"
-msgid ""
+msgid "Displays basic track information in full screen during music playback in the lower left corner.[CR][COLOR=whithe]Visible when OSD is not visible[/COLOR]."
 msgstr "Visar grundläggande spårinformation i helskärm när du spelar musik i det nedre vänstra hörnet.[CR][COLOR=whithe]Synlig när OSD inte är synligt.[/COLOR]"
 
 msgctxt "#301198"
-msgid ""
+msgid "Displays a discreet narrow variation of the screen in \'pause\'."
 msgstr "Visar en diskret, smal version av pausskärmen."
 
 msgctxt "#301200"
-msgid ""
+msgid "Information like chapter, subtitle, current time bar etc. are not displayed.[CR][COLOR=grey]Studio logos and extra arts are faded out.[/COLOR]"
 msgstr "Ingen information som kapitel, undertexter, tidslinjer etc. visas.[CR][COLOR=grey]Studiologos och Extra Arts är också dolda.[/COLOR]"
 
 msgctxt "#301202"
-msgid ""
+msgid "Show all available movie & series artworks.[CR][COLOR=white]Since Kodi 19 artworks are loaded with the scrapper \'The Movie Database PYTHON\'.[/COLOR][COLOR=grey][CR]\'Artwork Beef\' or a similar addon can still be used.[/COLOR]"
 msgstr "Visa alla tillgängliga konstverk för filmer och serier.[CR][COLOR=white]Eftersom Kodi 19 konstverk laddas med skrapan \'The Movie Database PYTHON\'.[/COLOR][COLOR=grey][CR]\'Artwork Beef\' eller ett liknande tillägg kan dock fortfarande användas.[/COLOR]"
 
 msgctxt "#301204"
-msgid ""
+msgid "Select the appearance of the CD here if no CDArt is found.[CR][COLOR=white]CDArts must be available in a folder. This is specified in the system settings (Media->Music).[/COLOR]"
 msgstr "Välj hur CD-skivan ska se ut här om ingen CDArt hittas.[CR][COLOR=white]CDArts måste vara färdiga i en mapp. Du anger detta i systeminställningarna (Media->Musik).[/COLOR]"
 
 msgctxt "#301210"
-msgid ""
+msgid "Enables all PVR available artwork.[CR][COLOR=white]\'Skin Helper Service\' is required.[/COLOR]"
 msgstr "Aktiverar alla tillgängliga PVR-konstverk.[CR][COLOR=white]\'Skin Helper Service\' krävs.[/COLOR]"
 
 msgctxt "#301218"
-msgid ""
+msgid "Select a background picture."
 msgstr "Välj en bakgrundsbild"
 
 msgctxt "#301240"
-msgid ""
+msgid "Reset"
 msgstr "Återställning"
 
 msgctxt "#301244"
-msgid ""
+msgid "Defines the default for this skin.[CR]This refers only to customized options."
 msgstr "Ställer in standardinställningen för det här skalet.[CR]Endast anpassade inställningar påverkas."
 
 msgctxt "#301246"
-msgid ""
+msgid "Weak"
 msgstr "Svag"
 
 msgctxt "#301248"
-msgid ""
+msgid "Medium"
 msgstr "Medium"
 
 msgctxt "#301250"
-msgid ""
+msgid "Fast"
 msgstr "Snabbt"
 
 msgctxt "#301268"
-msgid ""
+msgid "[UPPERCASE]Skin settings reset ?[/UPPERCASE]"
 msgstr "[UPPERCASE]Återställ hudinställningar ?[/UPPERCASE]"
 
 msgctxt "#301270"
-msgid ""
+msgid "Cover"
 msgstr "Täckning"
 
 msgctxt "#301272"
-msgid ""
+msgid "no defined favourites"
 msgstr "Inga favoriter tillgängliga"
 
 msgctxt "#301274"
-msgid ""
+msgid "[B]KODI SUBTITLES[/B]"
 msgstr "[B]KODI SUBTITLE[/B]"
 
 msgctxt "#301276"
-msgid ""
+msgid "Sidepanel"
 msgstr "sidpanel"
 
 msgctxt "#301278"
-msgid ""
+msgid "Set Information"
 msgstr "Ange information"
 
 msgctxt "#301280"
-msgid ""
+msgid "Concerts"
 msgstr "Konserter"
 
 msgctxt "#301282"
-msgid ""
+msgid "Language (age rating)"
 msgstr "Språk (åldersbedömning)"
 
 msgctxt "#301284"
-msgid ""
+msgid "Flags in text form"
 msgstr "Flaggor i textform"
 
 msgctxt "#301286"
-msgid ""
+msgid "Dim background"
 msgstr "Dim bakgrund"
 
 msgctxt "#301288"
-msgid ""
+msgid "Page Count"
 msgstr "Sidräknare"
 
 msgctxt "#301290"
-msgid ""
+msgid "Cases"
 msgstr "Kuvert"
 
 msgctxt "#301292"
-msgid ""
+msgid "Hide big cover"
 msgstr "Dölj stort omslag"
 
 msgctxt "#301294"
-msgid ""
+msgid "Logo in place title"
 msgstr "Logotyp istället för titel"
 
 msgctxt "#301296"
-msgid ""
+msgid "Information"
 msgstr "Information"
 
 msgctxt "#301300"
-msgid ""
+msgid "Hide \'NEW\' Logo"
 msgstr "Dölj \'NEW\'-ikonen"
 
 msgctxt "#301302"
-msgid ""
+msgid "Dusteffect (case)"
 msgstr "Dammeffekt (kuvert)"
 
 msgctxt "#301304"
-msgid ""
+msgid "Disable Cover animations"
 msgstr "Inaktivera omslagsanimation"
 
 msgctxt "#301306"
-msgid ""
+msgid "Dim cover"
 msgstr "Dim cover"
 
 msgctxt "#301308"
-msgid ""
+msgid "List"
 msgstr "Lista"
 
 msgctxt "#301310"
-msgid ""
+msgid "Info List"
 msgstr "Info List"
 
 msgctxt "#301312"
-msgid ""
+msgid "Thumbview"
 msgstr "Thumbview"
 
 msgctxt "#301314"
-msgid ""
+msgid "Banner"
 msgstr "Banner"
 
 msgctxt "#301316"
-msgid ""
+msgid "Showcase"
 msgstr "Showcase"
 
 msgctxt "#301318"
-msgid ""
+msgid "Perspective"
 msgstr "Perspektiv"
 
 msgctxt "#301320"
-msgid ""
+msgid "Disc Flow"
 msgstr "Skivflöde"
 
 msgctxt "#301322"
-msgid ""
+msgid "Rightlist"
 msgstr "Rightlist"
 
 msgctxt "#301324"
-msgid ""
+msgid "Cover Wall (fullsize)"
 msgstr "Täcka väggen (helskärm)"
 
 msgctxt "#301326"
-msgid ""
+msgid "Cover Wall"
 msgstr "Täckvägg"
 
 msgctxt "#301328"
-msgid ""
+msgid "Picture wall"
 msgstr "Täckvägg"
 
 msgctxt "#301330"
-msgid ""
+msgid "Disable radio view"
 msgstr "Inaktivera radiovyn"
 
 msgctxt "#301331"
-msgid ""
+msgid " - Disable TV Wall"
 msgstr " - Inaktivera TV Wall"
 
 msgctxt "#301332"
-msgid ""
+msgid "Music visualisation"
 msgstr "Musikvisualisering"
 
 msgctxt "#301334"
-msgid ""
+msgid "Music extra arts"
 msgstr "Music Extra Arts"
 
 msgctxt "#301336"
-msgid ""
+msgid "Date display"
 msgstr "Datumvisning"
 
 msgctxt "#301338"
-msgid ""
+msgid "Button description"
 msgstr "Nyckelbeskrivning"
 
 msgctxt "#301340"
-msgid ""
+msgid "Information panel"
 msgstr "Infopanel"
 
 msgctxt "#301344"
-msgid ""
+msgid "back"
 msgstr "tillbaka"
 
 msgctxt "#301346"
-msgid ""
+msgid "Mainmenu buttons"
 msgstr "knappar i huvudmenyn"
 
 msgctxt "#301348"
-msgid ""
+msgid "Submenu buttons"
 msgstr "Undermenyknappar"
 
 msgctxt "#301350"
-msgid ""
+msgid "Functions"
 msgstr "Funktioner"
 
 msgctxt "#301351"
-msgid ""
+msgid "Widgets"
 msgstr "Widgetar"
 
 msgctxt "#301352"
-msgid ""
+msgid "Design / Performance"
 msgstr "Design / prestanda"
 
 msgctxt "#301354"
-msgid ""
+msgid "Extra arts"
 msgstr "Extra Arts"
 
 msgctxt "#301356"
-msgid ""
+msgid "Admin"
 msgstr "Admin"
 
 msgctxt "#301357"
-msgid ""
+msgid "Shutdown Menu"
 msgstr "Meny för avstängning"
 
 msgctxt "#301358"
-msgid ""
+msgid "Enable debug grid"
 msgstr "Aktivera rutnät"
 
 msgctxt "#301360"
-msgid ""
+msgid "Debug Information"
 msgstr "Information om felsökning"
 
 msgctxt "#301362"
-msgid ""
+msgid "Enable First start"
 msgstr "Aktivera första start"
 
 msgctxt "#301364"
-msgid ""
+msgid "Choose your system performance"
 msgstr "välj din systemprestanda"
 
 msgctxt "#301366"
-msgid ""
+msgid "Mousepointer"
 msgstr "muspekare"
 
 msgctxt "#301368"
-msgid ""
+msgid "Set positions"
 msgstr "Ställ in positioner"
 
 msgctxt "#301370"
-msgid ""
+msgid "Move focus"
 msgstr "Flytta fokus"
 
 msgctxt "#301371"
-msgid ""
+msgid "Dashboard"
 msgstr "Kontrollpanel"
 
 msgctxt "#301372"
-msgid ""
+msgid "Auto-hide the mainmenu"
 msgstr "Dölj huvudmenyn automatiskt"
 
 msgctxt "#301374"
-msgid ""
+msgid "Time to hide"
 msgstr "Tid tills gömma sig"
 
 msgctxt "#301376"
-msgid ""
+msgid "Background video"
 msgstr "Bakgrundsvideo"
 
 msgctxt "#301378"
-msgid ""
+msgid "Choose the country for age rating"
 msgstr "Välj land för åldersbedömning"
 
 msgctxt "#301380"
-msgid ""
+msgid "Play trailer in fullscreen"
 msgstr "Spela INTE upp trailern i fönstret"
 
 msgctxt "#301382"
-msgid ""
+msgid "Next track playlist"
 msgstr "Nästa spår spellista"
 
 msgctxt "#301384"
-msgid ""
+msgid "Set startup volume"
 msgstr "Ställ in startvolym"
 
 msgctxt "#301386"
-msgid ""
+msgid "Dectivate alphanumeric jumpbar"
 msgstr "Inaktivera alfanumerisk hoppbar"
 
 msgctxt "#301388"
-msgid ""
+msgid "Hide wake on lan switch in \'Central\'"
 msgstr "Dölj Wake on Lan-symbolen i \'Huvudkontor\'"
 
 msgctxt "#301390"
-msgid ""
+msgid "Globalsearch in contextmenu"
 msgstr "Global sökning i kontextmenyn"
 
 msgctxt "#301392"
-msgid ""
+msgid "Statistic show in mainmenu"
 msgstr "Visa statistik i huvudmenyn"
 
 msgctxt "#301394"
-msgid ""
+msgid "Show favorites window in main menu"
 msgstr "visa favoritfönstret i huvudmenyn"
 
 msgctxt "#301396"
-msgid ""
+msgid "Disable \'Central\'"
 msgstr "\'inaktivera central\'\'"
 
 msgctxt "#301389"
-msgid ""
+msgid "- Path"
 msgstr "- Mapp"
 
 msgctxt "#301400"
-msgid ""
+msgid "Disc"
 msgstr "Disk"
 
 msgctxt "#301402"
-msgid ""
+msgid "Animations (high cpu load)"
 msgstr "Animationer (hög CPU-belastning)"
 
 msgctxt "#301404"
-msgid ""
+msgid "Navigation information"
 msgstr "Navigationsinformation"
 
 msgctxt "#301406"
-msgid ""
+msgid "Small Weather-Information"
 msgstr "Information om småväder"
 
 msgctxt "#301408"
-msgid ""
+msgid "Hide date display"
 msgstr "Dölj datumvisning"
 
 msgctxt "#301410"
-msgid ""
+msgid "Just a background image"
 msgstr "Endast en bakgrundsbild"
 
 msgctxt "#301412"
-msgid ""
+msgid "- Picture / Path"
 msgstr "- bild/sökväg"
 
 msgctxt "#301414"
-msgid ""
+msgid "- Slideshow instead of image"
 msgstr "- Bildspel istället för stillbild"
 
 msgctxt "#301416"
-msgid ""
+msgid "Color Accents"
 msgstr "Färgaccenter"
 
 msgctxt "#301418"
-msgid ""
+msgid "Background theme"
 msgstr "bakgrundstema"
 
 msgctxt "#301424"
-msgid ""
+msgid "Structur in mainmenu"
 msgstr "Struktur i huvudmenyn"
 
 msgctxt "#301426"
-msgid ""
+msgid "Player Controls"
 msgstr "Spelarkontroller"
 
 msgctxt "#301428"
-msgid ""
+msgid "Weather fanarts"
 msgstr "Väder Fanarts"
 
 msgctxt "#301430"
-msgid ""
+msgid "Lightweight version of the break screen"
 msgstr "Ljus version av pausskärmen"
 
 msgctxt "#301432"
-msgid ""
+msgid "Hide video details"
 msgstr "döljer videodetaljer"
 
 msgctxt "#301434"
-msgid ""
+msgid "CD Style"
 msgstr "CD-stil"
 
 msgctxt "#301436"
-msgid ""
+msgid "hear"
 msgstr "lyssna"
 
 msgctxt "#301438"
-msgid ""
+msgid "manage your"
 msgstr "hantera din"
 
 msgctxt "#301440"
-msgid ""
+msgid "experience your"
 msgstr "erfarenhet din"
 
 msgctxt "#301442"
-msgid ""
+msgid "check out the"
 msgstr "utforska din"
 
 msgctxt "#301444"
-msgid ""
+msgid "let them rotate"
 msgstr "låt den rotera"
 
 msgctxt "#301446"
-msgid ""
+msgid "go to"
 msgstr "gå till"
 
 msgctxt "#301448"
-msgid ""
+msgid "change your"
 msgstr "ändra din"
 
 msgctxt "#301456"
-msgid ""
+msgid "Glass"
 msgstr "glas"
 
 msgctxt "#301458"
-msgid ""
+msgid "Blank"
 msgstr "blank"
 
 msgctxt "#301460"
-msgid ""
+msgid "low"
 msgstr "ljus"
 
 msgctxt "#301462"
-msgid ""
+msgid "medium"
 msgstr "medium"
 
 msgctxt "#301464"
-msgid ""
+msgid "strongly"
 msgstr "strong"
 
 msgctxt "#301466"
-msgid ""
+msgid "Central"
 msgstr "central"
 
 msgctxt "#301468"
-msgid ""
+msgid "other/unknown"
 msgstr "annan/okänd"
 
 msgctxt "#301470"
-msgid ""
+msgid "Moviedrama"
 msgstr "filmdrama"
 
 msgctxt "#301472"
-msgid ""
+msgid "News"
 msgstr "Nyheter"
 
 msgctxt "#301474"
-msgid ""
+msgid "Show"
 msgstr "Visa"
 
 msgctxt "#301476"
-msgid ""
+msgid "Sports"
 msgstr "Sport"
 
 msgctxt "#301478"
-msgid ""
+msgid "Child"
 msgstr "Barn"
 
 msgctxt "#301480"
-msgid ""
+msgid "Music"
 msgstr "musik"
 
 msgctxt "#301482"
-msgid ""
+msgid "Arts"
 msgstr "Konst"
 
 msgctxt "#301484"
-msgid ""
+msgid "Social"
 msgstr "Företag"
 
 msgctxt "#301486"
-msgid ""
+msgid "Science"
 msgstr "Vetenskap"
 
 msgctxt "#301488"
-msgid ""
+msgid "Special"
 msgstr "Special"
 
 msgctxt "#301490"
-msgid ""
+msgid "Hobby"
 msgstr "Hobby"
 
 msgctxt "#301492"
-msgid ""
+msgid "download artwork"
 msgstr "ladda konstverk"
 
 msgctxt "#301494"
-msgid ""
+msgid "Recently added TVShows"
 msgstr "Nyligen tillagd TV-serie"
 
 msgctxt "#301496"
-msgid ""
+msgid "forecast"
 msgstr "Prognos"
 
 msgctxt "#301498"
-msgid ""
+msgid "Set the position of each mein menu fixed points.[CR]Using position numbers from 1 - 22."
 msgstr "Ställ in positionen för varje huvudmenyalternativ här.[CR]Använd nummer från 1 till 22."
 
 msgctxt "#301500"
-msgid ""
+msgid "go directly to video files"
 msgstr "hoppa direkt till videofiler"
 
 msgctxt "#301502"
-msgid ""
+msgid "Show profil name"
 msgstr "visa profilnamn"
 
 msgctxt "#301504"
-msgid ""
+msgid "Kodi runs:"
 msgstr "Kodi körs:"
 
 msgctxt "#301506"
-msgid ""
+msgid "<"
 msgstr "<"
 
 msgctxt "#301508"
-msgid ""
+msgid "<<"
 msgstr "<<"
 
 msgctxt "#301510"
-msgid ""
+msgid "Studio symbols ..."
 msgstr "Studiosymboler ..."
 
 msgctxt "#301512"
-msgid ""
+msgid "Genre icons ..."
 msgstr "Genresymboler ..."
 
 msgctxt "#301514"
-msgid ""
+msgid "Weather icons ..."
 msgstr "Väderleksymboler ..."
 
 msgctxt "#301516"
-msgid ""
+msgid "Weather fanart ..."
 msgstr "Väder fanart ..."
 
 msgctxt "#301520"
-msgid ""
+msgid "In order to set an Timer the \'KN Switcher Service\' is required. Download via Kodinerds repository."
 msgstr "För att ställa in en växeltidsklocka krävs \'KN Switcher Service\'. Nedladdning via Kodinerds arkiv."
 
 msgctxt "#301522"
-msgid ""
+msgid "delete all timers"
 msgstr "radera alla timers"
 
 msgctxt "#301524"
-msgid ""
+msgid "delete"
 msgstr "ta bort"
 
 msgctxt "#301526"
-msgid ""
+msgid "administration"
 msgstr "hantera"
 
 msgctxt "#301528"
-msgid ""
+msgid "Switchtimer"
 msgstr "växla timer"
 
 msgctxt "#301530"
-msgid ""
+msgid "Timer overview"
 msgstr "Översikt över timer"
 
 msgctxt "#301532"
-msgid ""
+msgid "Today"
 msgstr "Idag"
 
 msgctxt "#301534"
-msgid ""
+msgid "Enable"
 msgstr "Visa"
 
 msgctxt "#301536"
-msgid ""
+msgid "Channels"
 msgstr "Kanaler"
 
 msgctxt "#301538"
-msgid ""
+msgid "both"
 msgstr "Båda"
 
 msgctxt "#301540"
-msgid ""
+msgid "original"
 msgstr "Original"
 
 msgctxt "#301542"
-msgid ""
+msgid "HorizonzV Flag"
 msgstr "HorizonzV Flag"
 
 msgctxt "#301544"
-msgid ""
+msgid "Germany"
 msgstr "Tyskland"
 
 msgctxt "#301546"
-msgid ""
+msgid "United States"
 msgstr "USA"
 
 msgctxt "#301548"
-msgid ""
+msgid "United Kingdom"
 msgstr "Storbritannien"
 
 msgctxt "#301550"
-msgid ""
+msgid "France"
 msgstr "Frankrike"
 
 msgctxt "#301551"
-msgid ""
+msgid "Serge Blue"
 msgstr "Serge Blue"
 
 msgctxt "#301552"
-msgid ""
+msgid "Grey Blue"
 msgstr "Grå Blå"
 
 msgctxt "#301554"
-msgid ""
+msgid "Turquoise"
 msgstr "Turkos"
 
 msgctxt "#301558"
-msgid ""
+msgid "Sea Green"
 msgstr "Havsgrönt"
 
 msgctxt "#301560"
-msgid ""
+msgid "Red"
 msgstr "Röd"
 
 msgctxt "#301562"
-msgid ""
+msgid "Light Grey"
 msgstr "Ljusgrå"
 
 msgctxt "#301564"
-msgid ""
+msgid "Dark Gold"
 msgstr "Mörk guld"
 
 msgctxt "#301566"
-msgid ""
+msgid "Sandy Brown"
 msgstr "Sandy Brown"
 
 msgctxt "#301570"
-msgid ""
+msgid "ColorPicker"
 msgstr "ColorPicker"
 
 msgctxt "#301572"
-msgid ""
+msgid "Avengers B/W"
 msgstr "Avengers B/W"
 
 msgctxt "#301574"
-msgid ""
+msgid "Gambit"
 msgstr "Gambit"
 
 msgctxt "#301576"
-msgid ""
+msgid "Vinyl View"
 msgstr "Vinylvy"
 
 msgctxt "#301578"
-msgid ""
+msgid "Radio View"
 msgstr "Radiovy"
 
 msgctxt "#301580"
-msgid ""
+msgid "Standard View"
 msgstr "Standardvy"
 
 msgctxt "#301582"
-msgid ""
+msgid "starting ..."
 msgstr "kommer att startas ..."
 
 msgctxt "#301584"
-msgid ""
+msgid "hide"
 msgstr "gömmer sig"
 
 msgctxt "#301586"
-msgid ""
+msgid "show"
 msgstr "visa"
 
 msgctxt "#301588"
-msgid ""
+msgid "button"
 msgstr "switch"
 
 msgctxt "#301590"
-msgid ""
+msgid "skin reload"
 msgstr "Ladda om huden"
 
 msgctxt "#301592"
-msgid ""
+msgid "KODI APP reload"
 msgstr "Starta om KODI APP"
 
 msgctxt "#301596"
-msgid ""
+msgid "Visible"
 msgstr "Synlig"
 
 msgctxt "#301598"
-msgid ""
+msgid "no progressbar in the widget (green bar on the cover)"
 msgstr "ingen framstegsfält i widgeten (grönt fält på omslaget)"
 
 msgctxt "#301600"
-msgid ""
+msgid "last film started in 1st place"
 msgstr "senaste filmen startade på position 1"
 
 msgctxt "#301602"
-msgid ""
+msgid "last album belonged to number 1"
 msgstr "senaste albumet som lyssnades på rankades som nummer 1"
 
 msgctxt "#301604"
-msgid ""
+msgid "next episode in 1st place"
 msgstr "nästa avsnitt på nummer 1"
 
 msgctxt "#301606"
-msgid ""
+msgid "last started video at number 1"
 msgstr "senaste videon startade på position 1"
 
 msgctxt "#301608"
-msgid ""
+msgid "5 Day Weather"
 msgstr "5 dagars väder"
 
 msgctxt "#301610"
-msgid ""
+msgid "German Telecast Offers (GTO)"
 msgstr "Tyska sändningserbjudanden (GTO)"
 
 msgctxt "#301612"
-msgid ""
+msgid "Fritz Smart Home"
 msgstr "Fritz Smart Home"
 
 msgctxt "#301614"
-msgid ""
+msgid "Choose a content for row"
 msgstr "Välj ett innehåll för raden"
 
 msgctxt "#301616"
-msgid ""
+msgid "on"
 msgstr "an"
 
 msgctxt "#301618"
-msgid ""
+msgid "off"
 msgstr "off"
 
 msgctxt "#301620"
-msgid ""
+msgid "Battery level"
 msgstr "Batteriladdningsnivå"
 
 msgctxt "#301622"
-msgid ""
+msgid "Export video library"
 msgstr "Exportera videobibliotek"
 
 msgctxt "#301624"
-msgid ""
+msgid "(single NFO, without images, overwrite old data)"
 msgstr "(enkel NFO, utan bilder, skriver över gamla data)"
 
 # msgctxt "#xyxyxyxyxyxy"
@@ -1132,7 +1132,7 @@ msgstr "(enkel NFO, utan bilder, skriver över gamla data)"
 # msgstr "Efter att ha gömt infopanelen i helskärm visas en diskret visning av titelinformation."
 
 msgctxt "#31030"
-msgid ""
+msgid "System memory usage"
 msgstr "Användning av systemminne."
 
 #~ msgctxt "#31137"
@@ -1140,31 +1140,31 @@ msgstr "Användning av systemminne."
 #~ msgstr "PVR information"
 
 msgctxt "#31139"
-msgid ""
+msgid "Video decoder"
 msgstr "Videodekoder"
 
 msgctxt "#31140"
-msgid ""
+msgid "Pixel format"
 msgstr "Pixelformat"
 
 msgctxt "#31607"
-msgid ""
+msgid "Screen resolution"
 msgstr "Skärmupplösning"
 
 msgctxt "#31608"
-msgid ""
+msgid "System rendering speed"
 msgstr "Renderhastighet"
 
 msgctxt "#31609"
-msgid ""
+msgid "System CPU usage"
 msgstr "CPU-belastning"
 
 msgctxt "#31611"
-msgid ""
+msgid "Code line"
 msgstr "Kodrad"
 
 msgctxt "#31613"
-msgid ""
+msgid "enter the category of the playlist here ..."
 msgstr "Ange kategorin för spellistan här ..."
 
 msgctxt "#35500"
