@@ -2010,7 +2010,7 @@
                     <bottom>15</bottom>
                     <font>ubuntu-r16b</font>
                     <textcolor>description</textcolor>
-                    <label>[CR]$INFO[Window(skinsettings).Property(SSD)]$INFO[Container((1100).ListItem.Property(beschreibung)]</label>
+                    <label>[CR]$INFO[Window(skinsettings).Property(SSD)]$INFO[Container(1100).ListItem.Property(beschreibung)]</label>
                 </control>
             </control>                                                                                                                                              
             <include>Clock</include>
