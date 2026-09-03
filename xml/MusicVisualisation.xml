@@ -170,7 +170,7 @@
                                 <control type="multiimage">
                                     <description>current weather icon</description>
                                     <aspectratio>keep</aspectratio>
-                                    <imagepath>$VAR[WeatherIconVar]$INFO[Window(Weather).Property(Day0.FanartCode)]$VAR[WeatherIconFolderVar]</imagepath>
+                                    <imagepath>$VAR[WeatherIconVar]$INFO[Weather.Data(Day0.FanartCode)]$VAR[WeatherIconFolderVar]</imagepath>
                                     <timeperimage>100</timeperimage>
                                     <randomize>false</randomize>
                                     <fadetime>10</fadetime>
@@ -184,7 +184,7 @@
                                 <height>90</height>
                                 <control type="image">
                                     <aspectratio align="left" aligny="bottom">keep</aspectratio>
-                                    <texture>$INFO[Window(Weather).Property(WeatherProviderLogo)]</texture>
+                                    <texture>$INFO[Weather.Data(WeatherProviderLogo)]</texture>
                                 </control>
                             </control>
                             <control type="grouplist">
@@ -201,8 +201,8 @@
                                     <shadowcolor>black</shadowcolor>
                                     <align>right</align>
                                     <aligny>center</aligny>
-                                    <label>$INFO[Window(Weather).Property(Location),[COLOR=grey]$LOCALIZE[35500]: [/COLOR],]</label>
-                                    <visible>!String.IsEmpty(Window(Weather).Property(Location))</visible>
+                                    <label>$INFO[Weather.Data(Current.Location),[COLOR=grey]$LOCALIZE[35500]: [/COLOR],]</label>
+                                    <visible>!String.IsEmpty(Weather.Data(Current.Location))</visible>
                                 </control>
                                 <control type="label">
                                     <width>100%</width>
@@ -212,8 +212,8 @@
                                     <shadowcolor>black</shadowcolor>
                                     <align>right</align>
                                     <aligny>center</aligny>
-                                    <label>$INFO[Window(Weather).Property(Current.Condition),[COLOR=grey]$LOCALIZE[33020]: [/COLOR],]</label>
-                                    <visible>!String.IsEmpty(Window(Weather).Property(Current.Condition))</visible>
+                                    <label>$INFO[Weather.Data(Current.Condition),[COLOR=grey]$LOCALIZE[33020]: [/COLOR],]</label>
+                                    <visible>!String.IsEmpty(Weather.Data(Current.Condition))</visible>
                                 </control>
                                 <control type="label">
                                     <width>100%</width>
@@ -223,8 +223,8 @@
                                     <shadowcolor>black</shadowcolor>
                                     <align>right</align>
                                     <aligny>center</aligny>
-                                    <label>$INFO[Window(Weather).Property(Current.Temperature),[COLOR=grey]$LOCALIZE[143] [/COLOR],°]</label>
-                                    <visible>!String.IsEmpty(Window(Weather).Property(Current.Temperature))</visible>
+                                    <label>$INFO[Weather.Data(Current.Temperature),[COLOR=grey]$LOCALIZE[143] [/COLOR],]</label>
+                                    <visible>!String.IsEmpty(Weather.Data(Current.Temperature))</visible>
                                 </control>
                                 <control type="label">
                                     <width>100%</width>
@@ -234,8 +234,8 @@
                                     <shadowcolor>black</shadowcolor>
                                     <align>right</align>
                                     <aligny>center</aligny>
-                                    <label>$INFO[Window(Weather).Property(Daily.1.Precipitation),[COLOR=grey]$LOCALIZE[376]: [/COLOR],]</label>
-                                    <visible>!String.IsEmpty(Window(Weather).Property(Daily.1.Precipitation))</visible>
+                                    <label>$INFO[Weather.Data(Daily.1.Precipitation),[COLOR=grey]$LOCALIZE[376]: [/COLOR],]</label>
+                                    <visible>!String.IsEmpty(Weather.Data(Daily.1.Precipitation))</visible>
                                 </control>
                                 <control type="label">
                                     <width>100%</width>
@@ -245,8 +245,8 @@
                                     <shadowcolor>black</shadowcolor>
                                     <align>right</align>
                                     <aligny>center</aligny>
-                                    <label>$INFO[Window(Weather).Property(Today.Sunrise),[COLOR=grey]$LOCALIZE[33027]: [/COLOR],]</label>
-                                    <visible>!String.IsEmpty(Window(Weather).Property(Today.Sunrise))</visible>
+                                    <label>$INFO[Weather.Data(Today.Sunrise),[COLOR=grey]$LOCALIZE[33027]: [/COLOR],]</label>
+                                    <visible>!String.IsEmpty(Weather.Data(Today.Sunrise))</visible>
                                 </control>
                                 <control type="label">
                                     <width>100%</width>
@@ -256,8 +256,8 @@
                                     <shadowcolor>black</shadowcolor>
                                     <align>right</align>
                                     <aligny>center</aligny>
-                                    <label>$INFO[Window(Weather).Property(Today.Sunset),[COLOR=grey]$LOCALIZE[33028]: [/COLOR],]</label>
-                                    <visible>!String.IsEmpty(Window(Weather).Property(Today.Sunset))</visible>
+                                    <label>$INFO[Weather.Data(Today.Sunset),[COLOR=grey]$LOCALIZE[33028]: [/COLOR],]</label>
+                                    <visible>!String.IsEmpty(Weather.Data(Today.Sunset))</visible>
                                 </control>
                                 <control type="label">
                                     <description>update label</description>
@@ -268,8 +268,8 @@
                                     <shadowcolor>black</shadowcolor>
                                     <align>right</align>
                                     <aligny>center</aligny>
-                                    <label>$INFO[Window(Weather).Property(Updated),[COLOR=grey]$LOCALIZE[12014]: [/COLOR],]</label>
-                                    <visible>!String.IsEmpty(Window(Weather).Property(Updated))</visible>
+                                    <label>$INFO[Weather.Data(Updated),[COLOR=grey]$LOCALIZE[12014]: [/COLOR],]</label>
+                                    <visible>!String.IsEmpty(Weather.Data(Updated))</visible>
                                 </control>
                             </control>
                         </control>
@@ -335,7 +335,7 @@
                                     <shadowcolor>black</shadowcolor>
                                     <align>right</align>
                                     <aligny>center</aligny>
-                                    <label>[COLOR=grey]$LOCALIZE[35500]: [/COLOR]$INFO[Window(Weather).Property(Location)]</label>
+                                    <label>[COLOR=grey]$LOCALIZE[35500]: [/COLOR]$INFO[Weather.Data(Current.Location)]</label>
                                 </control>
                                 <control type="label">
                                     <width>100%</width>
@@ -345,7 +345,7 @@
                                     <shadowcolor>black</shadowcolor>
                                     <align>right</align>
                                     <aligny>center</aligny>
-                                    <label>[COLOR=grey]$LOCALIZE[33020]: [/COLOR]$INFO[Window(Weather).Property(Current.Condition)]</label>
+                                    <label>[COLOR=grey]$LOCALIZE[33020]: [/COLOR]$INFO[Weather.Data(Current.Condition)]</label>
                                 </control>
                                 <control type="label">
                                     <width>100%</width>
@@ -355,7 +355,7 @@
                                     <shadowcolor>black</shadowcolor>
                                     <align>right</align>
                                     <aligny>center</aligny>
-                                    <label>[COLOR=grey]$LOCALIZE[143] [/COLOR]$INFO[Window(Weather).Property(Current.Temperature),,°]</label>
+                                    <label>[COLOR=grey]$LOCALIZE[143] [/COLOR]$INFO[Weather.Data(Current.Temperature),,]</label>
                                 </control>
                                 <control type="label">
                                     <width>100%</width>
@@ -365,7 +365,7 @@
                                     <shadowcolor>black</shadowcolor>
                                     <align>right</align>
                                     <aligny>center</aligny>
-                                    <label>[COLOR=grey]$LOCALIZE[376]: [/COLOR]$INFO[Window(Weather).Property(Daily.1.Precipitation),,]</label>
+                                    <label>[COLOR=grey]$LOCALIZE[376]: [/COLOR]$INFO[Weather.Data(Daily.1.Precipitation),,]</label>
                                 </control>
                                 <control type="label">
                                     <width>100%</width>
@@ -375,7 +375,7 @@
                                     <shadowcolor>black</shadowcolor>
                                     <align>right</align>
                                     <aligny>center</aligny>
-                                    <label>[COLOR=grey]$LOCALIZE[33027]: [/COLOR]$INFO[Window(Weather).Property(Today.Sunrise),,]</label>
+                                    <label>[COLOR=grey]$LOCALIZE[33027]: [/COLOR]$INFO[Weather.Data(Today.Sunrise),,]</label>
                                 </control>
                                 <control type="label">
                                     <width>100%</width>
@@ -385,7 +385,7 @@
                                     <shadowcolor>black</shadowcolor>
                                     <align>right</align>
                                     <aligny>center</aligny>
-                                    <label>[COLOR=grey]$LOCALIZE[33028]: [/COLOR]$INFO[Window(Weather).Property(Today.Sunset),,]</label>
+                                    <label>[COLOR=grey]$LOCALIZE[33028]: [/COLOR]$INFO[Weather.Data(Today.Sunset),,]</label>
                                 </control>
                                 <control type="label">
                                     <description>update label</description>
@@ -396,7 +396,7 @@
                                     <shadowcolor>black</shadowcolor>
                                     <align>right</align>
                                     <aligny>center</aligny>
-                                    <label>[COLOR=grey]$LOCALIZE[12014]: [/COLOR]$INFO[Window(Weather).Property(Updated),,]</label>
+                                    <label>[COLOR=grey]$LOCALIZE[12014]: [/COLOR]$INFO[Weather.Data(Updated),,]</label>
                                 </control>
                             </control>
                             <control type="group">

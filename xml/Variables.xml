@@ -24,11 +24,11 @@
         <value>resource://resource.images.weathericons.default/</value>
     </variable>
     <variable name="WeatherIcon">
-        <value>$VAR[WeatherIconVar]$INFO[Window(weather).Property(Current.FanartCode)]$VAR[WeatherIconFolderVar]</value>
+        <value>$VAR[WeatherIconVar]$INFO[Weather.Data(Current.FanartCode)]$VAR[WeatherIconFolderVar]</value>
     </variable>
     <variable name="WeatherFanartVar">
-        <value condition="String.Contains(Skin.String(weatherfanart.path),multi)">$INFO[Skin.String(weatherfanart.path)]$INFO[Window(Weather).Property(Current.FanartCode)]/</value>
-        <value>$INFO[Skin.String(weatherfanart.path)]$INFO[Window(Weather).Property(Current.FanartCode)]$INFO[Skin.String(weatherfanart.ext)]</value>
+        <value condition="String.Contains(Skin.String(weatherfanart.path),multi)">$INFO[Skin.String(weatherfanart.path)]$INFO[Weather.Data(Current.FanartCode)]/</value>
+        <value>$INFO[Skin.String(weatherfanart.path)]$INFO[Weather.Data(Current.FanartCode)]$INFO[Skin.String(weatherfanart.ext)]</value>
     </variable>
     <variable name="MovieStudioLogoVar">
         <value condition="!String.IsEmpty(Skin.String(studiologos.path))">$INFO[Skin.String(studiologos.path)]</value>

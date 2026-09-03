@@ -142,7 +142,7 @@
 			<align>left</align>
 			<textcolor>white</textcolor>
 			<shadowcolor>grey3</shadowcolor>
-			<label>$INFO[ListItem.Label2]$INFO[Weather.Conditions, - ,]</label>
+			<label>$INFO[ListItem.Label2]$INFO[Weather.Data(Current.Condition), - ,]</label>
 		</control>
 		<control type="image">
 			<description>background</description>
@@ -162,7 +162,7 @@
 			<align>left</align>
 			<textcolor>white</textcolor>
 			<shadowcolor>grey3</shadowcolor>
-			<label>$INFO[Weather.Location]</label>
+			<label>$INFO[Weather.Data(Current.Location)]</label>
 		</control>
 		<control type="multiimage">
 			<description>background</description>

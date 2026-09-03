@@ -63,21 +63,6 @@
 			</control>
 		</control>
 	</include>
-	<include name="DialogVideoVersionSelectLayout">
-		<control type="group">
-			<include content="DefaultPopupLayout">
-				<param name="id" value="2" />
-				<param name="height" value="750" />
-				<param name="height2" value="600" />
-				<param name="width" value="940" />
-				<param name="width2" value="910" />
-				<param name="width_title" value="800" />
-				<param name="PopupHeaderTitle" value="2" />
-				<param name="PopupTitle" value="$LOCALIZE[424]" />
-			</include>
-			<include>DialogVideoVersionCommonLayout</include>
-		</control>
-	</include>
 	<include name="DialogVideoVersionCommonLayout">
 		<control type="grouplist" id="200">
 			<left>40</left>
@@ -92,14 +77,14 @@
 				<param name="label" value="$LOCALIZE[40000]" />
 				<param name="usealttexture" value="Control.IsVisible(50)" />
 				<param name="onright" value="50" />
-				<param name="visible">Window.IsActive(videoversion)| Window.IsActive(videoversionselect) + Integer.IsGreater(Container(50).NumItems,0)</param>
+				<param name="visible">Window.IsActive(videoversion) + Integer.IsGreater(Container(50).NumItems,0)</param>
 			</include>
 			<include content="DialogToggleButton">
 				<param name="id" value="202" />
 				<param name="label" value="$LOCALIZE[40211]" />
 				<param name="usealttexture" value="Control.IsVisible(51)" />
 				<param name="onright" value="51" />
-				<param name="visible">Window.IsActive(videoversion) | Window.IsActive(videoversionselect) + Integer.IsGreater(Container(51).NumItems,0)</param>
+				<param name="visible">Window.IsActive(videoversion) + Integer.IsGreater(Container(51).NumItems,0)</param>
 			</include>
 		</control>
 		<control type="image">

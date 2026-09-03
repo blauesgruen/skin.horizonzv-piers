@@ -48,7 +48,7 @@
                         <width>300</width>
                         <height>64</height>
                         <aspectratio align="right" aligny="bottom">keep</aspectratio>
-                        <texture>$INFO[Window.Property(WeatherProviderLogo)]</texture>
+                        <texture>$INFO[Weather.Data(WeatherProviderLogo)]</texture>
                     </control>
                     <control type="group">
                         <!-- infos leftside -->
@@ -70,7 +70,7 @@
                             <top>165</top>
                             <width>300</width>
                             <height>300</height>
-                            <imagepath>$VAR[WeatherIconVar]$INFO[Window.Property(Current.FanartCode)]$VAR[WeatherIconFolderVar]</imagepath>
+                            <imagepath>$VAR[WeatherIconVar]$INFO[Weather.Data(Current.FanartCode)]$VAR[WeatherIconFolderVar]</imagepath>
                             <timeperimage>100</timeperimage>
                             <randomize>false</randomize>
                             <fadetime>10</fadetime>
@@ -141,61 +141,61 @@
                             <content>
                                 <item>
                                     <label>$LOCALIZE[12014]:</label>
-                                    <label2>$INFO[Window.Property(Updated)]</label2>
+                                    <label2>$INFO[Weather.Data(Updated)]</label2>
                                     <onclick/>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[401]:</label>
-                                    <label2>$INFO[Window.Property(Current.Temperature)]$INFO[System.TemperatureUnits]</label2>
+                                    <label2>$INFO[Weather.Data(Current.Temperature)]</label2>
                                     <onclick/>
                                     <visible>!String.StartsWith(Weather.Plugin,weather.openweathermap)</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[401]:</label>
-                                    <label2>$INFO[Window.Property(Current.LowTemperature),[COLOR=reddiffuse],[/COLOR] / ]$INFO[Window.Property(Current.HighTemperature),[COLOR=selected],[/COLOR]]</label2>
+                                    <label2>$INFO[Weather.Data(Current.LowTemperature),[COLOR=reddiffuse],[/COLOR] / ]$INFO[Weather.Data(Current.HighTemperature),[COLOR=selected],[/COLOR]]</label2>
                                     <onclick/>
                                     <visible>String.StartsWith(Weather.Plugin,weather.openweathermap)</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[33020]:</label>
-                                    <label2>$INFO[Window.Property(Current.Condition)]</label2>
+                                    <label2>$INFO[Weather.Data(Current.Condition)]</label2>
                                     <onclick/>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[402]:</label>
-                                    <label2>$INFO[Window.Property(Current.FeelsLike)]$INFO[System.TemperatureUnits]</label2>
+                                    <label2>$INFO[Weather.Data(Current.FeelsLike)]</label2>
                                     <onclick/>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[405]:</label>
-                                    <label2>$INFO[Window.Property(Current.DewPoint)]$INFO[System.TemperatureUnits]</label2>
+                                    <label2>$INFO[Weather.Data(Current.DewPoint)]</label2>
                                     <onclick/>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[406]:</label>
-                                    <label2>$INFO[Window.Property(Current.Humidity)]</label2>
+                                    <label2>$INFO[Weather.Data(Current.Humidity)]</label2>
                                     <onclick/>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[403]:</label>
-                                    <label2>$INFO[Window.Property(Current.UVIndex)]</label2>
+                                    <label2>$INFO[Weather.Data(Current.UVIndex)]</label2>
                                     <onclick/>
                                     <visible>!String.StartsWith(Weather.Plugin,weather.openweathermap)</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[404]:</label>
-                                    <label2>$INFO[Window.Property(Current.Wind)]</label2>
+                                    <label2>$INFO[Weather.Data(Current.Wind)]</label2>
                                     <onclick/>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[33027]:</label>
-                                    <label2>$INFO[Window.Property(Today.Sunrise)]</label2>
+                                    <label2>$INFO[Weather.Data(Today.Sunrise)]</label2>
                                     <onclick/>
                                     <visible>[String.IsEqual(Weather.Plugin,weather.wunderground)|String.StartsWith(Weather.Plugin,weather.openweathermap)] + !String.IsEmpty(Window.Property(36Hour.IsFetched))</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[33028]:</label>
-                                    <label2>$INFO[Window.Property(Today.Sunset)]</label2>
+                                    <label2>$INFO[Weather.Data(Today.Sunset)]</label2>
                                     <onclick/>
                                     <visible>[String.IsEqual(Weather.Plugin,weather.wunderground)|String.StartsWith(Weather.Plugin,weather.openweathermap)] + !String.IsEmpty(Window.Property(36Hour.IsFetched))</visible>
                                 </item>
@@ -308,7 +308,7 @@
                             <include>SidePanelButton</include>
                             <label>31081</label>
                             <onfocus>ClearProperty(Weather.CurrentView)</onfocus>
-                            <visible>!String.IsEmpty(Window.Property(Daily.IsFetched))</visible>
+                            <visible>!String.IsEmpty(Weather.Data(Daily.IsFetched))</visible>
                         </control>
                         <control type="button" id="303">
                             <description>36 hour forcast button</description>
@@ -332,7 +332,7 @@
                             <include>SidePanelButton</include>
                             <label>31079</label>
                             <onfocus>SetProperty(Weather.CurrentView,hourly)</onfocus>
-                            <visible>!String.IsEmpty(Window.Property(Hourly.IsFetched))</visible>
+                            <visible>!String.IsEmpty(Weather.Data(Hourly.IsFetched))</visible>
                         </control>
                         <control type="button" id="306">
                             <description>Hourly forcast button</description>
@@ -340,7 +340,7 @@
                             <include>SidePanelButton</include>
                             <label>33035</label>
                             <onfocus>SetProperty(Weather.CurrentView,map)</onfocus>
-                            <visible>!String.IsEmpty(Window.Property(Map.IsFetched))</visible>
+                            <visible>!String.IsEmpty(Weather.Data(Map.IsFetched))</visible>
                         </control>
                         <control type="button" id="307">
                             <description>Alerts button</description>
