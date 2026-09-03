@@ -1,4 +1,4 @@
-# Kodi Media Center language file
+﻿# Kodi Media Center language file
 # Addon Name: HorizonzV
 # Addon id: skin.horizonzv
 # Addon Provider: blauesgruen
@@ -17,1113 +17,1113 @@ msgstr ""
 "X-Generator: Weblate 4.14\n"
 
 msgctxt "#31000"
-msgid "Power options"
+msgid ""
 msgstr "Energie-instellingen"
 
 msgctxt "#31002"
-msgid "View options"
+msgid ""
 msgstr "Instellingen bekijken"
 
 msgctxt "#31003"
-msgid "Total duration"
+msgid ""
 msgstr "Totale duur"
 
 msgctxt "#31005"
-msgid "Misc options"
+msgid ""
 msgstr "Andere instellingen"
 
 msgctxt "#31007"
-msgid "Playing"
+msgid ""
 msgstr "Het loopt"
 
 msgctxt "#31008"
-msgid "Page"
+msgid ""
 msgstr "Pagina"
 
 msgctxt "#31009"
-msgid "Items"
+msgid ""
 msgstr "Inzendingen"
 
 msgctxt "#31012"
-msgid "Memory used"
+msgid ""
 msgstr "Geheugengebruik"
 
 msgctxt "#31013"
-msgid "Pic thumbs"
+msgid ""
 msgstr "Miniaturen"
 
 msgctxt "#31014"
-msgid "Order"
+msgid ""
 msgstr "bestelling"
 
 msgctxt "#31016"
-msgid "Extended info"
+msgid ""
 msgstr "Uitgebreide info"
 
 msgctxt "#31017"
-msgid "PLAYING"
+msgid ""
 msgstr "IT'S RUNNING"
 
 msgctxt "#31022"
-msgid "Visualisation presets"
+msgid ""
 msgstr "Voorkeuren voor visualisatie"
 
 msgctxt "#31023"
-msgid "Sort: Ascending"
+msgid ""
 msgstr "Sorteren: Ascending"
 
 msgctxt "#31024"
-msgid "Sort: Descending"
+msgid ""
 msgstr "Sorteren: Afdalen"
 
 msgctxt "#31025"
-msgid "Open playlist"
+msgid ""
 msgstr "Open playlist"
 
 msgctxt "#31026"
-msgid "Save playlist"
+msgid ""
 msgstr "Afspeellijst opslaan"
 
 msgctxt "#31027"
-msgid "Close playlist"
+msgid ""
 msgstr "Afspeellijst sluiten"
 
 msgctxt "#31032"
-msgid "Current selected"
+msgid ""
 msgstr "Momenteel geselecteerd"
 
 msgctxt "#31033"
-msgid "Search trailer"
+msgid ""
 msgstr "Zoektrailer"
 
 msgctxt "#31035"
-msgid "Search YouTube"
+msgid ""
 msgstr "Zoek YouTube"
 
 msgctxt "#31036"
-msgid "Same director"
+msgid ""
 msgstr "Director's Movies"
 
 msgctxt "#31043"
-msgid "Choose your song"
+msgid ""
 msgstr "Selecteer liedje"
 
 msgctxt "#31044"
-msgid "Lyrics source"
+msgid ""
 msgstr "Tekstbron"
 
 msgctxt "#31046"
-msgid "Data provider"
+msgid ""
 msgstr "Bron"
 
 msgctxt "#31047"
-msgid "Hide fanart"
+msgid ""
 msgstr "Verberg fanart"
 
 msgctxt "#31048"
-msgid "Memory used:"
+msgid ""
 msgstr "Geheugengebruik:"
 
 msgctxt "#31049"
-msgid "Track number"
+msgid ""
 msgstr "Titelnummer."
 
 msgctxt "#31050"
-msgid "Selected profile"
+msgid ""
 msgstr "Selecteer profiel"
 
 msgctxt "#31051"
-msgid "Last logged in"
+msgid ""
 msgstr "Laatst ingelogd"
 
 msgctxt "#31052"
-msgid "Aired"
+msgid ""
 msgstr "Uitgezonden"
 
 msgctxt "#31053"
-msgid "Playlist options"
+msgid ""
 msgstr "Afspeellijst instellingen"
 
 msgctxt "#31054"
-msgid "Created"
+msgid ""
 msgstr "Gemaakt"
 
 msgctxt "#31056"
-msgid "Timer set! [COLOR=grey1] - System auto shutdown in[/COLOR]"
+msgid ""
 msgstr "Shutdown timer actief! [COLOR=grey1] - Tijd tot uitschakeling:[/COLOR]"
 
 msgctxt "#31057"
-msgid "Click button to play[CR][CR]movie trailer"
+msgid ""
 msgstr "Klik knop om[CR][CR]filmtrailer af te spelen."
 
 msgctxt "#31059"
-msgid "Stop"
+msgid ""
 msgstr "Stop"
 
 msgctxt "#31060"
-msgid "Fast forward"
+msgid ""
 msgstr "Snel vooruitspoelen"
 
 msgctxt "#31061"
-msgid "Rewind"
+msgid ""
 msgstr "Terugspoelen"
 
 msgctxt "#31062"
-msgid "Movie menu"
+msgid ""
 msgstr "Filmmenu"
 
 msgctxt "#31063"
-msgid "Download subtitles"
+msgid ""
 msgstr "Ondertitels downloaden"
 
 msgctxt "#31064"
-msgid "Watch as 2D"
+msgid ""
 msgstr "Bekijk in 2D"
 
 msgctxt "#31065"
-msgid "Change mode"
+msgid ""
 msgstr "Wijzigen modus"
 
 msgctxt "#31067"
-msgid "Playlist at startup"
+msgid ""
 msgstr "Eigen afspeellijst bij start"
 
 msgctxt "#31068"
-msgid "Local subtitle available"
+msgid ""
 msgstr "Lokale ondertiteling beschikbaar"
 
 msgctxt "#31069"
-msgid "Select your Kodi user profile to login and continue"
+msgid ""
 msgstr "Selecteer Kodi-gebruikersprofiel om door te gaan."
 
 msgctxt "#31072"
-msgid "Add group"
+msgid ""
 msgstr "Groep toevoegen"
 
 msgctxt "#31073"
-msgid "Rename group"
+msgid ""
 msgstr "Hernoem groep"
 
 msgctxt "#31074"
-msgid "Delete group"
+msgid ""
 msgstr "Groep verwijderen"
 
 msgctxt "#31075"
-msgid "Available[CR]Groups"
+msgid ""
 msgstr "Beschikbare[CR]groepen"
 
 msgctxt "#31076"
-msgid "Timer set"
+msgid ""
 msgstr "Timer geactiveerd"
 
 msgctxt "#31077"
-msgid "Channel options"
+msgid ""
 msgstr "Kanaal instellingen"
 
 msgctxt "#31078"
-msgid "36-hour forecast"
+msgid ""
 msgstr "36-uur voorspelling"
 
 msgctxt "#31079"
-msgid "Hourly forecast"
+msgid ""
 msgstr "Uurlijke voorspelling"
 
 msgctxt "#31080"
-msgid "Weekend forecast"
+msgid ""
 msgstr "Weekendvoorspelling"
 
 msgctxt "#31081"
-msgid "Daily forecast"
+msgid ""
 msgstr "Dagelijkse voorspelling"
 
 msgctxt "#31083"
-msgid "Fetching forecast info..."
+msgid ""
 msgstr "Voorspellingsgegevens worden opgehaald..."
 
 # Horizonz
 
 msgctxt "#301126"
-msgid "Activates background video in the main menu."
+msgid ""
 msgstr "Activeert achtergrondvideo in hoofdmenu."
 
 msgctxt "#301132"
-msgid "Select the country for the age rating (defined in the scrapper).[CR]Supported are DE, US, UK, FR.[CR]If only US ratings are available, these are displayed."
+msgid ""
 msgstr "Selecteer het land voor de leeftijdsclassificatie (gedefinieerd in de scrapper).[CR]Ondersteunde zijn DE, US, UK, FR.[CR]Als alleen US-classificaties beschikbaar zijn, worden die getoond."
 
 msgctxt "#301134"
-msgid "Trailer are directly displayed in the movie information or in fullscreen mode."
+msgid ""
 msgstr "Trailers worden direct in de filminformatie of op volledig scherm weergegeven."
 
 msgctxt "#301135"
-msgid "If a visualization is selected for music playback, it will also be displayed in the main menu."
+msgid ""
 msgstr "Als een visualisatie is geselecteerd voor muziekweergave, wordt die ook weergegeven in het hoofdmenu."
 
 msgctxt "#301136"
-msgid "Displays playlist of the next 9 titles in main menu and in fullscreen mode."
+msgid ""
 msgstr "Toont een afspeellijst van de volgende 9 nummers in het hoofdmenu en op het volledige scherm."
 
 msgctxt "#301140"
-msgid "Define the volume in percent, which will be played on any start of KODI.[CR]Quote a figure between 0 and 100."
+msgid ""
 msgstr "Stel het volume in procenten in dat elke keer dat KODI wordt gestart moet worden afgespeeld.[CR]Geef een getal van 0 - 100 op."
 
 msgctxt "#301142"
-msgid "Disable alphanumeric jump list in SMS style.[CR][COLOR=grey]Imported from the skin \'Alaska\'[/COLOR]."
+msgid ""
 msgstr "Schakelt SMS-stijl alfanumerieke springlijst uit.[CR][COLOR=grey]Geïmporteerd uit skin \'Alaska.\'[/COLOR]"
 
 msgctxt "#301143"
-msgid "To use this function you need the addon \'Skinhelper Ping\' by _Andy_/PvD.[CR][COLOR=white]It can be installed here under Addons or via the Kodinerds Repo[/COLOR]."
+msgid ""
 msgstr "Om deze functie te gebruiken is de addon \'Skinhelper Ping\' van _Andy_/PvD vereist.[CR][COLOR=grey]Deze kan hier worden geïnstalleerd onder Addons of via de Kodinerds Repo.[/COLOR]"
 
 msgctxt "#301144"
-msgid "Starts the selected playlist after starting KODI."
+msgid ""
 msgstr "Start de geselecteerde afspeellijst na het starten van KODI."
 
 msgctxt "#301145"
-msgid "To use this function, the addon \'Global Search\' from the official repository is required."
+msgid ""
 msgstr "Om deze functie te gebruiken is de addon \'Global Search\' uit de officiële repository vereist."
 
 msgctxt "#301146"
-msgid "Shows a small statistic about the database entries in the lower right corner of the main menu."
+msgid ""
 msgstr "Toont een kleine statistiek over de database-items rechtsonder in het hoofdmenu."
 
 msgctxt "#301147"
-msgid "Shows the favourites below the main menu instead of directly the \'Central\'. [CR]These are otherwise accessible via the \'Central\'."
+msgid ""
 msgstr "Toont de favorieten onder het hoofdmenu in plaats van direct de \'Centrale\'.[CR]Deze zijn anders bereikbaar via de \'Centrale\'."
 
 msgctxt "#301148"
-msgid "Hides the \'Central\' located below the main menu."
+msgid ""
 msgstr "Verbergt de \'Centrale\' onder het hoofdmenu."
 
 msgctxt "#301150"
-msgid "Activates an icon in the upper right corner that shows the battery's charge status.[CR][COLOR=white]An incorrect display occurs on computers without a battery.[/COLOR]"
+msgid ""
 msgstr "Activeert een pictogram in de rechterbovenhoek dat de laadstatus van de batterij weergeeft.[CR][COLOR=white]Onjuiste weergave treedt op bij computers zonder batterij.[/COLOR]"
 
 msgctxt "#301151"
-msgid "The settings for the widget are in the respective submenu of the main menus."
+msgid ""
 msgstr "De instellingen voor de widget staan in het respectievelijke submenu van het hoofdmenu."
 
 msgctxt "#301152"
-msgid "Dims all unfocused covers."
+msgid ""
 msgstr "Dimt alle niet-gefocuste covers."
 
 msgctxt "#301153"
-msgid "Hides the green progress bar on the covers."
+msgid ""
 msgstr "Verbergt de groene voortgangsbalk op covers."
 
 msgctxt "#301166"
-msgid "This skin contains various animation effects.[CR]With this switch you can deactivate them. Instead, a simple fade effect is used.[CR]This can lead to better performance on slow systems."
+msgid ""
 msgstr "Deze skin bevat verschillende animatie-effecten.[CR]Gebruik deze schakelaar om ze uit te schakelen. In plaats daarvan wordt een eenvoudig fade-effect gebruikt.[CR]Dit kan leiden tot betere prestaties op trage systemen."
 
 msgctxt "#301168"
-msgid "Displays in the upper left corner, where you are."
+msgid ""
 msgstr "Toont waar je bent in de linkerbovenhoek."
 
 msgctxt "#301169"
-msgid "Hides the date display in the upper right corner."
+msgid ""
 msgstr "Verbergt de datumweergave in de rechterbovenhoek."
 
 msgctxt "#301170"
-msgid "Activates fanart in all areas."
+msgid ""
 msgstr "Maakt fanart in alle gebieden mogelijk."
 
 msgctxt "#301171"
-msgid "Disables changing background pictures.[CR]Select an own picture or path."
+msgid ""
 msgstr "Schakelt het veranderen van achtergrondafbeeldingen uit.[CR][COLOR=white]Kies je eigen afbeelding of pad.[/COLOR]"
 
 msgctxt "#301172"
-msgid "Select a picture. If no pictures is chosen, a standard picture will be displayed.[CR][COLOR=white]Click again for deleting.[/COLOR]"
+msgid ""
 msgstr "Selecteer hier een afbeelding.[CR]Als er geen afbeelding is opgegeven, wordt een standaardafbeelding getoond.[CR][COLOR=white]Klik nogmaals om deze te verwijderen.[/COLOR]"
 
 msgctxt "#301173"
-msgid "Shows a slideshow in the background, based on the KODI library.[CR][COLOR=white]Visible in the main menu under: Movies, Series and Music.[/COLOR]"
+msgid ""
 msgstr "Toont een diavoorstelling op de achtergrond, gebaseerd op de KODI-bibliotheek.[CR][COLOR=white]Zichtbaar in het hoofdmenu onder: Films, Series en Muziek.[/COLOR]"
 
 msgctxt "#301174"
-msgid "Enables the dimming of the background in all areas.[CR][COLOR=white]Possible dimming steps: OFF, LIGHT, MEDIUM, STRONG.[/COLOR]"
+msgid ""
 msgstr "Activeert achtergrondverduistering in alle gebieden.[CR][COLOR=white]Mogelijke verduisteringsniveaus: UIT, LICHT, MEDIUM, ZWAAR.[/COLOR]"
 
 msgctxt "#301175"
-msgid "Choose an accent colour that shows up in many areas of the skin.[CR][COLOR=grey]Custom: Colour codes must be specified in AARRGGBB hex format.[CR]An example for [/COLOR][COLOR=ffffffff]White:[/COLOR] FFFFFFFF"
+msgid ""
 msgstr "Kies een accentkleur die in veel gebieden van de huid verschijnt.[CR][COLOR=grey]Aangepast: Kleurcodes moeten worden opgegeven in AARRGGBB hex formaat.[CR]Een voorbeeld van [/COLOR][COLOR=ffffffff]Wit[/COLOR]: FFFFFFFF"
 
 msgctxt "#301176"
-msgid "Install the ColorPicker addon from the Kodinerds repository to be able to select colors with one click."
+msgid ""
 msgstr "Installeer de ColorPicker-addon uit de Kodinerds-repository om kleuren met een klik te kunnen kiezen."
 
 msgctxt "#301177"
-msgid "Shows the number and total running time of the entries in the database views."
+msgid ""
 msgstr "Toont in databankweergaven het aantal en de totale looptijd van items."
 
 msgctxt "#301178"
-msgid "Enables an effect of light along the main menu."
+msgid ""
 msgstr "Activeert een lichteffect langs het hoofdmenu."
 
 msgctxt "#301180"
-msgid "Select one of the background themes. It strongly changes the overall impression of the main menu.[CR][COLOR=white]Will be deactivated as soon as \'only one background image\' is active.[/COLOR][COLOR=grey][CR]The theme \'Gambit\' has the advantage that it provides better performance on weaker systems.[CR]This theme was kindly provided by \'G4mbit\' from the KODINERDS forum.[/COLOR]"
+msgid ""
 msgstr "Selecteer een van de achtergrondthema's. Het verandert sterk de algemene indruk van het hoofdmenu.[CR][COLOR=white]Wordt gedeactiveerd zodra \'slechts één achtergrondafbeelding\' actief is.[/COLOR][COLOR=grey][CR]Het thema \'Gambit\' heeft als voordeel dat het betere prestaties levert op zwakkere systemen.[CR]Dit thema werd vriendelijk ter beschikking gesteld door \'G4mbit\' van het KODINERDS forum.[/COLOR]"
 
 msgctxt "#301184"
-msgid "Places a structure over the background image."
+msgid ""
 msgstr "Legt een textuur over de achtergrondafbeelding."
 
 msgctxt "#301186"
-msgid "The player controls are displayed on the left side under the mainmenu during the playing mode."
+msgid ""
 msgstr "Toont de bediening van de speler tijdens het afspelen aan de linkerkant, onder het hoofdmenu."
 
 msgctxt "#301188"
-msgid "Shows in the upper left corner of the current weather."
+msgid ""
 msgstr "Toont het huidige weer in de linkerbovenhoek."
 
 msgctxt "#301190"
-msgid "It is possible to disable \'Radio\', which is one of 3 views during the playing mode in full screen."
+msgid ""
 msgstr "\'Radio\', een van de 3 weergaven tijdens afspelen op volledig scherm, kan hier worden uitgeschakeld."
 
 msgctxt "#301192"
-msgid "Select between the views Standard, Alternative and Radio.[CR][COLOR=grey]\'Radio\' is always used for online music streams. It is possible to disable it.[/COLOR]"
+msgid ""
 msgstr "Kies tussen de weergaven Standaard, Alternatief en Radio.[CR][COLOR=grey]\'Radio\' wordt altijd gebruikt voor online muziekstreams. Maar kan worden gedeactiveerd.[/COLOR]"
 
 msgctxt "#301194"
-msgid "Select between the views Standard, Alternative and Radio.[CR][COLOR=white]Information: \'Radio\' was disabled.[/COLOR]"
+msgid ""
 msgstr "Kies tussen Standaard en Alternatieve weergaven.[CR][COLOR=white]Info: Radio is uitgeschakeld.[/COLOR]"
 
 msgctxt "#301196"
-msgid "Displays basic track information in full screen during music playback in the lower left corner.[CR][COLOR=whithe]Visible when OSD is not visible[/COLOR]."
+msgid ""
 msgstr "Toont basistrackinformatie in volledig scherm tijdens het afspelen van muziek in de linkerbenedenhoek.[CR][COLOR=whithe]Zichtbaar wanneer OSD niet zichtbaar is.[/COLOR]"
 
 msgctxt "#301198"
-msgid "Displays a discreet narrow variation of the screen in \'pause\'."
+msgid ""
 msgstr "Toont een discrete, smalle versie van het pauzescherm."
 
 msgctxt "#301200"
-msgid "Information like chapter, subtitle, current time bar etc. are not displayed.[CR][COLOR=grey]Studio logos and extra arts are faded out.[/COLOR]"
+msgid ""
 msgstr "Er wordt geen info getoond zoals hoofdstukken, ondertitels, balkjes voor de looptijd, etc.[CR][COLOR=grey]Studiologos en Extra Arts zijn ook verborgen.[/COLOR]"
 
 msgctxt "#301202"
-msgid "Show all available movie & series artworks.[CR][COLOR=white]Since Kodi 19 artworks are loaded with the scrapper \'The Movie Database PYTHON\'.[/COLOR][COLOR=grey][CR]\'Artwork Beef\' or a similar addon can still be used.[/COLOR]"
+msgid ""
 msgstr "Toon alle beschikbare film & serie artworks.[CR][COLOR=white]Sinds Kodi 19 artworks worden geladen met de scrapper \'The Movie Database PYTHON\'.[/COLOR][COLOR=grey][CR]\'Artwork Beef\' of een vergelijkbare addon kan echter nog steeds gebruikt worden.[/COLOR]\'"
 
 msgctxt "#301204"
-msgid "Select the appearance of the CD here if no CDArt is found.[CR][COLOR=white]CDArts must be available in a folder. This is specified in the system settings (Media->Music).[/COLOR]"
+msgid ""
 msgstr "Selecteer hier het uiterlijk van de CD als er geen CDArt is gevonden.[CR][COLOR=white]CDArts moeten klaarstaan in een map. Dit geef je aan in de systeeminstellingen (Media->Muziek).[/COLOR]"
 
 msgctxt "#301210"
-msgid "Enables all PVR available artwork.[CR][COLOR=white]\'Skin Helper Service\' is required.[/COLOR]"
+msgid ""
 msgstr "Activeert alle beschikbare PVR artwork.[CR][COLOR=white]\'Skin Helper Service\' is vereist.[/COLOR]"
 
 msgctxt "#301218"
-msgid "Select a background picture."
+msgid ""
 msgstr "Kies een achtergrondafbeelding"
 
 msgctxt "#301240"
-msgid "Reset"
+msgid ""
 msgstr "Reset"
 
 msgctxt "#301244"
-msgid "Defines the default for this skin.[CR]This refers only to customized options."
+msgid ""
 msgstr "Stelt de standaard in voor deze skin.[CR]Heeft alleen invloed op aangepaste instellingen."
 
 msgctxt "#301246"
-msgid "Weak"
+msgid ""
 msgstr "Zwak"
 
 msgctxt "#301248"
-msgid "Medium"
+msgid ""
 msgstr "Medium"
 
 msgctxt "#301250"
-msgid "Fast"
+msgid ""
 msgstr "Snel"
 
 msgctxt "#301268"
-msgid "[UPPERCASE]Skin settings reset ?[/UPPERCASE]"
+msgid ""
 msgstr "[UPPERCASE]Huidinstellingen resetten?[/UPPERCASE]"
 
 msgctxt "#301270"
-msgid "Cover"
+msgid ""
 msgstr "Cover"
 
 msgctxt "#301272"
-msgid "no defined favourites"
+msgid ""
 msgstr "Geen favorieten beschikbaar"
 
 msgctxt "#301274"
-msgid "[B]KODI SUBTITLES[/B]"
+msgid ""
 msgstr "[B]KODI SUBTITLE[/B]"
 
 msgctxt "#301276"
-msgid "Sidepanel"
+msgid ""
 msgstr "paginapaneel"
 
 msgctxt "#301278"
-msgid "Set Information"
+msgid ""
 msgstr "Informatie instellen"
 
 msgctxt "#301280"
-msgid "Concerts"
+msgid ""
 msgstr "Concerten"
 
 msgctxt "#301282"
-msgid "Language (age rating)"
+msgid ""
 msgstr "Taal (leeftijdsclassificatie)"
 
 msgctxt "#301284"
-msgid "Flags in text form"
+msgid ""
 msgstr "Vlaggen in tekstvorm"
 
 msgctxt "#301286"
-msgid "Dim background"
+msgid ""
 msgstr "Dim achtergrond"
 
 msgctxt "#301288"
-msgid "Page Count"
+msgid ""
 msgstr "Paginateller"
 
 msgctxt "#301290"
-msgid "Cases"
+msgid ""
 msgstr "Enveloppen"
 
 msgctxt "#301292"
-msgid "Hide big cover"
+msgid ""
 msgstr "Verberg grote omslag"
 
 msgctxt "#301294"
-msgid "Logo in place title"
+msgid ""
 msgstr "Logo in plaats van titel"
 
 msgctxt "#301296"
-msgid "Information"
+msgid ""
 msgstr "Informatie"
 
 msgctxt "#301300"
-msgid "Hide \'NEW\' Logo"
+msgid ""
 msgstr "Verberg \'NIEUW\' pictogram"
 
 msgctxt "#301302"
-msgid "Dusteffect (case)"
+msgid ""
 msgstr "Stofeffect (Envelope)"
 
 msgctxt "#301304"
-msgid "Disable Cover animations"
+msgid ""
 msgstr "Dekselanimatie uitschakelen"
 
 msgctxt "#301306"
-msgid "Dim cover"
+msgid ""
 msgstr "Dim cover"
 
 msgctxt "#301308"
-msgid "List"
+msgid ""
 msgstr "Lijst"
 
 msgctxt "#301310"
-msgid "Info List"
+msgid ""
 msgstr "Info Lijst"
 
 msgctxt "#301312"
-msgid "Thumbview"
+msgid ""
 msgstr "Thumbview"
 
 msgctxt "#301314"
-msgid "Banner"
+msgid ""
 msgstr "Banner"
 
 msgctxt "#301316"
-msgid "Showcase"
+msgid ""
 msgstr "Showcase"
 
 msgctxt "#301318"
-msgid "Perspective"
+msgid ""
 msgstr "Perspectief"
 
 msgctxt "#301320"
-msgid "Disc Flow"
+msgid ""
 msgstr "Schijfstroom"
 
 msgctxt "#301322"
-msgid "Rightlist"
+msgid ""
 msgstr "Rightlist"
 
 msgctxt "#301324"
-msgid "Cover Wall (fullsize)"
+msgid ""
 msgstr "Cover Wall (Full Screen)"
 
 msgctxt "#301326"
-msgid "Cover Wall"
+msgid ""
 msgstr "Cover Wall"
 
 msgctxt "#301328"
-msgid "Picture wall"
+msgid ""
 msgstr "Cover Wall"
 
 msgctxt "#301330"
-msgid "Disable radio view"
+msgid ""
 msgstr "Radioweergave uitschakelen"
 
 msgctxt "#301331"
-msgid " - Disable TV Wall"
+msgid ""
 msgstr " - TV Wall uitschakelen"
 
 msgctxt "#301332"
-msgid "Music visualisation"
+msgid ""
 msgstr "Muziekvisualisatie"
 
 msgctxt "#301334"
-msgid "Music extra arts"
+msgid ""
 msgstr "Muziek Extra Kunst"
 
 msgctxt "#301336"
-msgid "Date display"
+msgid ""
 msgstr "Datumweergave"
 
 msgctxt "#301338"
-msgid "Button description"
+msgid ""
 msgstr "Sleutelbeschrijving"
 
 msgctxt "#301340"
-msgid "Information panel"
+msgid ""
 msgstr "Infopanel"
 
 msgctxt "#301344"
-msgid "back"
+msgid ""
 msgstr "terug"
 
 msgctxt "#301346"
-msgid "Mainmenu buttons"
+msgid ""
 msgstr "hoofdmenuknoppen"
 
 msgctxt "#301348"
-msgid "Submenu buttons"
+msgid ""
 msgstr "Submenu Knoppen"
 
 msgctxt "#301350"
-msgid "Functions"
+msgid ""
 msgstr "Functies"
 
 msgctxt "#301351"
-msgid "Widgets"
+msgid ""
 msgstr "Widgets"
 
 msgctxt "#301352"
-msgid "Design / Performance"
+msgid ""
 msgstr "Ontwerp / Prestaties"
 
 msgctxt "#301354"
-msgid "Extra arts"
+msgid ""
 msgstr "Extra Kunsten"
 
 msgctxt "#301356"
-msgid "Admin"
+msgid ""
 msgstr "Admin"
 
 msgctxt "#301357"
-msgid "Shutdown Menu"
+msgid ""
 msgstr "Shutdown Menu"
 
 msgctxt "#301358"
-msgid "Enable debug grid"
+msgid ""
 msgstr "Raster inschakelen"
 
 msgctxt "#301360"
-msgid "Debug Information"
+msgid ""
 msgstr "Debug Informatie"
 
 msgctxt "#301362"
-msgid "Enable First start"
+msgid ""
 msgstr "Activeer eerste start"
 
 msgctxt "#301364"
-msgid "Choose your system performance"
+msgid ""
 msgstr "kies je systeemprestaties"
 
 msgctxt "#301366"
-msgid "Mousepointer"
+msgid ""
 msgstr "muisaanwijzer"
 
 msgctxt "#301368"
-msgid "Set positions"
+msgid ""
 msgstr "Posities instellen"
 
 msgctxt "#301370"
-msgid "Move focus"
+msgid ""
 msgstr "Verplaats focus"
 
 msgctxt "#301371"
-msgid "Dashboard"
+msgid ""
 msgstr "Dashboard"
 
 msgctxt "#301372"
-msgid "Auto-hide the mainmenu"
+msgid ""
 msgstr "Verberg hoofdmenu automatisch"
 
 msgctxt "#301374"
-msgid "Time to hide"
+msgid ""
 msgstr "Tijd tot verbergen"
 
 msgctxt "#301376"
-msgid "Background video"
+msgid ""
 msgstr "Achtergrondvideo"
 
 msgctxt "#301378"
-msgid "Choose the country for age rating"
+msgid ""
 msgstr "Selecteer het land van de leeftijdsclassificatie."
 
 msgctxt "#301380"
-msgid "Play trailer in fullscreen"
+msgid ""
 msgstr "Trailer NIET afspelen in venster"
 
 msgctxt "#301382"
-msgid "Next track playlist"
+msgid ""
 msgstr "Volgende nummer afspeellijst"
 
 msgctxt "#301384"
-msgid "Set startup volume"
+msgid ""
 msgstr "Stel startvolume in"
 
 msgctxt "#301386"
-msgid "Dectivate alphanumeric jumpbar"
+msgid ""
 msgstr "Schakel alfanumerieke springbalk uit."
 
 msgctxt "#301388"
-msgid "Hide wake on lan switch in \'Central\'"
+msgid ""
 msgstr "Hide wake on lan switch in \'Headquarters\'"
 
 msgctxt "#301390"
-msgid "Globalsearch in contextmenu"
+msgid ""
 msgstr "Globalsearch in het contextmenu"
 
 msgctxt "#301392"
-msgid "Statistic show in mainmenu"
+msgid ""
 msgstr "Toon statistiek in hoofdmenu"
 
 msgctxt "#301394"
-msgid "Show favorites window in main menu"
+msgid ""
 msgstr "toon favorietenvenster in hoofdmenu"
 
 msgctxt "#301396"
-msgid "Disable \'Central\'"
+msgid ""
 msgstr "\'centrale uitschakelen\'"
 
 msgctxt "#301389"
-msgid "- Path"
+msgid ""
 msgstr "- Map"
 
 msgctxt "#301400"
-msgid "Disc"
+msgid ""
 msgstr "Schijf"
 
 msgctxt "#301402"
-msgid "Animations (high cpu load)"
+msgid ""
 msgstr "Animaties (hoge CPU-belasting)"
 
 msgctxt "#301404"
-msgid "Navigation information"
+msgid ""
 msgstr "Navigatie-informatie"
 
 msgctxt "#301406"
-msgid "Small Weather-Information"
+msgid ""
 msgstr "Kleine weersinformatie"
 
 msgctxt "#301408"
-msgid "Hide date display"
+msgid ""
 msgstr "Verberg datumweergave"
 
 msgctxt "#301410"
-msgid "Just a background image"
+msgid ""
 msgstr "Slechts één achtergrondafbeelding"
 
 msgctxt "#301412"
-msgid "- Picture / Path"
+msgid ""
 msgstr "- afbeelding / pad"
 
 msgctxt "#301414"
-msgid "- Slideshow instead of image"
+msgid ""
 msgstr "- Diavoorstelling in plaats van stilstaand beeld."
 
 msgctxt "#301416"
-msgid "Color Accents"
+msgid ""
 msgstr "Kleuraccenten"
 
 msgctxt "#301418"
-msgid "Background theme"
+msgid ""
 msgstr "achtergrondthema"
 
 msgctxt "#301424"
-msgid "Structur in mainmenu"
+msgid ""
 msgstr "Structuur in het hoofdmenu"
 
 msgctxt "#301426"
-msgid "Player Controls"
+msgid ""
 msgstr "Spelersbesturing"
 
 msgctxt "#301428"
-msgid "Weather fanarts"
+msgid ""
 msgstr "Weer Fanarts"
 
 msgctxt "#301430"
-msgid "Lightweight version of the break screen"
+msgid ""
 msgstr "Lichte versie van het pauzescherm"
 
 msgctxt "#301432"
-msgid "Hide video details"
+msgid ""
 msgstr "verberg video details"
 
 msgctxt "#301434"
-msgid "CD Style"
+msgid ""
 msgstr "CD-stijl"
 
 msgctxt "#301436"
-msgid "hear"
+msgid ""
 msgstr "luister"
 
 msgctxt "#301438"
-msgid "manage your"
+msgid ""
 msgstr "beheer je"
 
 msgctxt "#301440"
-msgid "experience your"
+msgid ""
 msgstr "ervaar je"
 
 msgctxt "#301442"
-msgid "check out the"
+msgid ""
 msgstr "verken je"
 
 msgctxt "#301444"
-msgid "let them rotate"
+msgid ""
 msgstr "laat het draaien"
 
 msgctxt "#301446"
-msgid "go to"
+msgid ""
 msgstr "ga naar"
 
 msgctxt "#301448"
-msgid "change your"
+msgid ""
 msgstr "verander je"
 
 msgctxt "#301456"
-msgid "Glass"
+msgid ""
 msgstr "glas"
 
 msgctxt "#301458"
-msgid "Blank"
+msgid ""
 msgstr "leeg"
 
 msgctxt "#301460"
-msgid "low"
+msgid ""
 msgstr "licht"
 
 msgctxt "#301462"
-msgid "medium"
+msgid ""
 msgstr "medium"
 
 msgctxt "#301464"
-msgid "strongly"
+msgid ""
 msgstr "sterk"
 
 msgctxt "#301466"
-msgid "Central"
+msgid ""
 msgstr "centraal"
 
 msgctxt "#301468"
-msgid "other/unknown"
+msgid ""
 msgstr "overig/onbekend"
 
 msgctxt "#301470"
-msgid "Moviedrama"
+msgid ""
 msgstr "film drama"
 
 msgctxt "#301472"
-msgid "News"
+msgid ""
 msgstr "Nieuws"
 
 msgctxt "#301474"
-msgid "Show"
+msgid ""
 msgstr "Tonen"
 
 msgctxt "#301476"
-msgid "Sports"
+msgid ""
 msgstr "Sport"
 
 msgctxt "#301478"
-msgid "Child"
+msgid ""
 msgstr "Kinderen"
 
 msgctxt "#301480"
-msgid "Music"
+msgid ""
 msgstr "muziek"
 
 msgctxt "#301482"
-msgid "Arts"
+msgid ""
 msgstr "Kunst"
 
 msgctxt "#301484"
-msgid "Social"
+msgid ""
 msgstr "Bedrijf"
 
 msgctxt "#301486"
-msgid "Science"
+msgid ""
 msgstr "Wetenschap"
 
 msgctxt "#301488"
-msgid "Special"
+msgid ""
 msgstr "Speciaal"
 
 msgctxt "#301490"
-msgid "Hobby"
+msgid ""
 msgstr "Hobby"
 
 msgctxt "#301492"
-msgid "download artwork"
+msgid ""
 msgstr "load artwork"
 
 msgctxt "#301494"
-msgid "Recently added TVShows"
+msgid ""
 msgstr "Nieuw toegevoegde tv-series"
 
 msgctxt "#301496"
-msgid "forecast"
+msgid ""
 msgstr "Voorspelling"
 
 msgctxt "#301498"
-msgid "Set the position of each mein menu fixed points.[CR]Using position numbers from 1 - 22."
+msgid ""
 msgstr "Stel hier de positie van elk hoofdmenu-item in.[CR]Gebruik itemnummers van 1 - 22."
 
 msgctxt "#301500"
-msgid "go directly to video files"
+msgid ""
 msgstr "spring direct naar videobestanden"
 
 msgctxt "#301502"
-msgid "Show profil name"
+msgid ""
 msgstr "toon profielnamen"
 
 msgctxt "#301504"
-msgid "Kodi runs:"
+msgid ""
 msgstr "Kodi draait:"
 
 msgctxt "#301506"
-msgid "<"
+msgid ""
 msgstr "<"
 
 msgctxt "#301508"
-msgid "<<"
+msgid ""
 msgstr "<<"
 
 msgctxt "#301510"
-msgid "Studio symbols ..."
+msgid ""
 msgstr "Studio symbolen ..."
 
 msgctxt "#301512"
-msgid "Genre icons ..."
+msgid ""
 msgstr "Genre symbolen ..."
 
 msgctxt "#301514"
-msgid "Weather icons ..."
+msgid ""
 msgstr "Weersymbolen ..."
 
 msgctxt "#301516"
-msgid "Weather fanart ..."
+msgid ""
 msgstr "Weer fanart ..."
 
 msgctxt "#301520"
-msgid "In order to set an Timer the \'KN Switcher Service\' is required. Download via Kodinerds repository."
+msgid ""
 msgstr "Om een schakeltimer in te stellen is de \'KN schakelservice\' nodig. Downloaden via Kodinerds repository."
 
 msgctxt "#301522"
-msgid "delete all timers"
+msgid ""
 msgstr "verwijder alle timers"
 
 msgctxt "#301524"
-msgid "delete"
+msgid ""
 msgstr "verwijderen"
 
 msgctxt "#301526"
-msgid "administration"
+msgid ""
 msgstr "beheren"
 
 msgctxt "#301528"
-msgid "Switchtimer"
+msgid ""
 msgstr "toggle timer"
 
 msgctxt "#301530"
-msgid "Timer overview"
+msgid ""
 msgstr "Timer overzicht"
 
 msgctxt "#301532"
-msgid "Today"
+msgid ""
 msgstr "Vandaag"
 
 msgctxt "#301534"
-msgid "Enable"
+msgid ""
 msgstr "Tonen"
 
 msgctxt "#301536"
-msgid "Channels"
+msgid ""
 msgstr "Kanalen"
 
 msgctxt "#301538"
-msgid "both"
+msgid ""
 msgstr "Beide"
 
 msgctxt "#301540"
-msgid "original"
+msgid ""
 msgstr "Origineel"
 
 msgctxt "#301542"
-msgid "HorizonzV Flag"
+msgid ""
 msgstr "HorizonzVlag"
 
 msgctxt "#301544"
-msgid "Germany"
+msgid ""
 msgstr "Duitsland"
 
 msgctxt "#301546"
-msgid "United States"
+msgid ""
 msgstr "Verenigde Staten"
 
 msgctxt "#301548"
-msgid "United Kingdom"
+msgid ""
 msgstr "Verenigd Koninkrijk"
 
 msgctxt "#301550"
-msgid "France"
+msgid ""
 msgstr "Frankrijk"
 
 msgctxt "#301551"
-msgid "Serge Blue"
+msgid ""
 msgstr "Serge Blue"
 
 msgctxt "#301552"
-msgid "Grey Blue"
+msgid ""
 msgstr "Grijs Blauw"
 
 msgctxt "#301554"
-msgid "Turquoise"
+msgid ""
 msgstr "Turquoise"
 
 msgctxt "#301558"
-msgid "Sea Green"
+msgid ""
 msgstr "Zeegroen"
 
 msgctxt "#301560"
-msgid "Red"
+msgid ""
 msgstr "Rood"
 
 msgctxt "#301562"
-msgid "Light Grey"
+msgid ""
 msgstr "Lichtgrijs"
 
 msgctxt "#301564"
-msgid "Dark Gold"
+msgid ""
 msgstr "Donker goud"
 
 msgctxt "#301566"
-msgid "Sandy Brown"
+msgid ""
 msgstr "Sandy Brown"
 
 msgctxt "#301570"
-msgid "ColorPicker"
+msgid ""
 msgstr "ColorPicker"
 
 msgctxt "#301572"
-msgid "Avengers B/W"
+msgid ""
 msgstr "Avengers B/W"
 
 msgctxt "#301574"
-msgid "Gambit"
+msgid ""
 msgstr "Gambit"
 
 msgctxt "#301576"
-msgid "Vinyl View"
+msgid ""
 msgstr "Vinylweergave"
 
 msgctxt "#301578"
-msgid "Radio View"
+msgid ""
 msgstr "Radio weergave"
 
 msgctxt "#301580"
-msgid "Standard View"
+msgid ""
 msgstr "Standaardweergave"
 
 msgctxt "#301582"
-msgid "starting ..."
+msgid ""
 msgstr "zal worden gestart ..."
 
 msgctxt "#301584"
-msgid "hide"
+msgid ""
 msgstr "verbergen"
 
 msgctxt "#301586"
-msgid "show"
+msgid ""
 msgstr "tonen"
 
 msgctxt "#301588"
-msgid "button"
+msgid ""
 msgstr "schakelaar"
 
 msgctxt "#301590"
-msgid "skin reload"
+msgid ""
 msgstr "Reload skin"
 
 msgctxt "#301592"
-msgid "KODI APP reload"
+msgid ""
 msgstr "Herstart KODI APP"
 
 msgctxt "#301596"
-msgid "Visible"
+msgid ""
 msgstr "Zichtbaar"
 
 msgctxt "#301598"
-msgid "no progressbar in the widget (green bar on the cover)"
+msgid ""
 msgstr "geen voortgangsbalk in widget (groene balk op cover)"
 
 msgctxt "#301600"
-msgid "last film started in 1st place"
+msgid ""
 msgstr "laatste film gestart op positie 1"
 
 msgctxt "#301602"
-msgid "last album belonged to number 1"
+msgid ""
 msgstr "laatst beluisterde album gerangschikt op #1"
 
 msgctxt "#301604"
-msgid "next episode in 1st place"
+msgid ""
 msgstr "volgende aflevering op nummer 1"
 
 msgctxt "#301606"
-msgid "last started video at number 1"
+msgid ""
 msgstr "laatste video gestart op positie 1"
 
 msgctxt "#301608"
-msgid "5 Day Weather"
+msgid ""
 msgstr "5 dagen weer"
 
 msgctxt "#301610"
-msgid "German Telecast Offers (GTO)"
+msgid ""
 msgstr "Duitse televisieaanbiedingen (GTO)"
 
 msgctxt "#301612"
-msgid "Fritz Smart Home"
+msgid ""
 msgstr "Fritz Smart Home"
 
 msgctxt "#301614"
-msgid "Choose a content for row"
+msgid ""
 msgstr "Kies een inhoud voor de rij"
 
 msgctxt "#301616"
-msgid "on"
+msgid ""
 msgstr "an"
 
 msgctxt "#301618"
-msgid "off"
+msgid ""
 msgstr "uit"
 
 msgctxt "#301620"
-msgid "Battery level"
+msgid ""
 msgstr "Laadniveau batterij"
 
 msgctxt "#301622"
-msgid "Export video library"
+msgid ""
 msgstr "Exporteer videobibliotheek"
 
 msgctxt "#301624"
-msgid "(single NFO, without images, overwrite old data)"
+msgid ""
 msgstr "(enkele NFO, zonder afbeeldingen, overschrijf oude gegevens)"
 
 # msgctxt "#xyxyxyxy"
@@ -1131,7 +1131,7 @@ msgstr "(enkele NFO, zonder afbeeldingen, overschrijf oude gegevens)"
 # msgstr "Na het verbergen van het infopaneel in volledig scherm wordt een discrete weergave van titelinformatie getoond."
 
 msgctxt "#31030"
-msgid "System memory usage"
+msgid ""
 msgstr "Systeemgeheugengebruik."
 
 #~ msgctxt "#31137"
@@ -1139,31 +1139,31 @@ msgstr "Systeemgeheugengebruik."
 #~ msgstr "PVR informatie"
 
 msgctxt "#31139"
-msgid "Video decoder"
+msgid ""
 msgstr "Video decoder"
 
 msgctxt "#31140"
-msgid "Pixel format"
+msgid ""
 msgstr "Pixel formaat"
 
 msgctxt "#31607"
-msgid "Screen resolution"
+msgid ""
 msgstr "Schermresolutie"
 
 msgctxt "#31608"
-msgid "System rendering speed"
+msgid ""
 msgstr "Render snelheid"
 
 msgctxt "#31609"
-msgid "System CPU usage"
+msgid ""
 msgstr "CPU load"
 
 msgctxt "#31611"
-msgid "Code line"
+msgid ""
 msgstr "Code regel"
 
 msgctxt "#31613"
-msgid "enter the category of the playlist here ..."
+msgid ""
 msgstr "voer hier de categorie van de afspeellijst in ..."
 
 msgctxt "#35500"

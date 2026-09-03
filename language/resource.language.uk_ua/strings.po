@@ -1,4 +1,4 @@
-# Kodi Media Center language file
+﻿# Kodi Media Center language file
 # Addon Name: HorizonzV
 # Addon id: skin.horizonzv
 # Addon Provider: blauesgruen
@@ -17,1113 +17,1113 @@ msgstr ""
 "X-Generator: Weblate 4.13\n"
 
 msgctxt "#31000"
-msgid "Power options"
+msgid ""
 msgstr "Налаштування енергії"
 
 msgctxt "#31002"
-msgid "View options"
+msgid ""
 msgstr "Переглянути налаштування"
 
 msgctxt "#31003"
-msgid "Total duration"
+msgid ""
 msgstr "Загальна тривалість"
 
 msgctxt "#31005"
-msgid "Misc options"
+msgid ""
 msgstr "Інші налаштування"
 
 msgctxt "#31007"
-msgid "Playing"
+msgid ""
 msgstr "Він працює"
 
 msgctxt "#31008"
-msgid "Page"
+msgid ""
 msgstr "Сторінка"
 
 msgctxt "#31009"
-msgid "Items"
+msgid ""
 msgstr "Записи"
 
 msgctxt "#31012"
-msgid "Memory used"
+msgid ""
 msgstr "Використання пам'яті"
 
 msgctxt "#31013"
-msgid "Pic thumbs"
+msgid ""
 msgstr "Ескізи"
 
 msgctxt "#31014"
-msgid "Order"
+msgid ""
 msgstr "замовлення"
 
 msgctxt "#31016"
-msgid "Extended info"
+msgid ""
 msgstr "Розширена інформація"
 
 msgctxt "#31017"
-msgid "PLAYING"
+msgid ""
 msgstr "ВІН ЗАПУСКАНО"
 
 msgctxt "#31022"
-msgid "Visualisation presets"
+msgid ""
 msgstr "Параметри візуалізації"
 
 msgctxt "#31023"
-msgid "Sort: Ascending"
+msgid ""
 msgstr "Сортування: Висхідний"
 
 msgctxt "#31024"
-msgid "Sort: Descending"
+msgid ""
 msgstr "Сортування: \'Спуск"
 
 msgctxt "#31025"
-msgid "Open playlist"
+msgid ""
 msgstr "Відкрити список відтворення"
 
 msgctxt "#31026"
-msgid "Save playlist"
+msgid ""
 msgstr "Зберегти список відтворення"
 
 msgctxt "#31027"
-msgid "Close playlist"
+msgid ""
 msgstr "Закрити список відтворення"
 
 msgctxt "#31032"
-msgid "Current selected"
+msgid ""
 msgstr "Наразі вибрано"
 
 msgctxt "#31033"
-msgid "Search trailer"
+msgid ""
 msgstr "Причіп для пошуку"
 
 msgctxt "#31035"
-msgid "Search YouTube"
+msgid ""
 msgstr "Шукати на YouTube"
 
 msgctxt "#31036"
-msgid "Same director"
+msgid ""
 msgstr "Фільми режисера"
 
 msgctxt "#31043"
-msgid "Choose your song"
+msgid ""
 msgstr "Виберіть пісню"
 
 msgctxt "#31044"
-msgid "Lyrics source"
+msgid ""
 msgstr "Джерело тексту"
 
 msgctxt "#31046"
-msgid "Data provider"
+msgid ""
 msgstr "Джерело"
 
 msgctxt "#31047"
-msgid "Hide fanart"
+msgid ""
 msgstr "Приховати фанарт"
 
 msgctxt "#31048"
-msgid "Memory used:"
+msgid ""
 msgstr "Споживання пам'яті:"
 
 msgctxt "#31049"
-msgid "Track number"
+msgid ""
 msgstr "Номер заголовка."
 
 msgctxt "#31050"
-msgid "Selected profile"
+msgid ""
 msgstr "Виберіть профіль"
 
 msgctxt "#31051"
-msgid "Last logged in"
+msgid ""
 msgstr "Останній вхід в систему"
 
 msgctxt "#31052"
-msgid "Aired"
+msgid ""
 msgstr "Випущено"
 
 msgctxt "#31053"
-msgid "Playlist options"
+msgid ""
 msgstr "Налаштування списку відтворення"
 
 msgctxt "#31054"
-msgid "Created"
+msgid ""
 msgstr "Створено"
 
 msgctxt "#31056"
-msgid "Timer set! [COLOR=grey1] - System auto shutdown in[/COLOR]"
+msgid ""
 msgstr "Таймер вимкнення активний! [COLOR=grey1] - Час до вимкнення:[/COLOR]"
 
 msgctxt "#31057"
-msgid "Click button to play[CR][CR]movie trailer"
+msgid ""
 msgstr "Натисніть кнопку, щоб відтворити [CR][CR]трейлер фільму"
 
 msgctxt "#31059"
-msgid "Stop"
+msgid ""
 msgstr "Стоп"
 
 msgctxt "#31060"
-msgid "Fast forward"
+msgid ""
 msgstr "Перемотати вперед"
 
 msgctxt "#31061"
-msgid "Rewind"
+msgid ""
 msgstr "Перемотати назад"
 
 msgctxt "#31062"
-msgid "Movie menu"
+msgid ""
 msgstr "Меню фільму"
 
 msgctxt "#31063"
-msgid "Download subtitles"
+msgid ""
 msgstr "Завантажити субтитри"
 
 msgctxt "#31064"
-msgid "Watch as 2D"
+msgid ""
 msgstr "Переглянути у 2D"
 
 msgctxt "#31065"
-msgid "Change mode"
+msgid ""
 msgstr "Змінити режим"
 
 msgctxt "#31067"
-msgid "Playlist at startup"
+msgid ""
 msgstr "Власний список відтворення при запуску"
 
 msgctxt "#31068"
-msgid "Local subtitle available"
+msgid ""
 msgstr "Доступні місцеві субтитри"
 
 msgctxt "#31069"
-msgid "Select your Kodi user profile to login and continue"
+msgid ""
 msgstr "Будь ласка, виберіть профіль користувача Kodi[CR]для продовження."
 
 msgctxt "#31072"
-msgid "Add group"
+msgid ""
 msgstr "Додати групу"
 
 msgctxt "#31073"
-msgid "Rename group"
+msgid ""
 msgstr "Перейменувати групу"
 
 msgctxt "#31074"
-msgid "Delete group"
+msgid ""
 msgstr "Видалити групу"
 
 msgctxt "#31075"
-msgid "Available[CR]Groups"
+msgid ""
 msgstr "Доступні[CR]групи"
 
 msgctxt "#31076"
-msgid "Timer set"
+msgid ""
 msgstr "Таймер активовано"
 
 msgctxt "#31077"
-msgid "Channel options"
+msgid ""
 msgstr "Налаштування каналу"
 
 msgctxt "#31078"
-msgid "36-hour forecast"
+msgid ""
 msgstr "36-годинний прогноз"
 
 msgctxt "#31079"
-msgid "Hourly forecast"
+msgid ""
 msgstr "Погодинний прогноз"
 
 msgctxt "#31080"
-msgid "Weekend forecast"
+msgid ""
 msgstr "Прогноз на вихідні"
 
 msgctxt "#31081"
-msgid "Daily forecast"
+msgid ""
 msgstr "Щоденний прогноз"
 
 msgctxt "#31083"
-msgid "Fetching forecast info..."
+msgid ""
 msgstr "Отримуються дані прогнозу..."
 
 # Horizonz
 
 msgctxt "#301126"
-msgid "Activates background video in the main menu."
+msgid ""
 msgstr "Активує фонове відео у головному меню."
 
 msgctxt "#301132"
-msgid "Select the country for the age rating (defined in the scrapper).[CR]Supported are DE, US, UK, FR.[CR]If only US ratings are available, these are displayed."
+msgid ""
 msgstr "Виберіть країну для вікового рейтингу (визначено у скрепері).[CR]Підтримуються DE, US, UK, FR.[CR]Якщо доступні лише рейтинги США, вони будуть показані."
 
 msgctxt "#301134"
-msgid "Trailer are directly displayed in the movie information or in fullscreen mode."
+msgid ""
 msgstr "Трейлери відображаються безпосередньо в інформації про фільм або у повноекранному режимі."
 
 msgctxt "#301135"
-msgid "If a visualization is selected for music playback, it will also be displayed in the main menu."
+msgid ""
 msgstr "Якщо для відтворення музики вибрано візуалізацію, її також буде показано у головному меню."
 
 msgctxt "#301136"
-msgid "Displays playlist of the next 9 titles in main menu and in fullscreen mode."
+msgid ""
 msgstr "Показує список відтворення з наступних 9 доріжок у головному меню та на весь екран."
 
 msgctxt "#301140"
-msgid "Define the volume in percent, which will be played on any start of KODI.[CR]Quote a figure between 0 and 100."
+msgid ""
 msgstr "Установіть гучність у відсотках, яка буде відтворюватися щоразу під час запуску KODI.[CR]Вкажіть число від 0 до 100."
 
 msgctxt "#301142"
-msgid "Disable alphanumeric jump list in SMS style.[CR][COLOR=grey]Imported from the skin \'Alaska\'[/COLOR]."
+msgid ""
 msgstr "Вимикає алфавітно-цифровий список переходів у стилі SMS.[CR][COLOR=grey]Імпортовано зі скіни \'Аляска\'[/COLOR]"
 
 msgctxt "#301143"
-msgid "To use this function you need the addon \'Skinhelper Ping\' by _Andy_/PvD.[CR][COLOR=white]It can be installed here under Addons or via the Kodinerds Repo[/COLOR]."
+msgid ""
 msgstr "Для використання цієї функції потрібен аддон \'Skinhelper Ping\' від _Andy_/PvD.[CR][COLOR=grey]Його можна встановити тут у розділі Аддони або через Kodinerds Repo.[/COLOR]"
 
 msgctxt "#301144"
-msgid "Starts the selected playlist after starting KODI."
+msgid ""
 msgstr "Запускає вибраний список відтворення після запуску KODI."
 
 msgctxt "#301145"
-msgid "To use this function, the addon \'Global Search\' from the official repository is required."
+msgid ""
 msgstr "Для використання цієї функції потрібно встановити доповнення \'Глобальний пошук\' з офіційного сховища."
 
 msgctxt "#301146"
-msgid "Shows a small statistic about the database entries in the lower right corner of the main menu."
+msgid ""
 msgstr "Показує невелику статистику щодо записів бази даних у правому нижньому куті головного меню."
 
 msgctxt "#301147"
-msgid "Shows the favourites below the main menu instead of directly the \'Central\'. [CR]These are otherwise accessible via the \'Central\'."
+msgid ""
 msgstr "Показує вибране під головним меню замість безпосередньо \'Центрального\'.[CR]В іншому випадку до них можна потрапити через \'Центральне\'."
 
 msgctxt "#301148"
-msgid "Hides the \'Central\' located below the main menu."
+msgid ""
 msgstr "Приховує \'Центральне\', розташоване під головним меню."
 
 msgctxt "#301150"
-msgid "Activates an icon in the upper right corner that shows the battery's charge status.[CR][COLOR=white]An incorrect display occurs on computers without a battery.[/COLOR]"
+msgid ""
 msgstr "Активує піктограму у верхньому правому куті, яка відображає стан заряду акумулятора.[CR][COLOR=white]Неправильне відображення відбувається на комп'ютерах без акумулятора.[/COLOR]"
 
 msgctxt "#301151"
-msgid "The settings for the widget are in the respective submenu of the main menus."
+msgid ""
 msgstr "Налаштування для віджету знаходяться у відповідному підменю головного меню."
 
 msgctxt "#301152"
-msgid "Dims all unfocused covers."
+msgid ""
 msgstr "Затемнює всі нефокусовані обкладинки."
 
 msgctxt "#301153"
-msgid "Hides the green progress bar on the covers."
+msgid ""
 msgstr "Приховує зелений індикатор виконання на обкладинках."
 
 msgctxt "#301166"
-msgid "This skin contains various animation effects.[CR]With this switch you can deactivate them. Instead, a simple fade effect is used.[CR]This can lead to better performance on slow systems."
+msgid ""
 msgstr "Ця скіна містить різні ефекти анімації.[CR]Використовуйте цей перемикач, щоб вимкнути їх. Замість цього використовується простий ефект затухання.[CR]Це може призвести до кращої продуктивності на повільних системах"
 
 msgctxt "#301168"
-msgid "Displays in the upper left corner, where you are."
+msgid ""
 msgstr "Показує, де ви перебуваєте у верхньому лівому куті."
 
 msgctxt "#301169"
-msgid "Hides the date display in the upper right corner."
+msgid ""
 msgstr "Приховує відображення дати у верхньому правому куті."
 
 msgctxt "#301170"
-msgid "Activates fanart in all areas."
+msgid ""
 msgstr "Увімкнути фанарт у всіх областях."
 
 msgctxt "#301171"
-msgid "Disables changing background pictures.[CR]Select an own picture or path."
+msgid ""
 msgstr "Вимикає зміну фонових зображень.[CR][COLOR=white]Виберіть власне зображення або шлях.[/COLOR]"
 
 msgctxt "#301172"
-msgid "Select a picture. If no pictures is chosen, a standard picture will be displayed.[CR][COLOR=white]Click again for deleting.[/COLOR]"
+msgid ""
 msgstr "Виберіть зображення тут.[CR]Якщо зображення не вказано, буде показано зображення за замовчуванням.[CR][COLOR=white]Клацніть ще раз, щоб видалити його.[/COLOR]"
 
 msgctxt "#301173"
-msgid "Shows a slideshow in the background, based on the KODI library.[CR][COLOR=white]Visible in the main menu under: Movies, Series and Music.[/COLOR]"
+msgid ""
 msgstr "Показує слайд-шоу у фоновому режимі на основі бібліотеки KODI.[CR][COLOR=white]Відображається у головному меню під: Фільми, серіали та музика[/COLOR]"
 
 msgctxt "#301174"
-msgid "Enables the dimming of the background in all areas.[CR][COLOR=white]Possible dimming steps: OFF, LIGHT, MEDIUM, STRONG.[/COLOR]"
+msgid ""
 msgstr "Активує затемнення фону у всіх областях.[CR][COLOR=white]Можливі рівні затемнення: ВИМКНЕНО, ЛЕГКИЙ, СЕРЕДНІЙ, ВАЖКИЙ.[/COLOR]"
 
 msgctxt "#301175"
-msgid "Choose an accent colour that shows up in many areas of the skin.[CR][COLOR=grey]Custom: Colour codes must be specified in AARRGGBB hex format.[CR]An example for [/COLOR][COLOR=ffffffff]White:[/COLOR] FFFFFFFF"
+msgid ""
 msgstr "Виберіть акцентний колір, який відображатиметься на багатьох ділянках шкіри.[CR][COLOR=grey]Користувацький: Коди кольорів мають бути вказані у шістнадцятковому форматі AARRGGBB.[CR]Приклад [/COLOR][COLOR=ffffffff]Білий[/COLOR]: FFFFFFFFF"
 
 msgctxt "#301176"
-msgid "Install the ColorPicker addon from the Kodinerds repository to be able to select colors with one click."
+msgid ""
 msgstr "Встановіть додаток ColorPicker з репозиторію Kodinerds, щоб вибирати кольори одним кліком."
 
 msgctxt "#301177"
-msgid "Shows the number and total running time of the entries in the database views."
+msgid ""
 msgstr "У поданнях бази даних показує кількість та загальний час виконання записів."
 
 msgctxt "#301178"
-msgid "Enables an effect of light along the main menu."
+msgid ""
 msgstr "Активує світловий ефект уздовж головного меню."
 
 msgctxt "#301180"
-msgid "Select one of the background themes. It strongly changes the overall impression of the main menu.[CR][COLOR=white]Will be deactivated as soon as \'only one background image\' is active.[/COLOR][COLOR=grey][CR]The theme \'Gambit\' has the advantage that it provides better performance on weaker systems.[CR]This theme was kindly provided by \'G4mbit\' from the KODINERDS forum.[/COLOR]"
+msgid ""
 msgstr "Виберіть одну з фонових тем. Вона сильно змінює загальне враження від головного меню.[CR][COLOR=white]Буде вимкнено, щойно стане активним \'лише одне фонове зображення\'[/COLOR][COLOR=grey][CR]Тема \'Gambit\' має ту перевагу, що забезпечує кращу продуктивність на слабших системах.[CR]Цю тему було люб'язно надано \'G4mbit\' з форуму KODINERDS.[/COLOR]"
 
 msgctxt "#301184"
-msgid "Places a structure over the background image."
+msgid ""
 msgstr "Накладає текстуру на фонове зображення."
 
 msgctxt "#301186"
-msgid "The player controls are displayed on the left side under the mainmenu during the playing mode."
+msgid ""
 msgstr "Показує елементи керування програвачем під час відтворення ліворуч, під головним меню."
 
 msgctxt "#301188"
-msgid "Shows in the upper left corner of the current weather."
+msgid ""
 msgstr "Відображає поточну погоду у верхньому лівому куті."
 
 msgctxt "#301190"
-msgid "It is possible to disable \'Radio\', which is one of 3 views during the playing mode in full screen."
+msgid ""
 msgstr "\'Радіо\', один з 3 видів під час повноекранного відтворення, можна вимкнути тут."
 
 msgctxt "#301192"
-msgid "Select between the views Standard, Alternative and Radio.[CR][COLOR=grey]\'Radio\' is always used for online music streams. It is possible to disable it.[/COLOR]"
+msgid ""
 msgstr "Виберіть між видами Стандартний, Альтернативний та Радіо.[CR][COLOR=grey]\'Радіо\' завжди використовується для онлайнових музичних потоків. Але може бути деактивована[/COLOR]"
 
 msgctxt "#301194"
-msgid "Select between the views Standard, Alternative and Radio.[CR][COLOR=white]Information: \'Radio\' was disabled.[/COLOR]"
+msgid ""
 msgstr "Виберіть між стандартним та альтернативним виглядом.[CR][COLOR=white]Інформація: Радіо було вимкнено.[/COLOR]"
 
 msgctxt "#301196"
-msgid "Displays basic track information in full screen during music playback in the lower left corner.[CR][COLOR=whithe]Visible when OSD is not visible[/COLOR]."
+msgid ""
 msgstr "Відображає основну інформацію про доріжку у повноекранному режимі під час відтворення музики у лівому нижньому кутку.[CR][COLOR=whithe]Відображається, коли екранне меню не видно.[/COLOR]"
 
 msgctxt "#301198"
-msgid "Displays a discreet narrow variation of the screen in \'pause\'."
+msgid ""
 msgstr "Відображає непомітну, вузьку версію екрана паузи."
 
 msgctxt "#301200"
-msgid "Information like chapter, subtitle, current time bar etc. are not displayed.[CR][COLOR=grey]Studio logos and extra arts are faded out.[/COLOR]"
+msgid ""
 msgstr "Не відображається інформація, така як розділи, субтитри, панелі виконання і т.д.[CR][COLOR=grey]Studiologos та Extra Arts також приховано.[/COLOR]"
 
 msgctxt "#301202"
-msgid "Show all available movie & series artworks.[CR][COLOR=white]Since Kodi 19 artworks are loaded with the scrapper \'The Movie Database PYTHON\'.[/COLOR][COLOR=grey][CR]\'Artwork Beef\' or a similar addon can still be used.[/COLOR]"
+msgid ""
 msgstr "Показати всі доступні обкладинки фільмів та серіалів.[CR][COLOR=white]Оскільки Kodi 19 обкладинок завантажено за допомогою скраппера \'The Movie Database PYTHON\'[/COLOR][COLOR=grey][CR]\'Artwork Beef\' або подібний аддон все одно можна використовувати.[/COLOR]"
 
 msgctxt "#301204"
-msgid "Select the appearance of the CD here if no CDArt is found.[CR][COLOR=white]CDArts must be available in a folder. This is specified in the system settings (Media->Music).[/COLOR]"
+msgid ""
 msgstr "Виберіть тут зовнішній вигляд компакт-диска, якщо обкладинку не знайдено.[CR][COLOR=white]Обкладинки компакт-дисків мають бути готові у теці. Ви можете вказати це в налаштуваннях системи (Медіа->Музика).[/COLOR]"
 
 msgctxt "#301210"
-msgid "Enables all PVR available artwork.[CR][COLOR=white]\'Skin Helper Service\' is required.[/COLOR]"
+msgid ""
 msgstr "Активує всі доступні зображення PVR.[CR][COLOR=white]\'Skin Helper Service\' потрібен.[/COLOR]"
 
 msgctxt "#301218"
-msgid "Select a background picture."
+msgid ""
 msgstr "Виберіть фонове зображення"
 
 msgctxt "#301240"
-msgid "Reset"
+msgid ""
 msgstr "Скинути"
 
 msgctxt "#301244"
-msgid "Defines the default for this skin.[CR]This refers only to customized options."
+msgid ""
 msgstr "Встановлює значення за замовчуванням для цієї скіни.[CR]Впливає лише на користувацькі налаштування."
 
 msgctxt "#301246"
-msgid "Weak"
+msgid ""
 msgstr "Слабкий"
 
 msgctxt "#301248"
-msgid "Medium"
+msgid ""
 msgstr "Середній"
 
 msgctxt "#301250"
-msgid "Fast"
+msgid ""
 msgstr "Швидко"
 
 msgctxt "#301268"
-msgid "[UPPERCASE]Skin settings reset ?[/UPPERCASE]"
+msgid ""
 msgstr "[UPPERCASE]Скинути налаштування скінів ?[/UPPERCASE]"
 
 msgctxt "#301270"
-msgid "Cover"
+msgid ""
 msgstr "Обкладинка"
 
 msgctxt "#301272"
-msgid "no defined favourites"
+msgid ""
 msgstr "Вибране відсутнє"
 
 msgctxt "#301274"
-msgid "[B]KODI SUBTITLES[/B]"
+msgid ""
 msgstr "[B]Субтитри KODI[/B]"
 
 msgctxt "#301276"
-msgid "Sidepanel"
+msgid ""
 msgstr "панель сторінок"
 
 msgctxt "#301278"
-msgid "Set Information"
+msgid ""
 msgstr "Встановити інформацію"
 
 msgctxt "#301280"
-msgid "Concerts"
+msgid ""
 msgstr "Концерти"
 
 msgctxt "#301282"
-msgid "Language (age rating)"
+msgid ""
 msgstr "Мова (віковий рейтинг)"
 
 msgctxt "#301284"
-msgid "Flags in text form"
+msgid ""
 msgstr "Прапори у текстовій формі"
 
 msgctxt "#301286"
-msgid "Dim background"
+msgid ""
 msgstr "Тло тьмяне"
 
 msgctxt "#301288"
-msgid "Page Count"
+msgid ""
 msgstr "Лічильник сторінок"
 
 msgctxt "#301290"
-msgid "Cases"
+msgid ""
 msgstr "Конверти"
 
 msgctxt "#301292"
-msgid "Hide big cover"
+msgid ""
 msgstr "Приховати велику обкладинку"
 
 msgctxt "#301294"
-msgid "Logo in place title"
+msgid ""
 msgstr "Логотип замість назви"
 
 msgctxt "#301296"
-msgid "Information"
+msgid ""
 msgstr "Інформація"
 
 msgctxt "#301300"
-msgid "Hide \'NEW\' Logo"
+msgid ""
 msgstr "Приховати піктограму \'НОВИЙ\'"
 
 msgctxt "#301302"
-msgid "Dusteffect (case)"
+msgid ""
 msgstr "Dust Effect (Envelope)"
 
 msgctxt "#301304"
-msgid "Disable Cover animations"
+msgid ""
 msgstr "Вимкнути анімацію обкладинки"
 
 msgctxt "#301306"
-msgid "Dim cover"
+msgid ""
 msgstr "Темна обкладинка"
 
 msgctxt "#301308"
-msgid "List"
+msgid ""
 msgstr "Список"
 
 msgctxt "#301310"
-msgid "Info List"
+msgid ""
 msgstr "Список інформації"
 
 msgctxt "#301312"
-msgid "Thumbview"
+msgid ""
 msgstr "Thumbview"
 
 msgctxt "#301314"
-msgid "Banner"
+msgid ""
 msgstr "Банер"
 
 msgctxt "#301316"
-msgid "Showcase"
+msgid ""
 msgstr "Вітрина"
 
 msgctxt "#301318"
-msgid "Perspective"
+msgid ""
 msgstr "Перспектива"
 
 msgctxt "#301320"
-msgid "Disc Flow"
+msgid ""
 msgstr "Потік дисків"
 
 msgctxt "#301322"
-msgid "Rightlist"
+msgid ""
 msgstr "Правий список"
 
 msgctxt "#301324"
-msgid "Cover Wall (fullsize)"
+msgid ""
 msgstr "Cover Wall (Full Screen)"
 
 msgctxt "#301326"
-msgid "Cover Wall"
+msgid ""
 msgstr "Cover Wall"
 
 msgctxt "#301328"
-msgid "Picture wall"
+msgid ""
 msgstr "Cover Wall"
 
 msgctxt "#301330"
-msgid "Disable radio view"
+msgid ""
 msgstr "Вимкнути перегляд радіо"
 
 msgctxt "#301331"
-msgid " - Disable TV Wall"
+msgid ""
 msgstr " - Вимкнути TV Wall"
 
 msgctxt "#301332"
-msgid "Music visualisation"
+msgid ""
 msgstr "Музична візуалізація"
 
 msgctxt "#301334"
-msgid "Music extra arts"
+msgid ""
 msgstr "Music Extra Arts"
 
 msgctxt "#301336"
-msgid "Date display"
+msgid ""
 msgstr "Відображення дати"
 
 msgctxt "#301338"
-msgid "Button description"
+msgid ""
 msgstr "Опис ключа"
 
 msgctxt "#301340"
-msgid "Information panel"
+msgid ""
 msgstr "Інформаційна панель"
 
 msgctxt "#301344"
-msgid "back"
+msgid ""
 msgstr "назад"
 
 msgctxt "#301346"
-msgid "Mainmenu buttons"
+msgid ""
 msgstr "кнопки головного меню"
 
 msgctxt "#301348"
-msgid "Submenu buttons"
+msgid ""
 msgstr "Кнопки підменю"
 
 msgctxt "#301350"
-msgid "Functions"
+msgid ""
 msgstr "Функції"
 
 msgctxt "#301351"
-msgid "Widgets"
+msgid ""
 msgstr "Віджети"
 
 msgctxt "#301352"
-msgid "Design / Performance"
+msgid ""
 msgstr "Дизайн / Продуктивність"
 
 msgctxt "#301354"
-msgid "Extra arts"
+msgid ""
 msgstr "Додаткові мистецтва"
 
 msgctxt "#301356"
-msgid "Admin"
+msgid ""
 msgstr "Адміністратор"
 
 msgctxt "#301357"
-msgid "Shutdown Menu"
+msgid ""
 msgstr "Меню завершення роботи"
 
 msgctxt "#301358"
-msgid "Enable debug grid"
+msgid ""
 msgstr "Увімкнути сітку"
 
 msgctxt "#301360"
-msgid "Debug Information"
+msgid ""
 msgstr "Налагоджувальна інформація"
 
 msgctxt "#301362"
-msgid "Enable First start"
+msgid ""
 msgstr "Активувати перший запуск"
 
 msgctxt "#301364"
-msgid "Choose your system performance"
+msgid ""
 msgstr "виберіть продуктивність вашої системи"
 
 msgctxt "#301366"
-msgid "Mousepointer"
+msgid ""
 msgstr "вказівник миші"
 
 msgctxt "#301368"
-msgid "Set positions"
+msgid ""
 msgstr "Встановити позиції"
 
 msgctxt "#301370"
-msgid "Move focus"
+msgid ""
 msgstr "Перемістити фокус"
 
 msgctxt "#301371"
-msgid "Dashboard"
+msgid ""
 msgstr "Панель керування"
 
 msgctxt "#301372"
-msgid "Auto-hide the mainmenu"
+msgid ""
 msgstr "Автоматично приховувати головне меню"
 
 msgctxt "#301374"
-msgid "Time to hide"
+msgid ""
 msgstr "Час до приховування"
 
 msgctxt "#301376"
-msgid "Background video"
+msgid ""
 msgstr "Фонове відео"
 
 msgctxt "#301378"
-msgid "Choose the country for age rating"
+msgid ""
 msgstr "Виберіть країну вікового рейтингу"
 
 msgctxt "#301380"
-msgid "Play trailer in fullscreen"
+msgid ""
 msgstr "НЕ відтворювати трейлер у вікні"
 
 msgctxt "#301382"
-msgid "Next track playlist"
+msgid ""
 msgstr "Наступний список відтворення треків"
 
 msgctxt "#301384"
-msgid "Set startup volume"
+msgid ""
 msgstr "Встановити початкову гучність"
 
 msgctxt "#301386"
-msgid "Dectivate alphanumeric jumpbar"
+msgid ""
 msgstr "Вимкнути алфавітно-цифрову панель переходу"
 
 msgctxt "#301388"
-msgid "Hide wake on lan switch in \'Central\'"
+msgid ""
 msgstr "Приховати перемикач \'Пробудження\' у \'Штаб-квартирі\'"
 
 msgctxt "#301390"
-msgid "Globalsearch in contextmenu"
+msgid ""
 msgstr "Глобальний пошук у контекстному меню"
 
 msgctxt "#301392"
-msgid "Statistic show in mainmenu"
+msgid ""
 msgstr "Показати статистику в головному меню"
 
 msgctxt "#301394"
-msgid "Show favorites window in main menu"
+msgid ""
 msgstr "показати вікно обраного в головному меню"
 
 msgctxt "#301396"
-msgid "Disable \'Central\'"
+msgid ""
 msgstr "\'вимкнути центральну\'"
 
 msgctxt "#301389"
-msgid "- Path"
+msgid ""
 msgstr "- Папка"
 
 msgctxt "#301400"
-msgid "Disc"
+msgid ""
 msgstr "Диск"
 
 msgctxt "#301402"
-msgid "Animations (high cpu load)"
+msgid ""
 msgstr "Анімації (високе навантаження на процесор)"
 
 msgctxt "#301404"
-msgid "Navigation information"
+msgid ""
 msgstr "Навігаційна інформація"
 
 msgctxt "#301406"
-msgid "Small Weather-Information"
+msgid ""
 msgstr "Невелика інформація про погоду"
 
 msgctxt "#301408"
-msgid "Hide date display"
+msgid ""
 msgstr "Приховати відображення дати"
 
 msgctxt "#301410"
-msgid "Just a background image"
+msgid ""
 msgstr "Тільки одне фонове зображення"
 
 msgctxt "#301412"
-msgid "- Picture / Path"
+msgid ""
 msgstr "- зображення / шлях"
 
 msgctxt "#301414"
-msgid "- Slideshow instead of image"
+msgid ""
 msgstr "- Слайд-шоу замість нерухомого зображення"
 
 msgctxt "#301416"
-msgid "Color Accents"
+msgid ""
 msgstr "Кольорові акценти"
 
 msgctxt "#301418"
-msgid "Background theme"
+msgid ""
 msgstr "фонова тема"
 
 msgctxt "#301424"
-msgid "Structur in mainmenu"
+msgid ""
 msgstr "Структура в головному меню"
 
 msgctxt "#301426"
-msgid "Player Controls"
+msgid ""
 msgstr "Елементи керування програвачем"
 
 msgctxt "#301428"
-msgid "Weather fanarts"
+msgid ""
 msgstr "Малюнки погоди"
 
 msgctxt "#301430"
-msgid "Lightweight version of the break screen"
+msgid ""
 msgstr "Полегшена версія екрана паузи"
 
 msgctxt "#301432"
-msgid "Hide video details"
+msgid ""
 msgstr "приховати деталі відео"
 
 msgctxt "#301434"
-msgid "CD Style"
+msgid ""
 msgstr "CD Style"
 
 msgctxt "#301436"
-msgid "hear"
+msgid ""
 msgstr "слухати"
 
 msgctxt "#301438"
-msgid "manage your"
+msgid ""
 msgstr "керувати своїм"
 
 msgctxt "#301440"
-msgid "experience your"
+msgid ""
 msgstr "відчуйте свій"
 
 msgctxt "#301442"
-msgid "check out the"
+msgid ""
 msgstr "дослідити свій"
 
 msgctxt "#301444"
-msgid "let them rotate"
+msgid ""
 msgstr "дозвольте йому обертатися"
 
 msgctxt "#301446"
-msgid "go to"
+msgid ""
 msgstr "перейти до"
 
 msgctxt "#301448"
-msgid "change your"
+msgid ""
 msgstr "змініть свій"
 
 msgctxt "#301456"
-msgid "Glass"
+msgid ""
 msgstr "скло"
 
 msgctxt "#301458"
-msgid "Blank"
+msgid ""
 msgstr "порожній"
 
 msgctxt "#301460"
-msgid "low"
+msgid ""
 msgstr "світло"
 
 msgctxt "#301462"
-msgid "medium"
+msgid ""
 msgstr "середній"
 
 msgctxt "#301464"
-msgid "strongly"
+msgid ""
 msgstr "сильний"
 
 msgctxt "#301466"
-msgid "Central"
+msgid ""
 msgstr "центральний"
 
 msgctxt "#301468"
-msgid "other/unknown"
+msgid ""
 msgstr "інше/невідомо"
 
 msgctxt "#301470"
-msgid "Moviedrama"
+msgid ""
 msgstr "кінодрама"
 
 msgctxt "#301472"
-msgid "News"
+msgid ""
 msgstr "Новини"
 
 msgctxt "#301474"
-msgid "Show"
+msgid ""
 msgstr "Показати"
 
 msgctxt "#301476"
-msgid "Sports"
+msgid ""
 msgstr "Спорт"
 
 msgctxt "#301478"
-msgid "Child"
+msgid ""
 msgstr "Діти"
 
 msgctxt "#301480"
-msgid "Music"
+msgid ""
 msgstr "музика"
 
 msgctxt "#301482"
-msgid "Arts"
+msgid ""
 msgstr "Мистецтво"
 
 msgctxt "#301484"
-msgid "Social"
+msgid ""
 msgstr "Компанія"
 
 msgctxt "#301486"
-msgid "Science"
+msgid ""
 msgstr "Наука"
 
 msgctxt "#301488"
-msgid "Special"
+msgid ""
 msgstr "Спеціальний"
 
 msgctxt "#301490"
-msgid "Hobby"
+msgid ""
 msgstr "Хобі"
 
 msgctxt "#301492"
-msgid "download artwork"
+msgid ""
 msgstr "завантажити ілюстрацію"
 
 msgctxt "#301494"
-msgid "Recently added TVShows"
+msgid ""
 msgstr "Нещодавно додані телесеріали"
 
 msgctxt "#301496"
-msgid "forecast"
+msgid ""
 msgstr "Прогноз"
 
 msgctxt "#301498"
-msgid "Set the position of each mein menu fixed points.[CR]Using position numbers from 1 - 22."
+msgid ""
 msgstr "Встановіть тут позицію кожного пункту головного меню.[CR]Використовуйте номери пунктів від 1 до 22."
 
 msgctxt "#301500"
-msgid "go directly to video files"
+msgid ""
 msgstr "перейти безпосередньо до відеофайлів"
 
 msgctxt "#301502"
-msgid "Show profil name"
+msgid ""
 msgstr "показати назви профілів"
 
 msgctxt "#301504"
-msgid "Kodi runs:"
+msgid ""
 msgstr "Kodi запущено:"
 
 msgctxt "#301506"
-msgid "<"
+msgid ""
 msgstr "<"
 
 msgctxt "#301508"
-msgid "<<"
+msgid ""
 msgstr "<<"
 
 msgctxt "#301510"
-msgid "Studio symbols ..."
+msgid ""
 msgstr "Студійні символи..."
 
 msgctxt "#301512"
-msgid "Genre icons ..."
+msgid ""
 msgstr "Жанрові символи..."
 
 msgctxt "#301514"
-msgid "Weather icons ..."
+msgid ""
 msgstr "Символи погоди..."
 
 msgctxt "#301516"
-msgid "Weather fanart ..."
+msgid ""
 msgstr "Погодний фанарт..."
 
 msgctxt "#301520"
-msgid "In order to set an Timer the \'KN Switcher Service\' is required. Download via Kodinerds repository."
+msgid ""
 msgstr "Для встановлення таймера перемикача потрібна служба \'KN Switcher Service\'. Завантажити через репозиторій Kodinerds"
 
 msgctxt "#301522"
-msgid "delete all timers"
+msgid ""
 msgstr "видалити всі таймери"
 
 msgctxt "#301524"
-msgid "delete"
+msgid ""
 msgstr "видалити"
 
 msgctxt "#301526"
-msgid "administration"
+msgid ""
 msgstr "керувати"
 
 msgctxt "#301528"
-msgid "Switchtimer"
+msgid ""
 msgstr "перемикати таймер"
 
 msgctxt "#301530"
-msgid "Timer overview"
+msgid ""
 msgstr "Огляд таймера"
 
 msgctxt "#301532"
-msgid "Today"
+msgid ""
 msgstr "Сьогодні"
 
 msgctxt "#301534"
-msgid "Enable"
+msgid ""
 msgstr "Показати"
 
 msgctxt "#301536"
-msgid "Channels"
+msgid ""
 msgstr "Канали"
 
 msgctxt "#301538"
-msgid "both"
+msgid ""
 msgstr "Обидва"
 
 msgctxt "#301540"
-msgid "original"
+msgid ""
 msgstr "Оригінал"
 
 msgctxt "#301542"
-msgid "HorizonzV Flag"
+msgid ""
 msgstr "Прапор HorizonzV"
 
 msgctxt "#301544"
-msgid "Germany"
+msgid ""
 msgstr "Німеччина"
 
 msgctxt "#301546"
-msgid "United States"
+msgid ""
 msgstr "Сполучені Штати"
 
 msgctxt "#301548"
-msgid "United Kingdom"
+msgid ""
 msgstr "Сполучене Королівство"
 
 msgctxt "#301550"
-msgid "France"
+msgid ""
 msgstr "Франція"
 
 msgctxt "#301551"
-msgid "Serge Blue"
+msgid ""
 msgstr "Serge Blue"
 
 msgctxt "#301552"
-msgid "Grey Blue"
+msgid ""
 msgstr "Grey Blue"
 
 msgctxt "#301554"
-msgid "Turquoise"
+msgid ""
 msgstr "Бірюзовий"
 
 msgctxt "#301558"
-msgid "Sea Green"
+msgid ""
 msgstr "Морський зелений"
 
 msgctxt "#301560"
-msgid "Red"
+msgid ""
 msgstr "Червоний"
 
 msgctxt "#301562"
-msgid "Light Grey"
+msgid ""
 msgstr "Світло-сірий"
 
 msgctxt "#301564"
-msgid "Dark Gold"
+msgid ""
 msgstr "Темне золото"
 
 msgctxt "#301566"
-msgid "Sandy Brown"
+msgid ""
 msgstr "Пісочно-коричневий"
 
 msgctxt "#301570"
-msgid "ColorPicker"
+msgid ""
 msgstr "ColorPicker"
 
 msgctxt "#301572"
-msgid "Avengers B/W"
+msgid ""
 msgstr "Месники ч/б"
 
 msgctxt "#301574"
-msgid "Gambit"
+msgid ""
 msgstr "Гамбіт"
 
 msgctxt "#301576"
-msgid "Vinyl View"
+msgid ""
 msgstr "Vinyl View"
 
 msgctxt "#301578"
-msgid "Radio View"
+msgid ""
 msgstr "Перегляд радіо"
 
 msgctxt "#301580"
-msgid "Standard View"
+msgid ""
 msgstr "Стандартний вигляд"
 
 msgctxt "#301582"
-msgid "starting ..."
+msgid ""
 msgstr "буде запущено..."
 
 msgctxt "#301584"
-msgid "hide"
+msgid ""
 msgstr "приховування"
 
 msgctxt "#301586"
-msgid "show"
+msgid ""
 msgstr "показати"
 
 msgctxt "#301588"
-msgid "button"
+msgid ""
 msgstr "перемикач"
 
 msgctxt "#301590"
-msgid "skin reload"
+msgid ""
 msgstr "Перезавантажити шкіру"
 
 msgctxt "#301592"
-msgid "KODI APP reload"
+msgid ""
 msgstr "Перезапустити програму KODI"
 
 msgctxt "#301596"
-msgid "Visible"
+msgid ""
 msgstr "Видимий"
 
 msgctxt "#301598"
-msgid "no progressbar in the widget (green bar on the cover)"
+msgid ""
 msgstr "немає індикатора виконання у віджеті (зелена смужка на обкладинці)"
 
 msgctxt "#301600"
-msgid "last film started in 1st place"
+msgid ""
 msgstr "останній фільм розпочався з позиції 1"
 
 msgctxt "#301602"
-msgid "last album belonged to number 1"
+msgid ""
 msgstr "останній прослуханий альбом має рейтинг #1"
 
 msgctxt "#301604"
-msgid "next episode in 1st place"
+msgid ""
 msgstr "наступний епізод під номером 1"
 
 msgctxt "#301606"
-msgid "last started video at number 1"
+msgid ""
 msgstr "останнє відео почалося з позиції 1"
 
 msgctxt "#301608"
-msgid "5 Day Weather"
+msgid ""
 msgstr "5 днів погоди"
 
 msgctxt "#301610"
-msgid "German Telecast Offers (GTO)"
+msgid ""
 msgstr "German Telecast Offers (GTO)"
 
 msgctxt "#301612"
-msgid "Fritz Smart Home"
+msgid ""
 msgstr "Fritz Smart Home"
 
 msgctxt "#301614"
-msgid "Choose a content for row"
+msgid ""
 msgstr "Виберіть вміст для рядка"
 
 msgctxt "#301616"
-msgid "on"
+msgid ""
 msgstr "an"
 
 msgctxt "#301618"
-msgid "off"
+msgid ""
 msgstr "вимкнено"
 
 msgctxt "#301620"
-msgid "Battery level"
+msgid ""
 msgstr "Рівень заряду батареї"
 
 msgctxt "#301622"
-msgid "Export video library"
+msgid ""
 msgstr "Експортувати відеотеку"
 
 msgctxt "#301624"
-msgid "(single NFO, without images, overwrite old data)"
+msgid ""
 msgstr "(один NFO, без зображень, перезаписати старі дані)"
 
 # msgctxt "#xyxyxyxy"
@@ -1131,7 +1131,7 @@ msgstr "(один NFO, без зображень, перезаписати ст�
 # msgstr "Після приховування інформаційної панелі у повноекранному режимі буде показано непомітне відображення інформації про заголовок."
 
 msgctxt "#31030"
-msgid "System memory usage"
+msgid ""
 msgstr "Використання системної пам'яті."
 
 #~ msgctxt "#31137"
@@ -1139,31 +1139,31 @@ msgstr "Використання системної пам'яті."
 #~ msgstr "Інформація про PVR"
 
 msgctxt "#31139"
-msgid "Video decoder"
+msgid ""
 msgstr "Декодер відео"
 
 msgctxt "#31140"
-msgid "Pixel format"
+msgid ""
 msgstr "Формат пікселів"
 
 msgctxt "#31607"
-msgid "Screen resolution"
+msgid ""
 msgstr "Роздільна здатність екрана"
 
 msgctxt "#31608"
-msgid "System rendering speed"
+msgid ""
 msgstr "Швидкість рендерингу"
 
 msgctxt "#31609"
-msgid "System CPU usage"
+msgid ""
 msgstr "Навантаження на процесор"
 
 msgctxt "#31611"
-msgid "Code line"
+msgid ""
 msgstr "Kódsor"
 
 msgctxt "#31613"
-msgid "enter the category of the playlist here ..."
+msgid ""
 msgstr "введіть категорію плейлиста тут ..."
 
 msgctxt "#35500"
