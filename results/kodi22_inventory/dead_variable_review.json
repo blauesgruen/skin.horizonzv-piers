@@ -1,0 +1,21 @@
+{
+  "removed_variable": "LibraryEditorLabel",
+  "reason": "Unreferenced custom variable with eight unresolved localization IDs. No Kodi API removal is claimed.",
+  "removed_localization_references": [
+    42205,
+    42206,
+    42207,
+    42208,
+    42209,
+    42210,
+    42211,
+    42212
+  ],
+  "direct_VAR_callers": 0,
+  "dynamic_VAR_prefixes": [
+    "Home_",
+    "HomeWidget_"
+  ],
+  "installed_source_search": "Case-insensitive rg across sibling add-on XML/Python/JavaScript files found the definition in this skin only before removal. This does not cover unknown external files or future integrations.",
+  "retained": "plugin.library.node.editor install/presence entries and unrelated library features"
+}

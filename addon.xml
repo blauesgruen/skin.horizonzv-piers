@@ -16,7 +16,7 @@
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
 		<summary>Skin von blauesgruen</summary>
-		<description>Unterstütze Addons:[CR]Auto Completition, Artist Slide Show, Artwork Beef, CDArt Manager, Extended Info Script, Global Search, Fritz Smart Home (by Birger Jesch), German Telecast Offers (by Birger Jesch), KN Switchtimer Service (by Birger Jesch), Library Node Editor, Skinhelper Ping (by _Andy_) ...</description>
+		<description>Optionale Integrationen und Hilfs-Add-ons:[CR]Auto Completion, Artist Slideshow, Extended Info Script, Global Search, Fritz Smart Home (by Birger Jesch), German Telecast Offers (by Birger Jesch), KN Switchtimer Service (by Birger Jesch), Library Node Editor, Skinhelper Ping (by _Andy_) ...</description>
 		<disclaimer>Ursprünglich basierte der Skin auf den Mockups von xb2iris Skin "Horizonz".</disclaimer>
 		<language>de</language>
 		<platform>all</platform>

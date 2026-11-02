@@ -154,13 +154,13 @@
 						<item>
 							<label>$LOCALIZE[13017]</label>
 							<onclick>InhibitIdleShutdown(true)</onclick>
-							<visible>System.HasShutdown +!System.IsInhibit</visible>
+							<visible>System.HasShutdown +!System.IdleShutdownInhibited</visible>
 							<visible>!Skin.HasSetting(shutdown_noinhibitidle)</visible>
 						</item>
 						<item>
 							<label>$LOCALIZE[13018]</label>
 							<onclick>InhibitIdleShutdown(false)</onclick>
-							<visible>System.HasShutdown + System.IsInhibit</visible>
+							<visible>System.HasShutdown + System.IdleShutdownInhibited</visible>
 							<visible>!Skin.HasSetting(shutdown_noallowidle)</visible>
 						</item>
 						<item>
@@ -172,7 +172,7 @@
 							<label></label>
 							<property name="separator">Separator2.png</property>
 							<onclick/>
-							<visible>Skin.HasSetting(shutdown_nand)|Skin.HasSetting(shutdown_restart)|Skin.HasSetting(shutdown_reload)|Skin.HasSetting(shutdown_addon)</visible>
+							<visible>[Skin.HasSetting(shutdown_nand)+System.CanReboot+System.HasAddon(service.coreelec.settings)]|Skin.HasSetting(shutdown_restart)|Skin.HasSetting(shutdown_reload)|Skin.HasSetting(shutdown_addon)</visible>
 						</item>
 						<item>
 							<label>$LOCALIZE[31405]</label>
@@ -186,6 +186,7 @@
 							<onclick>Reset()</onclick>
 							<visible>System.CanReboot</visible>
 							<visible>Skin.HasSetting(shutdown_nand)</visible>
+							<visible>System.HasAddon(service.coreelec.settings)</visible>
 						</item>
 						<item>
 							<label>$LOCALIZE[31404]</label>
@@ -228,9 +229,6 @@
             <top>230</top>
 			<bottom>165</bottom>
             <include>openclosemedium</include>
-			<control type="ima ge"> <!-- testimage-->
-				<texture>WhiteBack.png</texture>
-			</control>
 			<control type="group"> <!-- Artistlogo -->
 				<right>0</right>
 				<bottom>0</bottom>

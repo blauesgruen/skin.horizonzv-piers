@@ -260,6 +260,7 @@
                                 <label>$LOCALIZE[31402] "$LOCALIZE[13013] $LOCALIZE[19156] Nand" $LOCALIZE[31403]</label>
                                 <onclick>Skin.ToggleSetting(shutdown_nand)</onclick>
                                 <selected>Skin.HasSetting(shutdown_nand)</selected>
+                                <visible>System.CanReboot+System.HasAddon(service.coreelec.settings)</visible>
                             </control>
                             <control type="radiobutton" id="124">
                                 <width>100%</width>
@@ -520,7 +521,7 @@
                                 <onclick>Skin.ToggleSetting(WeatherFanartHome)</onclick>
                                 <selected>Skin.HasSetting(WeatherFanartHome)</selected>
                                 <visible>!Skin.HasSetting(HomeMenuNoWeatherButton)</visible>
-                                <visible>System.HasAddon(script.image.resource.select)</visible>
+                                <visible>System.AddonIsEnabled(script.image.resource.select)</visible>
                             </control>
                             <control type="button" id="438">
                                 <description>Weather Fanart Path</description>
@@ -535,7 +536,7 @@
                                 <onclick>RunScript(script.image.resource.select,property=weatherfanart&amp;type=resource.images.weatherfanart)</onclick>
                                 <visible>Skin.HasSetting(WeatherFanartHome)</visible>
                                 <visible>!Skin.HasSetting(HomeMenuNoWeatherButton)</visible>
-                                <visible>System.HasAddon(script.image.resource.select)</visible>
+                                <visible>System.AddonIsEnabled(script.image.resource.select)</visible>
                             </control>
                             <control type="button" id="311">
                                 <description>PlayDisc Button</description>
@@ -1045,15 +1046,15 @@
                                 <visible>ControlGroup(900).HasFocus(915)</visible>
                             </control>
                             <control type="radiobutton" id="954">
-                                <description>Libreelec</description>
+                                <description>Platform settings buttons</description>
                                 <width>100%</width>
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
-                                <label>LibreELEC</label>
+                                <label>LibreELEC / CoreELEC</label>
                                 <focusedcolor>black</focusedcolor>
                                 <onclick>Skin.ToggleSetting(SubMenu_music_NoLibreelecButton)</onclick>
                                 <selected>!Skin.HasSetting(SubMenu_music_NoLibreelecButton)</selected>
-                                <visible>System.HasAddon(service.libreelec.settings)</visible>
+                                <visible>System.HasAddon(service.libreelec.settings)|System.HasAddon(service.coreelec.settings)</visible>
                                 <visible>ControlGroup(900).HasFocus(915)</visible>
                             </control>
                             <control type="radiobutton" id="955">
@@ -1270,18 +1271,6 @@
                                 <label2>$INFO[Skin.String(Startup_Playlist_Path)]</label2>
                                 <onclick>Skin.SetFile(Startup_Playlist_Path,,special://musicplaylists/)</onclick>
                                 <visible>Skin.HasSetting(Use_Startup_Playlist)</visible>
-                            </control>
-                            <control type="radiobutton" id="552">
-                                <description>Custom Contextmenu Globalsearch</description>
-                                <width>100%</width>
-                                <align>left</align>
-                                <include>DialogButtonTextureFocus</include>
-                                <label>$LOCALIZE[31312]</label>
-                                <onclick>Skin.ToggleSetting(context_globalsearch)</onclick>
-                                <onfocus>SetProperty(SSD,"$LOCALIZE[31209]",skinsettings)</onfocus>
-                                <onunfocus>ClearProperty(SSD)</onunfocus>
-                                <selected>Skin.HasSetting(context_globalsearch)</selected>
-                                <visible>System.HasAddon(script.globalsearch)</visible>
                             </control>
                             <control type="radiobutton" id="553">
                                 <description>Media Statistic</description>

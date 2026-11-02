@@ -20659,3 +20659,27 @@ msgstr "Wenn altiviert, wird ein Bestätigungsdialog angezeigt, wenn Dateien gel
 #~ msgctxt "#24163"
 #~ msgid "Match Apple tvOS Standard (Siri remote)"
 #~ msgstr "Apple tvOS-Standard benutzen (Siri-Fernbedienung)"
+
+msgctxt "#31004"
+msgid "Change mode"
+msgstr "Modus ändern"
+
+msgctxt "#31031"
+msgid "Version info"
+msgstr "Versionsinformationen"
+
+msgctxt "#31112"
+msgid "Audio streams"
+msgstr "Audiostreams"
+
+msgctxt "#31115"
+msgid "Subtitles streams"
+msgstr "Untertitelstreams"
+
+msgctxt "#31132"
+msgid "Select Program"
+msgstr "Programm auswählen"
+
+msgctxt "#31133"
+msgid "Select Resolution"
+msgstr "Auflösung auswählen"

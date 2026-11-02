@@ -12,7 +12,6 @@
 			</include>
             <include>openclosebox</include>
             <include>openclosevisible</include>
-            <visible>!Window.IsVisible(Custom_4111_Switchtimer.xml)</visible>
             <control type="group" id="576757">
                 <width>1120</width>
                 <height>675</height>
@@ -95,7 +94,7 @@
                         <include condition="Skin.HasSetting(BigPlotText)">PlotTextBigVar</include>
 						<shadowcolor>grey3</shadowcolor>
                         <align>left</align>
-						<autoscroll delay="5000" time="5000" repeat="10000">!IsEmpty(Window(Home).Property(GTO.Info.Description))</autoscroll>
+						<autoscroll delay="5000" time="5000" repeat="10000">!String.IsEmpty(Window(Home).Property(GTO.Info.Description))</autoscroll>
 						<label>$INFO[Window(Home).Property(GTO.Info.Description)]</label>
                     </control>
                 </control>

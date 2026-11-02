@@ -1,4 +1,4 @@
-﻿# Kodi Media Center language file
+# Kodi Media Center language file
 # Addon Name: HorizonzV
 # Addon id: skin.horizonzv
 # Addon Provider: blauesgruen
@@ -402,8 +402,8 @@ msgid "Information like chapter, subtitle, current time bar etc. are not display
 msgstr "Informacje takie jak rozdział, napisy, pasek czasu itp. nie są wyświetlane.[CR][COLOR=grey]Loga studia i dodatkowe elementy graficzne są wygaszone.[/COLOR]"
 
 msgctxt "#31239"
-msgid "Show all available movie & series artworks.[CR][COLOR=white]Since Kodi 19 artworks are loaded with the scrapper \'The Movie Database PYTHON\'.[/COLOR][COLOR=grey][CR]\'Artwork Beef\' or a similar addon can still be used.[/COLOR]"
-msgstr "Pokaż wszystkie dostępne dzieła filmowe i serialowe.[CR][COLOR=white]Odkąd Kodi 19 dzieł sztuki jest ładowane za pomocą scrapera \'The Movie Database PYTHON\'.[/COLOR][COLOR=grey][CR]\'Artwork Beef\' lub podobny addon może być nadal używany.[/COLOR]"
+msgid "Show all available movie & series artworks.[CR][COLOR=white]Since Kodi 19 artworks are loaded with the scrapper \'The Movie Database PYTHON\'.[/COLOR]"
+msgstr "Pokaż wszystkie dostępne dzieła filmowe i serialowe.[CR][COLOR=white]Odkąd Kodi 19 dzieł sztuki jest ładowane za pomocą scrapera \'The Movie Database PYTHON\'.[/COLOR]"
 
 msgctxt "#31240"
 msgid "Select the appearance of the CD here if no CDArt is found.[CR][COLOR=white]CDArts must be available in a folder. This is specified in the system settings (Media->Music).[/COLOR]"
@@ -1085,9 +1085,6 @@ msgctxt "#31409"
 msgid "last album belonged to number 1"
 msgstr "ostatni album należał do numeru 1"
 
-msgctxt "#31410"
-msgid "next episode in 1st place"
-msgstr "następny odcinek na pierwszym miejscu"
 
 msgctxt "#31411"
 msgid "last started video at number 1"
@@ -1172,4 +1169,27 @@ msgstr "Wprowadź tutaj kategorię listy odtwarzania ..."
 msgctxt "#35500"
 msgid "Location"
 msgstr "Lokalizacja"
+msgctxt "#31004"
+msgid "Change mode"
+msgstr "Zmień tryb"
+
+msgctxt "#31031"
+msgid "Version info"
+msgstr "Informacje o wersji"
+
+msgctxt "#31112"
+msgid "Audio streams"
+msgstr "Strumienie audio"
+
+msgctxt "#31115"
+msgid "Subtitles streams"
+msgstr "Strumienie napisów"
+
+msgctxt "#31132"
+msgid "Select Program"
+msgstr "Wybierz program"
+
+msgctxt "#31133"
+msgid "Select Resolution"
+msgstr "Wybierz rozdzielczość"
 

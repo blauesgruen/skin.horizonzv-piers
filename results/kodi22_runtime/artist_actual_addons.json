@@ -1,0 +1,142 @@
+[
+  {
+    "addon": "script.module.future",
+    "details": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "addon": {
+          "addonid": "script.module.future",
+          "enabled": false,
+          "type": "xbmc.python.module",
+          "version": "1.0.0+matrix.1"
+        }
+      }
+    },
+    "enable": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": "OK"
+    }
+  },
+  {
+    "addon": "script.module.defusedxml",
+    "details": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "addon": {
+          "addonid": "script.module.defusedxml",
+          "enabled": false,
+          "type": "xbmc.python.module",
+          "version": "0.6.0+matrix.1"
+        }
+      }
+    },
+    "enable": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": "OK"
+    }
+  },
+  {
+    "addon": "script.module.requests",
+    "details": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "addon": {
+          "addonid": "script.module.requests",
+          "enabled": false,
+          "type": "xbmc.python.module",
+          "version": "2.31.0"
+        }
+      }
+    },
+    "enable": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": "OK"
+    }
+  },
+  {
+    "addon": "script.module.urllib3",
+    "details": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "addon": {
+          "addonid": "script.module.urllib3",
+          "enabled": true,
+          "type": "xbmc.python.module",
+          "version": "2.2.3"
+        }
+      }
+    }
+  },
+  {
+    "addon": "script.module.idna",
+    "details": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "addon": {
+          "addonid": "script.module.idna",
+          "enabled": true,
+          "type": "xbmc.python.module",
+          "version": "3.10.0"
+        }
+      }
+    }
+  },
+  {
+    "addon": "script.module.chardet",
+    "details": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "addon": {
+          "addonid": "script.module.chardet",
+          "enabled": true,
+          "type": "xbmc.python.module",
+          "version": "5.1.0"
+        }
+      }
+    }
+  },
+  {
+    "addon": "script.module.certifi",
+    "details": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "addon": {
+          "addonid": "script.module.certifi",
+          "enabled": true,
+          "type": "xbmc.python.module",
+          "version": "2023.5.7"
+        }
+      }
+    }
+  },
+  {
+    "addon": "script.artistslideshow",
+    "details": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "addon": {
+          "addonid": "script.artistslideshow",
+          "enabled": false,
+          "type": "xbmc.python.script",
+          "version": "4.2.1"
+        }
+      }
+    },
+    "enable": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": "OK"
+    }
+  }
+]

@@ -52,8 +52,6 @@
     </variable>
     <variable name="WidgetInProgressPlace1">
         <value condition="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),movies)+Skin.HasSetting(Widget_inProgress_movies_Place1)">special://skin/playlists/Videos_inprogress.xsp</value>
-        <!-- <value condition="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),tvshow)+Skin.HasSetting(Widget_inProgress_tvshow_Place1)">special://skin/playlists/Episodes_inprogress.xsp</value> --> <!-- zeigt leider nicht die episode an, die man als nächstes schauen sollte -->
-        <value condition="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),tvshow)+Skin.HasSetting(Widget_inProgress_tvshow_Place1)">plugin://service.library.data.provider?type=recommendedepisodes&amp;reload=$INFO[Window.Property(recommendedepisodes)]&amp;limit=1</value>
         <value condition="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),musicvideo)+Skin.HasSetting(Widget_inProgress_musicvideo_Place1)">videodb://musicvideos/titles</value>
         <value condition="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),music)+Skin.HasSetting(Widget_inProgress_musicAlbum_Place1)">special://skin/playlists/Music_Albums_recently_place1.xsp</value>
     </variable>

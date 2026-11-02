@@ -7,7 +7,7 @@
 		<control type="group">
 			<!-- <include>BlackBack</include> -->
 			<include>openclose</include>
-			<visible>!Window.IsTopMost(1501)</visible>
+			<visible>!Window.IsDialogTopmost(1501)</visible>
 			<control type="group">
 				<include content="DefaultPopupLayout">
 					<param name="PopupHeaderTitle">$LOCALIZE[10000] $LOCALIZE[1397] Widget $LOCALIZE[5]</param>
@@ -601,23 +601,6 @@
 							<param name="onup" value="35105" />
 							<param name="ondown" value="35105" />
 						</include>
-						<control type="radiobutton" id="70">
-							<include>dialogbutton_popup</include>
-							<label>$LOCALIZE[31410]</label>
-							<onclick>Skin.ToggleSetting(Widget_inProgress_tvshow_Place1)</onclick>
-							<selected>Skin.HasSetting(Widget_inProgress_tvshow_Place1)</selected>
-							<disabledcolor>grey2</disabledcolor>
-							<visible>!Skin.HasSetting(HomeMenuNo_tvshow_Button)+!Skin.HasSetting(Home_tvshow_Button)</visible>
-							<enable>System.HasAddon(service.library.data.provider)</enable>
-							<!-- <enable>!Skin.HasSetting(Widget_RecommendedTVShows) + System.HasAddon(service.library.data.provider)</enable> -->
-						</control>
-						<control type="button" id="7070">
-							<include>dialogbutton_popup</include>
-							<label> ^ $LOCALIZE[24076]</label>
-							<label2>$LOCALIZE[24038]</label2>
-							<onclick>InstallAddon(service.library.data.provider)</onclick>
-							<visible>!System.HasAddon(service.library.data.provider)</visible>
-						</control>
 						<control type="radiobutton" id="71">
 							<include>dialogbutton_popup</include>
 							<label>$LOCALIZE[575]</label>
@@ -877,7 +860,7 @@
 							<include>dialogbutton_popup</include>
 							<label>31368</label>
 							<onclick>RunScript(script.image.resource.select,property=weathericons&amp;type=resource.images.weathericons)</onclick>
-							<visible>System.HasAddon(script.image.resource.select)</visible>
+							<visible>System.AddonIsEnabled(script.image.resource.select)</visible>
 							<enable>!String.IsEmpty(Weather.Plugin)</enable>
 						</control>
 						<control type="button" id="114">
@@ -905,7 +888,6 @@
 							<label>$LOCALIZE[20007]</label>
 							<onclick>Skin.Reset(Widget_PVRTimers)</onclick>
 							<onclick>Skin.Reset(Widget_LiveTVWidgetChannels)</onclick>
-							<onclick>Skin.Reset(Widget_SerienPlaner)</onclick>
 							<onclick>Skin.ToggleSetting(Widget_Recordings)</onclick>
 							<selected>Skin.HasSetting(Widget_Recordings)</selected>
 						</control>
@@ -922,7 +904,6 @@
 							<onclick>Skin.Reset(Widget_Recordings)</onclick>
 							<onclick>Skin.Reset(Widget_LiveTVWidgetChannels)</onclick>
 							<onclick>Skin.ToggleSetting(Widget_PVRTimers)</onclick>
-							<onclick>Skin.Reset(Widget_SerienPlaner)</onclick>
 							<selected>Skin.HasSetting(Widget_PVRTimers)</selected>
 						</control>
 						<control type="radiobutton" id="124">
@@ -930,7 +911,6 @@
 							<label>31378</label>
 							<onclick>Skin.Reset(Widget_Recordings)</onclick>
 							<onclick>Skin.Reset(Widget_PVRTimers)</onclick>
-							<onclick>Skin.Reset(Widget_SerienPlaner)</onclick>
 							<onclick>Skin.ToggleSetting(Widget_LiveTVWidgetChannels)</onclick>
 							<selected>Skin.HasSetting(Widget_LiveTVWidgetChannels)</selected>
 						</control>

@@ -151,7 +151,7 @@
                                             <width>39</width>
                                             <height>39</height>
                                             <colordiffuse>description</colordiffuse>
-                                            <texture>osd/RingOutside.png</texture>
+                                            <texture>osd/Ring.png</texture>
                                             <visible>Control.HasFocus(600)</visible>
                                         </control>
                                         <control type="image">

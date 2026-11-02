@@ -5,7 +5,7 @@
     <include>openclose</include>
     <controls>
         <control type="group">
-			<animation effect="fade" start="100" end="0" time="200" tween="sine" condition="Window.IsVisible(script-script.extendedinfo-DialogInfo.xml) | Window.IsVisible(script-script.extendedinfo-DialogInfo.xml) | Window.IsVisible(script-script.extendedinfo-VideoList.xml)">Conditional</animation>
+            <animation effect="fade" start="100" end="0" time="200" tween="sine" condition="Window.IsVisible(script-script.extendedinfo-DialogInfo.xml) | Window.IsVisible(script-script.extendedinfo-VideoList.xml)">Conditional</animation>
             <visible>!Window.IsVisible(FileBrowser)</visible>
             <control type="group">
                 <include>openclosefanart</include>
@@ -262,9 +262,9 @@
 									</item>
 									<item>
 										<label>$LOCALIZE[31052]:</label>
-										<label2>$INFO[ListItem.Premieselectedhome]</label2>
+										<label2>$INFO[ListItem.Premiered]</label2>
 										<onclick/>
-										<visible>!String.IsEmpty(ListItem.Premieselectedhome)</visible>
+										<visible>!String.IsEmpty(ListItem.Premiered)</visible>
 									</item>
 									<item>
 										<label>$LOCALIZE[20364]:</label>
@@ -320,6 +320,7 @@
 									<label/>
 									<onclick condition="!String.IsEmpty(ListItem.Plot)">SetProperty(TextViewer_Header,$LOCALIZE[207],home)</onclick>
 									<onclick condition="!String.IsEmpty(ListItem.Plot)">SetProperty(TextViewer_Text,$ESCINFO[ListItem.Plot],home)</onclick>
+									<onclick condition="!String.IsEmpty(ListItem.Plot)">ClearProperty(TextViewer_Bottom,home)</onclick>
 									<onclick condition="!String.IsEmpty(ListItem.Plot)">ActivateWindow(1102)</onclick>
 									<onup condition="Control.IsVisible(49)">49</onup>
 									<onup condition="Control.IsVisible(2000)">2000</onup>
@@ -769,17 +770,6 @@
 								<param name="visible" value="!String.IsEmpty(ListItem.Trailer) + ![String.StartsWith(Container.FolderPath,plugin://) + String.Contains(Container.FolderPath,trailer)]+!Skin.HasSetting(WindowedTrailer)" />
 							</include>
 							<include content="DefaultDialogButton">
-								<description>Play Trailer</description>
-								<param name="id" value="440" />
-								<param name="width" value="auto" />
-								<param name="label" value="$LOCALIZE[31033]" />
-								<param name="font" value="bebas19" />
-								<param name="onclick" value="Action(close)" />
-								<param name="onclick2" value="RunScript(script.extendedinfo,info=youtubebrowser,id=$INFO[ListItem.Title] $INFO[ListItem.Year])" />
-								<param name="nofocus" />
-								<param name="visible" value="System.hasAddon(script.extendedinfo) + String.IsEqual(ListItem.DBType,movie) + !Control.IsVisible(11)" />
-							</include>
-							<include content="DefaultDialogButton">
 								<description>Play Trailer Windowed</description>
 								<param name="id" value="441" />
 								<param name="width" value="auto" />
@@ -811,6 +801,17 @@
 								<param name="visible" value="!ListItem.IsCollection+!String.StartsWith(ListItem.Filenameandpath,plugin://)" />
 							</include> -->
 							<include content="DefaultDialogButton">
+								<description>ExtendedInfo YouTube browser</description>
+								<param name="id" value="440" />
+								<param name="width" value="auto" />
+								<param name="label" value="$LOCALIZE[31033]" />
+								<param name="font" value="bebas19" />
+								<param name="onclick" value="Action(close)" />
+								<param name="onclick2" value="RunScript(script.extendedinfo,info=youtubebrowser,id=$INFO[ListItem.Title] $INFO[ListItem.Year])" />
+								<param name="nofocus" />
+								<param name="visible" value="System.AddonIsEnabled(script.extendedinfo) + String.IsEqual(ListItem.DBType,movie) + !Control.IsVisible(11)" />
+							</include>
+							<include content="DefaultDialogButton">
 								<param name="id" value="14" />
 								<param name="width" value="auto" />
 								<param name="label" value="$LOCALIZE[40000]" />
@@ -819,15 +820,14 @@
 								<param name="visible" value="String.IsEqual(ListItem.DBType,movie)" />
 							</include>
 							<include content="DefaultDialogButton">
-								<description>extendedinfo</description>
+								<description>ExtendedInfo</description>
 								<param name="id" value="101" />
 								<param name="width" value="auto" />
 								<param name="label" value="$LOCALIZE[31016]" />
 								<param name="font" value="bebas19" />
-								<param name="onlick" value="$VAR[ExtendedInfoDialog]" />
-								<param name="onlick2" value="Notification(...,$LOCALIZE[20186],4000)" />
+								<param name="onclick" value="$VAR[ExtendedInfoDialog]" />
 								<param name="nofocus" />
-								<param name="visible" value="System.hasAddon(script.extendedinfo) + [String.IsEqual(ListItem.DbType,movies) | String.IsEqual(ListItem.DbType,tvshow) | String.IsEqual(ListItem.DbType,season) | String.IsEqual(ListItem.DbType,episode)]" />
+								<param name="visible" value="System.AddonIsEnabled(script.extendedinfo) + [String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,season) | String.IsEqual(ListItem.DBType,episode)]" />
 							</include>
 							<include content="DefaultDialogButton">
 								<description>Get Thumb</description>

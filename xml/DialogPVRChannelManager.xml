@@ -238,7 +238,7 @@
                                     <param name="nofocus" />
                                 </include>
                                 <include content="DialogRadioButton">
-                                    <param name="id" value="15" />
+                                    <param name="id" value="14" />
                                     <param name="width" value="100%" />
                                     <param name="label" value="$LOCALIZE[19267]" />
                                     <param name="align" value="left" />
@@ -284,6 +284,7 @@
                                     <param name="width" value="100%" />
                                     <param name="label" value="$LOCALIZE[19024]" />
                                     <param name="altlabel" value="$LOCALIZE[19023]" />
+                                    <param name="usealttexture" value="!String.IsEmpty(Window.Property(IsRadio))" />
                                     <param name="onleft" value="60" />
                                     <param name="onright" value="9000" />
                                     <param name="nofocus" />
@@ -338,7 +339,7 @@
                             <width>300</width>
                             <height>300</height>
                             <aspectratio aligny="center">keep</aspectratio>
-                            <texture>$INFO[Container(20).ListItem.Icon]</texture>
+                            <texture>$INFO[Container(20).ListItem.Property(Icon)]</texture>
                         </control>
                     </control>
                 </control>

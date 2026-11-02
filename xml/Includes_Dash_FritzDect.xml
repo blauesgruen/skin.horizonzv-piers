@@ -106,7 +106,7 @@
 					<visible>String.IsEmpty(Container($PARAM[id]).ListItem(1).Label)</visible>
 				</item>
 			</content>
-			<include condition="System.HasAddon(script.program.fritzact)">FritzdectContent</include>
+			<include condition="System.AddonIsEnabled(script.program.fritzact)">FritzdectContent</include>
 			<!-- <include content="BusyItem">
 				<param name="id" value="$PARAM[id]"/>
 				<param name="icon" value="Busy.png"/>

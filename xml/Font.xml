@@ -44,6 +44,33 @@
             <size>24</size>
         </font>
         <font>
+            <name>font23_narrow</name>
+            <filename>ubuntu-r.ttf</filename>
+            <size>23</size>
+            <linespacing>0.8</linespacing>
+        </font>
+        <font>
+            <name>font27</name>
+            <filename>ubuntu-r.ttf</filename>
+            <size>27</size>
+        </font>
+        <font>
+            <name>font32</name>
+            <filename>ubuntu-r.ttf</filename>
+            <size>32</size>
+        </font>
+        <font>
+            <name>font37</name>
+            <filename>ubuntu-r.ttf</filename>
+            <size>37</size>
+        </font>
+        <font>
+            <name>font40_title</name>
+            <filename>ubuntu-r.ttf</filename>
+            <size>40</size>
+            <style>bold</style>
+        </font>
+        <font>
             <name>ubuntu-r12</name>
             <filename>ubuntu-r.ttf</filename>
             <size>18</size>

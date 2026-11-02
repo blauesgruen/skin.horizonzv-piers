@@ -114,6 +114,12 @@
 						<param name="label" value="$LOCALIZE[15015]" />
 					</include>
 					<include content="DefaultDialogButton">
+						<param name="id" value="29" />
+						<param name="width" value="100%" />
+						<param name="label" value="$LOCALIZE[40046]" />
+						<param name="visible">Window.IsVisible(managevideoversions)</param>
+					</include>
+					<include content="DefaultDialogButton">
 						<param name="id" value="25" />
 						<param name="width" value="100%" />
 						<param name="label" value="$LOCALIZE[40023]" />

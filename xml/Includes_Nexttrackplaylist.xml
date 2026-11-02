@@ -8,7 +8,6 @@
                 <!-- Home -->
                 <visible>Skin.HasSetting(playlist)+Player.HasAudio</visible>
                 <visible>!Control.HasFocus(20)+!String.IsEqual(Container(9000).ListItem.Property(homemenu_id),dashboard)</visible>
-                <visible>![String.IsEqual(Container(9000).ListItem.Property(homemenu_id),pvr)+Skin.HasSetting(Widget_LiveTVHighlights)+String.Contains(Window.Property(TVHighlightsToday.Mode),splitmode)]</visible>
                 <visible>!String.IsEmpty(MusicPlayer.Offset(1).Title)</visible>
                 <visible>Window.IsActive(Home)</visible>
                 <visible>Player.HasMedia</visible>

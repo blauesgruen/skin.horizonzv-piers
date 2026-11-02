@@ -1,0 +1,15 @@
+{
+  "passed": [
+    "Toggle fanart",
+    "Toggle biography",
+    "Toggle albums",
+    "Toggle similar artists",
+    "provider running guard final",
+    "left visualisation final",
+    "new cycle final",
+    "provider disabled final",
+    "provider reenabled final",
+    "playback stopped final"
+  ],
+  "limits": "Timer/lifecycle test with intercepted action and simulated provider gate; no real Artist Slideshow data fetching verified. Intermediate failed waits and initial modal-navigation draft are retained separately/in raw records."
+}

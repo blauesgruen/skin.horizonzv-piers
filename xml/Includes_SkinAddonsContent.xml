@@ -9,7 +9,6 @@
 		<param name="item_height" default="53"/>
 		<param name="onleft" default=""/>
 		<param name="visible" default="true"/>
-		<param name="visible" default="true"/>
 		<param name="itemlayouttextcolor" default="white"/>
 		<param name="focusedtextcolor" default="grey3"/>
 		<param name="pagecontrol" default="70"/>
@@ -197,19 +196,6 @@
 				<onclick condition="System.AddonIsEnabled(service.kn.switchtimer)">Addon.OpenSettings(service.kn.switchtimer)</onclick>
 				<onclick condition="!System.AddonIsEnabled(service.kn.switchtimer)">EnableAddon(service.kn.switchtimer)</onclick>
 				<visible>System.HasAddon(service.kn.switchtimer)</visible>
-			</item>
-			<item>
-				<label>Service Library Data Provider</label>
-				<label2>$LOCALIZE[24038]</label2>
-				<onclick>InstallAddon(service.library.data.provider)</onclick>
-				<visible>!System.HasAddon(service.library.data.provider)</visible>
-			</item>
-			<item>
-				<label>Service Library Data Provider $INFO[System.AddonVersion(service.library.data.provider),(,)]</label>
-				<label2/>
-				<icon>OverlayWatched.png</icon>
-				<onclick/>
-				<visible>System.HasAddon(service.library.data.provider)</visible>
 			</item>
 			<item>
 				<label>Plugin Library Node Editor</label>

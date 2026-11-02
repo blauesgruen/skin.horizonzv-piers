@@ -288,8 +288,8 @@
 							<item id="18">
 								<label>$VAR[Home_custom9_Label]</label>
 								<label2 fallback="18.">$INFO[Skin.String(HomeMenuItemCustom9),,.]</label2>
-								<thumb>$VAR[backgroundfolder]home_custom7$VAR[bkg_fileext]</thumb>
-								<icon>$INFO[Skin.String(user_bkg_custom7)]</icon>
+								<thumb>$VAR[backgroundfolder]home_custom9$VAR[bkg_fileext]</thumb>
+								<icon>$INFO[Skin.String(user_bkg_custom9)]</icon>
 								<onclick>Skin.Reset(HomeMenuItemCustom9)</onclick>
 								<onclick>Skin.SetNumeric(HomeMenuItemCustom9)</onclick>
 								<visible/>

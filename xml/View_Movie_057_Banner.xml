@@ -587,13 +587,12 @@
 				<include content="AlphabetScrollerContainer">
 					<param name="right" value="10"/>
 					<param name="width" value="40"/>
-					<param name="visible_background" value="$VAR[WideView_AlphabetScroller_BackgroundVar]"/>
 				</include>
 				<include content="sidefade_shadow">
 					<param name="left" value="100"/>
 					<param name="id" value="$PARAM[viewid]" />
 					<param name="flipx" value="true" />
-					<param name="visible" value="$VAR[WideView_AlphabetScroller_BackgroundVar]"/>
+					<param name="visible" value="!Skin.HasSetting(alphabetscroller_off)+!Container.Content(episodes)"/>
 				</include>
                 <include content="ScrollOffsetLabel">
                     <param name="left">-10</param>

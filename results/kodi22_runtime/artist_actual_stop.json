@@ -1,0 +1,237 @@
+{
+  "stop": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": "OK"
+  },
+  "samples": [
+    {
+      "elapsed_approx": 0.0,
+      "labels": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": {
+          "Window(visualisation).Property(ArtistSlideshow.CleanupComplete)": "",
+          "Window(visualisation).Property(ArtistSlideshowRunning)": "True"
+        }
+      },
+      "booleans": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": {
+          "Player.HasAudio": false,
+          "Skin.TimerIsRunning(artistslideshowrequest)": false
+        }
+      }
+    },
+    {
+      "elapsed_approx": 0.5,
+      "labels": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": {
+          "Window(visualisation).Property(ArtistSlideshow.CleanupComplete)": "",
+          "Window(visualisation).Property(ArtistSlideshowRunning)": "True"
+        }
+      },
+      "booleans": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": {
+          "Player.HasAudio": false,
+          "Skin.TimerIsRunning(artistslideshowrequest)": false
+        }
+      }
+    },
+    {
+      "elapsed_approx": 1.0,
+      "labels": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": {
+          "Window(visualisation).Property(ArtistSlideshow.CleanupComplete)": "",
+          "Window(visualisation).Property(ArtistSlideshowRunning)": "True"
+        }
+      },
+      "booleans": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": {
+          "Player.HasAudio": false,
+          "Skin.TimerIsRunning(artistslideshowrequest)": false
+        }
+      }
+    },
+    {
+      "elapsed_approx": 1.5,
+      "labels": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": {
+          "Window(visualisation).Property(ArtistSlideshow.CleanupComplete)": "",
+          "Window(visualisation).Property(ArtistSlideshowRunning)": "True"
+        }
+      },
+      "booleans": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": {
+          "Player.HasAudio": false,
+          "Skin.TimerIsRunning(artistslideshowrequest)": false
+        }
+      }
+    },
+    {
+      "elapsed_approx": 2.0,
+      "labels": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": {
+          "Window(visualisation).Property(ArtistSlideshow.CleanupComplete)": "",
+          "Window(visualisation).Property(ArtistSlideshowRunning)": "True"
+        }
+      },
+      "booleans": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": {
+          "Player.HasAudio": false,
+          "Skin.TimerIsRunning(artistslideshowrequest)": false
+        }
+      }
+    },
+    {
+      "elapsed_approx": 2.5,
+      "labels": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": {
+          "Window(visualisation).Property(ArtistSlideshow.CleanupComplete)": "",
+          "Window(visualisation).Property(ArtistSlideshowRunning)": "True"
+        }
+      },
+      "booleans": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": {
+          "Player.HasAudio": false,
+          "Skin.TimerIsRunning(artistslideshowrequest)": false
+        }
+      }
+    },
+    {
+      "elapsed_approx": 3.0,
+      "labels": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": {
+          "Window(visualisation).Property(ArtistSlideshow.CleanupComplete)": "",
+          "Window(visualisation).Property(ArtistSlideshowRunning)": "True"
+        }
+      },
+      "booleans": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": {
+          "Player.HasAudio": false,
+          "Skin.TimerIsRunning(artistslideshowrequest)": false
+        }
+      }
+    },
+    {
+      "elapsed_approx": 3.5,
+      "labels": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": {
+          "Window(visualisation).Property(ArtistSlideshow.CleanupComplete)": "",
+          "Window(visualisation).Property(ArtistSlideshowRunning)": "True"
+        }
+      },
+      "booleans": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": {
+          "Player.HasAudio": false,
+          "Skin.TimerIsRunning(artistslideshowrequest)": false
+        }
+      }
+    },
+    {
+      "elapsed_approx": 4.0,
+      "labels": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": {
+          "Window(visualisation).Property(ArtistSlideshow.CleanupComplete)": "",
+          "Window(visualisation).Property(ArtistSlideshowRunning)": "True"
+        }
+      },
+      "booleans": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": {
+          "Player.HasAudio": false,
+          "Skin.TimerIsRunning(artistslideshowrequest)": false
+        }
+      }
+    },
+    {
+      "elapsed_approx": 4.5,
+      "labels": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": {
+          "Window(visualisation).Property(ArtistSlideshow.CleanupComplete)": "",
+          "Window(visualisation).Property(ArtistSlideshowRunning)": "True"
+        }
+      },
+      "booleans": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": {
+          "Player.HasAudio": false,
+          "Skin.TimerIsRunning(artistslideshowrequest)": false
+        }
+      }
+    },
+    {
+      "elapsed_approx": 5.0,
+      "labels": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": {
+          "Window(visualisation).Property(ArtistSlideshow.CleanupComplete)": "",
+          "Window(visualisation).Property(ArtistSlideshowRunning)": "True"
+        }
+      },
+      "booleans": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": {
+          "Player.HasAudio": false,
+          "Skin.TimerIsRunning(artistslideshowrequest)": false
+        }
+      }
+    },
+    {
+      "elapsed_approx": 5.5,
+      "labels": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": {
+          "Window(visualisation).Property(ArtistSlideshow.CleanupComplete)": "True",
+          "Window(visualisation).Property(ArtistSlideshowRunning)": ""
+        }
+      },
+      "booleans": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": {
+          "Player.HasAudio": false,
+          "Skin.TimerIsRunning(artistslideshowrequest)": false
+        }
+      }
+    }
+  ]
+}

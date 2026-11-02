@@ -215,7 +215,7 @@
                             <focusedcolor>black</focusedcolor>
                             <label>Artist Infos</label>
                             <onclick>ActivateWindow(1101)</onclick>
-                            <visible>System.HasAddon(script.artistslideshow)</visible>
+                            <visible>System.AddonIsEnabled(script.artistslideshow)</visible>
                         </control>
                     </control>
                 </control>

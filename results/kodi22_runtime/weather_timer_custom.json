@@ -1,0 +1,76 @@
+{
+  "leave_before_expiry": [
+    {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Container(9000).ListItem.Property(homemenu_id)": "setting",
+        "Skin.String(hidehomemenu_timer)": "2",
+        "Skin.TimerElapsedSecs(homeweatherautohide)": "0.500070",
+        "System.CurrentControlId": "9000"
+      }
+    },
+    {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Container(9000).ListItem.Property(homemenu_id)": "setting",
+        "Skin.String(hidehomemenu_timer)": "2",
+        "Skin.TimerElapsedSecs(homeweatherautohide)": "0.500070",
+        "System.CurrentControlId": "9000"
+      }
+    }
+  ],
+  "custom_delay": [
+    {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Container(9000).ListItem.Property(homemenu_id)": "weather",
+        "Skin.String(hidehomemenu_timer)": "2",
+        "Skin.TimerElapsedSecs(homeweatherautohide)": "0.411067",
+        "System.CurrentControlId": "9000"
+      }
+    },
+    {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Container(9000).ListItem.Property(homemenu_id)": "weather",
+        "Skin.String(hidehomemenu_timer)": "2",
+        "Skin.TimerElapsedSecs(homeweatherautohide)": "1.066686",
+        "System.CurrentControlId": "9000"
+      }
+    },
+    {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Container(9000).ListItem.Property(homemenu_id)": "weather",
+        "Skin.String(hidehomemenu_timer)": "2",
+        "Skin.TimerElapsedSecs(homeweatherautohide)": "1.722176",
+        "System.CurrentControlId": "9000"
+      }
+    },
+    {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Container(9000).ListItem.Property(homemenu_id)": "weather",
+        "Skin.String(hidehomemenu_timer)": "2",
+        "Skin.TimerElapsedSecs(homeweatherautohide)": "2.011013",
+        "System.CurrentControlId": "666"
+      }
+    },
+    {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Container(9000).ListItem.Property(homemenu_id)": "weather",
+        "Skin.String(hidehomemenu_timer)": "2",
+        "Skin.TimerElapsedSecs(homeweatherautohide)": "2.011013",
+        "System.CurrentControlId": "666"
+      }
+    }
+  ]
+}

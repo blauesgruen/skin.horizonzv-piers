@@ -1,0 +1,40 @@
+[
+  {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": "OK"
+  },
+  {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "currentwindow": {
+        "id": 10000,
+        "label": "Home"
+      },
+      "skin": {
+        "id": "skin.horizonzv",
+        "name": "Horizonz V"
+      }
+    }
+  },
+  {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": "OK"
+  },
+  {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "currentwindow": {
+        "id": 10502,
+        "label": "Music"
+      },
+      "skin": {
+        "id": "skin.horizonzv",
+        "name": "Horizonz V"
+      }
+    }
+  }
+]

@@ -98,7 +98,6 @@
 					<onclick>Skin.SetBool(playlist)</onclick>
 					<onclick>Skin.SetBool(CurrentButtonLabel)</onclick>
 					<onclick>Skin.SetBool(context_ad)</onclick>
-					<onclick>Skin.SetBool(context_globalsearch)</onclick>
 					<onclick>Skin.SetBool(WidgetDim)</onclick>
 					<onclick>Skin.SetBool(fanart)</onclick>
 					<onclick>Skin.SetBool(CommonPageCount)</onclick>
@@ -135,7 +134,6 @@
 					<onclick>Skin.SetBool(playlist)</onclick>
 					<onclick>Skin.SetBool(CurrentButtonLabel)</onclick>
 					<onclick>Skin.SetBool(context_ad)</onclick>
-					<onclick>Skin.SetBool(context_globalsearch)</onclick>
 					<onclick>Skin.SetBool(Widget_RecentMovies)</onclick>
 					<onclick>Skin.SetBool(Widget_RecentMusicVideos)</onclick>
 					<onclick>Skin.SetBool(Widget_RecentAlbums)</onclick>

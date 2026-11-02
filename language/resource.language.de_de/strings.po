@@ -1,4 +1,4 @@
-﻿# Kodi Media Center language file
+# Kodi Media Center language file
 # Addon Name: HorizonzV
 # Addon id: skin.horizonzv
 # Addon Provider: blauesgruen
@@ -399,7 +399,7 @@ msgstr "Es werden keine Infos wie Kapitel, Untertitel, Laufzeitbalken etc. angez
 
 msgctxt "#31239"
 msgid ""
-msgstr "Zeige alle verfügbaren Film & Serien Artworks.[CR][COLOR=white]Seit Kodi 19 sind werden Artworks mit dem Scrapper \'The Movie Database PYTHON\' geladen.[/COLOR][COLOR=grey][CR]\'Artwork Beef\' oder ein vergleichbares Addon kann aber weiterhin verwendet werden.[/COLOR]"
+msgstr "Zeige alle verfügbaren Film & Serien Artworks.[CR][COLOR=white]Seit Kodi 19 sind werden Artworks mit dem Scrapper \'The Movie Database PYTHON\' geladen.[/COLOR]"
 
 msgctxt "#31240"
 msgid ""
@@ -1081,9 +1081,6 @@ msgctxt "#31409"
 msgid ""
 msgstr "letztes gehörte Album auf Platz 1"
 
-msgctxt "#31410"
-msgid ""
-msgstr "nächste Episode auf Platz 1"
 
 msgctxt "#31411"
 msgid ""
@@ -1168,3 +1165,39 @@ msgstr "gib hier die Kategorie der Wiedergabeliste an ..."
 msgctxt "#35500"
 msgid ""
 msgstr "Ort"
+
+msgctxt "#31004"
+msgid "Change mode"
+msgstr "Modus ändern"
+
+msgctxt "#31031"
+msgid "Version info"
+msgstr "Versionsinformationen"
+
+msgctxt "#31112"
+msgid "Audio streams"
+msgstr "Audiostreams"
+
+msgctxt "#31115"
+msgid "Subtitles streams"
+msgstr "Untertitelstreams"
+
+msgctxt "#31132"
+msgid "Select Program"
+msgstr "Programm auswählen"
+
+msgctxt "#31133"
+msgid "Select Resolution"
+msgstr "Auflösung auswählen"
+
+msgctxt "#31950"
+msgid "Wake all devices with a MAC address"
+msgstr "Alle Geräte mit MAC-Adresse wecken"
+
+msgctxt "#31951"
+msgid "Wake-on-LAN requested"
+msgstr "Wake-on-LAN angefordert"
+
+msgctxt "#31952"
+msgid "No devices available"
+msgstr "Keine Geräte verfügbar"

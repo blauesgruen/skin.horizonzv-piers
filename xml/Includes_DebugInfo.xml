@@ -461,7 +461,7 @@
 				<include>DialogID</include>
                 <textcolor>0xFFFFA500</textcolor>
 				<label>$INFO[Skin.String(studiologos.path)]$INFO[ListItem.Studio]$INFO[Skin.String(studiologos.ext)]</label>
-				<visible>!String.IsEmpty(Skin.String(studiologos.name))+Skin.HasAddon()</visible>
+				<visible>!String.IsEmpty(Skin.String(studiologos.name))</visible>
 			</control>
 			<control type="label">
 				<include>DialogID</include>

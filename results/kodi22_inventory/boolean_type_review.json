@@ -1,0 +1,14 @@
+{
+  "scope": "Targeted review of Player.ChapterCount boolean use and Window.Is, not a blanket semantic validation of all extracted operands.",
+  "supported": [
+    "Player.ChapterCount has GetInt support; GUIInfoManager.GetBool falls back to nonzero integer values.",
+    "Window.Is is handled as WINDOW_IS in GUIControlsGUIInfo.GetBool; it is not an obsolete spelling of Window.IsActive."
+  ],
+  "corrected": "Only the previously unguarded chapter label in DialogSeekBar now requires Integer.IsGreater(Player.ChapterCount,0). Existing chaptercount boolean conditions retained.",
+  "evidence": "chapter_checks.json confirms both forms false for count 00; video_no_chapters.png visually verified without 00/00.",
+  "sources": [
+    "https://raw.githubusercontent.com/xbmc/xbmc/22.0rc1-Piers/xbmc/GUIInfoManager.cpp",
+    "https://raw.githubusercontent.com/xbmc/xbmc/22.0rc1-Piers/xbmc/guilib/guiinfo/PlayerGUIInfo.cpp",
+    "https://raw.githubusercontent.com/xbmc/xbmc/22.0rc1-Piers/xbmc/guilib/guiinfo/GUIControlsGUIInfo.cpp"
+  ]
+}

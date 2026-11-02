@@ -9,13 +9,10 @@
     <onload condition="!Skin.HasSetting(gambit_background)+!Skin.HasSetting(avengers_sw)+!Skin.HasSetting(standard_bkg)">Skin.SetBool(standard_bkg)</onload>
     <onload condition="!String.IsEmpty(Skin.String(homemenufocus))+Window.Previous(startup)">Control.Move(9000,$INFO[Skin.String(homemenufocus)])</onload>
     <onload condition="!Skin.HasSetting(firstrun_horizonzv)">ActivateWindow(1155)</onload>
-    <onload condition="!System.HasAddon(service.library.data.provider)+Skin.HasSetting(Widget_inProgress_tvshow_Place1)">Skin.Reset(Widget_inProgress_tvshow_Place1)</onload>
     <onload condition="![Skin.HasSetting(Row5_Weather)|Skin.HasSetting(Row5_GTO)|Skin.HasSetting(Row5_Path)|Skin.HasSetting(Row5_Fav)|Skin.HasSetting(Row5_Fritzact)]">Skin.SetBool(Row5_off)</onload>
     <onload condition="![Skin.HasSetting(Row4_Weather)|Skin.HasSetting(Row4_GTO)|Skin.HasSetting(Row4_Path)|Skin.HasSetting(Row4_Fav)|Skin.HasSetting(Row4_Fritzact)]">Skin.SetBool(Row4_off)</onload>
     <onload condition="![Skin.HasSetting(Row3_Weather)|Skin.HasSetting(Row3_GTO)|Skin.HasSetting(Row3_Path)|Skin.HasSetting(Row3_Fav)|Skin.HasSetting(Row3_Fritzact)]">Skin.SetBool(Row3_off)</onload>
     <onload condition="![Skin.HasSetting(Row2_Weather)|Skin.HasSetting(Row2_GTO)|Skin.HasSetting(Row2_Path)|Skin.HasSetting(Row2_Fav)|Skin.HasSetting(Row2_Fritzact)]">Skin.SetBool(Row2_off)</onload>
-    <onload>CancelAlarm(HideMenu,true)</onload>
-    <onunload>CancelAlarm(HideMenu,true)</onunload>
     <include>openclose</include>
     <controls>
         <control type="button" id="3020">
@@ -445,7 +442,7 @@
                                     <label>137</label>
                                     <icon>center/Center_Search.png</icon>
                                     <onclick>RunScript(script.globalsearch)</onclick>
-                                    <visible>System.HasAddon(script.globalsearch)</visible>
+                                    <visible>System.AddonIsEnabled(script.globalsearch)</visible>
                                 </item>
                                 <item id="9">
                                     <description>SkinAddons</description>

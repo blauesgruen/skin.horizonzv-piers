@@ -32,7 +32,7 @@
 								<left>8</left>
 								<width>138</width>
 								<height>74</height>
-								<texture>buttons/color-back.png</texture>
+								<texture>BlackBack.png</texture>
 							</control>
 							<control type="image">
 								<top>3</top>

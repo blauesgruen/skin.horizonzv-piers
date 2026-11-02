@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<timers>
+    <timer>
+        <name>homeweatherautohide</name>
+        <description>Hide the Home menu while its weather item remains focused.</description>
+        <start reset="true">Window.IsActive(home)+Control.HasFocus(9000)+!String.IsEmpty(Weather.Plugin)+Skin.HasSetting(HomeMenuWeatherFadeout)+String.IsEqual(Container(9000).ListItem.Property(homemenu_id),weather)</start>
+        <stop>!Window.IsActive(home)|!Control.HasFocus(9000)|String.IsEmpty(Weather.Plugin)|!Skin.HasSetting(HomeMenuWeatherFadeout)|!String.IsEqual(Container(9000).ListItem.Property(homemenu_id),weather)|[String.IsEmpty(Skin.String(hidehomemenu_timer))+Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(homeweatherautohide),10)]|[!String.IsEmpty(Skin.String(hidehomemenu_timer))+Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(homeweatherautohide),Skin.Numeric(hidehomemenu_timer))]</stop>
+        <onstop condition="Window.IsActive(home)+Control.HasFocus(9000)+!String.IsEmpty(Weather.Plugin)+Skin.HasSetting(HomeMenuWeatherFadeout)+String.IsEqual(Container(9000).ListItem.Property(homemenu_id),weather)">Control.SetFocus(666)</onstop>
+    </timer>
+    <timer>
+        <name>artistslideshowrequest</name>
+        <description>Request Artist Slideshow once when artwork or artist information is needed.</description>
+        <start reset="true">Window.IsVisible(visualisation)+Player.HasAudio+System.AddonIsEnabled(script.artistslideshow)+[Skin.HasSetting(fanart)|Skin.HasSetting(artistslideshow_artistinfos_bio)|Skin.HasSetting(artistslideshow_artistinfos_albums)|Skin.HasSetting(artistslideshow_artistinfos_similar)]</start>
+        <stop>!Window.IsVisible(visualisation)|!Player.HasAudio|!System.AddonIsEnabled(script.artistslideshow)</stop>
+        <onstart condition="!String.IsEqual(Window(visualisation).Property(ArtistSlideshowRunning),true)">RunScript(script.artistslideshow)</onstart>
+    </timer>
+</timers>

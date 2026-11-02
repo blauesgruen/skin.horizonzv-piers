@@ -1,4 +1,4 @@
-﻿# Kodi Media Center language file
+# Kodi Media Center language file
 # Addon Name: HorizonzV
 # Addon id: skin.horizonzv
 # Addon Provider: blauesgruen
@@ -401,7 +401,7 @@ msgstr "Ingen information som kapitel, undertexter, tidslinjer etc. visas.[CR][C
 
 msgctxt "#31239"
 msgid ""
-msgstr "Visa alla tillgängliga konstverk för filmer och serier.[CR][COLOR=white]Eftersom Kodi 19 konstverk laddas med skrapan \'The Movie Database PYTHON\'.[/COLOR][COLOR=grey][CR]\'Artwork Beef\' eller ett liknande tillägg kan dock fortfarande användas.[/COLOR]"
+msgstr "Visa alla tillgängliga konstverk för filmer och serier.[CR][COLOR=white]Eftersom Kodi 19 konstverk laddas med skrapan \'The Movie Database PYTHON\'.[/COLOR]"
 
 msgctxt "#31240"
 msgid ""
@@ -1083,9 +1083,6 @@ msgctxt "#31409"
 msgid ""
 msgstr "senaste albumet som lyssnades på rankades som nummer 1"
 
-msgctxt "#31410"
-msgid ""
-msgstr "nästa avsnitt på nummer 1"
 
 msgctxt "#31411"
 msgid ""
@@ -1170,4 +1167,27 @@ msgstr "Ange kategorin för spellistan här ..."
 msgctxt "#35500"
 msgid "Location"
 msgstr "Plats"
+msgctxt "#31004"
+msgid "Change mode"
+msgstr "Ändra läge"
+
+msgctxt "#31031"
+msgid "Version info"
+msgstr "Versionsinfo"
+
+msgctxt "#31112"
+msgid "Audio streams"
+msgstr "Ljudströmmar"
+
+msgctxt "#31115"
+msgid "Subtitles streams"
+msgstr "Undertextströmmar"
+
+msgctxt "#31132"
+msgid "Select Program"
+msgstr "Välj program"
+
+msgctxt "#31133"
+msgid "Select Resolution"
+msgstr "Välj upplösning"
 

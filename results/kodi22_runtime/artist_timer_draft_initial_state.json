@@ -1,0 +1,128 @@
+[
+  {
+    "case": "left visualisation",
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(AuditArtistProvider)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": false,
+        "Window.IsVisible(visualisation)": false
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.TimerElapsedSecs(artistslideshowrequest)": "0.000000",
+        "Window(Home).Property(Audit.ArtistStartRequested)": ""
+      }
+    }
+  },
+  {
+    "case": "entered all options off",
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(AuditArtistProvider)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": false,
+        "Window.IsVisible(visualisation)": true
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.TimerElapsedSecs(artistslideshowrequest)": "0.000000",
+        "Window(Home).Property(Audit.ArtistStartRequested)": ""
+      }
+    }
+  },
+  {
+    "case": "Toggle fanart enabled",
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(AuditArtistProvider)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": true,
+        "Window.IsVisible(visualisation)": true
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.TimerElapsedSecs(artistslideshowrequest)": "0.204274",
+        "Window(Home).Property(Audit.ArtistStartRequested)": "true"
+      }
+    }
+  },
+  {
+    "case": "Toggle fanart disabled",
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(AuditArtistProvider)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": true,
+        "Window.IsVisible(visualisation)": true
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.TimerElapsedSecs(artistslideshowrequest)": "3.092365",
+        "Window(Home).Property(Audit.ArtistStartRequested)": ""
+      }
+    }
+  },
+  {
+    "case": "Toggle fanart reenabled in same cycle",
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(AuditArtistProvider)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": true,
+        "Window.IsVisible(visualisation)": true
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.TimerElapsedSecs(artistslideshowrequest)": "3.595651",
+        "Window(Home).Property(Audit.ArtistStartRequested)": ""
+      }
+    }
+  },
+  {
+    "case": "left visualisation",
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(AuditArtistProvider)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": true,
+        "Window.IsVisible(visualisation)": true
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.TimerElapsedSecs(artistslideshowrequest)": "4.056184",
+        "Window(Home).Property(Audit.ArtistStartRequested)": ""
+      }
+    }
+  }
+]

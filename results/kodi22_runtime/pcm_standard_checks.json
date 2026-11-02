@@ -1,0 +1,54 @@
+[
+  {
+    "file": "skin-audit-silence.wav",
+    "open": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": "OK"
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Control.GetLabel(731)": "flagging/audio/pcm_bluray.png",
+        "Control.GetLabel(732)": "",
+        "MusicPlayer.Codec": "pcm_s16le"
+      }
+    },
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Control.IsVisible(731)": true,
+        "Control.IsVisible(732)": true,
+        "Skin.HasSetting(vinylview)": false
+      }
+    }
+  },
+  {
+    "file": "skin-audit-pcm.au",
+    "open": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": "OK"
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Control.GetLabel(731)": "flagging/audio/pcm_bluray.png",
+        "Control.GetLabel(732)": "",
+        "MusicPlayer.Codec": "pcm_s16be"
+      }
+    },
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Control.IsVisible(731)": true,
+        "Control.IsVisible(732)": true,
+        "Skin.HasSetting(vinylview)": false
+      }
+    }
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "addon": "script.artistslideshow",
+    "version": "4.2.1",
+    "files": 100,
+    "copy_mismatches": [],
+    "after_runtime_source_mismatches": []
+  },
+  {
+    "addon": "script.module.future",
+    "version": "1.0.0+matrix.1",
+    "files": 214,
+    "copy_mismatches": [],
+    "after_runtime_source_mismatches": []
+  },
+  {
+    "addon": "script.module.defusedxml",
+    "version": "0.6.0+matrix.1",
+    "files": 16,
+    "copy_mismatches": [],
+    "after_runtime_source_mismatches": []
+  },
+  {
+    "addon": "script.module.requests",
+    "version": "2.31.0",
+    "files": 21,
+    "copy_mismatches": [],
+    "after_runtime_source_mismatches": []
+  },
+  {
+    "addon": "script.module.urllib3",
+    "version": "2.2.3",
+    "files": 40,
+    "copy_mismatches": [],
+    "after_runtime_source_mismatches": []
+  },
+  {
+    "addon": "script.module.idna",
+    "version": "3.10.0",
+    "files": 11,
+    "copy_mismatches": [],
+    "after_runtime_source_mismatches": []
+  },
+  {
+    "addon": "script.module.chardet",
+    "version": "5.1.0",
+    "files": 51,
+    "copy_mismatches": [],
+    "after_runtime_source_mismatches": []
+  },
+  {
+    "addon": "script.module.certifi",
+    "version": "2023.5.7",
+    "files": 7,
+    "copy_mismatches": [],
+    "after_runtime_source_mismatches": []
+  }
+]

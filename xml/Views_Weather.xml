@@ -155,7 +155,7 @@
                         <top>15</top>
                         <width>120</width>
                         <height>105</height>
-                        <imagepath>$INFO[ListItem.Thumb]</imagepath>
+                        <imagepath>$INFO[ListItem.Art(thumb)]</imagepath>
                         <timeperimage>100</timeperimage>
                         <randomize>false</randomize>
                         <fadetime>10</fadetime>
@@ -217,7 +217,7 @@
                         <top>15</top>
                         <width>120</width>
                         <height>105</height>
-                        <imagepath>$INFO[ListItem.Thumb]</imagepath>
+                        <imagepath>$INFO[ListItem.Art(thumb)]</imagepath>
                         <timeperimage>100</timeperimage>
                         <randomize>false</randomize>
                         <fadetime>10</fadetime>
@@ -825,7 +825,7 @@
                         <top>15</top>
                         <width>120</width>
                         <height>105</height>
-                        <imagepath>$INFO[ListItem.Thumb]</imagepath>
+                        <imagepath>$INFO[ListItem.Art(thumb)]</imagepath>
                         <timeperimage>100</timeperimage>
                         <randomize>false</randomize>
                         <fadetime>10</fadetime>
@@ -888,7 +888,7 @@
                         <top>15</top>
                         <width>120</width>
                         <height>105</height>
-                        <imagepath>$INFO[ListItem.Thumb]</imagepath>
+                        <imagepath>$INFO[ListItem.Art(thumb)]</imagepath>
                         <timeperimage>100</timeperimage>
                         <randomize>false</randomize>
                         <fadetime>10</fadetime>
@@ -1131,6 +1131,7 @@
     <include name="WeatherAlerts">
         <control type="group" id="777">
             <visible>String.IsEqual(Window.Property(Weather.CurrentView),alerts) + !String.IsEmpty(Window.Property(Alerts.IsFetched))</visible>
+            <visible>!String.IsEmpty(Window.Property(Alerts))|String.IsEqual(Window.Property(Alerts.Count),0)</visible>
             <include>opencloseslideleft</include>
             <control type="button" id="996">
                 <description>Hidden Button for focus</description>

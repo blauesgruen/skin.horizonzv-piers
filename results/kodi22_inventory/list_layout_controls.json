@@ -1,0 +1,20 @@
+{
+  "scope": "Literal itemlayout/focusedlayout elements plus recursively referenced include definitions in xml/*.xml. Conditions are not evaluated; parameters are not substituted. Not a complete Kodi XML schema validator.",
+  "source": "https://raw.githubusercontent.com/xbmc/xbmc/22.0rc1-Piers/xbmc/guilib/GUIListGroup.cpp",
+  "xml_files": 164,
+  "layouts": 243,
+  "expanded_include_calls": 356,
+  "control_occurrences": {
+    "image": 846,
+    "label": 386,
+    "group": 405,
+    "textbox": 29,
+    "progress": 7,
+    "multiimage": 11,
+    "gamewindow": 4,
+    "gamecontroller": 10,
+    "gamecontrollerlist": 2
+  },
+  "unsupported_control_occurrences": [],
+  "unresolved_includes": []
+}

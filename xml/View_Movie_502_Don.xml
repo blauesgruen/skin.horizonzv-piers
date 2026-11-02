@@ -60,13 +60,11 @@
 						<width>40</width>
 						<include content="AlphabetScrollerContainer">
 							<param name="width" value="40"/>
-							<param name="visible_background" value="$VAR[WideView_AlphabetScroller_BackgroundVar]"/>
 						</include>
 					</control>
 					<include content="AlphabetScrollerContainer">
 						<param name="right" value="2"/>
 						<param name="width" value="40"/>
-						<param name="visible_background" value="$VAR[WideView_AlphabetScroller_BackgroundVar]"/>
 					</include>
 					<control type="image">
 						<top>5</top>

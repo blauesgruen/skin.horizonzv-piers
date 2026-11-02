@@ -1,0 +1,1097 @@
+[
+  {
+    "case": "waiting for Home",
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(AuditArtistProvider)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": false,
+        "Window.IsVisible(visualisation)": false
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.TimerElapsedSecs(artistslideshowrequest)": "0.000000",
+        "Window(Home).Property(Audit.ArtistStartRequested)": ""
+      }
+    }
+  },
+  {
+    "case": "entered all options off",
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(AuditArtistProvider)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": false,
+        "Window.IsVisible(visualisation)": true
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.TimerElapsedSecs(artistslideshowrequest)": "0.000000",
+        "Window(Home).Property(Audit.ArtistStartRequested)": ""
+      }
+    }
+  },
+  {
+    "case": "Toggle fanart enabled",
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(AuditArtistProvider)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": true,
+        "Window.IsVisible(visualisation)": true
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.TimerElapsedSecs(artistslideshowrequest)": "0.386818",
+        "Window(Home).Property(Audit.ArtistStartRequested)": "true"
+      }
+    }
+  },
+  {
+    "case": "Toggle fanart disabled",
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(AuditArtistProvider)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": true,
+        "Window.IsVisible(visualisation)": true
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.TimerElapsedSecs(artistslideshowrequest)": "2.473499",
+        "Window(Home).Property(Audit.ArtistStartRequested)": ""
+      }
+    }
+  },
+  {
+    "case": "Toggle fanart reenabled in same cycle",
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(AuditArtistProvider)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": true,
+        "Window.IsVisible(visualisation)": true
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.TimerElapsedSecs(artistslideshowrequest)": "2.942538",
+        "Window(Home).Property(Audit.ArtistStartRequested)": ""
+      }
+    }
+  },
+  {
+    "case": "waiting for Home",
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(AuditArtistProvider)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": true,
+        "Window.IsVisible(visualisation)": false
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.TimerElapsedSecs(artistslideshowrequest)": "3.583588",
+        "Window(Home).Property(Audit.ArtistStartRequested)": ""
+      }
+    }
+  },
+  {
+    "case": "waiting for Home",
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(AuditArtistProvider)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": false,
+        "Window.IsVisible(visualisation)": false
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.TimerElapsedSecs(artistslideshowrequest)": "3.625167",
+        "Window(Home).Property(Audit.ArtistStartRequested)": ""
+      }
+    }
+  },
+  {
+    "case": "entered all options off",
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(AuditArtistProvider)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": false,
+        "Window.IsVisible(visualisation)": true
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.TimerElapsedSecs(artistslideshowrequest)": "3.625167",
+        "Window(Home).Property(Audit.ArtistStartRequested)": ""
+      }
+    }
+  },
+  {
+    "case": "Toggle biography enabled",
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(AuditArtistProvider)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": true,
+        "Window.IsVisible(visualisation)": true
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.TimerElapsedSecs(artistslideshowrequest)": "0.364834",
+        "Window(Home).Property(Audit.ArtistStartRequested)": "true"
+      }
+    }
+  },
+  {
+    "case": "Toggle biography disabled",
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(AuditArtistProvider)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": true,
+        "Window.IsVisible(visualisation)": true
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.TimerElapsedSecs(artistslideshowrequest)": "2.467376",
+        "Window(Home).Property(Audit.ArtistStartRequested)": ""
+      }
+    }
+  },
+  {
+    "case": "Toggle biography reenabled in same cycle",
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(AuditArtistProvider)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": true,
+        "Window.IsVisible(visualisation)": true
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.TimerElapsedSecs(artistslideshowrequest)": "2.903369",
+        "Window(Home).Property(Audit.ArtistStartRequested)": ""
+      }
+    }
+  },
+  {
+    "case": "waiting for Home",
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(AuditArtistProvider)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": true,
+        "Window.IsVisible(visualisation)": false
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.TimerElapsedSecs(artistslideshowrequest)": "3.541631",
+        "Window(Home).Property(Audit.ArtistStartRequested)": ""
+      }
+    }
+  },
+  {
+    "case": "waiting for Home",
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(AuditArtistProvider)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": false,
+        "Window.IsVisible(visualisation)": false
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.TimerElapsedSecs(artistslideshowrequest)": "3.582842",
+        "Window(Home).Property(Audit.ArtistStartRequested)": ""
+      }
+    }
+  },
+  {
+    "case": "entered all options off",
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(AuditArtistProvider)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": false,
+        "Window.IsVisible(visualisation)": true
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.TimerElapsedSecs(artistslideshowrequest)": "3.582842",
+        "Window(Home).Property(Audit.ArtistStartRequested)": ""
+      }
+    }
+  },
+  {
+    "case": "Toggle albums enabled",
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(AuditArtistProvider)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": true,
+        "Window.IsVisible(visualisation)": true
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.TimerElapsedSecs(artistslideshowrequest)": "0.081398",
+        "Window(Home).Property(Audit.ArtistStartRequested)": "true"
+      }
+    }
+  },
+  {
+    "case": "Toggle albums disabled",
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(AuditArtistProvider)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": true,
+        "Window.IsVisible(visualisation)": true
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.TimerElapsedSecs(artistslideshowrequest)": "2.207736",
+        "Window(Home).Property(Audit.ArtistStartRequested)": ""
+      }
+    }
+  },
+  {
+    "case": "Toggle albums reenabled in same cycle",
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(AuditArtistProvider)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": true,
+        "Window.IsVisible(visualisation)": true
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.TimerElapsedSecs(artistslideshowrequest)": "2.631979",
+        "Window(Home).Property(Audit.ArtistStartRequested)": ""
+      }
+    }
+  },
+  {
+    "case": "waiting for Home",
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(AuditArtistProvider)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": true,
+        "Window.IsVisible(visualisation)": false
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.TimerElapsedSecs(artistslideshowrequest)": "3.288658",
+        "Window(Home).Property(Audit.ArtistStartRequested)": ""
+      }
+    }
+  },
+  {
+    "case": "waiting for Home",
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(AuditArtistProvider)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": false,
+        "Window.IsVisible(visualisation)": false
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.TimerElapsedSecs(artistslideshowrequest)": "3.288658",
+        "Window(Home).Property(Audit.ArtistStartRequested)": ""
+      }
+    }
+  },
+  {
+    "case": "entered all options off",
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(AuditArtistProvider)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": false,
+        "Window.IsVisible(visualisation)": true
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.TimerElapsedSecs(artistslideshowrequest)": "3.288658",
+        "Window(Home).Property(Audit.ArtistStartRequested)": ""
+      }
+    }
+  },
+  {
+    "case": "Toggle similar artists enabled",
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(AuditArtistProvider)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": true,
+        "Window.IsVisible(visualisation)": true
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.TimerElapsedSecs(artistslideshowrequest)": "0.326467",
+        "Window(Home).Property(Audit.ArtistStartRequested)": "true"
+      }
+    }
+  },
+  {
+    "case": "Toggle similar artists disabled",
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(AuditArtistProvider)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": true,
+        "Window.IsVisible(visualisation)": true
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.TimerElapsedSecs(artistslideshowrequest)": "2.484284",
+        "Window(Home).Property(Audit.ArtistStartRequested)": ""
+      }
+    }
+  },
+  {
+    "case": "Toggle similar artists reenabled in same cycle",
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(AuditArtistProvider)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": true,
+        "Window.IsVisible(visualisation)": true
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.TimerElapsedSecs(artistslideshowrequest)": "2.924342",
+        "Window(Home).Property(Audit.ArtistStartRequested)": ""
+      }
+    }
+  },
+  {
+    "case": "waiting for Home",
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(AuditArtistProvider)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": true,
+        "Window.IsVisible(visualisation)": false
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.TimerElapsedSecs(artistslideshowrequest)": "3.572937",
+        "Window(Home).Property(Audit.ArtistStartRequested)": ""
+      }
+    }
+  },
+  {
+    "case": "waiting for Home",
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(AuditArtistProvider)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": false,
+        "Window.IsVisible(visualisation)": false
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.TimerElapsedSecs(artistslideshowrequest)": "3.611756",
+        "Window(Home).Property(Audit.ArtistStartRequested)": ""
+      }
+    }
+  },
+  {
+    "case": "entered all options off",
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(AuditArtistProvider)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": false,
+        "Window.IsVisible(visualisation)": true
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.TimerElapsedSecs(artistslideshowrequest)": "3.611756",
+        "Window(Home).Property(Audit.ArtistStartRequested)": ""
+      }
+    }
+  },
+  {
+    "case": "provider already running",
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(AuditArtistProvider)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": false,
+        "Window.IsVisible(visualisation)": true
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.TimerElapsedSecs(artistslideshowrequest)": "0.041060",
+        "Window(Home).Property(Audit.ArtistStartRequested)": ""
+      }
+    }
+  },
+  {
+    "case": "provider already running settled",
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(AuditArtistProvider)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": false,
+        "Window.IsVisible(visualisation)": false
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.TimerElapsedSecs(artistslideshowrequest)": "67.262764",
+        "Window(Home).Property(Audit.ArtistStartRequested)": "",
+        "Window(visualisation).Property(ArtistSlideshowRunning)": "True"
+      }
+    }
+  },
+  {
+    "case": "provider already running settled",
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(AuditArtistProvider)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": false,
+        "Window.IsVisible(visualisation)": false
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.TimerElapsedSecs(artistslideshowrequest)": "67.262764",
+        "Window(Home).Property(Audit.ArtistStartRequested)": "",
+        "Window(visualisation).Property(ArtistSlideshowRunning)": "True"
+      }
+    }
+  },
+  {
+    "case": "provider already running settled",
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(AuditArtistProvider)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": false,
+        "Window.IsVisible(visualisation)": false
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.TimerElapsedSecs(artistslideshowrequest)": "67.262764",
+        "Window(Home).Property(Audit.ArtistStartRequested)": "",
+        "Window(visualisation).Property(ArtistSlideshowRunning)": "True"
+      }
+    }
+  },
+  {
+    "case": "provider already running settled",
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(AuditArtistProvider)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": false,
+        "Window.IsVisible(visualisation)": false
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.TimerElapsedSecs(artistslideshowrequest)": "67.262764",
+        "Window(Home).Property(Audit.ArtistStartRequested)": "",
+        "Window(visualisation).Property(ArtistSlideshowRunning)": "True"
+      }
+    }
+  },
+  {
+    "case": "provider already running settled",
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(AuditArtistProvider)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": false,
+        "Window.IsVisible(visualisation)": false
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.TimerElapsedSecs(artistslideshowrequest)": "67.262764",
+        "Window(Home).Property(Audit.ArtistStartRequested)": "",
+        "Window(visualisation).Property(ArtistSlideshowRunning)": "True"
+      }
+    }
+  },
+  {
+    "case": "provider already running settled",
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(AuditArtistProvider)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": false,
+        "Window.IsVisible(visualisation)": false
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.TimerElapsedSecs(artistslideshowrequest)": "67.262764",
+        "Window(Home).Property(Audit.ArtistStartRequested)": "",
+        "Window(visualisation).Property(ArtistSlideshowRunning)": "True"
+      }
+    }
+  },
+  {
+    "case": "provider already running settled",
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(AuditArtistProvider)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": false,
+        "Window.IsVisible(visualisation)": false
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.TimerElapsedSecs(artistslideshowrequest)": "67.262764",
+        "Window(Home).Property(Audit.ArtistStartRequested)": "",
+        "Window(visualisation).Property(ArtistSlideshowRunning)": "True"
+      }
+    }
+  },
+  {
+    "case": "provider already running settled",
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(AuditArtistProvider)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": false,
+        "Window.IsVisible(visualisation)": false
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.TimerElapsedSecs(artistslideshowrequest)": "67.262764",
+        "Window(Home).Property(Audit.ArtistStartRequested)": "",
+        "Window(visualisation).Property(ArtistSlideshowRunning)": "True"
+      }
+    }
+  },
+  {
+    "case": "provider already running settled",
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(AuditArtistProvider)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": false,
+        "Window.IsVisible(visualisation)": false
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.TimerElapsedSecs(artistslideshowrequest)": "67.262764",
+        "Window(Home).Property(Audit.ArtistStartRequested)": "",
+        "Window(visualisation).Property(ArtistSlideshowRunning)": "True"
+      }
+    }
+  },
+  {
+    "case": "provider already running settled",
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(AuditArtistProvider)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": false,
+        "Window.IsVisible(visualisation)": false
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.TimerElapsedSecs(artistslideshowrequest)": "67.262764",
+        "Window(Home).Property(Audit.ArtistStartRequested)": "",
+        "Window(visualisation).Property(ArtistSlideshowRunning)": "True"
+      }
+    }
+  },
+  {
+    "case": "provider already running settled",
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(AuditArtistProvider)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": false,
+        "Window.IsVisible(visualisation)": false
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.TimerElapsedSecs(artistslideshowrequest)": "67.262764",
+        "Window(Home).Property(Audit.ArtistStartRequested)": "",
+        "Window(visualisation).Property(ArtistSlideshowRunning)": "True"
+      }
+    }
+  },
+  {
+    "case": "provider already running settled",
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(AuditArtistProvider)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": false,
+        "Window.IsVisible(visualisation)": false
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.TimerElapsedSecs(artistslideshowrequest)": "67.262764",
+        "Window(Home).Property(Audit.ArtistStartRequested)": "",
+        "Window(visualisation).Property(ArtistSlideshowRunning)": "True"
+      }
+    }
+  },
+  {
+    "case": "provider already running settled",
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(AuditArtistProvider)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": false,
+        "Window.IsVisible(visualisation)": false
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.TimerElapsedSecs(artistslideshowrequest)": "67.262764",
+        "Window(Home).Property(Audit.ArtistStartRequested)": "",
+        "Window(visualisation).Property(ArtistSlideshowRunning)": "True"
+      }
+    }
+  },
+  {
+    "case": "provider already running settled",
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(AuditArtistProvider)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": false,
+        "Window.IsVisible(visualisation)": false
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.TimerElapsedSecs(artistslideshowrequest)": "67.262764",
+        "Window(Home).Property(Audit.ArtistStartRequested)": "",
+        "Window(visualisation).Property(ArtistSlideshowRunning)": "True"
+      }
+    }
+  },
+  {
+    "case": "provider already running settled",
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(AuditArtistProvider)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": false,
+        "Window.IsVisible(visualisation)": false
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.TimerElapsedSecs(artistslideshowrequest)": "67.262764",
+        "Window(Home).Property(Audit.ArtistStartRequested)": "",
+        "Window(visualisation).Property(ArtistSlideshowRunning)": "True"
+      }
+    }
+  },
+  {
+    "case": "provider running guard final",
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(AuditArtistProvider)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": true,
+        "Window.IsVisible(visualisation)": true
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.TimerElapsedSecs(artistslideshowrequest)": "0.121801",
+        "Window(Home).Property(Audit.ArtistStartRequested)": "",
+        "Window(visualisation).Property(ArtistSlideshowRunning)": "True"
+      }
+    }
+  },
+  {
+    "case": "left visualisation final",
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(AuditArtistProvider)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": true,
+        "Window.IsVisible(visualisation)": false
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.TimerElapsedSecs(artistslideshowrequest)": "1.676968",
+        "Window(Home).Property(Audit.ArtistStartRequested)": "",
+        "Window(visualisation).Property(ArtistSlideshowRunning)": ""
+      }
+    }
+  },
+  {
+    "case": "left visualisation final",
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(AuditArtistProvider)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": false,
+        "Window.IsVisible(visualisation)": false
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.TimerElapsedSecs(artistslideshowrequest)": "1.676968",
+        "Window(Home).Property(Audit.ArtistStartRequested)": "",
+        "Window(visualisation).Property(ArtistSlideshowRunning)": ""
+      }
+    }
+  },
+  {
+    "case": "new cycle final",
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(AuditArtistProvider)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": true,
+        "Window.IsVisible(visualisation)": true
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.TimerElapsedSecs(artistslideshowrequest)": "0.121745",
+        "Window(Home).Property(Audit.ArtistStartRequested)": "true",
+        "Window(visualisation).Property(ArtistSlideshowRunning)": ""
+      }
+    }
+  },
+  {
+    "case": "provider disabled final",
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(AuditArtistProvider)": false,
+        "Skin.TimerIsRunning(artistslideshowrequest)": false,
+        "Window.IsVisible(visualisation)": true
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.TimerElapsedSecs(artistslideshowrequest)": "1.031375",
+        "Window(Home).Property(Audit.ArtistStartRequested)": "",
+        "Window(visualisation).Property(ArtistSlideshowRunning)": ""
+      }
+    }
+  },
+  {
+    "case": "provider reenabled final",
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(AuditArtistProvider)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": false,
+        "Window.IsVisible(visualisation)": true
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.TimerElapsedSecs(artistslideshowrequest)": "0.041132",
+        "Window(Home).Property(Audit.ArtistStartRequested)": "true",
+        "Window(visualisation).Property(ArtistSlideshowRunning)": ""
+      }
+    }
+  },
+  {
+    "case": "provider reenabled final",
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(AuditArtistProvider)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": true,
+        "Window.IsVisible(visualisation)": true
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.TimerElapsedSecs(artistslideshowrequest)": "0.245158",
+        "Window(Home).Property(Audit.ArtistStartRequested)": "true",
+        "Window(visualisation).Property(ArtistSlideshowRunning)": ""
+      }
+    }
+  },
+  {
+    "case": "playback stopped final",
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": false,
+        "Skin.HasSetting(AuditArtistProvider)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": true,
+        "Window.IsVisible(visualisation)": false
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.TimerElapsedSecs(artistslideshowrequest)": "0.666886",
+        "Window(Home).Property(Audit.ArtistStartRequested)": "true",
+        "Window(visualisation).Property(ArtistSlideshowRunning)": ""
+      }
+    }
+  },
+  {
+    "case": "playback stopped final",
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": false,
+        "Skin.HasSetting(AuditArtistProvider)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": false,
+        "Window.IsVisible(visualisation)": false
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.TimerElapsedSecs(artistslideshowrequest)": "0.666886",
+        "Window(Home).Property(Audit.ArtistStartRequested)": "true",
+        "Window(visualisation).Property(ArtistSlideshowRunning)": ""
+      }
+    }
+  }
+]

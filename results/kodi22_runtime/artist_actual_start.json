@@ -1,0 +1,317 @@
+[
+  {
+    "case": "before enabling biography",
+    "window": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "Biografie aktivieren"
+        },
+        "currentwindow": {
+          "id": 11195,
+          "label": ""
+        }
+      }
+    },
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(artistslideshow_artistinfos_bio)": false,
+        "Skin.TimerIsRunning(artistslideshowrequest)": false,
+        "System.AddonIsEnabled(script.artistslideshow)": true
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "MusicPlayer.Artist": "",
+        "Window(visualisation).Property(ArtistSlideshow.ArtistBiography)": "",
+        "Window(visualisation).Property(ArtistSlideshowRunning)": ""
+      }
+    }
+  },
+  {
+    "case": "waiting for actual script",
+    "window": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "Biografie aktivieren"
+        },
+        "currentwindow": {
+          "id": 11195,
+          "label": ""
+        }
+      }
+    },
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(artistslideshow_artistinfos_bio)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": true,
+        "System.AddonIsEnabled(script.artistslideshow)": true
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "MusicPlayer.Artist": "",
+        "Window(visualisation).Property(ArtistSlideshow.ArtistBiography)": "",
+        "Window(visualisation).Property(ArtistSlideshowRunning)": ""
+      }
+    }
+  },
+  {
+    "case": "waiting for actual script",
+    "window": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "Biografie aktivieren"
+        },
+        "currentwindow": {
+          "id": 11195,
+          "label": ""
+        }
+      }
+    },
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(artistslideshow_artistinfos_bio)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": true,
+        "System.AddonIsEnabled(script.artistslideshow)": true
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "MusicPlayer.Artist": "",
+        "Window(visualisation).Property(ArtistSlideshow.ArtistBiography)": "",
+        "Window(visualisation).Property(ArtistSlideshowRunning)": ""
+      }
+    }
+  },
+  {
+    "case": "waiting for actual script",
+    "window": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "Biografie aktivieren"
+        },
+        "currentwindow": {
+          "id": 11195,
+          "label": ""
+        }
+      }
+    },
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(artistslideshow_artistinfos_bio)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": true,
+        "System.AddonIsEnabled(script.artistslideshow)": true
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "MusicPlayer.Artist": "",
+        "Window(visualisation).Property(ArtistSlideshow.ArtistBiography)": "",
+        "Window(visualisation).Property(ArtistSlideshowRunning)": ""
+      }
+    }
+  },
+  {
+    "case": "waiting for actual script",
+    "window": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "Biografie aktivieren"
+        },
+        "currentwindow": {
+          "id": 11195,
+          "label": ""
+        }
+      }
+    },
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(artistslideshow_artistinfos_bio)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": true,
+        "System.AddonIsEnabled(script.artistslideshow)": true
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "MusicPlayer.Artist": "",
+        "Window(visualisation).Property(ArtistSlideshow.ArtistBiography)": "",
+        "Window(visualisation).Property(ArtistSlideshowRunning)": ""
+      }
+    }
+  },
+  {
+    "case": "waiting for actual script",
+    "window": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "Biografie aktivieren"
+        },
+        "currentwindow": {
+          "id": 11195,
+          "label": ""
+        }
+      }
+    },
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(artistslideshow_artistinfos_bio)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": true,
+        "System.AddonIsEnabled(script.artistslideshow)": true
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "MusicPlayer.Artist": "",
+        "Window(visualisation).Property(ArtistSlideshow.ArtistBiography)": "",
+        "Window(visualisation).Property(ArtistSlideshowRunning)": "True"
+      }
+    }
+  },
+  {
+    "case": "actual script running",
+    "window": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "Biografie aktivieren"
+        },
+        "currentwindow": {
+          "id": 11195,
+          "label": ""
+        }
+      }
+    },
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(artistslideshow_artistinfos_bio)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": true,
+        "System.AddonIsEnabled(script.artistslideshow)": true
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "MusicPlayer.Artist": "",
+        "Window(visualisation).Property(ArtistSlideshow.ArtistBiography)": "",
+        "Window(visualisation).Property(ArtistSlideshowRunning)": "True"
+      }
+    }
+  },
+  {
+    "case": "biography disabled",
+    "window": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "Biografie deaktivieren"
+        },
+        "currentwindow": {
+          "id": 11195,
+          "label": ""
+        }
+      }
+    },
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(artistslideshow_artistinfos_bio)": false,
+        "Skin.TimerIsRunning(artistslideshowrequest)": true,
+        "System.AddonIsEnabled(script.artistslideshow)": true
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "MusicPlayer.Artist": "",
+        "Window(visualisation).Property(ArtistSlideshow.ArtistBiography)": "",
+        "Window(visualisation).Property(ArtistSlideshowRunning)": "True"
+      }
+    }
+  },
+  {
+    "case": "biography reenabled",
+    "window": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "Biografie aktivieren"
+        },
+        "currentwindow": {
+          "id": 11195,
+          "label": ""
+        }
+      }
+    },
+    "booleans": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": true,
+        "Skin.HasSetting(artistslideshow_artistinfos_bio)": true,
+        "Skin.TimerIsRunning(artistslideshowrequest)": true,
+        "System.AddonIsEnabled(script.artistslideshow)": true
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "MusicPlayer.Artist": "",
+        "Window(visualisation).Property(ArtistSlideshow.ArtistBiography)": "",
+        "Window(visualisation).Property(ArtistSlideshowRunning)": "True"
+      }
+    }
+  }
+]

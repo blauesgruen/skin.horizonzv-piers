@@ -35,7 +35,6 @@
             <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),music)</visible>
 			<include content="HomePageWidget_list" condition="Library.HasContent(music)"> <!-- random albums -->
 				<param name="HomePageWidget_content" value="special://skin/playlists/Music_Albums_random.xsp"/>
-				<!-- <param name="HomePageWidget_content" value="plugin://service.library.data.provider?type=randomalbums&amp;reload=$INFO[Window.Property(randomalbums)]&amp;limit=10"/> -->
 				<param name="HomePageWidget_content2" value="$VAR[WidgetInProgressPlace1]"/>
 				<param name="HomePageWidget_limit" value="10"/>
 				<param name="HomePageWidget_sortby" value=""/>
@@ -50,7 +49,6 @@
 			</include>
 			<include content="HomePageWidget_list" condition="Library.HasContent(music)"> <!-- random songs -->
 				<param name="HomePageWidget_content" value="special://skin/playlists/Music_Songs_random.xsp"/>
-				<!-- <param name="HomePageWidget_content" value="plugin://service.library.data.provider?type=randomsongs&amp;reload=$INFO[Window.Property(randomsongs)]&amp;limit=10"/> -->
 				<param name="HomePageWidget_content2" value="$VAR[WidgetInProgressPlace1]"/>
 				<param name="HomePageWidget_limit" value="10"/>
 				<param name="HomePageWidget_sortby" value=""/>
@@ -65,7 +63,6 @@
 			</include>
 			<include content="HomePageWidget_list" condition="Library.HasContent(music)"> <!-- recent albums -->
 				<param name="HomePageWidget_content" value="special://skin/playlists/Music_Albums_recently.xsp"/>
-				<!-- <param name="HomePageWidget_content" value="plugin://service.library.data.provider?type=recentalbums&amp;reload=$INFO[Window.Property(recentalbums)]&amp;limit=10"/> -->
 				<param name="HomePageWidget_content2" value="$VAR[WidgetInProgressPlace1]"/>
 				<param name="HomePageWidget_limit" value="10"/>
 				<param name="HomePageWidget_sortby" value="dateadded"/>
@@ -81,7 +78,6 @@
 			</include>
 			<include content="HomePageWidget_list" condition="Library.HasContent(music)"> <!-- recommended albums -->
 				<param name="HomePageWidget_content" value="special://skin/playlists/Music_Albums_recommended.xsp"/>
-				<!-- <param name="HomePageWidget_content" value="plugin://service.library.data.provider?type=recommendedalbums&amp;reload=$INFO[Window.Property(recommendedalbums)]&amp;limit=10"/> -->
 				<param name="HomePageWidget_content2" value="$VAR[WidgetInProgressPlace1]"/>
 				<param name="HomePageWidget_limit" value="10"/>
 				<param name="HomePageWidget_sortby" value="lastplayed"/>
@@ -258,8 +254,6 @@
             <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),tvshow)</visible>
 			<include content="HomePageWidget_list" condition="Library.HasContent(tvshows)"> <!-- inprogress -->
 				<param name="HomePageWidget_content" value="special://skin/playlists/TVShows_inprogress.xsp"/>
-				<!-- <param name="HomePageWidget_content" value="plugin://service.library.data.provider?type=recommendedepisodes&amp;reload=$INFO[Window.Property(recommendedepisodes)]&amp;limit=10"/> -->
-				<param name="HomePageWidget_content2" value="$VAR[WidgetInProgressPlace1]"/>
 				<param name="HomePageWidget_limit" value="10"/>
 				<param name="HomePageWidget_sortby" value=""/>
 				<param name="HomePageWidget_sortorder" value=""/>
@@ -274,7 +268,6 @@
 			</include>
 			<include content="HomePageWidget_list" condition="Library.HasContent(tvshows)"> <!-- recently added episode -->
 				<param name="HomePageWidget_content" value="videodb://recentlyaddedepisodes/"/>
-				<param name="HomePageWidget_content2" value="$VAR[WidgetInProgressPlace1]"/>
 				<param name="HomePageWidget_limit" value="40"/>
 				<param name="HomePageWidget_sortby" value="episodenumber"/>
 				<param name="HomePageWidget_sortorder" value="ascending"/>
@@ -289,7 +282,6 @@
 			</include>
 			<include content="HomePageWidget_list" condition="Library.HasContent(tvshows)"> <!-- recent season -->
 				<param name="HomePageWidget_content" value="special://skin/playlists/TVShows_recent_tvshows.xsp"/>
-				<param name="HomePageWidget_content2" value="$VAR[WidgetInProgressPlace1]"/>
 				<param name="HomePageWidget_limit" value="10"/>
 				<param name="HomePageWidget_sortby" value="dateadded"/>
 				<param name="HomePageWidget_sortorder" value="descending"/>
@@ -304,7 +296,6 @@
 			</include>
 			<include content="HomePageWidget_list" condition="Library.HasContent(tvshows)"> <!-- random season -->
 				<param name="HomePageWidget_content" value="special://skin/playlists/TVShows_random_episodes.xsp"/>
-				<param name="HomePageWidget_content2" value="$VAR[WidgetInProgressPlace1]"/>
 				<param name="HomePageWidget_limit" value="10"/>
 				<param name="HomePageWidget_sortby" value="random"/>
 				<param name="HomePageWidget_sortorder" value="descending"/>
@@ -329,19 +320,6 @@
 				<param name="HomePageWidget_list_visible" value="Skin.HasSetting(Home_tvshow_Button)"/>
 				<param name="HomePageWidget_list_visible2" value="Skin.HasSetting(HomeWidget_tvshow_Standard)|Skin.HasSetting(HomeWidget_tvshow_User)"/>
 				<param name="HomePageWidget_list_visible3" value="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),tvshow)"/>
-			</include>
-			<include content="HomePageWidget_list" condition="Library.HasContent(tvshows) + System.HasAddon(service.library.data.provider)"> <!-- inprogress place1 -->
-				<param name="HomePageWidget_content" value="$VAR[WidgetInProgressPlace1]"/>
-				<param name="HomePageWidget_limit" value="1"/>
-				<param name="HomePageWidget_sortby" value=""/>
-				<param name="HomePageWidget_sortorder" value="descending"/>
-				<param name="HomePageWidget_list_id" value="237"/>
-				<param name="HomePageWidget_list_width" value="720"/>
-				<param name="HomePageWidget_list_onfocus" value="SetProperty(WidgetLabel,$LOCALIZE[575],home)"/>
-				<param name="HomePageWidget_list_onunfocus" value="ClearProperty(WidgetLabel)"/>
-				<param name="HomePageWidget_list_visible" value="Skin.HasSetting(Widget_inProgress_tvshow_Place1)+![Skin.HasSetting(Widget_RecommendedTVShows)|Skin.HasSetting(Widget_RecentTVShows)|Skin.HasSetting(Widget_RecentTVShows)|Skin.HasSetting(Widget_RandomTVShows)]"/>
-				<param name="HomePageWidget_list_visible2" value="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),tvshow)"/>
-				<param name="HomePageWidget_list_visible3" value="!Skin.HasSetting(Home_tvshow_Button)"/>
 			</include>
         </control>
     </include>
@@ -438,7 +416,6 @@
                 <width>40%</width>
                 <height>238</height>
                 <imagepath flipx="true" diffuse="SideFadeWhite.png">$INFO[Skin.String(widget_diashow_folder)]</imagepath>
-                <info>Diashow</info>
                 <timeperimage>5000</timeperimage>
                 <fadetime>500</fadetime>
                 <pauseatend>2000</pauseatend>
@@ -515,7 +492,7 @@
                                     <randomize>false</randomize>
                                     <fadetime>10</fadetime>
                                     <aspectratio>keep</aspectratio>
-                                    <colordiffuse>$VAR[widgetdim]</colordiffuse>
+                                    <colordiffuse>$VAR[WidgetDimDiffuse]</colordiffuse>
                                 </control>
                             </control>
                             <control type="group">
@@ -575,7 +552,7 @@
                                     <randomize>false</randomize>
                                     <fadetime>10</fadetime>
                                     <aspectratio>keep</aspectratio>
-                                    <colordiffuse>$VAR[widgetdim]</colordiffuse>
+                                    <colordiffuse>$VAR[WidgetDimDiffuse]</colordiffuse>
                                     <visible>!Control.HasFocus(3005)</visible>
                                 </control>
                                 <control type="multiimage">
@@ -1453,65 +1430,13 @@
                 <visible>!String.IsEmpty(Container.ListItem.Property(Album_Description))</visible>
                 <scroll>false</scroll>
             </control>
-            <!-- TV Highlihgts Grabber -->
             <control type="label">
                 <width>725</width>
                 <height>24</height>
                 <font>font12</font>
                 <align>right</align>
                 <textcolor>grey</textcolor>
-                <label>$INFO[Container.ListItem.Property(channel)]$INFO[Container.ListItem.Label2]</label>
-                <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),pvr)+Skin.HasSetting(Widget_LiveTVHighlights)</visible>
-                <visible>!String.IsEmpty(Container.ListItem.Property(channel))|!String.IsEmpty(Container.ListItem.Label2)</visible>
-            </control>
-            <control type="label">
-                <width>725</width>
-                <height>24</height>
-                <font>font12</font>
-                <align>right</align>
-                <textcolor>grey</textcolor>
-                <label>$INFO[Container.ListItem.Property(extrainfos)]</label>
-                <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),pvr)+Skin.HasSetting(Widget_LiveTVHighlights)</visible>
-                <visible>!String.IsEmpty(Container.ListItem.Property(extrainfos))</visible>
-            </control>
-            <control type="label">
-                <width>725</width>
-                <height>24</height>
-                <font>font12</font>
-                <align>right</align>
-                <textcolor>grey</textcolor>
-                <label>$INFO[Container.ListItem.Genre]$INFO[Container.ListItem.Property(StartTime), / ,]$INFO[Container.ListItem.Property(EndTime), - ,]</label>
-                <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),pvr)+Skin.HasSetting(Widget_LiveTVHighlights)</visible>
-                <visible>String.IsEmpty(Container.ListItem.Property(extrainfos))</visible>
-            </control>
-            <control type="label">
-                <width>725</width>
-                <height>24</height>
-                <font>font12</font>
-                <align>right</align>
-                <textcolor>grey</textcolor>
-                <label>$INFO[Container.ListItem.Property(watchtype)]</label>
-                <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),pvr)+Skin.HasSetting(Widget_LiveTVHighlights)</visible>
-                <visible>!String.IsEmpty(Container.ListItem.Property(watchtype))</visible>
-            </control>
-            <control type="label">
-                <width>725</width>
-                <height>24</height>
-                <font>font12</font>
-                <align>right</align>
-                <textcolor>grey</textcolor>
-                <label>$INFO[Container.ListItem.Property(comment)]</label>
-                <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),pvr)+Skin.HasSetting(Widget_LiveTVHighlights)</visible>
-                <visible>!String.IsEmpty(Container.ListItem.Property(comment))</visible>
-            </control>
-            <!-- END TV Highlights -->
-            <control type="label">
-                <width>725</width>
-                <height>24</height>
-                <font>font12</font>
-                <align>right</align>
-                <textcolor>grey</textcolor>
-                <label>$INFO[Container.ListItem.Year,, / ]$INFO[Container.ListItem.Rating,$LOCALIZE[563]: , / ]$INFO[Container.ListItem.Studio]$INFO[Container.ListItem.Runtime, / , $LOCALIZE[12391]]$INFO[Container.ListItem.Duration, / , $LOCALIZE[12391]]</label>
+                <label>$INFO[Container.ListItem.Year,, / ]$INFO[Container.ListItem.Rating,$LOCALIZE[563]: , / ]$INFO[Container.ListItem.Studio]$INFO[Container.ListItem.Duration, / ]</label>
                 <visible>![String.IsEqual(Container(9000).ListItem.Property(homemenu_id),music)|String.IsEqual(Container(9000).ListItem.Property(homemenu_id),radio)|String.IsEqual(Container(9000).ListItem.Property(homemenu_id),custom8)]</visible>
             </control>
         </control>

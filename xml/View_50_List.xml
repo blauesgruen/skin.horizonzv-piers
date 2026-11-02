@@ -16,7 +16,7 @@
 					<top>58%</top>
 					<include>opencloseslideup</include>
 					<visible>Control.IsVisible($PARAM[viewid])+!Control.HasFocus(666)</visible>
-					<include content="MirrorPanel">>
+				<include content="MirrorPanel">
 						<param name="top" value="260" />
 					</include>
 				</control>

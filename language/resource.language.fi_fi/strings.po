@@ -1,4 +1,4 @@
-﻿# Kodi Media Center language file
+# Kodi Media Center language file
 # Addon Name: HorizonzV
 # Addon id: skin.horizonzv
 # Addon Provider: blauesgruen
@@ -400,7 +400,7 @@ msgstr "No info such as chapters, subtitles, runtime bars, etc. are shown.[CR][C
 
 msgctxt "#31239"
 msgid ""
-msgstr "Show all available movie & series artworks.[CR][COLOR=white]Since Kodi 19 artworks are loaded with the scrapper \'The Movie Database PYTHON\'.[/COLOR][COLOR=grey][CR][CR]\'Artwork Beef\' tai vastaavaa addonia voidaan kuitenkin käyttää.[/COLOR]"
+msgstr "Show all available movie & series artworks.[CR][COLOR=white]Since Kodi 19 artworks are loaded with the scrapper \'The Movie Database PYTHON\'.[/COLOR]"
 
 msgctxt "#31240"
 msgid ""
@@ -1082,9 +1082,6 @@ msgctxt "#31409"
 msgid ""
 msgstr "viimeksi kuunneltu albumi sijalla #1"
 
-msgctxt "#31410"
-msgid ""
-msgstr "seuraava jakso numerolla 1"
 
 msgctxt "#31411"
 msgid ""
@@ -1170,3 +1167,27 @@ msgctxt "#35500"
 msgid "Location"
 msgstr "Sijainti"
 
+
+msgctxt "#31004"
+msgid "Change mode"
+msgstr "Vaihda tilaa"
+
+msgctxt "#31031"
+msgid "Version info"
+msgstr "Versiotiedot"
+
+msgctxt "#31112"
+msgid "Audio streams"
+msgstr "Äänivirrat"
+
+msgctxt "#31115"
+msgid "Subtitles streams"
+msgstr "Tekstitysvirrat"
+
+msgctxt "#31132"
+msgid "Select Program"
+msgstr "Valitse ohjelma"
+
+msgctxt "#31133"
+msgid "Select Resolution"
+msgstr "Valitse resoluutio"

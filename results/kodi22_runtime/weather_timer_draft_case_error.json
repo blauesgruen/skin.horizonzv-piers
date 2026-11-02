@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container(9000).ListItem.Property(homemenu_id)": "weather",
+      "Skin.TimerElapsedSecs(HomeWeatherAutoHide)": "0.238854",
+      "System.CurrentControlId": "9000",
+      "Weather.Plugin": "weather.skin-audit-fixture"
+    }
+  },
+  {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container(9000).ListItem.Property(homemenu_id)": "weather",
+      "Skin.TimerElapsedSecs(HomeWeatherAutoHide)": "1.244535",
+      "System.CurrentControlId": "9000",
+      "Weather.Plugin": "weather.skin-audit-fixture"
+    }
+  },
+  {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container(9000).ListItem.Property(homemenu_id)": "weather",
+      "Skin.TimerElapsedSecs(HomeWeatherAutoHide)": "2.247137",
+      "System.CurrentControlId": "9000",
+      "Weather.Plugin": "weather.skin-audit-fixture"
+    }
+  },
+  {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container(9000).ListItem.Property(homemenu_id)": "weather",
+      "Skin.TimerElapsedSecs(HomeWeatherAutoHide)": "3.263800",
+      "System.CurrentControlId": "9000",
+      "Weather.Plugin": "weather.skin-audit-fixture"
+    }
+  },
+  {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container(9000).ListItem.Property(homemenu_id)": "weather",
+      "Skin.TimerElapsedSecs(HomeWeatherAutoHide)": "4.269393",
+      "System.CurrentControlId": "9000",
+      "Weather.Plugin": "weather.skin-audit-fixture"
+    }
+  },
+  {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container(9000).ListItem.Property(homemenu_id)": "weather",
+      "Skin.TimerElapsedSecs(HomeWeatherAutoHide)": "5.275002",
+      "System.CurrentControlId": "9000",
+      "Weather.Plugin": "weather.skin-audit-fixture"
+    }
+  },
+  {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container(9000).ListItem.Property(homemenu_id)": "weather",
+      "Skin.TimerElapsedSecs(HomeWeatherAutoHide)": "6.291560",
+      "System.CurrentControlId": "9000",
+      "Weather.Plugin": "weather.skin-audit-fixture"
+    }
+  },
+  {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container(9000).ListItem.Property(homemenu_id)": "weather",
+      "Skin.TimerElapsedSecs(HomeWeatherAutoHide)": "7.297081",
+      "System.CurrentControlId": "9000",
+      "Weather.Plugin": "weather.skin-audit-fixture"
+    }
+  },
+  {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container(9000).ListItem.Property(homemenu_id)": "weather",
+      "Skin.TimerElapsedSecs(HomeWeatherAutoHide)": "8.302625",
+      "System.CurrentControlId": "9000",
+      "Weather.Plugin": "weather.skin-audit-fixture"
+    }
+  },
+  {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container(9000).ListItem.Property(homemenu_id)": "weather",
+      "Skin.TimerElapsedSecs(HomeWeatherAutoHide)": "9.308113",
+      "System.CurrentControlId": "9000",
+      "Weather.Plugin": "weather.skin-audit-fixture"
+    }
+  },
+  {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container(9000).ListItem.Property(homemenu_id)": "weather",
+      "Skin.TimerElapsedSecs(HomeWeatherAutoHide)": "10.324772",
+      "System.CurrentControlId": "9000",
+      "Weather.Plugin": "weather.skin-audit-fixture"
+    }
+  },
+  {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container(9000).ListItem.Property(homemenu_id)": "weather",
+      "Skin.TimerElapsedSecs(HomeWeatherAutoHide)": "11.346982",
+      "System.CurrentControlId": "9000",
+      "Weather.Plugin": "weather.skin-audit-fixture"
+    }
+  }
+]

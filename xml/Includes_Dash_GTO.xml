@@ -13,7 +13,7 @@
 			<scrolltime tween="circle" easing="out">800</scrolltime>
 			<orientation>horizontal</orientation>
 			<visible>$PARAM[visible]</visible>
-			<visible>System.HasAddon(script.service.gto)</visible>
+			<visible>System.AddonIsEnabled(script.service.gto)</visible>
 			<itemlayout height="105" width="360">
 				<include content="DashItemlayout">
 					<param name="Dash_Label2" value="$INFO[ListItem.Property(GTO_Dash_FirstplaceLabel)]$INFO[ListItem.Label2]" />
@@ -50,14 +50,14 @@
 					<onclick>ActivateWindow(tvchannels,return)</onclick>
 				</item>
 			</content>
-			<include condition="System.HasAddon(script.service.gto)">GTOContent</include>
+			<include condition="System.AddonIsEnabled(script.service.gto)">GTOContent</include>
 			<!-- <include content="BusyItem">
 				<param name="id" value="$PARAM[id]"/>
 				<param name="icon" value="Busy.png"/>
 			</include> -->
 		</control>
 	</include>
-	<include name="GTOContent" condition="System.HasAddon(script.service.gto)+!System.AddonIsEnabled(script.service.gto)">
+	<include name="GTOContent" condition="System.AddonIsEnabled(script.service.gto)">
 		<content target="pvr">plugin://script.service.gto?action=getcontent&amp;ts=$INFO[Window(Home).Property(GTO.timestamp)]</content>
 	</include>
 </includes>

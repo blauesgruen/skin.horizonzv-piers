@@ -728,7 +728,7 @@
                         <top>6</top>
                         <height>130</height>
                         <align>center</align>
-                        <font>small</font>
+                        <font>Small</font>
                         <textcolor>grey3</textcolor>
                         <shadowcolor>white</shadowcolor>
                         <label>$INFO[ListItem.Label]</label>

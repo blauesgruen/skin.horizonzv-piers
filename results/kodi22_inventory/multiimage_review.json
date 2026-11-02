@@ -1,0 +1,293 @@
+{
+  "source": "https://raw.githubusercontent.com/xbmc/xbmc/22.0rc1-Piers/xbmc/guilib/GUIControlFactory.cpp",
+  "scope": "Direct imagepath attributes on the 30 declared multiimage controls in xml/*.xml; source path GetInfoTexture -> GetTexture + GetInfoLabel. Not a full control schema or runtime test.",
+  "supported_attributes_found": [
+    "border",
+    "diffuse",
+    "flipx",
+    "colordiffuse",
+    "fallback"
+  ],
+  "remaining_info_overrides": [],
+  "controls": [
+    {
+      "file": "xml\\Includes.xml",
+      "imagepath": [
+        {
+          "attributes": {},
+          "value": "extras/backgrounds"
+        }
+      ]
+    },
+    {
+      "file": "xml\\Includes.xml",
+      "imagepath": [
+        {
+          "attributes": {
+            "fallback": "special://skin/backgrounds/mediaoverlaywhite.jpg"
+          },
+          "value": "$INFO[Skin.String(Home_Custom_Back_picture_OnlyOne)]"
+        }
+      ]
+    },
+    {
+      "file": "xml\\Includes.xml",
+      "imagepath": [
+        {
+          "attributes": {},
+          "value": "$VAR[background]"
+        }
+      ]
+    },
+    {
+      "file": "xml\\Includes.xml",
+      "imagepath": [
+        {
+          "attributes": {},
+          "value": "$VAR[PlayerExtraFanartPath]"
+        }
+      ]
+    },
+    {
+      "file": "xml\\Includes.xml",
+      "imagepath": [
+        {
+          "attributes": {},
+          "value": "$INFO[Player.Art(fanart)]"
+        }
+      ]
+    },
+    {
+      "file": "xml\\Includes.xml",
+      "imagepath": [
+        {
+          "attributes": {
+            "border": "1"
+          },
+          "value": "$VAR[ListItemExtraFanartPath]"
+        }
+      ]
+    },
+    {
+      "file": "xml\\Includes.xml",
+      "imagepath": [
+        {
+          "attributes": {},
+          "value": "$VAR[WeatherFanartVar]"
+        }
+      ]
+    },
+    {
+      "file": "xml\\Includes.xml",
+      "imagepath": [
+        {
+          "attributes": {},
+          "value": "$VAR[WeatherIcon]"
+        }
+      ]
+    },
+    {
+      "file": "xml\\Includes.xml",
+      "imagepath": [
+        {
+          "attributes": {},
+          "value": "$INFO[Container(787878).ListItem.Art(fanart)]"
+        }
+      ]
+    },
+    {
+      "file": "xml\\Includes_Dash_Weather.xml",
+      "imagepath": [
+        {
+          "attributes": {},
+          "value": "$INFO[ListItem.Icon]"
+        }
+      ]
+    },
+    {
+      "file": "xml\\Includes_Widget_Param.xml",
+      "imagepath": [
+        {
+          "attributes": {
+            "flipx": "true",
+            "diffuse": "SideFadeWhite.png"
+          },
+          "value": "$INFO[Skin.String(widget_diashow_folder)]"
+        }
+      ]
+    },
+    {
+      "file": "xml\\Includes_Widget_Param.xml",
+      "imagepath": [
+        {
+          "attributes": {},
+          "value": "$INFO[ListItem.Icon]"
+        }
+      ]
+    },
+    {
+      "file": "xml\\Includes_Widget_Param.xml",
+      "imagepath": [
+        {
+          "attributes": {},
+          "value": "$INFO[ListItem.Icon]"
+        }
+      ]
+    },
+    {
+      "file": "xml\\Includes_Widget_Param.xml",
+      "imagepath": [
+        {
+          "attributes": {},
+          "value": "$INFO[ListItem.Icon]"
+        }
+      ]
+    },
+    {
+      "file": "xml\\MusicVisualisation.xml",
+      "imagepath": [
+        {
+          "attributes": {},
+          "value": "$VAR[WeatherIconVar]$INFO[Weather.Data(Day0.FanartCode)]$VAR[WeatherIconFolderVar]"
+        }
+      ]
+    },
+    {
+      "file": "xml\\MyWeather.xml",
+      "imagepath": [
+        {
+          "attributes": {},
+          "value": "$VAR[WeatherFanartVar]"
+        }
+      ]
+    },
+    {
+      "file": "xml\\MyWeather.xml",
+      "imagepath": [
+        {
+          "attributes": {},
+          "value": "$VAR[WeatherIcon]"
+        }
+      ]
+    },
+    {
+      "file": "xml\\SettingsSystemInfo.xml",
+      "imagepath": [
+        {
+          "attributes": {},
+          "value": "special://xbmc/media/qr/kodilove/"
+        }
+      ]
+    },
+    {
+      "file": "xml\\SkinSettings.xml",
+      "imagepath": [
+        {
+          "attributes": {
+            "colordiffuse": "grey1"
+          },
+          "value": "$VAR[Infobox_Grafik]"
+        }
+      ]
+    },
+    {
+      "file": "xml\\Views_Weather.xml",
+      "imagepath": [
+        {
+          "attributes": {},
+          "value": "$INFO[ListItem.ActualIcon]"
+        }
+      ]
+    },
+    {
+      "file": "xml\\Views_Weather.xml",
+      "imagepath": [
+        {
+          "attributes": {},
+          "value": "$INFO[ListItem.ActualIcon]"
+        }
+      ]
+    },
+    {
+      "file": "xml\\Views_Weather.xml",
+      "imagepath": [
+        {
+          "attributes": {},
+          "value": "$INFO[ListItem.Art(thumb)]"
+        }
+      ]
+    },
+    {
+      "file": "xml\\Views_Weather.xml",
+      "imagepath": [
+        {
+          "attributes": {},
+          "value": "$INFO[ListItem.Art(thumb)]"
+        }
+      ]
+    },
+    {
+      "file": "xml\\Views_Weather.xml",
+      "imagepath": [
+        {
+          "attributes": {},
+          "value": "$VAR[WeatherIconVar]$INFO[Window.Property(36Hour.1.FanartCode)]$VAR[WeatherIconFolderVar]"
+        }
+      ]
+    },
+    {
+      "file": "xml\\Views_Weather.xml",
+      "imagepath": [
+        {
+          "attributes": {},
+          "value": "$VAR[WeatherIconVar]$INFO[Window.Property(36Hour.2.FanartCode)]$VAR[WeatherIconFolderVar]"
+        }
+      ]
+    },
+    {
+      "file": "xml\\Views_Weather.xml",
+      "imagepath": [
+        {
+          "attributes": {},
+          "value": "$VAR[WeatherIconVar]$INFO[Window.Property(36Hour.3.FanartCode)]$VAR[WeatherIconFolderVar]"
+        }
+      ]
+    },
+    {
+      "file": "xml\\Views_Weather.xml",
+      "imagepath": [
+        {
+          "attributes": {},
+          "value": "$VAR[WeatherIconVar]$INFO[Window.Property(Weekend.1.FanartCode)]$VAR[WeatherIconFolderVar]"
+        }
+      ]
+    },
+    {
+      "file": "xml\\Views_Weather.xml",
+      "imagepath": [
+        {
+          "attributes": {},
+          "value": "$VAR[WeatherIconVar]$INFO[Window.Property(Weekend.2.FanartCode)]$VAR[WeatherIconFolderVar]"
+        }
+      ]
+    },
+    {
+      "file": "xml\\Views_Weather.xml",
+      "imagepath": [
+        {
+          "attributes": {},
+          "value": "$INFO[ListItem.Art(thumb)]"
+        }
+      ]
+    },
+    {
+      "file": "xml\\Views_Weather.xml",
+      "imagepath": [
+        {
+          "attributes": {},
+          "value": "$INFO[ListItem.Art(thumb)]"
+        }
+      ]
+    }
+  ]
+}

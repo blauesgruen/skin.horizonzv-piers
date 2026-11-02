@@ -179,10 +179,6 @@
 						<control type="group">
 							<height>90</height>
 							<bottom>20</bottom>
-							<control type="ima ge"> <!-- testimage -->
-								<colordiffuse>red</colordiffuse>
-								<texture>WhiteBack.png</texture>
-							</control>
 							<control type="label">
 								<description>item label</description>
 								<height>45</height>

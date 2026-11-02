@@ -694,7 +694,7 @@
             <label2>$VAR[backgroundfolder]home_disc$VAR[bkg_fileext]</label2>
             <icon>$INFO[Skin.String(user_bkg_playdisc)]</icon>
             <property name="homemenu_id">playdisc</property>
-            <onclick>PlayDVD()</onclick>
+            <onclick>PlayDisc()</onclick>
             <visible>!Skin.HasSetting(HomeMenuNo_playdisc_Button)+System.HasMediadvd</visible>
         </item>
     </include>
@@ -730,7 +730,7 @@
         <item id="13">
             <description>custom3</description>
             <label>$VAR[Home_custom3_Label]</label>
-            <label3>$VAR[backgroundfolder]home_custom3$VAR[bkg_fileext]</label3>
+            <label2>$VAR[backgroundfolder]home_custom3$VAR[bkg_fileext]</label2>
             <icon>$INFO[Skin.String(user_bkg_custom3)]</icon>
             <property name="homemenu_id">custom3</property>
             <property name="homemenu_category">$VAR[Home_custom3_Category]</property>
@@ -744,7 +744,7 @@
         <item id="14">
             <description>custom4</description>
             <label>$VAR[Home_custom4_Label]</label>
-            <label4>$VAR[backgroundfolder]home_custom4$VAR[bkg_fileext]</label4>
+            <label2>$VAR[backgroundfolder]home_custom4$VAR[bkg_fileext]</label2>
             <icon>$INFO[Skin.String(user_bkg_custom4)]</icon>
             <property name="homemenu_id">custom4</property>
             <property name="homemenu_category">$VAR[Home_custom4_Category]</property>
@@ -758,7 +758,7 @@
         <item id="15">
             <description>custom5</description>
             <label>$VAR[Home_custom5_Label]</label>
-            <label5>$VAR[backgroundfolder]home_custom5$VAR[bkg_fileext]</label5>
+            <label2>$VAR[backgroundfolder]home_custom5$VAR[bkg_fileext]</label2>
             <icon>$INFO[Skin.String(user_bkg_custom5)]</icon>
             <property name="homemenu_id">custom5</property>
             <property name="homemenu_category">$VAR[Home_custom5_Category]</property>
@@ -772,7 +772,7 @@
         <item id="16">
             <description>custom6</description>
             <label>$VAR[Home_custom6_Label]</label>
-            <label6>$VAR[backgroundfolder]home_custom6$VAR[bkg_fileext]</label6>
+            <label2>$VAR[backgroundfolder]home_custom6$VAR[bkg_fileext]</label2>
             <icon>$INFO[Skin.String(user_bkg_custom6)]</icon>
             <property name="homemenu_id">custom6</property>
             <property name="homemenu_category">$VAR[Home_custom6_Category]</property>
@@ -786,7 +786,7 @@
         <item id="17">
             <description>custom7</description>
             <label>$VAR[Home_custom7_Label]</label>
-            <label7>$VAR[backgroundfolder]home_custom7$VAR[bkg_fileext]</label7>
+            <label2>$VAR[backgroundfolder]home_custom7$VAR[bkg_fileext]</label2>
             <icon>$INFO[Skin.String(user_bkg_custom7)]</icon>
             <property name="homemenu_id">custom7</property>
             <property name="homemenu_category">$VAR[Home_custom7_Category]</property>
@@ -800,7 +800,7 @@
         <item id="18">
             <description>custom8</description>
             <label>$VAR[Home_custom8_Label]</label>
-            <label8>$VAR[backgroundfolder]home_custom8$VAR[bkg_fileext]</label8>
+            <label2>$VAR[backgroundfolder]home_custom8$VAR[bkg_fileext]</label2>
             <icon>$INFO[Skin.String(user_bkg_custom8)]</icon>
             <property name="homemenu_id">custom8</property>
             <property name="homemenu_category">$VAR[Home_custom8_Category]</property>
@@ -814,7 +814,7 @@
         <item id="19">
             <description>custom9</description>
             <label>$VAR[Home_custom9_Label]</label>
-            <label9>$VAR[backgroundfolder]home_custom9$VAR[bkg_fileext]</label9>
+            <label2>$VAR[backgroundfolder]home_custom9$VAR[bkg_fileext]</label2>
             <icon>$INFO[Skin.String(user_bkg_custom9)]</icon>
             <property name="homemenu_id">custom9</property>
             <property name="homemenu_category">$VAR[Home_custom9_Category]</property>
@@ -981,14 +981,7 @@
                             <scroll>false</scroll>
                         </control>
                     </itemlayout>
-                    <focusedlayout width="550" height="auto">
-                        <control type="button">
-                            <include>HiddenButton</include>
-                            <onfocus>$VAR[WeatherFadeout]</onfocus>
-                            <hitrect>-200,0,1000,200</hitrect>
-                            <onunfocus>CancelAlarm(HideMenu,true)</onunfocus>
-                        </control>
-                    </focusedlayout>
+                    <focusedlayout width="550" height="auto" />
                     <content>
                         <include>HomeMenuContent</include>
                     </content>

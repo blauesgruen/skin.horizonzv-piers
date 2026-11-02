@@ -3,6 +3,50 @@
     <defaultcontrol always="true">36110</defaultcontrol>
 	<backgroundcolor>grey3</backgroundcolor>
     <onunload>ClearProperty(HomeButton)</onunload>
+    <onload>ClearProperty(SkinHelperPING.server1,home)</onload>
+    <onload>ClearProperty(SkinHelperPING.servername1,home)</onload>
+    <onload>ClearProperty(SkinHelperPING.ip1,home)</onload>
+    <onload>ClearProperty(SkinHelperPING.mac1,home)</onload>
+    <onload>ClearProperty(SkinHelperPING.server2,home)</onload>
+    <onload>ClearProperty(SkinHelperPING.servername2,home)</onload>
+    <onload>ClearProperty(SkinHelperPING.ip2,home)</onload>
+    <onload>ClearProperty(SkinHelperPING.mac2,home)</onload>
+    <onload>ClearProperty(SkinHelperPING.server3,home)</onload>
+    <onload>ClearProperty(SkinHelperPING.servername3,home)</onload>
+    <onload>ClearProperty(SkinHelperPING.ip3,home)</onload>
+    <onload>ClearProperty(SkinHelperPING.mac3,home)</onload>
+    <onload>ClearProperty(SkinHelperPING.server4,home)</onload>
+    <onload>ClearProperty(SkinHelperPING.servername4,home)</onload>
+    <onload>ClearProperty(SkinHelperPING.ip4,home)</onload>
+    <onload>ClearProperty(SkinHelperPING.mac4,home)</onload>
+    <onload>ClearProperty(SkinHelperPING.server5,home)</onload>
+    <onload>ClearProperty(SkinHelperPING.servername5,home)</onload>
+    <onload>ClearProperty(SkinHelperPING.ip5,home)</onload>
+    <onload>ClearProperty(SkinHelperPING.mac5,home)</onload>
+    <onload>ClearProperty(SkinHelperPING.server6,home)</onload>
+    <onload>ClearProperty(SkinHelperPING.servername6,home)</onload>
+    <onload>ClearProperty(SkinHelperPING.ip6,home)</onload>
+    <onload>ClearProperty(SkinHelperPING.mac6,home)</onload>
+    <onload>ClearProperty(SkinHelperPING.server7,home)</onload>
+    <onload>ClearProperty(SkinHelperPING.servername7,home)</onload>
+    <onload>ClearProperty(SkinHelperPING.ip7,home)</onload>
+    <onload>ClearProperty(SkinHelperPING.mac7,home)</onload>
+    <onload>ClearProperty(SkinHelperPING.server8,home)</onload>
+    <onload>ClearProperty(SkinHelperPING.servername8,home)</onload>
+    <onload>ClearProperty(SkinHelperPING.ip8,home)</onload>
+    <onload>ClearProperty(SkinHelperPING.mac8,home)</onload>
+    <onload>ClearProperty(SkinHelperPING.server9,home)</onload>
+    <onload>ClearProperty(SkinHelperPING.servername9,home)</onload>
+    <onload>ClearProperty(SkinHelperPING.ip9,home)</onload>
+    <onload>ClearProperty(SkinHelperPING.mac9,home)</onload>
+    <onload>ClearProperty(SkinHelperPING.server10,home)</onload>
+    <onload>ClearProperty(SkinHelperPING.servername10,home)</onload>
+    <onload>ClearProperty(SkinHelperPING.ip10,home)</onload>
+    <onload>ClearProperty(SkinHelperPING.mac10,home)</onload>
+    <onload>ClearProperty(SkinHelperPING.servercount,home)</onload>
+    <onload>ClearProperty(SkinHelperPING.serveron,home)</onload>
+    <onload>ClearProperty(SkinHelperPING.serveroff,home)</onload>
+    <onload condition="System.AddonIsEnabled(script.skinhelper.ping)">RunScript(script.skinhelper.ping,status)</onload>
     <controls>
         <control type="group" id="576757">
             <include>openclosebox</include>
@@ -11,11 +55,19 @@
 				<param name="PopupIcon" value="Design-Earthicon.png" />
 				<param name="PopupTitle"/>
 			</include>
+            <control type="label">
+                <left>70</left>
+                <top>160</top>
+                <width>1070</width>
+                <height>55</height>
+                <label>$LOCALIZE[31952]</label>
+                <visible>String.IsEqual(Container(36110).NumItems,0)</visible>
+            </control>
             <control type="list" id="36110">
                 <left>50</left>
                 <top>160</top>
                 <width>1110</width>
-                <height>100%</height>
+                <height>440</height>
 				<orientation>vertical</orientation>
 				<itemlayout height="55" width="1110">
 					<control type="image">
@@ -53,84 +105,47 @@
 						<label>$INFO[ListItem.Property(number)]$INFO[ListItem.Label]</label>
 					</control>
 				</focusedlayout>
-				<content>
-					<item id="1">
-						<description>WOL Button 1</description>
-						<property name="number">1. </property>
-						<property name="name">$INFO[Window(Home).Property(SkinHelperPING.servername1)]</property>
-						<property name="ip">$INFO[Window(Home).Property(SkinHelperPING.ip1)]</property>
-						<property name="mac">$INFO[Window(Home).Property(SkinHelperPING.mac1)]</property>
-						<label>$INFO[Window(Home).Property(SkinHelperPING.servername1)]</label>
-						<label2>$INFO[Window(Home).Property(SkinHelperPING.server1)]</label2>
-						<onclick condition="!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac1))">RunScript(script.skinhelper.ping,wol1)</onclick>
-						<onclick>Notification($INFO[Window(Home).Property(SkinHelperPING.servername1)],$LOCALIZE[31400],3000)</onclick>
-					</item>
-					<item id="2">
-						<description>WOL Button 2</description>
-						<property name="number">2. </property>
-						<property name="name">$INFO[Window(Home).Property(SkinHelperPING.servername2)]</property>
-						<property name="ip">$INFO[Window(Home).Property(SkinHelperPING.ip2)]</property>
-						<property name="mac">$INFO[Window(Home).Property(SkinHelperPING.mac2)]</property>
-						<label>$INFO[Window(Home).Property(SkinHelperPING.servername2)]</label>
-						<label2>$INFO[Window(Home).Property(SkinHelperPING.server2)]</label2>
-						<onclick condition="!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac2))">RunScript(script.skinhelper.ping,wol2)</onclick>
-						<onclick>Notification($INFO[Window(Home).Property(SkinHelperPING.servername2)],$LOCALIZE[31400],3000)</onclick>
-					</item>
-					<item id="3">
-						<description>WOL Button 3</description>
-						<property name="number">3. </property>
-						<property name="name">$INFO[Window(Home).Property(SkinHelperPING.servername3)]</property>
-						<property name="ip">$INFO[Window(Home).Property(SkinHelperPING.ip3)]</property>
-						<property name="mac">$INFO[Window(Home).Property(SkinHelperPING.mac3)]</property>
-						<label>$INFO[Window(Home).Property(SkinHelperPING.servername3)]</label>
-						<label2>$INFO[Window(Home).Property(SkinHelperPING.server3)]</label2>
-						<onclick condition="!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac3))">RunScript(script.skinhelper.ping,wol3)</onclick>
-						<onclick>Notification($INFO[Window(Home).Property(SkinHelperPING.servername3)],$LOCALIZE[31400],3000)</onclick>
-					</item>
-					<item id="4">
-						<description>WOL Button 4</description>
-						<property name="number">4. </property>
-						<property name="name">$INFO[Window(Home).Property(SkinHelperPING.servername4)]</property>
-						<property name="ip">$INFO[Window(Home).Property(SkinHelperPING.ip4)]</property>
-						<property name="mac">$INFO[Window(Home).Property(SkinHelperPING.mac4)]</property>
-						<label>$INFO[Window(Home).Property(SkinHelperPING.servername4)]</label>
-						<label2>$INFO[Window(Home).Property(SkinHelperPING.server4)]</label2>
-						<onclick condition="!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac4))">RunScript(script.skinhelper.ping,wol4)</onclick>
-						<onclick>Notification($INFO[Window(Home).Property(SkinHelperPING.servername4)],$LOCALIZE[31400],3000)</onclick>
-					</item>
-					<item id="5">
-						<description>WOL Button 5</description>
-						<property name="number">5. </property>
-						<property name="name">$INFO[Window(Home).Property(SkinHelperPING.servername5)]</property>
-						<property name="ip">$INFO[Window(Home).Property(SkinHelperPING.ip5)]</property>
-						<property name="mac">$INFO[Window(Home).Property(SkinHelperPING.mac5)]</property>
-						<label>$INFO[Window(Home).Property(SkinHelperPING.servername5)]</label>
-						<label2>$INFO[Window(Home).Property(SkinHelperPING.server5)]</label2>
-						<onclick condition="!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac5))">RunScript(script.skinhelper.ping,wol5)</onclick>
-						<onclick>Notification($INFO[Window(Home).Property(SkinHelperPING.servername5)],$LOCALIZE[31400],3000)</onclick>
-					</item>
-					<item id="6">
-						<description>WOL Button All</description>
-						<label>Alle starten $INFO[Window(Home).Property(SkinHelperPING.servercount),(,)]</label>
-						<onclick condition="!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac1))">RunScript(script.skinhelper.ping,wol1)</onclick>
-						<onclick condition="!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac2))">RunScript(script.skinhelper.ping,wol2)</onclick>
-						<onclick condition="!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac3))">RunScript(script.skinhelper.ping,wol3)</onclick>
-						<onclick condition="!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac4))">RunScript(script.skinhelper.ping,wol4)</onclick>
-						<onclick condition="!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac5))">RunScript(script.skinhelper.ping,wol5)</onclick>
-						<onclick>Notification(- $INFO[Window(Home).Property(SkinHelperPING.servername1),, - ]$INFO[Window(Home).Property(SkinHelperPING.servername2),, - ]$INFO[Window(Home).Property(SkinHelperPING.servername3),, - ]$INFO[Window(Home).Property(SkinHelperPING.servername4),, - ]$INFO[Window(Home).Property(SkinHelperPING.servername5)],$LOCALIZE[31400],6000)</onclick>
-						<visible>Integer.IsGreater(Window(Home).Property(SkinHelperPING.servercount),1)</visible>
-					</item>
-					<item id="7">
-						<description>Settings Button</description>
-						<label>5</label>
-						<onclick>Addon.OpenSettings(script.skinhelper.ping)</onclick>
-					</item>
-					<item id="8">
-						<description>Refresh Button</description>
-						<label>aktualisieren</label>
-						<onclick>RunScript(script.skinhelper.ping,status)</onclick>
-					</item>
-				</content>
+                <content>
+                    <include content="WOLDeviceItem"><param name="slot" value="1" /></include>
+                    <include content="WOLDeviceItem"><param name="slot" value="2" /></include>
+                    <include content="WOLDeviceItem"><param name="slot" value="3" /></include>
+                    <include content="WOLDeviceItem"><param name="slot" value="4" /></include>
+                    <include content="WOLDeviceItem"><param name="slot" value="5" /></include>
+                    <include content="WOLDeviceItem"><param name="slot" value="6" /></include>
+                    <include content="WOLDeviceItem"><param name="slot" value="7" /></include>
+                    <include content="WOLDeviceItem"><param name="slot" value="8" /></include>
+                    <include content="WOLDeviceItem"><param name="slot" value="9" /></include>
+                    <include content="WOLDeviceItem"><param name="slot" value="10" /></include>
+                    <item id="11">
+                        <description>Request Wake-on-LAN for configured targets</description>
+                        <label>$LOCALIZE[31950]</label>
+                        <onclick condition="System.AddonIsEnabled(script.skinhelper.ping)+!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac1))">WakeOnLan($INFO[Window(Home).Property(SkinHelperPING.mac1)])</onclick>
+                        <onclick condition="System.AddonIsEnabled(script.skinhelper.ping)+!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac2))">WakeOnLan($INFO[Window(Home).Property(SkinHelperPING.mac2)])</onclick>
+                        <onclick condition="System.AddonIsEnabled(script.skinhelper.ping)+!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac3))">WakeOnLan($INFO[Window(Home).Property(SkinHelperPING.mac3)])</onclick>
+                        <onclick condition="System.AddonIsEnabled(script.skinhelper.ping)+!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac4))">WakeOnLan($INFO[Window(Home).Property(SkinHelperPING.mac4)])</onclick>
+                        <onclick condition="System.AddonIsEnabled(script.skinhelper.ping)+!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac5))">WakeOnLan($INFO[Window(Home).Property(SkinHelperPING.mac5)])</onclick>
+                        <onclick condition="System.AddonIsEnabled(script.skinhelper.ping)+!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac6))">WakeOnLan($INFO[Window(Home).Property(SkinHelperPING.mac6)])</onclick>
+                        <onclick condition="System.AddonIsEnabled(script.skinhelper.ping)+!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac7))">WakeOnLan($INFO[Window(Home).Property(SkinHelperPING.mac7)])</onclick>
+                        <onclick condition="System.AddonIsEnabled(script.skinhelper.ping)+!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac8))">WakeOnLan($INFO[Window(Home).Property(SkinHelperPING.mac8)])</onclick>
+                        <onclick condition="System.AddonIsEnabled(script.skinhelper.ping)+!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac9))">WakeOnLan($INFO[Window(Home).Property(SkinHelperPING.mac9)])</onclick>
+                        <onclick condition="System.AddonIsEnabled(script.skinhelper.ping)+!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac10))">WakeOnLan($INFO[Window(Home).Property(SkinHelperPING.mac10)])</onclick>
+                        <onclick condition="System.AddonIsEnabled(script.skinhelper.ping)+[!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac1))|!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac2))|!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac3))|!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac4))|!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac5))|!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac6))|!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac7))|!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac8))|!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac9))|!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac10))]">Notification(WOL,$LOCALIZE[31951],3000)</onclick>
+                        <onclick condition="System.AddonIsEnabled(script.skinhelper.ping)+[!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac1))|!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac2))|!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac3))|!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac4))|!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac5))|!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac6))|!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac7))|!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac8))|!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac9))|!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac10))]">RunScript(script.skinhelper.ping,status)</onclick>
+                        <visible>System.AddonIsEnabled(script.skinhelper.ping)+[!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac1))|!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac2))|!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac3))|!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac4))|!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac5))|!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac6))|!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac7))|!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac8))|!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac9))|!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac10))]</visible>
+                    </item>
+                    <item id="12">
+                        <description>Settings</description>
+                        <label>5</label>
+                        <onclick>Addon.OpenSettings(script.skinhelper.ping)</onclick>
+                        <visible>System.HasAddon(script.skinhelper.ping)</visible>
+                    </item>
+                    <item id="13">
+                        <description>Refresh status</description>
+                        <label>184</label>
+                        <onclick>RunScript(script.skinhelper.ping,status)</onclick>
+                        <visible>System.AddonIsEnabled(script.skinhelper.ping)</visible>
+                    </item>
+                </content>
             </control>
 			<control type="image">
 				<left>50</left>

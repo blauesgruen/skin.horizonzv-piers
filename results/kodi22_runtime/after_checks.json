@@ -1,0 +1,106 @@
+[
+  {
+    "requested": "weather",
+    "activation": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": "OK"
+    },
+    "state": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": " ()"
+        },
+        "currentwindow": {
+          "id": 12600,
+          "label": "Weather"
+        },
+        "skin": {
+          "id": "skin.horizonzv",
+          "name": "Horizonz V"
+        }
+      }
+    },
+    "screenshot": "weather_after.png"
+  },
+  {
+    "requested": "videos",
+    "activation": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": "OK"
+    },
+    "state": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "[Files]"
+        },
+        "currentwindow": {
+          "id": 10025,
+          "label": "Videos"
+        },
+        "skin": {
+          "id": "skin.horizonzv",
+          "name": "Horizonz V"
+        }
+      }
+    },
+    "screenshot": "videos_after.png"
+  },
+  {
+    "requested": "music",
+    "activation": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": "OK"
+    },
+    "state": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "[Playlists]"
+        },
+        "currentwindow": {
+          "id": 10502,
+          "label": "Music"
+        },
+        "skin": {
+          "id": "skin.horizonzv",
+          "name": "Horizonz V"
+        }
+      }
+    },
+    "screenshot": "music_after.png"
+  },
+  {
+    "requested": "skinsettings",
+    "activation": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": "OK"
+    },
+    "state": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "Mainmenu buttons"
+        },
+        "currentwindow": {
+          "id": 10035,
+          "label": "Skin Settings"
+        },
+        "skin": {
+          "id": "skin.horizonzv",
+          "name": "Horizonz V"
+        }
+      }
+    },
+    "screenshot": "skinsettings_after.png"
+  }
+]

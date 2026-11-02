@@ -1,0 +1,295 @@
+ID;Englisch;Deutsch;Verwendungen;cs_cz;da_dk;el_gr;es_es;fi_fi;fr_fr;it_it;nb_no;nl_nl;pl_pl;sv_se;uk_ua
+31000;Power options;Energieeinstellungen;1;x;x;x;x;x;x;x;x;x;x;x;x
+31002;View options;Ansichteneinstellungen;9;x;x;x;x;x;x;x;x;x;x;x;x
+31003;Total duration;Gesamtdauer;4;x;x;x;x;x;x;x;x;x;x;x;x
+31004;Change mode;Modus ändern;1;x;x;x;x;x;x;x;x;x;x;x;x
+31005;Misc options;Sonstige Einstellungen;6;x;x;x;x;x;x;x;x;x;x;x;x
+31007;Playing;Es läuft;1;x;x;x;x;x;x;x;x;x;x;x;x
+31008;Page;Seite;24;x;x;x;x;x;x;x;x;x;x;x;x
+31009;Items;Einträge;20;x;x;x;x;x;x;x;x;x;x;x;x
+31012;Memory used;Speichernutzung;0;x;x;x;x;x;x;x;x;x;x;x;x
+31013;Pic thumbs;Vorschaubilder;3;x;x;x;x;x;x;x;x;x;x;x;x
+31014;Order;Reihenfolge;2;x;x;x;x;x;x;x;x;x;x;x;x
+31016;Extended info;Erweiterte Infos;1;x;x;x;x;x;x;x;x;x;x;x;x
+31017;PLAYING;ES LÄUFT;3;x;x;x;x;x;x;x;x;x;x;x;x
+31022;Visualisation presets;Visualisierungs-Voreinstellungen;1;x;x;x;x;x;x;x;x;x;x;x;x
+31023;Sort: Ascending;Sortieren: Aufsteigend;7;x;x;x;x;x;x;x;x;x;x;x;x
+31024;Sort: Descending;Sortieren: Absteigend;7;x;x;x;x;x;x;x;x;x;x;x;x
+31025;Open playlist;Wiedergabeliste öffnen;2;x;x;x;x;x;x;x;x;x;x;x;x
+31026;Save playlist;Wiedergabeliste speichern;1;x;x;x;x;x;x;x;x;x;x;x;x
+31027;Close playlist;Wiedergabeliste schließen;1;x;x;x;x;x;x;x;x;x;x;x;x
+31030;System memory usage;Systemspeicherauslastung;3;x;x;x;x;x;x;x;x;x;x;x;x
+31031;Version info;Versionsinformationen;1;x;x;x;x;x;x;x;x;x;x;x;x
+31032;Current selected;Aktuell ausgewählt;2;x;x;x;x;x;x;x;x;x;x;x;x
+31033;Search trailer;Trailer suchen;1;x;x;x;x;x;x;x;x;x;x;x;x
+31035;Search YouTube;YouTube durchsuchen;0;x;x;x;x;x;x;x;x;x;x;x;x
+31036;Same director;Filme des Direktors;2;x;x;x;x;x;x;x;x;x;x;x;x
+31043;Choose your song;Lied auswählen;1;x;x;x;x;x;x;x;x;x;x;x;x
+31044;Lyrics source;Liedtexte-Quelle;1;x;x;x;x;x;x;x;x;x;x;x;x
+31046;Data provider;Quelle;1;x;x;x;x;x;x;x;x;x;x;x;x
+31047;Hide fanart;Fanart verstecken;1;x;x;x;x;x;x;x;x;x;x;x;x
+31048;Memory used:;Speicherverbrauch:;3;x;x;x;x;x;x;x;x;x;x;x;x
+31049;Track number;Titelnummer;1;x;x;x;x;x;x;x;x;x;x;x;x
+31050;Selected profile;Profil auswählen;2;x;x;x;x;x;x;x;x;x;x;x;x
+31051;Last logged in;Zuletzt angemeldet;2;x;x;x;x;x;x;x;x;x;x;x;x
+31052;Aired;Ausgestrahlt;3;x;x;x;x;x;x;x;x;x;x;x;x
+31053;Playlist options;Wiedergabelisten-Einstellungen;1;x;x;x;x;x;x;x;x;x;x;x;x
+31054;Created;Erstellt;0;x;x;x;x;x;x;x;x;x;x;x;x
+31056;Timer set! [COLOR=grey1] - System auto shutdown in[/COLOR];Ausschalt-Timer aktiv! [COLOR=grey1] - Zeit bis zum Herunterfahren:[/COLOR];1;x;x;x;x;x;x;x;x;x;x;x;x
+31057;Click button to play[CR][CR]movie trailer;Button klicken, um[CR][CR]Film-Trailer abzuspielen;1;x;x;x;x;x;x;x;x;x;x;x;x
+31059;Stop;Stopp;5;x;x;x;x;x;x;x;x;x;x;x;x
+31060;Fast forward;Schneller Vorlauf;6;x;x;x;x;x;x;x;x;x;x;x;x
+31061;Rewind;Rücklauf;6;x;x;x;x;x;x;x;x;x;x;x;x
+31062;Movie menu;Filmmenü;1;x;x;x;x;x;x;x;x;x;x;x;x
+31063;Download subtitles;Untertitel herunterladen;1;x;x;x;x;x;x;x;x;x;x;x;x
+31064;Watch as 2D;In 2D ansehen;0;x;x;x;x;x;x;x;x;x;x;x;x
+31065;Change mode;Modus ändern;0;x;x;x;x;x;x;x;x;x;x;x;x
+31067;Playlist at startup;Eigene Playlist beim Start;1;x;x;x;x;x;x;x;x;x;x;x;x
+31068;Local subtitle available;Lokaler Untertitel verfügbar;1;x;x;x;x;x;x;x;x;x;x;x;x
+31069;Select your Kodi user profile to login and continue;Bitte Kodi-Benutzerprofil auswählen um fortzufahren;0;x;x;x;x;x;x;x;x;x;x;x;x
+31072;Add group;Gruppe hinzufügen;1;x;x;x;x;x;x;x;x;x;x;x;x
+31073;Rename group;Gruppe umbenennen;1;x;x;x;x;x;x;x;x;x;x;x;x
+31074;Delete group;Gruppe löschen;1;x;x;x;x;x;x;x;x;x;x;x;x
+31075;Available[CR]Groups;Verfügbare[CR]Gruppen;1;x;x;x;x;x;x;x;x;x;x;x;x
+31076;Timer set;Timer aktiviert;1;x;x;x;x;x;x;x;x;x;x;x;x
+31077;Channel options;Kanal-Einstellungen;1;x;x;x;x;x;x;x;x;x;x;x;x
+31078;36-hour forecast;36-Stunden-Vorhersage;2;x;x;x;x;x;x;x;x;x;x;x;x
+31079;Hourly forecast;Stündliche Vorhersage;2;x;x;x;x;x;x;x;x;x;x;x;x
+31080;Weekend forecast;Wochenend-Vorhersage;3;x;x;x;x;x;x;x;x;x;x;x;x
+31081;Daily forecast;Tägliche Vorhersage;1;x;x;x;x;x;x;x;x;x;x;x;x
+31083;Fetching forecast info...;Vorhersagedaten werden abgerufen...;2;x;x;x;x;x;x;x;x;x;x;x;x
+31112;Audio streams;Audiostreams;1;x;x;x;x;x;x;x;x;x;x;x;x
+31115;Subtitles streams;Untertitelstreams;1;x;x;x;x;x;x;x;x;x;x;x;x
+31132;Select Program;Programm auswählen;1;x;x;x;x;x;x;x;x;x;x;x;x
+31133;Select Resolution;Auflösung auswählen;1;x;x;x;x;x;x;x;x;x;x;x;x
+31139;Video decoder;Videodecoder;1;x;x;x;x;x;x;x;x;x;x;x;x
+31140;Pixel format;Pixelformat;1;x;x;x;x;x;x;x;x;x;x;x;x
+31200;Activates background video in the main menu.;Aktiviert Hintergrundvideo im Hauptmenü.;1;x;x;x;x;x;x;x;x;x;x;x;x
+31201;Select the country for the age rating (defined in the scrapper).[CR]Supported are DE, US, UK, FR.[CR]If only US ratings are available, these are displayed.;Wähle das Land für die Altersfreigabe (wird im Scrapper definiert).[CR]Unterstützt wird DE, US, UK, FR.[CR]Sind ausschließlich US-Freigaben vorhanden, werden diese angezeigt.;1;x;x;x;x;x;x;x;x;x;x;x;x
+31202;Trailer are directly displayed in the movie information or in fullscreen mode.;Trailer werden direkt in der Filminformation oder im Vollbild angezeigt.;1;x;x;x;x;x;x;x;x;x;x;x;x
+31203;If a visualization is selected for music playback, it will also be displayed in the main menu.;Ist für die Musikwiedergabe eine Visualisierung gewählt, wird sie auch im Hauptmenü angezeigt.;1;x;x;x;x;x;x;x;x;x;x;x;x
+31204;Displays playlist of the next 9 titles in main menu and in fullscreen mode.;Zeigt eine Playlist der nächsten 9 Titel im Hauptmenü und im Vollbild.;1;x;x;x;x;x;x;x;x;x;x;x;x
+31205;Define the volume in percent, which will be played on any start of KODI.[CR]Quote a figure between 0 and 100.;Lege die Lautstärke in Prozent fest, welche bei jedem Start von KODI wiedergegeben werden soll.[CR]Gib eine Zahl von 0 - 100 an.;1;x;x;x;x;x;x;x;x;x;x;x;x
+31206;Disable alphanumeric jump list in SMS style.[CR][COLOR=grey]Imported from the skin \'Alaska\'[/COLOR].;Deaktiviert die alphanummerische Sprungliste im SMS-Stil.[CR][COLOR=grey]Importiert aus dem Skin \'Alaska\'.[/COLOR];1;x;x;x;x;x;x;x;x;x;x;x;x
+31207;To use this function you need the addon \'Skinhelper Ping\' by _Andy_/PvD.[CR][COLOR=white]It can be installed here under Addons or via the Kodinerds Repo[/COLOR].;Um diese Funktion nutzen zu können wird das Addon \'Skinhelper Ping\' von _Andy_/PvD benötigt.[CR][COLOR=grey]Es kann hier unter Addons installiert werde oder über das Kodinerds Repo.[/COLOR];1;x;x;x;x;x;x;x;x;x;x;x;x
+31208;Starts the selected playlist after starting KODI.;Startet nach dem Start von KODI die gewählte Playlist.;1;x;x;x;x;x;x;x;x;x;x;x;x
+31209;To use this function, the addon \'Global Search\' from the official repository is required.;Um diese Funktion nutzen zu können wird das Addon \'Global Search\' aus dem offiziellen Repository benötigt.;0;x;x;x;x;x;x;x;x;x;x;x;x
+31210;Shows a small statistic about the database entries in the lower right corner of the main menu.;Zeigt unten rechts im Hauptmenü eine kleine Statistik zu den Datenbankeinträgen.;1;x;x;x;x;x;x;x;x;x;x;x;x
+31211;Shows the favourites below the main menu instead of directly the \'Central\'. [CR]These are otherwise accessible via the \'Central\'.;Zeigt unterhalb des Hauptmenüs die Favoriten, statt direkt die \'Zentrale\'.[CR]Diese sind ansonten über die \'Zentrale\' erreichbar.;0;x;x;x;x;x;x;x;x;x;x;x;x
+31212;Hides the \'Central\' located below the main menu.;Verbirgt die unterhalb des Hauptmenüs liegende \'Zentrale\'.;1;x;x;x;x;x;x;x;x;x;x;x;x
+31213;Activates an icon in the upper right corner that shows the battery's charge status.[CR][COLOR=white]An incorrect display occurs on computers without a battery.[/COLOR];Aktiviert in der oberen, rechten Ecke ein Icon, welches den Ladezustand des Akkus anzeigt.[CR][COLOR=white]An Rechnern ohne Akku kommt es zu einer inkorrekten Anzeige.[/COLOR];1;x;x;x;x;x;x;x;x;x;x;x;x
+31214;The settings for the widget are in the respective submenu of the main menus.;Die Einstellungen zum Widget befinden sich im jeweiligen Untermenü des Hauptmenüs.;1;x;x;x;x;x;x;x;x;x;x;x;x
+31215;Dims all unfocused covers.;Dimmt alle nicht fokusierten Cover.;1;x;x;x;x;x;x;x;x;x;x;x;x
+31216;Hides the green progress bar on the covers.;Verbirgt den grünen Fortschrittsbalken auf den Covern.;1;x;x;x;x;x;x;x;x;x;x;x;x
+31217;This skin contains various animation effects.[CR]With this switch you can deactivate them. Instead, a simple fade effect is used.[CR]This can lead to better performance on slow systems.;Dieser Skin enthält verschiedene Animationseffekte.[CR]Mit diesem Schalter kannst du sie deaktivieren. Stattdessen ein einfacher Überblendeffekt verwendet.[CR]Dies kann auf langsamen Systemen zu einer besseren Performance führen.;1;x;x;x;x;x;x;x;x;x;x;x;x
+31218;Displays in the upper left corner, where you are.;Zeigt in der linken, oberen Ecke wo du dich gerade befindest.;1;x;x;x;x;x;x;x;x;x;x;x;x
+31219;Hides the date display in the upper right corner.;Verbirgt in der rechten, oberen Ecke die Datumsanzeige.;1;x;x;x;x;x;x;x;x;x;x;x;x
+31220;Activates fanart in all areas.;Aktiviert Fanart in allen Bereichen.;1;x;x;x;x;x;x;x;x;x;x;x;x
+31221;Disables changing background pictures.[CR]Select an own picture or path.;Deaktiviert wechselnde Hintergrundbilder.[CR][COLOR=white]Wähle ein eigenes Bild oder eigenen Pfad aus.[/COLOR];1;x;x;x;x;x;x;x;x;x;x;x;x
+31222;Select a picture. If no pictures is chosen, a standard picture will be displayed.[CR][COLOR=white]Click again for deleting.[/COLOR];Wähle hier ein Bild aus.[CR]Wird kein Bild angegeben, wird ein Standardbild gezeigt.[CR][COLOR=white]Klicke nochmals um es wieder zu löschen.[/COLOR];1;x;x;x;x;x;x;x;x;x;x;x;x
+31223;Shows a slideshow in the background, based on the KODI library.[CR][COLOR=white]Visible in the main menu under: Movies, Series and Music.[/COLOR];Zeigt eine Diashow im Hintergrund, basierend auf der KODI-Bibliothek.[CR][COLOR=white]Sichtbar im Hauptmenü unter: Filme, Serien und Musik.[/COLOR];1;x;x;x;x;x;x;x;x;x;x;x;x
+31224;Enables the dimming of the background in all areas.[CR][COLOR=white]Possible dimming steps: OFF, LIGHT, MEDIUM, STRONG.[/COLOR];Aktiviert die Verdunklung des Hintergrundes in allen Bereichen.[CR][COLOR=white]Mögliche Verdunklungsstufen: AUS, LEICHT, MITTEL, STARK.[/COLOR];1;x;x;x;x;x;x;x;x;x;x;x;x
+31225;Choose an accent colour that shows up in many areas of the skin.[CR][COLOR=grey]Custom: Colour codes must be specified in AARRGGBB hex format.[CR]An example for [/COLOR][COLOR=ffffffff]White:[/COLOR] FFFFFFFF;Wähle eine Akzektfarbe, welche sich in vielen Bereichen des Skins zeigt.[CR][COLOR=grey]ColorPicker: ein externes Addon, mit dem man per Auswahl die Akzentfarbe des Skins festlegen kann.[/COLOR];1;x;x;x;x;x;x;x;x;x;x;x;x
+31226;Install the ColorPicker addon from the Kodinerds repository to be able to select colors with one click.;Installiere das ColorPicker Addon aus dem Kodinerds-Repository, um Farben per Klick auswählen zu können.;1;x;x;x;x;x;x;x;x;x;x;x;x
+31227;Shows the number and total running time of the entries in the database views.;Zeigt in den Datenbankansichten Anzahl und Gesamtlaufzeit der Einträge.;1;x;x;x;x;x;x;x;x;x;x;x;x
+31228;Enables an effect of light along the main menu.;Aktiviert einen Lichteffekt entlang des Hauptmenüs.;1;x;x;x;x;x;x;x;x;x;x;x;x
+31229;Select one of the background themes. It strongly changes the overall impression of the main menu.[CR][COLOR=white]Will be deactivated as soon as \'only one background image\' is active.[/COLOR][COLOR=grey][CR]The theme \'Gambit\' has the advantage that it provides better performance on weaker systems.[CR]This theme was kindly provided by \'G4mbit\' from the KODINERDS forum.[/COLOR];Wähle eines der Hintergrundtheme aus. Es verändert stark den Gesamteindruck des Hauptmenüs.[CR][COLOR=white]Wird deaktiviert, sobald \'nur ein Hintergrundbild\' aktiv ist.[/COLOR][COLOR=grey][CR]Das Theme \'Gambit\' hat den Vorteil, dass es auf schwächeren Systemen für bessere Performance sorgt.[CR]Dieses Theme wurde freundlicherweise von \'G4mbit\' aus dem KODINERDS Forum zu Verfügung gestellt.[/COLOR];1;x;x;x;x;x;x;x;x;x;x;x;x
+31230;Places a structure over the background image.;Legt über das Hintergrundbild eine Struktur.;1;x;x;x;x;x;x;x;x;x;x;x;x
+31231;The player controls are displayed on the left side under the mainmenu during the playing mode.;Zeigt die Player Controls wärend der Wiedergabe links, unterhalb des Haupmenüs.;1;x;x;x;x;x;x;x;x;x;x;x;x
+31232;Shows in the upper left corner of the current weather.;Zeigt in der linken, oberen Ecke das aktuelle Wetter an.;1;x;x;x;x;x;x;x;x;x;x;x;x
+31233;It is possible to disable \'Radio\', which is one of 3 views during the playing mode in full screen.;\'Radio\', eine von 3 Ansichten wärend der Wiedergabe im Vollbild, kann hier deaktiviert werden.;1;x;x;x;x;x;x;x;x;x;x;x;x
+31234;Select between the views Standard, Alternative and Radio.[CR][COLOR=grey]\'Radio\' is always used for online music streams. It is possible to disable it.[/COLOR];Wähle zwischen den Ansichten Standard, Alternative und Radio.[CR][COLOR=grey]\'Radio\' wird immer bei Online Musikstreams verwendet. Kann aber deaktiviert werden.[/COLOR];1;x;x;x;x;x;x;x;x;x;x;x;x
+31235;Select between the views Standard, Alternative and Radio.[CR][COLOR=white]Information: \'Radio\' was disabled.[/COLOR];Wähle zwischen den Ansichten Standard und Alternative.[CR][COLOR=white]Info: Radio wurde deaktiviert.[/COLOR];1;x;x;x;x;x;x;x;x;x;x;x;x
+31236;Displays basic track information in full screen during music playback in the lower left corner.[CR][COLOR=whithe]Visible when OSD is not visible[/COLOR].;Zeigt im Vollbild bei Musikwiedergabe links unten Basisinformation zum Titel dar.[CR][COLOR=whithe]Sichtbar, wenn das OSD nicht zu sehen ist.[/COLOR];1;x;x;x;x;x;x;x;x;x;x;x;x
+31237;Displays a discreet narrow variation of the screen in \'pause\'.;Zeigt eine dezente, schmale Variante des Pausebildschirms an.;1;x;x;x;x;x;x;x;x;x;x;x;x
+31238;Information like chapter, subtitle, current time bar etc. are not displayed.[CR][COLOR=grey]Studio logos and extra arts are faded out.[/COLOR];Es werden keine Infos wie Kapitel, Untertitel, Laufzeitbalken etc. angezeigt.[CR][COLOR=grey]Auch Studiologos und Extra Arts werden ausgeblendet.[/COLOR];1;x;x;x;x;x;x;x;x;x;x;x;x
+31239;Show all available movie & series artworks.[CR][COLOR=white]Since Kodi 19 artworks are loaded with the scrapper \'The Movie Database PYTHON\'.[/COLOR];Zeige alle verfügbaren Film & Serien Artworks.[CR][COLOR=white]Seit Kodi 19 sind werden Artworks mit dem Scrapper \'The Movie Database PYTHON\' geladen.[/COLOR];1;x;x;x;x;x;x;x;x;x;x;x;x
+31240;Select the appearance of the CD here if no CDArt is found.[CR][COLOR=white]CDArts must be available in a folder. This is specified in the system settings (Media->Music).[/COLOR];Wähle hier das Aussehen der CD, falls keine CDArt gefunden wird.[CR][COLOR=white]CDArts müssen in einem Ordner bereit liegen. Diesen gibt man in den Systemeinstellungen (Medien->Musik) an.[/COLOR];1;x;x;x;x;x;x;x;x;x;x;x;x
+31241;Enables all PVR available artwork.[CR][COLOR=white]\'Skin Helper Service\' is required.[/COLOR];Aktiviert alle verfügbaren PVR Artwork.[CR][COLOR=white]\'Skin Helper Service\' wird benötigt.[/COLOR];0;x;x;x;x;x;x;x;x;x;x;x;x
+31242;Select a background picture.;Wähle ein Hintergrundbild;0;x;x;x;x;x;x;x;x;x;x;x;x
+31243;Reset;Zurücksetzen;0;x;x;x;x;x;x;x;x;x;x;x;x
+31244;Defines the default for this skin.[CR]This refers only to customized options.;Legt die Voreinstellung für diesen Skin fest.[CR]Betrifft nur die Benutzerdefinierten Einstellungen.;1;x;x;x;x;x;x;x;x;x;x;x;x
+31245;Weak;Schwach;2;x;x;x;x;x;x;x;x;x;x;x;x
+31246;Medium;Mittel;2;x;x;x;x;x;x;x;x;x;x;x;x
+31247;Fast;Schnell;2;x;x;x;x;x;x;x;x;x;x;x;x
+31248;[UPPERCASE]Skin settings reset ?[/UPPERCASE];[UPPERCASE]Skin Einstellungen zurücksetzen ?[/UPPERCASE];1;x;x;x;x;x;x;x;x;x;x;x;x
+31249;Cover;Cover;1;x;x;x;x;x;x;x;x;x;x;x;x
+31250;no defined favourites;Keine Favouriten vorhanden;0;x;x;x;x;x;x;x;x;x;x;x;x
+31251;[B]KODI SUBTITLES[/B];[B]KODI UNTERTITEL[/B];1;x;x;x;x;x;x;x;x;x;x;x;x
+31252;Sidepanel;Seitenpanel;1;x;x;x;x;x;x;x;x;x;x;x;x
+31253;Set Information;Mehr Informationen;0;x;x;x;x;x;x;x;x;x;x;x;x
+31254;Concerts;Konzerte;0;x;x;x;x;x;x;x;x;x;x;x;x
+31255;Language (age rating);Sprache (Altersfreigabe);1;x;x;x;x;x;x;x;x;x;x;x;x
+31256;Flags in text form;Flags in Textform;0;x;x;x;x;x;x;x;x;x;x;x;x
+31257;Dim background;Hintergrund dimmen;3;x;x;x;x;x;x;x;x;x;x;x;x
+31258;Page Count;Seitenzähler;2;x;x;x;x;x;x;x;x;x;x;x;x
+31259;Cases;Hüllen;2;x;x;x;x;x;x;x;x;x;x;x;x
+31260;Hide big cover;Verberge großes Cover;1;x;x;x;x;x;x;x;x;x;x;x;x
+31261;Logo in place title;Logo statt Titel;1;x;x;x;x;x;x;x;x;x;x;x;x
+31262;Information;Informationen;5;x;x;x;x;x;x;x;x;x;x;x;x
+31263;Hide \'NEW\' Logo;Verberge \'NEW\' Icon;1;x;x;x;x;x;x;x;x;x;x;x;x
+31264;Dusteffect (case);Staubeffekt (Hülle);1;x;x;x;x;x;x;x;x;x;x;x;x
+31265;Disable Cover animations;Cover Animation deaktivieren;1;x;x;x;x;x;x;x;x;x;x;x;x
+31266;Dim cover;Cover dimmen;3;x;x;x;x;x;x;x;x;x;x;x;x
+31267;List;List;1;x;x;x;x;x;x;x;x;x;x;x;x
+31268;Info List;Info List;2;x;x;x;x;x;x;x;x;x;x;x;x
+31269;Thumbview;Thumbview;2;x;x;x;x;x;x;x;x;x;x;x;x
+31270;Banner;Banner;2;x;x;x;x;x;x;x;x;x;x;x;x
+31271;Showcase;Showcase;1;x;x;x;x;x;x;x;x;x;x;x;x
+31272;Perspective;Perspective;0;x;x;x;x;x;x;x;x;x;x;x;x
+31273;Disc Flow;Disc Flow;1;x;x;x;x;x;x;x;x;x;x;x;x
+31274;Rightlist;Rightlist;2;x;x;x;x;x;x;x;x;x;x;x;x
+31275;Cover Wall (fullsize);Cover Wall (Vollbild);1;x;x;x;x;x;x;x;x;x;x;x;x
+31276;Cover Wall;Cover Wall;1;x;x;x;x;x;x;x;x;x;x;x;x
+31277;Picture wall;Bilderwand;1;x;x;x;x;x;x;x;x;x;x;x;x
+31278;Disable radio view;Radio Ansicht deaktivieren;2;x;x;x;x;x;x;x;x;x;x;x;x
+31279; - Disable TV Wall; - TV Wall deaktivieren;1;x;x;x;x;x;x;x;x;x;x;x;x
+31280;Music visualisation;Musik Visualisierung;4;x;x;x;x;x;x;x;x;x;x;x;x
+31281;Music extra arts;Musik Extra Arts;0;x;x;x;x;x;x;x;x;x;x;x;x
+31282;Date display;Datumsanzeige;1;x;x;x;x;x;x;x;x;x;x;x;x
+31283;Button description;Tastenbeschreibung;1;x;x;x;x;x;x;x;x;x;x;x;x
+31284;Information panel;Infopanel;1;x;x;x;x;x;x;x;x;x;x;x;x
+31285;back;zurück;1;x;x;x;x;x;x;x;x;x;x;x;x
+31286;Mainmenu buttons;Hauptmenü Schaltflächen;1;x;x;x;x;x;x;x;x;x;x;x;x
+31287;Submenu buttons;Untermenü Schaltflächen;1;x;x;x;x;x;x;x;x;x;x;x;x
+31288;Functions;Funktionen;1;x;x;x;x;x;x;x;x;x;x;x;x
+31289;Widgets;Widgets;2;x;x;x;x;x;x;x;x;x;x;x;x
+31290;Design / Performance;Design / Leistung;1;x;x;x;x;x;x;x;x;x;x;x;x
+31291;Extra arts;Extra Arts;1;x;x;x;x;x;x;x;x;x;x;x;x
+31292;Admin;Admin;1;x;x;x;x;x;x;x;x;x;x;x;x
+31293;Shutdown Menu;Shutdown Menu;1;x;x;x;x;x;x;x;x;x;x;x;x
+31294;Enable debug grid;Aktiviere Gitter;1;x;x;x;x;x;x;x;x;x;x;x;x
+31295;Debug Information;Debug Information;1;x;x;x;x;x;x;x;x;x;x;x;x
+31296;Enable First start;Ersten Start aktivieren;1;x;x;x;x;x;x;x;x;x;x;x;x
+31297;Choose your system performance;wähle deine Systemleistung;1;x;x;x;x;x;x;x;x;x;x;x;x
+31298;Mousepointer;Mauszeiger;3;x;x;x;x;x;x;x;x;x;x;x;x
+31299;Set positions;Positionen festlegen;1;x;x;x;x;x;x;x;x;x;x;x;x
+31300;Move focus;Focus verschieben;1;x;x;x;x;x;x;x;x;x;x;x;x
+31301;Dashboard;Dashboard;3;x;x;x;x;x;x;x;x;x;x;x;x
+31302;Auto-hide the mainmenu;Hauptmenü automatisch ausblenden;1;x;x;x;x;x;x;x;x;x;x;x;x
+31303;Time to hide;Zeit bis zum ausblenden;1;x;x;x;x;x;x;x;x;x;x;x;x
+31304;Background video;Hintergrund Video;1;x;x;x;x;x;x;x;x;x;x;x;x
+31305;Choose the country for age rating;Wähle das Land der Alterfreigabe;1;x;x;x;x;x;x;x;x;x;x;x;x
+31306;Play trailer in fullscreen;Trailer NICHT im Fenster abspielen;1;x;x;x;x;x;x;x;x;x;x;x;x
+31307;Next track playlist;Next Track Playlist;1;x;x;x;x;x;x;x;x;x;x;x;x
+31308;Set startup volume;Lege Startlautstärke fest;1;x;x;x;x;x;x;x;x;x;x;x;x
+31309;Dectivate alphanumeric jumpbar;Deaktiviere alphanummerischer Sprungleiste;1;x;x;x;x;x;x;x;x;x;x;x;x
+31310;Hide wake on lan switch in \'Central\';Wake on lan Schalter in \'Zentrale\' verbergen;1;x;x;x;x;x;x;x;x;x;x;x;x
+31311;- Path;- Ordner;0;x;x;x;x;x;x;x;x;x;x;x;x
+31312;Globalsearch in contextmenu;Globalsearch im Contextmenü;0;x;x;x;x;x;x;x;x;x;x;x;x
+31313;Statistic show in mainmenu;Statistic im Hauptmenu anzeigen;1;x;x;x;x;x;x;x;x;x;x;x;x
+31314;Show favorites window in main menu;zeige Favoritenfenster im Hauptmenü;0;x;x;x;x;x;x;x;x;x;x;x;x
+31315;Disable \'Central\';\'Zentrale\' deaktivieren;1;x;x;x;x;x;x;x;x;x;x;x;x
+31316;Disc;Disk;1;x;x;x;x;x;x;x;x;x;x;x;x
+31317;Animations (high cpu load);Animationen (hohe CPU-Last);1;x;x;x;x;x;x;x;x;x;x;x;x
+31318;Navigation information;Navigationsinformationen;1;x;x;x;x;x;x;x;x;x;x;x;x
+31319;Small Weather-Information;Kleine Wetter-Informationen;1;x;x;x;x;x;x;x;x;x;x;x;x
+31320;Hide date display;Verberge Datumsanzeige;1;x;x;x;x;x;x;x;x;x;x;x;x
+31321;Just a background image;Nur ein Hintergrundbild;1;x;x;x;x;x;x;x;x;x;x;x;x
+31322;- Picture / Path;- Bild / Pfad;1;x;x;x;x;x;x;x;x;x;x;x;x
+31323;- Slideshow instead of image;- Diashow statt Standbild;1;x;x;x;x;x;x;x;x;x;x;x;x
+31324;Color Accents;Farb Akzente;2;x;x;x;x;x;x;x;x;x;x;x;x
+31325;Background theme;Hintergrundtheme;1;x;x;x;x;x;x;x;x;x;x;x;x
+31326;Structur in mainmenu;Struktur im Hauptmenü;1;x;x;x;x;x;x;x;x;x;x;x;x
+31327;Player Controls;Player Controls;1;x;x;x;x;x;x;x;x;x;x;x;x
+31328;Weather fanarts;Wetter Fanarts;1;x;x;x;x;x;x;x;x;x;x;x;x
+31329;Lightweight version of the break screen;Leichte Version des Pausebildschirms;1;x;x;x;x;x;x;x;x;x;x;x;x
+31330;Hide video details;verberge Videodetails;1;x;x;x;x;x;x;x;x;x;x;x;x
+31331;CD Style;CD Style;1;x;x;x;x;x;x;x;x;x;x;x;x
+31332;hear;höre;1;x;x;x;x;x;x;x;x;x;x;x;x
+31333;manage your;verwalte dein;1;x;x;x;x;x;x;x;x;x;x;x;x
+31334;experience your;erlebe deine;1;x;x;x;x;x;x;x;x;x;x;x;x
+31335;check out the;erkunde das;1;x;x;x;x;x;x;x;x;x;x;x;x
+31336;let them rotate;lass sie rotieren;1;x;x;x;x;x;x;x;x;x;x;x;x
+31337;go to;gehe zu;2;x;x;x;x;x;x;x;x;x;x;x;x
+31338;change your;verändere dein;1;x;x;x;x;x;x;x;x;x;x;x;x
+31339;Glass;Glas;3;x;x;x;x;x;x;x;x;x;x;x;x
+31340;Blank;Rohling;3;x;x;x;x;x;x;x;x;x;x;x;x
+31341;low;leicht;1;x;x;x;x;x;x;x;x;x;x;x;x
+31342;medium;mittel;1;x;x;x;x;x;x;x;x;x;x;x;x
+31343;strongly;kräftig;1;x;x;x;x;x;x;x;x;x;x;x;x
+31344;Central;Zentrale;1;x;x;x;x;x;x;x;x;x;x;x;x
+31345;other/unknown;andere/unbekannt;1;x;x;x;x;x;x;x;x;x;x;x;x
+31346;Moviedrama;Film Drama;1;x;x;x;x;x;x;x;x;x;x;x;x
+31347;News;Nachrichten;1;x;x;x;x;x;x;x;x;x;x;x;x
+31348;Show;Show;1;x;x;x;x;x;x;x;x;x;x;x;x
+31349;Sports;Sport;1;x;x;x;x;x;x;x;x;x;x;x;x
+31350;Child;Kinder;1;x;x;x;x;x;x;x;x;x;x;x;x
+31351;Music;Musik;1;x;x;x;x;x;x;x;x;x;x;x;x
+31352;Arts;Art;1;x;x;x;x;x;x;x;x;x;x;x;x
+31353;Social;Gesellschaft;1;x;x;x;x;x;x;x;x;x;x;x;x
+31354;Science;Wissenschaft;1;x;x;x;x;x;x;x;x;x;x;x;x
+31355;Special;Spezial;1;x;x;x;x;x;x;x;x;x;x;x;x
+31356;Hobby;Hobby;1;x;x;x;x;x;x;x;x;x;x;x;x
+31357;download artwork;lade Artworks;1;x;x;x;x;x;x;x;x;x;x;x;x
+31358;Recently added TVShows;Neu hinzugefügte TV-Serie;3;x;x;x;x;x;x;x;x;x;x;x;x
+31359;forecast;Prognose;6;x;x;x;x;x;x;x;x;x;x;x;x
+31360;Set the position of each mein menu fixed points.[CR]Using position numbers from 1 - 22.;Lege hier die Position der einzelnen Hauptmenüpunkte fest.[CR]Verwende Positionsnummern von 1 - 22.;0;x;x;x;x;x;x;x;x;x;x;x;x
+31361;go directly to video files;direkt zu Videodateien springen;0;x;x;x;x;x;x;x;x;x;x;x;x
+31362;Show profil name;Zeige Profilnamen;1;x;x;x;x;x;x;x;x;x;x;x;x
+31363;Kodi runs:;Kodi läuft:;1;x;x;x;x;x;x;x;x;x;x;x;x
+31364;<;<;1;x;x;x;x;x;x;x;x;x;x;x;x
+31365;<<;<<;1;x;x;x;x;x;x;x;x;x;x;x;x
+31366;Studio symbols ...;Studiosymbole ...;1;x;x;x;x;x;x;x;x;x;x;x;x
+31367;Genre icons ...;Genresymbole ...;1;x;x;x;x;x;x;x;x;x;x;x;x
+31368;Weather icons ...;Wettersymbole ...;3;x;x;x;x;x;x;x;x;x;x;x;x
+31369;Weather fanart ...;Wetterfanart ...;3;x;x;x;x;x;x;x;x;x;x;x;x
+31370;In order to set an Timer the \'KN Switcher Service\' is required. Download via Kodinerds repository.;Um einen Umschalttimer setzen zu können wird der \'KN Switcher Service\' benötigt. Download über Kodinerds Repository.;0;x;x;x;x;x;x;x;x;x;x;x;x
+31371;delete all timers;alle Timer löschen;0;x;x;x;x;x;x;x;x;x;x;x;x
+31372;delete;löschen;0;x;x;x;x;x;x;x;x;x;x;x;x
+31373;administration;verwalten;0;x;x;x;x;x;x;x;x;x;x;x;x
+31374;Switchtimer;Umschalttimer;0;x;x;x;x;x;x;x;x;x;x;x;x
+31375;Timer overview;Timer Übersicht;0;x;x;x;x;x;x;x;x;x;x;x;x
+31376;Today;Heute;1;x;x;x;x;x;x;x;x;x;x;x;x
+31377;Enable;Zeige;1;x;x;x;x;x;x;x;x;x;x;x;x
+31378;Channels;Kanäle;2;x;x;x;x;x;x;x;x;x;x;x;x
+31379;both;Beide;1;x;x;x;x;x;x;x;x;x;x;x;x
+31380;original;Original;1;x;x;x;x;x;x;x;x;x;x;x;x
+31381;HorizonzV Flag;HorizonzV Flag;1;x;x;x;x;x;x;x;x;x;x;x;x
+31382;Germany;Germany;1;x;x;x;x;x;x;x;x;x;x;x;x
+31383;United States;United States;1;x;x;x;x;x;x;x;x;x;x;x;x
+31384;United Kingdom;United Kingdom;1;x;x;x;x;x;x;x;x;x;x;x;x
+31385;France;France;1;x;x;x;x;x;x;x;x;x;x;x;x
+31386;Serge Blue;Serge Blue;1;x;x;x;x;x;x;x;x;x;x;x;x
+31387;Grey Blue;Grey Blue;1;x;x;x;x;x;x;x;x;x;x;x;x
+31388;Turquoise;Turquoise;1;x;x;x;x;x;x;x;x;x;x;x;x
+31389;Sea Green;Sea Green;1;x;x;x;x;x;x;x;x;x;x;x;x
+31390;Red;Red;1;x;x;x;x;x;x;x;x;x;x;x;x
+31391;Light Grey;Light Grey;1;x;x;x;x;x;x;x;x;x;x;x;x
+31392;Dark Gold;Dark Gold;1;x;x;x;x;x;x;x;x;x;x;x;x
+31393;Sandy Brown;Sandy Brown;1;x;x;x;x;x;x;x;x;x;x;x;x
+31394;ColorPicker;ColorPicker;3;x;x;x;x;x;x;x;x;x;x;x;x
+31395;Avengers B/W;Avengers S/W;1;x;x;x;x;x;x;x;x;x;x;x;x
+31396;Gambit;Gambit;1;x;x;x;x;x;x;x;x;x;x;x;x
+31397;Vinyl View;Vinyl Ansicht;1;x;x;x;x;x;x;x;x;x;x;x;x
+31398;Radio View;Radio Ansicht;1;x;x;x;x;x;x;x;x;x;x;x;x
+31399;Standard View;Standard Ansicht;1;x;x;x;x;x;x;x;x;x;x;x;x
+31400;starting ...;wird gestartet ...;0;x;x;x;x;x;x;x;x;x;x;x;x
+31401;hide;verberge;8;x;x;x;x;x;x;x;x;x;x;x;x
+31402;show;zeige;4;x;x;x;x;x;x;x;x;x;x;x;x
+31403;button;Schalter;11;x;x;x;x;x;x;x;x;x;x;x;x
+31404;skin reload;Skin neu laden;2;x;x;x;x;x;x;x;x;x;x;x;x
+31405;KODI APP reload;KODI APP neu starten;2;x;x;x;x;x;x;x;x;x;x;x;x
+31406;Visible;Sichtbar;2;x;x;x;x;x;x;x;x;x;x;x;x
+31407;no progressbar in the widget (green bar on the cover);keine Progressbar im Widget (grüner Balken auf dem Cover);2;x;x;x;x;x;x;x;x;x;x;x;x
+31408;last film started in 1st place;letzten begonnenen Film auf Platz 1;1;x;x;x;x;x;x;x;x;x;x;x;x
+31409;last album belonged to number 1;letztes gehörte Album auf Platz 1;1;x;x;x;x;x;x;x;x;x;x;x;x
+31411;last started video at number 1;letztes begonnenes Video auf Platz 1;1;x;x;x;x;x;x;x;x;x;x;x;x
+31412;5 Day Weather;5 Tage Wetter;4;x;x;x;x;x;x;x;x;x;x;x;x
+31413;German Telecast Offers (GTO);German Telecast Offers (GTO);4;x;x;x;x;x;x;x;x;x;x;x;x
+31414;Fritz Smart Home;Fritz Smart Home;4;x;x;x;x;x;x;x;x;x;x;x;x
+31415;Choose a content for row;Wähle einen Inhalt für Reihe;5;x;x;x;x;x;x;x;x;x;x;x;x
+31416;on;an;2;x;x;x;x;x;x;x;x;x;x;x;x
+31417;off;aus;2;x;x;x;x;x;x;x;x;x;x;x;x
+31418;Battery level;Ladestand der Batterie;2;x;x;x;x;x;x;x;x;x;x;x;x
+31419;Export video library;Videobibliothek exportieren;2;x;x;x;x;x;x;x;x;x;x;x;x
+31420;(single NFO, without images, overwrite old data);(einzelne NFO, ohne Bilder, alte Daten überschreiben);1;x;x;x;x;x;x;x;x;x;x;x;x
+31607;Screen resolution;Bildschirmauflösung;1;x;x;x;x;x;x;x;x;x;x;x;x
+31608;System rendering speed;Rendergeschwindigkeit;1;x;x;x;x;x;x;x;x;x;x;x;x
+31609;System CPU usage;CPU-Auslastung;1;x;x;x;x;x;x;x;x;x;x;x;x
+31611;Code line;Codezeile;11;x;x;x;x;x;x;x;x;x;x;x;x
+31613;enter the category of the playlist here ...;gib hier die Kategorie der Wiedergabeliste an ...;2;x;x;x;x;x;x;x;x;x;x;x;x
+31950;Wake all devices with a MAC address;Alle Geräte mit MAC-Adresse wecken;1;;;;;;;;;;;;
+31951;Wake-on-LAN requested;Wake-on-LAN angefordert;2;;;;;;;;;;;;
+31952;No devices available;Keine Geräte verfügbar;1;;;;;;;;;;;;
+35500;Location;Ort;2;x;x;x;x;x;x;x;x;x;x;x;x

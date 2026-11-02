@@ -1,4 +1,4 @@
-﻿# Kodi Media Center language file
+# Kodi Media Center language file
 # Addon Name: HorizonzV
 # Addon id: skin.horizonzv
 # Addon Provider: blauesgruen
@@ -397,8 +397,8 @@ msgid "Information like chapter, subtitle, current time bar etc. are not display
 msgstr "Ingen informasjon som kapitler, undertekster, runtime bars, etc. vises.[CR][COLOR=grey]Studiologos og Extra Arts er også skjult.[/COLOR]"
 
 msgctxt "#31239"
-msgid "Show all available movie & series artworks.[CR][COLOR=white]Since Kodi 19 artworks are loaded with the scrapper \'The Movie Database PYTHON\'.[/COLOR][COLOR=grey][CR]\'Artwork Beef\' or a similar addon can still be used.[/COLOR]"
-msgstr "Vis alle tilgjengelige film- og seriekunstverk.[CR][COLOR=white]Siden Kodi 19 kunstverk er lastet med scraperen \'The Movie Database PYTHON\'.[/COLOR][COLOR=grey][CR]\'Artwork Beef\' eller et lignende tillegg kan fortsatt brukes.[/COLOR]"
+msgid "Show all available movie & series artworks.[CR][COLOR=white]Since Kodi 19 artworks are loaded with the scrapper \'The Movie Database PYTHON\'.[/COLOR]"
+msgstr "Vis alle tilgjengelige film- og seriekunstverk.[CR][COLOR=white]Siden Kodi 19 kunstverk er lastet med scraperen \'The Movie Database PYTHON\'.[/COLOR]"
 
 msgctxt "#31240"
 msgid "Select the appearance of the CD here if no CDArt is found.[CR][COLOR=white]CDArts must be available in a folder. This is specified in the system settings (Media->Music).[/COLOR]"
@@ -1080,9 +1080,6 @@ msgctxt "#31409"
 msgid "last album belonged to number 1"
 msgstr "siste album lyttet til rangert som #1"
 
-msgctxt "#31410"
-msgid "next episode in 1st place"
-msgstr "neste episode ved nummer 1"
 
 msgctxt "#31411"
 msgid "last started video at number 1"
@@ -1161,3 +1158,27 @@ msgid "Location"
 msgstr "Plassering"
 
 
+
+msgctxt "#31004"
+msgid "Change mode"
+msgstr "Endre modus"
+
+msgctxt "#31031"
+msgid "Version info"
+msgstr "Versjonsinformasjon"
+
+msgctxt "#31112"
+msgid "Audio streams"
+msgstr "Audio streams"
+
+msgctxt "#31115"
+msgid "Subtitles streams"
+msgstr "Subtitles streams"
+
+msgctxt "#31132"
+msgid "Select Program"
+msgstr "Velg Program"
+
+msgctxt "#31133"
+msgid "Select Resolution"
+msgstr "Velg oppløsning"

@@ -1,0 +1,273 @@
+[
+  {
+    "method": "Player.Open",
+    "params": {
+      "item": {
+        "file": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\portable_data\\testmedia\\skin-audit-video.avi"
+      }
+    },
+    "response": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": "OK"
+    }
+  },
+  {
+    "method": "Player.GetActivePlayers",
+    "params": null,
+    "response": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": [
+        {
+          "playerid": 1,
+          "playertype": "internal",
+          "type": "video"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GUI.SetFullscreen",
+    "params": {
+      "fullscreen": true
+    },
+    "response": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": true
+    }
+  },
+  {
+    "method": "GUI.GetProperties",
+    "params": {
+      "properties": [
+        "currentwindow",
+        "skin"
+      ]
+    },
+    "response": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentwindow": {
+          "id": 12005,
+          "label": "Fullscreen video"
+        },
+        "skin": {
+          "id": "skin.horizonzv",
+          "name": "Horizonz V"
+        }
+      }
+    }
+  },
+  {
+    "method": "Player.GetProperties",
+    "params": {
+      "playerid": 1,
+      "properties": [
+        "speed",
+        "time",
+        "totaltime",
+        "canseek"
+      ]
+    },
+    "response": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "canseek": true,
+        "speed": 1,
+        "time": {
+          "hours": 0,
+          "milliseconds": 143,
+          "minutes": 0,
+          "seconds": 2
+        },
+        "totaltime": {
+          "hours": 0,
+          "milliseconds": 0,
+          "minutes": 1,
+          "seconds": 30
+        }
+      }
+    }
+  },
+  {
+    "method": "Player.PlayPause",
+    "params": {
+      "playerid": 1,
+      "play": false
+    },
+    "response": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "speed": 0
+      }
+    }
+  },
+  {
+    "method": "XBMC.GetInfoBooleans",
+    "params": {
+      "booleans": [
+        "Player.Paused",
+        "Player.HasAudio",
+        "Player.HasVideo",
+        "Window.IsVisible(seekbar)"
+      ]
+    },
+    "response": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasAudio": false,
+        "Player.HasVideo": true,
+        "Player.Paused": true,
+        "Window.IsVisible(seekbar)": true
+      }
+    }
+  },
+  {
+    "method": "Input.ExecuteAction",
+    "params": {
+      "action": "screenshot"
+    },
+    "response": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": "OK"
+    }
+  },
+  {
+    "method": "Player.Seek",
+    "params": {
+      "playerid": 1,
+      "value": {
+        "seconds": 25
+      }
+    },
+    "response": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "percentage": 2.5222222805023193,
+        "time": {
+          "hours": 0,
+          "milliseconds": 270,
+          "minutes": 0,
+          "seconds": 2
+        },
+        "totaltime": {
+          "hours": 0,
+          "milliseconds": 0,
+          "minutes": 1,
+          "seconds": 30
+        }
+      }
+    }
+  },
+  {
+    "method": "XBMC.GetInfoBooleans",
+    "params": {
+      "booleans": [
+        "Player.Paused",
+        "Player.HasPerformedSeek(2.5)",
+        "Window.IsVisible(seekbar)"
+      ]
+    },
+    "response": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasPerformedSeek(2.5)": true,
+        "Player.Paused": true,
+        "Window.IsVisible(seekbar)": true
+      }
+    }
+  },
+  {
+    "method": "Input.ExecuteAction",
+    "params": {
+      "action": "screenshot"
+    },
+    "response": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": "OK"
+    }
+  },
+  {
+    "method": "Player.GetProperties",
+    "params": {
+      "playerid": 1,
+      "properties": [
+        "speed",
+        "time"
+      ]
+    },
+    "response": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "speed": 0,
+        "time": {
+          "hours": 0,
+          "milliseconds": 270,
+          "minutes": 0,
+          "seconds": 2
+        }
+      }
+    }
+  },
+  {
+    "method": "XBMC.GetInfoBooleans",
+    "params": {
+      "booleans": [
+        "Player.HasPerformedSeek(2.5)",
+        "Window.IsVisible(seekbar)"
+      ]
+    },
+    "response": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.HasPerformedSeek(2.5)": false,
+        "Window.IsVisible(seekbar)": true
+      }
+    }
+  },
+  {
+    "method": "Input.ExecuteAction",
+    "params": {
+      "action": "osd"
+    },
+    "response": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": "OK"
+    }
+  },
+  {
+    "method": "GUI.GetProperties",
+    "params": {
+      "properties": [
+        "currentwindow",
+        "currentcontrol"
+      ]
+    },
+    "response": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "Play"
+        },
+        "currentwindow": {
+          "id": 12901,
+          "label": "Fullscreen OSD"
+        }
+      }
+    }
+  }
+]

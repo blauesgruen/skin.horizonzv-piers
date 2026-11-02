@@ -96,7 +96,6 @@
                         <label>Extra Art</label>
                         <onclick>Skin.ToggleSetting(EnableExtendedArt)</onclick>
                         <selected>Skin.HasSetting(EnableExtendedArt)</selected>
-                        <!-- <enable>System.HasAddon(script.artwork.beef)</enable> -->
                         <visible>Window.IsVisible(videos)</visible>
                     </control>
                     <control type="label" id="1750">
@@ -133,19 +132,8 @@
                         <label>$LOCALIZE[2] Extra Art</label>
                         <onclick>Skin.ToggleSetting(EnableExtendedArt)</onclick>
                         <selected>Skin.HasSetting(EnableExtendedArt)</selected>
-                        <!-- <enable>System.HasAddon(script.artwork.beef)</enable> -->
                         <visible>!Control.IsVisible(512)+!Control.IsVisible(506)</visible>
                         <visible>Window.IsVisible(music)|Window.IsVisible(MusicPlaylist)</visible>
-                    </control>
-                    <control type="radiobutton" id="1756"> <!-- kann in kodi 22 weg -->
-                        <description>extendedinfo music</description>
-                        <include>SidePanelButton</include>
-                        <label>31253</label>
-                        <onclick>Skin.Reset(extendedinfo_music)</onclick>
-                        <selected>Skin.HasSetting(extendedinfo_music)</selected>
-                        <visible>Skin.HasSetting(extendedinfo_music)</visible>
-                        <visible>Control.IsVisible(58)|Control.IsVisible(741)|Control.IsVisible(562)|Control.IsVisible(515)|Control.IsVisible(509)</visible>
-                        <visible>Container.Content(artists)</visible>
                     </control>
                     <control type="label" id="1770">
                         <!-- General -->
@@ -286,7 +274,6 @@
                     <control type="radiobutton" id="1811">
                         <include>SidePanelButton</include>
                         <label>31262</label>
-                        <onclick>$VAR[SidePanel_InformationToggleVar]</onclick>
                         <onclick>Skin.ToggleSetting(smallinfo_off)</onclick>
                         <selected>!Skin.HasSetting(smallinfo_off)</selected>
                         <visible>Control.IsVisible(302)|Control.IsVisible(505)|Control.IsVisible(740)|Control.IsVisible(742)</visible>

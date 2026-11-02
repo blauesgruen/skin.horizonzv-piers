@@ -295,7 +295,7 @@
                             <description>PlayDVD</description>
                             <label>341</label>
                             <icon>DefaultVCD.png</icon>
-                            <onclick>PlayDVD()</onclick>
+                            <onclick>PlayDisc()</onclick>
                             <visible>System.HasMediaDVD</visible>
                         </item>
                         <item id="9">

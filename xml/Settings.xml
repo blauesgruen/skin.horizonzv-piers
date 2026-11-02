@@ -164,13 +164,13 @@
 							<label>LibreELEC</label>
 							<onclick>RunAddon(service.libreelec.settings)</onclick>
 							<icon>icons/settings/libreelec.png</icon>
-							<visible>System.HasAddon(service.libreelec.settings)</visible>
+							<visible>System.AddonIsEnabled(service.libreelec.settings)</visible>
 						</item>
 						<item>
 							<label>CoreELEC</label>
 							<onclick>RunAddon(service.coreelec.settings)</onclick>
 							<icon>icons/settings/coreelec.png</icon>
-							<visible>System.HasAddon(service.coreelec.settings)</visible>
+							<visible>System.AddonIsEnabled(service.coreelec.settings)</visible>
 						</item>
 					</content>
 				</control>
