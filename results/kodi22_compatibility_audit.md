@@ -1,5 +1,13 @@
 # Kodi 22 compatibility audit and cleanup plan
 
+## Unavailable selected Dashboard/shutdown addon links guarded (2026-11-05)
+
+The same nonempty-ID assumption affected ten Dashboard addon slots and the shutdown menu's user-selected addon item. Native baseline produced three RunAddon unknown-addon ERROR lines for a disabled own fixture. Dispatch/selection now uses dynamically resolved enabled-addon availability. Only 22 condition attributes changed across Includes_Dash_Addonpath_Fav.xml and DialogButtonMenu.xml; structural comparison proves all other XML text/attributes, including power/device commands, equal to the base. Existing picker types and the configuration-focus branch remain.
+
+Native final evidence: all ten Dashboard slots disabled and enabled, slots 1/10 with missing/empty selection, and four real shutdown addon-item modes. 28 rows pass, with exactly eleven harmless local marker invocations for enabled cases and no unavailable invocation. Probe list 8006 preserves focus routing to 9000. Dashboard uses the actual production content in a native WindowXML probe, not a full Home-layout test; the real shutdown target is verified by an observation property immediately before selection. No power action is selected. Settings/addon DB restored, fixture removed, observation-only XML properties removed, no final ERROR. [Sources/limits](kodi22_inventory/addon_dispatch_review.json), [native run](kodi22_runtime/addon_dispatch_checks.json).
+
+The first observation-only numeric slot marker was read as localized Pictures; a textual slot-1 marker fixes the helper. No skin defect inferred from that attempt. Fresh TEMP ZIP has 294 matching files, CRC/179 XML-XSP pass; native installation/restart pass without ERROR. [Package](kodi22_inventory/addon_dispatch_package_review.json), [installation](kodi22_runtime/addon_dispatch_install_checks.json). Existing external addon code unchanged.
+
 ## Unavailable selected lyrics provider guarded (2026-11-05)
 
 The typed RunScript contract is supported, but a selected addon may later become disabled or disappear. Native baseline: disabled CU LRC 6.7.6 made MusicOSD 701 and PlayerControls 609 set Lyrics=true and dispatch RunScript, producing two non-existing-script ERROR lines. Corrected only MusicOSD.xml and PlayerControls.xml. The dynamic System.AddonVersion(Skin.String(LyricScript_Path)) label uses enabled-only lookup in Piers/master and becomes empty when unavailable, as confirmed natively. Use the existing typed addon selector for unavailable providers. The radio toggle can still clear an already true Lyrics state; CU reuse and enabled-provider start/stop remain intact.

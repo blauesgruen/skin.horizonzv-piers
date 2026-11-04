@@ -1,0 +1,322 @@
+{
+  "scope": "Actual production DashboardContent in a native WindowXML list and actual shutdownmenu addon item with one marker property. Only own local marker addon can run. No power/device action selected.",
+  "baseline": false,
+  "work": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-addon-dispatch-h4ub24ud",
+  "rows": [
+    {
+      "target": "dashboard",
+      "mode": "disabled",
+      "slot": 1,
+      "observed_slot": "1",
+      "invocations_before": 0,
+      "invocations_after": 0,
+      "selector_visible": true
+    },
+    {
+      "target": "dashboard",
+      "mode": "disabled",
+      "slot": 2,
+      "observed_slot": "2",
+      "invocations_before": 0,
+      "invocations_after": 0,
+      "selector_visible": true
+    },
+    {
+      "target": "dashboard",
+      "mode": "disabled",
+      "slot": 3,
+      "observed_slot": "3",
+      "invocations_before": 0,
+      "invocations_after": 0,
+      "selector_visible": true
+    },
+    {
+      "target": "dashboard",
+      "mode": "disabled",
+      "slot": 4,
+      "observed_slot": "4",
+      "invocations_before": 0,
+      "invocations_after": 0,
+      "selector_visible": true
+    },
+    {
+      "target": "dashboard",
+      "mode": "disabled",
+      "slot": 5,
+      "observed_slot": "5",
+      "invocations_before": 0,
+      "invocations_after": 0,
+      "selector_visible": true
+    },
+    {
+      "target": "dashboard",
+      "mode": "disabled",
+      "slot": 6,
+      "observed_slot": "6",
+      "invocations_before": 0,
+      "invocations_after": 0,
+      "selector_visible": true
+    },
+    {
+      "target": "dashboard",
+      "mode": "disabled",
+      "slot": 7,
+      "observed_slot": "7",
+      "invocations_before": 0,
+      "invocations_after": 0,
+      "selector_visible": true
+    },
+    {
+      "target": "dashboard",
+      "mode": "disabled",
+      "slot": 8,
+      "observed_slot": "8",
+      "invocations_before": 0,
+      "invocations_after": 0,
+      "selector_visible": true
+    },
+    {
+      "target": "dashboard",
+      "mode": "disabled",
+      "slot": 9,
+      "observed_slot": "9",
+      "invocations_before": 0,
+      "invocations_after": 0,
+      "selector_visible": true
+    },
+    {
+      "target": "dashboard",
+      "mode": "disabled",
+      "slot": 10,
+      "observed_slot": "10",
+      "invocations_before": 0,
+      "invocations_after": 0,
+      "selector_visible": true
+    },
+    {
+      "target": "dashboard",
+      "mode": "missing",
+      "slot": 1,
+      "observed_slot": "1",
+      "invocations_before": 0,
+      "invocations_after": 0,
+      "selector_visible": true
+    },
+    {
+      "target": "dashboard",
+      "mode": "missing",
+      "slot": 10,
+      "observed_slot": "10",
+      "invocations_before": 0,
+      "invocations_after": 0,
+      "selector_visible": true
+    },
+    {
+      "target": "dashboard",
+      "mode": "empty",
+      "slot": 1,
+      "observed_slot": "1",
+      "invocations_before": 0,
+      "invocations_after": 0,
+      "selector_visible": true
+    },
+    {
+      "target": "dashboard",
+      "mode": "empty",
+      "slot": 10,
+      "observed_slot": "10",
+      "invocations_before": 0,
+      "invocations_after": 0,
+      "selector_visible": true
+    },
+    {
+      "target": "dashboard",
+      "mode": "enabled",
+      "slot": 1,
+      "observed_slot": "1",
+      "invocations_before": 0,
+      "invocations_after": 1,
+      "selector_visible": false
+    },
+    {
+      "target": "dashboard",
+      "mode": "enabled",
+      "slot": 2,
+      "observed_slot": "2",
+      "invocations_before": 1,
+      "invocations_after": 2,
+      "selector_visible": false
+    },
+    {
+      "target": "dashboard",
+      "mode": "enabled",
+      "slot": 3,
+      "observed_slot": "3",
+      "invocations_before": 2,
+      "invocations_after": 3,
+      "selector_visible": false
+    },
+    {
+      "target": "dashboard",
+      "mode": "enabled",
+      "slot": 4,
+      "observed_slot": "4",
+      "invocations_before": 3,
+      "invocations_after": 4,
+      "selector_visible": false
+    },
+    {
+      "target": "dashboard",
+      "mode": "enabled",
+      "slot": 5,
+      "observed_slot": "5",
+      "invocations_before": 4,
+      "invocations_after": 5,
+      "selector_visible": false
+    },
+    {
+      "target": "dashboard",
+      "mode": "enabled",
+      "slot": 6,
+      "observed_slot": "6",
+      "invocations_before": 5,
+      "invocations_after": 6,
+      "selector_visible": false
+    },
+    {
+      "target": "dashboard",
+      "mode": "enabled",
+      "slot": 7,
+      "observed_slot": "7",
+      "invocations_before": 6,
+      "invocations_after": 7,
+      "selector_visible": false
+    },
+    {
+      "target": "dashboard",
+      "mode": "enabled",
+      "slot": 8,
+      "observed_slot": "8",
+      "invocations_before": 7,
+      "invocations_after": 8,
+      "selector_visible": false
+    },
+    {
+      "target": "dashboard",
+      "mode": "enabled",
+      "slot": 9,
+      "observed_slot": "9",
+      "invocations_before": 8,
+      "invocations_after": 9,
+      "selector_visible": false
+    },
+    {
+      "target": "dashboard",
+      "mode": "enabled",
+      "slot": 10,
+      "observed_slot": "10",
+      "invocations_before": 9,
+      "invocations_after": 10,
+      "selector_visible": false
+    },
+    {
+      "target": "shutdown_addon_item",
+      "mode": "disabled",
+      "invocations_before": 10,
+      "invocations_after": 10,
+      "selector_visible": true
+    },
+    {
+      "target": "shutdown_addon_item",
+      "mode": "missing",
+      "invocations_before": 10,
+      "invocations_after": 10,
+      "selector_visible": true
+    },
+    {
+      "target": "shutdown_addon_item",
+      "mode": "empty",
+      "invocations_before": 10,
+      "invocations_after": 10,
+      "selector_visible": true
+    },
+    {
+      "target": "shutdown_addon_item",
+      "mode": "enabled",
+      "invocations_before": 10,
+      "invocations_after": 11,
+      "selector_visible": false
+    }
+  ],
+  "production_sha256": {
+    "Includes_Dash_Addonpath_Fav.xml": "fe11e862ad464a6cb1686364eb0ea1525a2bd05667c1e0529d010c22030f8bc4",
+    "DialogButtonMenu.xml": "59416a6e5f5830687dd46954869ef5717e188e79c0ef80080e4ffcdd26c90b70"
+  },
+  "pid": 680,
+  "preview_focus_preserved": true,
+  "invocations": [
+    {
+      "argv": [
+        "default.py"
+      ]
+    },
+    {
+      "argv": [
+        "default.py"
+      ]
+    },
+    {
+      "argv": [
+        "default.py"
+      ]
+    },
+    {
+      "argv": [
+        "default.py"
+      ]
+    },
+    {
+      "argv": [
+        "default.py"
+      ]
+    },
+    {
+      "argv": [
+        "default.py"
+      ]
+    },
+    {
+      "argv": [
+        "default.py"
+      ]
+    },
+    {
+      "argv": [
+        "default.py"
+      ]
+    },
+    {
+      "argv": [
+        "default.py"
+      ]
+    },
+    {
+      "argv": [
+        "default.py"
+      ]
+    },
+    {
+      "argv": [
+        "default.py"
+      ]
+    }
+  ],
+  "cleanup": {
+    "process_exited": true,
+    "settings_restored": true,
+    "addon_databases_restored": true,
+    "fixture_removed": true,
+    "skin_xml_match": true
+  },
+  "errors": []
+}

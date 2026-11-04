@@ -1,0 +1,228 @@
+{
+  "checked_on": "2026-11-05",
+  "scope": "Ten user-selected Dashboard addon slots and the shutdown menu's single user-selected addon item. Not a change to power/device functions or external addons.",
+  "classification": "Native unavailable-addon dispatch defect; RunAddon remains supported.",
+  "baseline": {
+    "report": "../kodi22_runtime/addon_dispatch_before.json",
+    "result": "With an own installed but disabled fixture, two Dashboard clicks and the identified real shutdown addon item each dispatch RunAddon and produce an unknown-addon ERROR. No fixture invocation or selector."
+  },
+  "sources": [
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/interfaces/builtins/AddonBuiltins.cpp",
+      "finding": "RunAddon resolves enabled plugin/script/game entries; an unavailable ID reaches its error branch."
+    },
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/GUIInfoManager.cpp",
+      "finding": "System.AddonVersion accepts a dynamic Skin.String argument; runtime addon ID is resolved for its label provider."
+    },
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/guilib/guiinfo/AddonsGUIInfo.cpp",
+      "finding": "Addon version label uses enabled-only lookup."
+    },
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/master/xbmc/GUIInfoManager.cpp",
+      "finding": "Dynamic version argument handling retained in published master, as inspected in the preceding availability review."
+    },
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/master/xbmc/guilib/guiinfo/AddonsGUIInfo.cpp",
+      "finding": "Enabled-only version lookup retained in published master, as inspected in the preceding availability review."
+    }
+  ],
+  "implementation": {
+    "files": [
+      "xml/Includes_Dash_Addonpath_Fav.xml",
+      "xml/DialogButtonMenu.xml"
+    ],
+    "change": "Replace nonempty-ID dispatch predicates with dynamic enabled-addon version availability; keep existing typed selector as unavailable fallback. Preserve configuration-focus branch, selection filters and all power/device action text."
+  },
+  "native_evidence": "../kodi22_runtime/addon_dispatch_checks.json",
+  "native_cases": {
+    "dashboard_disabled_slots": "1 through 10",
+    "dashboard_enabled_slots": "1 through 10",
+    "dashboard_missing_and_empty_slots": [
+      1,
+      10
+    ],
+    "shutdown_addon_modes": [
+      "disabled",
+      "missing",
+      "empty",
+      "enabled"
+    ],
+    "total_recorded_rows": 28,
+    "enabled_fixture_invocations": 11,
+    "configuration_preview": "Own native list 8006 routes focus to 9000 without dispatch or selector.",
+    "errors": 0
+  },
+  "observation": "Production DashboardContent imported into a native WindowXML list, with slot text properties only for observation in the isolated include. Actual shutdownmenu uses the original three addon actions; its item receives one observation property. Immediately before Select the helper requires that marker, preventing selection of any power item. Observation XML restored after exit.",
+  "fixture": "Own temporary script.horizonzv.dispatchprobe writes a local marker only. No network/device/power action. Disabled via isolated Kodi registry; nonexistent-ID and empty-value cases are synthetic. Fixture removed and addon DB snapshot restored.",
+  "intermediate_attempt": {
+    "report": "../kodi22_runtime/addon_dispatch_before_slot_text_marker.json",
+    "finding": "A numeric slot marker '1' was read as localized 'Pictures'. Switched observation-only marker to slot-1 etc. No skin defect inferred. No ERROR and all cleanup checks passed."
+  },
+  "cleanup": "Own Kodi process exited, secured settings/addon DB files restored, own fixture moved out of addon directory, all isolated skin XML matches production.",
+  "other_selected_inspections": [
+    "Home GlobalSearch item already requires System.AddonIsEnabled.",
+    "ExtendedInfo buttons already require enabled provider in their visible include parameters.",
+    "Artist Slideshow timer start already requires enabled provider.",
+    "Selected resource-selector and ping entries already have enabled guards. These spot checks are not an exhaustive expanded availability audit."
+  ],
+  "limits": [
+    "Dashboard action contract test in an authored native window, not full Dashboard layout/navigation approval.",
+    "Enabled execution uses an authored script fixture, not every plugin/game/backend provider.",
+    "Missing/empty Dashboard cases sample slots 1/10; disabled and enabled cover all ten, with slot-marker assertions.",
+    "Configuration-focus test uses the actual production content in probe list 8006; not full configuration-window acceptance.",
+    "Selector opening/cancellation tested; no new selection, automatic installation or enablement.",
+    "No core boot, reboot-from-internal or other power command exercised or changed.",
+    "No general guarantee for rapid disablement races or arbitrary manual setting values."
+  ],
+  "package_review": "addon_dispatch_package_review.json",
+  "native_install_evidence": "../kodi22_runtime/addon_dispatch_install_checks.json",
+  "bounded_static_check": {
+    "tool": "tools/check_skin_compatibility.py",
+    "files_checked": 165,
+    "findings": []
+  },
+  "structural_review": {
+    "changed_condition_attributes": 22,
+    "all_other_xml_nodes_text_and_attributes_equal_to_base": true,
+    "changes": [
+      {
+        "file": "DialogButtonMenu.xml",
+        "action": "RunAddon($INFO[Skin.String(shutdown_addon1)])",
+        "before": "!String.IsEmpty(Skin.String(shutdown_addon1))",
+        "after": "!String.IsEmpty(System.AddonVersion(Skin.String(shutdown_addon1)))"
+      },
+      {
+        "file": "DialogButtonMenu.xml",
+        "action": "Skin.SetAddon(shutdown_addon1,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.executable,xbmc.addon.image,kodi.gameclient)",
+        "before": "String.IsEmpty(Skin.String(shutdown_addon1))",
+        "after": "String.IsEmpty(System.AddonVersion(Skin.String(shutdown_addon1)))"
+      },
+      {
+        "file": "Includes_Dash_Addonpath_Fav.xml",
+        "action": "RunAddon($INFO[Skin.String(addon_fav1)])",
+        "before": "!Control.HasFocus(8006)+!String.IsEmpty(Skin.String(addon_fav1))",
+        "after": "!Control.HasFocus(8006)+!String.IsEmpty(System.AddonVersion(Skin.String(addon_fav1)))"
+      },
+      {
+        "file": "Includes_Dash_Addonpath_Fav.xml",
+        "action": "Skin.SetAddon(addon_fav1,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.executable,xbmc.addon.image,kodi.gameclient)",
+        "before": "!Control.HasFocus(8006)+String.IsEmpty(Skin.String(addon_fav1))",
+        "after": "!Control.HasFocus(8006)+String.IsEmpty(System.AddonVersion(Skin.String(addon_fav1)))"
+      },
+      {
+        "file": "Includes_Dash_Addonpath_Fav.xml",
+        "action": "RunAddon($INFO[Skin.String(addon_fav2)])",
+        "before": "!Control.HasFocus(8006)+!String.IsEmpty(Skin.String(addon_fav2))",
+        "after": "!Control.HasFocus(8006)+!String.IsEmpty(System.AddonVersion(Skin.String(addon_fav2)))"
+      },
+      {
+        "file": "Includes_Dash_Addonpath_Fav.xml",
+        "action": "Skin.SetAddon(addon_fav2,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.executable,xbmc.addon.image,kodi.gameclient)",
+        "before": "!Control.HasFocus(8006)+String.IsEmpty(Skin.String(addon_fav2))",
+        "after": "!Control.HasFocus(8006)+String.IsEmpty(System.AddonVersion(Skin.String(addon_fav2)))"
+      },
+      {
+        "file": "Includes_Dash_Addonpath_Fav.xml",
+        "action": "RunAddon($INFO[Skin.String(addon_fav3)])",
+        "before": "!Control.HasFocus(8006)+!String.IsEmpty(Skin.String(addon_fav3))",
+        "after": "!Control.HasFocus(8006)+!String.IsEmpty(System.AddonVersion(Skin.String(addon_fav3)))"
+      },
+      {
+        "file": "Includes_Dash_Addonpath_Fav.xml",
+        "action": "Skin.SetAddon(addon_fav3,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.executable,xbmc.addon.image,kodi.gameclient)",
+        "before": "!Control.HasFocus(8006)+String.IsEmpty(Skin.String(addon_fav3))",
+        "after": "!Control.HasFocus(8006)+String.IsEmpty(System.AddonVersion(Skin.String(addon_fav3)))"
+      },
+      {
+        "file": "Includes_Dash_Addonpath_Fav.xml",
+        "action": "RunAddon($INFO[Skin.String(addon_fav4)])",
+        "before": "!Control.HasFocus(8006)+!String.IsEmpty(Skin.String(addon_fav4))",
+        "after": "!Control.HasFocus(8006)+!String.IsEmpty(System.AddonVersion(Skin.String(addon_fav4)))"
+      },
+      {
+        "file": "Includes_Dash_Addonpath_Fav.xml",
+        "action": "Skin.SetAddon(addon_fav4,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.executable,xbmc.addon.image,kodi.gameclient)",
+        "before": "!Control.HasFocus(8006)+String.IsEmpty(Skin.String(addon_fav4))",
+        "after": "!Control.HasFocus(8006)+String.IsEmpty(System.AddonVersion(Skin.String(addon_fav4)))"
+      },
+      {
+        "file": "Includes_Dash_Addonpath_Fav.xml",
+        "action": "RunAddon($INFO[Skin.String(addon_fav5)])",
+        "before": "!Control.HasFocus(8006)+!String.IsEmpty(Skin.String(addon_fav5))",
+        "after": "!Control.HasFocus(8006)+!String.IsEmpty(System.AddonVersion(Skin.String(addon_fav5)))"
+      },
+      {
+        "file": "Includes_Dash_Addonpath_Fav.xml",
+        "action": "Skin.SetAddon(addon_fav5,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.executable,xbmc.addon.image,kodi.gameclient)",
+        "before": "!Control.HasFocus(8006)+String.IsEmpty(Skin.String(addon_fav5))",
+        "after": "!Control.HasFocus(8006)+String.IsEmpty(System.AddonVersion(Skin.String(addon_fav5)))"
+      },
+      {
+        "file": "Includes_Dash_Addonpath_Fav.xml",
+        "action": "RunAddon($INFO[Skin.String(addon_fav6)])",
+        "before": "!Control.HasFocus(8006)+!String.IsEmpty(Skin.String(addon_fav6))",
+        "after": "!Control.HasFocus(8006)+!String.IsEmpty(System.AddonVersion(Skin.String(addon_fav6)))"
+      },
+      {
+        "file": "Includes_Dash_Addonpath_Fav.xml",
+        "action": "Skin.SetAddon(addon_fav6,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.executable,xbmc.addon.image,kodi.gameclient)",
+        "before": "!Control.HasFocus(8006)+String.IsEmpty(Skin.String(addon_fav6))",
+        "after": "!Control.HasFocus(8006)+String.IsEmpty(System.AddonVersion(Skin.String(addon_fav6)))"
+      },
+      {
+        "file": "Includes_Dash_Addonpath_Fav.xml",
+        "action": "RunAddon($INFO[Skin.String(addon_fav7)])",
+        "before": "!Control.HasFocus(8006)+!String.IsEmpty(Skin.String(addon_fav7))",
+        "after": "!Control.HasFocus(8006)+!String.IsEmpty(System.AddonVersion(Skin.String(addon_fav7)))"
+      },
+      {
+        "file": "Includes_Dash_Addonpath_Fav.xml",
+        "action": "Skin.SetAddon(addon_fav7,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.executable,xbmc.addon.image,kodi.gameclient)",
+        "before": "!Control.HasFocus(8006)+String.IsEmpty(Skin.String(addon_fav7))",
+        "after": "!Control.HasFocus(8006)+String.IsEmpty(System.AddonVersion(Skin.String(addon_fav7)))"
+      },
+      {
+        "file": "Includes_Dash_Addonpath_Fav.xml",
+        "action": "RunAddon($INFO[Skin.String(addon_fav8)])",
+        "before": "!Control.HasFocus(8006)+!String.IsEmpty(Skin.String(addon_fav8))",
+        "after": "!Control.HasFocus(8006)+!String.IsEmpty(System.AddonVersion(Skin.String(addon_fav8)))"
+      },
+      {
+        "file": "Includes_Dash_Addonpath_Fav.xml",
+        "action": "Skin.SetAddon(addon_fav8,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.executable,xbmc.addon.image,kodi.gameclient)",
+        "before": "!Control.HasFocus(8006)+String.IsEmpty(Skin.String(addon_fav8))",
+        "after": "!Control.HasFocus(8006)+String.IsEmpty(System.AddonVersion(Skin.String(addon_fav8)))"
+      },
+      {
+        "file": "Includes_Dash_Addonpath_Fav.xml",
+        "action": "RunAddon($INFO[Skin.String(addon_fav9)])",
+        "before": "!Control.HasFocus(8006)+!String.IsEmpty(Skin.String(addon_fav9))",
+        "after": "!Control.HasFocus(8006)+!String.IsEmpty(System.AddonVersion(Skin.String(addon_fav9)))"
+      },
+      {
+        "file": "Includes_Dash_Addonpath_Fav.xml",
+        "action": "Skin.SetAddon(addon_fav9,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.executable,xbmc.addon.image,kodi.gameclient)",
+        "before": "!Control.HasFocus(8006)+String.IsEmpty(Skin.String(addon_fav9))",
+        "after": "!Control.HasFocus(8006)+String.IsEmpty(System.AddonVersion(Skin.String(addon_fav9)))"
+      },
+      {
+        "file": "Includes_Dash_Addonpath_Fav.xml",
+        "action": "RunAddon($INFO[Skin.String(addon_fav10)])",
+        "before": "!Control.HasFocus(8006)+!String.IsEmpty(Skin.String(addon_fav10))",
+        "after": "!Control.HasFocus(8006)+!String.IsEmpty(System.AddonVersion(Skin.String(addon_fav10)))"
+      },
+      {
+        "file": "Includes_Dash_Addonpath_Fav.xml",
+        "action": "Skin.SetAddon(addon_fav10,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.executable,xbmc.addon.image,kodi.gameclient)",
+        "before": "!Control.HasFocus(8006)+String.IsEmpty(Skin.String(addon_fav10))",
+        "after": "!Control.HasFocus(8006)+String.IsEmpty(System.AddonVersion(Skin.String(addon_fav10)))"
+      }
+    ]
+  },
+  "tested_runtime_sha256": {
+    "DialogButtonMenu.xml": "59416a6e5f5830687dd46954869ef5717e188e79c0ef80080e4ffcdd26c90b70",
+    "Includes_Dash_Addonpath_Fav.xml": "fe11e862ad464a6cb1686364eb0ea1525a2bd05667c1e0529d010c22030f8bc4"
+  }
+}

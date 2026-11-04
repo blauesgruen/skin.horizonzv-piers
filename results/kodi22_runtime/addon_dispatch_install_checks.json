@@ -1,0 +1,68 @@
+{
+  "scope": "Native InstallFromZip with no pre-existing skin directory, followed by a separate restart into the packaged skin. Retained test skin settings, not an empty first-run user profile.",
+  "archive": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-addon-dispatch-package-7a7c7ec34f82493980a59829c3a66d02\\skin.horizonzv-1.22.0.1.zip",
+  "archive_sha256": "0cd92ec9d0f536cacbfcd79c16b2894519816fdcb6679cd433f88a34f7686a0c",
+  "pids": [
+    27820,
+    25736
+  ],
+  "stages": [
+    {
+      "phase": "native_zip_install",
+      "pid": 27820,
+      "skin_directory_absent_before_install": true,
+      "addon_unavailable_before_install": true,
+      "source_selection": [
+        "C:",
+        "D: (Anwendungen)",
+        "E: (eigene Dateien)",
+        "F: (Labor)",
+        "G: (Games)",
+        "H: (Dateien neu)",
+        "Home folder",
+        "HorizonzV Testpaket"
+      ],
+      "file_selection": [
+        "..",
+        "skin.horizonzv-1.22.0.1.zip"
+      ],
+      "addon_details": {
+        "addonid": "skin.horizonzv",
+        "enabled": true,
+        "type": "xbmc.gui.skin",
+        "version": "1.22.0.1"
+      },
+      "post_install_confirmation_observed": true,
+      "post_install_confirmation_dismissed": true,
+      "skin_load_log": [
+        "2026-11-05 00:49:49.103 T:9372     info <general>:   load skin from: C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\addons\\skin.estuary\\ (version: 4.1.0)"
+      ],
+      "install_log": [
+        "2026-11-05 00:49:47.455 T:9372    debug <general>: CAddonDatabase: skin.horizonzv has been uninstalled.",
+        "2026-11-05 00:49:51.880 T:9372    debug <general>: CAddonInstaller: installing from zip 'C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-addon-dispatch-package-7a7c7ec34f82493980a59829c3a66d02\\skin.horizonzv-1.22.0.1.zip'",
+        "2026-11-05 00:49:52.761 T:8040    debug <general>: ADDONS: unpinned zip installed Addon: [skin.horizonzv] Version: [1.22.0.1]"
+      ],
+      "errors": []
+    },
+    {
+      "phase": "restart_packaged_skin",
+      "pid": 25736,
+      "home_active": true,
+      "aspect": "16:9",
+      "skin_load_log": [
+        "2026-11-05 00:50:03.650 T:11560    info <general>:   load skin from: C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\portable_data\\addons\\skin.horizonzv\\ (version: 1.22.0.1)"
+      ],
+      "install_log": [],
+      "errors": []
+    }
+  ],
+  "fresh_install_files": 294,
+  "all_installed_files_equal_zip": true,
+  "packaged_files_after_restart_equal_zip": true,
+  "cleanup": {
+    "owned_process_exited": true,
+    "original_skin_restored": true,
+    "profile_settings_and_sources_restored": true,
+    "all_database_files_restored": true
+  }
+}

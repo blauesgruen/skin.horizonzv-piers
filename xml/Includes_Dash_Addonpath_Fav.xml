@@ -156,8 +156,8 @@
                 <label>$INFO[Skin.String(addon_fav1)]</label>
                 <label2>$INFO[Skin.String(addon_fav1_label)]</label2>
                 <onclick condition="Control.HasFocus(8006)">Control.SetFocus(9000)</onclick>
-                <onclick condition="!Control.HasFocus(8006)+!String.IsEmpty(Skin.String(addon_fav1))">RunAddon($INFO[Skin.String(addon_fav1)])</onclick>
-                <onclick condition="!Control.HasFocus(8006)+String.IsEmpty(Skin.String(addon_fav1))">Skin.SetAddon(addon_fav1,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.executable,xbmc.addon.image,kodi.gameclient)</onclick>
+                <onclick condition="!Control.HasFocus(8006)+!String.IsEmpty(System.AddonVersion(Skin.String(addon_fav1)))">RunAddon($INFO[Skin.String(addon_fav1)])</onclick>
+                <onclick condition="!Control.HasFocus(8006)+String.IsEmpty(System.AddonVersion(Skin.String(addon_fav1)))">Skin.SetAddon(addon_fav1,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.executable,xbmc.addon.image,kodi.gameclient)</onclick>
                 <icon>$INFO[System.AddonIcon(Skin.String(addon_fav1))]</icon>
                 <thumb>$INFO[Skin.String(addon_fav1_icon)]</thumb>
             </item>
@@ -165,8 +165,8 @@
                 <label>$INFO[Skin.String(addon_fav2)]</label>
                 <label2>$INFO[Skin.String(addon_fav2_label)]</label2>
                 <onclick condition="Control.HasFocus(8006)">Control.SetFocus(9000)</onclick>
-                <onclick condition="!Control.HasFocus(8006)+!String.IsEmpty(Skin.String(addon_fav2))">RunAddon($INFO[Skin.String(addon_fav2)])</onclick>
-                <onclick condition="!Control.HasFocus(8006)+String.IsEmpty(Skin.String(addon_fav2))">Skin.SetAddon(addon_fav2,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.executable,xbmc.addon.image,kodi.gameclient)</onclick>
+                <onclick condition="!Control.HasFocus(8006)+!String.IsEmpty(System.AddonVersion(Skin.String(addon_fav2)))">RunAddon($INFO[Skin.String(addon_fav2)])</onclick>
+                <onclick condition="!Control.HasFocus(8006)+String.IsEmpty(System.AddonVersion(Skin.String(addon_fav2)))">Skin.SetAddon(addon_fav2,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.executable,xbmc.addon.image,kodi.gameclient)</onclick>
                 <icon>$INFO[System.AddonIcon(Skin.String(addon_fav2))]</icon>
                 <thumb>$INFO[Skin.String(addon_fav2_icon)]</thumb>
             </item>
@@ -174,8 +174,8 @@
                 <label>$INFO[Skin.String(addon_fav3)]</label>
                 <label2>$INFO[Skin.String(addon_fav3_label)]</label2>
                 <onclick condition="Control.HasFocus(8006)">Control.SetFocus(9000)</onclick>
-                <onclick condition="!Control.HasFocus(8006)+!String.IsEmpty(Skin.String(addon_fav3))">RunAddon($INFO[Skin.String(addon_fav3)])</onclick>
-                <onclick condition="!Control.HasFocus(8006)+String.IsEmpty(Skin.String(addon_fav3))">Skin.SetAddon(addon_fav3,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.executable,xbmc.addon.image,kodi.gameclient)</onclick>
+                <onclick condition="!Control.HasFocus(8006)+!String.IsEmpty(System.AddonVersion(Skin.String(addon_fav3)))">RunAddon($INFO[Skin.String(addon_fav3)])</onclick>
+                <onclick condition="!Control.HasFocus(8006)+String.IsEmpty(System.AddonVersion(Skin.String(addon_fav3)))">Skin.SetAddon(addon_fav3,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.executable,xbmc.addon.image,kodi.gameclient)</onclick>
                 <icon>$INFO[System.AddonIcon(Skin.String(addon_fav3))]</icon>
                 <thumb>$INFO[Skin.String(addon_fav3_icon)]</thumb>
             </item>
@@ -183,8 +183,8 @@
                 <label>$INFO[Skin.String(addon_fav4)]</label>
                 <label2>$INFO[Skin.String(addon_fav4_label)]</label2>
                 <onclick condition="Control.HasFocus(8006)">Control.SetFocus(9000)</onclick>
-                <onclick condition="!Control.HasFocus(8006)+!String.IsEmpty(Skin.String(addon_fav4))">RunAddon($INFO[Skin.String(addon_fav4)])</onclick>
-                <onclick condition="!Control.HasFocus(8006)+String.IsEmpty(Skin.String(addon_fav4))">Skin.SetAddon(addon_fav4,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.executable,xbmc.addon.image,kodi.gameclient)</onclick>
+                <onclick condition="!Control.HasFocus(8006)+!String.IsEmpty(System.AddonVersion(Skin.String(addon_fav4)))">RunAddon($INFO[Skin.String(addon_fav4)])</onclick>
+                <onclick condition="!Control.HasFocus(8006)+String.IsEmpty(System.AddonVersion(Skin.String(addon_fav4)))">Skin.SetAddon(addon_fav4,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.executable,xbmc.addon.image,kodi.gameclient)</onclick>
                 <icon>$INFO[System.AddonIcon(Skin.String(addon_fav4))]</icon>
                 <thumb>$INFO[Skin.String(addon_fav4_icon)]</thumb>
             </item>
@@ -192,8 +192,8 @@
                 <label>$INFO[Skin.String(addon_fav5)]</label>
                 <label2>$INFO[Skin.String(addon_fav5_label)]</label2>
                 <onclick condition="Control.HasFocus(8006)">Control.SetFocus(9000)</onclick>
-                <onclick condition="!Control.HasFocus(8006)+!String.IsEmpty(Skin.String(addon_fav5))">RunAddon($INFO[Skin.String(addon_fav5)])</onclick>
-                <onclick condition="!Control.HasFocus(8006)+String.IsEmpty(Skin.String(addon_fav5))">Skin.SetAddon(addon_fav5,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.executable,xbmc.addon.image,kodi.gameclient)</onclick>
+                <onclick condition="!Control.HasFocus(8006)+!String.IsEmpty(System.AddonVersion(Skin.String(addon_fav5)))">RunAddon($INFO[Skin.String(addon_fav5)])</onclick>
+                <onclick condition="!Control.HasFocus(8006)+String.IsEmpty(System.AddonVersion(Skin.String(addon_fav5)))">Skin.SetAddon(addon_fav5,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.executable,xbmc.addon.image,kodi.gameclient)</onclick>
                 <icon>$INFO[System.AddonIcon(Skin.String(addon_fav5))]</icon>
                 <thumb>$INFO[Skin.String(addon_fav5_icon)]</thumb>
             </item>
@@ -201,8 +201,8 @@
                 <label>$INFO[Skin.String(addon_fav6)]</label>
                 <label2>$INFO[Skin.String(addon_fav6_label)]</label2>
                 <onclick condition="Control.HasFocus(8006)">Control.SetFocus(9000)</onclick>
-                <onclick condition="!Control.HasFocus(8006)+!String.IsEmpty(Skin.String(addon_fav6))">RunAddon($INFO[Skin.String(addon_fav6)])</onclick>
-                <onclick condition="!Control.HasFocus(8006)+String.IsEmpty(Skin.String(addon_fav6))">Skin.SetAddon(addon_fav6,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.executable,xbmc.addon.image,kodi.gameclient)</onclick>
+                <onclick condition="!Control.HasFocus(8006)+!String.IsEmpty(System.AddonVersion(Skin.String(addon_fav6)))">RunAddon($INFO[Skin.String(addon_fav6)])</onclick>
+                <onclick condition="!Control.HasFocus(8006)+String.IsEmpty(System.AddonVersion(Skin.String(addon_fav6)))">Skin.SetAddon(addon_fav6,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.executable,xbmc.addon.image,kodi.gameclient)</onclick>
                 <icon>$INFO[System.AddonIcon(Skin.String(addon_fav6))]</icon>
                 <thumb>$INFO[Skin.String(addon_fav6_icon)]</thumb>
             </item>
@@ -210,8 +210,8 @@
                 <label>$INFO[Skin.String(addon_fav7)]</label>
                 <label2>$INFO[Skin.String(addon_fav7_label)]</label2>
                 <onclick condition="Control.HasFocus(8006)">Control.SetFocus(9000)</onclick>
-                <onclick condition="!Control.HasFocus(8006)+!String.IsEmpty(Skin.String(addon_fav7))">RunAddon($INFO[Skin.String(addon_fav7)])</onclick>
-                <onclick condition="!Control.HasFocus(8006)+String.IsEmpty(Skin.String(addon_fav7))">Skin.SetAddon(addon_fav7,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.executable,xbmc.addon.image,kodi.gameclient)</onclick>
+                <onclick condition="!Control.HasFocus(8006)+!String.IsEmpty(System.AddonVersion(Skin.String(addon_fav7)))">RunAddon($INFO[Skin.String(addon_fav7)])</onclick>
+                <onclick condition="!Control.HasFocus(8006)+String.IsEmpty(System.AddonVersion(Skin.String(addon_fav7)))">Skin.SetAddon(addon_fav7,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.executable,xbmc.addon.image,kodi.gameclient)</onclick>
                 <icon>$INFO[System.AddonIcon(Skin.String(addon_fav7))]</icon>
                 <thumb>$INFO[Skin.String(addon_fav7_icon)]</thumb>
             </item>
@@ -219,8 +219,8 @@
                 <label>$INFO[Skin.String(addon_fav8)]</label>
                 <label2>$INFO[Skin.String(addon_fav8_label)]</label2>
                 <onclick condition="Control.HasFocus(8006)">Control.SetFocus(9000)</onclick>
-                <onclick condition="!Control.HasFocus(8006)+!String.IsEmpty(Skin.String(addon_fav8))">RunAddon($INFO[Skin.String(addon_fav8)])</onclick>
-                <onclick condition="!Control.HasFocus(8006)+String.IsEmpty(Skin.String(addon_fav8))">Skin.SetAddon(addon_fav8,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.executable,xbmc.addon.image,kodi.gameclient)</onclick>
+                <onclick condition="!Control.HasFocus(8006)+!String.IsEmpty(System.AddonVersion(Skin.String(addon_fav8)))">RunAddon($INFO[Skin.String(addon_fav8)])</onclick>
+                <onclick condition="!Control.HasFocus(8006)+String.IsEmpty(System.AddonVersion(Skin.String(addon_fav8)))">Skin.SetAddon(addon_fav8,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.executable,xbmc.addon.image,kodi.gameclient)</onclick>
                 <icon>$INFO[System.AddonIcon(Skin.String(addon_fav8))]</icon>
                 <thumb>$INFO[Skin.String(addon_fav8_icon)]</thumb>
             </item>
@@ -228,8 +228,8 @@
                 <label>$INFO[Skin.String(addon_fav9)]</label>
                 <label2>$INFO[Skin.String(addon_fav9_label)]</label2>
                 <onclick condition="Control.HasFocus(8006)">Control.SetFocus(9000)</onclick>
-                <onclick condition="!Control.HasFocus(8006)+!String.IsEmpty(Skin.String(addon_fav9))">RunAddon($INFO[Skin.String(addon_fav9)])</onclick>
-                <onclick condition="!Control.HasFocus(8006)+String.IsEmpty(Skin.String(addon_fav9))">Skin.SetAddon(addon_fav9,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.executable,xbmc.addon.image,kodi.gameclient)</onclick>
+                <onclick condition="!Control.HasFocus(8006)+!String.IsEmpty(System.AddonVersion(Skin.String(addon_fav9)))">RunAddon($INFO[Skin.String(addon_fav9)])</onclick>
+                <onclick condition="!Control.HasFocus(8006)+String.IsEmpty(System.AddonVersion(Skin.String(addon_fav9)))">Skin.SetAddon(addon_fav9,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.executable,xbmc.addon.image,kodi.gameclient)</onclick>
                 <icon>$INFO[System.AddonIcon(Skin.String(addon_fav9))]</icon>
                 <thumb>$INFO[Skin.String(addon_fav9_icon)]</thumb>
             </item>
@@ -237,8 +237,8 @@
                 <label>$INFO[Skin.String(addon_fav10)]</label>
                 <label2>$INFO[Skin.String(addon_fav10_label)]</label2>
                 <onclick condition="Control.HasFocus(8006)">Control.SetFocus(9000)</onclick>
-                <onclick condition="!Control.HasFocus(8006)+!String.IsEmpty(Skin.String(addon_fav10))">RunAddon($INFO[Skin.String(addon_fav10)])</onclick>
-                <onclick condition="!Control.HasFocus(8006)+String.IsEmpty(Skin.String(addon_fav10))">Skin.SetAddon(addon_fav10,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.executable,xbmc.addon.image,kodi.gameclient)</onclick>
+                <onclick condition="!Control.HasFocus(8006)+!String.IsEmpty(System.AddonVersion(Skin.String(addon_fav10)))">RunAddon($INFO[Skin.String(addon_fav10)])</onclick>
+                <onclick condition="!Control.HasFocus(8006)+String.IsEmpty(System.AddonVersion(Skin.String(addon_fav10)))">Skin.SetAddon(addon_fav10,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.executable,xbmc.addon.image,kodi.gameclient)</onclick>
                 <icon>$INFO[System.AddonIcon(Skin.String(addon_fav10))]</icon>
                 <thumb>$INFO[Skin.String(addon_fav10_icon)]</thumb>
             </item>

@@ -196,8 +196,8 @@
 						<item>
 							<label>$VAR[shutdown_addon_var]</label>
 							<onclick>Dialog.Close(all)</onclick>
-							<onclick condition="!String.IsEmpty(Skin.String(shutdown_addon1))">RunAddon($INFO[Skin.String(shutdown_addon1)])</onclick>
-							<onclick condition="String.IsEmpty(Skin.String(shutdown_addon1))">Skin.SetAddon(shutdown_addon1,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.executable,xbmc.addon.image,kodi.gameclient)</onclick>
+							<onclick condition="!String.IsEmpty(System.AddonVersion(Skin.String(shutdown_addon1)))">RunAddon($INFO[Skin.String(shutdown_addon1)])</onclick>
+							<onclick condition="String.IsEmpty(System.AddonVersion(Skin.String(shutdown_addon1)))">Skin.SetAddon(shutdown_addon1,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.executable,xbmc.addon.image,kodi.gameclient)</onclick>
 							<visible>Skin.HasSetting(shutdown_addon)</visible>
 						</item>
 						<item>
