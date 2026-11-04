@@ -14,5 +14,7 @@
     "No fresh ZIP installation test.",
     "Includes current runtime source; results and tools excluded.",
     "No published archive overwritten."
-  ]
+  ],
+  "later_native_install_evidence": "../kodi22_runtime/package_install_checks.json",
+  "historical_limit_note": "The no-install-test limit above describes the original ZIP comparison checkpoint. A later native fresh installation and restart are now recorded separately."
 }

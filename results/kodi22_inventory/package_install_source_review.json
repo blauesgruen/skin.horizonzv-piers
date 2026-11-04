@@ -1,0 +1,83 @@
+{
+  "checked_on": "2026-11-04",
+  "scope": "Native Kodi skin ZIP installation ordering; no Kodi or external addon changes.",
+  "sources": [
+    {
+      "source": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/interfaces/builtins/AddonBuiltins.cpp",
+      "matches": [
+        {
+          "line": 347,
+          "text": "static int InstallFromZip(const std::vector<std::string>& params)"
+        },
+        {
+          "line": 349,
+          "text": "CGUIWindowAddonBrowser::InstallFromZip();"
+        },
+        {
+          "line": 515,
+          "text": "{\"installfromzip\",             { \"Open the install from zip dialog\", 0, InstallFromZip}},"
+        }
+      ]
+    },
+    {
+      "source": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/addons/gui/GUIWindowAddonBrowser.cpp",
+      "matches": [
+        {
+          "line": 202,
+          "text": "void CGUIWindowAddonBrowser::InstallFromZip()"
+        },
+        {
+          "line": 216,
+          "text": "std::vector<CMediaSource> shares = *CMediaSourceSettings::GetInstance().GetSources(\"files\");"
+        },
+        {
+          "line": 220,
+          "text": "if (CGUIDialogFileBrowser::ShowAndGetFile("
+        },
+        {
+          "line": 224,
+          "text": "CAddonInstaller::GetInstance().InstallFromZip(path);"
+        }
+      ]
+    },
+    {
+      "source": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/addons/AddonInstaller.cpp",
+      "matches": [
+        {
+          "line": 489,
+          "text": "bool CAddonInstaller::InstallFromZip(const std::string &path)"
+        },
+        {
+          "line": 855,
+          "text": "ADDON::OnPostInstall(m_addon, m_isUpdate, IsModal());"
+        },
+        {
+          "line": 892,
+          "text": "CServiceBroker::GetAddonMgr().SetAddonOrigin(m_addon->ID(), origin, m_isUpdate);"
+        }
+      ]
+    },
+    {
+      "source": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/addons/Skin.cpp",
+      "matches": [
+        {
+          "line": 424,
+          "text": "void CSkinInfo::OnPostInstall(bool update, bool modal)"
+        },
+        {
+          "line": 433,
+          "text": "if (IsInUse() || (!update && !modal &&"
+        },
+        {
+          "line": 434,
+          "text": "HELPERS::ShowYesNoDialogText(CVariant{Name()}, CVariant{24099}) =="
+        }
+      ]
+    }
+  ],
+  "interpretation": "InstallFromZip opens the native file browser. The installer loads/registers the addon before the skin's OnPostInstall confirmation. A directory/registration check alone is too early to quit.",
+  "limits": [
+    "Source review does not itself prove native installation success; see the separate runtime report.",
+    "A failed first helper attempt and its owned-process recovery are retained separately."
+  ]
+}
