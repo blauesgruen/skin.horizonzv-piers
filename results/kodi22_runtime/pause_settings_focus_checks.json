@@ -1,0 +1,517 @@
+{
+  "before": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Skin.HasSetting(color_blue)": false,
+      "Skin.HasSetting(color_custom)": false,
+      "Skin.HasSetting(color_darkgold)": false,
+      "Skin.HasSetting(color_green)": false,
+      "Skin.HasSetting(color_grey)": true,
+      "Skin.HasSetting(color_orange)": false,
+      "Skin.HasSetting(color_red)": false,
+      "Skin.HasSetting(color_selected)": false,
+      "Skin.HasSetting(color_selectedhome)": false,
+      "Skin.HasSetting(pause_light)": false,
+      "Skin.HasSetting(pause_light_hideinfos)": false
+    }
+  },
+  "navigation": [
+    {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "Animations (high cpu load) ( )"
+        },
+        "currentwindow": {
+          "id": 10035,
+          "label": "Skin Settings"
+        }
+      }
+    },
+    {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "Navigation information ( )"
+        },
+        "currentwindow": {
+          "id": 10035,
+          "label": "Skin Settings"
+        }
+      }
+    },
+    {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "Hide date display ( )"
+        },
+        "currentwindow": {
+          "id": 10035,
+          "label": "Skin Settings"
+        }
+      }
+    },
+    {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "Fanart ( )"
+        },
+        "currentwindow": {
+          "id": 10035,
+          "label": "Skin Settings"
+        }
+      }
+    },
+    {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "Just a background image ( )"
+        },
+        "currentwindow": {
+          "id": 10035,
+          "label": "Skin Settings"
+        }
+      }
+    },
+    {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "Fanart-Diashow ( )"
+        },
+        "currentwindow": {
+          "id": 10035,
+          "label": "Skin Settings"
+        }
+      }
+    },
+    {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "Dim background"
+        },
+        "currentwindow": {
+          "id": 10035,
+          "label": "Skin Settings"
+        }
+      }
+    },
+    {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "Color Accents"
+        },
+        "currentwindow": {
+          "id": 10035,
+          "label": "Skin Settings"
+        }
+      }
+    },
+    {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "Page Count (*)"
+        },
+        "currentwindow": {
+          "id": 10035,
+          "label": "Skin Settings"
+        }
+      }
+    },
+    {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "abgerundete Ecken ( )"
+        },
+        "currentwindow": {
+          "id": 10035,
+          "label": "Skin Settings"
+        }
+      }
+    },
+    {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "Neon Slide ( )"
+        },
+        "currentwindow": {
+          "id": 10035,
+          "label": "Skin Settings"
+        }
+      }
+    },
+    {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "Background theme"
+        },
+        "currentwindow": {
+          "id": 10035,
+          "label": "Skin Settings"
+        }
+      }
+    },
+    {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "Structur in mainmenu ( )"
+        },
+        "currentwindow": {
+          "id": 10035,
+          "label": "Skin Settings"
+        }
+      }
+    },
+    {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "Player Controls (*)"
+        },
+        "currentwindow": {
+          "id": 10035,
+          "label": "Skin Settings"
+        }
+      }
+    },
+    {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "Small Weather-Information (*)"
+        },
+        "currentwindow": {
+          "id": 10035,
+          "label": "Skin Settings"
+        }
+      }
+    },
+    {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "Disable radio view ( )"
+        },
+        "currentwindow": {
+          "id": 10035,
+          "label": "Skin Settings"
+        }
+      }
+    },
+    {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "Music visualisation"
+        },
+        "currentwindow": {
+          "id": 10035,
+          "label": "Skin Settings"
+        }
+      }
+    },
+    {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "Song information ( )"
+        },
+        "currentwindow": {
+          "id": 10035,
+          "label": "Skin Settings"
+        }
+      }
+    },
+    {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "Lightweight version of the break screen ( )"
+        },
+        "currentwindow": {
+          "id": 10035,
+          "label": "Skin Settings"
+        }
+      }
+    }
+  ],
+  "focused_870": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "currentcontrol": {
+        "label": "Lightweight version of the break screen ( )"
+      },
+      "currentwindow": {
+        "id": 10035,
+        "label": "Skin Settings"
+      }
+    }
+  },
+  "after_focus_bools": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Skin.HasSetting(color_blue)": false,
+      "Skin.HasSetting(color_custom)": false,
+      "Skin.HasSetting(color_darkgold)": false,
+      "Skin.HasSetting(color_green)": false,
+      "Skin.HasSetting(color_grey)": true,
+      "Skin.HasSetting(color_orange)": false,
+      "Skin.HasSetting(color_red)": false,
+      "Skin.HasSetting(color_selected)": false,
+      "Skin.HasSetting(color_selectedhome)": false,
+      "Skin.HasSetting(pause_light)": false,
+      "Skin.HasSetting(pause_light_hideinfos)": false
+    }
+  },
+  "pause_enabled": {
+    "gui": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "Lightweight version of the break screen (*)"
+        },
+        "currentwindow": {
+          "id": 10035,
+          "label": "Skin Settings"
+        }
+      }
+    },
+    "bools": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.HasSetting(color_blue)": false,
+        "Skin.HasSetting(color_custom)": false,
+        "Skin.HasSetting(color_darkgold)": false,
+        "Skin.HasSetting(color_green)": false,
+        "Skin.HasSetting(color_grey)": true,
+        "Skin.HasSetting(color_orange)": false,
+        "Skin.HasSetting(color_red)": false,
+        "Skin.HasSetting(color_selected)": false,
+        "Skin.HasSetting(color_selectedhome)": false,
+        "Skin.HasSetting(pause_light)": true,
+        "Skin.HasSetting(pause_light_hideinfos)": false
+      }
+    }
+  },
+  "focused_872": {
+    "gui": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "Hide video details (*)"
+        },
+        "currentwindow": {
+          "id": 10035,
+          "label": "Skin Settings"
+        }
+      }
+    },
+    "bools": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.HasSetting(color_blue)": false,
+        "Skin.HasSetting(color_custom)": false,
+        "Skin.HasSetting(color_darkgold)": false,
+        "Skin.HasSetting(color_green)": false,
+        "Skin.HasSetting(color_grey)": true,
+        "Skin.HasSetting(color_orange)": false,
+        "Skin.HasSetting(color_red)": false,
+        "Skin.HasSetting(color_selected)": false,
+        "Skin.HasSetting(color_selectedhome)": false,
+        "Skin.HasSetting(pause_light)": true,
+        "Skin.HasSetting(pause_light_hideinfos)": false
+      }
+    }
+  },
+  "hideinfo_toggled": {
+    "gui": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "Hide video details ( )"
+        },
+        "currentwindow": {
+          "id": 10035,
+          "label": "Skin Settings"
+        }
+      }
+    },
+    "bools": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.HasSetting(color_blue)": false,
+        "Skin.HasSetting(color_custom)": false,
+        "Skin.HasSetting(color_darkgold)": false,
+        "Skin.HasSetting(color_green)": false,
+        "Skin.HasSetting(color_grey)": true,
+        "Skin.HasSetting(color_orange)": false,
+        "Skin.HasSetting(color_red)": false,
+        "Skin.HasSetting(color_selected)": false,
+        "Skin.HasSetting(color_selectedhome)": false,
+        "Skin.HasSetting(pause_light)": true,
+        "Skin.HasSetting(pause_light_hideinfos)": true
+      }
+    }
+  },
+  "unfocused_872": {
+    "gui": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "show gr\u00f6\u00dfere Schrift im Plot ( )"
+        },
+        "currentwindow": {
+          "id": 10035,
+          "label": "Skin Settings"
+        }
+      }
+    },
+    "bools": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.HasSetting(color_blue)": false,
+        "Skin.HasSetting(color_custom)": false,
+        "Skin.HasSetting(color_darkgold)": false,
+        "Skin.HasSetting(color_green)": false,
+        "Skin.HasSetting(color_grey)": true,
+        "Skin.HasSetting(color_orange)": false,
+        "Skin.HasSetting(color_red)": false,
+        "Skin.HasSetting(color_selected)": false,
+        "Skin.HasSetting(color_selectedhome)": false,
+        "Skin.HasSetting(pause_light)": true,
+        "Skin.HasSetting(pause_light_hideinfos)": true
+      }
+    }
+  },
+  "refocused_870": {
+    "gui": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "Lightweight version of the break screen (*)"
+        },
+        "currentwindow": {
+          "id": 10035,
+          "label": "Skin Settings"
+        }
+      }
+    },
+    "bools": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.HasSetting(color_blue)": false,
+        "Skin.HasSetting(color_custom)": false,
+        "Skin.HasSetting(color_darkgold)": false,
+        "Skin.HasSetting(color_green)": false,
+        "Skin.HasSetting(color_grey)": true,
+        "Skin.HasSetting(color_orange)": false,
+        "Skin.HasSetting(color_red)": false,
+        "Skin.HasSetting(color_selected)": false,
+        "Skin.HasSetting(color_selectedhome)": false,
+        "Skin.HasSetting(pause_light)": true,
+        "Skin.HasSetting(pause_light_hideinfos)": false
+      }
+    }
+  },
+  "restored": {
+    "gui": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "Lightweight version of the break screen ( )"
+        },
+        "currentwindow": {
+          "id": 10035,
+          "label": "Skin Settings"
+        }
+      }
+    },
+    "bools": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.HasSetting(color_blue)": false,
+        "Skin.HasSetting(color_custom)": false,
+        "Skin.HasSetting(color_darkgold)": false,
+        "Skin.HasSetting(color_green)": false,
+        "Skin.HasSetting(color_grey)": true,
+        "Skin.HasSetting(color_orange)": false,
+        "Skin.HasSetting(color_red)": false,
+        "Skin.HasSetting(color_selected)": false,
+        "Skin.HasSetting(color_selectedhome)": false,
+        "Skin.HasSetting(pause_light)": false,
+        "Skin.HasSetting(pause_light_hideinfos)": false
+      }
+    }
+  },
+  "after_video_bools": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Skin.HasSetting(color_blue)": false,
+      "Skin.HasSetting(color_custom)": false,
+      "Skin.HasSetting(color_darkgold)": false,
+      "Skin.HasSetting(color_green)": false,
+      "Skin.HasSetting(color_grey)": true,
+      "Skin.HasSetting(color_orange)": false,
+      "Skin.HasSetting(color_red)": false,
+      "Skin.HasSetting(color_selected)": false,
+      "Skin.HasSetting(color_selectedhome)": false,
+      "Skin.HasSetting(pause_light)": false,
+      "Skin.HasSetting(pause_light_hideinfos)": false
+    }
+  },
+  "players_after": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": []
+  },
+  "quit": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": "OK"
+  }
+}

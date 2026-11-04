@@ -1,0 +1,31 @@
+{
+  "scope": "Native MusicOSD lyrics entry over real Visualisation with unchanged CU LRC 6.7.6 and authored local LRC",
+  "verified_addon_files": {
+    "script.cu.lrclyrics": 140,
+    "script.module.beautifulsoup4": 13,
+    "script.module.soupsieve": 10,
+    "script.module.mutagen": 60
+  },
+  "observations": [],
+  "pid": 8812,
+  "failure": "AssertionError({'expected': True, 'actual': False})",
+  "failure_trace": "Traceback (most recent call last):\n  File \"D:\\Program Files\\Kodi22\\portable_data\\addons\\skin.horizonzv-piers\\results\\kodi22_runtime\\run_lyrics_visualisation_probe.py\", line 152, in main\n    wait(lambda: boolean(\"Window.IsVisible(visualisation)\"), True)\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Program Files\\Kodi22\\portable_data\\addons\\skin.horizonzv-piers\\results\\kodi22_runtime\\run_lyrics_visualisation_probe.py\", line 117, in wait\n    raise AssertionError({\"expected\": expected, \"actual\": value})\nAssertionError: {'expected': True, 'actual': False}\n",
+  "failure_state": {
+    "MusicPlayer.Artist": "HorizonzV Audit Artist",
+    "MusicPlayer.Title": "HorizonzV Lyrics Audit",
+    "System.CurrentControlID": "9000",
+    "System.CurrentWindow": "Home",
+    "Window(Home).Property(culrc.guirunning)": "",
+    "Window(Home).Property(culrc.lyrics)": "",
+    "Window(Home).Property(culrc.running)": "",
+    "Window(Home).Property(culrc.source)": ""
+  },
+  "cleanup": {
+    "process_exited": true,
+    "provider_settings_restored": true,
+    "profile_restored": true,
+    "all_test_xml_match_production": true,
+    "all_copied_addon_files_unchanged": true,
+    "all_standard_source_files_unchanged": true
+  }
+}

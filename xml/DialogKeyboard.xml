@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol always="true">300</defaultcontrol>
+	<onload>ClearProperty(HorizonzV.AutoCompletion.Owner,virtualkeyboard)</onload>
+	<onload>ClearProperty(HorizonzV.AutoCompletion.Query,virtualkeyboard)</onload>
+	<onload condition="System.AddonIsEnabled(plugin.program.autocompletion) + !System.HasHiddenInput">RunScript(special://skin/resources/scripts/autocomplete_query.py)</onload>
+	<onunload>ClearProperty(HorizonzV.AutoCompletion.Owner,virtualkeyboard)</onunload>
+	<onunload>ClearProperty(HorizonzV.AutoCompletion.Query,virtualkeyboard)</onunload>
 	<include>openclose</include>
 	<depth>DepthDialog+</depth>
 	<zorder>10</zorder>

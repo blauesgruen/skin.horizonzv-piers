@@ -1,0 +1,109 @@
+{
+  "scope": "Native Disney+ movie-item selection and rapid changes, ExtendedArt enabled. No playback.",
+  "selections": [
+    {
+      "Container.Content": "movies",
+      "ListItem.Label": "Cinderella Story",
+      "ListItem.Path": "plugin://slyguy.disney.plus/"
+    },
+    {
+      "Container.Content": "movies",
+      "ListItem.Label": "Vaiana",
+      "ListItem.Path": "plugin://slyguy.disney.plus/"
+    },
+    {
+      "Container.Content": "movies",
+      "ListItem.Label": "Wild Horse Nine | Ein besonderer Einblick",
+      "ListItem.Path": "plugin://slyguy.disney.plus/"
+    },
+    {
+      "Container.Content": "movies",
+      "ListItem.Label": "Body Cam - Unsichtbares Grauen",
+      "ListItem.Path": "plugin://slyguy.disney.plus/"
+    },
+    {
+      "Container.Content": "movies",
+      "ListItem.Label": "Marie Curie",
+      "ListItem.Path": "plugin://slyguy.disney.plus/"
+    },
+    {
+      "Container.Content": "movies",
+      "ListItem.Label": "Meine Braut, ihr Vater und ich",
+      "ListItem.Path": "plugin://slyguy.disney.plus/"
+    },
+    {
+      "Container.Content": "movies",
+      "ListItem.Label": "Reinas \u2013 Die K\u00f6niginnen",
+      "ListItem.Path": "plugin://slyguy.disney.plus/"
+    },
+    {
+      "Container.Content": "movies",
+      "ListItem.Label": "A Quiet Place",
+      "ListItem.Path": "plugin://slyguy.disney.plus/"
+    },
+    {
+      "Container.Content": "movies",
+      "ListItem.Label": "Recep \u0130vedik",
+      "ListItem.Path": "plugin://slyguy.disney.plus/"
+    },
+    {
+      "Container.Content": "movies",
+      "ListItem.Label": "St\u00f6rche- Abenteuer im Anflug",
+      "ListItem.Path": "plugin://slyguy.disney.plus/"
+    },
+    {
+      "Container.Content": "movies",
+      "ListItem.Label": "Recep \u0130vedik",
+      "ListItem.Path": "plugin://slyguy.disney.plus/"
+    },
+    {
+      "Container.Content": "movies",
+      "ListItem.Label": "A Quiet Place",
+      "ListItem.Path": "plugin://slyguy.disney.plus/"
+    },
+    {
+      "Container.Content": "movies",
+      "ListItem.Label": "Reinas \u2013 Die K\u00f6niginnen",
+      "ListItem.Path": "plugin://slyguy.disney.plus/"
+    },
+    {
+      "Container.Content": "movies",
+      "ListItem.Label": "Meine Braut, ihr Vater und ich",
+      "ListItem.Path": "plugin://slyguy.disney.plus/"
+    },
+    {
+      "Container.Content": "movies",
+      "ListItem.Label": "Marie Curie",
+      "ListItem.Path": "plugin://slyguy.disney.plus/"
+    },
+    {
+      "Container.Content": "movies",
+      "ListItem.Label": "Body Cam - Unsichtbares Grauen",
+      "ListItem.Path": "plugin://slyguy.disney.plus/"
+    }
+  ],
+  "conditions": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container.Content(movies)": true,
+      "Skin.HasSetting(EnableExtendedArt)": true,
+      "String.StartsWith(ListItem.Path,plugin://)": true
+    }
+  },
+  "gui": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "currentcontrol": {
+        "label": "Body Cam - Unsichtbares Grauen"
+      },
+      "currentwindow": {
+        "id": 10025,
+        "label": "Videos"
+      }
+    }
+  },
+  "image": "standard_disney_movies_es.png",
+  "capture_method": "Official Kodi EventServer client, localhost, TakeScreenshot builtin. Image write completed asynchronously; existence checked later."
+}

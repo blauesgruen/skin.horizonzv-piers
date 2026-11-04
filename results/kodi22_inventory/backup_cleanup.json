@@ -1,0 +1,25 @@
+{
+  "scope": "Two unchanged tracked .xml.org backups; no active XML references. Not a removed-API finding. Original content remains in Git.",
+  "recovery_commit": "b109c5ba668167d39f2cb5bf22e25916e65e37cc",
+  "sources": [
+    "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/application/ApplicationSkinHandling.cpp",
+    "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/guilib/GUIIncludes.cpp"
+  ],
+  "loader_review": "Automatic custom-window discovery filters .xml; includes are explicitly loaded via file attributes. These .org files have no explicit active reference.",
+  "removed": [
+    {
+      "file": "xml/View_Movie_541_Perspective.xml.org",
+      "bytes": 33662,
+      "sha256_before_removal": "a68ccc1521173cbe88918436054dc84a1275555c0a1e6a897e5446a094753049",
+      "git_blob": "e67fc594ea2769745d83db8292bfa49014fc9e0b",
+      "active_xml_references": []
+    },
+    {
+      "file": "xml/View_Music_513_AlbumInfoList.xml.org",
+      "bytes": 12753,
+      "sha256_before_removal": "cda1e723fe0c65b940d93a27cdbbcf623fdd035f0e4e40f17682d217e102b1d1",
+      "git_blob": "a7bfde27ba02cc194619c48d297c3db1727849d3",
+      "active_xml_references": []
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "expected_after_cancel": {
+    "Control.GetLabel(9).index(1)": "\"In aller Freundschaft\"",
+    "Control.GetLabel(23)": "Sender (Das Erste HD)"
+  },
+  "changed_before_cancel": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Control.GetLabel(23)": "Sender (Das Erste HD)",
+      "Control.GetLabel(9).index(1)": "HZV-CANCEL-20261103"
+    }
+  },
+  "reopened": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Control.GetLabel(23)": "Sender (Das Erste HD)",
+      "Control.GetLabel(9).index(1)": "\"In aller Freundschaft\""
+    }
+  },
+  "gui": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "currentcontrol": {
+        "label": ""
+      },
+      "currentwindow": {
+        "id": 10605,
+        "label": "PVR-Programm\u00fcbersichtssuche"
+      }
+    }
+  },
+  "passed": true,
+  "save_button_used": false
+}

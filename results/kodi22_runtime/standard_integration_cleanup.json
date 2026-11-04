@@ -1,0 +1,49 @@
+{
+  "players": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": []
+  },
+  "skin_before_restore": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "value": "skin.horizonzv"
+    }
+  },
+  "weather_provider": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "value": "weather.gismeteo"
+    }
+  },
+  "pvr": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "available": true,
+      "recording": false,
+      "scanning": false
+    }
+  },
+  "quit": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": "OK"
+  },
+  "process_36364_exited": true,
+  "restored_settings": {
+    "lookandfeel.skin": "skin.horizonzVI",
+    "debug.screenshotpath": "D:/Program Files/Kodi22/portable_data/addons/skin.horizonzVI/.shots/"
+  },
+  "baseline_attributes_restored": true,
+  "shutdown_exit_message_present": true,
+  "extrafanart_log_lines": 0,
+  "routererror_log_lines": 0,
+  "error_log_lines": 0,
+  "latest_crash_dump": "kodi_crashlog-22.0-RC1 Git_20260927-28ea2eac1eb-20261103-131150.dmp",
+  "source_code_instrumentation": false,
+  "addon_or_core_code_modified": false,
+  "database_edit_actions_performed": false
+}

@@ -1,0 +1,33 @@
+{
+  "gui": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "currentcontrol": {
+        "label": "Add extra"
+      },
+      "currentwindow": {
+        "id": 12017,
+        "label": ""
+      }
+    }
+  },
+  "labels": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container(50).NumItems": "0",
+      "Control.GetLabel(2)": "Extras Manager: Skin Audit Movie"
+    }
+  },
+  "conditions": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Control.HasFocus(23)": true,
+      "Control.IsEnabled(21)": false,
+      "Control.IsEnabled(23)": true,
+      "Control.IsEnabled(28)": false
+    }
+  }
+}

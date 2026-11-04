@@ -1,0 +1,52 @@
+{
+  "skin": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "value": "skin.horizonzv"
+    }
+  },
+  "gui_before": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "currentcontrol": {
+        "label": "Serien"
+      },
+      "currentwindow": {
+        "id": 10000,
+        "label": "Hauptmen\u00fc"
+      }
+    }
+  },
+  "open": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": "OK"
+  },
+  "gui_after": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "currentcontrol": {
+        "label": "[..]"
+      },
+      "currentwindow": {
+        "id": 10025,
+        "label": "Videos"
+      }
+    }
+  },
+  "labels": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container.FolderPath": "plugin://slyguy.disney.plus/",
+      "Container.NumItems": "11",
+      "Container.PluginName": "slyguy.disney.plus",
+      "ListItem.Label": "..",
+      "ListItem.Path": ""
+    }
+  },
+  "scope": "Real Disney+ root listing on the standard profile and target skin. No resolved-variable claim: an unsupported direct VAR RPC probe was discarded."
+}

@@ -1,0 +1,48 @@
+{
+  "before": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container(11).NumItems": "0",
+      "Container(12).NumItems": "86",
+      "Container(13).NumItems": "1",
+      "Control.GetLabel(34)": "Radiosendergruppen",
+      "Window.Property(IsRadio)": ""
+    }
+  },
+  "radio": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container(11).NumItems": "0",
+      "Container(12).NumItems": "103",
+      "Container(13).NumItems": "1",
+      "Control.GetLabel(34)": "TV-Sendergruppen",
+      "Window.Property(IsRadio)": "true"
+    }
+  },
+  "restored_tv": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container(11).NumItems": "0",
+      "Container(12).NumItems": "86",
+      "Container(13).NumItems": "1",
+      "Control.GetLabel(34)": "Radiosendergruppen",
+      "Window.Property(IsRadio)": ""
+    }
+  },
+  "closed": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "currentcontrol": {
+        "label": ""
+      },
+      "currentwindow": {
+        "id": 10000,
+        "label": "Hauptmen\u00fc"
+      }
+    }
+  }
+}

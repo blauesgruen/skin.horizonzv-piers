@@ -1,0 +1,36 @@
+{
+  "players": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": []
+  },
+  "pvr": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "available": true,
+      "recording": false,
+      "scanning": false
+    }
+  },
+  "weather_provider": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "value": "weather.gismeteo"
+    }
+  },
+  "quit": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": "OK"
+  },
+  "process_38744_exited": true,
+  "restored_skin": "skin.horizonzVI",
+  "all_global_setting_values_match_baseline": true,
+  "added_setting_count": 0,
+  "shutdown_exit_message": true,
+  "error_log_lines": 0,
+  "raw_log_copied": false,
+  "latest_crash_dump": "kodi_crashlog-22.0-RC1 Git_20260927-28ea2eac1eb-20261103-131150.dmp"
+}

@@ -1,0 +1,130 @@
+{
+  "scope": "Remove only byte-identical subsequent direct child elements for six selected singleton control properties. First occurrence and differing values retained. Multi-label, multi-content, conditional layouts and action lists untouched.",
+  "tags": [
+    "aspectratio",
+    "height",
+    "itemgap",
+    "orientation",
+    "texturenofocus",
+    "viewtype"
+  ],
+  "sources": [
+    "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/guilib/GUIControlFactory.cpp",
+    "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/utils/XMLUtils.cpp"
+  ],
+  "removed_count": 14,
+  "removed": [
+    {
+      "file": "xml\\Custom_1154_SkinSettingReset.xml",
+      "control_type": "button",
+      "id": "10",
+      "tag": "texturenofocus",
+      "line_before_edit": 52,
+      "removed": "<texturenofocus/>"
+    },
+    {
+      "file": "xml\\Custom_1154_SkinSettingReset.xml",
+      "control_type": "button",
+      "id": "11",
+      "tag": "texturenofocus",
+      "line_before_edit": 66,
+      "removed": "<texturenofocus/>"
+    },
+    {
+      "file": "xml\\Includes_Buttons_and_Lists.xml",
+      "control_type": "label",
+      "id": null,
+      "tag": "height",
+      "line_before_edit": 970,
+      "removed": "<height>50</height>"
+    },
+    {
+      "file": "xml\\Includes_Dash_Addonpath_Fav.xml",
+      "control_type": "panel",
+      "id": "$PARAM[id]",
+      "tag": "orientation",
+      "line_before_edit": 28,
+      "removed": "<orientation>horizontal</orientation>"
+    },
+    {
+      "file": "xml\\Includes_Dash_Addonpath_Fav.xml",
+      "control_type": "list",
+      "id": "$PARAM[id]",
+      "tag": "orientation",
+      "line_before_edit": 57,
+      "removed": "<orientation>horizontal</orientation>"
+    },
+    {
+      "file": "xml\\Includes_Dash_Addonpath_Fav.xml",
+      "control_type": "list",
+      "id": "$PARAM[id]",
+      "tag": "orientation",
+      "line_before_edit": 87,
+      "removed": "<orientation>horizontal</orientation>"
+    },
+    {
+      "file": "xml\\Includes_Dash_Addonpath_Fav.xml",
+      "control_type": "list",
+      "id": "$PARAM[id]",
+      "tag": "orientation",
+      "line_before_edit": 116,
+      "removed": "<orientation>horizontal</orientation>"
+    },
+    {
+      "file": "xml\\Includes_Dash_Addonpath_Fav.xml",
+      "control_type": "list",
+      "id": "$PARAM[id]",
+      "tag": "orientation",
+      "line_before_edit": 145,
+      "removed": "<orientation>horizontal</orientation>"
+    },
+    {
+      "file": "xml\\Includes_Dash_GTO.xml",
+      "control_type": "panel",
+      "id": "$PARAM[id]",
+      "tag": "orientation",
+      "line_before_edit": 14,
+      "removed": "<orientation>horizontal</orientation>"
+    },
+    {
+      "file": "xml\\Includes_Dash_Weather.xml",
+      "control_type": "panel",
+      "id": "$PARAM[id]",
+      "tag": "orientation",
+      "line_before_edit": 13,
+      "removed": "<orientation>horizontal</orientation>"
+    },
+    {
+      "file": "xml\\Includes_DebugInfo.xml",
+      "control_type": "grouplist",
+      "id": null,
+      "tag": "itemgap",
+      "line_before_edit": 512,
+      "removed": "<itemgap>8</itemgap>"
+    },
+    {
+      "file": "xml\\Includes_PVR.xml",
+      "control_type": "label",
+      "id": null,
+      "tag": "height",
+      "line_before_edit": 45,
+      "removed": "<height>45</height>"
+    },
+    {
+      "file": "xml\\MusicVisualisation.xml",
+      "control_type": "multiimage",
+      "id": null,
+      "tag": "aspectratio",
+      "line_before_edit": 175,
+      "removed": "<aspectratio>keep</aspectratio>"
+    },
+    {
+      "file": "xml\\View_Movie_402_Fanart_Episode.xml",
+      "control_type": "fixedlist",
+      "id": "$PARAM[viewid]",
+      "tag": "viewtype",
+      "line_before_edit": 270,
+      "removed": "<viewtype label=\"20445\">fixed</viewtype>"
+    }
+  ]
+}

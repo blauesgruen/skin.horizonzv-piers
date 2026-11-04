@@ -1,0 +1,41 @@
+{
+  "gui": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "currentcontrol": {
+        "label": "Suche bearbeiten ..."
+      },
+      "currentwindow": {
+        "id": 10704,
+        "label": "TV-Programm\u00fcbersichtssuche"
+      }
+    }
+  },
+  "labels": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container.Content": "",
+      "Container.FolderPath": "pvr://search/tv/",
+      "Container.ListItemAbsolute(0).FileNameAndPath": "pvr://search/search_dialog",
+      "Container.ListItemAbsolute(0).Label": "Suche bearbeiten ...",
+      "Container.ListItemAbsolute(1).FileNameAndPath": "pvr://search/tv/savedsearches/",
+      "Container.ListItemAbsolute(1).Label": "Gespeicherte Suchen",
+      "Container.ListItemAbsolute(2).FileNameAndPath": "pvr://guide/0024/2026-11-03 11:00:00.epg",
+      "Container.ListItemAbsolute(2).Label": "ZDF-Mittagsmagazin",
+      "Container.ListItemAbsolute(3).FileNameAndPath": "pvr://guide/0024/2026-11-03 20:00:00.epg",
+      "Container.ListItemAbsolute(3).Label": "In aller Freundschaft (1154)",
+      "Container.ListItemAbsolute(4).FileNameAndPath": "pvr://guide/0024/2026-11-03 23:45:00.epg",
+      "Container.ListItemAbsolute(4).Label": "US-Midterms: Entscheidung in Amerika",
+      "Container.ListItemAbsolute(5).FileNameAndPath": "pvr://guide/0024/2026-11-04 04:00:00.epg",
+      "Container.ListItemAbsolute(5).Label": "ARD-Morgenmagazin",
+      "Container.ListItemAbsolute(6).FileNameAndPath": "pvr://guide/0024/2026-11-04 04:30:00.epg",
+      "Container.ListItemAbsolute(6).Label": "ARD-Morgenmagazin",
+      "Container.ListItemAbsolute(7).FileNameAndPath": "pvr://guide/0024/2026-11-04 08:05:00.epg",
+      "Container.ListItemAbsolute(7).Label": "Hubert ohne Staller (184)",
+      "Container.NumItems": "23"
+    }
+  },
+  "image_exists": true
+}

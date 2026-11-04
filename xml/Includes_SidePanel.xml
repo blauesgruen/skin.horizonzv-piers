@@ -115,23 +115,6 @@
             </control>
         </control>
     </include>
-    <include name="SidePanelShortcutsBackground">
-        <control type="group">
-            <control type="image">
-                <description>SidePanel</description>
-                <width>106</width>
-                <colordiffuse>$VAR[BackgroundOverlayColorDialog]</colordiffuse>
-                <texture border="2">White.png</texture>
-            </control>
-            <control type="image">
-                <description>SidePanel</description>
-                <left>98</left>
-                <width>15</width>
-                <colordiffuse>menudiffuse</colordiffuse>
-                <texture>SideFade.png</texture>
-            </control>
-        </control>
-    </include>
     <include name="SidePanelProperty">
         <top>150</top>
         <width>SidePanelLeftWidth</width>
@@ -316,7 +299,7 @@
                         </item>
                         <item id="12">
                             <label>33061</label>
-                            <onclick>ActivateWindow(shutdown)</onclick>
+                            <onclick>ActivateWindow(shutdownmenu)</onclick>
                             <icon>DefaultAddonScreensaver.png</icon>
                         </item>
                     </content>

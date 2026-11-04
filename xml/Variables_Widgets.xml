@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
 	<variable name="WidgetTarget">
-		<value condition="String.Contains(Container.ListItem.DBTYPE,music)">music</value>
+		<value condition="String.IsEqual(Container.ListItem.DBTYPE,music)">music</value>
 		<value condition="String.Contains(Container.ListItem.DBTYPE,song)">music</value>
 		<value condition="String.Contains(Container.ListItem.DBTYPE,album)">music</value>
 		<value condition="String.Contains(Container.ListItem.DBTYPE,artist)">music</value>
 		<value condition="String.Contains(Container.ListItem.FolderPath,audio)">music</value>
 		<value condition="String.Contains(Container.ListItem.DBTYPE,video)">videos</value>
-		<value condition="String.Contains(Container.ListItem.DBTYPE,movies)">videos</value>
+		<value condition="String.IsEqual(Container.ListItem.DBTYPE,movie)">videos</value>
 		<value condition="String.Contains(Container.ListItem.DBTYPE,set)">videos</value>
 		<value condition="String.Contains(Container.ListItem.DBTYPE,tvshow)">videos</value>
 		<value condition="String.Contains(Container.ListItem.DBTYPE,season)">videos</value>
@@ -15,7 +15,10 @@
 		<value condition="String.Contains(Container.ListItem.DBTYPE,musicvideo)">videos</value>
 		<value condition="String.Contains(Container(9000).ListItem.Property(homemenu_id),games)">games</value>
 		<value condition="String.Contains(Container.ListItem.FolderPath,pvr://recordings)">tvrecordings</value>
-		<value condition="String.Contains(Container.ListItem.FolderPath,pvr://timers)">pvr</value>
+		<value condition="String.StartsWith(Container.ListItem.FolderPath,pvr://timers/radio/rules)">radiotimerrules</value>
+		<value condition="String.StartsWith(Container.ListItem.FolderPath,pvr://timers/tv/rules)">tvtimerrules</value>
+		<value condition="String.StartsWith(Container.ListItem.FolderPath,pvr://timers/radio)">radiotimers</value>
+		<value condition="String.StartsWith(Container.ListItem.FolderPath,pvr://timers)">tvtimers</value>
 		<value condition="String.Contains(Container.ListItem.FolderPath,pvr://channels)">tvchannels</value>
 		<value condition="String.Contains(Window(home).Property(WidgetLabel),$LOCALIZE[20094])">videos</value>
 		<value condition="String.Contains(Container.ListItem.FolderPath,addons://)">addonbrowser</value>

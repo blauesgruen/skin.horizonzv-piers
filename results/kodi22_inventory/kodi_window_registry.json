@@ -1,0 +1,756 @@
+{
+  "source_ref": "22.0rc1-Piers",
+  "scope": "146 named translator entries and 160 decimal/alias/addition WindowIDs constants, including range markers. This source snapshot does not establish runtime window registration or platform availability.",
+  "sources": [
+    "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/input/WindowTranslator.cpp",
+    "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/guilib/WindowIDs.h"
+  ],
+  "ids": {
+    "WINDOW_DIALOG_PVR_GUIDE_INFO": 10600,
+    "WINDOW_DIALOG_PVR_RECORDING_INFO": 10601,
+    "WINDOW_DIALOG_PVR_TIMER_SETTING": 10602,
+    "WINDOW_DIALOG_PVR_GROUP_MANAGER": 10603,
+    "WINDOW_DIALOG_PVR_CHANNEL_MANAGER": 10604,
+    "WINDOW_DIALOG_PVR_GUIDE_SEARCH": 10605,
+    "WINDOW_DIALOG_PVR_CHANNEL_SCAN": 10606,
+    "WINDOW_DIALOG_PVR_UPDATE_PROGRESS": 10607,
+    "WINDOW_DIALOG_PVR_OSD_CHANNELS": 10608,
+    "WINDOW_DIALOG_PVR_CHANNEL_GUIDE": 10609,
+    "WINDOW_DIALOG_PVR_RADIO_RDS_INFO": 10610,
+    "WINDOW_DIALOG_PVR_RECORDING_SETTING": 10611,
+    "WINDOW_DIALOG_PVR_CLIENT_PRIORITIES": 10612,
+    "WINDOW_DIALOG_PVR_GUIDE_CONTROLS": 10613,
+    "WINDOW_DIALOG_PVR_ID_END": 10613,
+    "WINDOW_TV_CHANNELS": 10700,
+    "WINDOW_TV_RECORDINGS": 10701,
+    "WINDOW_TV_GUIDE": 10702,
+    "WINDOW_TV_TIMERS": 10703,
+    "WINDOW_TV_SEARCH": 10704,
+    "WINDOW_RADIO_CHANNELS": 10705,
+    "WINDOW_RADIO_RECORDINGS": 10706,
+    "WINDOW_RADIO_GUIDE": 10707,
+    "WINDOW_RADIO_TIMERS": 10708,
+    "WINDOW_RADIO_SEARCH": 10709,
+    "WINDOW_TV_TIMER_RULES": 10710,
+    "WINDOW_RADIO_TIMER_RULES": 10711,
+    "WINDOW_TV_PROVIDERS": 10712,
+    "WINDOW_RADIO_PROVIDERS": 10713,
+    "WINDOW_PVR_ID_END": 10713,
+    "WINDOW_INVALID": 9999,
+    "WINDOW_HOME": 10000,
+    "WINDOW_PROGRAMS": 10001,
+    "WINDOW_PICTURES": 10002,
+    "WINDOW_FILES": 10003,
+    "WINDOW_SETTINGS_MENU": 10004,
+    "WINDOW_SYSTEM_INFORMATION": 10007,
+    "WINDOW_SCREEN_CALIBRATION": 10011,
+    "WINDOW_SETTINGS_START": 10016,
+    "WINDOW_SETTINGS_SYSTEM": 10016,
+    "WINDOW_SETTINGS_SERVICE": 10018,
+    "WINDOW_SETTINGS_MYPVR": 10021,
+    "WINDOW_SETTINGS_MYGAMES": 10022,
+    "WINDOW_VIDEO_NAV": 10025,
+    "WINDOW_VIDEO_PLAYLIST": 10028,
+    "WINDOW_LOGIN_SCREEN": 10029,
+    "WINDOW_SETTINGS_PLAYER": 10030,
+    "WINDOW_SETTINGS_MEDIA": 10031,
+    "WINDOW_SETTINGS_INTERFACE": 10032,
+    "WINDOW_SETTINGS_PROFILES": 10034,
+    "WINDOW_SKIN_SETTINGS": 10035,
+    "WINDOW_ADDON_BROWSER": 10040,
+    "WINDOW_EVENT_LOG": 10050,
+    "WINDOW_FAVOURITES": 10060,
+    "WINDOW_SCREENSAVER_DIM": 97,
+    "WINDOW_DEBUG_INFO": 98,
+    "WINDOW_DIALOG_POINTER": 10099,
+    "WINDOW_DIALOG_YES_NO": 10100,
+    "WINDOW_DIALOG_PROGRESS": 10101,
+    "WINDOW_DIALOG_KEYBOARD": 10103,
+    "WINDOW_DIALOG_VOLUME_BAR": 10104,
+    "WINDOW_DIALOG_SUB_MENU": 10105,
+    "WINDOW_DIALOG_CONTEXT_MENU": 10106,
+    "WINDOW_DIALOG_KAI_TOAST": 10107,
+    "WINDOW_DIALOG_NUMERIC": 10109,
+    "WINDOW_DIALOG_GAMEPAD": 10110,
+    "WINDOW_DIALOG_BUTTON_MENU": 10111,
+    "WINDOW_DIALOG_PLAYER_CONTROLS": 10114,
+    "WINDOW_DIALOG_SEEK_BAR": 10115,
+    "WINDOW_DIALOG_PLAYER_PROCESS_INFO": 10116,
+    "WINDOW_DIALOG_MUSIC_OSD": 10120,
+    "WINDOW_DIALOG_VIS_SETTINGS": 10121,
+    "WINDOW_DIALOG_VIS_PRESET_LIST": 10122,
+    "WINDOW_DIALOG_VIDEO_OSD_SETTINGS": 10123,
+    "WINDOW_DIALOG_AUDIO_OSD_SETTINGS": 10124,
+    "WINDOW_DIALOG_VIDEO_BOOKMARKS": 10125,
+    "WINDOW_DIALOG_FILE_BROWSER": 10126,
+    "WINDOW_DIALOG_NETWORK_SETUP": 10128,
+    "WINDOW_DIALOG_MEDIA_SOURCE": 10129,
+    "WINDOW_DIALOG_PROFILE_SETTINGS": 10130,
+    "WINDOW_DIALOG_LOCK_SETTINGS": 10131,
+    "WINDOW_DIALOG_CONTENT_SETTINGS": 10132,
+    "WINDOW_DIALOG_LIBEXPORT_SETTINGS": 10133,
+    "WINDOW_DIALOG_SONG_INFO": 10135,
+    "WINDOW_DIALOG_SMART_PLAYLIST_EDITOR": 10136,
+    "WINDOW_DIALOG_SMART_PLAYLIST_RULE": 10137,
+    "WINDOW_DIALOG_BUSY": 10138,
+    "WINDOW_DIALOG_PICTURE_INFO": 10139,
+    "WINDOW_DIALOG_ADDON_SETTINGS": 10140,
+    "WINDOW_DIALOG_FULLSCREEN_INFO": 10142,
+    "WINDOW_DIALOG_SLIDER": 10145,
+    "WINDOW_DIALOG_ADDON_INFO": 10146,
+    "WINDOW_DIALOG_TEXT_VIEWER": 10147,
+    "WINDOW_DIALOG_PLAY_EJECT": 10148,
+    "WINDOW_DIALOG_PERIPHERALS": 10149,
+    "WINDOW_DIALOG_PERIPHERAL_SETTINGS": 10150,
+    "WINDOW_DIALOG_EXT_PROGRESS": 10151,
+    "WINDOW_DIALOG_MEDIA_FILTER": 10152,
+    "WINDOW_DIALOG_SUBTITLES": 10153,
+    "WINDOW_DIALOG_KEYBOARD_TOUCH": 10156,
+    "WINDOW_DIALOG_CMS_OSD_SETTINGS": 10157,
+    "WINDOW_DIALOG_INFOPROVIDER_SETTINGS": 10158,
+    "WINDOW_DIALOG_SUBTITLE_OSD_SETTINGS": 10159,
+    "WINDOW_DIALOG_BUSY_NOCANCEL": 10160,
+    "WINDOW_MUSIC_PLAYLIST": 10500,
+    "WINDOW_MUSIC_NAV": 10502,
+    "WINDOW_MUSIC_PLAYLIST_EDITOR": 10503,
+    "WINDOW_DIALOG_OSD_TELETEXT": 10550,
+    "WINDOW_DIALOG_PVR_ID_START": 10600,
+    "WINDOW_PVR_ID_START": 10700,
+    "WINDOW_FULLSCREEN_LIVETV": 10800,
+    "WINDOW_FULLSCREEN_RADIO": 10801,
+    "WINDOW_FULLSCREEN_LIVETV_PREVIEW": 10802,
+    "WINDOW_FULLSCREEN_RADIO_PREVIEW": 10803,
+    "WINDOW_FULLSCREEN_LIVETV_INPUT": 10804,
+    "WINDOW_FULLSCREEN_RADIO_INPUT": 10805,
+    "WINDOW_DIALOG_GAME_CONTROLLERS": 10820,
+    "WINDOW_GAMES": 10821,
+    "WINDOW_DIALOG_GAME_OSD": 10822,
+    "WINDOW_DIALOG_GAME_VIDEO_FILTER": 10823,
+    "WINDOW_DIALOG_GAME_STRETCH_MODE": 10824,
+    "WINDOW_DIALOG_GAME_VOLUME": 10825,
+    "WINDOW_DIALOG_GAME_ADVANCED_SETTINGS": 10826,
+    "WINDOW_DIALOG_GAME_VIDEO_ROTATION": 10827,
+    "WINDOW_DIALOG_GAME_PORTS": 10828,
+    "WINDOW_DIALOG_IN_GAME_SAVES": 10829,
+    "WINDOW_DIALOG_GAME_SAVES": 10830,
+    "WINDOW_DIALOG_GAME_AGENTS": 10831,
+    "WINDOW_DIALOG_GAME_DISC_MANAGER": 10832,
+    "WINDOW_DIALOG_GAME_ACHIEVEMENTS": 10833,
+    "WINDOW_DIALOG_GAME_LEADERBOARDS": 10836,
+    "WINDOW_DIALOG_GAME_LEADERBOARD_ENTRIES": 10837,
+    "WINDOW_DIALOG_GAME_INDICATORS": 10838,
+    "WINDOW_DIALOG_GAME_CHEATS": 10839,
+    "WINDOW_DIALOG_SELECT": 12000,
+    "WINDOW_DIALOG_MUSIC_INFO": 12001,
+    "WINDOW_DIALOG_OK": 12002,
+    "WINDOW_DIALOG_VIDEO_INFO": 12003,
+    "WINDOW_DIALOG_MANAGE_VIDEO_VERSIONS": 12004,
+    "WINDOW_FULLSCREEN_VIDEO": 12005,
+    "WINDOW_VISUALISATION": 12006,
+    "WINDOW_SLIDESHOW": 12007,
+    "WINDOW_DIALOG_COLOR_PICKER": 12008,
+    "WINDOW_DIALOG_MANAGE_VIDEO_EXTRAS": 12017,
+    "WINDOW_DIALOG_SELECT_VIDEO_STREAM": 12300,
+    "WINDOW_DIALOG_SELECT_AUDIO_STREAM": 12301,
+    "WINDOW_DIALOG_SELECT_SUBTITLE_STREAM": 12302,
+    "WINDOW_WEATHER": 12600,
+    "WINDOW_SCREENSAVER": 12900,
+    "WINDOW_DIALOG_VIDEO_OSD": 12901,
+    "WINDOW_VIDEO_MENU": 12902,
+    "WINDOW_VIDEO_TIME_SEEK": 12905,
+    "WINDOW_FULLSCREEN_GAME": 12906,
+    "WINDOW_SPLASH": 12997,
+    "WINDOW_START": 12998,
+    "WINDOW_STARTUP_ANIM": 12999,
+    "WINDOW_PYTHON_START": 13000,
+    "WINDOW_PYTHON_END": 13099,
+    "WINDOW_ADDON_START": 14000,
+    "WINDOW_ADDON_END": 14099
+  },
+  "names": {
+    "home": {
+      "constant": "WINDOW_HOME",
+      "id": 10000
+    },
+    "programs": {
+      "constant": "WINDOW_PROGRAMS",
+      "id": 10001
+    },
+    "pictures": {
+      "constant": "WINDOW_PICTURES",
+      "id": 10002
+    },
+    "filemanager": {
+      "constant": "WINDOW_FILES",
+      "id": 10003
+    },
+    "settings": {
+      "constant": "WINDOW_SETTINGS_MENU",
+      "id": 10004
+    },
+    "music": {
+      "constant": "WINDOW_MUSIC_NAV",
+      "id": 10502
+    },
+    "videos": {
+      "constant": "WINDOW_VIDEO_NAV",
+      "id": 10025
+    },
+    "tvchannels": {
+      "constant": "WINDOW_TV_CHANNELS",
+      "id": 10700
+    },
+    "tvrecordings": {
+      "constant": "WINDOW_TV_RECORDINGS",
+      "id": 10701
+    },
+    "tvguide": {
+      "constant": "WINDOW_TV_GUIDE",
+      "id": 10702
+    },
+    "tvtimers": {
+      "constant": "WINDOW_TV_TIMERS",
+      "id": 10703
+    },
+    "tvsearch": {
+      "constant": "WINDOW_TV_SEARCH",
+      "id": 10704
+    },
+    "tvproviders": {
+      "constant": "WINDOW_TV_PROVIDERS",
+      "id": 10712
+    },
+    "radiochannels": {
+      "constant": "WINDOW_RADIO_CHANNELS",
+      "id": 10705
+    },
+    "radiorecordings": {
+      "constant": "WINDOW_RADIO_RECORDINGS",
+      "id": 10706
+    },
+    "radioguide": {
+      "constant": "WINDOW_RADIO_GUIDE",
+      "id": 10707
+    },
+    "radiotimers": {
+      "constant": "WINDOW_RADIO_TIMERS",
+      "id": 10708
+    },
+    "radiosearch": {
+      "constant": "WINDOW_RADIO_SEARCH",
+      "id": 10709
+    },
+    "radioproviders": {
+      "constant": "WINDOW_RADIO_PROVIDERS",
+      "id": 10713
+    },
+    "gamecontrollers": {
+      "constant": "WINDOW_DIALOG_GAME_CONTROLLERS",
+      "id": 10820
+    },
+    "gameports": {
+      "constant": "WINDOW_DIALOG_GAME_PORTS",
+      "id": 10828
+    },
+    "games": {
+      "constant": "WINDOW_GAMES",
+      "id": 10821
+    },
+    "pvrguidecontrols": {
+      "constant": "WINDOW_DIALOG_PVR_GUIDE_CONTROLS",
+      "id": 10613
+    },
+    "pvrguideinfo": {
+      "constant": "WINDOW_DIALOG_PVR_GUIDE_INFO",
+      "id": 10600
+    },
+    "pvrrecordinginfo": {
+      "constant": "WINDOW_DIALOG_PVR_RECORDING_INFO",
+      "id": 10601
+    },
+    "pvrradiordsinfo": {
+      "constant": "WINDOW_DIALOG_PVR_RADIO_RDS_INFO",
+      "id": 10610
+    },
+    "pvrtimersetting": {
+      "constant": "WINDOW_DIALOG_PVR_TIMER_SETTING",
+      "id": 10602
+    },
+    "pvrgroupmanager": {
+      "constant": "WINDOW_DIALOG_PVR_GROUP_MANAGER",
+      "id": 10603
+    },
+    "pvrchannelmanager": {
+      "constant": "WINDOW_DIALOG_PVR_CHANNEL_MANAGER",
+      "id": 10604
+    },
+    "pvrguidesearch": {
+      "constant": "WINDOW_DIALOG_PVR_GUIDE_SEARCH",
+      "id": 10605
+    },
+    "pvrchannelscan": {
+      "constant": "WINDOW_DIALOG_PVR_CHANNEL_SCAN",
+      "id": 10606
+    },
+    "pvrupdateprogress": {
+      "constant": "WINDOW_DIALOG_PVR_UPDATE_PROGRESS",
+      "id": 10607
+    },
+    "pvrosdchannels": {
+      "constant": "WINDOW_DIALOG_PVR_OSD_CHANNELS",
+      "id": 10608
+    },
+    "pvrchannelguide": {
+      "constant": "WINDOW_DIALOG_PVR_CHANNEL_GUIDE",
+      "id": 10609
+    },
+    "pvrosdguide": {
+      "constant": "WINDOW_DIALOG_PVR_CHANNEL_GUIDE",
+      "id": 10609
+    },
+    "pvrosdteletext": {
+      "constant": "WINDOW_DIALOG_OSD_TELETEXT",
+      "id": 10550
+    },
+    "systeminfo": {
+      "constant": "WINDOW_SYSTEM_INFORMATION",
+      "id": 10007
+    },
+    "screencalibration": {
+      "constant": "WINDOW_SCREEN_CALIBRATION",
+      "id": 10011
+    },
+    "systemsettings": {
+      "constant": "WINDOW_SETTINGS_SYSTEM",
+      "id": 10016
+    },
+    "servicesettings": {
+      "constant": "WINDOW_SETTINGS_SERVICE",
+      "id": 10018
+    },
+    "pvrsettings": {
+      "constant": "WINDOW_SETTINGS_MYPVR",
+      "id": 10021
+    },
+    "playersettings": {
+      "constant": "WINDOW_SETTINGS_PLAYER",
+      "id": 10030
+    },
+    "mediasettings": {
+      "constant": "WINDOW_SETTINGS_MEDIA",
+      "id": 10031
+    },
+    "interfacesettings": {
+      "constant": "WINDOW_SETTINGS_INTERFACE",
+      "id": 10032
+    },
+    "appearancesettings": {
+      "constant": "WINDOW_SETTINGS_INTERFACE",
+      "id": 10032
+    },
+    "gamesettings": {
+      "constant": "WINDOW_SETTINGS_MYGAMES",
+      "id": 10022
+    },
+    "videoplaylist": {
+      "constant": "WINDOW_VIDEO_PLAYLIST",
+      "id": 10028
+    },
+    "loginscreen": {
+      "constant": "WINDOW_LOGIN_SCREEN",
+      "id": 10029
+    },
+    "profiles": {
+      "constant": "WINDOW_SETTINGS_PROFILES",
+      "id": 10034
+    },
+    "skinsettings": {
+      "constant": "WINDOW_SKIN_SETTINGS",
+      "id": 10035
+    },
+    "addonbrowser": {
+      "constant": "WINDOW_ADDON_BROWSER",
+      "id": 10040
+    },
+    "yesnodialog": {
+      "constant": "WINDOW_DIALOG_YES_NO",
+      "id": 10100
+    },
+    "progressdialog": {
+      "constant": "WINDOW_DIALOG_PROGRESS",
+      "id": 10101
+    },
+    "virtualkeyboard": {
+      "constant": "WINDOW_DIALOG_KEYBOARD",
+      "id": 10103
+    },
+    "volumebar": {
+      "constant": "WINDOW_DIALOG_VOLUME_BAR",
+      "id": 10104
+    },
+    "submenu": {
+      "constant": "WINDOW_DIALOG_SUB_MENU",
+      "id": 10105
+    },
+    "contextmenu": {
+      "constant": "WINDOW_DIALOG_CONTEXT_MENU",
+      "id": 10106
+    },
+    "notification": {
+      "constant": "WINDOW_DIALOG_KAI_TOAST",
+      "id": 10107
+    },
+    "numericinput": {
+      "constant": "WINDOW_DIALOG_NUMERIC",
+      "id": 10109
+    },
+    "gamepadinput": {
+      "constant": "WINDOW_DIALOG_GAMEPAD",
+      "id": 10110
+    },
+    "shutdownmenu": {
+      "constant": "WINDOW_DIALOG_BUTTON_MENU",
+      "id": 10111
+    },
+    "playercontrols": {
+      "constant": "WINDOW_DIALOG_PLAYER_CONTROLS",
+      "id": 10114
+    },
+    "playerprocessinfo": {
+      "constant": "WINDOW_DIALOG_PLAYER_PROCESS_INFO",
+      "id": 10116
+    },
+    "seekbar": {
+      "constant": "WINDOW_DIALOG_SEEK_BAR",
+      "id": 10115
+    },
+    "musicosd": {
+      "constant": "WINDOW_DIALOG_MUSIC_OSD",
+      "id": 10120
+    },
+    "addonsettings": {
+      "constant": "WINDOW_DIALOG_ADDON_SETTINGS",
+      "id": 10140
+    },
+    "visualisationpresetlist": {
+      "constant": "WINDOW_DIALOG_VIS_PRESET_LIST",
+      "id": 10122
+    },
+    "osdcmssettings": {
+      "constant": "WINDOW_DIALOG_CMS_OSD_SETTINGS",
+      "id": 10157
+    },
+    "osdvideosettings": {
+      "constant": "WINDOW_DIALOG_VIDEO_OSD_SETTINGS",
+      "id": 10123
+    },
+    "osdaudiosettings": {
+      "constant": "WINDOW_DIALOG_AUDIO_OSD_SETTINGS",
+      "id": 10124
+    },
+    "osdsubtitlesettings": {
+      "constant": "WINDOW_DIALOG_SUBTITLE_OSD_SETTINGS",
+      "id": 10159
+    },
+    "videobookmarks": {
+      "constant": "WINDOW_DIALOG_VIDEO_BOOKMARKS",
+      "id": 10125
+    },
+    "filebrowser": {
+      "constant": "WINDOW_DIALOG_FILE_BROWSER",
+      "id": 10126
+    },
+    "networksetup": {
+      "constant": "WINDOW_DIALOG_NETWORK_SETUP",
+      "id": 10128
+    },
+    "mediasource": {
+      "constant": "WINDOW_DIALOG_MEDIA_SOURCE",
+      "id": 10129
+    },
+    "profilesettings": {
+      "constant": "WINDOW_DIALOG_PROFILE_SETTINGS",
+      "id": 10130
+    },
+    "locksettings": {
+      "constant": "WINDOW_DIALOG_LOCK_SETTINGS",
+      "id": 10131
+    },
+    "contentsettings": {
+      "constant": "WINDOW_DIALOG_CONTENT_SETTINGS",
+      "id": 10132
+    },
+    "libexportsettings": {
+      "constant": "WINDOW_DIALOG_LIBEXPORT_SETTINGS",
+      "id": 10133
+    },
+    "songinformation": {
+      "constant": "WINDOW_DIALOG_SONG_INFO",
+      "id": 10135
+    },
+    "smartplaylisteditor": {
+      "constant": "WINDOW_DIALOG_SMART_PLAYLIST_EDITOR",
+      "id": 10136
+    },
+    "smartplaylistrule": {
+      "constant": "WINDOW_DIALOG_SMART_PLAYLIST_RULE",
+      "id": 10137
+    },
+    "busydialog": {
+      "constant": "WINDOW_DIALOG_BUSY",
+      "id": 10138
+    },
+    "busydialognocancel": {
+      "constant": "WINDOW_DIALOG_BUSY_NOCANCEL",
+      "id": 10160
+    },
+    "pictureinfo": {
+      "constant": "WINDOW_DIALOG_PICTURE_INFO",
+      "id": 10139
+    },
+    "fullscreeninfo": {
+      "constant": "WINDOW_DIALOG_FULLSCREEN_INFO",
+      "id": 10142
+    },
+    "sliderdialog": {
+      "constant": "WINDOW_DIALOG_SLIDER",
+      "id": 10145
+    },
+    "addoninformation": {
+      "constant": "WINDOW_DIALOG_ADDON_INFO",
+      "id": 10146
+    },
+    "subtitlesearch": {
+      "constant": "WINDOW_DIALOG_SUBTITLES",
+      "id": 10153
+    },
+    "musicplaylist": {
+      "constant": "WINDOW_MUSIC_PLAYLIST",
+      "id": 10500
+    },
+    "musicplaylisteditor": {
+      "constant": "WINDOW_MUSIC_PLAYLIST_EDITOR",
+      "id": 10503
+    },
+    "infoprovidersettings": {
+      "constant": "WINDOW_DIALOG_INFOPROVIDER_SETTINGS",
+      "id": 10158
+    },
+    "teletext": {
+      "constant": "WINDOW_DIALOG_OSD_TELETEXT",
+      "id": 10550
+    },
+    "selectdialog": {
+      "constant": "WINDOW_DIALOG_SELECT",
+      "id": 12000
+    },
+    "musicinformation": {
+      "constant": "WINDOW_DIALOG_MUSIC_INFO",
+      "id": 12001
+    },
+    "okdialog": {
+      "constant": "WINDOW_DIALOG_OK",
+      "id": 12002
+    },
+    "movieinformation": {
+      "constant": "WINDOW_DIALOG_VIDEO_INFO",
+      "id": 12003
+    },
+    "managevideoversions": {
+      "constant": "WINDOW_DIALOG_MANAGE_VIDEO_VERSIONS",
+      "id": 12004
+    },
+    "managevideoextras": {
+      "constant": "WINDOW_DIALOG_MANAGE_VIDEO_EXTRAS",
+      "id": 12017
+    },
+    "textviewer": {
+      "constant": "WINDOW_DIALOG_TEXT_VIEWER",
+      "id": 10147
+    },
+    "fullscreenvideo": {
+      "constant": "WINDOW_FULLSCREEN_VIDEO",
+      "id": 12005
+    },
+    "dialogcolorpicker": {
+      "constant": "WINDOW_DIALOG_COLOR_PICKER",
+      "id": 12008
+    },
+    "fullscreenlivetv": {
+      "constant": "WINDOW_FULLSCREEN_LIVETV",
+      "id": 10800
+    },
+    "fullscreenlivetvpreview": {
+      "constant": "WINDOW_FULLSCREEN_LIVETV_PREVIEW",
+      "id": 10802
+    },
+    "fullscreenlivetvinput": {
+      "constant": "WINDOW_FULLSCREEN_LIVETV_INPUT",
+      "id": 10804
+    },
+    "fullscreenradio": {
+      "constant": "WINDOW_FULLSCREEN_RADIO",
+      "id": 10801
+    },
+    "fullscreenradiopreview": {
+      "constant": "WINDOW_FULLSCREEN_RADIO_PREVIEW",
+      "id": 10803
+    },
+    "fullscreenradioinput": {
+      "constant": "WINDOW_FULLSCREEN_RADIO_INPUT",
+      "id": 10805
+    },
+    "fullscreengame": {
+      "constant": "WINDOW_FULLSCREEN_GAME",
+      "id": 12906
+    },
+    "visualisation": {
+      "constant": "WINDOW_VISUALISATION",
+      "id": 12006
+    },
+    "slideshow": {
+      "constant": "WINDOW_SLIDESHOW",
+      "id": 12007
+    },
+    "weather": {
+      "constant": "WINDOW_WEATHER",
+      "id": 12600
+    },
+    "screensaver": {
+      "constant": "WINDOW_SCREENSAVER",
+      "id": 12900
+    },
+    "videoosd": {
+      "constant": "WINDOW_DIALOG_VIDEO_OSD",
+      "id": 12901
+    },
+    "videomenu": {
+      "constant": "WINDOW_VIDEO_MENU",
+      "id": 12902
+    },
+    "videotimeseek": {
+      "constant": "WINDOW_VIDEO_TIME_SEEK",
+      "id": 12905
+    },
+    "splash": {
+      "constant": "WINDOW_SPLASH",
+      "id": 12997
+    },
+    "startwindow": {
+      "constant": "WINDOW_START",
+      "id": 12998
+    },
+    "startup": {
+      "constant": "WINDOW_STARTUP_ANIM",
+      "id": 12999
+    },
+    "peripherals": {
+      "constant": "WINDOW_DIALOG_PERIPHERALS",
+      "id": 10149
+    },
+    "peripheralsettings": {
+      "constant": "WINDOW_DIALOG_PERIPHERAL_SETTINGS",
+      "id": 10150
+    },
+    "extendedprogressdialog": {
+      "constant": "WINDOW_DIALOG_EXT_PROGRESS",
+      "id": 10151
+    },
+    "mediafilter": {
+      "constant": "WINDOW_DIALOG_MEDIA_FILTER",
+      "id": 10152
+    },
+    "addon": {
+      "constant": "WINDOW_ADDON_START",
+      "id": 14000
+    },
+    "eventlog": {
+      "constant": "WINDOW_EVENT_LOG",
+      "id": 10050
+    },
+    "favouritesbrowser": {
+      "constant": "WINDOW_FAVOURITES",
+      "id": 10060
+    },
+    "tvtimerrules": {
+      "constant": "WINDOW_TV_TIMER_RULES",
+      "id": 10710
+    },
+    "radiotimerrules": {
+      "constant": "WINDOW_RADIO_TIMER_RULES",
+      "id": 10711
+    },
+    "gameosd": {
+      "constant": "WINDOW_DIALOG_GAME_OSD",
+      "id": 10822
+    },
+    "gamevideofilter": {
+      "constant": "WINDOW_DIALOG_GAME_VIDEO_FILTER",
+      "id": 10823
+    },
+    "gamestretchmode": {
+      "constant": "WINDOW_DIALOG_GAME_STRETCH_MODE",
+      "id": 10824
+    },
+    "gamevolume": {
+      "constant": "WINDOW_DIALOG_GAME_VOLUME",
+      "id": 10825
+    },
+    "gameadvancedsettings": {
+      "constant": "WINDOW_DIALOG_GAME_ADVANCED_SETTINGS",
+      "id": 10826
+    },
+    "gamevideorotation": {
+      "constant": "WINDOW_DIALOG_GAME_VIDEO_ROTATION",
+      "id": 10827
+    },
+    "ingamesaves": {
+      "constant": "WINDOW_DIALOG_IN_GAME_SAVES",
+      "id": 10829
+    },
+    "gamesaves": {
+      "constant": "WINDOW_DIALOG_GAME_SAVES",
+      "id": 10830
+    },
+    "gameagents": {
+      "constant": "WINDOW_DIALOG_GAME_AGENTS",
+      "id": 10831
+    },
+    "gamediscmanager": {
+      "constant": "WINDOW_DIALOG_GAME_DISC_MANAGER",
+      "id": 10832
+    },
+    "gameachievements": {
+      "constant": "WINDOW_DIALOG_GAME_ACHIEVEMENTS",
+      "id": 10833
+    },
+    "gameindicators": {
+      "constant": "WINDOW_DIALOG_GAME_INDICATORS",
+      "id": 10838
+    },
+    "gameleaderboards": {
+      "constant": "WINDOW_DIALOG_GAME_LEADERBOARDS",
+      "id": 10836
+    },
+    "gameleaderboardentries": {
+      "constant": "WINDOW_DIALOG_GAME_LEADERBOARD_ENTRIES",
+      "id": 10837
+    },
+    "gamecheats": {
+      "constant": "WINDOW_DIALOG_GAME_CHEATS",
+      "id": 10839
+    },
+    "dialogselectvideo": {
+      "constant": "WINDOW_DIALOG_SELECT_VIDEO_STREAM",
+      "id": 12300
+    },
+    "dialogselectaudio": {
+      "constant": "WINDOW_DIALOG_SELECT_AUDIO_STREAM",
+      "id": 12301
+    },
+    "dialogselectsubtitle": {
+      "constant": "WINDOW_DIALOG_SELECT_SUBTITLE_STREAM",
+      "id": 12302
+    }
+  }
+}

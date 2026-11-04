@@ -1,0 +1,117 @@
+{
+  "scope": "Copied production actions/usealttexture in native standalone controls. Only presentation/layout/visibility context changed. No playback/provider test.",
+  "controls": [
+    {
+      "id": 1001,
+      "file": "PlayerControls.xml",
+      "production_control": "609",
+      "before": true,
+      "actions": [
+        {
+          "tag": "onclick",
+          "condition": null,
+          "text": "Close"
+        },
+        {
+          "tag": "onclick",
+          "condition": null,
+          "text": "RunScript($INFO[Skin.String(LyricScript_Path)])"
+        },
+        {
+          "tag": "altclick",
+          "condition": null,
+          "text": "Skin.SetAddon(LyricScript_Path,xbmc.python.lyrics)"
+        },
+        {
+          "tag": "altclick",
+          "condition": null,
+          "text": "Close"
+        },
+        {
+          "tag": "altclick",
+          "condition": null,
+          "text": "XBMC.RunScript($INFO[Skin.String(LyricScript_Path)])"
+        }
+      ]
+    },
+    {
+      "id": 1002,
+      "file": "MusicOSD.xml",
+      "production_control": "701",
+      "before": true,
+      "actions": [
+        {
+          "tag": "onclick",
+          "condition": null,
+          "text": "Close"
+        },
+        {
+          "tag": "onclick",
+          "condition": "!String.IsEmpty(Skin.String(LyricScript_Path))",
+          "text": "RunScript($INFO[Skin.String(LyricScript_Path)])"
+        },
+        {
+          "tag": "onclick",
+          "condition": "String.IsEmpty(Skin.String(LyricScript_Path))",
+          "text": "Skin.SetAddon(LyricScript_Path,xbmc.python.lyrics)"
+        },
+        {
+          "tag": "onclick",
+          "condition": "String.IsEmpty(Skin.String(LyricScript_Path))",
+          "text": "Close"
+        },
+        {
+          "tag": "onclick",
+          "condition": "String.IsEmpty(Skin.String(LyricScript_Path))",
+          "text": "RunScript($INFO[Skin.String(LyricScript_Path)])"
+        }
+      ]
+    },
+    {
+      "id": 1003,
+      "file": "PlayerControls.xml",
+      "production_control": "609",
+      "before": false,
+      "actions": [
+        {
+          "tag": "onclick",
+          "condition": null,
+          "text": "Close"
+        },
+        {
+          "tag": "onclick",
+          "condition": null,
+          "text": "RunScript($INFO[Skin.String(LyricScript_Path)])"
+        },
+        {
+          "tag": "altclick",
+          "condition": null,
+          "text": "Skin.SetAddon(LyricScript_Path,xbmc.python.lyrics)"
+        }
+      ]
+    },
+    {
+      "id": 1004,
+      "file": "MusicOSD.xml",
+      "production_control": "701",
+      "before": false,
+      "actions": [
+        {
+          "tag": "onclick",
+          "condition": "!String.IsEmpty(Skin.String(LyricScript_Path))",
+          "text": "Close"
+        },
+        {
+          "tag": "onclick",
+          "condition": "!String.IsEmpty(Skin.String(LyricScript_Path))",
+          "text": "RunScript($INFO[Skin.String(LyricScript_Path)])"
+        },
+        {
+          "tag": "onclick",
+          "condition": "String.IsEmpty(Skin.String(LyricScript_Path))",
+          "text": "Skin.SetAddon(LyricScript_Path,xbmc.python.lyrics)"
+        }
+      ]
+    }
+  ]
+}

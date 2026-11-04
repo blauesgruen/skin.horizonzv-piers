@@ -1,0 +1,47 @@
+{
+  "status": "Interrupted: RPC connection reset, Kodi process absent and crash artifact present. Add-extra behavior not accepted. Cause not established.",
+  "crash_artifact_metadata": [
+    {
+      "name": "kodi_crashlog-22.0-RC1 Git_20260927-28ea2eac1eb-20261102-203105.dmp",
+      "bytes": 450804,
+      "modified_utc": "2026-11-02T19:31:05.683388+00:00"
+    }
+  ],
+  "read_only_database_snapshot": {
+    "movies": [
+      [
+        1,
+        "Skin Audit Movie"
+      ]
+    ],
+    "asset_table_columns": [
+      "idFile",
+      "idMedia",
+      "media_type",
+      "itemType",
+      "idType"
+    ],
+    "video_asset_rows": [
+      [
+        3,
+        1,
+        "movie",
+        1,
+        40400
+      ],
+      [
+        4,
+        1,
+        "movie",
+        2,
+        40801
+      ]
+    ]
+  },
+  "cleanup": {
+    "xml_files_matched": 164,
+    "mismatches": [],
+    "temporary_hooks_removed": true
+  },
+  "next_step": "Inspect crash evidence and reproduce with a baseline in the isolated profile before attributing the failure to skin or Kodi."
+}

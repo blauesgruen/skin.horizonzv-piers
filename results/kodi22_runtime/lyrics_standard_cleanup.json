@@ -1,0 +1,80 @@
+{
+  "players_before_stop_count": 1,
+  "player_stop_results": [
+    {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": "OK"
+    }
+  ],
+  "players_after_stop": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": []
+  },
+  "pvr": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "available": true,
+      "recording": false,
+      "scanning": false
+    }
+  },
+  "quit": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": "OK"
+  },
+  "process_35828_exited": true,
+  "settings": {
+    "guisettings.xml": {
+      "changed_setting_ids": [
+        "lookandfeel.skin"
+      ],
+      "restored_ids": [
+        "lookandfeel.skin"
+      ],
+      "remaining_value_difference_ids": [],
+      "added_setting_ids": []
+    },
+    "settings.xml": {
+      "changed_setting_ids": [
+        "lyricscript_path"
+      ],
+      "restored_ids": [
+        "lyricscript_path"
+      ],
+      "remaining_value_difference_ids": [],
+      "added_setting_ids": []
+    }
+  },
+  "normal_exit_message": true,
+  "raw_log_copied": false,
+  "addon_or_core_source_modified": false,
+  "error_word_occurrences_in_log_lines": 57,
+  "severity_error_lines": 57,
+  "error_categories": {
+    "Window Translator": 20,
+    "CCurlFile": 25,
+    "CDVDDemuxFFmpeg": 11,
+    "EXCEPTION": 1
+  },
+  "external_keymap_window_errors": {
+    "source": "D:/Program Files/Kodi22/portable_data/userdata/keymaps/keyboard.xml",
+    "sections": [
+      "Favourites",
+      "GUICalibration",
+      "MyFiles",
+      "MyMusicFiles",
+      "MyMusicLibrary",
+      "MyTVSettings",
+      "MyVideoFiles",
+      "MyVideoLibrary",
+      "Scripts",
+      "VisualisationSettings"
+    ],
+    "matching_legacy_sections_in_skin_xml": 0,
+    "modified": false
+  }
+}

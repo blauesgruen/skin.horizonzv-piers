@@ -1,0 +1,38 @@
+{
+  "gui": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "currentcontrol": {
+        "label": ""
+      },
+      "currentwindow": {
+        "id": 10605,
+        "label": "PVR-Programm\u00fcbersichtssuche"
+      }
+    }
+  },
+  "fields": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Control.GetLabel(21)": "Sendergruppe (Alle Sender)",
+      "Control.GetLabel(23)": "Sender (Alle Radiosender)",
+      "Control.GetLabel(9).index(1)": ""
+    }
+  },
+  "cancelled_to": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "currentcontrol": {
+        "label": "Neue Suche ..."
+      },
+      "currentwindow": {
+        "id": 10709,
+        "label": "Radioprogramm\u00fcbersichtssuche"
+      }
+    }
+  },
+  "search_or_save_used": false
+}

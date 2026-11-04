@@ -1,0 +1,23 @@
+{
+  "scope": "Native library import and versions-manager inspection of the authored movie. Navigation correction remains under verification.",
+  "last_gui": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "currentcontrol": {
+        "label": "Add version"
+      },
+      "currentwindow": {
+        "id": 12004,
+        "label": ""
+      }
+    }
+  },
+  "observed_problems": [
+    "List 50 Left targeted nonexistent 9001; source changed to action group 101.",
+    "Action group 101 Left targeting group 100 failed to return to the version list in the native run. Direct list target 50 still needs correction and verification."
+  ],
+  "play_action": "Native Play was verified in versions_native_before_fix.json; own AVI played and was stopped.",
+  "status": "Resolved for the tested one-version native context; see versions_focus_after_fix.json and runtime report.",
+  "resolution": "List Left targets 101; all nine dialog-button instances explicitly target list 50 on Left; ineffective parent-only return route removed."
+}

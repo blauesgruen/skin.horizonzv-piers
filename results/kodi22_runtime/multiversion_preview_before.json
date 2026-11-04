@@ -1,0 +1,12 @@
+{
+  "id": 1,
+  "jsonrpc": "2.0",
+  "result": {
+    "Container(50).ListItem.Art(poster)": "",
+    "Container(50).ListItem.Art(thumb)": "image://video@C%3a%5cUsers%5czorno%5cAppData%5cLocal%5cTemp%5chorizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440%5cportable_data%5ctestmedia%5clibrary_movies%5cSkin%20Audit%20Movie%20(2026)%5cSkin%20Audit%20Movie%20-%20Chapter%20Edition.mkv/",
+    "ListItem.Art(poster)": "",
+    "ListItem.Art(thumb)": "",
+    "ListItem.DBType": "movie",
+    "ListItem.Icon": "DefaultVideo.png"
+  }
+}

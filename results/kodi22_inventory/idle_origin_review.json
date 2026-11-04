@@ -1,0 +1,20 @@
+{
+  "checked_on": "2026-11-04",
+  "sources": [
+    "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/guilib/guiinfo/SystemGUIInfo.cpp",
+    "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/guilib/GUIStaticItem.cpp",
+    "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/guilib/GUIControlFactory.cpp"
+  ],
+  "source_contracts": [
+    "System.HasShutdown tests whether powermanagement.shutdowntime is greater than zero.",
+    "System.IdleShutdownInhibited reads CApplicationPowerHandling::IsIdleShutdownInhibited.",
+    "GUIStaticItem delegates visibility to GetConditionalVisibility; repeated visible elements are ANDed, not ignored. Existing menu settings gates are supported."
+  ],
+  "runtime_evidence": "../kodi22_runtime/idle_origin_checks.json",
+  "result": "Native state false->true->false and exclusive inhibit/allow item visibility passed. Official repository origin displayed correctly.",
+  "source_changes_required": false,
+  "limits": [
+    "No power operation or automatic timeout executed.",
+    "No positive multi-page addon-description or deprecated/broken lifecycle test."
+  ]
+}

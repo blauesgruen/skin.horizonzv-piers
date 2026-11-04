@@ -1,0 +1,119 @@
+{
+  "scope": "Injected provider state and 10 configured devices; real backend and wake/status/settings actions disabled in test copy. Down navigation only; no item clicked.",
+  "observations": [
+    {
+      "Container(36110).ListItem.Label": "Settings",
+      "Container(36110).ListItem.Property(ip)": "",
+      "Container(36110).ListItem.Property(mac)": "",
+      "Container(36110).ListItem.Property(name)": "",
+      "Container(36110).ListItem.Property(number)": "",
+      "Container(36110).NumItems": "13"
+    },
+    {
+      "Container(36110).ListItem.Label": "Refresh",
+      "Container(36110).ListItem.Property(ip)": "",
+      "Container(36110).ListItem.Property(mac)": "",
+      "Container(36110).ListItem.Property(name)": "",
+      "Container(36110).ListItem.Property(number)": "",
+      "Container(36110).NumItems": "13"
+    },
+    {
+      "Container(36110).ListItem.Label": "Audit device 1 (192.0.2.1)",
+      "Container(36110).ListItem.Property(ip)": "192.0.2.1",
+      "Container(36110).ListItem.Property(mac)": "02:00:00:00:00:01",
+      "Container(36110).ListItem.Property(name)": "Audit device 1",
+      "Container(36110).ListItem.Property(number)": "1. ",
+      "Container(36110).NumItems": "13"
+    },
+    {
+      "Container(36110).ListItem.Label": "Audit device 2 (192.0.2.2)",
+      "Container(36110).ListItem.Property(ip)": "192.0.2.2",
+      "Container(36110).ListItem.Property(mac)": "02:00:00:00:00:02",
+      "Container(36110).ListItem.Property(name)": "Audit device 2",
+      "Container(36110).ListItem.Property(number)": "2. ",
+      "Container(36110).NumItems": "13"
+    },
+    {
+      "Container(36110).ListItem.Label": "Audit device 3 (192.0.2.3)",
+      "Container(36110).ListItem.Property(ip)": "192.0.2.3",
+      "Container(36110).ListItem.Property(mac)": "02:00:00:00:00:03",
+      "Container(36110).ListItem.Property(name)": "Audit device 3",
+      "Container(36110).ListItem.Property(number)": "3. ",
+      "Container(36110).NumItems": "13"
+    },
+    {
+      "Container(36110).ListItem.Label": "Audit device 4 (192.0.2.4)",
+      "Container(36110).ListItem.Property(ip)": "192.0.2.4",
+      "Container(36110).ListItem.Property(mac)": "02:00:00:00:00:04",
+      "Container(36110).ListItem.Property(name)": "Audit device 4",
+      "Container(36110).ListItem.Property(number)": "4. ",
+      "Container(36110).NumItems": "13"
+    },
+    {
+      "Container(36110).ListItem.Label": "Audit device 5 (192.0.2.5)",
+      "Container(36110).ListItem.Property(ip)": "192.0.2.5",
+      "Container(36110).ListItem.Property(mac)": "02:00:00:00:00:05",
+      "Container(36110).ListItem.Property(name)": "Audit device 5",
+      "Container(36110).ListItem.Property(number)": "5. ",
+      "Container(36110).NumItems": "13"
+    },
+    {
+      "Container(36110).ListItem.Label": "Audit device 6 (192.0.2.6)",
+      "Container(36110).ListItem.Property(ip)": "192.0.2.6",
+      "Container(36110).ListItem.Property(mac)": "02:00:00:00:00:06",
+      "Container(36110).ListItem.Property(name)": "Audit device 6",
+      "Container(36110).ListItem.Property(number)": "6. ",
+      "Container(36110).NumItems": "13"
+    },
+    {
+      "Container(36110).ListItem.Label": "Audit device 7 (192.0.2.7)",
+      "Container(36110).ListItem.Property(ip)": "192.0.2.7",
+      "Container(36110).ListItem.Property(mac)": "02:00:00:00:00:07",
+      "Container(36110).ListItem.Property(name)": "Audit device 7",
+      "Container(36110).ListItem.Property(number)": "7. ",
+      "Container(36110).NumItems": "13"
+    },
+    {
+      "Container(36110).ListItem.Label": "Audit device 8 (192.0.2.8)",
+      "Container(36110).ListItem.Property(ip)": "192.0.2.8",
+      "Container(36110).ListItem.Property(mac)": "02:00:00:00:00:08",
+      "Container(36110).ListItem.Property(name)": "Audit device 8",
+      "Container(36110).ListItem.Property(number)": "8. ",
+      "Container(36110).NumItems": "13"
+    },
+    {
+      "Container(36110).ListItem.Label": "Audit device 9 (192.0.2.9)",
+      "Container(36110).ListItem.Property(ip)": "192.0.2.9",
+      "Container(36110).ListItem.Property(mac)": "02:00:00:00:00:09",
+      "Container(36110).ListItem.Property(name)": "Audit device 9",
+      "Container(36110).ListItem.Property(number)": "9. ",
+      "Container(36110).NumItems": "13"
+    },
+    {
+      "Container(36110).ListItem.Label": "Audit device 10 (192.0.2.10)",
+      "Container(36110).ListItem.Property(ip)": "192.0.2.10",
+      "Container(36110).ListItem.Property(mac)": "02:00:00:00:00:0a",
+      "Container(36110).ListItem.Property(name)": "Audit device 10",
+      "Container(36110).ListItem.Property(number)": "10. ",
+      "Container(36110).NumItems": "13"
+    },
+    {
+      "Container(36110).ListItem.Label": "Wake all devices with a MAC address",
+      "Container(36110).ListItem.Property(ip)": "",
+      "Container(36110).ListItem.Property(mac)": "",
+      "Container(36110).ListItem.Property(name)": "",
+      "Container(36110).ListItem.Property(number)": "",
+      "Container(36110).NumItems": "13"
+    },
+    {
+      "Container(36110).ListItem.Label": "Settings",
+      "Container(36110).ListItem.Property(ip)": "",
+      "Container(36110).ListItem.Property(mac)": "",
+      "Container(36110).ListItem.Property(name)": "",
+      "Container(36110).ListItem.Property(number)": "",
+      "Container(36110).NumItems": "13"
+    }
+  ],
+  "all_ten_slots_reached": true,
+  "total_items": 13
+}

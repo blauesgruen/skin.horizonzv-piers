@@ -1,0 +1,77 @@
+{
+  "checked_on": "2026-11-04",
+  "scope": "Input action names and symbolic ActionID mappings in native ActionTranslator; direct action tags, include action parameters and statically resolvable Action/AlarmClock targets. Handler behavior and dynamic variable values excluded.",
+  "sources": {
+    "22.0rc1-Piers": {
+      "url": "https://raw.githubusercontent.com/xbmc/xbmc/22.0rc1-Piers/xbmc/input/actions/ActionTranslator.cpp",
+      "sha256": "6d5478e9b15905f5590fcc96ffe39b61a5cb42b7ceb5f38bce7c92b9b57e3d18",
+      "mapping_count": 219
+    },
+    "master": {
+      "url": "https://raw.githubusercontent.com/xbmc/xbmc/master/xbmc/input/actions/ActionTranslator.cpp",
+      "sha256": "6d5478e9b15905f5590fcc96ffe39b61a5cb42b7ceb5f38bce7c92b9b57e3d18",
+      "mapping_count": 219
+    }
+  },
+  "piers_snapshot_corrected_missing_names": [
+    "number0",
+    "number1",
+    "number2",
+    "number3",
+    "number4",
+    "number5",
+    "number6",
+    "number7",
+    "number8",
+    "number9"
+  ],
+  "removed_names": [],
+  "added_names": [],
+  "changed_symbolic_targets": [],
+  "used_input_action_names": [
+    "audionextlanguage",
+    "back",
+    "channeldown",
+    "channelup",
+    "close",
+    "down",
+    "filter",
+    "firstpage",
+    "fullscreen",
+    "jumpsms2",
+    "jumpsms3",
+    "jumpsms4",
+    "jumpsms5",
+    "jumpsms6",
+    "jumpsms7",
+    "jumpsms8",
+    "jumpsms9",
+    "menu",
+    "nextchannelgroup",
+    "nextsubtitle",
+    "noop",
+    "play",
+    "playerprogramselect",
+    "playerresolutionselect",
+    "previouschannelgroup",
+    "right",
+    "setrating",
+    "settingslevelchange",
+    "showsubtitles",
+    "stereomode",
+    "stereomodetomono",
+    "stop",
+    "subtitledelay",
+    "togglestereomode",
+    "up"
+  ],
+  "removed_used_names": [],
+  "changed_used_symbolic_targets": [],
+  "literal_action_references": 1614,
+  "nested_action_targets": 64,
+  "findings": [],
+  "limits": [
+    "Builtin modules retained their earlier dated master snapshot; no complete current handler equivalence asserted.",
+    "This does not validate external userdata keymaps or addon-generated actions."
+  ]
+}

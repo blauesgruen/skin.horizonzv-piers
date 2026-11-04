@@ -1,4 +1,4 @@
 Datei;Zeile;Stelle
-Includes_Buttons_and_Lists.xml;1111;"fallback=""$INFO[Window(Home).Property(SkinHelperPI"""
+Includes_Buttons_and_Lists.xml;1110;"fallback=""$INFO[Window(Home).Property(SkinHelperPI"""
 View_722_RightList.xml;214;"fallback=""$VAR[ClearlogoVAR]"""
 View_Music_741_CoverWall.xml;37;"fallback=""$INFO[ListItem.Art(fanart)]"""

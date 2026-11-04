@@ -1,0 +1,36 @@
+{
+  "pvr": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "available": true,
+      "recording": false,
+      "scanning": false
+    }
+  },
+  "first_tv_epg_total": 102,
+  "broadcast_error": null,
+  "gui": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "currentcontrol": {
+        "label": "Neue Suche ..."
+      },
+      "currentwindow": {
+        "id": 10704,
+        "label": "TV-Programm\u00fcbersichtssuche"
+      }
+    }
+  },
+  "labels": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container.FolderPath": "pvr://search/tv/",
+      "Container.NumItems": "2",
+      "ListItem.FileNameAndPath": "pvr://search/search_dialog",
+      "ListItem.Label": "Neue Suche ..."
+    }
+  }
+}

@@ -43,4 +43,19 @@ Im getrennten Kodi wurde mit unverändertem Anbieter-Gating eine vorab gesetzte 
 
 Der erste Testlauf nahm eine feste anfängliche Auswahlposition an und beschriftete deshalb seine Fälle falsch. Er liegt nur als `wol_intercepted_draft.json` vor. Die erfolgreiche Nachprüfung sucht den tatsächlichen Listeneintrag anhand von Platznummer oder Beschriftung; Beleg `wol_intercepted_actions.json`. Anschließend wurden sämtliche Teständerungen entfernt, die Skin-Kopie vollständig per SHA-256 abgeglichen und Kodi beendet (`wol_copy_check.json`).
 
-Offen: Statuslieferung mit den echten älteren/neuen Anbieterständen, Dienst-/Fehlerfälle und Änderung von Einstellungen während des offenen Dialogs; volle Zehnerliste mit Scrollnavigation und visuellem Vergleich; ein ausgewähltes echtes Testgerät für MAC-Validierung und Paketwirkung. Der native Handler und die abgefangenen Zieltests ersetzen diese Prüfungen nicht.
+Offen: Statuslieferung mit den echten älteren/neuen Anbieterständen, Dienst-/Fehlerfälle und Änderung von Einstellungen während des offenen Dialogs; lange Gerätenamen, weitere Sprachen/Seitenverhältnisse nach der inzwischen geprüften Standard-Zehnerliste; ein ausgewähltes echtes Testgerät für MAC-Validierung und Paketwirkung. Der native Handler und die abgefangenen Zieltests ersetzen diese Prüfungen nicht.
+
+## Nachprüfung: vollständige Liste
+
+Der bisher offene Grundfall „zehn Geräte plus Hilfsaktionen, Scrollen ohne Überlagerung der Details“ ist mit eingespeisten Testdaten im sichtbaren Kodi geprüft. Alle 13 Einträge erreicht, Daten der Auswahl abgeglichen, Aufnahmen visuell geprüft. Die ursprüngliche Startauswahl war Einstellungen, nicht Platz 1. Netzwerk-/Status-/Einstellungsaktionen wurden in der Testkopie neutralisiert und nicht angeklickt. Quelle/Log/Testabweichungen und Bereinigung stehen im Laufzeitbericht (`wol_ten_*`). Lange Namen/andere Sprachen/Seitenverhältnisse, echte Statusanbieter und echte Gerätewirkung bleiben offen.
+
+
+## Echte Ping-Statusanbindung (2026-11-04)
+
+Unveränderten installierten Anbieter 4.1.2 in das getrennte Kodi-Profil kopiert, keine Benutzereinstellungen übernommen. Testdaten nur 127.0.0.1 auf Platz 1 und 10, Namen „Audit Loopback“, sämtliche MAC-Felder leer und Hintergrunddienst aus. Der produktive WOL-Onload ruft den echten Statusanbieter auf. Beide Ziele werden mit Status on und servercount/serveron=2 angezeigt, daneben Settings/Refresh; kein Sammelweck-Eintrag ohne MAC. Ein eingespeister Altwert auf Platz 5 verschwindet.
+
+Zweiter regulärer Start mit nur Platz 1: servercount/serveron=1, Platz 10 leer und aus der Liste entfernt. Danach Anbieter deaktiviert und den Dialog neu geöffnet: nur Settings, Zähler und zuvor gesetzter Altwert auf Platz 10 leer. Keine Gerätezeile ausgewählt und kein WakeOnLan-Aufruf. Die beiden Laufzeitlogs enthalten keine ERROR-Zeile und enden regulär.
+
+Beide Kodi-Prozesse beendet, temporäre Anbieter-Konfiguration entfernt, Profileinstellungen bytegleich wiederhergestellt und 164 XML-Dateien mit dem Projekt abgeglichen. 17 kopierte Anbieter-/Ressourcendateien sowie die Originaldateien stimmen mit den vorher erfassten SHA-256-Werten überein. Anbieter bleibt unverändert nur als zusätzliche Testinstallation vorhanden. Belege: `kodi22_runtime/ping_provider_checks.json`, `ping_provider_two.png`, `ping_provider_one.png`, `run_ping_provider_probe.py`.
+
+Grenzen: kein echter Weckauftrag, keine MAC-/Paketwirkung, kein Hintergrundintervall, keine fehlgeschlagene Probe und kein live bearbeiteter Einstellungsdialog. Ältere Anbieterstände bleiben ungeprüft. Der Anbieter 4.1.2 räumt fehlende Plätze selbst auf; die erfolgreiche Statusaktualisierung belegt hier Skin und Anbieter zusammen, nicht allein den Skin-Clear-Schritt.

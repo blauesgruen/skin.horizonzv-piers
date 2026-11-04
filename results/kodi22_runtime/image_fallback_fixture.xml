@@ -1,0 +1,6 @@
+<window id="1194"><defaultcontrol always="true">50</defaultcontrol><onload>RunScript(C:/Users/zorno/AppData/Local/Temp/horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440/portable_data/addons/skin.horizonzv/scripts/audit_image_fallback.py)</onload><controls>
+<control type="image"><texture>Black.png</texture></control>
+<control type="list" id="50"><left>50</left><top>50</top><width>1800</width><height>70</height><itemlayout width="1800" height="70"><control type="label"><label>$INFO[ListItem.Label]</label></control></itemlayout><focusedlayout width="1800" height="70"><control type="label"><label>$INFO[ListItem.Label]</label></control></focusedlayout></control>
+<control type="image" id="601"><left>50</left><top>180</top><width>850</width><height>650</height><aspectratio>keep</aspectratio><texture fallback="$VAR[ClearlogoVAR]">$INFO[ListItem.Art(fanart)]</texture></control>
+<control type="image" id="602"><left>1000</left><top>180</top><width>850</width><height>650</height><aspectratio>keep</aspectratio><texture fallback="$INFO[ListItem.Art(fanart)]">$VAR[ClearlogoVAR]</texture></control>
+</controls></window>

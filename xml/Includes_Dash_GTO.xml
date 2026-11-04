@@ -11,7 +11,6 @@
 			<onclick condition="!Container($PARAM[id]).Position(0)">RunPlugin(plugin://script.service.gto?action=info&amp;item=$INFO[ListItem.Property(Item)])</onclick>
 			<pagecontrol/>
 			<scrolltime tween="circle" easing="out">800</scrolltime>
-			<orientation>horizontal</orientation>
 			<visible>$PARAM[visible]</visible>
 			<visible>System.AddonIsEnabled(script.service.gto)</visible>
 			<itemlayout height="105" width="360">
@@ -58,6 +57,6 @@
 		</control>
 	</include>
 	<include name="GTOContent" condition="System.AddonIsEnabled(script.service.gto)">
-		<content target="pvr">plugin://script.service.gto?action=getcontent&amp;ts=$INFO[Window(Home).Property(GTO.timestamp)]</content>
+		<content target="videos">plugin://script.service.gto?action=getcontent&amp;ts=$INFO[Window(Home).Property(GTO.timestamp)]</content>
 	</include>
 </includes>

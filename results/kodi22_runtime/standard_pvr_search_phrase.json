@@ -1,0 +1,36 @@
+{
+  "scope": "Phrase search through native dialog, no Save operation. Bare multiword search uses Kodi default OR semantics; quotes test exact phrase.",
+  "before_edit": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Control.GetLabel(23)": "Sender (Das Erste HD)",
+      "Control.GetLabel(9).index(1)": "In aller Freundschaft"
+    }
+  },
+  "term": "\"In aller Freundschaft\"",
+  "gui": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "currentcontrol": {
+        "label": "Suche bearbeiten ..."
+      },
+      "currentwindow": {
+        "id": 10704,
+        "label": "TV-Programm\u00fcbersichtssuche"
+      }
+    }
+  },
+  "count": 4,
+  "labels": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container.ListItemAbsolute(0).Label": "Suche bearbeiten ...",
+      "Container.ListItemAbsolute(1).Label": "Gespeicherte Suchen",
+      "Container.ListItemAbsolute(2).Label": "In aller Freundschaft (1154)",
+      "Container.ListItemAbsolute(3).Label": "In aller Freundschaft - Die jungen \u00c4rzte (472)"
+    }
+  }
+}

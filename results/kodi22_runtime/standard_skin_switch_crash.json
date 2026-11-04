@@ -1,0 +1,30 @@
+{
+  "scope": "Exception metadata only; no symbolic stack or proven cause. Earlier standard-profile dump predates this test.",
+  "dumps": [
+    {
+      "dump": "kodi_crashlog-22.0-RC1 Git_20260927-28ea2eac1eb-20261103-131150.dmp",
+      "exception": "0xc0000005",
+      "parameters": [
+        "0x0",
+        "0x163616c8c"
+      ],
+      "module": "kodi.exe",
+      "offset": "0x4bd469"
+    },
+    {
+      "dump": "kodi_crashlog-22.0-RC1 Git_20260927-28ea2eac1eb-20261103-122637.dmp",
+      "exception": "0xc0000005",
+      "parameters": [
+        "0x0",
+        "0x3a18"
+      ],
+      "module": "kodi.exe",
+      "offset": "0x4bd469"
+    }
+  ],
+  "baseline_skin_and_screenshot_path_restored": true,
+  "restored": {
+    "lookandfeel.skin": "skin.horizonzVI",
+    "debug.screenshotpath": "D:/Program Files/Kodi22/portable_data/addons/skin.horizonzVI/.shots/"
+  }
+}

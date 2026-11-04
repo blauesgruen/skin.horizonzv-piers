@@ -7,15 +7,15 @@ Erzeugt von `tools/analyze_skin.py`. Alle Detaillisten liegen als CSV (Trennzeic
 | Kennzahl | Wert |
 |---|---|
 | xml_dateien | 164 |
-| xml_zeilen | 24211 |
+| xml_zeilen | 24231 |
 | xml_parsefehler | 0 |
 | fenster | 95 |
 | custom_fenster | 19 |
-| includes_definiert | 380 |
-| includes_unbenutzt | 6 |
+| includes_definiert | 374 |
+| includes_unbenutzt | 0 |
 | includes_fehlend | 0 |
 | includes_doppelt | 0 |
-| variablen | 274 |
+| variablen | 278 |
 | variablen_unbenutzt | 55 |
 | variablen_fehlend | 0 |
 | konstanten | 59 |
@@ -29,8 +29,8 @@ Erzeugt von `tools/analyze_skin.py`. Alle Detaillisten liegen als CSV (Trennzeic
 | skinsettings_optionen | 129 |
 | skinsettings_ohne_beschreibung | 89 |
 | sprachen | 14 |
-| strings_definiert | 294 |
-| strings_benutzt | 264 |
+| strings_definiert | 295 |
+| strings_benutzt | 265 |
 | strings_fehlend | 0 |
 | strings_unbenutzt | 30 |
 | media_dateien | 758 |
@@ -39,13 +39,13 @@ Erzeugt von `tools/analyze_skin.py`. Alle Detaillisten liegen als CSV (Trennzeic
 | texturen_fehlend | 0 |
 | texturen_vermutlich_unbenutzt | 2 |
 | fontsets | 1 |
-| fonts | 67 |
-| fonts_unbenutzt | 7 |
+| fonts | 56 |
+| fonts_unbenutzt | 0 |
 | farben_benannt | 24 |
 | farben_hex_hartkodiert | 18 |
-| addons_referenziert | 31 |
+| addons_referenziert | 32 |
 | views | 51 |
-| auffaelligkeiten | 10 |
+| auffaelligkeiten | 8 |
 | zahlen_statt_konstanten | 4 |
 | dynamisch_nicht_ausgewertet | 3 |
 
@@ -62,7 +62,7 @@ Erzeugt von `tools/analyze_skin.py`. Alle Detaillisten liegen als CSV (Trennzeic
 | Custom_1142_refesh_musicdb.xml | 1142 | dialog | 11 | 5 | 6 | 67 |
 | Custom_1151_WOL.xml | 1151 | dialog | 36110 | 13 | 13 | 182 |
 | Custom_1152_Steelbox.xml | 1152 | buttonmenu | 100 | 26 | 7 | 202 |
-| Custom_1154_SkinSettingReset.xml | 1154 | dialog | 11 | 5 | 6 | 72 |
+| Custom_1154_SkinSettingReset.xml | 1154 | dialog | 11 | 5 | 6 | 70 |
 | Custom_1155_FirstRun.xml | 1155 | dialog | 10 | 7 | 5 | 162 |
 | Custom_1200_Dashboard.xml | 1200 | dialog | 8006 | 12 | 13 | 171 |
 | Custom_1301_HomeMenuItemsPosition.xml | 1301 | window | 13000 | 15 | 6 | 340 |
@@ -83,7 +83,7 @@ Erzeugt von `tools/analyze_skin.py`. Alle Detaillisten liegen als CSV (Trennzeic
 | DialogExtendedProgressBar.xml | 151 | window |       | 7 | 2 | 61 |
 | DialogFullScreenInfo.xml | 142 | dialog | 603 | 31 | 7 | 166 |
 | DialogGameControllers.xml |  | window | 3 | 0 | 4 | 15 |
-| DialogKeyboard.xml |  | window | 300 | 85 | 70 | 648 |
+| DialogKeyboard.xml |  | window | 300 | 85 | 70 | 653 |
 | DialogMediaSource.xml |  | window | 10 | 16 | 12 | 183 |
 | DialogMusicInfo.xml |  | window | 9000 | 46 | 26 | 438 |
 | DialogMusicScan.xml | 112 | window | 401 | 5 | 2 | 44 |
@@ -104,22 +104,22 @@ Erzeugt von `tools/analyze_skin.py`. Alle Detaillisten liegen als CSV (Trennzeic
 | DialogSlider.xml |  | window | 11 | 5 | 2 | 51 |
 | DialogSubtitles.xml |  | dialog |  | 44 | 0 | 400 |
 | DialogTextViewer.xml | 147 | window | 61 | 9 | 8 | 77 |
-| DialogVideoInfo.xml |  | window | 5000 | 76 | 43 | 876 |
-| DialogVideoManager.xml |  | window |  | 13 | 14 | 277 |
+| DialogVideoInfo.xml |  | window | 5000 | 76 | 44 | 874 |
+| DialogVideoManager.xml |  | window |  | 14 | 15 | 303 |
 | DialogVideoScan.xml | 133 | window | 401 | 6 | 0 | 49 |
 | DialogVolumeBar.xml |  | window |  | 7 | 1 | 69 |
 | EventLog.xml |  | window | 50 | 26 | 22 | 200 |
 | FileBrowser.xml |  | window | 450 | 16 | 12 | 170 |
 | FileManager.xml |  | window | 20 | 32 | 10 | 201 |
 | GameOSD.xml |  | window | 1103 | 20 | 5 | 174 |
-| Home.xml |  | window | 9000 | 47 | 33 | 495 |
+| Home.xml |  | window | 9000 | 47 | 33 | 494 |
 | LoginScreen.xml | 29 | window | 52 | 16 | 8 | 138 |
-| MusicOSD.xml |  | window | 99 | 55 | 24 | 651 |
-| MusicVisualisation.xml |  | window |  	 | 193 | 40 | 1397 |
+| MusicOSD.xml |  | window | 99 | 55 | 24 | 652 |
+| MusicVisualisation.xml |  | window |  	 | 193 | 40 | 1396 |
 | MyFavourites.xml |  | window | 777 | 10 | 22 | 79 |
 | MyGames.xml |  | window | 50 | 8 | 20 | 65 |
 | MyMusicNav.xml | 502 | window | 777 | 14 | 26 | 105 |
-| MyMusicPlaylistEditor.xml |  | window | 6 | 27 | 12 | 219 |
+| MyMusicPlaylistEditor.xml |  | window | 6 | 27 | 12 | 218 |
 | MyPVRChannels.xml |  | window | 777 | 5 | 17 | 43 |
 | MyPVRGuide.xml |  | window | 777 | 6 | 17 | 47 |
 | MyPVRRecordings.xml |  | window | 777 | 5 | 17 | 43 |
@@ -130,14 +130,14 @@ Erzeugt von `tools/analyze_skin.py`. Alle Detaillisten liegen als CSV (Trennzeic
 | MyPrograms.xml | 1 | window | 777 | 11 | 23 | 84 |
 | MyVideoNav.xml |  | window | 50 | 19 | 32 | 157 |
 | MyWeather.xml |  | window | 9000 | 41 | 36 | 417 |
-| PlayerControls.xml |  | dialog | 100 | 34 | 6 | 432 |
+| PlayerControls.xml |  | dialog | 100 | 34 | 6 | 431 |
 | Pointer.xml | 105 | window |  | 4 | 0 | 38 |
 | Settings.xml |  | window | 9000 | 15 | 12 | 211 |
 | SettingsCategory.xml |  | window | 3 | 49 | 18 | 344 |
 | SettingsProfile.xml |  | window | 2 | 24 | 15 | 221 |
 | SettingsScreenCalibration.xml |  | window | 8 | 9 | 2 | 116 |
 | SettingsSystemInfo.xml |  | window | 95 | 58 | 7 | 321 |
-| SkinSettings.xml | 56 | window | 8000 | 206 | 161 | 2039 |
+| SkinSettings.xml | 56 | window | 8000 | 206 | 161 | 2036 |
 | SlideShow.xml |  | window |  | 1 | 0 | 14 |
 | SmartPlaylistEditor.xml |  | window | 22 | 17 | 21 | 238 |
 | SmartPlaylistRule.xml |  | window | 9001 | 7 | 11 | 103 |
@@ -145,7 +145,7 @@ Erzeugt von `tools/analyze_skin.py`. Alle Detaillisten liegen als CSV (Trennzeic
 | VideoFullScreen.xml |  | window |  | 51 | 10 | 330 |
 | VideoOSD.xml | 2901 | window | 99 | 53 | 18 | 726 |
 | VideoOSDBookmarks.xml |  | window | 2 | 17 | 2 | 159 |
-| script-cu-lrclyrics-main.xml |  | window | 99 | 27 | 2 | 287 |
+| script-cu-lrclyrics-main.xml |  | window | 99 | 27 | 2 | 286 |
 | script-globalsearch-main.xml |  | window |  | 163 | 3 | 1430 |
 | skin.horizonzv.script-gto-info.xml | 1900 | window | 10 | 16 | 9 | 145 |
 
@@ -167,12 +167,6 @@ Erzeugt von `tools/analyze_skin.py`. Alle Detaillisten liegen als CSV (Trennzeic
 
 | Include | Datei |
 |---|---|
-| ControlID | Includes.xml |
-| FakeFocusButton555 | Includes.xml |
-| InfoListLeft | Includes_BackgroundBuilding.xml |
-| InfoListRight | Includes_BackgroundBuilding.xml |
-| PathID | Includes.xml |
-| SidePanelShortcutsBackground | Includes_SidePanel.xml |
 
 ### Fehlende Includes (verwendet, aber nicht definiert)
 
@@ -489,9 +483,9 @@ Erzeugt von `tools/analyze_skin.py`. Alle Detaillisten liegen als CSV (Trennzeic
 |---|---|---|---|
 | cs_cz | 291 | 291 | 98 % (31 identisch mit Englisch) |
 | da_dk | 291 | 291 | 98 % (40 identisch mit Englisch) |
-| de_de | 294 | 294 | 100 % (38 identisch mit Englisch) |
+| de_de | 295 | 295 | 100 % (38 identisch mit Englisch) |
 | el_gr | 291 | 291 | 98 % (65 identisch mit Englisch) |
-| en_gb | 294 | 294 | Quelle |
+| en_gb | 295 | 295 | Quelle |
 | es_es | 291 | 291 | 98 % (9 identisch mit Englisch) |
 | fi_fi | 291 | 291 | 98 % (64 identisch mit Englisch) |
 | fr_fr | 291 | 291 | 98 % (23 identisch mit Englisch) |
@@ -621,9 +615,9 @@ keine
 ## Fonts
 
 - Fontsets: default
-- Font-Definitionen: 67, TTF-Dateien: Acens.ttf, Bebas.ttf, BigDots.ttf, BigSquareDots.ttf, Impacted.ttf, SegoeUISymbol.ttf, aaaiight.ttf, ubuntu-r.ttf
+- Font-Definitionen: 56, TTF-Dateien: Acens.ttf, Bebas.ttf, BigDots.ttf, BigSquareDots.ttf, Impacted.ttf, SegoeUISymbol.ttf, aaaiight.ttf, ubuntu-r.ttf
 - Ungenutzte TTF-Dateien: Acens.ttf, BigDots.ttf, BigSquareDots.ttf, Impacted.ttf
-- Unbenutzte Font-Namen: aaaiight20, clock-28b, clock-32b, impacted14, lcd16, lcd18, ubuntu-r12u
+- Unbenutzte Font-Namen: keine
 - Verwendete, aber undefinierte Fonts: keine
 
 
@@ -635,21 +629,21 @@ keine
 
 | Farbe | Verwendungen |
 |---|---|
-| black | 378 |
+| black | 377 |
 | grey | 348 |
 | white | 325 |
-| description | 168 |
+| description | 169 |
 | grey3 | 160 |
 | selected | 141 |
 | grey2 | 127 |
 | fanartdiffuse | 117 |
-| menudiffuse | 107 |
+| menudiffuse | 106 |
 | grey1 | 80 |
 | selectedhome | 38 |
-| red | 24 |
+| red | 23 |
 | focused | 21 |
 | dustdiffuse | 12 |
-| orange | 8 |
+| orange | 7 |
 | green | 3 |
 | green2 | 3 |
 | reddiffuse | 2 |
@@ -681,8 +675,8 @@ keine
 | service.audio.stream.monitor | 3 | Includes_SkinAddonsContent.xml |
 | plugin.library.node.editor | 3 | Includes_SkinAddonsContent.xml |
 | resource.images.weatherfanart.multi | 3 | Includes_SkinAddonsContent.xml |
+| plugin.program.autocompletion | 3 | DialogKeyboard.xml, Variables.xml |
 | resource.images.weathericons.outline | 2 | Home.xml, Includes_SkinAddonsContent.xml |
-| plugin.program.autocompletion | 2 | Variables.xml |
 | resource.images.studios.coloured | 2 | Variables.xml |
 | resource.images.studios.white | 2 | Variables.xml |
 | resource.images.moviegenreicons.coloured | 2 | Variables.xml |
@@ -694,6 +688,7 @@ keine
 | resource.images.musicgenreicons.grey | 2 | Variables.xml |
 | resource.images.musicgenreicons.poster | 2 | Variables.xml |
 | resource.images.musicgenreicons.text | 2 | Variables.xml |
+| special | 1 | Custom_1301_HomeMenuItemsPosition.xml, DialogColorPicker.xml, DialogKeyboard.xml, DialogPictureInfo.xml, Includes.xml, Includes_BackgroundBuilding.xml, Includes |
 | resource.images.weathericons.default | 1 | Variables.xml |
 
 ## Views
@@ -773,7 +768,5 @@ Eingebundene View-Includes:
 | Includes_Systeminfo.xml | Alte Skin-ID referenziert | skin.horizonzv |
 | Includes_Systeminfo.xml | Alte Skin-ID referenziert | skin.horizonzv |
 | MyVideoNav.xml | Viel auskommentierter Code | 3 Kommentarbloecke mit <control> |
-| xml/View_Movie_541_Perspective.xml.org | Ueberbleibsel/Backup im xml-Ordner | View_Movie_541_Perspective.xml.org |
-| xml/View_Music_513_AlbumInfoList.xml.org | Ueberbleibsel/Backup im xml-Ordner | View_Music_513_AlbumInfoList.xml.org |
 | keymaps/keyboard.xml | Hartkodierter Windows-Pfad (Entwickler-Keymap) | D:\Program Files\Kodi21\portable_data\addons\skin.horizonzv-omega\scripts\RunSetKodiWindow_min.bat\ |
 | keymaps/keyboard.xml | Hartkodierter Windows-Pfad (Entwickler-Keymap) | D:\Program Files\Kodi21\portable_data\addons\skin.horizonzv-omega\scripts\RunSetKodiWindow_min.bat\ |

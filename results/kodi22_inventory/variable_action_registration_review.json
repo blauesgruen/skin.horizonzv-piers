@@ -1,0 +1,1082 @@
+{
+  "scope": "Additional scan of variable value text starting with a literal function call. PosterThumbDebugLabel values explicitly excluded: displayed debug strings, not actions. Does not prove all dynamic action outputs or parameter validity.",
+  "candidates": [
+    {
+      "file": "xml/Variables.xml",
+      "variable": "ExtendedInfoDialog",
+      "value": "RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[ListItem.DBID],name=$INFO[ListItem.Title])",
+      "name": "runscript"
+    },
+    {
+      "file": "xml/Variables.xml",
+      "variable": "ExtendedInfoDialog",
+      "value": "RunScript(script.extendedinfo,info=extendedtvinfo,dbid=$INFO[ListItem.DBID],name=$INFO[ListItem.TvShowTitle])",
+      "name": "runscript"
+    },
+    {
+      "file": "xml/Variables.xml",
+      "variable": "ExtendedInfoDialog",
+      "value": "RunScript(script.extendedinfo,info=seasoninfo,tvshow=$INFO[ListItem.TvShowTitle],season=$INFO[ListItem.Season],silent=True)",
+      "name": "runscript"
+    },
+    {
+      "file": "xml/Variables.xml",
+      "variable": "ExtendedInfoDialog",
+      "value": "RunScript(script.extendedinfo,info=extendedepisodeinfo,tvshow=$INFO[ListItem.TvShowTitle],season=$INFO[ListItem.Season],episode=$INFO[ListItem.Episode],silent=True)",
+      "name": "runscript"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_music_Currentpath",
+      "value": "Skin.SetPath(Home_music_Custom_Path,library://video/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_music_Currentpath",
+      "value": "Skin.SetPath(Home_music_Custom_Path,library://music/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_music_Currentpath",
+      "value": "Skin.SetPath(Home_music_Custom_Path,)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_music_Currentpath",
+      "value": "Skin.SetFile(Home_music_Custom_Path,,special://profile/playlists/)",
+      "name": "skin.setfile"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_music_Currentpath",
+      "value": "Skin.SetPath(Home_music_Custom_Path,addons://sources/game/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_videos_Currentpath",
+      "value": "Skin.SetPath(Home_videos_Custom_Path,library://video/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_videos_Currentpath",
+      "value": "Skin.SetPath(Home_videos_Custom_Path,library://music/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_videos_Currentpath",
+      "value": "Skin.SetPath(Home_videos_Custom_Path,)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_videos_Currentpath",
+      "value": "Skin.SetFile(Home_videos_Custom_Path,,special://profile/playlists/)",
+      "name": "skin.setfile"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_videos_Currentpath",
+      "value": "Skin.SetPath(Home_videos_Custom_Path,addons://sources/game/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_movies_Currentpath",
+      "value": "Skin.SetPath(Home_movies_Custom_Path,library://video/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_movies_Currentpath",
+      "value": "Skin.SetPath(Home_movies_Custom_Path,library://music/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_movies_Currentpath",
+      "value": "Skin.SetPath(Home_movies_Custom_Path,)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_movies_Currentpath",
+      "value": "Skin.SetFile(Home_movies_Custom_Path,,special://profile/playlists/)",
+      "name": "skin.setfile"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_movies_Currentpath",
+      "value": "Skin.SetPath(Home_movies_Custom_Path,addons://sources/game/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_tvshow_Currentpath",
+      "value": "Skin.SetPath(Home_tvshow_Custom_Path,library://video/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_tvshow_Currentpath",
+      "value": "Skin.SetPath(Home_tvshow_Custom_Path,library://music/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_tvshow_Currentpath",
+      "value": "Skin.SetPath(Home_tvshow_Custom_Path,)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_tvshow_Currentpath",
+      "value": "Skin.SetFile(Home_tvshow_Custom_Path,,special://profile/playlists/)",
+      "name": "skin.setfile"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_tvshow_Currentpath",
+      "value": "Skin.SetPath(Home_tvshow_Custom_Path,addons://sources/game/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_musicvideo_Currentpath",
+      "value": "Skin.SetPath(Home_musicvideo_Custom_Path,library://video/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_musicvideo_Currentpath",
+      "value": "Skin.SetPath(Home_musicvideo_Custom_Path,library://music/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_musicvideo_Currentpath",
+      "value": "Skin.SetPath(Home_musicvideo_Custom_Path,)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_musicvideo_Currentpath",
+      "value": "Skin.SetFile(Home_musicvideo_Custom_Path,,special://profile/playlists/)",
+      "name": "skin.setfile"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_musicvideo_Currentpath",
+      "value": "Skin.SetPath(Home_musicvideo_Custom_Path,addons://sources/game/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_picture_Currentpath",
+      "value": "Skin.SetPath(Home_picture_Custom_Path,library://video/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_picture_Currentpath",
+      "value": "Skin.SetPath(Home_picture_Custom_Path,library://music/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_picture_Currentpath",
+      "value": "Skin.SetPath(Home_picture_Custom_Path,)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_picture_Currentpath",
+      "value": "Skin.SetFile(Home_picture_Custom_Path,,special://profile/playlists/)",
+      "name": "skin.setfile"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_picture_Currentpath",
+      "value": "Skin.SetPath(Home_picture_Custom_Path,addons://sources/game/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_custom1_Currentpath",
+      "value": "Skin.SetPath(Home_custom1_Custom_Path,library://video/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_custom1_Currentpath",
+      "value": "Skin.SetPath(Home_custom1_Custom_Path,library://music/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_custom1_Currentpath",
+      "value": "Skin.SetPath(Home_custom1_Custom_Path,)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_custom1_Currentpath",
+      "value": "Skin.SetFile(Home_custom1_Custom_Path,,special://profile/playlists/)",
+      "name": "skin.setfile"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_custom1_Currentpath",
+      "value": "Skin.SetPath(Home_custom1_Custom_Path,addons://sources/game/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_custom1_Currentpath",
+      "value": "Skin.SetString(Home_custom1_Custom_Path)",
+      "name": "skin.setstring"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_custom2_Currentpath",
+      "value": "Skin.SetPath(Home_custom2_Custom_Path,library://video/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_custom2_Currentpath",
+      "value": "Skin.SetPath(Home_custom2_Custom_Path,library://music/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_custom2_Currentpath",
+      "value": "Skin.SetPath(Home_custom2_Custom_Path,)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_custom2_Currentpath",
+      "value": "Skin.SetFile(Home_custom2_Custom_Path,,special://profile/playlists/)",
+      "name": "skin.setfile"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_custom2_Currentpath",
+      "value": "Skin.SetPath(Home_custom2_Custom_Path,addons://sources/game/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_custom2_Currentpath",
+      "value": "Skin.SetString(Home_custom2_Custom_Path)",
+      "name": "skin.setstring"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_custom3_Currentpath",
+      "value": "Skin.SetPath(Home_custom3_Custom_Path,library://video/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_custom3_Currentpath",
+      "value": "Skin.SetPath(Home_custom3_Custom_Path,library://music/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_custom3_Currentpath",
+      "value": "Skin.SetPath(Home_custom3_Custom_Path,)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_custom3_Currentpath",
+      "value": "Skin.SetFile(Home_custom3_Custom_Path,,special://profile/playlists/)",
+      "name": "skin.setfile"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_custom3_Currentpath",
+      "value": "Skin.SetPath(Home_custom3_Custom_Path,addons://sources/game/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_custom3_Currentpath",
+      "value": "Skin.SetString(Home_custom3_Custom_Path)",
+      "name": "skin.setstring"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_custom4_Currentpath",
+      "value": "Skin.SetPath(Home_custom4_Custom_Path,library://video/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_custom4_Currentpath",
+      "value": "Skin.SetPath(Home_custom4_Custom_Path,library://music/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_custom4_Currentpath",
+      "value": "Skin.SetPath(Home_custom4_Custom_Path,)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_custom4_Currentpath",
+      "value": "Skin.SetFile(Home_custom4_Custom_Path,,special://profile/playlists/)",
+      "name": "skin.setfile"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_custom4_Currentpath",
+      "value": "Skin.SetPath(Home_custom4_Custom_Path,addons://sources/game/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_custom4_Currentpath",
+      "value": "Skin.SetString(Home_custom4_Custom_Path)",
+      "name": "skin.setstring"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_custom5_Currentpath",
+      "value": "Skin.SetPath(Home_custom5_Custom_Path,library://video/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_custom5_Currentpath",
+      "value": "Skin.SetPath(Home_custom5_Custom_Path,library://music/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_custom5_Currentpath",
+      "value": "Skin.SetPath(Home_custom5_Custom_Path,)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_custom5_Currentpath",
+      "value": "Skin.SetFile(Home_custom5_Custom_Path,,special://profile/playlists/)",
+      "name": "skin.setfile"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_custom5_Currentpath",
+      "value": "Skin.SetPath(Home_custom5_Custom_Path,addons://sources/game/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_custom5_Currentpath",
+      "value": "Skin.SetString(Home_custom5_Custom_Path)",
+      "name": "skin.setstring"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_custom6_Currentpath",
+      "value": "Skin.SetPath(Home_custom6_Custom_Path,library://video/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_custom6_Currentpath",
+      "value": "Skin.SetPath(Home_custom6_Custom_Path,library://music/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_custom6_Currentpath",
+      "value": "Skin.SetPath(Home_custom6_Custom_Path,)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_custom6_Currentpath",
+      "value": "Skin.SetFile(Home_custom6_Custom_Path,,special://profile/playlists/)",
+      "name": "skin.setfile"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_custom6_Currentpath",
+      "value": "Skin.SetPath(Home_custom6_Custom_Path,addons://sources/game/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_custom6_Currentpath",
+      "value": "Skin.SetString(Home_custom6_Custom_Path)",
+      "name": "skin.setstring"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_custom7_Currentpath",
+      "value": "Skin.SetPath(Home_custom7_Custom_Path,library://video/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_custom7_Currentpath",
+      "value": "Skin.SetPath(Home_custom7_Custom_Path,library://music/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_custom7_Currentpath",
+      "value": "Skin.SetPath(Home_custom7_Custom_Path,)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_custom7_Currentpath",
+      "value": "Skin.SetFile(Home_custom7_Custom_Path,,special://profile/playlists/)",
+      "name": "skin.setfile"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_custom7_Currentpath",
+      "value": "Skin.SetPath(Home_custom7_Custom_Path,addons://sources/game/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_custom7_Currentpath",
+      "value": "Skin.SetString(Home_custom7_Custom_Path)",
+      "name": "skin.setstring"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_custom8_Currentpath",
+      "value": "Skin.SetPath(Home_custom8_Custom_Path,library://video/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_custom8_Currentpath",
+      "value": "Skin.SetPath(Home_custom8_Custom_Path,library://music/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_custom8_Currentpath",
+      "value": "Skin.SetPath(Home_custom8_Custom_Path,)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_custom8_Currentpath",
+      "value": "Skin.SetFile(Home_custom8_Custom_Path,,special://profile/playlists/)",
+      "name": "skin.setfile"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_custom8_Currentpath",
+      "value": "Skin.SetPath(Home_custom8_Custom_Path,addons://sources/game/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_custom8_Currentpath",
+      "value": "Skin.SetString(Home_custom8_Custom_Path)",
+      "name": "skin.setstring"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_custom9_Currentpath",
+      "value": "Skin.SetPath(Home_custom9_Custom_Path,library://video/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_custom9_Currentpath",
+      "value": "Skin.SetPath(Home_custom9_Custom_Path,library://music/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_custom9_Currentpath",
+      "value": "Skin.SetPath(Home_custom9_Custom_Path,)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_custom9_Currentpath",
+      "value": "Skin.SetFile(Home_custom9_Custom_Path,,special://profile/playlists/)",
+      "name": "skin.setfile"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_custom9_Currentpath",
+      "value": "Skin.SetPath(Home_custom9_Custom_Path,addons://sources/game/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_custom9_Currentpath",
+      "value": "Skin.SetString(Home_custom9_Custom_Path)",
+      "name": "skin.setstring"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_games_Currentpath",
+      "value": "Skin.SetPath(Home_games_Custom_Path,library://video/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_games_Currentpath",
+      "value": "Skin.SetPath(Home_games_Custom_Path,library://music/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_games_Currentpath",
+      "value": "Skin.SetPath(Home_games_Custom_Path,)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_games_Currentpath",
+      "value": "Skin.SetFile(Home_games_Custom_Path,,special://profile/playlists/)",
+      "name": "skin.setfile"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "Home_games_Currentpath",
+      "value": "Skin.SetPath(Home_games_Custom_Path,addons://sources/game/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_music_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_music_Path,library://video/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_music_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_music_Path,library://music/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_music_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_music_Path,)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_music_Currentpath",
+      "value": "Skin.SetFile(HomeWidget_music_Path,,special://profile/playlists/)",
+      "name": "skin.setfile"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_music_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_music_Path,addons://sources/game/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_videos_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_videos_Path,library://video/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_videos_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_videos_Path,library://music/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_videos_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_videos_Path,)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_videos_Currentpath",
+      "value": "Skin.SetFile(HomeWidget_videos_Path,,special://profile/playlists/)",
+      "name": "skin.setfile"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_videos_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_videos_Path,addons://sources/game/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_movies_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_movies_Path,library://video/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_movies_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_movies_Path,library://music/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_movies_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_movies_Path,)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_movies_Currentpath",
+      "value": "Skin.SetFile(HomeWidget_movies_Path,,special://profile/playlists/)",
+      "name": "skin.setfile"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_movies_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_movies_Path,addons://sources/game/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_tvshow_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_tvshow_Path,library://video/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_tvshow_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_tvshow_Path,library://music/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_tvshow_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_tvshow_Path,)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_tvshow_Currentpath",
+      "value": "Skin.SetFile(HomeWidget_tvshow_Path,,special://profile/playlists/)",
+      "name": "skin.setfile"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_tvshow_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_tvshow_Path,addons://sources/game/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_musicvideo_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_musicvideo_Path,library://video/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_musicvideo_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_musicvideo_Path,library://music/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_musicvideo_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_musicvideo_Path,)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_musicvideo_Currentpath",
+      "value": "Skin.SetFile(HomeWidget_musicvideo_Path,,special://profile/playlists/)",
+      "name": "skin.setfile"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_musicvideo_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_musicvideo_Path,addons://sources/game/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_picture_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_picture_Path,library://video/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_picture_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_picture_Path,library://music/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_picture_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_picture_Path,)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_picture_Currentpath",
+      "value": "Skin.SetFile(HomeWidget_picture_Path,,special://profile/playlists/)",
+      "name": "skin.setfile"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_picture_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_picture_Path,addons://sources/game/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_custom1_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_custom1_Path,library://video/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_custom1_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_custom1_Path,library://music/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_custom1_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_custom1_Path,)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_custom1_Currentpath",
+      "value": "Skin.SetFile(HomeWidget_custom1_Path,,special://profile/playlists/)",
+      "name": "skin.setfile"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_custom1_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_custom1_Path,addons://sources/game/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_custom1_Currentpath",
+      "value": "Skin.SetString(HomeWidget_custom1_Path)",
+      "name": "skin.setstring"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_custom2_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_custom2_Path,library://video/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_custom2_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_custom2_Path,library://music/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_custom2_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_custom2_Path,)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_custom2_Currentpath",
+      "value": "Skin.SetFile(HomeWidget_custom2_Path,,special://profile/playlists/)",
+      "name": "skin.setfile"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_custom2_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_custom2_Path,addons://sources/game/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_custom3_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_custom3_Path,library://video/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_custom3_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_custom3_Path,library://music/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_custom3_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_custom3_Path,)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_custom3_Currentpath",
+      "value": "Skin.SetFile(HomeWidget_custom3_Path,,special://profile/playlists/)",
+      "name": "skin.setfile"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_custom3_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_custom3_Path,addons://sources/game/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_custom4_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_custom4_Path,library://video/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_custom4_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_custom4_Path,library://music/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_custom4_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_custom4_Path,)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_custom4_Currentpath",
+      "value": "Skin.SetFile(HomeWidget_custom4_Path,,special://profile/playlists/)",
+      "name": "skin.setfile"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_custom4_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_custom4_Path,addons://sources/game/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_custom5_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_custom5_Path,library://video/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_custom5_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_custom5_Path,library://music/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_custom5_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_custom5_Path,)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_custom5_Currentpath",
+      "value": "Skin.SetFile(HomeWidget_custom5_Path,,special://profile/playlists/)",
+      "name": "skin.setfile"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_custom5_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_custom5_Path,addons://sources/game/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_custom6_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_custom6_Path,library://video/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_custom6_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_custom6_Path,library://music/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_custom6_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_custom6_Path,)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_custom6_Currentpath",
+      "value": "Skin.SetFile(HomeWidget_custom6_Path,,special://profile/playlists/)",
+      "name": "skin.setfile"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_custom6_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_custom6_Path,addons://sources/game/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_custom7_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_custom7_Path,library://video/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_custom7_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_custom7_Path,library://music/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_custom7_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_custom7_Path,)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_custom7_Currentpath",
+      "value": "Skin.SetFile(HomeWidget_custom7_Path,,special://profile/playlists/)",
+      "name": "skin.setfile"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_custom7_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_custom7_Path,addons://sources/game/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_custom8_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_custom8_Path,library://video/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_custom8_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_custom8_Path,library://music/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_custom8_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_custom8_Path,)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_custom8_Currentpath",
+      "value": "Skin.SetFile(HomeWidget_custom8_Path,,special://profile/playlists/)",
+      "name": "skin.setfile"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_custom8_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_custom8_Path,addons://sources/game/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_custom9_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_custom9_Path,library://video/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_custom9_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_custom9_Path,library://music/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_custom9_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_custom9_Path,)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_custom9_Currentpath",
+      "value": "Skin.SetFile(HomeWidget_custom9_Path,,special://profile/playlists/)",
+      "name": "skin.setfile"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_custom9_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_custom9_Path,addons://sources/game/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_games_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_games_Path,library://video/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_games_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_games_Path,library://music/)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_games_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_games_Path,)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_games_Currentpath",
+      "value": "Skin.SetFile(HomeWidget_games_Path,,special://profile/playlists/)",
+      "name": "skin.setfile"
+    },
+    {
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "variable": "HomeWidget_games_Currentpath",
+      "value": "Skin.SetPath(HomeWidget_games_Path,addons://sources/game/)",
+      "name": "skin.setpath"
+    }
+  ],
+  "excluded_debug_labels": [
+    {
+      "file": "xml/Variables.xml",
+      "variable": "PosterThumbDebugLabel",
+      "value": "ListItem.Art(set)",
+      "name": "listitem.art"
+    },
+    {
+      "file": "xml/Variables.xml",
+      "variable": "PosterThumbDebugLabel",
+      "value": "ListItem.Art(set.poster)",
+      "name": "listitem.art"
+    },
+    {
+      "file": "xml/Variables.xml",
+      "variable": "PosterThumbDebugLabel",
+      "value": "ListItem.Art(thumb)",
+      "name": "listitem.art"
+    },
+    {
+      "file": "xml/Variables.xml",
+      "variable": "PosterThumbDebugLabel",
+      "value": "ListItem.Art(tvshow.poster)",
+      "name": "listitem.art"
+    },
+    {
+      "file": "xml/Variables.xml",
+      "variable": "PosterThumbDebugLabel",
+      "value": "ListItem.Art(poster)",
+      "name": "listitem.art"
+    }
+  ],
+  "unknown_names": []
+}

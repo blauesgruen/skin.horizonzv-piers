@@ -172,7 +172,6 @@
                                     <timeperimage>100</timeperimage>
                                     <randomize>false</randomize>
                                     <fadetime>10</fadetime>
-                                    <aspectratio>keep</aspectratio>
                                 </control>
                             </control>
                             <control type="group">

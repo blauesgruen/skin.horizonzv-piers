@@ -1,0 +1,69 @@
+{
+  "scope": "Production skin query encoder with unchanged AutoCompletion 2.1.2 / local dictionary; no remote suggestion service",
+  "rows": [
+    {
+      "input": "A&B",
+      "native_url": "plugin://plugin.program.autocompletion/?info=autocomplete&id=A%26B&limit=9",
+      "decoded_id": "A&B"
+    },
+    {
+      "input": "C++",
+      "native_url": "plugin://plugin.program.autocompletion/?info=autocomplete&id=C%2B%2B&limit=9",
+      "decoded_id": "C++"
+    },
+    {
+      "input": "100%20real",
+      "native_url": "plugin://plugin.program.autocompletion/?info=autocomplete&id=100%2520real&limit=9",
+      "decoded_id": "100%20real"
+    },
+    {
+      "input": "A, \"B\" \\ C",
+      "native_url": "plugin://plugin.program.autocompletion/?info=autocomplete&id=A%2C%20%22B%22%20%5C%20C&limit=9",
+      "decoded_id": "A, \"B\" \\ C"
+    },
+    {
+      "input": "Bj\u00f6rk \u6771\u4eac",
+      "native_url": "plugin://plugin.program.autocompletion/?info=autocomplete&id=Bj%C3%B6rk%20%E6%9D%B1%E4%BA%AC&limit=9",
+      "decoded_id": "Bj\u00f6rk \u6771\u4eac"
+    },
+    {
+      "input": "hel",
+      "native_url": "plugin://plugin.program.autocompletion/?info=autocomplete&id=hel&limit=9",
+      "decoded_id": "hel"
+    }
+  ],
+  "pid": 26744,
+  "normal_suggestion_selection": {
+    "selected": "help",
+    "native_input": "help"
+  },
+  "hidden_input": {
+    "encoded_query_empty": true,
+    "helper_not_started": true,
+    "content_empty": true
+  },
+  "disabled_provider": {
+    "helper_not_started": true,
+    "query_empty": true
+  },
+  "enabled_state_restored": true,
+  "cleanup": {
+    "process_exited": true,
+    "provider_settings_restored": true,
+    "profile_restored": true,
+    "all_test_xml_match_production": true,
+    "skin_helper_and_manifest_match_production": true,
+    "provider_sources_unchanged": true
+  },
+  "observation_fixture": "Test copy only: one offscreen native label 1197 observes the unchanged production content variable; removed after test. RPC alone does not expand $VAR.",
+  "log_checks": {
+    "error_lines": 0,
+    "helper_regular_exit": true,
+    "regular_kodi_exit": true
+  },
+  "limits": [
+    "No remote suggestion service was queried.",
+    "Selection URLs generated inside the unchanged provider still use its raw search_string; reserved-character selection URLs are outside this skin query correction. Normal local suggestion selection was verified.",
+    "Provider absent is gated by the same AddonIsEnabled condition; native absent-provider reinstallation was not performed."
+  ]
+}

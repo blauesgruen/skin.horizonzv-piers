@@ -25,7 +25,6 @@
 			<visible>$PARAM[visible]</visible>
 			<pagecontrol/>
 			<scrolltime tween="circle" easing="out">800</scrolltime>
-			<orientation>horizontal</orientation>
 				<include content="DashListLayout">
 					<param name="id" value="$PARAM[id]"/>
 				</include>
@@ -54,7 +53,6 @@
 			<visible>$PARAM[visible]</visible>
 			<pagecontrol/>
 			<scrolltime tween="circle" easing="out">800</scrolltime>
-			<orientation>horizontal</orientation>
 			<visible>$PARAM[visible]</visible>
 				<include content="DashListLayout">
 					<param name="id" value="$PARAM[id]"/>
@@ -84,7 +82,6 @@
 			<visible>$PARAM[visible]</visible>
 			<pagecontrol/>
 			<scrolltime tween="circle" easing="out">800</scrolltime>
-			<orientation>horizontal</orientation>
 				<include content="DashListLayout">
 					<param name="id" value="$PARAM[id]"/>
 				</include>
@@ -113,7 +110,6 @@
 			<visible>$PARAM[visible]</visible>
 			<pagecontrol/>
 			<scrolltime tween="circle" easing="out">800</scrolltime>
-			<orientation>horizontal</orientation>
 				<include content="DashListLayout">
 					<param name="id" value="$PARAM[id]"/>
 				</include>
@@ -142,7 +138,6 @@
 			<visible>$PARAM[visible]</visible>
 			<pagecontrol/>
 			<scrolltime tween="circle" easing="out">800</scrolltime>
-			<orientation>horizontal</orientation>
 			<include content="DashListLayout_smal">
 				<param name="id" value="$PARAM[id]"/>
 			</include>

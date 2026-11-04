@@ -1,0 +1,206 @@
+{
+  "candidate_fonts": [
+    "aaaiight20",
+    "clock-28b",
+    "clock-32b",
+    "impacted14",
+    "lcd16",
+    "lcd18",
+    "ubuntu-r12u",
+    "Large",
+    "Medium",
+    "clock-32",
+    "ubuntu-r26"
+  ],
+  "external_files_checked": 1678,
+  "external_literal_hits": [],
+  "case_insensitive_literal_and_parameter_font_uses": [
+    "",
+    "aaaiight14",
+    "aaaiight32",
+    "bebas19",
+    "bebas19b",
+    "bebas24",
+    "bebas_klein",
+    "clock-16",
+    "clock-18",
+    "clock-18b",
+    "clock-20",
+    "clock-20b",
+    "clock-22",
+    "clock-22b",
+    "clock-24",
+    "clock-24b",
+    "clock-26",
+    "clock-26b",
+    "clock-28",
+    "font12",
+    "font13",
+    "font16",
+    "font23_narrow",
+    "font27",
+    "font32",
+    "font37",
+    "font40_title",
+    "home",
+    "impacted16",
+    "impacted18",
+    "impacted21",
+    "impacted22",
+    "impacted24",
+    "impacted26",
+    "impacted30",
+    "impacted31",
+    "impacted36",
+    "impacted44",
+    "impacted54",
+    "lcd14",
+    "lcd21",
+    "lcd28",
+    "menufontimpacted",
+    "plottextbig",
+    "small",
+    "ubuntu-r12",
+    "ubuntu-r12b",
+    "ubuntu-r13",
+    "ubuntu-r13b",
+    "ubuntu-r16",
+    "ubuntu-r16b",
+    "ubuntu-r18",
+    "ubuntu-r19",
+    "ubuntu-r19b",
+    "ubuntu-r21",
+    "ubuntu-r21b",
+    "ubuntu-r26b"
+  ],
+  "dynamic_font_parameters": [
+    "font",
+    "font_2",
+    "fontsize",
+    "fontsize_active"
+  ],
+  "parameter_values": {
+    "font": [
+      "bebas19",
+      "clock-18b",
+      "font16",
+      "impacted18",
+      "ubuntu-r16b"
+    ],
+    "fontsize": [
+      "ubuntu-r16"
+    ],
+    "fontsize_active": [
+      "ubuntu-r21b"
+    ],
+    "font_2": [
+      "ubuntu-r13b"
+    ]
+  },
+  "unresolved_dynamic_fonts": [],
+  "source": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/guilib/GUIFontManager.cpp",
+  "source_observation": "GetFont compares names using EqualsNoCase; missing nonempty names fall back to font13. font13 retained.",
+  "retained_zero_literal_use_names": [],
+  "scope": "Current active skin XML font tags and font include parameters, plus literal names in installed non-skin addon XML/Python/JS/JSON. Generated/future external consumers not proved absent.",
+  "classification": "Unused definitions, not unsupported Kodi API",
+  "removed_definitions": [
+    "ubuntu-r12u",
+    "impacted14",
+    "aaaiight20",
+    "lcd16",
+    "lcd18",
+    "clock-28b",
+    "clock-32b",
+    "Large",
+    "Medium",
+    "ubuntu-r26",
+    "clock-32"
+  ],
+  "font_definitions_before": 67,
+  "font_definitions_after": 56,
+  "before_sha256": "9e56fce674cab80824df8d8b4bdfb0dbc651a3f673c18cb559355e293928ca66",
+  "after_sha256": "494f3db0cc178bb4f2cdb5fa524d527a04c9fd7ef9fee303ea2b91023c20919b",
+  "remaining_xml_structure_equal": true,
+  "all_nonempty_resolved_active_font_names_still_defined": true,
+  "empty_font_values_excluded_from_name_resolution": true,
+  "ttf_files_changed": false,
+  "additional_review": {
+    "names": [
+      "Large",
+      "Medium",
+      "clock-32",
+      "ubuntu-r26"
+    ],
+    "external_files_checked": 1678,
+    "literal_hits_reviewed": [
+      {
+        "file": "webinterface.arch/js/lib/angular.js",
+        "line": 17378,
+        "classification": "Angular date format name/documentation",
+        "font_reference": false
+      },
+      {
+        "file": "webinterface.arch/js/lib/angular.js",
+        "line": 17406,
+        "classification": "Angular date format name/documentation",
+        "font_reference": false
+      },
+      {
+        "file": "webinterface.arch/js/lib/angular.js",
+        "line": 17407,
+        "classification": "Angular date format name/documentation",
+        "font_reference": false
+      },
+      {
+        "file": "webinterface.arch/js/lib/angular.js",
+        "line": 17417,
+        "classification": "Angular date format name/documentation",
+        "font_reference": false
+      },
+      {
+        "file": "plugin.video.themoviedb.helper/resources/jsondata/awards.json",
+        "line": 75814,
+        "classification": "Programme title in awards data",
+        "font_reference": false
+      },
+      {
+        "file": "slyguy.disney.plus/resources/lib/plugin.py",
+        "line": 245,
+        "classification": "Description length key",
+        "font_reference": false
+      },
+      {
+        "file": "metadata.generic.albums/lib/musicbrainz.py",
+        "line": 148,
+        "classification": "Cover art image type",
+        "font_reference": false
+      }
+    ],
+    "font_reference_hits": 0,
+    "before_sha256": "5363c4fca817d4f2619a8e1e9e60add59f4ff04c79086d8f75f1df687ee72676",
+    "after_sha256": "494f3db0cc178bb4f2cdb5fa524d527a04c9fd7ef9fee303ea2b91023c20919b",
+    "remaining_xml_structure_equal": true
+  },
+  "checks": [
+    {
+      "command": "python tools/check_skin_compatibility.py",
+      "exit_code": 0,
+      "findings": []
+    },
+    {
+      "command": "python tools/audit_skin_actions.py",
+      "exit_code": 0,
+      "findings": []
+    },
+    {
+      "command": "python tools/audit_skin_windows.py",
+      "exit_code": 0,
+      "findings": []
+    },
+    {
+      "command": "python tools/audit_skin_info_names.py",
+      "exit_code": 0,
+      "findings": []
+    }
+  ]
+}

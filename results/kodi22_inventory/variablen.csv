@@ -21,7 +21,7 @@ BackgroundDimLabel;Variables.xml;3
 BackgroundDimWhiteGrunge;Variables.xml;2
 BackgroundDim_Video;Variables.xml;1
 BackgroundOverlayColor;Variables.xml;11
-BackgroundOverlayColorDialog;Variables.xml;98
+BackgroundOverlayColorDialog;Variables.xml;97
 BackgroundOverlayColorLabel;Variables.xml;2
 BackgroundOverlayColorWidget;Variables.xml;0
 BackgroundOverlayTransition;Variables.xml;0
@@ -48,6 +48,9 @@ EpgGenreLabel;Variables.xml;1
 EpisodeSubTitleVar;Variables.xml;8
 ExpirationDateTimeLabel;Variables.xml;1
 ExtendedInfoDialog;Variables.xml;1
+ExtendedInfoYoutubeAlbumQuery;Variables.xml;1
+ExtendedInfoYoutubeSongQuery;Variables.xml;1
+ExtendedInfoYoutubeVideoQuery;Variables.xml;1
 FanartVAR;Variables.xml;3
 FirstRun_Label;Variables.xml;1
 FlagDimension_Label_Color;Includes_Flagging.xml;0
@@ -223,6 +226,7 @@ VARSwitchtimer;Variables.xml;2
 VideoCodecVar;Variables.xml;3
 VideoHDRVar;Variables.xml;1
 VideoHWDecoder;Variables.xml, Variables.xml;1
+VideoManagerArtwork;Variables.xml;1
 VideoPlayerTitle;Variables.xml;2
 VideoResolutionTypeVar;Variables.xml;3
 ViewIDLabel_3Panel;Variables.xml;1

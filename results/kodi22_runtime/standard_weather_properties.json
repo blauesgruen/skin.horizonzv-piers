@@ -1,0 +1,20 @@
+{
+  "properties": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "String.IsEmpty(Window(weather).Property(36Hour.IsFetched))": false,
+      "String.IsEmpty(Window(weather).Property(Alerts.IsFetched))": true,
+      "String.IsEmpty(Window(weather).Property(Daily.IsFetched))": false,
+      "String.IsEmpty(Window(weather).Property(Hourly.IsFetched))": false,
+      "String.IsEmpty(Window(weather).Property(Weekend.IsFetched))": false
+    }
+  },
+  "library_movie_protocol_counts": {
+    "total": 36,
+    "sampled": 36,
+    "protocols": {
+      "local/other": 36
+    }
+  }
+}

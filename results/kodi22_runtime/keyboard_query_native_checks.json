@@ -1,0 +1,36 @@
+{
+  "scope": "Native keyboard edit label only; autocomplete provider disabled during input, no suggestion request",
+  "rows": [
+    {
+      "input": "skin audit",
+      "native_edit_label": "skin audit",
+      "matches": true
+    },
+    {
+      "input": "A&B",
+      "native_edit_label": "A&B",
+      "matches": true
+    },
+    {
+      "input": "C++",
+      "native_edit_label": "C++",
+      "matches": true
+    },
+    {
+      "input": "100%20real",
+      "native_edit_label": "100%20real",
+      "matches": true
+    },
+    {
+      "input": "Bj\u00f6rk",
+      "native_edit_label": "Bj\u00f6rk",
+      "matches": true
+    }
+  ],
+  "failure": null,
+  "cleanup": {
+    "process_exited": true,
+    "provider_enabled_state_restored": true,
+    "profile_restored": true
+  }
+}

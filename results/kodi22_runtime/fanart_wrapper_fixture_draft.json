@@ -1,0 +1,19 @@
+{
+  "scope": "Native generic ListItem parent-path semantics and production ListItemExtraFanartPath variable. Authored paths only, no plugin execution or player/SMB request",
+  "rows": [
+    {
+      "case": "direct_plugin",
+      "input_path": "plugin://script.extendedinfo/fanart-audit/one.mkv",
+      "observed_parent": "",
+      "observed_folderpath": "",
+      "observed_fanart": "",
+      "expected_parent": "plugin://script.extendedinfo/fanart-audit/",
+      "expected_fanart": ""
+    }
+  ],
+  "failure": "AssertionError({'case': 'direct_plugin', 'input_path': 'plugin://script.extendedinfo/fanart-audit/one.mkv', 'observed_parent': '', 'observed_folderpath': '', 'observed_fanart': '', 'expected_parent': 'plugin://script.extendedinfo/fanart-audit/', 'expected_fanart': ''})",
+  "cleanup": {
+    "process_exited": true,
+    "profile_restored": true
+  }
+}

@@ -254,6 +254,11 @@
         <value condition="Player.IsInternetStream+!Pvr.IsPlayingTv">$INFO[VideoPlayer.Cover]</value>
         <value condition="VideoPlayer.Content(episodes)">$VAR[extraart_player_rule]</value>
     </variable>
+    <variable name="VideoManagerArtwork">
+        <value condition="!String.IsEmpty(Container(50).ListItem.Art(poster))">$INFO[Container(50).ListItem.Art(poster)]</value>
+        <value condition="!String.IsEmpty(Container(50).ListItem.Art(thumb))">$INFO[Container(50).ListItem.Art(thumb)]</value>
+        <value>$VAR[PosterThumb]</value>
+    </variable>
     <variable name="PosterThumb">
         <value condition="ListItem.IsCollection+!String.IsEmpty(ListItem.Art(set))">$INFO[ListItem.Art(set)]</value>
         <value condition="ListItem.IsCollection+!String.IsEmpty(ListItem.Art(set.poster))">$INFO[ListItem.Art(set.poster)]</value>
@@ -800,11 +805,21 @@
 		<value condition="player.passthrough">osd/Audio.png</value>
 		<value>osd/Audio2.png</value>
 	</variable>
+	<!-- Escape the complete joined query as one builtin argument with ESCVAR. -->
+	<variable name="ExtendedInfoYoutubeAlbumQuery">
+		<value>$INFO[ListItem.Artist] $INFO[ListItem.Album]</value>
+	</variable>
+	<variable name="ExtendedInfoYoutubeSongQuery">
+		<value>$INFO[ListItem.Artist] $INFO[ListItem.Title]</value>
+	</variable>
+	<variable name="ExtendedInfoYoutubeVideoQuery">
+		<value>$INFO[ListItem.Title] $INFO[ListItem.Year]</value>
+	</variable>
 	<variable name="ExtendedInfoDialog">
-		<value condition="String.IsEqual(ListItem.DBType,movie)">RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[ListItem.DBID],name=$INFO[ListItem.Title])</value>
-		<value condition="String.IsEqual(ListItem.DBType,tvshow)">RunScript(script.extendedinfo,info=extendedtvinfo,dbid=$INFO[ListItem.DBID],name=$INFO[ListItem.TvShowTitle])</value>
-		<value condition="String.IsEqual(ListItem.DBType,season)">RunScript(script.extendedinfo,info=seasoninfo,tvshow=$INFO[ListItem.TvShowTitle],season=$INFO[ListItem.Season],silent=True)</value>
-		<value condition="String.IsEqual(ListItem.DBType,episode)">RunScript(script.extendedinfo,info=extendedepisodeinfo,tvshow=$INFO[ListItem.TvShowTitle],season=$INFO[ListItem.Season],episode=$INFO[ListItem.Episode],silent=True)</value>
+		<value condition="String.IsEqual(ListItem.DBType,movie)">RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[ListItem.DBID],name=$ESCINFO[ListItem.Title])</value>
+		<value condition="String.IsEqual(ListItem.DBType,tvshow)">RunScript(script.extendedinfo,info=extendedtvinfo,dbid=$INFO[ListItem.DBID],name=$ESCINFO[ListItem.TvShowTitle])</value>
+		<value condition="String.IsEqual(ListItem.DBType,season)">RunScript(script.extendedinfo,info=seasoninfo,tvshow=$ESCINFO[ListItem.TvShowTitle],season=$INFO[ListItem.Season])</value>
+		<value condition="String.IsEqual(ListItem.DBType,episode)">RunScript(script.extendedinfo,info=extendedepisodeinfo,tvshow=$ESCINFO[ListItem.TvShowTitle],season=$INFO[ListItem.Season],episode=$INFO[ListItem.Episode])</value>
 	</variable>
 	<variable name="SkinWidgetInfoDataVar"> <!-- video, movie, set, tvshow, season, episode, musicvideo, music, song, album, artist -->
 		<value condition="String.Contains(Container.ListItem.DBType,movie)">$INFO[Container.ListItem.Title]</value>
@@ -847,7 +862,7 @@
 		<value>pvr://recordings/tv/active?view=flat</value>
 	</variable>
 	<variable name="AutoCompletionContentVar">
-		<value condition="System.AddonIsEnabled(plugin.program.autocompletion) + !System.HasHiddenInput">plugin://plugin.program.autocompletion?info=autocomplete&amp;&amp;id=$INFO[Control.GetLabel(312).index(1)]&amp;&amp;limit=9</value>
+		<value condition="System.AddonIsEnabled(plugin.program.autocompletion) + !System.HasHiddenInput + !String.IsEmpty(Window(virtualkeyboard).Property(HorizonzV.AutoCompletion.Query))">plugin://plugin.program.autocompletion/?info=autocomplete&amp;id=$INFO[Window(virtualkeyboard).Property(HorizonzV.AutoCompletion.Query)]&amp;limit=9</value>
 	</variable>
 	<variable name="ClearlogoPlayerVAR">
 		<value condition="!String.IsEmpty(Player.Art(clearlogo))">$INFO[Player.Art(clearlogo)]</value>

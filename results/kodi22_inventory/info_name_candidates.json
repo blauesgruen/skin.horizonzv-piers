@@ -1,0 +1,4099 @@
+{
+  "source_ref": "22.0rc1-Piers",
+  "scope": "Literal method names in conditions/info expressions; selected static argument counts also checked. Candidates may be literal property keys/strings and require source review. No complete argument semantics, nested qualifier, provider-property, dynamic substitution or runtime validation.",
+  "xml_files": 164,
+  "references": 15770,
+  "distinct_names": [
+    "addon.dependencies",
+    "addon.homepage",
+    "addon.id",
+    "addon.license",
+    "addon.provider",
+    "addon.starrating",
+    "addon.status",
+    "container.art",
+    "container.canfilter",
+    "container.canfilteradvanced",
+    "container.content",
+    "container.currentitem",
+    "container.currentpage",
+    "container.filtered",
+    "container.foldername",
+    "container.folderpath",
+    "container.hasfocus",
+    "container.hasnext",
+    "container.hasprevious",
+    "container.isupdating",
+    "container.listitem",
+    "container.numitems",
+    "container.numnonfolderitems",
+    "container.numpages",
+    "container.onnext",
+    "container.onprevious",
+    "container.pluginname",
+    "container.position",
+    "container.sortdirection",
+    "container.sortmethod",
+    "container.sortorder",
+    "container.totaltime",
+    "container.totalunwatched",
+    "container.viewmode",
+    "control.getlabel",
+    "control.hasfocus",
+    "control.isenabled",
+    "control.isvisible",
+    "controlgroup.hasfocus",
+    "integer.isequal",
+    "integer.isgreater",
+    "integer.isgreaterorequal",
+    "integer.isless",
+    "library.hascontent",
+    "library.isscanningmusic",
+    "library.isscanningvideo",
+    "library.node",
+    "listitem.actualicon",
+    "listitem.addoncreator",
+    "listitem.addondescription",
+    "listitem.addondisclaimer",
+    "listitem.addoninstalldate",
+    "listitem.addonlastupdated",
+    "listitem.addonlastused",
+    "listitem.addonlifecycledesc",
+    "listitem.addonlifecycletype",
+    "listitem.addonname",
+    "listitem.addonnews",
+    "listitem.addonorigin",
+    "listitem.addonsize",
+    "listitem.addonsummary",
+    "listitem.addontype",
+    "listitem.addonversion",
+    "listitem.album",
+    "listitem.albumartist",
+    "listitem.art",
+    "listitem.artist",
+    "listitem.audiochannels",
+    "listitem.audiocodec",
+    "listitem.audiolanguage",
+    "listitem.bitrate",
+    "listitem.bpm",
+    "listitem.cast",
+    "listitem.channelname",
+    "listitem.channelnumberlabel",
+    "listitem.comment",
+    "listitem.contributorandrole",
+    "listitem.contributors",
+    "listitem.currentitem",
+    "listitem.date",
+    "listitem.dateadded",
+    "listitem.dbid",
+    "listitem.dbtype",
+    "listitem.decodedfilenameandpath",
+    "listitem.director",
+    "listitem.discnumber",
+    "listitem.disctitle",
+    "listitem.duration",
+    "listitem.endtime",
+    "listitem.endtimeresume",
+    "listitem.epgeventicon",
+    "listitem.epgeventtitle",
+    "listitem.episode",
+    "listitem.episodename",
+    "listitem.expirationdate",
+    "listitem.expirationtime",
+    "listitem.fileextension",
+    "listitem.filename",
+    "listitem.filenameandpath",
+    "listitem.foldername",
+    "listitem.folderpath",
+    "listitem.genre",
+    "listitem.hasepg",
+    "listitem.hasrecording",
+    "listitem.hastimer",
+    "listitem.hastimerschedule",
+    "listitem.hdrtype",
+    "listitem.icon",
+    "listitem.iscollection",
+    "listitem.isfinale",
+    "listitem.isfolder",
+    "listitem.islive",
+    "listitem.isnew",
+    "listitem.isparentfolder",
+    "listitem.ispremiere",
+    "listitem.isrecording",
+    "listitem.isresumable",
+    "listitem.isstereoscopic",
+    "listitem.label",
+    "listitem.label2",
+    "listitem.lastplayed",
+    "listitem.mood",
+    "listitem.mpaa",
+    "listitem.musicchannels",
+    "listitem.nexttitle",
+    "listitem.originaltitle",
+    "listitem.overlay",
+    "listitem.parentalratingcode",
+    "listitem.path",
+    "listitem.percentplayed",
+    "listitem.pictureaperture",
+    "listitem.pictureauthor",
+    "listitem.picturebyline",
+    "listitem.picturebylinetitle",
+    "listitem.picturecammake",
+    "listitem.picturecammodel",
+    "listitem.picturecaption",
+    "listitem.picturecategory",
+    "listitem.pictureccdwidth",
+    "listitem.picturecity",
+    "listitem.picturecomment",
+    "listitem.picturecopyrightnotice",
+    "listitem.picturecountry",
+    "listitem.picturecountrycode",
+    "listitem.picturecredit",
+    "listitem.picturedesc",
+    "listitem.picturedigitalzoom",
+    "listitem.pictureexpmode",
+    "listitem.pictureexposure",
+    "listitem.pictureexposurebias",
+    "listitem.pictureexptime",
+    "listitem.pictureflashused",
+    "listitem.picturefocallen",
+    "listitem.picturefocusdist",
+    "listitem.picturegpsalt",
+    "listitem.picturegpslat",
+    "listitem.picturegpslon",
+    "listitem.pictureheadline",
+    "listitem.pictureimagetype",
+    "listitem.pictureiptcdate",
+    "listitem.pictureiptctime",
+    "listitem.pictureiso",
+    "listitem.picturekeywords",
+    "listitem.picturelightsource",
+    "listitem.picturelongdatetime",
+    "listitem.picturemeteringmode",
+    "listitem.pictureobjectname",
+    "listitem.pictureorientation",
+    "listitem.picturepath",
+    "listitem.picturereferenceservice",
+    "listitem.pictureresolution",
+    "listitem.picturesource",
+    "listitem.picturespecialinstructions",
+    "listitem.picturestate",
+    "listitem.picturesublocation",
+    "listitem.picturesupplementalcategories",
+    "listitem.picturetransmissionreference",
+    "listitem.pictureurgency",
+    "listitem.picturewhitebalance",
+    "listitem.playcount",
+    "listitem.plot",
+    "listitem.premiered",
+    "listitem.progress",
+    "listitem.property",
+    "listitem.rating",
+    "listitem.ratingandvotes",
+    "listitem.samplerate",
+    "listitem.season",
+    "listitem.set",
+    "listitem.setid",
+    "listitem.size",
+    "listitem.sortletter",
+    "listitem.startdate",
+    "listitem.starttime",
+    "listitem.studio",
+    "listitem.subtitlelanguage",
+    "listitem.tag",
+    "listitem.tagline",
+    "listitem.timerhasconflict",
+    "listitem.timerhaserror",
+    "listitem.timerisactive",
+    "listitem.timertype",
+    "listitem.title",
+    "listitem.totaldiscs",
+    "listitem.tracknumber",
+    "listitem.trailer",
+    "listitem.tvshowtitle",
+    "listitem.userrating",
+    "listitem.videoaspect",
+    "listitem.videocodec",
+    "listitem.videoresolution",
+    "listitem.votes",
+    "listitem.writer",
+    "listitem.year",
+    "musicpartymode.enabled",
+    "musicplayer.album",
+    "musicplayer.artist",
+    "musicplayer.bitrate",
+    "musicplayer.channelgroup",
+    "musicplayer.channelname",
+    "musicplayer.channelnumberlabel",
+    "musicplayer.channels",
+    "musicplayer.codec",
+    "musicplayer.discnumber",
+    "musicplayer.duration",
+    "musicplayer.genre",
+    "musicplayer.offset",
+    "musicplayer.playlistlength",
+    "musicplayer.playlistposition",
+    "musicplayer.samplerate",
+    "musicplayer.time",
+    "musicplayer.timeremaining",
+    "musicplayer.title",
+    "musicplayer.userrating",
+    "musicplayer.year",
+    "network.ipaddress",
+    "network.macaddress",
+    "player.art",
+    "player.cachelevel",
+    "player.caching",
+    "player.chapter",
+    "player.chaptercount",
+    "player.chapters",
+    "player.cuts",
+    "player.duration",
+    "player.editlist",
+    "player.filename",
+    "player.finishtime",
+    "player.folderpath",
+    "player.forwarding",
+    "player.forwarding16x",
+    "player.forwarding2x",
+    "player.forwarding32x",
+    "player.forwarding4x",
+    "player.forwarding8x",
+    "player.hasaudio",
+    "player.hasmedia",
+    "player.hasperformedseek",
+    "player.hasprograms",
+    "player.hasresolutions",
+    "player.hasvideo",
+    "player.icon",
+    "player.isinternetstream",
+    "player.muted",
+    "player.passthrough",
+    "player.paused",
+    "player.pauseenabled",
+    "player.playing",
+    "player.process",
+    "player.progress",
+    "player.progresscache",
+    "player.rewinding",
+    "player.rewinding16x",
+    "player.rewinding2x",
+    "player.rewinding32x",
+    "player.rewinding4x",
+    "player.rewinding8x",
+    "player.scenemarkers",
+    "player.seekenabled",
+    "player.seeking",
+    "player.seeknumeric",
+    "player.seekoffset",
+    "player.seekstepsize",
+    "player.showinfo",
+    "player.showtime",
+    "player.time",
+    "player.timeremaining",
+    "player.title",
+    "player.volume",
+    "playlist.israndom",
+    "playlist.isrepeat",
+    "playlist.isrepeatone",
+    "playlist.length",
+    "playlist.random",
+    "playlist.repeat",
+    "pvr.actstreamber",
+    "pvr.actstreamclient",
+    "pvr.actstreamdevice",
+    "pvr.actstreamencryptionname",
+    "pvr.actstreammux",
+    "pvr.actstreamprogrsignal",
+    "pvr.actstreamprogrsnr",
+    "pvr.actstreamprovidername",
+    "pvr.actstreamservicename",
+    "pvr.actstreamsignal",
+    "pvr.actstreamsnr",
+    "pvr.actstreamstatus",
+    "pvr.actstreamunc",
+    "pvr.backenddiskspace",
+    "pvr.backenddiskspaceprogr",
+    "pvr.canrecordplayingchannel",
+    "pvr.channelnumberinput",
+    "pvr.epgeventduration",
+    "pvr.epgeventelapsedtime",
+    "pvr.epgeventprogress",
+    "pvr.epgeventremainingtime",
+    "pvr.hasnonrecordingradiotimer",
+    "pvr.hasnonrecordingtvtimer",
+    "pvr.hasradiochannels",
+    "pvr.hastimer",
+    "pvr.hastvchannels",
+    "pvr.isplayingradio",
+    "pvr.isplayingtv",
+    "pvr.isrecording",
+    "pvr.isrecordingplayingchannel",
+    "pvr.istimeshift",
+    "pvr.nextrecordingchannel",
+    "pvr.nextrecordingtitle",
+    "pvr.nowrecordingchannel",
+    "pvr.nowrecordingtitle",
+    "rds.album",
+    "rds.artist",
+    "rds.band",
+    "rds.comment",
+    "rds.composer",
+    "rds.conductor",
+    "rds.emailhotline",
+    "rds.emailstudio",
+    "rds.phonehotline",
+    "rds.phonestudio",
+    "rds.progeditstaff",
+    "rds.proghomepage",
+    "rds.proghost",
+    "rds.prognext",
+    "rds.prognow",
+    "rds.progstation",
+    "rds.progstyle",
+    "rds.smsstudio",
+    "rds.title",
+    "skin.aspectratio",
+    "skin.hassetting",
+    "skin.helper",
+    "skin.horizonzv",
+    "skin.numeric",
+    "skin.string",
+    "skin.timerelapsedsecs",
+    "slideshow.ispaused",
+    "slideshow.isvideo",
+    "slideshow.xml",
+    "string.contains",
+    "string.endswith",
+    "string.isempty",
+    "string.isequal",
+    "string.startswith",
+    "system.addonicon",
+    "system.addonisenabled",
+    "system.addontitle",
+    "system.addonversion",
+    "system.alarmpos",
+    "system.batterylevel",
+    "system.buildversion",
+    "system.buildversioncode",
+    "system.buildversiongit",
+    "system.buildversionshort",
+    "system.canhibernate",
+    "system.canpowerdown",
+    "system.canreboot",
+    "system.cansuspend",
+    "system.cpufrequency",
+    "system.cputemperature",
+    "system.cpuusage",
+    "system.currentcontrol",
+    "system.currentwindow",
+    "system.date",
+    "system.dvdlabel",
+    "system.fps",
+    "system.getbool",
+    "system.hasaddon",
+    "system.hasalarm",
+    "system.hascms",
+    "system.hashiddeninput",
+    "system.haslocks",
+    "system.hasloginscreen",
+    "system.hasmediadvd",
+    "system.hasshutdown",
+    "system.idleshutdowninhibited",
+    "system.ismaster",
+    "system.kernelversion",
+    "system.loggedon",
+    "system.memory",
+    "system.platform",
+    "system.profileautologin",
+    "system.profilecount",
+    "system.profilename",
+    "system.profilethumb",
+    "system.progressbar",
+    "system.screenmode",
+    "system.screenresolution",
+    "system.screensaveractive",
+    "system.showexitbutton",
+    "system.startupwindow",
+    "system.stereoscopicmode",
+    "system.supportscpuusage",
+    "system.time",
+    "system.uptime",
+    "videoplayer.album",
+    "videoplayer.artist",
+    "videoplayer.audiobitrate",
+    "videoplayer.audiochannels",
+    "videoplayer.audiocodec",
+    "videoplayer.audiolanguage",
+    "videoplayer.audiostreamcount",
+    "videoplayer.channelgroup",
+    "videoplayer.channelname",
+    "videoplayer.channelnumberlabel",
+    "videoplayer.content",
+    "videoplayer.cover",
+    "videoplayer.duration",
+    "videoplayer.episode",
+    "videoplayer.genre",
+    "videoplayer.hasepg",
+    "videoplayer.hasmenu",
+    "videoplayer.hassubtitles",
+    "videoplayer.hdrtype",
+    "videoplayer.isfullscreen",
+    "videoplayer.isstereoscopic",
+    "videoplayer.mpaa",
+    "videoplayer.nextduration",
+    "videoplayer.nexttitle",
+    "videoplayer.plot",
+    "videoplayer.season",
+    "videoplayer.stereoscopicmode",
+    "videoplayer.studio",
+    "videoplayer.subtitlesenabled",
+    "videoplayer.subtitleslanguage",
+    "videoplayer.time",
+    "videoplayer.timeremaining",
+    "videoplayer.title",
+    "videoplayer.tvshowtitle",
+    "videoplayer.videoaspect",
+    "videoplayer.videobitrate",
+    "videoplayer.videocodec",
+    "videoplayer.videoresolution",
+    "videoplayer.year",
+    "visualisation.enabled",
+    "weather.currentview",
+    "weather.data",
+    "weather.isfetched",
+    "weather.openweathermap",
+    "weather.plugin",
+    "weather.wunderground",
+    "window.is",
+    "window.isactive",
+    "window.isdialogtopmost",
+    "window.isvisible",
+    "window.previous",
+    "window.property"
+  ],
+  "candidates": [
+    {
+      "file": "xml/Home.xml",
+      "element": "visible",
+      "document_index": 406,
+      "kind": "condition/info",
+      "expression": "Window.IsVisible(1500)|Window.IsVisible(1501)|Window.IsVisible(1151)|Window.IsVisible(1800)|Window.IsVisible(skin.horizonzv.script-gto-info.xml)",
+      "name": "skin.horizonzv"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "label",
+      "document_index": 2361,
+      "kind": "info macro",
+      "expression": "ListItem.Property(Addon.ID)",
+      "name": "addon.id"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 2362,
+      "kind": "condition/info",
+      "expression": "!String.IsEmpty(ListItem.Property(Addon.ID))",
+      "name": "addon.id"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "label",
+      "document_index": 2382,
+      "kind": "info macro",
+      "expression": "ListItem.Property(Addon.Dependencies)",
+      "name": "addon.dependencies"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 2383,
+      "kind": "condition/info",
+      "expression": "!String.IsEmpty(ListItem.Property(Addon.Dependencies))",
+      "name": "addon.dependencies"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "label",
+      "document_index": 2389,
+      "kind": "info macro",
+      "expression": "ListItem.Property(Addon.Status)",
+      "name": "addon.status"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 2390,
+      "kind": "condition/info",
+      "expression": "!String.IsEmpty(ListItem.Property(Addon.Status))",
+      "name": "addon.status"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "label",
+      "document_index": 2396,
+      "kind": "info macro",
+      "expression": "ListItem.Property(Addon.License)",
+      "name": "addon.license"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 2397,
+      "kind": "condition/info",
+      "expression": "!String.IsEmpty(ListItem.Property(Addon.License))",
+      "name": "addon.license"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "label",
+      "document_index": 2403,
+      "kind": "info macro",
+      "expression": "ListItem.Property(Addon.Homepage)",
+      "name": "addon.homepage"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 2404,
+      "kind": "condition/info",
+      "expression": "!String.IsEmpty(ListItem.Property(Addon.Homepage))",
+      "name": "addon.homepage"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "label",
+      "document_index": 2410,
+      "kind": "info macro",
+      "expression": "ListItem.Property(Addon.Provider)",
+      "name": "addon.provider"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 2411,
+      "kind": "condition/info",
+      "expression": "!String.IsEmpty(ListItem.Property(Addon.Provider))",
+      "name": "addon.provider"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "label",
+      "document_index": 2417,
+      "kind": "info macro",
+      "expression": "ListItem.Property(Addon.StarRating)",
+      "name": "addon.starrating"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 2418,
+      "kind": "condition/info",
+      "expression": "!String.IsEmpty(ListItem.Property(Addon.StarRating))",
+      "name": "addon.starrating"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "label",
+      "document_index": 870,
+      "kind": "info macro",
+      "expression": "ListItem.Property(Addon.Status)",
+      "name": "addon.status"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "label",
+      "document_index": 919,
+      "kind": "info macro",
+      "expression": "ListItem.Property(Addon.Status)",
+      "name": "addon.status"
+    },
+    {
+      "file": "xml/Includes_DebugInfo.xml",
+      "element": "visible",
+      "document_index": 259,
+      "kind": "condition/info",
+      "expression": "Window.IsVisible(SlideShow.xml)",
+      "name": "slideshow.xml"
+    },
+    {
+      "file": "xml/Includes_SkinAddonsContent.xml",
+      "element": "visible",
+      "document_index": 174,
+      "kind": "condition/info",
+      "expression": "!System.HasAddon(plugin.library.node.editor)",
+      "name": "library.node"
+    },
+    {
+      "file": "xml/Includes_SkinAddonsContent.xml",
+      "element": "label",
+      "document_index": 176,
+      "kind": "info macro",
+      "expression": "System.AddonVersion(plugin.library.node.editor),(,)",
+      "name": "library.node"
+    },
+    {
+      "file": "xml/Includes_SkinAddonsContent.xml",
+      "element": "visible",
+      "document_index": 180,
+      "kind": "condition/info",
+      "expression": "System.HasAddon(plugin.library.node.editor)",
+      "name": "library.node"
+    },
+    {
+      "file": "xml/Includes_SkinAddonsContent.xml",
+      "element": "visible",
+      "document_index": 185,
+      "kind": "condition/info",
+      "expression": "!System.HasAddon(script.skin.helper.colorpicker.bg)",
+      "name": "skin.helper"
+    },
+    {
+      "file": "xml/Includes_SkinAddonsContent.xml",
+      "element": "label",
+      "document_index": 187,
+      "kind": "info macro",
+      "expression": "System.AddonVersion(script.skin.helper.colorpicker.bg),(,)",
+      "name": "skin.helper"
+    },
+    {
+      "file": "xml/Includes_SkinAddonsContent.xml",
+      "element": "visible",
+      "document_index": 191,
+      "kind": "condition/info",
+      "expression": "System.HasAddon(script.skin.helper.colorpicker.bg)",
+      "name": "skin.helper"
+    },
+    {
+      "file": "xml/Includes_Systeminfo.xml",
+      "element": "label",
+      "document_index": 21,
+      "kind": "info macro",
+      "expression": "System.AddonTitle(skin.horizonzv)",
+      "name": "skin.horizonzv"
+    },
+    {
+      "file": "xml/Includes_Systeminfo.xml",
+      "element": "label",
+      "document_index": 21,
+      "kind": "info macro",
+      "expression": "System.AddonVersion(skin.horizonzv), v,",
+      "name": "skin.horizonzv"
+    },
+    {
+      "file": "xml/MyWeather.xml",
+      "element": "visible",
+      "document_index": 133,
+      "kind": "condition/info",
+      "expression": "!String.StartsWith(Weather.Plugin,weather.openweathermap)",
+      "name": "weather.openweathermap"
+    },
+    {
+      "file": "xml/MyWeather.xml",
+      "element": "visible",
+      "document_index": 138,
+      "kind": "condition/info",
+      "expression": "String.StartsWith(Weather.Plugin,weather.openweathermap)",
+      "name": "weather.openweathermap"
+    },
+    {
+      "file": "xml/MyWeather.xml",
+      "element": "visible",
+      "document_index": 159,
+      "kind": "condition/info",
+      "expression": "!String.StartsWith(Weather.Plugin,weather.openweathermap)",
+      "name": "weather.openweathermap"
+    },
+    {
+      "file": "xml/MyWeather.xml",
+      "element": "visible",
+      "document_index": 168,
+      "kind": "condition/info",
+      "expression": "[String.IsEqual(Weather.Plugin,weather.wunderground)|String.StartsWith(Weather.Plugin,weather.openweathermap)] + !String.IsEmpty(Window.Property(36Hour.IsFetched))",
+      "name": "weather.wunderground"
+    },
+    {
+      "file": "xml/MyWeather.xml",
+      "element": "visible",
+      "document_index": 168,
+      "kind": "condition/info",
+      "expression": "[String.IsEqual(Weather.Plugin,weather.wunderground)|String.StartsWith(Weather.Plugin,weather.openweathermap)] + !String.IsEmpty(Window.Property(36Hour.IsFetched))",
+      "name": "weather.openweathermap"
+    },
+    {
+      "file": "xml/MyWeather.xml",
+      "element": "visible",
+      "document_index": 173,
+      "kind": "condition/info",
+      "expression": "[String.IsEqual(Weather.Plugin,weather.wunderground)|String.StartsWith(Weather.Plugin,weather.openweathermap)] + !String.IsEmpty(Window.Property(36Hour.IsFetched))",
+      "name": "weather.wunderground"
+    },
+    {
+      "file": "xml/MyWeather.xml",
+      "element": "visible",
+      "document_index": 173,
+      "kind": "condition/info",
+      "expression": "[String.IsEqual(Weather.Plugin,weather.wunderground)|String.StartsWith(Weather.Plugin,weather.openweathermap)] + !String.IsEmpty(Window.Property(36Hour.IsFetched))",
+      "name": "weather.openweathermap"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "element": "visible",
+      "document_index": 1393,
+      "kind": "condition/info",
+      "expression": "System.HasAddon(script.skin.helper.colorpicker.bg)+System.AddonIsEnabled(script.skin.helper.colorpicker.bg)",
+      "name": "skin.helper"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "element": "onclick",
+      "document_index": 1403,
+      "kind": "condition attribute",
+      "expression": "!System.HasAddon(script.skin.helper.colorpicker.bg)",
+      "name": "skin.helper"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "element": "onclick",
+      "document_index": 1404,
+      "kind": "condition attribute",
+      "expression": "System.HasAddon(script.skin.helper.colorpicker.bg)+!System.AddonIsEnabled(script.skin.helper.colorpicker.bg)",
+      "name": "skin.helper"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "element": "visible",
+      "document_index": 1408,
+      "kind": "condition/info",
+      "expression": "![System.HasAddon(script.skin.helper.colorpicker.bg)+System.AddonIsEnabled(script.skin.helper.colorpicker.bg)]",
+      "name": "skin.helper"
+    },
+    {
+      "file": "xml/Variables.xml",
+      "element": "value",
+      "document_index": 1009,
+      "kind": "condition attribute",
+      "expression": "String.IsEqual(ListItem.Property(Addon.Status),$LOCALIZE[24023])",
+      "name": "addon.status"
+    },
+    {
+      "file": "xml/Variables.xml",
+      "element": "value",
+      "document_index": 1010,
+      "kind": "condition attribute",
+      "expression": "String.IsEqual(ListItem.Property(Addon.Status),$LOCALIZE[305])",
+      "name": "addon.status"
+    },
+    {
+      "file": "xml/Variables.xml",
+      "element": "value",
+      "document_index": 1011,
+      "kind": "condition attribute",
+      "expression": "String.IsEqual(ListItem.Property(Addon.Status),$LOCALIZE[24098])",
+      "name": "addon.status"
+    },
+    {
+      "file": "xml/View_Movie_721_RightList.xml",
+      "element": "label",
+      "document_index": 81,
+      "kind": "info macro",
+      "expression": "ListItem.Property(Addon.Status)",
+      "name": "addon.status"
+    },
+    {
+      "file": "xml/View_Movie_721_RightList.xml",
+      "element": "visible",
+      "document_index": 108,
+      "kind": "condition/info",
+      "expression": "String.Contains(ListItem.Property(Addon.Status),$LOCALIZE[13413])",
+      "name": "addon.status"
+    },
+    {
+      "file": "xml/View_Movie_721_RightList.xml",
+      "element": "label",
+      "document_index": 142,
+      "kind": "info macro",
+      "expression": "ListItem.Property(Addon.Status)",
+      "name": "addon.status"
+    },
+    {
+      "file": "xml/View_Movie_721_RightList.xml",
+      "element": "visible",
+      "document_index": 185,
+      "kind": "condition/info",
+      "expression": "String.Contains(ListItem.Property(Addon.Status),$LOCALIZE[13413])",
+      "name": "addon.status"
+    },
+    {
+      "file": "xml/Views_Addon_Browser.xml",
+      "element": "label",
+      "document_index": 50,
+      "kind": "info macro",
+      "expression": "ListItem.Property(Addon.Status)",
+      "name": "addon.status"
+    },
+    {
+      "file": "xml/Views_Addon_Browser.xml",
+      "element": "label",
+      "document_index": 87,
+      "kind": "info macro",
+      "expression": "ListItem.Property(Addon.Status)",
+      "name": "addon.status"
+    },
+    {
+      "file": "xml/Views_Weather.xml",
+      "element": "visible",
+      "document_index": 29,
+      "kind": "condition/info",
+      "expression": "String.IsEmpty(Window.Property(Weather.CurrentView))",
+      "name": "weather.currentview"
+    },
+    {
+      "file": "xml/Views_Weather.xml",
+      "element": "visible",
+      "document_index": 312,
+      "kind": "condition/info",
+      "expression": "String.IsEqual(Window.Property(Weather.CurrentView),36hour) + !String.IsEmpty(Window.Property(36Hour.IsFetched))",
+      "name": "weather.currentview"
+    },
+    {
+      "file": "xml/Views_Weather.xml",
+      "element": "visible",
+      "document_index": 503,
+      "kind": "condition/info",
+      "expression": "String.IsEqual(Window.Property(Weather.CurrentView),weekend) + !String.IsEmpty(Window.Property(Weekend.IsFetched))",
+      "name": "weather.currentview"
+    },
+    {
+      "file": "xml/Views_Weather.xml",
+      "element": "visible",
+      "document_index": 698,
+      "kind": "condition/info",
+      "expression": "String.IsEqual(Window.Property(Weather.CurrentView),hourly) + !String.IsEmpty(Weather.Data(Hourly.IsFetched))",
+      "name": "weather.currentview"
+    },
+    {
+      "file": "xml/Views_Weather.xml",
+      "element": "visible",
+      "document_index": 862,
+      "kind": "condition/info",
+      "expression": "String.IsEqual(Window.Property(Weather.CurrentView),map) + !String.IsEmpty(Weather.Data(Map.IsFetched))",
+      "name": "weather.currentview"
+    },
+    {
+      "file": "xml/Views_Weather.xml",
+      "element": "visible",
+      "document_index": 897,
+      "kind": "condition/info",
+      "expression": "String.IsEqual(Window.Property(Weather.CurrentView),map) + !String.IsEmpty(Weather.Data(Map.IsFetched))",
+      "name": "weather.currentview"
+    },
+    {
+      "file": "xml/Views_Weather.xml",
+      "element": "visible",
+      "document_index": 961,
+      "kind": "condition/info",
+      "expression": "String.IsEqual(Window.Property(Weather.CurrentView),alerts) + !String.IsEmpty(Window.Property(Alerts.IsFetched))",
+      "name": "weather.currentview"
+    }
+  ],
+  "unrecognized_info_roots": [],
+  "arity_checked": 8487,
+  "arity_candidates": [],
+  "arity_skipped": [
+    {
+      "file": "xml/DialogAddonInfo.xml",
+      "element": "visible",
+      "document_index": 61,
+      "kind": "condition/info",
+      "expression": "String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24169])",
+      "name": "string.isequal",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/DialogAddonInfo.xml",
+      "element": "visible",
+      "document_index": 69,
+      "kind": "condition/info",
+      "expression": "[String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24170])|String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24171])]",
+      "name": "string.isequal",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/DialogAddonInfo.xml",
+      "element": "visible",
+      "document_index": 77,
+      "kind": "condition/info",
+      "expression": "[String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24170])|String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24171])]",
+      "name": "string.isequal",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/DialogAddonInfo.xml",
+      "element": "visible",
+      "document_index": 124,
+      "kind": "condition/info",
+      "expression": "[String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24170])|String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24171])]",
+      "name": "string.isequal",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "texture",
+      "document_index": 1703,
+      "kind": "info macro",
+      "expression": "Container(99950).ListItem.Property(Provider.$PARAM[pos].Icon)",
+      "name": "listitem.property",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 1704,
+      "kind": "condition/info",
+      "expression": "!String.IsEmpty(Container(99950).ListItem.Property(Provider.$PARAM[pos].Icon))",
+      "name": "string.isempty",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 1704,
+      "kind": "condition/info",
+      "expression": "!String.IsEmpty(Container(99950).ListItem.Property(Provider.$PARAM[pos].Icon))",
+      "name": "listitem.property",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 2341,
+      "kind": "condition/info",
+      "expression": "[String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24170])|String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24171])]",
+      "name": "string.isequal",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_AlphabetScroller.xml",
+      "element": "visible",
+      "document_index": 441,
+      "kind": "condition/info",
+      "expression": "String.IsEqual(Container.SortMethod,$LOCALIZE[369]) | String.IsEqual(Container.SortMethod,$LOCALIZE[556]) | String.IsEqual(Container.SortMethod,$LOCALIZE[551])",
+      "name": "string.isequal",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "visible",
+      "document_index": 324,
+      "kind": "condition/info",
+      "expression": "String.IsEqual(Window(Home).Property(HomeButton),$PARAM[homemenu_name])",
+      "name": "string.isequal",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "param",
+      "document_index": 355,
+      "kind": "info macro",
+      "expression": "Skin.String(Home_$PARAM[homemenu_name]_Custom_Label)",
+      "name": "skin.string",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "param",
+      "document_index": 391,
+      "kind": "info macro",
+      "expression": "Skin.String(Home_$PARAM[homemenu_name]_Custom_Path)",
+      "name": "skin.string",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "param",
+      "document_index": 432,
+      "kind": "info macro",
+      "expression": "Skin.String(Home_$PARAM[homemenu_name]_Custom_Label)",
+      "name": "skin.string",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "param",
+      "document_index": 465,
+      "kind": "info macro",
+      "expression": "Skin.String(Home_$PARAM[homemenu_name]_Custom_Path)",
+      "name": "skin.string",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "param",
+      "document_index": 504,
+      "kind": "info macro",
+      "expression": "Skin.String(user_bkg_$PARAM[homemenu_name])",
+      "name": "skin.string",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "visible",
+      "document_index": 570,
+      "kind": "condition/info",
+      "expression": "String.IsEqual(Window(Home).Property(HomeButton),$PARAM[homemenu_name])",
+      "name": "string.isequal",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "param",
+      "document_index": 598,
+      "kind": "info macro",
+      "expression": "Skin.String(HomeWidget_$PARAM[homemenu_name]_Label)",
+      "name": "skin.string",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "param",
+      "document_index": 607,
+      "kind": "info macro",
+      "expression": "Skin.String(HomeWidget_$PARAM[homemenu_name]_Path)",
+      "name": "skin.string",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "visible",
+      "document_index": 671,
+      "kind": "condition/info",
+      "expression": "String.IsEqual(Window(Home).Property(HomeButton),$PARAM[id_name])",
+      "name": "string.isequal",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "visible",
+      "document_index": 790,
+      "kind": "condition/info",
+      "expression": "!Control.HasFocus($PARAM[list_id])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "visible",
+      "document_index": 794,
+      "kind": "condition/info",
+      "expression": "Control.HasFocus($PARAM[list_id])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "visible",
+      "document_index": 804,
+      "kind": "condition/info",
+      "expression": "Control.HasFocus($PARAM[list_id])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "visible",
+      "document_index": 813,
+      "kind": "condition/info",
+      "expression": "Control.HasFocus($PARAM[list_id])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "visible",
+      "document_index": 829,
+      "kind": "condition/info",
+      "expression": "!Control.HasFocus($PARAM[list_id])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "visible",
+      "document_index": 838,
+      "kind": "condition/info",
+      "expression": "!Control.HasFocus($PARAM[list_id])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "visible",
+      "document_index": 888,
+      "kind": "condition/info",
+      "expression": "Control.HasFocus($PARAM[list_id])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "visible",
+      "document_index": 893,
+      "kind": "condition/info",
+      "expression": "!Control.HasFocus($PARAM[list_id])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "visible",
+      "document_index": 951,
+      "kind": "condition/info",
+      "expression": "Control.HasFocus($PARAM[list_id])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "visible",
+      "document_index": 954,
+      "kind": "condition/info",
+      "expression": "!Control.HasFocus($PARAM[list_id])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "visible",
+      "document_index": 965,
+      "kind": "condition/info",
+      "expression": "Control.HasFocus($PARAM[list_id])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "visible",
+      "document_index": 971,
+      "kind": "condition/info",
+      "expression": "!Control.HasFocus($PARAM[list_id])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "property",
+      "document_index": 977,
+      "kind": "info macro",
+      "expression": "Window(Home).Property(SkinHelperPING.servername$PARAM[slot])",
+      "name": "window.property",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "property",
+      "document_index": 978,
+      "kind": "info macro",
+      "expression": "Window(Home).Property(SkinHelperPING.ip$PARAM[slot])",
+      "name": "window.property",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "property",
+      "document_index": 979,
+      "kind": "info macro",
+      "expression": "Window(Home).Property(SkinHelperPING.mac$PARAM[slot])",
+      "name": "window.property",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "label",
+      "document_index": 980,
+      "kind": "info macro",
+      "expression": "Window(Home).Property(SkinHelperPING.servername$PARAM[slot])",
+      "name": "window.property",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "label",
+      "document_index": 980,
+      "kind": "info macro",
+      "expression": "Window(Home).Property(SkinHelperPING.ip$PARAM[slot]), (,)",
+      "name": "window.property",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "label",
+      "document_index": 980,
+      "kind": "info macro",
+      "expression": "Window(Home).Property(SkinHelperPING.mac$PARAM[slot])",
+      "name": "window.property",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "label2",
+      "document_index": 981,
+      "kind": "info macro",
+      "expression": "Window(Home).Property(SkinHelperPING.server$PARAM[slot])",
+      "name": "window.property",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onclick",
+      "document_index": 982,
+      "kind": "condition attribute",
+      "expression": "System.AddonIsEnabled(script.skinhelper.ping)+!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac$PARAM[slot]))",
+      "name": "string.isempty",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onclick",
+      "document_index": 982,
+      "kind": "condition attribute",
+      "expression": "System.AddonIsEnabled(script.skinhelper.ping)+!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac$PARAM[slot]))",
+      "name": "window.property",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onclick",
+      "document_index": 982,
+      "kind": "info macro",
+      "expression": "Window(Home).Property(SkinHelperPING.mac$PARAM[slot])",
+      "name": "window.property",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onclick",
+      "document_index": 983,
+      "kind": "condition attribute",
+      "expression": "System.AddonIsEnabled(script.skinhelper.ping)+!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac$PARAM[slot]))",
+      "name": "string.isempty",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onclick",
+      "document_index": 983,
+      "kind": "condition attribute",
+      "expression": "System.AddonIsEnabled(script.skinhelper.ping)+!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac$PARAM[slot]))",
+      "name": "window.property",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onclick",
+      "document_index": 984,
+      "kind": "condition attribute",
+      "expression": "System.AddonIsEnabled(script.skinhelper.ping)+!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac$PARAM[slot]))",
+      "name": "string.isempty",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onclick",
+      "document_index": 984,
+      "kind": "condition attribute",
+      "expression": "System.AddonIsEnabled(script.skinhelper.ping)+!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac$PARAM[slot]))",
+      "name": "window.property",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "visible",
+      "document_index": 985,
+      "kind": "condition/info",
+      "expression": "System.AddonIsEnabled(script.skinhelper.ping)+[!String.IsEmpty(Window(Home).Property(SkinHelperPING.servername$PARAM[slot]))|!String.IsEmpty(Window(Home).Property(SkinHelperPING.ip$PARAM[slot]))|!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac$PARAM[slot]))]",
+      "name": "string.isempty",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "visible",
+      "document_index": 985,
+      "kind": "condition/info",
+      "expression": "System.AddonIsEnabled(script.skinhelper.ping)+[!String.IsEmpty(Window(Home).Property(SkinHelperPING.servername$PARAM[slot]))|!String.IsEmpty(Window(Home).Property(SkinHelperPING.ip$PARAM[slot]))|!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac$PARAM[slot]))]",
+      "name": "window.property",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Dash_FritzDect.xml",
+      "element": "visible",
+      "document_index": 23,
+      "kind": "condition/info",
+      "expression": "String.Contains(ListItem.Property(state),$LOCALIZE[31416])",
+      "name": "string.contains",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Dash_FritzDect.xml",
+      "element": "visible",
+      "document_index": 29,
+      "kind": "condition/info",
+      "expression": "String.Contains(ListItem.Property(state),$LOCALIZE[31417])",
+      "name": "string.contains",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Dash_FritzDect.xml",
+      "element": "visible",
+      "document_index": 38,
+      "kind": "condition/info",
+      "expression": "Skin.HasSetting(WidgetDimDashrows)|Control.HasFocus($PARAM[id])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Dash_FritzDect.xml",
+      "element": "visible",
+      "document_index": 49,
+      "kind": "condition/info",
+      "expression": "String.IsEmpty(Container($PARAM[id]).ListItem(1).Label)",
+      "name": "string.isempty",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Dash_FritzDect.xml",
+      "element": "visible",
+      "document_index": 59,
+      "kind": "condition/info",
+      "expression": "String.Contains(ListItem.Property(state),$LOCALIZE[31416])",
+      "name": "string.contains",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Dash_FritzDect.xml",
+      "element": "visible",
+      "document_index": 60,
+      "kind": "condition/info",
+      "expression": "!Control.HasFocus($PARAM[id])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Dash_FritzDect.xml",
+      "element": "visible",
+      "document_index": 65,
+      "kind": "condition/info",
+      "expression": "String.Contains(ListItem.Property(state),$LOCALIZE[31417])",
+      "name": "string.contains",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Dash_FritzDect.xml",
+      "element": "visible",
+      "document_index": 66,
+      "kind": "condition/info",
+      "expression": "!Control.HasFocus($PARAM[id])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Dash_FritzDect.xml",
+      "element": "visible",
+      "document_index": 71,
+      "kind": "condition/info",
+      "expression": "Control.HasFocus($PARAM[id])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Dash_FritzDect.xml",
+      "element": "visible",
+      "document_index": 84,
+      "kind": "condition/info",
+      "expression": "String.IsEmpty(Container($PARAM[id]).ListItem(1).Label)",
+      "name": "string.isempty",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Dash_FritzDect.xml",
+      "element": "visible",
+      "document_index": 89,
+      "kind": "condition/info",
+      "expression": "String.IsEmpty(Container($PARAM[id]).ListItem(1).Label)",
+      "name": "string.isempty",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Dash_FritzDect.xml",
+      "element": "visible",
+      "document_index": 105,
+      "kind": "condition/info",
+      "expression": "!Control.HasFocus($PARAM[fritzid])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Dash_FritzDect.xml",
+      "element": "visible",
+      "document_index": 109,
+      "kind": "condition/info",
+      "expression": "Control.HasFocus($PARAM[fritzid])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Dash_GTO.xml",
+      "element": "visible",
+      "document_index": 27,
+      "kind": "condition/info",
+      "expression": "String.IsEmpty(Container($PARAM[id]).ListItem(1).Label)",
+      "name": "string.isempty",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Dash_Layout.xml",
+      "element": "focusedlayout",
+      "document_index": 8,
+      "kind": "condition attribute",
+      "expression": "Control.HasFocus($PARAM[id])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Dash_Layout.xml",
+      "element": "focusedlayout",
+      "document_index": 15,
+      "kind": "condition attribute",
+      "expression": "!Control.HasFocus($PARAM[id])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Dash_Layout.xml",
+      "element": "focusedlayout",
+      "document_index": 28,
+      "kind": "condition attribute",
+      "expression": "Control.HasFocus($PARAM[id])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Dash_Layout.xml",
+      "element": "focusedlayout",
+      "document_index": 35,
+      "kind": "condition attribute",
+      "expression": "!Control.HasFocus($PARAM[id])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Dash_Layout.xml",
+      "element": "visible",
+      "document_index": 80,
+      "kind": "condition/info",
+      "expression": "Skin.HasSetting(WidgetDimDashrows)|Control.HasFocus($PARAM[id])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Dash_Layout.xml",
+      "element": "visible",
+      "document_index": 118,
+      "kind": "condition/info",
+      "expression": "String.IsEmpty($PARAM[Dash_Label2])",
+      "name": "string.isempty",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Dash_Weather.xml",
+      "element": "visible",
+      "document_index": 28,
+      "kind": "condition/info",
+      "expression": "Skin.HasSetting(WidgetDimDashrows)|Control.HasFocus($PARAM[id])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Dash_Weather.xml",
+      "element": "visible",
+      "document_index": 38,
+      "kind": "condition/info",
+      "expression": "String.IsEmpty(Container($PARAM[id]).ListItem(1).Label)",
+      "name": "string.isempty",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Dash_Weather.xml",
+      "element": "visible",
+      "document_index": 53,
+      "kind": "condition/info",
+      "expression": "String.IsEmpty(Container($PARAM[id]).ListItem(1).Label)",
+      "name": "string.isempty",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_PVR.xml",
+      "element": "visible",
+      "document_index": 436,
+      "kind": "condition/info",
+      "expression": "Control.HasFocus($PARAM[id])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_PVR.xml",
+      "element": "visible",
+      "document_index": 440,
+      "kind": "condition/info",
+      "expression": "Control.HasFocus($PARAM[id])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_SetInformation.xml",
+      "element": "visible",
+      "document_index": 115,
+      "kind": "condition/info",
+      "expression": "!Control.HasFocus($PARAM[list_id])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_SetInformation.xml",
+      "element": "visible",
+      "document_index": 120,
+      "kind": "condition/info",
+      "expression": "Control.HasFocus($PARAM[list_id])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_SidePanel_right.xml",
+      "element": "enable",
+      "document_index": 238,
+      "kind": "condition/info",
+      "expression": "String.IsEqual(Container.SortMethod,$LOCALIZE[369]) | String.IsEqual(Container.SortMethod,$LOCALIZE[556]) | String.IsEqual(Container.SortMethod,$LOCALIZE[551])",
+      "name": "string.isequal",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_SkinAddonsContent.xml",
+      "element": "visible",
+      "document_index": 52,
+      "kind": "condition/info",
+      "expression": "Control.HasFocus($PARAM[id])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_SkinAddonsContent.xml",
+      "element": "visible",
+      "document_index": 59,
+      "kind": "condition/info",
+      "expression": "Control.HasFocus($PARAM[id])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_SkinAddonsContent.xml",
+      "element": "visible",
+      "document_index": 66,
+      "kind": "condition/info",
+      "expression": "Control.HasFocus($PARAM[id])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_SkinAddonsContent.xml",
+      "element": "visible",
+      "document_index": 73,
+      "kind": "condition/info",
+      "expression": "Control.HasFocus($PARAM[id])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_SkinAddonsContent.xml",
+      "element": "visible",
+      "document_index": 80,
+      "kind": "condition/info",
+      "expression": "!Control.HasFocus($PARAM[id])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_SkinAddonsContent.xml",
+      "element": "visible",
+      "document_index": 87,
+      "kind": "condition/info",
+      "expression": "!Control.HasFocus($PARAM[id])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_SkinAddonsContent.xml",
+      "element": "visible",
+      "document_index": 94,
+      "kind": "condition/info",
+      "expression": "!Control.HasFocus($PARAM[id])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "element": "visible",
+      "document_index": 30,
+      "kind": "condition/info",
+      "expression": "String.IsEqual(Container(9000).ListItem.Property(homemenu_category),$LOCALIZE[1])|[!Skin.HasSetting(Home_picture_Button)+String.IsEqual(Container(9000).ListItem.Property(homemenu_id),picture)]",
+      "name": "string.isequal",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Widget_Param.xml",
+      "element": "visible",
+      "document_index": 1028,
+      "kind": "condition/info",
+      "expression": "Control.HasFocus($PARAM[HomePageWidget_id])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Widget_Param.xml",
+      "element": "visible",
+      "document_index": 1067,
+      "kind": "condition/info",
+      "expression": "Control.Hasfocus($PARAM[HomePageWidget_id])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Widget_Param.xml",
+      "element": "visible",
+      "document_index": 1071,
+      "kind": "condition/info",
+      "expression": "Integer.IsGreater(Container($PARAM[HomePageWidget_id]).NumItems,0)+Control.IsVisible($PARAM[HomePageWidget_id])",
+      "name": "integer.isgreater",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Widget_Param.xml",
+      "element": "visible",
+      "document_index": 1095,
+      "kind": "condition/info",
+      "expression": "Control.HasFocus($PARAM[HomePageWidget_id])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Widget_Param.xml",
+      "element": "visible",
+      "document_index": 1121,
+      "kind": "condition/info",
+      "expression": "Control.HasFocus($PARAM[HomePageWidget_id])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Widget_Param.xml",
+      "element": "animation",
+      "document_index": 1216,
+      "kind": "condition attribute",
+      "expression": "[String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,video)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,movie)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,set)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,tvshow)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,season)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,episode)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,musicvideo)]+Control.IsVisible($PARAM[HomePageWidget_list_id])+String.IsEqual(Container($PARAM[HomePageWidget_list_id]).NumItems,1)",
+      "name": "string.contains",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Widget_Param.xml",
+      "element": "animation",
+      "document_index": 1216,
+      "kind": "condition attribute",
+      "expression": "[String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,video)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,movie)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,set)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,tvshow)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,season)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,episode)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,musicvideo)]+Control.IsVisible($PARAM[HomePageWidget_list_id])+String.IsEqual(Container($PARAM[HomePageWidget_list_id]).NumItems,1)",
+      "name": "string.isequal",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Widget_Param.xml",
+      "element": "animation",
+      "document_index": 1217,
+      "kind": "condition attribute",
+      "expression": "[String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,video)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,movie)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,set)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,tvshow)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,season)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,episode)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,musicvideo)]+Control.IsVisible($PARAM[HomePageWidget_list_id])+String.IsEqual(Container($PARAM[HomePageWidget_list_id]).NumItems,2)",
+      "name": "string.contains",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Widget_Param.xml",
+      "element": "animation",
+      "document_index": 1217,
+      "kind": "condition attribute",
+      "expression": "[String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,video)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,movie)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,set)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,tvshow)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,season)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,episode)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,musicvideo)]+Control.IsVisible($PARAM[HomePageWidget_list_id])+String.IsEqual(Container($PARAM[HomePageWidget_list_id]).NumItems,2)",
+      "name": "string.isequal",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Widget_Param.xml",
+      "element": "animation",
+      "document_index": 1218,
+      "kind": "condition attribute",
+      "expression": "[String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,video)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,movie)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,set)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,tvshow)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,season)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,episode)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,musicvideo)]+Control.IsVisible($PARAM[HomePageWidget_list_id])+String.IsEqual(Container($PARAM[HomePageWidget_list_id]).NumItems,3)",
+      "name": "string.contains",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Widget_Param.xml",
+      "element": "animation",
+      "document_index": 1218,
+      "kind": "condition attribute",
+      "expression": "[String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,video)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,movie)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,set)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,tvshow)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,season)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,episode)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,musicvideo)]+Control.IsVisible($PARAM[HomePageWidget_list_id])+String.IsEqual(Container($PARAM[HomePageWidget_list_id]).NumItems,3)",
+      "name": "string.isequal",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Widget_Param.xml",
+      "element": "animation",
+      "document_index": 1219,
+      "kind": "condition attribute",
+      "expression": "![String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,video)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,movie)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,set)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,tvshow)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,season)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,episode)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,musicvideo)]+Control.IsVisible($PARAM[HomePageWidget_list_id])+String.IsEqual(Container($PARAM[HomePageWidget_list_id]).NumItems,1)",
+      "name": "string.contains",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Widget_Param.xml",
+      "element": "animation",
+      "document_index": 1219,
+      "kind": "condition attribute",
+      "expression": "![String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,video)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,movie)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,set)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,tvshow)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,season)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,episode)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,musicvideo)]+Control.IsVisible($PARAM[HomePageWidget_list_id])+String.IsEqual(Container($PARAM[HomePageWidget_list_id]).NumItems,1)",
+      "name": "string.isequal",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Widget_Param.xml",
+      "element": "animation",
+      "document_index": 1220,
+      "kind": "condition attribute",
+      "expression": "![String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,video)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,movie)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,set)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,tvshow)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,season)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,episode)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,musicvideo)]+Control.IsVisible($PARAM[HomePageWidget_list_id])+String.IsEqual(Container($PARAM[HomePageWidget_list_id]).NumItems,2)",
+      "name": "string.contains",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Widget_Param.xml",
+      "element": "animation",
+      "document_index": 1220,
+      "kind": "condition attribute",
+      "expression": "![String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,video)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,movie)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,set)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,tvshow)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,season)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,episode)|String.Contains(Container($PARAM[HomePageWidget_list_id]).ListItem.DBType,musicvideo)]+Control.IsVisible($PARAM[HomePageWidget_list_id])+String.IsEqual(Container($PARAM[HomePageWidget_list_id]).NumItems,2)",
+      "name": "string.isequal",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Widget_Param.xml",
+      "element": "visible",
+      "document_index": 1255,
+      "kind": "condition/info",
+      "expression": "Integer.IsGreater(Container($PARAM[HomePageWidget_list_id]).NumItems,0) | Container($PARAM[HomePageWidget_list_id]).IsUpdating",
+      "name": "integer.isgreater",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Widget_Param.xml",
+      "element": "visible",
+      "document_index": 1264,
+      "kind": "condition/info",
+      "expression": "Integer.IsGreater(Container($PARAM[HomePageWidget_id]).NumItems,0)+Control.IsVisible($PARAM[HomePageWidget_id])",
+      "name": "integer.isgreater",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Widget_Param.xml",
+      "element": "itemlayout",
+      "document_index": 1287,
+      "kind": "condition attribute",
+      "expression": "String.Contains(Container($PARAM[Widget_Listlayout_id]).ListItem.DBType,video)|String.Contains(Container($PARAM[Widget_Listlayout_id]).ListItem.DBType,movie)|String.Contains(Container($PARAM[Widget_Listlayout_id]).ListItem.DBType,set)|String.Contains(Container($PARAM[Widget_Listlayout_id]).ListItem.DBType,tvshow)|String.Contains(Container($PARAM[Widget_Listlayout_id]).ListItem.DBType,season)|String.Contains(Container($PARAM[Widget_Listlayout_id]).ListItem.DBType,episode)|String.Contains(Container($PARAM[Widget_Listlayout_id]).ListItem.DBType,musicvideo)",
+      "name": "string.contains",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Widget_Param.xml",
+      "element": "focusedlayout",
+      "document_index": 1375,
+      "kind": "condition attribute",
+      "expression": "String.Contains(Container($PARAM[Widget_Listlayout_id]).ListItem.DBType,video)|String.Contains(Container($PARAM[Widget_Listlayout_id]).ListItem.DBType,movie)|String.Contains(Container($PARAM[Widget_Listlayout_id]).ListItem.DBType,set)|String.Contains(Container($PARAM[Widget_Listlayout_id]).ListItem.DBType,tvshow)|String.Contains(Container($PARAM[Widget_Listlayout_id]).ListItem.DBType,season)|String.Contains(Container($PARAM[Widget_Listlayout_id]).ListItem.DBType,episode)|String.Contains(Container($PARAM[Widget_Listlayout_id]).ListItem.DBType,musicvideo)",
+      "name": "string.contains",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Widget_Param.xml",
+      "element": "visible",
+      "document_index": 1382,
+      "kind": "condition/info",
+      "expression": "!Control.HasFocus($PARAM[Widget_Listlayout_id])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Widget_Param.xml",
+      "element": "visible",
+      "document_index": 1387,
+      "kind": "condition/info",
+      "expression": "Control.HasFocus($PARAM[Widget_Listlayout_id])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Widget_Param.xml",
+      "element": "visible",
+      "document_index": 1470,
+      "kind": "condition/info",
+      "expression": "!Control.HasFocus($PARAM[Widget_Listlayout_id])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Widget_Param.xml",
+      "element": "visible",
+      "document_index": 1475,
+      "kind": "condition/info",
+      "expression": "Control.HasFocus($PARAM[Widget_Listlayout_id])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Widget_Param.xml",
+      "element": "itemlayout",
+      "document_index": 1476,
+      "kind": "condition attribute",
+      "expression": "![String.Contains(Container($PARAM[Widget_Listlayout_id]).ListItem.DBType,video)|String.Contains(Container($PARAM[Widget_Listlayout_id]).ListItem.DBType,movie)|String.Contains(Container($PARAM[Widget_Listlayout_id]).ListItem.DBType,set)|String.Contains(Container($PARAM[Widget_Listlayout_id]).ListItem.DBType,tvshow)|String.Contains(Container($PARAM[Widget_Listlayout_id]).ListItem.DBType,season)|String.Contains(Container($PARAM[Widget_Listlayout_id]).ListItem.DBType,episode)|String.Contains(Container($PARAM[Widget_Listlayout_id]).ListItem.DBType,musicvideo)]",
+      "name": "string.contains",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Widget_Param.xml",
+      "element": "focusedlayout",
+      "document_index": 1575,
+      "kind": "condition attribute",
+      "expression": "![String.Contains(Container($PARAM[Widget_Listlayout_id]).ListItem.DBType,video)|String.Contains(Container($PARAM[Widget_Listlayout_id]).ListItem.DBType,movie)|String.Contains(Container($PARAM[Widget_Listlayout_id]).ListItem.DBType,set)|String.Contains(Container($PARAM[Widget_Listlayout_id]).ListItem.DBType,tvshow)|String.Contains(Container($PARAM[Widget_Listlayout_id]).ListItem.DBType,season)|String.Contains(Container($PARAM[Widget_Listlayout_id]).ListItem.DBType,episode)|String.Contains(Container($PARAM[Widget_Listlayout_id]).ListItem.DBType,musicvideo)]",
+      "name": "string.contains",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Widget_Param.xml",
+      "element": "visible",
+      "document_index": 1581,
+      "kind": "condition/info",
+      "expression": "!Control.HasFocus($PARAM[Widget_Listlayout_id])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Includes_Widget_Param.xml",
+      "element": "visible",
+      "document_index": 1586,
+      "kind": "condition/info",
+      "expression": "Control.HasFocus($PARAM[Widget_Listlayout_id])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/MusicVisualisation.xml",
+      "element": "visible",
+      "document_index": 644,
+      "kind": "condition/info",
+      "expression": "![String.Contains(Control.GetLabel(79),$LOCALIZE[31339])|String.Contains(Control.GetLabel(79),$LOCALIZE[31340])]",
+      "name": "string.contains",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/MusicVisualisation.xml",
+      "element": "visible",
+      "document_index": 651,
+      "kind": "condition/info",
+      "expression": "String.Contains(Control.GetLabel(79),$LOCALIZE[31339])|String.Contains(Control.GetLabel(79),$LOCALIZE[31340])",
+      "name": "string.contains",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Variables.xml",
+      "element": "value",
+      "document_index": 74,
+      "kind": "condition attribute",
+      "expression": "String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24170])",
+      "name": "string.isequal",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Variables.xml",
+      "element": "value",
+      "document_index": 75,
+      "kind": "condition attribute",
+      "expression": "String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24171])",
+      "name": "string.isequal",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Variables.xml",
+      "element": "value",
+      "document_index": 1009,
+      "kind": "condition attribute",
+      "expression": "String.IsEqual(ListItem.Property(Addon.Status),$LOCALIZE[24023])",
+      "name": "string.isequal",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Variables.xml",
+      "element": "value",
+      "document_index": 1010,
+      "kind": "condition attribute",
+      "expression": "String.IsEqual(ListItem.Property(Addon.Status),$LOCALIZE[305])",
+      "name": "string.isequal",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Variables.xml",
+      "element": "value",
+      "document_index": 1011,
+      "kind": "condition attribute",
+      "expression": "String.IsEqual(ListItem.Property(Addon.Status),$LOCALIZE[24098])",
+      "name": "string.isequal",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Variables_Dashboard.xml",
+      "element": "value",
+      "document_index": 52,
+      "kind": "condition attribute",
+      "expression": "String.Contains(Window(home).Property(WidgetLabel),$LOCALIZE[20094])",
+      "name": "string.contains",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Variables_Dashboard.xml",
+      "element": "value",
+      "document_index": 79,
+      "kind": "condition attribute",
+      "expression": "String.Contains(Window(home).Property(WidgetLabel),$LOCALIZE[20094])",
+      "name": "string.contains",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Variables_Widgets.xml",
+      "element": "value",
+      "document_index": 21,
+      "kind": "condition attribute",
+      "expression": "String.Contains(Window(home).Property(WidgetLabel),$LOCALIZE[20094])",
+      "name": "string.contains",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_515_Episode.xml",
+      "element": "animation",
+      "document_index": 55,
+      "kind": "condition attribute",
+      "expression": "Control.HasFocus($PARAM[viewid]1)",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_515_Episode.xml",
+      "element": "animation",
+      "document_index": 315,
+      "kind": "condition attribute",
+      "expression": "Control.HasFocus($PARAM[viewid]) + [!Container($PARAM[viewid]).OnNext + !Container($PARAM[viewid]).OnPrevious]",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_515_Episode.xml",
+      "element": "animation",
+      "document_index": 405,
+      "kind": "condition attribute",
+      "expression": "Skin.HasSetting(animation)+Control.HasFocus($PARAM[viewid])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_515_Episode.xml",
+      "element": "animation",
+      "document_index": 406,
+      "kind": "condition attribute",
+      "expression": "Skin.HasSetting(animation)+Control.HasFocus($PARAM[viewid])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_515_Episode.xml",
+      "element": "animation",
+      "document_index": 454,
+      "kind": "condition attribute",
+      "expression": "Control.HasFocus($PARAM[viewid]) + [!Container($PARAM[viewid]).OnNext + !Container($PARAM[viewid]).OnPrevious]",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_515_Episode.xml",
+      "element": "animation",
+      "document_index": 502,
+      "kind": "condition attribute",
+      "expression": "Skin.HasSetting(animation)+Control.HasFocus($PARAM[viewid])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_515_Episode.xml",
+      "element": "animation",
+      "document_index": 503,
+      "kind": "condition attribute",
+      "expression": "Skin.HasSetting(animation)+Control.HasFocus($PARAM[viewid])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_515_Episode.xml",
+      "element": "animation",
+      "document_index": 556,
+      "kind": "condition attribute",
+      "expression": "Control.HasFocus($PARAM[viewid]) + [!Container($PARAM[viewid]).OnNext + !Container($PARAM[viewid]).OnPrevious]",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_562_Showcase.xml",
+      "element": "animation",
+      "document_index": 616,
+      "kind": "condition attribute",
+      "expression": "Skin.HasSetting(animation)+Control.HasFocus($PARAM[viewid])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_562_Showcase.xml",
+      "element": "animation",
+      "document_index": 617,
+      "kind": "condition attribute",
+      "expression": "Skin.HasSetting(animation)+Control.HasFocus($PARAM[viewid])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_722_RightList.xml",
+      "element": "animation",
+      "document_index": 20,
+      "kind": "condition attribute",
+      "expression": "Control.HasFocus($PARAM[viewid]1)",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_057_Banner.xml",
+      "element": "animation",
+      "document_index": 130,
+      "kind": "condition attribute",
+      "expression": "Skin.HasSetting(animation)+Control.HasFocus($PARAM[viewid])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_057_Banner.xml",
+      "element": "animation",
+      "document_index": 272,
+      "kind": "condition attribute",
+      "expression": "Skin.HasSetting(animation)+Control.HasFocus($PARAM[viewid])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_057_Banner.xml",
+      "element": "animation",
+      "document_index": 348,
+      "kind": "condition attribute",
+      "expression": "Skin.HasSetting(animation)+Control.HasFocus($PARAM[viewid])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_302_3Panel.xml",
+      "element": "value",
+      "document_index": 11,
+      "kind": "condition attribute",
+      "expression": "String.StartsWith(ListItem.FolderPath,library://video/movies/)+String.Contains(Container(303).ListItem.Label,$LOCALIZE[515])",
+      "name": "string.contains",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_302_3Panel.xml",
+      "element": "value",
+      "document_index": 12,
+      "kind": "condition attribute",
+      "expression": "String.StartsWith(ListItem.FolderPath,library://video/movies/)+String.Contains(Container(303).ListItem.Label,$LOCALIZE[556])",
+      "name": "string.contains",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_302_3Panel.xml",
+      "element": "value",
+      "document_index": 13,
+      "kind": "condition attribute",
+      "expression": "String.StartsWith(ListItem.FolderPath,library://video/movies/)+String.Contains(Container(303).ListItem.Label,$LOCALIZE[562])",
+      "name": "string.contains",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_302_3Panel.xml",
+      "element": "value",
+      "document_index": 14,
+      "kind": "condition attribute",
+      "expression": "String.StartsWith(ListItem.FolderPath,library://video/movies/)+String.Contains(Container(303).ListItem.Label,$LOCALIZE[20337])",
+      "name": "string.contains",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_302_3Panel.xml",
+      "element": "value",
+      "document_index": 15,
+      "kind": "condition attribute",
+      "expression": "String.StartsWith(ListItem.FolderPath,library://video/movies/)+String.Contains(Container(303).ListItem.Label,$LOCALIZE[20348])",
+      "name": "string.contains",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_302_3Panel.xml",
+      "element": "value",
+      "document_index": 16,
+      "kind": "condition attribute",
+      "expression": "String.StartsWith(ListItem.FolderPath,library://video/movies/)+String.Contains(Container(303).ListItem.Label,$LOCALIZE[20388])",
+      "name": "string.contains",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_302_3Panel.xml",
+      "element": "value",
+      "document_index": 17,
+      "kind": "condition attribute",
+      "expression": "String.StartsWith(ListItem.FolderPath,library://video/movies/)+String.Contains(Container(303).ListItem.Label,$LOCALIZE[20434])",
+      "name": "string.contains",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_302_3Panel.xml",
+      "element": "value",
+      "document_index": 18,
+      "kind": "condition attribute",
+      "expression": "String.StartsWith(ListItem.FolderPath,library://video/movies/)+String.Contains(Container(303).ListItem.Label,$LOCALIZE[20451])",
+      "name": "string.contains",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_302_3Panel.xml",
+      "element": "value",
+      "document_index": 19,
+      "kind": "condition attribute",
+      "expression": "String.StartsWith(ListItem.FolderPath,library://video/movies/)+String.Contains(Container(303).ListItem.Label,$LOCALIZE[20459])",
+      "name": "string.contains",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_302_3Panel.xml",
+      "element": "value",
+      "document_index": 30,
+      "kind": "condition attribute",
+      "expression": "String.StartsWith(ListItem.FolderPath,library://video/musicvideos/)+String.Contains(Container(303).ListItem.Label,$LOCALIZE[515])",
+      "name": "string.contains",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_302_3Panel.xml",
+      "element": "value",
+      "document_index": 31,
+      "kind": "condition attribute",
+      "expression": "String.StartsWith(ListItem.FolderPath,library://video/musicvideos/)+String.Contains(Container(303).ListItem.Label,$LOCALIZE[556])",
+      "name": "string.contains",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_302_3Panel.xml",
+      "element": "value",
+      "document_index": 32,
+      "kind": "condition attribute",
+      "expression": "String.StartsWith(ListItem.FolderPath,library://video/musicvideos/)+String.Contains(Container(303).ListItem.Label,$LOCALIZE[562])",
+      "name": "string.contains",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_302_3Panel.xml",
+      "element": "value",
+      "document_index": 33,
+      "kind": "condition attribute",
+      "expression": "String.StartsWith(ListItem.FolderPath,library://video/musicvideos/)+String.Contains(Container(303).ListItem.Label,$LOCALIZE[133])",
+      "name": "string.contains",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_302_3Panel.xml",
+      "element": "value",
+      "document_index": 34,
+      "kind": "condition attribute",
+      "expression": "String.StartsWith(ListItem.FolderPath,library://video/musicvideos/)+String.Contains(Container(303).ListItem.Label,$LOCALIZE[132])",
+      "name": "string.contains",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_302_3Panel.xml",
+      "element": "value",
+      "document_index": 35,
+      "kind": "condition attribute",
+      "expression": "String.StartsWith(ListItem.FolderPath,library://video/musicvideos/)+String.Contains(Container(303).ListItem.Label,$LOCALIZE[20348])",
+      "name": "string.contains",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_302_3Panel.xml",
+      "element": "value",
+      "document_index": 36,
+      "kind": "condition attribute",
+      "expression": "String.StartsWith(ListItem.FolderPath,library://video/musicvideos/)+String.Contains(Container(303).ListItem.Label,$LOCALIZE[20388])",
+      "name": "string.contains",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_302_3Panel.xml",
+      "element": "value",
+      "document_index": 37,
+      "kind": "condition attribute",
+      "expression": "String.StartsWith(ListItem.FolderPath,library://video/musicvideos/)+String.Contains(Container(303).ListItem.Label,$LOCALIZE[20451])",
+      "name": "string.contains",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_302_3Panel.xml",
+      "element": "value",
+      "document_index": 38,
+      "kind": "condition attribute",
+      "expression": "String.StartsWith(ListItem.FolderPath,library://video/musicvideos/)+String.Contains(Container(303).ListItem.Label,$LOCALIZE[20459])",
+      "name": "string.contains",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_302_3Panel.xml",
+      "element": "value",
+      "document_index": 45,
+      "kind": "condition attribute",
+      "expression": "String.StartsWith(ListItem.FolderPath,library://video/tvshows/)+String.Contains(Container(303).ListItem.Label,$LOCALIZE[515])",
+      "name": "string.contains",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_302_3Panel.xml",
+      "element": "value",
+      "document_index": 46,
+      "kind": "condition attribute",
+      "expression": "String.StartsWith(ListItem.FolderPath,library://video/tvshows/)+String.Contains(Container(303).ListItem.Label,$LOCALIZE[556])",
+      "name": "string.contains",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_302_3Panel.xml",
+      "element": "value",
+      "document_index": 47,
+      "kind": "condition attribute",
+      "expression": "String.StartsWith(ListItem.FolderPath,library://video/tvshows/)+String.Contains(Container(303).ListItem.Label,$LOCALIZE[562])",
+      "name": "string.contains",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_302_3Panel.xml",
+      "element": "value",
+      "document_index": 48,
+      "kind": "condition attribute",
+      "expression": "String.StartsWith(ListItem.FolderPath,library://video/tvshows/)+String.Contains(Container(303).ListItem.Label,$LOCALIZE[20337])",
+      "name": "string.contains",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_302_3Panel.xml",
+      "element": "value",
+      "document_index": 49,
+      "kind": "condition attribute",
+      "expression": "String.StartsWith(ListItem.FolderPath,library://video/tvshows/)+String.Contains(Container(303).ListItem.Label,$LOCALIZE[20388])",
+      "name": "string.contains",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_302_3Panel.xml",
+      "element": "value",
+      "document_index": 50,
+      "kind": "condition attribute",
+      "expression": "String.StartsWith(ListItem.FolderPath,library://video/tvshows/)+String.Contains(Container(303).ListItem.Label,$LOCALIZE[20459])",
+      "name": "string.contains",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_302_3Panel.xml",
+      "element": "visible",
+      "document_index": 102,
+      "kind": "condition/info",
+      "expression": "!ListItem.IsParentFolder+!String.EndsWith(ListItem.Label,$LOCALIZE[20462])",
+      "name": "string.endswith",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_302_3Panel.xml",
+      "element": "visible",
+      "document_index": 160,
+      "kind": "condition/info",
+      "expression": "Control.HasFocus($PARAM[viewid])|Control.HasFocus(303)",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_302_3Panel.xml",
+      "element": "visible",
+      "document_index": 180,
+      "kind": "condition/info",
+      "expression": "!ListItem.IsParentFolder+!String.EndsWith(ListItem.Label,$LOCALIZE[20462])",
+      "name": "string.endswith",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_302_3Panel.xml",
+      "element": "animation",
+      "document_index": 397,
+      "kind": "condition attribute",
+      "expression": "Control.HasFocus($PARAM[viewid]1)",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_302_3Panel.xml",
+      "element": "animation",
+      "document_index": 480,
+      "kind": "condition attribute",
+      "expression": "Skin.HasSetting(animation)+Control.HasFocus($PARAM[viewid])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_302_3Panel.xml",
+      "element": "animation",
+      "document_index": 481,
+      "kind": "condition attribute",
+      "expression": "Skin.HasSetting(animation)+Control.HasFocus($PARAM[viewid])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_302_3Panel.xml",
+      "element": "animation",
+      "document_index": 516,
+      "kind": "condition attribute",
+      "expression": "Control.HasFocus($PARAM[viewid]1)",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_401_Fanart.xml",
+      "element": "visible",
+      "document_index": 220,
+      "kind": "condition/info",
+      "expression": "!Control.HasFocus($PARAM[viewid]1)",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_401_Fanart.xml",
+      "element": "animation",
+      "document_index": 298,
+      "kind": "condition attribute",
+      "expression": "Skin.HasSetting(animation)+Control.HasFocus($PARAM[viewid])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_401_Fanart.xml",
+      "element": "animation",
+      "document_index": 299,
+      "kind": "condition attribute",
+      "expression": "Skin.HasSetting(animation)+Control.HasFocus($PARAM[viewid])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_401_Fanart.xml",
+      "element": "visible",
+      "document_index": 392,
+      "kind": "condition/info",
+      "expression": "![Control.HasFocus($PARAM[viewid]1)|ControlGroup(17000).HasFocus()]",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_401_Fanart.xml",
+      "element": "animation",
+      "document_index": 408,
+      "kind": "condition attribute",
+      "expression": "!Control.HasFocus($PARAM[viewid]1)",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_401_Fanart.xml",
+      "element": "visible",
+      "document_index": 411,
+      "kind": "condition/info",
+      "expression": "Control.HasFocus($PARAM[viewid]1)",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_402_Fanart_Episode.xml",
+      "element": "animation",
+      "document_index": 279,
+      "kind": "condition attribute",
+      "expression": "Skin.HasSetting(animation)+Control.HasFocus($PARAM[viewid])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_402_Fanart_Episode.xml",
+      "element": "animation",
+      "document_index": 280,
+      "kind": "condition attribute",
+      "expression": "Skin.HasSetting(animation)+Control.HasFocus($PARAM[viewid])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_402_Fanart_Episode.xml",
+      "element": "visible",
+      "document_index": 288,
+      "kind": "condition/info",
+      "expression": "!Control.HasFocus($PARAM[viewid])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_402_Fanart_Episode.xml",
+      "element": "visible",
+      "document_index": 298,
+      "kind": "condition/info",
+      "expression": "Control.HasFocus($PARAM[viewid])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_402_Fanart_Episode.xml",
+      "element": "visible",
+      "document_index": 379,
+      "kind": "condition/info",
+      "expression": "![Control.HasFocus($PARAM[viewid]1)|ControlGroup(17000).HasFocus()]",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_402_Fanart_Episode.xml",
+      "element": "animation",
+      "document_index": 392,
+      "kind": "condition attribute",
+      "expression": "!Control.HasFocus($PARAM[viewid]1)",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_402_Fanart_Episode.xml",
+      "element": "animation",
+      "document_index": 393,
+      "kind": "condition attribute",
+      "expression": "Control.HasFocus($PARAM[viewid]1)",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_500_Panel.xml",
+      "element": "animation",
+      "document_index": 119,
+      "kind": "condition attribute",
+      "expression": "Skin.HasSetting(animation)+Control.HasFocus($PARAM[viewid])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_500_Panel.xml",
+      "element": "animation",
+      "document_index": 120,
+      "kind": "condition attribute",
+      "expression": "Skin.HasSetting(animation)+Control.HasFocus($PARAM[viewid])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_500_Panel.xml",
+      "element": "animation",
+      "document_index": 252,
+      "kind": "condition attribute",
+      "expression": "Skin.HasSetting(animation)+Control.HasFocus($PARAM[viewid])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_500_Panel.xml",
+      "element": "animation",
+      "document_index": 253,
+      "kind": "condition attribute",
+      "expression": "Skin.HasSetting(animation)+Control.HasFocus($PARAM[viewid])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_502_Don.xml",
+      "element": "animation",
+      "document_index": 142,
+      "kind": "condition attribute",
+      "expression": "Skin.HasSetting(animation)+Control.HasFocus($PARAM[viewid])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_502_Don.xml",
+      "element": "animation",
+      "document_index": 143,
+      "kind": "condition attribute",
+      "expression": "Skin.HasSetting(animation)+Control.HasFocus($PARAM[viewid])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_502_Don.xml",
+      "element": "animation",
+      "document_index": 211,
+      "kind": "condition attribute",
+      "expression": "Control.HasFocus($PARAM[viewid]1)",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_502_Don.xml",
+      "element": "animation",
+      "document_index": 361,
+      "kind": "condition attribute",
+      "expression": "Skin.HasSetting(animation)+Control.HasFocus($PARAM[viewid])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_502_Don.xml",
+      "element": "animation",
+      "document_index": 362,
+      "kind": "condition attribute",
+      "expression": "Skin.HasSetting(animation)+Control.HasFocus($PARAM[viewid])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_503_MediaInfo.xml",
+      "element": "animation",
+      "document_index": 73,
+      "kind": "condition attribute",
+      "expression": "System.HasAddon(plugin.video.themoviedb.helper)+Control.HasFocus($PARAM[viewid])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_503_MediaInfo.xml",
+      "element": "animation",
+      "document_index": 137,
+      "kind": "condition attribute",
+      "expression": "Skin.HasSetting(animation)+Control.HasFocus($PARAM[viewid])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_503_MediaInfo.xml",
+      "element": "visible",
+      "document_index": 143,
+      "kind": "condition/info",
+      "expression": "!Control.HasFocus($PARAM[viewid])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_503_MediaInfo.xml",
+      "element": "visible",
+      "document_index": 149,
+      "kind": "condition/info",
+      "expression": "Control.HasFocus($PARAM[viewid])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_503_MediaInfo.xml",
+      "element": "visible",
+      "document_index": 237,
+      "kind": "condition/info",
+      "expression": "Control.HasFocus($PARAM[viewid])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_505_Wide.xml",
+      "element": "animation",
+      "document_index": 148,
+      "kind": "condition attribute",
+      "expression": "Skin.HasSetting(animation)+Control.HasFocus($PARAM[viewid])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_505_Wide.xml",
+      "element": "animation",
+      "document_index": 149,
+      "kind": "condition attribute",
+      "expression": "Skin.HasSetting(animation)+Control.HasFocus($PARAM[viewid])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_505_Wide.xml",
+      "element": "animation",
+      "document_index": 219,
+      "kind": "condition attribute",
+      "expression": "Control.HasFocus($PARAM[viewid]1)",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_505_Wide.xml",
+      "element": "animation",
+      "document_index": 384,
+      "kind": "condition attribute",
+      "expression": "Skin.HasSetting(animation)+Control.HasFocus($PARAM[viewid])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_505_Wide.xml",
+      "element": "animation",
+      "document_index": 385,
+      "kind": "condition attribute",
+      "expression": "Skin.HasSetting(animation)+Control.HasFocus($PARAM[viewid])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_505_Wide.xml",
+      "element": "animation",
+      "document_index": 526,
+      "kind": "condition attribute",
+      "expression": "Skin.HasSetting(animation)+Control.HasFocus($PARAM[viewid])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_505_Wide.xml",
+      "element": "animation",
+      "document_index": 527,
+      "kind": "condition attribute",
+      "expression": "Skin.HasSetting(animation)+Control.HasFocus($PARAM[viewid])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_721_RightList.xml",
+      "element": "animation",
+      "document_index": 26,
+      "kind": "condition attribute",
+      "expression": "Control.HasFocus($PARAM[viewid]1)",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_721_RightList.xml",
+      "element": "visible",
+      "document_index": 108,
+      "kind": "condition/info",
+      "expression": "String.Contains(ListItem.Property(Addon.Status),$LOCALIZE[13413])",
+      "name": "string.contains",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_721_RightList.xml",
+      "element": "visible",
+      "document_index": 114,
+      "kind": "condition/info",
+      "expression": "Control.HasFocus($PARAM[viewid])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_721_RightList.xml",
+      "element": "visible",
+      "document_index": 119,
+      "kind": "condition/info",
+      "expression": "!Control.HasFocus($PARAM[viewid])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Movie_721_RightList.xml",
+      "element": "visible",
+      "document_index": 185,
+      "kind": "condition/info",
+      "expression": "String.Contains(ListItem.Property(Addon.Status),$LOCALIZE[13413])",
+      "name": "string.contains",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Music_058_Banner.xml",
+      "element": "animation",
+      "document_index": 90,
+      "kind": "condition attribute",
+      "expression": "Skin.HasSetting(animation)+Control.HasFocus($PARAM[viewid])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Music_506_InfoList.xml",
+      "element": "visible",
+      "document_index": 58,
+      "kind": "condition/info",
+      "expression": "!Control.HasFocus($PARAM[viewid])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Music_506_InfoList.xml",
+      "element": "visible",
+      "document_index": 66,
+      "kind": "condition/info",
+      "expression": "Control.HasFocus($PARAM[viewid])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Music_506_InfoList.xml",
+      "element": "visible",
+      "document_index": 113,
+      "kind": "condition/info",
+      "expression": "!Control.HasFocus($PARAM[viewid])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Music_506_InfoList.xml",
+      "element": "visible",
+      "document_index": 121,
+      "kind": "condition/info",
+      "expression": "Control.HasFocus($PARAM[viewid])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Music_509_Fanart.xml",
+      "element": "visible",
+      "document_index": 257,
+      "kind": "condition/info",
+      "expression": "!Control.HasFocus($PARAM[viewid]1)",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Music_509_Fanart.xml",
+      "element": "animation",
+      "document_index": 309,
+      "kind": "condition attribute",
+      "expression": "Skin.HasSetting(animation)+Control.HasFocus($PARAM[viewid])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Music_509_Fanart.xml",
+      "element": "animation",
+      "document_index": 310,
+      "kind": "condition attribute",
+      "expression": "Skin.HasSetting(animation)+Control.HasFocus($PARAM[viewid])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Music_509_Fanart.xml",
+      "element": "animation",
+      "document_index": 320,
+      "kind": "condition attribute",
+      "expression": "!Control.HasFocus($PARAM[viewid]1)",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Music_509_Fanart.xml",
+      "element": "animation",
+      "document_index": 321,
+      "kind": "condition attribute",
+      "expression": "Control.HasFocus($PARAM[viewid]1)",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Music_512_ArtistMediaList.xml",
+      "element": "visible",
+      "document_index": 59,
+      "kind": "condition/info",
+      "expression": "!Control.HasFocus($PARAM[viewid])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Music_512_ArtistMediaList.xml",
+      "element": "visible",
+      "document_index": 67,
+      "kind": "condition/info",
+      "expression": "Control.HasFocus($PARAM[viewid])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Music_570_DiscFlow.xml",
+      "element": "animation",
+      "document_index": 37,
+      "kind": "condition attribute",
+      "expression": "!Control.HasFocus($PARAM[viewid]1)",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Music_741_CoverWall.xml",
+      "element": "animation",
+      "document_index": 83,
+      "kind": "condition attribute",
+      "expression": "Skin.HasSetting(animation)+Control.HasFocus($PARAM[viewid])+Skin.HasSetting(no_wall_animation)",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Music_741_CoverWall.xml",
+      "element": "animation",
+      "document_index": 84,
+      "kind": "condition attribute",
+      "expression": "Skin.HasSetting(animation)+Control.HasFocus($PARAM[viewid])+Skin.HasSetting(no_wall_animation)",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Music_741_CoverWall.xml",
+      "element": "animation",
+      "document_index": 108,
+      "kind": "condition attribute",
+      "expression": "Skin.HasSetting(animation)+Control.HasFocus($PARAM[viewid])+Skin.HasSetting(no_wall_animation)",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Music_741_CoverWall.xml",
+      "element": "animation",
+      "document_index": 109,
+      "kind": "condition attribute",
+      "expression": "Skin.HasSetting(animation)+Control.HasFocus($PARAM[viewid])+Skin.HasSetting(no_wall_animation)",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Music_741_CoverWall.xml",
+      "element": "animation",
+      "document_index": 149,
+      "kind": "condition attribute",
+      "expression": "Skin.HasSetting(animation)+Control.HasFocus($PARAM[viewid])+Skin.HasSetting(no_wall_animation)",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/View_Music_741_CoverWall.xml",
+      "element": "animation",
+      "document_index": 150,
+      "kind": "condition attribute",
+      "expression": "Skin.HasSetting(animation)+Control.HasFocus($PARAM[viewid])+Skin.HasSetting(no_wall_animation)",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Views_Addon_Browser.xml",
+      "element": "visible",
+      "document_index": 59,
+      "kind": "condition/info",
+      "expression": "!Control.HasFocus($PARAM[viewid])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Views_Addon_Browser.xml",
+      "element": "visible",
+      "document_index": 67,
+      "kind": "condition/info",
+      "expression": "Control.HasFocus($PARAM[viewid])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Views_Addon_Browser.xml",
+      "element": "visible",
+      "document_index": 116,
+      "kind": "condition/info",
+      "expression": "String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24169])",
+      "name": "string.isequal",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Views_Addon_Browser.xml",
+      "element": "visible",
+      "document_index": 121,
+      "kind": "condition/info",
+      "expression": "[String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24170])|String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24171])]",
+      "name": "string.isequal",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Views_Addon_Browser.xml",
+      "element": "visible",
+      "document_index": 129,
+      "kind": "condition/info",
+      "expression": "[String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24170])|String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24171])]",
+      "name": "string.isequal",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Views_Addon_Browser.xml",
+      "element": "visible",
+      "document_index": 232,
+      "kind": "condition/info",
+      "expression": "String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24169])",
+      "name": "string.isequal",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Views_Addon_Browser.xml",
+      "element": "visible",
+      "document_index": 243,
+      "kind": "condition/info",
+      "expression": "[String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24170])|String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24171])]",
+      "name": "string.isequal",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Views_Addon_Browser.xml",
+      "element": "visible",
+      "document_index": 251,
+      "kind": "condition/info",
+      "expression": "[String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24170])|String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24171])]",
+      "name": "string.isequal",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Views_Addon_Browser.xml",
+      "element": "animation",
+      "document_index": 264,
+      "kind": "condition attribute",
+      "expression": "Skin.HasSetting(animation)+Control.HasFocus($PARAM[viewid])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Views_Addon_Browser.xml",
+      "element": "animation",
+      "document_index": 265,
+      "kind": "condition attribute",
+      "expression": "Skin.HasSetting(animation)+Control.HasFocus($PARAM[viewid])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Views_Addon_Browser.xml",
+      "element": "visible",
+      "document_index": 274,
+      "kind": "condition/info",
+      "expression": "String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24169])",
+      "name": "string.isequal",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Views_Addon_Browser.xml",
+      "element": "visible",
+      "document_index": 284,
+      "kind": "condition/info",
+      "expression": "[String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24170])|String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24171])]",
+      "name": "string.isequal",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Views_Addon_Browser.xml",
+      "element": "visible",
+      "document_index": 292,
+      "kind": "condition/info",
+      "expression": "[String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24170])|String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24171])]",
+      "name": "string.isequal",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Views_Addon_Browser.xml",
+      "element": "visible",
+      "document_index": 382,
+      "kind": "condition/info",
+      "expression": "String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24169])",
+      "name": "string.isequal",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Views_Addon_Browser.xml",
+      "element": "visible",
+      "document_index": 390,
+      "kind": "condition/info",
+      "expression": "[String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24170])|String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24171])]",
+      "name": "string.isequal",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Views_Addon_Browser.xml",
+      "element": "visible",
+      "document_index": 397,
+      "kind": "condition/info",
+      "expression": "[String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24170])|String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24171])]",
+      "name": "string.isequal",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Views_Pictures.xml",
+      "element": "animation",
+      "document_index": 67,
+      "kind": "condition attribute",
+      "expression": "Skin.HasSetting(animation)+Control.HasFocus($PARAM[viewid])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Views_Pictures.xml",
+      "element": "animation",
+      "document_index": 68,
+      "kind": "condition attribute",
+      "expression": "Skin.HasSetting(animation)+Control.HasFocus($PARAM[viewid])",
+      "name": "control.hasfocus",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Views_Weather.xml",
+      "element": "visible",
+      "document_index": 285,
+      "kind": "condition/info",
+      "expression": "Weather.IsFetched + !String.IsEmpty(Weather.Data(Day$PARAM[item_id].Outlook)) + String.IsEmpty(Weather.Data(Daily.IsFetched))",
+      "name": "string.isempty",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Views_Weather.xml",
+      "element": "visible",
+      "document_index": 293,
+      "kind": "condition/info",
+      "expression": "Weather.IsFetched + !String.IsEmpty(Weather.Data(Daily.$PARAM[item_id].Outlook)) + !String.IsEmpty(Weather.Data(Daily.IsFetched))",
+      "name": "string.isempty",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Views_Weather.xml",
+      "element": "visible",
+      "document_index": 301,
+      "kind": "condition/info",
+      "expression": "Weather.IsFetched + !String.IsEmpty(Weather.Data(Hourly.$PARAM[item_id].Outlook)) + !String.IsEmpty(Weather.Data(Hourly.IsFetched))",
+      "name": "string.isempty",
+      "reason": "dynamic argument text"
+    },
+    {
+      "file": "xml/Views_Weather.xml",
+      "element": "visible",
+      "document_index": 309,
+      "kind": "condition/info",
+      "expression": "Weather.IsFetched + !String.IsEmpty(Weather.Data(Map.$PARAM[item_id].Area)) + !String.IsEmpty(Weather.Data(Map.IsFetched))",
+      "name": "string.isempty",
+      "reason": "dynamic argument text"
+    }
+  ],
+  "condition_atom_count": 8863,
+  "condition_atom_candidates": [],
+  "dynamic_condition_atoms": [
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 80,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible]",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 87,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible]",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 138,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible]",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 323,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible]",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 547,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible]",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 558,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible_secondback]",
+      "atom": "$PARAM[visible_secondback]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 564,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible_separator1]",
+      "atom": "$PARAM[visible_separator1]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 569,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible_separator2]",
+      "atom": "$PARAM[visible_separator2]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "include",
+      "document_index": 988,
+      "kind": "condition attribute",
+      "expression": "$PARAM[slide]",
+      "atom": "$PARAM[slide]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 989,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible]",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 1002,
+      "kind": "condition/info",
+      "expression": "$PARAM[visiblemore]",
+      "atom": "$PARAM[visiblemore]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 1026,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible]",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 1035,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible_background]",
+      "atom": "$PARAM[visible_background]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "onright",
+      "document_index": 1458,
+      "kind": "condition attribute",
+      "expression": "$PARAM[onright1_condi]",
+      "atom": "$PARAM[onright1_condi]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "onright",
+      "document_index": 1459,
+      "kind": "condition attribute",
+      "expression": "$PARAM[onright2_condi]",
+      "atom": "$PARAM[onright2_condi]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 1462,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible]",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "ondown",
+      "document_index": 1488,
+      "kind": "condition attribute",
+      "expression": "$PARAM[ondown1_condi]",
+      "atom": "$PARAM[ondown1_condi]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "ondown",
+      "document_index": 1489,
+      "kind": "condition attribute",
+      "expression": "$PARAM[ondown2_condi]",
+      "atom": "$PARAM[ondown2_condi]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "ondown",
+      "document_index": 1490,
+      "kind": "condition attribute",
+      "expression": "$PARAM[ondown3_condi]",
+      "atom": "$PARAM[ondown3_condi]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 1498,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible]",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 1534,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible]",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 1562,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible]",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 1637,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible]",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 1659,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible]",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 1719,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible]",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 1910,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible_points]",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 1923,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible_points]",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 1936,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible_points]",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 1949,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible_points]",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 1962,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible_points]",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 1975,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible_points]",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 1988,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible_points]",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 2001,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible_points]",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 2014,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible_points]",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 2027,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible_points]",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 2040,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible_points]",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 2053,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible_points]",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 2065,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible_points]",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 2077,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible_points]",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 2089,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible_points]",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 2101,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible_points]",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 2113,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible_points]",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 2125,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible_points]",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 2137,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible_points]",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 2149,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible_points]",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 2161,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible_points]",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 2173,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible_points]",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 2185,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible_points]",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 2197,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible_points]",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 2209,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible_points]",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 2221,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible_points]",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 2233,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible_points]",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 2245,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible_points]",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 2257,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible_points]",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 2269,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible_points]",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 2278,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible_ratingimage]",
+      "atom": "$PARAM[visible_ratingimage]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 2285,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible_textbox]",
+      "atom": "$PARAM[visible_textbox]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 2296,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible_points]",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 2308,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible_points]",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 2442,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible_summary]",
+      "atom": "$PARAM[visible_summary]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 2451,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible_news]",
+      "atom": "$PARAM[visible_news]"
+    },
+    {
+      "file": "xml/Includes_AlphabetScroller.xml",
+      "element": "visible",
+      "document_index": 444,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible]",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes_BackgroundBuilding.xml",
+      "element": "visible",
+      "document_index": 234,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible_arrows]",
+      "atom": "$PARAM[visible_arrows]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onclick",
+      "document_index": 43,
+      "kind": "condition attribute",
+      "expression": "$PARAM[onclick2_condition]",
+      "atom": "$PARAM[onclick2_condition]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onclick",
+      "document_index": 44,
+      "kind": "condition attribute",
+      "expression": "$PARAM[onclick3_condition]",
+      "atom": "$PARAM[onclick3_condition]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "enable",
+      "document_index": 56,
+      "kind": "condition/info",
+      "expression": "$PARAM[enable]",
+      "atom": "$PARAM[enable]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "visible",
+      "document_index": 57,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible]",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "visible",
+      "document_index": 58,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible2]",
+      "atom": "$PARAM[visible2]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "visible",
+      "document_index": 59,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible3]",
+      "atom": "$PARAM[visible3]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "usealttexture",
+      "document_index": 98,
+      "kind": "condition/info",
+      "expression": "$PARAM[usealttexture]",
+      "atom": "$PARAM[usealttexture]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "visible",
+      "document_index": 99,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible]",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "visible",
+      "document_index": 100,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible2]",
+      "atom": "$PARAM[visible2]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "visible",
+      "document_index": 101,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible3]",
+      "atom": "$PARAM[visible3]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "enable",
+      "document_index": 102,
+      "kind": "condition/info",
+      "expression": "$PARAM[enable]",
+      "atom": "$PARAM[enable]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "visible",
+      "document_index": 151,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible]",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "visible",
+      "document_index": 152,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible2]",
+      "atom": "$PARAM[visible2]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "visible",
+      "document_index": 153,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible3]",
+      "atom": "$PARAM[visible3]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "enable",
+      "document_index": 154,
+      "kind": "condition/info",
+      "expression": "$PARAM[enable]",
+      "atom": "$PARAM[enable]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "selected",
+      "document_index": 155,
+      "kind": "condition/info",
+      "expression": "$PARAM[selected]",
+      "atom": "$PARAM[selected]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onclick",
+      "document_index": 158,
+      "kind": "condition attribute",
+      "expression": "$PARAM[onclick2_condition]",
+      "atom": "$PARAM[onclick2_condition]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onclick",
+      "document_index": 159,
+      "kind": "condition attribute",
+      "expression": "$PARAM[onclick3_condition]",
+      "atom": "$PARAM[onclick3_condition]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onclick",
+      "document_index": 198,
+      "kind": "condition attribute",
+      "expression": "$PARAM[onclick2_condition]",
+      "atom": "$PARAM[onclick2_condition]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onclick",
+      "document_index": 199,
+      "kind": "condition attribute",
+      "expression": "$PARAM[onclick3_condition]",
+      "atom": "$PARAM[onclick3_condition]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "enable",
+      "document_index": 206,
+      "kind": "condition/info",
+      "expression": "$PARAM[enable]",
+      "atom": "$PARAM[enable]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "visible",
+      "document_index": 207,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible]",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "visible",
+      "document_index": 208,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible2]",
+      "atom": "$PARAM[visible2]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "visible",
+      "document_index": 209,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible3]",
+      "atom": "$PARAM[visible3]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onclick",
+      "document_index": 244,
+      "kind": "condition attribute",
+      "expression": "$PARAM[onclick2_condition]",
+      "atom": "$PARAM[onclick2_condition]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onclick",
+      "document_index": 245,
+      "kind": "condition attribute",
+      "expression": "$PARAM[onclick3_condition]",
+      "atom": "$PARAM[onclick3_condition]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "enable",
+      "document_index": 252,
+      "kind": "condition/info",
+      "expression": "$PARAM[enable]",
+      "atom": "$PARAM[enable]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "visible",
+      "document_index": 253,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible]",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "visible",
+      "document_index": 254,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible2]",
+      "atom": "$PARAM[visible2]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "visible",
+      "document_index": 255,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible3]",
+      "atom": "$PARAM[visible3]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onclick",
+      "document_index": 284,
+      "kind": "condition attribute",
+      "expression": "$PARAM[onclick2_condition]",
+      "atom": "$PARAM[onclick2_condition]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onclick",
+      "document_index": 285,
+      "kind": "condition attribute",
+      "expression": "$PARAM[onclick3_condition]",
+      "atom": "$PARAM[onclick3_condition]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "visible",
+      "document_index": 291,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible]",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "visible",
+      "document_index": 292,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible2]",
+      "atom": "$PARAM[visible2]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "visible",
+      "document_index": 293,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible3]",
+      "atom": "$PARAM[visible3]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "visible",
+      "document_index": 786,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible_flags]",
+      "atom": "$PARAM[visible_flags]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "visible",
+      "document_index": 820,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible_flags]",
+      "atom": "$PARAM[visible_flags]"
+    },
+    {
+      "file": "xml/Includes_Dash_Addonpath_Fav.xml",
+      "element": "visible",
+      "document_index": 7,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible]",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes_Dash_Addonpath_Fav.xml",
+      "element": "visible",
+      "document_index": 20,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible]",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes_Dash_Addonpath_Fav.xml",
+      "element": "visible",
+      "document_index": 40,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible]",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes_Dash_Addonpath_Fav.xml",
+      "element": "visible",
+      "document_index": 43,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible]",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes_Dash_Addonpath_Fav.xml",
+      "element": "visible",
+      "document_index": 61,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible]",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes_Dash_Addonpath_Fav.xml",
+      "element": "visible",
+      "document_index": 81,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible]",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes_Dash_Addonpath_Fav.xml",
+      "element": "visible",
+      "document_index": 101,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible]",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes_Dash_FritzDect.xml",
+      "element": "visible",
+      "document_index": 9,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible]",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes_Dash_GTO.xml",
+      "element": "visible",
+      "document_index": 12,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible]",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes_Dash_Layout.xml",
+      "element": "visible",
+      "document_index": 280,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible]",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes_Dash_Weather.xml",
+      "element": "visible",
+      "document_index": 11,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible]",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes_SetInformation.xml",
+      "element": "visible",
+      "document_index": 40,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible_label]",
+      "atom": "$PARAM[visible_label]"
+    },
+    {
+      "file": "xml/Includes_SetInformation.xml",
+      "element": "visible",
+      "document_index": 76,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible_cdart]",
+      "atom": "$PARAM[visible_cdart]"
+    },
+    {
+      "file": "xml/Includes_SetInformation.xml",
+      "element": "visible",
+      "document_index": 110,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible_cdart]",
+      "atom": "$PARAM[visible_cdart]"
+    },
+    {
+      "file": "xml/Includes_SetInformation.xml",
+      "element": "visible",
+      "document_index": 169,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible]",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes_SetInformation.xml",
+      "element": "visible",
+      "document_index": 176,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible_labels]",
+      "atom": "$PARAM[visible_labels]"
+    },
+    {
+      "file": "xml/Includes_SetInformation.xml",
+      "element": "visible",
+      "document_index": 182,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible_labels]",
+      "atom": "$PARAM[visible_labels]"
+    },
+    {
+      "file": "xml/Includes_SkinAddonsContent.xml",
+      "element": "visible",
+      "document_index": 23,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible]",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes_WeatherWidget_Content.xml",
+      "element": "visible",
+      "document_index": 8,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible]",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes_WeatherWidget_Content.xml",
+      "element": "visible",
+      "document_index": 16,
+      "kind": "condition/info",
+      "expression": "$PARAM[visible]",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes_Widget_Param.xml",
+      "element": "visible",
+      "document_index": 1250,
+      "kind": "condition/info",
+      "expression": "$PARAM[HomePageWidget_list_visible]",
+      "atom": "$PARAM[HomePageWidget_list_visible]"
+    },
+    {
+      "file": "xml/Includes_Widget_Param.xml",
+      "element": "visible",
+      "document_index": 1251,
+      "kind": "condition/info",
+      "expression": "$PARAM[HomePageWidget_list_visible2]",
+      "atom": "$PARAM[HomePageWidget_list_visible2]"
+    },
+    {
+      "file": "xml/Includes_Widget_Param.xml",
+      "element": "visible",
+      "document_index": 1252,
+      "kind": "condition/info",
+      "expression": "$PARAM[HomePageWidget_list_visible3]",
+      "atom": "$PARAM[HomePageWidget_list_visible3]"
+    }
+  ]
+}

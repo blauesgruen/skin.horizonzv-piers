@@ -1,0 +1,510 @@
+{
+  "scope": "Top-level atoms of boolean conditions split outside parentheses/brackets/quotes. This is a bounded lexical audit, not a full Kodi parser; parameter contents and dynamic substitutions excluded.",
+  "atom_count": 8865,
+  "unknown_roots": [],
+  "unparsed_atoms": [
+    {
+      "file": "xml/Includes_Dashboard.xml",
+      "atom": "Conditional"
+    },
+    {
+      "file": "xml/Includes_Dashboard.xml",
+      "atom": "Conditional"
+    }
+  ],
+  "dynamic_atoms": [
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[visible_secondback]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[visible_separator1]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[visible_separator2]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[slide]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[visiblemore]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[visible_background]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[onright1_condi]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[onright2_condi]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[ondown1_condi]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[ondown2_condi]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[ondown3_condi]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[visible_ratingimage]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[visible_textbox]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[visible_points]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[visible_summary]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "atom": "$PARAM[visible_news]"
+    },
+    {
+      "file": "xml/Includes_AlphabetScroller.xml",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes_BackgroundBuilding.xml",
+      "atom": "$PARAM[visible_arrows]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "atom": "$PARAM[onclick2_condition]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "atom": "$PARAM[onclick3_condition]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "atom": "$PARAM[enable]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "atom": "$PARAM[visible2]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "atom": "$PARAM[visible3]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "atom": "$PARAM[usealttexture]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "atom": "$PARAM[visible2]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "atom": "$PARAM[visible3]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "atom": "$PARAM[enable]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "atom": "$PARAM[visible2]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "atom": "$PARAM[visible3]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "atom": "$PARAM[enable]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "atom": "$PARAM[selected]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "atom": "$PARAM[onclick2_condition]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "atom": "$PARAM[onclick3_condition]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "atom": "$PARAM[onclick2_condition]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "atom": "$PARAM[onclick3_condition]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "atom": "$PARAM[enable]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "atom": "$PARAM[visible2]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "atom": "$PARAM[visible3]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "atom": "$PARAM[onclick2_condition]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "atom": "$PARAM[onclick3_condition]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "atom": "$PARAM[enable]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "atom": "$PARAM[visible2]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "atom": "$PARAM[visible3]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "atom": "$PARAM[onclick2_condition]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "atom": "$PARAM[onclick3_condition]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "atom": "$PARAM[visible2]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "atom": "$PARAM[visible3]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "atom": "$PARAM[visible_flags]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "atom": "$PARAM[visible_flags]"
+    },
+    {
+      "file": "xml/Includes_Dash_Addonpath_Fav.xml",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes_Dash_Addonpath_Fav.xml",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes_Dash_Addonpath_Fav.xml",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes_Dash_Addonpath_Fav.xml",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes_Dash_Addonpath_Fav.xml",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes_Dash_Addonpath_Fav.xml",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes_Dash_Addonpath_Fav.xml",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes_Dash_FritzDect.xml",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes_Dash_GTO.xml",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes_Dash_Layout.xml",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes_Dash_Weather.xml",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes_SetInformation.xml",
+      "atom": "$PARAM[visible_label]"
+    },
+    {
+      "file": "xml/Includes_SetInformation.xml",
+      "atom": "$PARAM[visible_cdart]"
+    },
+    {
+      "file": "xml/Includes_SetInformation.xml",
+      "atom": "$PARAM[visible_cdart]"
+    },
+    {
+      "file": "xml/Includes_SetInformation.xml",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes_SetInformation.xml",
+      "atom": "$PARAM[visible_labels]"
+    },
+    {
+      "file": "xml/Includes_SetInformation.xml",
+      "atom": "$PARAM[visible_labels]"
+    },
+    {
+      "file": "xml/Includes_SkinAddonsContent.xml",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes_WeatherWidget_Content.xml",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes_WeatherWidget_Content.xml",
+      "atom": "$PARAM[visible]"
+    },
+    {
+      "file": "xml/Includes_Widget_Param.xml",
+      "atom": "$PARAM[HomePageWidget_list_visible]"
+    },
+    {
+      "file": "xml/Includes_Widget_Param.xml",
+      "atom": "$PARAM[HomePageWidget_list_visible2]"
+    },
+    {
+      "file": "xml/Includes_Widget_Param.xml",
+      "atom": "$PARAM[HomePageWidget_list_visible3]"
+    }
+  ],
+  "state": "Before removing two stray Conditional operands from Includes_Dashboard.xml; current results are in info_name_candidates.json"
+}

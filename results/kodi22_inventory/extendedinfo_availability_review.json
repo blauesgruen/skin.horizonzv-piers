@@ -1,0 +1,21 @@
+{
+  "checked_on": "2026-11-04",
+  "addon_id": "script.extendedinfo",
+  "official_omega_listing": {
+    "url": "https://kodi.tv/addons/omega/script.extendedinfo/",
+    "version": "6.0.9",
+    "listed_date": "2025-02-08"
+  },
+  "maintainer_manifest": {
+    "url": "https://github.com/scott967/script.extendedinfo/blob/master/script.extendedinfo/addon.xml",
+    "observed_version": "6.1.01~beta.1",
+    "python_dependency": "3.0.0",
+    "news_mentions": "Piers/Omega/Nexus/Matrix updates by scott967"
+  },
+  "conclusion": "The addon remains publicly available. Its maintained manifest explicitly mentions Piers, but availability and metadata do not prove successful execution of every skin-used function on Kodi 22.",
+  "limits": [
+    "Piers showcase URL could not be accessed by the web tool; this does not establish repository absence.",
+    "No addon was installed or modified for this availability check.",
+    "Native argument capture tests do not execute the addon or verify its remote services."
+  ]
+}

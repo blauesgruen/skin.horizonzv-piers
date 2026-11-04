@@ -1,0 +1,697 @@
+{
+  "source_ref": "master snapshot 2026-11-03",
+  "scope": "GetOperations command names/minimum argument counts from 12 builtin modules used by this skin. Platform guards and handler argument semantics are not validated by this registry.",
+  "sources": [
+    {
+      "file": "AddonBuiltins.cpp",
+      "commands": 13,
+      "markers": [
+        {
+          "line": 142,
+          "text": "// Add '/' if addon is run without params (will be removed later so it's safe)"
+        },
+        {
+          "line": 266,
+          "text": "\"RunScript called for a non-script addon '{}'. This behaviour is deprecated.\","
+        },
+        {
+          "line": 361,
+          "text": "//! Are there any use for this? TODO: Fix hack in CScreenSaver::Destroy() and deprecate."
+        }
+      ],
+      "modified": "2026-10-10T19:10:23Z"
+    },
+    {
+      "file": "ApplicationBuiltins.cpp",
+      "commands": 7,
+      "markers": [],
+      "modified": "2022-10-15T20:26:28Z"
+    },
+    {
+      "file": "GUIBuiltins.cpp",
+      "commands": 17,
+      "markers": [
+        {
+          "line": 380,
+          "text": "CLog::Log(LOGERROR, \"TakeScreenshot: the 'sync' parameter was removed; \""
+        }
+      ],
+      "modified": "2026-08-11T18:45:41Z"
+    },
+    {
+      "file": "GUIContainerBuiltins.cpp",
+      "commands": 9,
+      "markers": [],
+      "modified": "2026-08-11T23:09:05Z"
+    },
+    {
+      "file": "GUIControlBuiltins.cpp",
+      "commands": 9,
+      "markers": [],
+      "modified": "2022-02-01T11:21:23Z"
+    },
+    {
+      "file": "LibraryBuiltins.cpp",
+      "commands": 7,
+      "markers": [],
+      "modified": "2026-10-13T21:04:48Z"
+    },
+    {
+      "file": "OpticalBuiltins.cpp",
+      "commands": 2,
+      "markers": [],
+      "modified": "2023-07-19T18:09:49Z"
+    },
+    {
+      "file": "PVRBuiltins.cpp",
+      "commands": 4,
+      "markers": [],
+      "modified": "2022-10-05T07:32:10Z"
+    },
+    {
+      "file": "PlayerBuiltins.cpp",
+      "commands": 12,
+      "markers": [
+        {
+          "line": 607,
+          "text": "// Mixed playlist item played by music player, mixed content folder has music removed"
+        },
+        {
+          "line": 799,
+          "text": "///     <b>`PlayDVD(param)`</b>(deprecated)"
+        }
+      ],
+      "modified": "2026-10-13T15:02:00Z"
+    },
+    {
+      "file": "ProfileBuiltins.cpp",
+      "commands": 3,
+      "markers": [],
+      "modified": "2026-02-07T20:09:17Z"
+    },
+    {
+      "file": "SkinBuiltins.cpp",
+      "commands": 19,
+      "markers": [],
+      "modified": "2026-10-08T19:42:41Z"
+    },
+    {
+      "file": "SystemBuiltins.cpp",
+      "commands": 16,
+      "markers": [],
+      "modified": "2026-08-11T23:08:59Z"
+    }
+  ],
+  "commands": [
+    {
+      "name": "addon.default.opensettings",
+      "min_args": 1,
+      "file": "AddonBuiltins.cpp"
+    },
+    {
+      "name": "addon.default.set",
+      "min_args": 1,
+      "file": "AddonBuiltins.cpp"
+    },
+    {
+      "name": "addon.opensettings",
+      "min_args": 1,
+      "file": "AddonBuiltins.cpp"
+    },
+    {
+      "name": "enableaddon",
+      "min_args": 1,
+      "file": "AddonBuiltins.cpp"
+    },
+    {
+      "name": "installaddon",
+      "min_args": 1,
+      "file": "AddonBuiltins.cpp"
+    },
+    {
+      "name": "installfromzip",
+      "min_args": 0,
+      "file": "AddonBuiltins.cpp"
+    },
+    {
+      "name": "runaddon",
+      "min_args": 1,
+      "file": "AddonBuiltins.cpp"
+    },
+    {
+      "name": "runapplescript",
+      "min_args": 1,
+      "file": "AddonBuiltins.cpp"
+    },
+    {
+      "name": "runplugin",
+      "min_args": 1,
+      "file": "AddonBuiltins.cpp"
+    },
+    {
+      "name": "runscript",
+      "min_args": 1,
+      "file": "AddonBuiltins.cpp"
+    },
+    {
+      "name": "stopscript",
+      "min_args": 1,
+      "file": "AddonBuiltins.cpp"
+    },
+    {
+      "name": "updateaddonrepos",
+      "min_args": 0,
+      "file": "AddonBuiltins.cpp"
+    },
+    {
+      "name": "updatelocaladdons",
+      "min_args": 0,
+      "file": "AddonBuiltins.cpp"
+    },
+    {
+      "name": "extract",
+      "min_args": 1,
+      "file": "ApplicationBuiltins.cpp"
+    },
+    {
+      "name": "mute",
+      "min_args": 0,
+      "file": "ApplicationBuiltins.cpp"
+    },
+    {
+      "name": "notifyall",
+      "min_args": 2,
+      "file": "ApplicationBuiltins.cpp"
+    },
+    {
+      "name": "setvolume",
+      "min_args": 1,
+      "file": "ApplicationBuiltins.cpp"
+    },
+    {
+      "name": "toggledebug",
+      "min_args": 0,
+      "file": "ApplicationBuiltins.cpp"
+    },
+    {
+      "name": "toggledpms",
+      "min_args": 0,
+      "file": "ApplicationBuiltins.cpp"
+    },
+    {
+      "name": "wakeonlan",
+      "min_args": 1,
+      "file": "ApplicationBuiltins.cpp"
+    },
+    {
+      "name": "action",
+      "min_args": 1,
+      "file": "GUIBuiltins.cpp"
+    },
+    {
+      "name": "cancelalarm",
+      "min_args": 1,
+      "file": "GUIBuiltins.cpp"
+    },
+    {
+      "name": "alarmclock",
+      "min_args": 2,
+      "file": "GUIBuiltins.cpp"
+    },
+    {
+      "name": "activatewindow",
+      "min_args": 1,
+      "file": "GUIBuiltins.cpp"
+    },
+    {
+      "name": "activatewindowandfocus",
+      "min_args": 1,
+      "file": "GUIBuiltins.cpp"
+    },
+    {
+      "name": "clearproperty",
+      "min_args": 1,
+      "file": "GUIBuiltins.cpp"
+    },
+    {
+      "name": "dialog.close",
+      "min_args": 1,
+      "file": "GUIBuiltins.cpp"
+    },
+    {
+      "name": "notification",
+      "min_args": 2,
+      "file": "GUIBuiltins.cpp"
+    },
+    {
+      "name": "refreshrss",
+      "min_args": 0,
+      "file": "GUIBuiltins.cpp"
+    },
+    {
+      "name": "replacewindow",
+      "min_args": 1,
+      "file": "GUIBuiltins.cpp"
+    },
+    {
+      "name": "replacewindowandfocus",
+      "min_args": 1,
+      "file": "GUIBuiltins.cpp"
+    },
+    {
+      "name": "setguilanguage",
+      "min_args": 1,
+      "file": "GUIBuiltins.cpp"
+    },
+    {
+      "name": "setproperty",
+      "min_args": 2,
+      "file": "GUIBuiltins.cpp"
+    },
+    {
+      "name": "setstereomode",
+      "min_args": 1,
+      "file": "GUIBuiltins.cpp"
+    },
+    {
+      "name": "takescreenshot",
+      "min_args": 0,
+      "file": "GUIBuiltins.cpp"
+    },
+    {
+      "name": "toggledirtyregionvisualization",
+      "min_args": 0,
+      "file": "GUIBuiltins.cpp"
+    },
+    {
+      "name": "control.resetgrouplist",
+      "min_args": 1,
+      "file": "GUIBuiltins.cpp"
+    },
+    {
+      "name": "container.nextsortmethod",
+      "min_args": 0,
+      "file": "GUIContainerBuiltins.cpp"
+    },
+    {
+      "name": "container.nextviewmode",
+      "min_args": 0,
+      "file": "GUIContainerBuiltins.cpp"
+    },
+    {
+      "name": "container.previoussortmethod",
+      "min_args": 0,
+      "file": "GUIContainerBuiltins.cpp"
+    },
+    {
+      "name": "container.previousviewmode",
+      "min_args": 0,
+      "file": "GUIContainerBuiltins.cpp"
+    },
+    {
+      "name": "container.refresh",
+      "min_args": 0,
+      "file": "GUIContainerBuiltins.cpp"
+    },
+    {
+      "name": "container.setsortdirection",
+      "min_args": 0,
+      "file": "GUIContainerBuiltins.cpp"
+    },
+    {
+      "name": "container.setsortmethod",
+      "min_args": 1,
+      "file": "GUIContainerBuiltins.cpp"
+    },
+    {
+      "name": "container.setviewmode",
+      "min_args": 1,
+      "file": "GUIContainerBuiltins.cpp"
+    },
+    {
+      "name": "container.update",
+      "min_args": 1,
+      "file": "GUIContainerBuiltins.cpp"
+    },
+    {
+      "name": "control.message",
+      "min_args": 2,
+      "file": "GUIControlBuiltins.cpp"
+    },
+    {
+      "name": "control.move",
+      "min_args": 2,
+      "file": "GUIControlBuiltins.cpp"
+    },
+    {
+      "name": "control.setfocus",
+      "min_args": 1,
+      "file": "GUIControlBuiltins.cpp"
+    },
+    {
+      "name": "control.setvisible",
+      "min_args": 1,
+      "file": "GUIControlBuiltins.cpp"
+    },
+    {
+      "name": "control.sethidden",
+      "min_args": 1,
+      "file": "GUIControlBuiltins.cpp"
+    },
+    {
+      "name": "pagedown",
+      "min_args": 1,
+      "file": "GUIControlBuiltins.cpp"
+    },
+    {
+      "name": "pageup",
+      "min_args": 1,
+      "file": "GUIControlBuiltins.cpp"
+    },
+    {
+      "name": "sendclick",
+      "min_args": 1,
+      "file": "GUIControlBuiltins.cpp"
+    },
+    {
+      "name": "setfocus",
+      "min_args": 1,
+      "file": "GUIControlBuiltins.cpp"
+    },
+    {
+      "name": "cleanlibrary",
+      "min_args": 1,
+      "file": "LibraryBuiltins.cpp"
+    },
+    {
+      "name": "exportlibrary",
+      "min_args": 1,
+      "file": "LibraryBuiltins.cpp"
+    },
+    {
+      "name": "exportlibrary2",
+      "min_args": 1,
+      "file": "LibraryBuiltins.cpp"
+    },
+    {
+      "name": "updatelibrary",
+      "min_args": 1,
+      "file": "LibraryBuiltins.cpp"
+    },
+    {
+      "name": "videolibrary.search",
+      "min_args": 0,
+      "file": "LibraryBuiltins.cpp"
+    },
+    {
+      "name": "musiclibrary.refreshartist",
+      "min_args": 1,
+      "file": "LibraryBuiltins.cpp"
+    },
+    {
+      "name": "musiclibrary.refreshalbum",
+      "min_args": 1,
+      "file": "LibraryBuiltins.cpp"
+    },
+    {
+      "name": "ejecttray",
+      "min_args": 0,
+      "file": "OpticalBuiltins.cpp"
+    },
+    {
+      "name": "ripcd",
+      "min_args": 0,
+      "file": "OpticalBuiltins.cpp"
+    },
+    {
+      "name": "pvr.searchmissingchannelicons",
+      "min_args": 0,
+      "file": "PVRBuiltins.cpp"
+    },
+    {
+      "name": "pvr.togglerecordplayingchannel",
+      "min_args": 0,
+      "file": "PVRBuiltins.cpp"
+    },
+    {
+      "name": "pvr.seekpercentage",
+      "min_args": 1,
+      "file": "PVRBuiltins.cpp"
+    },
+    {
+      "name": "pvr.epggridcontrol",
+      "min_args": 1,
+      "file": "PVRBuiltins.cpp"
+    },
+    {
+      "name": "playdisc",
+      "min_args": 0,
+      "file": "PlayerBuiltins.cpp"
+    },
+    {
+      "name": "playdvd",
+      "min_args": 0,
+      "file": "PlayerBuiltins.cpp"
+    },
+    {
+      "name": "playplaylist",
+      "min_args": 0,
+      "file": "PlayerBuiltins.cpp"
+    },
+    {
+      "name": "playlist.clear",
+      "min_args": 0,
+      "file": "PlayerBuiltins.cpp"
+    },
+    {
+      "name": "playlist.playoffset",
+      "min_args": 1,
+      "file": "PlayerBuiltins.cpp"
+    },
+    {
+      "name": "playercontrol",
+      "min_args": 1,
+      "file": "PlayerBuiltins.cpp"
+    },
+    {
+      "name": "playmedia",
+      "min_args": 1,
+      "file": "PlayerBuiltins.cpp"
+    },
+    {
+      "name": "queuemedia",
+      "min_args": 1,
+      "file": "PlayerBuiltins.cpp"
+    },
+    {
+      "name": "playwith",
+      "min_args": 1,
+      "file": "PlayerBuiltins.cpp"
+    },
+    {
+      "name": "seek",
+      "min_args": 1,
+      "file": "PlayerBuiltins.cpp"
+    },
+    {
+      "name": "subtitleshiftup",
+      "min_args": 0,
+      "file": "PlayerBuiltins.cpp"
+    },
+    {
+      "name": "subtitleshiftdown",
+      "min_args": 0,
+      "file": "PlayerBuiltins.cpp"
+    },
+    {
+      "name": "loadprofile",
+      "min_args": 1,
+      "file": "ProfileBuiltins.cpp"
+    },
+    {
+      "name": "mastermode",
+      "min_args": 0,
+      "file": "ProfileBuiltins.cpp"
+    },
+    {
+      "name": "system.logoff",
+      "min_args": 0,
+      "file": "ProfileBuiltins.cpp"
+    },
+    {
+      "name": "reloadskin",
+      "min_args": 0,
+      "file": "SkinBuiltins.cpp"
+    },
+    {
+      "name": "unloadskin",
+      "min_args": 0,
+      "file": "SkinBuiltins.cpp"
+    },
+    {
+      "name": "loadskin",
+      "min_args": 0,
+      "file": "SkinBuiltins.cpp"
+    },
+    {
+      "name": "skin.reset",
+      "min_args": 1,
+      "file": "SkinBuiltins.cpp"
+    },
+    {
+      "name": "skin.resetsettings",
+      "min_args": 0,
+      "file": "SkinBuiltins.cpp"
+    },
+    {
+      "name": "skin.setaddon",
+      "min_args": 2,
+      "file": "SkinBuiltins.cpp"
+    },
+    {
+      "name": "skin.selectbool",
+      "min_args": 2,
+      "file": "SkinBuiltins.cpp"
+    },
+    {
+      "name": "skin.setbool",
+      "min_args": 1,
+      "file": "SkinBuiltins.cpp"
+    },
+    {
+      "name": "skin.setfile",
+      "min_args": 1,
+      "file": "SkinBuiltins.cpp"
+    },
+    {
+      "name": "skin.setimage",
+      "min_args": 1,
+      "file": "SkinBuiltins.cpp"
+    },
+    {
+      "name": "skin.setcolor",
+      "min_args": 1,
+      "file": "SkinBuiltins.cpp"
+    },
+    {
+      "name": "skin.setnumeric",
+      "min_args": 1,
+      "file": "SkinBuiltins.cpp"
+    },
+    {
+      "name": "skin.setpath",
+      "min_args": 1,
+      "file": "SkinBuiltins.cpp"
+    },
+    {
+      "name": "skin.setstring",
+      "min_args": 1,
+      "file": "SkinBuiltins.cpp"
+    },
+    {
+      "name": "skin.theme",
+      "min_args": 1,
+      "file": "SkinBuiltins.cpp"
+    },
+    {
+      "name": "skin.toggledebug",
+      "min_args": 0,
+      "file": "SkinBuiltins.cpp"
+    },
+    {
+      "name": "skin.togglesetting",
+      "min_args": 1,
+      "file": "SkinBuiltins.cpp"
+    },
+    {
+      "name": "skin.timerstart",
+      "min_args": 1,
+      "file": "SkinBuiltins.cpp"
+    },
+    {
+      "name": "skin.timerstop",
+      "min_args": 1,
+      "file": "SkinBuiltins.cpp"
+    },
+    {
+      "name": "activatescreensaver",
+      "min_args": 0,
+      "file": "SystemBuiltins.cpp"
+    },
+    {
+      "name": "resetscreensaver",
+      "min_args": 0,
+      "file": "SystemBuiltins.cpp"
+    },
+    {
+      "name": "hibernate",
+      "min_args": 0,
+      "file": "SystemBuiltins.cpp"
+    },
+    {
+      "name": "inhibitidleshutdown",
+      "min_args": 0,
+      "file": "SystemBuiltins.cpp"
+    },
+    {
+      "name": "inhibitscreensaver",
+      "min_args": 0,
+      "file": "SystemBuiltins.cpp"
+    },
+    {
+      "name": "minimize",
+      "min_args": 0,
+      "file": "SystemBuiltins.cpp"
+    },
+    {
+      "name": "powerdown",
+      "min_args": 0,
+      "file": "SystemBuiltins.cpp"
+    },
+    {
+      "name": "quit",
+      "min_args": 0,
+      "file": "SystemBuiltins.cpp"
+    },
+    {
+      "name": "reboot",
+      "min_args": 0,
+      "file": "SystemBuiltins.cpp"
+    },
+    {
+      "name": "reset",
+      "min_args": 0,
+      "file": "SystemBuiltins.cpp"
+    },
+    {
+      "name": "restart",
+      "min_args": 0,
+      "file": "SystemBuiltins.cpp"
+    },
+    {
+      "name": "restartapp",
+      "min_args": 0,
+      "file": "SystemBuiltins.cpp"
+    },
+    {
+      "name": "shutdown",
+      "min_args": 0,
+      "file": "SystemBuiltins.cpp"
+    },
+    {
+      "name": "suspend",
+      "min_args": 0,
+      "file": "SystemBuiltins.cpp"
+    },
+    {
+      "name": "system.exec",
+      "min_args": 1,
+      "file": "SystemBuiltins.cpp"
+    },
+    {
+      "name": "system.execwait",
+      "min_args": 1,
+      "file": "SystemBuiltins.cpp"
+    }
+  ]
+}

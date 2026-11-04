@@ -1,0 +1,64 @@
+{
+  "initial": {
+    "muted": false,
+    "volume": 100
+  },
+  "observations": [
+    {
+      "case": "muted",
+      "action": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": "OK"
+      },
+      "state": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": {
+          "muted": true,
+          "volume": 100
+        }
+      },
+      "conditions": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": {
+          "Player.Muted": true,
+          "Window.IsVisible(volumebar)": true
+        }
+      }
+    },
+    {
+      "case": "unmuted",
+      "action": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": "OK"
+      },
+      "state": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": {
+          "muted": false,
+          "volume": 100
+        }
+      },
+      "conditions": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": {
+          "Player.Muted": false,
+          "Window.IsVisible(volumebar)": false
+        }
+      }
+    }
+  ],
+  "restored": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "muted": false,
+      "volume": 100
+    }
+  }
+}

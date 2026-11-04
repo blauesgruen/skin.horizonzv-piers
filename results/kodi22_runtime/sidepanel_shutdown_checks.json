@@ -1,0 +1,142 @@
+{
+  "navigation": [
+    {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "Movies"
+        },
+        "currentwindow": {
+          "id": 10025,
+          "label": "Videos"
+        }
+      }
+    },
+    {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "Music"
+        },
+        "currentwindow": {
+          "id": 10025,
+          "label": "Videos"
+        }
+      }
+    },
+    {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "Pictures"
+        },
+        "currentwindow": {
+          "id": 10025,
+          "label": "Videos"
+        }
+      }
+    },
+    {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "Programs"
+        },
+        "currentwindow": {
+          "id": 10025,
+          "label": "Videos"
+        }
+      }
+    },
+    {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "Weather"
+        },
+        "currentwindow": {
+          "id": 10025,
+          "label": "Videos"
+        }
+      }
+    },
+    {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "System"
+        },
+        "currentwindow": {
+          "id": 10025,
+          "label": "Videos"
+        }
+      }
+    },
+    {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "Skin settings"
+        },
+        "currentwindow": {
+          "id": 10025,
+          "label": "Videos"
+        }
+      }
+    },
+    {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "Menu"
+        },
+        "currentwindow": {
+          "id": 10025,
+          "label": "Videos"
+        }
+      }
+    }
+  ],
+  "selected_item": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container(9002).ListItem.Label": "Menu",
+      "Container(9002).ListItem.Property(id)": ""
+    }
+  },
+  "opened": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "currentcontrol": {
+        "label": "Exit"
+      },
+      "currentwindow": {
+        "id": 10111,
+        "label": "Shutdown menu"
+      }
+    }
+  },
+  "returned": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "currentcontrol": {
+        "label": "Menu"
+      },
+      "currentwindow": {
+        "id": 10025,
+        "label": "Videos"
+      }
+    }
+  }
+}

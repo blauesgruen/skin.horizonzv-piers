@@ -1,0 +1,61 @@
+{
+  "scope": "Exception metadata, no symbolic stack. Last empty-list trial used unmodified Estuary.",
+  "dumps": [
+    {
+      "dump": "kodi_crashlog-22.0-RC1 Git_20260927-28ea2eac1eb-20261102-203105.dmp",
+      "exception": "0xc0000005",
+      "parameters": [
+        "0x0",
+        "0x610"
+      ],
+      "faulting_module": [
+        {
+          "module": "kodi.exe",
+          "offset": "0x386fe9"
+        }
+      ]
+    },
+    {
+      "dump": "kodi_crashlog-22.0-RC1 Git_20260927-28ea2eac1eb-20261103-013842.dmp",
+      "exception": "0xc0000005",
+      "parameters": [
+        "0x0",
+        "0x610"
+      ],
+      "faulting_module": [
+        {
+          "module": "kodi.exe",
+          "offset": "0x386fe9"
+        }
+      ]
+    },
+    {
+      "dump": "kodi_crashlog-22.0-RC1 Git_20260927-28ea2eac1eb-20261103-014043.dmp",
+      "exception": "0xc0000005",
+      "parameters": [
+        "0x0",
+        "0x610"
+      ],
+      "faulting_module": [
+        {
+          "module": "kodi.exe",
+          "offset": "0x386fe9"
+        }
+      ]
+    },
+    {
+      "dump": "kodi_crashlog-22.0-RC1 Git_20260927-28ea2eac1eb-20261103-014836.dmp",
+      "exception": "0xc0000005",
+      "parameters": [
+        "0x0",
+        "0x610"
+      ],
+      "faulting_module": [
+        {
+          "module": "kodi.exe",
+          "offset": "0x386fe9"
+        }
+      ]
+    }
+  ]
+}

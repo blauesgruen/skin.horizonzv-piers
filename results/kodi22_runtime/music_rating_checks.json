@@ -1,0 +1,82 @@
+[
+  {
+    "requested_rating": 7,
+    "vinyl": false,
+    "labels": {
+      "MusicPlayer.Title": "Audit rating 7",
+      "MusicPlayer.UserRating": "7",
+      "Control.GetLabel(8911)": "leftuserrating/7.png",
+      "Control.GetLabel(8912)": ""
+    }
+  },
+  {
+    "requested_rating": 7,
+    "vinyl": true,
+    "labels": {
+      "MusicPlayer.Title": "Audit rating 7",
+      "MusicPlayer.UserRating": "7",
+      "Control.GetLabel(8911)": "leftuserrating/7.png",
+      "Control.GetLabel(8912)": "leftuserrating/7.png"
+    }
+  },
+  {
+    "requested_rating": 0,
+    "vinyl": false,
+    "labels": {
+      "MusicPlayer.Title": "Audit rating 0",
+      "MusicPlayer.UserRating": "",
+      "Control.GetLabel(8911)": "leftuserrating/0.png",
+      "Control.GetLabel(8912)": "leftuserrating/0.png"
+    }
+  },
+  {
+    "requested_rating": 0,
+    "vinyl": true,
+    "labels": {
+      "MusicPlayer.Title": "Audit rating 0",
+      "MusicPlayer.UserRating": "",
+      "Control.GetLabel(8911)": "leftuserrating/0.png",
+      "Control.GetLabel(8912)": "leftuserrating/0.png"
+    }
+  },
+  {
+    "requested_rating": 1,
+    "vinyl": false,
+    "labels": {
+      "MusicPlayer.Title": "Audit rating 1",
+      "MusicPlayer.UserRating": "1",
+      "Control.GetLabel(8911)": "leftuserrating/1.png",
+      "Control.GetLabel(8912)": "leftuserrating/1.png"
+    }
+  },
+  {
+    "requested_rating": 1,
+    "vinyl": true,
+    "labels": {
+      "MusicPlayer.Title": "Audit rating 1",
+      "MusicPlayer.UserRating": "1",
+      "Control.GetLabel(8911)": "leftuserrating/1.png",
+      "Control.GetLabel(8912)": "leftuserrating/1.png"
+    }
+  },
+  {
+    "requested_rating": 10,
+    "vinyl": false,
+    "labels": {
+      "MusicPlayer.Title": "Audit rating 10",
+      "MusicPlayer.UserRating": "10",
+      "Control.GetLabel(8911)": "leftuserrating/10.png",
+      "Control.GetLabel(8912)": "leftuserrating/10.png"
+    }
+  },
+  {
+    "requested_rating": 10,
+    "vinyl": true,
+    "labels": {
+      "MusicPlayer.Title": "Audit rating 10",
+      "MusicPlayer.UserRating": "10",
+      "Control.GetLabel(8911)": "leftuserrating/10.png",
+      "Control.GetLabel(8912)": "leftuserrating/10.png"
+    }
+  }
+]

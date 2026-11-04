@@ -160,7 +160,6 @@
                     <bottom>0</bottom>
                     <height>175</height>
                     <onleft>50</onleft>
-                    <right>100</right>
                     <itemgap>dialogbuttons_itemgap</itemgap>
                     <include content="DefaultDialogButton">
                         <param name="id" value="6" />

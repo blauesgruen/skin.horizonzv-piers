@@ -58,7 +58,6 @@
 								<focusposition>10</focusposition>
 								<preloaditems>PreloadItems</preloaditems>
 								<movement>4</movement>
-								<wraparound>true</wraparound>
 								<pagecontrol>$PARAM[viewid]1</pagecontrol>
 								<scrolltime tween="Quadratic" easing="out">300</scrolltime>
 								<visible>Container.Content(songs)|Container.Content(artists)|Container.Content(Albums)</visible>

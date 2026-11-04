@@ -19,7 +19,7 @@
 				<include>openclosefanart</include>
 				<include>openclosevisible</include>
 				<visible>!Window.IsVisible(1200)</visible>
-				<animation effect="slide" end="0,-30" time="0" condition="Skin.HasSetting(Row5_off)|Conditional|Skin.HasSetting(Row4_off)|Conditional|Skin.HasSetting(Row3_off)|Skin.HasSetting(Row2_off)">Conditional</animation>
+				<animation effect="slide" end="0,-30" time="0" condition="Skin.HasSetting(Row5_off)|Skin.HasSetting(Row4_off)|Skin.HasSetting(Row3_off)|Skin.HasSetting(Row2_off)">Conditional</animation>
 				<include condition="Skin.HasSetting(Row5_Weather)+!String.IsEmpty(Weather.plugin)" content="5DaysWeather_Dash">
 					<param name="id" value="8055"/>
 					<param name="visible" value="Skin.HasSetting(Row5_Weather)+!String.IsEmpty(Weather.plugin)"/>

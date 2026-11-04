@@ -1,0 +1,66 @@
+{
+  "scope": "Standard Kodi, horizonzv-piers, Disney playback prerequisite only",
+  "target_skin": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "addon": {
+        "addonid": "skin.horizonzv",
+        "path": "D:\\Program Files\\Kodi22\\portable_data\\addons\\skin.horizonzv-piers\\",
+        "type": "xbmc.gui.skin"
+      }
+    }
+  },
+  "prerequisite": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container(3).ListItem.Label": "Windows 64bit - 4.10.3112.0",
+      "Container(3).NumItems": "12",
+      "Control.GetLabel(1)": "Verf\u00fcgbare Widevine CDM-Versionen"
+    }
+  },
+  "players_before_cancel": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": []
+  },
+  "cancel": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": "OK"
+  },
+  "after_cancel": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "currentwindow": {
+        "id": 10025,
+        "label": "Videos"
+      }
+    }
+  },
+  "players_after_cancel": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": []
+  },
+  "pvr": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "available": true,
+      "recording": false,
+      "scanning": false
+    }
+  },
+  "playback_verified": false,
+  "cdm_version_selected": false,
+  "addon_source_modified": false,
+  "screenshot": "standard_disney_playback_prerequisite.png",
+  "quit": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": "OK"
+  }
+}

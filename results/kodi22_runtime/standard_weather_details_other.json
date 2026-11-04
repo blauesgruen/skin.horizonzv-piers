@@ -1,0 +1,44 @@
+[
+  {
+    "view": "36hour",
+    "button": 303,
+    "conditions": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Control.HasFocus(303)": false,
+        "Control.HasFocus(996)": false,
+        "Window.IsVisible(weather)": true
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Window.Property(Weather.CurrentView)": "36hour"
+      }
+    },
+    "screenshot": "standard_weather_details_36hour.png"
+  },
+  {
+    "view": "weekend",
+    "button": 304,
+    "conditions": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Control.HasFocus(304)": false,
+        "Control.HasFocus(996)": false,
+        "Window.IsVisible(weather)": true
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Window.Property(Weather.CurrentView)": "weekend"
+      }
+    },
+    "screenshot": "standard_weather_details_weekend.png"
+  }
+]

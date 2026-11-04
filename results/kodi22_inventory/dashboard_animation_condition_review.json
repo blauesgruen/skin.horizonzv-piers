@@ -1,0 +1,17 @@
+{
+  "file": "xml/Includes_Dashboard.xml",
+  "before": "Skin.HasSetting(Row5_off)|Conditional|Skin.HasSetting(Row4_off)|Conditional|Skin.HasSetting(Row3_off)|Skin.HasSetting(Row2_off)",
+  "after": "Skin.HasSetting(Row5_off)|Skin.HasSetting(Row4_off)|Skin.HasSetting(Row3_off)|Skin.HasSetting(Row2_off)",
+  "finding": "Two bare Conditional operands in a boolean condition. Conditional is the animation type here, not a registered boolean condition.",
+  "change": "Remove the two stray operands; retain the four row-off predicates and animation type, displacement and timing.",
+  "source": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/GUIInfoManager.cpp",
+  "evidence": "TranslateSingleString accepts only true/yes/false/no in its single-category branch; no Conditional registry entry. A lexical scan found exactly these two unparsed condition atoms before cleanup, none after.",
+  "classification": "Malformed skin condition, not an announced Kodi API removal.",
+  "runtime_status": "Visible isolated Kodi PID 37980: dashboard selected and parent 9006 confirmed visible in all-off, four Fav rows on, and mixed rows 2/4 on with 3/5 off. Images inspected; active rows and focus 8022/8042 confirmed. Empty favourites/placeholder data only; no provider or favourite activation claim.",
+  "runtime_evidence": [
+    "dashboard_current_all_off.json",
+    "dashboard_current_all_on.json",
+    "dashboard_current_mixed.json",
+    "home_dashboard_cleanup.json"
+  ]
+}

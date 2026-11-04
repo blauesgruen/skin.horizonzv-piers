@@ -1201,3 +1201,7 @@ msgstr "Wake-on-LAN angefordert"
 msgctxt "#31952"
 msgid "No devices available"
 msgstr "Keine Geräte verfügbar"
+
+msgctxt "#31953"
+msgid "Adding the first extra is temporarily disabled to avoid a crash in the tested Kodi version.[CR][CR]Existing extras can still be managed."
+msgstr "Das erste Extra kann derzeit nicht hinzugefügt werden, da dieser Vorgang im geprüften Kodi-Stand einen Absturz auslöst.[CR][CR]Vorhandene Extras können weiterhin verwaltet werden."

@@ -1,0 +1,42 @@
+{
+  "skin": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "value": "skin.horizonzv"
+    }
+  },
+  "players": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": []
+  },
+  "pvr": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "available": true,
+      "recording": false,
+      "scanning": false
+    }
+  },
+  "save_search_action_used": false,
+  "recording_or_timer_action_used": false,
+  "quit": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": "OK"
+  },
+  "process_35700_exited": true,
+  "restored": {
+    "lookandfeel.skin": "skin.horizonzVI",
+    "debug.screenshotpath": "D:/Program Files/Kodi22/portable_data/addons/skin.horizonzVI/.shots/"
+  },
+  "restored_attributes_match": true,
+  "global_setting_value_differences": [],
+  "added_global_setting_keys": [],
+  "shutdown_exit_message": true,
+  "error_log_lines": 0,
+  "latest_crash_dump": "kodi_crashlog-22.0-RC1 Git_20260927-28ea2eac1eb-20261103-131150.dmp",
+  "raw_standard_log_copied": false
+}

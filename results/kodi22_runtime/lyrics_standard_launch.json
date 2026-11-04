@@ -1,0 +1,60 @@
+{
+  "after_choice": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Skin.String(LyricScript_Path)": "script.cu.lrclyrics",
+      "Window(Home).Property(culrc.guirunning)": "",
+      "Window(Home).Property(culrc.running)": "true"
+    }
+  },
+  "gui_after_choice": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "currentwindow": {
+        "id": 10120,
+        "label": "Musik-OSD"
+      }
+    }
+  },
+  "configured_controls": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Control.HasFocus(701)": true,
+      "Control.IsEnabled(2401)": false,
+      "Control.IsEnabled(2402)": false
+    }
+  },
+  "after_launch": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Window(Home).Property(culrc.force)": "TRUE",
+      "Window(Home).Property(culrc.guirunning)": "",
+      "Window(Home).Property(culrc.running)": "true"
+    }
+  },
+  "gui_after_launch": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "currentwindow": {
+        "id": 10000,
+        "label": "Hauptmen\u00fc"
+      }
+    }
+  },
+  "players": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": [
+      {
+        "playerid": 0,
+        "playertype": "internal",
+        "type": "audio"
+      }
+    ]
+  }
+}

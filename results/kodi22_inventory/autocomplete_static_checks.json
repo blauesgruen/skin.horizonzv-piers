@@ -1,0 +1,38 @@
+[
+  {
+    "tool": "check_skin_compatibility.py",
+    "exit_code": 0,
+    "findings": 0,
+    "errors": 0,
+    "warnings": 0,
+    "arity_candidates": 0,
+    "condition_atom_candidates": 0
+  },
+  {
+    "tool": "audit_skin_actions.py",
+    "exit_code": 0,
+    "findings": 0,
+    "errors": 0,
+    "warnings": 0,
+    "arity_candidates": 0,
+    "condition_atom_candidates": 0
+  },
+  {
+    "tool": "audit_skin_windows.py",
+    "exit_code": 0,
+    "findings": 0,
+    "errors": 0,
+    "warnings": 0,
+    "arity_candidates": 0,
+    "condition_atom_candidates": 0
+  },
+  {
+    "tool": "audit_skin_info_names.py",
+    "exit_code": 0,
+    "findings": 0,
+    "errors": 0,
+    "warnings": 0,
+    "arity_candidates": 0,
+    "condition_atom_candidates": 0
+  }
+]

@@ -5,7 +5,5 @@ Includes_SidePanel.xml;Viel auskommentierter Code;4 Kommentarbloecke mit <contro
 Includes_Systeminfo.xml;Alte Skin-ID referenziert;skin.horizonzv
 Includes_Systeminfo.xml;Alte Skin-ID referenziert;skin.horizonzv
 MyVideoNav.xml;Viel auskommentierter Code;3 Kommentarbloecke mit <control>
-xml/View_Movie_541_Perspective.xml.org;Ueberbleibsel/Backup im xml-Ordner;View_Movie_541_Perspective.xml.org
-xml/View_Music_513_AlbumInfoList.xml.org;Ueberbleibsel/Backup im xml-Ordner;View_Music_513_AlbumInfoList.xml.org
 keymaps/keyboard.xml;Hartkodierter Windows-Pfad (Entwickler-Keymap);D:\Program Files\Kodi21\portable_data\addons\skin.horizonzv-omega\scripts\RunSetKodiWindow_min.bat\
 keymaps/keyboard.xml;Hartkodierter Windows-Pfad (Entwickler-Keymap);D:\Program Files\Kodi21\portable_data\addons\skin.horizonzv-omega\scripts\RunSetKodiWindow_min.bat\

@@ -16,8 +16,8 @@ resource.images.moviegenreicons.xzener;4;Variables.xml
 service.audio.stream.monitor;3;Includes_SkinAddonsContent.xml
 plugin.library.node.editor;3;Includes_SkinAddonsContent.xml
 resource.images.weatherfanart.multi;3;Includes_SkinAddonsContent.xml
+plugin.program.autocompletion;3;DialogKeyboard.xml, Variables.xml
 resource.images.weathericons.outline;2;Home.xml, Includes_SkinAddonsContent.xml
-plugin.program.autocompletion;2;Variables.xml
 resource.images.studios.coloured;2;Variables.xml
 resource.images.studios.white;2;Variables.xml
 resource.images.moviegenreicons.coloured;2;Variables.xml
@@ -29,4 +29,5 @@ resource.images.moviegenreicons.white;2;Variables.xml
 resource.images.musicgenreicons.grey;2;Variables.xml
 resource.images.musicgenreicons.poster;2;Variables.xml
 resource.images.musicgenreicons.text;2;Variables.xml
+special;1;Custom_1301_HomeMenuItemsPosition.xml, DialogColorPicker.xml, DialogKeyboard.xml, DialogPictureInfo.xml, Includes.xml, Includes_BackgroundBuilding.xml, Includes_DebugInfo.xml, Includes_PVR.xml, Includes_Widget_Param.xml, MusicVisualisation.xml, MyMusicPlaylistEditor.xml, MyWeather.xml, SettingsSystemInfo.xml, SkinSettings.xml, Variables.xml, Variables_HomemenuCustomItems.xml, Variables_SkinSettings_Description.xml, Variables_Widgets.xml, View_Movie_302_3Panel.xml, View_Movie_401_Fanart.xml, View_Music_509_Fanart.xml, Views_Pictures.xml
 resource.images.weathericons.default;1;Variables.xml

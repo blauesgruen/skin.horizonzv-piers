@@ -1,0 +1,79 @@
+{
+  "checked_on": "2026-11-04",
+  "classification": "Invalid raw URI query construction in skin, corrected with skin-owned percent encoding; not a removed Kodi API",
+  "changes": [
+    "New resources/scripts/autocomplete_query.py publishes a percent-encoded keyboard query to the native keyboard window while it is visible and optional provider is enabled.",
+    "Keyboard onload/unload invalidates previous invocation owner and clears transient query; no raw input is passed as a RunScript argument.",
+    "AutoCompletionContentVar uses the encoded property and remains empty for hidden input, empty query or unavailable provider.",
+    "Optional xbmc.python 3.0.0 dependency documents the skin helper; no separate addon or mandatory optional-provider dependency added."
+  ],
+  "sources": [
+    "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/interfaces/builtins/AddonBuiltins.cpp",
+    "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/interfaces/legacy/Monitor.h",
+    "https://github.com/finkleandeinhorn/plugin.program.autocompletion/blob/master/plugin.py"
+  ],
+  "native_evidence": "../kodi22_runtime/autocomplete_query_checks.json",
+  "native_cases_passed": 6,
+  "normal_suggestion_selection": {
+    "selected": "help",
+    "native_input": "help"
+  },
+  "hidden_input": {
+    "encoded_query_empty": true,
+    "helper_not_started": true,
+    "content_empty": true
+  },
+  "disabled_provider": {
+    "helper_not_started": true,
+    "query_empty": true
+  },
+  "log_checks": {
+    "error_lines": 0,
+    "helper_regular_exit": true,
+    "regular_kodi_exit": true
+  },
+  "static_checks": [
+    {
+      "tool": "check_skin_compatibility.py",
+      "exit_code": 0,
+      "findings": 0,
+      "errors": 0,
+      "warnings": 0,
+      "arity_candidates": 0,
+      "condition_atom_candidates": 0
+    },
+    {
+      "tool": "audit_skin_actions.py",
+      "exit_code": 0,
+      "findings": 0,
+      "errors": 0,
+      "warnings": 0,
+      "arity_candidates": 0,
+      "condition_atom_candidates": 0
+    },
+    {
+      "tool": "audit_skin_windows.py",
+      "exit_code": 0,
+      "findings": 0,
+      "errors": 0,
+      "warnings": 0,
+      "arity_candidates": 0,
+      "condition_atom_candidates": 0
+    },
+    {
+      "tool": "audit_skin_info_names.py",
+      "exit_code": 0,
+      "findings": 0,
+      "errors": 0,
+      "warnings": 0,
+      "arity_candidates": 0,
+      "condition_atom_candidates": 0
+    }
+  ],
+  "helper_sha256": "97e3c6019d04f92a5a8f76cdf8a1fd6216a8287a24f0a12e86e80735448bf6bb",
+  "limits": [
+    "No remote suggestion service was queried.",
+    "Selection URLs generated inside the unchanged provider still use its raw search_string; reserved-character selection URLs are outside this skin query correction. Normal local suggestion selection was verified.",
+    "Provider absent is gated by the same AddonIsEnabled condition; native absent-provider reinstallation was not performed."
+  ]
+}

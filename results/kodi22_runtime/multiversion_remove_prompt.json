@@ -1,0 +1,39 @@
+{
+  "restored_default": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "limits": {
+        "end": 1,
+        "start": 0,
+        "total": 1
+      },
+      "movies": [
+        {
+          "file": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\portable_data\\testmedia\\library_movies\\Skin Audit Movie (2026)\\Skin Audit Movie (2026).avi",
+          "label": "Skin Audit Movie",
+          "movieid": 1
+        }
+      ]
+    }
+  },
+  "selected_version": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container(50).ListItem.FileNameAndPath": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\portable_data\\testmedia\\library_movies\\Skin Audit Movie (2026)\\Skin Audit Movie - Chapter Edition.mkv",
+      "Container(50).ListItem.Label": "Director's Cut"
+    }
+  },
+  "prompt": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Control.GetLabel(1)": "Remove video version",
+      "Control.GetLabel(10)": "No",
+      "Control.GetLabel(11)": "Yes",
+      "Control.GetLabel(12)": "",
+      "Control.GetLabel(9)": "Are you sure to remove version \"Director's Cut\" from the library?"
+    }
+  }
+}

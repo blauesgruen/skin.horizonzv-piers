@@ -1814,8 +1814,6 @@
                                 <label>$LOCALIZE[31329]</label>
                                 <focusedcolor>black</focusedcolor>
                                 <onclick>Skin.ToggleSetting(pause_light)</onclick>
-                                <onfocus>Skin.SetBool(color_orange)</onfocus>
-                                <onunfocus>Skin.SelectBool(color_red)</onunfocus>
                                 <onfocus>SetProperty(SSD,"$LOCALIZE[31237]",skinsettings)</onfocus>
                                 <onunfocus>ClearProperty(SSD)</onunfocus>
                                 <selected>Skin.HasSetting(pause_light)</selected>
@@ -1828,7 +1826,6 @@
                                 <label>$LOCALIZE[31330]</label>
                                 <focusedcolor>black</focusedcolor>
                                 <onclick>Skin.ToggleSetting(pause_light_hideinfos)</onclick>
-                                <onfocus>Activate(1155)</onfocus>
                                 <onfocus>SetProperty(SSD,"$LOCALIZE[31238]",skinsettings)</onfocus>
                                 <onunfocus>ClearProperty(SSD)</onunfocus>
                                 <selected>!Skin.HasSetting(pause_light_hideinfos)</selected>

@@ -1,0 +1,18 @@
+{
+  "scope": "GetOperations command names/minimum argument counts from 12 builtin modules used by this skin. Platform guards and handler argument semantics are not validated by this registry.",
+  "used_registered_builtin_names": 61,
+  "missing_used_names_in_master": [],
+  "changed_used_minimum_arity": [],
+  "literal_action_references": 1614,
+  "nested_action_targets": 64,
+  "findings": [],
+  "source_snapshot": "kodi_master_used_builtin_commands.json",
+  "limits": "No handler-body equivalence claimed. Input action registry compared separately on 2026-11-04 in master_input_action_review.json.",
+  "marker_review": {
+    "RunScript_non_script_fallback": "Still deprecated in master; existing typed-entrypoint review remains applicable. No new assertion about dynamic provider availability.",
+    "StopScript_TODO": "An intention to deprecate after fixing multi-extension handling is a TODO, not a published current deprecation/removal.",
+    "PlayDVD": "Still documented deprecated; active skin calls were already migrated to PlayDisc.",
+    "TakeScreenshot_sync": "Master handler reports sync parameter removed. No TakeScreenshot call found in active skin XML or packaged keymap; subtitle property sync is unrelated.",
+    "RunAddon_root_slash_comment": "Internal URL normalization comment does not establish removal of RunAddon itself."
+  }
+}

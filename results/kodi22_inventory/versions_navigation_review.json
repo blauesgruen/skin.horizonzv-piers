@@ -1,0 +1,30 @@
+{
+  "classification": "Skin focus-routing fault, not a removed Kodi API.",
+  "source_file": "xml\\DialogVideoManager.xml",
+  "source_changes": [
+    "List 50 Left: nonexistent 9001 -> action group 101",
+    "Nine DefaultDialogButton instances explicitly pass onleft=50",
+    "Removed ineffective parent-only return route targeting group 100"
+  ],
+  "runtime_route": [
+    50,
+    21,
+    50,
+    60,
+    21,
+    22,
+    50
+  ],
+  "runtime_passed": true,
+  "test_context": "Native Versions Manager 12004, one authored movie with one Standard Edition; visible isolated Kodi, foreground confirmed for final PID 34588.",
+  "limits": [
+    "Direct return checked for Play and Add version. Other buttons share the explicit parameter but their actions were not exercised.",
+    "Adding, removing, ungrouping, changing default/type/art and extras/empty-list/multiple-version contexts remain open."
+  ],
+  "evidence": [
+    "kodi22_runtime/movie_library_import.json",
+    "kodi22_runtime/versions_native_before_fix.json",
+    "kodi22_runtime/versions_focus_after_fix.json",
+    "kodi22_runtime/versions_copy_check.json"
+  ]
+}

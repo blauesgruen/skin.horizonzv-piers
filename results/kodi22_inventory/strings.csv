@@ -292,4 +292,5 @@ ID;Englisch;Deutsch;Verwendungen;cs_cz;da_dk;el_gr;es_es;fi_fi;fr_fr;it_it;nb_no
 31950;Wake all devices with a MAC address;Alle Geräte mit MAC-Adresse wecken;1;;;;;;;;;;;;
 31951;Wake-on-LAN requested;Wake-on-LAN angefordert;2;;;;;;;;;;;;
 31952;No devices available;Keine Geräte verfügbar;1;;;;;;;;;;;;
+31953;Adding the first extra is temporarily disabled to avoid a crash in the tested Kodi version.[CR][CR]Existing extras can still be managed.;Das erste Extra kann derzeit nicht hinzugefügt werden, da dieser Vorgang im geprüften Kodi-Stand einen Absturz auslöst.[CR][CR]Vorhandene Extras können weiterhin verwaltet werden.;1;;;;;;;;;;;;
 35500;Location;Ort;2;x;x;x;x;x;x;x;x;x;x;x;x

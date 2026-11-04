@@ -1,0 +1,53 @@
+[
+  {
+    "case": "cast_focused",
+    "conditions": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Control.HasFocus(5)": true,
+        "Control.IsVisible(50)": false
+      }
+    },
+    "actor": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Container(50).ListItem.Label": "Skin Audit Actor"
+      }
+    }
+  },
+  {
+    "case": "native_cast_clicked",
+    "gui": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "Plot"
+        },
+        "currentwindow": {
+          "id": 12003,
+          "label": "Video info"
+        }
+      }
+    }
+  },
+  {
+    "case": "actor_list_focused",
+    "conditions": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Control.HasFocus(50)": true
+      }
+    },
+    "actor": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Container(50).ListItem.Label": "Skin Audit Actor"
+      }
+    }
+  }
+]

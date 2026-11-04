@@ -1,0 +1,7 @@
+{
+  "scope": "Known literal regressions and selected XML structures only; no include expansion, dynamic API resolution or runtime validation.",
+  "files_checked": 165,
+  "findings": [],
+  "errors": 0,
+  "warnings": 0
+}

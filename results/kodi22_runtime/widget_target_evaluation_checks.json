@@ -1,0 +1,446 @@
+{
+  "scope": "Kodi evaluates copied production variable conditions with substituted input labels bound to static test items. Not actual provider/PVR data or real widget activation.",
+  "skin": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "value": "skin.horizonzv"
+    }
+  },
+  "window": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "currentcontrol": {
+        "label": "Movie"
+      },
+      "currentwindow": {
+        "id": 11198,
+        "label": ""
+      }
+    }
+  },
+  "records": [
+    {
+      "case": "Movie",
+      "selected": "Movie",
+      "input": {
+        "dbtype": "movie",
+        "path": "",
+        "home": ""
+      },
+      "expected": [
+        "videos",
+        "videos",
+        "videos"
+      ],
+      "actual": [
+        "videos",
+        "videos",
+        "videos"
+      ],
+      "passed": true
+    },
+    {
+      "case": "Musicvideo",
+      "selected": "Musicvideo",
+      "input": {
+        "dbtype": "musicvideo",
+        "path": "",
+        "home": ""
+      },
+      "expected": [
+        "videos",
+        "videos",
+        "videos"
+      ],
+      "actual": [
+        "videos",
+        "videos",
+        "videos"
+      ],
+      "passed": true
+    },
+    {
+      "case": "Song",
+      "selected": "Song",
+      "input": {
+        "dbtype": "song",
+        "path": "",
+        "home": ""
+      },
+      "expected": [
+        "music",
+        "music",
+        "music"
+      ],
+      "actual": [
+        "music",
+        "music",
+        "music"
+      ],
+      "passed": true
+    },
+    {
+      "case": "Album",
+      "selected": "Album",
+      "input": {
+        "dbtype": "album",
+        "path": "",
+        "home": ""
+      },
+      "expected": [
+        "music",
+        "music",
+        "music"
+      ],
+      "actual": [
+        "music",
+        "music",
+        "music"
+      ],
+      "passed": true
+    },
+    {
+      "case": "Artist",
+      "selected": "Artist",
+      "input": {
+        "dbtype": "artist",
+        "path": "",
+        "home": ""
+      },
+      "expected": [
+        "music",
+        "music",
+        "music"
+      ],
+      "actual": [
+        "music",
+        "music",
+        "music"
+      ],
+      "passed": true
+    },
+    {
+      "case": "TV timers",
+      "selected": "TV timers",
+      "input": {
+        "dbtype": "",
+        "path": "pvr://timers/tv/timers/",
+        "home": ""
+      },
+      "expected": [
+        "tvtimers",
+        "tvtimers",
+        "tvtimers"
+      ],
+      "actual": [
+        "tvtimers",
+        "tvtimers",
+        "tvtimers"
+      ],
+      "passed": true
+    },
+    {
+      "case": "Radio timers",
+      "selected": "Radio timers",
+      "input": {
+        "dbtype": "",
+        "path": "pvr://timers/radio/timers/",
+        "home": ""
+      },
+      "expected": [
+        "radiotimers",
+        "radiotimers",
+        "radiotimers"
+      ],
+      "actual": [
+        "radiotimers",
+        "radiotimers",
+        "radiotimers"
+      ],
+      "passed": true
+    },
+    {
+      "case": "TV rules",
+      "selected": "TV rules",
+      "input": {
+        "dbtype": "",
+        "path": "pvr://timers/tv/rules/",
+        "home": ""
+      },
+      "expected": [
+        "tvtimerrules",
+        "tvtimerrules",
+        "tvtimerrules"
+      ],
+      "actual": [
+        "tvtimerrules",
+        "tvtimerrules",
+        "tvtimerrules"
+      ],
+      "passed": true
+    },
+    {
+      "case": "Radio rules",
+      "selected": "Radio rules",
+      "input": {
+        "dbtype": "",
+        "path": "pvr://timers/radio/rules/",
+        "home": ""
+      },
+      "expected": [
+        "radiotimerrules",
+        "radiotimerrules",
+        "radiotimerrules"
+      ],
+      "actual": [
+        "radiotimerrules",
+        "radiotimerrules",
+        "radiotimerrules"
+      ],
+      "passed": true
+    },
+    {
+      "case": "Radio rule child",
+      "selected": "Radio rule child",
+      "input": {
+        "dbtype": "",
+        "path": "pvr://timers/radio/rules/1/2",
+        "home": ""
+      },
+      "expected": [
+        "radiotimerrules",
+        "radiotimerrules",
+        "radiotimerrules"
+      ],
+      "actual": [
+        "radiotimerrules",
+        "radiotimerrules",
+        "radiotimerrules"
+      ],
+      "passed": true
+    },
+    {
+      "case": "TV recordings",
+      "selected": "TV recordings",
+      "input": {
+        "dbtype": "",
+        "path": "pvr://recordings/tv/active/",
+        "home": ""
+      },
+      "expected": [
+        "tvrecordings",
+        "tvrecordings",
+        "tvrecordings"
+      ],
+      "actual": [
+        "tvrecordings",
+        "tvrecordings",
+        "tvrecordings"
+      ],
+      "passed": true
+    },
+    {
+      "case": "TV channels",
+      "selected": "TV channels",
+      "input": {
+        "dbtype": "",
+        "path": "pvr://channels/tv/All channels/",
+        "home": ""
+      },
+      "expected": [
+        "tvchannels",
+        "tvchannels",
+        "tvchannels"
+      ],
+      "actual": [
+        "tvchannels",
+        "tvchannels",
+        "tvchannels"
+      ],
+      "passed": true
+    },
+    {
+      "case": "Addon directory",
+      "selected": "Addon directory",
+      "input": {
+        "dbtype": "",
+        "path": "addons://user/all/",
+        "home": ""
+      },
+      "expected": [
+        "addonbrowser",
+        "addonbrowser",
+        "addonbrowser"
+      ],
+      "actual": [
+        "addonbrowser",
+        "addonbrowser",
+        "addonbrowser"
+      ],
+      "passed": true
+    },
+    {
+      "case": "Favourites",
+      "selected": "Favourites",
+      "input": {
+        "dbtype": "",
+        "path": "favourites://",
+        "home": ""
+      },
+      "expected": [
+        "favouritesbrowser",
+        "favouritesbrowser",
+        ""
+      ],
+      "actual": [
+        "favouritesbrowser",
+        "favouritesbrowser",
+        ""
+      ],
+      "passed": true
+    },
+    {
+      "case": "Unknown video plugin",
+      "selected": "Unknown video plugin",
+      "input": {
+        "dbtype": "",
+        "path": "plugin://plugin.video.fixture/",
+        "home": ""
+      },
+      "expected": [
+        "videos",
+        "videos",
+        "videos"
+      ],
+      "actual": [
+        "videos",
+        "videos",
+        "videos"
+      ],
+      "passed": true
+    },
+    {
+      "case": "Unknown plugin",
+      "selected": "Unknown plugin",
+      "input": {
+        "dbtype": "",
+        "path": "plugin://fixture/",
+        "home": ""
+      },
+      "expected": [
+        "videos",
+        "videos",
+        ""
+      ],
+      "actual": [
+        "videos",
+        "videos",
+        ""
+      ],
+      "passed": true
+    },
+    {
+      "case": "Audio plugin",
+      "selected": "Audio plugin",
+      "input": {
+        "dbtype": "",
+        "path": "plugin://plugin.audio.fixture/",
+        "home": ""
+      },
+      "expected": [
+        "music",
+        "music",
+        "music"
+      ],
+      "actual": [
+        "music",
+        "music",
+        "music"
+      ],
+      "passed": true
+    },
+    {
+      "case": "Local folder",
+      "selected": "Local folder",
+      "input": {
+        "dbtype": "",
+        "path": "C:/skin-audit-folder/",
+        "home": ""
+      },
+      "expected": [
+        "videos",
+        "videos",
+        ""
+      ],
+      "actual": [
+        "videos",
+        "videos",
+        ""
+      ],
+      "passed": true
+    },
+    {
+      "case": "Games",
+      "selected": "Games",
+      "input": {
+        "dbtype": "",
+        "path": "plugin://fixture/",
+        "home": "games"
+      },
+      "expected": [
+        "games",
+        "games",
+        "games"
+      ],
+      "actual": [
+        "games",
+        "games",
+        "games"
+      ],
+      "passed": true
+    },
+    {
+      "case": "Empty",
+      "selected": "Empty",
+      "input": {
+        "dbtype": "",
+        "path": "",
+        "home": ""
+      },
+      "expected": [
+        "videos",
+        "videos",
+        ""
+      ],
+      "actual": [
+        "videos",
+        "videos",
+        ""
+      ],
+      "passed": true
+    },
+    {
+      "case": "Musicvideo again",
+      "selected": "Musicvideo again",
+      "input": {
+        "dbtype": "musicvideo",
+        "path": "",
+        "home": ""
+      },
+      "expected": [
+        "videos",
+        "videos",
+        "videos"
+      ],
+      "actual": [
+        "videos",
+        "videos",
+        "videos"
+      ],
+      "passed": true
+    }
+  ],
+  "all_passed": true
+}

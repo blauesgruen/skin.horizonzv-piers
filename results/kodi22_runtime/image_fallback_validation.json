@@ -1,0 +1,7 @@
+{
+  "cases_passed": 6,
+  "test_scope": "Unmodified production texture expressions and ClearlogoVAR; actual ListItem art in a test list. Full production view layout and network failures not tested.",
+  "xml_files_matched_after_cleanup": 164,
+  "mismatches": [],
+  "initial_helper_failure": "First attempt used nonexistent xbmc.getInfoLabels; corrected to getInfoLabel and rerun. Not a skin failure."
+}

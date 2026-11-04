@@ -49,7 +49,6 @@
 					<onclick>Skin.ResetSettings</onclick>
 					<onclick>Notification(werden zurückgesetzt ...,Einstellungen,4000, DefaultIconInfo.png)</onclick>
 					<onclick>back</onclick>
-					<texturenofocus/>
 				</control>
 				<control type="button" id="11">
 					<description>No button</description>
@@ -63,7 +62,6 @@
 					<onleft>10</onleft>
 					<onright>12</onright>
 					<onclick>back</onclick>
-					<texturenofocus/>
 				</control>
 			</control>
 		</control>

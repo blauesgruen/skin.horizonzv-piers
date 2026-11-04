@@ -4,10 +4,30 @@ Geltungsbereich: dieser Skin (`skin.horizonzv` im Checkout `skin.horizonzv-piers
 
 ## Bereits bearbeitet
 
+PVR-Suchfilter-Grundprüfung inzwischen erweitert: regulärer Aufruf aus TV-/Radio-Suche übergibt Daten an den Dialog. Suchtext und Senderfilter bearbeitet, positive TV-Phrasensuche mit zwei Programmtreffern, Verwerfen einer Änderung und Programminformation mit tatsächlichen EPG-Feldern bestanden. Keine Suchdefinition gespeichert oder Aufnahme-/Timer-/Erinnerungsaktion gewählt. Die zuvor offene allgemeine Filterbefüllung ist für diese Grundfälle geklärt; dauerhafte Definitionen und weitere Filterkombinationen bleiben offen. Globale Ausgangseinstellungen vollständig nach Werten abgeglichen, Kodi beendet, keine ERROR-Zeile. Belege: Folgelauf in `kodi22_runtime/STANDARDPROFIL_PRUEFUNG.md` und `standard_pvr_search_*`/`standard_pvr_program_info_*`.
+
+Nutzerfreigabe erweitert: Standardinstallation für Disney+ und weitere Integrationstests. Dort inzwischen native Film-/Serien-/Staffelnavigation mit Extended Art und schnellen Wechseln geprüft, ohne Extra-Fanart-/RouterError-/ERROR-Zeilen im beobachteten INFO-Lauf. Keine Wiedergabe. Gismeteo liefert aktuelle/mehrere Prognosedaten, keine Warnungsdaten. TV-/Radio-Umschaltung mit 86/103 vorhandenen Sendern in Kanal- und Gruppenmanager bestanden; jeweils TV wiederhergestellt und ohne Bearbeitungsaktion geschlossen. Quellen/36 Filmdateien ergaben keinen SMB-Pfad. Exakte Belege/Grenzen: `kodi22_runtime/STANDARDPROFIL_PRUEFUNG.md`.
+
+Standardprofil-Ausgangsskin und Screenshot-Pfad sind zurückgestellt, Kodi beendet. Erster Laufzeit-Skinwechsel abgestürzt; älterer Dump vor dem Test mit gleicher Fehleradresse, Ursache offen. Direkter Zielskin-Start und nachfolgender Test/Shutdown stabil. Kein Core-/Add-on-Code geändert. Die frühere ausschließlich getrennte Teststrategie ist für diese ausdrücklich freigegebenen Fälle ergänzt. Anmeldung war für die Disney-Listen nicht erneut nötig. Der angefangene Dashboard-All-off-Vergleich blieb unvollständig, Row-Einstellungen unverändert.
+
+Erweiterte Namensprüfung: 30 Kodi-InfoMap-Tabellen und explizite Übersetzerzweige abgeglichen. 453 registrierte Methodennamen im Skin; 53 weitere Treffer als Add-on-IDs, Fensternamen oder Property-Schlüssel eingeordnet. Kein zusätzlicher ungültiger InfoLabel-Name in diesem begrenzten Abgleich bestätigt. Ausdrücklich keine Zusicherung über freie Provider-Properties oder sämtliche Argumente.
+
+Ein zusätzlicher tatsächlicher Fehler wurde bei der Bedingungsprüfung gefunden: zweimal `Conditional` als Operand einer Dashboard-Animationsbedingung. Fremdeinträge entfernt, vier Row-off-Schalter und Animationsparameter erhalten. Nachprüfung: 8.863 statische Bedingungsatome mit bekannten Namensräumen, keine weiteren unaufgelösten Atome; 123 dynamische Atome ausgenommen. Außerdem ausgewählte Parameterzahlen in 8.487 statischen Fällen ohne Fund, 245 dynamische Fälle ausgenommen. Werkzeug und Quellen-Snapshot im Inventurverzeichnis; visueller Row-off-Kombinationstest bleibt offen (`dashboard_animation_condition_review.json`).
+
+Neuer Prüfstand: 21 kontrollierte Eingabefälle für drei Dashboard-/Widget-Zielvariablen im sichtbaren Kodi bestanden (63 Ausgaben). Produktionsbedingungen/-werte mit lediglich umgebundenen Eingangslabels. Die echten Widget-Klicks, Header-Aktivierung und Provider-/PVR-Aktionen sind damit nicht geprüft. Vier kontrollierte Fälle ergeben beim allgemeinen `WidgetTarget` weiterhin leer; dies bleibt ausdrücklich als Begrenzung dokumentiert. Testfenster/Variablenersatz/Start-Timer entfernt, Kodi beendet und XML-Kopie abgeglichen. Details im Laufzeitbericht und `widget_target_evaluation_checks.json`.
+
+Fortschreibung der Fensterprüfung: Die 21 zunächst dynamischen Aktionsziele bestehen aus 20 Verweisen auf im Skin definierte Variablen und `System.StartupWindow`. Mit zusätzlicher Prüfung von elf `content target`-Angaben werden jetzt 19 Zielvariablen mit 140 Wertzweigen erfasst. Alle aufgezählten Namen sind nach Korrektur registriert; Bedingungen und tatsächliche Zweigauswahl werden dabei nicht ausgewertet. Der native Startfensterwert sowie mögliche leere Ergebnisse bedingter Variablen bleiben offen.
+
+Weitere Dashboard-/Widget-Korrekturen: unregistrierte Ziele `pvr`, `favourites`, `addons` entfernt/ersetzt; Timer nach TV/Radio und Regeln getrennt, Favoriten auf `favouritesbrowser`. Die beiden Dashboard-Zielvariablen erhalten für ihre über den Video-Pfadwähler eingerichteten Widgets den Video-Fallback. Allgemeines Widget und GTO enthalten ebenfalls kein Ziel `pvr` mehr. Musikvideo wird nicht mehr vom vorangestellten Teilstringtest auf „music“ abgefangen; der allgemeine Filmtypvergleich verwendet `movie`. Details, Quellen, Auswirkungen und noch nötige Laufzeitfälle: `kodi22_inventory/widget_target_migration_review.json`. Keine Änderungen an GTO oder anderen Add-ons.
+
+Der korrigierte Seitenleisten-Kurzbefehl wurde inzwischen sichtbar im getrennten Kodi geprüft: Videos → Shortcuts → Menu → Shutdown menu → Back zu Videos bestanden. Test-Kodi beendet und Kopie abgeglichen; keine Energieaktion ausgeführt. Vollständige Belege im Laufzeitbericht. Frühere Hinweise auf diesen noch offenen Grundtest sind damit überholt.
+
+Neu am 3. November: Auch wörtliche Fensterziele gegen Piers abgeglichen. Dabei den unregistrierten Seitenleisten-Aufruf `ActivateWindow(shutdown)` durch `ActivateWindow(shutdownmenu)` ersetzt, passend zu Home/LoginScreen. Kein Entfernungsfund, sondern falscher Fenstername. Lesender Prüfer `tools/audit_skin_windows.py`, Quellen-Snapshot und Ergebnis im Inventurverzeichnis: 252 wörtliche Aufrufe ohne Fund nach Korrektur, 21 dynamische Ziele bleiben offen. Bekannte numerische Konstanten und Custom-XML-IDs belegen keine Laufzeitregistrierung. Der echte Seitenleisten-Kurzbefehl ist noch sichtbar zu prüfen; inzwischen laufende ursprüngliche Kodi-Installation nicht bedient. Exakter Testfall: `kodi22_inventory/sidepanel_shutdown_review.json`.
+
 - Entfernte oder ungültige Kodi-Aufrufe und dokumentiert veraltete Labels wurden im Skin ersetzt oder entfernt. Für Kodi 23 wurden die entfernten `gamewindow`-`pixels`-Elemente entfernt; die vorhandene Screenshot-Anzeige blieb erhalten.
 - Extra-Fanart liefert für `plugin://` und bei leerem Listenpfad keinen Verzeichnispfad. Lokale und SMB-Pfade behalten den bestehenden Ausdruck.
 - Veraltete oder nicht erreichbare Teile wurden entfernt, darunter die Serienplaner-Oberfläche, der alte Video-Versionen-Dialog und das optionale Next-Episode-Widget des archivierten Library Data Provider. Letzteres ist ein Funktionsverlust; eine gleichwertige native Alternative wurde nicht nachgewiesen.
-- PVR-Kanalmanager, Programmsuche, Informationsdialog und Videomanager wurden mit ausgewählten Kodi-Piers-Control-IDs abgeglichen und angepasst. Die Änderungen sind noch nicht zur Laufzeit geprüft.
+- PVR-Kanalmanager, Programmsuche, Informationsdialog und Videomanager wurden mit ausgewählten Kodi-Piers-Control-IDs abgeglichen und angepasst. Gezielte Layout-/Fokusprüfungen sind teilweise erfolgt; Datenbefüllung und Backend-Aktionen sind noch nicht vollständig geprüft. Siehe die jeweiligen Ergänzungen und den Laufzeitbericht.
 
 ## Entscheidungen zu den wichtigsten Funden
 
@@ -24,13 +44,25 @@ Die Entscheidungen sind im ausführlichen Audit mit Fundstellen und Quellen bele
 
 ## Noch offene Entscheidungen im Skin
 
+### Aktionsabgleich ergänzt (2026-11-03)
+
+Fortschreibung: Die korrigierten Pause-Fokusaufrufe sind inzwischen nativ geprüft. Beide Controls fokussieren/verlassen und beide Optionen umschalten ohne Farbänderung oder fremden Dialog; Standard und beide leichten Pausenzustände mit lokalem Video sichtbar geprüft. Ausgangswerte vollständig wiederhergestellt, Test-Kodi beendet, XML-Abgleich ohne Abweichung. Belege und Grenzen im Laufzeitbericht. Die unten zunächst offene Laufzeitprüfung ist damit für diese Grundfälle erfüllt.
+
+Der lesende Aktionsprüfer erfasst zusätzlich die eingebetteten Ziele von `Action` und `AlarmClock`: 64 Ziele, kein unbekannter Name/Mindestparameterfund. Andere verschachtelte Parameter und dynamische Ausdrücke bleiben ausgenommen. Offizielle Kodi-23-Skinning-Seite am 3. November erneut gelesen (generiert 2. November): weiterhin `gamewindow/pixels` als genannte Entfernung, ansonsten Ergänzungen; daraus folgt keine Garantie über unangekündigte Änderungen.
+
+Alle 17 C++-Dateien des Piers-Built-in-Verzeichnisses und die Eingabeaktions-Tabelle abgeglichen: Snapshot mit 129 Built-ins und 209 Eingabeaktionen, darunter bedingte Android-/CEC-Registrierungen. Das neue lesende Werkzeug `tools/audit_skin_actions.py` prüft oberste wörtliche Aktionen in XML-Aktionstags und Include-Aktionsparametern gegen diesen Snapshot sowie die Mindestparameterzahl. Nach den folgenden Korrekturen 1.616 solche Referenzen ohne Fund. Dynamische Ergebnisse, Variablenwerte, verschachtelte Aktionen, semantische Parameter und tatsächliche Plattformverfügbarkeit sind damit nicht verifiziert. Quelle/Snapshot/Ergebnis: `kodi22_inventory/kodi_action_registry.json`, `action_registration_review.json`.
+
+Zwei weitere Fehler in den Pause-Einstellungen beseitigt: ungültiges `Activate(1155)` beim Fokus entfernt, nicht durch einen funktionierenden Aufruf des sachfremden Ersteinrichtungsdialogs ersetzt. Außerdem einen dauerhaften Orange-Farbwechsel beim Fokus und den ungültig bestückten `Skin.SelectBool(color_red)` beim Verlassen entfernt. Dieser Aufruf hat keine Auswahlpaare und stellt die vorherige Farbe nicht wieder her. Die reguläre Farbauswahl und beide Pause-Schalter bleiben erhalten. Kein API-Entfernungsfund behauptet. Quellen und genauer verbleibender Laufzeittest: `kodi22_inventory/pause_settings_action_review.json`. Regressionserkennung für beide ungültigen Aufrufmuster ergänzt. Die ursprüngliche laufende Kodi-Installation wurde dafür nicht bedient.
+
+Zusatzabgleich von Variablenwerten: 174 mit wörtlichem Aktionsbeginn, vier unterschiedliche registrierte Namen, kein unbekannter Name. Fünf absichtlich angezeigte Debug-Labelnamen ausgeschlossen. Dies belegt keine semantische Parameterprüfung oder vollständige dynamische Auflösung (`variable_action_registration_review.json`). Aktualisierte allgemeine Inventur: keine XML-Parsefehler, fehlenden Includes, Variablen, Skin-Strings oder Texturen; die acht bereits eingeordneten Hinweise bleiben bestehen.
+
 1. **Externe Integrationen:** Für jede tatsächlich genutzte Integration den Skin-Aufruf und den Vertrag der konkret eingesetzten Add-on-Version prüfen. Ist eine Schnittstelle nicht mehr nutzbar, den Aufruf im Skin ersetzen oder die zugehörige Oberfläche entfernen; einen möglichen Funktionsverlust ausdrücklich dokumentieren. Fehlende Add-ons oder fehlende Laufzeittests allein belegen noch keine Inkompatibilität.
-2. **Plattformaktionen:** Die verbleibenden Startaufrufe für CoreELEC und LibreELEC mit den tatsächlich eingesetzten Versionen prüfen. Der spezielle OpenELEC-Aufruf wurde nach Prüfung des offiziellen Python-2-Quellstands entfernt; siehe Ergänzung unten. Den NAND-Neustart nur auf einem geeigneten Testgerät und mit bekanntem Bootaufbau überprüfen; Add-on-Präsenz allein belegt die Verfügbarkeit des aufgerufenen Skripts nicht. Falls eine Aktion nicht verlässlich unterstützt wird, die entsprechende Skin-Option überarbeiten oder entfernen.
+2. **Plattformaktionen:** Die verbleibenden Startaufrufe für CoreELEC und LibreELEC mit den tatsächlich eingesetzten Versionen prüfen. Der spezielle OpenELEC-Aufruf wurde nach Prüfung des offiziellen Python-2-Quellstands entfernt; siehe Ergänzung unten. Den benötigten NAND-Neustart unverändert beibehalten und nur auf einem geeigneten Testgerät mit bekanntem Bootaufbau überprüfen; Add-on-Präsenz allein belegt die Verfügbarkeit des aufgerufenen Skripts nicht. Falls eine Aktion nicht verlässlich unterstützt wird, die entsprechende Skin-Option überarbeiten oder entfernen.
 3. **Entwickler-Tastenkürzel:** `keymaps/keyboard.xml` enthält absolute Pfade zu einer anderen Kodi-Installation und wird nach dem geprüften Kodi-Loader nicht automatisch aus dem Skin geladen. F7 verweist auf Fenster 16606; ein entsprechendes Fenster ist im Skin nicht nachgewiesen, ein extern registriertes Fenster aber nicht ausgeschlossen. Vor einer Entfernung den beabsichtigten manuellen Einsatz und das F7-Ziel klären; ein portabler Ersatz für F3/F4 ist bisher nicht belegt.
-4. **Restbestände:** Die sieben statisch ungenutzten Schriften und verbleibende Integrationsbedingungen auf dynamische Nutzung und externe Aufrufer prüfen, bevor sie entfernt werden. Die statische Inventur allein reicht dafür nicht aus.
+4. **Restbestände:** Sechs unbenutzte Includes nach Prüfung aller aktiven direkten Aufrufe, der einzigen dynamischen Include-Auswahl und installierter externer Verbraucher entfernt. Den alten auskommentierten Musiklayout-Block mit zwei dieser Namen ebenfalls entfernt. Übrige aktive XML-Struktur vor/nach Bereinigung abgeglichen; vier begrenzte Prüfwerkzeuge ohne Befund, neue Inventur ohne fehlende oder unbenutzte Includes (374 Definitionen). Beleg: `kodi22_inventory/dead_include_cleanup.json`. Elf Schriftdefinitionen nach Abgleich ohne Beachtung der Groß-/Kleinschreibung, Prüfung der vier dynamischen Font-Parameter und installiertem externen Verbraucherscan entfernt (56 verbleibende Definitionen, Font-Dateien unverändert; `dead_font_review.json`). Vier davon waren zunächst durch Teilzeichenfolgen der allgemeinen Inventur verdeckt. Sieben externe Namensfunde für diese vier als Nicht-Font-Daten geprüft. Weitere Integrationsbedingungen bleiben offen.
 5. **Bibliothekseditor-Beschriftungen:** Die ungenutzte Variable `LibraryEditorLabel` samt acht fehlenden Kennungen 42205–42212 wurde entfernt. Die dynamischen Variablenzugriffe verwenden ausschließlich andere Namenspräfixe; eine Suche in den installierten XML-/Python-/JavaScript-Quellen fand ebenfalls nur die frühere Definition. Die getrennte Library-Node-Editor-Integration bleibt erhalten. Beleg: `kodi22_inventory/dead_variable_review.json`.
 
-6. **Wake-on-LAN:** Der Skin verwendet jetzt native `WakeOnLan(mac)`-Aufrufe statt versionsabhängiger `wolN`-Befehle. Zehn mögliche Geräteplätze teilen einen Include; vor dem Statusabruf werden alte Werte gelöscht. Abgefangene Zieltests und der Fall ohne Anbieter sind geprüft. Echte Statuslieferung mit älteren/neuen Anbietern, Dienst-/Fehlerfälle, vollständige Zehnerlisten-Darstellung und ein echter Gerätestart bleiben offen. Details und Abnahmekriterien: `wol_ueberarbeitung.md`. Andere Add-ons wurden nicht geändert.
+6. **Wake-on-LAN:** Der Skin verwendet jetzt native `WakeOnLan(mac)`-Aufrufe statt versionsabhängiger `wolN`-Befehle. Zehn mögliche Geräteplätze teilen einen Include; vor dem Statusabruf werden alte Werte gelöscht. Abgefangene Zieltests und der Fall ohne Anbieter sind geprüft. Echte Statuslieferung mit älteren/neuen Anbietern, Dienst-/Fehlerfälle, weitere Sprachen/Seitenverhältnisse der inzwischen geprüften Zehnerliste und ein echter Gerätestart bleiben offen. Details und Abnahmekriterien: `wol_ueberarbeitung.md`. Andere Add-ons wurden nicht geändert.
 
 ## Vor Abschluss erforderlich
 
@@ -41,10 +73,10 @@ Die getrennte Kodi-22-RC1-Laufzeitprüfung ist erfolgt: Ziel-Skin geladen, mehre
 3. **Extra-Fanart prüfen:** Plugin-Pfad einschließlich Disney+, leeren Eintrag, lokale Medien und SMB-Medien durchgehen; auch schnelle Wechsel sowie Wiedergabestart und -ende mit gegebenenfalls leerem Player-Pfad berücksichtigen. Das Log darf für Plugin-Pfade keine vom Skin erzeugte `/extrafanart/`-Abfrage zeigen; lokale und SMB-Fanart muss weiterhin funktionieren.
 4. **Medien und PVR prüfen:** Suchen und Pausieren, Musikbewertung, Untertitel- und Wetterbilder, PVR-Suchfilter mit gespeicherten Einstellungen, Senderverwaltung mit Testsender, Aufnahme-/Programminformation sowie Videoversionen mit Testmedien prüfen. Den Radio-RDS-Dialog mit normalen, Komponisten-, Dirigenten- und gemischten Daten auf Inhalt und Darstellung prüfen. Datenbankändernde Aktionen nur an geeigneten Testdaten ausführen.
 
-   Zusätzlich die Filmgenre-Ansichten mit dem reflektierten Icon-Paket und unterschiedlichen Dateiendungen für Film- und Musikgenre-Pakete prüfen; zwei Pfade verwenden jetzt die Filmgenre-Endung. Den Poster-Debugtext bei Episoden und gemischten Einträgen mit dem tatsächlich gewählten Bildpfad vergleichen. Die dynamischen Bild-Fallbacks in `View_722_RightList.xml` und `View_Music_741_CoverWall.xml` mit vorhandenem, leerem und nicht ladbarem Primärbild sowie beim Eintragswechsel testen.
+   Zusätzlich die Filmgenre-Ansichten mit dem reflektierten Icon-Paket und unterschiedlichen Dateiendungen für Film- und Musikgenre-Pakete prüfen; zwei Pfade verwenden jetzt die Filmgenre-Endung. Den Poster-Debugtext bei Episoden und gemischten Einträgen mit dem tatsächlich gewählten Bildpfad vergleichen. Die dynamischen Bild-Fallbacks in `View_722_RightList.xml` und `View_Music_741_CoverWall.xml` wurden mit vorhandenem, leerem und lokal nicht ladbarem Primärbild sowie beim Eintragswechsel gezielt geprüft; vollständige Ansichten und Netzwerkfälle bleiben offen (Ergänzung unten).
 
    Die wieder eingebundene Wetterwarnungsansicht mit einem Anbieter prüfen, der die erwarteten Fenster-Properties tatsächlich setzt: keine und mehrere Warnungen, Fokusnavigation sowie ein Anbieter ohne Warnungsdaten. Derzeit werden Anbieter mit ausschließlich nummerierten Warnungsfeldern nicht angezeigt. Für NOAA 2.0.9-b2 vor einer Unterstützung insbesondere Anbietererkennung, Aktualität und unvollständig bereinigte Felder prüfen; eine feste Höchstzahl darf weitere Meldungen nicht unbemerkt abschneiden. Wechsel von Anbieter und Ort, weniger Warnungen als zuvor und fehlgeschlagene Aktualisierung testen.
-5. **Optionale Integrationen prüfen:** Für installierte und deaktivierte Add-ons Sichtbarkeit und Aufrufe prüfen. Im Wake-on-LAN-Dialog einzelne Einträge und „Alle starten“ mit aktiviertem und deaktiviertem Ping-Add-on sowie vorhandenen und leeren MAC-Adressen prüfen; die Benachrichtigung bestätigt nur die angeforderte Aktion, keinen erfolgreichen Gerätestart. Bei Artist Slideshow die Informationsoptionen einzeln bei ausgeschaltetem Fanart, ein fehlendes oder deaktiviertes Add-on sowie das Umschalten während der offenen Visualisierung testen. Die Albumliste und die Liste ähnlicher Künstler mit unterschiedlich vielen Einträgen sowie jeweils ausgeblendeter Nachbarliste testen; der automatische Bildlauf muss von der eigenen Liste abhängen. Bei ExtendedInfo insbesondere in Musik- und Videoinformation testen, ob der YouTube-Aufruf nach dem Schließen des Dialogs den richtigen Titel und Künstler beziehungsweise das richtige Jahr erhält; die Reihenfolge der Aktionen allein belegt den verwendeten ListItem-Kontext nicht. Auf CoreELEC die Plattform-Einstellungen nur mit dem tatsächlich installierten Dienst testen. Der interne Neustart hängt zusätzlich von Gerät und Bootkonfiguration ab; die Existenz und Wirkung seines Skripts sind nicht belegt.
+5. **Optionale Integrationen prüfen:** Für installierte und deaktivierte Add-ons Sichtbarkeit und Aufrufe prüfen. Im Wake-on-LAN-Dialog einzelne Einträge und „Alle starten“ mit aktiviertem und deaktiviertem Ping-Add-on sowie vorhandenen und leeren MAC-Adressen prüfen; die Benachrichtigung bestätigt nur die angeforderte Aktion, keinen erfolgreichen Gerätestart. Bei Artist Slideshow die Informationsoptionen einzeln bei ausgeschaltetem Fanart, ein fehlendes oder deaktiviertes Add-on sowie das Umschalten während der offenen Visualisierung testen. Die Albumliste und die Liste ähnlicher Künstler mit unterschiedlich vielen Einträgen sowie jeweils ausgeblendeter Nachbarliste testen; der automatische Bildlauf muss von der eigenen Liste abhängen. Bei ExtendedInfo insbesondere in Musik- und Videoinformation testen, ob der YouTube-Aufruf nach dem Schließen des Dialogs den richtigen Titel und Künstler beziehungsweise das richtige Jahr erhält; die Reihenfolge der Aktionen allein belegt den verwendeten ListItem-Kontext nicht. Auf CoreELEC die Plattform-Einstellungen nur mit dem tatsächlich installierten Dienst testen. Der interne Neustart hängt zusätzlich von Gerät und Bootkonfiguration ab; das offizielle CoreELEC-22-Skript ist inzwischen belegt; Verfügbarkeit und Wirkung auf dem konkreten Gerät bleiben ungetestet. Die Abkürzung bleibt auf ausdrücklichen Nutzerwunsch erhalten.
 6. **Erneut inventarisieren:** Nach Änderungen XML, Includes, Variablen, Ressourcen und lokalisierte Texte prüfen; danach die noch offenen Fälle im ausführlichen Audit bewerten. Dynamische Ausdrücke, Include-Erweiterung und externe Skriptfenster sind durch die statische Inventur nicht vollständig abgedeckt.
 
 Für einen getrennten Windows-Test kann eine eigene Kodi-Installation mit eigener `portable_data`-Struktur und einer Kopie dieses Skins vorbereitet werden. Der geprüfte Piers-Quellcode leitet bei `--portable` den Datenordner vom Kodi-Installationsverzeichnis ab; `--settings` bezeichnet dagegen eine zusätzliche Einstellungsdatei im Kodi-Systemordner und ist kein frei wählbarer Profilpfad. Kodi 22 verwendet einen vom Datenpfad abgeleiteten Mutex. Die Trennung muss vor dem Start anhand der tatsächlichen Pfade und danach im Testlog geprüft werden. Für Disney+, SMB und PVR benötigt das Testprofil zusätzlich geeignete Testdaten bzw. Zugänge; eine leere Installation prüft diese Fälle nicht. Quellen: https://raw.githubusercontent.com/xbmc/xbmc/22.0rc1-Piers/xbmc/application/AppParamParser.cpp, https://raw.githubusercontent.com/xbmc/xbmc/22.0rc1-Piers/xbmc/platform/win32/WIN32Util.cpp und https://raw.githubusercontent.com/xbmc/xbmc/22.0rc1-Piers/xbmc/platform/win32/WinMain.cpp.
@@ -101,7 +133,7 @@ Lokale Fanart mit vorhandenem Ordner wurde über den tatsächlichen Player-Ordne
 
 ## Kapitelanzeige und Typprüfung
 
-Die ungeschützte zweite Kapitelzeile der Seekbar zeigt bei null Kapiteln jetzt keine „00/00“-Angabe mehr; mit der kapitel-losen Testdatei visuell geprüft. Eine echte Datei mit Kapiteln bleibt der positive Abnahmefall. Direkte `Player.ChapterCount`-Bedingungen sind durch Kodis Integer-Fallback unterstützt und bleiben erhalten. Auch `Window.Is` ist ein unterstützter eigener Kontextvergleich. Diese geprüften Stellen dürfen nicht als entfernte APIs behandelt werden; Quellen im Typprüfungsbeleg.
+Die ungeschützte zweite Kapitelzeile der Seekbar zeigt bei null Kapiteln jetzt keine „00/00“-Angabe mehr; mit der kapitel-losen Testdatei visuell geprüft. Der positive Abnahmefall mit drei Kapiteln ist inzwischen ebenfalls geprüft; siehe Ergänzung unten. Direkte `Player.ChapterCount`-Bedingungen sind durch Kodis Integer-Fallback unterstützt und bleiben erhalten. Auch `Window.Is` ist ein unterstützter eigener Kontextvergleich. Diese geprüften Stellen dürfen nicht als entfernte APIs behandelt werden; Quellen im Typprüfungsbeleg.
 
 ## Artist-Slideshow-Start während offener Visualisierung
 
@@ -118,3 +150,252 @@ Zusätzlich zum abgefangenen Zustandsmodell wurde die unveränderte Version 4.2.
 Die zwei Codec-Bildcontrols verwenden jetzt `MusicCodecTexture`: `pcm` und `pcm_...` zeigen `flagging/audio/pcm_bluray.png`, dessen Bildinhalt tatsächlich „PCM“ lautet. Weitere Codec-Namen verwenden den bisherigen dynamischen Pfad; bei fehlender Grafik ist `flagging/audio/unknown.png` als Fallback gesetzt. Es wurden keine neuen Bilder und kein Add-on-Code verändert.
 
 Sichtbare Kodi-Prüfung: WAV mit `pcm_s16le` und Sun AU mit `pcm_s16be`, jeweils Standard- und Vinylansicht. Alle vier zeigen die PCM-Grafik; die Logs enthalten keine fehlenden Texturen. Test-IDs und Test-Skin-Einstellungen wurden entfernt/zurückgesetzt. Ein erzwungener unbekannter Codec und weitere Nicht-PCM-Formate wurden nicht neu zur Laufzeit geprüft.
+
+## Interner Neustart: offizieller Skriptvertrag gefunden
+
+Im offiziellen `coreelec-22`-Quellstand `39498a8316f852c5fbf09b1e894b9aff70d00d59` ist `rebootfromnand` weiterhin vorhanden. Für die Device-Tree-IDs `g12brevb_raven_2g` und `t7_gazelle_pvt` führt es selbst einen quiescent-Neustart aus; im anderen Zweig setzt es Bootvariablen und enthält keinen eigenen Neustart. Damit ist die frühere offene Frage nach einem offiziellen Skriptpfad geklärt, nicht dessen Verfügbarkeit oder Wirkung auf jedem Gerät. Keine Kodi-Entfernung behaupten.
+
+Der Skin startet das Skript per `System.ExecWait` und führt anschließend `Reset()` unabhängig von dessen Ergebnis aus. Eine pauschale Entfernung dieses Reset würde den anderen Skriptzweig ohne Neustart zurücklassen; eine pauschale zusätzliche Shell-Neustartkette würde wiederum die bereits selbst rebootenden Geräte nicht berücksichtigen. Die Plattformlogik wird deshalb nicht ohne belegten Zielvertrag in Skin-XML nachgebaut.
+
+Nutzerentscheidung: Die Abkürzung wird benötigt und bleibt erhalten. Ein geeignetes Testgerät steht derzeit nicht zur Verfügung. Die aktuelle Neustartlogik bleibt deshalb unverändert; der Hardwaretest ist ausdrücklich offen. Es wurden keine Bootkommandos ausgeführt und weder Plattformskript noch Add-on geändert. Beleg und gepinnte Quelle: `kodi22_inventory/internal_reboot_review.json`.
+
+## Extra-Fanart: Pfadauswertung zur Laufzeit ergänzt
+
+Mit injizierten Eingangslabels in der isolierten Skin-Kopie geprüft: leerer und direkter Plugin-Pfad (einschließlich Großschreibung) bleiben leer; lokale Pfade laden Bilder; SMB erhält die bisherigen Suffixe. Im Testlog keine Plugin-Verzeichnisaufrufe. Der SMB-Fall wurde nur als Zeichenkette geprüft, nicht als Serverzugriff. Echter Disney+-/CoreELEC-Kontext, umhüllte URLs und schnelle Wechsel bleiben offen. Details und Eingriffsumfang im Laufzeitbericht.
+
+## PVR: Dialoglayout geprüft, verschachtelte Bedingung bereinigt
+
+Der native Suchdialog lädt sichtbar; beide Filterspalten, vier Aktionsknöpfe, geprüfte Fokuswechsel und Zurück sind unauffällig. Ohne initialisierten PVR-Suchfilter gilt dies nur für Layout und Navigation. Datenbefüllung, Datum/Zeit und echte Suche mit Backend bleiben offen.
+
+In `Includes_PVR.xml` wurde außerdem eine versehentlich doppelt verschachtelte Sichtbarkeitsbedingung der Kopfzeile auf einen direkten Bedingungstext korrigiert. Kodis Loadervertrag ist im Quellenbeleg dokumentiert. Dies ist eine Skin-Strukturkorrektur, keine API-Entfernung. Die übrigen XML-Dateien enthalten in den geprüften skalaren Tags keine weiteren verschachtelten Elemente.
+
+## Erneuter Quellenabgleich und redundante XML-Angaben
+
+Am 02.11.2026 die offizielle Kodi-23-Skinning-Seite erneut abgerufen: Als Entfernung ist weiterhin `gamewindow`-`pixels` dokumentiert; die übrigen dortigen Einträge betreffen Ergänzungen oder erweiterte Labels. Dies bestätigt keine unangekündigten zukünftigen Änderungen. Quelle: https://xbmc.github.io/docs.kodi.tv/master/kodi-base/d8/d22/skinning_v23.html.
+
+14 identische Wiederholungen ausgewählter einzelwertiger Control-Eigenschaften in neun Dateien entfernt. Der jeweils erste Wert bleibt erhalten, ebenso unterschiedliche Werte. Mehrere Labels, Content-Quellen, Aktionen und bedingte Layouts wurden nicht pauschal bereinigt: Dafür bestehen eigene Loader-Regeln. Fundliste und enger Prüfumfang: `kodi22_inventory/duplicate_scalar_cleanup.json`. Dies ist redundanter Skin-Code, keine API-Entfernung.
+
+Die unterschiedlichen Einzelwert-Doppelangaben wurden anschließend gegen die konkreten Loader-Funktionen geprüft. Fünf ignorierte zweite Werte sind inzwischen entfernt; der wirksame erste Wert bleibt jeweils unverändert (Beleg unten). Eine Layoutneugestaltung wurde nicht vorgenommen. Zur Entwickler-Keymap wurde nach ihrem tatsächlichen manuellen Einsatz gefragt; bis zur Klärung bleibt sie bestehen.
+
+## Dynamische Bild-Fallbacks: gezielte Abnahme erfolgt
+
+Die zwei produktiven Texturausdrücke aus RightList 722 und Musik-CoverWall 741 bestehen sechs sichtbare Kodi-Fälle mit echten ListItem-Artwerten: Hauptbild vorhanden, leer und lokal nicht ladbar, beide Richtungen sowie anschließender Eintragswechsel. Kein weiterer Codeeingriff erforderlich. Vollständige View-Geometrie/Sichtbarkeit, Unterprioritäten der Logo-Variable und Netzwerkfehler bleiben offen. Prüfaufbau, Aufnahmen, Loggrenzen und entfernte Testhelfer sind im Laufzeitbericht dokumentiert.
+
+## Wiederholbare Prüfung bekannter Altlasten
+
+`python -I tools/check_skin_compatibility.py` prüft bekannte entfernte, ungültige und veraltete Literale sowie ausgewählte XML-Strukturfehler. Aktuell 165 Dateien ohne Fund. Positive und negative CLI-Fälle sowie Aufruf aus fremdem Arbeitsordner geprüft. Diese Prüfung gehört künftig nach Skin-Änderungen zur Abnahme; sie ersetzt weder neue Quellenrecherche noch dynamische oder visuelle Tests. README beschreibt Verwendung und Grenzen.
+
+## Kapitelanzeige: positiver Abnahmefall geschlossen
+
+Eine erzeugte Matroska-Videodatei mit drei echten, von Kodi erkannten Kapitelmarken wurde sichtbar geprüft. Die unveränderte Seekbar zeigt 01/03, 02/03 und 03/03; beim Wechsel auf die kapitel-lose AVI werden Kapitelzahl 00 und beide Sichtbarkeitsbedingungen falsch. Damit sind positive Kapitelzeile und Null-Kapitel-Wechsel belegt. Kapitelmenüs und besondere Disc-/PVR-Kontexte bleiben davon getrennt. Quellen, Testdatei-Generator und Aufnahmen stehen im Laufzeitbericht.
+
+## Unterschiedliche Doppelwerte: Loader-Verhalten erhalten
+
+Fünf ignorierte spätere Werte entfernt: `align=center` nach `right` auf Home, zweimal `itemgap=6` nach `3` im Home-OSD, `right=100` nach `20` im Musik-Playlist-Editor und `font16` nach `impacted30` im Skin-Layout für Liedtexte. Piers liest diese Eigenschaften über FirstChild/FirstChildElement. Die effektiven ersten Werte aller neun geprüften Einzelwert-Tags wurden für sämtliche derzeit geänderten XML-Dateien mit HEAD verglichen und stimmen überein. Kein Kodi-Lauf für diese Bereinigung; keine Aussage zu bislang ungetesteten vollständigen Layouts. Beleg: `kodi22_inventory/conflicting_scalar_cleanup.json`. Die Wiederholungsprüfung erkennt nun auch doppelte Angaben dieser neun Eigenschaften. Mehrere Labels, Content-Quellen, Aktionen und bedingte Layouts bleiben davon ausgenommen.
+
+## Wake-on-LAN: volle Liste und Scrollnavigation geprüft
+
+Alle zehn Geräteplätze plus drei Hilfsaktionen wurden im sichtbaren Test-Kodi erreicht. Die Liste scrollt innerhalb ihrer begrenzten Fläche; Detailzeilen werden nicht überlagert und passen zur Geräteauswahl. Anbieter und Daten waren ausschließlich in der Skin-Testkopie eingespeist, alle Netzwerk-/Einstellungsaktionen dort neutralisiert. Keine WOL-Pakete und keine Add-on-Änderung. Standardauflösung und kurze englische Texte sind geprüft; echte Anbieter, lange Namen/Übersetzungen, weitere Seitenverhältnisse und Gerätewirkung bleiben offen. Belege und vollständig entfernte Testabweichungen im Laufzeitbericht.
+
+## Backup-Dateien und allgemeine Inventurhinweise
+
+Zwei unveränderte, in Git gesicherte `.xml.org`-Backups aus `xml/` entfernt. Keine aktive XML-Referenz gefunden; Kodis automatische Custom-Fenstersuche filtert `.xml`, Include-Dateien werden explizit geladen. Es handelt sich um Bestandsbereinigung, nicht um eine Kodi-API-Entfernung. Originalinhalt und Wiederherstellungs-Commit sind in `kodi22_inventory/backup_cleanup.json` dokumentiert. Aktive Ansichten wurden dadurch nicht entfernt.
+
+Die allgemeine Inventur meldet jetzt acht Hinweise. Alle wurden eingeordnet: drei vermeintliche alte Skin-ID-Verweise betreffen die weiterhin gültige Manifest-ID bzw. eine vorhandene GTO-Datei; drei Hinweise betreffen Kommentarumfang; zwei betreffen die noch zu klärenden absoluten Entwickler-Keymap-Pfade. Diese acht Hinweise sind keine acht nachgewiesenen Kodi-Inkompatibilitäten. Beleg: `kodi22_inventory/remaining_inventory_flags_review.json`. Die Prüfung von 165 aktiven Manifest-/Skin-XML-Dateien bleibt ohne Fund in den hinterlegten Kompatibilitätsregeln.
+
+## Musikbewertung: Ersatz des alten Bildlabels geprüft
+
+Der Umbau von `Player.StarRating` auf `MusicPlayer.UserRating` und die vorhandenen Zehn-Punkte-Grafiken besteht acht sichtbare Kodi-Fälle: Bewertungen 0/1/7/10 jeweils Standard/Vinyl. Echte Metadaten des spielenden ListItem, keine ersetzten Skin-Eingangslabels. Bei 0 greift die Ersatzgrafik, nach weiteren Titelwechseln jeweils die passende positive Bewertung. Keine Bibliotheksänderung und kein externer Add-on-Eingriff. Persistenz in der Bibliothek und Internetstream-Sonderfälle sind damit nicht geprüft. Vollständige Belege und entfernte Testhelfer im Laufzeitbericht.
+
+## Add-on-Information: System- und manuelle Herkunft geprüft
+
+Der echte Informationsdialog zeigt für den eingebauten AAC-Encoder `Source: System` und für die unveränderte Artist-Slideshow-Kopie `Source: Manual`, jeweils passend zum produktiven Herkunftslabel. Enabled-Status und einseitige Beschreibungen stimmen ebenfalls; beide Seitenbedingungen sind dabei falsch. Mehrseitige Texte, Repository-Herkunft und weitere Lifecycle-/Statuszustände bleiben offen. Kein anderes Add-on gestartet oder geändert; Screenshot-Hook entfernt, Kodi beendet. Belege im Laufzeitbericht.
+
+## Player.Muted: echte Zustandswechsel geprüft
+
+Die native Mute-Aktion auf Home bestätigt die ersetzte Bedingung: stumm wahr mit sichtbarer stummer Lautstärkeanzeige, nach Aufheben falsch mit geschlossener Anzeige. Originale Lautstärke und Mute-Zustand wiederhergestellt. Bilder belegen die Endzustände; exakter Animationsverlauf, Wiedergabe-/Passthrough-/OSD-Kontexte bleiben ungetestet. Screenshot-Hook entfernt und Kodi beendet; Belege im Laufzeitbericht.
+
+## Verfügbarkeit der noch benötigten Testdaten
+
+Die getrennte Installation wurde lesend inventarisiert: 65 Add-on-Manifeste insgesamt, aber kein Disney+, PVR-Client, Wetteranbieter, ExtendedInfo oder Skinhelper Ping. Wetteranbieter-Einstellung leer, keine eingetragenen Medienquellen, Film-/Serien-/Episoden-/Song-/Albumtabellen leer. Beleg: `kodi22_inventory/isolated_test_readiness.json`. Dies beschreibt ausschließlich das Testprofil, nicht Verfügbarkeit oder Konfiguration der ursprünglichen Installation oder des Netzwerks. Fehlende Anbieter sind kein Inkompatibilitätsnachweis.
+
+Für reale Provider-/SMB-Tests ist eine abgestimmte Testkonfiguration oder ein extern geliefertes Testergebnis nötig; dazu wurde nach dem Vorgehen gefragt, ohne Zugangsdaten anzufordern. Der lokale Datenanteil kann unabhängig weitergehen: Ein eigener Testfilm mit lokaler NFO und vorhandenen Testbildern ist vorbereitet (`kodi22_runtime/movie_fixture_metadata.json`), und inzwischen nativ in die Testbibliothek aufgenommen. Grunddarstellung, Wiedergabe und Fokuskorrektur sind unten dokumentiert; weitere Versionsaktionen bleiben offen. Kein fremdes Add-on und keine ursprüngliche Bibliothek wurden verändert.
+
+## Videoversions-Dialog: native Daten und Fokus korrigiert
+
+Der eigene Testfilm ist inzwischen über Kodis Inhaltseinstellungen mit lokalem NFO-Anbieter aufgenommen; die getrennte Bibliothek enthält einen Film. Der echte Versions-Manager zeigt die Standardfassung, lokale Bilder und Laufzeit. Native Play-Aktion mit dieser AVI bestätigt.
+
+Ein ungültiger Links-Verweis 9001 und ein im Kontext wirkungsloser gruppenweiter Rückweg wurden durch explizite Ziele korrigiert: Liste → Gruppe 101, alle neun Knöpfe → Liste 50. Rückwege von Play/Add version und Weg über den Scrollbalken im sichtbaren Kodi bestanden. Keine Kodi-API-Entfernung behaupten. Der Grundfall mit mehreren Versionen einschließlich Hinzufügen, Entfernen, Standard-/Typwechsel und Wiedergabe ist inzwischen geprüft (Ergänzung unten). Offen bleiben Ungroup, Extras, eigene Bildauswahl und leere Listen. Belege im Laufzeitbericht und `kodi22_inventory/versions_navigation_review.json`.
+
+Nutzerentscheidung zur Integrationsvorbereitung: Testprofil gemeinsam einrichten. Welcher Dienst mit „login“ gemeint ist, wurde zur Klärung gestellt; bis zur Antwort keine dienstabhängige Anmeldung ausführen.
+
+## Videoversions-Manager: Verwaltungsaktionen und Vorschau geprüft
+
+Mit einer zweiten selbst erzeugten Datei nativ geprüft: Hinzufügen als Extended Edition, Standardfassung wechseln, tatsächliche Wiedergabe der gewählten MKV mit drei Kapiteln, Typwechsel auf Director's Cut, ursprüngliche AVI wieder als Standard und zusätzliche Bibliotheksfassung entfernen. Ein Film/eine Fassung bleiben; beide Testdateien bleiben erhalten. Keine direkte Datenbankmanipulation.
+
+Zusätzlich den falschen Bildkontext der großen Vorschau korrigiert: neue Variable `VideoManagerArtwork` bevorzugt Poster/Thumb der ausgewählten Liste 50 und fällt danach auf das bisherige Verhalten zurück. Im sichtbaren Kodi wechselt die große Vorschau jetzt passend zwischen den Fassungen. Dies ist ein Skin-Kontextfehler, keine API-Entfernung. Belege/Quellen: `kodi22_inventory/video_manager_artwork_review.json` und Laufzeitbericht.
+
+Offen bleiben Ungroup, Extras, eigene Bildauswahl, leere Listen und neue Laufzeitfälle für nicht ladbares/fehlendes Artwork. Test-Hooks und Beobachtungs-ID entfernt, Kodi-Prozessende und XML-Abgleich bestätigt.
+
+## Filminformation und Extras (2026-11-03)
+
+Zusätzlicher nativer Dialogtest: Hauptmenü-Ziele 1501 → Widget Settings 1500 → Back 1501 → Home für Musik bestanden, ohne Einstellungen zu ändern. Topmost-Bedingung und sichtbare Gruppen wechseln passend; HomeButton wird beim Schließen geleert. Dies schließt den grundlegenden Stapeltest des ersetzten `Window.IsTopMost`-Alias, nicht die übrigen Widget-Einstellungen/Kategorien. Belege und Entfernung des temporären Start-Timers im Laufzeitbericht (`widget_dialog_stack_checks.json`, `widget_dialog_stack_cleanup.json`).
+
+Die Darsteller-Schaltfläche verwendete fälschlich die native Extras-ID 15. Sie und ihre Fokusbedingungen verwenden jetzt ID 5; Extras hat einen eigenen Film-Knopf 15. Der echte Informationsdialog bestätigt Darsteller/Handlung, Schauspielerliste und getrennten Extras-Aufruf. Dies ist ein falscher Control-Vertrag, keine entfernte API.
+
+Extras nativ geprüft: Hinzufügen bei vorhandenen Extras, Umbenennen, tatsächliche Datei wiedergeben und Entfernen. Das erste Extra aus einem frisch geöffneten leeren Manager lässt den geprüften Kodi-22-RC1-Stand abstürzen, auch mit unverändertem Estuary. Vier Dumps haben dieselbe Exception/Adresse. Eine versuchte Änderung der Artwork-Ersatzgrafik half nicht und wurde zurückgenommen. Die Quellcodeanalyse spricht für fehlende Auswahlinitialisierung im Kodi-Dialog; ohne symbolischen Stack ist die genaue Ursache nicht abschließend bewiesen.
+
+Skin-Entscheidung: Den unsicheren ersten Add-Aufruf bei leerer Extras-Liste ausblenden, Einschränkung auf Deutsch/Englisch anzeigen und Schließen anbieten. Ein Skin-Timer korrigiert den vom nativen Dialog auf den versteckten Knopf gelegten Fokus. Er nutzt das unterstützte `Window.IsDialogTopmost`. Sichtbar bestätigt: null Einträge, Add unsichtbar/unfokussiert, Schließen sichtbar/fokussiert und Rückkehr zur Filminformation durch Bestätigen. Vorhandene Extras bleiben verwaltbar. Schutz erst nach belegter Kodi-Korrektur und bestandenem frischen Leerlisten-Test zurücknehmen; keine erfundene Versionsgrenze.
+
+Belege und Quellen im Laufzeitbericht/Audit. `extras_compatibility_guard_checks.json` zeigt noch den inzwischen korrigierten Fokusfehler; final maßgeblich sind `extras_empty_focus_checks.json`, `extras_empty_guard.png` und `extras_guard_cleanup.json`. Test-Kodi beendet, Aufnahme-Timer entfernt, 164 XML-Dateien und beide Sprachdateien ohne Abweichung abgeglichen. Kein fremder Add-on-Code/Core geändert. Offen bleiben unter anderem Ungroup, eigene Bildauswahl, Entfernen des letzten Extras mit dem neuen Fokus-Timer und reale Provider-/SMB-/PVR-/Wetter-Tests. Frühere Absätze mit „Extras offen“ beschreiben den damaligen Stand.
+
+## Ergänzung: direkte Control-Eigenschaften
+
+119 unterschiedliche direkte Kindtags aktiver Controls gegen den Piers-Control-Loader und ausgewählte delegierte Lader geprüft. Tippfehler `textwidht` am Home-Serverzähler zu `textwidth` korrigiert; Breite 40 wird damit erstmals wirksam. Ignoriertes RSS-`highlightcolor` und drei ignorierte Fixedlist-`wraparound`-Angaben entfernt. Vier statische Prüfer ohne Befund; drei gezielte Regeln ergänzt. Diese Prüfung ist keine vollständige typabhängige XML-Schemavalidierung und belegt keine historische API-Entfernung. Kontrollierte Darstellung mit Zählerwerten 0/1/10 inzwischen sichtbar geprüft; echte Statuslieferung bleibt offen. Beleg: `kodi22_inventory/control_property_review.json`.
+
+Kodi-23-Skinning-Änderungsseite mit Generierungsstand 3. November 2026 erneut geprüft: weiterhin nur `gamewindow`-`pixels` als Entfernung dokumentiert; der Skin enthält die bereits umgestellten Screenshot-Art-Pfade. Keine Aussage über unveröffentlichte künftige Entfernungen.
+
+## Sichtprüfungen: Dashboard und Serverzähler
+
+Dashboard-Zustände alle Zusatzzeilen aus, vier Favoriten-Zeilen an und gemischt 2/4 an sichtbar geprüft. Menüauswahl, Parent-Sichtbarkeit und Fokus bestätigt; leere Favoriten-/Platzhalterdaten, keine echte Provider-Aktion. Serverzähler mit simulierten 0/1/10 geprüft; Anbieterbedingung nur in Skin-Testkopie gelockert und danach wiederhergestellt. Echte Ping-Statuslieferung weiterhin offen. Testprofil bytegenau zurückgesetzt, alle 164 XML entsprechen dem Workspace, reguläres Ende ohne ERROR-Zeilen. Belege im Laufzeitbericht und `home_dashboard_cleanup.json`.
+
+## Priorität: belegte Schnittstellenmigration
+
+Weitere Arbeit konzentriert sich auf entfernte/veraltete Kodi-APIs, veröffentlichte künftige Entfernungen und nachweislich ungültige Skin-Aufrufe externer Schnittstellen. Allgemeine Ressourcenbereinigung und Darstellungsfunde bilden keinen zusätzlichen Pflichtumbau. Abgleich der expliziten GUIInfoManager-Markierungen in Piers/master: dieselben acht veralteten Namen, keine aktiven Treffer. Die 39 Einträge der zusätzlichen Entfernungshistorie sind durch 37 benannte Prüffälle und die vorhandene on/off-Atomprüfung abgedeckt; 35 neue Regeln ergänzen den bestehenden Prüfer. Neun unterstützte/ähnliche Namen ohne Fehlalarm. Aktueller Skin in diesem begrenzten Umfang ohne Treffer (`info_deprecation_history_review.json`). Noch offene dynamische Verträge und konkrete Abnahmen bleiben gesondert zu prüfen; keine pauschale Abschlussbehauptung.
+
+## Schnittstellenkorrektur: Liedtext-Auswahl
+
+Leeres RunScript-Ziel nach Abbruch der Add-on-Auswahl in beiden bisherigen Skin-Aufrufketten reproduziert und beseitigt. Auswahl ist jetzt ein eigener Schritt; danach startet ein weiterer Klick den gewählten Anbieter. Start-/Stop-Schalter ohne Auswahl deaktiviert. Keine Änderung am Lyrics-Anbieter; RunScript mit Lyrics-Erweiterungspunkt bleibt unterstützt. Abbruchketten in nativer Testansicht bestanden, echter Start/Stop bei Audio und vollständige MusicOSD-Darstellung bleiben offen. Beleg: `lyrics_action_review.json`.
+
+## Liedtext-Folgelauf: Nachweisgrenzen
+
+Echter Lyrics-Einstieg über native Auswahl und weiteren Skin-Klick im Standardprofil bestätigt (culrc.force von leer auf TRUE). Keine neue Worker-Starttransition: Anbieter war beim Start bereits running. Gewähltes Ziel aktiviert die Controls im geöffneten MusicOSD-Untermenü. Lyrics-GUI/Stop/Restart bleiben offen: Testkontext war Home statt Visualisierung; Stop-Workerzustand im INFO-Log nicht belegt. Profil und Wiedergabe zurückgesetzt. Zehn alte Fensternamen im Log stammen aus externer userdata-Keymap, nicht aus Skin-XML; keine Änderung daran. Quellen/Belege: `lyrics_action_review.json`, `lyrics_standard_cleanup.json`.
+
+## Ergänzung: Fensterargumente in Bedingungen
+
+Die bisherige Aktionszielprüfung um wörtliche Argumente von Window-Bedingungen und Window(...).Property ergänzt. Unterschiedliche Piers-Auflösung für XML-Dateinamensabfrage und Property-Fensterqualifikator anhand des Quellcodes berücksichtigt. 1.020 Referenzkontexte ohne Fund; bekannte Namen/IDs belegen weiterhin keine Laufzeitregistrierung. Elf absichtlich ungültige Fälle erkannt, gültige/ähnliche Formen akzeptiert, dynamische Referenz als ungeprüft ausgewiesen. Prüfer liefert bei Funden jetzt Exitcode 1. Keine neue Skin-XML-Änderung nötig; externe Keymap unverändert. Belege: `window_info_targets_review.json`, `window_info_validation_checks.json`.
+
+## Kommende Änderungen: tatsächlicher Parser-Abgleich
+
+Aktuellen master-Quellstand der GUIInfoManager-Registrierung mit Piers verglichen: 30 Tabellen mit jeweils passender deklarierter Anzahl, keine entfernten Namen, sechs neue Namen für Spiele. Acht Translate-Funktionskörper geprüft: sechs unverändert, zwei mit erhaltener fanart-Konstante bzw. zusätzlicher optionaler RetroPlayer-Parameterprüfung. Der Skin nutzt diesen geänderten RetroPlayer-Vertrag nicht. Aktueller Namens-/Bedingungsabgleich mit den master-Erweiterungen ohne neue Kandidaten. Kein weiterer Produktumbau aus diesem Befund nötig. Grenzen und Nachweise: `master_info_compatibility_review.json`, `kodi_master_info_tables.json`; kein Kodi-23-Laufzeittest und keine Aussage über unveröffentlichte Änderungen.
+
+## Zukunftsabgleich: tatsächlich verwendete Builtins
+
+Zwölf aktuelle master-Builtin-Module geprüft: alle 61 vom Skin verwendeten eingebauten Aktionsnamen vorhanden, keine geänderte Mindestargumentzahl. Bestehender Aktionsprüfer gegen diese Maps ohne Fund. Entfernte TakeScreenshot-sync-Option wird hier nicht aufgerufen; dokumentiertes PlayDVD bereits ersetzt. RunScript-Fallback bleibt als veraltet eingeordnet, StopScript-TODO nicht zu einer Entfernungsankündigung umgedeutet. Eingabeaktionen weiterhin Piers-Snapshot; Handler-Semantik nicht pauschal bestätigt. Belege: `master_builtin_compatibility_review.json`, `kodi_master_used_builtin_commands.json`.
+
+## Add-on-Metadaten: bislang offene Property-Herkunft geklärt
+
+Native Erzeugerkette und generischen Property-Leser nachgeprüft. Fünf dort nicht erzeugte Felder aus AddonInfoList entfernt: Dependencies, License, Homepage, Provider und StarRating. Kein Entfernen der generischen Property-API behauptet, keine Änderung an Add-ons. ID/Status und dedizierte Labels bleiben. Speziell extern eingespeiste Properties würden diese fünf Zeilen künftig nicht mehr erhalten; für die verwendeten nativen Ansichten kein solcher Erzeuger belegt. Übrige Include-Struktur unverändert, vier statische Prüfungen und Referenzinventur bestanden. Kein neuer Kodi-Lauf allein für die Entfernung dieser nur bei gefüllter Property sichtbaren Zeilen. Beleg: `addon_metadata_property_review.json`.
+
+## ExtendedInfo: Freitext als ein Argument erhalten
+
+Sieben unsicher zusammengesetzte Skin-Aufrufe korrigiert: drei gemeinsame Suchtexte per ESCVAR, vier einzelne name/tvshow-Felder per ESCINFO. Native Vorher-/Nachher-Probe bestätigt drei fehlerhafte Komma-Baselines und 16 erfolgreiche neue Argument-Roundtrips. Keine Änderung am Add-on. Tatsächlicher ExtendedInfo-Request bleibt separat offen. Item-Kontext nach unverändertem Close inzwischen für Film, Album und Titel nativ bestätigt (`dialog_context_checks.json`). Testprofil/Testkopie vollständig zurückgesetzt, statische Prüfungen und Referenzinventur bestanden. Belege: `argument_escaping_review.json`, `argument_escape_native_checks.json`.
+
+## Nutzerbestätigung zu CoreELEC
+
+Am 3. November bestätigt der Nutzer: „ja, das funktioniert alles auf coreelec.“ Dies betrifft die besprochenen CoreELEC-spezifischen Skin-Funktionen. Weitere Geräteabfragen entfallen. Das ist eine Nutzerbestätigung, kein eigener Versions-/Bootprotokolltest; die benötigte Verknüpfung bleibt erhalten. Frühere Abschnitte mit offenem CoreELEC-Gerätetest sind insoweit überholt (`internal_reboot_review.json`).
+
+
+## ExtendedInfo: nativer Dialogkontext (2026-11-04)
+
+Drei sichtbare Tests in getrenntem Kodi bestanden: Film-Info, Album-Info und Song-Info. Originales `Action(close)` und die produktiven Suchvariablen bleiben erhalten; nur der Add-on-Aufruf wird in den Testkopien durch `SetProperty` ersetzt und dessen Anbieter-Sichtbarkeitsbedingung freigegeben. Alle anderen Bedingungen bleiben wirksam. Die erfassten Argumente stimmen vollständig mit den vor dem Klick gelesenen Item-Daten überein; Album und Song enthalten Kommas und Anführungszeichen. Deshalb kein Umbau der Aktionsreihenfolge nötig. Kein tatsächlicher ExtendedInfo-Start oder externer Dienst getestet.
+
+Kodi regulär beendet, isolierte Musikdatenbank und Einstellungen bytegleich wiederhergestellt, alle 164 Test-XML stimmen mit dem Projekt überein, Produktions-XML unverändert. Belege: `dialog_context_fixture.json`, `dialog_context_checks.json`, drei `dialog_context_*.png`, `dialog_context_probe.py`.
+
+Verfügbarkeit separat belegt: offizielle Omega-Seite führt ExtendedInfo 6.0.9; das Maintainer-Manifest nennt 6.1.01~beta.1 und Piers-Anpassungen. Dies belegt keine vollständige Kodi-22-Laufzeitkompatibilität. Quelle/Abgrenzung: `kodi22_inventory/extendedinfo_availability_review.json`.
+
+
+### ExtendedInfo-Vertrag: wirkungsloser Parameter entfernt
+
+Die fünf verwendeten Aktionen (`youtubebrowser`, `extendedinfo`, `extendedtvinfo`, `seasoninfo`, `extendedepisodeinfo`) sind im geprüften Maintainer-Quellcode vorhanden. `silent=True` wird in der Staffel-/Episoden-Aufrufkette nicht gelesen oder weitergereicht und wurde aus beiden Skin-Aufrufen entfernt. Keine Kodi-API-Entfernung und keine Änderung des Add-ons. Die addoninterne Entfernung von Anführungszeichen bleibt ausdrücklich dokumentiert; der native Argumenttest belegt nur den Kodi-Transport. Quellen und Grenzen: `kodi22_inventory/extendedinfo_interface_review.json`.
+
+
+### Eingabeaktionen im veroeffentlichten Entwicklungsstand (2026-11-04)
+
+Piers und aktueller master enthalten dieselben 219 Eingabeaktions-Zuordnungen; die geprueften ActionTranslator.cpp-Dateien sind bytegleich. Keine entfernten Namen oder geaenderten symbolischen Ziele. 35 im begrenzten Aktionsscan verwendete Eingabeaktionsnamen bleiben vorhanden. Der bisherige Piers-Pruefdatensatz hatte die zehn REMOTE-Ziffern-Aliase number0 bis number9 ausgelassen; Datensatz vervollstaendigt. Keine Skin-Aenderung daraus erforderlich. Handlerverhalten, variable Aktionswerte und externe Benutzer-Keymaps sind dadurch nicht vollstaendig geprueft. Belege: `kodi22_inventory/master_input_action_review.json`, `kodi_master_input_actions.json`.
+
+
+## Echter ExtendedInfo-Einstieg (2026-11-04)
+
+ExtendedInfo 6.0.9 über Kodis offiziellen Repository-Installer ausschließlich im getrennten Profil installiert. Alle 984 Archivdateien stimmen mit der Installation überein; kein Add-on-Code geändert. Die installierte process.py bestätigt alle fünf verwendeten Aktionen und die Nichtauswertung von silent.
+
+Der produktive Film-Info-Knopf 440 öffnet nach unverändertem Close den echten YouTube-Browser mit der vollständigen Suche „Skin Audit Movie 2026“. Logparameter und sichtbare Überschrift stimmen überein. YouTube lehnt die Datenabfrage wegen fehlender API-Identität ab; keine erfolgreichen Ergebnisse oder Wiedergabe behauptet und keine Zugangsdaten eingerichtet. Zurück führt in Videos. Vier als ERROR geloggte Python-Syntaxwarnungen stammen aus dem unveränderten Anbieter. Zusätzlich ein videodb-Verzeichnisfehler vor Anbieterstart, Ursache nicht abschließend bestimmt. Kein fehlerfreier Loglauf behauptet.
+
+Kodi beendet, Profileinstellungen bytegleich zurückgesetzt und alle 164 Skin-Testdateien mit dem Projekt abgeglichen. Anbieter und Abhängigkeiten bleiben nur im getrennten Profil installiert. Belege: `extendedinfo_real_summary.json`, `extendedinfo_real_movie.json`, `extendedinfo_real_movie.png`, `kodi22_inventory/extendedinfo_interface_review.json`.
+
+
+## Idle-Abschaltsperre und Repository-Herkunft (2026-11-04)
+
+Sichtbarer nativer Test im getrennten Profil bestanden: Bei vorübergehend auf 120 Minuten gesetzter Abschaltwartezeit wird die echte System.HasShutdown-Bedingung erfüllt. Ohne Sperre erscheint nur „Inhibit idle shutdown“, der native Klick setzt System.IdleShutdownInhibited auf true. Danach erscheint nur „Allow idle shutdown“, dessen Klick setzt den Zustand wieder auf false. Keine Ausschalt-/Neustart-/Standby-Aktion ausgewählt. Wartezeit und Sperr-Ausgangswert bereits im laufenden Test zurückgesetzt, nach Prozessende die gesicherten Profil-Dateien bytegleich wiederhergestellt.
+
+Die normale Add-on-Information von ExtendedInfo 6.0.9 zeigt als Herkunft „Kodi Add-on repository“, Status Enabled und Lifecycle Normal. Damit sind System, Manual und Repository als Herkunft geprüft. Beschreibung bleibt einseitig; positive Mehrseitenfälle und abweichende Lifecycle-Zustände bleiben offen.
+
+Zwei Vorläufe des Testhelfers erfassten nur den ersten Sperrwechsel, weil das Schließen/Wiederöffnen des Menüs falsch synchronisiert war; diese sind als idle_origin_checks_draft1/2.json erhalten und keine Skin-Fehlernachweise. Finaler Test schließt ausschließlich shutdownmenu und wartet dessen Sichtbarkeit ab. Finalbeleg: idle_origin_checks.json, idle_allowed.png, idle_inhibited.png, addon_info_repository.png, run_idle_origin_probe.py. Alle 164 Test-XML entsprechen dem Projekt; keine Skin- oder Add-on-Korrektur aus diesem Test erforderlich.
+
+
+## Echte Ping-Statusanbindung (2026-11-04)
+
+Unveränderten installierten Anbieter 4.1.2 in das getrennte Kodi-Profil kopiert, keine Benutzereinstellungen übernommen. Testdaten nur 127.0.0.1 auf Platz 1 und 10, Namen „Audit Loopback“, sämtliche MAC-Felder leer und Hintergrunddienst aus. Der produktive WOL-Onload ruft den echten Statusanbieter auf. Beide Ziele werden mit Status on und servercount/serveron=2 angezeigt, daneben Settings/Refresh; kein Sammelweck-Eintrag ohne MAC. Ein eingespeister Altwert auf Platz 5 verschwindet.
+
+Zweiter regulärer Start mit nur Platz 1: servercount/serveron=1, Platz 10 leer und aus der Liste entfernt. Danach Anbieter deaktiviert und den Dialog neu geöffnet: nur Settings, Zähler und zuvor gesetzter Altwert auf Platz 10 leer. Keine Gerätezeile ausgewählt und kein WakeOnLan-Aufruf. Die beiden Laufzeitlogs enthalten keine ERROR-Zeile und enden regulär.
+
+Beide Kodi-Prozesse beendet, temporäre Anbieter-Konfiguration entfernt, Profileinstellungen bytegleich wiederhergestellt und 164 XML-Dateien mit dem Projekt abgeglichen. 17 kopierte Anbieter-/Ressourcendateien sowie die Originaldateien stimmen mit den vorher erfassten SHA-256-Werten überein. Anbieter bleibt unverändert nur als zusätzliche Testinstallation vorhanden. Belege: `kodi22_runtime/ping_provider_checks.json`, `ping_provider_two.png`, `ping_provider_one.png`, `run_ping_provider_probe.py`.
+
+Grenzen: kein echter Weckauftrag, keine MAC-/Paketwirkung, kein Hintergrundintervall, keine fehlgeschlagene Probe und kein live bearbeiteter Einstellungsdialog. Ältere Anbieterstände bleiben ungeprüft. Der Anbieter 4.1.2 räumt fehlende Plätze selbst auf; die erfolgreiche Statusaktualisierung belegt hier Skin und Anbieter zusammen, nicht allein den Skin-Clear-Schritt.
+
+
+## Lyrics: sofortiges Schließen und verstecktes Fokusziel korrigiert (2026-11-04)
+
+Der echte Visualisierungs-Test findet einen zusätzlichen Skin-Fehler: Die direkten Startknöpfe MusicOSD 701 und PlayerControls 609 starten den Anbieter, lassen den Skin-Schalter Lyrics aber aus. Der versteckte Standardknopf 99 im skineigenen script-cu-lrclyrics-main.xml führt dann sofort Action(back) aus. Der unveränderte Anbieter findet die lokale LRC-Datei, sein Fenster schließt dennoch. Beide konfigurierten Startwege setzen jetzt Lyrics vor RunScript. Die leere Auswahl bleibt ein eigener Schritt; deren Abbruch startet weiterhin keinen Anbieter und setzt den Schalter nicht.
+
+Zweiter belegter Fehler: Bei eingeschaltetem Lyrics-Schalter fokussierte Knopf 99 immer Control 101. Dieses Seiten-Control ist bei sichtbarer Lyrics-Liste ausgeblendet; Kodi protokollierte den ungültigen Fokus zweimal, einmal pro Einstieg. Diese Umleitung entfernt. CU LRC setzt selbst den Fokus auf die fertig gefüllte Liste 110. Die Bedingungen der Radio-Toggle-Kette 2401 bleiben unverändert: Kodi wählt die passenden Aktionen vor dem Toggle aus, sie dürfen nicht aufgrund einer angenommenen nachträglichen Neuauswertung vertauscht werden.
+
+Finaler sichtbarer Test mit unverändertem CU LRC 6.7.6, stiller selbst erzeugter WAV und drei eigenen LRC-Zeilen bestanden: zunächst Lyrics aus, MusicOSD-Start aktiviert den Schalter und zeigt den Text. Nativer Stop 2402 schließt das Lyrics-Fenster und leert running/guirunning/Text/Quelle. Danach erneut Lyrics aus, PlayerControls 609 vom Hauptmenü gestartet; beim Rückwechsel in die Visualisierung erscheinen die lokalen Texte erneut. Fokus liegt auf 110. Kein aktiver Hintergrunddienst und keine Online-Scraper getestet. Der frühere Standardprofil-Fall mit bereits laufendem Dienst bleibt davon getrennt.
+
+Finales Laufzeitlog ohne ERROR-Zeilen oder ungültige Control-101-Fokusmeldungen. Alle vier statischen Prüfer ohne Fund; neue Inventur ohne fehlende Includes, Variablen, Strings oder statische Texturen. 1.615 wörtliche Aktionsreferenzen im begrenzten Aktionsscan. Kodi beendet, Profil- und Anbieter-Testeinstellungen wiederhergestellt, alle 164 Skin-Testdateien abgeglichen. 223 Anbieter-/Abhängigkeitsdateien mit Originalen und Vorher-Hashes verglichen; keine Add-on-Korrektur. Frühere Fehlversuche des Testhelfers betrafen zusätzlich den Visualisierungs-Toggle, die lokale Dateisuchkonfiguration, den Container-Lesezugriff und den OSD-/PlayerControls-Aufrufkontext; diese sind keine weiteren Skin-Fehlernachweise.
+
+Belege: `kodi22_inventory/lyrics_visibility_gate_review.json`, `kodi22_runtime/lyrics_visualisation_before_enable_fix.json`, `lyrics_visualisation_before_focus_fix.json`, final `lyrics_visualisation_checks.json` und `lyrics_visualisation.png`. Testhelfer: `run_lyrics_visualisation_probe.py`.
+
+
+## Dynamische Add-on-Argumente: Folgeprüfung (2026-11-04)
+
+24 aktive XML-Aufrufstellen mit dynamischem RunScript/RunAddon und sechs dynamische Plugin-URL-Stellen erfasst. Die Freitextfelder der sieben ExtendedInfo-Aufrufe sind bereits geschützt; weitere dynamische Aufrufe verwenden ausgewählte Add-on-IDs beziehungsweise Fritz-Gerätekennungen. Dies ist keine vollständige Auswertung beliebiger konfigurierter Aktionen und keine Geräte-/Backend-Freigabe.
+
+FritzAct-Sonderfall: Das geprüfte Matrix-Manifest deklariert nur einen Script-Einstieg. Kodis PluginDirectory::StartScript verwendet in Piers und aktuellem master ausdrücklich einen UNKNOWN-Fallback nach der PLUGIN-Abfrage. Der Skin-Content-Aufruf wird deshalb nicht allein wegen des fehlenden Plugin-Manifestpunkts entfernt; keine angekündigte Entfernung dieses Fallbacks belegt.
+
+Neuer offener Fund bei Auto Completion: Der Skin hängt den Tastaturtext unverändert an id= an, der aktuelle Anbieter liest die Query mit parse_qsl. Fünf native Tastatureingaben bestätigen, dass Control.GetLabel(312).index(1) den Text unverändert liefert. Eine anschließende Offline-Reproduktion der produktiven Query und des Anbieter-Parsers verändert A&B zu A, C++ zu C mit zwei Leerzeichen und 100%20real zu 100 real; einfacher Text und Unicode bleiben korrekt. Der Anbieter war während des sichtbaren Tastaturtests deaktiviert, es wurde keine Vorschlagsanfrage gesendet. Aktivierungszustand und Profil anschließend wiederhergestellt, Kodi beendet.
+
+Noch keine Korrektur dieser URL-Kodierung: Auch die vom Anbieter erzeugten Auswahl-URLs sind vor einer Skin-seitigen Lösung zu berücksichtigen. ESCINFO/ESCVAR schützen Built-in-Argumente, ersetzen aber keine URL-Kodierung. Kein Add-on geändert, keine funktionierende Integration pauschal entfernt. Belege und Quellen: kodi22_inventory/dynamic_addon_argument_review.json, kodi22_runtime/keyboard_query_native_checks.json und keyboard_query_native.png.
+
+
+## Auto Completion: Skin-Anfrage URL-kodiert (2026-11-04)
+
+Die bisher rohe Tastatureingabe in der Skin-URL wird jetzt im Skin mit urllib.parse.quote kodiert. Ein kleiner eigener Helfer unter resources/scripts/autocomplete_query.py läuft nur während der sichtbaren Tastatur. Er liest bei versteckter Eingabe oder deaktiviertem Anbieter keinen Text und veröffentlicht nur den kodierten Wert im Tastaturfenster. Öffnen/Schließen leert die temporären Werte und invalidiert ältere Aufrufe. Keine Texte als RunScript-Argumente und keine eigenen Log-/Dateiausgaben. Manifest ergänzt um die optionale Python-3-API-Abhängigkeit; Auto Completion bleibt optional.
+
+Sichtbarer Test mit unverändertem AutoCompletion 2.1.2 und lokalem Wörterbuch bestanden: sechs Texte mit &, +, Prozentfolgen, Kommas, Quotes/Backslash und Unicode erhalten nach der Query-Dekodierung exakt ihren ursprünglichen Wert. Ein echter lokaler Vorschlag (help) wird weiterhin ins Eingabefeld übernommen. Bei versteckter Eingabe beziehungsweise deaktiviertem Anbieter starten Helfer und Anfrage nicht. Normaler Dialogschluss leert Query/Owner; Helfer endet regulär. Finale Prüfung ohne ERROR-Zeilen. Kodi beendet, Anbieter-Aktivierung und Testeinstellungen vollständig zurückgesetzt; 164 XML, Skin-Manifest und Helfer abgeglichen, Anbieterquellen unverändert.
+
+Ein lediglich zur Beobachtung ergänztes, außerhalb des Bilds liegendes Label 1197 in der Testkopie liest die produktive Variable; es wurde danach entfernt. Der erste Versuch, $VAR direkt über JSON-RPC abzufragen, war kein gültiger Variablen-Test und ist separat als Draft erhalten. Vier statische Prüfungen ohne Fund, Inventur ohne fehlende Includes/Variablen/Strings/statische Texturen.
+
+Abgrenzung: Die vom Anbieter selbst erzeugten selectautocomplete-URLs setzen search_string weiterhin roh ein. Dieser zweite Fehler liegt im unveränderten Anbieter; keine pauschale Freigabe solcher Auswahl-URLs mit reservierten Zeichen. Der normale lokale Auswahlfall ist geprüft. Kein externer Vorschlagsdienst getestet und kein anderes Add-on korrigiert. Quellen und Belege: kodi22_inventory/autocomplete_query_review.json, kodi22_runtime/autocomplete_query_checks.json, autocomplete_query_native.png und run_autocomplete_query_probe.py.
+
+
+## Extra-Fanart: native Parent-Pfade von Wrappern (2026-11-04)
+
+Quellvertrag präzisiert: ListItem.Path ist hier der von Kodi berechnete Elternpfad; ListItem.FolderPath liefert dagegen die vollständige Eintrags-URL. Player.FolderPath verwendet ebenfalls die native Elternpfad-Hilfe. GetParentPath entpackt stack und den URL-dekodierten ersten multipath-Eintrag rekursiv. Die Plugin-Elternbildung entfernt Optionen oder die Route; im getesteten Fall ergibt sich die Add-on-Wurzel. Deshalb ist ein bloßer Austausch der verwendeten Labels oder eine zusätzliche pauschale Protokollsperre nicht gerechtfertigt.
+
+Sieben kontrollierte Fälle im sichtbaren Kodi bestanden: direkter Plugin-Dateipfad, stack mit zwei Plugin-Dateien, kodierter multipath-Pluginpfad, multipath mit kodiertem stack sowie lokale Datei/stack/multipath. Die vier Pluginfälle ergeben plugin://script.extendedinfo/ als ListItem.Path und einen leeren produktiven ListItemExtraFanartPath. Die drei lokalen Fälle behalten den Elternordner plus extrafanart. Keine Skin-Variable oder Bedingung für den Test umgeschrieben, kein Plugin ausgeführt und keine Wiedergabe gestartet. Das finale Log enthält keine ERROR-Zeile. Kodi beendet, Profileinstellungen und 164 Skin-Testdateien abgeglichen.
+
+Grenzen: generische Listeneinträge, keine tatsächliche Player-Wiedergabe solcher Wrapper, keine Medienbibliotheks-Tag-Variante, keine gemischten oder fehlerhaften Wrapper und kein echter SMB-Bildabruf. Die Standardinstallation enthält weder in sources.xml noch in beiden geprüften Videodatenbanken einen SMB-Pfad; ein erreichbares Medienverzeichnis mit extrafanart ist beim Nutzer angefragt.
+
+Der Testaufbau benötigte Korrekturen (falscher XML-Schließtag, nicht aktivierte Medienansicht, ungeeigneter Python-Labelgetter und falsche Annahme über den Plugin-Elternpfad). Frühere leere Messwerte beziehungsweise Testfehler sind keine Skin-Fehlernachweise. Final wird eine registrierte aktive Medienansicht verwendet und die gerenderten nativen Labels gelesen. Belege/Quellen: kodi22_inventory/fanart_wrapper_path_review.json, kodi22_runtime/fanart_wrapper_path_checks.json, fanart_wrapper_paths.png und run_fanart_wrapper_probe.py. Kein zusätzlicher Produktcode geändert.
+
+
+## Paketprüfung und Branch-Zwischenstand (2026-11-04)
+
+Testpaket mit dem vorhandenen externen Packer und dessen Ausschlussparametern erstellt: results und tools ausgeschlossen, globale Build-Datei unverändert, Ausgabe ausschließlich in einem neuen TEMP-Verzeichnis. ZIP enthält 294 Dateien und 29.810.236 Bytes; CRC-Prüfung bestanden. Alle 164 produktiven Skin-XML sowie Manifest und neuer Auto-Completion-Helfer stimmen bytegleich mit dem Projekt überein. Texturen stammen wie beim vorhandenen Packer aus Textures.xbt; 757 Einträge im Paket erkannt.
+
+Inventur des entpackten Pakets in einer Kodi-Verzeichnisstruktur mit unverändert kopierten Core-Sprachkatalogen: keine XML-Parsefehler, fehlenden Includes, Variablen, Strings oder statischen Texturen. Der erste Lauf ohne Kodi-Core-Verzeichnis meldete 13 Core-Strings aus dem 330xx-Bereich fälschlich als fehlende Skin-Texte; dieser Kontextfehler ist im Beleg erhalten und kein Paketdefekt. Kein neuer Kodi-Start aus dem ZIP durchgeführt; die geprüften Runtime-Dateien entsprechen den bereits sichtbaren Testläufen.
+
+Der Packer benötigt in dieser Windows-Umgebung seine bereits im Hook konfigurierte prozessbezogene ExecutionPolicy-Einstellung; außerdem wurde ausschließlich für seinen lesenden Git-Diff core.safecrlf=false gesetzt, damit die Behandlung von Zeilenendungswarnungen den Build nicht abbricht. Keine globalen Git-/PowerShell-Einstellungen geändert. Der globale Post-Commit-Hook nutzt weiterhin seine Default-Ausschlüsse und sein eigenes Ausgabeziel. Der Branch-Zwischenstand ist ohne erneuten Hook-Build gesichert, damit keine gleichnamige bestehende lokale Repository-ZIP ersetzt wird.
+
+Weitere Quellen außerhalb xml/: Farbdefinitionen, Entwickler-Keymap, mitgelieferte Sprachmetadaten und elf Smartplaylists. Die Smartplaylist-XML sind parsebar; native Typ-/Feld-/Operator- und verschachtelte Playlist-Semantik werden noch gesondert geprüft. Die Entwickler-Keymap bleibt bis zur Klärung ihrer Nutzung erhalten. Beleg: kodi22_inventory/package_review.json; genaue Build-Parameter unter package_build_context.json.

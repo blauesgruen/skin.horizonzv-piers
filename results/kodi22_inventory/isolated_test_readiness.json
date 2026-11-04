@@ -1,0 +1,41 @@
+{
+  "scope": "Read-only inventory of isolated test profile only, not the original Kodi or network availability. No secrets/source paths collected.",
+  "installed_addons_total": 65,
+  "required_integration_manifests": {
+    "disney_plus": false,
+    "pvr_clients": [],
+    "weather_providers": [],
+    "extended_info": false,
+    "skinhelper_ping": false
+  },
+  "weather_provider_setting_nonempty": false,
+  "source_counts": {},
+  "library_table_counts": [
+    {
+      "database": "MyVideos149.db",
+      "table": "movie",
+      "rows": 0
+    },
+    {
+      "database": "MyVideos149.db",
+      "table": "tvshow",
+      "rows": 0
+    },
+    {
+      "database": "MyVideos149.db",
+      "table": "episode",
+      "rows": 0
+    },
+    {
+      "database": "MyMusic84.db",
+      "table": "song",
+      "rows": 0
+    },
+    {
+      "database": "MyMusic84.db",
+      "table": "album",
+      "rows": 0
+    }
+  ],
+  "interpretation": "These real-provider tests cannot be claimed from the current empty setup. Missing installations/data do not establish incompatibility. Synthetic/partial checks retain their documented scope."
+}

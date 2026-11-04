@@ -1,0 +1,54 @@
+{
+  "scope": "Classification of all eight current general analyzer flags. Does not close outstanding runtime/integration tests.",
+  "manifest_id": "skin.horizonzv",
+  "flags": [
+    {
+      "Datei": "Home.xml",
+      "Art": "Alte Skin-ID referenziert",
+      "Detail": "skin.horizonzv.script-gto-info.xml",
+      "assessment": "Not established as obsolete: manifest ID remains skin.horizonzv; the GTO XML file exists."
+    },
+    {
+      "Datei": "Includes_DebugInfo.xml",
+      "Art": "Viel auskommentierter Code",
+      "Detail": "4 Kommentarbloecke mit <control>",
+      "assessment": "Comment-volume heuristic; XML comments are inactive, not proof of unsupported API."
+    },
+    {
+      "Datei": "Includes_SidePanel.xml",
+      "Art": "Viel auskommentierter Code",
+      "Detail": "4 Kommentarbloecke mit <control>",
+      "assessment": "Comment-volume heuristic; XML comments are inactive, not proof of unsupported API."
+    },
+    {
+      "Datei": "Includes_Systeminfo.xml",
+      "Art": "Alte Skin-ID referenziert",
+      "Detail": "skin.horizonzv",
+      "assessment": "Not established as obsolete: manifest ID remains skin.horizonzv; the GTO XML file exists."
+    },
+    {
+      "Datei": "Includes_Systeminfo.xml",
+      "Art": "Alte Skin-ID referenziert",
+      "Detail": "skin.horizonzv",
+      "assessment": "Not established as obsolete: manifest ID remains skin.horizonzv; the GTO XML file exists."
+    },
+    {
+      "Datei": "MyVideoNav.xml",
+      "Art": "Viel auskommentierter Code",
+      "Detail": "3 Kommentarbloecke mit <control>",
+      "assessment": "Comment-volume heuristic; XML comments are inactive, not proof of unsupported API."
+    },
+    {
+      "Datei": "keymaps/keyboard.xml",
+      "Art": "Hartkodierter Windows-Pfad (Entwickler-Keymap)",
+      "Detail": "D:\\Program Files\\Kodi21\\portable_data\\addons\\skin.horizonzv-omega\\scripts\\RunSetKodiWindow_min.bat\\",
+      "assessment": "Open: manual developer use was asked; legacy absolute paths remain pending clarification."
+    },
+    {
+      "Datei": "keymaps/keyboard.xml",
+      "Art": "Hartkodierter Windows-Pfad (Entwickler-Keymap)",
+      "Detail": "D:\\Program Files\\Kodi21\\portable_data\\addons\\skin.horizonzv-omega\\scripts\\RunSetKodiWindow_min.bat\\",
+      "assessment": "Open: manual developer use was asked; legacy absolute paths remain pending clarification."
+    }
+  ]
+}

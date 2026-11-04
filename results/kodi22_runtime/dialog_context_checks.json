@@ -1,0 +1,52 @@
+{
+  "scope": "Native movie/album/song item context after production Close; addon dispatch captured, addon not executed",
+  "rows": [
+    {
+      "kind": "movie",
+      "before": {
+        "ListItem.Album": "",
+        "ListItem.Artist": "",
+        "ListItem.DBType": "movie",
+        "ListItem.Title": "Skin Audit Movie",
+        "ListItem.Year": "2026"
+      },
+      "expected": "id=Skin Audit Movie 2026",
+      "actual": "id=Skin Audit Movie 2026",
+      "matches": true
+    },
+    {
+      "kind": "album",
+      "before": {
+        "ListItem.Album": "Audit Album, \"Quoted\"",
+        "ListItem.Artist": "Audit Artist, \"Quoted\"",
+        "ListItem.DBType": "album",
+        "ListItem.Title": "Audit Album, \"Quoted\"",
+        "ListItem.Year": "2026"
+      },
+      "expected": "id=Audit Artist, \"Quoted\" Audit Album, \"Quoted\"",
+      "actual": "id=Audit Artist, \"Quoted\" Audit Album, \"Quoted\"",
+      "matches": true
+    },
+    {
+      "kind": "song",
+      "before": {
+        "ListItem.Album": "Audit Album, \"Quoted\"",
+        "ListItem.Artist": "Audit Artist, \"Quoted\"",
+        "ListItem.DBType": "song",
+        "ListItem.Title": "Audit Song, \"Quoted\"",
+        "ListItem.Year": "2026"
+      },
+      "expected": "id=Audit Artist, \"Quoted\" Audit Song, \"Quoted\"",
+      "actual": "id=Audit Artist, \"Quoted\" Audit Song, \"Quoted\"",
+      "matches": true
+    }
+  ],
+  "process_id": 20536,
+  "cleanup": {
+    "process_exited": true,
+    "music_database_restored": true,
+    "profile_baseline_restored": true,
+    "all_test_xml_match_production": true,
+    "production_xml_unchanged": true
+  }
+}

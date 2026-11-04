@@ -116,7 +116,6 @@
                                     <onright>600</onright>
                                     <ondown>SetFocus(200)</ondown>
                                     <viewtype label="list">list</viewtype>
-                                    <itemgap>6</itemgap>
                                     <orientation>horizontal</orientation>
                                     <itemlayout width="45" height="45">
                                         <control type="image">
@@ -231,7 +230,6 @@
                                     <onright>600</onright>
                                     <ondown>SetFocus(200)</ondown>
                                     <viewtype label="list">list</viewtype>
-                                    <itemgap>6</itemgap>
                                     <orientation>horizontal</orientation>
                                     <animation effect="slide" end="22" condition="!PVR.CanRecordPlayingChannel">Conditional</animation>
                                     <itemlayout width="45" height="45">

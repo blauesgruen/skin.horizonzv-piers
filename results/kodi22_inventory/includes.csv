@@ -21,7 +21,6 @@ BlackStripes;Includes.xml;4
 ButtonHomeSubCommonValues;Includes_Submenu.xml;55
 Clock;Includes.xml;28
 CommonPageCount;Includes.xml;23
-ControlID;Includes.xml;0
 DashFocusedlayout;Includes_Dash_Layout.xml;3
 DashItemlayout;Includes_Dash_Layout.xml;5
 DashListLayout;Includes_Dash_Layout.xml;4
@@ -33,7 +32,7 @@ DashboardContent;Includes_Dash_Addonpath_Fav.xml;1
 DashboardLayout_Row1;Includes_Dash_Layout.xml;1
 DashboardLayout_Row1_Settings;Includes_Dash_Layout.xml;1
 DebugInfo;Includes_DebugInfo.xml;2
-DefaultDialogButton;Includes_Buttons_and_Lists.xml;168
+DefaultDialogButton;Includes_Buttons_and_Lists.xml;170
 DefaultDialogSelectLayout;Includes_DialogSelect.xml;1
 DefaultGrouplistHomemenuTargets;Includes_Buttons_and_Lists.xml;19
 DefaultGrouplistWidgetSettingsCustom;Includes_Buttons_and_Lists.xml;9
@@ -68,7 +67,6 @@ EpisodeViewtypeMusicLayouts;View_515_Episode.xml;1
 EpisodeViewtypeVideoLayouts;View_515_Episode.xml;1
 FakeButton444;Includes.xml;16
 FakeButton777_PVR;Includes_PVR.xml;5
-FakeFocusButton555;Includes.xml;0
 FakeLabelStudioClearartRating;Includes.xml;1
 FavContent;Includes_Dash_Addonpath_Fav.xml;1
 Fav_Dash;Includes_Dash_Addonpath_Fav.xml;4
@@ -99,7 +97,7 @@ GameDialogSelectSaveLayout;Includes_DialogSelect.xml;1
 GameDialogSelectViewLayout;Includes_DialogSelect.xml;2
 GlobalBackground;Includes.xml;3
 GlobalOverlay;Includes.xml;6
-HiddenButton;Includes.xml;39
+HiddenButton;Includes.xml;38
 HomeMenu;Includes_HomeContent.xml;1
 HomeMenuContent;Includes_HomeContent.xml;1
 HomeMenuCustom1;Includes_HomeContent.xml;23
@@ -203,9 +201,7 @@ HomepageWidget_Videos;Includes_Widget_Param.xml;1
 HomepageWidget_Weather;Includes_Widget_Param.xml;1
 HomepageWidget_pvr_RADIO;Includes_Widget_Param.xml;1
 HomepageWidget_pvr_TV;Includes_Widget_Param.xml;1
-InfoListLeft;Includes_BackgroundBuilding.xml;0
 InfoListPanel;Includes_BackgroundBuilding.xml;7
-InfoListRight;Includes_BackgroundBuilding.xml;0
 InfoSidePanelBackground;Includes_BackgroundBuilding.xml;4
 Info_Provider;Includes.xml;8
 Infolabel_Picture;Includes.xml;2
@@ -230,7 +226,6 @@ PVRChannelNumberInput;Includes_PVR.xml;1
 PVRGroupManagerListLayout;Includes_Buttons_and_Lists.xml;2
 PVRInfoPanel;Includes_PVR.xml;7
 PVRInfoTopPanel;Includes_PVR.xml;5
-PathID;Includes.xml;0
 PlayerVolume;Includes.xml;1
 PlotText16Var;Includes.xml;43
 PlotTextBigVar;Includes.xml;37
@@ -246,7 +241,6 @@ SidePanelContent_PVR;Includes_SidePanel.xml;5
 SidePanelNavigation;Includes_SidePanel.xml;15
 SidePanelProperty;Includes_SidePanel.xml;15
 SidePanelShortcuts;Includes_SidePanel.xml;15
-SidePanelShortcutsBackground;Includes_SidePanel.xml;0
 SidePanelToggleButton;Includes_SidePanel.xml;31
 SkinAddonContent;Includes_SkinAddonsContent.xml;1
 SkinAddonListLayout;Includes_SkinAddonsContent.xml;2

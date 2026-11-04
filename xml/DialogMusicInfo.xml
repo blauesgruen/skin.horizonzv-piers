@@ -365,9 +365,9 @@
 									<param name="font" value="bebas19" />
 									<param name="onclick" value="Action(close)" />
 									<param name="onclick2_condition" value="!String.IsEqual(ListItem.DBType,song)" />
-									<param name="onclick2" value="RunScript(script.extendedinfo,info=youtubebrowser,id=$INFO[ListItem.Artist] $INFO[ListItem.Album])" />
+									<param name="onclick2" value="RunScript(script.extendedinfo,info=youtubebrowser,id=$ESCVAR[ExtendedInfoYoutubeAlbumQuery])" />
 									<param name="onclick3_condition" value="String.IsEqual(ListItem.DBType,song)" />
-									<param name="onclick3" value="RunScript(script.extendedinfo,info=youtubebrowser,id=$INFO[ListItem.Artist] $INFO[ListItem.Title])" />
+									<param name="onclick3" value="RunScript(script.extendedinfo,info=youtubebrowser,id=$ESCVAR[ExtendedInfoYoutubeSongQuery])" />
 									<param name="visible" value="System.AddonIsEnabled(script.extendedinfo)" />
 									<param name="nofocus" value="" />
 								</include>

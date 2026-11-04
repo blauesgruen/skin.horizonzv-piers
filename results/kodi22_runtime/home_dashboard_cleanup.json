@@ -1,0 +1,46 @@
+{
+  "provider_guard_restored_check": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Control.IsVisible(4444)": false,
+      "System.AddonIsEnabled(script.skinhelper.ping)": false,
+      "System.HasAddon(script.skinhelper.ping)": false
+    }
+  },
+  "properties_before_clear": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Window(Home).Property(SkinHelperPING.servercount)": "10",
+      "Window(Home).Property(SkinHelperPING.serveron)": "10"
+    }
+  },
+  "properties_after_clear": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Window(Home).Property(SkinHelperPING.servercount)": "",
+      "Window(Home).Property(SkinHelperPING.serveron)": ""
+    }
+  },
+  "active_players": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": []
+  },
+  "quit": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": "OK"
+  },
+  "process_37980_exited": true,
+  "all_xml_match_production": true,
+  "xml_count": 164,
+  "extra_test_xml": false,
+  "baseline_guisettings_bytes_restored": true,
+  "baseline_skin_settings_bytes_restored": true,
+  "shutdown_exit_message": true,
+  "error_log_lines": 0,
+  "production_home_hash_unchanged": true
+}

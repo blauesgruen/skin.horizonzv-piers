@@ -1,0 +1,106 @@
+{
+  "classification": "Skin-side empty-target, invocation-state and hidden-focus defects; not a removed Kodi API",
+  "sources": [
+    "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/interfaces/builtins/AddonBuiltins.cpp",
+    "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/interfaces/builtins/SkinBuiltins.cpp",
+    "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/guilib/GUIAction.cpp"
+  ],
+  "source_findings": [
+    "RunScript explicitly accepts the lyrics extension point; its non-script fallback deprecation does not apply to a selected lyrics addon.",
+    "RunScript requires one parameter; an empty resolved addon setting produces an invalid call.",
+    "Skin.SetAddon saves the selected ID only on confirmation. Cancel does not populate an empty setting.",
+    "CGUIAction selects all matching actions before executing the chain, so later conditions do not re-evaluate a completed addon selection.",
+    "StopScript accepts an addon ID and resolves its library path. Its FIXME about multiple extension points is not an announced removal or current API deprecation."
+  ],
+  "installed_provider_read_only": {
+    "id": "script.cu.lrclyrics",
+    "version": "6.7.6",
+    "lyrics_library": "default.py",
+    "service_library": "default.py",
+    "modified": false,
+    "executed_in_test": true
+  },
+  "changes": [
+    "MusicOSD 701: empty setting only opens the addon selector; configured setting retains Close and RunScript.",
+    "PlayerControls 609: remove Close and RunScript from the empty-selection altclick chain.",
+    "MusicOSD 2401/2402: disable start/stop controls when no lyrics addon is selected.",
+    "MusicOSD 701 and PlayerControls 609 explicitly enable Lyrics before RunScript; otherwise the skin lyrics window immediately executes Back.",
+    "Remove hidden-entry focus redirection to control 101; the provider assigns focus to list 110 when ready."
+  ],
+  "interaction_change": "First choose the lyrics addon; a subsequent click starts it. Cancelling selection leaves the UI open and does not run an empty script target.",
+  "native_runtime": {
+    "profile": "isolated",
+    "visible_process": 31708,
+    "fixture": "Copied original and revised onclick/altclick/usealttexture into standalone native controls with presentation/visibility context changed; no real music OSD/provider playback claim.",
+    "before_playercontrols_cancel": "Keymapping error: no such action xbmc.runscript()",
+    "before_musicosd_cancel": "Keymapping error: no such action runscript()",
+    "after_cancel": "Both revised controls returned to test window 11199 with empty setting and no RunScript/error diagnostics.",
+    "evidence": [
+      "lyrics_fixture_metadata.json",
+      "lyrics_cancel_checks.json",
+      "lyrics_cancel_after.png",
+      "lyrics_cleanup.json"
+    ]
+  },
+  "remaining": [
+    "Active provider background-service stop/restart semantics",
+    "Online providers and other lyrics addon implementations",
+    "Empty-selection disabled submenu presentation remains distinct from the configured-provider cases"
+  ],
+  "static_checks": [
+    {
+      "command": "python tools/check_skin_compatibility.py",
+      "exit_code": 0,
+      "findings": []
+    },
+    {
+      "command": "python tools/audit_skin_actions.py",
+      "exit_code": 0,
+      "findings": []
+    },
+    {
+      "command": "python tools/audit_skin_windows.py",
+      "exit_code": 0,
+      "findings": []
+    },
+    {
+      "command": "python tools/audit_skin_info_names.py",
+      "exit_code": 0,
+      "findings": []
+    }
+  ],
+  "standard_followup": {
+    "process": 35828,
+    "visible": true,
+    "audio": "Authored silent WAV played through native PlayMedia, Player.GetActivePlayers confirmed audio player 0.",
+    "selection": "Native MusicOSD 701 opened selector 12000. CU LRC Lyrics selected; skin setting persisted and OSD 10120 remained open without automatic launch.",
+    "entry_dispatch": "Subsequent 701 click changed provider culrc.force from empty to TRUE. culrc.running was already true from startup, so no fresh start transition claimed.",
+    "submenu": "After opening native submenu, 2401/2402 were visible and enabled with a selected provider. Initial immediate hidden-submenu query is not the final enabled-state result.",
+    "gui_limit": "No provider lyrics GUI appeared. Test opened MusicOSD over Home, while provider source proceed() checks visualisation context; this run does not certify lyric display.",
+    "stop_limit": "Native Stop 2402 dispatched; 30 observations retained culrc.running=true. INFO log does not establish worker shutdown. Stop remains unverified, no addon change or forced property cleanup used.",
+    "evidence": [
+      "lyrics_standard_initial.json",
+      "lyrics_standard_launch.json",
+      "lyrics_standard_submenu.json",
+      "lyrics_standard_stop.json",
+      "lyrics_standard_cleanup.json"
+    ]
+  },
+  "visualisation_followup": {
+    "evidence": "../kodi22_runtime/lyrics_visualisation_checks.json",
+    "native_primary_entries_passed": [
+      "MusicOSD 701 with Lyrics initially off",
+      "PlayerControls 609 with Lyrics initially off, then return to Visualisation"
+    ],
+    "stop": "Native 2402 clears running, guirunning, lyric properties and closes the lyrics window; restart from PlayerControls passes.",
+    "addon_modified": false,
+    "focus_error_before": 2,
+    "focus_error_after": 0,
+    "limits": [
+      "CU LRC 6.7.6 with authored local LRC, service disabled and online scrapers disabled.",
+      "Active background-service StopScript remains a separate multi-entrypoint case.",
+      "No online scraper result or other lyrics provider compatibility claim.",
+      "Dynamic Python window IDs make System.CurrentWindow text labels unreliable; no power action was executed."
+    ]
+  }
+}

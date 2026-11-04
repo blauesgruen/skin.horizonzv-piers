@@ -1,0 +1,31 @@
+{
+  "classification": "Skin artwork-context bug; not a removed Kodi API.",
+  "problem": "Generic PosterThumb read the dialog/movie ListItem while selected version artwork existed only in Container(50). The native MKV version displayed a generic camera instead of its thumbnail.",
+  "correction": "VideoManagerArtwork prefers selected container-50 poster, then thumb, then existing PosterThumb fallback. Dialog texture adds DefaultVideo.png load fallback. Other PosterThumb consumers unchanged.",
+  "sources": [
+    "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/addons/skin.estuary/xml/DialogVideoManager.xml",
+    "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/addons/skin.estuary/xml/Variables.xml",
+    "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/video/dialogs/GUIDialogVideoManagerVersions.cpp"
+  ],
+  "runtime_evidence": [
+    "kodi22_runtime/multiversion_preview_before.json",
+    "kodi22_runtime/multiversion_default_reopened.png",
+    "kodi22_runtime/multiversion_preview_after.json",
+    "kodi22_runtime/multiversion_preview_standard.png",
+    "kodi22_runtime/multiversion_preview_director.png"
+  ],
+  "native_actions_passed": [
+    "Add second authored file as Extended Edition",
+    "Select and play MKV version; actual player reports 3 chapters",
+    "Set MKV as default; native library file changes and remains after reopening",
+    "Choose type changes Extended Edition to Director's Cut",
+    "Restore original AVI default",
+    "Remove non-default MKV version from library; one movie/one version remain; both physical authored files retained"
+  ],
+  "limits": [
+    "Ungroup and extras not tested",
+    "Choose-art action and new custom art not tested",
+    "Missing/unloadable-art fallback branches not newly exercised in this dialog",
+    "This is local isolated Kodi, not PVR/Disney+/CoreELEC verification."
+  ]
+}

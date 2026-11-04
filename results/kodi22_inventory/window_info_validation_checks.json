@@ -1,0 +1,35 @@
+{
+  "scope": "Mutation cases for literal window identifier checking; no Kodi runtime involved.",
+  "rejected_legacy_names": [
+    "MyFiles",
+    "MyMusicFiles",
+    "MyMusicLibrary",
+    "VisualisationSettings",
+    "GUICalibration",
+    "MyVideoLibrary",
+    "MyVideoFiles",
+    "Scripts",
+    "Favourites",
+    "MyTVSettings"
+  ],
+  "rejected_qualified_filename": "Window(script-test-dialog.xml).Property(Foo)",
+  "invalid_cli_exit_code": 1,
+  "supported_condition_cases": [
+    "Window.IsVisible(home)",
+    "Window.IsActive(MyVideos)",
+    "Window.IsDialogTopmost(selectdialog)",
+    "Window.IsModalDialogTopmost(10100)",
+    "Window.Previous(startup)",
+    "Window.Next(script-external-dialog.xml)",
+    "Window.Is(10000)"
+  ],
+  "supported_property_cases": [
+    "Window(Home).Property(Foo)",
+    "Window().Property(Foo)"
+  ],
+  "plain_label_ignored": true,
+  "dynamic_case_reported_unresolved": true,
+  "uppercase_XML_parser_distinction_checked": true,
+  "valid_cli_exit_code": 0,
+  "temporary_fixture_removed": true
+}

@@ -2,6 +2,7 @@
 <addon id="skin.horizonzv" name="Horizonz V" version="1.22.0.1" provider-name="blauesgruen">
 	<requires>
 		<import addon="xbmc.gui" version="5.18.0"/>
+		<import addon="xbmc.python" version="3.0.0" optional="true"/>
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false" effectslowdown="0.60">
 		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />

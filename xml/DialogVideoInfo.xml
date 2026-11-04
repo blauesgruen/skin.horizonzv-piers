@@ -371,7 +371,7 @@
 								<pagecontrol/>
 								<scrolltime>200</scrolltime>
 								<orientation>horizontal</orientation>
-								<visible>Control.HasFocus(15)|Control.HasFocus(50)</visible>
+								<visible>Control.HasFocus(5)|Control.HasFocus(50)</visible>
 								<itemlayout height="168" width="168">
 									<control type="group">
 										<left>12</left>
@@ -716,7 +716,7 @@
 							<itemgap>10</itemgap>
 							<align>center</align>
 							<orientation>horizontal</orientation>
-							<onup condition="Control.HasFocus(15)">50</onup>
+							<onup condition="Control.HasFocus(5)">50</onup>
 							<onup condition="Control.IsVisible(138)">138</onup>
 							<onup condition="Control.HasFocus(30)">61</onup>
 							<ondown/>
@@ -782,16 +782,6 @@
 							</include>
 							<include content="DefaultDialogButton">
 								<description>Cast/Review</description>
-								<param name="id" value="15" />
-								<param name="width" value="auto" />
-								<param name="label" value="$LOCALIZE[206]" />
-								<param name="font" value="bebas19" />
-								<param name="nofocus" />
-								<param name="onup" value="50" />
-								<param name="visible" value="!ListItem.IsCollection+!String.StartsWith(ListItem.Filenameandpath,plugin://)" />
-							</include>
-							<!-- <include content="DefaultDialogButton">
-								<description>Cast/Review</description>
 								<param name="id" value="5" />
 								<param name="width" value="auto" />
 								<param name="label" value="$LOCALIZE[206]" />
@@ -799,7 +789,7 @@
 								<param name="nofocus" />
 								<param name="onup" value="50" />
 								<param name="visible" value="!ListItem.IsCollection+!String.StartsWith(ListItem.Filenameandpath,plugin://)" />
-							</include> -->
+							</include>
 							<include content="DefaultDialogButton">
 								<description>ExtendedInfo YouTube browser</description>
 								<param name="id" value="440" />
@@ -807,7 +797,7 @@
 								<param name="label" value="$LOCALIZE[31033]" />
 								<param name="font" value="bebas19" />
 								<param name="onclick" value="Action(close)" />
-								<param name="onclick2" value="RunScript(script.extendedinfo,info=youtubebrowser,id=$INFO[ListItem.Title] $INFO[ListItem.Year])" />
+									<param name="onclick2" value="RunScript(script.extendedinfo,info=youtubebrowser,id=$ESCVAR[ExtendedInfoYoutubeVideoQuery])" />
 								<param name="nofocus" />
 								<param name="visible" value="System.AddonIsEnabled(script.extendedinfo) + String.IsEqual(ListItem.DBType,movie) + !Control.IsVisible(11)" />
 							</include>
@@ -815,6 +805,14 @@
 								<param name="id" value="14" />
 								<param name="width" value="auto" />
 								<param name="label" value="$LOCALIZE[40000]" />
+								<param name="font" value="bebas19" />
+								<param name="nofocus" />
+								<param name="visible" value="String.IsEqual(ListItem.DBType,movie)" />
+							</include>
+							<include content="DefaultDialogButton">
+								<param name="id" value="15" />
+								<param name="width" value="auto" />
+								<param name="label" value="$LOCALIZE[40211]" />
 								<param name="font" value="bebas19" />
 								<param name="nofocus" />
 								<param name="visible" value="String.IsEqual(ListItem.DBType,movie)" />

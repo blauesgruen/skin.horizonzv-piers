@@ -1,0 +1,131 @@
+{
+  "scope": "Unchanged Ping 4.1.2, real loopback status through production WOL onload; no WOL action",
+  "phases": [
+    {
+      "phase": "two",
+      "slots": [
+        1,
+        10
+      ],
+      "servercount": "2",
+      "serveron": "2",
+      "items": [
+        {
+          "Container(36110).ListItemAbsolute(0).Label": "Audit Loopback 1 (127.0.0.1)",
+          "Container(36110).ListItemAbsolute(0).Label2": "on",
+          "Container(36110).ListItemAbsolute(0).Property(mac)": "",
+          "Container(36110).ListItemAbsolute(0).Property(number)": "1. "
+        },
+        {
+          "Container(36110).ListItemAbsolute(1).Label": "Audit Loopback 10 (127.0.0.1)",
+          "Container(36110).ListItemAbsolute(1).Label2": "on",
+          "Container(36110).ListItemAbsolute(1).Property(mac)": "",
+          "Container(36110).ListItemAbsolute(1).Property(number)": "10. "
+        },
+        {
+          "Container(36110).ListItemAbsolute(2).Label": "Settings",
+          "Container(36110).ListItemAbsolute(2).Label2": "",
+          "Container(36110).ListItemAbsolute(2).Property(mac)": "",
+          "Container(36110).ListItemAbsolute(2).Property(number)": ""
+        },
+        {
+          "Container(36110).ListItemAbsolute(3).Label": "Refresh",
+          "Container(36110).ListItemAbsolute(3).Label2": "",
+          "Container(36110).ListItemAbsolute(3).Property(mac)": "",
+          "Container(36110).ListItemAbsolute(3).Property(number)": ""
+        }
+      ],
+      "stale_slot5_cleared": true
+    },
+    {
+      "phase": "one",
+      "slots": [
+        1
+      ],
+      "servercount": "1",
+      "serveron": "1",
+      "items": [
+        {
+          "Container(36110).ListItemAbsolute(0).Label": "Audit Loopback 1 (127.0.0.1)",
+          "Container(36110).ListItemAbsolute(0).Label2": "on",
+          "Container(36110).ListItemAbsolute(0).Property(mac)": "",
+          "Container(36110).ListItemAbsolute(0).Property(number)": "1. "
+        },
+        {
+          "Container(36110).ListItemAbsolute(1).Label": "Settings",
+          "Container(36110).ListItemAbsolute(1).Label2": "",
+          "Container(36110).ListItemAbsolute(1).Property(mac)": "",
+          "Container(36110).ListItemAbsolute(1).Property(number)": ""
+        },
+        {
+          "Container(36110).ListItemAbsolute(2).Label": "Refresh",
+          "Container(36110).ListItemAbsolute(2).Label2": "",
+          "Container(36110).ListItemAbsolute(2).Property(mac)": "",
+          "Container(36110).ListItemAbsolute(2).Property(number)": ""
+        }
+      ],
+      "stale_slot5_cleared": true
+    },
+    {
+      "phase": "disabled",
+      "items": [
+        {
+          "Container(36110).ListItemAbsolute(0).Label": "Settings",
+          "Container(36110).ListItemAbsolute(0).Label2": "",
+          "Container(36110).ListItemAbsolute(0).Property(mac)": "",
+          "Container(36110).ListItemAbsolute(0).Property(number)": ""
+        }
+      ],
+      "servercount": "",
+      "stale_slot10_cleared": true
+    }
+  ],
+  "source_hashes": {
+    "addon.xml": "9c65dadc9b2462a8395f8d3c65e034a151ce09a8db2e992765084e22a6b85785",
+    "changelog.txt": "2d722a691c45177eb41e9462a8ba1e1b747391cbb56817b10761bfe50d89a977",
+    "default.py": "ec1ee5f7ea68e9d5c54c3e6f9a698728e669b82a8f478dfdbe0256a1c95d5c0e",
+    "fanart.jpg": "9ef55e16145cb3c3f551906d42a669adbf466e7b0c8c9e75abe5640d6192a047",
+    "icon.png": "623ef0c12faffff12b1cc821947bc80b5ffd12e2e48bc9e1ea4cf4fdbb98867e",
+    "icon.png.org": "26d337089c3c5c50ccb12e564a1c9969bbda9234dba00c7f117f1fd30c43761b",
+    "LICENSE.txt": "0b383d5a63da644f628d99c33976ea6487ed89aaa59f0b3257992deac1171e6b",
+    "README.md": "daeaa252561d36f3acb8b0e116eb4b842cb9ae6d9f82e41f89681cb0573f59bb",
+    "service.py": "bc8fd5c5f10034d21fbbe1ef72c2cdef2d9af25ce3c06b048be905a29a61af43",
+    "resources/network_scan.py": "7f66e53f76de8d78aa4f039c3772af229d09937b755b8d5a5fb5a326a1f09045",
+    "resources/settings.xml": "d0f06974bedd2fd1263164d49d4d392996e5dcf0dafb74445bb6c55a67d0b15b",
+    "resources/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "resources/media/offline.png": "d805cff3d2775dce204c5f0805035bf6bc09b868602cc6cc3980370974464899",
+    "resources/media/online.png": "75d73391f343be37033b9680b6a08b07666eb81214846e69298cf931f0691728",
+    "resources/media/ServerIcon.png": "79dd8b88554933b73877b37e0359140b73a840573df07873fe71c6004027ee6a",
+    "resources/language/resource.language.de_de/strings.po": "2a4cca24ee48e8e861deed1ab7d49fc04e613a3cf43fa59e4babec1fd8a424f4",
+    "resources/language/resource.language.en_gb/strings.po": "d41d8c44e6bb92747f9ffc46eeb00550d63f1a290e69c02b18fe1662e2fbff64"
+  },
+  "cleanup": {
+    "all_processes_exited": true,
+    "test_provider_settings_removed": true,
+    "profile_restored": true,
+    "all_test_xml_match_production": true,
+    "standard_provider_sources_unchanged": true,
+    "test_provider_sources_match_original": true
+  },
+  "log_checks": [
+    {
+      "file": "kodi.old.log",
+      "error_lines": 0,
+      "wol_dispatch_log_lines": 0,
+      "regular_exit": true
+    },
+    {
+      "file": "kodi.log",
+      "error_lines": 0,
+      "wol_dispatch_log_lines": 0,
+      "regular_exit": true
+    }
+  ],
+  "limits": [
+    "No WOL action or device wake attempted; all fixture MAC fields empty.",
+    "Background service disabled; no service interval or failing-probe test.",
+    "Existing device configuration changed only offline between separate launches; live settings-edit case not exercised.",
+    "Provider 4.1.2 tested; older provider versions and CoreELEC runtime not independently exercised.",
+    "Clear-on-open plus provider refresh verified together; provider 4.1.2 also clears absent slots, so this test does not attribute clearing to the skin alone."
+  ]
+}

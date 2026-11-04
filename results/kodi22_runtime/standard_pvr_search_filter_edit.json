@@ -1,0 +1,38 @@
+{
+  "term": "In aller Freundschaft",
+  "before_channel": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Control.GetLabel(23)": "Sender (Alle TV-Sender)",
+      "Control.GetLabel(9)": ""
+    }
+  },
+  "after_right": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Control.GetLabel(23)": "Sender (Alle TV-Sender)"
+    }
+  },
+  "gui": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "currentcontrol": {
+        "label": "Sender (Alle TV-Sender)"
+      },
+      "currentwindow": {
+        "id": 10605,
+        "label": "PVR-Programm\u00fcbersichtssuche"
+      }
+    }
+  },
+  "focus": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Control.HasFocus(23)": true
+    }
+  }
+}

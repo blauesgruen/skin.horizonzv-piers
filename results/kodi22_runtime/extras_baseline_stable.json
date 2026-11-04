@@ -1,0 +1,29 @@
+{
+  "skin": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "value": "skin.estuary"
+    }
+  },
+  "gui": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "currentcontrol": {
+        "label": "Skin Audit Movie - Chapter Edition"
+      },
+      "currentwindow": {
+        "id": 12017,
+        "label": ""
+      }
+    }
+  },
+  "count": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container(50).NumItems": "2"
+    }
+  }
+}

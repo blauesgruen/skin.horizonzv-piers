@@ -1,0 +1,18 @@
+{
+  "source_dump": "kodi_crashlog-22.0-RC1 Git_20260927-28ea2eac1eb-20261102-203105.dmp",
+  "exception_code": "0xc0000005",
+  "exception_flags": 0,
+  "exception_address": "0x7ff6d8ed6fe9",
+  "exception_parameters": [
+    "0x0",
+    "0x610"
+  ],
+  "faulting_modules": [
+    {
+      "module": "kodi.exe",
+      "offset": "0x386fe9",
+      "image_size": 65753088
+    }
+  ],
+  "scope": "Exception/module metadata only; no symbolic stack or proof of root cause."
+}

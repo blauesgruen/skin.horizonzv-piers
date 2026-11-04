@@ -1,0 +1,269 @@
+{
+  "checked_on": "2026-11-04",
+  "scope": "Active XML dynamic RunScript/RunAddon invocation strings and literal dynamic plugin URL strings; no full include expansion or evaluation of arbitrary user-configured actions",
+  "dynamic_invocation_count": 24,
+  "invocations": [
+    {
+      "file": "xml/DialogButtonMenu.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "RunAddon($INFO[Skin.String(shutdown_addon1)])",
+      "classification": "Selected addon ID stored by skin settings; no additional free-text argument"
+    },
+    {
+      "file": "xml/DialogMusicInfo.xml",
+      "element": "param",
+      "param": "onclick2",
+      "value": "RunScript(script.extendedinfo,info=youtubebrowser,id=$ESCVAR[ExtendedInfoYoutubeAlbumQuery])",
+      "classification": "Escaped free-text fields plus numeric database identifiers; previously reviewed"
+    },
+    {
+      "file": "xml/DialogMusicInfo.xml",
+      "element": "param",
+      "param": "onclick3",
+      "value": "RunScript(script.extendedinfo,info=youtubebrowser,id=$ESCVAR[ExtendedInfoYoutubeSongQuery])",
+      "classification": "Escaped free-text fields plus numeric database identifiers; previously reviewed"
+    },
+    {
+      "file": "xml/DialogVideoInfo.xml",
+      "element": "param",
+      "param": "onclick2",
+      "value": "RunScript(script.extendedinfo,info=youtubebrowser,id=$ESCVAR[ExtendedInfoYoutubeVideoQuery])",
+      "classification": "Escaped free-text fields plus numeric database identifiers; previously reviewed"
+    },
+    {
+      "file": "xml/Includes_Dash_Addonpath_Fav.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "RunAddon($INFO[Skin.String(addon_fav1)])",
+      "classification": "Selected addon ID stored by skin settings; no additional free-text argument"
+    },
+    {
+      "file": "xml/Includes_Dash_Addonpath_Fav.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "RunAddon($INFO[Skin.String(addon_fav2)])",
+      "classification": "Selected addon ID stored by skin settings; no additional free-text argument"
+    },
+    {
+      "file": "xml/Includes_Dash_Addonpath_Fav.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "RunAddon($INFO[Skin.String(addon_fav3)])",
+      "classification": "Selected addon ID stored by skin settings; no additional free-text argument"
+    },
+    {
+      "file": "xml/Includes_Dash_Addonpath_Fav.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "RunAddon($INFO[Skin.String(addon_fav4)])",
+      "classification": "Selected addon ID stored by skin settings; no additional free-text argument"
+    },
+    {
+      "file": "xml/Includes_Dash_Addonpath_Fav.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "RunAddon($INFO[Skin.String(addon_fav5)])",
+      "classification": "Selected addon ID stored by skin settings; no additional free-text argument"
+    },
+    {
+      "file": "xml/Includes_Dash_Addonpath_Fav.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "RunAddon($INFO[Skin.String(addon_fav6)])",
+      "classification": "Selected addon ID stored by skin settings; no additional free-text argument"
+    },
+    {
+      "file": "xml/Includes_Dash_Addonpath_Fav.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "RunAddon($INFO[Skin.String(addon_fav7)])",
+      "classification": "Selected addon ID stored by skin settings; no additional free-text argument"
+    },
+    {
+      "file": "xml/Includes_Dash_Addonpath_Fav.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "RunAddon($INFO[Skin.String(addon_fav8)])",
+      "classification": "Selected addon ID stored by skin settings; no additional free-text argument"
+    },
+    {
+      "file": "xml/Includes_Dash_Addonpath_Fav.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "RunAddon($INFO[Skin.String(addon_fav9)])",
+      "classification": "Selected addon ID stored by skin settings; no additional free-text argument"
+    },
+    {
+      "file": "xml/Includes_Dash_Addonpath_Fav.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "RunAddon($INFO[Skin.String(addon_fav10)])",
+      "classification": "Selected addon ID stored by skin settings; no additional free-text argument"
+    },
+    {
+      "file": "xml/Includes_Dash_FritzDect.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "RunScript(script.program.fritzact,action=toggle&ain=$INFO[ListItem.Label2])",
+      "classification": "Provider device AIN, not displayed device name; single query-string argument parsed by provider"
+    },
+    {
+      "file": "xml/Includes_Dash_FritzDect.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "RunScript(script.program.fritzact,action=toggle&ain=$INFO[ListItem.Label2])",
+      "classification": "Provider device AIN, not displayed device name; single query-string argument parsed by provider"
+    },
+    {
+      "file": "xml/Includes_Dash_FritzDect.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "RunScript(script.program.fritzact,action=temp&ain=$INFO[ListItem.Label2])",
+      "classification": "Provider device AIN, not displayed device name; single query-string argument parsed by provider"
+    },
+    {
+      "file": "xml/MusicOSD.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "RunScript($INFO[Skin.String(LyricScript_Path)])",
+      "classification": "Selected addon ID stored by skin settings; no additional free-text argument"
+    },
+    {
+      "file": "xml/MusicOSD.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "RunScript($INFO[Skin.String(LyricScript_Path)])",
+      "classification": "Selected addon ID stored by skin settings; no additional free-text argument"
+    },
+    {
+      "file": "xml/PlayerControls.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "RunScript($INFO[Skin.String(LyricScript_Path)])",
+      "classification": "Selected addon ID stored by skin settings; no additional free-text argument"
+    },
+    {
+      "file": "xml/Variables.xml",
+      "element": "value",
+      "param": null,
+      "value": "RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[ListItem.DBID],name=$ESCINFO[ListItem.Title])",
+      "classification": "Escaped free-text fields plus numeric database identifiers; previously reviewed"
+    },
+    {
+      "file": "xml/Variables.xml",
+      "element": "value",
+      "param": null,
+      "value": "RunScript(script.extendedinfo,info=extendedtvinfo,dbid=$INFO[ListItem.DBID],name=$ESCINFO[ListItem.TvShowTitle])",
+      "classification": "Escaped free-text fields plus numeric database identifiers; previously reviewed"
+    },
+    {
+      "file": "xml/Variables.xml",
+      "element": "value",
+      "param": null,
+      "value": "RunScript(script.extendedinfo,info=seasoninfo,tvshow=$ESCINFO[ListItem.TvShowTitle],season=$INFO[ListItem.Season])",
+      "classification": "Escaped free-text fields plus numeric database identifiers; previously reviewed"
+    },
+    {
+      "file": "xml/Variables.xml",
+      "element": "value",
+      "param": null,
+      "value": "RunScript(script.extendedinfo,info=extendedepisodeinfo,tvshow=$ESCINFO[ListItem.TvShowTitle],season=$INFO[ListItem.Season],episode=$INFO[ListItem.Episode])",
+      "classification": "Escaped free-text fields plus numeric database identifiers; previously reviewed"
+    }
+  ],
+  "dynamic_plugin_url_count": 6,
+  "dynamic_plugin_urls": [
+    {
+      "file": "xml/Includes_Dash_FritzDect.xml",
+      "element": "content",
+      "param": null,
+      "value": "plugin://script.program.fritzact?ts=$INFO[Window(Home).Property(fritzact.timestamp)]"
+    },
+    {
+      "file": "xml/Includes_Dash_GTO.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "RunPlugin(plugin://script.service.gto?action=info&item=$INFO[ListItem.Property(Item)])"
+    },
+    {
+      "file": "xml/Includes_Dash_GTO.xml",
+      "element": "content",
+      "param": null,
+      "value": "plugin://script.service.gto?action=getcontent&ts=$INFO[Window(Home).Property(GTO.timestamp)]"
+    },
+    {
+      "file": "xml/skin.horizonzv.script-gto-info.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "RunPlugin(plugin://script.service.gto?action=switch_channel&pvrid=$INFO[Window(Home).Property(GTO.Info.ChannelID)]&item=$INFO[Window(Home).Property(GTO.Info.Item)])"
+    },
+    {
+      "file": "xml/skin.horizonzv.script-gto-info.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "RunPlugin(plugin://script.service.gto?action=record&broadcastid=$INFO[Window(Home).Property(GTO.Info.BroadcastID)]&item=$INFO[Window(Home).Property(GTO.Info.Item)])"
+    },
+    {
+      "file": "xml/Variables.xml",
+      "element": "value",
+      "param": null,
+      "value": "plugin://plugin.program.autocompletion/?info=autocomplete&id=$INFO[Window(virtualkeyboard).Property(HorizonzV.AutoCompletion.Query)]&limit=9",
+      "baseline_value": "plugin://plugin.program.autocompletion?info=autocomplete&&id=$INFO[Control.GetLabel(312).index(1)]&&limit=9",
+      "status": "Skin query percent encoding corrected; see autocomplete_query_review.json"
+    }
+  ],
+  "autocomplete_query_parser_cases": [
+    {
+      "input": "skin audit",
+      "parsed_id": "skin audit",
+      "matches": true
+    },
+    {
+      "input": "A&B",
+      "parsed_id": "A",
+      "matches": false
+    },
+    {
+      "input": "C++",
+      "parsed_id": "C  ",
+      "matches": false
+    },
+    {
+      "input": "100%20real",
+      "parsed_id": "100 real",
+      "matches": false
+    },
+    {
+      "input": "Bj\u00f6rk",
+      "parsed_id": "Bj\u00f6rk",
+      "matches": true
+    }
+  ],
+  "autocomplete_limit": "Original raw-query baseline failures retained below. Skin-owned query encoding now passes six native cases, including reserved characters, quotes/backslashes and Unicode. Provider-generated selection URLs remain unchanged; normal local suggestion selection passes.",
+  "local_provider_sources": {
+    "script.program.fritzact": {
+      "file": "D:\\Program Files\\Kodi22\\portable_data\\addons\\script.program.fritzact\\default.py",
+      "sha256": "55167b07ab02d7a42aabec5bb9e7237ea5fd08441d6b2fc1a934772301adbbb8"
+    },
+    "plugin.program.autocompletion": {
+      "file": "D:\\Program Files\\Kodi22\\portable_data\\addons\\plugin.program.autocompletion\\plugin.py",
+      "sha256": "792c4f790c9eff3d748d262a077e62e191ada23e3fc9c9e3d640aaee5914c292"
+    },
+    "script.service.gto": {
+      "file": "D:\\Program Files\\Kodi22\\portable_data\\addons\\script.service.gto\\main.py",
+      "sha256": "54b241c7a35c3e9ce25343afa753bc382fa70c1929f15a9d8f9b389af5de5160"
+    }
+  },
+  "sources": [
+    "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/filesystem/PluginDirectory.cpp",
+    "https://github.com/xbmc/xbmc/blob/master/xbmc/filesystem/PluginDirectory.cpp",
+    "https://github.com/b-jesch/script.program.fritzact/blob/Matrix/addon.xml",
+    "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/guilib/GUIEditControl.cpp",
+    "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/guilib/guiinfo/GUIControlsGUIInfo.cpp",
+    "https://github.com/finkleandeinhorn/plugin.program.autocompletion/blob/master/plugin.py"
+  ],
+  "fritzact_plugin_contract": "Matrix manifest declares a script entry point only. Piers and current master PluginDirectory::StartScript first request PLUGIN, then explicitly fall back to UNKNOWN. The content route is therefore not rejected solely on the manifest; no published removal inferred. Native Fritz backend/device actions were not invoked.",
+  "native_keyboard_evidence": "../kodi22_runtime/keyboard_query_native_checks.json",
+  "next_action": "Skin request correction verified. Preserve the documented provider-generated selection-URL limit without editing the provider."
+}

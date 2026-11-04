@@ -86,14 +86,6 @@
 			<visible>!Control.HasFocus(666)</visible>
 		</control>
     </include>
-    <include name="FakeFocusButton555">
-        <control type="button" id="555">
-            <enable>false</enable>
-            <onfocus>$PARAM[viewid]</onfocus>
-            <include>HiddenButton</include>
-            <visible>$PARAM[visible]</visible>
-        </control>
-    </include>
     <include name="Dimensions_Fullscreen">
 		<centerleft>50%</centerleft>
 		<centertop>50%</centertop>
@@ -115,25 +107,6 @@
         <textcolor>green</textcolor>
         <shadowcolor>black</shadowcolor>
         <align>left</align>
-    </include>
-    <include name="PathID">
-        <left>15</left>
-        <top>15</top>
-        <width>800</width>
-        <height>21</height>
-		<font>font12</font>
-        <textcolor>orange</textcolor>
-        <shadowcolor>black</shadowcolor>
-        <align>right</align>
-    </include>
-    <include name="ControlID">
-        <left>990</left>
-        <top>48</top>
-        <width>900</width>
-        <height>21</height>
-        <textcolor>red</textcolor>
-        <shadowcolor/>
-        <align>right</align>
     </include>
     <include name="WidgetDimImage">
 		<param name="left_top">1</param>
@@ -792,7 +765,6 @@
                 <height>21</height>
                 <font>impacted21</font>
                 <urlset>1</urlset>
-                <highlightcolor>description</highlightcolor>
                 <titlecolor>description</titlecolor>
                 <headlinecolor>white</headlinecolor>
                 <textcolor>white</textcolor>
@@ -2817,48 +2789,8 @@
                 <width>auto</width>
                 <font>$PARAM[font]</font>
                 <textcolor>$PARAM[color2]</textcolor>
-                <label>[COLOR=$PARAM[color1]]$LOCALIZE[39024]:[/COLOR] $INFO[ListItem.Property(Addon.Dependencies)]</label>
-                <visible>!String.IsEmpty(ListItem.Property(Addon.Dependencies))</visible>
-            </control>
-            <control type="label">
-                <height>$PARAM[height]</height>
-                <width>auto</width>
-                <font>$PARAM[font]</font>
-                <textcolor>$PARAM[color2]</textcolor>
                 <label>[COLOR=$PARAM[color1]]$LOCALIZE[126]:[/COLOR] $INFO[ListItem.Property(Addon.Status)]</label>
                 <visible>!String.IsEmpty(ListItem.Property(Addon.Status))</visible>
-            </control>
-            <control type="label">
-                <height>$PARAM[height]</height>
-                <width>auto</width>
-                <font>$PARAM[font]</font>
-                <textcolor>$PARAM[color2]</textcolor>
-                <label>[COLOR=$PARAM[color1]]$LOCALIZE[24053][/COLOR] $INFO[ListItem.Property(Addon.License)]</label>
-                <visible>!String.IsEmpty(ListItem.Property(Addon.License))</visible>
-            </control>
-            <control type="label">
-                <height>$PARAM[height]</height>
-                <width>auto</width>
-                <font>$PARAM[font]</font>
-                <textcolor>$PARAM[color2]</textcolor>
-                <label>[COLOR=$PARAM[color1]]Homepage:[/COLOR] $INFO[ListItem.Property(Addon.Homepage)]</label>
-                <visible>!String.IsEmpty(ListItem.Property(Addon.Homepage))</visible>
-            </control>
-            <control type="label">
-                <height>$PARAM[height]</height>
-                <width>auto</width>
-                <font>$PARAM[font]</font>
-                <textcolor>$PARAM[color2]</textcolor>
-                <label>[COLOR=$PARAM[color1]]$LOCALIZE[15225]:[/COLOR] $INFO[ListItem.Property(Addon.Provider)]</label>
-                <visible>!String.IsEmpty(ListItem.Property(Addon.Provider))</visible>
-            </control>
-            <control type="label">
-                <height>$PARAM[height]</height>
-                <width>auto</width>
-                <font>$PARAM[font]</font>
-                <textcolor>$PARAM[color2]</textcolor>
-                <label>[COLOR=$PARAM[color1]]$LOCALIZE[563]:[/COLOR] $INFO[ListItem.Property(Addon.StarRating)]</label>
-                <visible>!String.IsEmpty(ListItem.Property(Addon.StarRating))</visible>
             </control>
             <control type="label">
                 <height>$PARAM[height]</height>

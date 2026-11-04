@@ -509,7 +509,6 @@
                     <aspectratio>keep</aspectratio>
 					<texture fallback="White.png">$INFO[Player.Icon]</texture>
 				</control>
-				<itemgap>8</itemgap>
 				<control type="image">
                     <width>100</width>
                     <height>80</height>

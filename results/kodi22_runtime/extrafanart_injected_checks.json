@@ -1,0 +1,111 @@
+[
+  {
+    "case": "Leer",
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Control.GetLabel(601)": "",
+        "Control.GetLabel(602)": "",
+        "Control.GetLabel(901)": "",
+        "Control.GetLabel(902)": "",
+        "Window(Home).Property(Audit.FanartInput)": ""
+      }
+    }
+  },
+  {
+    "case": "Disney+",
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Control.GetLabel(601)": "",
+        "Control.GetLabel(602)": "",
+        "Control.GetLabel(901)": "",
+        "Control.GetLabel(902)": "",
+        "Window(Home).Property(Audit.FanartInput)": "plugin://slyguy.disney.plus/"
+      }
+    }
+  },
+  {
+    "case": "Gro\u00dfschreibung",
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Control.GetLabel(601)": "",
+        "Control.GetLabel(602)": "",
+        "Control.GetLabel(901)": "",
+        "Control.GetLabel(902)": "",
+        "Window(Home).Property(Audit.FanartInput)": "PLUGIN://EXAMPLE.TEST/"
+      }
+    }
+  },
+  {
+    "case": "Lokal",
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Control.GetLabel(601)": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\portable_data\\testmedia\\extrafanart\\home_music.jpg",
+        "Control.GetLabel(602)": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\portable_data\\testmedia\\extrafanart\\home_music.jpg",
+        "Control.GetLabel(901)": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\portable_data\\testmedia\\extrafanart/",
+        "Control.GetLabel(902)": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\portable_data\\testmedia\\extrafanart",
+        "Window(Home).Property(Audit.FanartInput)": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\portable_data\\testmedia\\"
+      }
+    }
+  },
+  {
+    "case": "local images loaded",
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Control.GetLabel(601)": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\portable_data\\testmedia\\extrafanart\\home_music.jpg",
+        "Control.GetLabel(602)": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\portable_data\\testmedia\\extrafanart\\home_music.jpg"
+      }
+    }
+  },
+  {
+    "case": "Disney+",
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Control.GetLabel(601)": "",
+        "Control.GetLabel(602)": "",
+        "Control.GetLabel(901)": "",
+        "Control.GetLabel(902)": "",
+        "Window(Home).Property(Audit.FanartInput)": "plugin://slyguy.disney.plus/"
+      }
+    }
+  },
+  {
+    "case": "Leer",
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Control.GetLabel(601)": "",
+        "Control.GetLabel(602)": "",
+        "Control.GetLabel(901)": "",
+        "Control.GetLabel(902)": "",
+        "Window(Home).Property(Audit.FanartInput)": ""
+      }
+    }
+  },
+  {
+    "case": "SMB (nur Pfad)",
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Control.GetLabel(601)": "",
+        "Control.GetLabel(602)": "",
+        "Control.GetLabel(901)": "smb://audit.invalid/share/film/extrafanart/",
+        "Control.GetLabel(902)": "smb://audit.invalid/share/film/extrafanart",
+        "Window(Home).Property(Audit.FanartInput)": "smb://audit.invalid/share/film/"
+      }
+    }
+  }
+]

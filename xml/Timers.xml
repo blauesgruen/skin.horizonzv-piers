@@ -14,4 +14,11 @@
         <stop>!Window.IsVisible(visualisation)|!Player.HasAudio|!System.AddonIsEnabled(script.artistslideshow)</stop>
         <onstart condition="!String.IsEqual(Window(visualisation).Property(ArtistSlideshowRunning),true)">RunScript(script.artistslideshow)</onstart>
     </timer>
+    <timer>
+        <name>extrasemptyfocus</name>
+        <description>Move focus away from the native Add extra button when the empty extras guard hides it.</description>
+        <start reset="true">Window.IsDialogTopmost(managevideoextras)+!Integer.IsGreater(Container(50).NumItems,0)+!Control.HasFocus(9900)</start>
+        <stop>true</stop>
+        <onstart>Control.SetFocus(9900)</onstart>
+    </timer>
 </timers>

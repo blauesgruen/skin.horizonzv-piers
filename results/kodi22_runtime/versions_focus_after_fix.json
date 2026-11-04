@@ -1,0 +1,191 @@
+[
+  {
+    "action": null,
+    "gui": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "Standard Edition"
+        }
+      }
+    },
+    "focus": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Control.HasFocus(21)": false,
+        "Control.HasFocus(22)": false,
+        "Control.HasFocus(24)": false,
+        "Control.HasFocus(25)": false,
+        "Control.HasFocus(26)": false,
+        "Control.HasFocus(27)": false,
+        "Control.HasFocus(29)": false,
+        "Control.HasFocus(50)": true,
+        "Control.HasFocus(60)": false
+      }
+    }
+  },
+  {
+    "action": "left",
+    "gui": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "Play"
+        }
+      }
+    },
+    "focus": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Control.HasFocus(21)": true,
+        "Control.HasFocus(22)": false,
+        "Control.HasFocus(24)": false,
+        "Control.HasFocus(25)": false,
+        "Control.HasFocus(26)": false,
+        "Control.HasFocus(27)": false,
+        "Control.HasFocus(29)": false,
+        "Control.HasFocus(50)": false,
+        "Control.HasFocus(60)": false
+      }
+    }
+  },
+  {
+    "action": "left",
+    "gui": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "Standard Edition"
+        }
+      }
+    },
+    "focus": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Control.HasFocus(21)": false,
+        "Control.HasFocus(22)": false,
+        "Control.HasFocus(24)": false,
+        "Control.HasFocus(25)": false,
+        "Control.HasFocus(26)": false,
+        "Control.HasFocus(27)": false,
+        "Control.HasFocus(29)": false,
+        "Control.HasFocus(50)": true,
+        "Control.HasFocus(60)": false
+      }
+    }
+  },
+  {
+    "action": "right",
+    "gui": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "0/1"
+        }
+      }
+    },
+    "focus": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Control.HasFocus(21)": false,
+        "Control.HasFocus(22)": false,
+        "Control.HasFocus(24)": false,
+        "Control.HasFocus(25)": false,
+        "Control.HasFocus(26)": false,
+        "Control.HasFocus(27)": false,
+        "Control.HasFocus(29)": false,
+        "Control.HasFocus(50)": false,
+        "Control.HasFocus(60)": true
+      }
+    }
+  },
+  {
+    "action": "right",
+    "gui": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "Play"
+        }
+      }
+    },
+    "focus": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Control.HasFocus(21)": true,
+        "Control.HasFocus(22)": false,
+        "Control.HasFocus(24)": false,
+        "Control.HasFocus(25)": false,
+        "Control.HasFocus(26)": false,
+        "Control.HasFocus(27)": false,
+        "Control.HasFocus(29)": false,
+        "Control.HasFocus(50)": false,
+        "Control.HasFocus(60)": false
+      }
+    }
+  },
+  {
+    "action": "down",
+    "gui": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "Add version"
+        }
+      }
+    },
+    "focus": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Control.HasFocus(21)": false,
+        "Control.HasFocus(22)": true,
+        "Control.HasFocus(24)": false,
+        "Control.HasFocus(25)": false,
+        "Control.HasFocus(26)": false,
+        "Control.HasFocus(27)": false,
+        "Control.HasFocus(29)": false,
+        "Control.HasFocus(50)": false,
+        "Control.HasFocus(60)": false
+      }
+    }
+  },
+  {
+    "action": "left",
+    "gui": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "Standard Edition"
+        }
+      }
+    },
+    "focus": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Control.HasFocus(21)": false,
+        "Control.HasFocus(22)": false,
+        "Control.HasFocus(24)": false,
+        "Control.HasFocus(25)": false,
+        "Control.HasFocus(26)": false,
+        "Control.HasFocus(27)": false,
+        "Control.HasFocus(29)": false,
+        "Control.HasFocus(50)": true,
+        "Control.HasFocus(60)": false
+      }
+    }
+  }
+]
