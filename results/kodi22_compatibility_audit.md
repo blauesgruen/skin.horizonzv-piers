@@ -1,5 +1,11 @@
 # Kodi 22 compatibility audit and cleanup plan
 
+## Migrated lifecycle and multi-page addon description verified (2026-11-05)
+
+The previously source-migrated AddonLifecycleType/Desc and textbox-400 paging now have positive native evidence: three authored installed metadata fixtures, four addonbrowser Info visits (normal/deprecated/broken/normal), correct native localized types/reasons and warning visibility. Short text hides paging at 1/1; a controlled 19-page description advances to pages 11 and 19 using the native spin control, with matching HasPrevious/HasNext and page label. Screenshots show the expected warning/broken icons. No product change justified. Piers and published master retain the lifecycle reader/metadata contract. [Sources and limits](kodi22_inventory/addon_lifecycle_review.json), [native run](kodi22_runtime/addon_lifecycle_checks.json).
+
+An initial test expected the opposite page-spin direction; native factory forces reverse=false and its action mapping explains the result. Corrected helper only, not skin; no ERROR in either run. Secured settings/addon database files restored, own metadata fixtures removed from addon directory, XML observation IDs removed. This is not remote repository, locale-switch, same-addon lifecycle-transition or full addon-info acceptance. Runtime/package code remains unchanged.
+
 ## Actual plugin-player fanart guard verified (2026-11-05)
 
 The original extrafanart objective now has two real plugin-playback cases: an authored temporary provider resolves a local AVI or local stack, while Kodi retains the plugin item path in Player.FolderPath and Player.FilenameAndPath. Production Home multiimage 2016 stays empty/hidden and the provider receives only the two play requests, no extrafanart request. No product change needed. Paired earlier actual local-file/stack tests load the intended JPEG. Current run has zero ERROR lines; secured video/addon database file sets and settings restored, temporary fixture removed from addon directory, XML matches. [Source and boundaries](kodi22_inventory/plugin_player_fanart_review.json), [native evidence](kodi22_runtime/plugin_player_fanart_checks.json). Disney DRM, SMB and other wrapper/player variants remain separate gates.

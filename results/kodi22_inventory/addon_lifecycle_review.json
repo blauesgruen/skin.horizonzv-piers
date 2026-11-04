@@ -1,0 +1,54 @@
+{
+  "checked_on": "2026-11-05",
+  "scope": "Positive native verification of the skin's migrated addon lifecycle labels/visibility and corrected textbox paging context. Existing external addon code and production XML unchanged.",
+  "sources": [
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/addons/addoninfo/AddonInfoBuilder.cpp",
+      "finding": "The modern lifecyclestate metadata element supplies normal/deprecated/broken state and localized reason; test fixtures use this actual reader contract."
+    },
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/guilib/guiinfo/AddonsGUIInfo.cpp",
+      "finding": "Lifecycle type returns localized strings 24169/24170/24171 and lifecycle description returns the native addon reason."
+    },
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/master/xbmc/guilib/guiinfo/AddonsGUIInfo.cpp",
+      "finding": "Published master retains these lifecycle labels and string IDs."
+    },
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/master/xbmc/addons/addoninfo/AddonInfoBuilder.cpp",
+      "finding": "Published master retains lifecyclestate metadata parsing."
+    },
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/guilib/GUIControlFactory.cpp",
+      "finding": "Page spin controls use native page type; factory explicitly sets reverse=false, overriding the generic skin default."
+    },
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/guilib/GUISpinControl.cpp",
+      "finding": "With reverse=false, PageUp action invokes PageDown() which adds ten pages; ChangePage notifies the linked control."
+    },
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/guilib/GUITextBox.cpp",
+      "finding": "Textbox sends its line count/page size to its pagecontrol and accepts page-change messages from that control."
+    }
+  ],
+  "native_evidence": "../kodi22_runtime/addon_lifecycle_checks.json",
+  "fixture": "Three own disabled installed script metadata fixtures, never executed; normal short description and deprecated/broken identical controlled 180-line descriptions with different lifecycle reasons. Actual addonbrowser Info action, no injected lifecycle property values.",
+  "observation": "ID-only hooks on existing page group, warning banner, reason textbox and page label in isolated DialogAddonInfo.xml; original expressions/types/layout unchanged, original XML restored.",
+  "results": [
+    "Normal short: type/reason correct, one page, banner and page indicator hidden.",
+    "Deprecated: localized type/reason correct, warning banner and yellow warning icon shown; 19 pages and native paging from 1 to 11.",
+    "Broken: localized type/reason correct, broken icon shown; native paging from 11 to 19 and HasNext=false at end.",
+    "Return to normal short: banner and page indicator hidden, page 1/1, no stale warning.",
+    "Final run has no ERROR lines; own process exits, secured settings/addon DB file sets restored, fixtures removed from addon directory, all skin XML matches."
+  ],
+  "intermediate_attempt": {
+    "report": "../kodi22_runtime/addon_lifecycle_before_page_direction.json",
+    "finding": "Lifecycle states and initial multi-page visibility passed; helper chose PageDown at page 1 and incorrectly expected advancement. Source shows inverse page-spin action naming. Test changed to PageUp; no product fix. Attempt has no ERROR lines and all cleanup checks passed."
+  },
+  "limits": [
+    "Identical long description text retains page offset between deprecated and broken fixtures; not a claim that every different addon description starts on page one.",
+    "Only English localization, installed metadata fixtures, 16:9 and title/description/visibility/paging. Remote repository states, language changes, actual same-addon lifecycle transitions and provider actions are not runtime-tested.",
+    "No full addon-info layout review, every page transition or pointer/scroll interaction approval.",
+    "No product rewrite justified by these cases; current package remains unchanged."
+  ]
+}

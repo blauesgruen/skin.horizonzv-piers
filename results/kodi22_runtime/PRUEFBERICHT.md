@@ -1,5 +1,13 @@
 # Kodi-22-Laufzeitprüfung – ab 1. November 2026
 
+## Migrierte Add-on-Lifecycle-Anzeige und positive Mehrseitenfälle (5. November)
+
+Drei eigene, nicht ausgeführte Metadaten-Testskripte liefern über echte `lifecyclestate`-Manifestfelder die nativen Zustände Normal/Deprecated/Broken. Tatsächlicher Einstieg über Add-on-Browser → Info. Die Skin-Testkopie erhielt nur Beobachtungs-IDs an bestehenden Controls; Daten, Bedingungen und Layout blieben gleich. Alle vier Besuche (normal, veraltet, defekt, normal) zeigen richtigen Typ und Grund; Warnbanner und Icons für die zwei Warnzustände sind sichtbar, beim Normalfall ausgeblendet. Aufnahmen aller drei Zustände angesehen.
+
+Normaler Kurztext: Seite 1/1, Seitenwechsler verborgen. Kontrollierter Langtext: 19 Seiten, Anzeige sichtbar, native Blätteraktion von 1 nach 11 und später nach 19, HasPrevious jeweils wahr und am Ende HasNext falsch. Die beiden Langtexte sind absichtlich identisch; deshalb behält der zweite Besuch seinen vorherigen Offset. Der abschließende Kurztext setzt Anzeige und Warnung korrekt zurück. Keine Aussage, dass jeder andere Beschreibungstext zwingend bei Seite 1 beginnt.
+
+Erster Helferversuch erwartete bei PageDown ein Weiterblättern. Piers erzwingt für Page-Spincontrols reverse=false; dieser Aktion entspricht dort die rückwärtige Richtung. Finaler Test verwendet die quellbelegte PageUp-Aktion zum Weiterblättern. Kein Skin-Fehler aus diesem ersten Versuch abgeleitet, auch dort keine ERROR-Zeile. Final ohne ERROR-Zeilen; gesicherte Einstellungen und Add-on-Datenbanken wiederhergestellt, eigene Fixtures aus dem Add-on-Verzeichnis entfernt und Beobachtungs-XML zurückgesetzt. Kein vorhandenes Add-on verändert. [Finaler Beleg](addon_lifecycle_checks.json), [erster Versuch](addon_lifecycle_before_page_direction.json), [Primärquellen/Grenzen](../kodi22_inventory/addon_lifecycle_review.json). Andere Sprachen, Repository-Zustände, Zustandswechsel desselben Add-ons und weitere Darstellungs-/Eingabefälle bleiben gesondert offen.
+
 ## Ursprüngliches Extra-Fanart-Ziel: echte Plugin-Player-Pfade (5. November)
 
 Ein eigener temporärer Testanbieter im getrennten Profil löst zwei echte Wiedergaben auf: lokale AVI-Datei und lokalen Zwei-Datei-Stack. Kodi spielt Video ab, behält aber in Player.FolderPath und Player.FilenameAndPath die Plugin-URI. Im produktiven Home-Multiimage 2016 bleiben Bild und Sichtbarkeit leer/false, obwohl neben den aufgelösten Medien eine gültige Extra-Fanart-Datei liegt. Der Anbieter protokolliert genau zwei Play-Aufrufe und keine extrafanart-Anfrage. Nach Stop sind Player-Ordner und Bild leer. Keine Skin-XML- oder vorhandene Anbieter-Codeänderung nötig.

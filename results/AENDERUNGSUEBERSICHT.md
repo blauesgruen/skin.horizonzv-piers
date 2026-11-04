@@ -23,8 +23,8 @@ Diese Übersicht gruppiert die bisherigen Änderungen nach Fehlerursache. „Lau
 | Nicht registriertes `Control.IsEmpty(...)` | Bewertungsbedingung auf `String.IsEmpty(ListItem.Rating)` umgestellt. | Statisch geprüft. |
 | Ungültiges `Skin.HasAddon()` ohne Argument | Fehlerhafte redundante Debug-Bedingung entfernt. | Statisch geprüft. |
 | Veraltetes `ListItem.Thumb` | Auf `ListItem.Art(thumb)` umgestellt. | Quellengeprüft; nicht alle Anbieteransichten zur Laufzeit geprüft. |
-| Veraltetes `ListItem.AddonBroken` | Aktuelle Lifecycle-Typen und Beschreibungen, getrennte Warn-/Fehlerdarstellung. | Quellengeprüft; Lifecycle-Sonderfälle offen. |
-| Alte Add-on-Status- und Herkunftsangaben sowie ungültige Seitenbedingungen | Status-/Herkunftsanzeige auf aktuelle Angaben umgestellt; Seitenbedingungen am tatsächlichen Text-Control ausgerichtet. | System/Manual/Repository und einseitige Texte nativ geprüft; positive Mehrseitenfälle und Lifecycle-Sonderfälle offen. |
+| Veraltetes `ListItem.AddonBroken` | Aktuelle Lifecycle-Typen und Beschreibungen, getrennte Warn-/Fehlerdarstellung. | Normal/Deprecated/Broken mit nativen Metadaten, Warnungen/Gründen und Mehrseitenbeschreibung geprüft ([Beleg](kodi22_runtime/addon_lifecycle_checks.json)); weitere Lifecycle-Kontexte offen. |
+| Alte Add-on-Status- und Herkunftsangaben sowie ungültige Seitenbedingungen | Status-/Herkunftsanzeige auf aktuelle Angaben umgestellt; Seitenbedingungen am tatsächlichen Text-Control ausgerichtet. | System/Manual/Repository und einseitige Texte nativ geprüft. Jetzt auch Beschreibung mit 19 Seiten, Blättern und Rückkehr zum Kurzfall bestanden; weitere Herkunfts-/Lifecycle-Kontexte offen. |
 | Veraltetes `Window.IsTopMost` | Durch `Window.IsDialogTopmost` ersetzt. | Musik-Hauptmenüziel → Widget-Einstellungen → Zurück → Home nativ geprüft. |
 | Veraltetes `System.IsInhibit` | Durch `System.IdleShutdownInhibited` ersetzt. | Nativer Menü-Zustandswechsel false → true → false und passende Sichtbarkeit geprüft; Testwerte wiederhergestellt. |
 | Veraltetes `PlayDVD()` | Durch `PlayDisc()` ersetzt. | Quellengeprüft; echte Disc-Wiedergabe offen. |
