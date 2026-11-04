@@ -1,5 +1,13 @@
 # Kodi 22 compatibility audit and cleanup plan
 
+## Unavailable selected lyrics provider guarded (2026-11-05)
+
+The typed RunScript contract is supported, but a selected addon may later become disabled or disappear. Native baseline: disabled CU LRC 6.7.6 made MusicOSD 701 and PlayerControls 609 set Lyrics=true and dispatch RunScript, producing two non-existing-script ERROR lines. Corrected only MusicOSD.xml and PlayerControls.xml. The dynamic System.AddonVersion(Skin.String(LyricScript_Path)) label uses enabled-only lookup in Piers/master and becomes empty when unavailable, as confirmed natively. Use the existing typed addon selector for unavailable providers. The radio toggle can still clear an already true Lyrics state; CU reuse and enabled-provider start/stop remain intact.
+
+Six disabled/missing/empty-selection cases, stale-state clearing and positive enabled CU manual/background regressions passed, final ERROR lists empty. The first positive regression had a helper shutdown timing error; the helper now closes the modal GUI and waits for provider exit before quitting. Exact internal cause of that timeout was not proven. Secured settings/music/addon DB snapshots restored; positive probes verify standard/copied addon source equality. [Primary sources and boundaries](kodi22_inventory/lyrics_availability_review.json), [native availability cases](kodi22_runtime/lyrics_availability_checks.json), [positive regressions](kodi22_runtime/lyrics_availability_regression_restore.json). No external addon code correction.
+
+Fresh TEMP package changes only the two lyrics-entry XML files against the previous header package. 294 files match, CRC/179 XML-XSP checks pass; native fresh ZIP installation/restart also pass without ERROR, secured test state restored. [Package](kodi22_inventory/lyrics_availability_package_review.json), [installation](kodi22_runtime/lyrics_availability_install_checks.json). No full provider, online, language/aspect or rapid enablement-transition acceptance implied.
+
 ## Current RunScript entry types, including selected lyrics provider (2026-11-05)
 
 Refreshed the historical direct-call inventory against current XML: 30 calls, nine targets, including three attribute-valued include actions and the skin-owned autocomplete file. All literal addon targets have an explicitly accepted script/library declaration in their read-only reference manifests. ExtendedInfo 6.0.9 is available in the isolated test profile; the historical inventory's unresolved installed-reference note is not the current result. Actual standard/isolated reference paths and hashes are recorded individually.

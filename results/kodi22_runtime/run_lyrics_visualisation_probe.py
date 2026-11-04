@@ -295,7 +295,18 @@ def main():
             wait(screenshot.exists, True)
     finally:
         if client:
-            client.send_action("PlayerControl(Stop)")
+            try:
+                # Let the modal GUI return before stopping its invoker or quitting Kodi.
+                if boolean("Window.IsVisible(script-cu-lrclyrics-main.xml)"):
+                    rpc("Input.Back")
+                    wait(lambda: boolean("Window.IsVisible(script-cu-lrclyrics-main.xml)"), False)
+                    wait(lambda: label("Window(Home).Property(culrc.guirunning)"), "")
+                client.send_action("PlayerControl(Stop)")
+                wait(lambda: boolean("Player.HasAudio"), False)
+                client.send_action("StopScript(script.cu.lrclyrics)")
+                wait(lambda: label("Window(Home).Property(culrc.running)"), "")
+            except Exception as exc:
+                report["shutdown_wait_failure"] = repr(exc)
             client.close()
         if process:
             try:
@@ -323,7 +334,7 @@ def main():
         report["errors"] = [line for line in lines if " error " in line.lower() or "fatal" in line.lower()]
         (repo / "results/kodi22_runtime" / (artifact + "_checks.json")).write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
     print(json.dumps({"failure": failure, "background": args.background_service, "observations": report["observations"], "errors": len(report["errors"]), "cleanup": cleanup}, ensure_ascii=True))
-    return int(bool(failure) or bool(report["errors"]) or not all(cleanup.values()))
+    return int(bool(failure) or bool(report.get("shutdown_wait_failure")) or bool(report["errors"]) or not all(cleanup.values()))
 
 
 if __name__ == "__main__":
