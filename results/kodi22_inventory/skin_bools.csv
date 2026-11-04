@@ -288,7 +288,7 @@ homewidget_videos_user;4;2;2;Custom_1500_WidgetSettings.xml, Includes_Widget_Par
 infowall;3;1;0;Includes_SidePanel_right.xml, View_Music_741_CoverWall.xml
 kioskmode;10;1;0;EventLog.xml, MyFavourites.xml, MyGames.xml, MyMusicNav.xml, MyPics.xml, MyPlaylist.xml, MyPrograms.xml, MyVideoNav.xml, MyWeather.xml, SkinSettings.xml
 label_flagging;1;0;0;Includes_Flagging.xml
-lyrics;4;3;0;MusicOSD.xml, PlayerControls.xml, script-cu-lrclyrics-main.xml
+lyrics;4;4;0;MusicOSD.xml, PlayerControls.xml, script-cu-lrclyrics-main.xml
 mousearrow;2;1;0;SkinSettings.xml, Variables.xml
 musicinfo;6;1;0;Includes_SidePanel_right.xml, View_Music_509_Fanart.xml
 musicoverlay_stream;4;3;0;Custom_1155_FirstRun.xml, MusicOSD.xml, MusicVisualisation.xml, SkinSettings.xml

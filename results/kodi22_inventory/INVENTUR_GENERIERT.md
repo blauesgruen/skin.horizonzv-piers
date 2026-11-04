@@ -7,7 +7,7 @@ Erzeugt von `tools/analyze_skin.py`. Alle Detaillisten liegen als CSV (Trennzeic
 | Kennzahl | Wert |
 |---|---|
 | xml_dateien | 164 |
-| xml_zeilen | 23030 |
+| xml_zeilen | 23033 |
 | xml_parsefehler | 0 |
 | fenster | 95 |
 | custom_fenster | 19 |
@@ -114,7 +114,7 @@ Erzeugt von `tools/analyze_skin.py`. Alle Detaillisten liegen als CSV (Trennzeic
 | GameOSD.xml |  | window | 1103 | 20 | 5 | 174 |
 | Home.xml |  | window | 9000 | 47 | 33 | 494 |
 | LoginScreen.xml | 29 | window | 52 | 16 | 8 | 138 |
-| MusicOSD.xml |  | window | 99 | 55 | 24 | 652 |
+| MusicOSD.xml |  | window | 99 | 55 | 24 | 654 |
 | MusicVisualisation.xml |  | window |  	 | 193 | 40 | 1396 |
 | MyFavourites.xml |  | window | 777 | 10 | 22 | 79 |
 | MyGames.xml |  | window | 50 | 8 | 20 | 65 |
@@ -130,7 +130,7 @@ Erzeugt von `tools/analyze_skin.py`. Alle Detaillisten liegen als CSV (Trennzeic
 | MyPrograms.xml | 1 | window | 777 | 11 | 23 | 84 |
 | MyVideoNav.xml |  | window | 50 | 19 | 32 | 157 |
 | MyWeather.xml |  | window | 9000 | 41 | 36 | 417 |
-| PlayerControls.xml |  | dialog | 100 | 34 | 6 | 431 |
+| PlayerControls.xml |  | dialog | 100 | 34 | 6 | 432 |
 | Pointer.xml | 105 | window |  | 4 | 0 | 38 |
 | Settings.xml |  | window | 9000 | 15 | 12 | 211 |
 | SettingsCategory.xml |  | window | 3 | 49 | 18 | 344 |

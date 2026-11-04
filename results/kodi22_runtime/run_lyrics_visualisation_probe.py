@@ -2,8 +2,10 @@
 
 Only an isolated profile is configured. No online scraper is enabled.
 """
+import argparse
 import hashlib
 import json
+import re
 import secrets
 import shutil
 import subprocess
@@ -17,6 +19,12 @@ from pathlib import Path
 
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--background-service", action="store_true")
+    parser.add_argument("--report-prefix")
+    args = parser.parse_args()
+    artifact = args.report_prefix or ("lyrics_background" if args.background_service else "lyrics_visualisation")
+    assert artifact and all(c.isalnum() or c == "_" for c in artifact)
     repo = Path(__file__).resolve().parents[2]
     root = Path(r"C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440")
     check = subprocess.run(["powershell.exe", "-NoProfile", "-Command", "@(Get-Process kodi -ErrorAction SilentlyContinue).Count"], capture_output=True, text=True, creationflags=subprocess.CREATE_NO_WINDOW)
@@ -70,7 +78,7 @@ def main():
     for scraper in (addons / "script.cu.lrclyrics/lib/culrcscrapers").iterdir():
         if scraper.is_dir() and scraper.name != "__pycache__":
             defaults[scraper.name] = "false"
-    defaults.update(service="false", hide_dialog="false", search_lrc_file="true", search_txt_file="false", search_embedded="false", log_enabled="true", save_lyrics_path=str(work / "lyrics-cache"))
+    defaults.update(service="true" if args.background_service else "false", hide_dialog="false", search_lrc_file="true", search_txt_file="false", search_embedded="false", log_enabled="true", save_lyrics_path=str(work / "lyrics-cache"))
     for name in list(defaults):
         if name.startswith("save_lyrics") and name != "save_lyrics_path":
             defaults[name] = "false"
@@ -120,7 +128,26 @@ def main():
         keys = ["Window(Home).Property(culrc.running)", "Window(Home).Property(culrc.guirunning)", "Window(Home).Property(culrc.lyrics)", "Window(Home).Property(culrc.source)", "MusicPlayer.Title", "MusicPlayer.Artist", "System.CurrentWindow", "System.CurrentControlID"]
         return rpc("XBMC.GetInfoLabels", {"labels": keys})["result"]
 
-    report = {"scope": "Native MusicOSD lyrics entry over real Visualisation with unchanged CU LRC 6.7.6 and authored local LRC", "verified_addon_files": {name: len(hashes) for name, hashes in copied.items()}, "observations": []}
+    def provider_invokers():
+        log = (root / "portable_data/kodi.log").read_text(encoding="utf-8", errors="replace")
+        return sorted({int(x) for x in re.findall(r"CPythonInvoker\((\d+), [^\r\n]*[\\/]script\.cu\.lrclyrics[\\/]default\.py\)", log)})
+
+    def osd_lyrics_start():
+        rpc("GUI.ActivateWindow", {"window": "musicosd"})
+        wait(lambda: boolean("Window.IsVisible(musicosd)"), True)
+        time.sleep(.3)
+        client.send_action("Control.SetFocus(701)")
+        wait(lambda: boolean("Control.HasFocus(701)"), True)
+        rpc("Input.Select")
+        wait(lambda: boolean("Skin.HasSetting(Lyrics)"), True)
+        # An already-visible provider needs no startup delay. Wait for the OSD's
+        # actual close instead of racing a second OSD activation with its fade.
+        wait(lambda: boolean("Window.IsVisible(musicosd)"), False)
+        wait(lambda: label("Window(Home).Property(culrc.running)"), "true")
+        wait(lambda: boolean("Window.IsVisible(script-cu-lrclyrics-main.xml)"), True)
+        wait(lambda: "HorizonzV audit line one" in label("Window(Home).Property(culrc.lyrics)"), True)
+
+    report = {"scope": "Native MusicOSD lyrics entry over real Visualisation with unchanged CU LRC 6.7.6 and authored local LRC", "background_service_configured": args.background_service, "verified_addon_files": {name: len(hashes) for name, hashes in copied.items()}, "observations": []}
     process = client = None
     failure = None
     try:
@@ -144,6 +171,13 @@ def main():
         client.send_action("Skin.SetString(LyricScript_Path,script.cu.lrclyrics)")
         client.send_action("Skin.Reset(Lyrics)")
         wait(lambda: boolean("Skin.HasSetting(Lyrics)"), False)
+        if args.background_service:
+            # No provider RunScript has been issued by the fixture at this point.
+            wait(lambda: label("Window(Home).Property(culrc.running)"), "true")
+            report["background_running_before_playback_or_skin_entry"] = snapshot()
+            for setting in ("fanart", "artistslideshow_artistinfos_bio", "artistslideshow_artistinfos_albums", "artistslideshow_artistinfos_similar"):
+                client.send_action("Skin.Reset(" + setting + ")")
+                wait(lambda: boolean("Skin.HasSetting(" + setting + ")"), False)
         client.send_action('PlayMedia("' + audio.as_posix() + '")')
         wait(lambda: boolean("Player.HasAudio"), True)
         wait(lambda: any(p.get("type") == "audio" for p in rpc("Player.GetActivePlayers")["result"]), True)
@@ -152,18 +186,67 @@ def main():
         # entered Visualisation automatically during audio startup.
         client.send_action("ActivateWindow(visualisation)")
         wait(lambda: boolean("Window.IsVisible(visualisation)"), True)
+        if args.background_service:
+            wait(lambda: boolean("Skin.HasSetting(Lyrics)"), True)
+            wait(lambda: boolean("Window.IsVisible(script-cu-lrclyrics-main.xml)"), True)
+            wait(lambda: "HorizonzV audit line one" in label("Window(Home).Property(culrc.lyrics)"), True)
+            report["automatic_background_display"] = {"state": snapshot(), "lyrics_setting": boolean("Skin.HasSetting(Lyrics)")}
+            original_invokers = provider_invokers()
+            assert original_invokers, "Provider invocation IDs missing from native debug log"
+            rpc("Input.Back")
+            wait(lambda: boolean("Window.IsVisible(script-cu-lrclyrics-main.xml)"), False)
+            wait(lambda: label("Window(Home).Property(culrc.guirunning)"), "")
+            assert label("Window(Home).Property(culrc.running)") == "true"
+            report["background_gui_closed_service_running"] = snapshot()
+            osd_lyrics_start()
+            assert provider_invokers() == original_invokers
+            report["background_force_reshow"] = {"state": snapshot(), "invokers_before": original_invokers, "invokers_after": provider_invokers()}
+            # Reuse the same running service through the Home PlayerControls entry.
+            rpc("Input.Back")
+            wait(lambda: boolean("Window.IsVisible(script-cu-lrclyrics-main.xml)"), False)
+            wait(lambda: label("Window(Home).Property(culrc.guirunning)"), "")
+            rpc("GUI.ActivateWindow", {"window": "home"})
+            wait(lambda: boolean("Window.IsActive(home)"), True)
+            client.send_action("ActivateWindow(playercontrols)")
+            wait(lambda: boolean("Window.IsVisible(playercontrols)"), True)
+            client.send_action("Control.SetFocus(609)")
+            wait(lambda: boolean("Control.HasFocus(609)"), True)
+            rpc("Input.Select")
+            wait(lambda: boolean("Window.IsVisible(playercontrols)"), False)
+            client.send_action("ActivateWindow(visualisation)")
+            wait(lambda: boolean("Window.IsVisible(script-cu-lrclyrics-main.xml)"), True)
+            wait(lambda: "HorizonzV audit line one" in label("Window(Home).Property(culrc.lyrics)"), True)
+            assert provider_invokers() == original_invokers
+            report["background_playercontrols_reuse"] = {"state": snapshot(), "invokers": provider_invokers()}
+            # Exercise the pre-evaluated off->on toggle action in MusicOSD 2401.
+            rpc("Input.Back")
+            wait(lambda: boolean("Window.IsVisible(script-cu-lrclyrics-main.xml)"), False)
+            wait(lambda: label("Window(Home).Property(culrc.guirunning)"), "")
+            client.send_action("Skin.Reset(Lyrics)")
+            wait(lambda: boolean("Skin.HasSetting(Lyrics)"), False)
+            rpc("GUI.ActivateWindow", {"window": "musicosd"})
+            wait(lambda: boolean("Window.IsVisible(musicosd)"), True)
+            client.send_action("Control.SetFocus(701)")
+            wait(lambda: boolean("Control.HasFocus(701)"), True)
+            rpc("Input.Down")
+            wait(lambda: boolean("Control.IsVisible(2401)"), True)
+            client.send_action("Control.SetFocus(2401)")
+            wait(lambda: boolean("Control.HasFocus(2401)"), True)
+            rpc("Input.Select")
+            wait(lambda: boolean("Skin.HasSetting(Lyrics)"), True)
+            wait(lambda: boolean("Window.IsVisible(script-cu-lrclyrics-main.xml)"), True)
+            wait(lambda: "HorizonzV audit line one" in label("Window(Home).Property(culrc.lyrics)"), True)
+            wait(lambda: boolean("Window.IsVisible(musicosd)"), False)
+            assert provider_invokers() == original_invokers
+            report["background_toggle_reuse"] = {"state": snapshot(), "lyrics_setting": boolean("Skin.HasSetting(Lyrics)"), "invokers": provider_invokers()}
         report["observations"].append({"before_start": snapshot()})
-        rpc("GUI.ActivateWindow", {"window": "musicosd"})
-        time.sleep(.3)
-        client.send_action("Control.SetFocus(701)")
-        wait(lambda: boolean("Control.HasFocus(701)"), True)
-        rpc("Input.Select")
+        osd_lyrics_start()
         report["lyrics_setting_after_start"] = boolean("Skin.HasSetting(Lyrics)")
-        wait(lambda: label("Window(Home).Property(culrc.running)"), "true")
-        wait(lambda: boolean("Window.IsVisible(script-cu-lrclyrics-main.xml)"), True)
-        wait(lambda: "HorizonzV audit line one" in label("Window(Home).Property(culrc.lyrics)"), True)
+        if args.background_service:
+            assert provider_invokers() == original_invokers
+            report["already_visible_no_duplicate_invoker"] = provider_invokers()
         report["observations"].append({"lyrics_visible": snapshot()})
-        screenshot = repo / "results/kodi22_runtime/lyrics_visualisation.png"
+        screenshot = repo / "results/kodi22_runtime" / (artifact + ".png")
         screenshot.unlink(missing_ok=True)
         client.send_action('TakeScreenshot("' + screenshot.as_posix() + '")')
         wait(screenshot.exists, True)
@@ -199,13 +282,14 @@ def main():
         wait(lambda: boolean("Window.IsVisible(script-cu-lrclyrics-main.xml)"), True)
         wait(lambda: "HorizonzV audit line one" in label("Window(Home).Property(culrc.lyrics)"), True)
         report["observations"].append({"player_controls_restart": snapshot(), "lyrics_setting": boolean("Skin.HasSetting(Lyrics)")})
+        report["provider_invokers_after_restart"] = provider_invokers()
     except Exception as exc:
         failure = repr(exc)
         report["failure"] = failure
         report["failure_trace"] = traceback.format_exc()
         if client:
             report["failure_state"] = snapshot()
-            screenshot = repo / "results/kodi22_runtime/lyrics_visualisation_failure.png"
+            screenshot = repo / "results/kodi22_runtime" / (artifact + "_failure.png")
             screenshot.unlink(missing_ok=True)
             client.send_action('TakeScreenshot("' + screenshot.as_posix() + '")')
             wait(screenshot.exists, True)
@@ -235,9 +319,11 @@ def main():
         cleanup["all_copied_addon_files_unchanged"] = all(hashlib.sha256((addons / name / rel).read_bytes()).hexdigest() == digest for name, hashes in copied.items() for rel, digest in hashes.items())
         cleanup["all_standard_source_files_unchanged"] = all(hashlib.sha256((repo.parent / name / rel).read_bytes()).hexdigest() == digest for name, hashes in copied.items() for rel, digest in hashes.items())
         report["cleanup"] = cleanup
-        (repo / "results/kodi22_runtime/lyrics_visualisation_checks.json").write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
-    print(json.dumps(report, ensure_ascii=True))
-    return int(bool(failure) or not all(cleanup.values()))
+        lines = (root / "portable_data/kodi.log").read_text(encoding="utf-8", errors="replace").splitlines()
+        report["errors"] = [line for line in lines if " error " in line.lower() or "fatal" in line.lower()]
+        (repo / "results/kodi22_runtime" / (artifact + "_checks.json")).write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
+    print(json.dumps({"failure": failure, "background": args.background_service, "observations": report["observations"], "errors": len(report["errors"]), "cleanup": cleanup}, ensure_ascii=True))
+    return int(bool(failure) or bool(report["errors"]) or not all(cleanup.values()))
 
 
 if __name__ == "__main__":

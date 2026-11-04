@@ -1,0 +1,142 @@
+{
+  "checked_on": "2026-11-04",
+  "scope": "Skin-only CU LRC 6.7.6 window lifecycle and reuse of an already running provider.",
+  "classification": "Skin/provider lifecycle defects; no removed Kodi API claimed.",
+  "fixes": [
+    "Remove the CU-specific hidden-button Action(back) during initial focus.",
+    "Set Skin Lyrics state on CU window load, including automatic background-service display.",
+    "For selected CU LRC only: request culrc.force on a running provider with closed GUI; avoid redundant RunScript while already running. Preserve generic RunScript for other configured providers and CU when not running."
+  ],
+  "kodi_source_evidence": [
+    {
+      "source": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/interfaces/builtins/AddonBuiltins.cpp",
+      "matches": [
+        {
+          "line": 359,
+          "text": "static int StopScript(const std::vector<std::string>& params)"
+        },
+        {
+          "line": 361,
+          "text": "//! @todo FIXME: This does not work for addons with multiple extension points!"
+        },
+        {
+          "line": 367,
+          "text": "scriptpath = script->LibPath();"
+        },
+        {
+          "line": 368,
+          "text": "CScriptInvocationManager::GetInstance().Stop(scriptpath);"
+        }
+      ]
+    },
+    {
+      "source": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/interfaces/generic/ScriptInvocationManager.cpp",
+      "matches": [
+        {
+          "line": 47,
+          "text": "if (script.done)"
+        },
+        {
+          "line": 48,
+          "text": "paths.erase(script.script);"
+        },
+        {
+          "line": 266,
+          "text": "m_scriptPaths.insert(std::make_pair(script, m_lastInvokerThread->GetId()));"
+        },
+        {
+          "line": 358,
+          "text": "const auto script = m_scriptPaths.find(scriptPath);"
+        },
+        {
+          "line": 359,
+          "text": "if (script == m_scriptPaths.end())"
+        },
+        {
+          "line": 362,
+          "text": "return Stop(script->second, wait);"
+        },
+        {
+          "line": 378,
+          "text": "const auto it = m_scriptPaths.find(scriptPath);"
+        }
+      ]
+    }
+  ],
+  "source_interpretation": "The script manager indexes paths to invocation IDs, inserts a path on execute and erases that path when an invocation finishes. A redundant short entry can remove a path still used by the background invocation. This is a source-derived explanation of the observed StopScript failure, not a debugger trace.",
+  "provider_contract": "CU's existing default.py sets Home culrc.force=TRUE when its service is running and GUI is closed; gui.py main_loop consumes that request. The skin mirrors that existing request branch without launching another invocation.",
+  "runtime_evidence": [
+    "../kodi22_runtime/lyrics_background_before_fix.json",
+    "../kodi22_runtime/lyrics_background_after_window_fix_before_start_guard.json",
+    "../kodi22_runtime/lyrics_background_paths_checks.json",
+    "../kodi22_runtime/lyrics_visualisation_checks.json"
+  ],
+  "helper_limit": "A separate intermediate OSD reopen race was corrected by waiting for actual close; it is retained as lyrics_background_before_osd_wait.json.",
+  "limits": [
+    "Only unchanged CU LRC 6.7.6 with authored local LRC is tested. No online scraper or other configured lyrics provider run.",
+    "The CU running/gui/force properties are implementation-specific; no stable future API guarantee is inferred.",
+    "Generic other-provider dispatch is retained by the selector conditions, with no new provider-specific action for those targets.",
+    "System.CurrentWindow captions for dynamic Python windows are diagnostic labels, not action targets; no power action executed.",
+    "No Kodi or external add-on code modified.",
+    "Only duplicate entries from the three corrected skin controls are prevented; external callers of the same provider are not controlled."
+  ],
+  "provider_source_evidence": [
+    {
+      "file": "D:\\Program Files\\Kodi22\\portable_data\\addons\\script.cu.lrclyrics\\default.py",
+      "sha256": "95f3e9ddf988986c200eaee7b9064c5adfe7f30f31e3bf2d1a6262c11bc70187",
+      "matches": [
+        {
+          "line": 15,
+          "text": "elif not WIN.getProperty('culrc.running') == 'true':"
+        },
+        {
+          "line": 20,
+          "text": "elif not WIN.getProperty('culrc.guirunning') == 'TRUE':"
+        },
+        {
+          "line": 21,
+          "text": "WIN.setProperty('culrc.force','TRUE')"
+        }
+      ]
+    },
+    {
+      "file": "D:\\Program Files\\Kodi22\\portable_data\\addons\\script.cu.lrclyrics\\lib\\gui.py",
+      "sha256": "54bc0dc50e2dd90a8605755afd49685139b5af3b32ea90dbc7e197f6090129af",
+      "matches": [
+        {
+          "line": 95,
+          "text": "elif WIN.getProperty('culrc.force') == 'TRUE':"
+        },
+        {
+          "line": 398,
+          "text": "WIN.clearProperty('culrc.guirunning')"
+        },
+        {
+          "line": 442,
+          "text": "self.setup_gui()"
+        },
+        {
+          "line": 446,
+          "text": "self.gui_loop()"
+        }
+      ]
+    }
+  ],
+  "native_summary": {
+    "background_invokers_during_all_reuse_paths": [
+      0
+    ],
+    "after_actual_stop_and_cold_restart": [
+      0,
+      6
+    ],
+    "manual_mode_passed": true,
+    "errors_in_both_final_runs": 0,
+    "verified_provider_files": {
+      "script.cu.lrclyrics": 140,
+      "script.module.beautifulsoup4": 13,
+      "script.module.soupsieve": 10,
+      "script.module.mutagen": 60
+    }
+  }
+}

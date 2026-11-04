@@ -124,7 +124,7 @@ homewidget_tvshow_label;3;2;0;Custom_1500_WidgetSettings.xml, Includes_Widget_Pa
 homewidget_tvshow_path;3;5;0;Custom_1500_WidgetSettings.xml, Variables_HomemenuCustomItems.xml
 homewidget_videos_label;3;2;1;Custom_1500_WidgetSettings.xml, Includes_Widget_Param.xml
 homewidget_videos_path;3;5;1;Custom_1500_WidgetSettings.xml, Variables_HomemenuCustomItems.xml
-lyricscript_path;13;2;0;MusicOSD.xml, PlayerControls.xml
+lyricscript_path;19;2;0;MusicOSD.xml, PlayerControls.xml
 moviegenreicons.ext;2;0;0;Variables.xml
 moviegenreicons.name;16;0;0;Variables.xml
 musicgenreicons.ext;2;0;0;Variables.xml

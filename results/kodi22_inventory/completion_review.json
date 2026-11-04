@@ -1,7 +1,7 @@
 {
   "checked_on": "2026-11-04",
-  "scope": "Review against the original skin-only objective, using the unchanged product source at the stated checkpoint. Not a complete Kodi parser or overall runtime sign-off.",
-  "source_checkpoint": "c96c0bf4104e33fd1299d079aaf23862434da730",
+  "scope": "Review against the original skin-only objective; updated CU lyrics runtime source is fingerprinted below. Not an overall runtime sign-off.",
+  "source_checkpoint": "a87750854bd09a22d38440410050f114dd1ab20a",
   "branch": "refactor/kodi22-kompatibilitaet",
   "acceptance_document_local_links_checked": 58,
   "missing_acceptance_document_targets": [],
@@ -25,7 +25,9 @@
         "kodi22_inventory/artistslideshow_contract_review.json",
         "kodi22_inventory/tmdbhelper_contract_review.json",
         "kodi22_inventory/fritz_gto_contract_review.json",
-        "kodi22_inventory/radiomonitor_contract_review.json"
+        "kodi22_inventory/radiomonitor_contract_review.json",
+        "kodi22_inventory/lyrics_background_review.json",
+        "kodi22_runtime/lyrics_background_paths_checks.json"
       ]
     },
     {
@@ -38,7 +40,7 @@
     },
     {
       "requirement": "Targeted tests and original plugin/local/SMB fanart behaviour",
-      "assessment": "Incomplete runtime evidence. Local actual file and retained-stack playback now passed. Real SMB path is absent and requested; Disney plugin playback retains the documented DRM prerequisite. Further named integration states remain listed in acceptance document.",
+      "assessment": "Incomplete runtime evidence. Local actual file and retained-stack playback now passed. Real SMB path is absent and requested; Disney plugin playback retains the documented DRM prerequisite. Further named integration states remain listed in acceptance document. CU LRC background and manual service cases are now additionally verified; this does not close the external fanart cases.",
       "evidence": [
         "kodi22_runtime/player_stack_fanart_checks.json",
         "kodi22_runtime/fanart_wrapper_path_checks.json",
@@ -79,5 +81,11 @@
       }
     ],
     "credentials_printed": false
+  },
+  "source_checkpoint_note": "Base commit for this working-tree review; three current runtime changes are identified by hashes.",
+  "runtime_worktree_sha256": {
+    "xml\\MusicOSD.xml": "8ad19ba0dbf74e59a4d07823d3ff20f28952633586d2385b85bd7f9c19b2446a",
+    "xml\\PlayerControls.xml": "f56721438a25600c112efe1ba3c6e67585ff919f578f2f3f4c599dbbfb1ed42d",
+    "xml\\script-cu-lrclyrics-main.xml": "13363b159138d75d0ad6fc35ba1ed05409aaafb3331abe939c89365da30b38d1"
   }
 }

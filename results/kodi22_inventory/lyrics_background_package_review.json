@@ -1,0 +1,15 @@
+{
+  "checked_on": "2026-11-04",
+  "archive": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-lyrics-background-package-ff475dc97e3747479d9d94dde1890f86\\skin.horizonzv-1.22.0.1.zip",
+  "sha256": "3800e0a45f2edf9a6fff18e3d90fe92e70fff3e19f1c8f896ad73e8b82a00218",
+  "file_count": 294,
+  "crc_ok": true,
+  "all_entries_equal_workspace": true,
+  "xml_xsp_parsed": 179,
+  "changed_from_previous_test_package": [
+    "xml/MusicOSD.xml",
+    "xml/PlayerControls.xml",
+    "xml/script-cu-lrclyrics-main.xml"
+  ],
+  "native_install_evidence": "../kodi22_runtime/lyrics_background_install_checks.json"
+}

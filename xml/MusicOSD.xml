@@ -243,7 +243,8 @@
                             <focusedcolor>black</focusedcolor>
                             <label>$LOCALIZE[24013]</label>
                             <onclick>Skin.ToggleSetting(Lyrics)</onclick>
-                            <onclick condition="!Skin.HasSetting(Lyrics)">RunScript($INFO[Skin.String(LyricScript_Path)])</onclick>
+                            <onclick condition="!Skin.HasSetting(Lyrics)+String.IsEqual(Skin.String(LyricScript_Path),script.cu.lrclyrics)+String.IsEqual(Window(Home).Property(culrc.running),true)+!String.IsEqual(Window(Home).Property(culrc.guirunning),TRUE)">SetProperty(culrc.force,TRUE,home)</onclick>
+                            <onclick condition="!Skin.HasSetting(Lyrics)+[!String.IsEqual(Skin.String(LyricScript_Path),script.cu.lrclyrics)|!String.IsEqual(Window(Home).Property(culrc.running),true)]">RunScript($INFO[Skin.String(LyricScript_Path)])</onclick>
                             <onclick condition="Skin.HasSetting(Lyrics)">StopScript($INFO[Skin.String(LyricScript_Path)])</onclick>
                             <selected>Skin.HasSetting(Lyrics)</selected>
                         </control>
@@ -566,7 +567,8 @@
                     <onright>707</onright>
 					<onclick condition="!String.IsEmpty(Skin.String(LyricScript_Path))">Skin.SetBool(Lyrics)</onclick>
 					<onclick condition="!String.IsEmpty(Skin.String(LyricScript_Path))">Close</onclick>
-					<onclick condition="!String.IsEmpty(Skin.String(LyricScript_Path))">RunScript($INFO[Skin.String(LyricScript_Path)])</onclick>
+                    <onclick condition="String.IsEqual(Skin.String(LyricScript_Path),script.cu.lrclyrics)+String.IsEqual(Window(Home).Property(culrc.running),true)+!String.IsEqual(Window(Home).Property(culrc.guirunning),TRUE)">SetProperty(culrc.force,TRUE,home)</onclick>
+                    <onclick condition="!String.IsEmpty(Skin.String(LyricScript_Path))+[!String.IsEqual(Skin.String(LyricScript_Path),script.cu.lrclyrics)|!String.IsEqual(Window(Home).Property(culrc.running),true)]">RunScript($INFO[Skin.String(LyricScript_Path)])</onclick>
 					<onclick condition="String.IsEmpty(Skin.String(LyricScript_Path))">Skin.SetAddon(LyricScript_Path,xbmc.python.lyrics)</onclick>
                     <usealttexture>String.IsEmpty(Skin.String(LyricScript_Path))</usealttexture>
                     <animation effect="zoom" start="90" center="auto" end="130" time="50">Focus</animation>

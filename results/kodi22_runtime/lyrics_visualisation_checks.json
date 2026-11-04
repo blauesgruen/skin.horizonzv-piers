@@ -1,5 +1,6 @@
 {
   "scope": "Native MusicOSD lyrics entry over real Visualisation with unchanged CU LRC 6.7.6 and authored local LRC",
+  "background_service_configured": false,
   "verified_addon_files": {
     "script.cu.lrclyrics": 140,
     "script.module.beautifulsoup4": 13,
@@ -70,8 +71,13 @@
       "lyrics_setting": true
     }
   ],
-  "pid": 32224,
+  "pid": 37592,
   "lyrics_setting_after_start": true,
+  "provider_invokers_after_restart": [
+    0,
+    4,
+    6
+  ],
   "cleanup": {
     "process_exited": true,
     "provider_settings_restored": true,
@@ -80,58 +86,6 @@
     "all_copied_addon_files_unchanged": true,
     "all_standard_source_files_unchanged": true
   },
-  "static_checks": [
-    {
-      "tool": "check_skin_compatibility.py",
-      "exit_code": 0,
-      "findings": 0,
-      "errors": 0,
-      "warnings": 0,
-      "literal_references": null,
-      "arity_candidates": 0,
-      "condition_atom_candidates": 0
-    },
-    {
-      "tool": "audit_skin_actions.py",
-      "exit_code": 0,
-      "findings": 0,
-      "errors": 0,
-      "warnings": 0,
-      "literal_references": 1615,
-      "arity_candidates": 0,
-      "condition_atom_candidates": 0
-    },
-    {
-      "tool": "audit_skin_windows.py",
-      "exit_code": 0,
-      "findings": 0,
-      "errors": 0,
-      "warnings": 0,
-      "literal_references": null,
-      "arity_candidates": 0,
-      "condition_atom_candidates": 0
-    },
-    {
-      "tool": "audit_skin_info_names.py",
-      "exit_code": 0,
-      "findings": 0,
-      "errors": 0,
-      "warnings": 0,
-      "literal_references": null,
-      "arity_candidates": 0,
-      "condition_atom_candidates": 0
-    }
-  ],
-  "log_checks": {
-    "error_lines": 0,
-    "invalid_control101_focus_lines": 0,
-    "provider_local_file_found": true,
-    "regular_exit": true
-  },
-  "limits": [
-    "CU LRC 6.7.6 with authored local LRC, service disabled and online scrapers disabled.",
-    "Active background-service StopScript remains a separate multi-entrypoint case.",
-    "No online scraper result or other lyrics provider compatibility claim.",
-    "Dynamic Python window IDs make System.CurrentWindow text labels unreliable; no power action was executed."
-  ]
+  "errors": [],
+  "diagnostic_note": "System.CurrentWindow captions for dynamic Python window IDs are not action targets; native visibility/focus and provider properties establish the tested state. No HDD/power action executed."
 }
