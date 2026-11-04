@@ -7,7 +7,7 @@ Erzeugt von `tools/analyze_skin.py`. Alle Detaillisten liegen als CSV (Trennzeic
 | Kennzahl | Wert |
 |---|---|
 | xml_dateien | 164 |
-| xml_zeilen | 24231 |
+| xml_zeilen | 23036 |
 | xml_parsefehler | 0 |
 | fenster | 95 |
 | custom_fenster | 19 |
@@ -42,7 +42,7 @@ Erzeugt von `tools/analyze_skin.py`. Alle Detaillisten liegen als CSV (Trennzeic
 | fonts | 56 |
 | fonts_unbenutzt | 0 |
 | farben_benannt | 24 |
-| farben_hex_hartkodiert | 18 |
+| farben_hex_hartkodiert | 17 |
 | addons_referenziert | 32 |
 | views | 51 |
 | auffaelligkeiten | 8 |
@@ -137,7 +137,7 @@ Erzeugt von `tools/analyze_skin.py`. Alle Detaillisten liegen als CSV (Trennzeic
 | SettingsProfile.xml |  | window | 2 | 24 | 15 | 221 |
 | SettingsScreenCalibration.xml |  | window | 8 | 9 | 2 | 116 |
 | SettingsSystemInfo.xml |  | window | 95 | 58 | 7 | 321 |
-| SkinSettings.xml | 56 | window | 8000 | 206 | 161 | 2036 |
+| SkinSettings.xml | 56 | window | 8000 | 206 | 161 | 2035 |
 | SlideShow.xml |  | window |  | 1 | 0 | 14 |
 | SmartPlaylistEditor.xml |  | window | 22 | 17 | 21 | 238 |
 | SmartPlaylistRule.xml |  | window | 9001 | 7 | 11 | 103 |
@@ -146,7 +146,7 @@ Erzeugt von `tools/analyze_skin.py`. Alle Detaillisten liegen als CSV (Trennzeic
 | VideoOSD.xml | 2901 | window | 99 | 53 | 18 | 726 |
 | VideoOSDBookmarks.xml |  | window | 2 | 17 | 2 | 159 |
 | script-cu-lrclyrics-main.xml |  | window | 99 | 27 | 2 | 286 |
-| script-globalsearch-main.xml |  | window |  | 163 | 3 | 1430 |
+| script-globalsearch.xml |  | window |  | 26 | 5 | 236 |
 | skin.horizonzv.script-gto-info.xml | 1900 | window | 10 | 16 | 9 | 145 |
 
 ### Fenster, die Estuary (Kodi 22) hat, dieser Skin aber nicht
@@ -580,6 +580,7 @@ keine
 ### Strings fremder Addons, die per `$ADDON[...]` genutzt werden
 
 - `script.cu.lrclyrics` (1×)
+- `script.globalsearch` (1×)
 - `script.service.gto` (3×)
 
 ## Grafiken
@@ -618,26 +619,26 @@ keine
 - Font-Definitionen: 56, TTF-Dateien: Acens.ttf, Bebas.ttf, BigDots.ttf, BigSquareDots.ttf, Impacted.ttf, SegoeUISymbol.ttf, aaaiight.ttf, ubuntu-r.ttf
 - Ungenutzte TTF-Dateien: Acens.ttf, BigDots.ttf, BigSquareDots.ttf, Impacted.ttf
 - Unbenutzte Font-Namen: keine
-- Verwendete, aber undefinierte Fonts: keine
+- Verwendete, aber undefinierte Fonts: font24
 
 
 ## Farben
 
 - Farbdateien: Defaults.xml
 - Benannte Farben: 24, davon unbenutzt: blackdiffuse, description_dark
-- Hartkodierte Hex-Farben (unterschiedliche Werte): 18
+- Hartkodierte Hex-Farben (unterschiedliche Werte): 17
 
 | Farbe | Verwendungen |
 |---|---|
-| black | 377 |
-| grey | 348 |
-| white | 325 |
+| black | 378 |
+| grey | 328 |
+| white | 312 |
 | description | 169 |
 | grey3 | 160 |
-| selected | 141 |
-| grey2 | 127 |
+| selected | 134 |
+| grey2 | 126 |
 | fanartdiffuse | 117 |
-| menudiffuse | 106 |
+| menudiffuse | 105 |
 | grey1 | 80 |
 | selectedhome | 38 |
 | red | 23 |
@@ -662,13 +663,13 @@ keine
 | script.service.gto | 61 | Custom_1500_WidgetSettings.xml, Includes_Dash_GTO.xml, Includes_Dashboard.xml, Includes_SkinAddonsContent.xml, skin.horizonzv.script-gto-info.xml |
 | script.skinhelper.ping | 43 | Custom_1151_WOL.xml, Home.xml, Includes_Buttons_and_Lists.xml, Includes_SkinAddonsContent.xml, SkinSettings.xml |
 | script.program.fritzact | 29 | Custom_1500_WidgetSettings.xml, Includes_Dash_FritzDect.xml, Includes_Dashboard.xml, Includes_SkinAddonsContent.xml |
-| script.image.resource.select | 21 | Custom_1500_WidgetSettings.xml, Includes_SkinAddonsContent.xml, Includes_Submenu.xml, MyVideoNav.xml, MyWeather.xml, SkinSettings.xml |
+| script.image.resource.select | 20 | Custom_1500_WidgetSettings.xml, Includes_SkinAddonsContent.xml, Includes_Submenu.xml, MyVideoNav.xml, MyWeather.xml, SkinSettings.xml |
 | plugin.video.themoviedb.helper | 13 | Includes_SkinAddonsContent.xml, MyFavourites.xml, MyVideoNav.xml, Startup.xml, Variables.xml, View_Movie_503_MediaInfo.xml |
 | script.artistslideshow | 12 | Custom_1100_Artistslideshow_Artistinfo.xml, Includes.xml, Includes_SkinAddonsContent.xml, MusicOSD.xml, Timers.xml |
 | script.skin.helper.colorpicker.bg | 12 | Includes_SkinAddonsContent.xml, SkinSettings.xml |
 | script.extendedinfo | 10 | DialogMusicInfo.xml, DialogVideoInfo.xml, Variables.xml |
 | service.coreelec.settings | 8 | DialogButtonMenu.xml, Includes_Submenu.xml, Settings.xml, SkinSettings.xml |
-| script.globalsearch | 8 | Home.xml, Includes_SkinAddonsContent.xml |
+| script.globalsearch | 8 | Home.xml, Includes_SkinAddonsContent.xml, script-globalsearch.xml |
 | service.kn.switchtimer | 6 | Includes_SkinAddonsContent.xml |
 | service.libreelec.settings | 5 | Includes_Submenu.xml, Settings.xml, SkinSettings.xml |
 | resource.images.moviegenreicons.xzener | 4 | Variables.xml |

@@ -16,6 +16,7 @@ import xml.etree.ElementTree as ET
 PIERS_INFO = "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/GUIInfoManager.cpp"
 PIERS_FACTORY = "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/guilib/GUIControlFactory.cpp"
 V23 = "https://xbmc.github.io/docs.kodi.tv/master/kodi-base/d8/d22/skinning_v23.html"
+GLOBAL_SEARCH = "https://gitlab.com/ronie/script.globalsearch/-/raw/master/README.txt"
 
 # Each match flags a literal reference, not proof of its execution or context.
 # Unsupported names and deprecated-but-supported names are distinguished.
@@ -139,6 +140,16 @@ def check(root):
         except (ET.ParseError, OSError) as exc:
             report(path, "/", "xml-read", "error", str(exc), "XML parser")
             continue
+        if path.name == "script-globalsearch-main.xml":
+            report(path, "/", "legacy-globalsearch-layout", "warning",
+                   "Reviewed Global Search 9.2.x requests script-globalsearch.xml; this legacy override is unused by those versions.",
+                   GLOBAL_SEARCH)
+        if path.name == "script-globalsearch.xml":
+            for cid, kind in {"990": "button", "991": "label", "999": "label", "9000": "list"}.items():
+                controls = tree.getroot().findall(f".//control[@id='{cid}']")
+                if len(controls) != 1 or controls[0].get("type") != kind:
+                    report(path, "/", "globalsearch-control-contract", "error",
+                           f"Global Search requires one {kind} control with ID {cid}.", GLOBAL_SEARCH)
         # ElementTree's default parser discards XML comments.
         for index, element in enumerate(tree.getroot().iter()):
             location = f"{element.tag}[document-index={index}]"

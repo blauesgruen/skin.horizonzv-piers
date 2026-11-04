@@ -1,6 +1,6 @@
 {
   "xml_dateien": 164,
-  "xml_zeilen": 24231,
+  "xml_zeilen": 23036,
   "xml_parsefehler": 0,
   "fenster": 95,
   "custom_fenster": 19,
@@ -35,7 +35,7 @@
   "fonts": 56,
   "fonts_unbenutzt": 0,
   "farben_benannt": 24,
-  "farben_hex_hartkodiert": 18,
+  "farben_hex_hartkodiert": 17,
   "addons_referenziert": 32,
   "views": 51,
   "auffaelligkeiten": 8,

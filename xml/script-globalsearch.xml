@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+    <views>50,51</views>
+    <backgroundcolor>grey3</backgroundcolor>
+    <include>openclose</include>
+    <controls>
+        <include>DialogBackground</include>
+        <control type="image">
+            <include>Dimensions_Fullscreen</include>
+            <texture colordiffuse="menudiffuse">White.png</texture>
+        </control>
+        <control type="image">
+            <left>30</left>
+            <top>110</top>
+            <width>1860</width>
+            <height>850</height>
+            <texture>BlackBack.png</texture>
+        </control>
+        <control type="label">
+            <left>50</left>
+            <top>25</top>
+            <width>1800</width>
+            <height>60</height>
+            <font>font24</font>
+            <label>$LOCALIZE[137]: $INFO[Window.Property(GlobalSearch.SearchString)]</label>
+        </control>
+        <!-- These IDs are owned by Global Search; it controls their contents/visibility. -->
+        <control type="label" id="991">
+            <left>420</left>
+            <top>110</top>
+            <width>1400</width>
+            <height>40</height>
+            <font>font16</font>
+            <label />
+        </control>
+        <control type="list" id="9000">
+            <left>50</left>
+            <top>150</top>
+            <width>330</width>
+            <height>720</height>
+            <onright condition="Control.IsVisible(50)">50</onright>
+            <onright condition="Control.IsVisible(51)">51</onright>
+            <onup>990</onup>
+            <ondown>990</ondown>
+            <itemlayout width="330" height="65">
+                <control type="label">
+                    <left>12</left>
+                    <width>305</width>
+                    <height>65</height>
+                    <font>font16</font>
+                    <aligny>center</aligny>
+                    <label>$INFO[ListItem.Label]</label>
+                </control>
+            </itemlayout>
+            <focusedlayout width="330" height="65">
+                <control type="image">
+                    <width>330</width>
+                    <height>65</height>
+                    <texture>White.png</texture>
+                </control>
+                <control type="label">
+                    <left>12</left>
+                    <width>305</width>
+                    <height>65</height>
+                    <font>font16</font>
+                    <aligny>center</aligny>
+                    <textcolor>black</textcolor>
+                    <label>$INFO[ListItem.Label]</label>
+                </control>
+            </focusedlayout>
+        </control>
+        <control type="panel" id="50">
+            <left>420</left>
+            <top>150</top>
+            <width>1440</width>
+            <height>660</height>
+            <orientation>vertical</orientation>
+            <viewtype label="536">icon</viewtype>
+            <onleft>9000</onleft>
+            <ondown>2</ondown>
+            <itemlayout width="480" height="220">
+                <control type="image">
+                    <left>10</left>
+                    <top>10</top>
+                    <width>140</width>
+                    <height>190</height>
+                    <aspectratio>keep</aspectratio>
+                    <texture fallback="DefaultVideo.png">$INFO[ListItem.Icon]</texture>
+                </control>
+                <control type="label">
+                    <left>165</left>
+                    <top>20</top>
+                    <width>290</width>
+                    <height>60</height>
+                    <font>font16</font>
+                    <label>$INFO[ListItem.Label]</label>
+                </control>
+                <control type="label">
+                    <left>165</left>
+                    <top>85</top>
+                    <width>290</width>
+                    <height>45</height>
+                    <font>font16</font>
+                    <textcolor>grey</textcolor>
+                    <label>$INFO[ListItem.Label2]</label>
+                </control>
+            </itemlayout>
+            <focusedlayout width="480" height="220">
+                <control type="image">
+                    <width>475</width>
+                    <height>215</height>
+                    <texture colordiffuse="4Fb4b4b4">White.png</texture>
+                </control>
+                <control type="image">
+                    <left>10</left>
+                    <top>10</top>
+                    <width>140</width>
+                    <height>190</height>
+                    <aspectratio>keep</aspectratio>
+                    <texture fallback="DefaultVideo.png">$INFO[ListItem.Icon]</texture>
+                </control>
+                <control type="label">
+                    <left>165</left>
+                    <top>20</top>
+                    <width>290</width>
+                    <height>60</height>
+                    <font>font16</font>
+                    <scroll>true</scroll>
+                    <label>$INFO[ListItem.Label]</label>
+                </control>
+                <control type="label">
+                    <left>165</left>
+                    <top>85</top>
+                    <width>290</width>
+                    <height>45</height>
+                    <font>font16</font>
+                    <textcolor>grey</textcolor>
+                    <label>$INFO[ListItem.Label2]</label>
+                </control>
+            </focusedlayout>
+        </control>
+        <control type="list" id="51">
+            <left>420</left>
+            <top>150</top>
+            <width>1440</width>
+            <height>660</height>
+            <viewtype label="535">list</viewtype>
+            <onleft>9000</onleft>
+            <ondown>2</ondown>
+            <itemlayout width="1440" height="80">
+                <control type="image">
+                    <left>10</left>
+                    <top>5</top>
+                    <width>70</width>
+                    <height>70</height>
+                    <aspectratio>keep</aspectratio>
+                    <texture fallback="DefaultVideo.png">$INFO[ListItem.Icon]</texture>
+                </control>
+                <control type="label">
+                    <left>100</left>
+                    <width>1310</width>
+                    <height>80</height>
+                    <font>font16</font>
+                    <aligny>center</aligny>
+                    <label>$INFO[ListItem.Label]</label>
+                </control>
+            </itemlayout>
+            <focusedlayout width="1440" height="80">
+                <control type="image">
+                    <width>1440</width>
+                    <height>80</height>
+                    <texture colordiffuse="4Fb4b4b4">White.png</texture>
+                </control>
+                <control type="image">
+                    <left>10</left>
+                    <top>5</top>
+                    <width>70</width>
+                    <height>70</height>
+                    <aspectratio>keep</aspectratio>
+                    <texture fallback="DefaultVideo.png">$INFO[ListItem.Icon]</texture>
+                </control>
+                <control type="label">
+                    <left>100</left>
+                    <width>1310</width>
+                    <height>80</height>
+                    <font>font16</font>
+                    <aligny>center</aligny>
+                    <scroll>true</scroll>
+                    <label>$INFO[ListItem.Label]</label>
+                </control>
+            </focusedlayout>
+        </control>
+        <control type="textbox">
+            <left>420</left>
+            <top>825</top>
+            <width>1440</width>
+            <height>120</height>
+            <font>font16</font>
+            <label>$INFO[ListItem.Plot]</label>
+        </control>
+        <control type="label" id="999">
+            <left>420</left>
+            <top>150</top>
+            <width>1440</width>
+            <height>70</height>
+            <font>font24</font>
+            <label>$LOCALIZE[284]</label>
+        </control>
+        <control type="button" id="990">
+            <left>50</left>
+            <top>910</top>
+            <width>330</width>
+            <height>65</height>
+            <font>font16</font>
+            <include>DialogButtonTextureFocus</include>
+            <label>$ADDON[script.globalsearch 32299]</label>
+            <onup>9000</onup>
+            <onright>2</onright>
+            <ondown>9000</ondown>
+        </control>
+        <control type="button" id="2">
+            <left>420</left>
+            <top>980</top>
+            <width>400</width>
+            <height>65</height>
+            <font>font16</font>
+            <include>DialogButtonTextureFocus</include>
+            <label>$LOCALIZE[100]: $INFO[Container.Viewmode]</label>
+            <onclick>Container.NextViewMode</onclick>
+            <onleft>990</onleft>
+            <onup condition="Control.IsVisible(50)">50</onup>
+            <onup condition="Control.IsVisible(51)">51</onup>
+        </control>
+    </controls>
+</window>

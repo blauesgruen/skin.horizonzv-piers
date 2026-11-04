@@ -1,0 +1,68 @@
+{
+  "date": "2026-11-04",
+  "classification": "Obsolete skin-addon layout contract, not removal of a Kodi API",
+  "finding": "Legacy script-globalsearch-main.xml is not requested by reviewed current Global Search; its control IDs 110..199 do not implement the current menu/media-window interface. Native baseline falls back to the addon default layout.",
+  "change": "Replace the unused legacy skin layout with script-globalsearch.xml; native media views 50/51, menu 9000, new-search 990, search-category label 991 and no-results label 999. Keep Home RunScript entry and enable/installation logic unchanged.",
+  "files": {
+    "removed": "xml/script-globalsearch-main.xml",
+    "added": "xml/script-globalsearch.xml",
+    "new_sha256": "b06a8e10894f92a2e9d350fc677a765e1d73f8247323dabe383ed1ca7f879380",
+    "controls": {
+      "991": "label",
+      "9000": "list",
+      "50": "panel",
+      "51": "list",
+      "999": "label",
+      "990": "button",
+      "2": "button"
+    },
+    "views": "50,51"
+  },
+  "sources": {
+    "official_test_archive": "https://mirrors.kodi.tv/addons/piers/script.globalsearch/script.globalsearch-9.2.1.zip",
+    "upstream_manifest": "https://gitlab.com/ronie/script.globalsearch/-/raw/master/addon.xml",
+    "upstream_entry": "https://gitlab.com/ronie/script.globalsearch/-/raw/master/default.py",
+    "upstream_skin_contract": "https://gitlab.com/ronie/script.globalsearch/-/raw/master/README.txt",
+    "upstream_constants": "https://gitlab.com/ronie/script.globalsearch/-/raw/master/lib/defs.py"
+  },
+  "versions": {
+    "native_test": "9.2.1 from official Piers repository",
+    "published_upstream": "9.2.2 manifest; same reviewed filename and four required IDs; no native 9.2.2 test"
+  },
+  "runtime": {
+    "baseline": "../kodi22_runtime/globalsearch_baseline_checks.json",
+    "current": "../kodi22_runtime/globalsearch_current_checks.json",
+    "baseline_layout_load": "2026-11-04 13:00:18.015 T:26916    info <general>: Loading skin file: C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\portable_data\\addons\\script.globalsearch\\resources\\skins\\default\\1080i\\script-globalsearch.xml, load type: LOAD_ON_GUI_INIT",
+    "current_layout_load": "2026-11-04 13:05:03.381 T:27004    info <general>: Loading skin file: C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\portable_data\\addons\\skin.horizonzv\\xml\\script-globalsearch.xml, load type: LOAD_ON_GUI_INIT",
+    "baseline_phases": 5,
+    "current_phases": 6,
+    "native_results": "Initial cancel, real movie result in both views, native view-button click, category/result Left/Right navigation, movie info, new query with no-results prompt and close.",
+    "unchanged_provider_archive_files": 226,
+    "cleanup": {
+      "process_exited": true,
+      "profile_restored": true,
+      "media_databases_restored": true,
+      "skin_xml_match_production": true,
+      "provider_copy_matches_archive": true
+    },
+    "remaining_errors": "One AVI directory error in the info case, also present with addon-default baseline. Cause not established; no addon correction and no zero-error claim."
+  },
+  "static_checks": {
+    "compatibility_findings": 0,
+    "action_findings": 0,
+    "window_findings": 0,
+    "info_arity_candidates": 0,
+    "condition_atom_candidates": 0,
+    "literal_name_candidates": 43,
+    "literal_candidates_match_existing_classifications": true,
+    "inventory_missing_static_references": 0,
+    "regression_checks": "globalsearch_regression_checks.json"
+  },
+  "limits": [
+    "Positive music, TV-series/season/episode, actor/director and PVR categories not exercised in this run.",
+    "Playback and context-menu operations not exercised.",
+    "Only the 16:9 test window inspected; no all-aspect-ratio layout claim."
+  ],
+  "drafts": "Draft JSONs preserve incorrect probe window name, modal empty-result assumption and early/mouse-pointer focus races. An initial draft of the new layout also forced default focus onto an unbound results view; final layout leaves focus ownership to the provider.",
+  "package": "globalsearch_package_review.json"
+}

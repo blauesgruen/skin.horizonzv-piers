@@ -14,7 +14,7 @@ BackgroundMyNavs;Includes.xml;8
 BackgroundOverlay;Includes.xml;1
 BandLogo;Includes.xml;1
 BatteryLevel;Includes.xml;3
-BehindDialogFadeOut;Includes.xml;22
+BehindDialogFadeOut;Includes.xml;21
 BlackBack;Includes.xml;12
 BlackGrunge;Includes.xml;7
 BlackStripes;Includes.xml;4
@@ -45,7 +45,7 @@ DefaultViewListLayout;Includes_Buttons_and_Lists.xml;2
 DialogBackground;Includes.xml;5
 DialogBackgroundCommons;Includes_BackgroundBuilding.xml;31
 DialogBackgroundSimple;Includes.xml;20
-DialogButtonTextureFocus;Includes_Buttons_and_Lists.xml;197
+DialogButtonTextureFocus;Includes_Buttons_and_Lists.xml;199
 DialogButtonTextureNoFocus;Includes_Buttons_and_Lists.xml;15
 DialogEditButton;Includes_Buttons_and_Lists.xml;10
 DialogID;Includes.xml;86
@@ -350,7 +350,7 @@ fakebutton_visible_bkg;Includes.xml;6
 fakevideowindow;Includes.xml;1
 focuseffect;Includes.xml;1
 neonslide;Includes.xml;2
-openclose;Includes.xml;112
+openclose;Includes.xml;113
 openclosebox;Includes.xml;55
 openclosefanart;Includes.xml;38
 openclosemedium;Includes.xml;36

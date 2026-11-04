@@ -85,7 +85,7 @@ SettingsCategory.xml;;window;3;49;18;344
 SettingsProfile.xml;;window;2;24;15;221
 SettingsScreenCalibration.xml;;window;8;9;2;116
 SettingsSystemInfo.xml;;window;95;58;7;321
-SkinSettings.xml;56;window;8000;206;161;2036
+SkinSettings.xml;56;window;8000;206;161;2035
 SlideShow.xml;;window;;1;0;14
 SmartPlaylistEditor.xml;;window;22;17;21;238
 SmartPlaylistRule.xml;;window;9001;7;11;103
@@ -94,5 +94,5 @@ VideoFullScreen.xml;;window;;51;10;330
 VideoOSD.xml;2901;window;99;53;18;726
 VideoOSDBookmarks.xml;;window;2;17;2;159
 script-cu-lrclyrics-main.xml;;window;99;27;2;286
-script-globalsearch-main.xml;;window;;163;3;1430
+script-globalsearch.xml;;window;;26;5;236
 skin.horizonzv.script-gto-info.xml;1900;window;10;16;9;145

@@ -3,13 +3,13 @@ resource.images.languageflags.colour;187;DialogSubtitles.xml, DialogVideoInfo.xm
 script.service.gto;61;Custom_1500_WidgetSettings.xml, Includes_Dash_GTO.xml, Includes_Dashboard.xml, Includes_SkinAddonsContent.xml, skin.horizonzv.script-gto-info.xml
 script.skinhelper.ping;43;Custom_1151_WOL.xml, Home.xml, Includes_Buttons_and_Lists.xml, Includes_SkinAddonsContent.xml, SkinSettings.xml
 script.program.fritzact;29;Custom_1500_WidgetSettings.xml, Includes_Dash_FritzDect.xml, Includes_Dashboard.xml, Includes_SkinAddonsContent.xml
-script.image.resource.select;21;Custom_1500_WidgetSettings.xml, Includes_SkinAddonsContent.xml, Includes_Submenu.xml, MyVideoNav.xml, MyWeather.xml, SkinSettings.xml
+script.image.resource.select;20;Custom_1500_WidgetSettings.xml, Includes_SkinAddonsContent.xml, Includes_Submenu.xml, MyVideoNav.xml, MyWeather.xml, SkinSettings.xml
 plugin.video.themoviedb.helper;13;Includes_SkinAddonsContent.xml, MyFavourites.xml, MyVideoNav.xml, Startup.xml, Variables.xml, View_Movie_503_MediaInfo.xml
 script.artistslideshow;12;Custom_1100_Artistslideshow_Artistinfo.xml, Includes.xml, Includes_SkinAddonsContent.xml, MusicOSD.xml, Timers.xml
 script.skin.helper.colorpicker.bg;12;Includes_SkinAddonsContent.xml, SkinSettings.xml
 script.extendedinfo;10;DialogMusicInfo.xml, DialogVideoInfo.xml, Variables.xml
 service.coreelec.settings;8;DialogButtonMenu.xml, Includes_Submenu.xml, Settings.xml, SkinSettings.xml
-script.globalsearch;8;Home.xml, Includes_SkinAddonsContent.xml
+script.globalsearch;8;Home.xml, Includes_SkinAddonsContent.xml, script-globalsearch.xml
 service.kn.switchtimer;6;Includes_SkinAddonsContent.xml
 service.libreelec.settings;5;Includes_Submenu.xml, Settings.xml, SkinSettings.xml
 resource.images.moviegenreicons.xzener;4;Variables.xml
