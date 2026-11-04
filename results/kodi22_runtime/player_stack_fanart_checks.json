@@ -1,0 +1,53 @@
+{
+  "scope": "Actual Player.Open stack of two authored local AVI files, production Home multiimage 2016. No plugin, SMB, second-part transition or malformed/mixed-wrapper test.",
+  "rows": [
+    {
+      "case": "ordinary_local_file",
+      "requested_file": "C:/Users/zorno/AppData/Local/Temp/horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440/review-player-stack-fanart-6_mcn0uh/media/first.avi",
+      "labels": {
+        "Control.GetLabel(2016)": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-player-stack-fanart-6_mcn0uh\\media\\extrafanart\\stack-fanart.jpg",
+        "Player.FilenameAndPath": "C:/Users/zorno/AppData/Local/Temp/horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440/review-player-stack-fanart-6_mcn0uh/media/first.avi",
+        "Player.FolderPath": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-player-stack-fanart-6_mcn0uh\\media\\",
+        "Skin.AspectRatio": "16:9"
+      },
+      "fanart_control_visible": true,
+      "player_item": {
+        "item": {
+          "file": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-player-stack-fanart-6_mcn0uh\\media\\first.avi",
+          "label": "first.avi",
+          "type": "unknown"
+        }
+      }
+    },
+    {
+      "case": "local_stack",
+      "requested_file": "stack://C:/Users/zorno/AppData/Local/Temp/horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440/review-player-stack-fanart-6_mcn0uh/media/first.avi , C:/Users/zorno/AppData/Local/Temp/horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440/review-player-stack-fanart-6_mcn0uh/media/second.avi",
+      "labels": {
+        "Control.GetLabel(2016)": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-player-stack-fanart-6_mcn0uh\\media\\extrafanart\\stack-fanart.jpg",
+        "Player.FilenameAndPath": "stack://C:/Users/zorno/AppData/Local/Temp/horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440/review-player-stack-fanart-6_mcn0uh/media/first.avi , C:/Users/zorno/AppData/Local/Temp/horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440/review-player-stack-fanart-6_mcn0uh/media/second.avi",
+        "Player.FolderPath": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-player-stack-fanart-6_mcn0uh\\media\\",
+        "Skin.AspectRatio": "16:9"
+      },
+      "fanart_control_visible": true,
+      "player_item": {
+        "item": {
+          "file": "stack://C:/Users/zorno/AppData/Local/Temp/horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440/review-player-stack-fanart-6_mcn0uh/media/first.avi , C:/Users/zorno/AppData/Local/Temp/horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440/review-player-stack-fanart-6_mcn0uh/media/second.avi",
+          "label": "second.avi",
+          "type": "unknown"
+        }
+      }
+    }
+  ],
+  "pid": 2692,
+  "after_stop": {
+    "Control.GetLabel(2016)": "",
+    "Player.FolderPath": ""
+  },
+  "cleanup": {
+    "process_exited": true,
+    "profile_settings_restored": true,
+    "video_databases_restored": true,
+    "skin_xml_match": true
+  },
+  "errors": []
+}

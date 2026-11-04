@@ -1,0 +1,83 @@
+{
+  "checked_on": "2026-11-04",
+  "scope": "Review against the original skin-only objective, using the unchanged product source at the stated checkpoint. Not a complete Kodi parser or overall runtime sign-off.",
+  "source_checkpoint": "c96c0bf4104e33fd1299d079aaf23862434da730",
+  "branch": "refactor/kodi22-kompatibilitaet",
+  "acceptance_document_local_links_checked": 58,
+  "missing_acceptance_document_targets": [],
+  "requirements": [
+    {
+      "requirement": "Find and replace removed/deprecated Kodi skin interfaces",
+      "assessment": "Source-history, current/master registration reviews and bounded checks provide evidence for implemented fixes; limitations of dynamic resolution remain documented.",
+      "evidence": [
+        "AENDERUNGSUEBERSICHT.md",
+        "kodi22_inventory/info_deprecation_history_review.json",
+        "kodi22_inventory/master_info_compatibility_review.json",
+        "kodi22_inventory/master_builtin_compatibility_review.json",
+        "kodi22_inventory/master_input_action_review.json"
+      ]
+    },
+    {
+      "requirement": "Check used addon skin contracts",
+      "assessment": "Named contract reviews and targeted native runs exist. Dynamic provider data and additional runtime states remain open; no blanket addon/runtime approval.",
+      "evidence": [
+        "kodi22_compatibility_audit.md",
+        "kodi22_inventory/artistslideshow_contract_review.json",
+        "kodi22_inventory/tmdbhelper_contract_review.json",
+        "kodi22_inventory/fritz_gto_contract_review.json",
+        "kodi22_inventory/radiomonitor_contract_review.json"
+      ]
+    },
+    {
+      "requirement": "Implement affected skin changes only",
+      "assessment": "Implemented fixes are in the specified skin. This review turn changes result artifacts only; native provider equality evidence and limitations are in the individual reports.",
+      "evidence": [
+        "AENDERUNGSUEBERSICHT.md",
+        "kodi22_inventory/switchtimer_property_contract_review.json"
+      ]
+    },
+    {
+      "requirement": "Targeted tests and original plugin/local/SMB fanart behaviour",
+      "assessment": "Incomplete runtime evidence. Local actual file and retained-stack playback now passed. Real SMB path is absent and requested; Disney plugin playback retains the documented DRM prerequisite. Further named integration states remain listed in acceptance document.",
+      "evidence": [
+        "kodi22_runtime/player_stack_fanart_checks.json",
+        "kodi22_runtime/fanart_wrapper_path_checks.json",
+        "kodi22_runtime/standard_disney_playback_prerequisite.json"
+      ]
+    },
+    {
+      "requirement": "Document sources and remaining uncertainty",
+      "assessment": "Current acceptance links resolve; source and runtime scopes remain separated, failed helper attempts retained.",
+      "evidence": [
+        "ABNAHMESTAND.md",
+        "kodi22_runtime/PRUEFBERICHT.md"
+      ]
+    },
+    {
+      "requirement": "Own branch and visible Kodi tests",
+      "assessment": "Correct branch verified. Native reports record the visible test processes and restoration. New evidence will be committed on this branch; no push claimed.",
+      "evidence": [
+        "kodi22_runtime/player_stack_fanart_checks.json",
+        "kodi22_runtime/switchtimer_followup_install_checks.json"
+      ]
+    }
+  ],
+  "completion_proven": false,
+  "next_external_input": "Reachable smb:// media folder containing extrafanart; no credentials requested in chat.",
+  "remaining_work_reference": "ABNAHMESTAND.md",
+  "no_external_addon_correction": true,
+  "external_prerequisites_current_readonly_check": {
+    "standard_sources_smb_paths": 0,
+    "standard_video_databases": [
+      {
+        "name": "MyVideos131.db",
+        "smb_paths": 0
+      },
+      {
+        "name": "MyVideos149.db",
+        "smb_paths": 0
+      }
+    ],
+    "credentials_printed": false
+  }
+}

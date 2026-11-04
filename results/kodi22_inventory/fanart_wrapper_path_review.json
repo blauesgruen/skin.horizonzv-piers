@@ -24,8 +24,22 @@
   "source_changes_required": false,
   "remaining": [
     "Real SMB share absent from standard sources and video databases; user path requested asynchronously.",
-    "Actual Disney playback and player-wrapper cases remain distinct.",
+    "Actual Disney/plugin playback and player wrappers beyond the tested local stack remain open.",
     "Mixed-provider, mixed local/plugin or malformed wrappers not exercised."
   ],
-  "fixture_limit": "Earlier authored-window attempts failed due malformed fixture XML, missing active media view and unsuitable label observation/expected plugin parent. They are not skin regression evidence."
+  "fixture_limit": "Earlier authored-window attempts failed due malformed fixture XML, missing active media view and unsuitable label observation/expected plugin parent. They are not skin regression evidence.",
+  "player_stack_followup": {
+    "native_evidence": "../kodi22_runtime/player_stack_fanart_checks.json",
+    "passed_cases": [
+      "ordinary local file playback",
+      "actual local stack playback retaining stack URI"
+    ],
+    "production_control": "Home multiimage 2016, unchanged PlayerExtraFanartPath",
+    "cleanup": "Profile settings, video database file set and skin XML verified.",
+    "limits": [
+      "No actual SMB, plugin playback, mixed/malformed stack or second-part transition tested.",
+      "Video-background and weather-background overrides disabled only in secured test settings.",
+      "Initial attempt returned an empty image observation; playback settling and weather-background override were adjusted together, so the exact cause was not isolated. It is not a skin failure proof."
+    ]
+  }
 }
