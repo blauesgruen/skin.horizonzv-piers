@@ -1,5 +1,11 @@
 # Kodi 22 compatibility audit and cleanup plan
 
+## Current RunScript entry types, including selected lyrics provider (2026-11-05)
+
+Refreshed the historical direct-call inventory against current XML: 30 calls, nine targets, including three attribute-valued include actions and the skin-owned autocomplete file. All literal addon targets have an explicitly accepted script/library declaration in their read-only reference manifests. ExtendedInfo 6.0.9 is available in the isolated test profile; the historical inventory's unresolved installed-reference note is not the current result. Actual standard/isolated reference paths and hashes are recorded individually.
+
+The dynamic Lyrics target was left unresolved in the older inventory. Its UI selectors explicitly select xbmc.python.lyrics, and the actual RunScript function bodies in both Piers and published master expressly accept SCRIPT_LYRICS, alongside SCRIPT, SCRIPT_WEATHER and SCRIPT_LIBRARY. CU LRC 6.7.6 declares that entry type. It therefore does not use the deprecated arbitrary-addon fallback. RunAddon also delegates its script-family handling to RunScript; a blanket replacement would not be justified by these sources. No product change needed. [Current evidence](kodi22_inventory/script_entrypoints_current_review.json). This is type/entry-point proof, not every provider's runtime functionality, activation or arbitrary manual setting values. Prior native CU/autocomplete/provider evidence remains separately linked.
+
 ## Migrated lifecycle and multi-page addon description verified (2026-11-05)
 
 The previously source-migrated AddonLifecycleType/Desc and textbox-400 paging now have positive native evidence: three authored installed metadata fixtures, four addonbrowser Info visits (normal/deprecated/broken/normal), correct native localized types/reasons and warning visibility. Short text hides paging at 1/1; a controlled 19-page description advances to pages 11 and 19 using the native spin control, with matching HasPrevious/HasNext and page label. Screenshots show the expected warning/broken icons. No product change justified. Piers and published master retain the lifecycle reader/metadata contract. [Sources and limits](kodi22_inventory/addon_lifecycle_review.json), [native run](kodi22_runtime/addon_lifecycle_checks.json).

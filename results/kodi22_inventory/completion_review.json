@@ -1,9 +1,9 @@
 {
   "checked_on": "2026-11-05",
-  "scope": "Review against the original skin-only objective, including current positive native lifecycle and multipage-description evidence. Not an overall runtime sign-off.",
-  "source_checkpoint": "b358d90b4b1b0a256073e5c027525a24987977ab",
+  "scope": "Review against the original skin-only objective, including current direct RunScript entry types and resolved typed lyrics target. Not an overall runtime sign-off.",
+  "source_checkpoint": "ec39a1e14762d44fab935702b0ae8d77f839e8ab",
   "branch": "refactor/kodi22-kompatibilitaet",
-  "acceptance_document_local_links_checked": 66,
+  "acceptance_document_local_links_checked": 67,
   "missing_acceptance_document_targets": [],
   "requirements": [
     {
@@ -21,7 +21,7 @@
     },
     {
       "requirement": "Check used addon skin contracts",
-      "assessment": "Named contract reviews and targeted native runs exist. Dynamic provider data and additional runtime states remain open; no blanket addon/runtime approval. Real local Artist Slideshow metadata variants now passed; additional online/runtime contexts remain open.",
+      "assessment": "Named contracts and targeted native runs exist. Current direct RunScript review covers 30 calls/nine targets, including typed lyrics selection expressly accepted in Piers/master, own Python file and current read-only manifests. No arbitrary-type fallback use established in those regular calls. Runtime contexts/online providers remain separately bounded.",
       "evidence": [
         "kodi22_compatibility_audit.md",
         "kodi22_inventory/artistslideshow_contract_review.json",
@@ -31,12 +31,13 @@
         "kodi22_inventory/lyrics_background_review.json",
         "kodi22_runtime/lyrics_background_paths_checks.json",
         "kodi22_inventory/artist_local_info_review.json",
-        "kodi22_runtime/artist_local_info_checks.json"
+        "kodi22_runtime/artist_local_info_checks.json",
+        "kodi22_inventory/script_entrypoints_current_review.json"
       ]
     },
     {
       "requirement": "Implement affected skin changes only",
-      "assessment": "Implemented fixes remain in the specified skin. This turn adds results/helpers only; own disabled metadata fixtures are never executed and are removed from the isolated addon directory. Existing addon code and production XML unchanged.",
+      "assessment": "Implemented fixes remain in this skin. This turn changes result artifacts only; current entrypoint review justifies retaining existing valid calls. No runtime code or external addon change.",
       "evidence": [
         "AENDERUNGSUEBERSICHT.md",
         "kodi22_inventory/switchtimer_property_contract_review.json",
@@ -102,5 +103,5 @@
     "xml\\DialogSettings.xml": "d1ec9446795cc23c93a9aba63f0b5a22e536f9e23be4e9dc218ae0c72c0d56ef",
     "xml\\DialogAddonInfo.xml": "810c4085fd6498c6ea5bd5ed78d4e794cc4b7df667c32875bea716d08a8af6e9"
   },
-  "latest_source_checkpoint": "b358d90b4b1b0a256073e5c027525a24987977ab"
+  "latest_source_checkpoint": "ec39a1e14762d44fab935702b0ae8d77f839e8ab"
 }
