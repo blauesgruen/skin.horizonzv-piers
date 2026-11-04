@@ -22,7 +22,7 @@ Custom_1800_UsedAddons.xml;1800;dialog;18000;3;4;38
 DialogAddonInfo.xml;;window;9000;33;20;282
 DialogAddonSettings.xml;;window;5;11;11;134
 DialogBusy.xml;;window;;7;1;54
-DialogButtonMenu.xml;;window;9000;29;12;349
+DialogButtonMenu.xml;;window;9000;28;12;344
 DialogColorPicker.xml;;window;6;14;4;112
 DialogConfirm.xml;;window;;5;6;71
 DialogContextMenu.xml;;window;996;7;2;63
@@ -85,7 +85,7 @@ SettingsCategory.xml;;window;3;49;18;344
 SettingsProfile.xml;;window;2;24;15;221
 SettingsScreenCalibration.xml;;window;8;9;2;116
 SettingsSystemInfo.xml;;window;95;58;7;321
-SkinSettings.xml;56;window;8000;206;161;2035
+SkinSettings.xml;56;window;8000;206;161;2034
 SlideShow.xml;;window;;1;0;14
 SmartPlaylistEditor.xml;;window;22;17;21;238
 SmartPlaylistRule.xml;;window;9001;7;11;103

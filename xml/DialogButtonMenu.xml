@@ -322,11 +322,6 @@
                 <label>$INFO[Pvr.NextRecordingTitle,[COLOR=red]$LOCALIZE[19157]: [/COLOR],]$INFO[Pvr.NextRecordingChannel, / ,]</label>
                 <visible>Pvr.HasNonRecordingTVTimer|Pvr.HasNonRecordingRadioTimer</visible>
             </control>
-            <control type="label">
-                <height>30</height>
-                <label>[COLOR=red]nächster Umschalttimer: [/COLOR]$INFO[Window(Home).Property(t0:date)]$INFO[Window(Home).Property(t0:channel), / ,]</label>
-                <visible>!String.IsEmpty(Window(Home).Property(t0:date))</visible>
-            </control>
         </control>
         <control type="group"> <!-- Shutdown Timer Display -->
 			<left>SpacePadding</left>

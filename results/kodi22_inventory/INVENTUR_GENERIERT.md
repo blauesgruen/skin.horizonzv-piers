@@ -7,7 +7,7 @@ Erzeugt von `tools/analyze_skin.py`. Alle Detaillisten liegen als CSV (Trennzeic
 | Kennzahl | Wert |
 |---|---|
 | xml_dateien | 164 |
-| xml_zeilen | 23036 |
+| xml_zeilen | 23030 |
 | xml_parsefehler | 0 |
 | fenster | 95 |
 | custom_fenster | 19 |
@@ -76,7 +76,7 @@ Erzeugt von `tools/analyze_skin.py`. Alle Detaillisten liegen als CSV (Trennzeic
 | DialogAddonInfo.xml |  | window | 9000 | 33 | 20 | 282 |
 | DialogAddonSettings.xml |  | window | 5 | 11 | 11 | 134 |
 | DialogBusy.xml |  | window |  | 7 | 1 | 54 |
-| DialogButtonMenu.xml |  | window | 9000 | 29 | 12 | 349 |
+| DialogButtonMenu.xml |  | window | 9000 | 28 | 12 | 344 |
 | DialogColorPicker.xml |  | window | 6 | 14 | 4 | 112 |
 | DialogConfirm.xml |  | window |  | 5 | 6 | 71 |
 | DialogContextMenu.xml |  | window | 996 | 7 | 2 | 63 |
@@ -137,7 +137,7 @@ Erzeugt von `tools/analyze_skin.py`. Alle Detaillisten liegen als CSV (Trennzeic
 | SettingsProfile.xml |  | window | 2 | 24 | 15 | 221 |
 | SettingsScreenCalibration.xml |  | window | 8 | 9 | 2 | 116 |
 | SettingsSystemInfo.xml |  | window | 95 | 58 | 7 | 321 |
-| SkinSettings.xml | 56 | window | 8000 | 206 | 161 | 2035 |
+| SkinSettings.xml | 56 | window | 8000 | 206 | 161 | 2034 |
 | SlideShow.xml |  | window |  | 1 | 0 | 14 |
 | SmartPlaylistEditor.xml |  | window | 22 | 17 | 21 | 238 |
 | SmartPlaylistRule.xml |  | window | 9001 | 7 | 11 | 103 |
@@ -588,7 +588,7 @@ keine
 - Lose Dateien in `media/`: 758
 - Einträge in `media/Textures.xbt`: 757
 - Nur in XBT, nicht lose: 0; nur lose, nicht in XBT: 1
-- Dynamisch adressierte Ordner (über `$INFO`/`$VAR`): [color=ffffa500].verifiedsourceby[/, [color=ffffa500].verifiedsourceconfidence[/, [color=ffffa500].verifiedsourceurl[/, [color=grey] - [/, [color=red]nächster umschalttimer: [/, [color=white].sourceswapstatus[/, buttons/, masks/, playmedia(musicdb://albums/, runplugin(plugin://, sources://video/, videodb://movies/actors/, videodb://movies/countries/, videodb://movies/directors/, videodb://movies/genres/, videodb://movies/studios/, videodb://movies/tags/, videodb://movies/years/, videodb://musicvideos/artists/, videodb://musicvideos/countries/, videodb://musicvideos/directors/, videodb://musicvideos/genres/, videodb://musicvideos/sets/, videodb://musicvideos/studios/, videodb://musicvideos/tags/, videodb://musicvideos/years/, videodb://tvshows/actors/, videodb://tvshows/genres/, videodb://tvshows/studios/, videodb://tvshows/tags/, videodb://tvshows/titles/, videodb://tvshows/years/
+- Dynamisch adressierte Ordner (über `$INFO`/`$VAR`): [color=ffffa500].verifiedsourceby[/, [color=ffffa500].verifiedsourceconfidence[/, [color=ffffa500].verifiedsourceurl[/, [color=grey] - [/, [color=white].sourceswapstatus[/, buttons/, masks/, playmedia(musicdb://albums/, runplugin(plugin://, sources://video/, videodb://movies/actors/, videodb://movies/countries/, videodb://movies/directors/, videodb://movies/genres/, videodb://movies/studios/, videodb://movies/tags/, videodb://movies/years/, videodb://musicvideos/artists/, videodb://musicvideos/countries/, videodb://musicvideos/directors/, videodb://musicvideos/genres/, videodb://musicvideos/sets/, videodb://musicvideos/studios/, videodb://musicvideos/tags/, videodb://musicvideos/years/, videodb://tvshows/actors/, videodb://tvshows/genres/, videodb://tvshows/studios/, videodb://tvshows/tags/, videodb://tvshows/titles/, videodb://tvshows/years/
 
 ### Referenzierte, aber fehlende Texturen
 
@@ -641,7 +641,7 @@ keine
 | menudiffuse | 105 |
 | grey1 | 80 |
 | selectedhome | 38 |
-| red | 23 |
+| red | 22 |
 | focused | 21 |
 | dustdiffuse | 12 |
 | orange | 7 |

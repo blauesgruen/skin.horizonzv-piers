@@ -108,5 +108,18 @@
     ],
     "native_test": "../kodi22_runtime/switchtimer_marker_checks.json",
     "static_checks": "Four bounded tools: no confirmed findings; info-name tool retains 43 previously classified lexical candidates. Inventory: 164 XML, 281 variables, no missing static references."
+  },
+  "followup_skin_change": {
+    "removed": [
+      "DialogButtonMenu next-switchtimer label reading t0:date/channel",
+      "SkinSettings slide reading t0:title"
+    ],
+    "active_skin_tN_property_reads_after": 0,
+    "native_test": "../kodi22_runtime/switchtimer_remaining_checks.json",
+    "limits": [
+      "Current windows opened with explicitly seeded old values.",
+      "No real timer provider or backend run; no animation-coordinate comparison.",
+      "Original global count indicators and native Kodi PVR branches unchanged."
+    ]
   }
 }

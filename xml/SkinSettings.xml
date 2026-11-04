@@ -2007,7 +2007,6 @@
                 <visible>Skin.HasSetting(NavInfo)</visible>
                 <visible>!Window.IsVisible(1400)+!Window.IsVisible(1401)</visible>
                 <animation effect="slide" start="0" end="45" condition="PVR.IsRecordingPlayingChannel|Pvr.HasTimer">Conditional</animation>
-                <animation effect="slide" start="0" end="48" condition="!String.IsEmpty(Window(Home).Property(t0:title))">Conditional</animation>
                 <control type="image">
                     <left>-60</left>
                     <top>48</top>

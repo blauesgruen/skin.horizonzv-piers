@@ -1,5 +1,7 @@
 # Bisherige Änderungen und gefundene Fehler
 
+Weitere KN-Switchtimer-Reste: Nicht mehr belieferte `t0:date/channel/title`-Abfragen aus Ausschaltmenü und SkinSettings entfernt. Dadurch entfallen die alte nächste-Umschalttimer-Zeile und ihr abhängiger Versatz. Native Kodi-PVR-Anzeigen und der KN-Gesamtzähler bleiben erhalten. Beide echten Fenster mit gesetzten alten Testwerten sichtbar geöffnet, Aufnahmen geprüft, keine Fehlerzeilen. Keine Schalt-/Timeraktion. [Beleg](kodi22_runtime/switchtimer_remaining_checks.json).
+
 Aktuelle Ergänzung (4. November 2026): Die zehn KN-Switchtimer-Einzelmarkierungen lesen Fenster-Eigenschaften, die der veröffentlichte Matrix-Anbieter nicht liefert. Variable, PVR-Fallback und separates Eintragsbild entfernt; Gesamtzähler und native Kodi-Timerzweige erhalten. Sichtbarer Vorher-/Nachher-Ausdruckstest reproduziert außerdem ein falsches Symbol bei leeren Vergleichswerten; nachher bleibt das Eintragssymbol leer. Globaler Zähler 0/1/0 korrekt, keine Fehlerzeilen. Keine echte Timeranlage oder PVR-Umschaltung getestet. [Quellen](kodi22_inventory/switchtimer_property_contract_review.json), [Laufzeit](kodi22_runtime/switchtimer_marker_checks.json).
 
 Stand: 4. November 2026. Gilt ausschließlich für `skin.horizonzv-piers` / Add-on-ID `skin.horizonzv`, Branch `refactor/kodi22-kompatibilitaet`.

@@ -1,4 +1,5 @@
 """Visible Kodi ZIP installation and restart, isolated profile only."""
+import argparse
 import hashlib
 import json
 import secrets
@@ -16,10 +17,15 @@ from pathlib import Path
 
 def main():
     repo = Path(__file__).resolve().parents[2]
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--package-review", type=Path, default=repo / "results/kodi22_inventory/switchtimer_package_review.json")
+    parser.add_argument("--report-prefix", default="package_install")
+    args = parser.parse_args()
+    assert args.report_prefix and all(c.isalnum() or c == "_" for c in args.report_prefix)
     root = Path(r"C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440").resolve()
     profile = root / "portable_data"
     skin = profile / "addons/skin.horizonzv"
-    review = json.loads((repo / "results/kodi22_inventory/switchtimer_package_review.json").read_text())
+    review = json.loads(args.package_review.read_text(encoding="utf-8-sig"))
     archive = Path(review["archive"])
     assert hashlib.sha256(archive.read_bytes()).hexdigest() == review["sha256"]
     with zipfile.ZipFile(archive) as z:
@@ -182,7 +188,8 @@ def main():
         wait(lambda: boolean("Window.IsActive(home)"), True)
         time.sleep(1)
         stage = {"phase": "restart_packaged_skin", "pid": process.pid, "home_active": True, "aspect": label("Skin.AspectRatio")}
-        screenshot = repo / "results/kodi22_runtime/package_installed_home.png"
+        image_name = "package_installed_home.png" if args.report_prefix == "package_install" else args.report_prefix + "_home.png"
+        screenshot = repo / "results/kodi22_runtime" / image_name
         screenshot.unlink(missing_ok=True)
         client.send_action('TakeScreenshot("' + screenshot.as_posix() + '")')
         wait(screenshot.exists, True)
@@ -228,7 +235,7 @@ def main():
             cleanup["profile_settings_and_sources_restored"] = all((profile / name).read_bytes() == data if data is not None else not (profile / name).exists() for name, data in backups.items())
             cleanup["all_database_files_restored"] = {p.name: p.read_bytes() for p in database.iterdir() if p.is_file()} == db_backup
         report["cleanup"] = cleanup
-        (repo / "results/kodi22_runtime/package_install_checks.json").write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
+        (repo / "results/kodi22_runtime" / (args.report_prefix + "_checks.json")).write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
     print(json.dumps({"failure": failure, "stages": report["stages"], "cleanup": cleanup}, ensure_ascii=True))
     return int(bool(failure) or not all(cleanup.values()))
 
