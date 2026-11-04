@@ -102,20 +102,26 @@
 								<include>wideview_itemlayout</include>
 							</itemlayout>
 							<focusedlayout height="230" width="901" condition="!Container.Content(episodes) + ![Container.Content(seasons) + Skin.HasSetting(wideview_season_poster)] + !Skin.HasSetting(wideview_3itemsrow)">
-								<include>wideview_focusedlayout</include>
+								<include content="wideview_focusedlayout">
+									<param name="viewid" value="$PARAM[viewid]" />
+								</include>
 							</focusedlayout>
 							<itemlayout height="173" width="600" condition="!Container.Content(episodes) + ![Container.Content(seasons) + Skin.HasSetting(wideview_season_poster)] + Skin.HasSetting(wideview_3itemsrow)">
 								<include>wideview_itemlayout</include>
 							</itemlayout>
 							<focusedlayout height="173" width="600" condition="!Container.Content(episodes) + ![Container.Content(seasons) + Skin.HasSetting(wideview_season_poster)] + Skin.HasSetting(wideview_3itemsrow)">
-								<include>wideview_focusedlayout</include>
+								<include content="wideview_focusedlayout">
+									<param name="viewid" value="$PARAM[viewid]" />
+								</include>
 							</focusedlayout>
 
 							<itemlayout height="347" width="215" condition="Container.Content(seasons) + Skin.HasSetting(wideview_season_poster)">
 								<include>wideview_itemlayout_seasons</include>
 							</itemlayout>
 							<focusedlayout height="347" width="215" condition="Container.Content(seasons) + Skin.HasSetting(wideview_season_poster)">
-								<include>wideview_focusedlayout_seasons</include>
+								<include content="wideview_focusedlayout_seasons">
+									<param name="viewid" value="$PARAM[viewid]" />
+								</include>
 							</focusedlayout>
 							
 							<itemlayout height="230" width="360" condition="Container.Content(episodes)">

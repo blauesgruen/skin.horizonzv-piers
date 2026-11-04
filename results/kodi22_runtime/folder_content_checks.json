@@ -7,8 +7,8 @@
       "is_folder": false,
       "is_parent": false,
       "sources": {
-        "303": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-folder-content-9lrku2ko\\media-root\\ordinary.avi",
-        "5000": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-folder-content-9lrku2ko\\media-root\\ordinary.avi"
+        "303": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-folder-content-x3wfisvq\\media-root\\ordinary.avi",
+        "5000": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-folder-content-x3wfisvq\\media-root\\ordinary.avi"
       },
       "pvr_items": []
     },
@@ -18,12 +18,12 @@
       "is_folder": true,
       "is_parent": false,
       "sources": {
-        "303": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-folder-content-9lrku2ko\\media-root\\folder\\",
-        "5000": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-folder-content-9lrku2ko\\media-root\\folder\\"
+        "303": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-folder-content-x3wfisvq\\media-root\\folder\\",
+        "5000": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-folder-content-x3wfisvq\\media-root\\folder\\"
       },
       "pvr_items": [
-        "early.avi",
-        "late.avi"
+        "z_early.avi",
+        "a_late.avi"
       ]
     },
     {
@@ -32,8 +32,8 @@
       "is_folder": true,
       "is_parent": true,
       "sources": {
-        "303": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-folder-content-9lrku2ko\\media-root\\",
-        "5000": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-folder-content-9lrku2ko\\media-root\\"
+        "303": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-folder-content-x3wfisvq\\media-root\\",
+        "5000": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-folder-content-x3wfisvq\\media-root\\"
       },
       "pvr_items": [
         "ordinary.avi",
@@ -46,8 +46,8 @@
       "is_folder": false,
       "is_parent": false,
       "sources": {
-        "303": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-folder-content-9lrku2ko\\media-root\\ordinary.avi",
-        "5000": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-folder-content-9lrku2ko\\media-root\\ordinary.avi"
+        "303": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-folder-content-x3wfisvq\\media-root\\ordinary.avi",
+        "5000": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-folder-content-x3wfisvq\\media-root\\ordinary.avi"
       },
       "pvr_items": []
     },
@@ -68,12 +68,12 @@
       "is_folder": true,
       "is_parent": false,
       "sources": {
-        "303": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-folder-content-9lrku2ko\\media-root\\folder\\",
-        "5000": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-folder-content-9lrku2ko\\media-root\\folder\\"
+        "303": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-folder-content-x3wfisvq\\media-root\\folder\\",
+        "5000": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-folder-content-x3wfisvq\\media-root\\folder\\"
       },
       "pvr_items": [
-        "early.avi",
-        "late.avi"
+        "z_early.avi",
+        "a_late.avi"
       ]
     },
     {
@@ -86,8 +86,8 @@
         "5000": ""
       },
       "pvr_items": [
-        "early.avi",
-        "late.avi"
+        "z_early.avi",
+        "a_late.avi"
       ]
     },
     {
@@ -100,17 +100,17 @@
         "5000": ""
       },
       "pvr_items": [
-        "early.avi",
-        "late.avi"
+        "z_early.avi",
+        "a_late.avi"
       ]
     }
   ],
-  "pid": 32732,
+  "pid": 45192,
   "before_errors": [
-    "2026-11-04 14:47:13.245 T:9792    error <general>: XFILE::CDirectory::GetDirectory - Error getting C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-folder-content-9lrku2ko\\media-root\\ordinary.avi",
-    "2026-11-04 14:47:13.458 T:46984   error <CWebserver[18082]>: Skipped 1 duplicate messages..",
-    "2026-11-04 14:47:15.886 T:9792    error <general>: XFILE::CDirectory::GetDirectory - Error getting C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-folder-content-9lrku2ko\\media-root\\ordinary.avi",
-    "2026-11-04 14:47:16.031 T:42920   error <CWebserver[18082]>: Skipped 1 duplicate messages.."
+    "2026-11-04 17:56:00.086 T:47516   error <general>: XFILE::CDirectory::GetDirectory - Error getting C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-folder-content-x3wfisvq\\media-root\\ordinary.avi",
+    "2026-11-04 17:56:00.263 T:47144   error <CWebserver[18082]>: Skipped 1 duplicate messages..",
+    "2026-11-04 17:56:02.825 T:47516   error <general>: XFILE::CDirectory::GetDirectory - Error getting C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-folder-content-x3wfisvq\\media-root\\ordinary.avi",
+    "2026-11-04 17:56:02.933 T:47872   error <CWebserver[18082]>: Skipped 1 duplicate messages.."
   ],
   "after_errors": [],
   "cleanup": {

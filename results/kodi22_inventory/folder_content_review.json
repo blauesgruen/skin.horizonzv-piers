@@ -35,8 +35,8 @@
   "before_directory_error_lines": 2,
   "after_error_lines": 0,
   "folder_order_before_and_after": [
-    "early.avi",
-    "late.avi"
+    "z_early.avi",
+    "a_late.avi"
   ],
   "cleanup": {
     "process_exited": true,
@@ -58,9 +58,12 @@
   "harness_draft": "folder_content_view_binding_draft.json records premature wait before native view activation; cleanup completed.",
   "package": "folder_content_package_review.json",
   "additional_sort_case_pending": {
+    "state": "Completed; a free Kodi window became available",
     "case": "Reverse lexical/date ordering: z_early.avi precedes a_late.avi by date.",
-    "state": "Not executed yet; standard Kodi PID 6224 was live at the attempted rerun and remained live on recheck.",
-    "evidence_limit": "Current native JSON retains the passing early.avi/late.avi run; its matching name/date order alone does not distinguish date sorting from name sorting. Ascending fallback is independently source-verified.",
-    "harness": "The helper now prepares reverse lexical/date names for the next available visible-test window."
+    "observed_before_and_after": [
+      "z_early.avi",
+      "a_late.avi"
+    ],
+    "evidence": "../kodi22_runtime/folder_content_checks.json"
   }
 }

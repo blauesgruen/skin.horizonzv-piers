@@ -743,3 +743,8 @@ Der AVI-Verzeichnisfehler beim Global-Search-Infoaufruf stammt von der zunächst
 ## Verzeichnisquellen: 3-Panel und PVR (2026-11-04)
 
 Zwei weitere Quellen nur für echte Ordner und ohne Parent-Eintrag belegt. Unaufgelösten PVR-Sortierparameter entfernt, bisherige aufsteigende Datumssortierung erhalten. Acht native Vorher-/Nachherphasen mit zwei kopierten content-Verträgen bestanden, nachher ohne ERROR-Zeilen. Kein echter PVR-Backendtest oder vollständiger View-Test. 14 dynamische Definitionen inventarisiert; Quellen/Grenzen: `kodi22_inventory/folder_content_review.json`, `dynamic_directory_sources_review.json`, Details im [Laufzeitbericht](kodi22_runtime/PRUEFBERICHT.md). Keine Add-on-Korrektur.
+
+
+## Fehlende viewid-Weitergabe korrigiert (2026-11-04)
+
+Neun Include-Aufrufe in vier View-Dateien ergänzt; dadurch werden 21 nach Auflösung leere Control.HasFocus-Argumente zu gültigen View-IDs. Aufrufbedingungen und übrige XML-Struktur unverändert. Quellenbasierte Expansion und sieben sichtbare Video-/Musik-Fokusfälle mit Animation an bestanden; finales Log ohne ERROR-Zeilen. Quellen/Grenzen: `kodi22_inventory/include_viewid_forwarding_review.json`, [Laufzeitbericht](kodi22_runtime/PRUEFBERICHT.md). Keine vollständige Animationskurven-/Medienartenfreigabe. Der ergänzende Ordner-Sortierfall mit gegensätzlicher Namens-/Datumsfolge ist nun ebenfalls nativ bestanden (`folder_content_checks.json`); echter PVR-Backendtest bleibt offen.

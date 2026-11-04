@@ -102,13 +102,17 @@
 								<include>donview_itemlayout</include>
 							</itemlayout>
 							<focusedlayout height="230" width="901" condition="!Container.Content(episodes) + !Skin.HasSetting(wideview_3itemsrow)">
-								<include>donview_focusedlayout</include>
+								<include content="donview_focusedlayout">
+									<param name="viewid" value="$PARAM[viewid]" />
+								</include>
 							</focusedlayout>
 							<itemlayout height="173" width="600" condition="!Container.Content(episodes) + Skin.HasSetting(wideview_3itemsrow)">
 								<include>donview_itemlayout</include>
 							</itemlayout>
 							<focusedlayout height="173" width="600" condition="!Container.Content(episodes) + Skin.HasSetting(wideview_3itemsrow)">
-								<include>donview_focusedlayout</include>
+								<include content="donview_focusedlayout">
+									<param name="viewid" value="$PARAM[viewid]" />
+								</include>
 							</focusedlayout>
 							<itemlayout height="230" width="360" condition="Container.Content(episodes)">
 								<control type="group">

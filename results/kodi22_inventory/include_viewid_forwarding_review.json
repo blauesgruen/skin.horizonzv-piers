@@ -1,0 +1,218 @@
+{
+  "date": "2026-11-04",
+  "classification": "Missing explicit include argument creates malformed Kodi focus conditions; no geometry redesign or API-removal claim",
+  "sources": [
+    "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/guilib/GUIIncludes.cpp",
+    "https://github.com/xbmc/xbmc/blob/master/xbmc/guilib/GUIIncludes.cpp"
+  ],
+  "source_contract": "ResolveIncludes collects passed parameters/defaults, clones the referenced definition, then resolves its parameters even for an empty parameter map. Unresolved viewid becomes empty. Outer parameters reach a separate nested definition through explicit forwarding, not implicit lexical inheritance.",
+  "method": "Bounded symbolic substitution for nine calls to six separate shared definitions whose only parameter reference is viewid; parent default IDs are literal. This is not a full Kodi include/condition evaluator.",
+  "calls": [
+    {
+      "file": "xml/View_515_Episode.xml",
+      "owner": "View_515_Episode",
+      "callee": "EpisodeViewtypeMusicLayouts",
+      "forwarded_viewid": "515",
+      "condition": "Window.IsActive(music)",
+      "before_empty_focus_calls": 1,
+      "after_focus_arguments": [
+        "515"
+      ]
+    },
+    {
+      "file": "xml/View_515_Episode.xml",
+      "owner": "View_515_Episode",
+      "callee": "EpisodeViewtypeVideoLayouts",
+      "forwarded_viewid": "515",
+      "condition": "!Window.IsActive(music)",
+      "before_empty_focus_calls": 6,
+      "after_focus_arguments": [
+        "515",
+        "515",
+        "515",
+        "515",
+        "515",
+        "515"
+      ]
+    },
+    {
+      "file": "xml/View_562_Showcase.xml",
+      "owner": "View_562_Showcase",
+      "callee": "View562LayoutFocused",
+      "forwarded_viewid": "562",
+      "condition": null,
+      "before_empty_focus_calls": 2,
+      "after_focus_arguments": [
+        "562",
+        "562"
+      ]
+    },
+    {
+      "file": "xml/View_562_Showcase.xml",
+      "owner": "View_562_Showcase",
+      "callee": "View562LayoutFocused",
+      "forwarded_viewid": "562",
+      "condition": null,
+      "before_empty_focus_calls": 2,
+      "after_focus_arguments": [
+        "562",
+        "562"
+      ]
+    },
+    {
+      "file": "xml/View_Movie_502_Don.xml",
+      "owner": "View_502_Don",
+      "callee": "donview_focusedlayout",
+      "forwarded_viewid": "502",
+      "condition": null,
+      "before_empty_focus_calls": 2,
+      "after_focus_arguments": [
+        "502",
+        "502"
+      ]
+    },
+    {
+      "file": "xml/View_Movie_502_Don.xml",
+      "owner": "View_502_Don",
+      "callee": "donview_focusedlayout",
+      "forwarded_viewid": "502",
+      "condition": null,
+      "before_empty_focus_calls": 2,
+      "after_focus_arguments": [
+        "502",
+        "502"
+      ]
+    },
+    {
+      "file": "xml/View_Movie_505_Wide.xml",
+      "owner": "View_505_Wide",
+      "callee": "wideview_focusedlayout",
+      "forwarded_viewid": "505",
+      "condition": null,
+      "before_empty_focus_calls": 2,
+      "after_focus_arguments": [
+        "505",
+        "505"
+      ]
+    },
+    {
+      "file": "xml/View_Movie_505_Wide.xml",
+      "owner": "View_505_Wide",
+      "callee": "wideview_focusedlayout",
+      "forwarded_viewid": "505",
+      "condition": null,
+      "before_empty_focus_calls": 2,
+      "after_focus_arguments": [
+        "505",
+        "505"
+      ]
+    },
+    {
+      "file": "xml/View_Movie_505_Wide.xml",
+      "owner": "View_505_Wide",
+      "callee": "wideview_focusedlayout_seasons",
+      "forwarded_viewid": "505",
+      "condition": null,
+      "before_empty_focus_calls": 2,
+      "after_focus_arguments": [
+        "505",
+        "505"
+      ]
+    }
+  ],
+  "before_empty_focus_call_count": 21,
+  "after_empty_focus_call_count": 0,
+  "invariant": "All four XML trees equal 4f24866 after reversing only the new include-call wrappers; conditions and all layout definition/geometry nodes unchanged.",
+  "limits": [
+    "Only parent default view IDs statically expanded; no full dynamic include graph evaluation.",
+    "Other lexically unbound optional parameters are not automatically classified as errors.",
+    "Seven native cases verify view loading, selected item and focus with animation enabled at 16:9. No full animation-curve comparison, all media categories or all aspect ratios."
+  ],
+  "baseline_commit": "4f24866",
+  "native_evidence": "../kodi22_runtime/view_focus_checks.json",
+  "native_cases": [
+    {
+      "window": "videos",
+      "viewid": 515,
+      "selected": "Skin Audit Movie",
+      "display_label": "Skin Audit Movie",
+      "has_focus": true,
+      "music_context": false,
+      "animation_enabled": true,
+      "aspect_ratio": "16:9"
+    },
+    {
+      "window": "videos",
+      "viewid": 562,
+      "selected": "Skin Audit Movie",
+      "display_label": "Skin Audit Movie",
+      "has_focus": true,
+      "music_context": false,
+      "animation_enabled": true,
+      "aspect_ratio": "16:9"
+    },
+    {
+      "window": "videos",
+      "viewid": 502,
+      "selected": "Skin Audit Movie",
+      "display_label": "Skin Audit Movie",
+      "has_focus": true,
+      "music_context": false,
+      "animation_enabled": true,
+      "aspect_ratio": "16:9"
+    },
+    {
+      "window": "videos",
+      "viewid": 505,
+      "selected": "Skin Audit Movie",
+      "display_label": "Skin Audit Movie",
+      "has_focus": true,
+      "music_context": false,
+      "animation_enabled": true,
+      "aspect_ratio": "16:9"
+    },
+    {
+      "window": "music",
+      "viewid": 515,
+      "selected": "View Focus Song",
+      "display_label": "View Focus Artist - View Focus Song",
+      "has_focus": true,
+      "music_context": true,
+      "animation_enabled": true,
+      "aspect_ratio": "16:9"
+    },
+    {
+      "window": "music",
+      "viewid": 562,
+      "selected": "View Focus Song",
+      "display_label": "View Focus Artist - View Focus Song",
+      "has_focus": true,
+      "music_context": true,
+      "animation_enabled": true,
+      "aspect_ratio": "16:9"
+    },
+    {
+      "window": "music",
+      "viewid": 505,
+      "selected": "View Focus Song",
+      "display_label": "View Focus Artist - View Focus Song",
+      "has_focus": true,
+      "music_context": true,
+      "animation_enabled": true,
+      "aspect_ratio": "16:9"
+    }
+  ],
+  "native_cleanup": {
+    "process_exited": true,
+    "profile_restored": true,
+    "media_databases_restored": true,
+    "skin_xml_match_production": true
+  },
+  "native_error_lines": 0,
+  "static_checks": {
+    "four_checkers_confirmed_findings": 0,
+    "info_literal_name_candidates": 43,
+    "missing_static_references": 0
+  },
+  "package": "include_viewid_package_review.json"
+}

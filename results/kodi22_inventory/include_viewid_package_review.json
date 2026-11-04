@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-04",
+  "archive": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-include-viewid-package-d40a17e7668743aba41d42ed80c41e81\\skin.horizonzv-1.22.0.1.zip",
+  "sha256": "17e44be4287305dfe54e4d12cf5842e9e9dda0239afbc9c40f672e232f053711",
+  "size_bytes": 29808873,
+  "files": 294,
+  "crc_ok": true,
+  "all_entries_match_worktree": true,
+  "file_set_unchanged": true,
+  "changed_runtime_files": [
+    "xml/View_515_Episode.xml",
+    "xml/View_562_Showcase.xml",
+    "xml/View_Movie_502_Don.xml",
+    "xml/View_Movie_505_Wide.xml"
+  ],
+  "xml_xsp_parse_ok": true,
+  "no_fresh_zip_install_test": true,
+  "published_archives_unchanged": true,
+  "context": "include_viewid_package_context.json"
+}
