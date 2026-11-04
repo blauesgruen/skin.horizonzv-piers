@@ -1,0 +1,122 @@
+{
+  "scope": "Copied production content expressions/attributes in always-visible native probe providers. This forces provider evaluation independently of production parent visibility; not a full 3-panel/PVR layout or backend test.",
+  "rows": [
+    {
+      "phase": "before",
+      "case": "ordinary_file",
+      "is_folder": false,
+      "is_parent": false,
+      "sources": {
+        "303": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-folder-content-9lrku2ko\\media-root\\ordinary.avi",
+        "5000": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-folder-content-9lrku2ko\\media-root\\ordinary.avi"
+      },
+      "pvr_items": []
+    },
+    {
+      "phase": "before",
+      "case": "directory",
+      "is_folder": true,
+      "is_parent": false,
+      "sources": {
+        "303": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-folder-content-9lrku2ko\\media-root\\folder\\",
+        "5000": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-folder-content-9lrku2ko\\media-root\\folder\\"
+      },
+      "pvr_items": [
+        "early.avi",
+        "late.avi"
+      ]
+    },
+    {
+      "phase": "before",
+      "case": "parent",
+      "is_folder": true,
+      "is_parent": true,
+      "sources": {
+        "303": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-folder-content-9lrku2ko\\media-root\\",
+        "5000": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-folder-content-9lrku2ko\\media-root\\"
+      },
+      "pvr_items": [
+        "ordinary.avi",
+        "folder"
+      ]
+    },
+    {
+      "phase": "before",
+      "case": "ordinary_file_again",
+      "is_folder": false,
+      "is_parent": false,
+      "sources": {
+        "303": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-folder-content-9lrku2ko\\media-root\\ordinary.avi",
+        "5000": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-folder-content-9lrku2ko\\media-root\\ordinary.avi"
+      },
+      "pvr_items": []
+    },
+    {
+      "phase": "after",
+      "case": "ordinary_file",
+      "is_folder": false,
+      "is_parent": false,
+      "sources": {
+        "303": "",
+        "5000": ""
+      },
+      "pvr_items": []
+    },
+    {
+      "phase": "after",
+      "case": "directory",
+      "is_folder": true,
+      "is_parent": false,
+      "sources": {
+        "303": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-folder-content-9lrku2ko\\media-root\\folder\\",
+        "5000": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-folder-content-9lrku2ko\\media-root\\folder\\"
+      },
+      "pvr_items": [
+        "early.avi",
+        "late.avi"
+      ]
+    },
+    {
+      "phase": "after",
+      "case": "parent",
+      "is_folder": true,
+      "is_parent": true,
+      "sources": {
+        "303": "",
+        "5000": ""
+      },
+      "pvr_items": [
+        "early.avi",
+        "late.avi"
+      ]
+    },
+    {
+      "phase": "after",
+      "case": "ordinary_file_again",
+      "is_folder": false,
+      "is_parent": false,
+      "sources": {
+        "303": "",
+        "5000": ""
+      },
+      "pvr_items": [
+        "early.avi",
+        "late.avi"
+      ]
+    }
+  ],
+  "pid": 32732,
+  "before_errors": [
+    "2026-11-04 14:47:13.245 T:9792    error <general>: XFILE::CDirectory::GetDirectory - Error getting C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-folder-content-9lrku2ko\\media-root\\ordinary.avi",
+    "2026-11-04 14:47:13.458 T:46984   error <CWebserver[18082]>: Skipped 1 duplicate messages..",
+    "2026-11-04 14:47:15.886 T:9792    error <general>: XFILE::CDirectory::GetDirectory - Error getting C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-folder-content-9lrku2ko\\media-root\\ordinary.avi",
+    "2026-11-04 14:47:16.031 T:42920   error <CWebserver[18082]>: Skipped 1 duplicate messages.."
+  ],
+  "after_errors": [],
+  "cleanup": {
+    "process_exited": true,
+    "profile_restored": true,
+    "media_databases_restored": true,
+    "test_skin_xml_match_production": true
+  }
+}

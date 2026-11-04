@@ -738,3 +738,8 @@ Unbenutztes Legacy-Layout `script-globalsearch-main.xml` durch den aktuellen Dat
 ## Filmset-Quelle bei normalen Filmen gesperrt (2026-11-04)
 
 Der AVI-Verzeichnisfehler beim Global-Search-Infoaufruf stammt von der zunächst nur ausgeblendeten Filmset-Liste im Skin. Beide Filmset-Includes erhalten jetzt nur für ListItem.IsCollection eine Verzeichnisquelle. Vorheriger Fehler reproduziert, Estuary-Gegenprobe fehlerfrei, finaler Global-Search- und Filmset-Lauf fehlerfrei. Echte Set-Cover-/Textliste und anschließender normaler Film geprüft; keine Add-on-Korrektur. Quellen und Grenzen: `kodi22_inventory/movie_set_content_review.json`, [Laufzeitbericht](kodi22_runtime/PRUEFBERICHT.md). Frühere unbekannte Fehlerzuordnung ist damit für diesen Fall überholt. Frühere Global-Search-Seitenverhältnisangabe im Vertragsbeleg auf die tatsächlich 720×480 großen Aufnahmen begrenzt; der neue Set-Lauf bestätigt 16:9 ausdrücklich.
+
+
+## Verzeichnisquellen: 3-Panel und PVR (2026-11-04)
+
+Zwei weitere Quellen nur für echte Ordner und ohne Parent-Eintrag belegt. Unaufgelösten PVR-Sortierparameter entfernt, bisherige aufsteigende Datumssortierung erhalten. Acht native Vorher-/Nachherphasen mit zwei kopierten content-Verträgen bestanden, nachher ohne ERROR-Zeilen. Kein echter PVR-Backendtest oder vollständiger View-Test. 14 dynamische Definitionen inventarisiert; Quellen/Grenzen: `kodi22_inventory/folder_content_review.json`, `dynamic_directory_sources_review.json`, Details im [Laufzeitbericht](kodi22_runtime/PRUEFBERICHT.md). Keine Add-on-Korrektur.

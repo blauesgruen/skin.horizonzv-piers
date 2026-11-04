@@ -21,6 +21,14 @@
         <value condition="ListItem.IsCollection">$INFO[Container.ListItem.FolderPath]</value>
         <value />
     </variable>
+    <variable name="FolderPreviewContentPath">
+        <value condition="ListItem.IsFolder + !ListItem.IsParentFolder">$INFO[ListItem.FolderPath]</value>
+        <value />
+    </variable>
+    <variable name="PVRFolderContentPath">
+        <value condition="ListItem.IsFolder + !ListItem.IsParentFolder">$INFO[ListItem.FilenameAndPath]</value>
+        <value />
+    </variable>
     <variable name="HomeScrollerDescription">
         <value condition="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),dashboard)">$LOCALIZE[31333]</value>
         <value condition="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),picture)">$LOCALIZE[31334]</value>

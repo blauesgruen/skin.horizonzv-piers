@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-04",
+  "archive": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-folder-content-package-28502c73cd3a47a792518cbc7e81de98\\skin.horizonzv-1.22.0.1.zip",
+  "sha256": "dffbe86dba87be5083188ac417a845d3a2bfcaeec52d4d1a0e2ada538e6bff68",
+  "size_bytes": 29808829,
+  "files": 294,
+  "crc_ok": true,
+  "all_entries_match_worktree": true,
+  "file_set_unchanged": true,
+  "changed_runtime_files": [
+    "xml/Includes_PVR.xml",
+    "xml/Variables.xml",
+    "xml/View_Movie_302_3Panel.xml"
+  ],
+  "xml_xsp_parse_ok": true,
+  "no_fresh_zip_install_test": true,
+  "published_archives_unchanged": true,
+  "context": "folder_content_package_context.json"
+}

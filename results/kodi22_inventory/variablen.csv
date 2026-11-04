@@ -55,6 +55,7 @@ FanartVAR;Variables.xml;3
 FirstRun_Label;Variables.xml;1
 FlagDimension_Label_Color;Includes_Flagging.xml;0
 FlagLabel;Variables.xml;1
+FolderPreviewContentPath;Variables.xml;1
 Furniture_VideoRating;Variables_MediaFurniture.xml;13
 HomeOSDLabel;Variables.xml;11
 HomeOSDTitle;Variables.xml;12
@@ -195,6 +196,7 @@ OSDText;Variables.xml;1
 OSDTexture;Variables.xml;6
 OriginalTitle;Variables.xml;46
 PVRChannelMgrHeader;Variables.xml;1
+PVRFolderContentPath;Variables.xml;1
 PVRTimerIcon;Variables.xml;3
 PVRTimerLabel;Variables.xml;0
 PVRWidgetRecordsFlatVAR;Variables.xml;1

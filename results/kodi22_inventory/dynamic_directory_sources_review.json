@@ -1,0 +1,129 @@
+{
+  "date": "2026-11-04",
+  "definition_count": 14,
+  "scope": "Literal dynamic content definitions without include-call expansion or evaluation of arbitrary user settings",
+  "sources": [
+    {
+      "file": "xml/DialogKeyboard.xml",
+      "expression": "$VAR[AutoCompletionContentVar]",
+      "attributes": {},
+      "classification": "Encoded keyboard query with enabled/hidden-input guards; prior native tests"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "expression": "$PARAM[content]",
+      "attributes": {
+        "sortby": "random"
+      },
+      "classification": "Include parameter; not a complete runtime validation of expanded values"
+    },
+    {
+      "file": "xml/Includes_Dash_Addonpath_Fav.xml",
+      "expression": "$INFO[Skin.String(Addonpath_Dash_Path)]",
+      "attributes": {
+        "target": "$VAR[WidgetTarget_Dash]"
+      },
+      "classification": "User-configured directory; arbitrary saved values not exhaustively validated"
+    },
+    {
+      "file": "xml/Includes_Dash_Addonpath_Fav.xml",
+      "expression": "$INFO[Skin.String(Addonpath_Dash_Path1)]",
+      "attributes": {
+        "target": "$VAR[WidgetTarget_Dash]"
+      },
+      "classification": "User-configured directory; arbitrary saved values not exhaustively validated"
+    },
+    {
+      "file": "xml/Includes_Dash_Addonpath_Fav.xml",
+      "expression": "$INFO[Skin.String(Addonpath_Dash_Path2)]",
+      "attributes": {
+        "target": "$VAR[WidgetTarget_Dash]"
+      },
+      "classification": "User-configured directory; arbitrary saved values not exhaustively validated"
+    },
+    {
+      "file": "xml/Includes_Dash_Addonpath_Fav.xml",
+      "expression": "$INFO[Skin.String(Addonpath_Dash_Path3)]",
+      "attributes": {
+        "target": "$VAR[WidgetTarget_Dash]"
+      },
+      "classification": "User-configured directory; arbitrary saved values not exhaustively validated"
+    },
+    {
+      "file": "xml/Includes_Dash_FritzDect.xml",
+      "expression": "plugin://script.program.fritzact?ts=$INFO[Window(Home).Property(fritzact.timestamp)]",
+      "attributes": {
+        "target": "programs"
+      },
+      "classification": "Literal addon route; dashboard include-time enable gates reviewed, no full provider runtime claim"
+    },
+    {
+      "file": "xml/Includes_Dash_GTO.xml",
+      "expression": "plugin://script.service.gto?action=getcontent&ts=$INFO[Window(Home).Property(GTO.timestamp)]",
+      "attributes": {
+        "target": "videos"
+      },
+      "classification": "Literal addon route; dashboard include-time enable gates reviewed, no full provider runtime claim"
+    },
+    {
+      "file": "xml/Includes_PVR.xml",
+      "expression": "$VAR[PVRFolderContentPath]",
+      "attributes": {
+        "sortby": "date"
+      },
+      "classification": "Folder/parent guard; native expression/provider probe, no real PVR backend test"
+    },
+    {
+      "file": "xml/Includes_SetInformation.xml",
+      "expression": "$VAR[MovieSetContentPath]",
+      "attributes": {
+        "target": "videos",
+        "sortby": "year"
+      },
+      "classification": "Collection guard; prior native movie-set test"
+    },
+    {
+      "file": "xml/Includes_SetInformation.xml",
+      "expression": "$VAR[MovieSetListContentPath]",
+      "attributes": {
+        "target": "videos",
+        "sortby": "year"
+      },
+      "classification": "Collection guard; prior native movie-set test"
+    },
+    {
+      "file": "xml/Includes_Widget_Param.xml",
+      "expression": "$PARAM[HomePageWidget_content2]",
+      "attributes": {
+        "limit": "1",
+        "sortby": "$PARAM[HomePageWidget_sortby]",
+        "sortorder": "$PARAM[HomePageWidget_sortorder]",
+        "target": "$VAR[WidgetTarget]"
+      },
+      "classification": "Include parameter; not a complete runtime validation of expanded values"
+    },
+    {
+      "file": "xml/Includes_Widget_Param.xml",
+      "expression": "$PARAM[HomePageWidget_content]",
+      "attributes": {
+        "limit": "$PARAM[HomePageWidget_limit]",
+        "sortby": "$PARAM[HomePageWidget_sortby]",
+        "sortorder": "$PARAM[HomePageWidget_sortorder]",
+        "target": "$VAR[WidgetTarget]"
+      },
+      "classification": "Include parameter; not a complete runtime validation of expanded values"
+    },
+    {
+      "file": "xml/View_Movie_302_3Panel.xml",
+      "expression": "$VAR[FolderPreviewContentPath]",
+      "attributes": {
+        "target": "videos"
+      },
+      "classification": "Folder/parent guard; native expression/provider probe, no real PVR backend test"
+    }
+  ],
+  "limits": [
+    "Definition count is not the instantiated provider count.",
+    "No blanket runtime approval of user/parameter values or live addon enable/disable transitions."
+  ]
+}

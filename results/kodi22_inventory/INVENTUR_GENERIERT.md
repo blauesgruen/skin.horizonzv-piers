@@ -15,7 +15,7 @@ Erzeugt von `tools/analyze_skin.py`. Alle Detaillisten liegen als CSV (Trennzeic
 | includes_unbenutzt | 0 |
 | includes_fehlend | 0 |
 | includes_doppelt | 0 |
-| variablen | 280 |
+| variablen | 282 |
 | variablen_unbenutzt | 55 |
 | variablen_fehlend | 0 |
 | konstanten | 59 |

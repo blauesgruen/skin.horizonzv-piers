@@ -451,7 +451,7 @@
 							<label>$VAR[RecordingDateSizeLabel]$INFO[ListItem.Label]$INFO[ListItem.EpisodeName, (,)]</label>
 						</control>
 					</itemlayout>
-					<content sortby="date" sortorder="$PARAM[folder_sortorder]">$INFO[ListItem.FilenameAndPath]</content>
+					<content sortby="date">$VAR[PVRFolderContentPath]</content>
 				</control>
 			</control>
 		</control>
