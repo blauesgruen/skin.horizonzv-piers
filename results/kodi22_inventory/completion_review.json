@@ -1,9 +1,9 @@
 {
   "checked_on": "2026-11-04",
-  "scope": "Review against the original skin-only objective; updated CU lyrics runtime source is fingerprinted below. Not an overall runtime sign-off.",
+  "scope": "Review against the original skin-only objective, including real local Artist Slideshow metadata evidence. Not an overall runtime sign-off.",
   "source_checkpoint": "a87750854bd09a22d38440410050f114dd1ab20a",
   "branch": "refactor/kodi22-kompatibilitaet",
-  "acceptance_document_local_links_checked": 58,
+  "acceptance_document_local_links_checked": 60,
   "missing_acceptance_document_targets": [],
   "requirements": [
     {
@@ -19,7 +19,7 @@
     },
     {
       "requirement": "Check used addon skin contracts",
-      "assessment": "Named contract reviews and targeted native runs exist. Dynamic provider data and additional runtime states remain open; no blanket addon/runtime approval.",
+      "assessment": "Named contract reviews and targeted native runs exist. Dynamic provider data and additional runtime states remain open; no blanket addon/runtime approval. Real local Artist Slideshow metadata variants now passed; additional online/runtime contexts remain open.",
       "evidence": [
         "kodi22_compatibility_audit.md",
         "kodi22_inventory/artistslideshow_contract_review.json",
@@ -27,7 +27,9 @@
         "kodi22_inventory/fritz_gto_contract_review.json",
         "kodi22_inventory/radiomonitor_contract_review.json",
         "kodi22_inventory/lyrics_background_review.json",
-        "kodi22_runtime/lyrics_background_paths_checks.json"
+        "kodi22_runtime/lyrics_background_paths_checks.json",
+        "kodi22_inventory/artist_local_info_review.json",
+        "kodi22_runtime/artist_local_info_checks.json"
       ]
     },
     {
@@ -57,7 +59,7 @@
     },
     {
       "requirement": "Own branch and visible Kodi tests",
-      "assessment": "Correct branch verified. Native reports record the visible test processes and restoration. New evidence will be committed on this branch; no push claimed.",
+      "assessment": "Correct branch verified. Native reports record visible test processes and restoration. Evidence belongs to this branch; no push claimed.",
       "evidence": [
         "kodi22_runtime/player_stack_fanart_checks.json",
         "kodi22_runtime/switchtimer_followup_install_checks.json"
@@ -82,10 +84,11 @@
     ],
     "credentials_printed": false
   },
-  "source_checkpoint_note": "Base commit for this working-tree review; three current runtime changes are identified by hashes.",
+  "source_checkpoint_note": "Original review base retained; latest_source_checkpoint identifies the current committed runtime code. This checkpoint adds results only.",
   "runtime_worktree_sha256": {
     "xml\\MusicOSD.xml": "8ad19ba0dbf74e59a4d07823d3ff20f28952633586d2385b85bd7f9c19b2446a",
     "xml\\PlayerControls.xml": "f56721438a25600c112efe1ba3c6e67585ff919f578f2f3f4c599dbbfb1ed42d",
     "xml\\script-cu-lrclyrics-main.xml": "13363b159138d75d0ad6fc35ba1ed05409aaafb3331abe939c89365da30b38d1"
-  }
+  },
+  "latest_source_checkpoint": "c244081b578e6062c242868521d1ccd42c664f3e"
 }
