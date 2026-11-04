@@ -1,5 +1,11 @@
 # Kodi 22 compatibility audit and cleanup plan
 
+## Actual plugin-player fanart guard verified (2026-11-05)
+
+The original extrafanart objective now has two real plugin-playback cases: an authored temporary provider resolves a local AVI or local stack, while Kodi retains the plugin item path in Player.FolderPath and Player.FilenameAndPath. Production Home multiimage 2016 stays empty/hidden and the provider receives only the two play requests, no extrafanart request. No product change needed. Paired earlier actual local-file/stack tests load the intended JPEG. Current run has zero ERROR lines; secured video/addon database file sets and settings restored, temporary fixture removed from addon directory, XML matches. [Source and boundaries](kodi22_inventory/plugin_player_fanart_review.json), [native evidence](kodi22_runtime/plugin_player_fanart_checks.json). Disney DRM, SMB and other wrapper/player variants remain separate gates.
+
+Selected context/confirm/progress controls also match the native Piers casts/targets: context image 999, grouplist 996, button template 1000; shared confirm heading/text/choice/progress controls 1/9/10–12/20. No correction justified. This is source-only selected-control evidence, not full dialog or future-version acceptance: [review](kodi22_inventory/native_confirm_context_review.json).
+
 ## Native heading contracts repaired (2026-11-05)
 
 Two more concrete native contracts were not connected: numeric input writes the caller's prompt to control 1, shared manual settings use heading 2. The skin supplied ID 0 and the generic window caption in both. Corrected only those include parameters in DialogNumeric.xml and DialogSettings.xml. Piers and published master retain these target IDs; this is not a claim of a recently removed Kodi API. Five additional selected dialog contracts (PVR groups, slider, keyboard, media source and text viewer) have matching source-checked view/header controls; no full all-dialog/type-schema approval implied.

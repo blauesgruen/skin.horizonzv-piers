@@ -1,5 +1,13 @@
 # Kodi-22-Laufzeitprüfung – ab 1. November 2026
 
+## Ursprüngliches Extra-Fanart-Ziel: echte Plugin-Player-Pfade (5. November)
+
+Ein eigener temporärer Testanbieter im getrennten Profil löst zwei echte Wiedergaben auf: lokale AVI-Datei und lokalen Zwei-Datei-Stack. Kodi spielt Video ab, behält aber in Player.FolderPath und Player.FilenameAndPath die Plugin-URI. Im produktiven Home-Multiimage 2016 bleiben Bild und Sichtbarkeit leer/false, obwohl neben den aufgelösten Medien eine gültige Extra-Fanart-Datei liegt. Der Anbieter protokolliert genau zwei Play-Aufrufe und keine extrafanart-Anfrage. Nach Stop sind Player-Ordner und Bild leer. Keine Skin-XML- oder vorhandene Anbieter-Codeänderung nötig.
+
+Finaler Lauf ohne ERROR-Zeilen; eigene Kodi-Instanz beendet. Gesicherte Einstellungen sowie Video-/Add-on-Datenbankdateien und Dateimengen wiederhergestellt, temporären Anbieter aus dem Add-on-Verzeichnis in seinen eigenen Testordner verschoben. Skin-XML-Abgleich bestanden. Aufnahme angesehen. [Laufzeit](plugin_player_fanart_checks.json), [Quellen/Grenzen](../kodi22_inventory/plugin_player_fanart_review.json), [Aufnahme](plugin_player_fanart.png). Die zusätzlichen finalen Assertions prüfen genau die aufgezeichneten Plugin-Pfade und zwei Requests; keine neue Kodi-Ausführung für reine Assertion-Verschärfung.
+
+Zusammen mit der vorherigen positiven lokalen Datei-/Stack-Probe ist nun die Abgrenzung lokal gegenüber tatsächlichem Plugin-Player belegt. Dies ist keine Disney+-Wiedergabe oder SMB-Prüfung; stack://-URIs mit Plugin-Bestandteilen, kodierte/gemischte Wrapper, Part-Wechsel und alle Fanart-Controls bleiben gesondert offen.
+
 ## Native Dialogüberschriften: Eingabe und Einstellungen (5. November)
 
 Auch das [neue Paket](../kodi22_inventory/native_heading_package_review.json) nativ frisch installiert und in HorizonzV neu gestartet: 294 Dateien bytegleich, CRC und 179 XML/XSP-Prüfungen bestanden, nur die zwei Header-Dateien gegenüber dem vorherigen Farbdialogpaket geändert. Beide Installations-/Startphasen ohne ERROR-Zeilen. Gesicherter Skin, Einstellungen/Quellen und Datenbankdateien wiederhergestellt. [Installationsbeleg](native_heading_install_checks.json), kein leerer Benutzer-Erststart und keine vollständige Funktionsabnahme.

@@ -1,0 +1,40 @@
+{
+  "checked_on": "2026-11-05",
+  "scope": "Selected additional native dialog control contracts; source-only, no full typed schema/include expansion/runtime acceptance.",
+  "checks": [
+    {
+      "file": "xml/DialogContextMenu.xml",
+      "sources": [
+        "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/dialogs/GUIDialogContextMenu.cpp"
+      ],
+      "matched": {
+        "996": "grouplist",
+        "999": "image background",
+        "1000": "button template"
+      },
+      "result": "Native dynamic casts match these skin types; no correction needed."
+    },
+    {
+      "file": "xml/DialogConfirm.xml",
+      "sources": [
+        "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/dialogs/GUIDialogBoxBase.h",
+        "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/dialogs/GUIDialogYesNo.cpp",
+        "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/dialogs/GUIDialogProgress.cpp"
+      ],
+      "matched": {
+        "1": "heading label via DialogLayout include",
+        "9": "body textbox",
+        "10": "No/cancel choice via DefaultDialogButton",
+        "11": "Yes choice via DefaultDialogButton",
+        "12": "custom choice via DefaultDialogButton",
+        "20": "progress"
+      },
+      "result": "Selected native heading/text/choice/progress targets exist with appropriate types. Shared confirm layout retained; no correction justified by these sources."
+    }
+  ],
+  "limits": [
+    "Optional controls and runtime-dependent visibility not inferred as errors merely from absence.",
+    "Game-controller includes inspected but not established as a complete verified contract by this record.",
+    "Published future changes for these classes not newly audited here; earlier broader compatibility review remains separate."
+  ]
+}

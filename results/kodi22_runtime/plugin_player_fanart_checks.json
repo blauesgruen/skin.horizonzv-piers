@@ -1,0 +1,115 @@
+{
+  "scope": "Real playback via a temporary authored plugin resolving local AVI and local stack; production Home multiimage 2016 and fixture route requests. No existing addon code changed. Not Disney DRM, SMB, plugin-containing stack URI or all-wrapper acceptance.",
+  "work": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-plugin-player-fanart-j5abefix",
+  "fixture_id": "plugin.video.horizonzv.fanartprobe",
+  "rows": [
+    {
+      "case": "plugin_resolves_local",
+      "requested_file": "plugin://plugin.video.horizonzv.fanartprobe/play?mode=local",
+      "labels": {
+        "Control.GetLabel(2016)": "",
+        "Player.FilenameAndPath": "plugin://plugin.video.horizonzv.fanartprobe/play?mode=local",
+        "Player.FolderPath": "plugin://plugin.video.horizonzv.fanartprobe/play",
+        "Skin.AspectRatio": "16:9"
+      },
+      "fanart_control_visible": false,
+      "player_item": {
+        "item": {
+          "file": "plugin://plugin.video.horizonzv.fanartprobe/play?mode=local",
+          "label": "Authored plugin video local",
+          "type": "unknown"
+        }
+      },
+      "folder_is_plugin": true,
+      "requests": [
+        {
+          "uri": "plugin://plugin.video.horizonzv.fanartprobe/play?mode=local",
+          "argv": [
+            "plugin://plugin.video.horizonzv.fanartprobe/play",
+            "1",
+            "?mode=local",
+            "resume:false"
+          ]
+        }
+      ]
+    },
+    {
+      "case": "plugin_resolves_stack",
+      "requested_file": "plugin://plugin.video.horizonzv.fanartprobe/play?mode=stack",
+      "labels": {
+        "Control.GetLabel(2016)": "",
+        "Player.FilenameAndPath": "plugin://plugin.video.horizonzv.fanartprobe/play?mode=stack",
+        "Player.FolderPath": "plugin://plugin.video.horizonzv.fanartprobe/play",
+        "Skin.AspectRatio": "16:9"
+      },
+      "fanart_control_visible": false,
+      "player_item": {
+        "item": {
+          "file": "plugin://plugin.video.horizonzv.fanartprobe/play?mode=stack",
+          "label": "Authored plugin video stack",
+          "type": "unknown"
+        }
+      },
+      "folder_is_plugin": true,
+      "requests": [
+        {
+          "uri": "plugin://plugin.video.horizonzv.fanartprobe/play?mode=local",
+          "argv": [
+            "plugin://plugin.video.horizonzv.fanartprobe/play",
+            "1",
+            "?mode=local",
+            "resume:false"
+          ]
+        },
+        {
+          "uri": "plugin://plugin.video.horizonzv.fanartprobe/play?mode=stack",
+          "argv": [
+            "plugin://plugin.video.horizonzv.fanartprobe/play",
+            "2",
+            "?mode=stack",
+            "resume:false"
+          ]
+        }
+      ]
+    }
+  ],
+  "pid": 30144,
+  "fixture_registered": {
+    "addonid": "plugin.video.horizonzv.fanartprobe",
+    "enabled": false,
+    "type": "xbmc.python.pluginsource",
+    "version": "0.0.1"
+  },
+  "after_stop": {
+    "Control.GetLabel(2016)": "",
+    "Player.FolderPath": ""
+  },
+  "cleanup": {
+    "process_exited": true,
+    "profile_settings_restored": true,
+    "video_and_addon_databases_restored": true,
+    "fixture_removed_from_addon_directory": true,
+    "skin_xml_match": true
+  },
+  "errors": [],
+  "requests": [
+    {
+      "uri": "plugin://plugin.video.horizonzv.fanartprobe/play?mode=local",
+      "argv": [
+        "plugin://plugin.video.horizonzv.fanartprobe/play",
+        "1",
+        "?mode=local",
+        "resume:false"
+      ]
+    },
+    {
+      "uri": "plugin://plugin.video.horizonzv.fanartprobe/play?mode=stack",
+      "argv": [
+        "plugin://plugin.video.horizonzv.fanartprobe/play",
+        "2",
+        "?mode=stack",
+        "resume:false"
+      ]
+    }
+  ]
+}
