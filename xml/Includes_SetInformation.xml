@@ -178,7 +178,7 @@
 								<label>$INFO[ListItem.Year]</label>
 							</control>
 						</focusedlayout>
-						<content target="videos" sortby="year">$INFO[ListItem.FolderPath]</content>
+						<content target="videos" sortby="year">$VAR[MovieSetContentPath]</content>
 					</control>
 				</control>
 			</control>
@@ -216,7 +216,7 @@
 						<visible>$PARAM[visible_labels]</visible>
 					</control>
 				</focusedlayout>
-				<content target="videos" sortby="year">$INFO[Container.ListItem.FolderPath]</content>
+				<content target="videos" sortby="year">$VAR[MovieSetListContentPath]</content>
 			</control>
 		</definition>
 	</include>

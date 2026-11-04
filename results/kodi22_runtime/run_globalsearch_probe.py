@@ -15,7 +15,7 @@ from pathlib import Path
 
 def main():
     stage = sys.argv[1]
-    assert stage in ("baseline", "current")
+    assert stage in ("baseline", "current", "reference", "sets")
     repo = Path(__file__).resolve().parents[2]
     root = Path(r"C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440")
     check = subprocess.run(["powershell.exe", "-NoProfile", "-Command", "@(Get-Process kodi -ErrorAction SilentlyContinue).Count"], capture_output=True, text=True, creationflags=subprocess.CREATE_NO_WINDOW)
@@ -54,6 +54,17 @@ def main():
         (xml / "script-globalsearch-main.xml").write_bytes(subprocess.check_output(["git", "-c", "safe.directory=" + repo.as_posix(), "show", "ca3e276:xml/script-globalsearch-main.xml"]))
     else:
         (xml / "script-globalsearch-main.xml").unlink(missing_ok=True)
+    if stage == "sets":
+        for name in ("DialogVideoInfo.xml", "MyVideoNav.xml"):
+            doc = ET.parse(xml / name)
+            controls = doc.getroot().find("controls")
+            assert controls is not None
+            for cid, top, variable in [(2397, 1000, "MovieSetContentPath"), (2398, 1035, "MovieSetListContentPath")]:
+                assert doc.getroot().find(f".//control[@id='{cid}']") is None
+                c = ET.SubElement(controls, "control", {"type":"label", "id":str(cid)})
+                for tag,text in {"left":"30","top":str(top),"width":"1800","height":"30","font":"font12","label":"$VAR["+variable+"]"}.items():
+                    ET.SubElement(c,tag).text = text
+            doc.write(xml / name,encoding="utf-8",xml_declaration=True)
     database = root / "portable_data/userdata/Database"
     db_backup = work / "database"; db_backup.mkdir()
     for pattern in ("MyVideos*.db*", "MyMusic*.db*"):
@@ -109,6 +120,13 @@ def main():
         assert debug is not None; debug.text = "false"; debug.attrib.pop("default", None)
         mouse = config.getroot().find("setting[@id='input.enablemouse']")
         assert mouse is not None; mouse.text = "false"; mouse.attrib.pop("default", None)
+        if stage == "reference":
+            skin = config.getroot().find("setting[@id='lookandfeel.skin']")
+            assert skin is not None; skin.text = "skin.estuary"; skin.attrib.pop("default", None)
+        if stage == "sets":
+            for setting, value in (("window.width", "1280"), ("window.height", "720")):
+                node = config.getroot().find("setting[@id='"+setting+"']")
+                assert node is not None; node.text = value; node.attrib.pop("default", None)
         config.write(gui_path,encoding="utf-8",xml_declaration=True)
         provider_settings = root / "portable_data/userdata/addon_data/script.globalsearch/settings.xml"
         provider_settings.parent.mkdir(parents=True,exist_ok=True)
@@ -121,6 +139,9 @@ def main():
             except Exception:
                 assert process.poll() is None; time.sleep(.3)
         assert rpc("Addons.SetAddonEnabled", {"addonid":"script.globalsearch","enabled":True}) == "OK"
+        report["active_skin"] = rpc("Settings.GetSettingValue", {"setting":"lookandfeel.skin"})["value"]
+        report["skin_aspect_ratio"] = label("Skin.AspectRatio")
+        assert report["active_skin"] == ("skin.estuary" if stage == "reference" else "skin.horizonzv")
         assert len(rpc("VideoLibrary.GetMovies").get("movies",[])) == 1
         client = XBMCClient(name="HorizonzV Global Search " + stage,uid=secrets.randbits(32)); client.connect(port=9777); time.sleep(.2)
         client.send_action("RunScript(script.globalsearch)")
@@ -148,6 +169,9 @@ def main():
         rpc("Input.Info")
         wait(lambda:boolean("Window.IsVisible(movieinformation)"), True)
         report["phases"].append({"phase":"movie_information","title":label("ListItem.Title")})
+        if stage == "sets":
+            assert label("Control.GetLabel(2397)") == label("Control.GetLabel(2398)") == ""
+            report["phases"].append({"phase":"ordinary_movie_info_sources_empty","cover_source":"","list_source":""})
         rpc("Input.Back"); wait(lambda:boolean("Window.IsVisible(movieinformation)"), False)
         client.send_action("Control.SetFocus(990)"); time.sleep(.2); rpc("Input.Select")
         wait(lambda:boolean("Window.IsVisible(virtualkeyboard)"), True)
@@ -158,8 +182,57 @@ def main():
         report["phases"].append({"phase":"empty_results_prompt","search_window_visible":boolean("Window.IsVisible(script-globalsearch.xml)")})
         screenshot("empty")
         rpc("Input.Back"); wait(lambda:boolean("Window.IsVisible(script-globalsearch.xml)"), False)
+        if stage == "sets":
+            movieid = rpc("VideoLibrary.GetMovies")["movies"][0]["movieid"]
+            rpc("VideoLibrary.SetMovieDetails", {"movieid":movieid,"set":"Skin Audit Collection"})
+            sets = rpc("VideoLibrary.GetMovieSets")["sets"]
+            assert len(sets) == 1 and sets[0]["label"] == "Skin Audit Collection", sets
+            rpc("VideoLibrary.SetMovieSetDetails", {"setid":sets[0]["setid"],"plot":""})
+            rpc("GUI.ActivateWindow", {"window":"videos","parameters":["videodb://movies/sets/?ignoreSingleMovieSets=false","return"]})
+            time.sleep(.3); client.send_action("Container.SetViewMode(50)"); time.sleep(.3); client.send_action("Control.SetFocus(50)")
+            for _ in range(5):
+                if label("ListItem.Label") == "Skin Audit Collection": break
+                rpc("Input.Down"); time.sleep(.2)
+            wait(lambda:label("ListItem.Label"), "Skin Audit Collection")
+            assert boolean("ListItem.IsCollection")
+            folder = label("ListItem.FolderPath")
+            wait(lambda:label("Control.GetLabel(2397)"), folder)
+            wait(lambda:label("Control.GetLabel(2398)"), folder)
+            report["phases"].append({"phase":"real_set_selected","folder":folder,"cover_source":label("Control.GetLabel(2397)"),"list_source":label("Control.GetLabel(2398)")})
+            rpc("Input.Info"); wait(lambda:boolean("Window.IsVisible(movieinformation)"), True)
+            wait(lambda:label("Container(2000).NumItems"), "1")
+            assert label("Container(2000).ListItemAbsolute(0).Label") == "Skin Audit Movie"
+            report["phases"].append({"phase":"real_set_info","cover_count":label("Container(2000).NumItems"),"movie":label("Container(2000).ListItemAbsolute(0).Label"),"cover_source":label("Control.GetLabel(2397)")})
+            screenshot("set_info")
+            rpc("Input.Back"); wait(lambda:boolean("Window.IsVisible(movieinformation)"), False)
+            client.send_action("Skin.SetBool(VideoInfo)"); wait(lambda:boolean("Skin.HasSetting(VideoInfo)"), True)
+            client.send_action("Container.SetViewMode(401)"); time.sleep(.4); client.send_action("Control.SetFocus(401)")
+            wait(lambda:boolean("Control.IsVisible(401)"), True)
+            for _ in range(5):
+                if label("ListItem.Label") == "Skin Audit Collection": break
+                rpc("Input.Down"); time.sleep(.2)
+            wait(lambda:label("ListItem.Label"), "Skin Audit Collection")
+            report["phases"].append({"phase":"set_list_prerequisites","aspect_ratio":label("Skin.AspectRatio"),"plot":label("ListItem.Plot"),"info_enabled":boolean("Skin.HasSetting(VideoInfo)"),"cover_visible":boolean("Control.IsVisible(2000)")})
+            wait(lambda:label("Container(2001).NumItems"), "1")
+            assert label("Container(2001).ListItemAbsolute(0).Label") == "Skin Audit Movie"
+            report["phases"].append({"phase":"real_set_list_view401","list_count":label("Container(2001).NumItems"),"movie":label("Container(2001).ListItemAbsolute(0).Label")})
+            screenshot("set_list")
+            rpc("GUI.ActivateWindow", {"window":"videos","parameters":["videodb://movies/sets/"+str(sets[0]["setid"])+"/","return"]})
+            time.sleep(.3); client.send_action("Container.SetViewMode(50)"); time.sleep(.3); client.send_action("Control.SetFocus(50)")
+            for _ in range(5):
+                if label("ListItem.Label") == "Skin Audit Movie": break
+                rpc("Input.Down"); time.sleep(.2)
+            wait(lambda:label("ListItem.Label"), "Skin Audit Movie")
+            assert not boolean("ListItem.IsCollection")
+            wait(lambda:label("Control.GetLabel(2397)"), "")
+            wait(lambda:label("Control.GetLabel(2398)"), "")
+            report["phases"].append({"phase":"ordinary_movie_after_set","cover_source":"","list_source":""})
     except Exception as exc:
         failure = repr(exc); report["failure"] = failure; report["failure_trace"] = traceback.format_exc()
+        if stage == "sets" and process and process.poll() is None:
+            names = ["ListItem.Label", "ListItem.DBType", "ListItem.Plot", "Skin.AspectRatio", "Container.Viewmode", "Container.ListItem.FolderPath", "Container(401).ListItem.Label", "Control.GetLabel(2397)", "Control.GetLabel(2398)", "Container(2000).NumItems", "Container(2001).NumItems"]
+            report["failure_labels"] = rpc("XBMC.GetInfoLabels", {"labels":names})
+            report["failure_is_collection"] = boolean("ListItem.IsCollection")
     finally:
         if process:
             try:

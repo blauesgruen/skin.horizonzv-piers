@@ -45,7 +45,7 @@
       "skin_xml_match_production": true,
       "provider_copy_matches_archive": true
     },
-    "remaining_errors": "One AVI directory error in the info case, also present with addon-default baseline. Cause not established; no addon correction and no zero-error claim."
+    "remaining_errors": "The former AVI directory error is now traced to the hidden skin movie-set content and eliminated in the follow-up native test. See movie_set_content_review.json; historical before artifact retained."
   },
   "static_checks": {
     "compatibility_findings": 0,
@@ -61,8 +61,9 @@
   "limits": [
     "Positive music, TV-series/season/episode, actor/director and PVR categories not exercised in this run.",
     "Playback and context-menu operations not exercised.",
-    "Only the 16:9 test window inspected; no all-aspect-ratio layout claim."
+    "Earlier Global Search screenshots are 720x480; the former unverified 16:9 label was corrected. Movie-set follow-up explicitly verifies 1280x720 and Skin.AspectRatio 16:9."
   ],
   "drafts": "Draft JSONs preserve incorrect probe window name, modal empty-result assumption and early/mouse-pointer focus races. An initial draft of the new layout also forced default focus onto an unbound results view; final layout leaves focus ownership to the provider.",
-  "package": "globalsearch_package_review.json"
+  "package": "globalsearch_package_review.json",
+  "followup": "movie_set_content_review.json"
 }

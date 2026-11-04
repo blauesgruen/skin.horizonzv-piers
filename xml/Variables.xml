@@ -13,6 +13,14 @@
         <value condition="String.StartsWith(ListItem.Path,plugin://)" />
         <value>$INFO[ListItem.Path]extrafanart</value>
     </variable>
+    <variable name="MovieSetContentPath">
+        <value condition="ListItem.IsCollection">$INFO[ListItem.FolderPath]</value>
+        <value />
+    </variable>
+    <variable name="MovieSetListContentPath">
+        <value condition="ListItem.IsCollection">$INFO[Container.ListItem.FolderPath]</value>
+        <value />
+    </variable>
     <variable name="HomeScrollerDescription">
         <value condition="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),dashboard)">$LOCALIZE[31333]</value>
         <value condition="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),picture)">$LOCALIZE[31334]</value>

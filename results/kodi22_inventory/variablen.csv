@@ -183,6 +183,8 @@ MasterModeLabel;Variables.xml;1
 MovieMovieStudiosVar;Variables.xml;4
 MovieMoviegenreiconsExtVar;Variables.xml;16
 MovieMusicgenreiconsExtVar;Variables.xml;6
+MovieSetContentPath;Variables.xml;1
+MovieSetListContentPath;Variables.xml;1
 MovieStudioLogoVar;Variables.xml;10
 MusicCodecTexture;Variables.xml;2
 MusicInfoTextboxVar;Variables.xml;1

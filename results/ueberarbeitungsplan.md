@@ -436,3 +436,11 @@ Unbenutztes Legacy-Layout `script-globalsearch-main.xml` durch den aktuellen Dat
 
 
 Paket-/Checkpoint-Ergänzung zum Global-Search-Umbau: Neues Test-ZIP mit 294 Dateien geprüft; sämtliche Einträge bytegleich zum Workspace, XML/XSP parsebar, neuer Layoutname vorhanden und Legacy-Datei nicht mehr enthalten (`kodi22_inventory/globalsearch_package_review.json`). Damit ist der zuvor genannte Paketvorbehalt für die Dateiumstellung erledigt; ein frischer ZIP-Installationstest bleibt aus. Lokaler Commit verwendet wie beim vorherigen Checkpoint ein nur pro Aufruf leeres Hooks-Verzeichnis, da der globale Paketbauer bereits in TEMP ausgeführt und geprüft wurde. Der globale Hook und veröffentlichte Pakete bleiben unverändert.
+
+
+## Filmset-Quelle bei normalen Filmen gesperrt (2026-11-04)
+
+Der AVI-Verzeichnisfehler beim Global-Search-Infoaufruf stammt von der zunächst nur ausgeblendeten Filmset-Liste im Skin. Beide Filmset-Includes erhalten jetzt nur für ListItem.IsCollection eine Verzeichnisquelle. Vorheriger Fehler reproduziert, Estuary-Gegenprobe fehlerfrei, finaler Global-Search- und Filmset-Lauf fehlerfrei. Echte Set-Cover-/Textliste und anschließender normaler Film geprüft; keine Add-on-Korrektur. Quellen und Grenzen: `kodi22_inventory/movie_set_content_review.json`, [Laufzeitbericht](kodi22_runtime/PRUEFBERICHT.md). Frühere unbekannte Fehlerzuordnung ist damit für diesen Fall überholt. Frühere Global-Search-Seitenverhältnisangabe im Vertragsbeleg auf die tatsächlich 720×480 großen Aufnahmen begrenzt; der neue Set-Lauf bestätigt 16:9 ausdrücklich.
+
+
+Paket-/Checkpoint-Ergänzung zur Filmset-Quelle: Neues TEMP-Test-ZIP mit 294 bytegleichen Einträgen und gültigen XML/XSP geprüft. Gegenüber dem Global-Search-Paket unterscheiden sich ausschließlich Variables.xml und Includes_SetInformation.xml (`kodi22_inventory/movie_set_content_package_review.json`). Kein frischer ZIP-Installationstest. Der lokale Commit verwendet wie zuvor nur pro Aufruf ein leeres Hooks-Verzeichnis, da der globale Paketbauer bereits separat mit TEMP-Ziel ausgeführt und geprüft wurde; globale Hook-Konfiguration und veröffentlichte Pakete bleiben unverändert.

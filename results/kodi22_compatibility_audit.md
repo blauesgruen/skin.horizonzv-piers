@@ -733,3 +733,8 @@ Four static checks pass; inventory reports 278 defined variables, zero missing, 
 ## Global-Search-Skinvertrag (2026-11-04)
 
 Unbenutztes Legacy-Layout `script-globalsearch-main.xml` durch den aktuellen Dateinamen und Control-Vertrag ersetzt. Native Vorher-/Nachher-Prüfung bestätigt den Wechsel vom Add-on-Fallback zum Skin-Layout; Film-Treffer, beide Ansichten, Ansichtstaste, Kategorie-Navigation, Info, Abbruch und Leersuche geprüft. Ein bereits im Ausgangsfall vorhandener AVI-Verzeichnisfehler bleibt dokumentiert; weitere Medienkategorien sind offen. Kein Anbieter-Code geändert. Quellen und Grenzen: `kodi22_inventory/globalsearch_contract_review.json`, Details im [Laufzeitbericht](kodi22_runtime/PRUEFBERICHT.md). Neue begrenzte Vertragsregeln mit sechs Prüffällen; aktuelle Inventur ohne fehlende statische Referenzen. Der bisherige Paketbeleg liegt vor dieser Layout-Umstellung.
+
+
+## Filmset-Quelle bei normalen Filmen gesperrt (2026-11-04)
+
+Der AVI-Verzeichnisfehler beim Global-Search-Infoaufruf stammt von der zunächst nur ausgeblendeten Filmset-Liste im Skin. Beide Filmset-Includes erhalten jetzt nur für ListItem.IsCollection eine Verzeichnisquelle. Vorheriger Fehler reproduziert, Estuary-Gegenprobe fehlerfrei, finaler Global-Search- und Filmset-Lauf fehlerfrei. Echte Set-Cover-/Textliste und anschließender normaler Film geprüft; keine Add-on-Korrektur. Quellen und Grenzen: `kodi22_inventory/movie_set_content_review.json`, [Laufzeitbericht](kodi22_runtime/PRUEFBERICHT.md). Frühere unbekannte Fehlerzuordnung ist damit für diesen Fall überholt. Frühere Global-Search-Seitenverhältnisangabe im Vertragsbeleg auf die tatsächlich 720×480 großen Aufnahmen begrenzt; der neue Set-Lauf bestätigt 16:9 ausdrücklich.
