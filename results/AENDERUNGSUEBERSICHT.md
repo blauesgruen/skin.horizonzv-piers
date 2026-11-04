@@ -1,5 +1,7 @@
 # Bisherige Änderungen und gefundene Fehler
 
+Aktuelle Ergänzung (4. November 2026): Die zehn KN-Switchtimer-Einzelmarkierungen lesen Fenster-Eigenschaften, die der veröffentlichte Matrix-Anbieter nicht liefert. Variable, PVR-Fallback und separates Eintragsbild entfernt; Gesamtzähler und native Kodi-Timerzweige erhalten. Sichtbarer Vorher-/Nachher-Ausdruckstest reproduziert außerdem ein falsches Symbol bei leeren Vergleichswerten; nachher bleibt das Eintragssymbol leer. Globaler Zähler 0/1/0 korrekt, keine Fehlerzeilen. Keine echte Timeranlage oder PVR-Umschaltung getestet. [Quellen](kodi22_inventory/switchtimer_property_contract_review.json), [Laufzeit](kodi22_runtime/switchtimer_marker_checks.json).
+
 Stand: 4. November 2026. Gilt ausschließlich für `skin.horizonzv-piers` / Add-on-ID `skin.horizonzv`, Branch `refactor/kodi22-kompatibilitaet`.
 
 Diese Übersicht gruppiert die bisherigen Änderungen nach Fehlerursache. „Laufzeit geprüft“ bezeichnet die im Prüfbericht genannten Teilfälle, keine vollständige Freigabe aller Geräte, Anbieter und Medien. Andere Add-ons und der Kodi-Core wurden nicht korrigiert.

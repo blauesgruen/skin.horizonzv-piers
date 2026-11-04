@@ -226,7 +226,6 @@ SkinWidgetInfoDataVar;Variables.xml;1
 StreamFlag;Variables.xml;4
 TMDbhelperVisibleCondi;Variables.xml;0
 TextViewerHeaderVar;Variables.xml;1
-VARSwitchtimer;Variables.xml;2
 VideoCodecVar;Variables.xml;3
 VideoHDRVar;Variables.xml;1
 VideoHWDecoder;Variables.xml, Variables.xml;1

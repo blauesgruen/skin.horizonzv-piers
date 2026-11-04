@@ -346,18 +346,6 @@
         <value condition="String.Contains(ListItem.FileExtension,disc)">flagging/lists/stub.png</value>
         <value>$INFO[ListItem.VideoResolution,flagging/lists/,.png]</value>
     </variable>
-    <variable name="VARSwitchtimer">
-        <value condition="String.IsEqual(ListItem.ChannelName,Window(Home).Property(t0:channel)) + String.IsEqual(ListItem.Date,Window(Home).Property(t0:date))">PVR-Switchtimer.png</value>
-        <value condition="String.IsEqual(ListItem.ChannelName,Window(Home).Property(t1:channel)) + String.IsEqual(ListItem.Date,Window(Home).Property(t1:Date))">PVR-Switchtimer.png</value>
-        <value condition="String.IsEqual(ListItem.ChannelName,Window(Home).Property(t2:channel)) + String.IsEqual(ListItem.Date,Window(Home).Property(t2:Date))">PVR-Switchtimer.png</value>
-        <value condition="String.IsEqual(ListItem.ChannelName,Window(Home).Property(t3:channel)) + String.IsEqual(ListItem.Date,Window(Home).Property(t3:Date))">PVR-Switchtimer.png</value>
-        <value condition="String.IsEqual(ListItem.ChannelName,Window(Home).Property(t4:channel)) + String.IsEqual(ListItem.Date,Window(Home).Property(t4:Date))">PVR-Switchtimer.png</value>
-        <value condition="String.IsEqual(ListItem.ChannelName,Window(Home).Property(t5:channel)) + String.IsEqual(ListItem.Date,Window(Home).Property(t5:Date))">PVR-Switchtimer.png</value>
-        <value condition="String.IsEqual(ListItem.ChannelName,Window(Home).Property(t6:channel)) + String.IsEqual(ListItem.Date,Window(Home).Property(t6:Date))">PVR-Switchtimer.png</value>
-        <value condition="String.IsEqual(ListItem.ChannelName,Window(Home).Property(t7:channel)) + String.IsEqual(ListItem.Date,Window(Home).Property(t7:Date))">PVR-Switchtimer.png</value>
-        <value condition="String.IsEqual(ListItem.ChannelName,Window(Home).Property(t8:channel)) + String.IsEqual(ListItem.Date,Window(Home).Property(t8:Date))">PVR-Switchtimer.png</value>
-        <value condition="String.IsEqual(ListItem.ChannelName,Window(Home).Property(t9:channel)) + String.IsEqual(ListItem.Date,Window(Home).Property(t9:Date))">PVR-Switchtimer.png</value>
-    </variable>
     <variable name="pvrsignal">
         <value condition="!Integer.IsGreater(Pvr.ActStreamSignal,5)">pvrsignal/PvrSignal0.png</value>
         <value condition="Integer.IsGreater(Pvr.ActStreamSignal,5)+!Integer.IsGreater(Pvr.ActStreamSignal,10)">pvrsignal/PvrSignal5.png</value>
@@ -392,7 +380,6 @@
         <value condition="ListItem.HasTimer + !ListItem.TimerIsActive">PVR-HasTimerDisabled.png</value>
         <value condition="ListItem.HasTimerSchedule">PVR-HasTimerSchedule.png</value>
         <value condition="ListItem.HasTimer">PVR-HasTimer.png</value>
-        <value>$VAR[VARSwitchtimer]</value>
     </variable>
     <variable name="PVRTimerLabel">
         <value condition="ListItem.IsRecording">$LOCALIZE[19043]</value>

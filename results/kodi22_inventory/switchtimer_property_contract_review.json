@@ -1,0 +1,112 @@
+{
+  "checked_on": "2026-11-04",
+  "scope": "HorizonzV KN Switchtimer per-item marker properties versus complete published Matrix Python source",
+  "upstream_commit": "5dd9d6f746be0a032886d3a1e0459bb549c0b3ff",
+  "source": "https://github.com/b-jesch/service.kn.switchtimer/tree/5dd9d6f746be0a032886d3a1e0459bb549c0b3ff",
+  "archive_sha256": "3decb2a430bd339211395847600203392a3c903f87e2024fe3137f1504d58188",
+  "python_files": [
+    {
+      "file": "addtimer.py",
+      "sha256": "09adb934323adf8678a9f6f3ef3b69c052c48a82c9d643508e41ac5293462ee1"
+    },
+    {
+      "file": "handler.py",
+      "sha256": "439ff59a2ac40ccd2d2c5db20d2e2bf39c1c5a78c9e42d09ba8df1f572af8360"
+    },
+    {
+      "file": "resources/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "resources/lib/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "resources/lib/knClasses.py",
+      "sha256": "8141485b5f3276b6d260e754d1fcabbecda79beeb4e35586c921897fc45caac8"
+    },
+    {
+      "file": "service.py",
+      "sha256": "7f3215cf7d99ee47886a3f37a00037a96a5554fb1daac3002c659a524237b97f"
+    }
+  ],
+  "all_setProperty_calls": [
+    {
+      "file": "handler.py",
+      "line": 45,
+      "object": "HOME",
+      "call": "HOME.setProperty('SwitchTimerActiveItems', str(len(timers)))"
+    },
+    {
+      "file": "handler.py",
+      "line": 55,
+      "object": "HOME",
+      "call": "HOME.setProperty('SwitchTimerActiveItems', str(len(timers)))"
+    },
+    {
+      "file": "handler.py",
+      "line": 154,
+      "object": "liz",
+      "call": "liz.setProperty('utime', '')"
+    },
+    {
+      "file": "handler.py",
+      "line": 155,
+      "object": "liz",
+      "call": "liz.setProperty('date', '')"
+    },
+    {
+      "file": "handler.py",
+      "line": 147,
+      "object": "liz",
+      "call": "liz.setProperty('utime', str(timer['utime']))"
+    },
+    {
+      "file": "handler.py",
+      "line": 148,
+      "object": "liz",
+      "call": "liz.setProperty('date', timer['date'])"
+    }
+  ],
+  "window_setProperty_calls": [
+    {
+      "file": "handler.py",
+      "line": 45,
+      "object": "HOME",
+      "call": "HOME.setProperty('SwitchTimerActiveItems', str(len(timers)))"
+    },
+    {
+      "file": "handler.py",
+      "line": 55,
+      "object": "HOME",
+      "call": "HOME.setProperty('SwitchTimerActiveItems', str(len(timers)))"
+    }
+  ],
+  "legacy_mentions": [
+    {
+      "file": "handler.py",
+      "line": 96,
+      "text": "# setTimerProperties(timers)"
+    }
+  ],
+  "result": "Only the global SwitchTimerActiveItems count is published as a window property. The other four setters are private ListItem properties in the provider selection dialog. No per-timer t0..t9 window-property setter exists in these six files.",
+  "review_correction": "Initial assertion counted ListItem.setProperty together with window setters; object types are now distinguished. That assertion failure was an audit-helper error, not a skin defect.",
+  "limits": [
+    "No claim for unknown private forks or other external property setters.",
+    "No actual PVR timer scheduled or channel changed."
+  ],
+  "skin_change": {
+    "removed": [
+      "VARSwitchtimer with ten channel/date comparisons",
+      "PVRTimerIcon legacy fallback",
+      "separate per-item image in Includes_PVR.xml"
+    ],
+    "retained": [
+      "All native PVRTimerIcon branches",
+      "All SwitchTimerActiveItems global conditions",
+      "Install/enable/settings hub"
+    ],
+    "native_test": "../kodi22_runtime/switchtimer_marker_checks.json",
+    "static_checks": "Four bounded tools: no confirmed findings; info-name tool retains 43 previously classified lexical candidates. Inventory: 164 XML, 281 variables, no missing static references."
+  }
+}

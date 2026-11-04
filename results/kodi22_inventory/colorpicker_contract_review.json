@@ -1,0 +1,59 @@
+{
+  "checked_on": "2026-11-04",
+  "scope": "SkinSettings 824 colorpicker invocation and returned skin strings, plus Estuary error-origin reference.",
+  "native_skin": "skin.horizonzv",
+  "reference_skin": "skin.estuary",
+  "result": "Four functional skin-call phases and one reference cancel passed; logs are not error-free.",
+  "native_report": "../kodi22_runtime/colorpicker_checks.json",
+  "reference_report": "../kodi22_runtime/colorpicker_reference_checks.json",
+  "provider_xml": {
+    "file": "D:\\Program Files\\Kodi22\\portable_data\\addons\\script.skin.helper.colorpicker.bg\\resources\\skins\\Default\\1080i\\script-skin_helper_service-ColorPicker.xml",
+    "sha256": "0e3542ff2ee0ccc4e5d3dc753e629536c42b15e335e9cf30fcf808e6b317ff4f",
+    "defaultcontrol": "3110",
+    "legacy_condition_counts": {
+      "unqualified_IsEmpty": 1,
+      "StringCompare": 8
+    },
+    "matches": [
+      {
+        "line": 3,
+        "text": "<defaultcontrol always=\"true\">3110</defaultcontrol>"
+      },
+      {
+        "line": 58,
+        "text": "<visible>!IsEmpty(Window.Property(palettename))</visible>"
+      },
+      {
+        "line": 75,
+        "text": "<itemlayout height=\"45\" width=\"58\" condition=\"!StringCompare(Window.Property(palettename),basic) + !StringCompare(Window.Property(palettename),material-design)\">"
+      },
+      {
+        "line": 82,
+        "text": "<focusedlayout height=\"45\" width=\"58\" condition=\"!StringCompare(Window.Property(palettename),basic) + !StringCompare(Window.Property(palettename),material-design)\">"
+      },
+      {
+        "line": 92,
+        "text": "<itemlayout height=\"76\" width=\"128\" condition=\"StringCompare(Window.Property(palettename),basic)\">"
+      },
+      {
+        "line": 99,
+        "text": "<focusedlayout height=\"76\" width=\"128\" condition=\"StringCompare(Window.Property(palettename),basic)\">"
+      },
+      {
+        "line": 109,
+        "text": "<itemlayout height=\"40\" width=\"125\" condition=\"StringCompare(Window.Property(palettename),material-design)\">"
+      },
+      {
+        "line": 116,
+        "text": "<focusedlayout height=\"40\" width=\"125\" condition=\"StringCompare(Window.Property(palettename),material-design)\">"
+      }
+    ]
+  },
+  "interpretation": "One control-3110 focus error occurs per dialog opening with both skins; therefore it is not specific to the HorizonzV action/layout. The exact internal cause of the focus timing was not proven.",
+  "decision": "Retain the valid skin call; do not rewrite external addon code. Record legacy fallback-template conditions separately.",
+  "limits": [
+    "Not a complete settings-layout or color-rendering acceptance test.",
+    "Manual text entry, opacity, palette changes and cancellation with initially unset color are not tested.",
+    "External fallback template contains legacy Kodi expressions; successful selection does not validate all of that template."
+  ]
+}

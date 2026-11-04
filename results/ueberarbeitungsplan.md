@@ -460,3 +460,15 @@ Neun Include-Aufrufe in vier View-Dateien ergänzt; dadurch werden 21 nach Aufl�
 
 
 Paket-/Checkpoint-Ergänzung zur viewid-Weitergabe: Neues TEMP-Test-ZIP mit 294 bytegleichen Einträgen und gültigen XML/XSP geprüft. Gegenüber dem Ordnerquellen-Paket unterscheiden sich nur die vier betroffenen View-Dateien (`kodi22_inventory/include_viewid_package_review.json`). Kein frischer ZIP-Installationstest. Lokaler Commit wie zuvor mit ausschließlich pro Aufruf leerem Hooks-Verzeichnis, da der globale Paketbauer bereits separat in TEMP ausgeführt und geprüft wurde. Globale Hooks und veröffentlichte Pakete bleiben unverändert.
+# Fortschritt: verbleibende Add-on-Verträge (2026-11-04)
+
+TMDb Helper 6.20.7 behält die vom Skin verwendeten Service-/Monitor-Schlüssel und indizierten Anbieter-Icons bei. FritzAct-/GTO-Quellen liefern die vom Skin verwendeten Aktionen und Eigenschaften; GTO bindet den Info-Layoutnamen an den Installationsordner. Quellenbelege: `tmdbhelper_contract_review.json` und `fritz_gto_contract_review.json` unter `kodi22_inventory/`. Daraus keine neue Produktcode-Änderung abgeleitet; keine externen Add-ons korrigiert.
+
+BG-Farbwähler 1.0.1 sichtbar geprüft: vier Aufruf-/Rückgabefälle bestanden. Ein Fokusfehler je Dialogöffnung tritt ebenfalls unter Estuary auf und bleibt dokumentiert; externes Fallback-Layout enthält alte Kodi-Ausdrücke. Kein fehlerfreier Gesamtbefund. Grenzen und Belege im aktuellen Abnahmestand und Laufzeitbericht. Manuelle Eingabe, Deckkraft, Palettenwechsel und anfangs leerer Farbwert bleiben offen. Kodi beendet und gesicherte Profileinstellungen wiederhergestellt.
+# KN-Switchtimer-Vertrag und RadioMonitor (2026-11-04)
+
+Die aktuelle Matrix-Version des KN Switchtimers veröffentlicht keine `t0`-bis-`t9`-Fenstereigenschaften. Darauf beruhende Einzelmarker im Skin entfernt; globale Anzahl und native Kodi-PVR-Zweige unverändert. Sichtbarer Ausdruckstest mit kontrollierten Daten bestätigt die Korrektur des leeren Vergleichs und die Gesamtanzeige. Keine Timeranlage/Schaltaktion und kein Add-on geändert. Quellen, Grenzen und drei native Phasen im aktuellen Abnahmestand.
+
+Zusätzlich 43 aktive RadioMonitor-Eigenschaften mit lokalen Schreibpfaden und aktuellen ASM-Konstanten abgeglichen; keine daraus begründete Skin-Codeänderung. Aktuelles QF-Repository nicht abrufbar. Eine ältere Audit-Aussage zum KN-Übersichtsaufruf korrigiert: Der aktuelle Hub öffnet Einstellungen und enthält keinen `RunScript(service.kn.switchtimer)`-Aufruf. Daher wird dieser nicht vorhandene Skin-Einstieg nicht als ausstehender Laufzeittest behandelt.
+
+Paket-/Checkpoint-Ergänzung: Neues TEMP-Test-ZIP mit 294 bytegleichen Einträgen, CRC und 179 XML/XSP-Prüfungen bestanden. Gegenüber dem viewid-Paket nur Variables.xml und Includes_PVR.xml geändert (switchtimer_package_review.json). Kein neuer ZIP-Installationstest. Lokaler Checkpoint verwendet nur pro Git-Aufruf ein leeres Hooks-Verzeichnis: Der globale Post-Commit-Packer wurde bereits separat mit TEMP-Ziel ausgeführt; sein normaler Hook würde ein bestehendes gleichnamiges Repository-Paket ersetzen. Keine globale Hook-Konfiguration geändert.

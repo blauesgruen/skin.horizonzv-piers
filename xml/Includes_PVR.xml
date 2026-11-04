@@ -179,11 +179,6 @@
                 <width>27</width>
                 <texture>$VAR[PVRTimerIcon]</texture>
             </control>
-            <control type="image">
-                <animation effect="slide" end="30" condition="ListItem.IsRecording|ListItem.HasRecording|ListItem.HasTimer">Conditional</animation>
-                <width>27</width>
-                <texture>$VAR[VARSwitchtimer]</texture>
-            </control>
         </control>
     </include>
     <include name="PVRInfoTopPanel">

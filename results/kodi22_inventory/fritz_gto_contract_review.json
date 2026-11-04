@@ -1,0 +1,434 @@
+{
+  "checked_on": "2026-11-04",
+  "scope": "Only HorizonzV skin-facing FritzAct and GTO action/property contracts; external sources read-only.",
+  "files": [
+    {
+      "addon": "FritzAct",
+      "file": "default.py",
+      "source": "https://github.com/b-jesch/script.program.fritzact/blob/Matrix/default.py",
+      "source_modified": "2023-04-28T14:08:25Z",
+      "matches": [
+        {
+          "line": 39,
+          "text": "if xbmcgui.Window(10000).getProperty('fritzact.timestamp') == '':"
+        },
+        {
+          "line": 40,
+          "text": "xbmcgui.Window(10000).setProperty('fritzact.timestamp', str(round(int(time()), -1)))"
+        },
+        {
+          "line": 63,
+          "text": "liz.setProperty('ain', '')"
+        },
+        {
+          "line": 71,
+          "text": "liz.setProperty('ain', device.ain)"
+        },
+        {
+          "line": 131,
+          "text": "label2=actor.ain)"
+        },
+        {
+          "line": 133,
+          "text": "wid.setProperty('type', actor.type)"
+        },
+        {
+          "line": 134,
+          "text": "wid.setProperty('present', LS(30032 + actor.present))"
+        },
+        {
+          "line": 136,
+          "text": "wid.setProperty('state', LS(30030 + actor.state))"
+        },
+        {
+          "line": 138,
+          "text": "wid.setProperty('state', str(actor.state))"
+        },
+        {
+          "line": 139,
+          "text": "wid.setProperty('mode', actor.mode)"
+        },
+        {
+          "line": 140,
+          "text": "wid.setProperty('temperature', actor.temperature)"
+        },
+        {
+          "line": 141,
+          "text": "wid.setProperty('power', actor.power)"
+        },
+        {
+          "line": 142,
+          "text": "wid.setProperty('energy', actor.energy)"
+        },
+        {
+          "line": 143,
+          "text": "wid.setProperty('set_temp', actor.set_temp)"
+        },
+        {
+          "line": 144,
+          "text": "wid.setProperty('comf_temp', actor.comf_temp)"
+        },
+        {
+          "line": 145,
+          "text": "wid.setProperty('lowering_temp', actor.lowering_temp)"
+        },
+        {
+          "line": 146,
+          "text": "wid.setProperty('battery', actor.battery)"
+        },
+        {
+          "line": 147,
+          "text": "wid.setProperty('batterylow', str(actor.batterylow))"
+        },
+        {
+          "line": 149,
+          "text": "wid.setProperty('IsPlayable', 'false')"
+        },
+        {
+          "line": 275,
+          "text": "xbmcgui.Window(10000).setProperty('fritzact.timestamp', str(round(int(time()), -1)))"
+        },
+        {
+          "line": 323,
+          "text": "fbDict = dict({'on': 'setswitchon', 'off': 'setswitchoff', 'toggle': 'setswitchtoggle', 'temp': 'sethkrtsoll'})"
+        },
+        {
+          "line": 333,
+          "text": "if params['action'] == 'temp':"
+        },
+        {
+          "line": 371,
+          "text": "params.update(dict(parse_qsl(args[1])))"
+        },
+        {
+          "line": 378,
+          "text": "'toggle': fritz.exec,"
+        },
+        {
+          "line": 381,
+          "text": "'temp': fritz.exec,"
+        },
+        {
+          "line": 384,
+          "text": "'default': build_widget"
+        },
+        {
+          "line": 405,
+          "text": "liz.setProperty('ain', device.ain)"
+        },
+        {
+          "line": 406,
+          "text": "liz.setProperty('name', device.name)"
+        },
+        {
+          "line": 407,
+          "text": "liz.setProperty('type', device.type)"
+        },
+        {
+          "line": 409,
+          "text": "liz.setProperty('action', 'toggle')"
+        },
+        {
+          "line": 411,
+          "text": "liz.setProperty('action', 'temp')"
+        },
+        {
+          "line": 412,
+          "text": "liz.setProperty('slider', str(device.bin_slider))"
+        }
+      ],
+      "source_text_sha256": "55167b07ab02d7a42aabec5bb9e7237ea5fd08441d6b2fc1a934772301adbbb8",
+      "installed_file_sha256": "55167b07ab02d7a42aabec5bb9e7237ea5fd08441d6b2fc1a934772301adbbb8",
+      "installed_text_matches_upstream": true
+    },
+    {
+      "addon": "GTO",
+      "file": "main.py",
+      "source": "https://github.com/b-jesch/script.service.gto/blob/Matrix/main.py",
+      "source_modified": "2026-02-14T23:15:32Z",
+      "matches": [
+        {
+          "line": 74,
+          "text": "liz.setProperty('StartDate', convert_dateformat(item.get('datetime')))"
+        },
+        {
+          "line": 75,
+          "text": "liz.setProperty('StartTime', convert_dateformat(item.get('datetime'), dt_out=LOCAL_TIME_FORMAT))"
+        },
+        {
+          "line": 76,
+          "text": "liz.setProperty('EndTime', convert_dateformat(item.get('enddate')))"
+        },
+        {
+          "line": 77,
+          "text": "liz.setProperty('HasTimer', str(hasTimer(item.get('broadcastid', None))))"
+        },
+        {
+          "line": 78,
+          "text": "liz.setProperty('Item', str(item.get('item')))"
+        },
+        {
+          "line": 79,
+          "text": "liz.setProperty('IsPlayable', 'true')"
+        },
+        {
+          "line": 85,
+          "text": "HOME.setProperty('GTO.provider', content['scraper'])"
+        },
+        {
+          "line": 89,
+          "text": "HOME.setProperty('GTO.provider', LOC(30105).format(0))"
+        },
+        {
+          "line": 90,
+          "text": "HOME.setProperty('GTO.busy', 'true')"
+        },
+        {
+          "line": 98,
+          "text": "HOME.setProperty('GTO.busy', 'false')"
+        },
+        {
+          "line": 116,
+          "text": "HOME.setProperty('GTO.provider', LOC(30105).format(parts * part_nr))"
+        },
+        {
+          "line": 166,
+          "text": "HOME.setProperty('GTO.busy', 'false')"
+        },
+        {
+          "line": 167,
+          "text": "HOME.setProperty('GTO.timestamp', str(int(time.time())))"
+        },
+        {
+          "line": 168,
+          "text": "HOME.setProperty('GTO.provider', scraper.shortname)"
+        },
+        {
+          "line": 186,
+          "text": "li.setProperty('module', '{}.{}'.format(SCRAPER_MODULPATH, modules[:-3]))"
+        },
+        {
+          "line": 187,
+          "text": "li.setProperty('shortname', Scrapers().shortname)"
+        },
+        {
+          "line": 216,
+          "text": "HOME.setProperty('GTO.Info.BroadcastID', str(item['broadcastid']))"
+        },
+        {
+          "line": 217,
+          "text": "HOME.setProperty('GTO.Info.hasTimer', str(is_timer))"
+        },
+        {
+          "line": 222,
+          "text": "HOME.setProperty(\"GTO.Info.isInFuture\", str(is_inFuture))"
+        },
+        {
+          "line": 228,
+          "text": "HOME.setProperty(\"GTO.Info.isRunning\", str(is_running))"
+        },
+        {
+          "line": 230,
+          "text": "HOME.setProperty(\"GTO.Info.Item\", str(item['item']))"
+        },
+        {
+          "line": 231,
+          "text": "HOME.setProperty(\"GTO.Info.Title\", item['title'])"
+        },
+        {
+          "line": 232,
+          "text": "HOME.setProperty(\"GTO.Info.Picture\", item['thumb'])"
+        },
+        {
+          "line": 233,
+          "text": "HOME.setProperty(\"GTO.Info.Description\", item['plot'] or LOC(30140))"
+        },
+        {
+          "line": 234,
+          "text": "HOME.setProperty(\"GTO.Info.Channel\", item['pvrchannel'])"
+        },
+        {
+          "line": 235,
+          "text": "HOME.setProperty(\"GTO.Info.ChannelID\", str(item['pvrid']))"
+        },
+        {
+          "line": 236,
+          "text": "HOME.setProperty(\"GTO.Info.Logo\", item['logo'])"
+        },
+        {
+          "line": 237,
+          "text": "HOME.setProperty(\"GTO.Info.Date\", convert_dateformat(item['datetime']))"
+        },
+        {
+          "line": 238,
+          "text": "HOME.setProperty(\"GTO.Info.RunTime\", str(item['runtime'] // 60))"
+        },
+        {
+          "line": 239,
+          "text": "HOME.setProperty(\"GTO.Info.EndTime\", convert_dateformat(item['enddate'], dt_out=LOCAL_TIME_FORMAT))"
+        },
+        {
+          "line": 241,
+          "text": "HOME.setProperty(\"GTO.Info.Genre\", item['genre'])"
+        },
+        {
+          "line": 243,
+          "text": "HOME.setProperty('GTO.Info.Genre', item['genre'] + ' | Rating: ' + str(item['rating']))"
+        },
+        {
+          "line": 244,
+          "text": "HOME.setProperty(\"GTO.Info.Year\", item['year'])"
+        },
+        {
+          "line": 245,
+          "text": "HOME.setProperty(\"GTO.Info.Cast\", item['cast'])"
+        },
+        {
+          "line": 248,
+          "text": "popup = xbmcgui.WindowXMLDialog(INFO_XML, ADDON_PATH)"
+        },
+        {
+          "line": 273,
+          "text": "if params['action'] == 'scrape':"
+        },
+        {
+          "line": 278,
+          "text": "elif params['action'] == 'change_scraper':"
+        },
+        {
+          "line": 285,
+          "text": "elif params['action'] == 'getcontent':"
+        },
+        {
+          "line": 289,
+          "text": "elif params['action'] == 'info':"
+        },
+        {
+          "line": 290,
+          "text": "show_info(params['item'])"
+        },
+        {
+          "line": 292,
+          "text": "elif params['action'] == 'record':"
+        },
+        {
+          "line": 293,
+          "text": "if not setTimer(params['broadcastid'], params['item']):"
+        },
+        {
+          "line": 296,
+          "text": "HOME.setProperty('GTO.timestamp', str(int(time.time())))"
+        },
+        {
+          "line": 299,
+          "text": "elif params['action'] == 'reminder':"
+        },
+        {
+          "line": 300,
+          "text": "if not setTimer(params['broadcastid'], params['item'], reminder=True):"
+        },
+        {
+          "line": 305,
+          "text": "HOME.setProperty('GTO.timestamp', str(int(time.time())))"
+        },
+        {
+          "line": 308,
+          "text": "elif params['action'] == 'switch_channel':"
+        },
+        {
+          "line": 309,
+          "text": "switchToChannel(params['pvrid'], params['item'])"
+        }
+      ],
+      "source_text_sha256": "54b241c7a35c3e9ce25343afa753bc382fa70c1929f15a9d8f9b389af5de5160",
+      "installed_file_sha256": "54b241c7a35c3e9ce25343afa753bc382fa70c1929f15a9d8f9b389af5de5160",
+      "installed_text_matches_upstream": true
+    },
+    {
+      "addon": "GTO",
+      "file": "resources/lib/modules/tools.py",
+      "source": "https://github.com/b-jesch/script.service.gto/blob/Matrix/resources/lib/modules/tools.py",
+      "source_modified": "2026-02-14T23:06:50Z",
+      "matches": [
+        {
+          "line": 45,
+          "text": "INFO_XML = xbmcvfs.translatePath('special://skin').split(os.sep)[-2] + '.script-gto-info.xml'"
+        }
+      ],
+      "source_text_sha256": "9ad7e1accc57c5550946d0f172947a5843da4d3189ec0e463759b915eb5b67f9",
+      "installed_file_sha256": "9ad7e1accc57c5550946d0f172947a5843da4d3189ec0e463759b915eb5b67f9",
+      "installed_text_matches_upstream": true
+    }
+  ],
+  "installed_versions": {
+    "script.program.fritzact": "3.1.7+matrix",
+    "script.service.gto": "3.4.1+matrix"
+  },
+  "property_checks": [
+    {
+      "addon": "FritzAct",
+      "skin_file": "xml/Includes_Dash_FritzDect.xml",
+      "provider_properties_read": [
+        "battery",
+        "energy",
+        "mode",
+        "power",
+        "set_temp",
+        "state",
+        "temperature",
+        "type"
+      ],
+      "generic_skin_properties": [
+        "BusyIcon"
+      ],
+      "missing_literal_provider_properties": []
+    },
+    {
+      "addon": "GTO",
+      "skin_file": "xml/skin.horizonzv.script-gto-info.xml",
+      "provider_properties_read": [
+        "GTO.Info.BroadcastID",
+        "GTO.Info.Cast",
+        "GTO.Info.Channel",
+        "GTO.Info.ChannelID",
+        "GTO.Info.Date",
+        "GTO.Info.Description",
+        "GTO.Info.EndTime",
+        "GTO.Info.Genre",
+        "GTO.Info.Item",
+        "GTO.Info.Logo",
+        "GTO.Info.Picture",
+        "GTO.Info.Title",
+        "GTO.Info.hasTimer",
+        "GTO.Info.isRunning"
+      ],
+      "generic_skin_properties": [],
+      "missing_literal_provider_properties": []
+    }
+  ],
+  "fritz_dispatch_verified": [
+    "toggle",
+    "temp",
+    "default"
+  ],
+  "gto_skin_actions_verified": [
+    "getcontent",
+    "info",
+    "record",
+    "switch_channel"
+  ],
+  "result": "Reviewed skin action/property contracts retained; no code change justified by these contracts.",
+  "gto_layout_contract": {
+    "rule": "Provider derives INFO_XML from the physical special://skin folder name.",
+    "packaged_folder": "skin.horizonzv",
+    "matching_skin_file": "xml/skin.horizonzv.script-gto-info.xml",
+    "checkout_folder": "skin.horizonzv-piers",
+    "limit": "An installation directly from this differently named checkout folder requests skin.horizonzv-piers.script-gto-info.xml, which this skin does not supply. Canonical addon-ID folder matches. Not a removed Kodi API."
+  },
+  "limits": [
+    "Static source contract review; no device command or PVR action executed.",
+    "Hardware results, data refresh and native dialog rendering remain unverified.",
+    "Only the three reviewed installed files were compared with upstream; no full-addon equality claim.",
+    "No external addon code changed."
+  ]
+}
