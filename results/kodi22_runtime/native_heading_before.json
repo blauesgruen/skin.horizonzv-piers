@@ -1,0 +1,94 @@
+{
+  "scope": "Actual numeric dialog (four modes) and three shared native settings dialogs; titles, focus, number entry/backspace/confirmation and cancellation only. No player, persistent device settings or addon code changed.",
+  "baseline": true,
+  "work": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-native-headings-tbvnaxpi",
+  "xml_sha256": {
+    "DialogNumeric.xml": "d3b043489e9677bf3e6258949e8fdf2dc6e17edc227ac85bf1a6dac690c2e990",
+    "DialogSettings.xml": "827a1f792dd6b5fb4ed91a0c76a725d71af3050978ae90f5ae47bf70f83270fb"
+  },
+  "numeric": [
+    {
+      "mode": 0,
+      "expected_heading": "HorizonzV native input 0",
+      "observed": {
+        "Control.GetLabel(1)": "",
+        "Control.GetLabel(4)": "12",
+        "Skin.AspectRatio": "16:9",
+        "System.CurrentControlID": "21"
+      },
+      "returned": ""
+    },
+    {
+      "mode": 1,
+      "expected_heading": "HorizonzV native input 1",
+      "observed": {
+        "Control.GetLabel(1)": "",
+        "Control.GetLabel(4)": " 4/11/2026",
+        "Skin.AspectRatio": "16:9",
+        "System.CurrentControlID": "21"
+      },
+      "returned": ""
+    },
+    {
+      "mode": 2,
+      "expected_heading": "HorizonzV native input 2",
+      "observed": {
+        "Control.GetLabel(1)": "",
+        "Control.GetLabel(4)": "12:34",
+        "Skin.AspectRatio": "16:9",
+        "System.CurrentControlID": "21"
+      },
+      "returned": ""
+    },
+    {
+      "mode": 3,
+      "expected_heading": "HorizonzV native input 3",
+      "observed": {
+        "Control.GetLabel(1)": "",
+        "Control.GetLabel(4)": "127.  0.  0.  1",
+        "Skin.AspectRatio": "16:9",
+        "System.CurrentControlID": "21"
+      },
+      "returned": ""
+    }
+  ],
+  "settings": [
+    {
+      "target": "osdaudiosettings",
+      "observed": {
+        "$LOCALIZE[13396]": "",
+        "Control.GetLabel(2)": "",
+        "Skin.AspectRatio": "16:9",
+        "System.CurrentControlID": "-180"
+      },
+      "expected_key": "$LOCALIZE[13396]"
+    },
+    {
+      "target": "osdvideosettings",
+      "observed": {
+        "$LOCALIZE[13395]": "",
+        "Control.GetLabel(2)": "",
+        "Skin.AspectRatio": "16:9",
+        "System.CurrentControlID": "-180"
+      },
+      "expected_key": "$LOCALIZE[13395]"
+    },
+    {
+      "target": "osdsubtitlesettings",
+      "observed": {
+        "$LOCALIZE[24133]": "",
+        "Control.GetLabel(2)": "",
+        "Skin.AspectRatio": "16:9",
+        "System.CurrentControlID": "-180"
+      },
+      "expected_key": "$LOCALIZE[24133]"
+    }
+  ],
+  "pid": 7020,
+  "cleanup": {
+    "process_exited": true,
+    "profile_settings_restored": true,
+    "skin_xml_match": true
+  },
+  "errors": []
+}

@@ -12,8 +12,8 @@
 			<include>opencloseslideup</include>
 			<control type="group">
 				<include content="DialogBackgroundCommons">
-					<param name="header_id" value="0" />
-					<param name="header_label" value="$INFO[System.CurrentWindow]" />
+					<param name="header_id" value="1" />
+					<param name="header_label" value="" />
 				</include>
 				<control type="image">
 					<animation effect="fade" end="50" condition="true">Conditional</animation>

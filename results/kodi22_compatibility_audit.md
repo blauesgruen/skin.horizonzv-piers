@@ -1,5 +1,11 @@
 # Kodi 22 compatibility audit and cleanup plan
 
+## Native heading contracts repaired (2026-11-05)
+
+Two more concrete native contracts were not connected: numeric input writes the caller's prompt to control 1, shared manual settings use heading 2. The skin supplied ID 0 and the generic window caption in both. Corrected only those include parameters in DialogNumeric.xml and DialogSettings.xml. Piers and published master retain these target IDs; this is not a claim of a recently removed Kodi API. Five additional selected dialog contracts (PVR groups, slider, keyboard, media source and text viewer) have matching source-checked view/header controls; no full all-dialog/type-schema approval implied.
+
+Visible baseline and final runs cover four native numeric modes and audio/video/subtitle settings titles. Number entry appends 3 and 4 to 12, Backspace yields 123, Done returns 123; other modes cancel. Final setting headings match native localization strings 13396, 13395 and 24133. No playback or settings-item changes. Zero final ERROR lines, secured settings restored. An incorrect helper input expectation and its shutdown timing error are retained separately; final helper waits for the numeric modal call to return. [Primary sources/limits](kodi22_inventory/native_heading_review.json), [runtime](kodi22_runtime/native_heading_checks.json).
+
 ## Native color-dialog contract repaired (2026-11-04)
 
 The skin defined native `DialogColorPicker.xml` control 6 as a group. Piers and published master register it as a view container; the visible baseline was empty despite no ERROR lines. The skin now uses a bounded panel, accepts native palette content without the unrelated music playlist, and exposes heading 1. The count uses an independent label 20 because the base dialog overwrites body labels starting at 2. This is a malformed supported-dialog contract, not evidence of a recently removed Kodi API.

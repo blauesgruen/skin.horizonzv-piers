@@ -1,0 +1,14 @@
+{
+  "checked_on": "2026-11-05",
+  "archive": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-native-heading-package-f6e8246618b34485aad02230b7e4d719\\skin.horizonzv-1.22.0.1.zip",
+  "sha256": "0d22b7539deba7b0928c9650f4262d40b33035d7cdf6c557ac56a5908d4e2467",
+  "file_count": 294,
+  "crc_ok": true,
+  "all_entries_equal_workspace": true,
+  "xml_xsp_parsed": 179,
+  "changed_from_previous_test_package": [
+    "xml/DialogNumeric.xml",
+    "xml/DialogSettings.xml"
+  ],
+  "native_install_evidence": "../kodi22_runtime/native_heading_install_checks.json"
+}

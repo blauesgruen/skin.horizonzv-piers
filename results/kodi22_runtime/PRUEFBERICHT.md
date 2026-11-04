@@ -1,5 +1,15 @@
 # Kodi-22-Laufzeitprüfung – ab 1. November 2026
 
+## Native Dialogüberschriften: Eingabe und Einstellungen (5. November)
+
+Auch das [neue Paket](../kodi22_inventory/native_heading_package_review.json) nativ frisch installiert und in HorizonzV neu gestartet: 294 Dateien bytegleich, CRC und 179 XML/XSP-Prüfungen bestanden, nur die zwei Header-Dateien gegenüber dem vorherigen Farbdialogpaket geändert. Beide Installations-/Startphasen ohne ERROR-Zeilen. Gesicherter Skin, Einstellungen/Quellen und Datenbankdateien wiederhergestellt. [Installationsbeleg](native_heading_install_checks.json), kein leerer Benutzer-Erststart und keine vollständige Funktionsabnahme.
+
+Beide Skin-Dateien hatten Header-ID 0 mit allgemeinem Fenstertitel. Kodi liefert Zahleneingabe-Aufforderungen an ID 1 und Audio-/Video-/Untertitel-Einstellungstitel an ID 2. Genau diese Header-Anbindungen korrigiert. Vorher zeigt die Zahleneingabe nur „Numeric Input“; nachher die übergebene Testaufforderung. Der Einstellungsdialog verwendet nachher seinen gelieferten Titel statt der Fensterbezeichnung.
+
+Vier echte `Dialog.numeric`-Modi (Zahl, Datum, Uhrzeit, IP) zeigen ihre jeweiligen Testtitel und gültigen Startfokus. Zahlentasten 3/4 an 12 angehängt, Rücktaste und Bestätigen liefern 123. Andere Modi per Back abgebrochen, Rückgabe leer. Drei echte Einstellungsdialoge geöffnet und per Back verlassen; Überschriften stimmen mit Kodis lokalisierten IDs überein. Kein Wiedergabe-/Geräteeinstellungstest und keine Einstellung angeklickt. Finale sieben Fälle ohne ERROR-Zeilen, gesicherte Einstellungen wiederhergestellt, nur Skin-XML geändert.
+
+Der erste Helfer erwartete fälschlich, dass Zifferneingabe den vorgegebenen Text ersetzt. Fehlerbereinigung beendete Kodi außerdem vor Rückkehr des modalen Python-Aufrufs und erzeugte eine Invoker-Abbruchzeile. Erwartung und Wartefolge im Helfer korrigiert. Baseline-`$LOCALIZE`-Abfragen über JSON-RPC lieferten leer; sie sind kein Übersetzungsbeleg. Finaler Vergleich nutzt `xbmc.getLocalizedString`. Quellen/Beobachtungsgrenzen in [Review](../kodi22_inventory/native_heading_review.json), [Vorherlauf](native_heading_before.json), [finalem Lauf](native_heading_checks.json) und [Helfer-Fehlversuch](native_heading_before_input_expectation.json). Vorher-/Nachheraufnahmen der Zahleneingabe und Audioeinstellungen angesehen. Andere Seitenverhältnisse, Passwort-/Verifikationsmodi und weitere Gerätewirkungen nicht freigegeben.
+
 ## Nativer Farbdialog: leerer Auswahlbereich korrigiert
 
 Sichtbare Gegenprobe mit dem ursprünglichen `DialogColorPicker.xml`: keine Farben und keine Überschrift, obwohl der Log keine ERROR-Zeile enthielt. Control 6 war eine Gruppe statt eines nativen Auswahlcontainers. Im Skin auf Panel umgestellt, Musik-Playlist-Quelle entfernt und Kodi-Überschrift 1 angebunden. Eintragszahl über eigenes Label 20; Versuche mit ID 2 wurden durch die Basisklasse überschrieben und sind dokumentiert.
