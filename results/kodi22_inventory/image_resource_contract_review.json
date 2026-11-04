@@ -1,0 +1,148 @@
+{
+  "date": "2026-11-04",
+  "scope": "Skin action chain and Image Resource Select return contract; no addon modifications",
+  "file": "xml/SkinSettings.xml",
+  "control_id": 438,
+  "finding": "Two identical unconditional RunScript calls on one button; native baseline starts two provider instances. No claim of two sequential visible dialogs.",
+  "change": "Remove the second identical onclick; keep documented property/type arguments unchanged.",
+  "classification": "Duplicate skin invocation, not a Kodi API removal",
+  "provider": {
+    "id": "script.image.resource.select",
+    "version": "3.0.2",
+    "parameters": {
+      "property": "weatherfanart or weathericons",
+      "type": "resource.images.weatherfanart or resource.images.weathericons"
+    },
+    "returns": [
+      "name",
+      "path",
+      "ext",
+      "multi"
+    ]
+  },
+  "sources": [
+    "https://gitlab.com/ronie/script.image.resource.select/-/raw/master/addon.xml",
+    "https://gitlab.com/ronie/script.image.resource.select/-/raw/master/README.txt",
+    "https://gitlab.com/ronie/script.image.resource.select/-/raw/master/lib/select.py"
+  ],
+  "native_evidence": "../kodi22_runtime/image_resource_checks.json",
+  "native_phases": [
+    {
+      "phase": "baseline_cancel",
+      "before": {
+        "name": "",
+        "path": "",
+        "ext": "",
+        "multi": false
+      },
+      "after": {
+        "name": "",
+        "path": "",
+        "ext": "",
+        "multi": false
+      },
+      "second_dialog": false,
+      "provider_starts": 2
+    },
+    {
+      "phase": "single_cancel",
+      "before": {
+        "name": "",
+        "path": "",
+        "ext": "",
+        "multi": false
+      },
+      "after": {
+        "name": "",
+        "path": "",
+        "ext": "",
+        "multi": false
+      },
+      "second_dialog": false,
+      "provider_starts": 1
+    },
+    {
+      "phase": "fanart_select",
+      "before": {
+        "name": "",
+        "path": "",
+        "ext": "",
+        "multi": false
+      },
+      "after": {
+        "name": "Weather Fanart - Multi",
+        "path": "resource://resource.images.weatherfanart.multi/",
+        "ext": "",
+        "multi": true
+      },
+      "second_dialog": false,
+      "provider_starts": 1
+    },
+    {
+      "phase": "icons_select",
+      "before": {
+        "name": "",
+        "path": "resource://resource.images.weathericons.outline-hd/",
+        "ext": "",
+        "multi": false
+      },
+      "after": {
+        "name": "Weather Icons - Outline",
+        "path": "resource://resource.images.weathericons.outline/",
+        "ext": ".png",
+        "multi": false
+      },
+      "second_dialog": false,
+      "provider_starts": 1
+    },
+    {
+      "phase": "fanart_none",
+      "before": {
+        "name": "Weather Fanart - Multi",
+        "path": "resource://resource.images.weatherfanart.multi/",
+        "ext": "",
+        "multi": true
+      },
+      "after": {
+        "name": "",
+        "path": "",
+        "ext": "",
+        "multi": false
+      },
+      "second_dialog": false,
+      "provider_starts": 1
+    },
+    {
+      "phase": "icons_none",
+      "before": {
+        "name": "Weather Icons - Outline",
+        "path": "resource://resource.images.weathericons.outline/",
+        "ext": ".png",
+        "multi": false
+      },
+      "after": {
+        "name": "",
+        "path": "",
+        "ext": "",
+        "multi": false
+      },
+      "second_dialog": false,
+      "provider_starts": 1
+    }
+  ],
+  "unchanged_source_and_copy_file_count": 559,
+  "error_lines": 0,
+  "cleanup": {
+    "process_exited": true,
+    "profile_restored": true,
+    "all_test_xml_match_production": true,
+    "standard_addons_unchanged": true,
+    "test_addon_copies_unchanged": true
+  },
+  "limits": [
+    "Action chains copied into an authored native WindowXML; full SkinSettings layout and weather-provider rendering not tested.",
+    "No animated image resource, get-more action or resource uninstall tested.",
+    "The screenshot shows the authored native action window after selection, not a full weather display."
+  ],
+  "drafts": "Debug-setting RPC rejection and initial resource ordering assumption were test-harness errors; retained draft reports are not additional skin bugs."
+}

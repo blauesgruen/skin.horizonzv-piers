@@ -533,7 +533,6 @@
                                 <label>    $LOCALIZE[31369]</label>
                                 <label2>$INFO[Skin.String(weatherfanart.path)]</label2>
                                 <onclick>RunScript(script.image.resource.select,property=weatherfanart&amp;type=resource.images.weatherfanart)</onclick>
-                                <onclick>RunScript(script.image.resource.select,property=weatherfanart&amp;type=resource.images.weatherfanart)</onclick>
                                 <visible>Skin.HasSetting(WeatherFanartHome)</visible>
                                 <visible>!Skin.HasSetting(HomeMenuNoWeatherButton)</visible>
                                 <visible>System.AddonIsEnabled(script.image.resource.select)</visible>

@@ -154,3 +154,32 @@ Sichtbarer Test mit unverändertem AutoCompletion 2.1.2 und lokalem Wörterbuch 
 Ein lediglich zur Beobachtung ergänztes, außerhalb des Bilds liegendes Label 1197 in der Testkopie liest die produktive Variable; es wurde danach entfernt. Der erste Versuch, $VAR direkt über JSON-RPC abzufragen, war kein gültiger Variablen-Test und ist separat als Draft erhalten. Vier statische Prüfungen ohne Fund, Inventur ohne fehlende Includes/Variablen/Strings/statische Texturen.
 
 Abgrenzung: Die vom Anbieter selbst erzeugten selectautocomplete-URLs setzen search_string weiterhin roh ein. Dieser zweite Fehler liegt im unveränderten Anbieter; keine pauschale Freigabe solcher Auswahl-URLs mit reservierten Zeichen. Der normale lokale Auswahlfall ist geprüft. Kein externer Vorschlagsdienst getestet und kein anderes Add-on korrigiert. Quellen und Belege: kodi22_inventory/autocomplete_query_review.json, kodi22_runtime/autocomplete_query_checks.json, autocomplete_query_native.png und run_autocomplete_query_probe.py.
+
+
+## Smartplaylists: zwei wirkungslose Knotenverweise entfernt (2026-11-04)
+
+In `Videos_recently.xsp` und `TVShows_recent_tvshows.xsp` war jeweils eine Regel `field="playlist"` mit einer `library://video/recentlyadded….xml`-Adresse enthalten. Kodi sucht hier jedoch eine Benutzer-Smartplaylist anhand ihres Namens oder Dateinamens. Der Skin liefert keine entsprechend benannte Playlist. Bei nicht aufgelöstem Verweis setzt Kodi in diesen UND-Verknüpfungen SQL `'1'` ein. Die Regeln begrenzten die Ergebnisse somit nicht auf den Bibliotheksknoten. Dies ist ein ungültiger Skin-Verweis, keine entfernte Kodi-Schnittstelle. Eine eigens passend benannte Benutzer-Playlist könnte den alten Literalwert ausnahmsweise auflösen.
+
+Nur diese zwei Regeln entfernt; Typ, Gesehen-Filter, Sortierung und Limit bleiben erhalten. Insbesondere bleibt die Serienliste vom Typ `tvshows`. Alle elf ausgelieferten XSPs wurden im sichtbaren Kodi 22 abgefragt. Sechs Vorher-/Nachher-Vergleiche mit eigenen Film-/Seriendaten bestehen, auch nach nativem Wechsel des Gesehen-Status. Gruppierte Musiklisten liefern weiterhin Alben. Inprogress-Listen lieferten ohne Resume-Testdaten leere Ergebnisse; positive Resume-Filter, die Grenze von zehn Treffern und Zufallsverteilung sind damit nicht getestet.
+
+Die vier geprüften Funktionen GetFields, GetOrders, GetGroups und GetWhereClause unterscheiden sich zwischen Piers und dem am Prüftag veröffentlichten master nur durch gleichwertige Content-Konstanten und Formatierung. Keine vollständige Freigabe einer künftigen Kodi-Version. Quellen und Inventar: [smartplaylist_review.json](kodi22_inventory/smartplaylist_review.json), insbesondere [Kodi-Playlistregeln](https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/playlists/SmartPlayList.cpp), [Namensauflösung und Gruppierung](https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/filesystem/SmartPlaylistDirectory.cpp) und [master-Konstanten](https://github.com/xbmc/xbmc/blob/master/xbmc/utils/ContentNames.h).
+
+Die eigenen Testserien/-episoden wurden ausschließlich offline in gesicherte isolierte Testdatenbanken eingetragen; Gesehen-Wechsel liefen anschließend nativ über Kodi. Danach wurden Dateibestand und Bytes der ursprünglichen Mediendatenbanken sowie Profileinstellungen wiederhergestellt. Kein anderer Add-on-Code korrigiert. Finaler Lauf ohne ERROR-Zeilen. Belege: `kodi22_runtime/smartplaylist_checks.json` (sechs Vergleiche, elf Abfragen, Bereinigung bestanden), `smartplaylist_recent_movie.png`, Helfer `run_smartplaylist_probe.py`. Die Draft-Berichte dokumentieren korrigierte Testaufbaufehler, keine zusätzlichen Skin-Defekte. Der Helfer verwendet jetzt eine feste Git-Baseline, prüft zusätzlich den wiederhergestellten DB-Dateibestand und gibt eine kompakte Zusammenfassung aus; diese Nachbearbeitung erforderte keinen erneuten Kodi-Lauf.
+
+Die vorhandene ZIP-Prüfung entstand vor diesen zwei XSP-Änderungen; ihre Dateigleichheit gilt für den damaligen Paketstand.
+
+
+## Wetterbild-Auswahl: doppelter Add-on-Start entfernt (2026-11-04)
+
+SkinSettings-Knopf 438 führte denselben `RunScript(script.image.resource.select,property=weatherfanart&type=resource.images.weatherfanart)`-Aufruf zweimal aus. Der native Vergleich der kopierten Aktionsketten bestätigt zwei Anbieterstarts pro bisherigem Klick und einen nach Entfernen des zweiten onclick. Keine Behauptung zweier nacheinander sichtbarer Dialoge und keine Kodi-API-Entfernung. Die dokumentierten Argumente bleiben unverändert.
+
+Mit unverändertem Image Resource Select 3.0.2 sechs native Phasen bestanden: Abbruch mit alter und neuer Kette, Auswahl von Weather Fanart Multi und Weather Icons Outline sowie jeweils Zurücksetzen über „Keine“. Pfad, Dateiendung und Multi-Schalter entsprechen dem Anbieter-Vertrag. 559 Original-/Testdateien unverändert, Profil zurückgesetzt, Kodi beendet; keine ERROR-Zeilen. Getrennte sichtbare WindowXML-Probe, keine vollständige Wetter-/SkinSettings-Darstellungsabnahme. Zwei Drafts dokumentieren Testhelfer-Korrekturen. Der Helfer prüft die nachträglich aus dem finalen Log bestätigten Startzahlen jetzt ebenfalls ausdrücklich.
+
+Quellen/Vertrag: `kodi22_inventory/image_resource_contract_review.json`; Laufzeit: `kodi22_runtime/image_resource_checks.json`, Helfer `run_image_resource_probe.py`. Offizielle [Anleitung](https://gitlab.com/ronie/script.image.resource.select/-/raw/master/README.txt) und [Implementierung](https://gitlab.com/ronie/script.image.resource.select/-/raw/master/lib/select.py). Keine anderen Add-ons korrigiert.
+
+
+## Aktualisierter Paketbeleg (2026-11-04)
+
+Das neue Test-ZIP enthält 294 Dateien. CRC-Prüfung bestanden; alle enthaltenen Dateien stimmen bytegenau mit dem aktuellen Workspace überein. Manifest, 164 Skin-XML, elf XSP und eigener Auto-Completion-Helfer sind vorhanden; XML/XSP parsebar. Gegenüber dem früheren Test-ZIP unterscheiden sich nur README, die beiden Smartplaylists und SkinSettings. Kein frischer ZIP-Installationstest. Belege: `kodi22_inventory/package_followup_context.json` und `package_followup_review.json`. Das Archiv liegt ausschließlich in einem neuen TEMP-Verzeichnis; kein bestehendes Repository-Paket überschrieben.
+
+Für den lokalen Checkpoint wird nur per Git-Aufruf ein leeres Hooks-Verzeichnis verwendet: Der vorhandene globale post-commit-Hook würde sonst ein gleichnamiges Repository-ZIP überschreiben. Derselbe globale Paketbauer wurde zuvor mit getrenntem TEMP-Ausgabeziel und Testausschlüssen ausgeführt und sein Ergebnis geprüft. Weder Hook noch globale Git-Konfiguration wurden geändert.

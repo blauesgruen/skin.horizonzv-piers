@@ -1,0 +1,15 @@
+{
+  "scope": "All shipped smartplaylist directory calls; native before/after comparison of two invalid nested node rules using authored media in isolated databases",
+  "video_fixture_method": "Two shows/episodes seeded offline into backed-up isolated MyVideos149 only; existing authored movie title/state changed through RPC; original DB files restored on exit",
+  "comparisons": [],
+  "all_playlists": [],
+  "pid": 9772,
+  "failure": "AssertionError({'error': {'code': -32602, 'message': 'Invalid params.'}, 'id': 1, 'jsonrpc': '2.0'})",
+  "failure_trace": "Traceback (most recent call last):\n  File \"D:\\Program Files\\Kodi22\\portable_data\\addons\\skin.horizonzv-piers\\results\\kodi22_runtime\\run_smartplaylist_probe.py\", line 146, in main\n    compare(\"Videos_recently.xsp\", \"video\", [\"SP Audit Movie 1\"])\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Program Files\\Kodi22\\portable_data\\addons\\skin.horizonzv-piers\\results\\kodi22_runtime\\run_smartplaylist_probe.py\", line 87, in compare\n    old = query((baseline / name).as_posix(), media_type)\n  File \"D:\\Program Files\\Kodi22\\portable_data\\addons\\skin.horizonzv-piers\\results\\kodi22_runtime\\run_smartplaylist_probe.py\", line 83, in query\n    result = rpc(\"Files.GetDirectory\", {\"directory\": str(path), \"media\": media_type, \"properties\": [\"title\", \"playcount\", \"dateadded\", \"userrating\", \"album\", \"artist\"]})\n  File \"D:\\Program Files\\Kodi22\\portable_data\\addons\\skin.horizonzv-piers\\results\\kodi22_runtime\\run_smartplaylist_probe.py\", line 71, in rpc\n    assert \"result\" in result, result\n           ^^^^^^^^^^^^^^^^^^\nAssertionError: {'error': {'code': -32602, 'message': 'Invalid params.'}, 'id': 1, 'jsonrpc': '2.0'}\n",
+  "cleanup": {
+    "process_exited": true,
+    "media_databases_restored": true,
+    "profile_restored": true,
+    "test_playlists_match_production": true
+  }
+}

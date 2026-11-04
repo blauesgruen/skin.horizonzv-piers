@@ -1,0 +1,39 @@
+{
+  "scope": "All shipped smartplaylist directory calls; native before/after comparison of two invalid nested node rules using authored media in isolated databases",
+  "video_fixture_method": "Two shows/episodes seeded offline into backed-up isolated MyVideos149 only; existing authored movie title/state changed through RPC; original DB files restored on exit",
+  "comparisons": [
+    {
+      "file": "Videos_recently.xsp",
+      "baseline_labels": [
+        "SP Audit Movie 1"
+      ],
+      "revised_labels": [
+        "SP Audit Movie 1"
+      ],
+      "expected_labels": [
+        "SP Audit Movie 1"
+      ],
+      "matches": true
+    },
+    {
+      "file": "TVShows_recent_tvshows.xsp",
+      "baseline_labels": [],
+      "revised_labels": [],
+      "expected_labels": [
+        "SP Audit Show 1"
+      ],
+      "matches": false
+    }
+  ],
+  "all_playlists": [],
+  "pid": 21556,
+  "failure": "AssertionError({'file': 'TVShows_recent_tvshows.xsp', 'baseline_labels': [], 'revised_labels': [], 'expected_labels': ['SP Audit Show 1'], 'matches': False})",
+  "failure_trace": "Traceback (most recent call last):\n  File \"D:\\Program Files\\Kodi22\\portable_data\\addons\\skin.horizonzv-piers\\results\\kodi22_runtime\\run_smartplaylist_probe.py\", line 155, in main\n    compare(\"TVShows_recent_tvshows.xsp\", \"video\", [\"SP Audit Show 1\"])\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Program Files\\Kodi22\\portable_data\\addons\\skin.horizonzv-piers\\results\\kodi22_runtime\\run_smartplaylist_probe.py\", line 94, in compare\n    assert row[\"matches\"], row\n           ~~~^^^^^^^^^^^\nAssertionError: {'file': 'TVShows_recent_tvshows.xsp', 'baseline_labels': [], 'revised_labels': [], 'expected_labels': ['SP Audit Show 1'], 'matches': False}\n",
+  "cleanup": {
+    "process_exited": true,
+    "baseline_test_playlists_removed": true,
+    "media_databases_restored": true,
+    "profile_restored": true,
+    "test_playlists_match_production": true
+  }
+}
