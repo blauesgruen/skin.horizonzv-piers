@@ -1,9 +1,9 @@
 {
   "checked_on": "2026-11-04",
-  "scope": "Review against the original skin-only objective, including real local Artist Slideshow metadata evidence. Not an overall runtime sign-off.",
-  "source_checkpoint": "a87750854bd09a22d38440410050f114dd1ab20a",
+  "scope": "Review against the original skin-only objective, including real local Artist Slideshow metadata and native Kodi color-dialog contract repair. Not an overall runtime sign-off.",
+  "source_checkpoint": "a394fdff18e85e7b10b31cc77c06b6b5fa015dae",
   "branch": "refactor/kodi22-kompatibilitaet",
-  "acceptance_document_local_links_checked": 60,
+  "acceptance_document_local_links_checked": 62,
   "missing_acceptance_document_targets": [],
   "requirements": [
     {
@@ -34,10 +34,12 @@
     },
     {
       "requirement": "Implement affected skin changes only",
-      "assessment": "Implemented fixes are in the specified skin. This review turn changes result artifacts only; native provider equality evidence and limitations are in the individual reports.",
+      "assessment": "Implemented fixes remain inside the specified skin. Native color-dialog control contract repaired; the optional external BG picker and its action remain unchanged.",
       "evidence": [
         "AENDERUNGSUEBERSICHT.md",
-        "kodi22_inventory/switchtimer_property_contract_review.json"
+        "kodi22_inventory/switchtimer_property_contract_review.json",
+        "kodi22_inventory/native_colorpicker_review.json",
+        "kodi22_runtime/native_colorpicker_checks.json"
       ]
     },
     {
@@ -84,11 +86,12 @@
     ],
     "credentials_printed": false
   },
-  "source_checkpoint_note": "Original review base retained; latest_source_checkpoint identifies the current committed runtime code. This checkpoint adds results only.",
+  "source_checkpoint_note": "Base commit for this review; runtime_worktree_sha256 identifies the tested runtime state before this checkpoint commit.",
   "runtime_worktree_sha256": {
     "xml\\MusicOSD.xml": "8ad19ba0dbf74e59a4d07823d3ff20f28952633586d2385b85bd7f9c19b2446a",
     "xml\\PlayerControls.xml": "f56721438a25600c112efe1ba3c6e67585ff919f578f2f3f4c599dbbfb1ed42d",
-    "xml\\script-cu-lrclyrics-main.xml": "13363b159138d75d0ad6fc35ba1ed05409aaafb3331abe939c89365da30b38d1"
+    "xml\\script-cu-lrclyrics-main.xml": "13363b159138d75d0ad6fc35ba1ed05409aaafb3331abe939c89365da30b38d1",
+    "xml\\DialogColorPicker.xml": "40d6562cd7b16568fdc9a26bfefd1615d77fa9b93e8bf5e98cceb60ef8cb6719"
   },
-  "latest_source_checkpoint": "c244081b578e6062c242868521d1ccd42c664f3e"
+  "latest_source_checkpoint": "a394fdff18e85e7b10b31cc77c06b6b5fa015dae"
 }

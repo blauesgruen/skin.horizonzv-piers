@@ -1,0 +1,81 @@
+{
+  "scope": "Native Skin.SetColor through the actual skin DialogColorPicker.xml. Isolated setting, default Kodi palette, selection/preselection/cancel/reopening. External skin helper action is unchanged.",
+  "baseline": false,
+  "xml_sha256": "40d6562cd7b16568fdc9a26bfefd1615d77fa9b93e8bf5e98cceb60ef8cb6719",
+  "phases": [
+    {
+      "phase": "cancel",
+      "before": "FF123456",
+      "dialog": {
+        "Container(6).ListItem.Label": "Black",
+        "Container(6).ListItem.Label2": "FF000000",
+        "Container(6).NumItems": "162",
+        "Control.GetLabel(1)": "Colour",
+        "Control.GetLabel(20)": "162 Objects",
+        "Skin.AspectRatio": "16:9",
+        "System.CurrentControlID": "6"
+      },
+      "after": "FF123456"
+    },
+    {
+      "phase": "select",
+      "before": "FF123456",
+      "dialog": {
+        "Container(6).ListItem.Label": "Black",
+        "Container(6).ListItem.Label2": "FF000000",
+        "Container(6).NumItems": "162",
+        "Control.GetLabel(1)": "Colour",
+        "Control.GetLabel(20)": "162 Objects",
+        "Skin.AspectRatio": "16:9",
+        "System.CurrentControlID": "6"
+      },
+      "chosen": {
+        "Container(6).ListItem.Label": "Raisin Black",
+        "Container(6).ListItem.Label2": "FF212121",
+        "Container(6).NumItems": "162",
+        "Control.GetLabel(1)": "Colour",
+        "Control.GetLabel(20)": "162 Objects",
+        "Skin.AspectRatio": "16:9",
+        "System.CurrentControlID": "6"
+      },
+      "after": "FF212121"
+    },
+    {
+      "phase": "preselect_cancel",
+      "before": "FF212121",
+      "dialog": {
+        "Container(6).ListItem.Label": "Raisin Black",
+        "Container(6).ListItem.Label2": "FF212121",
+        "Container(6).NumItems": "162",
+        "Control.GetLabel(1)": "Colour",
+        "Control.GetLabel(20)": "162 Objects",
+        "Skin.AspectRatio": "16:9",
+        "System.CurrentControlID": "6"
+      },
+      "after": "FF212121"
+    },
+    {
+      "phase": "cancel_button",
+      "before": "FF212121",
+      "dialog": {
+        "Container(6).ListItem.Label": "Raisin Black",
+        "Container(6).ListItem.Label2": "FF212121",
+        "Container(6).NumItems": "162",
+        "Control.GetLabel(1)": "Colour",
+        "Control.GetLabel(20)": "162 Objects",
+        "Skin.AspectRatio": "16:9",
+        "System.CurrentControlID": "6"
+      },
+      "after": "FF212121"
+    }
+  ],
+  "work": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-native-colorpicker-36duq7tw",
+  "pid": 20500,
+  "saved_color": "FF212121",
+  "cleanup": {
+    "process_exited": true,
+    "profile_settings_restored": true,
+    "skin_xml_match": true
+  },
+  "errors": []
+}

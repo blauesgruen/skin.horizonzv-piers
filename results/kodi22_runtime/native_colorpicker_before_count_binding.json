@@ -1,0 +1,30 @@
+{
+  "scope": "Native Skin.SetColor through the actual skin DialogColorPicker.xml. Isolated setting, default Kodi palette, selection/preselection/cancel/restart. External skin helper action is unchanged.",
+  "baseline": false,
+  "xml_sha256": "5eedf48a28197b1741cc6cc460c5965d81f4e60285e23bb106710421851da3f5",
+  "phases": [
+    {
+      "phase": "cancel",
+      "before": "FF123456",
+      "dialog": {
+        "Container(6).ListItem.Label": "Black",
+        "Container(6).ListItem.Label2": "FF000000",
+        "Container(6).NumItems": "162",
+        "Control.GetLabel(1)": "Colour",
+        "Control.GetLabel(2)": "",
+        "Skin.AspectRatio": "16:9",
+        "System.CurrentControlID": "6"
+      }
+    }
+  ],
+  "work": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-native-colorpicker-dbt83d5z",
+  "pid": 14176,
+  "failure": "AssertionError({'Container(6).ListItem.Label': 'Black', 'Container(6).ListItem.Label2': 'FF000000', 'Container(6).NumItems': '162', 'Control.GetLabel(1)': 'Colour', 'Control.GetLabel(2)': '', 'Skin.AspectRatio': '16:9', 'System.CurrentControlID': '6'})",
+  "trace": "Traceback (most recent call last):\n  File \"D:\\Program Files\\Kodi22\\portable_data\\addons\\skin.horizonzv-piers\\results\\kodi22_runtime\\run_native_colorpicker_probe.py\", line 120, in main\n    assert entry[\"Control.GetLabel(2)\"], entry\n           ~~~~~^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: {'Container(6).ListItem.Label': 'Black', 'Container(6).ListItem.Label2': 'FF000000', 'Container(6).NumItems': '162', 'Control.GetLabel(1)': 'Colour', 'Control.GetLabel(2)': '', 'Skin.AspectRatio': '16:9', 'System.CurrentControlID': '6'}\n",
+  "cleanup": {
+    "process_exited": true,
+    "profile_settings_restored": true,
+    "skin_xml_match": true
+  },
+  "errors": []
+}

@@ -1,5 +1,11 @@
 # Kodi 22 compatibility audit and cleanup plan
 
+## Native color-dialog contract repaired (2026-11-04)
+
+The skin defined native `DialogColorPicker.xml` control 6 as a group. Piers and published master register it as a view container; the visible baseline was empty despite no ERROR lines. The skin now uses a bounded panel, accepts native palette content without the unrelated music playlist, and exposes heading 1. The count uses an independent label 20 because the base dialog overwrites body labels starting at 2. This is a malformed supported-dialog contract, not evidence of a recently removed Kodi API.
+
+Native `Skin.SetColor` with an isolated setting reports all 162 default colors; selection, preselection on reopening, Back and explicit Cancel preserve the expected value. Four final phases, zero ERROR lines. Secured settings restored, no external addon code changed. The optional BG picker is retained: a native palette does not cover its full feature set. Primary source and intermediate-attempt limits: [review](kodi22_inventory/native_colorpicker_review.json), [runtime](kodi22_runtime/native_colorpicker_checks.json). Fresh ZIP installation and restart passed in [package test](kodi22_runtime/native_colorpicker_install_checks.json); only this XML differs from the preceding runtime package. Real subtitle-setting workflow, custom palette, pointer, scroll traversal and all aspect ratios remain untested.
+
 ## User-authorized standard-profile integrations (2026-11-03)
 
 PVR follow-up: opening New search from native TV/radio search supplied actual filter data. TV text/channel editing, exact-phrase search with two EPG hits, retained fields on reopen, cancelled-edit rollback and populated programme info/Back passed. Bare multiword broad results are explained by EpgSearchFilter's SEARCH_DEFAULT_OR, not a skin defect. No Save/search-definition, timer, recording or reminder action. Stable direct start/shutdown, original global setting values fully matched after restoration, no ERROR lines. Detailed evidence and primary dispatch/search sources in the standard-profile report's follow-up section. Permanent definitions and other filter combinations remain untested.
