@@ -30,7 +30,7 @@ def main():
     assert hashlib.sha256(archive.read_bytes()).hexdigest() == review["sha256"]
     with zipfile.ZipFile(archive) as z:
         expected = {n.split("/", 1)[1]: z.read(n) for n in z.namelist() if not n.endswith("/")}
-    assert len(expected) == 294
+    assert len(expected) == review["file_count"]
     assert all((repo / name).read_bytes() == data for name, data in expected.items())
 
     def no_kodi():

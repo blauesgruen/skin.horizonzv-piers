@@ -1,9 +1,9 @@
 {
   "checked_on": "2026-11-05",
-  "scope": "Review against the original skin-only objective, including explicit widget source-target contract, ten native navigation cases, structure comparison and package installation. Not an overall runtime sign-off.",
-  "source_checkpoint": "017200c",
+  "scope": "Original skin-only compatibility objective, explicitly including direct addon dialogs/widgets/controls and input/output properties. Latest change: skin-owned BG ColorPicker override with seven native cases and package install/restart; not overall completion.",
+  "source_checkpoint": "5f5fd62",
   "branch": "refactor/kodi22-kompatibilitaet",
-  "acceptance_document_local_links_checked": 81,
+  "acceptance_document_local_links_checked": 82,
   "missing_acceptance_document_targets": [],
   "requirements": [
     {
@@ -30,7 +30,7 @@
     },
     {
       "requirement": "Check used addon skin contracts",
-      "assessment": "Named provider contracts and direct script entry types have source evidence and targeted native runs. Selected lyrics and eleven selected RunAddon links now guard unavailable providers. 28 additional native link cases pass; further backend/provider contexts remain separately bounded.",
+      "assessment": "Named provider contracts and direct script entry types have source evidence and targeted native runs. Selected lyrics and eleven selected RunAddon links now guard unavailable providers. 28 additional native link cases pass; further backend/provider contexts remain separately bounded. Direct addon support now has a dedicated inventory; BG ColorPicker 1.0.1 is served by a compatible skin-owned dialog instead of its legacy fallback. Seven native cases pass with no ERROR lines and unchanged provider hashes.",
       "evidence": [
         "kodi22_compatibility_audit.md",
         "kodi22_inventory/artistslideshow_contract_review.json",
@@ -46,12 +46,17 @@
         "kodi22_runtime/lyrics_availability_checks.json",
         "kodi22_runtime/lyrics_availability_regression_restore.json",
         "kodi22_inventory/addon_dispatch_review.json",
-        "kodi22_runtime/addon_dispatch_checks.json"
+        "kodi22_runtime/addon_dispatch_checks.json",
+        "DIREKTE_ADDON_UNTERSTUETZUNG.md",
+        "kodi22_inventory/bg_colorpicker_skin_review.json",
+        "kodi22_runtime/bg_colorpicker_skin_checks.json",
+        "kodi22_inventory/bg_picker_package_review.json",
+        "kodi22_runtime/bg_picker_install_checks.json"
       ]
     },
     {
       "requirement": "Implement affected skin changes only",
-      "assessment": "Latest runtime change is confined to Includes_Widget_Param.xml and Variables_Widgets.xml: 41 target arguments, two content target attributes, timer shortcut target and removal of the obsolete heuristic. Semantic comparison reproduces the base tree when those routing edits are reversed; no layout/provider correction.",
+      "assessment": "Latest production change adds the BG ColorPicker skin dialog and a heading variable; provider source and skin invocation remain unchanged. Both standard and test provider files match recorded hashes. Package differs only in the new dialog and Variables.xml.",
       "evidence": [
         "AENDERUNGSUEBERSICHT.md",
         "kodi22_inventory/switchtimer_property_contract_review.json",
@@ -123,7 +128,9 @@
     "xml\\Includes_Dash_GTO.xml": "73ad9f4b1538d4fa2e0720bfeb3ac3fa9f6d560075ba0e2b8fdc62a2737e163b",
     "xml\\Includes_Dash_Layout.xml": "0e53c64ff955af58b1f388777a4e3ef77cd24f10f0e4469e9aef32503b38688f",
     "xml\\Includes_Widget_Param.xml": "a5ee3d912ca0f29292800b7f0d3289e0a3655832ad581889ff13a9c0789fe1a4",
-    "xml\\Variables_Widgets.xml": "da30dc0eccd76658d43b27ac1801be6a5b556ac2deeb05afe40a4b9526ceb7b6"
+    "xml\\Variables_Widgets.xml": "da30dc0eccd76658d43b27ac1801be6a5b556ac2deeb05afe40a4b9526ceb7b6",
+    "xml\\Variables.xml": "e223d53d9def025b3916991ceafd1de4bcdef2e43b3ed22b04b245f597ea896c",
+    "xml\\script-skin_helper_service-ColorPicker.xml": "61310a08f2dabbb0b1d7943068969e8adb95a38f5cf67633a5ae13adbd45c9a8"
   },
-  "latest_source_checkpoint": "017200c"
+  "latest_source_checkpoint": "5f5fd62"
 }

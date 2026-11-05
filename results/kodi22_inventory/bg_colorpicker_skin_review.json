@@ -1,0 +1,67 @@
+{
+  "checked_on": "2026-11-05",
+  "scope": "Direct skin support for unchanged BG ColorPicker 1.0.1 via a skin-owned WindowXMLDialog override. No provider source or action arguments corrected.",
+  "finding": "No skin-specific override existed. The addon fallback uses removed unqualified IsEmpty and StringCompare, and the earlier native run reports a 3110 focus error on each opening.",
+  "baseline": "colorpicker_contract_review.json",
+  "files": [
+    "xml/script-skin_helper_service-ColorPicker.xml",
+    "xml/Variables.xml"
+  ],
+  "provider_required_controls": {
+    "1": "label",
+    "3010": "button",
+    "3011": "button",
+    "3012": "button",
+    "3015": "slider",
+    "3030": "button",
+    "3110": "panel"
+  },
+  "change": "Provide supported skin controls, one shared palette grid, current Boolean expressions, optional/default heading binding, and initial focus on the existing manual-input button before onInit fills the panel. Keep provider input and return contract.",
+  "native_evidence": "../kodi22_runtime/bg_colorpicker_skin_checks.json",
+  "native_cases": 7,
+  "native_errors": 0,
+  "screenshots": [
+    "../kodi22_runtime/bg_colorpicker_dialog.png",
+    "../kodi22_runtime/bg_colorpicker_material.png"
+  ],
+  "package_review": "bg_picker_package_review.json",
+  "sources": [
+    {
+      "url": "https://github.com/kodi-community-addons/script.skin.helper.colorpicker/blob/master/resources/lib/ColorPicker.py",
+      "finding": "Same required control IDs, palette/data handling and colorstring property as the installed BG provider; skin override retains these IDs."
+    },
+    {
+      "local": "../script.skin.helper.colorpicker.bg/default.py",
+      "sha256": "cb4e27c096bdb70b6ab95bc553e1a201ae20b070326af58b0449c797c76e2785",
+      "finding": "Requests script-skin_helper_service-ColorPicker.xml through WindowXMLDialog with the addon path as fallback."
+    },
+    {
+      "local": "../script.skin.helper.colorpicker.bg/resources/lib/ColorPicker.py",
+      "sha256": "f55a7c0edf9ba41a2dd7196e94842edc1bfcb97e9689141b9a739ebef28f31e9",
+      "finding": "onInit obtains panel 3110, fills it and chooses focus; buttons, slider and heading use the IDs recorded above."
+    },
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/GUIInfoManager.cpp",
+      "finding": "Removal history names unqualified StringCompare and IsEmpty and their String namespace replacements; the new override uses supported expressions instead."
+    }
+  ],
+  "limits": [
+    "Not every palette, input/navigation device, language or aspect ratio tested.",
+    "Initial unset color and caller-supplied optional heading are not runtime-tested.",
+    "The legacy provider fallback remains unchanged for other skins.",
+    "No claim that the previous focus error was specific to HorizonzV; it was also observed with Estuary."
+  ],
+  "bounded_static_checks": {
+    "actions": {
+      "findings": 0
+    },
+    "windows": {
+      "findings": 0
+    },
+    "info": {
+      "arity_candidates": 0,
+      "condition_atom_candidates": 0,
+      "unrecognized_info_roots": 0
+    }
+  }
+}

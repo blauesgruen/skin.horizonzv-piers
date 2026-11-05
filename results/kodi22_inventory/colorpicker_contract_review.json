@@ -55,5 +55,10 @@
     "Not a complete settings-layout or color-rendering acceptance test.",
     "Manual text entry, opacity, palette changes and cancellation with initially unset color are not tested.",
     "External fallback template contains legacy Kodi expressions; successful selection does not validate all of that template."
-  ]
+  ],
+  "skin_override_followup": {
+    "checked_on": "2026-11-05",
+    "evidence": "bg_colorpicker_skin_review.json",
+    "result": "The historical fallback remains unchanged in the provider. HorizonzV now supplies its own compatible dialog: seven native cases, no ERROR lines, all provider files byte-identical. The old retain-call decision remains valid; use of the legacy fallback is superseded."
+  }
 }

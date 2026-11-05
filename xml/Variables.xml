@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+    <variable name="BGColorPickerHeader">
+        <value condition="!String.IsEmpty(Control.GetLabel(1))">$INFO[Control.GetLabel(1)]</value>
+        <value>$ADDON[script.skin.helper.colorpicker.bg 32011]</value>
+    </variable>
     <variable name="TextViewerHeaderVar">
         <value condition="!String.IsEmpty(Window(Home).Property(TextViewer_Header))">$INFO[Window(Home).Property(TextViewer_Header)]</value>
         <value>$LOCALIZE[19033]</value>

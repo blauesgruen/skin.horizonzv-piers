@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window>
+    <!-- The provider fills 3110 in onInit; focus an existing button first. -->
+    <defaultcontrol always="true">3010</defaultcontrol>
+    <include>openclosevisible</include>
+    <depth>DepthOSD</depth>
+    <controls>
+        <!-- Preserve the provider's optional heading, including its empty default. -->
+        <control type="label" id="1">
+            <visible>false</visible>
+            <label/>
+        </control>
+        <control type="group">
+            <include>openclosebox</include>
+            <include content="DialogBackgroundCommons">
+                <param name="width" value="1200"/>
+                <param name="height" value="816"/>
+                <param name="header_id" value="5000"/>
+                <param name="header_label" value="$VAR[BGColorPickerHeader]"/>
+            </include>
+            <control type="panel" id="3110">
+                <left>40</left>
+                <top>100</top>
+                <width>840</width>
+                <height>480</height>
+                <orientation>vertical</orientation>
+                <pagecontrol>61</pagecontrol>
+                <onup>3030</onup>
+                <ondown>3010</ondown>
+                <onleft>9001</onleft>
+                <onright>61</onright>
+                <viewtype label="100">icons</viewtype>
+                <itemlayout width="120" height="80">
+                    <control type="image">
+                        <left>8</left>
+                        <top>8</top>
+                        <width>104</width>
+                        <height>64</height>
+                        <texture>White.png</texture>
+                        <colordiffuse>$INFO[ListItem.Property(colorstring)]</colordiffuse>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="120" height="80">
+                    <control type="image">
+                        <left>4</left>
+                        <top>4</top>
+                        <width>112</width>
+                        <height>72</height>
+                        <texture>White.png</texture>
+                    </control>
+                    <control type="image">
+                        <left>8</left>
+                        <top>8</top>
+                        <width>104</width>
+                        <height>64</height>
+                        <texture>White.png</texture>
+                        <colordiffuse>$INFO[ListItem.Property(colorstring)]</colordiffuse>
+                    </control>
+                </focusedlayout>
+            </control>
+            <control type="scrollbar" id="61">
+                <left>880</left>
+                <top>100</top>
+                <width>12</width>
+                <height>480</height>
+                <orientation>vertical</orientation>
+                <onleft>3110</onleft>
+                <onright>9001</onright>
+            </control>
+            <control type="grouplist" id="9001">
+                <left>910</left>
+                <top>100</top>
+                <width>250</width>
+                <height>480</height>
+                <itemgap>15</itemgap>
+                <onleft>3110</onleft>
+                <onright>3110</onright>
+                <include content="DefaultDialogButton">
+                    <param name="id" value="3030"/>
+                    <param name="label" value="$ADDON[script.skin.helper.colorpicker.bg 32141]"/>
+                </include>
+                <include content="DefaultDialogButton">
+                    <param name="id" value="3010"/>
+                    <param name="label" value="$ADDON[script.skin.helper.colorpicker.bg 32012]"/>
+                </include>
+                <include content="DefaultDialogButton">
+                    <param name="id" value="3012"/>
+                    <param name="label" value="$LOCALIZE[190]"/>
+                </include>
+                <include content="DefaultDialogButton">
+                    <param name="id" value="3011"/>
+                    <param name="label" value="$ADDON[script.skin.helper.colorpicker.bg 32013]"/>
+                </include>
+            </control>
+            <control type="label" id="3016">
+                <left>40</left>
+                <top>600</top>
+                <width>1120</width>
+                <height>40</height>
+                <label>$ADDON[script.skin.helper.colorpicker.bg 32049]: $INFO[Control.GetLabel(3015)]</label>
+            </control>
+            <control type="slider" id="3015">
+                <left>40</left>
+                <top>650</top>
+                <width>1120</width>
+                <height>30</height>
+                <onup>3110</onup>
+                <ondown>3010</ondown>
+                <onleft>3011</onleft>
+                <onright>3012</onright>
+            </control>
+            <control type="image">
+                <left>40</left>
+                <top>710</top>
+                <width>60</width>
+                <height>50</height>
+                <texture>White.png</texture>
+                <colordiffuse>$INFO[Window.Property(colorstring)]</colordiffuse>
+            </control>
+            <control type="label">
+                <left>120</left>
+                <top>710</top>
+                <width>1040</width>
+                <height>50</height>
+                <label>$INFO[Window.Property(colorname),, - ]$INFO[Window.Property(colorstring)]</label>
+            </control>
+        </control>
+    </controls>
+</window>
