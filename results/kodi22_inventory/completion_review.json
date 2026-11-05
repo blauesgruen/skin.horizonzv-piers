@@ -1,14 +1,14 @@
 {
   "checked_on": "2026-11-05",
-  "scope": "Review against the original skin-only objective, including unavailable selected Dashboard/shutdown addon-link repair. Not an overall runtime sign-off.",
-  "source_checkpoint": "2c4df6d0bfd3c47a927149f34756c30941046530",
+  "scope": "Review against the original skin-only objective, including native widget-provider lifecycle and corrected focused-label Boolean argument contract. Not an overall runtime sign-off.",
+  "source_checkpoint": "ac0048635788d312b991c3002993d5592471e757",
   "branch": "refactor/kodi22-kompatibilitaet",
-  "acceptance_document_local_links_checked": 72,
+  "acceptance_document_local_links_checked": 76,
   "missing_acceptance_document_targets": [],
   "requirements": [
     {
       "requirement": "Find and replace removed/deprecated Kodi skin interfaces",
-      "assessment": "Source-history, current/master registration reviews and bounded checks provide evidence for implemented fixes; limitations of dynamic resolution remain documented. Native normal/deprecated/broken metadata and positive 19-page description cases now additionally verify the earlier migration; other contexts remain bounded.",
+      "assessment": "Source-history, current/master registration reviews and bounded checks provide evidence for implemented fixes; limitations of dynamic resolution remain documented. Native normal/deprecated/broken metadata and positive 19-page description cases now additionally verify the earlier migration; other contexts remain bounded. A native widget probe exposed an invalid expanded Boolean display-string argument; separate Boolean parameter and all three caller arguments now pass eight field combinations.",
       "evidence": [
         "AENDERUNGSUEBERSICHT.md",
         "kodi22_inventory/info_deprecation_history_review.json",
@@ -16,7 +16,10 @@
         "kodi22_inventory/master_builtin_compatibility_review.json",
         "kodi22_inventory/master_input_action_review.json",
         "kodi22_inventory/addon_lifecycle_review.json",
-        "kodi22_runtime/addon_lifecycle_checks.json"
+        "kodi22_runtime/addon_lifecycle_checks.json",
+        "kodi22_inventory/widget_provider_lifecycle_review.json",
+        "kodi22_inventory/widget_label_structure_review.json",
+        "kodi22_runtime/widget_provider_lifecycle_checks.json"
       ]
     },
     {
@@ -42,7 +45,7 @@
     },
     {
       "requirement": "Implement affected skin changes only",
-      "assessment": "This turn changes only dispatch/selector condition attributes in DialogButtonMenu.xml and Includes_Dash_Addonpath_Fav.xml runtime code, plus result/helper artifacts. All other XML nodes/text/attributes equal the base. Own local fixture removed; existing addon code unchanged.",
+      "assessment": "This turn changes only the private Boolean argument contract in Includes_Dash_GTO.xml/Includes_Dash_Layout.xml runtime code, plus results/helper artifacts. Restoring three argument additions and one condition reproduces the base semantic tree. Existing provider code untouched.",
       "evidence": [
         "AENDERUNGSUEBERSICHT.md",
         "kodi22_inventory/switchtimer_property_contract_review.json",
@@ -108,7 +111,9 @@
     "xml\\DialogSettings.xml": "d1ec9446795cc23c93a9aba63f0b5a22e536f9e23be4e9dc218ae0c72c0d56ef",
     "xml\\DialogAddonInfo.xml": "810c4085fd6498c6ea5bd5ed78d4e794cc4b7df667c32875bea716d08a8af6e9",
     "xml\\DialogButtonMenu.xml": "59416a6e5f5830687dd46954869ef5717e188e79c0ef80080e4ffcdd26c90b70",
-    "xml\\Includes_Dash_Addonpath_Fav.xml": "fe11e862ad464a6cb1686364eb0ea1525a2bd05667c1e0529d010c22030f8bc4"
+    "xml\\Includes_Dash_Addonpath_Fav.xml": "fe11e862ad464a6cb1686364eb0ea1525a2bd05667c1e0529d010c22030f8bc4",
+    "xml\\Includes_Dash_GTO.xml": "73ad9f4b1538d4fa2e0720bfeb3ac3fa9f6d560075ba0e2b8fdc62a2737e163b",
+    "xml\\Includes_Dash_Layout.xml": "0e53c64ff955af58b1f388777a4e3ef77cd24f10f0e4469e9aef32503b38688f"
   },
-  "latest_source_checkpoint": "2c4df6d0bfd3c47a927149f34756c30941046530"
+  "latest_source_checkpoint": "ac0048635788d312b991c3002993d5592471e757"
 }

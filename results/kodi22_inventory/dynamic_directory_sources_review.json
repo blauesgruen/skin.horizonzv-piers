@@ -55,7 +55,9 @@
       "attributes": {
         "target": "programs"
       },
-      "classification": "Literal addon route; dashboard include-time enable gates reviewed, no full provider runtime claim"
+      "classification": "Literal addon route; dashboard include-time enable gates reviewed, no full provider runtime claim",
+      "native_control_model_evidence": "../kodi22_runtime/widget_provider_lifecycle_checks.json",
+      "native_control_model_scope": "Production structures with fixture-ID remapping; settled initial/refresh/disable/reenable passed. Not original provider/backend execution or pending-job race proof."
     },
     {
       "file": "xml/Includes_Dash_GTO.xml",
@@ -63,7 +65,9 @@
       "attributes": {
         "target": "videos"
       },
-      "classification": "Literal addon route; dashboard include-time enable gates reviewed, no full provider runtime claim"
+      "classification": "Literal addon route; dashboard include-time enable gates reviewed, no full provider runtime claim",
+      "native_control_model_evidence": "../kodi22_runtime/widget_provider_lifecycle_checks.json",
+      "native_control_model_scope": "Production structures with fixture-ID remapping; settled initial/refresh/disable/reenable passed. Not original provider/backend execution or pending-job race proof."
     },
     {
       "file": "xml/Includes_PVR.xml",
@@ -124,6 +128,8 @@
   ],
   "limits": [
     "Definition count is not the instantiated provider count.",
-    "No blanket runtime approval of user/parameter values or live addon enable/disable transitions."
-  ]
+    "No blanket runtime approval of user/parameter values or live addon enable/disable transitions.",
+    "Settled addon-state transitions now have bounded remapped-control evidence; not all providers, in-flight jobs or arbitrary user/parameter values."
+  ],
+  "native_followup_on": "2026-11-05"
 }
