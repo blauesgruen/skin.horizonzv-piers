@@ -18,13 +18,21 @@
     "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/guilib/listproviders/DirectoryProvider.cpp",
     "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/addons/gui/GUIWindowAddonBrowser.cpp"
   ],
-  "local_evidence": ["xml/Custom_1500_WidgetSettings.xml: four Addonpath_Dash_Path setters", "../script.service.gto/main.py: list_offers (read-only)", "kodi_window_registry.json", "window_action_targets_review.json"],
+  "local_evidence": [
+    "xml/Custom_1500_WidgetSettings.xml: four Addonpath_Dash_Path setters",
+    "../script.service.gto/main.py: list_offers (read-only)",
+    "kodi_window_registry.json",
+    "window_action_targets_review.json"
+  ],
   "classification": "Unregistered target names and routing logic errors; no assertion that every old name was removed specifically in Kodi 22.",
   "remaining": [
     "Full widget selection/header activation and real PVR/provider-backed actions. Registered names alone do not prove correct runtime routing.",
     "Sixteen Home_*_SubCategory variables and generic WidgetTarget have only conditional branches; empty selection remains possible and is not certified by name enumeration.",
-    "System.StartupWindow target remains runtime-resolved; no new source proof obtained in this pass (fetch timeout).",
     "Radio recording/channel routes were not redesigned by this timer-target correction."
   ],
-  "runtime_followup": "Native evaluation passed 21 controlled input cases across three copied production variables (63 outputs), including transitions back to musicvideo. Inputs were substituted static-list properties, not real provider/PVR items. General WidgetTarget still returns empty for favourites, unknown plugin, local folder and empty input; those outcomes were observed, not fixed or certified as sufficient for all item click paths. Evidence: widget_target_evaluation_checks.json and cleanup JSON in runtime directory. Full real widget/provider actions remain pending."
+  "runtime_followup": "Native evaluation passed 21 controlled input cases across three copied production variables (63 outputs), including transitions back to musicvideo. Inputs were substituted static-list properties, not real provider/PVR items. General WidgetTarget still returns empty for favourites, unknown plugin, local folder and empty input; those outcomes were observed, not fixed or certified as sufficient for all item click paths. Evidence: widget_target_evaluation_checks.json and cleanup JSON in runtime directory. Full real widget/provider actions remain pending.",
+  "startup_window_followup": {
+    "evidence": "startup_window_contract_review.json",
+    "result": "Piers/master numeric label and ReplaceWindow translator contract confirmed. Current native label 10000 matches setting 10000; no new skin change. Other startup configurations not exercised."
+  }
 }

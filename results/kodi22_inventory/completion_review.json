@@ -3,7 +3,7 @@
   "scope": "Review against the original skin-only objective, including native widget-provider lifecycle and corrected focused-label Boolean argument contract. Not an overall runtime sign-off.",
   "source_checkpoint": "ac0048635788d312b991c3002993d5592471e757",
   "branch": "refactor/kodi22-kompatibilitaet",
-  "acceptance_document_local_links_checked": 76,
+  "acceptance_document_local_links_checked": 78,
   "missing_acceptance_document_targets": [],
   "requirements": [
     {
@@ -19,7 +19,8 @@
         "kodi22_runtime/addon_lifecycle_checks.json",
         "kodi22_inventory/widget_provider_lifecycle_review.json",
         "kodi22_inventory/widget_label_structure_review.json",
-        "kodi22_runtime/widget_provider_lifecycle_checks.json"
+        "kodi22_runtime/widget_provider_lifecycle_checks.json",
+        "kodi22_inventory/startup_window_contract_review.json"
       ]
     },
     {

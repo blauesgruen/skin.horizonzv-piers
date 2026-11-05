@@ -1,0 +1,65 @@
+{
+  "checked_on": "2026-11-05",
+  "scope": "Resolve the remaining dynamic Startup.xml window-target contract; source and read-only native label check, no startup navigation or setting mutation.",
+  "skin_call": {
+    "file": "xml/Startup.xml",
+    "line": 26,
+    "action": "ReplaceWindow($INFO[System.StartupWindow])"
+  },
+  "finding": "Supported in Piers and current published master: the label serializes the integer lookandfeel.startupwindow setting; ReplaceWindow dispatches via ActivateWindow<true>; the window translator accepts full numeric IDs.",
+  "sources": [
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/guilib/guiinfo/GUIControlsGUIInfo.cpp",
+      "ref": "22.0rc1-Piers",
+      "line": 329,
+      "excerpt": "    case SYSTEM_STARTUP_WINDOW:\n      value = std::to_string(CServiceBroker::GetSettingsComponent()->GetSettings()->GetInt(\n          CSettings::SETTING_LOOKANDFEEL_STARTUPWINDOW));\n      return true;",
+      "source_length": 26944
+    },
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/interfaces/builtins/GUIBuiltins.cpp",
+      "ref": "22.0rc1-Piers",
+      "line": 689,
+      "excerpt": "           {\"replacewindow\",                  {\"Replaces the current window with the new one\", 1, ActivateWindow<true>}},\n           {\"replacewindowandfocus\",          {\"Replaces the current window with the new one and sets focus to the specified id\", 1, ActivateAndFocus<true>}},\n           {\"setguilanguage\",                 {\"Set GUI Language\", 1, SetLanguage}},\n           {\"setproperty\",                    {\"Sets a window property for the current focused window/dialog (key,value)\", 2, SetProperty}},",
+      "source_length": 27199
+    },
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/input/WindowTranslator.cpp",
+      "ref": "22.0rc1-Piers",
+      "line": 247,
+      "excerpt": "  if (StringUtils::IsNaturalNumber(strWindow))\n  {\n    // Allow a full window ID or a delta ID\n    int iWindow = atoi(strWindow.c_str());\n    if (iWindow > WINDOW_INVALID)\n      return iWindow;\n\n    return WINDOW_HOME + iWindow;\n  }",
+      "source_length": 13844
+    },
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/master/xbmc/guilib/guiinfo/GUIControlsGUIInfo.cpp",
+      "ref": "master",
+      "line": 331,
+      "excerpt": "    case SYSTEM_STARTUP_WINDOW:\n      value = std::to_string(CServiceBroker::GetSettingsComponent()->GetSettings()->GetInt(\n          CSettings::SETTING_LOOKANDFEEL_STARTUPWINDOW));\n      return true;",
+      "source_length": 27064
+    },
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/master/xbmc/interfaces/builtins/GUIBuiltins.cpp",
+      "ref": "master",
+      "line": 689,
+      "excerpt": "           {\"replacewindow\",                  {\"Replaces the current window with the new one\", 1, ActivateWindow<true>}},\n           {\"replacewindowandfocus\",          {\"Replaces the current window with the new one and sets focus to the specified id\", 1, ActivateAndFocus<true>}},\n           {\"setguilanguage\",                 {\"Set GUI Language\", 1, SetLanguage}},\n           {\"setproperty\",                    {\"Sets a window property for the current focused window/dialog (key,value)\", 2, SetProperty}},",
+      "source_length": 27199
+    },
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/master/xbmc/input/WindowTranslator.cpp",
+      "ref": "master",
+      "line": 247,
+      "excerpt": "  if (StringUtils::IsNaturalNumber(strWindow))\n  {\n    // Allow a full window ID or a delta ID\n    int iWindow = atoi(strWindow.c_str());\n    if (iWindow > WINDOW_INVALID)\n      return iWindow;\n\n    return WINDOW_HOME + iWindow;\n  }",
+      "source_length": 13844
+    }
+  ],
+  "read_only_native_result": {
+    "info_label": "10000",
+    "setting_value": 10000,
+    "match": true
+  },
+  "conclusion": "No unsupported interface found and no production code change justified.",
+  "limits": [
+    "Only the current configured value was observed in the live instance.",
+    "This does not exercise every configured startup window, startup playlist, unavailable PVR window, or first-start navigation."
+  ],
+  "no_other_addon_change": true
+}

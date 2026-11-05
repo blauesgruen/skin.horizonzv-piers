@@ -38,4 +38,6 @@ Die [Anforderungsprüfung](kodi22_inventory/completion_review.json) ordnet die B
 
 Neuester Paketstand: [Widget-Labelbedingung](kodi22_inventory/widget_label_package_review.json), 294 bytegleiche Dateien, CRC und 179 XML/XSP-Prüfungen bestanden. Gegenüber dem Add-on-Verknüpfungspaket nur Includes_Dash_GTO.xml und Includes_Dash_Layout.xml geändert. [Native Installation mit Neustart](kodi22_runtime/widget_label_install_checks.json) ohne ERROR-Zeilen. Ausgabe ausschließlich in TEMP; kein veröffentlichtes Paket ersetzt.
 
+Der dynamische Startfenster-Aufruf ist quellenbasiert geklärt: `System.StartupWindow` liefert in Piers/master die konfigurierte numerische Fenster-ID, `ReplaceWindow` nimmt diese über den Fensterübersetzer an. Lesender nativer Abgleich: beide Werte 10000. Keine Codeänderung nötig und keine vollständige Startkonfigurationsprüfung behauptet ([Nachweis](kodi22_inventory/startup_window_contract_review.json)).
+
 Priorität haben die aus konkreten Schnittstellenänderungen folgenden Prüfungen. Allgemeine Layout- oder Ressourcenarbeit wird dadurch nicht zum neuen Schwerpunkt. Offene externe Voraussetzungen werden dokumentiert und nicht durch Änderungen an anderen Add-ons umgangen.
