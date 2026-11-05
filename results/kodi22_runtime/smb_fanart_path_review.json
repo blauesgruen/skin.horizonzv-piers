@@ -1,0 +1,61 @@
+{
+  "checked_on": "2026-11-05",
+  "scope": "Focused review of production fanart path guards; native VFS reachability is recorded separately and is not a skin rendering test.",
+  "source_checkpoint": "90fb410b5139698dd48a1f06539806a8a88f0dd0",
+  "production_variables": {
+    "PlayerExtraFanartPath": [
+      {
+        "condition": "String.StartsWith(Player.FolderPath,plugin://)",
+        "value": ""
+      },
+      {
+        "condition": null,
+        "value": "$INFO[Player.FolderPath,,extrafanart/]"
+      }
+    ],
+    "ListItemExtraFanartPath": [
+      {
+        "condition": "String.IsEmpty(ListItem.Path)",
+        "value": ""
+      },
+      {
+        "condition": "String.StartsWith(ListItem.Path,plugin://)",
+        "value": ""
+      },
+      {
+        "condition": null,
+        "value": "$INFO[ListItem.Path]extrafanart"
+      }
+    ]
+  },
+  "source_conclusion": "Neither guard rejects smb://. Non-plugin, nonempty list paths retain the original path plus extrafanart; non-plugin player folder paths retain the original INFO suffix expression. No new SMB-specific code is justified.",
+  "native_vfs_check": {
+    "rows": [
+      {
+        "case": "smb",
+        "files": 5,
+        "images": 5
+      },
+      {
+        "case": "mapped",
+        "files": 5,
+        "images": 5
+      }
+    ],
+    "skin": "skin.horizonzVI",
+    "checked_at": "2026-11-05T12:45:04"
+  },
+  "native_vfs_script_sha256": "bef8987e49d8b7856e8db2641cd50973c31d079ef03ccdcb87b6d51e4da6ecb7",
+  "rpc_attempts": {
+    "mapped_files": 5,
+    "smb_error_code": -32602,
+    "interpretation": "JSON-RPC rejection is not proof of an SMB VFS or skin defect; direct Kodi xbmcvfs.listdir subsequently returned five images for each path."
+  },
+  "user_setup": "SMB network location configured; no video library created over this SMB connection. No library setup requested or required for a bounded path-guard review.",
+  "limits": [
+    "The live skin was skin.horizonzVI; this read-only VFS check does not prove rendering in HorizonzV.",
+    "No SMB library item or SMB player FolderPath was observed.",
+    "No skin change, library scan, playback, network-folder write, or correction of an external addon was performed."
+  ],
+  "next_action": "Test the production fanart guard in its native ListItem/control context when target-skin testing can run visibly; do not repeat general SMB connection diagnostics or require an SMB video library."
+}

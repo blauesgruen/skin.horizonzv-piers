@@ -57,13 +57,14 @@
     },
     {
       "requirement": "Targeted tests and original plugin/local/SMB fanart behaviour",
-      "assessment": "Actual local file/stack and two actual plugin-player cases now passed. Plugin item paths retained plugin:// and made no extrafanart request. Real SMB remains absent/requested; Disney playback retains its DRM prerequisite. Plugin-containing stack URIs, mixed/encoded wrappers and other named contexts remain open.",
+      "assessment": "Actual local file/stack and two actual plugin-player cases now passed. Plugin item paths retained plugin:// and made no extrafanart request. Native Kodi VFS now reads five images over both the mapped drive and SMB. Source guards preserve smb://; native target-skin SMB rendering remains unobserved. No SMB video library or further connection setup is requested; Disney playback retains its DRM prerequisite. Plugin-containing stack URIs, mixed/encoded wrappers and other named contexts remain open.",
       "evidence": [
         "kodi22_runtime/player_stack_fanart_checks.json",
         "kodi22_runtime/fanart_wrapper_path_checks.json",
         "kodi22_runtime/standard_disney_playback_prerequisite.json",
         "kodi22_inventory/plugin_player_fanart_review.json",
-        "kodi22_runtime/plugin_player_fanart_checks.json"
+        "kodi22_runtime/plugin_player_fanart_checks.json",
+        "kodi22_runtime/smb_fanart_path_review.json"
       ]
     },
     {
@@ -84,7 +85,7 @@
     }
   ],
   "completion_proven": false,
-  "next_external_input": "Reachable smb:// media folder containing extrafanart; no credentials requested in chat.",
+  "next_external_input": "No additional SMB connection or video-library setup requested. Target-skin visible test timing remains to coordinate with the parallel skin work.",
   "remaining_work_reference": "ABNAHMESTAND.md",
   "no_external_addon_correction": true,
   "external_prerequisites_current_readonly_check": {
@@ -99,7 +100,8 @@
         "smb_paths": 0
       }
     ],
-    "credentials_printed": false
+    "credentials_printed": false,
+    "note": "Earlier literal smb:// source/database counts are historical and do not prove absence of network media. User now added SMB network location; direct native VFS access succeeded. See smb_fanart_path_review.json."
   },
   "source_checkpoint_note": "Base commit of this review; runtime_worktree_sha256 fingerprints the current tested runtime changes before checkpoint commit.",
   "runtime_worktree_sha256": {
