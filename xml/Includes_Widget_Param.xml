@@ -34,6 +34,7 @@
             <include>opencloseslideleft</include>
             <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),music)</visible>
 			<include content="HomePageWidget_list" condition="Library.HasContent(music)"> <!-- random albums -->
+                <param name="HomePageWidget_target" value="music"/>
 				<param name="HomePageWidget_content" value="special://skin/playlists/Music_Albums_random.xsp"/>
 				<param name="HomePageWidget_content2" value="$VAR[WidgetInProgressPlace1]"/>
 				<param name="HomePageWidget_limit" value="10"/>
@@ -48,6 +49,7 @@
 				<param name="HomePageWidget_list_visible3" value="!String.IsEmpty(Window.Property(randomalbums))"/>
 			</include>
 			<include content="HomePageWidget_list" condition="Library.HasContent(music)"> <!-- random songs -->
+                <param name="HomePageWidget_target" value="music"/>
 				<param name="HomePageWidget_content" value="special://skin/playlists/Music_Songs_random.xsp"/>
 				<param name="HomePageWidget_content2" value="$VAR[WidgetInProgressPlace1]"/>
 				<param name="HomePageWidget_limit" value="10"/>
@@ -62,6 +64,7 @@
 				<param name="HomePageWidget_list_visible3" value="!String.IsEmpty(Window.Property(randomsongs))"/>
 			</include>
 			<include content="HomePageWidget_list" condition="Library.HasContent(music)"> <!-- recent albums -->
+                <param name="HomePageWidget_target" value="music"/>
 				<param name="HomePageWidget_content" value="special://skin/playlists/Music_Albums_recently.xsp"/>
 				<param name="HomePageWidget_content2" value="$VAR[WidgetInProgressPlace1]"/>
 				<param name="HomePageWidget_limit" value="10"/>
@@ -77,6 +80,7 @@
 				<param name="HomePageWidget_list_visible3" value="!String.IsEmpty(Window.Property(recentalbums))"/>
 			</include>
 			<include content="HomePageWidget_list" condition="Library.HasContent(music)"> <!-- recommended albums -->
+                <param name="HomePageWidget_target" value="music"/>
 				<param name="HomePageWidget_content" value="special://skin/playlists/Music_Albums_recommended.xsp"/>
 				<param name="HomePageWidget_content2" value="$VAR[WidgetInProgressPlace1]"/>
 				<param name="HomePageWidget_limit" value="10"/>
@@ -92,6 +96,7 @@
 				<param name="HomePageWidget_list_visible3" value="!String.IsEmpty(Window.Property(recommendedalbums))"/>
 			</include>
 			<include content="HomePageWidget_list" condition="Library.HasContent(music)"> <!-- custom -->
+                <param name="HomePageWidget_target" value="$VAR[Home_music_SubCategory]"/>
 				<param name="HomePageWidget_content" value="$VAR[HomeWidget_music_Path]"/>
 				<param name="HomePageWidget_limit" value="20"/>
 				<param name="HomePageWidget_sortby" value=""/>
@@ -105,6 +110,7 @@
 				<param name="HomePageWidget_list_visible3" value="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),music)"/>
 			</include>
 			<include content="HomePageWidget_list" condition="Library.HasContent(music)"> <!-- inprogress place1 -->
+                <param name="HomePageWidget_target" value="music"/>
 				<param name="HomePageWidget_content" value="$VAR[WidgetInProgressPlace1]"/>
 				<param name="HomePageWidget_limit" value="1"/>
 				<param name="HomePageWidget_sortby" value=""/>
@@ -125,6 +131,7 @@
             <include>opencloseslideleft</include>
             <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),videos)</visible>
 			<include content="HomePageWidget_list">
+                <param name="HomePageWidget_target" value="videos"/>
 				<!-- sources -->
 				<param name="HomePageWidget_content" value="sources://video/"/>
 				<param name="HomePageWidget_limit" value="10"/>
@@ -139,6 +146,7 @@
 				<param name="HomePageWidget_list_visible3" value="true"/>
 			</include>
 			<include content="HomePageWidget_list">
+                <param name="HomePageWidget_target" value="videos"/>
 				<!-- videoplaylists -->
 				<param name="HomePageWidget_content" value="special://videoplaylists/"/>
 				<param name="HomePageWidget_limit" value="10"/>
@@ -153,6 +161,7 @@
 				<param name="HomePageWidget_list_visible3" value="true"/>
 			</include>
 			<include content="HomePageWidget_list">
+                <param name="HomePageWidget_target" value="$VAR[Home_videos_SubCategory]"/>
 				<!-- custom -->
 				<param name="HomePageWidget_content" value="$VAR[HomeWidget_videos_Path]"/>
 				<param name="HomePageWidget_limit" value="20"/>
@@ -174,6 +183,7 @@
             <include>opencloseslideleft</include>
             <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),movies)</visible>
 			<include content="HomePageWidget_list" condition="Library.HasContent(movies)">
+                <param name="HomePageWidget_target" value="videos"/>
 				<!-- inprogress -->
 				<param name="HomePageWidget_content" value="special://skin/playlists/Videos_inprogress.xsp"/>
 				<param name="HomePageWidget_limit" value="10"/>
@@ -188,6 +198,7 @@
 				<param name="HomePageWidget_list_visible3" value="!Skin.HasSetting(Home_movies_Button)"/>
 			</include>
 			<include content="HomePageWidget_list" condition="Library.HasContent(movies)">
+                <param name="HomePageWidget_target" value="videos"/>
 				<!-- random -->
 				<param name="HomePageWidget_content" value="videodb://movies/titles"/>
 				<param name="HomePageWidget_content2" value="$VAR[WidgetInProgressPlace1]"/>
@@ -203,6 +214,7 @@
 				<param name="HomePageWidget_list_visible3" value="Library.HasContent(Movies)"/>
 			</include>
 			<include content="HomePageWidget_list" condition="Library.HasContent(movies)">
+                <param name="HomePageWidget_target" value="videos"/>
 				<!-- recently -->
 				<param name="HomePageWidget_content" value="special://skin/playlists/Videos_recently.xsp"/>
 				<param name="HomePageWidget_content2" value="$VAR[WidgetInProgressPlace1]"/>
@@ -218,6 +230,7 @@
 				<param name="HomePageWidget_list_visible3" value="Library.HasContent(Movies)"/>
 			</include>
 			<include content="HomePageWidget_list" condition="Library.HasContent(movies)">
+                <param name="HomePageWidget_target" value="$VAR[Home_movies_SubCategory]"/>
 				<!-- custom -->
 				<param name="HomePageWidget_content" value="$VAR[HomeWidget_movies_Path]"/>
 				<param name="HomePageWidget_limit" value="20"/>
@@ -232,6 +245,7 @@
 				<param name="HomePageWidget_list_visible3" value="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),movies)"/>
 			</include>
 			<include content="HomePageWidget_list" condition="Library.HasContent(movies)">
+                <param name="HomePageWidget_target" value="videos"/>
 				<!-- inprogress place1 -->
 				<param name="HomePageWidget_content" value="$VAR[WidgetInProgressPlace1]"/>
 				<param name="HomePageWidget_limit" value="1"/>
@@ -253,6 +267,7 @@
             <include>opencloseslideleft</include>
             <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),tvshow)</visible>
 			<include content="HomePageWidget_list" condition="Library.HasContent(tvshows)"> <!-- inprogress -->
+                <param name="HomePageWidget_target" value="videos"/>
 				<param name="HomePageWidget_content" value="special://skin/playlists/TVShows_inprogress.xsp"/>
 				<param name="HomePageWidget_limit" value="10"/>
 				<param name="HomePageWidget_sortby" value=""/>
@@ -267,6 +282,7 @@
 				<param name="HomePageWidget_list_visible3" value="true"/>
 			</include>
 			<include content="HomePageWidget_list" condition="Library.HasContent(tvshows)"> <!-- recently added episode -->
+                <param name="HomePageWidget_target" value="videos"/>
 				<param name="HomePageWidget_content" value="videodb://recentlyaddedepisodes/"/>
 				<param name="HomePageWidget_limit" value="40"/>
 				<param name="HomePageWidget_sortby" value="episodenumber"/>
@@ -281,6 +297,7 @@
 				<param name="HomePageWidget_list_visible3" value="Skin.HasSetting(Widget_RecentTVShows_Episodes)"/>
 			</include>
 			<include content="HomePageWidget_list" condition="Library.HasContent(tvshows)"> <!-- recent season -->
+                <param name="HomePageWidget_target" value="videos"/>
 				<param name="HomePageWidget_content" value="special://skin/playlists/TVShows_recent_tvshows.xsp"/>
 				<param name="HomePageWidget_limit" value="10"/>
 				<param name="HomePageWidget_sortby" value="dateadded"/>
@@ -295,6 +312,7 @@
 				<param name="HomePageWidget_list_visible3" value="!Skin.HasSetting(Widget_RecentTVShows_Episodes)"/>
 			</include>
 			<include content="HomePageWidget_list" condition="Library.HasContent(tvshows)"> <!-- random season -->
+                <param name="HomePageWidget_target" value="videos"/>
 				<param name="HomePageWidget_content" value="special://skin/playlists/TVShows_random_episodes.xsp"/>
 				<param name="HomePageWidget_limit" value="10"/>
 				<param name="HomePageWidget_sortby" value="random"/>
@@ -309,6 +327,7 @@
 				<param name="HomePageWidget_list_visible3" value="Library.HasContent(TVShows)"/>
 			</include>
 			<include content="HomePageWidget_list" condition="Library.HasContent(tvshows)"> <!-- custom -->
+                <param name="HomePageWidget_target" value="$VAR[Home_tvshow_SubCategory]"/>
 				<param name="HomePageWidget_content" value="$VAR[HomeWidget_tvshow_Path]"/>
 				<param name="HomePageWidget_limit" value="20"/>
 				<param name="HomePageWidget_sortby" value=""/>
@@ -329,6 +348,7 @@
             <include>opencloseslideleft</include>
             <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),musicvideo)</visible>
 			<include content="HomePageWidget_list" condition="Library.HasContent(musicvideos)">
+                <param name="HomePageWidget_target" value="videos"/>
 				<!-- inprogress -->
 				<param name="HomePageWidget_content" value="videodb://musicvideos/titles"/>
 				<param name="HomePageWidget_limit" value="10"/>
@@ -343,6 +363,7 @@
 				<param name="HomePageWidget_list_visible3" value="true"/>
 			</include>
 			<include content="HomePageWidget_list" condition="Library.HasContent(musicvideos)">
+                <param name="HomePageWidget_target" value="videos"/>
 				<!-- random -->
 				<param name="HomePageWidget_content" value="videodb://musicvideos/titles"/>
 				<param name="HomePageWidget_content2" value="$VAR[WidgetInProgressPlace1]"/>
@@ -358,6 +379,7 @@
 				<param name="HomePageWidget_list_visible3" value="Library.HasContent(musicvideos)"/>
 			</include>
 			<include content="HomePageWidget_list" condition="Library.HasContent(musicvideos)">
+                <param name="HomePageWidget_target" value="videos"/>
 				<!-- recently -->
 				<param name="HomePageWidget_content" value="videodb://recentlyaddedmusicvideos/"/>
 				<param name="HomePageWidget_content2" value="$VAR[WidgetInProgressPlace1]"/>
@@ -373,6 +395,7 @@
 				<param name="HomePageWidget_list_visible3" value="Library.HasContent(musicvideos)"/>
 			</include>
 			<include content="HomePageWidget_list" condition="Library.HasContent(musicvideos)">
+                <param name="HomePageWidget_target" value="$VAR[Home_musicvideo_SubCategory]"/>
 				<!-- custom -->
 				<param name="HomePageWidget_content" value="$VAR[HomeWidget_musicvideo_Path]"/>
 				<param name="HomePageWidget_sortby" value=""/>
@@ -387,6 +410,7 @@
 				<param name="HomePageWidget_list_visible3" value="String.IsEqual(Container(9000).ListItem.Property(homemenu_id),musicvideo)"/>
 			</include>
 			<include content="HomePageWidget_list" condition="Library.HasContent(musicvideos)">
+                <param name="HomePageWidget_target" value="videos"/>
 				<!-- inprogress place1 -->
 				<param name="HomePageWidget_content" value="$VAR[WidgetInProgressPlace1]"/>
 				<param name="HomePageWidget_limit" value="1"/>
@@ -424,6 +448,7 @@
                 <aspectratio align="right" aligny="center">scale</aspectratio>
 			</control>
 			<include content="HomePageWidget_list">
+                <param name="HomePageWidget_target" value="$VAR[Home_picture_SubCategory]"/>
 				<!-- custom -->
 				<param name="HomePageWidget_content" value="$VAR[HomeWidget_picture_Path]"/>
 				<param name="HomePageWidget_sortby" value=""/>
@@ -829,6 +854,7 @@
             <include>opencloseslideleft</include>
             <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),custom1)</visible>
 			<include content="HomePageWidget_list">
+                <param name="HomePageWidget_target" value="$VAR[Home_custom1_SubCategory]"/>
 				<param name="HomePageWidget_content" value="$VAR[HomeWidget_custom1_Path]"/>
 				<param name="HomePageWidget_sortby" value=""/>
 				<param name="HomePageWidget_sortorder" value=""/>
@@ -849,6 +875,7 @@
             <include>opencloseslideleft</include>
             <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),custom2)</visible>
 			<include content="HomePageWidget_list">
+                <param name="HomePageWidget_target" value="$VAR[Home_custom2_SubCategory]"/>
 				<param name="HomePageWidget_content" value="$VAR[HomeWidget_custom2_Path]"/>
 				<param name="HomePageWidget_sortby" value=""/>
 				<param name="HomePageWidget_sortorder" value=""/>
@@ -869,6 +896,7 @@
             <include>opencloseslideleft</include>
             <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),custom3)</visible>
 			<include content="HomePageWidget_list">
+                <param name="HomePageWidget_target" value="$VAR[Home_custom3_SubCategory]"/>
 				<param name="HomePageWidget_content" value="$VAR[HomeWidget_custom3_Path]"/>
 				<param name="HomePageWidget_sortby" value=""/>
 				<param name="HomePageWidget_sortorder" value=""/>
@@ -889,6 +917,7 @@
             <include>opencloseslideleft</include>
             <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),custom4)</visible>
 			<include content="HomePageWidget_list">
+                <param name="HomePageWidget_target" value="$VAR[Home_custom4_SubCategory]"/>
 				<param name="HomePageWidget_content" value="$VAR[HomeWidget_custom4_Path]"/>
 				<param name="HomePageWidget_sortby" value=""/>
 				<param name="HomePageWidget_sortorder" value=""/>
@@ -909,6 +938,7 @@
             <include>opencloseslideleft</include>
             <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),custom5)</visible>
 			<include content="HomePageWidget_list">
+                <param name="HomePageWidget_target" value="$VAR[Home_custom5_SubCategory]"/>
 				<param name="HomePageWidget_content" value="$VAR[HomeWidget_custom5_Path]"/>
 				<param name="HomePageWidget_sortby" value=""/>
 				<param name="HomePageWidget_sortorder" value=""/>
@@ -929,6 +959,7 @@
             <include>opencloseslideleft</include>
             <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),custom6)</visible>
 			<include content="HomePageWidget_list">
+                <param name="HomePageWidget_target" value="$VAR[Home_custom6_SubCategory]"/>
 				<param name="HomePageWidget_content" value="$VAR[HomeWidget_custom6_Path]"/>
 				<param name="HomePageWidget_sortby" value=""/>
 				<param name="HomePageWidget_sortorder" value=""/>
@@ -949,6 +980,7 @@
             <include>opencloseslideleft</include>
             <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),custom7)</visible>
 			<include content="HomePageWidget_list">
+                <param name="HomePageWidget_target" value="$VAR[Home_custom7_SubCategory]"/>
 				<param name="HomePageWidget_content" value="$VAR[HomeWidget_custom7_Path]"/>
 				<param name="HomePageWidget_sortby" value=""/>
 				<param name="HomePageWidget_sortorder" value=""/>
@@ -969,6 +1001,7 @@
             <include>opencloseslideleft</include>
             <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),custom8)</visible>
 			<include content="HomePageWidget_list">
+                <param name="HomePageWidget_target" value="$VAR[Home_custom8_SubCategory]"/>
 				<param name="HomePageWidget_content" value="$VAR[HomeWidget_custom8_Path]"/>
 				<param name="HomePageWidget_sortby" value=""/>
 				<param name="HomePageWidget_sortorder" value=""/>
@@ -989,6 +1022,7 @@
             <include>opencloseslideleft</include>
             <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),custom9)</visible>
 			<include content="HomePageWidget_list">
+                <param name="HomePageWidget_target" value="$VAR[Home_custom9_SubCategory]"/>
 				<param name="HomePageWidget_content" value="$VAR[HomeWidget_custom9_Path]"/>
 				<param name="HomePageWidget_sortby" value=""/>
 				<param name="HomePageWidget_sortorder" value=""/>
@@ -1009,6 +1043,7 @@
             <include>opencloseslideleft</include>
             <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),pvr)</visible>
 			<include content="HomePageWidget_list">
+                <param name="HomePageWidget_target" value="tvrecordings"/>
 				<!-- pvr recordings -->
 				<param name="HomePageWidget_content" value="$VAR[PVRWidgetRecordsFlatVAR]"/>
 				<param name="HomePageWidget_sortby" value="date"/>
@@ -1024,6 +1059,7 @@
 				<!-- <param name="HomePageWidget_list_visible3" value="Integer.IsGreater(Container(295).NumItems,0)"/> -->
 			</include>
 			<include content="HomePageWidget_list">
+                <param name="HomePageWidget_target" value="tvtimers"/>
 				<!-- pvr timer -->
 				<param name="HomePageWidget_content" value="pvr://timers/tv/timers"/>
 				<param name="HomePageWidget_sortby" value="date"/>
@@ -1039,6 +1075,7 @@
 				<!-- <param name="HomePageWidget_list_visible3" value="Integer.IsGreater(Container(2951).NumItems,0)"/> -->
 			</include>
 			<include content="HomePageWidget_list">
+                <param name="HomePageWidget_target" value="tvchannels"/>
 				<!-- pvr channels -->
 				<param name="HomePageWidget_content" value="$INFO[Skin.String(Widget_pvr_TV_WidgetChannels_Path)]"/>
 				<param name="HomePageWidget_sortby" value="number"/>
@@ -1053,6 +1090,7 @@
 				<param name="HomePageWidget_list_visible3" value="!String.IsEmpty(Skin.String(Widget_pvr_TV_WidgetChannels_Path))+!Skin.HasSetting(Widget_LiveTVWidgetChannels_inprogress)"/>
 			</include>
 			<include content="HomePageWidget_list">
+                <param name="HomePageWidget_target" value="tvchannels"/>
 				<!-- pvr channels -->
 				<param name="HomePageWidget_content" value="pvr://channels/tv/*"/>
 				<param name="HomePageWidget_sortby" value="lastplayed"/>
@@ -1075,6 +1113,7 @@
             <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),radio)</visible>
             <visible>Skin.HasSetting(Widget_pvr_radio_WidgetChannels)</visible>
 			<include content="HomePageWidget_list">
+                <param name="HomePageWidget_target" value="radiochannels"/>
 				<!-- channels -->
 				<param name="HomePageWidget_content" value="$INFO[Skin.String(Widget_pvr_radio_WidgetChannels_Path)]"/>
 				<param name="HomePageWidget_limit" value="10"/>
@@ -1182,6 +1221,7 @@
             <include>opencloseslideleft</include>
             <visible>String.IsEqual(Container(9000).ListItem.Property(homemenu_id),games)</visible>
 			<include content="HomePageWidget_list">
+                <param name="HomePageWidget_target" value="games"/>
 				<!-- last used -->
 				<param name="HomePageWidget_content" value="addons://sources/game/"/>
 				<param name="HomePageWidget_limit" value="10"/>
@@ -1196,6 +1236,7 @@
 				<param name="HomePageWidget_list_visible3" value="!Skin.HasSetting(Home_games_Button)"/>
 			</include>
 			<include content="HomePageWidget_list">
+                <param name="HomePageWidget_target" value="$VAR[Home_games_SubCategory]"/>
 				<!-- custom -->
 				<param name="HomePageWidget_content" value="$VAR[HomeWidget_games_Path]"/>
 				<param name="HomePageWidget_limit" value="20"/>
@@ -1473,7 +1514,7 @@
 			<control type="list" id="$PARAM[HomePageWidget_list_id]">
 				<width min="0" max="736">auto</width>
 				<height>240</height>
-				<onclick condition="String.Contains(Container.ListItem.FolderPath,pvr://timers)">ActivateWindow(tvtimers)</onclick>
+				<onclick condition="String.Contains(Container.ListItem.FolderPath,pvr://timers)">ActivateWindow($PARAM[HomePageWidget_target])</onclick>
 				<ondown>Action(FirstPage)</ondown>
 				<ondown>9000</ondown>
 				<onup/>
@@ -1493,8 +1534,8 @@
 				<include content="Widget_Listlayout">
                     <param name="Widget_Listlayout_id" value="$PARAM[HomePageWidget_list_id]"/>
 				</include>
-				<content limit="1" sortby="$PARAM[HomePageWidget_sortby]" sortorder="$PARAM[HomePageWidget_sortorder]" target="$VAR[WidgetTarget]">$PARAM[HomePageWidget_content2]</content>
-				<content limit="$PARAM[HomePageWidget_limit]" sortby="$PARAM[HomePageWidget_sortby]" sortorder="$PARAM[HomePageWidget_sortorder]" target="$VAR[WidgetTarget]">$PARAM[HomePageWidget_content]</content>
+				<content limit="1" sortby="$PARAM[HomePageWidget_sortby]" sortorder="$PARAM[HomePageWidget_sortorder]" target="$PARAM[HomePageWidget_target]">$PARAM[HomePageWidget_content2]</content>
+				<content limit="$PARAM[HomePageWidget_limit]" sortby="$PARAM[HomePageWidget_sortby]" sortorder="$PARAM[HomePageWidget_sortorder]" target="$PARAM[HomePageWidget_target]">$PARAM[HomePageWidget_content]</content>
 			</control>
 		</control>
 		<include content="HomepageWidgetInfoPanel_BehindShadowImage">
