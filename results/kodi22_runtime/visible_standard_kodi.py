@@ -1,7 +1,8 @@
-"""Owned visible standard-Kodi session for bounded skin probes.
+"""Owned visible Kodi session for bounded skin probes.
 
 Uses existing local RPC/EventServer settings, preserves startup/skin settings,
-and stops only the process it started. It never installs or edits an addon.
+and stops only the process it started. Supports the standard installation or an
+explicitly validated owned TEMP runtime. It never installs or edits an addon.
 """
 import base64
 import json
@@ -16,10 +17,13 @@ import xml.etree.ElementTree as ET
 
 
 class VisibleKodi:
-    def __init__(self, repo, name):
+    def __init__(self, repo, name, test_root=None):
         self.repo = Path(repo).resolve()
-        self.root = self.repo.parents[2]
-        if self.root != Path('D:/Program Files/Kodi22'):
+        self.root = Path(test_root).resolve() if test_root else self.repo.parents[2]
+        if test_root:
+            if self.root.parent != Path(tempfile.gettempdir()).resolve() or not self.root.name.startswith('horizonzv-kodi-test-'):
+                raise RuntimeError('Unexpected owned test root')
+        elif self.root != Path('D:/Program Files/Kodi22'):
             raise RuntimeError('Unexpected standard Kodi root')
         count = subprocess.check_output(['powershell.exe', '-NoProfile', '-Command',
                                          '@(Get-Process kodi -ErrorAction SilentlyContinue).Count'], text=True).strip()
@@ -84,6 +88,8 @@ class VisibleKodi:
                 time.sleep(.3)
         if self.rpc('Settings.GetSettingValue', {'setting': 'lookandfeel.skin'})['value'] != 'skin.horizonzv':
             raise RuntimeError('Unexpected active skin')
+        if not self.rpc('Addons.GetAddonDetails', {'addonid': 'skin.horizonzv', 'properties': ['enabled']})['addon']['enabled']:
+            raise RuntimeError('Configured skin is disabled; settings value alone does not prove loading')
         sys.path.insert(0, 'C:/Users/zorno/AppData/Local/Temp/horizonzv-standard-integration-20261103')
         from xbmcclient import XBMCClient
         self.client = XBMCClient(name=self.name, uid=secrets.randbits(32))

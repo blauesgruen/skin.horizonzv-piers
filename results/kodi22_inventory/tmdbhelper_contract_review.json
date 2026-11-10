@@ -105,6 +105,6 @@
     "upstream_version": "6.21.5",
     "upstream_commit": "7f0c7a2cfd81351f03405f91fcd22e1ac06fe568",
     "evidence": "tmdbhelper_6_21_5_contract_review.json",
-    "result": "6.21.5 keeps the inspected endpoint names but omits MyFavourites.xml from its automatic window filter. Current follow-up adds skin-owned lifecycle opt-in; native verification pending. This file retains its original 6.20.7 source snapshot."
+    "result": "6.21.5 retains endpoint names but requires explicit Favourites monitoring opt-in. Skin correction now additionally verified with current unmodified provider in a real native Kodi session: movie 603/eight icon fields, Favourites modes, delivery/clearing. Original 6.20.7 source snapshot retained."
   }
 }

@@ -1,0 +1,270 @@
+{
+  "checked_on": "2026-11-10",
+  "test_root": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-clean-941d3ebe96ea",
+  "scope": "Untouched published addons and byte-equal dependency copies in the owned test profile only. No standard addon, provider setting or source corrected.",
+  "addons": [
+    {
+      "id": "plugin.video.themoviedb.helper",
+      "version": "6.21.5",
+      "source": "https://codeload.github.com/jurialmunkey/plugin.video.themoviedb.helper/zip/7f0c7a2cfd81351f03405f91fcd22e1ac06fe568",
+      "archive_sha256": "f2fe016011ddd8196dd3ff1b8a2cf4fa745c3fa4009748bbc7b42453d25be313",
+      "files": 702,
+      "archive_bytes_unchanged": true
+    },
+    {
+      "id": "script.module.jurialmunkey",
+      "version": "0.2.37",
+      "source": "https://codeload.github.com/jurialmunkey/script.module.jurialmunkey/zip/8a3e7c64a7545b00d3833c73fab12b3d628c5120",
+      "archive_sha256": "8f3863b3c5cbd3c607d97ed47af5f44672d1cb90620619ee0bb79abeeb1122e6",
+      "files": 24,
+      "archive_bytes_unchanged": true
+    },
+    {
+      "id": "script.module.infotagger",
+      "version": "0.1.0",
+      "source": "https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/ea81c8305ab51d9f4a2729bbe15879f4fba9dd49/omega/zips/script.module.infotagger/script.module.infotagger-0.1.0.zip",
+      "archive_sha256": "82bf72ad2e8184e4a560135d7fa2ea1f37d95a0a7524100554da527f816ca876",
+      "files": 4,
+      "archive_bytes_unchanged": true
+    },
+    {
+      "id": "script.module.qrcode",
+      "version": "6.1.0+matrix.3",
+      "source": "https://mirrors.kodi.tv/addons/omega/script.module.qrcode/script.module.qrcode-6.1.0+matrix.3.zip",
+      "archive_sha256": "e5c01d0ff83bdb7687c3150dcda5a01896a2281c28ffe9813f6e4763ea44f132",
+      "files": 25,
+      "archive_bytes_unchanged": true
+    },
+    {
+      "id": "script.module.six",
+      "version": "1.16.0+matrix.1",
+      "source": "D:\\Program Files\\Kodi22\\portable_data\\addons\\script.module.six",
+      "files": 4,
+      "source_bytes_unchanged": true
+    },
+    {
+      "id": "script.module.requests",
+      "version": "2.31.0",
+      "source": "D:\\Program Files\\Kodi22\\portable_data\\addons\\script.module.requests",
+      "files": 21,
+      "source_bytes_unchanged": true
+    },
+    {
+      "id": "script.module.urllib3",
+      "version": "2.2.3",
+      "source": "D:\\Program Files\\Kodi22\\portable_data\\addons\\script.module.urllib3",
+      "files": 40,
+      "source_bytes_unchanged": true
+    },
+    {
+      "id": "script.module.idna",
+      "version": "3.10.0",
+      "source": "D:\\Program Files\\Kodi22\\portable_data\\addons\\script.module.idna",
+      "files": 11,
+      "source_bytes_unchanged": true
+    },
+    {
+      "id": "script.module.chardet",
+      "version": "5.1.0",
+      "source": "D:\\Program Files\\Kodi22\\portable_data\\addons\\script.module.chardet",
+      "files": 51,
+      "source_bytes_unchanged": true
+    },
+    {
+      "id": "script.module.certifi",
+      "version": "2023.5.7",
+      "source": "D:\\Program Files\\Kodi22\\portable_data\\addons\\script.module.certifi",
+      "files": 7,
+      "source_bytes_unchanged": true
+    },
+    {
+      "id": "script.module.addon.signals",
+      "version": "0.0.6+matrix.1",
+      "source": "D:\\Program Files\\Kodi22\\portable_data\\addons\\script.module.addon.signals",
+      "files": 5,
+      "source_bytes_unchanged": true
+    }
+  ],
+  "required_ids_seen": [
+    "plugin.video.themoviedb.helper",
+    "script.module.addon.signals",
+    "script.module.certifi",
+    "script.module.chardet",
+    "script.module.idna",
+    "script.module.infotagger",
+    "script.module.jurialmunkey",
+    "script.module.pil",
+    "script.module.qrcode",
+    "script.module.requests",
+    "script.module.six",
+    "script.module.urllib3",
+    "xbmc.core",
+    "xbmc.python"
+  ],
+  "pinned_source_fingerprints_match_previous_protocol_check": true,
+  "test_skin_enabled_after_restored_seed_registry": true,
+  "dependency_minimum_checks": [
+    {
+      "caller": "plugin.video.themoviedb.helper",
+      "dependency": "xbmc.python",
+      "minimum": "3.0.1",
+      "actual": "3.1.0"
+    },
+    {
+      "caller": "plugin.video.themoviedb.helper",
+      "dependency": "script.module.requests",
+      "minimum": "2.9.1",
+      "actual": "2.31.0"
+    },
+    {
+      "caller": "plugin.video.themoviedb.helper",
+      "dependency": "script.module.pil",
+      "minimum": "1.1.7",
+      "actual": "5.1.0"
+    },
+    {
+      "caller": "plugin.video.themoviedb.helper",
+      "dependency": "script.module.addon.signals",
+      "minimum": "0.0.6",
+      "actual": "0.0.6+matrix.1"
+    },
+    {
+      "caller": "plugin.video.themoviedb.helper",
+      "dependency": "script.module.jurialmunkey",
+      "minimum": "0.2.37",
+      "actual": "0.2.37"
+    },
+    {
+      "caller": "plugin.video.themoviedb.helper",
+      "dependency": "script.module.infotagger",
+      "minimum": "0.1.0",
+      "actual": "0.1.0"
+    },
+    {
+      "caller": "plugin.video.themoviedb.helper",
+      "dependency": "script.module.qrcode",
+      "minimum": "6.1.0",
+      "actual": "6.1.0+matrix.3"
+    },
+    {
+      "caller": "script.module.addon.signals",
+      "dependency": "xbmc.python",
+      "minimum": "3.0.0",
+      "actual": "3.1.0"
+    },
+    {
+      "caller": "script.module.certifi",
+      "dependency": "xbmc.python",
+      "minimum": "3.0.0",
+      "actual": "3.1.0"
+    },
+    {
+      "caller": "script.module.chardet",
+      "dependency": "xbmc.python",
+      "minimum": "3.0.0",
+      "actual": "3.1.0"
+    },
+    {
+      "caller": "script.module.idna",
+      "dependency": "xbmc.python",
+      "minimum": "3.0.0",
+      "actual": "3.1.0"
+    },
+    {
+      "caller": "script.module.infotagger",
+      "dependency": "xbmc.python",
+      "minimum": "3.0.1",
+      "actual": "3.1.0"
+    },
+    {
+      "caller": "script.module.jurialmunkey",
+      "dependency": "xbmc.python",
+      "minimum": "3.0.1",
+      "actual": "3.1.0"
+    },
+    {
+      "caller": "script.module.jurialmunkey",
+      "dependency": "script.module.requests",
+      "minimum": "2.9.1",
+      "actual": "2.31.0"
+    },
+    {
+      "caller": "script.module.jurialmunkey",
+      "dependency": "script.module.infotagger",
+      "minimum": "0.0.5",
+      "actual": "0.1.0"
+    },
+    {
+      "caller": "script.module.pil",
+      "dependency": "xbmc.python",
+      "minimum": "3.0.0",
+      "actual": "3.1.0"
+    },
+    {
+      "caller": "script.module.qrcode",
+      "dependency": "xbmc.python",
+      "minimum": "3.0.0",
+      "actual": "3.1.0"
+    },
+    {
+      "caller": "script.module.qrcode",
+      "dependency": "script.module.six",
+      "minimum": "1.14.0+matrix.1",
+      "actual": "1.16.0+matrix.1"
+    },
+    {
+      "caller": "script.module.qrcode",
+      "dependency": "script.module.pil",
+      "minimum": "1.1.7",
+      "actual": "5.1.0"
+    },
+    {
+      "caller": "script.module.requests",
+      "dependency": "xbmc.python",
+      "minimum": "3.0.0",
+      "actual": "3.1.0"
+    },
+    {
+      "caller": "script.module.requests",
+      "dependency": "script.module.certifi",
+      "minimum": "2023.5.7",
+      "actual": "2023.5.7"
+    },
+    {
+      "caller": "script.module.requests",
+      "dependency": "script.module.chardet",
+      "minimum": "5.1.0",
+      "actual": "5.1.0"
+    },
+    {
+      "caller": "script.module.requests",
+      "dependency": "script.module.idna",
+      "minimum": "3.4.0",
+      "actual": "3.10.0"
+    },
+    {
+      "caller": "script.module.requests",
+      "dependency": "script.module.urllib3",
+      "minimum": "1.26.16+matrix.1",
+      "actual": "2.2.3"
+    },
+    {
+      "caller": "script.module.six",
+      "dependency": "xbmc.python",
+      "minimum": "3.0.0",
+      "actual": "3.1.0"
+    },
+    {
+      "caller": "script.module.urllib3",
+      "dependency": "xbmc.python",
+      "minimum": "3.0.0",
+      "actual": "3.1.0"
+    },
+    {
+      "caller": "xbmc.python",
+      "dependency": "xbmc.core",
+      "minimum": "0.1.0",
+      "actual": "0.1.0"
+    }
+  ]
+}

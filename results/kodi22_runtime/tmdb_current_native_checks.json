@@ -1,0 +1,132 @@
+{
+  "checked_on": "2026-11-10",
+  "scope": "Unmodified TMDb Helper 6.21.5: native receiver and Favourites polling checks.\n\nRuns only in the explicitly owned isolated profile. Uses a public movie-details\ndirectory, no playback, account login or external addon correction.\n",
+  "passed": true,
+  "test_root": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-clean-941d3ebe96ea",
+  "cases": [
+    {
+      "name": "video_details_receiver",
+      "receiver": {
+        "Container(99950).ListItem.Property(Provider.1.Icon)": "https://image.tmdb.org/t/p/original/qdEGArH3lKfFnAtYXMkSYk5wxuG.png",
+        "Container(99950).ListItem.Property(Provider.2.Icon)": "https://image.tmdb.org/t/p/original/jn6TLbtaTZntTRX9UYucHJvpQx1.png",
+        "Container(99950).ListItem.Property(Provider.3.Icon)": "https://image.tmdb.org/t/p/original/5Maob4o5w8oZnNeYpCDyVFD3M7X.png",
+        "Container(99950).ListItem.Property(Provider.4.Icon)": "https://image.tmdb.org/t/p/original/aZRENwYILujqs0RVOZutTh0BVGV.png",
+        "Container(99950).ListItem.Property(Provider.5.Icon)": "https://image.tmdb.org/t/p/original/wpOt6x0dRxTrIzuBosto4LGd7E9.png",
+        "Container(99950).ListItem.Property(Provider.6.Icon)": "https://image.tmdb.org/t/p/original/48bVXEIyCLSL9pZUQ7gB9ToyWto.png",
+        "Container(99950).ListItem.Property(Provider.7.Icon)": "https://image.tmdb.org/t/p/original/blAEhvx3XX8sV0fFVFk88FFjubs.png",
+        "Container(99950).ListItem.Property(Provider.8.Icon)": "https://image.tmdb.org/t/p/original/6qPtM96UZkt3Bu4ZFPsDeHFWUZ2.png",
+        "Container(99950).ListItem.Property(base_label)": "The Matrix",
+        "Container(99950).ListItem.Property(tmdb_id)": "603",
+        "Container(99950).ListItem.Title": "The Matrix",
+        "Window(Home).Property(TMDbHelper.monitor.tmdb_id)": ""
+      },
+      "receiver_visible": true,
+      "screenshot": "tmdb_current_video_receiver.png"
+    },
+    {
+      "name": "favourites_global",
+      "poller": {
+        "passed": true,
+        "provider_version": "6.21.5",
+        "local_mode": false,
+        "media_window": false,
+        "local_widget": false,
+        "global_widget": true,
+        "listitem_polling": true
+      },
+      "selected_item": {
+        "ListItem.DBType": "",
+        "ListItem.Label": "TMDb current details 603",
+        "ListItem.UniqueID(tmdb)": ""
+      },
+      "receiver": {
+        "Container(99950).ListItem.Property(Provider.1.Icon)": "",
+        "Container(99950).ListItem.Property(Provider.2.Icon)": "",
+        "Container(99950).ListItem.Property(Provider.3.Icon)": "",
+        "Container(99950).ListItem.Property(Provider.4.Icon)": "",
+        "Container(99950).ListItem.Property(Provider.5.Icon)": "",
+        "Container(99950).ListItem.Property(Provider.6.Icon)": "",
+        "Container(99950).ListItem.Property(Provider.7.Icon)": "",
+        "Container(99950).ListItem.Property(Provider.8.Icon)": "",
+        "Container(99950).ListItem.Property(base_label)": "TMDb current details 603",
+        "Container(99950).ListItem.Property(tmdb_id)": "",
+        "Container(99950).ListItem.Title": "",
+        "Window(Home).Property(TMDbHelper.monitor.tmdb_id)": ""
+      }
+    },
+    {
+      "name": "favourites_local",
+      "poller": {
+        "passed": true,
+        "provider_version": "6.21.5",
+        "local_mode": true,
+        "media_window": false,
+        "local_widget": true,
+        "global_widget": false,
+        "listitem_polling": true
+      },
+      "selected_item": {
+        "ListItem.DBType": "",
+        "ListItem.Label": "TMDb current details 603",
+        "ListItem.UniqueID(tmdb)": ""
+      },
+      "receiver": {
+        "Container(99950).ListItem.Property(Provider.1.Icon)": "",
+        "Container(99950).ListItem.Property(Provider.2.Icon)": "",
+        "Container(99950).ListItem.Property(Provider.3.Icon)": "",
+        "Container(99950).ListItem.Property(Provider.4.Icon)": "",
+        "Container(99950).ListItem.Property(Provider.5.Icon)": "",
+        "Container(99950).ListItem.Property(Provider.6.Icon)": "",
+        "Container(99950).ListItem.Property(Provider.7.Icon)": "",
+        "Container(99950).ListItem.Property(Provider.8.Icon)": "",
+        "Container(99950).ListItem.Property(base_label)": "TMDb current details 603",
+        "Container(99950).ListItem.Property(tmdb_id)": "",
+        "Container(99950).ListItem.Title": "",
+        "Window(Home).Property(TMDbHelper.monitor.tmdb_id)": ""
+      }
+    }
+  ],
+  "details_url": "plugin://plugin.video.themoviedb.helper/?info=details&tmdb_type=movie&tmdb_id=603",
+  "skin_files": {
+    "Startup.xml": "e449b33a1af60bc1d4d4b88af9bee10fd17140af876163974cd9a19bcf4cad26",
+    "MyVideoNav.xml": "40610586300c4d38b1aa19c30cce12c4a53df9078f1cf40bb54e7c8ea51fbddc",
+    "MyFavourites.xml": "7d8192b05cc15addc7badc6859712c332a9bfc3f650a999d2133125f3924ad6a",
+    "Includes.xml": "989b9efa0cad027292edccf7592304103c221c3fe726108da23e3077e35e291c"
+  },
+  "pid": 53048,
+  "provider": {
+    "addonid": "plugin.video.themoviedb.helper",
+    "enabled": true,
+    "type": "xbmc.python.pluginsource",
+    "version": "6.21.5"
+  },
+  "selected_item": {
+    "ListItem.DBType": "movie",
+    "ListItem.Label": "The Matrix",
+    "ListItem.UniqueID(tmdb)": "603"
+  },
+  "received_icon_count": 8,
+  "online_icon_delivery_proven": true,
+  "cleanup": {
+    "owned_process_exited": true,
+    "settings_restored": true,
+    "favourites_restored": true,
+    "addon_source_files_unchanged": true
+  },
+  "limits": [
+    "No playback, Disney+ or account-authenticated provider test.",
+    "Favourites SDK inspection uses original Poller with actual Kodi API; no addon monkeypatch.",
+    "Non-empty online icons are reported separately; passing receiver/poller checks alone does not prove them.",
+    "One real movie (TMDb 603), default test settings, and an untyped plugin-folder favourite; not all regions, titles or favourite metadata variants."
+  ],
+  "observed_favourites_delivery_and_old_icons_cleared_verified": true,
+  "log_review": {
+    "error_or_fatal_count": 0,
+    "scope": "Full final-run log; raw log not exported because request URLs can contain credentials."
+  },
+  "visual_review": {
+    "screenshot": "tmdb_current_video_receiver.png",
+    "sha256": "f2fb5ae0feb31c1e6d49bafb28f4010482f738bc89e7bcf77c69a693e53e4ebd",
+    "result": "Actual HorizonzV media view inspected: movie title/poster and eight provider icons rendered."
+  }
+}

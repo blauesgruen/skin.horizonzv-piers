@@ -1,0 +1,55 @@
+{
+  "checked_on": "2026-11-10",
+  "scope": "Unmodified TMDb Helper 6.21.5: native receiver and Favourites polling checks.\n\nRuns only in the explicitly owned isolated profile. Uses a public movie-details\ndirectory, no playback, account login or external addon correction.\n",
+  "passed": false,
+  "test_root": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-clean-941d3ebe96ea",
+  "cases": [],
+  "details_url": "plugin://plugin.video.themoviedb.helper/?info=details&tmdb_type=movie&tmdb_id=603",
+  "skin_files": {
+    "Startup.xml": "e449b33a1af60bc1d4d4b88af9bee10fd17140af876163974cd9a19bcf4cad26",
+    "MyVideoNav.xml": "40610586300c4d38b1aa19c30cce12c4a53df9078f1cf40bb54e7c8ea51fbddc",
+    "MyFavourites.xml": "7d8192b05cc15addc7badc6859712c332a9bfc3f650a999d2133125f3924ad6a",
+    "Includes.xml": "989b9efa0cad027292edccf7592304103c221c3fe726108da23e3077e35e291c"
+  },
+  "pid": 14732,
+  "provider": {
+    "addonid": "plugin.video.themoviedb.helper",
+    "enabled": true,
+    "type": "xbmc.python.pluginsource",
+    "version": "6.21.5"
+  },
+  "failure": "RuntimeError('Native probe condition timed out')",
+  "trace": "Traceback (most recent call last):\n  File \"D:\\Program Files\\Kodi22\\portable_data\\addons\\skin.horizonzv-piers\\results\\kodi22_runtime\\run_tmdb_current_native_probe.py\", line 99, in main\n    session.wait(lambda: boolean('Skin.HasSetting(TMDbHelper.Service)'))\n    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Program Files\\Kodi22\\portable_data\\addons\\skin.horizonzv-piers\\results\\kodi22_runtime\\visible_standard_kodi.py\", line 65, in wait\n    raise RuntimeError('Native probe condition timed out')\nRuntimeError: Native probe condition timed out\n",
+  "failure_context": {
+    "ListItem.DBType": "",
+    "ListItem.Label": "Movies",
+    "ListItem.UniqueID(tmdb)": "",
+    "System.CurrentWindow": "Home"
+  },
+  "receiver_at_failure": {
+    "Container(99950).ListItem.Property(Provider.1.Icon)": "",
+    "Container(99950).ListItem.Property(Provider.2.Icon)": "",
+    "Container(99950).ListItem.Property(Provider.3.Icon)": "",
+    "Container(99950).ListItem.Property(Provider.4.Icon)": "",
+    "Container(99950).ListItem.Property(Provider.5.Icon)": "",
+    "Container(99950).ListItem.Property(Provider.6.Icon)": "",
+    "Container(99950).ListItem.Property(Provider.7.Icon)": "",
+    "Container(99950).ListItem.Property(Provider.8.Icon)": "",
+    "Container(99950).ListItem.Property(base_label)": "",
+    "Container(99950).ListItem.Property(tmdb_id)": "",
+    "Container(99950).ListItem.Title": "",
+    "Window(Home).Property(TMDbHelper.monitor.tmdb_id)": ""
+  },
+  "cleanup": {
+    "owned_process_exited": true,
+    "settings_restored": true,
+    "favourites_restored": true,
+    "addon_source_files_unchanged": true
+  },
+  "limits": [
+    "No playback, Disney+ or account-authenticated provider test.",
+    "Favourites SDK inspection uses original Poller with actual Kodi API; no addon monkeypatch.",
+    "Non-empty online icons are reported separately; passing receiver/poller checks alone does not prove them."
+  ],
+  "attempt_classification": "Test setup: restored seed registry disabled the skin, so Kodi fell back to Estuary while the configured setting still named HorizonzV. Not a confirmed skin initialization failure."
+}
