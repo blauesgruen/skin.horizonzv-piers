@@ -1,0 +1,62 @@
+{
+  "checked_on": "2026-11-05",
+  "scope": "Direct GTO skin-dialog filename resolution and preserved full dialog contract in canonical and checkout installation folders.",
+  "source_checkpoint": "c937f88",
+  "finding": "GTO derives INFO_XML from the physical special://skin directory name. In this checkout it requested a file the skin did not provide; native WindowXMLDialog raised XML File for Window is missing.",
+  "baseline": "../kodi22_runtime/gto_info_missing_before.json",
+  "fix": "Keep canonical entry; add checkout-name entry. Both include the same GTOInfoDialog definition in Includes_Dash_GTO.xml. No duplicate dialog body, renamed addon ID or provider change.",
+  "files": [
+    "xml/Home.xml",
+    "xml/Includes_Dash_GTO.xml",
+    "xml/skin.horizonzv.script-gto-info.xml",
+    "xml/skin.horizonzv-piers.script-gto-info.xml"
+  ],
+  "expanded_dialog_equal_base": true,
+  "existing_dashboard_definitions_equal_base": true,
+  "entry_files_byte_identical": true,
+  "sources": [
+    {
+      "url": "https://github.com/b-jesch/script.service.gto/blob/Matrix/resources/lib/modules/tools.py",
+      "finding": "INFO_XML uses special://skin physical basename, not addon manifest ID; property helpers use GTO.Info.*."
+    },
+    {
+      "url": "https://github.com/b-jesch/script.service.gto/blob/Matrix/main.py",
+      "finding": "show_info publishes channel/title/cast and current/future/timer properties, then opens WindowXMLDialog(INFO_XML, ADDON_PATH)."
+    }
+  ],
+  "local_provider_reference": {
+    "file": "../script.service.gto/resources/lib/modules/tools.py",
+    "sha256": "9ad7e1accc57c5550946d0f172947a5843da4d3189ec0e463759b915eb5b67f9"
+  },
+  "native_checkout_evidence": "../kodi22_runtime/gto_info_dialog_checks.json",
+  "native_canonical_evidence": "../kodi22_runtime/gto_info_canonical_checks.json",
+  "native_scope": "Same WindowXMLDialog construction and filename rule as provider. Controlled properties follow provider contract. Original provider registered disabled only for translations; no router, scraper or backend execution.",
+  "limits": [
+    "No real channel switch, recording, timer creation or PVR backend action executed.",
+    "No claim of full provider show_info/router execution: properties are authored inputs for the actual skin dialog.",
+    "Other arbitrary installation directory names are not supported by the two supplied entry filenames.",
+    "Picture/logo URLs and long metadata variants were not tested."
+  ],
+  "native_states_each_folder": 5,
+  "native_errors_each_folder": 0,
+  "package_review": "gto_dialog_package_review.json",
+  "provider_disabled_for_ui_test": true,
+  "home_only_adds_alias_to_backdrop_condition": true,
+  "revalidated_on": "2026-11-10",
+  "ui_tests_date": "2026-11-05",
+  "native_install_status": "See package review: 1.22.1.1 startup recheck did not reach installation. Current runtime XML is semantically equal to the previously tested package; preexisting manifest version and indentation differ.",
+  "bounded_static_checks": {
+    "actions": {
+      "findings": 0
+    },
+    "windows": {
+      "findings": 0
+    },
+    "info": {
+      "arity_candidates": 0,
+      "condition_atom_candidates": 0,
+      "unrecognized_info_roots": 0
+    }
+  },
+  "standard_provider_files_unchanged_on_revalidation": true
+}

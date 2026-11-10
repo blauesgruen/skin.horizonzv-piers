@@ -423,12 +423,14 @@
     "packaged_folder": "skin.horizonzv",
     "matching_skin_file": "xml/skin.horizonzv.script-gto-info.xml",
     "checkout_folder": "skin.horizonzv-piers",
-    "limit": "An installation directly from this differently named checkout folder requests skin.horizonzv-piers.script-gto-info.xml, which this skin does not supply. Canonical addon-ID folder matches. Not a removed Kodi API."
+    "limit": "Canonical and checkout entries now share the same dialog definition. Both physical folder names passed five native controlled-property cases; arbitrary other directory names remain unsupported by these two filenames.",
+    "checkout_matching_skin_file": "xml/skin.horizonzv-piers.script-gto-info.xml"
   },
   "limits": [
     "Static source contract review; no device command or PVR action executed.",
     "Hardware results, data refresh and native dialog rendering remain unverified.",
     "Only the three reviewed installed files were compared with upstream; no full-addon equality claim.",
     "No external addon code changed."
-  ]
+  ],
+  "gto_dialog_followup": "gto_info_dialog_review.json"
 }

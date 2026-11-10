@@ -31,6 +31,8 @@ def main():
     with zipfile.ZipFile(archive) as z:
         expected = {n.split("/", 1)[1]: z.read(n) for n in z.namelist() if not n.endswith("/")}
     assert len(expected) == review["file_count"]
+    expected_version = ET.fromstring(expected["addon.xml"]).get("version")
+    assert expected_version
     assert all((repo / name).read_bytes() == data for name, data in expected.items())
 
     def no_kodi():
@@ -168,7 +170,7 @@ def main():
         wait(lambda: (skin / "addon.xml").exists(), True, seconds=45)
         wait(lambda: boolean("System.HasAddon(skin.horizonzv)"), True, seconds=45)
         details = rpc("Addons.GetAddonDetails", {"addonid": "skin.horizonzv", "properties": ["version", "enabled"]})["addon"]
-        assert details["version"] == "1.22.0.1", details
+        assert details["version"] == expected_version, details
         stage["addon_details"] = details
         # CSkinInfo::OnPostInstall asks whether to use a newly installed skin.
         # Registration precedes this modal dialog: do not race it with Application.Quit.

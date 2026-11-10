@@ -1,7 +1,7 @@
 {
-  "checked_on": "2026-11-05",
-  "scope": "Original skin-only compatibility objective, explicitly including direct addon dialogs/widgets/controls and input/output properties. Latest change: skin-owned BG ColorPicker override with seven native cases and package install/restart; not overall completion.",
-  "source_checkpoint": "5f5fd62",
+  "checked_on": "2026-11-10",
+  "scope": "Original skin-only compatibility objective including direct addon dialogs/widgets/properties. GTO filename integration closed with ten controlled-property native cases from November 5, correlated with unchanged current UI elements, leaf text and attributes; current 1.22.1.1 package installation recheck did not start. Overall completion remains unproven.",
+  "source_checkpoint": "da69622",
   "branch": "refactor/kodi22-kompatibilitaet",
   "acceptance_document_local_links_checked": 82,
   "missing_acceptance_document_targets": [],
@@ -30,7 +30,7 @@
     },
     {
       "requirement": "Check used addon skin contracts",
-      "assessment": "Named provider contracts and direct script entry types have source evidence and targeted native runs. Selected lyrics and eleven selected RunAddon links now guard unavailable providers. 28 additional native link cases pass; further backend/provider contexts remain separately bounded. Direct addon support now has a dedicated inventory; BG ColorPicker 1.0.1 is served by a compatible skin-owned dialog instead of its legacy fallback. Seven native cases pass with no ERROR lines and unchanged provider hashes.",
+      "assessment": "Named provider contracts and direct script entry types have source evidence and targeted native runs. Selected lyrics and eleven selected RunAddon links now guard unavailable providers. 28 additional native link cases pass; further backend/provider contexts remain separately bounded. Direct addon support now has a dedicated inventory; BG ColorPicker 1.0.1 is served by a compatible skin-owned dialog instead of its legacy fallback. Seven native cases pass with no ERROR lines and unchanged provider hashes. GTO now supports canonical and checkout filenames through one shared dialog body; ten native states and both Home backdrop predicates pass. Provider/router/backend execution is not claimed.",
       "evidence": [
         "kodi22_compatibility_audit.md",
         "kodi22_inventory/artistslideshow_contract_review.json",
@@ -51,12 +51,15 @@
         "kodi22_inventory/bg_colorpicker_skin_review.json",
         "kodi22_runtime/bg_colorpicker_skin_checks.json",
         "kodi22_inventory/bg_picker_package_review.json",
-        "kodi22_runtime/bg_picker_install_checks.json"
+        "kodi22_runtime/bg_picker_install_checks.json",
+        "kodi22_inventory/gto_info_dialog_review.json",
+        "kodi22_runtime/gto_info_dialog_checks.json",
+        "kodi22_runtime/gto_info_canonical_checks.json"
       ]
     },
     {
       "requirement": "Implement affected skin changes only",
-      "assessment": "Latest production change adds the BG ColorPicker skin dialog and a heading variable; provider source and skin invocation remain unchanged. Both standard and test provider files match recorded hashes. Package differs only in the new dialog and Variables.xml.",
+      "assessment": "Latest production change only adds a checkout-name GTO dialog entry, shares the unchanged dialog body and includes the alias in the Home backdrop predicate. Full expansion reproduces the old dialog; existing dashboard definitions match the base. Provider files unchanged; preexisting addon manifest version 1.22.1.1 preserved.",
       "evidence": [
         "AENDERUNGSUEBERSICHT.md",
         "kodi22_inventory/switchtimer_property_contract_review.json",
@@ -125,12 +128,16 @@
     "xml\\DialogAddonInfo.xml": "810c4085fd6498c6ea5bd5ed78d4e794cc4b7df667c32875bea716d08a8af6e9",
     "xml\\DialogButtonMenu.xml": "59416a6e5f5830687dd46954869ef5717e188e79c0ef80080e4ffcdd26c90b70",
     "xml\\Includes_Dash_Addonpath_Fav.xml": "fe11e862ad464a6cb1686364eb0ea1525a2bd05667c1e0529d010c22030f8bc4",
-    "xml\\Includes_Dash_GTO.xml": "73ad9f4b1538d4fa2e0720bfeb3ac3fa9f6d560075ba0e2b8fdc62a2737e163b",
+    "xml\\Includes_Dash_GTO.xml": "6d661427553b15a047ff5d5ed8abd41b03a32932b6e1b2d50bdd35283343dddb",
     "xml\\Includes_Dash_Layout.xml": "0e53c64ff955af58b1f388777a4e3ef77cd24f10f0e4469e9aef32503b38688f",
     "xml\\Includes_Widget_Param.xml": "a5ee3d912ca0f29292800b7f0d3289e0a3655832ad581889ff13a9c0789fe1a4",
     "xml\\Variables_Widgets.xml": "da30dc0eccd76658d43b27ac1801be6a5b556ac2deeb05afe40a4b9526ceb7b6",
     "xml\\Variables.xml": "e223d53d9def025b3916991ceafd1de4bcdef2e43b3ed22b04b245f597ea896c",
-    "xml\\script-skin_helper_service-ColorPicker.xml": "61310a08f2dabbb0b1d7943068969e8adb95a38f5cf67633a5ae13adbd45c9a8"
+    "xml\\script-skin_helper_service-ColorPicker.xml": "61310a08f2dabbb0b1d7943068969e8adb95a38f5cf67633a5ae13adbd45c9a8",
+    "xml\\Home.xml": "8c56509fd40c7aa13656d69c9cd2d9318e6e2f30a725239e927b060c63f67ed7",
+    "xml\\skin.horizonzv.script-gto-info.xml": "c3de5f8dcc0295cc62fe916bef98e5a76235cb9bb14095060c0fee99a67ccf20",
+    "xml\\skin.horizonzv-piers.script-gto-info.xml": "c3de5f8dcc0295cc62fe916bef98e5a76235cb9bb14095060c0fee99a67ccf20"
   },
-  "latest_source_checkpoint": "5f5fd62"
+  "latest_source_checkpoint": "da69622",
+  "current_package_native_install_limit": "gto_dialog_install_start_failure.json: test process exited before RPC/startup log; no fresh install pass for 1.22.1.1."
 }

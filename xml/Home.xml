@@ -484,7 +484,7 @@
 		</include>
         <include condition="Skin.HasSetting(FavDashboard)">HomemenuFavInclude</include>
 		<control type="group">
-			<visible>Window.IsVisible(1500)|Window.IsVisible(1501)|Window.IsVisible(1151)|Window.IsVisible(1800)|Window.IsVisible(skin.horizonzv.script-gto-info.xml)</visible>
+			<visible>Window.IsVisible(1500)|Window.IsVisible(1501)|Window.IsVisible(1151)|Window.IsVisible(1800)|Window.IsVisible(skin.horizonzv.script-gto-info.xml)|Window.IsVisible(skin.horizonzv-piers.script-gto-info.xml)</visible>
 			<include>openclosevisible</include>
 			<include>BlackBack</include>
 		</control>
