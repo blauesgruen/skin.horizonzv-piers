@@ -2,9 +2,6 @@
 <smartplaylist type="movies">
     <name>Videos (recent) [COLOR=FFFF0000]!! DO NOT CHANGE !![/COLOR]</name>
     <match>all</match>
-    <rule field="playlist" operator="is">
-        <value>library://video/recentlyaddedmovies.xml</value>
-    </rule>
     <rule field="playcount" operator="lessthan">
         <value>1</value>
     </rule>

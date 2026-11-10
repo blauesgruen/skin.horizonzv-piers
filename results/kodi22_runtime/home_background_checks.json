@@ -1,0 +1,194 @@
+[
+  {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container(9000).ListItem.Label2": "special://skin/backgrounds/gambit/home_tvshows.png",
+      "Container(9000).ListItem.Property(homemenu_id)": "tvshow"
+    }
+  },
+  {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container(9000).ListItem.Label2": "special://skin/backgrounds/gambit/home_musicvideos.png",
+      "Container(9000).ListItem.Property(homemenu_id)": "musicvideo"
+    }
+  },
+  {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container(9000).ListItem.Label2": "special://skin/backgrounds/gambit/home_pictures.png",
+      "Container(9000).ListItem.Property(homemenu_id)": "picture"
+    }
+  },
+  {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container(9000).ListItem.Label2": "special://skin/backgrounds/gambit/home_weather.png",
+      "Container(9000).ListItem.Property(homemenu_id)": "weather"
+    }
+  },
+  {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container(9000).ListItem.Label2": "special://skin/backgrounds/gambit/home_custom3.png",
+      "Container(9000).ListItem.Property(homemenu_id)": "custom3"
+    }
+  },
+  {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container(9000).ListItem.Label2": "special://skin/backgrounds/gambit/home_custom4.png",
+      "Container(9000).ListItem.Property(homemenu_id)": "custom4"
+    }
+  },
+  {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container(9000).ListItem.Label2": "special://skin/backgrounds/gambit/home_custom5.png",
+      "Container(9000).ListItem.Property(homemenu_id)": "custom5"
+    }
+  },
+  {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container(9000).ListItem.Label2": "special://skin/backgrounds/gambit/home_custom6.png",
+      "Container(9000).ListItem.Property(homemenu_id)": "custom6"
+    }
+  },
+  {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container(9000).ListItem.Label2": "special://skin/backgrounds/gambit/home_custom7.png",
+      "Container(9000).ListItem.Property(homemenu_id)": "custom7"
+    }
+  },
+  {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container(9000).ListItem.Label2": "special://skin/backgrounds/gambit/home_custom8.png",
+      "Container(9000).ListItem.Property(homemenu_id)": "custom8"
+    }
+  },
+  {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container(9000).ListItem.Label2": "special://skin/backgrounds/gambit/home_custom9.png",
+      "Container(9000).ListItem.Property(homemenu_id)": "custom9"
+    }
+  },
+  {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container(9000).ListItem.Label2": "special://skin/backgrounds/gambit/home_settings.png",
+      "Container(9000).ListItem.Property(homemenu_id)": "setting"
+    }
+  },
+  {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container(9000).ListItem.Label2": "special://skin/backgrounds/gambit/home_music.png",
+      "Container(9000).ListItem.Property(homemenu_id)": "music"
+    }
+  },
+  {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container(9000).ListItem.Label2": "special://skin/backgrounds/gambit/home_video.png",
+      "Container(9000).ListItem.Property(homemenu_id)": "videos"
+    }
+  },
+  {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container(9000).ListItem.Label2": "special://skin/backgrounds/gambit/home_movie.png",
+      "Container(9000).ListItem.Property(homemenu_id)": "movies"
+    }
+  },
+  {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container(9000).ListItem.Label2": "special://skin/backgrounds/gambit/home_addons.png",
+      "Container(9000).ListItem.Property(homemenu_id)": "dashboard"
+    }
+  },
+  {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container(9000).ListItem.Label2": "special://skin/backgrounds/gambit/home_tvshows.png",
+      "Container(9000).ListItem.Property(homemenu_id)": "tvshow"
+    }
+  },
+  {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container(9000).ListItem.Label2": "special://skin/backgrounds/gambit/home_musicvideos.png",
+      "Container(9000).ListItem.Property(homemenu_id)": "musicvideo"
+    }
+  },
+  {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container(9000).ListItem.Label2": "special://skin/backgrounds/gambit/home_pictures.png",
+      "Container(9000).ListItem.Property(homemenu_id)": "picture"
+    }
+  },
+  {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container(9000).ListItem.Label2": "special://skin/backgrounds/gambit/home_weather.png",
+      "Container(9000).ListItem.Property(homemenu_id)": "weather"
+    }
+  },
+  {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container(9000).ListItem.Label2": "special://skin/backgrounds/gambit/home_custom3.png",
+      "Container(9000).ListItem.Property(homemenu_id)": "custom3"
+    }
+  },
+  {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container(9000).ListItem.Label2": "special://skin/backgrounds/gambit/home_custom4.png",
+      "Container(9000).ListItem.Property(homemenu_id)": "custom4"
+    }
+  },
+  {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container(9000).ListItem.Label2": "special://skin/backgrounds/gambit/home_custom5.png",
+      "Container(9000).ListItem.Property(homemenu_id)": "custom5"
+    }
+  },
+  {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container(9000).ListItem.Label2": "special://skin/backgrounds/gambit/home_custom6.png",
+      "Container(9000).ListItem.Property(homemenu_id)": "custom6"
+    }
+  }
+]

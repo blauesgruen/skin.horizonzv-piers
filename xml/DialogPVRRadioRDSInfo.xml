@@ -23,7 +23,7 @@
                 <control type="group">
                     <description>Normal song info group</description>
                     <top>105</top>
-                    <visible>String.IsEmpty(RDS.IsClassical)</visible>
+                    <visible>String.IsEmpty(RDS.Composer)+String.IsEmpty(RDS.Conductor)</visible>
                     <control type="label">
                         <description>Artist Title</description>
                         <left>15</left>
@@ -43,7 +43,7 @@
                         <align>left</align>
                         <aligny>center</aligny>
                         <textcolor>white</textcolor>
-                        <label fallback="161">$INFO[RDS.Artist]</label>
+                        <label fallback="13205">$INFO[RDS.Artist]</label>
                         <scrollout>false</scrollout>
                         <pauseatend>2000</pauseatend>
                         <visible>String.IsEmpty(RDS.Band)</visible>
@@ -114,7 +114,7 @@
                         <align>left</align>
                         <aligny>center</aligny>
                         <textcolor>white</textcolor>
-                        <label fallback="161">$INFO[RDS.Title]</label>
+                        <label fallback="13205">$INFO[RDS.Title]</label>
                         <scrollout>false</scrollout>
                         <pauseatend>2000</pauseatend>
                     </control>
@@ -146,7 +146,7 @@
                 <control type="group">
                     <description>Classic concert music group</description>
                     <top>105</top>
-                    <visible>!String.IsEmpty(RDS.IsClassical)</visible>
+                    <visible>!String.IsEmpty(RDS.Composer)|!String.IsEmpty(RDS.Conductor)</visible>
                     <control type="label">
                         <description>Composer Title</description>
                         <left>15</left>
@@ -165,7 +165,7 @@
                         <align>left</align>
                         <aligny>center</aligny>
                         <textcolor>white</textcolor>
-                        <label fallback="161">$INFO[RDS.Composer]</label>
+                        <label fallback="13205">$INFO[RDS.Composer]</label>
                         <scrollout>false</scrollout>
                         <pauseatend>2000</pauseatend>
                     </control>
@@ -189,7 +189,7 @@
                         <align>left</align>
                         <aligny>center</aligny>
                         <textcolor>white</textcolor>
-                        <label fallback="161">$INFO[RDS.Title]</label>
+                        <label fallback="13205">$INFO[RDS.Title]</label>
                         <scrollout>false</scrollout>
                         <pauseatend>2000</pauseatend>
                     </control>
@@ -214,7 +214,7 @@
                         <textcolor>white</textcolor>
                         <align>left</align>
                         <pagecontrol/>
-                        <label fallback="161">$INFO[RDS.Artist]</label>
+                        <label fallback="13205">$INFO[RDS.Artist]</label>
                         <autoscroll time="2000" delay="3000" repeat="5000">true</autoscroll>
                         <visible>String.IsEmpty(RDS.Band)+!String.IsEmpty(RDS.Artist)</visible>
                     </control>
@@ -290,7 +290,7 @@
                         <align>left</align>
                         <aligny>center</aligny>
                         <textcolor>white</textcolor>
-                        <label fallback="161">$INFO[RDS.Conductor]</label>
+                        <label fallback="13205">$INFO[RDS.Conductor]</label>
                         <scrollout>false</scrollout>
                         <pauseatend>2000</pauseatend>
                         <visible>!String.IsEmpty(RDS.Conductor)</visible>

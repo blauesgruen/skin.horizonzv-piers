@@ -1,0 +1,31 @@
+{
+  "scope": "Native movie/album/song information with production Close order and query variables. Only ExtendedInfo dispatch redirected to SetProperty and provider guard bypassed in test copy.",
+  "changes": [
+    {
+      "file": "DialogMusicInfo.xml",
+      "param": "onclick2",
+      "before": "RunScript(script.extendedinfo,info=youtubebrowser,id=$ESCVAR[ExtendedInfoYoutubeAlbumQuery])",
+      "after": "SetProperty(HorizonAudit.ContextResult,id=$ESCVAR[ExtendedInfoYoutubeAlbumQuery],home)"
+    },
+    {
+      "file": "DialogMusicInfo.xml",
+      "param": "onclick3",
+      "before": "RunScript(script.extendedinfo,info=youtubebrowser,id=$ESCVAR[ExtendedInfoYoutubeSongQuery])",
+      "after": "SetProperty(HorizonAudit.ContextResult,id=$ESCVAR[ExtendedInfoYoutubeSongQuery],home)"
+    },
+    {
+      "file": "DialogVideoInfo.xml",
+      "param": "onclick2",
+      "before": "RunScript(script.extendedinfo,info=youtubebrowser,id=$ESCVAR[ExtendedInfoYoutubeVideoQuery])",
+      "after": "SetProperty(HorizonAudit.ContextResult,id=$ESCVAR[ExtendedInfoYoutubeVideoQuery],home)"
+    }
+  ],
+  "music_test_data": {
+    "song_title": "Audit Song, \"Quoted\"",
+    "album_title": "Audit Album, \"Quoted\"",
+    "artist_title": "Audit Artist, \"Quoted\""
+  },
+  "music_db_baseline_files": [
+    "MyMusic84.db"
+  ]
+}

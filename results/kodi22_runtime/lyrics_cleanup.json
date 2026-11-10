@@ -1,0 +1,12 @@
+{
+  "process_31708_exited": true,
+  "fixture_removed": true,
+  "all_xml_match_production": true,
+  "xml_count": 164,
+  "baseline_guisettings_bytes_restored": true,
+  "baseline_skin_settings_bytes_restored": true,
+  "normal_exit_message": true,
+  "case_insensitive_error_lines": 2,
+  "expected_baseline_empty_runscript_errors": 2,
+  "runtime_limit": "WAV/AU playback preparation did not start an audio player. Native action comparison used standalone copied controls; no real provider playback claim. No addon installed or source changed."
+}

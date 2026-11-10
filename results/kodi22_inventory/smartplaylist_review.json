@@ -1,0 +1,291 @@
+{
+  "date": "2026-11-04",
+  "scope": "All 11 shipped playlists/*.xsp, their used fields/orders/groups, and two invalid nested playlist references. Kodi 22 native runtime; bounded published master source comparison.",
+  "sources": {
+    "piers": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/playlists/SmartPlayList.cpp",
+    "piers_directory": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/filesystem/SmartPlaylistDirectory.cpp",
+    "master": "https://github.com/xbmc/xbmc/blob/master/xbmc/playlists/SmartPlayList.cpp",
+    "master_directory": "https://github.com/xbmc/xbmc/blob/master/xbmc/filesystem/SmartPlaylistDirectory.cpp",
+    "master_content": "https://github.com/xbmc/xbmc/blob/master/xbmc/utils/ContentNames.h"
+  },
+  "findings": [
+    {
+      "files": [
+        "playlists/Videos_recently.xsp",
+        "playlists/TVShows_recent_tvshows.xsp"
+      ],
+      "classification": "Invalid skin reference, not a removed Kodi API",
+      "old_rule": {
+        "field": "playlist",
+        "operator": "is",
+        "values": [
+          "library://video/recentlyaddedmovies.xml",
+          "library://video/recentlyaddedepisodes.xml"
+        ]
+      },
+      "cause": "GetPlaylistByName searches user .xsp names and filenames, not library-node URLs. The skin supplies no matching playlist. In AND combinations an unresolved playlist contributes SQL '1'. A manually named user playlist could exceptionally match the literal string.",
+      "change": "Remove only the two invalid nested rules; retain type, match, playcount filter, limit and ordering.",
+      "consequence": "Existing normal unmatched-reference results preserved. No library-node recently-added limit had been applied by these rules."
+    }
+  ],
+  "published_master_comparison": {
+    "method": "Compare complete function bodies after substituting CONTENT constants with their verified unchanged string literals and ignoring whitespace.",
+    "functions": [
+      {
+        "function": "CSmartPlaylistRule::GetFields(",
+        "identical_after_whitespace_and_content_constant_substitution": true
+      },
+      {
+        "function": "CSmartPlaylistRule::GetOrders(",
+        "identical_after_whitespace_and_content_constant_substitution": true
+      },
+      {
+        "function": "CSmartPlaylistRule::GetGroups(",
+        "identical_after_whitespace_and_content_constant_substitution": true
+      },
+      {
+        "function": "CSmartPlaylistRuleCombination::GetWhereClause(",
+        "identical_after_whitespace_and_content_constant_substitution": true
+      }
+    ],
+    "limit": "Only four named functions compared; no full future release runtime guarantee."
+  },
+  "grouping": {
+    "files": [
+      "Music_Albums_recently.xsp",
+      "Music_Albums_recently_place.xsp"
+    ],
+    "finding": "songs with group albums is supported by the directory execution branch and returns album items in native tests; do not infer execution support solely from GetGroups editor offerings."
+  },
+  "runtime": {
+    "artifact": "../kodi22_runtime/smartplaylist_checks.json",
+    "comparisons": 6,
+    "all_playlists": 11,
+    "passed": true,
+    "screenshot": "../kodi22_runtime/smartplaylist_recent_movie.png",
+    "log_errors": 0,
+    "restored_database_file_set_and_bytes_reverified": true,
+    "item_counts": {
+      "Episodes_inprogress.xsp": 0,
+      "Music_Albums_random.xsp": 2,
+      "Music_Albums_recently.xsp": 1,
+      "Music_Albums_recently_place1.xsp": 1,
+      "Music_Albums_recommended.xsp": 2,
+      "Music_Songs_random.xsp": 2,
+      "TVShows_inprogress.xsp": 0,
+      "TVShows_random_episodes.xsp": 2,
+      "TVShows_recent_tvshows.xsp": 1,
+      "Videos_inprogress.xsp": 0,
+      "Videos_recently.xsp": 1
+    }
+  },
+  "limits": [
+    "Inprogress playlists were queried with no resume bookmarks; positive resume filtering not exercised.",
+    "Limit 10 boundary and randomness distribution not exercised.",
+    "Native runtime test uses Kodi 22 only; master review is source evidence.",
+    "Previous ZIP review precedes the two XSP edits and does not verify those new bytes."
+  ],
+  "draft_reports": "smartplaylist_*_draft.json record test harness/fixture corrections, not additional skin defects.",
+  "playlists": [
+    {
+      "file": "playlists/Episodes_inprogress.xsp",
+      "sha256": "d642a93c3b184e9a089ffe2ba8a3f47c4f45612bffb042793a835f3f00006ae7",
+      "type": "episodes",
+      "match": "all",
+      "rules": [
+        {
+          "field": "inprogress",
+          "operator": "true",
+          "values": []
+        }
+      ],
+      "limit": "10",
+      "order": "lastplayed",
+      "direction": "descending",
+      "group": null
+    },
+    {
+      "file": "playlists/Music_Albums_random.xsp",
+      "sha256": "60a4081643c1f851dbc64c4c02a1c65c08c3beb57b7c76812cb319d06f8c6702",
+      "type": "albums",
+      "match": "all",
+      "rules": [],
+      "limit": "10",
+      "order": "random",
+      "direction": "ascending",
+      "group": null
+    },
+    {
+      "file": "playlists/Music_Albums_recently.xsp",
+      "sha256": "b85558e7d41e4c73e1ed1fba230e802bb25dbea0fcd5c932c670cb1176fcfd5b",
+      "type": "songs",
+      "match": "all",
+      "rules": [
+        {
+          "field": "playcount",
+          "operator": "greaterthan",
+          "values": [
+            "0"
+          ]
+        }
+      ],
+      "limit": "10",
+      "order": "lastplayed",
+      "direction": "descending",
+      "group": "albums"
+    },
+    {
+      "file": "playlists/Music_Albums_recently_place1.xsp",
+      "sha256": "2d6ea4e019a278e4fb01383d58530ccfa08d08533fe1cb50175af9d80975219e",
+      "type": "songs",
+      "match": "all",
+      "rules": [
+        {
+          "field": "playcount",
+          "operator": "greaterthan",
+          "values": [
+            "0"
+          ]
+        }
+      ],
+      "limit": "1",
+      "order": "lastplayed",
+      "direction": "descending",
+      "group": "albums"
+    },
+    {
+      "file": "playlists/Music_Albums_recommended.xsp",
+      "sha256": "934525fb8db440c4e1745fddf680fb518c2b6bd91ee55e226a53740eb15f778b",
+      "type": "albums",
+      "match": "all",
+      "rules": [
+        {
+          "field": "userrating",
+          "operator": "greaterthan",
+          "values": [
+            "7"
+          ]
+        },
+        {
+          "field": "playcount",
+          "operator": "lessthan",
+          "values": [
+            "5"
+          ]
+        }
+      ],
+      "limit": "10",
+      "order": "random",
+      "direction": "ascending",
+      "group": null
+    },
+    {
+      "file": "playlists/Music_Songs_random.xsp",
+      "sha256": "b009642706aa6b7a42758fa3748b349dd3c438a314ada53188fb8c210976d8b1",
+      "type": "songs",
+      "match": "all",
+      "rules": [],
+      "limit": "10",
+      "order": "random",
+      "direction": "ascending",
+      "group": null
+    },
+    {
+      "file": "playlists/TVShows_inprogress.xsp",
+      "sha256": "d49f394ae5842c506730e95f8e3a0bc64d30b05f728a4d8ff3f8054c83cc99ac",
+      "type": "tvshows",
+      "match": "all",
+      "rules": [
+        {
+          "field": "inprogress",
+          "operator": "true",
+          "values": []
+        }
+      ],
+      "limit": "10",
+      "order": "lastplayed",
+      "direction": "descending",
+      "group": null
+    },
+    {
+      "file": "playlists/TVShows_random_episodes.xsp",
+      "sha256": "2fe03b643d54f7df7e4fc0c08f1d85b2c1391223fe537910cef305f238039d46",
+      "type": "episodes",
+      "match": "all",
+      "rules": [],
+      "limit": "10",
+      "order": "random",
+      "direction": "descending",
+      "group": null
+    },
+    {
+      "file": "playlists/TVShows_recent_tvshows.xsp",
+      "sha256": "73ee83900014c377828b8f07d07e247e479cae28587f9e6eb58e6a5b8f635c8c",
+      "type": "tvshows",
+      "match": "all",
+      "rules": [
+        {
+          "field": "playcount",
+          "operator": "lessthan",
+          "values": [
+            "1"
+          ]
+        }
+      ],
+      "limit": "10",
+      "order": "dateadded",
+      "direction": "descending",
+      "group": null
+    },
+    {
+      "file": "playlists/Videos_inprogress.xsp",
+      "sha256": "c9ad9581d6ac736b2f79c3b25648893de491fbf94f4ecc603ea279d0d79844b3",
+      "type": "movies",
+      "match": "all",
+      "rules": [
+        {
+          "field": "inprogress",
+          "operator": "true",
+          "values": []
+        }
+      ],
+      "limit": "10",
+      "order": "lastplayed",
+      "direction": "descending",
+      "group": null
+    },
+    {
+      "file": "playlists/Videos_recently.xsp",
+      "sha256": "e3d08062a430abb0064adf14d2e65afad519ffcb758ddd167ef14e5783acdc72",
+      "type": "movies",
+      "match": "all",
+      "rules": [
+        {
+          "field": "playcount",
+          "operator": "lessthan",
+          "values": [
+            "1"
+          ]
+        }
+      ],
+      "limit": "10",
+      "order": "dateadded",
+      "direction": "descending",
+      "group": null
+    }
+  ],
+  "change_invariant": {
+    "Videos_recently.xsp": "Only nested playlist rule removed; all other elements and attributes unchanged.",
+    "TVShows_recent_tvshows.xsp": "Only nested playlist rule removed; all other elements and attributes unchanged."
+  },
+  "static_checks": {
+    "compatibility_findings": 0,
+    "action_findings": 0,
+    "window_findings": 0,
+    "info_name_candidates": 43,
+    "info_name_candidates_match_existing_manual_classification": true,
+    "arity_candidates": 0,
+    "condition_atom_candidates": 0,
+    "scope": "Four existing checkers inspect skin XML, not XSP. Smartplaylist evidence is separate source review, structural invariants and native runtime."
+  }
+}

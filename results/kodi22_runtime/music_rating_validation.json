@@ -1,0 +1,18 @@
+{
+  "eight_cases_passed": true,
+  "ratings": [
+    7,
+    0,
+    1,
+    10
+  ],
+  "views": [
+    "standard",
+    "vinyl"
+  ],
+  "metadata_method": "Actual playing ListItem music tag setUserRating, not substituted skin input labels. No music-library scan or edit.",
+  "scope": "Local WAV playback; does not test persisted library ratings, Internet streams or every intermediate value.",
+  "xml_files_matched_after_cleanup": 164,
+  "mismatches": [],
+  "fixture_removed": true
+}

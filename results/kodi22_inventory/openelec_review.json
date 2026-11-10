@@ -1,0 +1,20 @@
+{
+  "removed_skin_entry": "HomeSubMenuSystem/button80282",
+  "removed_addon_call": "RunAddon(service.openelec.settings)",
+  "source_review_date": "2026-11-01",
+  "provider_manifest_python_requirement": "2.1.0",
+  "entry_script_python2_syntax": "except Exception, e:",
+  "piers_python_api_version": "3.1.0",
+  "piers_python_backward_abi": "3.0.0",
+  "retained": [
+    "RunAddon(service.libreelec.settings)",
+    "RunAddon(service.coreelec.settings)",
+    "SubMenu_music_NoLibreelecButton persisted preference"
+  ],
+  "sources": [
+    "https://raw.githubusercontent.com/OpenELEC/service.openelec.settings/master/addon.xml",
+    "https://raw.githubusercontent.com/OpenELEC/service.openelec.settings/master/src/default.py",
+    "https://raw.githubusercontent.com/xbmc/xbmc/22.0rc1-Piers/addons/xbmc.python/addon.xml"
+  ],
+  "limits": "Official source reviewed, not all possible third-party forks. No external add-on modified. No platform settings opened in the Windows test profile."
+}

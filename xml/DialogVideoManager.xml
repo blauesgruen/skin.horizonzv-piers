@@ -20,7 +20,7 @@
 					<control type="image">
 						<top>40</top>
 						<width>400</width>
-						<texture>$VAR[PosterThumb]</texture>
+						<texture fallback="DefaultVideo.png">$VAR[VideoManagerArtwork]</texture>
 						<aspectratio aligny="top">keep</aspectratio>
 					</control>
 					<control type="label">
@@ -49,11 +49,21 @@
 								<description>version list</description>
 								<onup>50</onup>
 								<ondown>50</ondown>
-								<onleft>9001</onleft>
+								<onleft>101</onleft>
 								<onright>60</onright>
 								<pagecontrol>60</pagecontrol>
 								<scrolltime>200</scrolltime>
 								<include>DefaultMediaInfoListLayout</include>
+							</control>
+							<control type="textbox">
+								<left>20</left>
+								<right>20</right>
+								<top>20</top>
+								<bottom>20</bottom>
+								<font>font12</font>
+								<textcolor>description</textcolor>
+								<label>$LOCALIZE[31953]</label>
+								<visible>Window.IsVisible(managevideoextras)+!Integer.IsGreater(Container(50).NumItems,0)</visible>
 							</control>
 							<control type="scrollbar" id="60">
 								<left>100%</left>
@@ -70,54 +80,75 @@
 					<top>40</top>
 					<right>0</right>
 					<width>300</width>
-					<onleft condition="Integer.IsGreater(Container(50).NumItems,0)">100</onleft>
 					<itemgap>dialogbuttons_itemgap</itemgap>
 					<align>top</align>
 					<scrolltime tween="quadratic">200</scrolltime>
 					<include content="DefaultDialogButton">
 						<param name="id" value="21" />
+						<param name="onleft" value="50" />
 						<param name="width" value="100%" />
 						<param name="label" value="$LOCALIZE[208]" />
 					</include>
 					<include content="DefaultDialogButton">
 						<param name="id" value="22" />
+						<param name="onleft" value="50" />
 						<param name="width" value="100%" />
 						<param name="label" value="$LOCALIZE[40014]" />
 						<param name="visible">Window.IsVisible(managevideoversions)</param>
 					</include>
 					<include content="DefaultDialogButton">
 						<param name="id" value="23" />
+						<param name="onleft" value="50" />
 						<param name="width" value="100%" />
 						<param name="label" value="$LOCALIZE[40015]" />
-						<param name="visible">Window.IsVisible(managevideoextras)</param>
+						<param name="visible">Window.IsVisible(managevideoextras)+Integer.IsGreater(Container(50).NumItems,0)</param>
 					</include>
 					<include content="DefaultDialogButton">
 						<param name="id" value="27" />
+						<param name="onleft" value="50" />
 						<param name="width" value="100%" />
 						<param name="label" value="$LOCALIZE[13511]" />
 					</include>
 					<include content="DefaultDialogButton">
 						<param name="id" value="24" />
+						<param name="onleft" value="50" />
 						<param name="width" value="100%" />
 						<param name="label" value="$LOCALIZE[40004]" />
 						<param name="visible">Window.IsVisible(managevideoversions)</param>
 					</include>
 					<include content="DefaultDialogButton">
 						<param name="id" value="28" />
+						<param name="onleft" value="50" />
 						<param name="width" value="100%" />
 						<param name="label" value="$LOCALIZE[118]" />
 						<param name="visible">Window.IsVisible(managevideoextras)</param>
 					</include>
 					<include content="DefaultDialogButton">
 						<param name="id" value="26" />
+						<param name="onleft" value="50" />
 						<param name="width" value="100%" />
 						<param name="label" value="$LOCALIZE[15015]" />
 					</include>
 					<include content="DefaultDialogButton">
+						<param name="id" value="29" />
+						<param name="onleft" value="50" />
+						<param name="width" value="100%" />
+						<param name="label" value="$LOCALIZE[40046]" />
+						<param name="visible">Window.IsVisible(managevideoversions)</param>
+					</include>
+					<include content="DefaultDialogButton">
 						<param name="id" value="25" />
+						<param name="onleft" value="50" />
 						<param name="width" value="100%" />
 						<param name="label" value="$LOCALIZE[40023]" />
 						<param name="visible">Window.IsVisible(managevideoversions)</param>
+					</include>
+					<include content="DefaultDialogButton">
+						<param name="id" value="9900" />
+						<param name="width" value="100%" />
+						<param name="label" value="$LOCALIZE[15067]" />
+						<param name="onclick" value="Dialog.Close(managevideoextras)" />
+						<param name="visible">Window.IsVisible(managevideoextras)+!Integer.IsGreater(Container(50).NumItems,0)</param>
 					</include>
 				</control>
 			</control>
@@ -130,6 +161,7 @@
 					<align>center</align>
 					<!-- <textcolor>grey</textcolor> -->
 					<label>$VAR[SelectLabel]</label>
+					<visible>Integer.IsGreater(Container(50).NumItems,0)</visible>
 				</control>
 			</control>
 		</control>

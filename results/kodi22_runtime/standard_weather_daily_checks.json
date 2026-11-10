@@ -1,0 +1,32 @@
+{
+  "gui": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "currentcontrol": {
+        "label": "[forecast day label omitted]"
+      },
+      "currentwindow": {
+        "id": 10000,
+        "label": "Hauptmen\u00fc"
+      }
+    }
+  },
+  "state": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Control.HasFocus(51)": false,
+      "Control.IsVisible(51)": false,
+      "Weather.IsFetched": true
+    }
+  },
+  "day_count": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container(51).NumItems": ""
+    }
+  },
+  "status": "Not a passed focus/detail-view test: observed Home instead of expected Weather. Initial weather data/screenshot checks are separate."
+}

@@ -115,23 +115,6 @@
             </control>
         </control>
     </include>
-    <include name="SidePanelShortcutsBackground">
-        <control type="group">
-            <control type="image">
-                <description>SidePanel</description>
-                <width>106</width>
-                <colordiffuse>$VAR[BackgroundOverlayColorDialog]</colordiffuse>
-                <texture border="2">White.png</texture>
-            </control>
-            <control type="image">
-                <description>SidePanel</description>
-                <left>98</left>
-                <width>15</width>
-                <colordiffuse>menudiffuse</colordiffuse>
-                <texture>SideFade.png</texture>
-            </control>
-        </control>
-    </include>
     <include name="SidePanelProperty">
         <top>150</top>
         <width>SidePanelLeftWidth</width>
@@ -295,7 +278,7 @@
                             <description>PlayDVD</description>
                             <label>341</label>
                             <icon>DefaultVCD.png</icon>
-                            <onclick>PlayDVD()</onclick>
+                            <onclick>PlayDisc()</onclick>
                             <visible>System.HasMediaDVD</visible>
                         </item>
                         <item id="9">
@@ -316,7 +299,7 @@
                         </item>
                         <item id="12">
                             <label>33061</label>
-                            <onclick>ActivateWindow(shutdown)</onclick>
+                            <onclick>ActivateWindow(shutdownmenu)</onclick>
                             <icon>DefaultAddonScreensaver.png</icon>
                         </item>
                     </content>
@@ -375,7 +358,7 @@
                 <top>90</top>
                 <height>38</height>
                 <font>impacted18</font>
-                <label>301276</label>
+                <label>31252</label>
                 <visible>ControlGroup(9001).HasFocus()</visible>
             </control>
             <control type="group">

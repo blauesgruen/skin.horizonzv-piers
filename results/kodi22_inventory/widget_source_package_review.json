@@ -1,0 +1,14 @@
+{
+  "checked_on": "2026-11-05",
+  "archive": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-widget-source-package-c463b36c15f349a4a0a2917ed6b56e89\\skin.horizonzv-1.22.0.1.zip",
+  "sha256": "e2513a419e36f9f7a0f9d897b2b4d1d05271f408c5d93ba9c8dcf0ac5ef22721",
+  "file_count": 294,
+  "crc_ok": true,
+  "all_entries_equal_workspace": true,
+  "xml_xsp_parsed": 179,
+  "changed_from_previous_test_package": [
+    "xml/Includes_Widget_Param.xml",
+    "xml/Variables_Widgets.xml"
+  ],
+  "native_install_evidence": "../kodi22_runtime/widget_source_install_checks.json"
+}

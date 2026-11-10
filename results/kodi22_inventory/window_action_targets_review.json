@@ -1,0 +1,2935 @@
+{
+  "source_ref": "22.0rc1-Piers",
+  "scope": "Literal window-action first targets, content target names and literal branches of directly referenced target variables. Does not evaluate conditions, expand include parameters or prove nonempty branch selection, property-target validity or runtime registration. Known numeric constants/custom XML IDs do not prove runtime availability.",
+  "references": [
+    {
+      "file": "xml/Custom_1104_SettingsList.xml",
+      "action": "ActivateWindow(osdaudiosettings)",
+      "target": "osdaudiosettings",
+      "resolution": "Kodi named window",
+      "id": 10124
+    },
+    {
+      "file": "xml/Custom_1104_SettingsList.xml",
+      "action": "ActivateWindow(osdsubtitlesettings)",
+      "target": "osdsubtitlesettings",
+      "resolution": "Kodi named window",
+      "id": 10159
+    },
+    {
+      "file": "xml/Custom_1104_SettingsList.xml",
+      "action": "ActivateWindow(osdvideosettings)",
+      "target": "osdvideosettings",
+      "resolution": "Kodi named window",
+      "id": 10123
+    },
+    {
+      "file": "xml/Custom_1104_SettingsList.xml",
+      "action": "ActivateWindow(osdcmssettings)",
+      "target": "osdcmssettings",
+      "resolution": "Kodi named window",
+      "id": 10157
+    },
+    {
+      "file": "xml/Custom_1104_SettingsList.xml",
+      "action": "ActivateWindow(GameVideoFilter)",
+      "target": "GameVideoFilter",
+      "resolution": "Kodi named window",
+      "id": 10823
+    },
+    {
+      "file": "xml/Custom_1104_SettingsList.xml",
+      "action": "ActivateWindow(GameStretchMode)",
+      "target": "GameStretchMode",
+      "resolution": "Kodi named window",
+      "id": 10824
+    },
+    {
+      "file": "xml/Custom_1104_SettingsList.xml",
+      "action": "ActivateWindow(GameVideoRotation)",
+      "target": "GameVideoRotation",
+      "resolution": "Kodi named window",
+      "id": 10827
+    },
+    {
+      "file": "xml/Custom_1104_SettingsList.xml",
+      "action": "ActivateWindow(GameVolume)",
+      "target": "GameVolume",
+      "resolution": "Kodi named window",
+      "id": 10825
+    },
+    {
+      "file": "xml/Custom_1104_SettingsList.xml",
+      "action": "ActivateWindow(GameControllers)",
+      "target": "GameControllers",
+      "resolution": "Kodi named window",
+      "id": 10820
+    },
+    {
+      "file": "xml/Custom_1104_SettingsList.xml",
+      "action": "ActivateWindow(GamePorts)",
+      "target": "GamePorts",
+      "resolution": "Kodi named window",
+      "id": 10828
+    },
+    {
+      "file": "xml/Custom_1104_SettingsList.xml",
+      "action": "ActivateWindow(GameAdvancedSettings)",
+      "target": "GameAdvancedSettings",
+      "resolution": "Kodi named window",
+      "id": 10826
+    },
+    {
+      "file": "xml/Custom_1141_refesh_videodb.xml",
+      "action": "Dialog.Close(1141,true)",
+      "target": "1141",
+      "id": 11141,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/Custom_1141_refesh_videodb.xml",
+      "action": "Dialog.Close(1141,true)",
+      "target": "1141",
+      "id": 11141,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/Custom_1141_refesh_videodb.xml",
+      "action": "Dialog.Close(1141,true)",
+      "target": "1141",
+      "id": 11141,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/Custom_1142_refesh_musicdb.xml",
+      "action": "Dialog.Close(1142,true)",
+      "target": "1142",
+      "id": 11142,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/Custom_1142_refesh_musicdb.xml",
+      "action": "Dialog.Close(1142,true)",
+      "target": "1142",
+      "id": 11142,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/Custom_1142_refesh_musicdb.xml",
+      "action": "Dialog.Close(1142,true)",
+      "target": "1142",
+      "id": 11142,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/Custom_1500_WidgetSettings.xml",
+      "action": "Dialog.Close(all,true)",
+      "target": "all",
+      "resolution": "all dialogs"
+    },
+    {
+      "file": "xml/Custom_1500_WidgetSettings.xml",
+      "action": "ActivateWindow(servicesettings,weather)",
+      "target": "servicesettings",
+      "resolution": "Kodi named window",
+      "id": 10018
+    },
+    {
+      "file": "xml/Custom_1500_WidgetSettings.xml",
+      "action": "Dialog.Close(all,true)",
+      "target": "all",
+      "resolution": "all dialogs"
+    },
+    {
+      "file": "xml/Custom_1500_WidgetSettings.xml",
+      "action": "ActivateWindow(servicesettings,weather)",
+      "target": "servicesettings",
+      "resolution": "Kodi named window",
+      "id": 10018
+    },
+    {
+      "file": "xml/Custom_1700_Wetterwarnung.xml",
+      "action": "Dialog.Close(1700,true)",
+      "target": "1700",
+      "id": 11700,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/Custom_1700_Wetterwarnung.xml",
+      "action": "Dialog.Close(1700,true)",
+      "target": "1700",
+      "id": 11700,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/Custom_1700_Wetterwarnung.xml",
+      "action": "Dialog.Close(1700,true)",
+      "target": "1700",
+      "id": 11700,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/Custom_1700_Wetterwarnung.xml",
+      "action": "Dialog.Close(1700,true)",
+      "target": "1700",
+      "id": 11700,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/Custom_1700_Wetterwarnung.xml",
+      "action": "Dialog.Close(1700,true)",
+      "target": "1700",
+      "id": 11700,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/DialogButtonMenu.xml",
+      "action": "dialog.close(all,true)",
+      "target": "all",
+      "resolution": "all dialogs"
+    },
+    {
+      "file": "xml/DialogButtonMenu.xml",
+      "action": "dialog.close(all,true)",
+      "target": "all",
+      "resolution": "all dialogs"
+    },
+    {
+      "file": "xml/DialogButtonMenu.xml",
+      "action": "ActivateWindow(skinsettings)",
+      "target": "skinsettings",
+      "resolution": "Kodi named window",
+      "id": 10035
+    },
+    {
+      "file": "xml/DialogButtonMenu.xml",
+      "action": "Dialog.Close(all)",
+      "target": "all",
+      "resolution": "all dialogs"
+    },
+    {
+      "file": "xml/DialogMusicInfo.xml",
+      "action": "ActivateWindow(1102)",
+      "target": "1102",
+      "id": 11102,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/DialogMusicInfo.xml",
+      "action": "ActivateWindow(1152)",
+      "target": "1152",
+      "id": 11152,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/DialogVideoInfo.xml",
+      "action": "ActivateWindow(1102)",
+      "target": "1102",
+      "id": 11102,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/DialogVideoInfo.xml",
+      "action": "Dialog.Close(all,true)",
+      "target": "all",
+      "resolution": "all dialogs"
+    },
+    {
+      "file": "xml/DialogVideoInfo.xml",
+      "action": "ActivateWindow(Videos,videodb://movies/sets/$INFO[ListItem.SetId]/?setid=$INFO[ListItem.SetId])",
+      "target": "Videos",
+      "resolution": "Kodi named window",
+      "id": 10025
+    },
+    {
+      "file": "xml/DialogVideoInfo.xml",
+      "action": "ActivateWindow(1152)",
+      "target": "1152",
+      "id": 11152,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/DialogVideoManager.xml",
+      "action": "Dialog.Close(managevideoextras)",
+      "target": "managevideoextras",
+      "resolution": "Kodi named window",
+      "id": 12017
+    },
+    {
+      "file": "xml/GameOSD.xml",
+      "action": "ActivateWindow(InGameSaves)",
+      "target": "InGameSaves",
+      "resolution": "Kodi named window",
+      "id": 10829
+    },
+    {
+      "file": "xml/GameOSD.xml",
+      "action": "ActivateWindow(GameAgents)",
+      "target": "GameAgents",
+      "resolution": "Kodi named window",
+      "id": 10831
+    },
+    {
+      "file": "xml/GameOSD.xml",
+      "action": "ActivateWindow(1104)",
+      "target": "1104",
+      "id": 11104,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/Home.xml",
+      "action": "ActivateWindow(1155)",
+      "target": "1155",
+      "id": 11155,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/Home.xml",
+      "action": "ActivateWindow(settings)",
+      "target": "settings",
+      "resolution": "Kodi named window",
+      "id": 10004
+    },
+    {
+      "file": "xml/Home.xml",
+      "action": "ActivateWindow(settings)",
+      "target": "settings",
+      "resolution": "Kodi named window",
+      "id": 10004
+    },
+    {
+      "file": "xml/Home.xml",
+      "action": "activatewindow(shutdownmenu)",
+      "target": "shutdownmenu",
+      "resolution": "Kodi named window",
+      "id": 10111
+    },
+    {
+      "file": "xml/Home.xml",
+      "action": "ActivateWindow(favouritesbrowser)",
+      "target": "favouritesbrowser",
+      "resolution": "Kodi named window",
+      "id": 10060
+    },
+    {
+      "file": "xml/Home.xml",
+      "action": "ActivateWindow(FileManager)",
+      "target": "FileManager",
+      "resolution": "Kodi named window",
+      "id": 10003
+    },
+    {
+      "file": "xml/Home.xml",
+      "action": "ActivateWindow(1151)",
+      "target": "1151",
+      "id": 11151,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/Home.xml",
+      "action": "ActivateWindow(settings)",
+      "target": "settings",
+      "resolution": "Kodi named window",
+      "id": 10004
+    },
+    {
+      "file": "xml/Home.xml",
+      "action": "ActivateWindow(SystemInfo)",
+      "target": "SystemInfo",
+      "resolution": "Kodi named window",
+      "id": 10007
+    },
+    {
+      "file": "xml/Home.xml",
+      "action": "ActivateWindow(SkinSettings)",
+      "target": "SkinSettings",
+      "resolution": "Kodi named window",
+      "id": 10035
+    },
+    {
+      "file": "xml/Home.xml",
+      "action": "ActivateWindow(1800)",
+      "target": "1800",
+      "id": 11800,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/Home.xml",
+      "action": "ActivateWindow(AddonBrowser)",
+      "target": "AddonBrowser",
+      "resolution": "Kodi named window",
+      "id": 10040
+    },
+    {
+      "file": "xml/Home.xml",
+      "action": "ActivateWindow(Programs,Addons,return)",
+      "target": "Programs",
+      "resolution": "Kodi named window",
+      "id": 10001
+    },
+    {
+      "file": "xml/Home.xml",
+      "action": "ActivateWindow(Programs)",
+      "target": "Programs",
+      "resolution": "Kodi named window",
+      "id": 10001
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "action": "Dialog.Close(all,true)",
+      "target": "all",
+      "resolution": "all dialogs"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "action": "ActivateWindow(1301)",
+      "target": "1301",
+      "id": 11301,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "action": "ActivateWindow(1500)",
+      "target": "1500",
+      "id": 11500,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/Includes_Dash_Addonpath_Fav.xml",
+      "action": "ActivateWindow(favouritesbrowser)",
+      "target": "favouritesbrowser",
+      "resolution": "Kodi named window",
+      "id": 10060
+    },
+    {
+      "file": "xml/Includes_Dash_GTO.xml",
+      "action": "ActivateWindow(tvchannels,return)",
+      "target": "tvchannels",
+      "resolution": "Kodi named window",
+      "id": 10700
+    },
+    {
+      "file": "xml/Includes_Games.xml",
+      "action": "ActivateWindow(GamePorts)",
+      "target": "GamePorts",
+      "resolution": "Kodi named window",
+      "id": 10828
+    },
+    {
+      "file": "xml/Includes_HomeContent.xml",
+      "action": "ActivateWindow(Music,root,return)",
+      "target": "Music",
+      "resolution": "Kodi named window",
+      "id": 10502
+    },
+    {
+      "file": "xml/Includes_HomeContent.xml",
+      "action": "ActivateWindow(videos,root,return)",
+      "target": "videos",
+      "resolution": "Kodi named window",
+      "id": 10025
+    },
+    {
+      "file": "xml/Includes_HomeContent.xml",
+      "action": "ActivateWindow(videos,files,return)",
+      "target": "videos",
+      "resolution": "Kodi named window",
+      "id": 10025
+    },
+    {
+      "file": "xml/Includes_HomeContent.xml",
+      "action": "ActivateWindow(Videos,videodb://movies/titles/,return)",
+      "target": "Videos",
+      "resolution": "Kodi named window",
+      "id": 10025
+    },
+    {
+      "file": "xml/Includes_HomeContent.xml",
+      "action": "ActivateWindow(Videos,sources://video/,return)",
+      "target": "Videos",
+      "resolution": "Kodi named window",
+      "id": 10025
+    },
+    {
+      "file": "xml/Includes_HomeContent.xml",
+      "action": "ActivateWindow(1200)",
+      "target": "1200",
+      "id": 11200,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/Includes_HomeContent.xml",
+      "action": "ActivateWindow(Videos,videodb://tvshows/titles/,return)",
+      "target": "Videos",
+      "resolution": "Kodi named window",
+      "id": 10025
+    },
+    {
+      "file": "xml/Includes_HomeContent.xml",
+      "action": "ActivateWindow(Videos,sources://video/,return)",
+      "target": "Videos",
+      "resolution": "Kodi named window",
+      "id": 10025
+    },
+    {
+      "file": "xml/Includes_HomeContent.xml",
+      "action": "ActivateWindow(Videos,Musicvideos,return)",
+      "target": "Videos",
+      "resolution": "Kodi named window",
+      "id": 10025
+    },
+    {
+      "file": "xml/Includes_HomeContent.xml",
+      "action": "ActivateWindow(Pictures)",
+      "target": "Pictures",
+      "resolution": "Kodi named window",
+      "id": 10002
+    },
+    {
+      "file": "xml/Includes_HomeContent.xml",
+      "action": "ActivateWindow(weather)",
+      "target": "weather",
+      "resolution": "Kodi named window",
+      "id": 12600
+    },
+    {
+      "file": "xml/Includes_HomeContent.xml",
+      "action": "ActivateWindow(servicesettings,weather)",
+      "target": "servicesettings",
+      "resolution": "Kodi named window",
+      "id": 10018
+    },
+    {
+      "file": "xml/Includes_HomeContent.xml",
+      "action": "ActivateWindow(settings)",
+      "target": "settings",
+      "resolution": "Kodi named window",
+      "id": 10004
+    },
+    {
+      "file": "xml/Includes_HomeContent.xml",
+      "action": "ActivateWindow(TVChannels)",
+      "target": "TVChannels",
+      "resolution": "Kodi named window",
+      "id": 10700
+    },
+    {
+      "file": "xml/Includes_HomeContent.xml",
+      "action": "ActivateWindow(RadioChannels)",
+      "target": "RadioChannels",
+      "resolution": "Kodi named window",
+      "id": 10705
+    },
+    {
+      "file": "xml/Includes_HomeContent.xml",
+      "action": "ActivateWindow(games)",
+      "target": "games",
+      "resolution": "Kodi named window",
+      "id": 10821
+    },
+    {
+      "file": "xml/Includes_HomeOSD.xml",
+      "action": "ActivateWindow(PVRosdChannels)",
+      "target": "PVRosdChannels",
+      "resolution": "Kodi named window",
+      "id": 10608
+    },
+    {
+      "file": "xml/Includes_SidePanel.xml",
+      "action": "ActivateWindow(Videos)",
+      "target": "Videos",
+      "resolution": "Kodi named window",
+      "id": 10025
+    },
+    {
+      "file": "xml/Includes_SidePanel.xml",
+      "action": "ActivateWindow(Videos,root)",
+      "target": "Videos",
+      "resolution": "Kodi named window",
+      "id": 10025
+    },
+    {
+      "file": "xml/Includes_SidePanel.xml",
+      "action": "ActivateWindow(Videos,MovieTitles,return)",
+      "target": "Videos",
+      "resolution": "Kodi named window",
+      "id": 10025
+    },
+    {
+      "file": "xml/Includes_SidePanel.xml",
+      "action": "ActivateWindow(music)",
+      "target": "music",
+      "resolution": "Kodi named window",
+      "id": 10502
+    },
+    {
+      "file": "xml/Includes_SidePanel.xml",
+      "action": "ActivateWindow(Music,Files,return)",
+      "target": "Music",
+      "resolution": "Kodi named window",
+      "id": 10502
+    },
+    {
+      "file": "xml/Includes_SidePanel.xml",
+      "action": "ActivateWindow(Videos,TVShowTitles,return)",
+      "target": "Videos",
+      "resolution": "Kodi named window",
+      "id": 10025
+    },
+    {
+      "file": "xml/Includes_SidePanel.xml",
+      "action": "ActivateWindow(Videos,MusicVideos,return)",
+      "target": "Videos",
+      "resolution": "Kodi named window",
+      "id": 10025
+    },
+    {
+      "file": "xml/Includes_SidePanel.xml",
+      "action": "ActivateWindow(Pictures)",
+      "target": "Pictures",
+      "resolution": "Kodi named window",
+      "id": 10002
+    },
+    {
+      "file": "xml/Includes_SidePanel.xml",
+      "action": "ActivateWindow(Programs,Addons,return)",
+      "target": "Programs",
+      "resolution": "Kodi named window",
+      "id": 10001
+    },
+    {
+      "file": "xml/Includes_SidePanel.xml",
+      "action": "ActivateWindow(Programs)",
+      "target": "Programs",
+      "resolution": "Kodi named window",
+      "id": 10001
+    },
+    {
+      "file": "xml/Includes_SidePanel.xml",
+      "action": "ActivateWindow(weather)",
+      "target": "weather",
+      "resolution": "Kodi named window",
+      "id": 12600
+    },
+    {
+      "file": "xml/Includes_SidePanel.xml",
+      "action": "ActivateWindow(settings)",
+      "target": "settings",
+      "resolution": "Kodi named window",
+      "id": 10004
+    },
+    {
+      "file": "xml/Includes_SidePanel.xml",
+      "action": "ActivateWindow(SkinSettings)",
+      "target": "SkinSettings",
+      "resolution": "Kodi named window",
+      "id": 10035
+    },
+    {
+      "file": "xml/Includes_SidePanel.xml",
+      "action": "ActivateWindow(shutdownmenu)",
+      "target": "shutdownmenu",
+      "resolution": "Kodi named window",
+      "id": 10111
+    },
+    {
+      "file": "xml/Includes_SidePanel.xml",
+      "action": "ActivateWindow(TVChannels)",
+      "target": "TVChannels",
+      "resolution": "Kodi named window",
+      "id": 10700
+    },
+    {
+      "file": "xml/Includes_SidePanel.xml",
+      "action": "ActivateWindow(RadioChannels)",
+      "target": "RadioChannels",
+      "resolution": "Kodi named window",
+      "id": 10705
+    },
+    {
+      "file": "xml/Includes_SidePanel.xml",
+      "action": "ActivateWindow(TVGuide)",
+      "target": "TVGuide",
+      "resolution": "Kodi named window",
+      "id": 10702
+    },
+    {
+      "file": "xml/Includes_SidePanel.xml",
+      "action": "ActivateWindow(RadioGuide)",
+      "target": "RadioGuide",
+      "resolution": "Kodi named window",
+      "id": 10707
+    },
+    {
+      "file": "xml/Includes_SidePanel.xml",
+      "action": "ActivateWindow(TVRecordings)",
+      "target": "TVRecordings",
+      "resolution": "Kodi named window",
+      "id": 10701
+    },
+    {
+      "file": "xml/Includes_SidePanel.xml",
+      "action": "ActivateWindow(RadioRecordings)",
+      "target": "RadioRecordings",
+      "resolution": "Kodi named window",
+      "id": 10706
+    },
+    {
+      "file": "xml/Includes_SidePanel.xml",
+      "action": "ActivateWindow(TVTimers)",
+      "target": "TVTimers",
+      "resolution": "Kodi named window",
+      "id": 10703
+    },
+    {
+      "file": "xml/Includes_SidePanel.xml",
+      "action": "ActivateWindow(RadioTimers)",
+      "target": "RadioTimers",
+      "resolution": "Kodi named window",
+      "id": 10708
+    },
+    {
+      "file": "xml/Includes_SidePanel.xml",
+      "action": "ActivateWindow(TVTimerRules)",
+      "target": "TVTimerRules",
+      "resolution": "Kodi named window",
+      "id": 10710
+    },
+    {
+      "file": "xml/Includes_SidePanel.xml",
+      "action": "ActivateWindow(RadioTimerRules)",
+      "target": "RadioTimerRules",
+      "resolution": "Kodi named window",
+      "id": 10711
+    },
+    {
+      "file": "xml/Includes_SidePanel.xml",
+      "action": "ActivateWindow(TVSearch)",
+      "target": "TVSearch",
+      "resolution": "Kodi named window",
+      "id": 10704
+    },
+    {
+      "file": "xml/Includes_SidePanel.xml",
+      "action": "ActivateWindow(RadioSearch)",
+      "target": "RadioSearch",
+      "resolution": "Kodi named window",
+      "id": 10709
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(Pictures,Addons,return)",
+      "target": "Pictures",
+      "resolution": "Kodi named window",
+      "id": 10002
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(1501)",
+      "target": "1501",
+      "id": 11501,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(1142)",
+      "target": "1142",
+      "id": 11142,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(1141)",
+      "target": "1141",
+      "id": 11141,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(Music,Artists,return)",
+      "target": "Music",
+      "resolution": "Kodi named window",
+      "id": 10502
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(music,Albums,return)",
+      "target": "music",
+      "resolution": "Kodi named window",
+      "id": 10502
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(music,Songs,return)",
+      "target": "music",
+      "resolution": "Kodi named window",
+      "id": 10502
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(Music,Files,return)",
+      "target": "Music",
+      "resolution": "Kodi named window",
+      "id": 10502
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(music,root)",
+      "target": "music",
+      "resolution": "Kodi named window",
+      "id": 10502
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(music,Addons,return)",
+      "target": "music",
+      "resolution": "Kodi named window",
+      "id": 10502
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(Music,Addons,return)",
+      "target": "Music",
+      "resolution": "Kodi named window",
+      "id": 10502
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(1142)",
+      "target": "1142",
+      "id": 11142,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(1141)",
+      "target": "1141",
+      "id": 11141,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(Videos,MovieTitles,return)",
+      "target": "Videos",
+      "resolution": "Kodi named window",
+      "id": 10025
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(Videos,TvShowTitles,return)",
+      "target": "Videos",
+      "resolution": "Kodi named window",
+      "id": 10025
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(Videos,MusicVideoTitles,return)",
+      "target": "Videos",
+      "resolution": "Kodi named window",
+      "id": 10025
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(Videos,Files,return)",
+      "target": "Videos",
+      "resolution": "Kodi named window",
+      "id": 10025
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(Videos,Root)",
+      "target": "Videos",
+      "resolution": "Kodi named window",
+      "id": 10025
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(Videos,Addons,return)",
+      "target": "Videos",
+      "resolution": "Kodi named window",
+      "id": 10025
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(1142)",
+      "target": "1142",
+      "id": 11142,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(1141)",
+      "target": "1141",
+      "id": 11141,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(Videos,MovieSets,return)",
+      "target": "Videos",
+      "resolution": "Kodi named window",
+      "id": 10025
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(Videos,MovieTitles,return)",
+      "target": "Videos",
+      "resolution": "Kodi named window",
+      "id": 10025
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(Videos,MovieGenres,return)",
+      "target": "Videos",
+      "resolution": "Kodi named window",
+      "id": 10025
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(Videos,MovieYears,return)",
+      "target": "Videos",
+      "resolution": "Kodi named window",
+      "id": 10025
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(Videos,MovieActors,return)",
+      "target": "Videos",
+      "resolution": "Kodi named window",
+      "id": 10025
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(Videos,Addons,return)",
+      "target": "Videos",
+      "resolution": "Kodi named window",
+      "id": 10025
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(Videos,Files,return)",
+      "target": "Videos",
+      "resolution": "Kodi named window",
+      "id": 10025
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(1501)",
+      "target": "1501",
+      "id": 11501,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(1142)",
+      "target": "1142",
+      "id": 11142,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(1141)",
+      "target": "1141",
+      "id": 11141,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(Videos,TVShowTitles,return)",
+      "target": "Videos",
+      "resolution": "Kodi named window",
+      "id": 10025
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(Videos,TVShowGenres,return)",
+      "target": "Videos",
+      "resolution": "Kodi named window",
+      "id": 10025
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(Videos,TVShowYears,return)",
+      "target": "Videos",
+      "resolution": "Kodi named window",
+      "id": 10025
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(Videos,TVShowActors,return)",
+      "target": "Videos",
+      "resolution": "Kodi named window",
+      "id": 10025
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(1142)",
+      "target": "1142",
+      "id": 11142,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(1141)",
+      "target": "1141",
+      "id": 11141,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(Videos,MusicVideosTitles,return)",
+      "target": "Videos",
+      "resolution": "Kodi named window",
+      "id": 10025
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(Videos,MusicVideosGenres,return)",
+      "target": "Videos",
+      "resolution": "Kodi named window",
+      "id": 10025
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(1142)",
+      "target": "1142",
+      "id": 11142,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(1141)",
+      "target": "1141",
+      "id": 11141,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(1700)",
+      "target": "1700",
+      "id": 11700,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(1500)",
+      "target": "1500",
+      "id": 11500,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(1142)",
+      "target": "1142",
+      "id": 11142,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(1141)",
+      "target": "1141",
+      "id": 11141,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(1142)",
+      "target": "1142",
+      "id": 11142,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(1141)",
+      "target": "1141",
+      "id": 11141,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(1142)",
+      "target": "1142",
+      "id": 11142,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(1141)",
+      "target": "1141",
+      "id": 11141,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(1142)",
+      "target": "1142",
+      "id": 11142,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(1141)",
+      "target": "1141",
+      "id": 11141,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(1142)",
+      "target": "1142",
+      "id": 11142,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(1141)",
+      "target": "1141",
+      "id": 11141,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(1142)",
+      "target": "1142",
+      "id": 11142,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(1141)",
+      "target": "1141",
+      "id": 11141,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(1142)",
+      "target": "1142",
+      "id": 11142,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(1141)",
+      "target": "1141",
+      "id": 11141,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(1142)",
+      "target": "1142",
+      "id": 11142,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(1141)",
+      "target": "1141",
+      "id": 11141,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(1142)",
+      "target": "1142",
+      "id": 11142,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(1141)",
+      "target": "1141",
+      "id": 11141,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(skinsettings)",
+      "target": "skinsettings",
+      "resolution": "Kodi named window",
+      "id": 10035
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(FileManager)",
+      "target": "FileManager",
+      "resolution": "Kodi named window",
+      "id": 10003
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(Profiles)",
+      "target": "Profiles",
+      "resolution": "Kodi named window",
+      "id": 10034
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(SystemInfo)",
+      "target": "SystemInfo",
+      "resolution": "Kodi named window",
+      "id": 10007
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(EventLog,events://,return)",
+      "target": "EventLog",
+      "resolution": "Kodi named window",
+      "id": 10050
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(TVChannels)",
+      "target": "TVChannels",
+      "resolution": "Kodi named window",
+      "id": 10700
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(TVGuide)",
+      "target": "TVGuide",
+      "resolution": "Kodi named window",
+      "id": 10702
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(TVRecordings)",
+      "target": "TVRecordings",
+      "resolution": "Kodi named window",
+      "id": 10701
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(TVTimers)",
+      "target": "TVTimers",
+      "resolution": "Kodi named window",
+      "id": 10703
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(TVSearch)",
+      "target": "TVSearch",
+      "resolution": "Kodi named window",
+      "id": 10704
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(1500)",
+      "target": "1500",
+      "id": 11500,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(RadioChannels)",
+      "target": "RadioChannels",
+      "resolution": "Kodi named window",
+      "id": 10705
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(RadioGuide)",
+      "target": "RadioGuide",
+      "resolution": "Kodi named window",
+      "id": 10707
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(RadioRecordings)",
+      "target": "RadioRecordings",
+      "resolution": "Kodi named window",
+      "id": 10706
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(RadioTimers)",
+      "target": "RadioTimers",
+      "resolution": "Kodi named window",
+      "id": 10708
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(RadioSearch)",
+      "target": "RadioSearch",
+      "resolution": "Kodi named window",
+      "id": 10709
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "action": "ActivateWindow(1500)",
+      "target": "1500",
+      "id": 11500,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/Includes_WeatherWidget_Content.xml",
+      "action": "ActivateWindow(weather)",
+      "target": "weather",
+      "resolution": "Kodi named window",
+      "id": 12600
+    },
+    {
+      "file": "xml/Includes_WeatherWidget_Content.xml",
+      "action": "ActivateWindow(weather)",
+      "target": "weather",
+      "resolution": "Kodi named window",
+      "id": 12600
+    },
+    {
+      "file": "xml/Includes_Widget_Param.xml",
+      "action": "ActivateWindow(weather)",
+      "target": "weather",
+      "resolution": "Kodi named window",
+      "id": 12600
+    },
+    {
+      "file": "xml/Includes_Widget_Param.xml",
+      "action": "ActivateWindow(weather)",
+      "target": "weather",
+      "resolution": "Kodi named window",
+      "id": 12600
+    },
+    {
+      "file": "xml/Includes_Widget_Param.xml",
+      "action": "ActivateWindow(tvtimers)",
+      "target": "tvtimers",
+      "resolution": "Kodi named window",
+      "id": 10703
+    },
+    {
+      "file": "xml/LoginScreen.xml",
+      "action": "ActivateWindow(ShutdownMenu)",
+      "target": "ShutdownMenu",
+      "resolution": "Kodi named window",
+      "id": 10111
+    },
+    {
+      "file": "xml/MusicOSD.xml",
+      "action": "ActivateWindow(1101)",
+      "target": "1101",
+      "id": 11101,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/MusicOSD.xml",
+      "action": "ActivateWindowAndFocus(playersettings, -199,, -172,)",
+      "target": "playersettings",
+      "resolution": "Kodi named window",
+      "id": 10030
+    },
+    {
+      "file": "xml/MusicOSD.xml",
+      "action": "ActivateWindow(122)",
+      "target": "122",
+      "id": 10122,
+      "resolution": "Kodi WindowIDs constant; runtime availability not proven"
+    },
+    {
+      "file": "xml/MusicOSD.xml",
+      "action": "Dialog.Close(all, true)",
+      "target": "all",
+      "resolution": "all dialogs"
+    },
+    {
+      "file": "xml/MusicOSD.xml",
+      "action": "ActivateWindow(musicplaylist)",
+      "target": "musicplaylist",
+      "resolution": "Kodi named window",
+      "id": 10500
+    },
+    {
+      "file": "xml/MyGames.xml",
+      "action": "ActivateWindow(addonbrowser,addons://more/game/,return)",
+      "target": "addonbrowser",
+      "resolution": "Kodi named window",
+      "id": 10040
+    },
+    {
+      "file": "xml/MyPlaylist.xml",
+      "action": "ReplaceWindow(music)",
+      "target": "music",
+      "resolution": "Kodi named window",
+      "id": 10502
+    },
+    {
+      "file": "xml/MyPrograms.xml",
+      "action": "ActivateWindow(1800)",
+      "target": "1800",
+      "id": 11800,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/MyWeather.xml",
+      "action": "ActivateWindow(servicesettings,weather)",
+      "target": "servicesettings",
+      "resolution": "Kodi named window",
+      "id": 10018
+    },
+    {
+      "file": "xml/Settings.xml",
+      "action": "ActivateWindow(PlayerSettings)",
+      "target": "PlayerSettings",
+      "resolution": "Kodi named window",
+      "id": 10030
+    },
+    {
+      "file": "xml/Settings.xml",
+      "action": "ActivateWindow(MediaSettings)",
+      "target": "MediaSettings",
+      "resolution": "Kodi named window",
+      "id": 10031
+    },
+    {
+      "file": "xml/Settings.xml",
+      "action": "ActivateWindow(PVRSettings)",
+      "target": "PVRSettings",
+      "resolution": "Kodi named window",
+      "id": 10021
+    },
+    {
+      "file": "xml/Settings.xml",
+      "action": "ActivateWindow(ServiceSettings)",
+      "target": "ServiceSettings",
+      "resolution": "Kodi named window",
+      "id": 10018
+    },
+    {
+      "file": "xml/Settings.xml",
+      "action": "ActivateWindow(GameSettings)",
+      "target": "GameSettings",
+      "resolution": "Kodi named window",
+      "id": 10022
+    },
+    {
+      "file": "xml/Settings.xml",
+      "action": "ActivateWindow(InterfaceSettings)",
+      "target": "InterfaceSettings",
+      "resolution": "Kodi named window",
+      "id": 10032
+    },
+    {
+      "file": "xml/Settings.xml",
+      "action": "ActivateWindow(SkinSettings)",
+      "target": "SkinSettings",
+      "resolution": "Kodi named window",
+      "id": 10035
+    },
+    {
+      "file": "xml/Settings.xml",
+      "action": "ActivateWindow(Profiles)",
+      "target": "Profiles",
+      "resolution": "Kodi named window",
+      "id": 10034
+    },
+    {
+      "file": "xml/Settings.xml",
+      "action": "ActivateWindow(SystemSettings)",
+      "target": "SystemSettings",
+      "resolution": "Kodi named window",
+      "id": 10016
+    },
+    {
+      "file": "xml/Settings.xml",
+      "action": "ActivateWindow(systeminfo)",
+      "target": "systeminfo",
+      "resolution": "Kodi named window",
+      "id": 10007
+    },
+    {
+      "file": "xml/Settings.xml",
+      "action": "ActivateWindow(eventlog)",
+      "target": "eventlog",
+      "resolution": "Kodi named window",
+      "id": 10050
+    },
+    {
+      "file": "xml/Settings.xml",
+      "action": "ActivateWindow(filemanager)",
+      "target": "filemanager",
+      "resolution": "Kodi named window",
+      "id": 10003
+    },
+    {
+      "file": "xml/Settings.xml",
+      "action": "ActivateWindow(addonbrowser)",
+      "target": "addonbrowser",
+      "resolution": "Kodi named window",
+      "id": 10040
+    },
+    {
+      "file": "xml/skin.horizonzv.script-gto-info.xml",
+      "action": "Dialog.Close(all)",
+      "target": "all",
+      "resolution": "all dialogs"
+    },
+    {
+      "file": "xml/skin.horizonzv.script-gto-info.xml",
+      "action": "Dialog.Close(all)",
+      "target": "all",
+      "resolution": "all dialogs"
+    },
+    {
+      "file": "xml/skin.horizonzv.script-gto-info.xml",
+      "action": "Dialog.Close(all)",
+      "target": "all",
+      "resolution": "all dialogs"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "action": "ActivateWindow(home)",
+      "target": "home",
+      "resolution": "Kodi named window",
+      "id": 10000
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "action": "ActivateWindow(1155)",
+      "target": "1155",
+      "id": 11155,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "action": "ActivateWindow(1154)",
+      "target": "1154",
+      "id": 11154,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "action": "ActivateWindow(1301)",
+      "target": "1301",
+      "id": 11301,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "action": "ActivateWindow(1501)",
+      "target": "1501",
+      "id": 11501,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "action": "ActivateWindow(1501)",
+      "target": "1501",
+      "id": 11501,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "action": "ActivateWindow(1501)",
+      "target": "1501",
+      "id": 11501,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "action": "ActivateWindow(1501)",
+      "target": "1501",
+      "id": 11501,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "action": "ActivateWindow(1501)",
+      "target": "1501",
+      "id": 11501,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "action": "ActivateWindow(1501)",
+      "target": "1501",
+      "id": 11501,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "action": "ActivateWindow(1501)",
+      "target": "1501",
+      "id": 11501,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "action": "ActivateWindow(1501)",
+      "target": "1501",
+      "id": 11501,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "action": "ActivateWindow(1501)",
+      "target": "1501",
+      "id": 11501,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "action": "ActivateWindow(1501)",
+      "target": "1501",
+      "id": 11501,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "action": "ActivateWindow(1501)",
+      "target": "1501",
+      "id": 11501,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "action": "ActivateWindow(1501)",
+      "target": "1501",
+      "id": 11501,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "action": "ActivateWindow(1501)",
+      "target": "1501",
+      "id": 11501,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "action": "ActivateWindow(1501)",
+      "target": "1501",
+      "id": 11501,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "action": "ActivateWindow(1501)",
+      "target": "1501",
+      "id": 11501,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "action": "ActivateWindow(1501)",
+      "target": "1501",
+      "id": 11501,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "action": "ActivateWindow(1501)",
+      "target": "1501",
+      "id": 11501,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "action": "ActivateWindow(1501)",
+      "target": "1501",
+      "id": 11501,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "action": "ActivateWindow(1501)",
+      "target": "1501",
+      "id": 11501,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "action": "ActivateWindow(1501)",
+      "target": "1501",
+      "id": 11501,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "action": "ActivateWindow(1501)",
+      "target": "1501",
+      "id": 11501,
+      "resolution": "custom skin XML id; runtime registration not proven"
+    },
+    {
+      "file": "xml/VideoOSD.xml",
+      "action": "ActivateWindow(osdsubtitlesettings)",
+      "target": "osdsubtitlesettings",
+      "resolution": "Kodi named window",
+      "id": 10159
+    },
+    {
+      "file": "xml/VideoOSD.xml",
+      "action": "Dialog.Close(videoosd)",
+      "target": "videoosd",
+      "resolution": "Kodi named window",
+      "id": 12901
+    },
+    {
+      "file": "xml/VideoOSD.xml",
+      "action": "ActivateWindow(SubtitleSearch)",
+      "target": "SubtitleSearch",
+      "resolution": "Kodi named window",
+      "id": 10153
+    },
+    {
+      "file": "xml/VideoOSD.xml",
+      "action": "ActivateWindow(osdcmssettings)",
+      "target": "osdcmssettings",
+      "resolution": "Kodi named window",
+      "id": 10157
+    },
+    {
+      "file": "xml/VideoOSD.xml",
+      "action": "ActivateWindow(SubtitleSearch)",
+      "target": "SubtitleSearch",
+      "resolution": "Kodi named window",
+      "id": 10153
+    },
+    {
+      "file": "xml/VideoOSD.xml",
+      "action": "ActivateWindow(125)",
+      "target": "125",
+      "id": 10125,
+      "resolution": "Kodi WindowIDs constant; runtime availability not proven"
+    },
+    {
+      "file": "xml/VideoOSD.xml",
+      "action": "ActivateWindow(124)",
+      "target": "124",
+      "id": 10124,
+      "resolution": "Kodi WindowIDs constant; runtime availability not proven"
+    },
+    {
+      "file": "xml/VideoOSD.xml",
+      "action": "ActivateWindow(osdvideosettings)",
+      "target": "osdvideosettings",
+      "resolution": "Kodi named window",
+      "id": 10123
+    },
+    {
+      "file": "xml/VideoOSD.xml",
+      "action": "ActivateWindow(Teletext)",
+      "target": "Teletext",
+      "resolution": "Kodi named window",
+      "id": 10550
+    },
+    {
+      "file": "xml/VideoOSD.xml",
+      "action": "ActivateWindow(OSDVideoSettings)",
+      "target": "OSDVideoSettings",
+      "resolution": "Kodi named window",
+      "id": 10123
+    },
+    {
+      "file": "xml/VideoOSD.xml",
+      "action": "ActivateWindow(osdAudioSettings)",
+      "target": "osdAudioSettings",
+      "resolution": "Kodi named window",
+      "id": 10124
+    },
+    {
+      "file": "xml/VideoOSD.xml",
+      "action": "ActivateWindow(PVRosdChannels)",
+      "target": "PVRosdChannels",
+      "resolution": "Kodi named window",
+      "id": 10608
+    },
+    {
+      "file": "xml/VideoOSD.xml",
+      "action": "Dialog.Close(videoosd)",
+      "target": "videoosd",
+      "resolution": "Kodi named window",
+      "id": 12901
+    },
+    {
+      "file": "xml/VideoOSD.xml",
+      "action": "ActivateWindow(pvrchannelguide)",
+      "target": "pvrchannelguide",
+      "resolution": "Kodi named window",
+      "id": 10609
+    },
+    {
+      "file": "xml/VideoOSD.xml",
+      "action": "Dialog.Close(videoosd)",
+      "target": "videoosd",
+      "resolution": "Kodi named window",
+      "id": 12901
+    }
+  ],
+  "findings": [],
+  "dynamic": [
+    {
+      "file": "xml/Includes_Dash_Addonpath_Fav.xml",
+      "action": "ActivateWindow($VAR[WidgetTarget_Dash_FirstItem],$INFO[Skin.String(Addonpath_Dash_Path)],return)",
+      "target": "$VAR[WidgetTarget_Dash_FirstItem]"
+    },
+    {
+      "file": "xml/Includes_Dash_Addonpath_Fav.xml",
+      "action": "ActivateWindow($VAR[WidgetTarget_Dash_FirstItem],$INFO[Skin.String(Addonpath_Dash_Path1)],return)",
+      "target": "$VAR[WidgetTarget_Dash_FirstItem]"
+    },
+    {
+      "file": "xml/Includes_Dash_Addonpath_Fav.xml",
+      "action": "ActivateWindow($VAR[WidgetTarget_Dash_FirstItem],$INFO[Skin.String(Addonpath_Dash_Path2)],return)",
+      "target": "$VAR[WidgetTarget_Dash_FirstItem]"
+    },
+    {
+      "file": "xml/Includes_Dash_Addonpath_Fav.xml",
+      "action": "ActivateWindow($VAR[WidgetTarget_Dash_FirstItem],$INFO[Skin.String(Addonpath_Dash_Path3)],return)",
+      "target": "$VAR[WidgetTarget_Dash_FirstItem]"
+    },
+    {
+      "file": "xml/Includes_HomeContent.xml",
+      "action": "ActivateWindow($VAR[Home_music_SubCategory],$INFO[Skin.String(Home_music_Custom_Path)],return)",
+      "target": "$VAR[Home_music_SubCategory]"
+    },
+    {
+      "file": "xml/Includes_HomeContent.xml",
+      "action": "ActivateWindow($VAR[Home_videos_SubCategory],$INFO[Skin.String(Home_videos_Custom_Path)],return)",
+      "target": "$VAR[Home_videos_SubCategory]"
+    },
+    {
+      "file": "xml/Includes_HomeContent.xml",
+      "action": "ActivateWindow($VAR[Home_movies_SubCategory],$INFO[Skin.String(Home_movies_Custom_Path)],return)",
+      "target": "$VAR[Home_movies_SubCategory]"
+    },
+    {
+      "file": "xml/Includes_HomeContent.xml",
+      "action": "ActivateWindow($VAR[Home_tvshow_SubCategory],$INFO[Skin.String(Home_tvshow_Custom_Path)],return)",
+      "target": "$VAR[Home_tvshow_SubCategory]"
+    },
+    {
+      "file": "xml/Includes_HomeContent.xml",
+      "action": "ActivateWindow($VAR[Home_musicvideo_SubCategory],$INFO[Skin.String(Home_musicvideo_Custom_Path)],return)",
+      "target": "$VAR[Home_musicvideo_SubCategory]"
+    },
+    {
+      "file": "xml/Includes_HomeContent.xml",
+      "action": "ActivateWindow($VAR[Home_picture_SubCategory],$INFO[Skin.String(Home_picture_Custom_Path)],return)",
+      "target": "$VAR[Home_picture_SubCategory]"
+    },
+    {
+      "file": "xml/Includes_HomeContent.xml",
+      "action": "ActivateWindow($VAR[Home_custom1_SubCategory],$INFO[Skin.String(Home_custom1_Custom_Path)],return)",
+      "target": "$VAR[Home_custom1_SubCategory]"
+    },
+    {
+      "file": "xml/Includes_HomeContent.xml",
+      "action": "ActivateWindow($VAR[Home_custom2_SubCategory],$INFO[Skin.String(Home_custom2_Custom_Path)],return)",
+      "target": "$VAR[Home_custom2_SubCategory]"
+    },
+    {
+      "file": "xml/Includes_HomeContent.xml",
+      "action": "ActivateWindow($VAR[Home_custom3_SubCategory],$INFO[Skin.String(Home_custom3_Custom_Path)],return)",
+      "target": "$VAR[Home_custom3_SubCategory]"
+    },
+    {
+      "file": "xml/Includes_HomeContent.xml",
+      "action": "ActivateWindow($VAR[Home_custom4_SubCategory],$INFO[Skin.String(Home_custom4_Custom_Path)],return)",
+      "target": "$VAR[Home_custom4_SubCategory]"
+    },
+    {
+      "file": "xml/Includes_HomeContent.xml",
+      "action": "ActivateWindow($VAR[Home_custom5_SubCategory],$INFO[Skin.String(Home_custom5_Custom_Path)],return)",
+      "target": "$VAR[Home_custom5_SubCategory]"
+    },
+    {
+      "file": "xml/Includes_HomeContent.xml",
+      "action": "ActivateWindow($VAR[Home_custom6_SubCategory],$INFO[Skin.String(Home_custom6_Custom_Path)],return)",
+      "target": "$VAR[Home_custom6_SubCategory]"
+    },
+    {
+      "file": "xml/Includes_HomeContent.xml",
+      "action": "ActivateWindow($VAR[Home_custom7_SubCategory],$INFO[Skin.String(Home_custom7_Custom_Path)],return)",
+      "target": "$VAR[Home_custom7_SubCategory]"
+    },
+    {
+      "file": "xml/Includes_HomeContent.xml",
+      "action": "ActivateWindow($VAR[Home_custom8_SubCategory],$INFO[Skin.String(Home_custom8_Custom_Path)],return)",
+      "target": "$VAR[Home_custom8_SubCategory]"
+    },
+    {
+      "file": "xml/Includes_HomeContent.xml",
+      "action": "ActivateWindow($VAR[Home_custom9_SubCategory],$INFO[Skin.String(Home_custom9_Custom_Path)],return)",
+      "target": "$VAR[Home_custom9_SubCategory]"
+    },
+    {
+      "file": "xml/Includes_HomeContent.xml",
+      "action": "ActivateWindow($VAR[Home_games_SubCategory],$INFO[Skin.String(Home_games_Custom_Path)],return)",
+      "target": "$VAR[Home_games_SubCategory]"
+    },
+    {
+      "file": "xml/Startup.xml",
+      "action": "ReplaceWindow($INFO[System.StartupWindow])",
+      "target": "$INFO[System.StartupWindow]"
+    }
+  ],
+  "content_targets": [
+    {
+      "file": "xml/Includes_Dash_Addonpath_Fav.xml",
+      "target": "$VAR[WidgetTarget_Dash]"
+    },
+    {
+      "file": "xml/Includes_Dash_Addonpath_Fav.xml",
+      "target": "$VAR[WidgetTarget_Dash]"
+    },
+    {
+      "file": "xml/Includes_Dash_Addonpath_Fav.xml",
+      "target": "$VAR[WidgetTarget_Dash]"
+    },
+    {
+      "file": "xml/Includes_Dash_Addonpath_Fav.xml",
+      "target": "$VAR[WidgetTarget_Dash]"
+    },
+    {
+      "file": "xml/Includes_Dash_FritzDect.xml",
+      "target": "programs"
+    },
+    {
+      "file": "xml/Includes_Dash_GTO.xml",
+      "target": "videos"
+    },
+    {
+      "file": "xml/Includes_SetInformation.xml",
+      "target": "videos"
+    },
+    {
+      "file": "xml/Includes_SetInformation.xml",
+      "target": "videos"
+    },
+    {
+      "file": "xml/Includes_Widget_Param.xml",
+      "target": "$VAR[WidgetTarget]"
+    },
+    {
+      "file": "xml/Includes_Widget_Param.xml",
+      "target": "$VAR[WidgetTarget]"
+    },
+    {
+      "file": "xml/View_Movie_302_3Panel.xml",
+      "target": "videos"
+    }
+  ],
+  "target_variables": [
+    {
+      "variable": "Home_custom1_SubCategory",
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "uses": 1,
+      "branches": [
+        {
+          "target": "videos",
+          "condition": "[Skin.HasSetting(Home_custom1_Custom_Category_File)+Skin.HasSetting(Home_custom1_Custom_SubCategory_Video)]|Skin.HasSetting(Home_custom1_Custom_Category_Video)",
+          "resolution": "Kodi named window",
+          "id": 10025
+        },
+        {
+          "target": "music",
+          "condition": "[Skin.HasSetting(Home_custom1_Custom_Category_File)+Skin.HasSetting(Home_custom1_Custom_SubCategory_Music)]|Skin.HasSetting(Home_custom1_Custom_Category_Music)",
+          "resolution": "Kodi named window",
+          "id": 10502
+        },
+        {
+          "target": "pictures",
+          "condition": "Skin.HasSetting(Home_custom1_Custom_Category_Pictures)",
+          "resolution": "Kodi named window",
+          "id": 10002
+        },
+        {
+          "target": "games",
+          "condition": "Skin.HasSetting(Home_custom1_Custom_Category_Games)",
+          "resolution": "Kodi named window",
+          "id": 10821
+        }
+      ],
+      "has_unconditional_fallback": false
+    },
+    {
+      "variable": "Home_custom2_SubCategory",
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "uses": 1,
+      "branches": [
+        {
+          "target": "videos",
+          "condition": "[Skin.HasSetting(Home_custom2_Custom_Category_File)+Skin.HasSetting(Home_custom2_Custom_SubCategory_Video)]|Skin.HasSetting(Home_custom2_Custom_Category_Video)",
+          "resolution": "Kodi named window",
+          "id": 10025
+        },
+        {
+          "target": "music",
+          "condition": "[Skin.HasSetting(Home_custom2_Custom_Category_File)+Skin.HasSetting(Home_custom2_Custom_SubCategory_Music)]|Skin.HasSetting(Home_custom2_Custom_Category_Music)",
+          "resolution": "Kodi named window",
+          "id": 10502
+        },
+        {
+          "target": "pictures",
+          "condition": "Skin.HasSetting(Home_custom2_Custom_Category_Pictures)",
+          "resolution": "Kodi named window",
+          "id": 10002
+        },
+        {
+          "target": "games",
+          "condition": "Skin.HasSetting(Home_custom2_Custom_Category_Games)",
+          "resolution": "Kodi named window",
+          "id": 10821
+        }
+      ],
+      "has_unconditional_fallback": false
+    },
+    {
+      "variable": "Home_custom3_SubCategory",
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "uses": 1,
+      "branches": [
+        {
+          "target": "videos",
+          "condition": "[Skin.HasSetting(Home_custom3_Custom_Category_File)+Skin.HasSetting(Home_custom3_Custom_SubCategory_Video)]|Skin.HasSetting(Home_custom3_Custom_Category_Video)",
+          "resolution": "Kodi named window",
+          "id": 10025
+        },
+        {
+          "target": "music",
+          "condition": "[Skin.HasSetting(Home_custom3_Custom_Category_File)+Skin.HasSetting(Home_custom3_Custom_SubCategory_Music)]|Skin.HasSetting(Home_custom3_Custom_Category_Music)",
+          "resolution": "Kodi named window",
+          "id": 10502
+        },
+        {
+          "target": "pictures",
+          "condition": "Skin.HasSetting(Home_custom3_Custom_Category_Pictures)",
+          "resolution": "Kodi named window",
+          "id": 10002
+        },
+        {
+          "target": "games",
+          "condition": "Skin.HasSetting(Home_custom3_Custom_Category_Games)",
+          "resolution": "Kodi named window",
+          "id": 10821
+        }
+      ],
+      "has_unconditional_fallback": false
+    },
+    {
+      "variable": "Home_custom4_SubCategory",
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "uses": 1,
+      "branches": [
+        {
+          "target": "videos",
+          "condition": "[Skin.HasSetting(Home_custom4_Custom_Category_File)+Skin.HasSetting(Home_custom4_Custom_SubCategory_Video)]|Skin.HasSetting(Home_custom4_Custom_Category_Video)",
+          "resolution": "Kodi named window",
+          "id": 10025
+        },
+        {
+          "target": "music",
+          "condition": "[Skin.HasSetting(Home_custom4_Custom_Category_File)+Skin.HasSetting(Home_custom4_Custom_SubCategory_Music)]|Skin.HasSetting(Home_custom4_Custom_Category_Music)",
+          "resolution": "Kodi named window",
+          "id": 10502
+        },
+        {
+          "target": "pictures",
+          "condition": "Skin.HasSetting(Home_custom4_Custom_Category_Pictures)",
+          "resolution": "Kodi named window",
+          "id": 10002
+        },
+        {
+          "target": "games",
+          "condition": "Skin.HasSetting(Home_custom4_Custom_Category_Games)",
+          "resolution": "Kodi named window",
+          "id": 10821
+        }
+      ],
+      "has_unconditional_fallback": false
+    },
+    {
+      "variable": "Home_custom5_SubCategory",
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "uses": 1,
+      "branches": [
+        {
+          "target": "videos",
+          "condition": "[Skin.HasSetting(Home_custom5_Custom_Category_File)+Skin.HasSetting(Home_custom5_Custom_SubCategory_Video)]|Skin.HasSetting(Home_custom5_Custom_Category_Video)",
+          "resolution": "Kodi named window",
+          "id": 10025
+        },
+        {
+          "target": "music",
+          "condition": "[Skin.HasSetting(Home_custom5_Custom_Category_File)+Skin.HasSetting(Home_custom5_Custom_SubCategory_Music)]|Skin.HasSetting(Home_custom5_Custom_Category_Music)",
+          "resolution": "Kodi named window",
+          "id": 10502
+        },
+        {
+          "target": "pictures",
+          "condition": "Skin.HasSetting(Home_custom5_Custom_Category_Pictures)",
+          "resolution": "Kodi named window",
+          "id": 10002
+        },
+        {
+          "target": "games",
+          "condition": "Skin.HasSetting(Home_custom5_Custom_Category_Games)",
+          "resolution": "Kodi named window",
+          "id": 10821
+        }
+      ],
+      "has_unconditional_fallback": false
+    },
+    {
+      "variable": "Home_custom6_SubCategory",
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "uses": 1,
+      "branches": [
+        {
+          "target": "videos",
+          "condition": "[Skin.HasSetting(Home_custom6_Custom_Category_File)+Skin.HasSetting(Home_custom6_Custom_SubCategory_Video)]|Skin.HasSetting(Home_custom6_Custom_Category_Video)",
+          "resolution": "Kodi named window",
+          "id": 10025
+        },
+        {
+          "target": "music",
+          "condition": "[Skin.HasSetting(Home_custom6_Custom_Category_File)+Skin.HasSetting(Home_custom6_Custom_SubCategory_Music)]|Skin.HasSetting(Home_custom6_Custom_Category_Music)",
+          "resolution": "Kodi named window",
+          "id": 10502
+        },
+        {
+          "target": "pictures",
+          "condition": "Skin.HasSetting(Home_custom6_Custom_Category_Pictures)",
+          "resolution": "Kodi named window",
+          "id": 10002
+        },
+        {
+          "target": "games",
+          "condition": "Skin.HasSetting(Home_custom6_Custom_Category_Games)",
+          "resolution": "Kodi named window",
+          "id": 10821
+        }
+      ],
+      "has_unconditional_fallback": false
+    },
+    {
+      "variable": "Home_custom7_SubCategory",
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "uses": 1,
+      "branches": [
+        {
+          "target": "videos",
+          "condition": "[Skin.HasSetting(Home_custom7_Custom_Category_File)+Skin.HasSetting(Home_custom7_Custom_SubCategory_Video)]|Skin.HasSetting(Home_custom7_Custom_Category_Video)",
+          "resolution": "Kodi named window",
+          "id": 10025
+        },
+        {
+          "target": "music",
+          "condition": "[Skin.HasSetting(Home_custom7_Custom_Category_File)+Skin.HasSetting(Home_custom7_Custom_SubCategory_Music)]|Skin.HasSetting(Home_custom7_Custom_Category_Music)",
+          "resolution": "Kodi named window",
+          "id": 10502
+        },
+        {
+          "target": "pictures",
+          "condition": "Skin.HasSetting(Home_custom7_Custom_Category_Pictures)",
+          "resolution": "Kodi named window",
+          "id": 10002
+        },
+        {
+          "target": "games",
+          "condition": "Skin.HasSetting(Home_custom7_Custom_Category_Games)",
+          "resolution": "Kodi named window",
+          "id": 10821
+        }
+      ],
+      "has_unconditional_fallback": false
+    },
+    {
+      "variable": "Home_custom8_SubCategory",
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "uses": 1,
+      "branches": [
+        {
+          "target": "videos",
+          "condition": "[Skin.HasSetting(Home_custom8_Custom_Category_File)+Skin.HasSetting(Home_custom8_Custom_SubCategory_Video)]|Skin.HasSetting(Home_custom8_Custom_Category_Video)",
+          "resolution": "Kodi named window",
+          "id": 10025
+        },
+        {
+          "target": "music",
+          "condition": "[Skin.HasSetting(Home_custom8_Custom_Category_File)+Skin.HasSetting(Home_custom8_Custom_SubCategory_Music)]|Skin.HasSetting(Home_custom8_Custom_Category_Music)",
+          "resolution": "Kodi named window",
+          "id": 10502
+        },
+        {
+          "target": "pictures",
+          "condition": "Skin.HasSetting(Home_custom8_Custom_Category_Pictures)",
+          "resolution": "Kodi named window",
+          "id": 10002
+        },
+        {
+          "target": "games",
+          "condition": "Skin.HasSetting(Home_custom8_Custom_Category_Games)",
+          "resolution": "Kodi named window",
+          "id": 10821
+        }
+      ],
+      "has_unconditional_fallback": false
+    },
+    {
+      "variable": "Home_custom9_SubCategory",
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "uses": 1,
+      "branches": [
+        {
+          "target": "videos",
+          "condition": "[Skin.HasSetting(Home_custom9_Custom_Category_File)+Skin.HasSetting(Home_custom9_Custom_SubCategory_Video)]|Skin.HasSetting(Home_custom9_Custom_Category_Video)",
+          "resolution": "Kodi named window",
+          "id": 10025
+        },
+        {
+          "target": "music",
+          "condition": "[Skin.HasSetting(Home_custom9_Custom_Category_File)+Skin.HasSetting(Home_custom9_Custom_SubCategory_Music)]|Skin.HasSetting(Home_custom9_Custom_Category_Music)",
+          "resolution": "Kodi named window",
+          "id": 10502
+        },
+        {
+          "target": "pictures",
+          "condition": "Skin.HasSetting(Home_custom9_Custom_Category_Pictures)",
+          "resolution": "Kodi named window",
+          "id": 10002
+        },
+        {
+          "target": "games",
+          "condition": "Skin.HasSetting(Home_custom9_Custom_Category_Games)",
+          "resolution": "Kodi named window",
+          "id": 10821
+        }
+      ],
+      "has_unconditional_fallback": false
+    },
+    {
+      "variable": "Home_games_SubCategory",
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "uses": 1,
+      "branches": [
+        {
+          "target": "videos",
+          "condition": "[Skin.HasSetting(Home_games_Custom_Category_File)+Skin.HasSetting(Home_games_Custom_SubCategory_Video)]|Skin.HasSetting(Home_games_Custom_Category_Video)",
+          "resolution": "Kodi named window",
+          "id": 10025
+        },
+        {
+          "target": "music",
+          "condition": "[Skin.HasSetting(Home_games_Custom_Category_File)+Skin.HasSetting(Home_games_Custom_SubCategory_Music)]|Skin.HasSetting(Home_games_Custom_Category_Music)",
+          "resolution": "Kodi named window",
+          "id": 10502
+        },
+        {
+          "target": "pictures",
+          "condition": "Skin.HasSetting(Home_games_Custom_Category_Pictures)",
+          "resolution": "Kodi named window",
+          "id": 10002
+        },
+        {
+          "target": "games",
+          "condition": "Skin.HasSetting(Home_games_Custom_Category_Games)",
+          "resolution": "Kodi named window",
+          "id": 10821
+        }
+      ],
+      "has_unconditional_fallback": false
+    },
+    {
+      "variable": "Home_movies_SubCategory",
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "uses": 1,
+      "branches": [
+        {
+          "target": "videos",
+          "condition": "[Skin.HasSetting(Home_movies_Custom_Category_File)+Skin.HasSetting(Home_movies_Custom_SubCategory_Video)]|Skin.HasSetting(Home_movies_Custom_Category_Video)",
+          "resolution": "Kodi named window",
+          "id": 10025
+        },
+        {
+          "target": "music",
+          "condition": "[Skin.HasSetting(Home_movies_Custom_Category_File)+Skin.HasSetting(Home_movies_Custom_SubCategory_Music)]|Skin.HasSetting(Home_movies_Custom_Category_Music)",
+          "resolution": "Kodi named window",
+          "id": 10502
+        },
+        {
+          "target": "pictures",
+          "condition": "Skin.HasSetting(Home_movies_Custom_Category_Pictures)",
+          "resolution": "Kodi named window",
+          "id": 10002
+        },
+        {
+          "target": "games",
+          "condition": "Skin.HasSetting(Home_movies_Custom_Category_Games)",
+          "resolution": "Kodi named window",
+          "id": 10821
+        }
+      ],
+      "has_unconditional_fallback": false
+    },
+    {
+      "variable": "Home_music_SubCategory",
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "uses": 1,
+      "branches": [
+        {
+          "target": "videos",
+          "condition": "[Skin.HasSetting(Home_music_Custom_Category_File)+Skin.HasSetting(Home_music_Custom_SubCategory_Video)]|Skin.HasSetting(Home_music_Custom_Category_Video)",
+          "resolution": "Kodi named window",
+          "id": 10025
+        },
+        {
+          "target": "music",
+          "condition": "[Skin.HasSetting(Home_music_Custom_Category_File)+Skin.HasSetting(Home_music_Custom_SubCategory_Music)]|Skin.HasSetting(Home_music_Custom_Category_Music)",
+          "resolution": "Kodi named window",
+          "id": 10502
+        },
+        {
+          "target": "pictures",
+          "condition": "Skin.HasSetting(Home_music_Custom_Category_Pictures)",
+          "resolution": "Kodi named window",
+          "id": 10002
+        },
+        {
+          "target": "games",
+          "condition": "Skin.HasSetting(Home_music_Custom_Category_Games)",
+          "resolution": "Kodi named window",
+          "id": 10821
+        }
+      ],
+      "has_unconditional_fallback": false
+    },
+    {
+      "variable": "Home_musicvideo_SubCategory",
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "uses": 1,
+      "branches": [
+        {
+          "target": "videos",
+          "condition": "[Skin.HasSetting(Home_musicvideo_Custom_Category_File)+Skin.HasSetting(Home_musicvideo_Custom_SubCategory_Video)]|Skin.HasSetting(Home_musicvideo_Custom_Category_Video)",
+          "resolution": "Kodi named window",
+          "id": 10025
+        },
+        {
+          "target": "music",
+          "condition": "[Skin.HasSetting(Home_musicvideo_Custom_Category_File)+Skin.HasSetting(Home_musicvideo_Custom_SubCategory_Music)]|Skin.HasSetting(Home_musicvideo_Custom_Category_Music)",
+          "resolution": "Kodi named window",
+          "id": 10502
+        },
+        {
+          "target": "pictures",
+          "condition": "Skin.HasSetting(Home_musicvideo_Custom_Category_Pictures)",
+          "resolution": "Kodi named window",
+          "id": 10002
+        },
+        {
+          "target": "games",
+          "condition": "Skin.HasSetting(Home_musicvideo_Custom_Category_Games)",
+          "resolution": "Kodi named window",
+          "id": 10821
+        }
+      ],
+      "has_unconditional_fallback": false
+    },
+    {
+      "variable": "Home_picture_SubCategory",
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "uses": 1,
+      "branches": [
+        {
+          "target": "videos",
+          "condition": "[Skin.HasSetting(Home_picture_Custom_Category_File)+Skin.HasSetting(Home_picture_Custom_SubCategory_Video)]|Skin.HasSetting(Home_picture_Custom_Category_Video)",
+          "resolution": "Kodi named window",
+          "id": 10025
+        },
+        {
+          "target": "music",
+          "condition": "[Skin.HasSetting(Home_picture_Custom_Category_File)+Skin.HasSetting(Home_picture_Custom_SubCategory_Music)]|Skin.HasSetting(Home_picture_Custom_Category_Music)",
+          "resolution": "Kodi named window",
+          "id": 10502
+        },
+        {
+          "target": "pictures",
+          "condition": "Skin.HasSetting(Home_picture_Custom_Category_Pictures)",
+          "resolution": "Kodi named window",
+          "id": 10002
+        },
+        {
+          "target": "games",
+          "condition": "Skin.HasSetting(Home_picture_Custom_Category_Games)",
+          "resolution": "Kodi named window",
+          "id": 10821
+        }
+      ],
+      "has_unconditional_fallback": false
+    },
+    {
+      "variable": "Home_tvshow_SubCategory",
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "uses": 1,
+      "branches": [
+        {
+          "target": "videos",
+          "condition": "[Skin.HasSetting(Home_tvshow_Custom_Category_File)+Skin.HasSetting(Home_tvshow_Custom_SubCategory_Video)]|Skin.HasSetting(Home_tvshow_Custom_Category_Video)",
+          "resolution": "Kodi named window",
+          "id": 10025
+        },
+        {
+          "target": "music",
+          "condition": "[Skin.HasSetting(Home_tvshow_Custom_Category_File)+Skin.HasSetting(Home_tvshow_Custom_SubCategory_Music)]|Skin.HasSetting(Home_tvshow_Custom_Category_Music)",
+          "resolution": "Kodi named window",
+          "id": 10502
+        },
+        {
+          "target": "pictures",
+          "condition": "Skin.HasSetting(Home_tvshow_Custom_Category_Pictures)",
+          "resolution": "Kodi named window",
+          "id": 10002
+        },
+        {
+          "target": "games",
+          "condition": "Skin.HasSetting(Home_tvshow_Custom_Category_Games)",
+          "resolution": "Kodi named window",
+          "id": 10821
+        }
+      ],
+      "has_unconditional_fallback": false
+    },
+    {
+      "variable": "Home_videos_SubCategory",
+      "file": "xml/Variables_HomemenuCustomItems.xml",
+      "uses": 1,
+      "branches": [
+        {
+          "target": "videos",
+          "condition": "[Skin.HasSetting(Home_videos_Custom_Category_File)+Skin.HasSetting(Home_videos_Custom_SubCategory_Video)]|Skin.HasSetting(Home_videos_Custom_Category_Video)",
+          "resolution": "Kodi named window",
+          "id": 10025
+        },
+        {
+          "target": "music",
+          "condition": "[Skin.HasSetting(Home_videos_Custom_Category_File)+Skin.HasSetting(Home_videos_Custom_SubCategory_Music)]|Skin.HasSetting(Home_videos_Custom_Category_Music)",
+          "resolution": "Kodi named window",
+          "id": 10502
+        },
+        {
+          "target": "pictures",
+          "condition": "Skin.HasSetting(Home_videos_Custom_Category_Pictures)",
+          "resolution": "Kodi named window",
+          "id": 10002
+        },
+        {
+          "target": "games",
+          "condition": "Skin.HasSetting(Home_videos_Custom_Category_Games)",
+          "resolution": "Kodi named window",
+          "id": 10821
+        }
+      ],
+      "has_unconditional_fallback": false
+    },
+    {
+      "variable": "WidgetTarget",
+      "file": "xml/Variables_Widgets.xml",
+      "uses": 2,
+      "branches": [
+        {
+          "target": "music",
+          "condition": "String.IsEqual(Container.ListItem.DBTYPE,music)",
+          "resolution": "Kodi named window",
+          "id": 10502
+        },
+        {
+          "target": "music",
+          "condition": "String.Contains(Container.ListItem.DBTYPE,song)",
+          "resolution": "Kodi named window",
+          "id": 10502
+        },
+        {
+          "target": "music",
+          "condition": "String.Contains(Container.ListItem.DBTYPE,album)",
+          "resolution": "Kodi named window",
+          "id": 10502
+        },
+        {
+          "target": "music",
+          "condition": "String.Contains(Container.ListItem.DBTYPE,artist)",
+          "resolution": "Kodi named window",
+          "id": 10502
+        },
+        {
+          "target": "music",
+          "condition": "String.Contains(Container.ListItem.FolderPath,audio)",
+          "resolution": "Kodi named window",
+          "id": 10502
+        },
+        {
+          "target": "videos",
+          "condition": "String.Contains(Container.ListItem.DBTYPE,video)",
+          "resolution": "Kodi named window",
+          "id": 10025
+        },
+        {
+          "target": "videos",
+          "condition": "String.IsEqual(Container.ListItem.DBTYPE,movie)",
+          "resolution": "Kodi named window",
+          "id": 10025
+        },
+        {
+          "target": "videos",
+          "condition": "String.Contains(Container.ListItem.DBTYPE,set)",
+          "resolution": "Kodi named window",
+          "id": 10025
+        },
+        {
+          "target": "videos",
+          "condition": "String.Contains(Container.ListItem.DBTYPE,tvshow)",
+          "resolution": "Kodi named window",
+          "id": 10025
+        },
+        {
+          "target": "videos",
+          "condition": "String.Contains(Container.ListItem.DBTYPE,season)",
+          "resolution": "Kodi named window",
+          "id": 10025
+        },
+        {
+          "target": "videos",
+          "condition": "String.Contains(Container.ListItem.DBTYPE,episode)",
+          "resolution": "Kodi named window",
+          "id": 10025
+        },
+        {
+          "target": "videos",
+          "condition": "String.Contains(Container.ListItem.DBTYPE,musicvideo)",
+          "resolution": "Kodi named window",
+          "id": 10025
+        },
+        {
+          "target": "games",
+          "condition": "String.Contains(Container(9000).ListItem.Property(homemenu_id),games)",
+          "resolution": "Kodi named window",
+          "id": 10821
+        },
+        {
+          "target": "tvrecordings",
+          "condition": "String.Contains(Container.ListItem.FolderPath,pvr://recordings)",
+          "resolution": "Kodi named window",
+          "id": 10701
+        },
+        {
+          "target": "radiotimerrules",
+          "condition": "String.StartsWith(Container.ListItem.FolderPath,pvr://timers/radio/rules)",
+          "resolution": "Kodi named window",
+          "id": 10711
+        },
+        {
+          "target": "tvtimerrules",
+          "condition": "String.StartsWith(Container.ListItem.FolderPath,pvr://timers/tv/rules)",
+          "resolution": "Kodi named window",
+          "id": 10710
+        },
+        {
+          "target": "radiotimers",
+          "condition": "String.StartsWith(Container.ListItem.FolderPath,pvr://timers/radio)",
+          "resolution": "Kodi named window",
+          "id": 10708
+        },
+        {
+          "target": "tvtimers",
+          "condition": "String.StartsWith(Container.ListItem.FolderPath,pvr://timers)",
+          "resolution": "Kodi named window",
+          "id": 10703
+        },
+        {
+          "target": "tvchannels",
+          "condition": "String.Contains(Container.ListItem.FolderPath,pvr://channels)",
+          "resolution": "Kodi named window",
+          "id": 10700
+        },
+        {
+          "target": "videos",
+          "condition": "String.Contains(Window(home).Property(WidgetLabel),$LOCALIZE[20094])",
+          "resolution": "Kodi named window",
+          "id": 10025
+        },
+        {
+          "target": "addonbrowser",
+          "condition": "String.Contains(Container.ListItem.FolderPath,addons://)",
+          "resolution": "Kodi named window",
+          "id": 10040
+        },
+        {
+          "target": "videos",
+          "condition": "String.Contains(Container.ListItem.FolderPath,movies)",
+          "resolution": "Kodi named window",
+          "id": 10025
+        },
+        {
+          "target": "videos",
+          "condition": "String.Contains(Container.ListItem.FolderPath,episodes)",
+          "resolution": "Kodi named window",
+          "id": 10025
+        },
+        {
+          "target": "videos",
+          "condition": "String.Contains(Container.ListItem.FolderPath,video)",
+          "resolution": "Kodi named window",
+          "id": 10025
+        }
+      ],
+      "has_unconditional_fallback": false
+    },
+    {
+      "variable": "WidgetTarget_Dash",
+      "file": "xml/Variables_Dashboard.xml",
+      "uses": 4,
+      "branches": [
+        {
+          "target": "music",
+          "condition": "String.IsEqual(ListItem.DBTYPE,music)",
+          "resolution": "Kodi named window",
+          "id": 10502
+        },
+        {
+          "target": "music",
+          "condition": "String.Contains(ListItem.DBTYPE,song)",
+          "resolution": "Kodi named window",
+          "id": 10502
+        },
+        {
+          "target": "music",
+          "condition": "String.Contains(ListItem.DBTYPE,album)",
+          "resolution": "Kodi named window",
+          "id": 10502
+        },
+        {
+          "target": "music",
+          "condition": "String.Contains(ListItem.DBTYPE,artist)",
+          "resolution": "Kodi named window",
+          "id": 10502
+        },
+        {
+          "target": "music",
+          "condition": "String.Contains(ListItem.FolderPath,audio)",
+          "resolution": "Kodi named window",
+          "id": 10502
+        },
+        {
+          "target": "videos",
+          "condition": "String.Contains(ListItem.DBTYPE,video)",
+          "resolution": "Kodi named window",
+          "id": 10025
+        },
+        {
+          "target": "videos",
+          "condition": "String.Contains(ListItem.DBTYPE,movie)",
+          "resolution": "Kodi named window",
+          "id": 10025
+        },
+        {
+          "target": "videos",
+          "condition": "String.Contains(ListItem.DBTYPE,set)",
+          "resolution": "Kodi named window",
+          "id": 10025
+        },
+        {
+          "target": "videos",
+          "condition": "String.Contains(ListItem.DBTYPE,tvshow)",
+          "resolution": "Kodi named window",
+          "id": 10025
+        },
+        {
+          "target": "videos",
+          "condition": "String.Contains(ListItem.DBTYPE,season)",
+          "resolution": "Kodi named window",
+          "id": 10025
+        },
+        {
+          "target": "videos",
+          "condition": "String.Contains(ListItem.DBTYPE,episode)",
+          "resolution": "Kodi named window",
+          "id": 10025
+        },
+        {
+          "target": "videos",
+          "condition": "String.Contains(ListItem.DBTYPE,musicvideo)",
+          "resolution": "Kodi named window",
+          "id": 10025
+        },
+        {
+          "target": "games",
+          "condition": "String.Contains(Container(9000).ListItem.Property(homemenu_id),games)",
+          "resolution": "Kodi named window",
+          "id": 10821
+        },
+        {
+          "target": "tvrecordings",
+          "condition": "String.Contains(ListItem.FolderPath,pvr://recordings)",
+          "resolution": "Kodi named window",
+          "id": 10701
+        },
+        {
+          "target": "radiotimerrules",
+          "condition": "String.StartsWith(ListItem.FolderPath,pvr://timers/radio/rules)",
+          "resolution": "Kodi named window",
+          "id": 10711
+        },
+        {
+          "target": "tvtimerrules",
+          "condition": "String.StartsWith(ListItem.FolderPath,pvr://timers/tv/rules)",
+          "resolution": "Kodi named window",
+          "id": 10710
+        },
+        {
+          "target": "radiotimers",
+          "condition": "String.StartsWith(ListItem.FolderPath,pvr://timers/radio)",
+          "resolution": "Kodi named window",
+          "id": 10708
+        },
+        {
+          "target": "tvtimers",
+          "condition": "String.StartsWith(ListItem.FolderPath,pvr://timers)",
+          "resolution": "Kodi named window",
+          "id": 10703
+        },
+        {
+          "target": "tvchannels",
+          "condition": "String.Contains(ListItem.FolderPath,pvr://channels)",
+          "resolution": "Kodi named window",
+          "id": 10700
+        },
+        {
+          "target": "videos",
+          "condition": "String.Contains(Window(home).Property(WidgetLabel),$LOCALIZE[20094])",
+          "resolution": "Kodi named window",
+          "id": 10025
+        },
+        {
+          "target": "addonbrowser",
+          "condition": "String.Contains(ListItem.FolderPath,addons://)",
+          "resolution": "Kodi named window",
+          "id": 10040
+        },
+        {
+          "target": "favouritesbrowser",
+          "condition": "String.Contains(ListItem.FolderPath,favourites://)",
+          "resolution": "Kodi named window",
+          "id": 10060
+        },
+        {
+          "target": "videos",
+          "condition": "String.Contains(ListItem.FolderPath,movie)",
+          "resolution": "Kodi named window",
+          "id": 10025
+        },
+        {
+          "target": "videos",
+          "condition": "String.Contains(ListItem.FolderPath,episodes)",
+          "resolution": "Kodi named window",
+          "id": 10025
+        },
+        {
+          "target": "videos",
+          "condition": "String.Contains(ListItem.FolderPath,video)",
+          "resolution": "Kodi named window",
+          "id": 10025
+        },
+        {
+          "target": "videos",
+          "condition": null,
+          "resolution": "Kodi named window",
+          "id": 10025
+        }
+      ],
+      "has_unconditional_fallback": true
+    },
+    {
+      "variable": "WidgetTarget_Dash_FirstItem",
+      "file": "xml/Variables_Dashboard.xml",
+      "uses": 4,
+      "branches": [
+        {
+          "target": "music",
+          "condition": "String.IsEqual(Container.ListItem(1).DBTYPE,music)",
+          "resolution": "Kodi named window",
+          "id": 10502
+        },
+        {
+          "target": "music",
+          "condition": "String.Contains(Container.ListItem(1).DBTYPE,song)",
+          "resolution": "Kodi named window",
+          "id": 10502
+        },
+        {
+          "target": "music",
+          "condition": "String.Contains(Container.ListItem(1).DBTYPE,album)",
+          "resolution": "Kodi named window",
+          "id": 10502
+        },
+        {
+          "target": "music",
+          "condition": "String.Contains(Container.ListItem(1).DBTYPE,artist)",
+          "resolution": "Kodi named window",
+          "id": 10502
+        },
+        {
+          "target": "music",
+          "condition": "String.Contains(Container.ListItem(1).FolderPath,audio)",
+          "resolution": "Kodi named window",
+          "id": 10502
+        },
+        {
+          "target": "videos",
+          "condition": "String.Contains(Container.ListItem(1).DBTYPE,video)",
+          "resolution": "Kodi named window",
+          "id": 10025
+        },
+        {
+          "target": "videos",
+          "condition": "String.Contains(Container.ListItem(1).DBTYPE,movie)",
+          "resolution": "Kodi named window",
+          "id": 10025
+        },
+        {
+          "target": "videos",
+          "condition": "String.Contains(Container.ListItem(1).DBTYPE,set)",
+          "resolution": "Kodi named window",
+          "id": 10025
+        },
+        {
+          "target": "videos",
+          "condition": "String.Contains(Container.ListItem(1).DBTYPE,tvshow)",
+          "resolution": "Kodi named window",
+          "id": 10025
+        },
+        {
+          "target": "videos",
+          "condition": "String.Contains(Container.ListItem(1).DBTYPE,season)",
+          "resolution": "Kodi named window",
+          "id": 10025
+        },
+        {
+          "target": "videos",
+          "condition": "String.Contains(Container.ListItem(1).DBTYPE,episode)",
+          "resolution": "Kodi named window",
+          "id": 10025
+        },
+        {
+          "target": "videos",
+          "condition": "String.Contains(Container.ListItem(1).DBTYPE,musicvideo)",
+          "resolution": "Kodi named window",
+          "id": 10025
+        },
+        {
+          "target": "games",
+          "condition": "String.Contains(Container(9000).ListItem(1).Property(homemenu_id),games)",
+          "resolution": "Kodi named window",
+          "id": 10821
+        },
+        {
+          "target": "tvrecordings",
+          "condition": "String.Contains(Container.ListItem(1).FolderPath,pvr://recordings)",
+          "resolution": "Kodi named window",
+          "id": 10701
+        },
+        {
+          "target": "radiotimerrules",
+          "condition": "String.StartsWith(Container.ListItem(1).FolderPath,pvr://timers/radio/rules)",
+          "resolution": "Kodi named window",
+          "id": 10711
+        },
+        {
+          "target": "tvtimerrules",
+          "condition": "String.StartsWith(Container.ListItem(1).FolderPath,pvr://timers/tv/rules)",
+          "resolution": "Kodi named window",
+          "id": 10710
+        },
+        {
+          "target": "radiotimers",
+          "condition": "String.StartsWith(Container.ListItem(1).FolderPath,pvr://timers/radio)",
+          "resolution": "Kodi named window",
+          "id": 10708
+        },
+        {
+          "target": "tvtimers",
+          "condition": "String.StartsWith(Container.ListItem(1).FolderPath,pvr://timers)",
+          "resolution": "Kodi named window",
+          "id": 10703
+        },
+        {
+          "target": "tvchannels",
+          "condition": "String.Contains(Container.ListItem(1).FolderPath,pvr://channels)",
+          "resolution": "Kodi named window",
+          "id": 10700
+        },
+        {
+          "target": "videos",
+          "condition": "String.Contains(Window(home).Property(WidgetLabel),$LOCALIZE[20094])",
+          "resolution": "Kodi named window",
+          "id": 10025
+        },
+        {
+          "target": "addonbrowser",
+          "condition": "String.Contains(Container.ListItem(1).FolderPath,addons://)",
+          "resolution": "Kodi named window",
+          "id": 10040
+        },
+        {
+          "target": "favouritesbrowser",
+          "condition": "String.Contains(Container.ListItem(1).FolderPath,favourites://)",
+          "resolution": "Kodi named window",
+          "id": 10060
+        },
+        {
+          "target": "videos",
+          "condition": "String.Contains(Container.ListItem(1).FolderPath,movie)",
+          "resolution": "Kodi named window",
+          "id": 10025
+        },
+        {
+          "target": "videos",
+          "condition": "String.Contains(Container.ListItem(1).FolderPath,episodes)",
+          "resolution": "Kodi named window",
+          "id": 10025
+        },
+        {
+          "target": "videos",
+          "condition": "String.Contains(Container.ListItem(1).FolderPath,video)",
+          "resolution": "Kodi named window",
+          "id": 10025
+        },
+        {
+          "target": "videos",
+          "condition": null,
+          "resolution": "Kodi named window",
+          "id": 10025
+        }
+      ],
+      "has_unconditional_fallback": true
+    }
+  ],
+  "unresolved_dynamic": [
+    {
+      "file": "xml/Startup.xml",
+      "action": "ReplaceWindow($INFO[System.StartupWindow])",
+      "target": "$INFO[System.StartupWindow]"
+    }
+  ],
+  "custom_windows_with_ids": {
+    "11000": "xml/Custom_1100_Artistslideshow_Artistinfo.xml",
+    "11101": "xml/Custom_1101_Artistinfos_Settings.xml",
+    "11102": "xml/Custom_1102_TextViewer.xml",
+    "11104": "xml/Custom_1104_SettingsList.xml",
+    "11141": "xml/Custom_1141_refesh_videodb.xml",
+    "11142": "xml/Custom_1142_refesh_musicdb.xml",
+    "11151": "xml/Custom_1151_WOL.xml",
+    "11152": "xml/Custom_1152_Steelbox.xml",
+    "11154": "xml/Custom_1154_SkinSettingReset.xml",
+    "11155": "xml/Custom_1155_FirstRun.xml",
+    "11200": "xml/Custom_1200_Dashboard.xml",
+    "11301": "xml/Custom_1301_HomeMenuItemsPosition.xml",
+    "11400": "xml/Custom_1400_MusicOverlay.xml",
+    "11401": "xml/Custom_1401_VideoOverlay.xml",
+    "11500": "xml/Custom_1500_WidgetSettings.xml",
+    "11501": "xml/Custom_1501_HomemenuTargets.xml",
+    "11600": "xml/Custom_1600_Overlay.xml",
+    "11700": "xml/Custom_1700_Wetterwarnung.xml",
+    "11800": "xml/Custom_1800_UsedAddons.xml"
+  }
+}

@@ -584,12 +584,6 @@
 						<aspectratio>scale</aspectratio>
 						<texture border="4">$INFO[ListItem.Art(screenshot)]</texture>
 					</control>
-					<control type="gamewindow">
-						<left>12</left>
-						<right>12</right>
-						<height>250</height>
-						<pixels>$INFO[ListItem.FilenameAndPath]</pixels>
-					</control>
 					<control type="label">
 						<top>250</top>
 						<left>12</left>
@@ -622,13 +616,6 @@
 						<height>250</height>
 						<aspectratio>scale</aspectratio>
 						<texture border="4">$INFO[ListItem.Art(screenshot)]</texture>
-					</control>
-					<control type="gamewindow">
-						<top>10</top>
-						<left>20</left>
-						<right>20</right>
-						<height>250</height>
-						<pixels>$INFO[ListItem.FilenameAndPath]</pixels>
 					</control>
 					<control type="label">
 						<top>250</top>

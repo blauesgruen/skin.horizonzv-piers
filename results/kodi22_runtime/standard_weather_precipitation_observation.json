@@ -1,0 +1,30 @@
+{
+  "classification": "Observed formatting incompatibility; not a removed Kodi API. No skin workaround implemented.",
+  "provider": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "value": "weather.gismeteo"
+    }
+  },
+  "values": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Weather.Data(Daily.1.Precipitation)": "0.0 mm%",
+      "Weather.Data(Hourly.1.Precipitation)": "0.0 mm%",
+      "Window(weather).Property(Daily.1.Precipitation)": "0.0 mm",
+      "Window(weather).Property(Hourly.1.Precipitation)": "0.0 mm"
+    }
+  },
+  "source_findings": {
+    "provider": "Installed weather.gismeteo 0.6.4+matrix.1 default.py lines 164-169 supplies precipitation amount with unit.",
+    "kodi": "Piers WeatherPropertyHelper.cpp maps Precipitation to FormatPercentage, which appends % unless already present.",
+    "scope": "Current installed provider and observed Piers runtime only."
+  },
+  "sources": [
+    "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/weather/WeatherPropertyHelper.cpp",
+    "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/weather/WeatherJob.cpp"
+  ],
+  "decision": "Record separately from unsupported-API migration. No provider-specific expansion undertaken."
+}

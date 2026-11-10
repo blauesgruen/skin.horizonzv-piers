@@ -1,0 +1,92 @@
+{
+  "scope": "Full production HomePageWidget_list include with actual caller target parameters. Only directory inputs, visibility and focus callbacks adapted for isolated local fixtures. No network, media playback or real PVR backend action.",
+  "rows": [
+    {
+      "case": "standard_video",
+      "source_caller": 218,
+      "target_parameter": "videos",
+      "expected_window": 10025,
+      "actual_window": 10025,
+      "folder_opened": true
+    },
+    {
+      "case": "standard_music",
+      "source_caller": 210,
+      "target_parameter": "music",
+      "expected_window": 10502,
+      "actual_window": 10502,
+      "folder_opened": true
+    },
+    {
+      "case": "custom_music_to_video",
+      "source_caller": 214,
+      "target_parameter": "$VAR[Home_music_SubCategory]",
+      "expected_window": 10025,
+      "actual_window": 10025,
+      "folder_opened": true
+    },
+    {
+      "case": "custom_picture",
+      "source_caller": 248,
+      "target_parameter": "$VAR[Home_picture_SubCategory]",
+      "expected_window": 10002,
+      "actual_window": 10002,
+      "folder_opened": true
+    },
+    {
+      "case": "custom_video",
+      "source_caller": 250,
+      "target_parameter": "$VAR[Home_custom1_SubCategory]",
+      "expected_window": 10025,
+      "actual_window": 10025,
+      "folder_opened": true
+    },
+    {
+      "case": "custom_music",
+      "source_caller": 250,
+      "target_parameter": "$VAR[Home_custom1_SubCategory]",
+      "expected_window": 10502,
+      "actual_window": 10502,
+      "folder_opened": true
+    },
+    {
+      "case": "custom_pictures",
+      "source_caller": 250,
+      "target_parameter": "$VAR[Home_custom1_SubCategory]",
+      "expected_window": 10002,
+      "actual_window": 10002,
+      "folder_opened": true
+    },
+    {
+      "case": "custom_games",
+      "source_caller": 250,
+      "target_parameter": "$VAR[Home_custom1_SubCategory]",
+      "expected_window": 10821,
+      "actual_window": 10821,
+      "folder_opened": true
+    },
+    {
+      "case": "secondary_content",
+      "source_caller": 218,
+      "target_parameter": "videos",
+      "expected_window": 10025,
+      "actual_window": 10025,
+      "folder_opened": true
+    },
+    {
+      "case": "provider_target_override",
+      "source_caller": 218,
+      "target_parameter": "videos",
+      "expected_window": 10502,
+      "actual_window": 10502,
+      "folder_opened": true
+    }
+  ],
+  "cleanup": {
+    "process_exited": true,
+    "settings_restored": true,
+    "databases_restored": true,
+    "skin_xml_match": true
+  },
+  "errors": []
+}

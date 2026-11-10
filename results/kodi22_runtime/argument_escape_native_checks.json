@@ -1,0 +1,246 @@
+{
+  "scope": "Native argument round-trip, not an ExtendedInfo execution test.",
+  "process_id": 37076,
+  "rows": [
+    {
+      "case": "comma",
+      "family": 0,
+      "revised": false,
+      "expected": "id=Alpha, Beta Album, Part II",
+      "actual": "",
+      "matches": false
+    },
+    {
+      "case": "comma",
+      "family": 0,
+      "revised": true,
+      "expected": "id=Alpha, Beta Album, Part II",
+      "actual": "id=Alpha, Beta Album, Part II",
+      "matches": true
+    },
+    {
+      "case": "comma",
+      "family": 1,
+      "revised": false,
+      "expected": "id=Alpha, Beta Movie, Part Two",
+      "actual": "",
+      "matches": false
+    },
+    {
+      "case": "comma",
+      "family": 1,
+      "revised": true,
+      "expected": "id=Alpha, Beta Movie, Part Two",
+      "actual": "id=Alpha, Beta Movie, Part Two",
+      "matches": true
+    },
+    {
+      "case": "comma",
+      "family": 2,
+      "revised": false,
+      "expected": "id=Movie, Part Two 2024",
+      "actual": "",
+      "matches": false
+    },
+    {
+      "case": "comma",
+      "family": 2,
+      "revised": true,
+      "expected": "id=Movie, Part Two 2024",
+      "actual": "id=Movie, Part Two 2024",
+      "matches": true
+    },
+    {
+      "case": "comma",
+      "family": "single",
+      "revised": true,
+      "expected": "name=Movie, Part Two",
+      "actual": "name=Movie, Part Two",
+      "matches": true
+    },
+    {
+      "case": "quotes_slashes",
+      "family": 0,
+      "revised": false,
+      "expected": "id=\"A\" \\ Band Album \"B\"",
+      "actual": "id=A\" \\ Band Album \"B",
+      "matches": false
+    },
+    {
+      "case": "quotes_slashes",
+      "family": 0,
+      "revised": true,
+      "expected": "id=\"A\" \\ Band Album \"B\"",
+      "actual": "id=\"A\" \\ Band Album \"B\"",
+      "matches": true
+    },
+    {
+      "case": "quotes_slashes",
+      "family": 1,
+      "revised": false,
+      "expected": "id=\"A\" \\ Band \"C\" \\ Cut",
+      "actual": "id=\"A\" \\ Band \"C\" \\ Cut",
+      "matches": true
+    },
+    {
+      "case": "quotes_slashes",
+      "family": 1,
+      "revised": true,
+      "expected": "id=\"A\" \\ Band \"C\" \\ Cut",
+      "actual": "id=\"A\" \\ Band \"C\" \\ Cut",
+      "matches": true
+    },
+    {
+      "case": "quotes_slashes",
+      "family": 2,
+      "revised": false,
+      "expected": "id=\"C\" \\ Cut 2024",
+      "actual": "id=\"C\" \\ Cut 2024",
+      "matches": true
+    },
+    {
+      "case": "quotes_slashes",
+      "family": 2,
+      "revised": true,
+      "expected": "id=\"C\" \\ Cut 2024",
+      "actual": "id=\"C\" \\ Cut 2024",
+      "matches": true
+    },
+    {
+      "case": "quotes_slashes",
+      "family": "single",
+      "revised": true,
+      "expected": "name=\"C\" \\ Cut",
+      "actual": "name=\"C\" \\ Cut",
+      "matches": true
+    },
+    {
+      "case": "unicode_equals",
+      "family": 0,
+      "revised": false,
+      "expected": "id=Bj\u00f6rk \u6771\u4eac \u00c1lbum = \u0394",
+      "actual": "id=Bj\u00f6rk \u6771\u4eac \u00c1lbum = \u0394",
+      "matches": true
+    },
+    {
+      "case": "unicode_equals",
+      "family": 0,
+      "revised": true,
+      "expected": "id=Bj\u00f6rk \u6771\u4eac \u00c1lbum = \u0394",
+      "actual": "id=Bj\u00f6rk \u6771\u4eac \u00c1lbum = \u0394",
+      "matches": true
+    },
+    {
+      "case": "unicode_equals",
+      "family": 1,
+      "revised": false,
+      "expected": "id=Bj\u00f6rk \u6771\u4eac \u4eba\u9593\u306e\u6761\u4ef6",
+      "actual": "id=Bj\u00f6rk \u6771\u4eac \u4eba\u9593\u306e\u6761\u4ef6",
+      "matches": true
+    },
+    {
+      "case": "unicode_equals",
+      "family": 1,
+      "revised": true,
+      "expected": "id=Bj\u00f6rk \u6771\u4eac \u4eba\u9593\u306e\u6761\u4ef6",
+      "actual": "id=Bj\u00f6rk \u6771\u4eac \u4eba\u9593\u306e\u6761\u4ef6",
+      "matches": true
+    },
+    {
+      "case": "unicode_equals",
+      "family": 2,
+      "revised": false,
+      "expected": "id=\u4eba\u9593\u306e\u6761\u4ef6 2024",
+      "actual": "id=\u4eba\u9593\u306e\u6761\u4ef6 2024",
+      "matches": true
+    },
+    {
+      "case": "unicode_equals",
+      "family": 2,
+      "revised": true,
+      "expected": "id=\u4eba\u9593\u306e\u6761\u4ef6 2024",
+      "actual": "id=\u4eba\u9593\u306e\u6761\u4ef6 2024",
+      "matches": true
+    },
+    {
+      "case": "unicode_equals",
+      "family": "single",
+      "revised": true,
+      "expected": "name=\u4eba\u9593\u306e\u6761\u4ef6",
+      "actual": "name=\u4eba\u9593\u306e\u6761\u4ef6",
+      "matches": true
+    },
+    {
+      "case": "empty",
+      "family": 0,
+      "revised": false,
+      "expected": "id= ",
+      "actual": "id=",
+      "matches": false
+    },
+    {
+      "case": "empty",
+      "family": 0,
+      "revised": true,
+      "expected": "id= ",
+      "actual": "id= ",
+      "matches": true
+    },
+    {
+      "case": "empty",
+      "family": 1,
+      "revised": false,
+      "expected": "id= ",
+      "actual": "id=",
+      "matches": false
+    },
+    {
+      "case": "empty",
+      "family": 1,
+      "revised": true,
+      "expected": "id= ",
+      "actual": "id= ",
+      "matches": true
+    },
+    {
+      "case": "empty",
+      "family": 2,
+      "revised": false,
+      "expected": "id= ",
+      "actual": "id=",
+      "matches": false
+    },
+    {
+      "case": "empty",
+      "family": 2,
+      "revised": true,
+      "expected": "id= ",
+      "actual": "id= ",
+      "matches": true
+    },
+    {
+      "case": "empty",
+      "family": "single",
+      "revised": true,
+      "expected": "name=",
+      "actual": "name=",
+      "matches": true
+    }
+  ],
+  "revised_cases_passed": 16,
+  "comma_baseline_failures": 3,
+  "cleanup": {
+    "process_exited": true,
+    "all_test_xml_match_production": true,
+    "xml_count": 164,
+    "fixture_removed": true,
+    "profile_baseline_restored": true,
+    "production_xml_hashes_unchanged": true
+  },
+  "log_summary": {
+    "normal_exit_message": true,
+    "severity_error_lines": 3,
+    "raw_log_copied": false,
+    "scope": "Includes intentionally invalid plain-argument baseline calls; not asserted error-free."
+  }
+}

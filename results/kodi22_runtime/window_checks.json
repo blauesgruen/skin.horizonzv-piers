@@ -1,0 +1,221 @@
+[
+  {
+    "requested": "skinsettings",
+    "activation": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": "OK"
+    },
+    "state": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "Mainmenu buttons"
+        },
+        "currentwindow": {
+          "id": 10035,
+          "label": "Skin Settings"
+        },
+        "skin": {
+          "id": "skin.horizonzv",
+          "name": "Horizonz V"
+        }
+      }
+    },
+    "screenshot": "skinsettings.png"
+  },
+  {
+    "requested": "weather",
+    "activation": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": "OK"
+    },
+    "state": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": " ()"
+        },
+        "currentwindow": {
+          "id": 12600,
+          "label": "Weather"
+        },
+        "skin": {
+          "id": "skin.horizonzv",
+          "name": "Horizonz V"
+        }
+      }
+    },
+    "screenshot": "weather.png"
+  },
+  {
+    "requested": "favourites",
+    "activation": {
+      "error": {
+        "code": -32602,
+        "data": {
+          "method": "GUI.ActivateWindow",
+          "stack": {
+            "message": "Received value does not match any of the defined enum values",
+            "name": "window",
+            "type": "string"
+          }
+        },
+        "message": "Invalid params."
+      },
+      "id": 1,
+      "jsonrpc": "2.0"
+    },
+    "state": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": " ()"
+        },
+        "currentwindow": {
+          "id": 12600,
+          "label": "Weather"
+        },
+        "skin": {
+          "id": "skin.horizonzv",
+          "name": "Horizonz V"
+        }
+      }
+    },
+    "screenshot": "favourites.png"
+  },
+  {
+    "requested": "systeminfo",
+    "activation": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": "OK"
+    },
+    "state": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "Summary"
+        },
+        "currentwindow": {
+          "id": 10007,
+          "label": "System information"
+        },
+        "skin": {
+          "id": "skin.horizonzv",
+          "name": "Horizonz V"
+        }
+      }
+    },
+    "screenshot": "systeminfo.png"
+  },
+  {
+    "requested": "videos",
+    "activation": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": "OK"
+    },
+    "state": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "[Files]"
+        },
+        "currentwindow": {
+          "id": 10025,
+          "label": "Videos"
+        },
+        "skin": {
+          "id": "skin.horizonzv",
+          "name": "Horizonz V"
+        }
+      }
+    },
+    "screenshot": "videos.png"
+  },
+  {
+    "requested": "music",
+    "activation": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": "OK"
+    },
+    "state": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "[Playlists]"
+        },
+        "currentwindow": {
+          "id": 10502,
+          "label": "Music"
+        },
+        "skin": {
+          "id": "skin.horizonzv",
+          "name": "Horizonz V"
+        }
+      }
+    },
+    "screenshot": "music.png"
+  },
+  {
+    "requested": "settings",
+    "activation": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": "OK"
+    },
+    "state": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "Player settings"
+        },
+        "currentwindow": {
+          "id": 10004,
+          "label": "Settings"
+        },
+        "skin": {
+          "id": "skin.horizonzv",
+          "name": "Horizonz V"
+        }
+      }
+    },
+    "screenshot": "settings.png"
+  },
+  {
+    "requested": "home",
+    "activation": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": "OK"
+    },
+    "state": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentcontrol": {
+          "label": "TV shows"
+        },
+        "currentwindow": {
+          "id": 10000,
+          "label": "Home"
+        },
+        "skin": {
+          "id": "skin.horizonzv",
+          "name": "Horizonz V"
+        }
+      }
+    },
+    "screenshot": "home.png"
+  }
+]

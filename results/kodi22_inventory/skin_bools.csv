@@ -1,0 +1,433 @@
+Setting;Lesend;Schreibend;Reset;Dateien
+addondashboard;1;2;0;Custom_1500_WidgetSettings.xml, Variables_Dashboard.xml
+alphabetscroller_off;3;1;0;Includes_AlphabetScroller.xml, Includes_SidePanel_right.xml, View_Movie_057_Banner.xml
+animation;122;3;0;Custom_1155_FirstRun.xml, DialogVolumeBar.xml, Home.xml, Includes.xml, Includes_Dash_FritzDect.xml, Includes_Dash_GTO.xml, Includes_Dash_Layout.xml, Includes_Dash_Weather.xml, Includes_HomeContent.xml, Includes_HomeOSD.xml, Includes_PVR.xml, Includes_SidePanel.xml, Includes_SidePanel_right.xml, SettingsCategory.xml, SkinSettings.xml, View_50_List.xml, View_515_Episode.xml, View_562_Showcase.xml, View_Movie_057_Banner.xml, View_Movie_302_3Panel.xml, View_Movie_401_Fanart.xml, View_Movie_402_Fanart_Episode.xml, View_Movie_500_Panel.xml, View_Movie_502_Don.xml, View_Movie_503_MediaInfo.xml, View_Movie_505_Wide.xml, View_Movie_742_Wall.xml, View_Music_058_Banner.xml, View_Music_509_Fanart.xml, View_Music_570_DiscFlow.xml, View_Music_741_CoverWall.xml, Views_Addon_Browser.xml, Views_Pictures.xml
+artistslideshow_artistinfos_albums;5;1;0;Custom_1100_Artistslideshow_Artistinfo.xml, Custom_1101_Artistinfos_Settings.xml, Timers.xml
+artistslideshow_artistinfos_bio;4;1;0;Custom_1100_Artistslideshow_Artistinfo.xml, Custom_1101_Artistinfos_Settings.xml, Timers.xml
+artistslideshow_artistinfos_similar;5;1;0;Custom_1100_Artistslideshow_Artistinfo.xml, Custom_1101_Artistinfos_Settings.xml, Timers.xml
+autoscroll;1;0;0;Includes_PVR.xml
+avengers_sw;4;2;0;Home.xml, SkinSettings.xml, Variables.xml, Variables_SkinSettings_Description.xml
+background_dim_1;7;9;0;Custom_1155_FirstRun.xml, Includes.xml, Includes_SidePanel_right.xml, MusicOSD.xml, SettingsCategory.xml, SkinSettings.xml, Variables.xml
+background_dim_2;7;7;0;Custom_1155_FirstRun.xml, Includes.xml, Includes_SidePanel_right.xml, MusicOSD.xml, SettingsCategory.xml, SkinSettings.xml, Variables.xml
+background_dim_3;7;7;0;Custom_1155_FirstRun.xml, Includes.xml, Includes_SidePanel_right.xml, MusicOSD.xml, SettingsCategory.xml, SkinSettings.xml, Variables.xml
+background_dim_no;1;6;0;Includes_SidePanel_right.xml, MusicOSD.xml, SkinSettings.xml, Variables.xml
+backgrounddiffuseoverlay;2;1;0;Includes.xml, SkinSettings.xml
+backgroundvideo;5;2;0;Custom_1155_FirstRun.xml, Includes.xml, SkinSettings.xml
+batterylevel;8;1;0;Custom_1400_MusicOverlay.xml, Custom_1401_VideoOverlay.xml, Home.xml, Includes.xml, SkinSettings.xml
+bigplottext;75;1;0;Custom_1102_TextViewer.xml, DialogFullScreenInfo.xml, DialogMusicInfo.xml, DialogPVRInfo.xml, DialogTextViewer.xml, Includes_DialogSelect.xml, Includes_PVR.xml, SkinSettings.xml, View_515_Episode.xml, View_562_Showcase.xml, View_722_RightList.xml, View_Movie_057_Banner.xml, View_Movie_302_3Panel.xml, View_Movie_401_Fanart.xml, View_Movie_402_Fanart_Episode.xml, View_Movie_500_Panel.xml, View_Movie_503_MediaInfo.xml, View_Movie_721_RightList.xml, View_Music_058_Banner.xml, Views_PVR_Channels.xml, Views_PVR_Guide.xml, skin.horizonzv.script-gto-info.xml
+cdart_glass;2;2;0;SkinSettings.xml, Variables.xml
+cdart_off;2;2;0;SkinSettings.xml, Variables.xml
+cdart_rohling;3;2;0;SkinSettings.xml, Variables.xml
+color_blue;5;1;0;Variables.xml
+color_custom;7;1;0;SkinSettings.xml, Variables.xml
+color_darkgold;5;1;0;Variables.xml
+color_green;5;1;0;Variables.xml
+color_grey;5;3;0;Custom_1155_FirstRun.xml, Variables.xml
+color_orange;5;2;0;Custom_1155_FirstRun.xml, Variables.xml
+color_red;5;2;0;Custom_1155_FirstRun.xml, Variables.xml
+color_selected;5;1;0;Variables.xml
+color_selectedhome;5;1;0;Variables.xml
+commonpagecount;13;4;0;Custom_1155_FirstRun.xml, Includes.xml, Includes_SidePanel_right.xml, SkinSettings.xml, View_562_Showcase.xml, View_Movie_302_3Panel.xml, View_Movie_402_Fanart_Episode.xml, View_Movie_500_Panel.xml, View_Movie_503_MediaInfo.xml, View_Movie_742_Wall.xml, Views_Pictures.xml
+context_ad;0;2;0;Custom_1155_FirstRun.xml
+coverdim;3;3;0;Custom_1155_FirstRun.xml, Includes_SidePanel_right.xml, Variables.xml
+coverwallfull;2;0;0;Custom_1400_MusicOverlay.xml, Custom_1401_VideoOverlay.xml
+currentbuttonlabel;3;3;0;Custom_1155_FirstRun.xml, MusicOSD.xml, VideoOSD.xml
+debuggrid;2;1;0;Includes_DebugInfo.xml, SkinSettings.xml
+debuginfo;6;1;0;Home.xml, Includes.xml, Includes_DebugInfo.xml, SkinSettings.xml
+discrotation;2;1;0;Includes.xml, Includes_SidePanel_right.xml
+dust;3;1;0;Includes_SidePanel_right.xml, View_562_Showcase.xml, View_Movie_742_Wall.xml
+enableextendedart;76;5;0;Custom_1155_FirstRun.xml, Custom_1600_Overlay.xml, DialogButtonMenu.xml, DialogFullScreenInfo.xml, DialogSeekBar.xml, Includes.xml, Includes_HomeOSD.xml, Includes_SidePanel_right.xml, Includes_Widget_Param.xml, MusicVisualisation.xml, SkinSettings.xml, Variables.xml, View_50_List.xml, View_515_Episode.xml, View_562_Showcase.xml, View_722_RightList.xml, View_Movie_057_Banner.xml, View_Movie_302_3Panel.xml, View_Movie_401_Fanart.xml, View_Movie_402_Fanart_Episode.xml, View_Movie_500_Panel.xml, View_Movie_502_Don.xml, View_Movie_503_MediaInfo.xml, View_Movie_505_Wide.xml, View_Movie_721_RightList.xml, View_Movie_742_Wall.xml, View_Music_058_Banner.xml, View_Music_509_Fanart.xml, View_Music_570_DiscFlow.xml, View_Music_741_CoverWall.xml
+episode_hidecover;3;2;0;Custom_1155_FirstRun.xml, Includes_SidePanel_right.xml, View_515_Episode.xml
+episodeinfo;3;1;0;Includes_SidePanel_right.xml, View_Movie_402_Fanart_Episode.xml
+fanart;23;5;0;Custom_1102_TextViewer.xml, Custom_1155_FirstRun.xml, DialogTextViewer.xml, Includes.xml, Includes_SidePanel_right.xml, Includes_Widget_Param.xml, MusicOSD.xml, SkinSettings.xml, Timers.xml, View_Movie_500_Panel.xml, View_Movie_502_Don.xml, View_Movie_505_Wide.xml, View_Music_058_Banner.xml
+fanart_clearlogotitle;7;1;0;Includes_SidePanel_right.xml, View_Movie_401_Fanart.xml, View_Movie_402_Fanart_Episode.xml
+favdashboard;8;2;0;Custom_1500_WidgetSettings.xml, Home.xml, Includes.xml, Includes_Dashboard.xml, Includes_HomeContent.xml, Variables_Dashboard.xml
+firstrun1_horizonzv;0;1;0;SkinSettings.xml
+firstrun_high;1;1;0;Custom_1155_FirstRun.xml, Variables.xml
+firstrun_horizonzv;3;4;0;Custom_1155_FirstRun.xml, Home.xml, SkinSettings.xml
+firstrun_low;1;1;0;Custom_1155_FirstRun.xml, Variables.xml
+firstrun_medium;1;1;0;Custom_1155_FirstRun.xml, Variables.xml
+fsk;1;0;0;Variables_MediaFurniture.xml
+fsk_dual;1;0;0;Variables_MediaFurniture.xml
+fsk_original;1;0;0;Variables_MediaFurniture.xml
+gambit_background;8;3;0;Custom_1155_FirstRun.xml, Custom_1301_HomeMenuItemsPosition.xml, Home.xml, Includes.xml, SkinSettings.xml, Variables.xml, Variables_SkinSettings_Description.xml
+hide_central;4;1;0;Home.xml, SkinSettings.xml
+hideinfopanel;0;2;0;Custom_1155_FirstRun.xml
+hidejumpsmsbar;32;1;0;Includes_JumpSMS.xml, SkinSettings.xml, View_50_List.xml, View_515_Episode.xml, View_562_Showcase.xml, View_722_RightList.xml, View_Movie_057_Banner.xml, View_Movie_302_3Panel.xml, View_Movie_401_Fanart.xml, View_Movie_402_Fanart_Episode.xml, View_Movie_500_Panel.xml, View_Movie_502_Don.xml, View_Movie_503_MediaInfo.xml, View_Movie_505_Wide.xml, View_Movie_721_RightList.xml, View_Movie_740_BigWall.xml, View_Movie_742_Wall.xml, View_Music_058_Banner.xml, View_Music_506_InfoList.xml, View_Music_509_Fanart.xml, View_Music_512_ArtistMediaList.xml, View_Music_570_DiscFlow.xml, View_Music_741_CoverWall.xml, Views_Addon_Browser.xml, Views_Pictures.xml
+hidemoviecases;41;2;0;Custom_1155_FirstRun.xml, DialogVideoInfo.xml, Includes_SidePanel_right.xml, Variables.xml, View_515_Episode.xml, View_562_Showcase.xml, View_Movie_057_Banner.xml, View_Movie_503_MediaInfo.xml, View_Movie_721_RightList.xml, View_Movie_742_Wall.xml
+hidemusiccases;7;1;0;Includes_SidePanel_right.xml, View_Music_058_Banner.xml, View_Music_741_CoverWall.xml
+hidenavarrow;0;1;0;Custom_1155_FirstRun.xml
+hideoverlayiconnew;2;4;0;Custom_1155_FirstRun.xml, Includes.xml, Includes_SidePanel_right.xml
+hideplayercontrolshome;4;1;0;Includes_HomeContent.xml, Includes_HomeOSD.xml, SkinSettings.xml
+hidesysteminfo;0;2;0;Custom_1155_FirstRun.xml
+hidewolhome;2;1;0;Home.xml, SkinSettings.xml
+home_background_pvrlivetv_multiimage;4;2;0;Custom_1500_WidgetSettings.xml
+home_background_pvrradio_multiimage;4;2;0;Custom_1500_WidgetSettings.xml
+home_custom1_button;4;1;0;Includes_HomeContent.xml, Includes_Widget_Param.xml, Variables_HomemenuCustomItems.xml
+home_custom1_custom_category_code;5;1;0;Includes_HomeContent.xml, Variables_HomemenuCustomItems.xml
+home_custom1_custom_category_file;6;1;0;Variables_HomemenuCustomItems.xml
+home_custom1_custom_category_games;4;1;0;Variables_HomemenuCustomItems.xml
+home_custom1_custom_category_music;4;1;0;Variables_HomemenuCustomItems.xml
+home_custom1_custom_category_pictures;4;1;0;Variables_HomemenuCustomItems.xml
+home_custom1_custom_category_video;4;1;0;Variables_HomemenuCustomItems.xml
+home_custom1_custom_subcategory_games;1;0;0;Variables_HomemenuCustomItems.xml
+home_custom1_custom_subcategory_music;2;1;0;Variables_HomemenuCustomItems.xml
+home_custom1_custom_subcategory_pictures;1;0;0;Variables_HomemenuCustomItems.xml
+home_custom1_custom_subcategory_video;2;1;0;Variables_HomemenuCustomItems.xml
+home_custom2_button;4;1;0;Includes_HomeContent.xml, Includes_Widget_Param.xml, Variables_HomemenuCustomItems.xml
+home_custom2_custom_category_code;4;1;0;Includes_HomeContent.xml, Variables_HomemenuCustomItems.xml
+home_custom2_custom_category_file;6;1;0;Variables_HomemenuCustomItems.xml
+home_custom2_custom_category_games;4;1;0;Variables_HomemenuCustomItems.xml
+home_custom2_custom_category_music;4;1;0;Variables_HomemenuCustomItems.xml
+home_custom2_custom_category_pictures;4;1;0;Variables_HomemenuCustomItems.xml
+home_custom2_custom_category_video;4;1;0;Variables_HomemenuCustomItems.xml
+home_custom2_custom_subcategory_games;1;0;0;Variables_HomemenuCustomItems.xml
+home_custom2_custom_subcategory_music;2;1;0;Variables_HomemenuCustomItems.xml
+home_custom2_custom_subcategory_pictures;1;0;0;Variables_HomemenuCustomItems.xml
+home_custom2_custom_subcategory_video;2;1;0;Variables_HomemenuCustomItems.xml
+home_custom3_button;4;1;0;Includes_HomeContent.xml, Includes_Widget_Param.xml, Variables_HomemenuCustomItems.xml
+home_custom3_custom_category_code;4;1;0;Includes_HomeContent.xml, Variables_HomemenuCustomItems.xml
+home_custom3_custom_category_file;6;1;0;Variables_HomemenuCustomItems.xml
+home_custom3_custom_category_games;4;1;0;Variables_HomemenuCustomItems.xml
+home_custom3_custom_category_music;4;1;0;Variables_HomemenuCustomItems.xml
+home_custom3_custom_category_pictures;4;1;0;Variables_HomemenuCustomItems.xml
+home_custom3_custom_category_video;4;1;0;Variables_HomemenuCustomItems.xml
+home_custom3_custom_subcategory_games;1;0;0;Variables_HomemenuCustomItems.xml
+home_custom3_custom_subcategory_music;2;1;0;Variables_HomemenuCustomItems.xml
+home_custom3_custom_subcategory_pictures;1;0;0;Variables_HomemenuCustomItems.xml
+home_custom3_custom_subcategory_video;2;1;0;Variables_HomemenuCustomItems.xml
+home_custom4_button;4;1;0;Includes_HomeContent.xml, Includes_Widget_Param.xml, Variables_HomemenuCustomItems.xml
+home_custom4_custom_category_code;4;1;0;Includes_HomeContent.xml, Variables_HomemenuCustomItems.xml
+home_custom4_custom_category_file;6;1;0;Variables_HomemenuCustomItems.xml
+home_custom4_custom_category_games;4;1;0;Variables_HomemenuCustomItems.xml
+home_custom4_custom_category_music;4;1;0;Variables_HomemenuCustomItems.xml
+home_custom4_custom_category_pictures;4;1;0;Variables_HomemenuCustomItems.xml
+home_custom4_custom_category_video;4;1;0;Variables_HomemenuCustomItems.xml
+home_custom4_custom_subcategory_games;1;0;0;Variables_HomemenuCustomItems.xml
+home_custom4_custom_subcategory_music;2;1;0;Variables_HomemenuCustomItems.xml
+home_custom4_custom_subcategory_pictures;1;0;0;Variables_HomemenuCustomItems.xml
+home_custom4_custom_subcategory_video;2;1;0;Variables_HomemenuCustomItems.xml
+home_custom5_button;4;1;0;Includes_HomeContent.xml, Includes_Widget_Param.xml, Variables_HomemenuCustomItems.xml
+home_custom5_custom_category_code;4;1;0;Includes_HomeContent.xml, Variables_HomemenuCustomItems.xml
+home_custom5_custom_category_file;6;1;0;Variables_HomemenuCustomItems.xml
+home_custom5_custom_category_games;4;1;0;Variables_HomemenuCustomItems.xml
+home_custom5_custom_category_music;4;1;0;Variables_HomemenuCustomItems.xml
+home_custom5_custom_category_pictures;4;1;0;Variables_HomemenuCustomItems.xml
+home_custom5_custom_category_video;4;1;0;Variables_HomemenuCustomItems.xml
+home_custom5_custom_subcategory_games;1;0;0;Variables_HomemenuCustomItems.xml
+home_custom5_custom_subcategory_music;2;1;0;Variables_HomemenuCustomItems.xml
+home_custom5_custom_subcategory_pictures;1;0;0;Variables_HomemenuCustomItems.xml
+home_custom5_custom_subcategory_video;2;1;0;Variables_HomemenuCustomItems.xml
+home_custom6_button;4;1;0;Includes_HomeContent.xml, Includes_Widget_Param.xml, Variables_HomemenuCustomItems.xml
+home_custom6_custom_category_code;4;1;0;Includes_HomeContent.xml, Variables_HomemenuCustomItems.xml
+home_custom6_custom_category_file;6;1;0;Variables_HomemenuCustomItems.xml
+home_custom6_custom_category_games;4;1;0;Variables_HomemenuCustomItems.xml
+home_custom6_custom_category_music;4;1;0;Variables_HomemenuCustomItems.xml
+home_custom6_custom_category_pictures;4;1;0;Variables_HomemenuCustomItems.xml
+home_custom6_custom_category_video;4;1;0;Variables_HomemenuCustomItems.xml
+home_custom6_custom_subcategory_games;1;0;0;Variables_HomemenuCustomItems.xml
+home_custom6_custom_subcategory_music;2;1;0;Variables_HomemenuCustomItems.xml
+home_custom6_custom_subcategory_pictures;1;0;0;Variables_HomemenuCustomItems.xml
+home_custom6_custom_subcategory_video;2;1;0;Variables_HomemenuCustomItems.xml
+home_custom7_button;4;1;0;Includes_HomeContent.xml, Includes_Widget_Param.xml, Variables_HomemenuCustomItems.xml
+home_custom7_custom_category_code;4;1;0;Includes_HomeContent.xml, Variables_HomemenuCustomItems.xml
+home_custom7_custom_category_file;6;1;0;Variables_HomemenuCustomItems.xml
+home_custom7_custom_category_games;4;1;0;Variables_HomemenuCustomItems.xml
+home_custom7_custom_category_music;4;1;0;Variables_HomemenuCustomItems.xml
+home_custom7_custom_category_pictures;4;1;0;Variables_HomemenuCustomItems.xml
+home_custom7_custom_category_video;4;1;0;Variables_HomemenuCustomItems.xml
+home_custom7_custom_subcategory_games;1;0;0;Variables_HomemenuCustomItems.xml
+home_custom7_custom_subcategory_music;2;1;0;Variables_HomemenuCustomItems.xml
+home_custom7_custom_subcategory_pictures;1;0;0;Variables_HomemenuCustomItems.xml
+home_custom7_custom_subcategory_video;2;1;0;Variables_HomemenuCustomItems.xml
+home_custom8_button;4;1;0;Includes_HomeContent.xml, Includes_Widget_Param.xml, Variables_HomemenuCustomItems.xml
+home_custom8_custom_category_code;4;1;0;Includes_HomeContent.xml, Variables_HomemenuCustomItems.xml
+home_custom8_custom_category_file;6;1;0;Variables_HomemenuCustomItems.xml
+home_custom8_custom_category_games;4;1;0;Variables_HomemenuCustomItems.xml
+home_custom8_custom_category_music;4;1;0;Variables_HomemenuCustomItems.xml
+home_custom8_custom_category_pictures;4;1;0;Variables_HomemenuCustomItems.xml
+home_custom8_custom_category_video;4;1;0;Variables_HomemenuCustomItems.xml
+home_custom8_custom_subcategory_games;1;0;0;Variables_HomemenuCustomItems.xml
+home_custom8_custom_subcategory_music;2;1;0;Variables_HomemenuCustomItems.xml
+home_custom8_custom_subcategory_pictures;1;0;0;Variables_HomemenuCustomItems.xml
+home_custom8_custom_subcategory_video;2;1;0;Variables_HomemenuCustomItems.xml
+home_custom9_button;4;1;0;Includes_HomeContent.xml, Includes_Widget_Param.xml, Variables_HomemenuCustomItems.xml
+home_custom9_custom_category_code;4;1;0;Includes_HomeContent.xml, Variables_HomemenuCustomItems.xml
+home_custom9_custom_category_file;6;1;0;Variables_HomemenuCustomItems.xml
+home_custom9_custom_category_games;4;1;0;Variables_HomemenuCustomItems.xml
+home_custom9_custom_category_music;4;1;0;Variables_HomemenuCustomItems.xml
+home_custom9_custom_category_pictures;4;1;0;Variables_HomemenuCustomItems.xml
+home_custom9_custom_category_video;4;1;0;Variables_HomemenuCustomItems.xml
+home_custom9_custom_subcategory_games;1;0;0;Variables_HomemenuCustomItems.xml
+home_custom9_custom_subcategory_music;2;1;0;Variables_HomemenuCustomItems.xml
+home_custom9_custom_subcategory_pictures;1;0;0;Variables_HomemenuCustomItems.xml
+home_custom9_custom_subcategory_video;2;1;0;Variables_HomemenuCustomItems.xml
+home_custom_back_picture_onlyone_path;4;1;0;SkinSettings.xml
+home_games_button;11;1;0;Custom_1500_WidgetSettings.xml, Includes_HomeContent.xml, Includes_Widget_Param.xml, Variables_HomemenuCustomItems.xml
+home_games_custom_category_file;6;1;0;Variables_HomemenuCustomItems.xml
+home_games_custom_category_games;4;1;0;Variables_HomemenuCustomItems.xml
+home_games_custom_category_music;4;1;0;Variables_HomemenuCustomItems.xml
+home_games_custom_category_pictures;4;1;0;Variables_HomemenuCustomItems.xml
+home_games_custom_category_video;4;1;0;Variables_HomemenuCustomItems.xml
+home_games_custom_subcategory_games;1;0;0;Variables_HomemenuCustomItems.xml
+home_games_custom_subcategory_music;2;1;0;Variables_HomemenuCustomItems.xml
+home_games_custom_subcategory_pictures;1;0;0;Variables_HomemenuCustomItems.xml
+home_games_custom_subcategory_video;2;1;0;Variables_HomemenuCustomItems.xml
+home_movies_button;27;1;0;Custom_1500_WidgetSettings.xml, Includes_HomeContent.xml, Includes_Submenu.xml, Includes_Widget_Param.xml, Variables_HomemenuCustomItems.xml
+home_movies_custom_category_file;6;1;0;Variables_HomemenuCustomItems.xml
+home_movies_custom_category_games;4;1;0;Variables_HomemenuCustomItems.xml
+home_movies_custom_category_music;4;1;0;Variables_HomemenuCustomItems.xml
+home_movies_custom_category_pictures;4;1;0;Variables_HomemenuCustomItems.xml
+home_movies_custom_category_video;4;1;0;Variables_HomemenuCustomItems.xml
+home_movies_custom_subcategory_games;1;0;0;Variables_HomemenuCustomItems.xml
+home_movies_custom_subcategory_music;2;1;0;Variables_HomemenuCustomItems.xml
+home_movies_custom_subcategory_pictures;1;0;0;Variables_HomemenuCustomItems.xml
+home_movies_custom_subcategory_video;2;1;0;Variables_HomemenuCustomItems.xml
+home_music_button;30;1;0;Custom_1500_WidgetSettings.xml, Includes_HomeContent.xml, Includes_Submenu.xml, Includes_Widget_Param.xml, Variables_HomemenuCustomItems.xml
+home_music_custom_category_file;6;1;0;Variables_HomemenuCustomItems.xml
+home_music_custom_category_games;4;1;0;Variables_HomemenuCustomItems.xml
+home_music_custom_category_music;4;1;0;Variables_HomemenuCustomItems.xml
+home_music_custom_category_pictures;4;1;0;Variables_HomemenuCustomItems.xml
+home_music_custom_category_video;4;1;0;Variables_HomemenuCustomItems.xml
+home_music_custom_subcategory_games;1;0;0;Variables_HomemenuCustomItems.xml
+home_music_custom_subcategory_music;2;1;0;Variables_HomemenuCustomItems.xml
+home_music_custom_subcategory_pictures;1;0;0;Variables_HomemenuCustomItems.xml
+home_music_custom_subcategory_video;2;1;0;Variables_HomemenuCustomItems.xml
+home_musicvideo_button;18;1;0;Custom_1500_WidgetSettings.xml, Includes_HomeContent.xml, Includes_Submenu.xml, Includes_Widget_Param.xml, Variables_HomemenuCustomItems.xml
+home_musicvideo_custom_category_file;6;1;0;Variables_HomemenuCustomItems.xml
+home_musicvideo_custom_category_games;4;1;0;Variables_HomemenuCustomItems.xml
+home_musicvideo_custom_category_music;4;1;0;Variables_HomemenuCustomItems.xml
+home_musicvideo_custom_category_pictures;4;1;0;Variables_HomemenuCustomItems.xml
+home_musicvideo_custom_category_video;4;1;0;Variables_HomemenuCustomItems.xml
+home_musicvideo_custom_subcategory_games;1;0;0;Variables_HomemenuCustomItems.xml
+home_musicvideo_custom_subcategory_music;2;1;0;Variables_HomemenuCustomItems.xml
+home_musicvideo_custom_subcategory_pictures;1;0;0;Variables_HomemenuCustomItems.xml
+home_musicvideo_custom_subcategory_video;2;1;0;Variables_HomemenuCustomItems.xml
+home_picture_button;13;1;0;Custom_1500_WidgetSettings.xml, Includes_HomeContent.xml, Includes_Submenu.xml, Includes_Widget_Param.xml, Variables_HomemenuCustomItems.xml
+home_picture_custom_category_file;6;1;0;Variables_HomemenuCustomItems.xml
+home_picture_custom_category_games;4;1;0;Variables_HomemenuCustomItems.xml
+home_picture_custom_category_music;4;1;0;Variables_HomemenuCustomItems.xml
+home_picture_custom_category_pictures;4;1;0;Variables_HomemenuCustomItems.xml
+home_picture_custom_category_video;4;1;0;Variables_HomemenuCustomItems.xml
+home_picture_custom_subcategory_games;1;0;0;Variables_HomemenuCustomItems.xml
+home_picture_custom_subcategory_music;2;1;0;Variables_HomemenuCustomItems.xml
+home_picture_custom_subcategory_pictures;1;0;0;Variables_HomemenuCustomItems.xml
+home_picture_custom_subcategory_video;2;1;0;Variables_HomemenuCustomItems.xml
+home_seriesbutton;8;0;0;Custom_1500_WidgetSettings.xml, Includes_Widget_Param.xml
+home_tvshow_button;26;1;0;Custom_1500_WidgetSettings.xml, Includes_HomeContent.xml, Includes_Submenu.xml, Includes_Widget_Param.xml, Variables_HomemenuCustomItems.xml
+home_tvshow_custom_category_file;6;1;0;Variables_HomemenuCustomItems.xml
+home_tvshow_custom_category_games;4;1;0;Variables_HomemenuCustomItems.xml
+home_tvshow_custom_category_music;4;1;0;Variables_HomemenuCustomItems.xml
+home_tvshow_custom_category_pictures;4;1;0;Variables_HomemenuCustomItems.xml
+home_tvshow_custom_category_video;4;1;0;Variables_HomemenuCustomItems.xml
+home_tvshow_custom_subcategory_games;1;0;0;Variables_HomemenuCustomItems.xml
+home_tvshow_custom_subcategory_music;2;1;0;Variables_HomemenuCustomItems.xml
+home_tvshow_custom_subcategory_pictures;1;0;0;Variables_HomemenuCustomItems.xml
+home_tvshow_custom_subcategory_video;2;1;0;Variables_HomemenuCustomItems.xml
+home_videos_button;37;1;0;Custom_1500_WidgetSettings.xml, Includes_HomeContent.xml, Includes_Submenu.xml, Includes_Widget_Param.xml, Variables_HomemenuCustomItems.xml
+home_videos_custom_category_file;6;1;0;Variables_HomemenuCustomItems.xml
+home_videos_custom_category_games;4;1;0;Variables_HomemenuCustomItems.xml
+home_videos_custom_category_music;4;1;0;Variables_HomemenuCustomItems.xml
+home_videos_custom_category_pictures;4;1;0;Variables_HomemenuCustomItems.xml
+home_videos_custom_category_video;4;1;0;Variables_HomemenuCustomItems.xml
+home_videos_custom_subcategory_games;1;0;0;Variables_HomemenuCustomItems.xml
+home_videos_custom_subcategory_music;2;1;0;Variables_HomemenuCustomItems.xml
+home_videos_custom_subcategory_pictures;1;0;0;Variables_HomemenuCustomItems.xml
+home_videos_custom_subcategory_video;2;1;0;Variables_HomemenuCustomItems.xml
+homefanartdiashow;3;1;0;Includes.xml, SkinSettings.xml
+homemenuno_dashboard_button;3;1;0;Includes_HomeContent.xml
+homemenuno_games_button;7;2;0;Custom_1155_FirstRun.xml, Custom_1500_WidgetSettings.xml, Includes_HomeContent.xml
+homemenuno_movies_sbutton;10;0;0;Custom_1500_WidgetSettings.xml, Includes_HomeContent.xml
+homemenuno_music_button;12;1;0;Custom_1500_WidgetSettings.xml, Includes_HomeContent.xml
+homemenuno_musicvideo_button;10;1;0;Custom_1500_WidgetSettings.xml, Includes_HomeContent.xml
+homemenuno_picture_button;9;1;0;Custom_1500_WidgetSettings.xml, Includes_HomeContent.xml
+homemenuno_playdisc_button;3;1;0;Includes_HomeContent.xml
+homemenuno_pvr_button;3;1;0;Includes_HomeContent.xml
+homemenuno_radio_button;2;1;0;Includes_HomeContent.xml
+homemenuno_setting_button;2;1;0;Includes_HomeContent.xml
+homemenuno_tvshow_button;13;1;0;Custom_1500_WidgetSettings.xml, Includes_HomeContent.xml
+homemenuno_videos_button;24;1;0;Custom_1500_WidgetSettings.xml, Includes_HomeContent.xml
+homemenunoweatherbutton;7;3;0;Custom_1155_FirstRun.xml, Includes_HomeContent.xml, SkinSettings.xml
+homemenuvideostofiles;2;0;0;Includes_HomeContent.xml
+homemenuweatherfadeout;5;3;0;Custom_1155_FirstRun.xml, SkinSettings.xml, Timers.xml
+homepagenoweatherinfo;2;1;0;Includes.xml, SkinSettings.xml
+homeweatherwidgetfull;20;1;1;Custom_1500_WidgetSettings.xml, Includes_Widget_Param.xml
+homeweatherwidgettoday;3;2;1;Custom_1155_FirstRun.xml, Custom_1500_WidgetSettings.xml, Includes_Widget_Param.xml
+homewidget_custom1_standard;3;1;0;Includes_Widget_Param.xml, Variables_HomemenuCustomItems.xml
+homewidget_custom1_user;3;1;0;Includes_Widget_Param.xml, Variables_HomemenuCustomItems.xml
+homewidget_custom2_standard;3;1;0;Includes_Widget_Param.xml, Variables_HomemenuCustomItems.xml
+homewidget_custom2_user;3;1;0;Includes_Widget_Param.xml, Variables_HomemenuCustomItems.xml
+homewidget_custom3_standard;3;1;0;Includes_Widget_Param.xml, Variables_HomemenuCustomItems.xml
+homewidget_custom3_user;3;1;0;Includes_Widget_Param.xml, Variables_HomemenuCustomItems.xml
+homewidget_custom4_standard;3;1;0;Includes_Widget_Param.xml, Variables_HomemenuCustomItems.xml
+homewidget_custom4_user;3;1;0;Includes_Widget_Param.xml, Variables_HomemenuCustomItems.xml
+homewidget_custom5_standard;3;1;0;Includes_Widget_Param.xml, Variables_HomemenuCustomItems.xml
+homewidget_custom5_user;3;1;0;Includes_Widget_Param.xml, Variables_HomemenuCustomItems.xml
+homewidget_custom6_standard;3;1;0;Includes_Widget_Param.xml, Variables_HomemenuCustomItems.xml
+homewidget_custom6_user;3;1;0;Includes_Widget_Param.xml, Variables_HomemenuCustomItems.xml
+homewidget_custom7_standard;3;1;0;Includes_Widget_Param.xml, Variables_HomemenuCustomItems.xml
+homewidget_custom7_user;3;1;0;Includes_Widget_Param.xml, Variables_HomemenuCustomItems.xml
+homewidget_custom8_standard;3;1;0;Includes_Widget_Param.xml, Variables_HomemenuCustomItems.xml
+homewidget_custom8_user;3;1;0;Includes_Widget_Param.xml, Variables_HomemenuCustomItems.xml
+homewidget_custom9_standard;3;1;0;Includes_Widget_Param.xml, Variables_HomemenuCustomItems.xml
+homewidget_custom9_user;3;1;0;Includes_Widget_Param.xml, Variables_HomemenuCustomItems.xml
+homewidget_games_standard;4;2;1;Custom_1500_WidgetSettings.xml, Includes_Widget_Param.xml, Variables_HomemenuCustomItems.xml
+homewidget_games_user;5;2;1;Custom_1500_WidgetSettings.xml, Includes_Widget_Param.xml, Variables_HomemenuCustomItems.xml
+homewidget_movies_standard;4;2;1;Custom_1500_WidgetSettings.xml, Includes_Widget_Param.xml, Variables_HomemenuCustomItems.xml
+homewidget_movies_user;5;2;1;Custom_1500_WidgetSettings.xml, Includes_Widget_Param.xml, Variables_HomemenuCustomItems.xml
+homewidget_music_standard;4;2;1;Custom_1500_WidgetSettings.xml, Includes_Widget_Param.xml, Variables_HomemenuCustomItems.xml
+homewidget_music_user;5;2;1;Custom_1500_WidgetSettings.xml, Includes_Widget_Param.xml, Variables_HomemenuCustomItems.xml
+homewidget_musicvideo_standard;4;2;1;Custom_1500_WidgetSettings.xml, Includes_Widget_Param.xml, Variables_HomemenuCustomItems.xml
+homewidget_musicvideo_user;5;2;1;Custom_1500_WidgetSettings.xml, Includes_Widget_Param.xml, Variables_HomemenuCustomItems.xml
+homewidget_picture_standard;4;2;1;Custom_1500_WidgetSettings.xml, Includes_Widget_Param.xml, Variables_HomemenuCustomItems.xml
+homewidget_picture_user;5;2;1;Custom_1500_WidgetSettings.xml, Includes_Widget_Param.xml, Variables_HomemenuCustomItems.xml
+homewidget_tvshow_standard;4;2;1;Custom_1500_WidgetSettings.xml, Includes_Widget_Param.xml, Variables_HomemenuCustomItems.xml
+homewidget_tvshow_user;5;2;1;Custom_1500_WidgetSettings.xml, Includes_Widget_Param.xml, Variables_HomemenuCustomItems.xml
+homewidget_videos_standard;4;2;1;Custom_1500_WidgetSettings.xml, Includes_Widget_Param.xml, Variables_HomemenuCustomItems.xml
+homewidget_videos_user;4;2;2;Custom_1500_WidgetSettings.xml, Includes_Widget_Param.xml, Variables_HomemenuCustomItems.xml
+infowall;3;1;0;Includes_SidePanel_right.xml, View_Music_741_CoverWall.xml
+kioskmode;10;1;0;EventLog.xml, MyFavourites.xml, MyGames.xml, MyMusicNav.xml, MyPics.xml, MyPlaylist.xml, MyPrograms.xml, MyVideoNav.xml, MyWeather.xml, SkinSettings.xml
+label_flagging;1;0;0;Includes_Flagging.xml
+lyrics;4;4;0;MusicOSD.xml, PlayerControls.xml, script-cu-lrclyrics-main.xml
+mousearrow;2;1;0;SkinSettings.xml, Variables.xml
+musicinfo;6;1;0;Includes_SidePanel_right.xml, View_Music_509_Fanart.xml
+musicoverlay_stream;4;3;0;Custom_1155_FirstRun.xml, MusicOSD.xml, MusicVisualisation.xml, SkinSettings.xml
+navinfo;10;3;0;Custom_1155_FirstRun.xml, Custom_1400_MusicOverlay.xml, Custom_1401_VideoOverlay.xml, Includes.xml, Includes_PVR.xml, SkinSettings.xml
+neonslide;2;2;0;Custom_1155_FirstRun.xml, Includes_HomeContent.xml, SkinSettings.xml
+no_extrafanart;1;0;0;Includes.xml
+no_tvlogo_back;3;1;0;Includes_PVR.xml, SkinSettings.xml
+no_wall_animation;11;1;0;Includes_SidePanel_right.xml, View_562_Showcase.xml, View_Movie_742_Wall.xml, View_Music_741_CoverWall.xml
+nodate;5;3;0;Custom_1155_FirstRun.xml, Includes.xml, MusicOSD.xml, SkinSettings.xml, VideoOSD.xml
+noradioviz;15;2;0;MusicOSD.xml, MusicVisualisation.xml, SkinSettings.xml
+notvwall;3;1;0;MusicOSD.xml, MusicVisualisation.xml
+onlyone;29;1;0;Includes.xml, Includes_SidePanel_right.xml, SkinSettings.xml, Variables.xml, Variables_SkinSettings_Description.xml
+originaltitle;3;1;0;Includes_SidePanel_right.xml, Variables.xml
+pause_light;8;1;0;DialogSeekBar.xml, SkinSettings.xml, VideoFullScreen.xml, VideoOSD.xml
+pause_light_hideinfos;2;1;0;DialogSeekBar.xml, SkinSettings.xml
+playlist;8;4;0;Custom_1155_FirstRun.xml, Includes_Nexttrackplaylist.xml, MusicOSD.xml, MusicVisualisation.xml, SkinSettings.xml
+profilname;2;1;0;Home.xml, SkinSettings.xml
+radioview;10;4;4;MusicOSD.xml, MusicVisualisation.xml, SkinSettings.xml, Variables.xml
+rated_de;7;5;0;Custom_1155_FirstRun.xml, Includes_SidePanel_right.xml, SkinSettings.xml, Variables_MediaFurniture.xml
+rated_fr;2;4;0;Includes_SidePanel_right.xml, SkinSettings.xml, Variables_MediaFurniture.xml
+rated_uk;8;4;0;Includes_SidePanel_right.xml, SkinSettings.xml, Variables_MediaFurniture.xml
+rated_us;2;4;0;Includes_SidePanel_right.xml, SkinSettings.xml, Variables_MediaFurniture.xml
+rightlistplot;2;1;0;Includes_SidePanel_right.xml, View_Movie_721_RightList.xml
+roundcorner;124;1;0;Includes_Dash_FritzDect.xml, Includes_Dash_Layout.xml, Includes_PVR.xml, Includes_SetInformation.xml, Includes_Widget_Param.xml, SkinSettings.xml, Variables.xml, View_562_Showcase.xml, View_Movie_057_Banner.xml, View_Movie_302_3Panel.xml, View_Movie_401_Fanart.xml, View_Movie_500_Panel.xml, View_Movie_503_MediaInfo.xml, View_Movie_505_Wide.xml, View_Movie_721_RightList.xml
+row2_fav;4;2;0;Custom_1500_WidgetSettings.xml, Home.xml, Includes_Dashboard.xml, Variables_Dashboard.xml
+row2_fritzact;5;2;0;Custom_1500_WidgetSettings.xml, Home.xml, Includes_Dashboard.xml, Variables_Dashboard.xml
+row2_gto;8;2;0;Custom_1500_WidgetSettings.xml, Home.xml, Includes_Dashboard.xml, Variables_Dashboard.xml
+row2_off;3;3;0;Custom_1500_WidgetSettings.xml, Home.xml, Includes_Dashboard.xml, Variables_Dashboard.xml
+row2_path;6;2;0;Custom_1500_WidgetSettings.xml, Home.xml, Includes_Dashboard.xml, Variables_Dashboard.xml
+row2_weather;6;2;0;Custom_1500_WidgetSettings.xml, Home.xml, Includes_Dashboard.xml, Variables_Dashboard.xml
+row3_fav;4;2;0;Custom_1500_WidgetSettings.xml, Home.xml, Includes_Dashboard.xml, Variables_Dashboard.xml
+row3_fritzact;5;2;0;Custom_1500_WidgetSettings.xml, Home.xml, Includes_Dashboard.xml, Variables_Dashboard.xml
+row3_gto;8;2;0;Custom_1500_WidgetSettings.xml, Home.xml, Includes_Dashboard.xml, Variables_Dashboard.xml
+row3_off;3;3;0;Custom_1500_WidgetSettings.xml, Home.xml, Includes_Dashboard.xml, Variables_Dashboard.xml
+row3_path;6;2;0;Custom_1500_WidgetSettings.xml, Home.xml, Includes_Dashboard.xml, Variables_Dashboard.xml
+row3_weather;6;2;0;Custom_1500_WidgetSettings.xml, Home.xml, Includes_Dashboard.xml, Variables_Dashboard.xml
+row4_fav;4;2;0;Custom_1500_WidgetSettings.xml, Home.xml, Includes_Dashboard.xml, Variables_Dashboard.xml
+row4_fritzact;5;2;0;Custom_1500_WidgetSettings.xml, Home.xml, Includes_Dashboard.xml, Variables_Dashboard.xml
+row4_gto;8;2;0;Custom_1500_WidgetSettings.xml, Home.xml, Includes_Dashboard.xml, Variables_Dashboard.xml
+row4_off;3;3;0;Custom_1500_WidgetSettings.xml, Home.xml, Includes_Dashboard.xml, Variables_Dashboard.xml
+row4_path;6;2;0;Custom_1500_WidgetSettings.xml, Home.xml, Includes_Dashboard.xml, Variables_Dashboard.xml
+row4_weather;6;2;0;Custom_1500_WidgetSettings.xml, Home.xml, Includes_Dashboard.xml, Variables_Dashboard.xml
+row5_fav;4;2;0;Custom_1500_WidgetSettings.xml, Home.xml, Includes_Dashboard.xml, Variables_Dashboard.xml
+row5_fritzact;5;2;0;Custom_1500_WidgetSettings.xml, Home.xml, Includes_Dashboard.xml, Variables_Dashboard.xml
+row5_gto;8;2;0;Custom_1500_WidgetSettings.xml, Home.xml, Includes_Dashboard.xml, Variables_Dashboard.xml
+row5_off;3;3;0;Custom_1500_WidgetSettings.xml, Home.xml, Includes_Dashboard.xml, Variables_Dashboard.xml
+row5_path;6;2;0;Custom_1500_WidgetSettings.xml, Home.xml, Includes_Dashboard.xml, Variables_Dashboard.xml
+row5_weather;6;2;0;Custom_1500_WidgetSettings.xml, Home.xml, Includes_Dashboard.xml, Variables_Dashboard.xml
+showbackgroundvis;3;1;0;Includes.xml, SkinSettings.xml
+showcover;4;1;0;Includes_SidePanel_right.xml, View_Movie_302_3Panel.xml
+showweatherfanart;3;1;0;MyWeather.xml
+shutdown_addon;5;1;0;DialogButtonMenu.xml, SkinSettings.xml
+shutdown_nand;3;1;0;DialogButtonMenu.xml, SkinSettings.xml
+shutdown_noallowidle;2;1;0;DialogButtonMenu.xml, SkinSettings.xml
+shutdown_noexit;2;1;0;DialogButtonMenu.xml, SkinSettings.xml
+shutdown_nohibernate;2;1;0;DialogButtonMenu.xml, SkinSettings.xml
+shutdown_noinhibitidle;2;1;0;DialogButtonMenu.xml, SkinSettings.xml
+shutdown_noreboot;2;1;0;DialogButtonMenu.xml, SkinSettings.xml
+shutdown_noshutdown;2;1;0;DialogButtonMenu.xml, SkinSettings.xml
+shutdown_nosuspent;2;1;0;DialogButtonMenu.xml, SkinSettings.xml
+shutdown_notimer;2;1;0;DialogButtonMenu.xml, SkinSettings.xml
+shutdown_reload;3;1;0;DialogButtonMenu.xml, SkinSettings.xml
+shutdown_restart;3;1;0;DialogButtonMenu.xml, SkinSettings.xml
+smallinfo_off;14;1;0;Includes_SidePanel_right.xml, View_Movie_402_Fanart_Episode.xml, View_Movie_502_Don.xml, View_Movie_505_Wide.xml, View_Movie_742_Wall.xml
+standard_bkg;4;6;0;Custom_1155_FirstRun.xml, Home.xml, SkinSettings.xml, Variables.xml, Variables_SkinSettings_Description.xml
+standardnowplaying;0;4;0;MusicOSD.xml, SkinSettings.xml
+startvolume;0;1;0;SkinSettings.xml
+statistic;2;2;0;Custom_1155_FirstRun.xml, Home.xml, SkinSettings.xml
+submenu_movies_noactorbutton;2;1;0;Includes_Submenu.xml, SkinSettings.xml
+submenu_movies_noaddonbutton;2;1;0;Includes_Submenu.xml, SkinSettings.xml
+submenu_movies_nogenrebutton;3;1;0;Includes_Submenu.xml, SkinSettings.xml
+submenu_movies_nosetbutton;2;1;0;Includes_Submenu.xml, SkinSettings.xml
+submenu_movies_notitlebutton;2;1;0;Includes_Submenu.xml, SkinSettings.xml
+submenu_movies_noyearbutton;1;1;0;SkinSettings.xml
+submenu_music_noaddonbutton;3;1;0;Includes_Submenu.xml, SkinSettings.xml
+submenu_music_noalbumbutton;2;1;0;Includes_Submenu.xml, SkinSettings.xml
+submenu_music_noartistbutton;2;1;0;Includes_Submenu.xml, SkinSettings.xml
+submenu_music_nofilemanagerbutton;2;1;0;Includes_Submenu.xml, SkinSettings.xml
+submenu_music_nolibrarybutton;2;1;0;Includes_Submenu.xml, SkinSettings.xml
+submenu_music_nolibreelecbutton;3;1;0;Includes_Submenu.xml, SkinSettings.xml
+submenu_music_nopartymodebutton;2;1;0;Includes_Submenu.xml, SkinSettings.xml
+submenu_music_noprofilebutton;2;1;0;Includes_Submenu.xml, SkinSettings.xml
+submenu_music_noskinsettingbutton;2;1;0;Includes_Submenu.xml, SkinSettings.xml
+submenu_music_nosongsbutton;2;1;0;Includes_Submenu.xml, SkinSettings.xml
+submenu_music_nosysteminfobutton;2;1;0;Includes_Submenu.xml, SkinSettings.xml
+submenu_musicvideo_nogenrebutton;2;1;0;Includes_Submenu.xml, SkinSettings.xml
+submenu_musicvideo_notitlebutton;2;1;0;Includes_Submenu.xml, SkinSettings.xml
+submenu_tvshow_noactorbutton;2;1;0;Includes_Submenu.xml, SkinSettings.xml
+submenu_tvshow_nogenrebutton;2;1;0;Includes_Submenu.xml, SkinSettings.xml
+submenu_tvshow_notitlebutton;2;1;0;Includes_Submenu.xml, SkinSettings.xml
+submenu_tvshow_noyearbutton;2;1;0;Includes_Submenu.xml, SkinSettings.xml
+submenu_videos_no_movies_sbutton;2;1;0;Includes_Submenu.xml, SkinSettings.xml
+submenu_videos_no_music_videobutton;2;1;0;Includes_Submenu.xml, SkinSettings.xml
+submenu_videos_no_tvshow_button;2;1;0;Includes_Submenu.xml, SkinSettings.xml
+submenu_videos_nolibrarybutton;2;1;0;Includes_Submenu.xml, SkinSettings.xml
+submenu_videos_novideoaddonbutton;2;1;0;Includes_Submenu.xml, SkinSettings.xml
+systemlevel_set;4;3;1;Custom_1155_FirstRun.xml
+tmdbhelper.service;0;1;0;Startup.xml
+unwatchedicon;2;1;0;Includes.xml, Includes_SidePanel_right.xml
+use_startup_playlist;4;1;0;SkinSettings.xml, Startup.xml
+videoinfo;10;1;0;Includes_SidePanel_right.xml, View_Movie_401_Fanart.xml, View_Music_509_Fanart.xml
+videolibrary_export;2;1;0;DialogButtonMenu.xml, SkinSettings.xml
+view508hideinfo;1;1;0;MyVideoNav.xml
+view509hideinfo;1;1;0;MyMusicNav.xml
+vinylview;7;6;2;Includes_Nexttrackplaylist.xml, MusicOSD.xml, MusicVisualisation.xml, SkinSettings.xml, Variables.xml
+vizpanel;3;1;0;MusicOSD.xml, MusicVisualisation.xml
+weatherfanarthome;13;3;0;Custom_1155_FirstRun.xml, Includes.xml, Includes_Submenu.xml, SkinSettings.xml, Variables.xml
+wideview_3itemsrow;13;1;0;Includes_SidePanel_right.xml, Variables.xml, View_Movie_502_Don.xml, View_Movie_505_Wide.xml
+wideview_season_poster;7;1;0;Includes_SidePanel_right.xml, View_Movie_505_Wide.xml
+widget_diashow;3;1;0;Custom_1500_WidgetSettings.xml, Includes_Widget_Param.xml
+widget_dvdlabel;3;2;1;Custom_1155_FirstRun.xml, Includes_Buttons_and_Lists.xml, Includes_Widget_Param.xml
+widget_inprogress_movies_place1;3;1;0;Custom_1500_WidgetSettings.xml, Includes_Widget_Param.xml, Variables_Widgets.xml
+widget_inprogress_musicalbum_place1;3;1;0;Custom_1500_WidgetSettings.xml, Includes_Widget_Param.xml, Variables_Widgets.xml
+widget_inprogress_musicvideo_place1;3;1;0;Custom_1500_WidgetSettings.xml, Includes_Widget_Param.xml, Variables_Widgets.xml
+widget_lastusedgames;2;1;0;Custom_1500_WidgetSettings.xml, Includes_Widget_Param.xml
+widget_livetvwidgetchannels;5;1;2;Custom_1500_WidgetSettings.xml, Includes_Widget_Param.xml
+widget_livetvwidgetchannels_inprogress;3;1;0;Custom_1500_WidgetSettings.xml, Includes_Widget_Param.xml
+widget_pvr_flat;1;1;0;Custom_1500_WidgetSettings.xml, Variables.xml
+widget_pvr_radio_widgetchannels;4;1;0;Custom_1500_WidgetSettings.xml, Includes_Widget_Param.xml
+widget_pvrtimers;2;2;2;Custom_1155_FirstRun.xml, Custom_1500_WidgetSettings.xml, Includes_Widget_Param.xml
+widget_randomalbums;3;1;3;Custom_1500_WidgetSettings.xml, Includes_Widget_Param.xml
+widget_randommovies;3;1;2;Custom_1500_WidgetSettings.xml, Includes_Widget_Param.xml
+widget_randommusicvideos;3;1;2;Custom_1500_WidgetSettings.xml, Includes_Widget_Param.xml
+widget_randomsongs;3;1;3;Custom_1500_WidgetSettings.xml, Includes_Widget_Param.xml
+widget_randomtvshows;3;1;2;Custom_1500_WidgetSettings.xml, Includes_Widget_Param.xml
+widget_recentalbums;3;2;3;Custom_1155_FirstRun.xml, Custom_1500_WidgetSettings.xml, Includes_Widget_Param.xml
+widget_recentmovies;5;2;2;Custom_1155_FirstRun.xml, Custom_1500_WidgetSettings.xml, Includes_Widget_Param.xml
+widget_recentmusicvideos;3;2;2;Custom_1155_FirstRun.xml, Custom_1500_WidgetSettings.xml, Includes_Widget_Param.xml
+widget_recenttvshows;5;2;2;Custom_1155_FirstRun.xml, Custom_1500_WidgetSettings.xml, Includes_Widget_Param.xml
+widget_recenttvshows_episodes;3;1;0;Custom_1500_WidgetSettings.xml, Includes_Widget_Param.xml
+widget_recommendedalbums;4;1;3;Custom_1500_WidgetSettings.xml, Includes_Widget_Param.xml
+widget_recommendedmovies;4;1;2;Custom_1500_WidgetSettings.xml, Includes_Widget_Param.xml
+widget_recommendedmusicvideos;4;1;2;Custom_1500_WidgetSettings.xml, Includes_Widget_Param.xml
+widget_recommendedtvshows;2;1;3;Custom_1500_WidgetSettings.xml, Includes_Widget_Param.xml
+widget_recordings;3;1;2;Custom_1500_WidgetSettings.xml, Includes_Widget_Param.xml
+widget_sources;2;1;1;Custom_1500_WidgetSettings.xml, Includes_Widget_Param.xml
+widget_systeminfo;2;2;0;Custom_1155_FirstRun.xml, Includes_Buttons_and_Lists.xml, Includes_Widget_Param.xml
+widget_videoplaylists;2;1;1;Custom_1500_WidgetSettings.xml, Includes_Widget_Param.xml
+widgetdim;8;3;0;Custom_1155_FirstRun.xml, Includes.xml, Includes_Buttons_and_Lists.xml, Includes_Widget_Param.xml, SkinSettings.xml, Variables.xml
+widgetdimdashrows;6;1;0;Custom_1500_WidgetSettings.xml, Includes_Dash_FritzDect.xml, Includes_Dash_Layout.xml, Includes_Dash_Weather.xml
+widgetnopercentplayedbar;5;2;0;Includes_Buttons_and_Lists.xml, Includes_Widget_Param.xml, SkinSettings.xml
+windowedtrailer;3;3;0;Custom_1155_FirstRun.xml, DialogVideoInfo.xml, SkinSettings.xml

@@ -1,0 +1,269 @@
+{
+  "open": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": "OK"
+  },
+  "seek": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "percentage": 1.4888888597488403,
+      "time": {
+        "hours": 0,
+        "milliseconds": 340,
+        "minutes": 0,
+        "seconds": 1
+      },
+      "totaltime": {
+        "hours": 0,
+        "milliseconds": 0,
+        "minutes": 1,
+        "seconds": 30
+      }
+    }
+  },
+  "samples": [
+    {
+      "elapsed": 0.0,
+      "booleans": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": {
+          "Player.HasPerformedSeek(2)": true,
+          "Player.HasPerformedSeek(2.5)": true,
+          "Player.HasPerformedSeek(3)": true
+        }
+      }
+    },
+    {
+      "elapsed": 0.275,
+      "booleans": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": {
+          "Player.HasPerformedSeek(2)": true,
+          "Player.HasPerformedSeek(2.5)": true,
+          "Player.HasPerformedSeek(3)": true
+        }
+      }
+    },
+    {
+      "elapsed": 0.53,
+      "booleans": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": {
+          "Player.HasPerformedSeek(2)": true,
+          "Player.HasPerformedSeek(2.5)": true,
+          "Player.HasPerformedSeek(3)": true
+        }
+      }
+    },
+    {
+      "elapsed": 0.786,
+      "booleans": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": {
+          "Player.HasPerformedSeek(2)": true,
+          "Player.HasPerformedSeek(2.5)": true,
+          "Player.HasPerformedSeek(3)": true
+        }
+      }
+    },
+    {
+      "elapsed": 1.042,
+      "booleans": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": {
+          "Player.HasPerformedSeek(2)": true,
+          "Player.HasPerformedSeek(2.5)": true,
+          "Player.HasPerformedSeek(3)": true
+        }
+      }
+    },
+    {
+      "elapsed": 1.308,
+      "booleans": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": {
+          "Player.HasPerformedSeek(2)": true,
+          "Player.HasPerformedSeek(2.5)": true,
+          "Player.HasPerformedSeek(3)": true
+        }
+      }
+    },
+    {
+      "elapsed": 1.564,
+      "booleans": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": {
+          "Player.HasPerformedSeek(2)": true,
+          "Player.HasPerformedSeek(2.5)": true,
+          "Player.HasPerformedSeek(3)": true
+        }
+      }
+    },
+    {
+      "elapsed": 1.819,
+      "booleans": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": {
+          "Player.HasPerformedSeek(2)": true,
+          "Player.HasPerformedSeek(2.5)": true,
+          "Player.HasPerformedSeek(3)": true
+        }
+      }
+    },
+    {
+      "elapsed": 2.075,
+      "booleans": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": {
+          "Player.HasPerformedSeek(2)": true,
+          "Player.HasPerformedSeek(2.5)": true,
+          "Player.HasPerformedSeek(3)": true
+        }
+      }
+    },
+    {
+      "elapsed": 2.33,
+      "booleans": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": {
+          "Player.HasPerformedSeek(2)": true,
+          "Player.HasPerformedSeek(2.5)": true,
+          "Player.HasPerformedSeek(3)": true
+        }
+      }
+    },
+    {
+      "elapsed": 2.586,
+      "booleans": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": {
+          "Player.HasPerformedSeek(2)": true,
+          "Player.HasPerformedSeek(2.5)": true,
+          "Player.HasPerformedSeek(3)": true
+        }
+      }
+    },
+    {
+      "elapsed": 2.841,
+      "booleans": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": {
+          "Player.HasPerformedSeek(2)": true,
+          "Player.HasPerformedSeek(2.5)": true,
+          "Player.HasPerformedSeek(3)": true
+        }
+      }
+    },
+    {
+      "elapsed": 3.114,
+      "booleans": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": {
+          "Player.HasPerformedSeek(2)": false,
+          "Player.HasPerformedSeek(2.5)": false,
+          "Player.HasPerformedSeek(3)": true
+        }
+      }
+    },
+    {
+      "elapsed": 3.369,
+      "booleans": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": {
+          "Player.HasPerformedSeek(2)": false,
+          "Player.HasPerformedSeek(2.5)": false,
+          "Player.HasPerformedSeek(3)": true
+        }
+      }
+    },
+    {
+      "elapsed": 3.625,
+      "booleans": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": {
+          "Player.HasPerformedSeek(2)": false,
+          "Player.HasPerformedSeek(2.5)": false,
+          "Player.HasPerformedSeek(3)": true
+        }
+      }
+    },
+    {
+      "elapsed": 3.897,
+      "booleans": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": {
+          "Player.HasPerformedSeek(2)": false,
+          "Player.HasPerformedSeek(2.5)": false,
+          "Player.HasPerformedSeek(3)": true
+        }
+      }
+    },
+    {
+      "elapsed": 4.153,
+      "booleans": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": {
+          "Player.HasPerformedSeek(2)": false,
+          "Player.HasPerformedSeek(2.5)": false,
+          "Player.HasPerformedSeek(3)": false
+        }
+      }
+    },
+    {
+      "elapsed": 4.408,
+      "booleans": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": {
+          "Player.HasPerformedSeek(2)": false,
+          "Player.HasPerformedSeek(2.5)": false,
+          "Player.HasPerformedSeek(3)": false
+        }
+      }
+    },
+    {
+      "elapsed": 4.664,
+      "booleans": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": {
+          "Player.HasPerformedSeek(2)": false,
+          "Player.HasPerformedSeek(2.5)": false,
+          "Player.HasPerformedSeek(3)": false
+        }
+      }
+    }
+  ],
+  "end_time": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "speed": 1,
+      "time": {
+        "hours": 0,
+        "milliseconds": 17,
+        "minutes": 0,
+        "seconds": 10
+      }
+    }
+  }
+}

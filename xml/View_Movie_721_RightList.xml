@@ -423,7 +423,6 @@
 												<param name="height" value="390" />
 												<param name="width" value="100%"/>
 												<param name="box" value="40"/>
-												<param name="height" value="100%"/>
 												<param name="itemgap" value="10"/>
 											</include>
 										</control>

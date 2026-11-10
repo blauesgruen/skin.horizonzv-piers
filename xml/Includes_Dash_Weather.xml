@@ -10,7 +10,6 @@
 			<orientation>horizontal</orientation>
 			<pagecontrol/>
 			<scrolltime tween="circle" easing="out">800</scrolltime>
-			<orientation>horizontal</orientation>
 			<visible>$PARAM[visible]</visible>
 			<itemlayout height="105" width="360">
 				<control type="group">

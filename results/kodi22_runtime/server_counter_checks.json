@@ -1,0 +1,74 @@
+{
+  "scope": "Controlled skin render with simulated Home properties and provider guard relaxed only in test copy. No real server status.",
+  "checks": [
+    {
+      "input": 0,
+      "labels": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": {
+          "Control.GetLabel(4444)": "0",
+          "Window(Home).Property(SkinHelperPING.servercount)": "10",
+          "Window(Home).Property(SkinHelperPING.serveron)": "0"
+        }
+      },
+      "conditions": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": {
+          "Control.IsVisible(4444)": false,
+          "Control.IsVisible(4445)": true,
+          "Window.IsVisible(home)": true
+        }
+      },
+      "screenshot": "server_counter_0.png",
+      "exists": true
+    },
+    {
+      "input": 1,
+      "labels": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": {
+          "Control.GetLabel(4444)": "1",
+          "Window(Home).Property(SkinHelperPING.servercount)": "10",
+          "Window(Home).Property(SkinHelperPING.serveron)": "1"
+        }
+      },
+      "conditions": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": {
+          "Control.IsVisible(4444)": true,
+          "Control.IsVisible(4445)": true,
+          "Window.IsVisible(home)": true
+        }
+      },
+      "screenshot": "server_counter_1.png",
+      "exists": true
+    },
+    {
+      "input": 10,
+      "labels": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": {
+          "Control.GetLabel(4444)": "10",
+          "Window(Home).Property(SkinHelperPING.servercount)": "10",
+          "Window(Home).Property(SkinHelperPING.serveron)": "10"
+        }
+      },
+      "conditions": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": {
+          "Control.IsVisible(4444)": true,
+          "Control.IsVisible(4445)": true,
+          "Window.IsVisible(home)": true
+        }
+      },
+      "screenshot": "server_counter_10.png",
+      "exists": true
+    }
+  ]
+}

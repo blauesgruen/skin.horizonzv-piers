@@ -1,0 +1,41 @@
+{
+  "final_gui": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "currentcontrol": {
+        "label": "Close"
+      },
+      "currentwindow": {
+        "id": 12017,
+        "label": ""
+      }
+    }
+  },
+  "skin": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "value": "skin.horizonzv"
+    }
+  },
+  "close_result": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "currentwindow": {
+        "id": 12003,
+        "label": "Video info"
+      }
+    }
+  },
+  "quit": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": "OK"
+  },
+  "process_exited": true,
+  "files_compared": 166,
+  "mismatches": [],
+  "capture_hook_removed": true
+}

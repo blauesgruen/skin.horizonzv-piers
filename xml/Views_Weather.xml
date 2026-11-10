@@ -155,7 +155,7 @@
                         <top>15</top>
                         <width>120</width>
                         <height>105</height>
-                        <imagepath>$INFO[ListItem.Thumb]</imagepath>
+                        <imagepath>$INFO[ListItem.Art(thumb)]</imagepath>
                         <timeperimage>100</timeperimage>
                         <randomize>false</randomize>
                         <fadetime>10</fadetime>
@@ -217,7 +217,7 @@
                         <top>15</top>
                         <width>120</width>
                         <height>105</height>
-                        <imagepath>$INFO[ListItem.Thumb]</imagepath>
+                        <imagepath>$INFO[ListItem.Art(thumb)]</imagepath>
                         <timeperimage>100</timeperimage>
                         <randomize>false</randomize>
                         <fadetime>10</fadetime>
@@ -453,7 +453,7 @@
                         <font>ubuntu-r19</font>
                         <textcolor>grey3</textcolor>
                         <align>center</align>
-                        <label>$INFO[Window.Property(36hour.1.Outlook),[COLOR=grey2]$LOCALIZE[301496]: [/COLOR]]</label>
+                        <label>$INFO[Window.Property(36hour.1.Outlook),[COLOR=grey2]$LOCALIZE[31359]: [/COLOR]]</label>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -517,7 +517,7 @@
                         <font>ubuntu-r19</font>
                         <textcolor>grey3</textcolor>
                         <align>center</align>
-                        <label>$INFO[Window.Property(36hour.2.Outlook),[COLOR=grey2]$LOCALIZE[301496]: [/COLOR]]</label>
+                        <label>$INFO[Window.Property(36hour.2.Outlook),[COLOR=grey2]$LOCALIZE[31359]: [/COLOR]]</label>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -581,7 +581,7 @@
                         <font>ubuntu-r19</font>
                         <textcolor>grey3</textcolor>
                         <align>center</align>
-                        <label>$INFO[Window.Property(36hour.3.Outlook),[COLOR=grey2]$LOCALIZE[301496]: [/COLOR]]</label>
+                        <label>$INFO[Window.Property(36hour.3.Outlook),[COLOR=grey2]$LOCALIZE[31359]: [/COLOR]]</label>
                     </control>
                 </control>
             </control>
@@ -691,7 +691,7 @@
                         <selectedcolor>selected</selectedcolor>
                         <align>center</align>
                         <aligny>center</aligny>
-                        <label>$INFO[Window.Property(Weekend.1.Outlook),[COLOR=grey2]$LOCALIZE[301496]: [/COLOR]][CR]</label>
+                        <label>$INFO[Window.Property(Weekend.1.Outlook),[COLOR=grey2]$LOCALIZE[31359]: [/COLOR]][CR]</label>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -765,7 +765,7 @@
                         <selectedcolor>selected</selectedcolor>
                         <align>center</align>
                         <aligny>center</aligny>
-                        <label>$INFO[Window.Property(Weekend.2.Outlook),[COLOR=grey2]$LOCALIZE[301496]: [/COLOR]][CR]</label>
+                        <label>$INFO[Window.Property(Weekend.2.Outlook),[COLOR=grey2]$LOCALIZE[31359]: [/COLOR]][CR]</label>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -825,7 +825,7 @@
                         <top>15</top>
                         <width>120</width>
                         <height>105</height>
-                        <imagepath>$INFO[ListItem.Thumb]</imagepath>
+                        <imagepath>$INFO[ListItem.Art(thumb)]</imagepath>
                         <timeperimage>100</timeperimage>
                         <randomize>false</randomize>
                         <fadetime>10</fadetime>
@@ -888,7 +888,7 @@
                         <top>15</top>
                         <width>120</width>
                         <height>105</height>
-                        <imagepath>$INFO[ListItem.Thumb]</imagepath>
+                        <imagepath>$INFO[ListItem.Art(thumb)]</imagepath>
                         <timeperimage>100</timeperimage>
                         <randomize>false</randomize>
                         <fadetime>10</fadetime>
@@ -1131,6 +1131,7 @@
     <include name="WeatherAlerts">
         <control type="group" id="777">
             <visible>String.IsEqual(Window.Property(Weather.CurrentView),alerts) + !String.IsEmpty(Window.Property(Alerts.IsFetched))</visible>
+            <visible>!String.IsEmpty(Window.Property(Alerts))|String.IsEqual(Window.Property(Alerts.Count),0)</visible>
             <include>opencloseslideleft</include>
             <control type="button" id="996">
                 <description>Hidden Button for focus</description>

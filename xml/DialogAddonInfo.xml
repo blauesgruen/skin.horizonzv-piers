@@ -26,7 +26,7 @@
 						<width>DialogLeft</width>
 						<height>45</height>
 						<font>impacted31</font>
-                        <label>$INFO[ListItem.Property(Addon.Name)]</label>
+                        <label>$INFO[ListItem.AddonName]</label>
                         <scroll>true</scroll>
                     </control>
 					<control type="group"> <!-- left side -->
@@ -66,7 +66,7 @@
                                     <bordertexture border="10">ThumbShadow.png</bordertexture>
                                     <bordersize>7</bordersize>
                                     <texture>$INFO[ListItem.Icon]</texture>
-                                    <visible>String.IsEmpty(ListItem.AddonBroken)</visible>
+                                    <visible>String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24169])</visible>
                                 </control>
                                 <control type="image">
                                     <include>openclosevisible</include>
@@ -75,7 +75,7 @@
                                     <bordertexture border="10">ThumbShadow.png</bordertexture>
                                     <bordersize>7</bordersize>
                                     <texture>$INFO[ListItem.Icon]</texture>
-                                    <visible>!String.IsEmpty(ListItem.AddonBroken)</visible>
+                                    <visible>[String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24170])|String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24171])]</visible>
                                 </control>
                                 <control type="image">
                                     <left>10</left>
@@ -83,8 +83,8 @@
                                     <top>10</top>
                                     <bottom>10</bottom>
                                     <aspectratio align="left" aligny="top">keep</aspectratio>
-                                    <texture>Broken.png</texture>
-                                    <visible>!String.IsEmpty(ListItem.AddonBroken)</visible>
+                                    <texture>$VAR[AddonLifecycleIcon]</texture>
+                                    <visible>[String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24170])|String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24171])]</visible>
                                 </control>
                             </control>
                             <control type="group">
@@ -99,12 +99,12 @@
                                     <textcolor>selectedhome</textcolor>
                                 </control>
                                 <control type="group">
-                                    <visible>Container.HasPages(401)</visible>
+                                    <visible>Container(400).HasNext|Container(400).HasPrevious</visible>
                                     <control type="label">
                                         <right>60</right>
                                         <description>Description Page Count</description>
                                         <height>38</height>
-                                        <label>$INFO[Container(401).CurrentPage, $LOCALIZE[31008] [COLOR=selectedhome]([/COLOR]]$INFO[Container(401).NumPages,/,[COLOR=selectedhome])[/COLOR]]</label>
+                                        <label>$INFO[Container(400).CurrentPage, $LOCALIZE[31008] [COLOR=selectedhome]([/COLOR]]$INFO[Container(400).NumPages,/,[COLOR=selectedhome])[/COLOR]]</label>
                                         <align>right</align>
                                         <aligny>center</aligny>
                                         <font>font16</font>
@@ -142,7 +142,7 @@
                     <control type="group">
                         <left>DialogLeft</left>
                         <top>20</top>
-                        <visible>!String.IsEmpty(ListItem.AddonBroken)</visible>
+                        <visible>[String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24170])|String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24171])]</visible>
                         <control type="group">
                             <right>SpacePadding</right>
                             <left>100</left>
@@ -150,7 +150,7 @@
                                 <description>Icon image</description>
                                 <width>60</width>
                                 <height>60</height>
-                                <texture>DefaultIconError.png</texture>
+                                    <texture>$VAR[AddonLifecycleIcon]</texture>
                             </control>
                             <control type="group">
                                 <left>80</left>
@@ -158,7 +158,7 @@
                                     <description>header label</description>
                                     <height>38</height>
                                     <font>ubuntu-r13</font>
-                                    <label>24096</label>
+                                    <label>$INFO[ListItem.AddonLifecycleType]</label>
                                     <align>left</align>
                                     <aligny>center</aligny>
                                     <textcolor>grey3</textcolor>
@@ -168,7 +168,7 @@
                                     <top>30</top>
                                     <height>38</height>
                                     <font>ubuntu-r13</font>
-                                    <label>$INFO[ListItem.AddonBroken]</label>
+                                    <label>$INFO[ListItem.AddonLifecycleDesc]</label>
                                     <align>left</align>
                                     <textcolor>selectedhome</textcolor>
                                 </control>

@@ -65,7 +65,7 @@
 						<include content="DialogRadioButton">
 							<param name="id" value="10" />
 							<param name="width" value="100%" />
-							<param name="height" value="52" />
+							<param name="height" value="40" />
 							<param name="label" value="$LOCALIZE[19134]" />
 							<param name="align" value="left" />
 							<param name="onright" value="9001" />
@@ -74,7 +74,7 @@
 						<include content="DialogRadioButton">
 							<param name="id" value="11" />
 							<param name="width" value="100%" />
-							<param name="height" value="52" />
+							<param name="height" value="40" />
 							<param name="label" value="$LOCALIZE[19135]" />
 							<param name="align" value="left" />
 							<param name="onright" value="9001" />
@@ -83,17 +83,35 @@
 						<include content="DialogEditButton">
 							<param name="id" value="14" />
 							<param name="width" value="100%" />
-							<param name="height" value="52" />
+							<param name="height" value="40" />
 							<param name="label" value="$LOCALIZE[19128]" />
 							<param name="align" value="left" />
 							<param name="onright" value="9001" />
 							<param name="nofocus" />
 						</include>
-						<include content="DialogEditButton">
-							<param name="id" value="15" />
+						<include content="DialogRadioButton">
+							<param name="id" value="32" />
 							<param name="width" value="100%" />
-							<param name="height" value="52" />
-							<param name="label" value="$LOCALIZE[19129]" />
+							<param name="height" value="40" />
+							<param name="label" value="$LOCALIZE[810]" />
+							<param name="align" value="left" />
+							<param name="onright" value="9001" />
+							<param name="nofocus" />
+						</include>
+						<include content="DialogEditButton">
+							<param name="id" value="16" />
+							<param name="width" value="100%" />
+							<param name="height" value="40" />
+							<param name="label" value="$LOCALIZE[19126]" />
+							<param name="align" value="left" />
+							<param name="onright" value="9001" />
+							<param name="nofocus" />
+						</include>
+						<include content="DialogRadioButton">
+							<param name="id" value="30" />
+							<param name="width" value="100%" />
+							<param name="height" value="40" />
+							<param name="label" value="$LOCALIZE[19339]" />
 							<param name="align" value="left" />
 							<param name="onright" value="9001" />
 							<param name="nofocus" />
@@ -101,7 +119,7 @@
 						<include content="DialogSpinButton">
 							<param name="id" value="18" />
 							<param name="width" value="100%" />
-							<param name="height" value="52" />
+							<param name="height" value="40" />
 							<param name="label" value="$LOCALIZE[515]" />
 							<param name="align" value="left" />
 							<param name="onright" value="9001" />
@@ -110,7 +128,7 @@
 						<include content="DialogRadioButton">
 							<param name="id" value="20" />
 							<param name="width" value="100%" />
-							<param name="height" value="52" />
+							<param name="height" value="40" />
 							<param name="label" value="$LOCALIZE[19132]" />
 							<param name="align" value="left" />
 							<param name="onright" value="9001" />
@@ -119,7 +137,7 @@
 						<include content="DialogRadioButton">
 							<param name="id" value="22" />
 							<param name="width" value="100%" />
-							<param name="height" value="52" />
+							<param name="height" value="40" />
 							<param name="label" value="$LOCALIZE[19123]" />
 							<param name="align" value="left" />
 							<param name="onright" value="9001" />
@@ -128,7 +146,7 @@
 						<include content="DialogRadioButton">
 							<param name="id" value="24" />
 							<param name="width" value="100%" />
-							<param name="height" value="52" />
+							<param name="height" value="40" />
 							<param name="label" value="$LOCALIZE[19124]" />
 							<param name="align" value="left" />
 							<param name="onright" value="9001" />
@@ -147,7 +165,7 @@
 						<include content="DialogSpinButton">
 							<param name="id" value="12" />
 							<param name="width" value="100%" />
-							<param name="height" value="52" />
+							<param name="height" value="40" />
 							<param name="label" value="$LOCALIZE[19130]" />
 							<param name="align" value="left" />
 							<param name="onleft" value="9002" />
@@ -156,17 +174,26 @@
 						<include content="DialogSpinButton">
 							<param name="id" value="13" />
 							<param name="width" value="100%" />
-							<param name="height" value="52" />
+							<param name="height" value="40" />
 							<param name="label" value="$LOCALIZE[19131]" />
 							<param name="align" value="left" />
 							<param name="onleft" value="9002" />
 							<param name="nofocus" />
 						</include>
 						<include content="DialogEditButton">
-							<param name="id" value="16" />
+							<param name="id" value="15" />
 							<param name="width" value="100%" />
-							<param name="height" value="52" />
-							<param name="label" value="$LOCALIZE[19126]" />
+							<param name="height" value="40" />
+							<param name="label" value="$LOCALIZE[19129]" />
+							<param name="align" value="left" />
+							<param name="onleft" value="9002" />
+							<param name="nofocus" />
+						</include>
+						<include content="DialogRadioButton">
+							<param name="id" value="33" />
+							<param name="width" value="100%" />
+							<param name="height" value="40" />
+							<param name="label" value="$LOCALIZE[817]" />
 							<param name="align" value="left" />
 							<param name="onleft" value="9002" />
 							<param name="nofocus" />
@@ -174,8 +201,17 @@
 						<include content="DialogEditButton">
 							<param name="id" value="17" />
 							<param name="width" value="100%" />
-							<param name="height" value="52" />
+							<param name="height" value="40" />
 							<param name="label" value="$LOCALIZE[19127]" />
+							<param name="align" value="left" />
+							<param name="onleft" value="9002" />
+							<param name="nofocus" />
+						</include>
+						<include content="DialogRadioButton">
+							<param name="id" value="31" />
+							<param name="width" value="100%" />
+							<param name="height" value="40" />
+							<param name="label" value="$LOCALIZE[19340]" />
 							<param name="align" value="left" />
 							<param name="onleft" value="9002" />
 							<param name="nofocus" />
@@ -183,7 +219,7 @@
 						<include content="DialogRadioButton">
 							<param name="id" value="19" />
 							<param name="width" value="100%" />
-							<param name="height" value="52" />
+							<param name="height" value="40" />
 							<param name="label" value="$LOCALIZE[19121]" />
 							<param name="align" value="left" />
 							<param name="onleft" value="9002" />
@@ -192,7 +228,7 @@
 						<include content="DialogSpinButton">
 							<param name="id" value="21" />
 							<param name="width" value="100%" />
-							<param name="height" value="52" />
+							<param name="height" value="40" />
 							<param name="label" value="$LOCALIZE[19141]" />
 							<param name="align" value="left" />
 							<param name="onleft" value="9002" />
@@ -201,7 +237,7 @@
 						<include content="DialogSpinButton">
 							<param name="id" value="23" />
 							<param name="width" value="100%" />
-							<param name="height" value="52" />
+							<param name="height" value="40" />
 							<param name="label" value="$LOCALIZE[19148]" />
 							<param name="align" value="left" />
 							<param name="onleft" value="9002" />
@@ -210,7 +246,7 @@
 						<include content="DialogRadioButton">
 							<param name="id" value="27" />
 							<param name="width" value="100%" />
-							<param name="height" value="52" />
+							<param name="height" value="40" />
 							<param name="label" value="$LOCALIZE[19125]" />
 							<param name="align" value="left" />
 							<param name="onleft" value="9002" />

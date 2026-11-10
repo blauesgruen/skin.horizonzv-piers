@@ -390,7 +390,7 @@
 													<description>Episodes Value</description>
 													<left>225</left>
 													<include>PlotText16Var</include>
-													<label fallback="416">$INFO[ListItem.Property(WatchedEpisodes),,]$INFO[listitem.Episode, / ,]</label>
+													<label fallback="13205">$INFO[ListItem.Property(WatchedEpisodes),,]$INFO[listitem.Episode, / ,]</label>
 													<align>left</align>
 													<aligny>center</aligny>
 													<textcolor>black</textcolor>
@@ -411,7 +411,7 @@
 													<left>225</left>
 													<top>40</top>
 													<include>PlotText16Var</include>
-													<label fallback="416">$INFO[listitem.premiered]</label>
+													<label fallback="13205">$INFO[listitem.premiered]</label>
 													<align>left</align>
 													<aligny>center</aligny>
 													<textcolor>black</textcolor>
@@ -432,7 +432,7 @@
 													<left>225</left>
 													<top>80</top>
 													<include>PlotText16Var</include>
-													<label fallback="416">$INFO[listitem.Genre]</label>
+													<label fallback="13205">$INFO[listitem.Genre]</label>
 													<align>left</align>
 													<aligny>center</aligny>
 													<textcolor>black</textcolor>
@@ -766,7 +766,7 @@
 							<width>330</width>
 							<height>30</height>
 							<include>openclosevisible</include>
-							<visible>!Control.IsEmpty(ListItem.Rating)</visible>
+							<visible>!String.IsEmpty(ListItem.Rating)</visible>
 							<!-- <visible>Container.Content(Movies)|Container.Content(Sets)|Container.Content(musicvideos)
 							|Container.Content(Seasons)|Container.Content(episodes)|Container.Content(TVShows)</visible>
 							<visible>!ListItem.IsParentFolder+!Container.Content(Seasons)</visible> -->

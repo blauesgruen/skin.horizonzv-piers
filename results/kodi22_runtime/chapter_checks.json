@@ -1,0 +1,25 @@
+[
+  {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": "OK"
+  },
+  {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Player.Chapter": "00",
+      "Player.ChapterCount": "00"
+    }
+  },
+  {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Integer.IsGreater(Player.ChapterCount,0)": false,
+      "Player.ChapterCount": false,
+      "Player.Paused": true,
+      "Window.IsVisible(seekbar)": true
+    }
+  }
+]

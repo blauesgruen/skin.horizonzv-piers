@@ -7,7 +7,7 @@
 		<control type="group">
 			<!-- <include>BlackBack</include> -->
 			<include>openclose</include>
-			<visible>!Window.IsTopMost(1501)</visible>
+			<visible>!Window.IsDialogTopmost(1501)</visible>
 			<control type="group">
 				<include content="DefaultPopupLayout">
 					<param name="PopupHeaderTitle">$LOCALIZE[10000] $LOCALIZE[1397] Widget $LOCALIZE[5]</param>
@@ -25,7 +25,7 @@
 						<include content="DialogRadioButton">
 							<param name="id" value="1" />
 							<param name="width" value="1110" />
-							<param name="label" value="$LOCALIZE[301602]" />
+							<param name="label" value="$LOCALIZE[31409]" />
 							<param name="align" value="left" />
 							<param name="onclick" value="Skin.ToggleSetting(Widget_inProgress_musicAlbum_Place1)" />
 							<param name="selected" value="Skin.HasSetting(Widget_inProgress_musicAlbum_Place1)" />
@@ -248,7 +248,7 @@
 						</include>
 						<control type="radiobutton" id="21">
 							<include>dialogbutton_popup</include>
-							<label>$LOCALIZE[301600]</label>
+							<label>$LOCALIZE[31408]</label>
 							<onclick>Skin.ToggleSetting(Widget_inProgress_movies_Place1)</onclick>
 							<selected>Skin.HasSetting(Widget_inProgress_movies_Place1)</selected>
 							<onclick>Container.Refresh(8001)</onclick>
@@ -329,9 +329,9 @@
 						</include>
 						<control type="button" id="31">
 							<include>dialogbutton_popup</include>
-							<label>$LOCALIZE[301614] #5</label>
+							<label>$LOCALIZE[31415] #5</label>
 							<label2>$VAR[DashboardRow5_Label]</label2>
-							<onclick>Skin.SelectBool(424, 301608|Row5_Weather, 301610|Row5_GTO, 573|Row5_Path, 1036|Row5_Fav, 301612|Row5_Fritzact, 351|Row5_off)</onclick>
+							<onclick>Skin.SelectBool(424, 31412|Row5_Weather, 31413|Row5_GTO, 573|Row5_Path, 1036|Row5_Fav, 31414|Row5_Fritzact, 351|Row5_off)</onclick>
 							<onclick>Container.Refresh(8001)</onclick>
 						</control>
 						<control type="button" id="32">
@@ -377,9 +377,9 @@
 						</control>
 						<control type="button" id="37">
 							<include>dialogbutton_popup</include>
-							<label>$LOCALIZE[301614] #4</label>
+							<label>$LOCALIZE[31415] #4</label>
 							<label2>$VAR[DashboardRow4_Label]</label2>
-							<onclick>Skin.SelectBool(424, 301608|Row4_Weather, 301610|Row4_GTO, 573|Row4_Path, 1036|Row4_Fav, 301612|Row4_Fritzact, 351|Row4_off)</onclick>
+							<onclick>Skin.SelectBool(424, 31412|Row4_Weather, 31413|Row4_GTO, 573|Row4_Path, 1036|Row4_Fav, 31414|Row4_Fritzact, 351|Row4_off)</onclick>
 							<onclick>Container.Refresh(8001)</onclick>
 						</control>
 						<control type="button" id="38">
@@ -425,9 +425,9 @@
 						</control>
 						<control type="button" id="43">
 							<include>dialogbutton_popup</include>
-							<label>$LOCALIZE[301614] #3</label>
+							<label>$LOCALIZE[31415] #3</label>
 							<label2>$VAR[DashboardRow3_Label]</label2>
-							<onclick>Skin.SelectBool(424, 301608|Row3_Weather, 301610|Row3_GTO, 573|Row3_Path, 1036|Row3_Fav, 301612|Row3_Fritzact, 351|Row3_off)</onclick>
+							<onclick>Skin.SelectBool(424, 31412|Row3_Weather, 31413|Row3_GTO, 573|Row3_Path, 1036|Row3_Fav, 31414|Row3_Fritzact, 351|Row3_off)</onclick>
 							<onclick>Container.Refresh(8001)</onclick>
 						</control>
 						<control type="button" id="44">
@@ -473,9 +473,9 @@
 						</control>
 						<control type="button" id="49">
 							<include>dialogbutton_popup</include>
-							<label>$LOCALIZE[301614] #2</label>
+							<label>$LOCALIZE[31415] #2</label>
 							<label2>$VAR[DashboardRow2_Label]</label2>
-							<onclick>Skin.SelectBool(424, 301608|Row2_Weather, 301610|Row2_GTO, 573|Row2_Path, 1036|Row2_Fav, 301612|Row2_Fritzact, 351|Row2_off)</onclick>
+							<onclick>Skin.SelectBool(424, 31412|Row2_Weather, 31413|Row2_GTO, 573|Row2_Path, 1036|Row2_Fav, 31414|Row2_Fritzact, 351|Row2_off)</onclick>
 							<onclick>Container.Refresh(8001)</onclick>
 						</control>
 						<control type="button" id="50">
@@ -524,7 +524,7 @@
 						</include>
 						<control type="button" id="56">
 							<include>dialogbutton_popup</include>
-							<label>$LOCALIZE[301614] #1</label>
+							<label>$LOCALIZE[31415] #1</label>
 							<label2>$VAR[DashboardRow1_Label]</label2>
 							<onclick>Skin.SelectBool(424, 24001|AddonDashboard, 1036|FavDashboard)</onclick>
 							<onclick>Container.Refresh</onclick>
@@ -601,23 +601,6 @@
 							<param name="onup" value="35105" />
 							<param name="ondown" value="35105" />
 						</include>
-						<control type="radiobutton" id="70">
-							<include>dialogbutton_popup</include>
-							<label>$LOCALIZE[301604]</label>
-							<onclick>Skin.ToggleSetting(Widget_inProgress_tvshow_Place1)</onclick>
-							<selected>Skin.HasSetting(Widget_inProgress_tvshow_Place1)</selected>
-							<disabledcolor>grey2</disabledcolor>
-							<visible>!Skin.HasSetting(HomeMenuNo_tvshow_Button)+!Skin.HasSetting(Home_tvshow_Button)</visible>
-							<enable>System.HasAddon(service.library.data.provider)</enable>
-							<!-- <enable>!Skin.HasSetting(Widget_RecommendedTVShows) + System.HasAddon(service.library.data.provider)</enable> -->
-						</control>
-						<control type="button" id="7070">
-							<include>dialogbutton_popup</include>
-							<label> ^ $LOCALIZE[24076]</label>
-							<label2>$LOCALIZE[24038]</label2>
-							<onclick>InstallAddon(service.library.data.provider)</onclick>
-							<visible>!System.HasAddon(service.library.data.provider)</visible>
-						</control>
 						<control type="radiobutton" id="71">
 							<include>dialogbutton_popup</include>
 							<label>$LOCALIZE[575]</label>
@@ -647,7 +630,7 @@
 						</control>
 						<control type="radiobutton" id="74">
 							<include>dialogbutton_popup</include>
-							<label>$LOCALIZE[301494]</label>
+							<label>$LOCALIZE[31358]</label>
 							<onclick>Skin.Reset(Widget_RecommendedTVShows)</onclick>
 							<onclick>Skin.Reset(Widget_RandomTVShows)</onclick>
 							<onclick>Skin.ToggleSetting(Widget_RecentTVShows)</onclick>
@@ -720,7 +703,7 @@
 						</include>
 						<control type="radiobutton" id="91">
 							<include>dialogbutton_popup</include>
-							<label>$LOCALIZE[301606]</label>
+							<label>$LOCALIZE[31411]</label>
 							<onclick>Skin.ToggleSetting(Widget_inProgress_musicvideo_Place1)</onclick>
 							<selected>Skin.HasSetting(Widget_inProgress_musicvideo_Place1)</selected>
 							<visible>!Skin.HasSetting(HomeMenuNo_musicvideo_Button)+!Skin.HasSetting(Home_musicvideo_Button)</visible>
@@ -861,23 +844,23 @@
 						</include>
 						<control type="radiobutton" id="111">
 							<include>dialogbutton_popup</include>
-							<label>$LOCALIZE[8] $LOCALIZE[301532]</label>
+							<label>$LOCALIZE[8] $LOCALIZE[31376]</label>
 							<onclick>Skin.Reset(HomeWeatherWidgetFull)</onclick>
 							<onclick>Skin.ToggleSetting(HomeWeatherWidgetToday)</onclick>
 							<selected>Skin.HasSetting(HomeWeatherWidgetToday)</selected>
 						</control>
 						<control type="radiobutton" id="112">
 							<include>dialogbutton_popup</include>
-							<label>$LOCALIZE[8] $LOCALIZE[301496]</label>
+							<label>$LOCALIZE[8] $LOCALIZE[31359]</label>
 							<onclick>Skin.Reset(HomeWeatherWidgetToday)</onclick>
 							<onclick>Skin.ToggleSetting(HomeWeatherWidgetFull)</onclick>
 							<selected>Skin.HasSetting(HomeWeatherWidgetFull)</selected>
 						</control>
 						<control type="button" id="113">
 							<include>dialogbutton_popup</include>
-							<label>301514</label>
+							<label>31368</label>
 							<onclick>RunScript(script.image.resource.select,property=weathericons&amp;type=resource.images.weathericons)</onclick>
-							<visible>System.HasAddon(script.image.resource.select)</visible>
+							<visible>System.AddonIsEnabled(script.image.resource.select)</visible>
 							<enable>!String.IsEmpty(Weather.Plugin)</enable>
 						</control>
 						<control type="button" id="114">
@@ -905,7 +888,6 @@
 							<label>$LOCALIZE[20007]</label>
 							<onclick>Skin.Reset(Widget_PVRTimers)</onclick>
 							<onclick>Skin.Reset(Widget_LiveTVWidgetChannels)</onclick>
-							<onclick>Skin.Reset(Widget_SerienPlaner)</onclick>
 							<onclick>Skin.ToggleSetting(Widget_Recordings)</onclick>
 							<selected>Skin.HasSetting(Widget_Recordings)</selected>
 						</control>
@@ -922,15 +904,13 @@
 							<onclick>Skin.Reset(Widget_Recordings)</onclick>
 							<onclick>Skin.Reset(Widget_LiveTVWidgetChannels)</onclick>
 							<onclick>Skin.ToggleSetting(Widget_PVRTimers)</onclick>
-							<onclick>Skin.Reset(Widget_SerienPlaner)</onclick>
 							<selected>Skin.HasSetting(Widget_PVRTimers)</selected>
 						</control>
 						<control type="radiobutton" id="124">
 							<include>dialogbutton_popup</include>
-							<label>301536</label>
+							<label>31378</label>
 							<onclick>Skin.Reset(Widget_Recordings)</onclick>
 							<onclick>Skin.Reset(Widget_PVRTimers)</onclick>
-							<onclick>Skin.Reset(Widget_SerienPlaner)</onclick>
 							<onclick>Skin.ToggleSetting(Widget_LiveTVWidgetChannels)</onclick>
 							<selected>Skin.HasSetting(Widget_LiveTVWidgetChannels)</selected>
 						</control>
@@ -988,7 +968,7 @@
 						</include>
 						<control type="radiobutton" id="141">
 							<include>dialogbutton_popup</include>
-							<label>301536</label>
+							<label>31378</label>
 							<onclick>Skin.ToggleSetting(Widget_pvr_radio_WidgetChannels)</onclick>
 							<selected>Skin.HasSetting(Widget_pvr_radio_WidgetChannels)</selected>
 						</control>

@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-04",
+  "archive": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-set-content-package-b129375c65bc462f88272ee1ae08b484\\skin.horizonzv-1.22.0.1.zip",
+  "sha256": "0021edb94cf380caa3e039f1759fae2cc1f6480e0481eff0d392ddfdd211fb7f",
+  "size_bytes": 29808806,
+  "files": 294,
+  "crc_ok": true,
+  "all_entries_match_worktree": true,
+  "file_set_same_as_global_search_checkpoint": true,
+  "changed_runtime_files": [
+    "xml/Includes_SetInformation.xml",
+    "xml/Variables.xml"
+  ],
+  "xml_xsp_parse_ok": true,
+  "no_fresh_zip_install_test": true,
+  "published_archives_unchanged": true,
+  "context": "movie_set_content_package_context.json"
+}

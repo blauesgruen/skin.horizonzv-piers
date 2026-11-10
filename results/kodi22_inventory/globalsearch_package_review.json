@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-04",
+  "archive": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-gsearch-package-50448fc0da084459b6a2a245d16531a0\\skin.horizonzv-1.22.0.1.zip",
+  "sha256": "76b7572e08af980d8bc0f47278fe23d30cec71b050b4277d1a22ccd171a5f1f9",
+  "size_bytes": 29808776,
+  "files": 294,
+  "crc_ok": true,
+  "all_entries_match_worktree": true,
+  "all_164_xml_11_xsp_manifest_helper_present": true,
+  "current_globalsearch_layout_present": true,
+  "legacy_globalsearch_layout_absent": true,
+  "xml_xsp_parse_ok": true,
+  "no_fresh_zip_install_test": true,
+  "published_archives_unchanged": true,
+  "context": "globalsearch_package_context.json"
+}

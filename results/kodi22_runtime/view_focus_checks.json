@@ -1,0 +1,83 @@
+{
+  "scope": "Actual skin movie/music views, enabled animation preference, native focus and selected-item verification. No playback or comprehensive animation-curve comparison.",
+  "rows": [
+    {
+      "window": "videos",
+      "viewid": 515,
+      "selected": "Skin Audit Movie",
+      "display_label": "Skin Audit Movie",
+      "has_focus": true,
+      "music_context": false,
+      "animation_enabled": true,
+      "aspect_ratio": "16:9"
+    },
+    {
+      "window": "videos",
+      "viewid": 562,
+      "selected": "Skin Audit Movie",
+      "display_label": "Skin Audit Movie",
+      "has_focus": true,
+      "music_context": false,
+      "animation_enabled": true,
+      "aspect_ratio": "16:9"
+    },
+    {
+      "window": "videos",
+      "viewid": 502,
+      "selected": "Skin Audit Movie",
+      "display_label": "Skin Audit Movie",
+      "has_focus": true,
+      "music_context": false,
+      "animation_enabled": true,
+      "aspect_ratio": "16:9"
+    },
+    {
+      "window": "videos",
+      "viewid": 505,
+      "selected": "Skin Audit Movie",
+      "display_label": "Skin Audit Movie",
+      "has_focus": true,
+      "music_context": false,
+      "animation_enabled": true,
+      "aspect_ratio": "16:9"
+    },
+    {
+      "window": "music",
+      "viewid": 515,
+      "selected": "View Focus Song",
+      "display_label": "View Focus Artist - View Focus Song",
+      "has_focus": true,
+      "music_context": true,
+      "animation_enabled": true,
+      "aspect_ratio": "16:9"
+    },
+    {
+      "window": "music",
+      "viewid": 562,
+      "selected": "View Focus Song",
+      "display_label": "View Focus Artist - View Focus Song",
+      "has_focus": true,
+      "music_context": true,
+      "animation_enabled": true,
+      "aspect_ratio": "16:9"
+    },
+    {
+      "window": "music",
+      "viewid": 505,
+      "selected": "View Focus Song",
+      "display_label": "View Focus Artist - View Focus Song",
+      "has_focus": true,
+      "music_context": true,
+      "animation_enabled": true,
+      "aspect_ratio": "16:9"
+    }
+  ],
+  "pid": 45784,
+  "cleanup": {
+    "process_exited": true,
+    "profile_restored": true,
+    "media_databases_restored": true,
+    "skin_xml_match_production": true
+  },
+  "errors": []
+}

@@ -1,0 +1,26 @@
+{
+  "scope": "SkinSettings.xml controls 870 and 872; static source review plus native focus/toggle checks and local-video pause rendering after this edit.",
+  "changes": [
+    {
+      "control": 872,
+      "removed": "onfocus Activate(1155)",
+      "reason": "Activate is not a registered Kodi built-in or input action. Target 1155 is this skin's first-run setup, unrelated to the pause-info option. Removed rather than changing it into a working setup launcher."
+    },
+    {
+      "control": 870,
+      "removed": ["onfocus Skin.SetBool(color_orange)", "onunfocus Skin.SelectBool(color_red)"],
+      "reason": "Focusing a pause option changed a persistent theme bool. SelectBool interprets argument zero as a numeric heading and remaining label|setting pairs as choices, so the single setting name supplies no choices and cannot restore the previous color. Removed these incidental focus actions; regular theme selection remains."
+    }
+  ],
+  "preserved": ["Skin.ToggleSetting(pause_light)", "Skin.ToggleSetting(pause_light_hideinfos)", "selected conditions", "description properties", "regular Skin.SelectBool color chooser"],
+  "sources": [
+    "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/interfaces/builtins/GUIBuiltins.cpp",
+    "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/input/actions/ActionTranslator.cpp",
+    "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/input/InputManager.cpp",
+    "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/interfaces/builtins/SkinBuiltins.cpp"
+  ],
+  "classification": "Invalid and inappropriate actions, not a claimed Kodi 22 API removal.",
+  "runtime_evidence": ["../kodi22_runtime/pause_settings_focus_checks.json", "../kodi22_runtime/pause_video_render_checks.json", "../kodi22_runtime/pause_settings_cleanup.json"],
+  "runtime_result": "Focus/unfocus and both toggles passed in native settings, without leaving the settings window or changing any of nine color bools. Standard/light detail-off/light detail-on pause states rendered with authored local AVI. Both pause bools and all color bools restored, playback stopped and test Kodi exited.",
+  "runtime_remaining": "Rich metadata field completeness, other media contexts and transient animation behavior are not certified by these three endpoint screenshots."
+}

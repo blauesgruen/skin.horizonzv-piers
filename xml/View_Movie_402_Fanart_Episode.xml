@@ -267,7 +267,6 @@
 							<ondown condition="!Control.IsVisible($PARAM[viewid]1)+Control.IsVisible(17000)">17000</ondown>
 							<ondown condition="!Control.IsVisible($PARAM[viewid]1)+!Control.IsVisible(17000)">732</ondown>
 							<viewtype label="20445">fixed</viewtype>
-							<viewtype label="20445">fixed</viewtype>
 							<pagecontrol>$PARAM[viewid]1</pagecontrol>
 							<scrolltime>200</scrolltime>
 							<focusposition>5</focusposition>

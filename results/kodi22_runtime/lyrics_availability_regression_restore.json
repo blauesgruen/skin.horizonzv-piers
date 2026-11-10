@@ -1,0 +1,38 @@
+{
+  "scope": "Existing positive manual/background CU native probes against guarded skin XML; wrapper restores own music/addon DB snapshots.",
+  "runs": [
+    {
+      "report": "lyrics_availability_enabled_checks.json",
+      "returncode": 0,
+      "failure": null,
+      "shutdown_wait_failure": null,
+      "errors": [],
+      "cleanup": {
+        "process_exited": true,
+        "provider_settings_restored": true,
+        "profile_restored": true,
+        "all_test_xml_match_production": true,
+        "all_copied_addon_files_unchanged": true,
+        "all_standard_source_files_unchanged": true
+      }
+    },
+    {
+      "report": "lyrics_availability_background_checks.json",
+      "returncode": 0,
+      "failure": null,
+      "shutdown_wait_failure": null,
+      "errors": [],
+      "cleanup": {
+        "process_exited": true,
+        "provider_settings_restored": true,
+        "profile_restored": true,
+        "all_test_xml_match_production": true,
+        "all_copied_addon_files_unchanged": true,
+        "all_standard_source_files_unchanged": true
+      }
+    }
+  ],
+  "work": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-lyrics-availability-regression-ukqhowjp",
+  "all_kodi_processes_exited": true,
+  "database_file_sets_and_bytes_restored": true
+}

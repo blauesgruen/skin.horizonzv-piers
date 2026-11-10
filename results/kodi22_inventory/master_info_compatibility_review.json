@@ -1,0 +1,331 @@
+{
+  "review_date": "2026-11-03",
+  "piers_source": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/GUIInfoManager.cpp",
+  "master_source": "https://github.com/xbmc/xbmc/blob/master/xbmc/GUIInfoManager.cpp",
+  "master_modified_date": "2026-10-31T08:27:59Z",
+  "tables": [
+    {
+      "name": "addons",
+      "piers_count": 3,
+      "master_count": 3,
+      "removed": [],
+      "added": []
+    },
+    {
+      "name": "string_bools",
+      "piers_count": 5,
+      "master_count": 5,
+      "removed": [],
+      "added": []
+    },
+    {
+      "name": "integer_bools",
+      "piers_count": 7,
+      "master_count": 7,
+      "removed": [],
+      "added": []
+    },
+    {
+      "name": "player_labels",
+      "piers_count": 60,
+      "master_count": 60,
+      "removed": [],
+      "added": []
+    },
+    {
+      "name": "player_param",
+      "piers_count": 2,
+      "master_count": 2,
+      "removed": [],
+      "added": []
+    },
+    {
+      "name": "player_times",
+      "piers_count": 11,
+      "master_count": 11,
+      "removed": [],
+      "added": []
+    },
+    {
+      "name": "player_process",
+      "piers_count": 20,
+      "master_count": 20,
+      "removed": [],
+      "added": []
+    },
+    {
+      "name": "weather",
+      "piers_count": 10,
+      "master_count": 10,
+      "removed": [],
+      "added": []
+    },
+    {
+      "name": "system_labels",
+      "piers_count": 76,
+      "master_count": 76,
+      "removed": [],
+      "added": []
+    },
+    {
+      "name": "system_param",
+      "piers_count": 6,
+      "master_count": 6,
+      "removed": [],
+      "added": []
+    },
+    {
+      "name": "network_labels",
+      "piers_count": 8,
+      "master_count": 8,
+      "removed": [],
+      "added": []
+    },
+    {
+      "name": "musicpartymode",
+      "piers_count": 7,
+      "master_count": 7,
+      "removed": [],
+      "added": []
+    },
+    {
+      "name": "musicplayer",
+      "piers_count": 46,
+      "master_count": 46,
+      "removed": [],
+      "added": []
+    },
+    {
+      "name": "videoplayer",
+      "piers_count": 88,
+      "master_count": 88,
+      "removed": [],
+      "added": []
+    },
+    {
+      "name": "retroplayer",
+      "piers_count": 28,
+      "master_count": 29,
+      "removed": [],
+      "added": [
+        "achievementshardcore"
+      ]
+    },
+    {
+      "name": "mediacontainer",
+      "piers_count": 19,
+      "master_count": 19,
+      "removed": [],
+      "added": []
+    },
+    {
+      "name": "container_bools",
+      "piers_count": 15,
+      "master_count": 15,
+      "removed": [],
+      "added": []
+    },
+    {
+      "name": "container_ints",
+      "piers_count": 6,
+      "master_count": 6,
+      "removed": [],
+      "added": []
+    },
+    {
+      "name": "container_str",
+      "piers_count": 3,
+      "master_count": 3,
+      "removed": [],
+      "added": []
+    },
+    {
+      "name": "listitem_labels",
+      "piers_count": 233,
+      "master_count": 238,
+      "removed": [],
+      "added": [
+        "platform",
+        "developer",
+        "publisher",
+        "players",
+        "agerating"
+      ]
+    },
+    {
+      "name": "visualisation",
+      "piers_count": 5,
+      "master_count": 5,
+      "removed": [],
+      "added": []
+    },
+    {
+      "name": "fanart_labels",
+      "piers_count": 4,
+      "master_count": 4,
+      "removed": [],
+      "added": []
+    },
+    {
+      "name": "skin_labels",
+      "piers_count": 4,
+      "master_count": 4,
+      "removed": [],
+      "added": []
+    },
+    {
+      "name": "window_bools",
+      "piers_count": 9,
+      "master_count": 9,
+      "removed": [],
+      "added": []
+    },
+    {
+      "name": "control_labels",
+      "piers_count": 4,
+      "master_count": 4,
+      "removed": [],
+      "added": []
+    },
+    {
+      "name": "playlist",
+      "piers_count": 7,
+      "master_count": 7,
+      "removed": [],
+      "added": []
+    },
+    {
+      "name": "pvr",
+      "piers_count": 82,
+      "master_count": 82,
+      "removed": [],
+      "added": []
+    },
+    {
+      "name": "pvr_times",
+      "piers_count": 12,
+      "master_count": 12,
+      "removed": [],
+      "added": []
+    },
+    {
+      "name": "rds",
+      "piers_count": 45,
+      "master_count": 45,
+      "removed": [],
+      "added": []
+    },
+    {
+      "name": "slideshow",
+      "piers_count": 63,
+      "master_count": 63,
+      "removed": [],
+      "added": []
+    }
+  ],
+  "helpers": [
+    {
+      "method": "TranslateString:1",
+      "piers_tokens": 33,
+      "master_tokens": 33,
+      "identical": true
+    },
+    {
+      "method": "TranslateSingleString:1",
+      "piers_tokens": 25,
+      "master_tokens": 25,
+      "identical": true
+    },
+    {
+      "method": "TranslateSingleString:2",
+      "piers_tokens": 5080,
+      "master_tokens": 5216,
+      "identical": false
+    },
+    {
+      "method": "TranslateListItem:1",
+      "piers_tokens": 437,
+      "master_tokens": 441,
+      "identical": false
+    },
+    {
+      "method": "TranslateMusicPlayerString:1",
+      "piers_tokens": 40,
+      "master_tokens": 40,
+      "identical": true
+    },
+    {
+      "method": "TranslateVideoPlayerString:1",
+      "piers_tokens": 40,
+      "master_tokens": 40,
+      "identical": true
+    },
+    {
+      "method": "TranslatePlayerString:1",
+      "piers_tokens": 40,
+      "master_tokens": 40,
+      "identical": true
+    },
+    {
+      "method": "TranslateSkinVariableString:1",
+      "piers_tokens": 93,
+      "master_tokens": 93,
+      "identical": true
+    }
+  ],
+  "removed_registered_names": [],
+  "added_registered_names": [
+    {
+      "table": "retroplayer",
+      "name": "achievementshardcore"
+    },
+    {
+      "table": "listitem_labels",
+      "name": "platform"
+    },
+    {
+      "table": "listitem_labels",
+      "name": "developer"
+    },
+    {
+      "table": "listitem_labels",
+      "name": "publisher"
+    },
+    {
+      "table": "listitem_labels",
+      "name": "players"
+    },
+    {
+      "table": "listitem_labels",
+      "name": "agerating"
+    }
+  ],
+  "changed_parser_contracts": [
+    {
+      "scope": "MusicPlayer.Property(fanart_image) and ListItem.Property(fanart_image)",
+      "change": "Replace fanart literal with ART::TYPE::FANART; ArtTypes.h constant retains fanart string.",
+      "source": "https://github.com/xbmc/xbmc/blob/master/xbmc/utils/ArtTypes.h"
+    },
+    {
+      "scope": "RetroPlayer.AchievementsChallengeTitle(n)/AchievementsChallengeBadge(n)",
+      "change": "Add explicit one-parameter parsing and numeric bounds 1 <= n < 2^24. No-parameter path remains registered.",
+      "skin_references": 0
+    }
+  ],
+  "limits": "First method names and these parser branches only; not all arguments/backend label semantics or all Kodi APIs. No Kodi 23 runtime test or prediction about unpublished changes.",
+  "skin_change_required_by_this_pass": false,
+  "current_skin_comparison": {
+    "xml_files": 164,
+    "matched_reference_contexts": 15745,
+    "distinct_strings": 462,
+    "new_method_name_candidates_vs_piers": 0,
+    "existing_candidate_classification": "info_name_candidate_review.json",
+    "selected_static_arity_checks": 8472,
+    "arity_candidates": [],
+    "condition_atom_candidates": [],
+    "dynamic_argument_limit": "Dynamic arguments and unvalidated parameter semantics remain excluded. New optional RetroPlayer parameter contract has no skin uses.",
+    "normalized_candidate_contexts_same_as_piers": 35,
+    "normalization_note": "file/element/name/expression tuples; repeated identical source contexts merge. Existing manual review records individual occurrences.",
+    "skin_update_note": "Refreshed after native Addon metadata row removal."
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "checked_on": "2026-11-04",
+  "archive": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-switchtimer-package-d5bb70cf02ff4ff8bf9527977d5f70f7\\skin.horizonzv-1.22.0.1.zip",
+  "sha256": "075aef590a9cf5881e07d97dc92e67d78cf888ed054060a54353986f3bffd74f",
+  "file_count": 294,
+  "crc_ok": true,
+  "all_entries_equal_workspace": true,
+  "xml_xsp_parsed": 179,
+  "changed_from_previous_test_package": [
+    "xml/Includes_PVR.xml",
+    "xml/Variables.xml"
+  ],
+  "limits": [
+    "No fresh ZIP installation test.",
+    "Includes current runtime source; results and tools excluded.",
+    "No published archive overwritten."
+  ],
+  "later_native_install_evidence": "../kodi22_runtime/package_install_checks.json",
+  "historical_limit_note": "The no-install-test limit above describes the original ZIP comparison checkpoint. A later native fresh installation and restart are now recorded separately."
+}

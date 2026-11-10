@@ -191,7 +191,7 @@
             <height>674</height>
             <align>center</align>
             <aligny>center</aligny>
-            <label>301270</label>
+            <label>31249</label>
             <textcolor>grey</textcolor>
             <font>impacted26</font>
             <animation effect="rotatey" start="0" end="-45">WindowOpen</animation>

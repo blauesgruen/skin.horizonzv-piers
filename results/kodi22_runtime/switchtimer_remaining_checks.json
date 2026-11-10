@@ -1,0 +1,55 @@
+{
+  "scope": "Actual shutdown menu and skin settings opened with controlled old t0 properties present. No button selected, no timer scheduled, no provider run. Not an animation-coordinate or backend test.",
+  "windows": [
+    {
+      "target": "shutdownmenu",
+      "visible": true,
+      "gui": {
+        "currentcontrol": {
+          "label": "Exit"
+        },
+        "currentwindow": {
+          "id": 10111,
+          "label": "Shutdown menu"
+        }
+      },
+      "values": {
+        "Skin.AspectRatio": "16:9",
+        "Window(Home).Property(t0:channel)": "Skin audit channel",
+        "Window(Home).Property(t0:date)": "2099-01-01 12:00",
+        "Window(Home).Property(t0:title)": "Skin audit timer"
+      }
+    },
+    {
+      "target": "skinsettings",
+      "visible": true,
+      "gui": {
+        "currentcontrol": {
+          "label": "Mainmenu buttons"
+        },
+        "currentwindow": {
+          "id": 10035,
+          "label": "Skin Settings"
+        }
+      },
+      "values": {
+        "Skin.AspectRatio": "16:9",
+        "Window(Home).Property(t0:channel)": "Skin audit channel",
+        "Window(Home).Property(t0:date)": "2099-01-01 12:00",
+        "Window(Home).Property(t0:title)": "Skin audit timer"
+      }
+    }
+  ],
+  "pid": 9172,
+  "legacy_values": {
+    "t0:date": "2099-01-01 12:00",
+    "t0:channel": "Skin audit channel",
+    "t0:title": "Skin audit timer"
+  },
+  "cleanup": {
+    "process_exited": true,
+    "profile_settings_restored": true,
+    "all_skin_xml_match": true
+  },
+  "errors": []
+}

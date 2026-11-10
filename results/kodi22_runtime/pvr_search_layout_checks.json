@@ -1,0 +1,66 @@
+{
+  "scope": "Direct native dialog activation without PVR search filter; layout and navigation only. Search/save/filter actions not invoked.",
+  "rows": [
+    {
+      "action": null,
+      "focus": [
+        9
+      ]
+    },
+    {
+      "action": "down",
+      "focus": [
+        10
+      ]
+    },
+    {
+      "action": "right",
+      "focus": [
+        12
+      ]
+    },
+    {
+      "action": "left",
+      "focus": [
+        10
+      ]
+    },
+    {
+      "action": "up",
+      "focus": [
+        9
+      ]
+    },
+    {
+      "action": "up",
+      "focus": [
+        26
+      ]
+    },
+    {
+      "action": "right",
+      "focus": [
+        29
+      ]
+    },
+    {
+      "action": "right",
+      "focus": [
+        28
+      ]
+    },
+    {
+      "action": "right",
+      "focus": [
+        25
+      ]
+    }
+  ],
+  "closed": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Window.IsVisible(pvrguidesearch)": false
+    }
+  }
+}

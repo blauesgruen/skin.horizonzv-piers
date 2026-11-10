@@ -1,0 +1,110 @@
+{
+  "checked_on": "2026-11-05",
+  "scope": "Selected native dialog control/header contracts in HorizonzV; not a complete typed schema or all-dialog runtime approval.",
+  "sources": [
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/dialogs/GUIDialogNumeric.cpp",
+      "finding": "Numeric input writes heading to control 1 and reads that control description for its input-request announcement. Number input appends digits; Backspace removes the last one."
+    },
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/master/xbmc/dialogs/GUIDialogNumeric.cpp",
+      "finding": "Published master retains numeric heading control 1."
+    },
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/settings/dialogs/GUIDialogSettingsBase.h",
+      "finding": "CONTROL_SETTINGS_LABEL is 2."
+    },
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/settings/dialogs/GUIDialogSettingsBase.cpp",
+      "finding": "SetHeading sends its label to CONTROL_SETTINGS_LABEL."
+    },
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/master/xbmc/settings/dialogs/GUIDialogSettingsBase.h",
+      "finding": "Published master retains settings heading control 2."
+    },
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/master/xbmc/settings/dialogs/GUIDialogSettingsBase.cpp",
+      "finding": "Published master retains the same SetHeading label binding."
+    },
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/video/dialogs/GUIDialogAudioSettings.cpp",
+      "finding": "Uses DialogSettings.xml and heading string 13396."
+    },
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/video/dialogs/GUIDialogVideoSettings.cpp",
+      "finding": "Uses DialogSettings.xml and heading string 13395."
+    },
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/video/dialogs/GUIDialogSubtitleSettings.cpp",
+      "finding": "Uses DialogSettings.xml and heading string 24133."
+    },
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/interfaces/legacy/Dialog.cpp",
+      "finding": "Python Dialog.numeric routes number/date/time/IP modes to the native numeric dialog. The test uses these genuine native entry points."
+    }
+  ],
+  "findings": [
+    {
+      "file": "xml/DialogNumeric.xml",
+      "before": "Header label used ID 0 and generic System.CurrentWindow, so callers' actual prompt was lost.",
+      "after": "Header uses native control 1 with no competing static label."
+    },
+    {
+      "file": "xml/DialogSettings.xml",
+      "before": "Header label used ID 0 and generic window caption instead of the supplied settings heading.",
+      "after": "Header uses native control 2."
+    }
+  ],
+  "additional_source_checks": [
+    {
+      "file": "xml/DialogPVRGroupManager.xml",
+      "source": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/pvr/dialogs/GUIDialogPVRGroupManager.cpp",
+      "result": "Required view IDs 11/12/13 are lists; selected header-label IDs 20/21/22 exist. No mismatch found in these selected controls."
+    },
+    {
+      "file": "xml/DialogSlider.xml",
+      "source": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/dialogs/GUIDialogSlider.cpp",
+      "result": "10 and 12 are labels; 11 is slider, matching native dynamic cast and writes."
+    },
+    {
+      "file": "xml/DialogKeyboard.xml",
+      "source": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/dialogs/GUIDialogKeyboardGeneric.cpp",
+      "result": "Native heading 311 is already provided by the skin include."
+    },
+    {
+      "file": "xml/DialogMediaSource.xml",
+      "source": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/dialogs/GUIDialogMediaSource.cpp",
+      "result": "Native heading 2 is already provided."
+    },
+    {
+      "file": "xml/DialogTextViewer.xml",
+      "source": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/dialogs/GUIDialogTextViewer.cpp",
+      "result": "Native heading 1 is already provided."
+    }
+  ],
+  "runtime": {
+    "before": "../kodi22_runtime/native_heading_before.json",
+    "final": "../kodi22_runtime/native_heading_checks.json",
+    "result": "Four numeric modes show the supplied title; number buttons append 3 then 4 to 12, Backspace yields 123, Done returns 123. Other modes cancel to empty. Audio/video/subtitle settings titles match native localized IDs; no settings item changed. Final errors empty, secured settings restored."
+  },
+  "intermediate": {
+    "report": "../kodi22_runtime/native_heading_before_input_expectation.json",
+    "result": "Helper incorrectly expected initial numeric value replacement. Native appends correctly. Failure cleanup quit before the modal Python call returned, producing one invoker shutdown error. Both helper expectations and wait ordering corrected; final run has no ERROR."
+  },
+  "limits": [
+    "Existing malformed control contracts, not evidence of newly removed Kodi APIs.",
+    "First baseline queries of $LOCALIZE through JSON-RPC returned empty and are not localization evidence; final expectations come from Kodi xbmc.getLocalizedString.",
+    "Only number/date/time/IP modes at 16:9; password masking/verification, locale variants, remote-app announcements and other modes not runtime tested.",
+    "Settings dialogs opened without playback and cancelled; title binding is tested, not real playback device/settings effects.",
+    "No external addon code changed. CU LRC service temporarily isolated in secured test settings, then restored.",
+    "Other selected dialog controls were source-checked only; not full include expansion or runtime sign-off."
+  ],
+  "package_review": "native_heading_package_review.json",
+  "native_install_evidence": "../kodi22_runtime/native_heading_install_checks.json",
+  "bounded_static_check": {
+    "tool": "tools/check_skin_compatibility.py",
+    "files_checked": 165,
+    "findings": [],
+    "scope": "Known literal regressions and selected structures, not a complete control-contract parser."
+  }
+}

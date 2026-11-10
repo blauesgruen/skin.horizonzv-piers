@@ -1,0 +1,77 @@
+{
+  "checked_on": "2026-11-04",
+  "scope": "HorizonzV Artist Slideshow property names, indexing, target window and no-argument script entry only.",
+  "provider_version": "4.2.1",
+  "source": "https://github.com/pkscout/script.artistslideshow/blob/7dfe816c68b603c18b95f071ca96a8343e8335f2/resources/lib/artistslideshow.py",
+  "matches": [
+    {
+      "line": 132,
+      "text": "self._set_property('ArtistSlideshow.Image', os.path.join( ADDONPATH, 'resources', 'images', 'black-hd.png'))"
+    },
+    {
+      "line": 135,
+      "text": "self._set_property('ArtistSlideshow.Image') LW.log(['images cleared'])"
+    },
+    {
+      "line": 162,
+      "text": "self._set_property('ArtistSlideshow.Image', image) last_image = image"
+    },
+    {
+      "line": 255,
+      "text": "self._set_property('ArtistSlideshowRunning', 'True') else:"
+    },
+    {
+      "line": 259,
+      "text": "self._set_property('ArtistSlideshowRunning', 'True') if self.MONITOR.waitForAbort(1):"
+    },
+    {
+      "line": 1082,
+      "text": "self.WINDOWID = params.get('windowid', '12006') LW.log(['window id is set to %s' % self.WINDOWID])"
+    },
+    {
+      "line": 1183,
+      "text": "self._set_property('ArtistSlideshow.ArtistBiography', self.BIOGRAPHY) for count, item in enumerate(self.SIMILAR):"
+    },
+    {
+      "line": 1185,
+      "text": "self._set_property('ArtistSlideshow.%d.SimilarName' % (count + 1), item[0])"
+    },
+    {
+      "line": 1187,
+      "text": "self._set_property('ArtistSlideshow.%d.SimilarThumb' % (count + 1), item[1])"
+    },
+    {
+      "line": 1191,
+      "text": "self._set_property('ArtistSlideshow.%d.AlbumName' % (count + 1), item[0])"
+    },
+    {
+      "line": 1193,
+      "text": "self._set_property('ArtistSlideshow.%d.AlbumThumb' % (count + 1), item[1])"
+    },
+    {
+      "line": 1201,
+      "text": "self.WINDOW.setProperty(property_name, value) LW.log(['%s set to %s' % (property_name, value)])"
+    }
+  ],
+  "default_entry": {
+    "source": "https://github.com/pkscout/script.artistslideshow/blob/main/default.py",
+    "content": "import resources.lib.artistslideshow as ArtistSlideshow\n\nif (__name__ == \"__main__\"):\n    slideshow = ArtistSlideshow.Main()\n    if slideshow.RunFromSettings():\n        slideshow.DoSettingsRoutines()\n    elif not slideshow.SlideshowRunning():\n        slideshow.Start()\n"
+  },
+  "result": "All seven normalized property contracts retained; property lists are one-based and default WINDOWID is visualisation 12006. No skin rewrite justified by these contracts.",
+  "limits": [
+    "This source check does not validate online data availability or every native album/similar/biography display state.",
+    "No external addon code changed.",
+    "ArtistSlideshowRunning is described as internal in the maintainer README. Its current implementation is verified; no future public-API guarantee is inferred."
+  ],
+  "normalized_skin_properties": [
+    "ArtistSlideshowRunning",
+    "ArtistSlideshow.Image",
+    "ArtistSlideshow.ArtistBiography",
+    "ArtistSlideshow.N.AlbumName",
+    "ArtistSlideshow.N.AlbumThumb",
+    "ArtistSlideshow.N.SimilarName",
+    "ArtistSlideshow.N.SimilarThumb"
+  ],
+  "upstream_commit": "7dfe816c68b603c18b95f071ca96a8343e8335f2",
+  "pinned_core_equals_fetched_main": true
+}

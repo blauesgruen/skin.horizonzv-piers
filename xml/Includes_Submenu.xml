@@ -459,16 +459,16 @@
             <control type="button" id="80181">
                 <description>Weather Fanart Select</description>
                 <include>ButtonHomeSubCommonValues</include>
-                <label>301516</label>
+                <label>31369</label>
                 <onclick>RunScript(script.image.resource.select,property=weatherfanart&amp;type=resource.images.weatherfanart)</onclick>
-                <visible>System.HasAddon(script.image.resource.select)+Weather.IsFetched</visible>
+                <visible>System.AddonIsEnabled(script.image.resource.select)+Weather.IsFetched</visible>
             </control>
             <control type="button" id="80182">
                 <description>Weather Icons Select</description>
                 <include>ButtonHomeSubCommonValues</include>
-                <label>301514</label>
+                <label>31368</label>
                 <onclick>RunScript(script.image.resource.select,property=weathericons&amp;type=resource.images.weathericons)</onclick>
-                <visible>System.HasAddon(script.image.resource.select)+Weather.IsFetched</visible>
+                <visible>System.AddonIsEnabled(script.image.resource.select)+Weather.IsFetched</visible>
             </control>
             <control type="button" id="80183">
                 <include>ButtonHomeSubCommonValues</include>
@@ -740,21 +740,14 @@
 				<include>ButtonHomeSubCommonValues</include>
 				<label>LibreELEC</label>
 				<onclick>RunAddon(service.libreelec.settings)</onclick>
-				<visible>System.HasAddon(service.libreelec.settings)</visible>
-				<visible>!Skin.HasSetting(SubMenu_music_NoLibreelecButton)</visible>
-			</control>
-			<control type="button" id="80282">
-			<include>ButtonHomeSubCommonValues</include>
-				<label>OpenELEC</label>
-				<onclick>RunAddon(service.openelec.settings)</onclick>
-				<visible>System.HasAddon(service.openelec.settings)</visible>
+				<visible>System.AddonIsEnabled(service.libreelec.settings)</visible>
 				<visible>!Skin.HasSetting(SubMenu_music_NoLibreelecButton)</visible>
 			</control>
 			<control type="button" id="80283">
 				<include>ButtonHomeSubCommonValues</include>
 				<label>CoreELEC</label>
 				<onclick>RunAddon(service.coreelec.settings)</onclick>
-				<visible>System.HasAddon(service.coreelec.settings)</visible>
+				<visible>System.AddonIsEnabled(service.coreelec.settings)</visible>
 				<visible>!Skin.HasSetting(SubMenu_music_NoLibreelecButton)</visible>
 			</control>
 			<control type="button" id="80284">

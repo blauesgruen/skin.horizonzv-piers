@@ -28,12 +28,6 @@
 						<label>14230</label>
 						<visible>Control.IsVisible(621) | Control.IsVisible(624)</visible>
 					</control>
-					<control type="button" id="624">
-						<include>SidePanelButton</include>
-						<label>$LOCALIZE[10140]</label>
-						<onclick>Addon.OpenSettings($INFO[Container.PluginName])</onclick>
-						<visible>!String.IsEmpty(Container.PluginName)</visible>
-					</control>
 					<control type="button" id="621">
 						<description>Get more</description>
 						<include>SidePanelButton</include>

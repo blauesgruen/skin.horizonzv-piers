@@ -1,0 +1,96 @@
+{
+  "classification": "Free-text builtin argument transport bug; no Kodi API removal claimed.",
+  "changed_extendedinfo_calls": [
+    {
+      "file": "xml/DialogMusicInfo.xml",
+      "value": "RunScript(script.extendedinfo,info=youtubebrowser,id=$ESCVAR[ExtendedInfoYoutubeAlbumQuery])"
+    },
+    {
+      "file": "xml/DialogMusicInfo.xml",
+      "value": "RunScript(script.extendedinfo,info=youtubebrowser,id=$ESCVAR[ExtendedInfoYoutubeSongQuery])"
+    },
+    {
+      "file": "xml/DialogVideoInfo.xml",
+      "value": "RunScript(script.extendedinfo,info=youtubebrowser,id=$ESCVAR[ExtendedInfoYoutubeVideoQuery])"
+    },
+    {
+      "file": "xml/Variables.xml",
+      "value": "RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[ListItem.DBID],name=$ESCINFO[ListItem.Title])"
+    },
+    {
+      "file": "xml/Variables.xml",
+      "value": "RunScript(script.extendedinfo,info=extendedtvinfo,dbid=$INFO[ListItem.DBID],name=$ESCINFO[ListItem.TvShowTitle])"
+    },
+    {
+      "file": "xml/Variables.xml",
+      "value": "RunScript(script.extendedinfo,info=seasoninfo,tvshow=$ESCINFO[ListItem.TvShowTitle],season=$INFO[ListItem.Season])"
+    },
+    {
+      "file": "xml/Variables.xml",
+      "value": "RunScript(script.extendedinfo,info=extendedepisodeinfo,tvshow=$ESCINFO[ListItem.TvShowTitle],season=$INFO[ListItem.Season],episode=$INFO[ListItem.Episode])"
+    }
+  ],
+  "joined_query_variables": [
+    "ExtendedInfoYoutubeAlbumQuery",
+    "ExtendedInfoYoutubeSongQuery",
+    "ExtendedInfoYoutubeVideoQuery"
+  ],
+  "all_new_escvar_references_defined": true,
+  "source_contracts": [
+    "CApplication::ExecuteXBMCAction expands labels before builtin parsing",
+    "CExecString delegates argument splitting to CUtil::SplitParams",
+    "SplitParams treats unquoted top-level commas as separators and handles name=\"value\" quoting",
+    "GUIInfoLabel ESCINFO/ESCVAR escape quotes/backslashes and quote the entire label",
+    "ExtendedInfo parses key=value argv and uses id as the youtubebrowser search text"
+  ],
+  "sources": [
+    "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/application/Application.cpp",
+    "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/utils/ExecString.cpp",
+    "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/Util.cpp",
+    "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/guilib/guiinfo/GUIInfoLabel.cpp",
+    "https://github.com/scott967/script.extendedinfo/blob/754a63d8555ae6ffde80c3935ae47933332a5fa2/script.extendedinfo/resources/lib/scriptmain.py",
+    "https://github.com/scott967/script.extendedinfo/blob/754a63d8555ae6ffde80c3935ae47933332a5fa2/script.extendedinfo/resources/lib/process.py"
+  ],
+  "native_test_status": "Passed native escaped-argument round-trip: 16 revised cases; three plain comma baselines fail.",
+  "limits": "No addon source change. Original Close-before-RunScript order and movie/album/song item context verified. Actual movie YouTube invocation reached ExtendedInfo 6.0.9 with the correct query; remote search rejected missing API identity. Other addon actions and playback remain unverified.",
+  "native_evidence": [
+    "argument_escape_fixture.json",
+    "argument_escape_native_checks.json",
+    "argument_escape_native.png",
+    "run_argument_escape_probe.py",
+    "dialog_context_fixture.json",
+    "dialog_context_checks.json",
+    "dialog_context_probe.py"
+  ],
+  "static_checks": [
+    {
+      "tool": "check_skin_compatibility.py",
+      "exit_code": 0,
+      "findings": 0
+    },
+    {
+      "tool": "audit_skin_actions.py",
+      "exit_code": 0,
+      "findings": 0
+    },
+    {
+      "tool": "audit_skin_windows.py",
+      "exit_code": 0,
+      "findings": 0
+    },
+    {
+      "tool": "audit_skin_info_names.py",
+      "exit_code": 0,
+      "findings": 0
+    }
+  ],
+  "new_query_variables_used_via_escvar": true,
+  "inventory_after": {
+    "xml_dateien": 164,
+    "xml_parsefehler": 0,
+    "variablen": 278,
+    "variablen_unbenutzt": 55,
+    "variablen_fehlend": 0
+  },
+  "native_context_status": "Passed all three native information dialogs, including comma/quote-containing authored album and song tags; capture redirects only addon dispatch in isolated copies."
+}

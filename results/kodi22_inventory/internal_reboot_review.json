@@ -1,0 +1,31 @@
+{
+  "review_date": "2026-11-02",
+  "scope": "Skin-only review of the internal-boot shortcut. No boot/environment commands executed.",
+  "coreelec_branch": "coreelec-22",
+  "snapshot": "39498a8316f852c5fbf09b1e894b9aff70d00d59",
+  "script_path": "projects/Amlogic-ce/filesystem/usr/sbin/rebootfromnand",
+  "script_blob": "687d0f6aa962b140e2e87d1c87420e7f3cbbe8b6",
+  "source_url": "https://github.com/CoreELEC/CoreELEC/blob/39498a8316f852c5fbf09b1e894b9aff70d00d59/projects/Amlogic-ce/filesystem/usr/sbin/rebootfromnand",
+  "observed_contract": {
+    "device_tree_ids_with_direct_reboot": [
+      "g12brevb_raven_2g",
+      "t7_gazelle_pvt"
+    ],
+    "direct_reboot_command": "/sbin/reboot quiescent",
+    "other_device_behavior": "If whereToBootFrom exists, set it to internal; then set bootfromnand to 1. No explicit reboot in that branch.",
+    "uniform_success_result_exposed_to_skin": false
+  },
+  "current_skin_behavior": [
+    "System.ExecWait(\"/usr/sbin/rebootfromnand\")",
+    "Reset() independent of script result"
+  ],
+  "classification": "The upstream script still exists. Not a proven Kodi removal. Device-dependent integration and failure handling remain unresolved.",
+  "next_decision": "Keep the user-required shortcut. CoreELEC device follow-up closed on user confirmation; no reboot executed by the agent.",
+  "external_addon_changes": false,
+  "hardware_test": "User reports the discussed CoreELEC functions work. No further remote device probe requested or required for this skin overhaul.",
+  "user_confirmation": {
+    "date": "2026-11-03",
+    "quote": "ja, das funktioniert alles auf coreelec.",
+    "scope": "The CoreELEC-specific skin functions discussed in the conversation. No separate agent device test or exact firmware/build claim."
+  }
+}

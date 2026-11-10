@@ -1,0 +1,159 @@
+{
+  "scope": "Actual WindowXMLDialog filename rule and full skin GTO dialog in canonical folder. Authored properties follow the GTO contract; provider/router/backend not executed.",
+  "rows": [
+    {
+      "case": "future_unmapped",
+      "switch_enabled": false,
+      "record_enabled": false,
+      "home_backdrop_condition": true,
+      "button_labels": {
+        "Control.GetLabel(21)": "Switch Now",
+        "Control.GetLabel(22)": "Record",
+        "Control.GetLabel(23)": "Close"
+      },
+      "filename": "skin.horizonzv.script-gto-info.xml",
+      "skin": "skin.horizonzv",
+      "stage": "constructed"
+    },
+    {
+      "case": "running_unmapped",
+      "switch_enabled": false,
+      "record_enabled": false,
+      "home_backdrop_condition": true,
+      "button_labels": {
+        "Control.GetLabel(21)": "Switch Now",
+        "Control.GetLabel(22)": "Record",
+        "Control.GetLabel(23)": "Close"
+      },
+      "filename": "skin.horizonzv.script-gto-info.xml",
+      "skin": "skin.horizonzv",
+      "stage": "constructed"
+    },
+    {
+      "case": "running_mapped",
+      "switch_enabled": true,
+      "record_enabled": false,
+      "home_backdrop_condition": true,
+      "button_labels": {
+        "Control.GetLabel(21)": "Switch Now",
+        "Control.GetLabel(22)": "Record",
+        "Control.GetLabel(23)": "Close"
+      },
+      "filename": "skin.horizonzv.script-gto-info.xml",
+      "skin": "skin.horizonzv",
+      "stage": "constructed"
+    },
+    {
+      "case": "recordable",
+      "switch_enabled": false,
+      "record_enabled": true,
+      "home_backdrop_condition": true,
+      "button_labels": {
+        "Control.GetLabel(21)": "Switch Now",
+        "Control.GetLabel(22)": "Record",
+        "Control.GetLabel(23)": "Close"
+      },
+      "filename": "skin.horizonzv.script-gto-info.xml",
+      "skin": "skin.horizonzv",
+      "stage": "constructed"
+    },
+    {
+      "case": "existing_timer_without_cast",
+      "switch_enabled": false,
+      "record_enabled": false,
+      "home_backdrop_condition": true,
+      "button_labels": {
+        "Control.GetLabel(21)": "Switch Now",
+        "Control.GetLabel(22)": "Record",
+        "Control.GetLabel(23)": "Close"
+      },
+      "filename": "skin.horizonzv.script-gto-info.xml",
+      "skin": "skin.horizonzv",
+      "stage": "constructed"
+    }
+  ],
+  "provider_file_hashes": {
+    "addon.xml": "9f32f6556ac60e56a0877cca04452768fa433d5f357261583a1c89fd3caf730c",
+    "fanart.jpg": "c0acbd0b97f0432aa0f73d1079876c17d65f83aba016dbac8dc9aa498beeb642",
+    "icon.png": "4c85ebaa319d265c568c942a728312546549bce34714e0fbee0dbad7d636811f",
+    "main.py": "54b241c7a35c3e9ce25343afa753bc382fa70c1929f15a9d8f9b389af5de5160",
+    "README.md": "85cdcddc59a7147da6dc7ad240980bddc3b2c40fdfd089984f0cf331abb1a760",
+    "starter.py": "6cf556fb2227007c7a804a0a554064405ec340d969ad87e6ce6d20e3bb609d3e",
+    "resources/ChannelTranslate.json": "61ae97c5641e5090ea1a9999c4ea1de6f2b00a5d27b36188266590fbe0396a70",
+    "resources/settings.xml": "dea4c06fbfe30b4864c97c0b26a0b17e8e0923bf0ec73d2fd79a58b8907421b9",
+    "resources/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "resources/lib/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "resources/skins/Default/720p/skin.aeon.nox.silvo.script-gto-info.xml": "a1a20b990dd166a6209dff2ab30b70d8ab5254e8639483c3ba6982f804ed0bf2",
+    "resources/skins/Default/720p/skin.arctic.zephyr.mod.script-gto-info.xml": "1e7a65acfe02297d26b77a57c4f63910d41de432e1ad20ef8ad03553b56c4966",
+    "resources/skins/Default/720p/skin.confluence.script-gto-info.xml": "82c6fb8988478ca7f5412dbcbcbe2a8e894ca585bf6614f20b3b9bd103a858f9",
+    "resources/skins/Default/720p/skin.estuary.script-gto-info.xml": "44316661a3e1278e7aa2e2b9aac2e6cee936704b95a8d6a6a0532ed28a30f665",
+    "resources/lib/media/broadcastDummy.jpg": "28b39c1aae87dbe68b425181212464d9ee299f125c9e80c2c150ff442ab8d30a",
+    "resources/lib/media/csfd.png": "499659d046d3c73a40790d22137f1ec45e1097a5c1df09a0d65156311392c4c0",
+    "resources/lib/media/csfd_dummy.jpg": "2adce6d17886538887965ba2c0305fa9b0e273bce21231813f34936b02381b9b",
+    "resources/lib/media/hoerzu.png": "7e108b199afb4a78aa1bbc9ab53acaf8dda28b0ce6166d21b18825288572a26c",
+    "resources/lib/media/hoerzu_dummy.jpg": "79db4a800963e14a96213a1bd1222faba11530ba7b137694ef181cf54543530d",
+    "resources/lib/media/klack.png": "2e13997f143326d357d41740b323a3daf4de5b9c256fc39c2b157d8e443098da",
+    "resources/lib/media/klackde_dummy.jpg": "d75047cd5237777951cbf025fb8995e429981853ff86c6c9ef3bdbc474c4aff0",
+    "resources/lib/media/knftv.png": "26d59bcb48e8e006747576b045833a1b235c525b9895eaac29adda5f0a512fd2",
+    "resources/lib/media/knftv_dummy.jpg": "f65b065fde516824d877f9056984984fba3c5029374cb80478feb02fc6f3ef20",
+    "resources/lib/media/rtv.png": "3d65e8c16e078d9bff58d77ae874aa1ec705fd4c4a798663c3d0c45d7c7990ed",
+    "resources/lib/media/tvd.png": "f7effc7e19b15e28156b5356cb364ba5f9ea4b1d82507986d9b31a5600ffded9",
+    "resources/lib/media/tvd_dummy.jpg": "c8dc3fd234200901ca028e7db9adf4183651d5fff22ec984279130b1e952edf4",
+    "resources/lib/media/tvguide.uk_logo.png": "6b0b5282438ca70e34484921da96b39aa492ff58728853c06580173668a4f5e1",
+    "resources/lib/media/tvspielfilm.png": "7156451bb6d18dca264d8a1a3da017e43221abd1375522f16b3418b27730f70a",
+    "resources/lib/media/tvspielfilm_dummy.jpg": "a28930c91f23628aa6d89fef8b648ce02bed4daeda921d3ce7a5c658f90f6301",
+    "resources/lib/modules/tools.py": "9ad7e1accc57c5550946d0f172947a5843da4d3189ec0e463759b915eb5b67f9",
+    "resources/lib/modules/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "resources/lib/screenshots/screenshot_01.jpg": "e1f9487abfb0783d965d1ea00e4d4c59b3e2e704e00cd716ba3b3de4a55d45d3",
+    "resources/lib/screenshots/screenshot_02.jpg": "9b95a71bf5f811f61520d5f7b7dcdb86d3d3c75bacc908fc8d8b8f1c80ff8798",
+    "resources/lib/modules/scraper/cfsd_cz.py": "abf25404a1ffcb1e0713f8cfee452cd0c24045c88cb308ea895ecdcee51b1e74",
+    "resources/lib/modules/scraper/cfsd_sk.py": "1aa33dcba0a136b9e0b5156190a4315669e19e15e8562371a95cfd0d7a050c44",
+    "resources/lib/modules/scraper/hoerzu_de.py": "60f70a1a5b652ac67d6510222dcb1bd924b65a3766d482cf74ba6083f633ddbd",
+    "resources/lib/modules/scraper/klack_de.py": "5813dd2f23ef6dcccb48c8d05ee284e7fbfd917c08051a23e5210bba84e06702",
+    "resources/lib/modules/scraper/klack_de_football.py": "043980bf5b63c0b6b5ec7885c6a269621bb7256d47616ee2b5e4b3cd8d98b003",
+    "resources/lib/modules/scraper/klack_de_moto.py": "d445b83dedde374e31e92c4c1ca3737472f4234adff17afa7c0d79be3b66e490",
+    "resources/lib/modules/scraper/knftv.py": "593bccd595557a6a568f52cdd7d164d042171477cb1ed5d7c51c3d3d4ae94292",
+    "resources/lib/modules/scraper/tvdigital_de.py": "74e07c2b3762e1895119db74b7b21ad037065823e80f5358d9cc686698560ec9",
+    "resources/lib/modules/scraper/tvguide_co_uk.py": "a331c2c0b378d723d10ff1478b771deef1a48bef7f4d42ef2138000bf5ca5e0e",
+    "resources/lib/modules/scraper/tvspielfilm_de.py": "396bdc28fba9cd58841933fb427f945c2896ab0616a416b6ceb72adab3bd11b0",
+    "resources/language/resource.language.cs_cz/strings.po": "a578f5576fa7b3a5b9dff72f3e8d51125ec563ec9394525b590be9b6814cbaa5",
+    "resources/language/resource.language.de_de/strings.po": "6e177d08e771b6d44f1537d977f057dcd221290c7ffe49a52256d692d0b40a6b",
+    "resources/language/resource.language.en_gb/strings.po": "a06f0d630d578f743cf943f2148f5cec8368ee09df9665f4afa39c544142a9e0",
+    "resources/language/resource.language.sk_sk/strings.po": "bccd071658a6b9f9a328be9d0812b6ef1a1c51213fa3aaf4a6678fe2f34bca34",
+    "integration/skin.aeon.nox.silvo/gto-widget.xml": "facff01c1958e9d60374a1c3bee0165c54df8415b72c90ed429de267481c0390",
+    "integration/skin.aeon.nox.silvo/README.md": "323a37cf443a5d0595d799fb8862dfd767faff456be480fac07d30252296f2d9",
+    "integration/skin.confluence/gto-widget.xml": "f714e8dbe522ccd9f9e081b7d6cf4e314bf1619306006eebcddf3e72246b9cae",
+    "integration/skin.confluence/README.md": "21e72024452eab954e6e8f3e870eef9793d71a234f89a144c4dc075ae741c8a7",
+    "integration/skin.estuary/gto-widget.xml": "83715f0595f66c7e73efc5cfe56d2a36a7f2eaef14d611c81f4b861b5d6806b9",
+    "integration/skin.estuary/README.md": "58ec399ecb5d4bd882c7860a87bb498999d9c4f5af89556919f8ad0ac0e09e04",
+    "integration/skin.estuary/icons/newspaper.png": "fcf9b6bf66dfcacb97a12e758ddfa31bb7098b909b4fe58af63e289b485c7581",
+    "integration/skin.estuary/icons/update.png": "bd0a2a717a2980d15b92768ef14e172d1721459bf74c7cb2b5e9b4231aa8fbb7",
+    "integration/skin.confluence/media/ConfluenceDialogBack2.png": "db304233ab0c93a31aa7acab04eb7efe6760515e4512d702176dc6d2ad2df229",
+    "integration/skin.confluence/media/ConfluenceDialogHeader.png": "780e2addc0b39a3930132388a016f43fdf2e27f5c60a6bd756d4e02f77a253f4",
+    "integration/skin.confluence/media/RecentAddedBackWhite.png": "eafeaee5cbed642444cc61f674542d944006fea86c70ea5635246b280b544035",
+    "integration/skin.aeon.nox.silvo/media/arrow-big-left.png": "04920d2954d84807356af4e9e43a20488dda9c95ab79e1aaae97135cbf9bbe11",
+    "integration/skin.aeon.nox.silvo/media/arrow-big-right.png": "355163b9b2147cf131dd1105fa3b5201309958b03795b958d9d465f3b9ec4bc8",
+    "integration/skin.aeon.nox.silvo/media/button-nofocus.png": "6b92c52492a2cf71f7e7d04b8303d38e4a47da61e7ddf0c38027d3ab519dfa9f",
+    "integration/skin.aeon.nox.silvo/media/ConfluenceDialogBack2.png": "db304233ab0c93a31aa7acab04eb7efe6760515e4512d702176dc6d2ad2df229",
+    "integration/skin.aeon.nox.silvo/media/ConfluenceDialogHeader.png": "780e2addc0b39a3930132388a016f43fdf2e27f5c60a6bd756d4e02f77a253f4",
+    "integration/skin.aeon.nox.silvo/media/folder-focus.png": "fa0c1d2fd92f22370f9405e9e561f3b14f1c296867a22f9f06fb2fafa8a7ff55",
+    "integration/skin.aeon.nox.silvo/media/RecentAddedBack.png": "54599cc4c8fbb7a4276cb0b091853f54ecf7c545c9a02a2340c78c2ba4e84e08"
+  },
+  "home_backdrop_predicate": "Window.IsVisible(1500)|Window.IsVisible(1501)|Window.IsVisible(1151)|Window.IsVisible(1800)|Window.IsVisible(skin.horizonzv.script-gto-info.xml)|Window.IsVisible(skin.horizonzv-piers.script-gto-info.xml)",
+  "provider": {
+    "addonid": "script.service.gto",
+    "enabled": false,
+    "type": "xbmc.service",
+    "version": "3.4.1+matrix"
+  },
+  "cleanup": {
+    "process_exited": true,
+    "settings_restored": true,
+    "all_databases_restored": true,
+    "skin_folder_restored": true,
+    "standard_provider_unchanged": true,
+    "test_provider_unchanged": true,
+    "skin_xml_match": true
+  },
+  "errors": []
+}

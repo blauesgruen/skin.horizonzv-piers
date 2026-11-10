@@ -1,0 +1,83 @@
+{
+  "checked_on": "2026-11-05",
+  "scope": "Selected lyrics-provider availability at skin entry points only. Existing addon code unchanged.",
+  "classification": "Reproduced skin availability defect, not a newly removed Kodi builtin.",
+  "before": {
+    "report": "../kodi22_runtime/lyrics_availability_before.json",
+    "result": "With CU LRC disabled after selection, both MusicOSD 701 and PlayerControls 609 set Lyrics=true and call RunScript on an unavailable addon ID. Two native non-existing-script ERROR lines."
+  },
+  "sources": [
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/interfaces/builtins/AddonBuiltins.cpp",
+      "finding": "RunScript looks up enabled addons; when that lookup fails it treats the supplied argument as a direct script path."
+    },
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/GUIInfoManager.cpp",
+      "finding": "System.AddonVersion supports a translated dynamic Skin.String addon ID and resolves that label at runtime."
+    },
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/guilib/guiinfo/AddonsGUIInfo.cpp",
+      "finding": "Version label implementation obtains the addon with OnlyEnabled::CHOICE_YES, so unavailable IDs yield no version. Native 6.7.6-to-empty transition when disabled confirms this; the adjacent generic source comment is not used as proof."
+    },
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/master/xbmc/GUIInfoManager.cpp",
+      "finding": "Published master retains dynamic addon-version translation."
+    },
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/master/xbmc/guilib/guiinfo/AddonsGUIInfo.cpp",
+      "finding": "Published master retains the enabled-only version lookup."
+    }
+  ],
+  "implementation": {
+    "files": [
+      "xml/MusicOSD.xml",
+      "xml/PlayerControls.xml"
+    ],
+    "availability": "!String.IsEmpty(System.AddonVersion(Skin.String(LyricScript_Path)))",
+    "behaviour": [
+      "MusicOSD uses actual availability before setting Lyrics, closing or dispatching start/force; unavailable selection opens the existing native typed lyrics selector.",
+      "PlayerControls uses its existing alternative-click selector when the provider is unavailable, rather than treating every nonempty ID as runnable.",
+      "The on/off toggle cannot start an unavailable provider; an already active Lyrics setting can still be turned off. Existing stop-only action retained.",
+      "Enabled CU service reuse and other typed lyrics dispatch remain as before."
+    ]
+  },
+  "native": {
+    "report": "../kodi22_runtime/lyrics_availability_checks.json",
+    "cases": "Disabled CU, a deliberately nonexistent ID and empty selection, each via MusicOSD and PlayerControls: six selector/cancel cases, no provider launch, Lyrics stays false. Visible radio enablement and clearing a stale true Lyrics flag additionally passed.",
+    "errors": 0
+  },
+  "positive_regressions": [
+    "../kodi22_runtime/lyrics_availability_enabled_checks.json",
+    "../kodi22_runtime/lyrics_availability_background_checks.json"
+  ],
+  "regression_restore": "../kodi22_runtime/lyrics_availability_regression_restore.json",
+  "intermediate_attempts": [
+    {
+      "report": "../kodi22_runtime/lyrics_availability_enabled_before_cleanup_wait.json",
+      "finding": "Positive functional flow passed but immediate helper shutdown after GUI restart produced one five-second invoker ERROR. Closing GUI and waiting for provider exit before Quit removes it in the final runs; exact internal timeout cause not proven. No addon change."
+    },
+    {
+      "report": "../kodi22_runtime/lyrics_availability_before_visible_toggle_probe.json",
+      "finding": "Helper queried radio enabled state while its parent group was still hidden/before a visible update. Final test opens the group and waits before inspecting/clicking. Exact GUI update timing not separately traced; no additional skin change."
+    }
+  ],
+  "cleanup": "Own profile settings and music/addon database bytes/file sets restored. Positive provider probes verify unchanged copied addon files and standard source files. All isolated skin XML matches production after runs.",
+  "limits": [
+    "Only CU LRC 6.7.6 is positively exercised as provider; no arbitrary third-party lyrics-provider execution, online scraper or rapid enable/disable race guarantee.",
+    "Missing ID is an explicit synthetic fixture value; no real addon was uninstalled.",
+    "Selector opening and cancellation tested; no automatic enable/install, choosing a new provider or language/aspect matrix approved.",
+    "Already available stop-only semantics remain; stale-state clearing tested with a controlled skin bool.",
+    "No claim that every named legacy source comment accurately describes current implementation."
+  ],
+  "package_review": "lyrics_availability_package_review.json",
+  "native_install_evidence": "../kodi22_runtime/lyrics_availability_install_checks.json",
+  "bounded_static_check": {
+    "tool": "tools/check_skin_compatibility.py",
+    "files_checked": 165,
+    "findings": []
+  },
+  "tested_runtime_sha256": {
+    "xml\\MusicOSD.xml": "7ea14db10d8ba562d61c8ed6c57812bf9ca1acf5d9808325c3038d83e8f63287",
+    "xml\\PlayerControls.xml": "1b6cf8c96b92cf1d34b7249f328f1daa5d87aae66acb802d65fa8585d4797183"
+  }
+}

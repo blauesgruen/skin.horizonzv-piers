@@ -1,0 +1,1419 @@
+﻿2026-11-02 20:19:03.927 T:3528     info <general>: -----------------------------------------------------------------------
+2026-11-02 20:19:03.927 T:3528     info <general>: Starting Kodi (22.0-RC1 (21.90.901) Git:20260927-28ea2eac1eb). Platform: Windows NT x86 64-bit
+2026-11-02 20:19:03.927 T:3528     info <general>: Using Release Kodi x64
+2026-11-02 20:19:03.927 T:3528     info <general>: Kodi compiled 2026-10-09 by MSVC 194234436 for Windows NT x86 64-bit version 10.0 (0x0A00000C)
+2026-11-02 20:19:03.927 T:3528     info <general>: Running on Windows 11 26H2, kernel: Windows NT x86 64-bit version 10.0.26300.9818
+2026-11-02 20:19:03.927 T:3528     info <general>: FFmpeg version/source: 9.0.2-Kodi
+2026-11-02 20:19:03.927 T:3528     info <general>: Host CPU: AMD Ryzen 9 5950X 16-Core Processor, 32 cores available
+2026-11-02 20:19:03.928 T:3528     info <general>: System has 64.0 GB of RAM installed
+2026-11-02 20:19:03.928 T:3528     info <general>: Desktop Resolution: 2560x1440 32Bit at 180Hz
+2026-11-02 20:19:03.928 T:3528     info <general>: Running with restricted rights
+2026-11-02 20:19:03.928 T:3528     info <general>: Aero is enabled
+2026-11-02 20:19:03.928 T:3528     info <general>: Display HDR capable is detected and Windows HDR switch is OFF
+2026-11-02 20:19:03.928 T:3528     info <general>: special://xbmc/ is mapped to: C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440
+2026-11-02 20:19:03.928 T:3528     info <general>: special://xbmcbin/ is mapped to: C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440
+2026-11-02 20:19:03.928 T:3528     info <general>: special://xbmcbinaddons/ is mapped to: C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440/addons
+2026-11-02 20:19:03.928 T:3528     info <general>: special://masterprofile/ is mapped to: C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\portable_data\userdata
+2026-11-02 20:19:03.928 T:3528     info <general>: special://home/ is mapped to: C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\portable_data\
+2026-11-02 20:19:03.928 T:3528     info <general>: special://temp/ is mapped to: C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\portable_data\cache
+2026-11-02 20:19:03.928 T:3528     info <general>: special://logpath/ is mapped to: C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\portable_data\
+2026-11-02 20:19:03.928 T:3528     info <general>: Webserver extra whitelist paths: 
+2026-11-02 20:19:03.928 T:3528     info <general>: The executable running is: C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\kodi.exe
+2026-11-02 20:19:03.930 T:3528     info <general>: Local hostname: David
+2026-11-02 20:19:03.930 T:3528     info <general>: Log File is located: C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\portable_data\kodi.log
+2026-11-02 20:19:03.930 T:3528     info <general>: -----------------------------------------------------------------------
+2026-11-02 20:19:03.930 T:3528     info <general>: loading settings
+2026-11-02 20:19:03.932 T:3528     info <general>: special://profile/ is mapped to: special://masterprofile/
+2026-11-02 20:19:03.941 T:3528     info <general>: No settings file to load (special://xbmc/system/advancedsettings.xml)
+2026-11-02 20:19:03.942 T:3528     info <general>: Loaded settings file from special://profile/advancedsettings.xml
+2026-11-02 20:19:03.942 T:3528     info <general>: Contents of special://profile/advancedsettings.xml are...
+                                                   <?xml version="1.0" encoding="utf-8" ?>
+                                                   <advancedsettings>
+                                                     <loglevel hide="true">1</loglevel>
+                                                   </advancedsettings>
+                                                   
+2026-11-02 20:19:03.942 T:3528  warning <CSettingsManager>: missing version attribute
+2026-11-02 20:19:03.942 T:3528    debug <general>: CSettingsMigration::UpdateXMLSettings: upgrading settings from version 0 to 4
+2026-11-02 20:19:03.942 T:3528    debug <general>: KODI::SETTINGS::impl::ConvertSingleSetting: Old setting "dvds.autorun" not found. The new setting "dvds.autoaction" will have its default value.
+2026-11-02 20:19:03.942 T:3528    debug <general>: KODI::SETTINGS::impl::ConvertSingleSetting: Old setting "musicplayer.replaygainpreamp" not found. The new setting "musicplayer.replaygainpreampdb" will have its default value.
+2026-11-02 20:19:03.942 T:3528    debug <general>: KODI::SETTINGS::impl::ConvertSingleSetting: Old setting "musicplayer.replaygainnogainpreamp" not found. The new setting "musicplayer.replaygainnogainpreampdb" will have its default value.
+2026-11-02 20:19:03.942 T:3528     info <general>: Default Video Player: VideoPlayer
+2026-11-02 20:19:03.942 T:3528     info <general>: Default Audio Player: paplayer
+2026-11-02 20:19:03.942 T:3528     info <general>: Disabled debug logging due to GUI setting. Level 1.
+2026-11-02 20:19:03.944 T:3528    debug <general>: CSkinSettings: no <skinsettings> tag found
+2026-11-02 20:19:03.946 T:3528     info <general>: New Cache GUI Settings (replacement of cache in advancedsettings.xml) are:
+                                                     Buffer Mode: 4
+                                                     Memory Size: 64 MB
+                                                     Read Factor: 0.00 x (adaptive)
+                                                     Chunk Size : 131072 bytes
+2026-11-02 20:19:03.946 T:3528     info <general>: creating subdirectories
+2026-11-02 20:19:03.946 T:3528     info <general>: userdata folder: special://masterprofile/
+2026-11-02 20:19:03.946 T:3528     info <general>: recording folder: 
+2026-11-02 20:19:03.946 T:3528     info <general>: screenshots folder: D:\Program Files\Kodi22\portable_data\addons\skin.horizonzv-piers\results\kodi22_runtime
+2026-11-02 20:19:03.959 T:3528     info <general>: SqliteDatabase: library version 3.51.3
+2026-11-02 20:19:03.960 T:3528     info <general>: Running database version Addons33
+2026-11-02 20:19:03.978 T:3528    debug <general>: ADDON::CAddonInfoBuilder::ParseXMLTypes: Binary addon found: peripheral.joystick
+2026-11-02 20:19:03.988 T:3528    debug <general>: ADDON::CAddonMgr::FindAddons: Addon 'metadata.generic.albums' already present with version 1.0.19 at 'C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\addons\metadata.generic.albums\' replaced with version 1.0.20 at 'C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\portable_data\addons\metadata.generic.albums\'
+2026-11-02 20:19:03.989 T:3528    debug <general>: ADDON::CAddonMgr::FindAddons: Addon 'metadata.generic.artists' already present with version 1.0.19 at 'C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\addons\metadata.generic.artists\' replaced with version 1.0.20 at 'C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\portable_data\addons\metadata.generic.artists\'
+2026-11-02 20:19:03.989 T:3528    debug <general>: ADDON::CAddonMgr::FindAddons: Addon 'metadata.tvshows.themoviedb.org.python' already present with version 2.0.7 at 'C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\addons\metadata.tvshows.themoviedb.org.python\' replaced with version 2.0.9 at 'C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\portable_data\addons\metadata.tvshows.themoviedb.org.python\'
+2026-11-02 20:19:03.990 T:3528    debug <general>: ADDON::CAddonInfoBuilder::ParseXMLTypes: Binary addon found: peripheral.joystick
+2026-11-02 20:19:03.990 T:3528    debug <general>: ADDON::CAddonMgr::FindAddons: Addon 'peripheral.joystick' already present with version 22.0.11 at 'C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\addons\peripheral.joystick\' replaced with version 22.0.12 at 'C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\portable_data\addons\peripheral.joystick\'
+2026-11-02 20:19:03.997 T:3528    debug <general>: ADDON::CAddonMgr::FindAddons: Addon 'service.xbmc.versioncheck' already present with version 0.5.27+matrix.1 at 'C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\addons\service.xbmc.versioncheck\' replaced with version 0.5.30+matrix.1 at 'C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\portable_data\addons\service.xbmc.versioncheck\'
+2026-11-02 20:19:03.999 T:3528     info <general>: Addon Manager: Found addon: 'audioencoder.kodi.builtin.aac v1.0.2'
+2026-11-02 20:19:03.999 T:3528     info <general>: Addon Manager: Found addon: 'audioencoder.kodi.builtin.wma v1.0.2'
+2026-11-02 20:19:03.999 T:3528     info <general>: Addon Manager: Found addon: 'game.controller.default v1.0.49'
+2026-11-02 20:19:03.999 T:3528     info <general>: Addon Manager: Found addon: 'game.controller.keyboard v1.1.50'
+2026-11-02 20:19:03.999 T:3528     info <general>: Addon Manager: Found addon: 'game.controller.mouse v1.0.32'
+2026-11-02 20:19:03.999 T:3528     info <general>: Addon Manager: Found addon: 'game.controller.snes v1.0.49'
+2026-11-02 20:19:04.000 T:3528     info <general>: Addon Manager: Found addon: 'kodi.binary.global.audioengine v1.1.1'
+2026-11-02 20:19:04.000 T:3528     info <general>: Addon Manager: Found addon: 'kodi.binary.global.filesystem v1.1.11'
+2026-11-02 20:19:04.000 T:3528     info <general>: Addon Manager: Found addon: 'kodi.binary.global.general v1.0.5'
+2026-11-02 20:19:04.000 T:3528     info <general>: Addon Manager: Found addon: 'kodi.binary.global.gui v5.15.1'
+2026-11-02 20:19:04.000 T:3528     info <general>: Addon Manager: Found addon: 'kodi.binary.global.main v2.0.3'
+2026-11-02 20:19:04.001 T:3528     info <general>: Addon Manager: Found addon: 'kodi.binary.global.network v1.0.4'
+2026-11-02 20:19:04.001 T:3528     info <general>: Addon Manager: Found addon: 'kodi.binary.global.tools v1.0.4'
+2026-11-02 20:19:04.001 T:3528     info <general>: Addon Manager: Found addon: 'kodi.binary.instance.audiodecoder v4.0.0'
+2026-11-02 20:19:04.001 T:3528     info <general>: Addon Manager: Found addon: 'kodi.binary.instance.audioencoder v3.0.0'
+2026-11-02 20:19:04.001 T:3528     info <general>: Addon Manager: Found addon: 'kodi.binary.instance.game v8.2.0'
+2026-11-02 20:19:04.002 T:3528     info <general>: Addon Manager: Found addon: 'kodi.binary.instance.imagedecoder v3.1.0'
+2026-11-02 20:19:04.002 T:3528     info <general>: Addon Manager: Found addon: 'kodi.binary.instance.inputstream v3.4.0'
+2026-11-02 20:19:04.002 T:3528     info <general>: Addon Manager: Found addon: 'kodi.binary.instance.peripheral v3.0.2'
+2026-11-02 20:19:04.002 T:3528     info <general>: Addon Manager: Found addon: 'kodi.binary.instance.pvr v9.2.0'
+2026-11-02 20:19:04.002 T:3528     info <general>: Addon Manager: Found addon: 'kodi.binary.instance.screensaver v2.2.0'
+2026-11-02 20:19:04.003 T:3528     info <general>: Addon Manager: Found addon: 'kodi.binary.instance.shaderpreset v1.1.0'
+2026-11-02 20:19:04.003 T:3528     info <general>: Addon Manager: Found addon: 'kodi.binary.instance.vfs v3.0.1'
+2026-11-02 20:19:04.003 T:3528     info <general>: Addon Manager: Found addon: 'kodi.binary.instance.videocodec v2.2.1'
+2026-11-02 20:19:04.003 T:3528     info <general>: Addon Manager: Found addon: 'kodi.binary.instance.visualization v5.0.0'
+2026-11-02 20:19:04.003 T:3528     info <general>: Addon Manager: Found addon: 'kodi.resource v1.0.0'
+2026-11-02 20:19:04.004 T:3528     info <general>: Addon Manager: Found addon: 'metadata.album.universal v3.1.20'
+2026-11-02 20:19:04.004 T:3528     info <general>: Addon Manager: Found addon: 'metadata.artists.universal v4.3.24'
+2026-11-02 20:19:04.004 T:3528     info <general>: Addon Manager: Found addon: 'metadata.common.allmusic.com v3.2.2'
+2026-11-02 20:19:04.004 T:3528     info <general>: Addon Manager: Found addon: 'metadata.common.fanart.tv v3.6.5'
+2026-11-02 20:19:04.004 T:3528     info <general>: Addon Manager: Found addon: 'metadata.common.musicbrainz.org v2.2.4'
+2026-11-02 20:19:04.004 T:3528     info <general>: Addon Manager: Found addon: 'metadata.common.theaudiodb.com v2.0.3'
+2026-11-02 20:19:04.005 T:3528     info <general>: Addon Manager: Found addon: 'metadata.generic.albums v1.0.20'
+2026-11-02 20:19:04.005 T:3528     info <general>: Addon Manager: Found addon: 'metadata.generic.artists v1.0.20'
+2026-11-02 20:19:04.005 T:3528     info <general>: Addon Manager: Found addon: 'metadata.local v1.0.1'
+2026-11-02 20:19:04.005 T:3528     info <general>: Addon Manager: Found addon: 'metadata.themoviedb.org.python v3.2.2'
+2026-11-02 20:19:04.005 T:3528     info <general>: Addon Manager: Found addon: 'metadata.tvshows.themoviedb.org.python v2.0.9'
+2026-11-02 20:19:04.006 T:3528     info <general>: Addon Manager: Found addon: 'peripheral.joystick v22.0.12'
+2026-11-02 20:19:04.006 T:3528     info <general>: Addon Manager: Found addon: 'repository.xbmc.org v3.5.0'
+2026-11-02 20:19:04.006 T:3528     info <general>: Addon Manager: Found addon: 'resource.images.weathericons.default v1.1.9'
+2026-11-02 20:19:04.006 T:3528     info <general>: Addon Manager: Found addon: 'resource.language.en_gb v2.0.2'
+2026-11-02 20:19:04.006 T:3528     info <general>: Addon Manager: Found addon: 'resource.uisounds.kodi v1.0.1'
+2026-11-02 20:19:04.007 T:3528     info <general>: Addon Manager: Found addon: 'screensaver.xbmc.builtin.black v1.0.34'
+2026-11-02 20:19:04.007 T:3528     info <general>: Addon Manager: Found addon: 'screensaver.xbmc.builtin.dim v1.0.66'
+2026-11-02 20:19:04.007 T:3528     info <general>: Addon Manager: Found addon: 'script.artistslideshow v4.2.1'
+2026-11-02 20:19:04.007 T:3528     info <general>: Addon Manager: Found addon: 'script.module.certifi v2023.5.7'
+2026-11-02 20:19:04.007 T:3528     info <general>: Addon Manager: Found addon: 'script.module.chardet v5.1.0'
+2026-11-02 20:19:04.007 T:3528     info <general>: Addon Manager: Found addon: 'script.module.defusedxml v0.6.0+matrix.1'
+2026-11-02 20:19:04.008 T:3528     info <general>: Addon Manager: Found addon: 'script.module.future v1.0.0+matrix.1'
+2026-11-02 20:19:04.008 T:3528     info <general>: Addon Manager: Found addon: 'script.module.idna v3.10.0'
+2026-11-02 20:19:04.008 T:3528     info <general>: Addon Manager: Found addon: 'script.module.pil v5.1.0'
+2026-11-02 20:19:04.008 T:3528     info <general>: Addon Manager: Found addon: 'script.module.pycryptodome v3.4.3'
+2026-11-02 20:19:04.008 T:3528     info <general>: Addon Manager: Found addon: 'script.module.requests v2.31.0'
+2026-11-02 20:19:04.008 T:3528     info <general>: Addon Manager: Found addon: 'script.module.urllib3 v2.2.3'
+2026-11-02 20:19:04.009 T:3528     info <general>: Addon Manager: Found addon: 'service.xbmc.versioncheck v0.5.30+matrix.1'
+2026-11-02 20:19:04.009 T:3528     info <general>: Addon Manager: Found addon: 'skin.estuary v4.1.0'
+2026-11-02 20:19:04.009 T:3528     info <general>: Addon Manager: Found addon: 'skin.horizonzv v1.22.0.1'
+2026-11-02 20:19:04.009 T:3528     info <general>: Addon Manager: Found addon: 'webinterface.default v21.x-1.0.1'
+2026-11-02 20:19:04.009 T:3528     info <general>: Addon Manager: Found addon: 'xbmc.addon v21.90.901'
+2026-11-02 20:19:04.010 T:3528     info <general>: Addon Manager: Found addon: 'xbmc.core v0.1.0'
+2026-11-02 20:19:04.010 T:3528     info <general>: Addon Manager: Found addon: 'xbmc.gui v5.18.0'
+2026-11-02 20:19:04.010 T:3528     info <general>: Addon Manager: Found addon: 'xbmc.json v13.1000.0'
+2026-11-02 20:19:04.010 T:3528     info <general>: Addon Manager: Found addon: 'xbmc.metadata v2.1.0'
+2026-11-02 20:19:04.010 T:3528     info <general>: Addon Manager: Found addon: 'xbmc.python v3.1.0'
+2026-11-02 20:19:04.010 T:3528     info <general>: Addon Manager: Found addon: 'xbmc.webinterface v1.0.0'
+2026-11-02 20:19:04.011 T:3528    debug <general>: CFavourites::Load - no system favourites found, skipping
+2026-11-02 20:19:04.011 T:3528    debug <general>: CFavourites::Load - no userdata favourites found, skipping
+2026-11-02 20:19:04.012 T:43776   debug <general>: Thread CWin32PowerStateWorker start, auto delete: false
+2026-11-02 20:19:04.012 T:43776   debug <general>: [threads] name: 'CWin32PowerStateWorker' priority: idle
+2026-11-02 20:19:04.012 T:3528    debug <general>: CWin32StorageProvider::Initialize: No optical drive found.
+2026-11-02 20:19:04.013 T:3528     info <general>: CKeyboardLayoutManager: loading keyboard layouts from special://xbmc/system/keyboardlayouts...
+2026-11-02 20:19:04.014 T:3528    debug <general>: CKeyboardLayoutManager: keyboard layout "Arabic QWERTY" successfully loaded
+2026-11-02 20:19:04.014 T:3528    debug <general>: CKeyboardLayoutManager: keyboard layout "Bulgarian ЯВЕРТЪ" successfully loaded
+2026-11-02 20:19:04.014 T:3528    debug <general>: CKeyboardLayoutManager: keyboard layout "Bulgarian АБВ" successfully loaded
+2026-11-02 20:19:04.014 T:3528    debug <general>: CKeyboardLayoutManager: keyboard layout "Chinese BasePY" successfully loaded
+2026-11-02 20:19:04.014 T:3528    debug <general>: CKeyboardLayoutManager: keyboard layout "Croatian QWERTY" successfully loaded
+2026-11-02 20:19:04.014 T:3528    debug <general>: CKeyboardLayoutManager: keyboard layout "Czech QWERTZ" successfully loaded
+2026-11-02 20:19:04.015 T:3528    debug <general>: CKeyboardLayoutManager: keyboard layout "Danish QWERTY" successfully loaded
+2026-11-02 20:19:04.015 T:3528    debug <general>: CKeyboardLayoutManager: keyboard layout "English QWERTY" successfully loaded
+2026-11-02 20:19:04.015 T:3528    debug <general>: CKeyboardLayoutManager: keyboard layout "English AZERTY" successfully loaded
+2026-11-02 20:19:04.015 T:3528    debug <general>: CKeyboardLayoutManager: keyboard layout "English ABC" successfully loaded
+2026-11-02 20:19:04.015 T:3528    debug <general>: CKeyboardLayoutManager: keyboard layout "Estonian QWERTY" successfully loaded
+2026-11-02 20:19:04.015 T:3528    debug <general>: CKeyboardLayoutManager: keyboard layout "French AZERTY" successfully loaded
+2026-11-02 20:19:04.016 T:3528    debug <general>: CKeyboardLayoutManager: keyboard layout "German QWERTZ" successfully loaded
+2026-11-02 20:19:04.016 T:3528    debug <general>: CKeyboardLayoutManager: keyboard layout "German ABC" successfully loaded
+2026-11-02 20:19:04.016 T:3528    debug <general>: CKeyboardLayoutManager: keyboard layout "Greek QWERTY" successfully loaded
+2026-11-02 20:19:04.016 T:3528    debug <general>: CKeyboardLayoutManager: keyboard layout "Hebrew QWERTY" successfully loaded
+2026-11-02 20:19:04.016 T:3528    debug <general>: CKeyboardLayoutManager: keyboard layout "Hebrew ABC" successfully loaded
+2026-11-02 20:19:04.016 T:3528    debug <general>: CKeyboardLayoutManager: keyboard layout "Hungarian QWERTZ" successfully loaded
+2026-11-02 20:19:04.017 T:3528    debug <general>: CKeyboardLayoutManager: keyboard layout "Icelandic QWERTY" successfully loaded
+2026-11-02 20:19:04.017 T:3528    debug <general>: CKeyboardLayoutManager: keyboard layout "Italian QWERTY" successfully loaded
+2026-11-02 20:19:04.017 T:3528    debug <general>: CKeyboardLayoutManager: keyboard layout "Italian ABC" successfully loaded
+2026-11-02 20:19:04.017 T:3528    debug <general>: CKeyboardLayoutManager: keyboard layout "Korean ㄱㄴㄷ" successfully loaded
+2026-11-02 20:19:04.017 T:3528    debug <general>: CKeyboardLayoutManager: keyboard layout "Lithuanian AZERTY" successfully loaded
+2026-11-02 20:19:04.017 T:3528    debug <general>: CKeyboardLayoutManager: keyboard layout "Lithuanian QWERTY" successfully loaded
+2026-11-02 20:19:04.017 T:3528    debug <general>: CKeyboardLayoutManager: keyboard layout "Norwegian QWERTY" successfully loaded
+2026-11-02 20:19:04.018 T:3528    debug <general>: CKeyboardLayoutManager: keyboard layout "Persian QWERTY" successfully loaded
+2026-11-02 20:19:04.018 T:3528    debug <general>: CKeyboardLayoutManager: keyboard layout "Polish QWERTY" successfully loaded
+2026-11-02 20:19:04.018 T:3528    debug <general>: CKeyboardLayoutManager: keyboard layout "Portuguese (Brazil) QWERTY" successfully loaded
+2026-11-02 20:19:04.018 T:3528    debug <general>: CKeyboardLayoutManager: keyboard layout "Portuguese (Portugal) QWERTY" successfully loaded
+2026-11-02 20:19:04.018 T:3528    debug <general>: CKeyboardLayoutManager: keyboard layout "Romanian QWERTY" successfully loaded
+2026-11-02 20:19:04.019 T:3528    debug <general>: CKeyboardLayoutManager: keyboard layout "Russian ЙЦУКЕН" successfully loaded
+2026-11-02 20:19:04.019 T:3528    debug <general>: CKeyboardLayoutManager: keyboard layout "Russian АБВ" successfully loaded
+2026-11-02 20:19:04.019 T:3528    debug <general>: CKeyboardLayoutManager: keyboard layout "Silesian QWERTY" successfully loaded
+2026-11-02 20:19:04.019 T:3528    debug <general>: CKeyboardLayoutManager: keyboard layout "Slovak QWERTZ" successfully loaded
+2026-11-02 20:19:04.019 T:3528    debug <general>: CKeyboardLayoutManager: keyboard layout "Slovak QWERTY" successfully loaded
+2026-11-02 20:19:04.019 T:3528    debug <general>: CKeyboardLayoutManager: keyboard layout "Slovak ABC" successfully loaded
+2026-11-02 20:19:04.019 T:3528    debug <general>: CKeyboardLayoutManager: keyboard layout "Slovenian QWERTZ" successfully loaded
+2026-11-02 20:19:04.020 T:3528    debug <general>: CKeyboardLayoutManager: keyboard layout "Spanish QWERTY" successfully loaded
+2026-11-02 20:19:04.020 T:3528    debug <general>: CKeyboardLayoutManager: keyboard layout "Swedish QWERTY" successfully loaded
+2026-11-02 20:19:04.020 T:3528    debug <general>: CKeyboardLayoutManager: keyboard layout "Thai Kedmanee" successfully loaded
+2026-11-02 20:19:04.020 T:3528    debug <general>: CKeyboardLayoutManager: keyboard layout "Turkish QWERTY" successfully loaded
+2026-11-02 20:19:04.020 T:3528    debug <general>: CKeyboardLayoutManager: keyboard layout "Ukrainian ЙЦУКЕН" successfully loaded
+2026-11-02 20:19:04.020 T:3528    debug <general>: CKeyboardLayoutManager: keyboard layout "Ukrainian АБВ" successfully loaded
+2026-11-02 20:19:04.020 T:3528    debug <general>: CApplication::CApplication::CreateGUI - trying to init default windowing system
+2026-11-02 20:19:04.021 T:35904   debug <general>: Thread RemoteControl start, auto delete: false
+2026-11-02 20:19:04.021 T:3528    debug <general>: [threads] name: 'RemoteControl' priority: idle
+2026-11-02 20:19:04.021 T:35904    info <general>: Loading special://xbmc/system/IRSSmap.xml
+2026-11-02 20:19:04.021 T:35904    info <general>: * Adding remote mapping for device 'Microsoft MCE'
+2026-11-02 20:19:04.021 T:35904    info <general>: * Adding remote mapping for device 'Abstract'
+2026-11-02 20:19:04.021 T:35904   debug <general>: CIRTranslator::Load - no userdata IRSSmap.xml found, skipping
+2026-11-02 20:19:04.021 T:3528     info <general>: Primary mode: LG ULTRAGEAR #1: 2560x1440 @ 180.00Hz
+2026-11-02 20:19:04.022 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 640x480 @ 59.94Hz
+2026-11-02 20:19:04.022 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 640x480 @ 60.00Hz
+2026-11-02 20:19:04.022 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 640x480 @ 48.00Hz
+2026-11-02 20:19:04.022 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 640x480 @ 100.00Hz
+2026-11-02 20:19:04.022 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 640x480 @ 75.00Hz
+2026-11-02 20:19:04.023 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 640x480 @ 120.00Hz
+2026-11-02 20:19:04.023 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 640x480 @ 144.00Hz
+2026-11-02 20:19:04.023 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 640x480 @ 165.00Hz
+2026-11-02 20:19:04.023 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 640x480 @ 180.00Hz
+2026-11-02 20:19:04.023 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 720x480 @ 59.94Hz
+2026-11-02 20:19:04.023 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 720x480 @ 60.00Hz
+2026-11-02 20:19:04.023 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 720x480 @ 48.00Hz
+2026-11-02 20:19:04.023 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 720x480 @ 100.00Hz
+2026-11-02 20:19:04.023 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 720x480 @ 75.00Hz
+2026-11-02 20:19:04.024 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 720x480 @ 120.00Hz
+2026-11-02 20:19:04.024 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 720x480 @ 144.00Hz
+2026-11-02 20:19:04.024 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 720x480 @ 165.00Hz
+2026-11-02 20:19:04.024 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 720x480 @ 180.00Hz
+2026-11-02 20:19:04.024 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 800x600 @ 60.00Hz
+2026-11-02 20:19:04.024 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 800x600 @ 48.00Hz
+2026-11-02 20:19:04.024 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 800x600 @ 100.00Hz
+2026-11-02 20:19:04.024 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 800x600 @ 75.00Hz
+2026-11-02 20:19:04.024 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 800x600 @ 120.00Hz
+2026-11-02 20:19:04.024 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 800x600 @ 144.00Hz
+2026-11-02 20:19:04.025 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 800x600 @ 165.00Hz
+2026-11-02 20:19:04.025 T:35904   debug <general>: CIRServerSuite::Connect: connecting to: ::1:24000 ...
+2026-11-02 20:19:04.025 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 800x600 @ 180.00Hz
+2026-11-02 20:19:04.025 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1024x768 @ 60.00Hz
+2026-11-02 20:19:04.025 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1024x768 @ 48.00Hz
+2026-11-02 20:19:04.025 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1024x768 @ 100.00Hz
+2026-11-02 20:19:04.025 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1024x768 @ 75.00Hz
+2026-11-02 20:19:04.025 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1024x768 @ 120.00Hz
+2026-11-02 20:19:04.025 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1024x768 @ 144.00Hz
+2026-11-02 20:19:04.025 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1024x768 @ 165.00Hz
+2026-11-02 20:19:04.025 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1024x768 @ 180.00Hz
+2026-11-02 20:19:04.026 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1128x634 @ 50.00Hz
+2026-11-02 20:19:04.026 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1128x634 @ 48.00Hz
+2026-11-02 20:19:04.026 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1128x634 @ 59.94Hz
+2026-11-02 20:19:04.026 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1128x634 @ 60.00Hz
+2026-11-02 20:19:04.026 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1128x634 @ 100.00Hz
+2026-11-02 20:19:04.026 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1128x634 @ 75.00Hz
+2026-11-02 20:19:04.026 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1128x634 @ 120.00Hz
+2026-11-02 20:19:04.026 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1128x634 @ 144.00Hz
+2026-11-02 20:19:04.026 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1128x634 @ 165.00Hz
+2026-11-02 20:19:04.027 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1128x634 @ 180.00Hz
+2026-11-02 20:19:04.027 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1280x720 @ 50.00Hz
+2026-11-02 20:19:04.027 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1280x720 @ 48.00Hz
+2026-11-02 20:19:04.027 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1280x720 @ 59.94Hz
+2026-11-02 20:19:04.027 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1280x720 @ 60.00Hz
+2026-11-02 20:19:04.027 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1280x720 @ 100.00Hz
+2026-11-02 20:19:04.027 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1280x720 @ 75.00Hz
+2026-11-02 20:19:04.027 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1280x720 @ 120.00Hz
+2026-11-02 20:19:04.027 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1280x720 @ 144.00Hz
+2026-11-02 20:19:04.027 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1280x720 @ 165.00Hz
+2026-11-02 20:19:04.027 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1280x720 @ 180.00Hz
+2026-11-02 20:19:04.027 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1280x1024 @ 50.00Hz
+2026-11-02 20:19:04.027 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1280x1024 @ 48.00Hz
+2026-11-02 20:19:04.028 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1280x1024 @ 59.94Hz
+2026-11-02 20:19:04.028 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1280x1024 @ 60.00Hz
+2026-11-02 20:19:04.028 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1280x1024 @ 100.00Hz
+2026-11-02 20:19:04.028 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1280x1024 @ 75.00Hz
+2026-11-02 20:19:04.028 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1280x1024 @ 119.88Hz
+2026-11-02 20:19:04.028 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1280x1024 @ 120.00Hz
+2026-11-02 20:19:04.028 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1280x1024 @ 144.00Hz
+2026-11-02 20:19:04.028 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1280x1024 @ 165.00Hz
+2026-11-02 20:19:04.028 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1280x1024 @ 180.00Hz
+2026-11-02 20:19:04.029 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1366x768 @ 50.00Hz
+2026-11-02 20:19:04.029 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1366x768 @ 48.00Hz
+2026-11-02 20:19:04.029 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1366x768 @ 59.94Hz
+2026-11-02 20:19:04.029 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1366x768 @ 60.00Hz
+2026-11-02 20:19:04.029 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1366x768 @ 100.00Hz
+2026-11-02 20:19:04.029 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1366x768 @ 75.00Hz
+2026-11-02 20:19:04.029 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1366x768 @ 119.88Hz
+2026-11-02 20:19:04.029 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1366x768 @ 120.00Hz
+2026-11-02 20:19:04.029 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1366x768 @ 144.00Hz
+2026-11-02 20:19:04.029 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1366x768 @ 165.00Hz
+2026-11-02 20:19:04.030 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1366x768 @ 180.00Hz
+2026-11-02 20:19:04.030 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1600x900 @ 50.00Hz
+2026-11-02 20:19:04.030 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1600x900 @ 48.00Hz
+2026-11-02 20:19:04.030 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1600x900 @ 59.94Hz
+2026-11-02 20:19:04.030 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1600x900 @ 60.00Hz
+2026-11-02 20:19:04.030 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1600x900 @ 100.00Hz
+2026-11-02 20:19:04.030 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1600x900 @ 75.00Hz
+2026-11-02 20:19:04.030 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1600x900 @ 119.88Hz
+2026-11-02 20:19:04.030 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1600x900 @ 120.00Hz
+2026-11-02 20:19:04.030 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1600x900 @ 144.00Hz
+2026-11-02 20:19:04.031 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1600x900 @ 165.00Hz
+2026-11-02 20:19:04.031 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1600x900 @ 180.00Hz
+2026-11-02 20:19:04.031 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1600x1200 @ 60.00Hz
+2026-11-02 20:19:04.031 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1600x1200 @ 48.00Hz
+2026-11-02 20:19:04.031 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1600x1200 @ 100.00Hz
+2026-11-02 20:19:04.031 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1600x1200 @ 75.00Hz
+2026-11-02 20:19:04.031 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1600x1200 @ 120.00Hz
+2026-11-02 20:19:04.031 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1600x1200 @ 144.00Hz
+2026-11-02 20:19:04.031 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1600x1200 @ 165.00Hz
+2026-11-02 20:19:04.031 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1600x1200 @ 180.00Hz
+2026-11-02 20:19:04.032 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1680x1050 @ 50.00Hz
+2026-11-02 20:19:04.032 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1680x1050 @ 48.00Hz
+2026-11-02 20:19:04.032 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1680x1050 @ 59.94Hz
+2026-11-02 20:19:04.032 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1680x1050 @ 60.00Hz
+2026-11-02 20:19:04.032 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1680x1050 @ 100.00Hz
+2026-11-02 20:19:04.032 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1680x1050 @ 75.00Hz
+2026-11-02 20:19:04.032 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1680x1050 @ 119.88Hz
+2026-11-02 20:19:04.032 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1680x1050 @ 120.00Hz
+2026-11-02 20:19:04.032 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1680x1050 @ 144.00Hz
+2026-11-02 20:19:04.032 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1680x1050 @ 165.00Hz
+2026-11-02 20:19:04.033 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1680x1050 @ 180.00Hz
+2026-11-02 20:19:04.033 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1760x990 @ 50.00Hz
+2026-11-02 20:19:04.033 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1760x990 @ 48.00Hz
+2026-11-02 20:19:04.033 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1760x990 @ 59.94Hz
+2026-11-02 20:19:04.033 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1760x990 @ 60.00Hz
+2026-11-02 20:19:04.033 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1760x990 @ 100.00Hz
+2026-11-02 20:19:04.033 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1760x990 @ 75.00Hz
+2026-11-02 20:19:04.034 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1760x990 @ 119.88Hz
+2026-11-02 20:19:04.034 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1760x990 @ 120.00Hz
+2026-11-02 20:19:04.034 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1760x990 @ 144.00Hz
+2026-11-02 20:19:04.034 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1760x990 @ 165.00Hz
+2026-11-02 20:19:04.034 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1760x990 @ 180.00Hz
+2026-11-02 20:19:04.034 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1920x1080 @ 50.00Hz
+2026-11-02 20:19:04.034 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1920x1080 @ 48.00Hz
+2026-11-02 20:19:04.034 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1920x1080 @ 59.94Hz
+2026-11-02 20:19:04.034 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1920x1080 @ 60.00Hz
+2026-11-02 20:19:04.034 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1920x1080 @ 100.00Hz
+2026-11-02 20:19:04.034 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1920x1080 @ 75.00Hz
+2026-11-02 20:19:04.034 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1920x1080 @ 119.88Hz
+2026-11-02 20:19:04.035 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1920x1080 @ 120.00Hz
+2026-11-02 20:19:04.035 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1920x1080 @ 144.00Hz
+2026-11-02 20:19:04.035 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1920x1080 @ 165.00Hz
+2026-11-02 20:19:04.035 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1920x1080 @ 180.00Hz
+2026-11-02 20:19:04.035 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1920x1200 @ 60.00Hz
+2026-11-02 20:19:04.035 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1920x1200 @ 48.00Hz
+2026-11-02 20:19:04.035 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1920x1200 @ 100.00Hz
+2026-11-02 20:19:04.035 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1920x1200 @ 75.00Hz
+2026-11-02 20:19:04.036 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1920x1200 @ 120.00Hz
+2026-11-02 20:19:04.036 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1920x1200 @ 144.00Hz
+2026-11-02 20:19:04.036 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1920x1200 @ 165.00Hz
+2026-11-02 20:19:04.036 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 1920x1200 @ 180.00Hz
+2026-11-02 20:19:04.036 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 2560x1440 @ 60.00Hz
+2026-11-02 20:19:04.036 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 2560x1440 @ 48.00Hz
+2026-11-02 20:19:04.036 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 2560x1440 @ 100.00Hz
+2026-11-02 20:19:04.036 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 2560x1440 @ 75.00Hz
+2026-11-02 20:19:04.036 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 2560x1440 @ 120.00Hz
+2026-11-02 20:19:04.036 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 2560x1440 @ 144.00Hz
+2026-11-02 20:19:04.036 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 2560x1440 @ 165.00Hz
+2026-11-02 20:19:04.036 T:3528     info <general>: Additional mode: LG ULTRAGEAR #1: 2560x1440 @ 180.00Hz
+2026-11-02 20:19:04.036 T:3528     info <general>: CApplication::CApplication::CreateGUI - using the default windowing system
+2026-11-02 20:19:04.036 T:3528     info <general>: Checking resolution 15
+2026-11-02 20:19:04.046 T:3528    debug <general>: DX::DeviceResources::HandleOutputChange: selected AMD Radeon RX 6800 XT adapter. 
+2026-11-02 20:19:04.046 T:3528    debug <general>: CWinSystemWin32DX::InitHooks: Hooking into UserModeDriver on device \Registry\Machine\System\CurrentControlSet\Control\Video\{3E095A2D-05B7-11F0-AED3-EF3414AD15D1}\0000. 
+2026-11-02 20:19:04.047 T:3528    debug <general>: CWinSystemWin32DX::InitHooks: D3D11 hook installed and activated.
+2026-11-02 20:19:04.049 T:3528    debug <general>: DX::DeviceResources::CreateDeviceResources: creating DirectX 11 device.
+2026-11-02 20:19:04.065 T:3528    debug <general>: HookOpenAdapter10_2: hook into pOpenData->pAdapterFuncs->pfnCreateDevice
+2026-11-02 20:19:04.085 T:3528    debug <general>: HookCreateDevice: hook into pCreateData->pDeviceFuncs->pfnCreateResource
+2026-11-02 20:19:04.086 T:3528     info <general>: DX::DeviceResources::CheckNV12SharedTexturesSupport: extended NV12 shared textures is supported
+2026-11-02 20:19:04.086 T:3528     info <general>: DX::DeviceResources::CreateDeviceResources: device is created on adapter 'AMD Radeon RX 6800 XT' with D3D_FEATURE_LEVEL_12_1
+2026-11-02 20:19:04.086 T:3528     info <general>: VideoDriverInfo::Log: video driver version is AMD 32.0.21045.20006
+2026-11-02 20:19:04.086 T:3528     info <general>: DX::DeviceResources::CheckDXVA2SharedDecoderSurfaces: DXVA2 shared decoder surfaces is supported
+2026-11-02 20:19:04.086 T:3528     info <general>: DX::DeviceResources::CheckDXVA2SharedDecoderSurfaces: DXVA2 shared decoder surfaces WITH fence synchronization.
+2026-11-02 20:19:04.088 T:3528    debug <general>: CWinSystemWin32::AdjustWindow: adjusting window if required.
+2026-11-02 20:19:04.089 T:3528    debug <general>: CWinSystemWin32::AdjustWindow: resizing due to size change (920,467,1640,947)->(912,436,1648,955)
+2026-11-02 20:19:04.106 T:3528    debug <general>: DX::DeviceResources::ReleaseBackBuffer: release buffers.
+2026-11-02 20:19:04.106 T:3528    debug <general>: DX::DeviceResources::SetLogicalSize: receive changing logical size to 720.000000 x 480.000000
+2026-11-02 20:19:04.107 T:3528    debug <general>: DX::DeviceResources::SetLogicalSize: change logical size to 720.000000 x 480.000000
+2026-11-02 20:19:04.107 T:3528    debug <general>: DX::DeviceResources::ResizeBuffers: resize buffers.
+2026-11-02 20:19:04.107 T:3528    debug <general>: CWinSystemWin32DX::FixRefreshRateIfNecessary: refreshRate: 180.0000, desired: 0.0000, deviation: 1.00000, fixRequired: no, 1
+2026-11-02 20:19:04.110 T:3528    debug <general>: Skipped 5 duplicate messages..
+2026-11-02 20:19:04.110 T:3528     info <general>: DX::DeviceResources::ResizeBuffers: 8 bit swapchain is used with 6 flip discard buffers and SDR output (format B8G8R8A8_UNORM)
+2026-11-02 20:19:04.110 T:3528    debug <general>: DX::DeviceResources::ResizeBuffers: end resize buffers.
+2026-11-02 20:19:04.110 T:3528    debug <general>: DX::DeviceResources::CreateBackBuffer: create buffers.
+2026-11-02 20:19:04.114 T:3528    debug <general>: CD3DVertexShader::CreateInternal: creating vertex shader.
+2026-11-02 20:19:04.114 T:3528    debug <general>: CD3DVertexShader::CreateInternal: creating input layout.
+2026-11-02 20:19:04.115 T:3528    debug <general>: CD3DVertexShader::CreateInternal: creating vertex shader.
+2026-11-02 20:19:04.115 T:3528    debug <general>: CD3DVertexShader::CreateInternal: creating input layout.
+2026-11-02 20:19:04.115 T:3528    debug <general>: CD3DPixelShader::CreateInternal: Create the pixel shader.
+2026-11-02 20:19:04.117 T:3528    debug <general>: Skipped 11 duplicate messages..
+2026-11-02 20:19:04.117 T:3528     info <general>: RetroPlayer[RENDER]: Registering renderer factory for DirectX
+2026-11-02 20:19:04.117 T:3528    debug <general>: CWinSystemWin32::AdjustWindow: adjusting window if required.
+2026-11-02 20:19:04.117 T:3528    debug <general>: guilib: Fill viewport on change for solving rendering passes
+2026-11-02 20:19:04.138 T:3528     info <general>: load keymapping
+2026-11-02 20:19:04.140 T:3528     info <general>: Loading special://xbmc/system/keymaps/appcommand.xml
+2026-11-02 20:19:04.140 T:3528     info <general>: Loading special://xbmc/system/keymaps/customcontroller.Harmony.xml
+2026-11-02 20:19:04.141 T:3528     info <general>: Loading special://xbmc/system/keymaps/customcontroller.SiriRemote.xml
+2026-11-02 20:19:04.141 T:3528     info <general>: Loading special://xbmc/system/keymaps/gamepad.xml
+2026-11-02 20:19:04.142 T:3528     info <general>: Loading special://xbmc/system/keymaps/joystick.xml
+2026-11-02 20:19:04.142 T:3528     info <general>: Loading special://xbmc/system/keymaps/keyboard.xml
+2026-11-02 20:19:04.144 T:3528     info <general>: Loading special://xbmc/system/keymaps/mouse.xml
+2026-11-02 20:19:04.144 T:3528     info <general>: Loading special://xbmc/system/keymaps/remote.xml
+2026-11-02 20:19:04.145 T:3528     info <general>: Loading special://xbmc/system/keymaps/touchscreen.xml
+2026-11-02 20:19:04.147 T:3528     info <general>: GUI format 720x480, Display Windowed
+2026-11-02 20:19:04.147 T:2396    debug <general>: Thread ActiveAE start, auto delete: false
+2026-11-02 20:19:04.147 T:43748   debug <general>: Thread AESink start, auto delete: false
+2026-11-02 20:19:04.147 T:2396    debug <general>: [threads] name: 'AESink' priority: above normal
+2026-11-02 20:19:04.147 T:43748   debug <general>: [threads] name: 'AESink' task: Audio
+2026-11-02 20:19:04.229 T:2396     info <general>: CAESinkWASAPI::EnumerateDevicesEx: stream type "STREAM_TYPE_DTSHD" on device "3 - Q27G4SDR (AMD High Definition Audio Device)" seems to be not supported.
+2026-11-02 20:19:04.230 T:2396     info <general>: CAESinkWASAPI::EnumerateDevicesEx: stream type "STREAM_TYPE_DTSHD_MA" on device "3 - Q27G4SDR (AMD High Definition Audio Device)" seems to be not supported.
+2026-11-02 20:19:04.230 T:2396     info <general>: CAESinkWASAPI::EnumerateDevicesEx: stream type "STREAM_TYPE_TRUEHD" on device "3 - Q27G4SDR (AMD High Definition Audio Device)" seems to be not supported.
+2026-11-02 20:19:04.230 T:2396     info <general>: CAESinkWASAPI::EnumerateDevicesEx: stream type "STREAM_TYPE_EAC3" on device "3 - Q27G4SDR (AMD High Definition Audio Device)" seems to be not supported.
+2026-11-02 20:19:04.230 T:2396     info <general>: CAESinkWASAPI::EnumerateDevicesEx: stream type "STREAM_TYPE_DTS" on device "3 - Q27G4SDR (AMD High Definition Audio Device)" seems to be not supported.
+2026-11-02 20:19:04.230 T:2396     info <general>: CAESinkWASAPI::EnumerateDevicesEx: stream type "STREAM_TYPE_AC3" on device "3 - Q27G4SDR (AMD High Definition Audio Device)" seems to be not supported.
+2026-11-02 20:19:04.233 T:2396     info <general>: CAESinkWASAPI::EnumerateDevicesEx: sample rate 192khz on device "3 - Q27G4SDR (AMD High Definition Audio Device)" seems to be not supported.
+2026-11-02 20:19:04.236 T:2396     info <general>: CAESinkWASAPI::EnumerateDevicesEx: stream type "STREAM_TYPE_DTSHD" on device "1 - LG ULTRAGEAR (AMD High Definition Audio Device)" seems to be not supported.
+2026-11-02 20:19:04.237 T:2396     info <general>: CAESinkWASAPI::EnumerateDevicesEx: stream type "STREAM_TYPE_DTSHD_MA" on device "1 - LG ULTRAGEAR (AMD High Definition Audio Device)" seems to be not supported.
+2026-11-02 20:19:04.237 T:2396     info <general>: CAESinkWASAPI::EnumerateDevicesEx: stream type "STREAM_TYPE_TRUEHD" on device "1 - LG ULTRAGEAR (AMD High Definition Audio Device)" seems to be not supported.
+2026-11-02 20:19:04.237 T:2396     info <general>: CAESinkWASAPI::EnumerateDevicesEx: stream type "STREAM_TYPE_EAC3" on device "1 - LG ULTRAGEAR (AMD High Definition Audio Device)" seems to be not supported.
+2026-11-02 20:19:04.237 T:2396     info <general>: CAESinkWASAPI::EnumerateDevicesEx: stream type "STREAM_TYPE_DTS" on device "1 - LG ULTRAGEAR (AMD High Definition Audio Device)" seems to be not supported.
+2026-11-02 20:19:04.237 T:2396     info <general>: CAESinkWASAPI::EnumerateDevicesEx: stream type "STREAM_TYPE_AC3" on device "1 - LG ULTRAGEAR (AMD High Definition Audio Device)" seems to be not supported.
+2026-11-02 20:19:04.239 T:2396     info <general>: CAESinkWASAPI::EnumerateDevicesEx: sample rate 192khz on device "1 - LG ULTRAGEAR (AMD High Definition Audio Device)" seems to be not supported.
+2026-11-02 20:19:05.326 T:2396     info <general>: Found 3 Lists of Devices
+2026-11-02 20:19:05.326 T:2396     info <general>: Enumerated DIRECTSOUND devices:
+2026-11-02 20:19:05.326 T:2396     info <general>:     Device 1
+2026-11-02 20:19:05.326 T:2396     info <general>:         m_deviceName      : {58E89969-3C17-4B23-BAB2-B70DA07744A3}
+2026-11-02 20:19:05.326 T:2396     info <general>:         m_displayName     : Speakers - Lautsprecher (Realtek(R) Audio)
+2026-11-02 20:19:05.326 T:2396     info <general>:         m_displayNameExtra: DIRECTSOUND: Lautsprecher (Realtek(R) Audio)
+2026-11-02 20:19:05.326 T:2396     info <general>:         m_deviceType      : AE_DEVTYPE_PCM
+2026-11-02 20:19:05.326 T:2396     info <general>:         m_channels        : FL, FR
+2026-11-02 20:19:05.326 T:2396     info <general>:         m_sampleRates     : 48000
+2026-11-02 20:19:05.326 T:2396     info <general>:         m_dataFormats     : AE_FMT_FLOAT
+2026-11-02 20:19:05.326 T:2396     info <general>:         m_streamTypes     : No passthrough capabilities
+2026-11-02 20:19:05.326 T:2396     info <general>:     Device 2
+2026-11-02 20:19:05.326 T:2396     info <general>:         m_deviceName      : default
+2026-11-02 20:19:05.326 T:2396     info <general>:         m_displayName     : default
+2026-11-02 20:19:05.326 T:2396     info <general>:         m_displayNameExtra: 
+2026-11-02 20:19:05.326 T:2396     info <general>:         m_deviceType      : AE_DEVTYPE_PCM
+2026-11-02 20:19:05.326 T:2396     info <general>:         m_channels        : FL, FR
+2026-11-02 20:19:05.326 T:2396     info <general>:         m_sampleRates     : 48000
+2026-11-02 20:19:05.326 T:2396     info <general>:         m_dataFormats     : AE_FMT_FLOAT
+2026-11-02 20:19:05.326 T:2396     info <general>:         m_streamTypes     : No passthrough capabilities
+2026-11-02 20:19:05.326 T:2396     info <general>:     Device 3
+2026-11-02 20:19:05.326 T:2396     info <general>:         m_deviceName      : {5C871C32-A9E7-46E3-ADA8-830DB4CA6E4E}
+2026-11-02 20:19:05.326 T:2396     info <general>:         m_displayName     : Speakers - Lautsprecher (Steam Streaming Speakers)
+2026-11-02 20:19:05.326 T:2396     info <general>:         m_displayNameExtra: DIRECTSOUND: Lautsprecher (Steam Streaming Speakers)
+2026-11-02 20:19:05.326 T:2396     info <general>:         m_deviceType      : AE_DEVTYPE_PCM
+2026-11-02 20:19:05.326 T:2396     info <general>:         m_channels        : FL, FR
+2026-11-02 20:19:05.326 T:2396     info <general>:         m_sampleRates     : 48000
+2026-11-02 20:19:05.326 T:2396     info <general>:         m_dataFormats     : AE_FMT_FLOAT
+2026-11-02 20:19:05.326 T:2396     info <general>:         m_streamTypes     : No passthrough capabilities
+2026-11-02 20:19:05.326 T:2396     info <general>:     Device 4
+2026-11-02 20:19:05.326 T:2396     info <general>:         m_deviceName      : {5D1CFE4E-3530-422B-8E95-4C5CA751E092}
+2026-11-02 20:19:05.326 T:2396     info <general>:         m_displayName     : HDMI - 3 - Q27G4SDR (AMD High Definition Audio Device)
+2026-11-02 20:19:05.326 T:2396     info <general>:         m_displayNameExtra: DIRECTSOUND: 3 - Q27G4SDR (AMD High Definition Audio Device)
+2026-11-02 20:19:05.326 T:2396     info <general>:         m_deviceType      : AE_DEVTYPE_HDMI
+2026-11-02 20:19:05.326 T:2396     info <general>:         m_channels        : FL, FR
+2026-11-02 20:19:05.326 T:2396     info <general>:         m_sampleRates     : 48000
+2026-11-02 20:19:05.326 T:2396     info <general>:         m_dataFormats     : AE_FMT_FLOAT,AE_FMT_RAW
+2026-11-02 20:19:05.326 T:2396     info <general>:         m_streamTypes     : STREAM_TYPE_AC3,STREAM_TYPE_DTSHD_CORE,STREAM_TYPE_DTS_1024,STREAM_TYPE_DTS_2048,STREAM_TYPE_DTS_512
+2026-11-02 20:19:05.326 T:2396     info <general>:     Device 5
+2026-11-02 20:19:05.326 T:2396     info <general>:         m_deviceName      : {B4AD4A58-E59E-40B8-AD18-89F1D89DAB80}
+2026-11-02 20:19:05.326 T:2396     info <general>:         m_displayName     : HDMI - 1 - LG ULTRAGEAR (AMD High Definition Audio Device)
+2026-11-02 20:19:05.326 T:2396     info <general>:         m_displayNameExtra: DIRECTSOUND: 1 - LG ULTRAGEAR (AMD High Definition Audio Device)
+2026-11-02 20:19:05.326 T:2396     info <general>:         m_deviceType      : AE_DEVTYPE_HDMI
+2026-11-02 20:19:05.326 T:2396     info <general>:         m_channels        : FL, FR
+2026-11-02 20:19:05.326 T:2396     info <general>:         m_sampleRates     : 48000
+2026-11-02 20:19:05.326 T:2396     info <general>:         m_dataFormats     : AE_FMT_FLOAT,AE_FMT_RAW
+2026-11-02 20:19:05.326 T:2396     info <general>:         m_streamTypes     : STREAM_TYPE_AC3,STREAM_TYPE_DTSHD_CORE,STREAM_TYPE_DTS_1024,STREAM_TYPE_DTS_2048,STREAM_TYPE_DTS_512
+2026-11-02 20:19:05.326 T:2396     info <general>:     Device 6
+2026-11-02 20:19:05.326 T:2396     info <general>:         m_deviceName      : {CD74CFE6-0A9A-4F81-A273-7975C79993C9}
+2026-11-02 20:19:05.326 T:2396     info <general>:         m_displayName     : SPDIF - Realtek Digital Output (Realtek(R) Audio)
+2026-11-02 20:19:05.326 T:2396     info <general>:         m_displayNameExtra: DIRECTSOUND: Realtek Digital Output (Realtek(R) Audio)
+2026-11-02 20:19:05.326 T:2396     info <general>:         m_deviceType      : AE_DEVTYPE_IEC958
+2026-11-02 20:19:05.326 T:2396     info <general>:         m_channels        : FL, FR
+2026-11-02 20:19:05.326 T:2396     info <general>:         m_sampleRates     : 48000
+2026-11-02 20:19:05.326 T:2396     info <general>:         m_dataFormats     : AE_FMT_FLOAT,AE_FMT_RAW
+2026-11-02 20:19:05.326 T:2396     info <general>:         m_streamTypes     : STREAM_TYPE_AC3,STREAM_TYPE_DTSHD_CORE,STREAM_TYPE_DTS_1024,STREAM_TYPE_DTS_2048,STREAM_TYPE_DTS_512
+2026-11-02 20:19:05.326 T:2396     info <general>:     Device 7
+2026-11-02 20:19:05.326 T:2396     info <general>:         m_deviceName      : {DE273737-3F43-4B31-92E6-BC681ED5DB57}
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_displayName     : Speakers - Lautsprecher (Steam Streaming Microphone)
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_displayNameExtra: DIRECTSOUND: Lautsprecher (Steam Streaming Microphone)
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_deviceType      : AE_DEVTYPE_PCM
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_channels        : FL, FR
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_sampleRates     : 48000
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_dataFormats     : AE_FMT_FLOAT
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_streamTypes     : No passthrough capabilities
+2026-11-02 20:19:05.327 T:2396     info <general>: Enumerated WASAPI devices:
+2026-11-02 20:19:05.327 T:2396     info <general>:     Device 1
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_deviceName      : {58E89969-3C17-4B23-BAB2-B70DA07744A3}
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_displayName     : Speakers - Lautsprecher (Realtek(R) Audio)
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_displayNameExtra: WASAPI: Lautsprecher (Realtek(R) Audio)
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_deviceType      : AE_DEVTYPE_PCM
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_channels        : FL, FR
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_sampleRates     : 192000,176400,96000,88200,48000,44100
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_dataFormats     : AE_FMT_S24NE4MSB,AE_FMT_S32NE,AE_FMT_S32LE,AE_FMT_S32BE,AE_FMT_S16NE,AE_FMT_S16LE,AE_FMT_S16BE
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_streamTypes     : No passthrough capabilities
+2026-11-02 20:19:05.327 T:2396     info <general>:     Device 2
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_deviceName      : default
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_displayName     : default
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_displayNameExtra: 
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_deviceType      : AE_DEVTYPE_PCM
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_channels        : FL, FR
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_sampleRates     : 192000,176400,96000,88200,48000,44100
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_dataFormats     : AE_FMT_S24NE4MSB,AE_FMT_S32NE,AE_FMT_S32LE,AE_FMT_S32BE,AE_FMT_S16NE,AE_FMT_S16LE,AE_FMT_S16BE
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_streamTypes     : No passthrough capabilities
+2026-11-02 20:19:05.327 T:2396     info <general>:     Device 3
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_deviceName      : {5C871C32-A9E7-46E3-ADA8-830DB4CA6E4E}
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_displayName     : Speakers - Lautsprecher (Steam Streaming Speakers)
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_displayNameExtra: WASAPI: Lautsprecher (Steam Streaming Speakers)
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_deviceType      : AE_DEVTYPE_PCM
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_channels        : FL, FR
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_sampleRates     : 192000,176400,96000,88200,48000,44100,32000,22050,11025
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_dataFormats     : AE_FMT_S24NE3,AE_FMT_S24LE3,AE_FMT_S24BE3,AE_FMT_S32NE,AE_FMT_S32LE,AE_FMT_S32BE,AE_FMT_S16NE,AE_FMT_S16LE,AE_FMT_S16BE,AE_FMT_U8
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_streamTypes     : No passthrough capabilities
+2026-11-02 20:19:05.327 T:2396     info <general>:     Device 4
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_deviceName      : {5D1CFE4E-3530-422B-8E95-4C5CA751E092}
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_displayName     : HDMI - 3 - Q27G4SDR (AMD High Definition Audio Device)
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_displayNameExtra: WASAPI: 3 - Q27G4SDR (AMD High Definition Audio Device)
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_deviceType      : AE_DEVTYPE_HDMI
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_channels        : FL, FR
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_sampleRates     : 192000,48000,44100,32000
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_dataFormats     : AE_FMT_S24NE4MSB,AE_FMT_S16NE,AE_FMT_S16LE,AE_FMT_S16BE,AE_FMT_RAW
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_streamTypes     : STREAM_TYPE_DTSHD,STREAM_TYPE_DTSHD_MA,STREAM_TYPE_TRUEHD,STREAM_TYPE_EAC3,STREAM_TYPE_DTSHD_CORE,STREAM_TYPE_DTS_2048,STREAM_TYPE_DTS_1024,STREAM_TYPE_DTS_512,STREAM_TYPE_AC3
+2026-11-02 20:19:05.327 T:2396     info <general>:     Device 5
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_deviceName      : {B4AD4A58-E59E-40B8-AD18-89F1D89DAB80}
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_displayName     : HDMI - 1 - LG ULTRAGEAR (AMD High Definition Audio Device)
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_displayNameExtra: WASAPI: 1 - LG ULTRAGEAR (AMD High Definition Audio Device)
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_deviceType      : AE_DEVTYPE_HDMI
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_channels        : FL, FR
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_sampleRates     : 192000,48000,44100,32000
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_dataFormats     : AE_FMT_S24NE4MSB,AE_FMT_S16NE,AE_FMT_S16LE,AE_FMT_S16BE,AE_FMT_RAW
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_streamTypes     : STREAM_TYPE_DTSHD,STREAM_TYPE_DTSHD_MA,STREAM_TYPE_TRUEHD,STREAM_TYPE_EAC3,STREAM_TYPE_DTSHD_CORE,STREAM_TYPE_DTS_2048,STREAM_TYPE_DTS_1024,STREAM_TYPE_DTS_512,STREAM_TYPE_AC3
+2026-11-02 20:19:05.327 T:2396     info <general>:     Device 6
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_deviceName      : {CD74CFE6-0A9A-4F81-A273-7975C79993C9}
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_displayName     : SPDIF - Realtek Digital Output (Realtek(R) Audio)
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_displayNameExtra: WASAPI: Realtek Digital Output (Realtek(R) Audio)
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_deviceType      : AE_DEVTYPE_IEC958
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_channels        : FL, FR
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_sampleRates     : 192000,96000,88200,48000,44100,32000
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_dataFormats     : AE_FMT_S24NE4MSB,AE_FMT_S16NE,AE_FMT_S16LE,AE_FMT_S16BE,AE_FMT_RAW
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_streamTypes     : STREAM_TYPE_DTSHD_CORE,STREAM_TYPE_DTS_2048,STREAM_TYPE_DTS_1024,STREAM_TYPE_DTS_512,STREAM_TYPE_AC3
+2026-11-02 20:19:05.327 T:2396     info <general>:     Device 7
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_deviceName      : {DE273737-3F43-4B31-92E6-BC681ED5DB57}
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_displayName     : Speakers - Lautsprecher (Steam Streaming Microphone)
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_displayNameExtra: WASAPI: Lautsprecher (Steam Streaming Microphone)
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_deviceType      : AE_DEVTYPE_PCM
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_channels        : FL, FR
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_sampleRates     : 192000,176400,96000,88200,48000,44100,32000,22050,11025
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_dataFormats     : AE_FMT_S24NE3,AE_FMT_S24LE3,AE_FMT_S24BE3,AE_FMT_S32NE,AE_FMT_S32LE,AE_FMT_S32BE,AE_FMT_S16NE,AE_FMT_S16LE,AE_FMT_S16BE,AE_FMT_U8
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_streamTypes     : No passthrough capabilities
+2026-11-02 20:19:05.327 T:2396     info <general>: Enumerated XAUDIO devices:
+2026-11-02 20:19:05.327 T:2396     info <general>:     Device 1
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_deviceName      : \\?\SWD#MMDEVAPI#{0.0.0.00000000}.{b4ad4a58-e59e-40b8-ad18-89f1d89dab80}#{e6327cad-dcec-4949-ae8a-991e976a79d2}
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_displayName     : HDMI - 1 - LG ULTRAGEAR (AMD High Definition Audio Device)
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_displayNameExtra: XAudio: 1 - LG ULTRAGEAR (AMD High Definition Audio Device)
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_deviceType      : AE_DEVTYPE_HDMI
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_channels        : FL, FR
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_sampleRates     : 192000,176400,96000,88200,48000,44100,32000,22050,11025
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_dataFormats     : AE_FMT_FLOAT,AE_FMT_S24NE3,AE_FMT_S24LE3,AE_FMT_S24BE3,AE_FMT_S24NE4MSB,AE_FMT_S32NE,AE_FMT_S32LE,AE_FMT_S32BE,AE_FMT_S16NE,AE_FMT_S16LE,AE_FMT_S16BE,AE_FMT_U8
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_streamTypes     : No passthrough capabilities
+2026-11-02 20:19:05.327 T:2396     info <general>:     Device 2
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_deviceName      : \\?\SWD#MMDEVAPI#{0.0.0.00000000}.{cd74cfe6-0a9a-4f81-a273-7975c79993c9}#{e6327cad-dcec-4949-ae8a-991e976a79d2}
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_displayName     : SPDIF - Realtek Digital Output (Realtek(R) Audio)
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_displayNameExtra: XAudio: Realtek Digital Output (Realtek(R) Audio)
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_deviceType      : AE_DEVTYPE_IEC958
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_channels        : FL, FR
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_sampleRates     : 192000,176400,96000,88200,48000,44100,32000,22050,11025
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_dataFormats     : AE_FMT_FLOAT,AE_FMT_S24NE3,AE_FMT_S24LE3,AE_FMT_S24BE3,AE_FMT_S24NE4MSB,AE_FMT_S32NE,AE_FMT_S32LE,AE_FMT_S32BE,AE_FMT_S16NE,AE_FMT_S16LE,AE_FMT_S16BE,AE_FMT_U8
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_streamTypes     : No passthrough capabilities
+2026-11-02 20:19:05.327 T:2396     info <general>:     Device 3
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_deviceName      : \\?\SWD#MMDEVAPI#{0.0.0.00000000}.{5c871c32-a9e7-46e3-ada8-830db4ca6e4e}#{e6327cad-dcec-4949-ae8a-991e976a79d2}
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_displayName     : Speakers - Lautsprecher (Steam Streaming Speakers)
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_displayNameExtra: XAudio: Lautsprecher (Steam Streaming Speakers)
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_deviceType      : AE_DEVTYPE_PCM
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_channels        : FL, FR
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_sampleRates     : 192000,176400,96000,88200,48000,44100,32000,22050,11025
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_dataFormats     : AE_FMT_FLOAT,AE_FMT_S24NE3,AE_FMT_S24LE3,AE_FMT_S24BE3,AE_FMT_S24NE4MSB,AE_FMT_S32NE,AE_FMT_S32LE,AE_FMT_S32BE,AE_FMT_S16NE,AE_FMT_S16LE,AE_FMT_S16BE,AE_FMT_U8
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_streamTypes     : No passthrough capabilities
+2026-11-02 20:19:05.327 T:2396     info <general>:     Device 4
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_deviceName      : \\?\SWD#MMDEVAPI#{0.0.0.00000000}.{5d1cfe4e-3530-422b-8e95-4c5ca751e092}#{e6327cad-dcec-4949-ae8a-991e976a79d2}
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_displayName     : HDMI - 3 - Q27G4SDR (AMD High Definition Audio Device)
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_displayNameExtra: XAudio: 3 - Q27G4SDR (AMD High Definition Audio Device)
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_deviceType      : AE_DEVTYPE_HDMI
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_channels        : FL, FR
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_sampleRates     : 192000,176400,96000,88200,48000,44100,32000,22050,11025
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_dataFormats     : AE_FMT_FLOAT,AE_FMT_S24NE3,AE_FMT_S24LE3,AE_FMT_S24BE3,AE_FMT_S24NE4MSB,AE_FMT_S32NE,AE_FMT_S32LE,AE_FMT_S32BE,AE_FMT_S16NE,AE_FMT_S16LE,AE_FMT_S16BE,AE_FMT_U8
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_streamTypes     : No passthrough capabilities
+2026-11-02 20:19:05.327 T:2396     info <general>:     Device 5
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_deviceName      : \\?\SWD#MMDEVAPI#{0.0.0.00000000}.{58e89969-3c17-4b23-bab2-b70da07744a3}#{e6327cad-dcec-4949-ae8a-991e976a79d2}
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_displayName     : Speakers - Lautsprecher (Realtek(R) Audio)
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_displayNameExtra: XAudio: Lautsprecher (Realtek(R) Audio)
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_deviceType      : AE_DEVTYPE_PCM
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_channels        : FL, FR
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_sampleRates     : 192000,176400,96000,88200,48000,44100,32000,22050,11025
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_dataFormats     : AE_FMT_FLOAT,AE_FMT_S24NE3,AE_FMT_S24LE3,AE_FMT_S24BE3,AE_FMT_S24NE4MSB,AE_FMT_S32NE,AE_FMT_S32LE,AE_FMT_S32BE,AE_FMT_S16NE,AE_FMT_S16LE,AE_FMT_S16BE,AE_FMT_U8
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_streamTypes     : No passthrough capabilities
+2026-11-02 20:19:05.327 T:2396     info <general>:     Device 6
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_deviceName      : default
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_displayName     : default
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_displayNameExtra: 
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_deviceType      : AE_DEVTYPE_PCM
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_channels        : FL, FR
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_sampleRates     : 192000,176400,96000,88200,48000,44100,32000,22050,11025
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_dataFormats     : AE_FMT_FLOAT,AE_FMT_S24NE3,AE_FMT_S24LE3,AE_FMT_S24BE3,AE_FMT_S24NE4MSB,AE_FMT_S32NE,AE_FMT_S32LE,AE_FMT_S32BE,AE_FMT_S16NE,AE_FMT_S16LE,AE_FMT_S16BE,AE_FMT_U8
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_streamTypes     : No passthrough capabilities
+2026-11-02 20:19:05.327 T:2396     info <general>:     Device 7
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_deviceName      : \\?\SWD#MMDEVAPI#{0.0.0.00000000}.{de273737-3f43-4b31-92e6-bc681ed5db57}#{e6327cad-dcec-4949-ae8a-991e976a79d2}
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_displayName     : Speakers - Lautsprecher (Steam Streaming Microphone)
+2026-11-02 20:19:05.327 T:2396     info <general>:         m_displayNameExtra: XAudio: Lautsprecher (Steam Streaming Microphone)
+2026-11-02 20:19:05.328 T:2396     info <general>:         m_deviceType      : AE_DEVTYPE_PCM
+2026-11-02 20:19:05.328 T:2396     info <general>:         m_channels        : FL, FR
+2026-11-02 20:19:05.328 T:2396     info <general>:         m_sampleRates     : 192000,176400,96000,88200,48000,44100,32000,22050,11025
+2026-11-02 20:19:05.328 T:2396     info <general>:         m_dataFormats     : AE_FMT_FLOAT,AE_FMT_S24NE3,AE_FMT_S24LE3,AE_FMT_S24BE3,AE_FMT_S24NE4MSB,AE_FMT_S32NE,AE_FMT_S32LE,AE_FMT_S32BE,AE_FMT_S16NE,AE_FMT_S16LE,AE_FMT_S16BE,AE_FMT_U8
+2026-11-02 20:19:05.328 T:2396     info <general>:         m_streamTypes     : No passthrough capabilities
+2026-11-02 20:19:05.328 T:2396  warning <general>: ActiveAE::CActiveAE::ValidateOutputDevices: passthrough output device setting has been updated from 'WASAPI:default' to 'WASAPI:{5D1CFE4E-3530-422B-8E95-4C5CA751E092}|HDMI - 3 - Q27G4SDR (AMD High Definition Audio Device)'
+2026-11-02 20:19:05.328 T:43748    info <general>: ActiveAE::CActiveAESink::OpenSink: initialize sink
+2026-11-02 20:19:05.328 T:43748   debug <general>: ActiveAE::CActiveAESink::OpenSink: trying to open device XAUDIO:default
+2026-11-02 20:19:05.358 T:43748    info <general>: CAESinkXAudio::InitializeInternal: Format is Supported - will attempt to Initialize
+2026-11-02 20:19:05.358 T:43748    info <general>: CAESinkXAudio::InitializeInternal: XAudio Sink Initialized using: AE_FMT_FLOAT, 48000, 2
+2026-11-02 20:19:05.358 T:43748   debug <general>: CAESinkXAudio::InitializeInternal: Initializing XAudio with the following parameters:
+2026-11-02 20:19:05.358 T:43748   debug <general>:   Audio Device    : default
+2026-11-02 20:19:05.359 T:43748   debug <general>:   Sample Rate     : 48000
+2026-11-02 20:19:05.359 T:43748   debug <general>:   Sample Format   : AE_FMT_FLOAT
+2026-11-02 20:19:05.359 T:43748   debug <general>:   Bits Per Sample : 32
+2026-11-02 20:19:05.359 T:43748   debug <general>:   Valid Bits/Samp : 32
+2026-11-02 20:19:05.359 T:43748   debug <general>:   Channel Count   : 2
+2026-11-02 20:19:05.359 T:43748   debug <general>:   Block Align     : 8
+2026-11-02 20:19:05.359 T:43748   debug <general>:   Avg. Bytes Sec  : 384000
+2026-11-02 20:19:05.359 T:43748   debug <general>:   Samples/Block   : 32
+2026-11-02 20:19:05.359 T:43748   debug <general>:   Format cBSize   : 22
+2026-11-02 20:19:05.359 T:43748   debug <general>:   Channel Layout  : FL, FR
+2026-11-02 20:19:05.359 T:43748   debug <general>:   Channel Mask    : 3
+2026-11-02 20:19:05.359 T:43748   debug <general>:   Frames          : 960
+2026-11-02 20:19:05.359 T:43748   debug <general>:   Frame Size      : 8
+2026-11-02 20:19:05.359 T:43748   debug <general>: ActiveAE::CActiveAESink::OpenSink: XAudio Initialized:
+2026-11-02 20:19:05.359 T:43748   debug <general>:   Output Device : default
+2026-11-02 20:19:05.359 T:43748   debug <general>:   Sample Rate   : 48000
+2026-11-02 20:19:05.359 T:43748   debug <general>:   Sample Format : AE_FMT_FLOAT
+2026-11-02 20:19:05.359 T:43748   debug <general>:   Channel Count : 2
+2026-11-02 20:19:05.359 T:43748   debug <general>:   Channel Layout: FL, FR
+2026-11-02 20:19:05.359 T:43748   debug <general>:   Frames        : 960
+2026-11-02 20:19:05.359 T:43748   debug <general>:   Frame Size    : 8
+2026-11-02 20:19:05.359 T:2396    debug <general>: ActiveAE::CActiveAE::ConfigureLowLatency: Low latency mode: true - Initial buffer level: 20ms (resample: false)
+2026-11-02 20:19:05.359 T:2396  warning <general>: CActiveAE::ActiveAE::CActiveAE::StateMachine - signal: 0 from port: OutputControlPort not handled for state: 7
+2026-11-02 20:19:05.359 T:3528  warning <general>: Skipped 2 duplicate messages..
+2026-11-02 20:19:05.359 T:3528     info <general>: CLangInfo: loading resource.language.en_gb language information...
+2026-11-02 20:19:05.359 T:3528     info <general>: IANA Language Subtag Registry: loading...
+2026-11-02 20:19:05.359 T:3528     info <general>: IANA Language Subtag Registry: file C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\system\language-subtag-registry.txt
+2026-11-02 20:19:05.359 T:3528     info <general>: IANA Language Subtag Registry: registry date 2026-08-08
+2026-11-02 20:19:05.500 T:3528    debug <general>: KODI::UTILS::I18N::CRegistryFile::Parse: IANA Language Subtag Registry: file read.
+2026-11-02 20:19:05.501 T:3528    debug <general>: KODI::UTILS::I18N::CSubTagsCollection<struct KODI::UTILS::I18N::LanguageSubTag>::InsertDescLookupElem: deprecated subtag [in] redefines the description [indonesian] previously defined by subtag [id] - ignored
+2026-11-02 20:19:05.501 T:3528    debug <general>: KODI::UTILS::I18N::CSubTagsCollection<struct KODI::UTILS::I18N::LanguageSubTag>::InsertDescLookupElem: deprecated subtag [iw] redefines the description [hebrew] previously defined by subtag [he] - ignored
+2026-11-02 20:19:05.501 T:3528    debug <general>: KODI::UTILS::I18N::CSubTagsCollection<struct KODI::UTILS::I18N::LanguageSubTag>::InsertDescLookupElem: deprecated subtag [jw] redefines the description [javanese] previously defined by subtag [jv] - ignored
+2026-11-02 20:19:05.501 T:3528    debug <general>: KODI::UTILS::I18N::CSubTagsCollection<struct KODI::UTILS::I18N::LanguageSubTag>::InsertDescLookupElem: subtag [ro] redefines the description [moldavian] previously defined by deprecated subtag [mo] - overwritten
+2026-11-02 20:19:05.501 T:3528    debug <general>: KODI::UTILS::I18N::CSubTagsCollection<struct KODI::UTILS::I18N::LanguageSubTag>::InsertDescLookupElem: subtag [ro] redefines the description [moldovan] previously defined by deprecated subtag [mo] - overwritten
+2026-11-02 20:19:05.501 T:3528    debug <general>: KODI::UTILS::I18N::CSubTagsCollection<struct KODI::UTILS::I18N::LanguageSubTag>::InsertDescLookupElem: subtag [yi] redefines the description [yiddish] previously defined by deprecated subtag [ji] - overwritten
+2026-11-02 20:19:05.501 T:3528    debug <general>: KODI::UTILS::I18N::CSubTagsCollection<struct KODI::UTILS::I18N::LanguageSubTag>::InsertDescLookupElem: subtag [bih] redefines the description [bihari languages] previously defined by deprecated subtag [bh] - overwritten
+2026-11-02 20:19:05.501 T:3528    debug <general>: KODI::UTILS::I18N::CSubTagsCollection<struct KODI::UTILS::I18N::LanguageSubTag>::InsertDescLookupElem: subtag [bzc] redefines the description [southern betsimisaraka malagasy] previously defined by deprecated subtag [bjq] - overwritten
+2026-11-02 20:19:05.502 T:3528    debug <general>: KODI::UTILS::I18N::CSubTagsCollection<struct KODI::UTILS::I18N::LanguageSubTag>::InsertDescLookupElem: subtag [dnj] redefines the description [dan] previously defined by deprecated subtag [daf] - overwritten
+2026-11-02 20:19:05.502 T:3528    debug <general>: KODI::UTILS::I18N::CSubTagsCollection<struct KODI::UTILS::I18N::LanguageSubTag>::InsertDescLookupElem: subtag [dwu] redefines the description [dhuwal] previously defined by deprecated subtag [duj] - overwritten
+2026-11-02 20:19:05.502 T:3528    debug <general>: KODI::UTILS::I18N::CSubTagsCollection<struct KODI::UTILS::I18N::LanguageSubTag>::InsertDescLookupElem: subtag [dze] redefines the description [djiwarli] previously defined by deprecated subtag [djl] - overwritten
+2026-11-02 20:19:05.502 T:3528    debug <general>: KODI::UTILS::I18N::CSubTagsCollection<struct KODI::UTILS::I18N::LanguageSubTag>::InsertDescLookupElem: subtag [gyz] redefines the description [geji] previously defined by deprecated subtag [gji] - overwritten
+2026-11-02 20:19:05.502 T:3528    debug <general>: KODI::UTILS::I18N::CSubTagsCollection<struct KODI::UTILS::I18N::LanguageSubTag>::InsertDescLookupElem: deprecated subtag [kpp] redefines the description [paku karen] previously defined by subtag [jkp] - ignored
+2026-11-02 20:19:05.503 T:3528    debug <general>: KODI::UTILS::I18N::CSubTagsCollection<struct KODI::UTILS::I18N::LanguageSubTag>::InsertDescLookupElem: deprecated subtag [lno] redefines the description [lango (south sudan)] previously defined by subtag [lgo] - ignored
+2026-11-02 20:19:05.503 T:3528    debug <general>: KODI::UTILS::I18N::CSubTagsCollection<struct KODI::UTILS::I18N::LanguageSubTag>::InsertDescLookupElem: subtag [nrk] redefines the description [ngarla] previously defined by deprecated subtag [nlr] - overwritten
+2026-11-02 20:19:05.503 T:3528    debug <general>: KODI::UTILS::I18N::CSubTagsCollection<struct KODI::UTILS::I18N::LanguageSubTag>::InsertDescLookupElem: subtag [nxq] redefines the description [naxi] previously defined by deprecated subtag [nbf] - overwritten
+2026-11-02 20:19:05.504 T:3528    debug <general>: KODI::UTILS::I18N::CSubTagsCollection<struct KODI::UTILS::I18N::LanguageSubTag>::InsertDescLookupElem: subtag [prf] redefines the description [paranan] previously defined by deprecated subtag [agp] - overwritten
+2026-11-02 20:19:05.504 T:3528    debug <general>: KODI::UTILS::I18N::CSubTagsCollection<struct KODI::UTILS::I18N::LanguageSubTag>::InsertDescLookupElem: deprecated subtag [rmr] redefines the description [caló] previously defined by subtag [rmq] - ignored
+2026-11-02 20:19:05.504 T:3528    debug <general>: KODI::UTILS::I18N::CSubTagsCollection<struct KODI::UTILS::I18N::LanguageSubTag>::InsertDescLookupElem: subtag [sdq] redefines the description [semandang] previously defined by deprecated subtag [sdm] - overwritten
+2026-11-02 20:19:05.504 T:3528    debug <general>: KODI::UTILS::I18N::CSubTagsCollection<struct KODI::UTILS::I18N::LanguageSubTag>::InsertDescLookupElem: deprecated subtag [shl] redefines the description [shendu] previously defined by subtag [mrh] - ignored
+2026-11-02 20:19:05.504 T:3528    debug <general>: KODI::UTILS::I18N::CSubTagsCollection<struct KODI::UTILS::I18N::LanguageSubTag>::InsertDescLookupElem: subtag [spn] redefines the description [sanapaná] previously defined by deprecated subtag [sap] - overwritten
+2026-11-02 20:19:05.504 T:3528    debug <general>: KODI::UTILS::I18N::CSubTagsCollection<struct KODI::UTILS::I18N::LanguageSubTag>::InsertDescLookupElem: deprecated subtag [sul] redefines the description [surigaonon] previously defined by subtag [sgd] - ignored
+2026-11-02 20:19:05.504 T:3528    debug <general>: KODI::UTILS::I18N::CSubTagsCollection<struct KODI::UTILS::I18N::LanguageSubTag>::InsertDescLookupElem: subtag [tvu] redefines the description [tunen] previously defined by deprecated subtag [baz] - overwritten
+2026-11-02 20:19:05.504 T:3528    debug <general>: KODI::UTILS::I18N::CSubTagsCollection<struct KODI::UTILS::I18N::LanguageSubTag>::InsertDescLookupElem: subtag [uki] redefines the description [kui (india)] previously defined by deprecated subtag [kxu] - overwritten
+2026-11-02 20:19:05.504 T:3528    debug <general>: KODI::UTILS::I18N::CSubTagsCollection<struct KODI::UTILS::I18N::LanguageSubTag>::InsertDescLookupElem: deprecated subtag [wgw] redefines the description [wagawaga] previously defined by subtag [wgb] - ignored
+2026-11-02 20:19:05.504 T:3528    debug <general>: KODI::UTILS::I18N::CSubTagsCollection<struct KODI::UTILS::I18N::LanguageSubTag>::InsertDescLookupElem: deprecated subtag [wiw] redefines the description [wirangu] previously defined by subtag [wgu] - ignored
+2026-11-02 20:19:05.504 T:3528    debug <general>: KODI::UTILS::I18N::CSubTagsCollection<struct KODI::UTILS::I18N::LanguageSubTag>::InsertDescLookupElem: subtag [wnw] redefines the description [wintu] previously defined by deprecated subtag [wit] - overwritten
+2026-11-02 20:19:05.504 T:3528    debug <general>: KODI::UTILS::I18N::CSubTagsCollection<struct KODI::UTILS::I18N::LanguageSubTag>::InsertDescLookupElem: subtag [wyn] redefines the description [wyandot] previously defined by deprecated subtag [wya] - overwritten
+2026-11-02 20:19:05.504 T:3528    debug <general>: KODI::UTILS::I18N::CSubTagsCollection<struct KODI::UTILS::I18N::LanguageSubTag>::InsertDescLookupElem: subtag [xch] redefines the description [chimakum] previously defined by deprecated subtag [cmk] - overwritten
+2026-11-02 20:19:05.505 T:3528    debug <general>: KODI::UTILS::I18N::CSubTagsCollection<struct KODI::UTILS::I18N::LanguageSubTag>::InsertDescLookupElem: subtag [ynq] redefines the description [yendang] previously defined by deprecated subtag [yen] - overwritten
+2026-11-02 20:19:05.505 T:3528    debug <general>: KODI::UTILS::I18N::CSubTagsCollection<struct KODI::UTILS::I18N::LanguageSubTag>::InsertDescLookupElem: subtag [yyr] redefines the description [yir yoront] previously defined by deprecated subtag [yiy] - overwritten
+2026-11-02 20:19:05.505 T:3528    debug <general>: KODI::UTILS::I18N::CSubTagsCollection<struct KODI::UTILS::I18N::LanguageSubTag>::InsertDescLookupElem: deprecated subtag [zua] redefines the description [zeem] previously defined by subtag [zem] - ignored
+2026-11-02 20:19:05.505 T:3528    debug <general>: KODI::UTILS::I18N::CSubTagsCollection<struct KODI::UTILS::I18N::GrandfatheredTag>::InsertDescLookupElem: deprecated subtag [zh-hakka] redefines the description [hakka] previously defined by deprecated subtag [i-hak] - ignored
+2026-11-02 20:19:05.506 T:3528    debug <general>: KODI::UTILS::I18N::CSubTagsCollection<struct KODI::UTILS::I18N::GrandfatheredTag>::InsertDescLookupElem: deprecated subtag [zh-min-nan] redefines the description [hokkien] previously defined by deprecated subtag [zh-min] - ignored
+2026-11-02 20:19:05.506 T:3528    debug <general>: KODI::UTILS::I18N::CSubTagsCollection<struct KODI::UTILS::I18N::GrandfatheredTag>::InsertDescLookupElem: deprecated subtag [zh-min-nan] redefines the description [amoy] previously defined by deprecated subtag [zh-min] - ignored
+2026-11-02 20:19:05.506 T:3528    debug <general>: KODI::UTILS::I18N::CSubTagsCollection<struct KODI::UTILS::I18N::GrandfatheredTag>::InsertDescLookupElem: deprecated subtag [zh-min-nan] redefines the description [taiwanese] previously defined by deprecated subtag [zh-min] - ignored
+2026-11-02 20:19:05.506 T:3528     info <general>: IANA Language Subtag Registry: 9296 records loaded
+2026-11-02 20:19:05.507 T:3528    debug <general>: trying to set locale to en-US
+2026-11-02 20:19:05.519 T:3528     info <general>: global locale set to en-US
+2026-11-02 20:19:05.519 T:3528     info <general>: CLangInfo: loading resource.language.en_gb language strings...
+2026-11-02 20:19:05.520 T:3528    debug <general>: POParser: PO file has Win Style Line Endings. Converted in memory to Linux LF for file: resource://resource.language.en_gb/strings.po
+2026-11-02 20:19:05.523 T:3528    debug <general>: LocalizeStrings: loaded 4627 strings from file resource://resource.language.en_gb/strings.po
+2026-11-02 20:19:05.523 T:3528    debug <general>: POParser: PO file has Win Style Line Endings. Converted in memory to Linux LF for file: C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\addons\audioencoder.kodi.builtin.aac\resources\language\resource.language.en_gb\strings.po
+2026-11-02 20:19:05.523 T:3528    debug <general>: LocalizeStrings: loaded 3 strings from file C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\addons\audioencoder.kodi.builtin.aac\resources\language\resource.language.en_gb\strings.po
+2026-11-02 20:19:05.524 T:3528    debug <general>: POParser: PO file has Win Style Line Endings. Converted in memory to Linux LF for file: C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\addons\audioencoder.kodi.builtin.wma\resources\language\resource.language.en_gb\strings.po
+2026-11-02 20:19:05.524 T:3528    debug <general>: LocalizeStrings: loaded 3 strings from file C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\addons\audioencoder.kodi.builtin.wma\resources\language\resource.language.en_gb\strings.po
+2026-11-02 20:19:05.524 T:3528    debug <general>: POParser: PO file has Win Style Line Endings. Converted in memory to Linux LF for file: C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\addons\game.controller.default\resources\language\resource.language.en_gb\strings.po
+2026-11-02 20:19:05.525 T:3528    debug <general>: LocalizeStrings: loaded 18 strings from file C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\addons\game.controller.default\resources\language\resource.language.en_gb\strings.po
+2026-11-02 20:19:05.525 T:3528    debug <general>: POParser: PO file has Win Style Line Endings. Converted in memory to Linux LF for file: C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\addons\game.controller.keyboard\resources\language\resource.language.en_gb\strings.po
+2026-11-02 20:19:05.525 T:3528    debug <general>: LocalizeStrings: loaded 141 strings from file C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\addons\game.controller.keyboard\resources\language\resource.language.en_gb\strings.po
+2026-11-02 20:19:05.526 T:3528    debug <general>: POParser: PO file has Win Style Line Endings. Converted in memory to Linux LF for file: C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\addons\game.controller.mouse\resources\language\resource.language.en_gb\strings.po
+2026-11-02 20:19:05.526 T:3528    debug <general>: LocalizeStrings: loaded 11 strings from file C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\addons\game.controller.mouse\resources\language\resource.language.en_gb\strings.po
+2026-11-02 20:19:05.526 T:3528    debug <general>: POParser: PO file has Win Style Line Endings. Converted in memory to Linux LF for file: C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\addons\game.controller.snes\resources\language\resource.language.en_gb\strings.po
+2026-11-02 20:19:05.526 T:3528    debug <general>: LocalizeStrings: loaded 13 strings from file C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\addons\game.controller.snes\resources\language\resource.language.en_gb\strings.po
+2026-11-02 20:19:05.527 T:3528    debug <general>: POParser: PO file has Win Style Line Endings. Converted in memory to Linux LF for file: C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\addons\metadata.album.universal\resources\language\resource.language.en_gb\strings.po
+2026-11-02 20:19:05.527 T:3528    debug <general>: LocalizeStrings: loaded 17 strings from file C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\addons\metadata.album.universal\resources\language\resource.language.en_gb\strings.po
+2026-11-02 20:19:05.527 T:3528    debug <general>: POParser: PO file has Win Style Line Endings. Converted in memory to Linux LF for file: C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\addons\metadata.artists.universal\resources\language\resource.language.en_gb\strings.po
+2026-11-02 20:19:05.527 T:3528    debug <general>: LocalizeStrings: loaded 32 strings from file C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\addons\metadata.artists.universal\resources\language\resource.language.en_gb\strings.po
+2026-11-02 20:19:05.528 T:3528    debug <general>: LocalizeStrings: loaded 17 strings from file C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\portable_data\addons\metadata.generic.albums\resources\language\resource.language.en_gb\strings.po
+2026-11-02 20:19:05.529 T:3528    debug <general>: LocalizeStrings: loaded 15 strings from file C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\portable_data\addons\metadata.generic.artists\resources\language\resource.language.en_gb\strings.po
+2026-11-02 20:19:05.530 T:3528    debug <general>: POParser: PO file has Win Style Line Endings. Converted in memory to Linux LF for file: C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\addons\metadata.themoviedb.org.python\resources\language\resource.language.en_gb\strings.po
+2026-11-02 20:19:05.530 T:3528    debug <general>: LocalizeStrings: loaded 24 strings from file C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\addons\metadata.themoviedb.org.python\resources\language\resource.language.en_gb\strings.po
+2026-11-02 20:19:05.530 T:3528    debug <general>: LocalizeStrings: loaded 34 strings from file C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\portable_data\addons\metadata.tvshows.themoviedb.org.python\resources\language\resource.language.en_gb\strings.po
+2026-11-02 20:19:05.531 T:3528    debug <general>: POParser: PO file has Win Style Line Endings. Converted in memory to Linux LF for file: C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\portable_data\addons\peripheral.joystick\resources\language\resource.language.en_gb\strings.po
+2026-11-02 20:19:05.531 T:3528    debug <general>: LocalizeStrings: loaded 9 strings from file C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\portable_data\addons\peripheral.joystick\resources\language\resource.language.en_gb\strings.po
+2026-11-02 20:19:05.531 T:3528    debug <general>: POParser: PO file has Win Style Line Endings. Converted in memory to Linux LF for file: C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\addons\repository.xbmc.org\resources\language\resource.language.en_gb\strings.po
+2026-11-02 20:19:05.531 T:3528    debug <general>: LocalizeStrings: loaded 0 strings from file C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\addons\repository.xbmc.org\resources\language\resource.language.en_gb\strings.po
+2026-11-02 20:19:05.533 T:3528    debug <general>: POParser: PO file has Win Style Line Endings. Converted in memory to Linux LF for file: C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\addons\screensaver.xbmc.builtin.dim\resources\language\resource.language.en_gb\strings.po
+2026-11-02 20:19:05.533 T:3528    debug <general>: LocalizeStrings: loaded 3 strings from file C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\addons\screensaver.xbmc.builtin.dim\resources\language\resource.language.en_gb\strings.po
+2026-11-02 20:19:05.533 T:3528    debug <general>: LocalizeStrings: loaded 114 strings from file C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\portable_data\addons\script.artistslideshow\resources\language\resource.language.en_gb\strings.po
+2026-11-02 20:19:05.536 T:3528    debug <general>: LocalizeStrings: loaded 22 strings from file C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\portable_data\addons\service.xbmc.versioncheck\resources\language\resource.language.en_gb\strings.po
+2026-11-02 20:19:05.537 T:3528    debug <general>: No media sources file at special://profile/mediasources.xml
+2026-11-02 20:19:05.537 T:33528   debug <general>: Thread JobWorker start, auto delete: true
+2026-11-02 20:19:05.537 T:33528   debug <general>: [threads] name: 'JobWorker' priority: idle
+2026-11-02 20:19:05.537 T:33528   debug <general>: CDatabaseManager::InitializeInternal: updating databases...
+2026-11-02 20:19:05.538 T:33528    info <general>: Running database version Addons33
+2026-11-02 20:19:05.539 T:33528    info <general>: Running database version ViewModes6
+2026-11-02 20:19:05.540 T:33528    info <general>: Running database version Games1
+2026-11-02 20:19:05.541 T:33528    info <general>: Running database version Textures14
+2026-11-02 20:19:05.542 T:33528    info <general>: Running database version MyMusic84
+2026-11-02 20:19:05.543 T:33528    info <general>: Running database version MyVideos149
+2026-11-02 20:19:05.544 T:33528    info <general>: Running database version TV48
+2026-11-02 20:19:05.545 T:33528    info <general>: Running database version Epg22
+2026-11-02 20:19:05.545 T:33528   debug <general>: CDatabaseManager::InitializeInternal: updating databases... DONE
+2026-11-02 20:19:05.573 T:3528     info <general>: Unloaded skin
+2026-11-02 20:19:05.582 T:3528     info <general>:   load skin from: C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\portable_data\addons\skin.horizonzv\ (version: 1.22.0.1)
+2026-11-02 20:19:05.582 T:3528     info <general>:   load fonts for skin...
+2026-11-02 20:19:05.582 T:3528     info <general>: Loading skin includes from C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\portable_data\addons\skin.horizonzv\xml\Includes.xml
+2026-11-02 20:19:05.637 T:3528     info <general>: GUIFontManager::LoadFontsFromFile: Loading <fontset> with name 'Default' from 'C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\portable_data\addons\skin.horizonzv\xml\Font.xml'
+2026-11-02 20:19:05.662 T:3528    debug <general>: POParser: PO file has Win Style Line Endings. Converted in memory to Linux LF for file: C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\portable_data\addons\skin.horizonzv\language\resource.language.en_gb\strings.po
+2026-11-02 20:19:05.662 T:3528    debug <general>: LocalizeStrings: loaded 294 strings from file C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\portable_data\addons\skin.horizonzv\language\resource.language.en_gb\strings.po
+2026-11-02 20:19:05.662 T:3528     info <general>: ADDON::CSkinInfo::LoadTimers: Trying to load skin timers from C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\portable_data\addons\skin.horizonzv\xml\Timers.xml
+2026-11-02 20:19:05.662 T:3528     info <general>:   load new skin...
+2026-11-02 20:19:05.662 T:3528     info <general>: Loading custom window XMLs from skin path C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\portable_data\addons\skin.horizonzv\xml
+2026-11-02 20:19:05.671 T:3528    debug <general>: Load Skin XML: 8.35 ms
+2026-11-02 20:19:05.671 T:3528     info <general>:   initialize new skin...
+2026-11-02 20:19:05.671 T:3528    debug <general>: guilib: Fill viewport on change for solving rendering passes
+2026-11-02 20:19:05.671 T:3528     info <general>: Loading skin file: DialogBusy.xml, load type: LOAD_ON_GUI_INIT
+2026-11-02 20:19:05.671 T:3528     info <general>: Loading skin file: Pointer.xml, load type: LOAD_ON_GUI_INIT
+2026-11-02 20:19:05.671 T:3528     info <general>: Loading skin file: DialogVolumeBar.xml, load type: LOAD_ON_GUI_INIT
+2026-11-02 20:19:05.672 T:3528    debug <general>: CTextureBundleXBT::OpenBundle - Opened bundle C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\portable_data\addons\skin.horizonzv\media\Textures.xbt
+2026-11-02 20:19:05.675 T:3528     info <general>: Loading skin file: DialogExtendedProgressBar.xml, load type: LOAD_ON_GUI_INIT
+2026-11-02 20:19:05.675 T:3528     info <general>: Loading skin file: DialogSeekBar.xml, load type: LOAD_ON_GUI_INIT
+2026-11-02 20:19:05.680 T:3528     info <general>: Loading skin file: DialogNotification.xml, load type: LOAD_ON_GUI_INIT
+2026-11-02 20:19:05.681 T:3528     info <general>: Loading skin file: DialogBusy.xml, load type: LOAD_ON_GUI_INIT
+2026-11-02 20:19:05.681 T:3528     info <general>: Loading skin file: Custom_1100_Artistslideshow_Artistinfo.xml, load type: LOAD_ON_GUI_INIT
+2026-11-02 20:19:05.683 T:3528     info <general>: Loading skin file: Custom_1400_MusicOverlay.xml, load type: LOAD_ON_GUI_INIT
+2026-11-02 20:19:05.686 T:3528     info <general>: Loading skin file: Custom_1401_VideoOverlay.xml, load type: LOAD_ON_GUI_INIT
+2026-11-02 20:19:05.687 T:3528     info <general>: Loading skin file: Custom_1600_Overlay.xml, load type: LOAD_ON_GUI_INIT
+2026-11-02 20:19:05.688 T:3528     info <general>: Loading resource://resource.uisounds.kodi/sounds.xml
+2026-11-02 20:19:05.690 T:44600   debug <general>: Thread Timer start, auto delete: false
+2026-11-02 20:19:05.691 T:3528     info <general>:   skin loaded...
+2026-11-02 20:19:05.691 T:3528    debug <general>: Activating window ID: 12997
+2026-11-02 20:19:05.691 T:3528    debug <general>: ------ Window Init () ------
+2026-11-02 20:19:05.694 T:3528    debug <general>: JSONRPC: JSON schema type definition references an unknown type Setting.Details.Setting
+2026-11-02 20:19:05.694 T:3528  warning <general>: JSONRPC: Could not parse type "Setting.Details.SettingList"
+2026-11-02 20:19:05.694 T:3528     info <general>: JSONRPC: Adding type "Setting.Details.SettingList" to list of incomplete definitions (waiting for "Setting.Details.Setting")
+2026-11-02 20:19:05.694 T:3528     info <general>: JSONRPC: Resolving incomplete types/methods referencing Setting.Details.Setting
+2026-11-02 20:19:05.699 T:3528     info <general>: JSONRPC v13.1000.0: Successfully initialized
+2026-11-02 20:19:05.699 T:3528    debug <general>: PERIPHERALS::CPeripherals::LoadMappings: loaded node "Motorola Nyxboard Hybrid"
+2026-11-02 20:19:05.700 T:3528    debug <general>: PERIPHERALS::CPeripherals::LoadMappings: loaded node "CEC Adapter"
+2026-11-02 20:19:05.700 T:3528    debug <general>: PERIPHERALS::CPeripherals::LoadMappings: loaded node "Pulse-Eight CEC Adapter"
+2026-11-02 20:19:05.700 T:3528    debug <general>: PERIPHERALS::CPeripherals::LoadMappings: loaded node "iMON HID device"
+2026-11-02 20:19:05.700 T:3528    debug <general>: PERIPHERALS::CPeripherals::LoadMappings: loaded node "WETEK Play remote"
+2026-11-02 20:19:05.700 T:3528    debug <general>: PERIPHERALS::CPeripherals::LoadMappings: loaded node "OSMC RF Remote"
+2026-11-02 20:19:05.700 T:3528    debug <general>: Skipped 1 duplicate messages..
+2026-11-02 20:19:05.700 T:3528    debug <general>: PERIPHERALS::CPeripherals::LoadMappings: loaded node "Flirc"
+2026-11-02 20:19:05.700 T:3528    debug <general>: PERIPHERALS::CPeripherals::LoadMappings: loaded node "joystick"
+2026-11-02 20:19:05.700 T:3528    debug <general>: PERIPHERALS::CPeripherals::LoadMappings: loaded node "keyboard"
+2026-11-02 20:19:05.700 T:3528    debug <general>: PERIPHERALS::CPeripherals::LoadMappings: loaded node "mouse"
+2026-11-02 20:19:05.700 T:3528    debug <general>: Add-on bus: Registering add-on peripheral.joystick
+2026-11-02 20:19:05.700 T:3528    debug <general>: PERIPHERAL - PERIPHERALS::CPeripheralAddon::CreateAddon - creating peripheral add-on instance 'Joystick Support'
+2026-11-02 20:19:05.700 T:3528    debug <general>: ADDON: Dll Initializing - Joystick Support
+2026-11-02 20:19:05.700 T:3528    debug <general>: SECTION:LoadDLL(C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\portable_data\addons\peripheral.joystick\peripheral.joystick.dll)
+2026-11-02 20:19:05.703 T:3528    debug <peripheral.joystick>: Loaded 14 joystick families with 102 total joysticks
+2026-11-02 20:19:05.703 T:3528    debug <general>: Calling TransferSettings for: Joystick Support
+2026-11-02 20:19:05.703 T:3528     info <peripheral.joystick>: Enabling joystick interface "xinput"
+2026-11-02 20:19:05.703 T:3528    debug <peripheral.joystick>: Attempting to load XInput1_4.dll...
+2026-11-02 20:19:05.704 T:3528    debug <peripheral.joystick>: Loaded XInput DLL version 1.4
+2026-11-02 20:19:05.704 T:3528    debug <peripheral.joystick>: Loaded XInput symbols (GetState=0000000000000000, GetStateEx=00007FFC9AA99BD0, SetState=00007FFC9AA99FA0, GetCaps=00007FFC9AA995B0, GetBatteryInformation=00007FFC9AA99360, PowerOff=00007FFC9AA99E30)
+2026-11-02 20:19:05.704 T:3528     info <peripheral.joystick>: Enabling joystick interface "directinput"
+2026-11-02 20:19:05.704 T:44864   debug <general>: Thread PeripBusUSB start, auto delete: false
+2026-11-02 20:19:05.704 T:3528    debug <general>: [threads] name: 'PeripBusUSB' priority: below normal
+2026-11-02 20:19:05.704 T:15876   debug <general>: Thread PeripBusCEC start, auto delete: false
+2026-11-02 20:19:05.704 T:3528    debug <general>: [threads] name: 'PeripBusCEC' priority: below normal
+2026-11-02 20:19:05.704 T:43188   debug <general>: Thread PeripBusAddon start, auto delete: false
+2026-11-02 20:19:05.704 T:3528    debug <general>: [threads] name: 'PeripBusAddon' priority: below normal
+2026-11-02 20:19:05.704 T:3528    debug <general>: PERIPHERALS::CPeripherals::GetMappingForDevice - device (0000:0000) mapped to keyboard (type = keyboard)
+2026-11-02 20:19:05.704 T:3528     info <general>: Loading controller layout: C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\addons\game.controller.keyboard\resources\layout.xml
+2026-11-02 20:19:05.705 T:3528    debug <general>: PERIPHERALS::CPeripheral::Initialise - initialised peripheral on 'keyboard' with 1 features and 0 sub devices
+2026-11-02 20:19:05.705 T:3528     info <general>: PERIPHERALS::CPeripheralBus::Register - new keyboard device registered on application->keyboard: Keyboard (0000:0000)
+2026-11-02 20:19:05.705 T:3528    debug <general>: PERIPHERALS::CPeripherals::GetMappingForDevice - device (0000:0000) mapped to mouse (type = mouse)
+2026-11-02 20:19:05.705 T:3528     info <general>: Loading controller layout: C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\addons\game.controller.mouse\resources\layout.xml
+2026-11-02 20:19:05.705 T:3528    debug <general>: PERIPHERALS::CPeripheral::Initialise - initialised peripheral on 'mouse' with 1 features and 0 sub devices
+2026-11-02 20:19:05.705 T:3528     info <general>: PERIPHERALS::CPeripheralBus::Register - new mouse device registered on application->mouse: Mouse (0000:0000)
+2026-11-02 20:19:05.705 T:44328   debug <general>: Thread PeripEventScan start, auto delete: false
+2026-11-02 20:19:05.706 T:3528    debug <general>: ContextMenuManager: addon menus reloaded.
+2026-11-02 20:19:05.706 T:3528     info <general>: Loading player core factory settings from special://xbmc/system/playercorefactory.xml.
+2026-11-02 20:19:05.706 T:3528    debug <general>: CPlayerCoreConfig::<ctor>: created player VideoPlayer
+2026-11-02 20:19:05.706 T:3528    debug <general>: CPlayerCoreConfig::<ctor>: created player PAPlayer
+2026-11-02 20:19:05.706 T:3528    debug <general>: CPlayerCoreConfig::<ctor>: created player RetroPlayer
+2026-11-02 20:19:05.706 T:3528    debug <general>: CPlayerSelectionRule::Initialize: creating rule: system rules
+2026-11-02 20:19:05.706 T:3528    debug <general>: CPlayerSelectionRule::Initialize: creating rule: mms/udp
+2026-11-02 20:19:05.706 T:3528    debug <general>: CPlayerSelectionRule::Initialize: creating rule: lastfm/shout
+2026-11-02 20:19:05.706 T:3528    debug <general>: CPlayerSelectionRule::Initialize: creating rule: rtmp
+2026-11-02 20:19:05.706 T:3528    debug <general>: CPlayerSelectionRule::Initialize: creating rule: rtsp
+2026-11-02 20:19:05.706 T:3528    debug <general>: CPlayerSelectionRule::Initialize: creating rule: streams
+2026-11-02 20:19:05.706 T:3528    debug <general>: CPlayerSelectionRule::Initialize: creating rule: aacp/sdp
+2026-11-02 20:19:05.706 T:3528    debug <general>: CPlayerSelectionRule::Initialize: creating rule: mp2
+2026-11-02 20:19:05.706 T:3528    debug <general>: CPlayerSelectionRule::Initialize: creating rule: dvd
+2026-11-02 20:19:05.706 T:3528    debug <general>: CPlayerSelectionRule::Initialize: creating rule: discimage
+2026-11-02 20:19:05.706 T:3528    debug <general>: CPlayerSelectionRule::Initialize: creating rule: sdp/asf
+2026-11-02 20:19:05.706 T:3528    debug <general>: CPlayerSelectionRule::Initialize: creating rule: nsv
+2026-11-02 20:19:05.706 T:3528    debug <general>: CPlayerSelectionRule::Initialize: creating rule: radio
+2026-11-02 20:19:05.706 T:3528     info <general>: Loaded playercorefactory configuration
+2026-11-02 20:19:05.706 T:3528     info <general>: Loading player core factory settings from special://masterprofile/playercorefactory.xml.
+2026-11-02 20:19:05.706 T:3528     info <general>: special://masterprofile/playercorefactory.xml does not exist. Skipping.
+2026-11-02 20:19:05.706 T:3528    debug <general>: Activating window ID: 12999
+2026-11-02 20:19:05.706 T:3528    debug <general>: ------ Window Init (Startup.xml) ------
+2026-11-02 20:19:05.706 T:3528     info <general>: Loading skin file: Startup.xml, load type: LOAD_EVERY_TIME
+2026-11-02 20:19:05.707 T:3528  warning <general>: CApplication::Initialize - startup.xml taints init process
+2026-11-02 20:19:05.707 T:3528     info <general>: removing tempfiles
+2026-11-02 20:19:05.708 T:3528    debug <general>: CRepositoryUpdater: closest next update check at 11/03/2026 2:04:03 AM (in 20697s)
+2026-11-02 20:19:05.708 T:3528    debug <general>: CRepositoryUpdater: checking in 20697000ms
+2026-11-02 20:19:05.708 T:34016   debug <general>: Thread Timer start, auto delete: false
+2026-11-02 20:19:05.708 T:3528    debug <general>: CServiceAddonManager: starting service.xbmc.versioncheck
+2026-11-02 20:19:05.709 T:43208   debug <general>: Thread LanguageInvoker start, auto delete: false
+2026-11-02 20:19:05.709 T:3528     info <general>: initialize done
+2026-11-02 20:19:05.709 T:3528     info <general>: Running the application...
+2026-11-02 20:19:05.709 T:43208   debug <general>: initializing python script
+2026-11-02 20:19:05.709 T:43208   debug <general>: CPythonInvoker(0, C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\portable_data\addons\service.xbmc.versioncheck\resources\lib\runner.py): start processing
+2026-11-02 20:19:05.709 T:3528    debug <general>: Activating window ID: 10000
+2026-11-02 20:19:05.709 T:3528    debug <general>: ------ Window Deinit (Startup.xml) ------
+2026-11-02 20:19:05.709 T:3528    debug <general>: ------ Window Init (Home.xml) ------
+2026-11-02 20:19:05.709 T:3528     info <general>: Loading skin file: Home.xml, load type: KEEP_IN_MEMORY
+2026-11-02 20:19:05.715 T:18984   debug <general>: CMMNotificationClient::OnPropertyValueChanged: Changed device property of {0.0.0.00000000}.{cd74cfe6-0a9a-4f81-a273-7975c79993c9} is (9855c4cd-df8c-449c-a181-8191b68bd06c)#0
+2026-11-02 20:19:05.724 T:43208   debug <general>: -->Python Interpreter Initialized<--
+2026-11-02 20:19:05.724 T:43208   debug <general>: 
+                                                   
+2026-11-02 20:19:05.724 T:43208   debug <general>: CPythonInvoker(0, C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\portable_data\addons\service.xbmc.versioncheck\resources\lib\runner.py): the source file to load is "C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\portable_data\addons\service.xbmc.versioncheck\resources\lib\runner.py"
+2026-11-02 20:19:05.724 T:43208   debug <general>: CPythonInvoker(0): full python path:
+2026-11-02 20:19:05.724 T:43208   debug <general>: CPythonInvoker(0):   custom python path:
+2026-11-02 20:19:05.724 T:43208   debug <general>: CPythonInvoker(0):     C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\portable_data\addons\service.xbmc.versioncheck\resources\lib
+2026-11-02 20:19:05.724 T:43208   debug <general>: CPythonInvoker(0):   default python path:
+2026-11-02 20:19:05.724 T:43208   debug <general>: CPythonInvoker(0):     C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\system\python\DLLs
+2026-11-02 20:19:05.724 T:43208   debug <general>: CPythonInvoker(0):     C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\system\python\Lib
+2026-11-02 20:19:05.724 T:43208   debug <general>: CPythonInvoker(0):     C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\system\python\Lib\site-packages
+2026-11-02 20:19:05.724 T:43208   debug <general>: CPythonInvoker(0):     C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\python314.zip
+2026-11-02 20:19:05.724 T:43208   debug <general>: CPythonInvoker(0):     C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440
+2026-11-02 20:19:05.724 T:43208   debug <general>: CPythonInvoker(0):     C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\system\python
+2026-11-02 20:19:05.724 T:43208   debug <general>: CPythonInvoker(0): adding args:
+2026-11-02 20:19:05.724 T:43208   debug <general>: CPythonInvoker(0):  
+2026-11-02 20:19:05.724 T:43208   debug <general>: CPythonInvoker(0, C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\portable_data\addons\service.xbmc.versioncheck\resources\lib\runner.py): entering source directory C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\portable_data\addons\service.xbmc.versioncheck\resources\lib
+2026-11-02 20:19:05.724 T:43208   debug <general>: CPythonInvoker(0, C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\portable_data\addons\service.xbmc.versioncheck\resources\lib\runner.py): instantiating addon using automatically obtained id of "service.xbmc.versioncheck" dependent on version 3.0.0 of the xbmc.python api
+2026-11-02 20:19:05.801 T:43208   debug <general>: Version Check: Version 0.5.30+matrix.1 started
+2026-11-02 20:19:05.808 T:3528    debug <general>: CDirectoryProvider[sources://video/]: refreshing...
+2026-11-02 20:19:05.808 T:3528    debug <general>: CDirectoryProvider[special://videoplaylists/]: refreshing...
+2026-11-02 20:19:05.808 T:42408   debug <general>: Thread JobWorker start, auto delete: true
+2026-11-02 20:19:05.808 T:42408   debug <general>: [threads] name: 'JobWorker' priority: idle
+2026-11-02 20:19:05.809 T:3528    debug <general>: CDirectoryProvider[special://skin/playlists/Videos_inprogress.xsp]: refreshing...
+2026-11-02 20:19:05.809 T:3976    debug <general>: Thread JobWorker start, auto delete: true
+2026-11-02 20:19:05.809 T:3976    debug <general>: [threads] name: 'JobWorker' priority: idle
+2026-11-02 20:19:05.809 T:3528    debug <general>: CDirectoryProvider[videodb://movies/titles]: refreshing...
+2026-11-02 20:19:05.809 T:3528    debug <general>: CDirectoryProvider[special://skin/playlists/Videos_recently.xsp]: refreshing...
+2026-11-02 20:19:05.809 T:3528    debug <general>: CDirectoryProvider[pvr://recordings/tv/active?view=flat]: refreshing...
+2026-11-02 20:19:05.809 T:3528    debug <general>: CDirectoryProvider[pvr://timers/tv/timers]: refreshing...
+2026-11-02 20:19:05.809 T:3528    debug <general>: CDirectoryProvider[pvr://channels/tv/*]: refreshing...
+2026-11-02 20:19:05.809 T:3528    debug <general>: CDirectoryProvider[addons://sources/game/]: refreshing...
+2026-11-02 20:19:05.809 T:42408   debug <general>: CMultiPathDirectory::GetDirectory(multipath://special%3a%2f%2fprofile%2fplaylists%2fvideo/special%3a%2f%2fprofile%2fplaylists%2fmixed/)
+2026-11-02 20:19:05.809 T:42408   debug <general>: Getting Directory (special://profile/playlists/video)
+2026-11-02 20:19:05.810 T:18984   debug <general>: CMMNotificationClient::OnPropertyValueChanged: Changed device property of {0.0.0.00000000}.{5c871c32-a9e7-46e3-ada8-830db4ca6e4e} is (9855c4cd-df8c-449c-a181-8191b68bd06c)#0
+2026-11-02 20:19:05.810 T:42408   debug <general>: Getting Directory (special://profile/playlists/mixed)
+2026-11-02 20:19:05.810 T:3528    debug <general>: CDirectoryProvider[videodb://movies/titles/]: refreshing...
+2026-11-02 20:19:05.810 T:3528    debug <general>: CDirectoryProvider[videodb://tvshows/titles/]: refreshing...
+2026-11-02 20:19:05.810 T:3528    debug <general>: CDirectoryProvider[musicdb://artists/]: refreshing...
+2026-11-02 20:19:05.811 T:42408   debug <general>: CMultiPathDirectory::MergeItems, items = 0
+2026-11-02 20:19:05.812 T:42408   debug <general>: CMultiPathDirectory::GetDirectory(multipath://special%3a%2f%2fprofile%2fplaylists%2fvideo/special%3a%2f%2fprofile%2fplaylists%2fmixed/)
+2026-11-02 20:19:05.812 T:42408   debug <general>: Getting Directory (special://profile/playlists/video)
+2026-11-02 20:19:05.813 T:42408   debug <general>: Getting Directory (special://profile/playlists/mixed)
+2026-11-02 20:19:05.813 T:42408   debug <general>: CMultiPathDirectory::MergeItems, items = 0
+2026-11-02 20:19:05.816 T:42408   debug <general>: CMultiPathDirectory::GetDirectory(multipath://special%3a%2f%2fprofile%2fplaylists%2fvideo/special%3a%2f%2fprofile%2fplaylists%2fmixed/)
+2026-11-02 20:19:05.816 T:42408   debug <general>: Getting Directory (special://profile/playlists/video)
+2026-11-02 20:19:05.816 T:42408   debug <general>: Getting Directory (special://profile/playlists/mixed)
+2026-11-02 20:19:05.817 T:36424   debug <general>: Thread Timer start, auto delete: false
+2026-11-02 20:19:05.817 T:42408   debug <general>: CMultiPathDirectory::MergeItems, items = 0
+2026-11-02 20:19:05.819 T:36424   debug <general>: Thread Timer 36424 terminating
+2026-11-02 20:19:05.819 T:46020   debug <general>: Thread Timer start, auto delete: false
+2026-11-02 20:19:05.821 T:46020   debug <general>: Thread Timer 46020 terminating
+2026-11-02 20:19:05.821 T:44848   debug <general>: Thread Timer start, auto delete: false
+2026-11-02 20:19:05.822 T:33528   debug <general>: CMusicDatabase::GetArtistsByWhere: query: SELECT artistview.* FROM artistview  WHERE (EXISTS (SELECT 1 FROM `song_artist` WHERE song_artist.idArtist = artistview.idArtist AND song_artist.idRole = 1) OR EXISTS (SELECT 1 FROM `album_artist` WHERE album_artist.idArtist = artistview.idArtist)) AND (artistview.strArtist != '') ORDER BY artistview.idArtist
+2026-11-02 20:19:05.823 T:44848   debug <general>: Thread Timer 44848 terminating
+2026-11-02 20:19:05.823 T:43108   debug <general>: Thread Timer start, auto delete: false
+2026-11-02 20:19:05.825 T:3976    debug <general>: CRecentlyAddedJob::UpdateMusic() - Running RecentlyAdded home screen update
+2026-11-02 20:19:05.825 T:3528    debug <general>: CNetworkBase::NetworkMessage - Starting network services
+2026-11-02 20:19:05.825 T:19740   debug <general>: Thread EventServer start, auto delete: false
+2026-11-02 20:19:05.825 T:19740    info <general>: ES: Starting UDP Event server on port 9777
+2026-11-02 20:19:05.826 T:19740    info <general>: UDP: Listening on port 9777 (ipv6 : false)
+2026-11-02 20:19:05.826 T:3528     info <general>: JSONRPC Server: Successfully initialized
+2026-11-02 20:19:05.826 T:20124   debug <general>: Thread TCPServer start, auto delete: false
+2026-11-02 20:19:05.828 T:3528     info <CWebserver[18082]>: Started on port 18082
+2026-11-02 20:19:05.828 T:3976    debug <general>: GetRecentlyAddedAlbumSongs() query: SELECT songview.*, songartistview.* FROM (SELECT idAlbum, dateAdded FROM album ORDER BY dateAdded DESC LIMIT 10) AS recentalbums JOIN songview ON songview.idAlbum = recentalbums.idAlbum JOIN songartistview ON songview.idSong = songartistview.idSong ORDER BY recentalbums.dateAdded DESC, songview.idAlbum DESC, songview.idSong, songartistview.idRole, songartistview.iOrder 
+2026-11-02 20:19:05.828 T:3976    debug <general>: CMusicDatabase::GetRecentlyAddedAlbums: query: SELECT albumview.*, albumartistview.* FROM (SELECT idAlbum FROM album WHERE strAlbum != '' ORDER BY dateAdded DESC LIMIT 10) AS recentalbums JOIN albumview ON albumview.idAlbum = recentalbums.idAlbum JOIN albumartistview ON albumview.idAlbum = albumartistview.idAlbum ORDER BY dateAdded DESC, albumview.idAlbum desc, albumartistview.iOrder 
+2026-11-02 20:19:05.829 T:3976    debug <general>: CRecentlyAddedJob::UpdateVideos() - Running RecentlyAdded home screen update
+2026-11-02 20:19:05.832 T:3528     info <general>: [WS-Discovery]: Daemon started successfully.
+2026-11-02 20:19:05.857 T:3528    debug <general>: ------ Window Init (Pointer.xml) ------
+2026-11-02 20:19:05.859 T:3528    debug <general>: ------ Window Init (Custom_1600_Overlay.xml) ------
+2026-11-02 20:19:05.860 T:3976    debug <general>: CRecentlyAddedJob::UpdateTotal() - Running RecentlyAdded home screen update
+2026-11-02 20:19:05.950 T:18984   debug <general>: CMMNotificationClient::OnPropertyValueChanged: Changed device property of {0.0.0.00000000}.{5d1cfe4e-3530-422b-8e95-4c5ca751e092} is (9855c4cd-df8c-449c-a181-8191b68bd06c)#0
+2026-11-02 20:19:06.059 T:35904   debug <general>: CIRServerSuite::Connect: connecting to: 127.0.0.1:24000 ...
+2026-11-02 20:19:06.325 T:43108   debug <general>: Thread Timer 43108 terminating
+2026-11-02 20:19:06.337 T:18984   debug <general>: CMMNotificationClient::OnPropertyValueChanged: Changed device property of {0.0.0.00000000}.{de273737-3f43-4b31-92e6-bc681ed5db57} is (9855c4cd-df8c-449c-a181-8191b68bd06c)#0
+2026-11-02 20:19:08.093 T:35904   debug <general>: CIRServerSuite::Connect: failed to connect
+2026-11-02 20:19:08.093 T:35904    info <general>: CIRServerSuite::Process: failed to connect to irss, will keep retrying every 5 seconds
+2026-11-02 20:19:08.271 T:3528    debug <general>: ------ Window Deinit (Pointer.xml) ------
+2026-11-02 20:19:10.805 T:43208   debug <general>: Version Check: Version installed {'major': 22, 'minor': 0, 'revision': '20260927-28ea2eac1eb', 'tag': 'releasecandidate', 'tagversion': '1'}
+2026-11-02 20:19:10.805 T:43208   debug <general>: CPythonInvoker(0, C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\portable_data\addons\service.xbmc.versioncheck\resources\lib\runner.py): script successfully run in 5096ms
+2026-11-02 20:19:10.805 T:43208   debug <general>: CPythonInvoker::onExecutionDone(0, C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\portable_data\addons\service.xbmc.versioncheck\resources\lib\runner.py)
+2026-11-02 20:19:10.809 T:43208   debug <general>: Python interpreter stopped
+2026-11-02 20:19:10.809 T:43208   debug <general>: Thread LanguageInvoker 43208 terminating
+2026-11-02 20:19:15.843 T:28412   debug <general>: [WS-Discovery]: The initial servers search has completed successfully with 1 server(s) found:
+                                                   127.0.0.1
+2026-11-02 20:19:15.891 T:45312   debug <CWebserver[18082]>: request received for /jsonrpc
+2026-11-02 20:19:15.896 T:3528    debug <general>: Activating window ID: 10025
+2026-11-02 20:19:16.080 T:3528    debug <general>: ------ Window Deinit (Home.xml) ------
+2026-11-02 20:19:16.080 T:3528    debug <general>: FreeVisualisation() done
+2026-11-02 20:19:16.091 T:3528    debug <general>: ------ Window Init (MyVideoNav.xml) ------
+2026-11-02 20:19:16.091 T:3528     info <general>: Loading skin file: MyVideoNav.xml, load type: KEEP_IN_MEMORY
+2026-11-02 20:19:16.195 T:3528    debug <general>: CGUIMediaWindow::GetDirectory (videodb://movies/titles/)
+2026-11-02 20:19:16.195 T:3528    debug <general>:   ParentPath = [videodb://movies/]
+2026-11-02 20:19:16.199 T:22512   debug <general>: Thread BackgroundLoader start, auto delete: false
+2026-11-02 20:19:16.199 T:3528    debug <general>: [threads] name: 'BackgroundLoader' priority: below normal
+2026-11-02 20:19:16.202 T:22512   debug <general>: Thread BackgroundLoader 22512 terminating
+2026-11-02 20:19:16.218 T:3528    debug <general>: [Warning] CGUITextureManager::GetTexturePath: could not find texture 'OverlayUnwatched.png'
+2026-11-02 20:19:16.292 T:5392    debug <CWebserver[18082]>: request received for /jsonrpc
+2026-11-02 20:19:16.327 T:3528    debug <general>: Skipped 1 duplicate messages..
+2026-11-02 20:19:16.327 T:3528    debug <general>: [Warning] CGUITextureManager::GetTexturePath: could not find texture 'OverlayUnwatched.png'
+2026-11-02 20:19:16.422 T:43736   debug <CWebserver[18082]>: request received for /jsonrpc
+2026-11-02 20:19:16.446 T:3528    debug <general>: Skipped 1 duplicate messages..
+2026-11-02 20:19:16.446 T:3528    debug <general>: CPlayerCoreFactory::GetPlayers(C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\portable_data\testmedia\library_movies\Skin Audit Movie (2026)\Skin Audit Movie (2026).avi)
+2026-11-02 20:19:16.446 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: system rules
+2026-11-02 20:19:16.446 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: matches rule: system rules
+2026-11-02 20:19:16.446 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: mms/udp
+2026-11-02 20:19:16.446 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: lastfm/shout
+2026-11-02 20:19:16.446 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: rtmp
+2026-11-02 20:19:16.446 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: rtsp
+2026-11-02 20:19:16.446 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: streams
+2026-11-02 20:19:16.446 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: dvd
+2026-11-02 20:19:16.446 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: discimage
+2026-11-02 20:19:16.446 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: sdp/asf
+2026-11-02 20:19:16.446 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: nsv
+2026-11-02 20:19:16.446 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: radio
+2026-11-02 20:19:16.446 T:3528    debug <general>: CPlayerCoreFactory::GetPlayers: matched 0 rules with players
+2026-11-02 20:19:16.446 T:3528    debug <general>: CPlayerCoreFactory::GetPlayers: adding videodefaultplayer (VideoPlayer)
+2026-11-02 20:19:16.446 T:3528    debug <general>: CPlayerCoreFactory::GetPlayers: for video=true, audio=false
+2026-11-02 20:19:16.446 T:3528    debug <general>: CPlayerCoreFactory::GetPlayers: for video=true, audio=true
+2026-11-02 20:19:16.446 T:3528    debug <general>: CPlayerCoreFactory::GetPlayers: added 1 players
+2026-11-02 20:19:16.446 T:3528    debug <general>: CPlayerCoreFactory::GetPlayers(C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\portable_data\testmedia\library_movies\Skin Audit Movie (2026)\Skin Audit Movie (2026).avi)
+2026-11-02 20:19:16.446 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: system rules
+2026-11-02 20:19:16.446 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: matches rule: system rules
+2026-11-02 20:19:16.446 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: mms/udp
+2026-11-02 20:19:16.446 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: lastfm/shout
+2026-11-02 20:19:16.446 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: rtmp
+2026-11-02 20:19:16.446 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: rtsp
+2026-11-02 20:19:16.446 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: streams
+2026-11-02 20:19:16.446 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: dvd
+2026-11-02 20:19:16.446 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: discimage
+2026-11-02 20:19:16.446 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: sdp/asf
+2026-11-02 20:19:16.446 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: nsv
+2026-11-02 20:19:16.446 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: radio
+2026-11-02 20:19:16.446 T:3528    debug <general>: CPlayerCoreFactory::GetPlayers: matched 0 rules with players
+2026-11-02 20:19:16.446 T:3528    debug <general>: CPlayerCoreFactory::GetPlayers: adding videodefaultplayer (VideoPlayer)
+2026-11-02 20:19:16.446 T:3528    debug <general>: CPlayerCoreFactory::GetPlayers: for video=true, audio=false
+2026-11-02 20:19:16.446 T:3528    debug <general>: CPlayerCoreFactory::GetPlayers: for video=true, audio=true
+2026-11-02 20:19:16.446 T:3528    debug <general>: CPlayerCoreFactory::GetPlayers: added 1 players
+2026-11-02 20:19:16.448 T:3528     info <general>: Loading skin file: DialogContextMenu.xml, load type: KEEP_IN_MEMORY
+2026-11-02 20:19:16.448 T:3528    debug <general>: ------ Window Init (DialogContextMenu.xml) ------
+2026-11-02 20:19:16.707 T:5548    debug <CWebserver[18082]>: request received for /jsonrpc
+2026-11-02 20:19:17.535 T:3528    debug <general>: Skipped 13 duplicate messages..
+2026-11-02 20:19:17.535 T:3528    debug <general>: ------ Window Deinit (DialogContextMenu.xml) ------
+2026-11-02 20:19:17.542 T:3528    debug <general>: ------ Window Init (DialogContextMenu.xml) ------
+2026-11-02 20:19:17.635 T:22492   debug <CWebserver[18082]>: request received for /jsonrpc
+2026-11-02 20:19:18.131 T:3528    debug <general>: Skipped 7 duplicate messages..
+2026-11-02 20:19:18.131 T:3528    debug <general>: ------ Window Deinit (DialogContextMenu.xml) ------
+2026-11-02 20:19:18.143 T:3528    debug <general>: ------ Window Init (DialogVideoManager.xml) ------
+2026-11-02 20:19:18.143 T:3528     info <general>: Loading skin file: DialogVideoManager.xml, load type: KEEP_IN_MEMORY
+2026-11-02 20:19:18.154 T:44548   debug <general>: Thread AlarmClock start, auto delete: false
+2026-11-02 20:19:18.154 T:3528    debug <general>: started alarm with name: auditmultidialogvideomanager
+2026-11-02 20:19:18.232 T:18892   debug <CWebserver[18082]>: request received for /jsonrpc
+2026-11-02 20:19:18.660 T:3528    debug <general>: Skipped 3 duplicate messages..
+2026-11-02 20:19:18.660 T:3528    debug <general>: ------ Window Init (DialogConfirm.xml) ------
+2026-11-02 20:19:18.660 T:3528     info <general>: Loading skin file: DialogConfirm.xml, load type: KEEP_IN_MEMORY
+2026-11-02 20:19:18.668 T:3528    debug <general>: started alarm with name: auditmultidialogconfirm
+2026-11-02 20:19:19.186 T:3528    debug <general>: Saving screenshot D:\Program Files\Kodi22\portable_data\addons\skin.horizonzv-piers\results\kodi22_runtime\multiversion_DialogVideoManager.png
+2026-11-02 20:19:19.190 T:3976    debug <general>: encoding image 'D:\Program Files\Kodi22\portable_data\addons\skin.horizonzv-piers\results\kodi22_runtime\multiversion_DialogVideoManager.png' size 720x480
+2026-11-02 20:19:19.777 T:3528    debug <general>: Saving screenshot D:\Program Files\Kodi22\portable_data\addons\skin.horizonzv-piers\results\kodi22_runtime\multiversion_DialogConfirm.png
+2026-11-02 20:19:19.781 T:33528   debug <general>: encoding image 'D:\Program Files\Kodi22\portable_data\addons\skin.horizonzv-piers\results\kodi22_runtime\multiversion_DialogConfirm.png' size 720x480
+2026-11-02 20:19:20.054 T:2620    debug <CWebserver[18082]>: request received for /jsonrpc
+2026-11-02 20:19:29.268 T:3528    debug <general>: Skipped 5 duplicate messages..
+2026-11-02 20:19:29.268 T:3528  warning <general>: CGUIWindowManager - CGUIWindowManager::HandleAction - ignoring action 999, because topmost modal dialog closing animation is running
+2026-11-02 20:19:29.455 T:3528  warning <general>: Skipped 9 duplicate messages..
+2026-11-02 20:19:29.455 T:3528    debug <general>: ------ Window Deinit (DialogConfirm.xml) ------
+2026-11-02 20:19:29.466 T:3528     info <general>: Loading skin file: FileBrowser.xml, load type: KEEP_IN_MEMORY
+2026-11-02 20:19:29.475 T:40316   debug <general>: Thread waiting start, auto delete: false
+2026-11-02 20:19:29.576 T:3528    debug <general>: ------ Window Init (DialogBusy.xml) ------
+2026-11-02 20:19:29.629 T:40316   debug <general>: Thread waiting 40316 terminating
+2026-11-02 20:19:29.632 T:3528    debug <general>: ------ Window Deinit (DialogBusy.xml) ------
+2026-11-02 20:19:29.637 T:3528    debug <general>: ------ Window Init (FileBrowser.xml) ------
+2026-11-02 20:19:29.638 T:3528    debug <general>: started alarm with name: auditmultifilebrowser
+2026-11-02 20:19:30.682 T:4484    debug <CWebserver[18082]>: request received for /jsonrpc
+2026-11-02 20:19:30.704 T:3528    debug <general>: Skipped 1 duplicate messages..
+2026-11-02 20:19:30.704 T:3528    debug <general>: Saving screenshot D:\Program Files\Kodi22\portable_data\addons\skin.horizonzv-piers\results\kodi22_runtime\multiversion_FileBrowser.png
+2026-11-02 20:19:30.708 T:3976    debug <general>: encoding image 'D:\Program Files\Kodi22\portable_data\addons\skin.horizonzv-piers\results\kodi22_runtime\multiversion_FileBrowser.png' size 720x480
+2026-11-02 20:19:47.084 T:12648   debug <CWebserver[18082]>: request received for /jsonrpc
+2026-11-02 20:19:47.084 T:5548    debug <general>: Thread waiting start, auto delete: false
+2026-11-02 20:19:47.085 T:5548    debug <general>: Thread waiting 5548 terminating
+2026-11-02 20:19:47.485 T:22572   debug <CWebserver[18082]>: request received for /jsonrpc
+2026-11-02 20:19:57.038 T:3528    debug <general>: Skipped 17 duplicate messages..
+2026-11-02 20:19:57.038 T:3528    debug <general>: ------ Window Deinit (FileBrowser.xml) ------
+2026-11-02 20:19:57.048 T:3528    debug <general>: CDVDDemuxFFmpeg::Open - probing detected format [matroska,webm]
+2026-11-02 20:19:57.049 T:3528    debug <general>: CDVDDemuxFFmpeg::Open - avformat_find_stream_info starting
+2026-11-02 20:19:57.049 T:3528    debug <general>: CDVDDemuxFFmpeg::Open - av_find_stream_info finished
+2026-11-02 20:19:57.049 T:3528    debug <general>: CDVDDemuxFFmpeg::AddStream ID: 0
+2026-11-02 20:19:57.049 T:3528    debug <general>: CUtil::ScanForExternalSubtitles: Searching for subtitles...
+2026-11-02 20:19:57.050 T:3528    debug <general>: CUtil::ScanForExternalSubtitles: END (total time: 0 ms)
+2026-11-02 20:19:57.050 T:3528    debug <general>: CGUIDialogVideoManagerVersions::AddVideoVersionFilePicker: Extracted filestream details from video file C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\portable_data\testmedia\library_movies\Skin Audit Movie (2026)\Skin Audit Movie - Chapter Edition.mkv
+2026-11-02 20:19:57.051 T:3528    debug <general>: ------ Window Init (DialogSelect.xml) ------
+2026-11-02 20:19:57.051 T:3528     info <general>: Loading skin file: DialogSelect.xml, load type: KEEP_IN_MEMORY
+2026-11-02 20:19:57.059 T:3528    debug <general>: started alarm with name: auditmultidialogselect
+2026-11-02 20:19:58.189 T:3528    debug <general>: Saving screenshot D:\Program Files\Kodi22\portable_data\addons\skin.horizonzv-piers\results\kodi22_runtime\multiversion_DialogSelect.png
+2026-11-02 20:19:58.193 T:33528   debug <general>: encoding image 'D:\Program Files\Kodi22\portable_data\addons\skin.horizonzv-piers\results\kodi22_runtime\multiversion_DialogSelect.png' size 720x480
+2026-11-02 20:19:58.468 T:24360   debug <CWebserver[18082]>: request received for /jsonrpc
+2026-11-02 20:20:05.691 T:44600   debug <general>: Skipped 1 duplicate messages..
+2026-11-02 20:20:05.691 T:44600   debug <general>: Thread Timer 44600 terminating
+2026-11-02 20:20:05.695 T:42408   debug <general>: IMAGE_FILES::CImageCacheCleaner::ScanOldestCache: begin process to clean image cache
+2026-11-02 20:20:05.695 T:42408   debug <general>: IMAGE_FILES::CImageCacheCleaner::ScanOldestCache: found no old cached images to process
+2026-11-02 20:20:05.695 T:42408   debug <general>: CTextureCache::ScanOldestCache: scheduling the next image cache cleaning in 48 hours
+2026-11-02 20:20:05.695 T:44052   debug <general>: Thread Timer start, auto delete: false
+2026-11-02 20:20:08.941 T:42660   debug <CWebserver[18082]>: request received for /jsonrpc
+2026-11-02 20:20:15.199 T:3528    debug <general>: Skipped 3 duplicate messages..
+2026-11-02 20:20:15.199 T:3528    debug <general>: ------ Window Deinit (DialogSelect.xml) ------
+2026-11-02 20:20:16.614 T:43220   debug <CWebserver[18082]>: request received for /jsonrpc
+2026-11-02 20:20:37.833 T:44288   debug <CWebserver[18082]>: Skipped 2 duplicate messages..
+2026-11-02 20:20:37.833 T:44288   debug <CWebserver[18082]>: request received for /jsonrpc
+2026-11-02 20:20:38.001 T:3528    debug <general>: ------ Window Deinit (DialogVideoManager.xml) ------
+2026-11-02 20:20:38.006 T:3528    debug <general>: CGUIMediaWindow::GetDirectory (videodb://movies/titles/)
+2026-11-02 20:20:38.006 T:3528    debug <general>:   ParentPath = [videodb://movies/]
+2026-11-02 20:20:38.006 T:22452   debug <general>: Thread waiting start, auto delete: false
+2026-11-02 20:20:38.008 T:22452   debug <general>: Thread waiting 22452 terminating
+2026-11-02 20:20:38.010 T:45996   debug <general>: Thread BackgroundLoader start, auto delete: false
+2026-11-02 20:20:38.010 T:3528    debug <general>: [threads] name: 'BackgroundLoader' priority: below normal
+2026-11-02 20:20:38.013 T:3528    debug <general>: [Warning] CGUITextureManager::GetTexturePath: could not find texture 'OverlayUnwatched.png'
+2026-11-02 20:20:38.013 T:45996   debug <general>: Thread BackgroundLoader 45996 terminating
+2026-11-02 20:20:38.035 T:32268   debug <CWebserver[18082]>: request received for /jsonrpc
+2026-11-02 20:20:38.036 T:3528    debug <general>: CPlayerCoreFactory::GetPlayers(C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\portable_data\testmedia\library_movies\Skin Audit Movie (2026)\Skin Audit Movie (2026).avi)
+2026-11-02 20:20:38.036 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: system rules
+2026-11-02 20:20:38.036 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: matches rule: system rules
+2026-11-02 20:20:38.036 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: mms/udp
+2026-11-02 20:20:38.036 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: lastfm/shout
+2026-11-02 20:20:38.036 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: rtmp
+2026-11-02 20:20:38.036 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: rtsp
+2026-11-02 20:20:38.036 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: streams
+2026-11-02 20:20:38.036 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: dvd
+2026-11-02 20:20:38.036 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: discimage
+2026-11-02 20:20:38.036 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: sdp/asf
+2026-11-02 20:20:38.036 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: nsv
+2026-11-02 20:20:38.036 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: radio
+2026-11-02 20:20:38.036 T:3528    debug <general>: CPlayerCoreFactory::GetPlayers: matched 0 rules with players
+2026-11-02 20:20:38.036 T:3528    debug <general>: CPlayerCoreFactory::GetPlayers: adding videodefaultplayer (VideoPlayer)
+2026-11-02 20:20:38.036 T:3528    debug <general>: CPlayerCoreFactory::GetPlayers: for video=true, audio=false
+2026-11-02 20:20:38.036 T:3528    debug <general>: CPlayerCoreFactory::GetPlayers: for video=true, audio=true
+2026-11-02 20:20:38.036 T:3528    debug <general>: CPlayerCoreFactory::GetPlayers: added 1 players
+2026-11-02 20:20:38.036 T:3528    debug <general>: CPlayerCoreFactory::GetPlayers(C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\portable_data\testmedia\library_movies\Skin Audit Movie (2026)\Skin Audit Movie (2026).avi)
+2026-11-02 20:20:38.036 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: system rules
+2026-11-02 20:20:38.036 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: matches rule: system rules
+2026-11-02 20:20:38.036 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: mms/udp
+2026-11-02 20:20:38.036 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: lastfm/shout
+2026-11-02 20:20:38.036 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: rtmp
+2026-11-02 20:20:38.036 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: rtsp
+2026-11-02 20:20:38.036 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: streams
+2026-11-02 20:20:38.036 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: dvd
+2026-11-02 20:20:38.036 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: discimage
+2026-11-02 20:20:38.036 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: sdp/asf
+2026-11-02 20:20:38.036 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: nsv
+2026-11-02 20:20:38.036 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: radio
+2026-11-02 20:20:38.036 T:3528    debug <general>: CPlayerCoreFactory::GetPlayers: matched 0 rules with players
+2026-11-02 20:20:38.036 T:3528    debug <general>: CPlayerCoreFactory::GetPlayers: adding videodefaultplayer (VideoPlayer)
+2026-11-02 20:20:38.036 T:3528    debug <general>: CPlayerCoreFactory::GetPlayers: for video=true, audio=false
+2026-11-02 20:20:38.036 T:3528    debug <general>: CPlayerCoreFactory::GetPlayers: for video=true, audio=true
+2026-11-02 20:20:38.036 T:3528    debug <general>: CPlayerCoreFactory::GetPlayers: added 1 players
+2026-11-02 20:20:38.037 T:3528    debug <general>: ------ Window Init (DialogContextMenu.xml) ------
+2026-11-02 20:20:38.251 T:45944   debug <CWebserver[18082]>: request received for /jsonrpc
+2026-11-02 20:20:39.231 T:3528    debug <general>: Skipped 17 duplicate messages..
+2026-11-02 20:20:39.231 T:3528    debug <general>: ------ Window Deinit (DialogContextMenu.xml) ------
+2026-11-02 20:20:39.238 T:3528    debug <general>: ------ Window Init (DialogContextMenu.xml) ------
+2026-11-02 20:20:39.314 T:37280   debug <CWebserver[18082]>: request received for /jsonrpc
+2026-11-02 20:20:39.792 T:3528    debug <general>: Skipped 7 duplicate messages..
+2026-11-02 20:20:39.792 T:3528    debug <general>: ------ Window Deinit (DialogContextMenu.xml) ------
+2026-11-02 20:20:39.815 T:3528    debug <general>: ------ Window Init (DialogVideoManager.xml) ------
+2026-11-02 20:20:39.815 T:3528    debug <general>: started alarm with name: auditmultidialogvideomanager
+2026-11-02 20:20:40.842 T:3528    debug <general>: Saving screenshot D:\Program Files\Kodi22\portable_data\addons\skin.horizonzv-piers\results\kodi22_runtime\multiversion_DialogVideoManager.png
+2026-11-02 20:20:40.846 T:33528   debug <general>: encoding image 'D:\Program Files\Kodi22\portable_data\addons\skin.horizonzv-piers\results\kodi22_runtime\multiversion_DialogVideoManager.png' size 720x480
+2026-11-02 20:20:41.312 T:43252   debug <CWebserver[18082]>: request received for /jsonrpc
+2026-11-02 20:20:42.636 T:3528    debug <general>: Skipped 18 duplicate messages..
+2026-11-02 20:20:42.636 T:3528    debug <general>: CVideoDatabase::SetDefaultVideoVersion: Default version of movie id 1 changed from file id 3 to file id 4
+2026-11-02 20:20:43.318 T:648     debug <CWebserver[18082]>: request received for /jsonrpc
+2026-11-02 20:21:16.642 T:44452   debug <CWebserver[18082]>: Skipped 1 duplicate messages..
+2026-11-02 20:21:16.642 T:44452   debug <CWebserver[18082]>: request received for /jsonrpc
+2026-11-02 20:21:16.973 T:3528    debug <general>: Skipped 4 duplicate messages..
+2026-11-02 20:21:16.973 T:3528    debug <general>: ------ Window Deinit (DialogVideoManager.xml) ------
+2026-11-02 20:21:16.979 T:3528    debug <general>: CPlayerCoreFactory::GetPlayers(C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\portable_data\testmedia\library_movies\Skin Audit Movie (2026)\Skin Audit Movie - Chapter Edition.mkv)
+2026-11-02 20:21:16.979 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: system rules
+2026-11-02 20:21:16.979 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: matches rule: system rules
+2026-11-02 20:21:16.979 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: mms/udp
+2026-11-02 20:21:16.979 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: lastfm/shout
+2026-11-02 20:21:16.979 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: rtmp
+2026-11-02 20:21:16.979 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: rtsp
+2026-11-02 20:21:16.979 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: streams
+2026-11-02 20:21:16.979 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: dvd
+2026-11-02 20:21:16.979 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: discimage
+2026-11-02 20:21:16.979 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: sdp/asf
+2026-11-02 20:21:16.979 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: nsv
+2026-11-02 20:21:16.979 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: radio
+2026-11-02 20:21:16.979 T:3528    debug <general>: CPlayerCoreFactory::GetPlayers: matched 0 rules with players
+2026-11-02 20:21:16.979 T:3528    debug <general>: CPlayerCoreFactory::GetPlayers: adding videodefaultplayer (VideoPlayer)
+2026-11-02 20:21:16.979 T:3528    debug <general>: CPlayerCoreFactory::GetPlayers: for video=true, audio=false
+2026-11-02 20:21:16.979 T:3528    debug <general>: CPlayerCoreFactory::GetPlayers: for video=true, audio=true
+2026-11-02 20:21:16.979 T:3528    debug <general>: CPlayerCoreFactory::GetPlayers: added 1 players
+2026-11-02 20:21:16.979 T:3528    debug <general>: CPlayerCoreFactory::GetPlayers(C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\portable_data\testmedia\library_movies\Skin Audit Movie (2026)\Skin Audit Movie - Chapter Edition.mkv)
+2026-11-02 20:21:16.979 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: system rules
+2026-11-02 20:21:16.979 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: matches rule: system rules
+2026-11-02 20:21:16.979 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: mms/udp
+2026-11-02 20:21:16.979 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: lastfm/shout
+2026-11-02 20:21:16.979 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: rtmp
+2026-11-02 20:21:16.979 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: rtsp
+2026-11-02 20:21:16.979 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: streams
+2026-11-02 20:21:16.979 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: dvd
+2026-11-02 20:21:16.979 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: discimage
+2026-11-02 20:21:16.979 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: sdp/asf
+2026-11-02 20:21:16.979 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: nsv
+2026-11-02 20:21:16.979 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: radio
+2026-11-02 20:21:16.979 T:3528    debug <general>: CPlayerCoreFactory::GetPlayers: matched 0 rules with players
+2026-11-02 20:21:16.979 T:3528    debug <general>: CPlayerCoreFactory::GetPlayers: adding videodefaultplayer (VideoPlayer)
+2026-11-02 20:21:16.979 T:3528    debug <general>: CPlayerCoreFactory::GetPlayers: for video=true, audio=false
+2026-11-02 20:21:16.979 T:3528    debug <general>: CPlayerCoreFactory::GetPlayers: for video=true, audio=true
+2026-11-02 20:21:16.979 T:3528    debug <general>: CPlayerCoreFactory::GetPlayers: added 1 players
+2026-11-02 20:21:16.980 T:3528    debug <general>: Radio UECP (RDS) Processor - new CDVDRadioRDSData::CDVDRadioRDSData
+2026-11-02 20:21:16.980 T:3528    debug <general>: Audio ID3 tag processor - new CVideoPlayerAudioID3::CVideoPlayerAudioID3
+2026-11-02 20:21:16.980 T:3528     info <general>: VideoPlayer::OpenFile: videodb://movies/videoversions/40401?mediaid=1&videoversionid=40401
+2026-11-02 20:21:16.980 T:3528    debug <general>: CWIN32Util::GetWindowsHDRStatus: Display is HDR capable and current HDR status is OFF
+2026-11-02 20:21:16.980 T:31932   debug <general>: Thread VideoPlayer start, auto delete: false
+2026-11-02 20:21:16.980 T:3528    debug <general>: CApplicationPlayerCallback::OnPlayBackStarted: call
+2026-11-02 20:21:16.980 T:31932    info <general>: Creating InputStream
+2026-11-02 20:21:16.981 T:42408   debug <general>: Loading settings for videodb://movies/videoversions/40401?mediaid=1&videoversionid=40401
+2026-11-02 20:21:16.982 T:3528    debug <general>: CGUIMediaWindow::GetDirectory (videodb://movies/titles/)
+2026-11-02 20:21:16.982 T:3528    debug <general>:   ParentPath = [videodb://movies/]
+2026-11-02 20:21:16.982 T:4776    debug <general>: Thread waiting start, auto delete: false
+2026-11-02 20:21:16.983 T:31932   debug <general>: CUtil::ScanForExternalSubtitles: Searching for subtitles...
+2026-11-02 20:21:16.983 T:31932   debug <general>: CUtil::ScanForExternalSubtitles: END (total time: 0 ms)
+2026-11-02 20:21:16.983 T:31932    info <general>: Creating Demuxer
+2026-11-02 20:21:16.983 T:31932   debug <general>: CDVDDemuxFFmpeg::Open - probing detected format [matroska,webm]
+2026-11-02 20:21:16.983 T:31932   debug <general>: CDVDDemuxFFmpeg::Open - avformat_find_stream_info starting
+2026-11-02 20:21:16.984 T:31932   debug <general>: CDVDDemuxFFmpeg::Open - av_find_stream_info finished
+2026-11-02 20:21:16.984 T:31932    info <general>: ffmpeg[0x237558c1af0]: Input #0, matroska,webm, from 'C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\portable_data\testmedia\library_movies\Skin Audit Movie (2026)\Skin Audit Movie - Chapter Edition.mkv':
+2026-11-02 20:21:16.984 T:31932    info <general>: ffmpeg[0x237558c1af0]:   Metadata:
+2026-11-02 20:21:16.984 T:31932    info <general>: ffmpeg[0x237558c1af0]:     encoder         : Skin audit fixture
+2026-11-02 20:21:16.984 T:31932    info <general>: ffmpeg[0x237558c1af0]:   Duration: 00:01:30.00, start: 0.000000, bitrate: 1728 kb/s
+2026-11-02 20:21:16.984 T:31932    info <general>: ffmpeg[0x237558c1af0]:   Chapters:
+2026-11-02 20:21:16.984 T:31932    info <general>: ffmpeg[0x237558c1af0]:     Chapter #0:0: start 0.000000, end 30.000000
+2026-11-02 20:21:16.984 T:31932    info <general>: ffmpeg[0x237558c1af0]:       Metadata:
+2026-11-02 20:21:16.984 T:31932    info <general>: ffmpeg[0x237558c1af0]:         title           : Audit chapter 1
+2026-11-02 20:21:16.984 T:31932    info <general>: ffmpeg[0x237558c1af0]:     Chapter #0:1: start 30.000000, end 60.000000
+2026-11-02 20:21:16.984 T:31932    info <general>: ffmpeg[0x237558c1af0]:       Metadata:
+2026-11-02 20:21:16.984 T:31932    info <general>: ffmpeg[0x237558c1af0]:         title           : Audit chapter 2
+2026-11-02 20:21:16.984 T:31932    info <general>: ffmpeg[0x237558c1af0]:     Chapter #0:2: start 60.000000, end 90.000000
+2026-11-02 20:21:16.984 T:31932    info <general>: ffmpeg[0x237558c1af0]:       Metadata:
+2026-11-02 20:21:16.984 T:31932    info <general>: ffmpeg[0x237558c1af0]:         title           : Audit chapter 3
+2026-11-02 20:21:16.984 T:31932    info <general>: ffmpeg[0x237558c1af0]:   Stream #0:0(eng): Video: rawvideo, bgr24, 160x90, SAR 1:1 DAR 16:9, 5 fps, 5 tbr, 1k tbn (default)
+2026-11-02 20:21:16.984 T:31932   debug <general>: CDVDDemuxFFmpeg::AddStream ID: 0
+2026-11-02 20:21:16.984 T:4776    debug <general>: Thread waiting 4776 terminating
+2026-11-02 20:21:16.984 T:31932    info <general>: Opening stream: 0 source: 256
+2026-11-02 20:21:16.984 T:31932    info <general>: Creating video codec: rawvideo
+2026-11-02 20:21:16.984 T:31932    info <general>: CDVDVideoCodecFFmpeg::Open() Using codec: raw video
+2026-11-02 20:21:16.984 T:31932   debug <general>: CDVDVideoCodecFFmpeg - Updated codec: ff-rawvideo
+2026-11-02 20:21:16.984 T:31932   debug <general>: CVideoPlayerVideo::OpenStream - open stream with codec: rawvideo
+2026-11-02 20:21:16.984 T:31932    info <general>: Creating video thread
+2026-11-02 20:21:16.984 T:46056   debug <general>: Thread VideoPlayerVideo start, auto delete: false
+2026-11-02 20:21:16.984 T:46056    info <general>: running thread: video_thread
+2026-11-02 20:21:16.984 T:31932   debug <general>: CEdl::ReadEditDecisionLists: Checking for edit decision lists (EDL) for: C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\portable_data\testmedia\library_movies\Skin Audit Movie (2026)\Skin Audit Movie - Chapter Edition.mkv
+2026-11-02 20:21:16.984 T:46056   debug <general>: CVideoPlayerVideo - CDVDMsg::GENERAL_PAUSE: false
+2026-11-02 20:21:16.986 T:28492   debug <general>: Thread BackgroundLoader start, auto delete: false
+2026-11-02 20:21:16.986 T:3528    debug <general>: [threads] name: 'BackgroundLoader' priority: below normal
+2026-11-02 20:21:16.989 T:3528    debug <general>: [Warning] CGUITextureManager::GetTexturePath: could not find texture 'OverlayUnwatched.png'
+2026-11-02 20:21:16.989 T:28492   debug <general>: Thread BackgroundLoader 28492 terminating
+2026-11-02 20:21:16.989 T:3528    debug <general>: ------ Window Init (Custom_1401_VideoOverlay.xml) ------
+2026-11-02 20:21:16.990 T:31932   debug <general>: CVideoPlayer::OpenStream: m_bFullScreenVideo set pre-Configure, viewport 720x480
+2026-11-02 20:21:16.990 T:31932   debug <general>: CVideoPlayer::SetCaching - caching state 2
+2026-11-02 20:21:16.990 T:31932   debug <general>: CDVDClock::SetSpeedAdjust - adjusted:0.000000
+2026-11-02 20:21:16.990 T:31932   debug <general>: CVideoPlayer::HandleMessages - player 2 reported state: 0
+2026-11-02 20:21:16.990 T:31932   debug <general>: CVideoPlayer::SetCaching - caching state 1
+2026-11-02 20:21:16.990 T:31932   debug <general>: CDVDClock::SetSpeedAdjust - adjusted:0.000000
+2026-11-02 20:21:16.990 T:46056   debug <general>: CVideoPlayerVideo - Stillframe left, switching to normal playback
+2026-11-02 20:21:16.991 T:31932   debug <general>: CVideoPlayer::SetCaching - caching state 2
+2026-11-02 20:21:16.991 T:31932   debug <general>: CDVDClock::SetSpeedAdjust - adjusted:0.000000
+2026-11-02 20:21:16.991 T:3528    debug <general>: CVideoGUIInfo::InitCurrentItem(videodb://movies/videoversions/40401?mediaid=1&videoversionid=40401)
+2026-11-02 20:21:16.991 T:3528    debug <general>: CPlayerGUIInfo::InitCurrentItem(videodb://movies/videoversions/40401?mediaid=1&videoversionid=40401)
+2026-11-02 20:21:16.993 T:46056   debug <general>: CRenderManager::Configure - change configuration. 160x90. display: 160x90. framerate: 5.00.
+2026-11-02 20:21:17.092 T:3528    debug <general>: ------ Window Init (DialogBusy.xml) ------
+2026-11-02 20:21:17.095 T:3528    debug <general>: CRenderManager::DeleteRenderer - deleting renderer
+2026-11-02 20:21:17.095 T:3528    debug <general>: CBaseRenderer::ManageRenderArea: viewRect 0x0 -> 720x480
+2026-11-02 20:21:17.095 T:3528    debug <general>: CWinRenderer::SelectRenderer: requested render method: 0
+2026-11-02 20:21:17.095 T:3528    debug <general>: DXVA::CEnumeratorHD::OpenEnumerator: initializing video enumerator with params: 160x90.
+2026-11-02 20:21:17.095 T:3528    debug <general>: CWIN32Util::GetWindowsHDRStatus: Display is HDR capable and current HDR status is OFF
+2026-11-02 20:21:17.095 T:3528    debug <general>: DXVA::CEnumeratorHD::SupportedConversions: source: primaries bt470bg, color space unknown, transfer unknown, limited range, dest: SDR
+2026-11-02 20:21:17.095 T:3528    debug <general>: DXVA::CEnumeratorHD::SupportedConversions: natural dxgi color space mapping of source: YCBCR_STUDIO_G22_LEFT_P601, dest: RGB_FULL_G22_NONE_P709
+2026-11-02 20:21:17.095 T:3528    debug <general>: DXVA::CEnumeratorHD::LogAndListConversions: dxgi color space mapping of source: YCBCR_STUDIO_G22_LEFT_P601, dest color space: RGB_FULL_G22_NONE_P709
+2026-11-02 20:21:17.096 T:3528    debug <general>: CWinRenderer::SelectRenderer: selected render method: Pixel Shaders
+2026-11-02 20:21:17.096 T:3528    debug <general>: CWIN32Util::GetWindowsHDRStatus: Display is HDR capable and current HDR status is OFF
+2026-11-02 20:21:17.096 T:3528    debug <general>: CRendererBase::Configure: Storing Windows HDR state: OFF
+2026-11-02 20:21:17.096 T:3528    debug <general>: CRendererBase::CreateIntermediateTarget: creating intermediate target 160x90 format R16G16B16A16_FLOAT.
+2026-11-02 20:21:17.097 T:3528    debug <general>: CRenderManager::Configure - 6
+2026-11-02 20:21:17.097 T:3528    debug <general>: CWIN32Util::GetWindowsHDRStatus: Display is HDR capable and current HDR status is OFF
+2026-11-02 20:21:17.097 T:3528    debug <general>: CWinShader::LoadEffect: loading shader special://xbmc/system/shaders/output_d3d.fx
+2026-11-02 20:21:17.105 T:3528    debug <general>: CWinShader::LoadEffect: loading shader special://xbmc/system/shaders/yuv2rgb_d3d.fx
+2026-11-02 20:21:17.106 T:31932   debug <general>: CVideoPlayer::HandleMessages - player started 2
+2026-11-02 20:21:17.106 T:31932   debug <general>: CVideoPlayer::SetCaching - caching state 3
+2026-11-02 20:21:17.106 T:42408   debug <general>: CApplicationPlayerCallback::OnAVChange: call
+2026-11-02 20:21:17.106 T:31932   debug <general>: CDVDClock::SetSpeedAdjust - adjusted:0.000000
+2026-11-02 20:21:17.106 T:31932   debug <general>: CVideoPlayer::SetCaching - caching state 0
+2026-11-02 20:21:17.106 T:31932   debug <general>: CDVDClock::SetSpeedAdjust - adjusted:0.000000
+2026-11-02 20:21:17.106 T:31932   debug <general>: VideoPlayer::Sync - Video - pts: 200000.000000, cache: 50000.000000, totalcache: 100000.000000
+2026-11-02 20:21:17.106 T:31932 warning <general>: CDVDMessageQueue(audio)::Put MSGQ_NOT_INITIALIZED
+2026-11-02 20:21:17.106 T:46056   debug <general>: CVideoPlayerVideo - CDVDMsg::GENERAL_RESYNC(100000.000000)
+2026-11-02 20:21:17.106 T:42408   debug <general>: CApplicationPlayerCallback::OnAVStarted: call
+2026-11-02 20:21:17.115 T:3528    debug <general>: Activating window ID: 12005
+2026-11-02 20:21:17.115 T:3528    debug <general>: ------ Window Deinit (MyVideoNav.xml) ------
+2026-11-02 20:21:17.115 T:3528    debug <general>: ------ Window Init (VideoFullScreen.xml) ------
+2026-11-02 20:21:17.115 T:3528     info <general>: Loading skin file: VideoFullScreen.xml, load type: KEEP_IN_MEMORY
+2026-11-02 20:21:17.119 T:3528    debug <general>: ------ Window Deinit (DialogBusy.xml) ------
+2026-11-02 20:21:17.919 T:46056    info <general>: CDVDVideoCodecFFmpeg::CDropControl: calculated diff time: 200000
+2026-11-02 20:21:18.143 T:20004   debug <CWebserver[18082]>: request received for /jsonrpc
+2026-11-02 20:21:18.183 T:3528    debug <general>: Skipped 2 duplicate messages..
+2026-11-02 20:21:18.183 T:3528    debug <general>: CGUIWindowManager::PreviousWindow: Deactivate
+2026-11-02 20:21:18.366 T:3528    debug <general>: ------ Window Deinit (VideoFullScreen.xml) ------
+2026-11-02 20:21:18.371 T:3528    debug <general>: CGUIWindowManager::PreviousWindow: Activate new
+2026-11-02 20:21:18.373 T:3528    debug <general>: ------ Window Init (MyVideoNav.xml) ------
+2026-11-02 20:21:18.374 T:3528    debug <general>: CGUIMediaWindow::GetDirectory (videodb://movies/titles/)
+2026-11-02 20:21:18.374 T:3528    debug <general>:   ParentPath = [videodb://movies/]
+2026-11-02 20:21:18.377 T:14984   debug <general>: Thread BackgroundLoader start, auto delete: false
+2026-11-02 20:21:18.377 T:3528    debug <general>: [threads] name: 'BackgroundLoader' priority: below normal
+2026-11-02 20:21:18.380 T:12728   debug <CWebserver[18082]>: request received for /jsonrpc
+2026-11-02 20:21:18.381 T:14984   debug <general>: Thread BackgroundLoader 14984 terminating
+2026-11-02 20:21:18.382 T:3528     info <general>: CVideoPlayer::CloseFile()
+2026-11-02 20:21:18.382 T:3528    debug <general>: CRenderManager::DeleteRenderer - deleting renderer
+2026-11-02 20:21:18.382 T:3528     info <general>: VideoPlayer: waiting for threads to exit
+2026-11-02 20:21:18.389 T:31932    info <general>: CVideoPlayer::OnExit()
+2026-11-02 20:21:18.389 T:31932    info <general>: Closing stream player 2
+2026-11-02 20:21:18.389 T:31932    info <general>: waiting for video thread to exit
+2026-11-02 20:21:18.410 T:46056 warning <general>: CVideoPlayerVideo::OutputPicture - timeout waiting for buffer
+2026-11-02 20:21:18.410 T:46056    info <general>: thread end: video_thread
+2026-11-02 20:21:18.411 T:46056   debug <general>: Thread VideoPlayerVideo 46056 terminating
+2026-11-02 20:21:18.411 T:31932    info <general>: deleting video codec
+2026-11-02 20:21:18.412 T:31932   debug <general>: Thread VideoPlayer 31932 terminating
+2026-11-02 20:21:18.412 T:3528     info <general>: VideoPlayer: finished waiting
+2026-11-02 20:21:18.412 T:3528     info <general>: CVideoPlayer::CloseFile()
+2026-11-02 20:21:18.412 T:3528     info <general>: VideoPlayer: waiting for threads to exit
+2026-11-02 20:21:18.412 T:3528     info <general>: VideoPlayer: finished waiting
+2026-11-02 20:21:18.412 T:3528    debug <general>: Radio UECP (RDS) Processor - delete CDVDRadioRDSData::~CDVDRadioRDSData
+2026-11-02 20:21:18.412 T:3528    debug <general>: Audio ID3 tag processor - delete CVideoPlayerAudioID3::~CVideoPlayerAudioID3
+2026-11-02 20:21:18.413 T:42408    info <general>: Deleting settings information for files videodb://movies/videoversions/40401?mediaid=1&videoversionid=40401
+2026-11-02 20:21:18.413 T:33528   debug <general>: CSaveFileState::DoWork - Saving file state for video item C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\portable_data\testmedia\library_movies\Skin Audit Movie (2026)\Skin Audit Movie - Chapter Edition.mkv
+2026-11-02 20:21:18.418 T:33528   debug <general>: CSaveFileState::DoWork: Finished saving file state for video item C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\portable_data\testmedia\library_movies\Skin Audit Movie (2026)\Skin Audit Movie - Chapter Edition.mkv (listing update not needed)
+2026-11-02 20:21:18.418 T:3976    debug <general>: CApplicationPlayerCallback::OnPlayBackStopped: call
+2026-11-02 20:21:18.423 T:3528    debug <general>: CPlayerCoreFactory::GetPlayers(C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\portable_data\testmedia\library_movies\Skin Audit Movie (2026)\Skin Audit Movie - Chapter Edition.mkv)
+2026-11-02 20:21:18.423 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: system rules
+2026-11-02 20:21:18.423 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: matches rule: system rules
+2026-11-02 20:21:18.423 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: mms/udp
+2026-11-02 20:21:18.423 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: lastfm/shout
+2026-11-02 20:21:18.423 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: rtmp
+2026-11-02 20:21:18.423 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: rtsp
+2026-11-02 20:21:18.423 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: streams
+2026-11-02 20:21:18.423 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: dvd
+2026-11-02 20:21:18.423 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: discimage
+2026-11-02 20:21:18.423 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: sdp/asf
+2026-11-02 20:21:18.423 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: nsv
+2026-11-02 20:21:18.423 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: radio
+2026-11-02 20:21:18.423 T:3528    debug <general>: CPlayerCoreFactory::GetPlayers: matched 0 rules with players
+2026-11-02 20:21:18.423 T:3528    debug <general>: CPlayerCoreFactory::GetPlayers: adding videodefaultplayer (VideoPlayer)
+2026-11-02 20:21:18.423 T:3528    debug <general>: CPlayerCoreFactory::GetPlayers: for video=true, audio=false
+2026-11-02 20:21:18.423 T:3528    debug <general>: CPlayerCoreFactory::GetPlayers: for video=true, audio=true
+2026-11-02 20:21:18.423 T:3528    debug <general>: CPlayerCoreFactory::GetPlayers: added 1 players
+2026-11-02 20:21:18.423 T:3528    debug <general>: CPlayerCoreFactory::GetPlayers(C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\portable_data\testmedia\library_movies\Skin Audit Movie (2026)\Skin Audit Movie - Chapter Edition.mkv)
+2026-11-02 20:21:18.423 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: system rules
+2026-11-02 20:21:18.423 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: matches rule: system rules
+2026-11-02 20:21:18.423 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: mms/udp
+2026-11-02 20:21:18.423 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: lastfm/shout
+2026-11-02 20:21:18.423 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: rtmp
+2026-11-02 20:21:18.423 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: rtsp
+2026-11-02 20:21:18.423 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: streams
+2026-11-02 20:21:18.423 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: dvd
+2026-11-02 20:21:18.423 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: discimage
+2026-11-02 20:21:18.423 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: sdp/asf
+2026-11-02 20:21:18.423 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: nsv
+2026-11-02 20:21:18.423 T:3528    debug <general>: CPlayerSelectionRule::GetPlayers: considering rule: radio
+2026-11-02 20:21:18.423 T:3528    debug <general>: CPlayerCoreFactory::GetPlayers: matched 0 rules with players
+2026-11-02 20:21:18.423 T:3528    debug <general>: CPlayerCoreFactory::GetPlayers: adding videodefaultplayer (VideoPlayer)
+2026-11-02 20:21:18.423 T:3528    debug <general>: CPlayerCoreFactory::GetPlayers: for video=true, audio=false
+2026-11-02 20:21:18.423 T:3528    debug <general>: CPlayerCoreFactory::GetPlayers: for video=true, audio=true
+2026-11-02 20:21:18.423 T:3528    debug <general>: CPlayerCoreFactory::GetPlayers: added 1 players
+2026-11-02 20:21:18.424 T:3528    debug <general>: ------ Window Init (DialogContextMenu.xml) ------
+2026-11-02 20:21:18.426 T:3528    debug <general>: [Warning] CGUITextureManager::GetTexturePath: could not find texture 'OverlayUnwatched.png'
+2026-11-02 20:21:18.561 T:3528    debug <general>: ------ Window Deinit (Custom_1401_VideoOverlay.xml) ------
+2026-11-02 20:21:18.581 T:5252    debug <CWebserver[18082]>: request received for /jsonrpc
+2026-11-02 20:21:19.583 T:3528    debug <general>: Skipped 17 duplicate messages..
+2026-11-02 20:21:19.583 T:3528    debug <general>: ------ Window Deinit (DialogContextMenu.xml) ------
+2026-11-02 20:21:19.591 T:3528    debug <general>: ------ Window Init (DialogContextMenu.xml) ------
+2026-11-02 20:21:19.695 T:36852   debug <CWebserver[18082]>: request received for /jsonrpc
+2026-11-02 20:21:20.239 T:3528    debug <general>: Skipped 7 duplicate messages..
+2026-11-02 20:21:20.239 T:3528    debug <general>: ------ Window Deinit (DialogContextMenu.xml) ------
+2026-11-02 20:21:20.258 T:3528    debug <general>: ------ Window Init (DialogVideoManager.xml) ------
+2026-11-02 20:21:20.258 T:3528    debug <general>: started alarm with name: auditmultidialogvideomanager
+2026-11-02 20:21:20.261 T:33528   debug <general>: CDVDDemuxFFmpeg::Open - probing detected format [matroska,webm]
+2026-11-02 20:21:20.261 T:33528   debug <general>: CDVDDemuxFFmpeg::Open - avformat_find_stream_info starting
+2026-11-02 20:21:20.261 T:33528   debug <general>: CDVDDemuxFFmpeg::Open - av_find_stream_info finished
+2026-11-02 20:21:20.261 T:33528   debug <general>: CDVDDemuxFFmpeg::AddStream ID: 0
+2026-11-02 20:21:20.261 T:33528    info <general>: CDVDVideoCodecFFmpeg::Open() Using codec: raw video
+2026-11-02 20:21:20.262 T:33528   debug <general>: CDVDVideoCodecFFmpeg - Updated codec: ff-rawvideo
+2026-11-02 20:21:20.262 T:33528   debug <general>: CDVDFileInfo::ExtractThumbToTexture: seeking to pos 30000ms (total: 90000ms) in C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\portable_data\testmedia\library_movies\Skin Audit Movie (2026)\Skin Audit Movie - Chapter Edition.mkv
+2026-11-02 20:21:20.263 T:33528   debug <general>: CDVDDemuxFFmpeg::SeekTime - seek ended up on time 30000
+2026-11-02 20:21:20.743 T:33528   debug <general>: CDVDFileInfo::ExtractThumbToTexture: measured 483 ms to extract thumb from file <C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\portable_data\testmedia\library_movies\Skin Audit Movie (2026)\Skin Audit Movie - Chapter Edition.mkv> in 1 packets. 
+2026-11-02 20:21:20.743 T:33528   debug <general>: Caching image 'C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\portable_data\testmedia\library_movies\Skin Audit Movie (2026)\Skin Audit Movie - Chapter Edition.mkv' to 'e/e0f19bb7.jpg':
+2026-11-02 20:21:20.744 T:33528   debug <general>: encoding image 'special://masterprofile/Thumbnails/e/e0f19bb7.jpg' size 160x90
+2026-11-02 20:21:21.299 T:3528    debug <general>: Saving screenshot D:\Program Files\Kodi22\portable_data\addons\skin.horizonzv-piers\results\kodi22_runtime\multiversion_DialogVideoManager.png
+2026-11-02 20:21:21.303 T:33528   debug <general>: encoding image 'D:\Program Files\Kodi22\portable_data\addons\skin.horizonzv-piers\results\kodi22_runtime\multiversion_DialogVideoManager.png' size 720x480
+2026-11-02 20:21:21.749 T:18516   debug <CWebserver[18082]>: request received for /jsonrpc
+2026-11-02 20:21:42.094 T:45168   debug <CWebserver[18082]>: Skipped 1 duplicate messages..
+2026-11-02 20:21:42.094 T:45168   debug <CWebserver[18082]>: request received for /jsonrpc
+2026-11-02 20:22:22.337 T:9900    debug <CWebserver[18082]>: request received for /jsonrpc
+2026-11-02 20:22:22.870 T:3528    debug <general>: Skipped 9 duplicate messages..
+2026-11-02 20:22:22.870 T:3528    debug <general>: ------ Window Init (DialogSelect.xml) ------
+2026-11-02 20:22:22.870 T:3528    debug <general>: started alarm with name: auditmultidialogselect
+2026-11-02 20:22:23.264 T:36008   debug <CWebserver[18082]>: request received for /jsonrpc
+2026-11-02 20:22:23.918 T:3528    debug <general>: Skipped 11 duplicate messages..
+2026-11-02 20:22:23.918 T:3528    debug <general>: ------ Window Deinit (DialogSelect.xml) ------
+2026-11-02 20:22:23.945 T:3528    debug <general>: Saving screenshot D:\Program Files\Kodi22\portable_data\addons\skin.horizonzv-piers\results\kodi22_runtime\multiversion_DialogSelect.png
+2026-11-02 20:22:23.951 T:33528   debug <general>: encoding image 'D:\Program Files\Kodi22\portable_data\addons\skin.horizonzv-piers\results\kodi22_runtime\multiversion_DialogSelect.png' size 720x480
+2026-11-02 20:22:24.227 T:6684    debug <CWebserver[18082]>: request received for /jsonrpc
+2026-11-02 20:22:45.111 T:44496   debug <CWebserver[18082]>: request received for /jsonrpc
+2026-11-02 20:22:45.127 T:3528    debug <general>: Skipped 2 duplicate messages..
+2026-11-02 20:22:45.127 T:3528    debug <general>: Activating window ID: 10000
+2026-11-02 20:22:45.280 T:3528    debug <general>: ------ Window Deinit (DialogVideoManager.xml) ------
+2026-11-02 20:22:45.312 T:3528    debug <general>: ------ Window Deinit (MyVideoNav.xml) ------
+2026-11-02 20:22:45.317 T:3528    debug <general>: ------ Window Init (Home.xml) ------
+2026-11-02 20:22:45.317 T:3528    debug <general>: CDirectoryProvider[special://skin/playlists/Videos_inprogress.xsp]: refreshing...
+2026-11-02 20:22:45.318 T:3528    debug <general>: CDirectoryProvider[videodb://movies/titles]: refreshing...
+2026-11-02 20:22:45.318 T:3528    debug <general>: CDirectoryProvider[special://skin/playlists/Videos_recently.xsp]: refreshing...
+2026-11-02 20:22:45.319 T:3528    debug <general>: CDirectoryProvider[pvr://channels/tv/*]: refreshing...
+2026-11-02 20:22:45.319 T:3528    debug <general>: CDirectoryProvider[addons://sources/game/]: refreshing...
+2026-11-02 20:22:45.319 T:3528    debug <general>: CDirectoryProvider[videodb://movies/titles/]: refreshing...
+2026-11-02 20:22:45.320 T:42408   debug <general>: CMultiPathDirectory::GetDirectory(multipath://special%3a%2f%2fprofile%2fplaylists%2fvideo/special%3a%2f%2fprofile%2fplaylists%2fmixed/)
+2026-11-02 20:22:45.320 T:42408   debug <general>: Getting Directory (special://profile/playlists/video)
+2026-11-02 20:22:45.320 T:42408   debug <general>: Getting Directory (special://profile/playlists/mixed)
+2026-11-02 20:22:45.321 T:42408   debug <general>: CMultiPathDirectory::MergeItems, items = 0
+2026-11-02 20:22:45.322 T:44904   debug <general>: Thread Timer start, auto delete: false
+2026-11-02 20:22:45.323 T:42408   debug <general>: CMultiPathDirectory::GetDirectory(multipath://special%3a%2f%2fprofile%2fplaylists%2fvideo/special%3a%2f%2fprofile%2fplaylists%2fmixed/)
+2026-11-02 20:22:45.323 T:42408   debug <general>: Getting Directory (special://profile/playlists/video)
+2026-11-02 20:22:45.323 T:42408   debug <general>: Getting Directory (special://profile/playlists/mixed)
+2026-11-02 20:22:45.324 T:44904   debug <general>: Thread Timer 44904 terminating
+2026-11-02 20:22:45.324 T:26508   debug <general>: Thread Timer start, auto delete: false
+2026-11-02 20:22:45.324 T:42408   debug <general>: CMultiPathDirectory::MergeItems, items = 0
+2026-11-02 20:22:45.326 T:26508   debug <general>: Thread Timer 26508 terminating
+2026-11-02 20:22:45.326 T:12220   debug <general>: Thread Timer start, auto delete: false
+2026-11-02 20:22:45.327 T:33528   debug <general>: XCURL::DllLibCurlGlobal::easy_acquire - Created session to http://www.msftconnecttest.com
+2026-11-02 20:22:45.328 T:12220   debug <general>: Thread Timer 12220 terminating
+2026-11-02 20:22:45.328 T:43116   debug <general>: Thread Timer start, auto delete: false
+2026-11-02 20:22:45.330 T:3528     info <general>: Stopping the application...
+2026-11-02 20:22:45.330 T:3528     info <general>: Stopping player
+2026-11-02 20:22:45.330 T:44548   debug <general>: Thread AlarmClock 44548 terminating
+2026-11-02 20:22:45.330 T:3528     info <general>: Storing total System Uptime
+2026-11-02 20:22:45.330 T:3528     info <general>: Saving settings
+2026-11-02 20:22:45.332 T:3528     info <general>: Saving skin settings
+2026-11-02 20:22:45.333 T:3528     info <general>: Stopping all
+2026-11-02 20:22:45.333 T:42408   debug <general>: Thread JobWorker 42408 terminating (autodelete)
+2026-11-02 20:22:45.333 T:3976    debug <general>: Thread JobWorker 3976 terminating (autodelete)
+2026-11-02 20:22:45.406 T:33528   debug <general>: Thread JobWorker 33528 terminating (autodelete)
+2026-11-02 20:22:45.406 T:3528    debug <general>: CNetworkBase::NetworkMessage - Signaling network services to stop
+2026-11-02 20:22:45.406 T:3528     info <general>: ES: Stopping event server
+2026-11-02 20:22:45.406 T:3528     info <general>: [WS-Discovery]: terminating
+2026-11-02 20:22:45.406 T:3528    debug <general>: CNetworkBase::NetworkMessage - Waiting for network services to stop
+2026-11-02 20:22:45.407 T:3528     info <CWebserver[18082]>: Stopped
+2026-11-02 20:22:45.830 T:43116   debug <general>: Thread Timer 43116 terminating
+2026-11-02 20:22:45.946 T:19740    info <general>: ES: UDP Event server stopped
+2026-11-02 20:22:45.947 T:19740   debug <general>: Thread EventServer 19740 terminating
+2026-11-02 20:22:45.947 T:20124   debug <general>: Thread TCPServer 20124 terminating
+2026-11-02 20:22:45.947 T:3528    debug <general>: CServiceAddonManager: stopping service.xbmc.versioncheck.
+2026-11-02 20:22:45.947 T:3528     info <general>: CServiceAddonManager: failed to stop service.xbmc.versioncheck (may have ended)
+2026-11-02 20:22:45.947 T:2396    debug <general>: Thread ActiveAE 2396 terminating
+2026-11-02 20:22:45.956 T:43748   debug <general>: [threads] name: 'AESink' no task
+2026-11-02 20:22:45.956 T:43748   debug <general>: Thread AESink 43748 terminating
+2026-11-02 20:22:46.013 T:3528     info <general>: Application stopped
+2026-11-02 20:22:46.214 T:3528    error <general>: CGUIMediaWindow::GetDirectory(videodb://movies/titles/) failed
+2026-11-02 20:22:46.214 T:3528    error <general>: CGUIMediaWindow::GetDirectory() failed
+2026-11-02 20:22:46.214 T:44328   debug <general>: Thread PeripEventScan 44328 terminating
+2026-11-02 20:22:46.214 T:44864   debug <general>: Thread PeripBusUSB 44864 terminating
+2026-11-02 20:22:46.215 T:15876   debug <general>: Thread PeripBusCEC 15876 terminating
+2026-11-02 20:22:46.215 T:43188   debug <general>: Thread PeripBusAddon 43188 terminating
+2026-11-02 20:22:46.430 T:3528     info <peripheral.joystick>: Disabling joystick interface "directinput"
+2026-11-02 20:22:46.430 T:3528     info <peripheral.joystick>: Disabling joystick interface "xinput"
+2026-11-02 20:22:46.430 T:3528    debug <general>: SECTION:UnloadDll(C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\portable_data\addons\peripheral.joystick\peripheral.joystick.dll)
+2026-11-02 20:22:46.430 T:3528     info <general>: ADDON: Dll Destroyed - Joystick Support
+2026-11-02 20:22:46.430 T:3528     info <general>: unload skin
+2026-11-02 20:22:46.432 T:3528    debug <general>: ------ Window Deinit (Home.xml) ------
+2026-11-02 20:22:46.432 T:3528    debug <general>: FreeVisualisation() done
+2026-11-02 20:22:46.445 T:3528    debug <general>: Skipped 1 duplicate messages..
+2026-11-02 20:22:46.445 T:3528    debug <general>: ------ Window Deinit (Custom_1600_Overlay.xml) ------
+2026-11-02 20:22:46.445 T:44052   debug <general>: Thread Timer 44052 terminating
+2026-11-02 20:22:46.445 T:3528  warning <general>: CGUITextureManager::Cleanup: Having to cleanup texture White.png
+2026-11-02 20:22:46.446 T:3528    debug <general>: CTextureBundleXBT::CloseBundle - Closed bundle
+2026-11-02 20:22:46.457 T:3528    debug <general>: Infobool '!skin.hassetting(animation)' still used by 4 instances
+2026-11-02 20:22:46.457 T:3528    debug <general>: Infobool 'skin.hassetting(animation)' still used by 3 instances
+2026-11-02 20:22:46.457 T:3528    debug <general>: Infobool '!skin.hassetting(animation)' still used by 4 instances
+2026-11-02 20:22:46.457 T:3528    debug <general>: Infobool 'skin.hassetting(animation)' still used by 7 instances
+2026-11-02 20:22:46.457 T:3528    debug <general>: Infobool '!skin.hassetting(animation)' still used by 4 instances
+2026-11-02 20:22:46.457 T:3528    debug <general>: Infobool 'skin.hassetting(animation)' still used by 7 instances
+2026-11-02 20:22:46.457 T:3528    debug <general>: Infobool '!skin.hassetting(animation)' still used by 4 instances
+2026-11-02 20:22:46.457 T:3528    debug <general>: Infobool 'skin.hassetting(animation)' still used by 7 instances
+2026-11-02 20:22:46.457 T:3528    debug <general>: Infobool '!skin.hassetting(animation)' still used by 4 instances
+2026-11-02 20:22:46.457 T:3528    debug <general>: Infobool 'skin.hassetting(animation)' still used by 7 instances
+2026-11-02 20:22:46.457 T:3528    debug <general>: Infobool '!skin.hassetting(animation)' still used by 4 instances
+2026-11-02 20:22:46.457 T:3528    debug <general>: Infobool 'skin.hassetting(animation)' still used by 7 instances
+2026-11-02 20:22:46.457 T:3528    debug <general>: Infobool '!skin.hassetting(animation)' still used by 4 instances
+2026-11-02 20:22:46.457 T:3528    debug <general>: Infobool 'skin.hassetting(animation)' still used by 3 instances
+2026-11-02 20:22:46.457 T:3528     info <general>: Unloaded skin
+2026-11-02 20:22:46.464 T:3528    debug <general>: DX::DeviceResources::ReleaseBackBuffer: release buffers.
+2026-11-02 20:22:46.468 T:3528     info <general>: unload sections
+2026-11-02 20:22:46.470 T:43776   debug <general>: Thread CWin32PowerStateWorker 43776 terminating
+2026-11-02 20:22:46.470 T:34016   debug <general>: Thread Timer 34016 terminating
+2026-11-02 20:22:46.472 T:3528    debug <general>: CWinSystemWin32::RestoreDesktopResolution: restoring desktop resolution for 'LG ULTRAGEAR #1'.
+2026-11-02 20:22:46.472 T:35904   debug <general>: Thread RemoteControl 35904 terminating
+2026-11-02 20:22:46.477 T:43396   debug <general>: Thread Announce 43396 terminating
+2026-11-02 20:22:46.477 T:3528     info <general>: Exiting the application...

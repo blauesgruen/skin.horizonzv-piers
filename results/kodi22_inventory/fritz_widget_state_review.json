@@ -1,0 +1,120 @@
+{
+  "checked_on": "2026-11-10",
+  "scope": "Original source/structure snapshot at a6a5cd4, based on 2077de8. Inline ADDON reasoning was superseded by the current_followup after native testing; not current-code runtime proof.",
+  "base_checkpoint": "2077de8",
+  "provider_version": "3.1.7+matrix",
+  "findings": [
+    "Provider state is Addon.getLocalizedString(30030 + integer_state); skin compared it with unrelated skin-localized 31416/31417. Translation files have different words outside German/English.",
+    "Unfocused FritzDect_layout call did not supply the fritzid consumed by Control.HasFocus; focused call already did."
+  ],
+  "change": "Four guarded equality conditions use FritzAct addon strings 30031/30030, same IDs as the producer. Empty state is excluded. Both layout calls now forward the panel id. No action or parameter payload, geometry, label, image or other visibility changed.",
+  "changed_conditions": 4,
+  "layout_calls_forward_id": 2,
+  "dashboard_callers": [
+    {
+      "file": "Includes_Dashboard.xml",
+      "id": "8051"
+    },
+    {
+      "file": "Includes_Dashboard.xml",
+      "id": "8041"
+    },
+    {
+      "file": "Includes_Dashboard.xml",
+      "id": "8031"
+    },
+    {
+      "file": "Includes_Dashboard.xml",
+      "id": "8021"
+    }
+  ],
+  "other_structure_equal_base": true,
+  "old_translation_samples": [
+    {
+      "skin_locale": "de_de",
+      "old_skin_terms": {
+        "31416": "an",
+        "31417": "aus"
+      }
+    },
+    {
+      "skin_locale": "en_gb",
+      "old_skin_terms": {
+        "31416": "on",
+        "31417": "off"
+      }
+    },
+    {
+      "skin_locale": "fr_fr",
+      "old_skin_terms": {
+        "31416": "à",
+        "31417": "éteint"
+      }
+    },
+    {
+      "skin_locale": "es_es",
+      "old_skin_terms": {
+        "31416": "an",
+        "31417": "desactivado"
+      }
+    }
+  ],
+  "provider_state_ids": {
+    "off": 30030,
+    "on": 30031
+  },
+  "sources": [
+    {
+      "url": "https://github.com/b-jesch/script.program.fritzact/blob/Matrix/default.py",
+      "finding": "build_widget publishes translated state, type, mode and Label2=AIN; switch/group/thermostat action contract unchanged."
+    },
+    {
+      "url": "https://github.com/b-jesch/script.program.fritzact/blob/Matrix/resources/lib/device.py",
+      "finding": "LS is addon.getLocalizedString; device types switch/group/thermostat are produced."
+    },
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/GUIInfoManager.cpp",
+      "finding": "String comparison later supports CGUIInfoLabel expansion; this original evidence omitted the preceding Register/expression stage. Direct ADDON brackets fail there; see current_followup."
+    },
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/guilib/guiinfo/GUIInfoLabel.cpp",
+      "finding": "AddonReplacer uses GetAddonString(addonid,stringid)."
+    },
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/interfaces/legacy/Addon.cpp",
+      "finding": "Python Addon.getLocalizedString uses the same GetAddonString(pAddon->ID(), id)."
+    }
+  ],
+  "provider_reference_hashes": {
+    "default.py": "55167b07ab02d7a42aabec5bb9e7237ea5fd08441d6b2fc1a934772301adbbb8",
+    "resources/lib/device.py": "447d28f0dec2f39b64ee3153d0bdbdc6ee121e1c1bd786a0e381e0c64a0dc89a",
+    "resources/language/resource.language.en_gb/strings.po": "5bb226549bc111cfd32f6e73f144735c7c18df44a5f11322fcba7fc7f23e7776",
+    "resources/language/resource.language.de_de/strings.po": "d0b27dd47bb061bd35620bf1ad18ca2d8abefa71c711a87fa6fa5afc5a08f577"
+  },
+  "native_status": "Superseded by native follow-up: four controlled display cases and actual Home property lifecycle pass with unchanged FritzAct 3.1.7+matrix. No device/backend or foreign-language runtime claim.",
+  "limits": [
+    "Original source-only snapshot; current German color/focus tests are in the follow-up. Other languages remain source evidence only.",
+    "No router/device command or other addon code/configuration changed.",
+    "No guarantee for unpublished provider contract changes."
+  ],
+  "bounded_static_checks": {
+    "actions": {
+      "findings": 0
+    },
+    "windows": {
+      "findings": 0
+    },
+    "info": {
+      "arity_candidates": 0,
+      "condition_atom_candidates": 0,
+      "unrecognized_info_roots": 0
+    }
+  },
+  "package_review": "fritz_widget_package_review.json",
+  "current_followup": {
+    "evidence": "fritz_widget_parser_review.json",
+    "native": "../kodi22_runtime/fritz_widget_native_checks.json",
+    "correction": "Earlier GetLabel source reasoning omitted Boolean Register/expression parsing. Direct ADDON macros fail there; current conditions use Home properties populated by localized onload actions. Four native German fixture cases and actual Home entry/exit now pass. Other source/translation findings remain valid."
+  },
+  "snapshot_checkpoint": "a6a5cd4"
+}

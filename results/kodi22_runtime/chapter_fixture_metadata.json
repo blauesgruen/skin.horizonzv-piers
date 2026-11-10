@@ -1,0 +1,17 @@
+{
+  "fixture": "skin-audit-chapters.mkv",
+  "length_bytes": 19443982,
+  "sha256": "f73b940d9ffa678c2d59fe885e1d203d90cd56410c0f9f9ec0f929c7956b5315",
+  "video": "Reused authored color-bar AVI frame, 160x90 BGR24, 5 fps, 90 seconds, no audio",
+  "chapters_seconds": [
+    0,
+    30,
+    60
+  ],
+  "generator": "create_chapter_fixture.py",
+  "sources": [
+    "https://www.matroska.org/technical/elements.html",
+    "https://www.matroska.org/technical/codec_specs.html#v-ms-vfw-fourcc"
+  ],
+  "limits": "Minimal test container, not a general muxer or standards-conformance test."
+}

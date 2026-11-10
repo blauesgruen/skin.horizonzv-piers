@@ -1,0 +1,13 @@
+{
+  "scope": "This skin's SidePanelShortcuts item 12 in Includes_SidePanel.xml.",
+  "before": "ActivateWindow(shutdown)",
+  "after": "ActivateWindow(shutdownmenu)",
+  "evidence": "Piers WindowTranslator maps shutdownmenu to WINDOW_DIALOG_BUTTON_MENU (10111), with no shutdown alias. This skin's Home and LoginScreen already use shutdownmenu. Local Kodi English core string 33061 is Menu.",
+  "classification": "Unregistered target name, not a claimed Kodi 22 removal of the power menu.",
+  "sources": [
+    "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/input/WindowTranslator.cpp",
+    "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/guilib/WindowIDs.h"
+  ],
+  "runtime_status": "Passed later when original Kodi had exited: isolated visible Kodi PID 31808, Videos > menu action > Left to native shortcuts 9002 > Menu > shutdown menu 10111 > Back to Videos 10025 with Menu focus. No power action selected. See sidepanel_shutdown_checks.json and sidepanel_shutdown_cleanup.json in runtime results.",
+  "runtime_check": "In the isolated test skin open Videos, navigate the real SidePanelShortcuts list 9002 to item 12/Menu, select it, confirm native button menu 10111, then Back to Videos. Do not select any power action."
+}

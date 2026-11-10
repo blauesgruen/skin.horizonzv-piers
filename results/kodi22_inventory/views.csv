@@ -1,0 +1,52 @@
+Bereich;Include;Datei;View-ID;Viewtype;Label
+Audio;View_50_List;View_50_List.xml;50;list;"50 → ""?"""
+Audio;View_58_BannerMusic;View_Music_058_Banner.xml;58;fixedlist;Banner
+Audio;View_505_Wide;View_Movie_505_Wide.xml;505;list;$LOCALIZE[539]
+Audio;View_506_InfoListMusic;View_Music_506_InfoList.xml;506;list;$LOCALIZE[544]
+Audio;View_509_FanartMusic;View_Music_509_Fanart.xml;509;wrap;"20445 → ""Fanart"""
+Audio;View_512_MediaListArtist;View_Music_512_ArtistMediaList.xml;512;list;$LOCALIZE[544]
+Audio;View_515_Episode;View_515_Episode.xml;515;list;"20359 → ""Episode"""
+Audio;View_550_InfoListAddon;Views_Addon_Browser.xml;550;info;$LOCALIZE[31268]
+Audio;View_551_InfoThumbAddon;Views_Addon_Browser.xml;551;thumbview;$LOCALIZE[31269]
+Audio;View_562_Showcase;View_562_Showcase.xml;562;fixed;"562 → ""Jahr"""
+Audio;View_570_DiscFlowMusic;View_Music_570_DiscFlow.xml;570;fixed;DiscFlow
+Audio;View_722_RightListAddons;View_722_RightList.xml;722;list;View_721_RightList
+Audio;View_741_CoverWallMusic;View_Music_741_CoverWall.xml;741;list;Cover Wall
+Video;View_50_List;View_50_List.xml;50;list;"50 → ""?"""
+Video;View_562_Showcase;View_562_Showcase.xml;562;fixed;"562 → ""Jahr"""
+Video;View_57_Banner;View_Movie_057_Banner.xml;57;list;"57 → ""Jul"""
+Video;View_503_MediaList;View_Movie_503_MediaInfo.xml;503;list;$LOCALIZE[544]
+Video;View_505_Wide;View_Movie_505_Wide.xml;505;list;$LOCALIZE[539]
+Video;View_401_Fanart;View_Movie_401_Fanart.xml;401;fixed;"401 → ""Temperatur"""
+Video;View_402_FanartEpisode;View_Movie_402_Fanart_Episode.xml;402;fixed;"20445 → ""Fanart"""
+Video;View_500_PanelMovie;View_Movie_500_Panel.xml;500;panel;Panel
+Video;View_502_Don;View_Movie_502_Don.xml;502;list;$LOCALIZE[539]
+Video;View_302_3Panel;View_Movie_302_3Panel.xml;302;panel;3 Panel
+Video;View_515_Episode;View_515_Episode.xml;515;list;"20359 → ""Episode"""
+Video;View_721_RightList;View_Movie_721_RightList.xml;721;list;View_721_RightList
+Video;View_742_CoverWall;View_Movie_742_Wall.xml;742;;
+Video;View_740_CoverWallBig;View_Movie_740_BigWall.xml;740;;
+Video;View_550_InfoListAddon;Views_Addon_Browser.xml;550;info;$LOCALIZE[31268]
+Video;View_551_InfoThumbAddon;Views_Addon_Browser.xml;551;thumbview;$LOCALIZE[31269]
+Video;View_722_RightListAddons;View_722_RightList.xml;722;list;View_721_RightList
+Pictures;View_50_List;View_50_List.xml;50;list;"50 → ""?"""
+Pictures;View_510_WrapViewPicture;Views_Pictures.xml;510;wrap;"31014 → ""Reihenfolge"""
+Pictures;View_514_ThumbViewPicture;Views_Pictures.xml;514;list;$LOCALIZE[31013]
+Pictures;View_516_WallViewPicture;Views_Pictures.xml;516;list;$LOCALIZE[31013]
+Pictures;View_550_InfoListAddon;Views_Addon_Browser.xml;550;info;$LOCALIZE[31268]
+Pictures;View_551_InfoThumbAddon;Views_Addon_Browser.xml;551;thumbview;$LOCALIZE[31269]
+Pictures;View_722_RightListAddons;View_722_RightList.xml;722;list;View_721_RightList
+Addons;View_50_List;View_50_List.xml;50;list;"50 → ""?"""
+Addons;View_550_InfoListAddon;Views_Addon_Browser.xml;550;info;$LOCALIZE[31268]
+Addons;View_551_InfoThumbAddon;Views_Addon_Browser.xml;551;thumbview;$LOCALIZE[31269]
+Addons;View_722_RightListAddons;View_722_RightList.xml;722;list;View_721_RightList
+PVR;View_9_LiveTVChannelPanel;Views_PVR_Channels.xml;9;panel;panel
+PVR;View_14_LiveTVChannelIcons;Views_PVR_Channels.xml;;panel;Icons
+PVR;View_15_LiveTVChannelList;Views_PVR_Channels.xml;15;list;"535 → ""Liste"""
+Guide;View_10_PVRGuideTimeline;Views_PVR_Guide.xml;;list;"19032 → ""Zeitlinie"""
+Guide;View_11_PVRGuideNow;Views_PVR_Guide.xml;11;list;"535 → ""Liste"""
+Guide;View_12_PVRGuideNext;Views_PVR_Guide.xml;12;list;"19031 → ""Als Nächstes"""
+Guide;View_13_PVRGuideChannel;Views_PVR_Guide.xml;13;list;"19029 → ""Sender"""
+Recordings;View_50_LiveTVRecordings;Views_PVR_Recordings.xml;50;list;"535 → ""Liste"""
+Timers;View_21_LiveTVTimers;Views_PVR_Timers.xml;21;list;"535 → ""Liste"""
+Search;View_50_LiveTVSearch;Views_PVR_Search.xml;50;list;"535 → ""Liste"""

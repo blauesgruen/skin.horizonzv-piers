@@ -1,0 +1,30 @@
+{
+  "gui": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "currentwindow": {
+        "id": 10120,
+        "label": "Musik-OSD"
+      }
+    }
+  },
+  "empty_controls": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Control.HasFocus(701)": true,
+      "Control.IsEnabled(2401)": false,
+      "Control.IsEnabled(2402)": false
+    }
+  },
+  "before_selection": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Skin.String(LyricScript_Path)": "",
+      "Window(Home).Property(culrc.guirunning)": "",
+      "Window(Home).Property(culrc.running)": "true"
+    }
+  }
+}

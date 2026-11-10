@@ -1,0 +1,10 @@
+{
+  "scope": "Authored local media and local NFO prepared for later native library/version UI testing. Not imported yet.",
+  "title": "Skin Audit Movie",
+  "video_sha256": "b81ae76557ee90a330eb7975e0a5ffd646a9d121d1240193f5e1d0042e852dfd",
+  "source_video": "Previously authored skin-audit-video.avi, 90 seconds, raw colour bars, no audio",
+  "nfo": "Skin Audit Movie (2026).nfo",
+  "unique_id_type": "skin_audit",
+  "unique_id": "local-fixture-001",
+  "network_metadata_not_required": true
+}

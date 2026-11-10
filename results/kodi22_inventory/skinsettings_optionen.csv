@@ -1,0 +1,130 @@
+Kategorie;Control-ID;Typ;Label (de);Setting(s);Beschreibung vorhanden
+Shutdown Menu;110;radiobutton;"verberge ""Verlassen"" Schalter";Shutdown_noexit;nein
+Shutdown Menu;111;radiobutton;"verberge ""Ausschalten"" Schalter";Shutdown_noshutdown;nein
+Shutdown Menu;112;radiobutton;"verberge ""Benutzerdefinierter Ausschalttimer"" Schalter";Shutdown_notimer;nein
+Shutdown Menu;113;radiobutton;"verberge ""Bereitschaft"" Schalter";Shutdown_nosuspent;nein
+Shutdown Menu;114;radiobutton;"verberge ""Ruhezustand"" Schalter";Shutdown_nohibernate;nein
+Shutdown Menu;115;radiobutton;"verberge ""Neustart"" Schalter";Shutdown_noreboot;nein
+Shutdown Menu;116;radiobutton;"verberge ""Ausschalten bei Leerlauf verhindern"" Schalter";shutdown_noinhibitidle;nein
+Shutdown Menu;117;radiobutton;"verberge ""Ausschalten bei Leerlauf erlauben"" Schalter";shutdown_noallowidle;nein
+Shutdown Menu;121;radiobutton;"zeige ""KODI APP neu starten"" Schalter";shutdown_restart;nein
+Shutdown Menu;122;radiobutton;"zeige ""Skin neu laden"" Schalter";shutdown_reload;nein
+Shutdown Menu;123;radiobutton;"zeige ""Neustart von Nand"" Schalter";shutdown_nand;nein
+Shutdown Menu;124;radiobutton;Addon;shutdown_addon;nein
+Shutdown Menu;125;button;- Addon wählen;shutdown_addon1;nein
+Shutdown Menu;126;button;- eigenes Label festlegen;shutdown_addon1_label;nein
+Shutdown Menu;127;radiobutton;Videobibliothek exportieren (einzelne NFO, ohne Bilder, alte Daten überschreiben);videolibrary_export;nein
+Admin;202;radiobutton;Aktiviere Gitter;DebugGrid;nein
+Admin;204;radiobutton;Debug Information;DebugInfo;nein
+Admin;208;radiobutton;Ersten Start aktivieren;firstrun_horizonzv, firstrun1_horizonzv;nein
+Admin;210;button;wähle deine Systemleistung;;nein
+Admin;212;button;Skin-Einstellungen Zurücksetzen;;nein
+Admin;214;radiobutton;Mauszeiger;mousearrow;nein
+Admin;216;radiobutton;Kiosk Mode;kioskmode;nein
+Hauptmenü Schaltflächen;299;button;Positionen festlegen;;nein
+Hauptmenü Schaltflächen;301;button;Focus verschieben;homemenufocus;nein
+Hauptmenü Schaltflächen;302;button;$VAR[Home_music_Label];;ja
+Hauptmenü Schaltflächen;303;button;$VAR[Home_videos_Label];;ja
+Hauptmenü Schaltflächen;304;button;$VAR[Home_movies_Label];;nein
+Hauptmenü Schaltflächen;305;button;Spiele;;nein
+Hauptmenü Schaltflächen;306;button;Dashboard;;nein
+Hauptmenü Schaltflächen;307;button;$VAR[Home_tvshow_Label];;nein
+Hauptmenü Schaltflächen;308;button;$VAR[Home_musicvideo_Label];;nein
+Hauptmenü Schaltflächen;309;button;$VAR[Home_picture_Label];;nein
+Hauptmenü Schaltflächen;310;radiobutton;Wetter;HomeMenuNoWeatherButton;nein
+Hauptmenü Schaltflächen;432;radiobutton;- Hauptmenü automatisch ausblenden;HomeMenuWeatherFadeout;nein
+Hauptmenü Schaltflächen;434;button;- Zeit bis zum ausblenden;hidehomemenu_timer;nein
+Hauptmenü Schaltflächen;436;radiobutton;- Wetter Fanarts;WeatherFanartHome;nein
+Hauptmenü Schaltflächen;438;button;Wetterfanart ...;;nein
+Hauptmenü Schaltflächen;311;button;Disk;;nein
+Hauptmenü Schaltflächen;314;button;$VAR[Home_custom1_Label];;nein
+Hauptmenü Schaltflächen;315;button;$VAR[Home_custom2_Label];;nein
+Hauptmenü Schaltflächen;316;button;$VAR[Home_custom3_Label];;nein
+Hauptmenü Schaltflächen;317;button;$VAR[Home_custom4_Label];;nein
+Hauptmenü Schaltflächen;318;button;$VAR[Home_custom5_Label];;nein
+Hauptmenü Schaltflächen;319;button;$VAR[Home_custom6_Label];;nein
+Hauptmenü Schaltflächen;320;button;$VAR[Home_custom7_Label];;nein
+Hauptmenü Schaltflächen;321;button;$VAR[Home_custom8_Label];;nein
+Hauptmenü Schaltflächen;322;button;$VAR[Home_custom9_Label];;nein
+Hauptmenü Schaltflächen;326;button;System;;nein
+Hauptmenü Schaltflächen;327;button;TV;;nein
+Hauptmenü Schaltflächen;328;button;Radiosender;;nein
+Untermenü Schaltflächen;910;button;Videos;;nein
+Untermenü Schaltflächen;911;button;Filme;;nein
+Untermenü Schaltflächen;912;button;Musikvideos;;nein
+Untermenü Schaltflächen;913;button;Serien;;nein
+Untermenü Schaltflächen;914;button;Musik;;nein
+Untermenü Schaltflächen;915;button;System;;nein
+Untermenü Schaltflächen;930;radiobutton;Filme;SubMenu_videos_No_movies_sButton;nein
+Untermenü Schaltflächen;931;radiobutton;Serien;SubMenu_videos_No_tvshow_Button;nein
+Untermenü Schaltflächen;932;radiobutton;Musikvideos;SubMenu_videos_No_music_videoButton;nein
+Untermenü Schaltflächen;933;radiobutton;Bibliothek;SubMenu_videos_NoLibraryButton;nein
+Untermenü Schaltflächen;934;radiobutton;Addons;SubMenu_videos_NoVideoAddonButton;nein
+Untermenü Schaltflächen;935;radiobutton;Filmreihen;SubMenu_movies_NoSetButton;nein
+Untermenü Schaltflächen;936;radiobutton;Titel;SubMenu_movies_NoTitleButton;nein
+Untermenü Schaltflächen;937;radiobutton;Genre;SubMenu_movies_NoGenreButton;nein
+Untermenü Schaltflächen;938;radiobutton;Jahre;SubMenu_movies_NoYearButton;nein
+Untermenü Schaltflächen;939;radiobutton;Darsteller;SubMenu_movies_NoActorButton;nein
+Untermenü Schaltflächen;940;radiobutton;Addons;SubMenu_movies_NoAddonButton;nein
+Untermenü Schaltflächen;941;radiobutton;Titel;SubMenu_musicvideo_NoTitleButton;nein
+Untermenü Schaltflächen;942;radiobutton;Genre;SubMenu_musicvideo_NoGenreButton;nein
+Untermenü Schaltflächen;943;radiobutton;Titel;SubMenu_tvshow_NoTitleButton;nein
+Untermenü Schaltflächen;944;radiobutton;Genre;SubMenu_tvshow_NoGenreButton;nein
+Untermenü Schaltflächen;945;radiobutton;Jahre;SubMenu_tvshow_NoYearButton;nein
+Untermenü Schaltflächen;946;radiobutton;Darsteller;SubMenu_tvshow_NoActorButton;nein
+Untermenü Schaltflächen;947;radiobutton;Partymodus;SubMenu_music_NoPartymodeButton;nein
+Untermenü Schaltflächen;948;radiobutton;Interpreten;SubMenu_music_NoArtistButton;nein
+Untermenü Schaltflächen;949;radiobutton;Alben;SubMenu_music_NoAlbumButton;nein
+Untermenü Schaltflächen;950;radiobutton;Titel;SubMenu_music_NoSongsButton;nein
+Untermenü Schaltflächen;951;radiobutton;Bibliothek;SubMenu_music_NoLibraryButton;nein
+Untermenü Schaltflächen;952;radiobutton;Addons;SubMenu_music_NoAddonButton;nein
+Untermenü Schaltflächen;953;radiobutton;Skin;SubMenu_music_NoSkinSettingButton;nein
+Untermenü Schaltflächen;954;radiobutton;LibreELEC / CoreELEC;SubMenu_music_NoLibreelecButton;nein
+Untermenü Schaltflächen;955;radiobutton;Dateimanager;SubMenu_music_NoFilemanagerButton;nein
+Untermenü Schaltflächen;956;radiobutton;Profile;SubMenu_music_NoProfileButton;nein
+Untermenü Schaltflächen;957;radiobutton;Systeminformationen;SubMenu_music_NoSystemInfoButton;nein
+Funktionen;503;radiobutton;Hintergrund Video;BackgroundVideo;ja
+Funktionen;507;button;Wähle das Land der Alterfreigabe;31305;ja
+Funktionen;508;radiobutton;Trailer NICHT im Fenster abspielen;WindowedTrailer;ja
+Funktionen;524;radiobutton;Audiovisualisierung (Hauptmenü);ShowBackgroundVis;ja
+Funktionen;525;radiobutton;Next Track Playlist;playlist;ja
+Funktionen;542;button;Lege Startlautstärke fest;start_volume, startvolume;ja
+Funktionen;543;radiobutton;Deaktiviere alphanummerischer Sprungleiste;HideJumpSMSBar;ja
+Funktionen;546;radiobutton;Wake on lan Schalter in \'Zentrale\' verbergen;hidewolhome;ja
+Funktionen;549;radiobutton;Eigene Playlist beim Start;Use_Startup_Playlist;ja
+Funktionen;550;button;- Pfad:;Startup_Playlist_Path;nein
+Funktionen;553;radiobutton;Statistic im Hauptmenu anzeigen;statistic;ja
+Funktionen;555;radiobutton;\'Zentrale\' deaktivieren;hide_central;ja
+Funktionen;556;radiobutton;Zeige Profilnamen;profilname;nein
+Funktionen;557;radiobutton;Zeige Ladestand der Batterie;BatteryLevel;ja
+Widgets;602;radiobutton;Cover dimmen;WidgetDim;ja
+Widgets;604;radiobutton;keine Progressbar im Widget (grüner Balken auf dem Cover);WidgetNoPercentPlayedBar;ja
+Design / Leistung;802;radiobutton;Animationen (hohe CPU-Last);animation;ja
+Design / Leistung;804;radiobutton;Navigationsinformationen;NavInfo;ja
+Design / Leistung;806;radiobutton;Verberge Datumsanzeige;NoDate;ja
+Design / Leistung;808;radiobutton;Fanart;fanart;ja
+Design / Leistung;810;radiobutton;Nur ein Hintergrundbild;onlyone;ja
+Design / Leistung;812;button;- Bild / Pfad;Home_Custom_Back_picture_OnlyOne;ja
+Design / Leistung;814;radiobutton;- Diashow statt Standbild;Home_Custom_Back_picture_OnlyOne, Home_Custom_Back_picture_OnlyOne_Path;nein
+Design / Leistung;816;radiobutton;Fanart-Diashow;HomeFanartDiashow;ja
+Design / Leistung;820;button;Hintergrund dimmen;31257;ja
+Design / Leistung;822;button;Farb Akzente;31324;ja
+Design / Leistung;824;button;- ColorPicker;;nein
+Design / Leistung;825;button;- ColorPicker;;ja
+Design / Leistung;826;radiobutton;Seitenzähler;CommonPageCount;ja
+Design / Leistung;828;radiobutton;abgerundete Ecken;roundcorner;nein
+Design / Leistung;830;radiobutton;Neon Slide;NeonSlide;ja
+Design / Leistung;832;button;Hintergrundtheme;31324;ja
+Design / Leistung;840;radiobutton;Struktur im Hauptmenü;BackgroundDiffuseOverlay;ja
+Design / Leistung;842;radiobutton;Player Controls;HidePlayerControlsHome;ja
+Design / Leistung;844;radiobutton;Kleine Wetter-Informationen;homepageNOWeatherinfo;ja
+Design / Leistung;854;radiobutton;Radio Ansicht deaktivieren;noradioviz, radioview, vinylview;ja
+Design / Leistung;856;button;Musik Visualisierung;31280;ja
+Design / Leistung;858;button;Musik Visualisierung;vinylview, radioview;ja
+Design / Leistung;860;radiobutton;Titelinformationen;musicoverlay_stream;ja
+Design / Leistung;870;radiobutton;Leichte Version des Pausebildschirms;pause_light;ja
+Design / Leistung;872;radiobutton;verberge Videodetails;pause_light_hideinfos;ja
+Design / Leistung;873;radiobutton;zeige größere Schrift im Plot;BigPlotText;nein
+Design / Leistung;876;radiobutton;TV-Logo-Hintergrund Deaktivieren;no_tvlogo_back;nein
+Extra Arts;1004;radiobutton;lade Artworks;EnableExtendedArt;ja
+Extra Arts;1008;button;CD Style;31331;ja

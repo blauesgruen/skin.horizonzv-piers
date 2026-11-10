@@ -9,18 +9,18 @@
 		<param name="font">ubuntu-r16b</param>
 		<param name="textcolor">white</param>
 		<param name="align">center</param>
-		<param name="onclick">nope</param>
-		<param name="onclick2">nope</param>
+		<param name="onclick">noop</param>
+		<param name="onclick2">noop</param>
 		<param name="onclick2_condition">true</param>
-		<param name="onclick3">nope</param>
+		<param name="onclick3">noop</param>
 		<param name="onclick3_condition">true</param>
-		<param name="onclick4">nope</param>
-		<param name="onclick5">nope</param>
-		<param name="onclick6">nope</param>
-		<param name="onclick7">nope</param>
-		<param name="onclick8">nope</param>
-		<param name="onclick9">nope</param>
-		<param name="onclick10">nope</param>
+		<param name="onclick4">noop</param>
+		<param name="onclick5">noop</param>
+		<param name="onclick6">noop</param>
+		<param name="onclick7">noop</param>
+		<param name="onclick8">noop</param>
+		<param name="onclick9">noop</param>
+		<param name="onclick10">noop</param>
 		<param name="enable">true</param>
 		<param name="visible">true</param>
 		<param name="visible2">true</param>
@@ -122,13 +122,13 @@
 		<param name="wrapmultiline">false</param>
 		<param name="font">ubuntu-r16b</param>
 		<param name="align">center</param>
-		<param name="onclick">nope</param>
-		<param name="onclick2">nope</param>
+		<param name="onclick">noop</param>
+		<param name="onclick2">noop</param>
 		<param name="onclick2_condition">true</param>
-		<param name="onclick3">nope</param>
+		<param name="onclick3">noop</param>
 		<param name="onclick3_condition">true</param>
-		<param name="onclick4">nope</param>
-		<param name="onclick5">nope</param>
+		<param name="onclick4">noop</param>
+		<param name="onclick5">noop</param>
 		<param name="visible">true</param>
 		<param name="visible2">true</param>
 		<param name="visible3">true</param>
@@ -179,13 +179,13 @@
 		<param name="nofocus">White.png</param>
 		<param name="font">ubuntu-r16b</param>
 		<param name="align">center</param>
-		<param name="onclick">nope</param>
-		<param name="onclick2">nope</param>
+		<param name="onclick">noop</param>
+		<param name="onclick2">noop</param>
 		<param name="onclick2_condition">true</param>
-		<param name="onclick3">nope</param>
+		<param name="onclick3">noop</param>
 		<param name="onclick3_condition">true</param>
-		<param name="onclick4">nope</param>
-		<param name="onclick5">nope</param>
+		<param name="onclick4">noop</param>
+		<param name="onclick5">noop</param>
 		<param name="enable">true</param>
 		<param name="visible">true</param>
 		<param name="visible2">true</param>
@@ -228,13 +228,13 @@
 		<param name="nofocus">White.png</param>
 		<param name="font">ubuntu-r16b</param>
 		<param name="align">center</param>
-		<param name="onclick">nope</param>
-		<param name="onclick2">nope</param>
+		<param name="onclick">noop</param>
+		<param name="onclick2">noop</param>
 		<param name="onclick2_condition">true</param>
-		<param name="onclick3">nope</param>
+		<param name="onclick3">noop</param>
 		<param name="onclick3_condition">true</param>
-		<param name="onclick4">nope</param>
-		<param name="onclick5">nope</param>
+		<param name="onclick4">noop</param>
+		<param name="onclick5">noop</param>
 		<param name="enable">true</param>
 		<param name="visible">true</param>
 		<param name="visible2">true</param>
@@ -335,6 +335,12 @@
 		<texture border="5" colordiffuse="grey2">White.png</texture>
         <texturenofocus border="5" colordiffuse="grey2">White.png</texturenofocus>
 	</include>
+	<include name="DialogSettingButton">
+		<textoffsetx>40</textoffsetx>
+		<aligny>center</aligny>
+		<texturefocus border="5" colordiffuse="focused">White.png</texturefocus>
+		<texturenofocus border="5" colordiffuse="grey2">White.png</texturenofocus>
+	</include>
 	<include name="DefaultGrouplistHomemenuTargets">
 		<param name="widthlist">1110</param>
 		<param name="id">1</param>
@@ -350,7 +356,7 @@
 				<include content="DialogRadioButton">
 					<param name="id" value="$PARAM[id]1" />
 					<param name="width" value="$PARAM[widthlist]" />
-					<param name="label" value="$LOCALIZE[301596]" />
+					<param name="label" value="$LOCALIZE[31406]" />
 					<param name="align" value="left" />
 					<param name="onclick" value="Skin.ToggleSetting(HomeMenuNo_$PARAM[homemenu_name]_Button)" />
 					<param name="selected" value="!Skin.HasSetting(HomeMenuNo_$PARAM[homemenu_name]_Button)" />
@@ -368,7 +374,6 @@
 					<param name="enable" value="!Skin.HasSetting(HomeMenuNo_$PARAM[homemenu_name]_Button)" />
 					<param name="visible2" value="!String.IsEqual(Window(Home).Property(HomeButton),setting)+!String.IsEqual(Window(Home).Property(HomeButton),dashboard)" />
 					<param name="visible3" value="!String.StartsWith(Window(Home).Property(HomeButton),custom)" />
-					<param name="enable" value="!String.StartsWith(Window(Home).Property(HomeButton),custom)" />
 					<param name="nofocus" />
 				</include>
 				<include content="DefaultDialogButton">
@@ -447,7 +452,7 @@
 				<include content="DialogRadioButton">
 					<param name="id" value="$PARAM[id]8" />
 					<param name="width" value="$PARAM[widthlist]" />
-					<param name="label" value="$LOCALIZE[301596]" />
+					<param name="label" value="$LOCALIZE[31406]" />
 					<param name="align" value="left" />
 					<param name="onclick" value="Skin.ToggleSetting(Home_$PARAM[homemenu_name]_Button)" />
 					<param name="selected" value="Skin.HasSetting(Home_$PARAM[homemenu_name]_Button)" />
@@ -688,7 +693,7 @@
 			<include content="DialogRadioButton">
 				<param name="id" value="$PARAM[id]996" />
 				<param name="width" value="1110" />
-				<param name="label" value="$LOCALIZE[301306]" />
+				<param name="label" value="$LOCALIZE[31266]" />
 				<param name="align" value="left" />
 				<param name="onclick" value="Skin.ToggleSetting(WidgetDim)" />
 				<param name="selected" value="Skin.HasSetting(WidgetDim)" />
@@ -697,7 +702,7 @@
 			<include content="DialogRadioButton">
 				<param name="id" value="$PARAM[id]997" />
 				<param name="width" value="1110" />
-				<param name="label" value="$LOCALIZE[301598]" />
+				<param name="label" value="$LOCALIZE[31407]" />
 				<param name="align" value="left" />
 				<param name="onclick" value="Skin.ToggleSetting(WidgetNoPercentPlayedBar)" />
 				<param name="selected" value="Skin.HasSetting(WidgetNoPercentPlayedBar)" />
@@ -962,7 +967,6 @@
 				<control type="label">
 					<right>50</right>
 					<height>50</height>
-					<height>50</height>
 					<align>right</align>
 					<font>ubuntu-r16b</font>
 					<textcolor>grey</textcolor>
@@ -1095,4 +1099,21 @@
 			</focusedlayout>
 		</definition>
 	</include>
+    <include name="WOLDeviceItem">
+        <param name="slot" />
+        <definition>
+            <item id="$PARAM[slot]">
+                <property name="number">$PARAM[slot]. </property>
+                <property name="name">$INFO[Window(Home).Property(SkinHelperPING.servername$PARAM[slot])]</property>
+                <property name="ip">$INFO[Window(Home).Property(SkinHelperPING.ip$PARAM[slot])]</property>
+                <property name="mac">$INFO[Window(Home).Property(SkinHelperPING.mac$PARAM[slot])]</property>
+                <label fallback="$INFO[Window(Home).Property(SkinHelperPING.mac$PARAM[slot])]">$INFO[Window(Home).Property(SkinHelperPING.servername$PARAM[slot])]$INFO[Window(Home).Property(SkinHelperPING.ip$PARAM[slot]), (,)]</label>
+                <label2>$INFO[Window(Home).Property(SkinHelperPING.server$PARAM[slot])]</label2>
+                <onclick condition="System.AddonIsEnabled(script.skinhelper.ping)+!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac$PARAM[slot]))">WakeOnLan($INFO[Window(Home).Property(SkinHelperPING.mac$PARAM[slot])])</onclick>
+                <onclick condition="System.AddonIsEnabled(script.skinhelper.ping)+!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac$PARAM[slot]))">Notification(WOL,$LOCALIZE[31951],3000)</onclick>
+                <onclick condition="System.AddonIsEnabled(script.skinhelper.ping)+!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac$PARAM[slot]))">RunScript(script.skinhelper.ping,status)</onclick>
+                <visible>System.AddonIsEnabled(script.skinhelper.ping)+[!String.IsEmpty(Window(Home).Property(SkinHelperPING.servername$PARAM[slot]))|!String.IsEmpty(Window(Home).Property(SkinHelperPING.ip$PARAM[slot]))|!String.IsEmpty(Window(Home).Property(SkinHelperPING.mac$PARAM[slot]))]</visible>
+            </item>
+        </definition>
+    </include>
 </includes>

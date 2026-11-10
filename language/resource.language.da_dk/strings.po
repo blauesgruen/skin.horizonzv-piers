@@ -1,4 +1,4 @@
-﻿# Kodi Media Center language file
+# Kodi Media Center language file
 # Addon Name: HorizonzV
 # Addon id: skin.horizonzv
 # Addon Provider: blauesgruen
@@ -242,887 +242,884 @@ msgstr "Prognosedata er ved at blive hentet..."
 
 # Horizonz
 
-msgctxt "#301126"
+msgctxt "#31200"
 msgid ""
 msgstr "Aktiverer baggrundsvideo i hovedmenuen."
 
-msgctxt "#301132"
+msgctxt "#31201"
 msgid ""
 msgstr "Vælg land for aldersklassificering (defineret i scrapper).[CR]Følgende lande understøttes: DE, US, UK, FR.[CR]Hvis kun amerikanske klassifikationer er tilgængelige, vises de."
 
-msgctxt "#301134"
+msgctxt "#31202"
 msgid ""
 msgstr "Trailers vises direkte i filminformationen eller i fuld skærm."
 
-msgctxt "#301135"
+msgctxt "#31203"
 msgid ""
 msgstr "Hvis en visualisering er valgt til musikafspilning, vises den også i hovedmenuen."
 
-msgctxt "#301136"
+msgctxt "#31204"
 msgid ""
 msgstr "Viser en spilleliste med de næste 9 numre i hovedmenuen og på fuld skærm."
 
-msgctxt "#301140"
+msgctxt "#31205"
 msgid ""
 msgstr "Indstil lydstyrken i procent, der skal afspilles, hver gang KODI startes.[CR]Angiv et tal fra 0 - 100."
 
-msgctxt "#301142"
+msgctxt "#31206"
 msgid ""
 msgstr "Deaktiverer alfanumerisk springliste i SMS-stil.[CR][COLOR=grey]Importeret fra skin \'Alaska.\'[/COLOR]"
 
-msgctxt "#301143"
+msgctxt "#31207"
 msgid ""
 msgstr "For at bruge denne funktion kræves tilføjelsen \'Skinhelper Ping\' af _Andy_/PvD.[CR][COLOR=grey]Den kan installeres her under Tilføjelser eller via Kodinerds Repo.[/COLOR]"
 
-msgctxt "#301144"
+msgctxt "#31208"
 msgid ""
 msgstr "Starter den valgte afspilningsliste efter start af KODI."
 
-msgctxt "#301145"
+msgctxt "#31209"
 msgid ""
 msgstr "For at bruge denne funktion kræves tilføjelsen \'Global Search\' fra det officielle arkiv."
 
-msgctxt "#301146"
+msgctxt "#31210"
 msgid ""
 msgstr "Viser en lille statistik over databaseposterne nederst til højre i hovedmenuen."
 
-msgctxt "#301147"
+msgctxt "#31211"
 msgid ""
 msgstr "Viser favoritterne under hovedmenuen i stedet for direkte i \'Central\'.[CR]Disse kan ellers nås via \'Central\'."
 
-msgctxt "#301148"
+msgctxt "#31212"
 msgid ""
 msgstr "Skjuler \'Central\', der er placeret under hovedmenuen."
 
-msgctxt "#301150"
+msgctxt "#31213"
 msgid ""
 msgstr "Aktiverer et ikon i øverste højre hjørne, der viser status for batteriets opladning.[CR][COLOR=white]Der sker forkert visning på computere uden batteri.[/COLOR]"
 
-msgctxt "#301151"
+msgctxt "#31214"
 msgid ""
 msgstr "Indstillingerne for widget'en findes i den respektive undermenu i hovedmenuen."
 
-msgctxt "#301152"
+msgctxt "#31215"
 msgid ""
 msgstr "Dæmper alle ikke-fokuserede dækninger."
 
-msgctxt "#301153"
+msgctxt "#31216"
 msgid ""
 msgstr "Skjuler den grønne statuslinje på forsider."
 
-msgctxt "#301166"
+msgctxt "#31217"
 msgid ""
 msgstr "Dette skin indeholder forskellige animationseffekter.[CR]Brug denne switch til at deaktivere dem. I stedet anvendes en simpel fadeeffekt.[CR]Dette kan resultere i en bedre ydeevne på langsomme systemer."
 
-msgctxt "#301168"
+msgctxt "#31218"
 msgid ""
 msgstr "Viser, hvor du befinder dig i øverste venstre hjørne."
 
-msgctxt "#301169"
+msgctxt "#31219"
 msgid ""
 msgstr "Skjuler datovisningen i øverste højre hjørne."
 
-msgctxt "#301170"
+msgctxt "#31220"
 msgid ""
 msgstr "Aktiverer fanart i alle områder."
 
-msgctxt "#301171"
+msgctxt "#31221"
 msgid ""
 msgstr "Deaktiverer ændring af baggrundsbilleder.[CR][COLOR=white]Vælg dit eget billede eller sti.[/COLOR]"
 
-msgctxt "#301172"
+msgctxt "#31222"
 msgid ""
 msgstr "Vælg et billede her.[CR]Hvis der ikke er angivet noget billede, vises et standardbillede.[CR][COLOR=white]Klik igen for at slette det.[/COLOR]"
 
-msgctxt "#301173"
+msgctxt "#31223"
 msgid ""
 msgstr "Viser et diasshow i baggrunden, baseret på KODI-biblioteket.[CR][COLOR=white]Synlig i hovedmenuen under: Film, serier og musik.[/COLOR]"
 
-msgctxt "#301174"
+msgctxt "#31224"
 msgid ""
 msgstr "Aktiverer mørkfarvning af baggrunden i alle områder.[CR][COLOR=white]Mulige mørkfarvningsniveauer: SLUKKET, LET, MEDIUM, TUNG.[/COLOR]"
 
-msgctxt "#301175"
+msgctxt "#31225"
 msgid ""
 msgstr "Vælg en accentfarve, der vises på mange områder af huden.[CR][COLOR=grey]Brugerdefineret: Farvekoder skal angives i AARRGGBB hex-format.[CR]Et eksempel på [/COLOR][COLOR=ffffffffffffff]Hvid[/COLOR]: FFFFFFFFFFFF"
 
-msgctxt "#301176"
+msgctxt "#31226"
 msgid ""
 msgstr "Installer ColorPicker-tilfojelsen fra Kodinerds-repositoriet, sa du kan vaelge farver med et klik."
 
-msgctxt "#301177"
+msgctxt "#31227"
 msgid ""
 msgstr "I databasevisninger vises antal og samlet løbetid for poster."
 
-msgctxt "#301178"
+msgctxt "#31228"
 msgid ""
 msgstr "Aktiverer en lyseffekt langs hovedmenuen."
 
-msgctxt "#301180"
+msgctxt "#31229"
 msgid ""
 msgstr "Vælg et af baggrundstemaerne. Det ændrer kraftigt hovedmenuens helhedsindtryk.[CR][COLOR][COLOR=white]Vil blive deaktiveret så snart \'kun ét baggrundsbillede\' er aktiveret.[/COLOR][COLOR=grey][CR]Temaet \'Gambit\' har den fordel, at det giver bedre ydeevne på svagere systemer.[CR]Dette tema blev venligst stillet til rådighed af \'G4mbit\' fra KODINERDS forum.[/COLOR]"
 
-msgctxt "#301184"
+msgctxt "#31230"
 msgid ""
 msgstr "Lægger en tekstur over baggrundsbilledet."
 
-msgctxt "#301186"
+msgctxt "#31231"
 msgid ""
 msgstr "Viser afspillerkontrollerne under afspilning til venstre, under hovedmenuen."
 
-msgctxt "#301188"
+msgctxt "#31232"
 msgid ""
 msgstr "Viser det aktuelle vejr i øverste venstre hjørne."
 
-msgctxt "#301190"
+msgctxt "#31233"
 msgid ""
 msgstr "\'Radio\', en af 3 visninger under afspilning på fuld skærm, kan deaktiveres her."
 
-msgctxt "#301192"
+msgctxt "#31234"
 msgid ""
 msgstr "Vælg mellem visningerne Standard, Alternativ og Radio.[CR][COLOR=grey]\'Radio\' bruges altid til online musikstreams. Men kan deaktiveres.[/COLOR]"
 
-msgctxt "#301194"
+msgctxt "#31235"
 msgid ""
 msgstr "Vælg mellem standard- og alternativ visning.[CR][COLOR=white]Info: Radioen er blevet deaktiveret.[/COLOR]"
 
-msgctxt "#301196"
+msgctxt "#31236"
 msgid ""
 msgstr "Viser grundlæggende sporoplysninger i fuld skærm under musikafspilning i nederste venstre hjørne.[CR][COLOR=whithe]Synlig, når OSD ikke er synlig.[/COLOR]"
 
-msgctxt "#301198"
+msgctxt "#31237"
 msgid ""
 msgstr "Viser en diskret, smal version af pauseskærmen."
 
-msgctxt "#301200"
+msgctxt "#31238"
 msgid ""
 msgstr "Der vises ingen oplysninger såsom kapitler, undertekster, tidslinjer osv.[CR][COLOR=grey]Studiologos og Extra Arts er også skjult.[/COLOR]"
 
-msgctxt "#301202"
+msgctxt "#31239"
 msgid ""
-msgstr "Vis alle tilgængelige film- og seriekunstværker.[CR][COLOR][COLOR=white]Da Kodi 19 kunstværker er indlæst med scrapper \'The Movie Database PYTHON\'.[/COLOR][COLOR=grey][CR]\'Artwork Beef\' eller en lignende addon kan dog stadig bruges.[/COLOR]"
+msgstr "Vis alle tilgængelige film- og seriekunstværker.[CR][COLOR][COLOR=white]Da Kodi 19 kunstværker er indlæst med scrapper \'The Movie Database PYTHON\'.[/COLOR]"
 
-msgctxt "#301204"
+msgctxt "#31240"
 msgid ""
 msgstr "Vælg cd'ens udseende her, hvis der ikke findes nogen CDArt.[CR][COLOR=white]CDArts skal være klar i en mappe. Du kan angive dette i systemindstillingerne (Medier->Musik).[/COLOR]"
 
-msgctxt "#301210"
+msgctxt "#31241"
 msgid ""
 msgstr "Aktiverer alle tilgængelige PVR-kunstværker.[CR][COLOR=white]\'Skin Helper Service\' er påkrævet.[/COLOR]"
 
-msgctxt "#301218"
+msgctxt "#31242"
 msgid ""
 msgstr "Vælg et baggrundsbillede"
 
-msgctxt "#301240"
+msgctxt "#31243"
 msgid ""
 msgstr "Nulstilling"
 
-msgctxt "#301244"
+msgctxt "#31244"
 msgid ""
 msgstr "Indstiller standardindstillingen for dette skin.[CR]Har kun indflydelse på brugerdefinerede indstillinger."
 
-msgctxt "#301246"
+msgctxt "#31245"
 msgid ""
 msgstr "Svag"
 
-msgctxt "#301248"
+msgctxt "#31246"
 msgid ""
 msgstr "Medium"
 
-msgctxt "#301250"
+msgctxt "#31247"
 msgid ""
 msgstr "Fast"
 
-msgctxt "#301268"
+msgctxt "#31248"
 msgid ""
 msgstr "[UPPERCASE]Nulstil hudindstillingerne ?[/UPPERCASE]"
 
-msgctxt "#301270"
+msgctxt "#31249"
 msgid ""
 msgstr "Cover"
 
-msgctxt "#301272"
+msgctxt "#31250"
 msgid ""
 msgstr "Ingen favoritter tilgængelige"
 
-msgctxt "#301274"
+msgctxt "#31251"
 msgid ""
 msgstr "[B]KODI SUBTITLE[/B]"
 
-msgctxt "#301276"
+msgctxt "#31252"
 msgid ""
 msgstr "sidepanel"
 
-msgctxt "#301278"
+msgctxt "#31253"
 msgid ""
 msgstr "Indstil oplysninger"
 
-msgctxt "#301280"
+msgctxt "#31254"
 msgid ""
 msgstr "Koncerter"
 
-msgctxt "#301282"
+msgctxt "#31255"
 msgid ""
 msgstr "Sprog (aldersvurdering)"
 
-msgctxt "#301284"
+msgctxt "#31256"
 msgid ""
 msgstr "Flags i tekstform"
 
-msgctxt "#301286"
+msgctxt "#31257"
 msgid ""
 msgstr "Dim baggrund"
 
-msgctxt "#301288"
+msgctxt "#31258"
 msgid ""
 msgstr "Sidetæller"
 
-msgctxt "#301290"
+msgctxt "#31259"
 msgid ""
 msgstr "Konvolutter"
 
-msgctxt "#301292"
+msgctxt "#31260"
 msgid ""
 msgstr "Skjul stort omslag"
 
-msgctxt "#301294"
+msgctxt "#31261"
 msgid ""
 msgstr "Logo i stedet for titel"
 
-msgctxt "#301296"
+msgctxt "#31262"
 msgid ""
 msgstr "Information"
 
-msgctxt "#301300"
+msgctxt "#31263"
 msgid ""
 msgstr "Skjul \'NEW\' ikonet"
 
-msgctxt "#301302"
+msgctxt "#31264"
 msgid ""
 msgstr "Støv effekt (konvolut)"
 
-msgctxt "#301304"
+msgctxt "#31265"
 msgid ""
 msgstr "Deaktiver animation af omslag"
 
-msgctxt "#301306"
+msgctxt "#31266"
 msgid ""
 msgstr "Dim cover"
 
-msgctxt "#301308"
+msgctxt "#31267"
 msgid ""
 msgstr "Liste"
 
-msgctxt "#301310"
+msgctxt "#31268"
 msgid ""
 msgstr "Infoliste"
 
-msgctxt "#301312"
+msgctxt "#31269"
 msgid ""
 msgstr "Thumbview"
 
-msgctxt "#301314"
+msgctxt "#31270"
 msgid ""
 msgstr "Banner"
 
-msgctxt "#301316"
+msgctxt "#31271"
 msgid ""
 msgstr "Showcase"
 
-msgctxt "#301318"
+msgctxt "#31272"
 msgid ""
 msgstr "Perspektiv"
 
-msgctxt "#301320"
+msgctxt "#31273"
 msgid ""
 msgstr "Disc Flow"
 
-msgctxt "#301322"
+msgctxt "#31274"
 msgid ""
 msgstr "Rightlist"
 
-msgctxt "#301324"
+msgctxt "#31275"
 msgid ""
 msgstr "Dæk væggen (fuld skærm)"
 
-msgctxt "#301326"
+msgctxt "#31276"
 msgid ""
 msgstr "Cover Wall"
 
-msgctxt "#301328"
+msgctxt "#31277"
 msgid ""
 msgstr "Cover Wall"
 
-msgctxt "#301330"
+msgctxt "#31278"
 msgid ""
 msgstr "Deaktiver radiovisning"
 
-msgctxt "#301331"
+msgctxt "#31279"
 msgid ""
 msgstr " - Deaktiver TV Wall"
 
-msgctxt "#301332"
+msgctxt "#31280"
 msgid ""
 msgstr "Musikvisualisering"
 
-msgctxt "#301334"
+msgctxt "#31281"
 msgid ""
 msgstr "Musik Extra Arts"
 
-msgctxt "#301336"
+msgctxt "#31282"
 msgid ""
 msgstr "Datovisning"
 
-msgctxt "#301338"
+msgctxt "#31283"
 msgid ""
 msgstr "Nøglebeskrivelse"
 
-msgctxt "#301340"
+msgctxt "#31284"
 msgid ""
 msgstr "Infopanel"
 
-msgctxt "#301344"
+msgctxt "#31285"
 msgid ""
 msgstr "tilbage"
 
-msgctxt "#301346"
+msgctxt "#31286"
 msgid ""
 msgstr "hovedmenu knapper"
 
-msgctxt "#301348"
+msgctxt "#31287"
 msgid ""
 msgstr "Undermenu-knapper"
 
-msgctxt "#301350"
+msgctxt "#31288"
 msgid ""
 msgstr "Funktioner"
 
-msgctxt "#301351"
+msgctxt "#31289"
 msgid ""
 msgstr "Widgeter"
 
-msgctxt "#301352"
+msgctxt "#31290"
 msgid ""
 msgstr "Design / ydeevne"
 
-msgctxt "#301354"
+msgctxt "#31291"
 msgid ""
 msgstr "Ekstra kunst"
 
-msgctxt "#301356"
+msgctxt "#31292"
 msgid ""
 msgstr "Admin"
 
-msgctxt "#301357"
+msgctxt "#31293"
 msgid ""
 msgstr "Menu til nedlukning"
 
-msgctxt "#301358"
+msgctxt "#31294"
 msgid ""
 msgstr "Enable Grid"
 
-msgctxt "#301360"
+msgctxt "#31295"
 msgid ""
 msgstr "Debug Information"
 
-msgctxt "#301362"
+msgctxt "#31296"
 msgid ""
 msgstr "Aktivér første start"
 
-msgctxt "#301364"
+msgctxt "#31297"
 msgid ""
 msgstr "vælg din systemydelse"
 
-msgctxt "#301366"
+msgctxt "#31298"
 msgid ""
 msgstr "musemarkør"
 
-msgctxt "#301368"
+msgctxt "#31299"
 msgid ""
 msgstr "Indstil positioner"
 
-msgctxt "#301370"
+msgctxt "#31300"
 msgid ""
 msgstr "Flyt fokus"
 
-msgctxt "#301371"
+msgctxt "#31301"
 msgid ""
 msgstr "Dashboard"
 
-msgctxt "#301372"
+msgctxt "#31302"
 msgid ""
 msgstr "Skjul hovedmenuen automatisk"
 
-msgctxt "#301374"
+msgctxt "#31303"
 msgid ""
 msgstr "Tid indtil skjul"
 
-msgctxt "#301376"
+msgctxt "#31304"
 msgid ""
 msgstr "Baggrundsvideo"
 
-msgctxt "#301378"
+msgctxt "#31305"
 msgid ""
 msgstr "Vælg det land, hvor aldersvurderingen er foretaget"
 
-msgctxt "#301380"
+msgctxt "#31306"
 msgid ""
 msgstr "Afspil IKKE traileren i vinduet"
 
-msgctxt "#301382"
+msgctxt "#31307"
 msgid ""
 msgstr "Næste spor afspilningsliste"
 
-msgctxt "#301384"
+msgctxt "#31308"
 msgid ""
 msgstr "Indstil startvolumen"
 
-msgctxt "#301386"
+msgctxt "#31309"
 msgid ""
 msgstr "Deaktiver alfanumerisk springbar"
 
-msgctxt "#301388"
+msgctxt "#31310"
 msgid ""
 msgstr "Skjul wake on lan switch i \'Hovedkvarter\'"
 
-msgctxt "#301390"
+msgctxt "#31312"
 msgid ""
 msgstr "Global søgning i kontekstmenuen"
 
-msgctxt "#301392"
+msgctxt "#31313"
 msgid ""
 msgstr "Vis statistik i hovedmenuen"
 
-msgctxt "#301394"
+msgctxt "#31314"
 msgid ""
 msgstr "vis vinduet Favoritter i hovedmenuen"
 
-msgctxt "#301396"
+msgctxt "#31315"
 msgid ""
 msgstr "\'deaktivere central\'\'"
 
-msgctxt "#301389"
+msgctxt "#31311"
 msgid ""
 msgstr "- Mappe"
 
-msgctxt "#301400"
+msgctxt "#31316"
 msgid ""
 msgstr "Disk"
 
-msgctxt "#301402"
+msgctxt "#31317"
 msgid ""
 msgstr "Animationer (høj CPU-belastning)"
 
-msgctxt "#301404"
+msgctxt "#31318"
 msgid ""
 msgstr "Navigationsoplysninger"
 
-msgctxt "#301406"
+msgctxt "#31319"
 msgid ""
 msgstr "Små vejroplysninger"
 
-msgctxt "#301408"
+msgctxt "#31320"
 msgid ""
 msgstr "Skjul datovisning"
 
-msgctxt "#301410"
+msgctxt "#31321"
 msgid ""
 msgstr "Kun ét baggrundsbillede"
 
-msgctxt "#301412"
+msgctxt "#31322"
 msgid ""
 msgstr "- billede / sti"
 
-msgctxt "#301414"
+msgctxt "#31323"
 msgid ""
 msgstr "- Diasshow i stedet for stillbillede"
 
-msgctxt "#301416"
+msgctxt "#31324"
 msgid ""
 msgstr "Farveaccenter"
 
-msgctxt "#301418"
+msgctxt "#31325"
 msgid ""
 msgstr "baggrundstema"
 
-msgctxt "#301424"
+msgctxt "#31326"
 msgid ""
 msgstr "Struktur i hovedmenuen"
 
-msgctxt "#301426"
+msgctxt "#31327"
 msgid ""
 msgstr "Spillerkontroller"
 
-msgctxt "#301428"
+msgctxt "#31328"
 msgid ""
 msgstr "Vejr Fanarts"
 
-msgctxt "#301430"
+msgctxt "#31329"
 msgid ""
 msgstr "Light-version af pauseskærmen"
 
-msgctxt "#301432"
+msgctxt "#31330"
 msgid ""
 msgstr "skjul videodetaljer"
 
-msgctxt "#301434"
+msgctxt "#31331"
 msgid ""
 msgstr "CD Style"
 
-msgctxt "#301436"
+msgctxt "#31332"
 msgid ""
 msgstr "lytte"
 
-msgctxt "#301438"
+msgctxt "#31333"
 msgid ""
 msgstr "administrere din"
 
-msgctxt "#301440"
+msgctxt "#31334"
 msgid ""
 msgstr "oplev din"
 
-msgctxt "#301442"
+msgctxt "#31335"
 msgid ""
 msgstr "udforske din"
 
-msgctxt "#301444"
+msgctxt "#31336"
 msgid ""
 msgstr "lad det rotere"
 
-msgctxt "#301446"
+msgctxt "#31337"
 msgid ""
 msgstr "gå til"
 
-msgctxt "#301448"
+msgctxt "#31338"
 msgid ""
 msgstr "ændre din"
 
-msgctxt "#301456"
+msgctxt "#31339"
 msgid ""
 msgstr "glas"
 
-msgctxt "#301458"
+msgctxt "#31340"
 msgid ""
 msgstr "blank"
 
-msgctxt "#301460"
+msgctxt "#31341"
 msgid ""
 msgstr "light"
 
-msgctxt "#301462"
+msgctxt "#31342"
 msgid ""
 msgstr "medium"
 
-msgctxt "#301464"
+msgctxt "#31343"
 msgid ""
 msgstr "strong"
 
-msgctxt "#301466"
+msgctxt "#31344"
 msgid ""
 msgstr "central"
 
-msgctxt "#301468"
+msgctxt "#31345"
 msgid ""
 msgstr "other/unknown"
 
-msgctxt "#301470"
+msgctxt "#31346"
 msgid ""
 msgstr "film drama"
 
-msgctxt "#301472"
+msgctxt "#31347"
 msgid ""
 msgstr "Nyheder"
 
-msgctxt "#301474"
+msgctxt "#31348"
 msgid ""
 msgstr "Vis"
 
-msgctxt "#301476"
+msgctxt "#31349"
 msgid ""
 msgstr "Sport"
 
-msgctxt "#301478"
+msgctxt "#31350"
 msgid ""
 msgstr "Børn"
 
-msgctxt "#301480"
+msgctxt "#31351"
 msgid ""
 msgstr "musik"
 
-msgctxt "#301482"
+msgctxt "#31352"
 msgid ""
 msgstr "Art"
 
-msgctxt "#301484"
+msgctxt "#31353"
 msgid ""
 msgstr "Virksomhed"
 
-msgctxt "#301486"
+msgctxt "#31354"
 msgid ""
 msgstr "Videnskab"
 
-msgctxt "#301488"
+msgctxt "#31355"
 msgid ""
 msgstr "Special"
 
-msgctxt "#301490"
+msgctxt "#31356"
 msgid ""
 msgstr "Hobby"
 
-msgctxt "#301492"
+msgctxt "#31357"
 msgid ""
 msgstr "indlæse kunstværk"
 
-msgctxt "#301494"
+msgctxt "#31358"
 msgid ""
 msgstr "Nyligt tilføjede tv-serier"
 
-msgctxt "#301496"
+msgctxt "#31359"
 msgid ""
 msgstr "Prognose"
 
-msgctxt "#301498"
+msgctxt "#31360"
 msgid ""
 msgstr "Indstil positionen for hvert hovedmenuelement her.[CR]Brug elementnumre fra 1 - 22."
 
-msgctxt "#301500"
+msgctxt "#31361"
 msgid ""
 msgstr "spring direkte til videofiler"
 
-msgctxt "#301502"
+msgctxt "#31362"
 msgid ""
 msgstr "vis profilnavne"
 
-msgctxt "#301504"
+msgctxt "#31363"
 msgid ""
 msgstr "Kodi kører:"
 
-msgctxt "#301506"
+msgctxt "#31364"
 msgid ""
 msgstr "<"
 
-msgctxt "#301508"
+msgctxt "#31365"
 msgid ""
 msgstr "<<"
 
-msgctxt "#301510"
+msgctxt "#31366"
 msgid ""
 msgstr "Studio-symboler ..."
 
-msgctxt "#301512"
+msgctxt "#31367"
 msgid ""
 msgstr "Genre-symboler ..."
 
-msgctxt "#301514"
+msgctxt "#31368"
 msgid ""
 msgstr "Vejrsymboler ..."
 
-msgctxt "#301516"
+msgctxt "#31369"
 msgid ""
 msgstr "Vejr fanart ..."
 
-msgctxt "#301520"
+msgctxt "#31370"
 msgid ""
 msgstr "Du skal bruge \'KN Switcher Service\' for at indstille en switcher-timer. Download via Kodinerds repository."
 
-msgctxt "#301522"
+msgctxt "#31371"
 msgid ""
 msgstr "slet alle timere"
 
-msgctxt "#301524"
+msgctxt "#31372"
 msgid ""
 msgstr "slette"
 
-msgctxt "#301526"
+msgctxt "#31373"
 msgid ""
 msgstr "manage"
 
-msgctxt "#301528"
+msgctxt "#31374"
 msgid ""
 msgstr "toggle timer"
 
-msgctxt "#301530"
+msgctxt "#31375"
 msgid ""
 msgstr "Oversigt over timere"
 
-msgctxt "#301532"
+msgctxt "#31376"
 msgid ""
 msgstr "I dag"
 
-msgctxt "#301534"
+msgctxt "#31377"
 msgid ""
 msgstr "Vis"
 
-msgctxt "#301536"
+msgctxt "#31378"
 msgid ""
 msgstr "Kanaler"
 
-msgctxt "#301538"
+msgctxt "#31379"
 msgid ""
 msgstr "Begge"
 
-msgctxt "#301540"
+msgctxt "#31380"
 msgid ""
 msgstr "Original"
 
-msgctxt "#301542"
+msgctxt "#31381"
 msgid ""
 msgstr "HorizonzV Flag"
 
-msgctxt "#301544"
+msgctxt "#31382"
 msgid ""
 msgstr "Tyskland"
 
-msgctxt "#301546"
+msgctxt "#31383"
 msgid ""
 msgstr "United States"
 
-msgctxt "#301548"
+msgctxt "#31384"
 msgid ""
 msgstr "United Kingdom"
 
-msgctxt "#301550"
+msgctxt "#31385"
 msgid ""
 msgstr "France"
 
-msgctxt "#301551"
+msgctxt "#31386"
 msgid ""
 msgstr "Serge Blue"
 
-msgctxt "#301552"
+msgctxt "#31387"
 msgid ""
 msgstr "Grå Blå"
 
-msgctxt "#301554"
+msgctxt "#31388"
 msgid ""
 msgstr "Turkis"
 
-msgctxt "#301558"
+msgctxt "#31389"
 msgid ""
 msgstr "Havgrøn"
 
-msgctxt "#301560"
+msgctxt "#31390"
 msgid ""
 msgstr "Rød"
 
-msgctxt "#301562"
+msgctxt "#31391"
 msgid ""
 msgstr "Lysegrå"
 
-msgctxt "#301564"
+msgctxt "#31392"
 msgid ""
 msgstr "Mørk guld"
 
-msgctxt "#301566"
+msgctxt "#31393"
 msgid ""
 msgstr "Sandy Brown"
 
-msgctxt "#301570"
+msgctxt "#31394"
 msgid ""
 msgstr "ColorPicker"
 
-msgctxt "#301572"
+msgctxt "#31395"
 msgid ""
 msgstr "Avengers B/W"
 
-msgctxt "#301574"
+msgctxt "#31396"
 msgid ""
 msgstr "Gambit"
 
-msgctxt "#301576"
+msgctxt "#31397"
 msgid ""
 msgstr "Vinylvisning"
 
-msgctxt "#301578"
+msgctxt "#31398"
 msgid ""
 msgstr "Radiovisning"
 
-msgctxt "#301580"
+msgctxt "#31399"
 msgid ""
 msgstr "Standardvisning"
 
-msgctxt "#301582"
+msgctxt "#31400"
 msgid ""
 msgstr "vil blive startet ..."
 
-msgctxt "#301584"
+msgctxt "#31401"
 msgid ""
 msgstr "skjul"
 
-msgctxt "#301586"
+msgctxt "#31402"
 msgid ""
 msgstr "show"
 
-msgctxt "#301588"
+msgctxt "#31403"
 msgid ""
 msgstr "switch"
 
-msgctxt "#301590"
+msgctxt "#31404"
 msgid ""
 msgstr "Genindlæs skin"
 
-msgctxt "#301592"
+msgctxt "#31405"
 msgid ""
 msgstr "Genstart KODI APP"
 
-msgctxt "#301596"
+msgctxt "#31406"
 msgid ""
 msgstr "Synlig"
 
-msgctxt "#301598"
+msgctxt "#31407"
 msgid ""
 msgstr "ingen fremskridtslinje i widget (grøn linje på forsiden)"
 
-msgctxt "#301600"
+msgctxt "#31408"
 msgid ""
 msgstr "sidste film startede på position 1"
 
-msgctxt "#301602"
+msgctxt "#31409"
 msgid ""
 msgstr "sidste album, der blev lyttet til, var rangeret som nr. 1"
 
-msgctxt "#301604"
-msgid ""
-msgstr "næste afsnit på nummer 1"
 
-msgctxt "#301606"
+msgctxt "#31411"
 msgid ""
 msgstr "sidste video startede på position 1"
 
-msgctxt "#301608"
+msgctxt "#31412"
 msgid ""
 msgstr "5 dage med vejr"
 
-msgctxt "#301610"
+msgctxt "#31413"
 msgid ""
 msgstr "Tyske tv-spredningstilbud (GTO)"
 
-msgctxt "#301612"
+msgctxt "#31414"
 msgid ""
 msgstr "Fritz Smart Home"
 
-msgctxt "#301614"
+msgctxt "#31415"
 msgid ""
 msgstr "Vælg et indhold til rækken"
 
-msgctxt "#301616"
+msgctxt "#31416"
 msgid ""
 msgstr "an"
 
-msgctxt "#301618"
+msgctxt "#31417"
 msgid ""
 msgstr "off"
 
-msgctxt "#301620"
+msgctxt "#31418"
 msgid ""
 msgstr "Batteriets opladningsniveau"
 
-msgctxt "#301622"
+msgctxt "#31419"
 msgid ""
 msgstr "Eksporter videobibliotek"
 
-msgctxt "#301624"
+msgctxt "#31420"
 msgid ""
 msgstr "(enkelt NFO, uden billeder, overskriver gamle data)"
 
@@ -1170,3 +1167,27 @@ msgctxt "#35500"
 msgid "Location"
 msgstr "Placering"
 
+
+msgctxt "#31004"
+msgid "Change mode"
+msgstr "Skift tilstand"
+
+msgctxt "#31031"
+msgid "Version info"
+msgstr "Versionsinformation"
+
+msgctxt "#31112"
+msgid "Audio streams"
+msgstr "Audio streams"
+
+msgctxt "#31115"
+msgid "Subtitles streams"
+msgstr "Subtitles streams"
+
+msgctxt "#31132"
+msgid "Select Program"
+msgstr "Vælg program"
+
+msgctxt "#31133"
+msgid "Select Resolution"
+msgstr "Vælg opløsning"

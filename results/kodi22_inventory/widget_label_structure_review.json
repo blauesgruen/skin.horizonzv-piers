@@ -1,0 +1,19 @@
+{
+  "checked_on": "2026-11-05",
+  "changes": "Three explicit boolean argument additions, one visibility expression replaced. All other semantic XML nodes/text/attributes equal base.",
+  "callers": [
+    {
+      "file": "xml/Includes_Dash_GTO.xml",
+      "predicate": "String.IsEmpty(ListItem.Property(GTO_Dash_FirstplaceLabel))+String.IsEmpty(ListItem.Property(channel))+String.IsEmpty(ListItem.Label2)"
+    },
+    {
+      "file": "xml/Includes_Dash_Layout.xml",
+      "predicate": "String.IsEmpty(ListItem.Label)"
+    },
+    {
+      "file": "xml/Includes_Dash_Layout.xml",
+      "predicate": "String.IsEmpty(ListItem.Label)"
+    }
+  ],
+  "restoring_those_four_changes_reproduces_base_tree": true
+}

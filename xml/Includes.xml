@@ -44,7 +44,6 @@
     <include file="Includes_Dashboard.xml"/>
     <include file="Includes_DialogInfoList.xml"/>
     <include file="Includes_DialogSelect.xml"/>
-    <include file="Includes_DialogVideoVersion.xml"/>
     <include file="Includes_Dash_Addonpath_Fav.xml"/>
     <include file="Includes_Dash_FritzDect.xml"/>
     <include file="Includes_Dash_GTO.xml"/>
@@ -87,14 +86,6 @@
 			<visible>!Control.HasFocus(666)</visible>
 		</control>
     </include>
-    <include name="FakeFocusButton555">
-        <control type="button" id="555">
-            <enable>false</enable>
-            <onfocus>$PARAM[viewid]</onfocus>
-            <include>HiddenButton</include>
-            <visible>$PARAM[visible]</visible>
-        </control>
-    </include>
     <include name="Dimensions_Fullscreen">
 		<centerleft>50%</centerleft>
 		<centertop>50%</centertop>
@@ -116,25 +107,6 @@
         <textcolor>green</textcolor>
         <shadowcolor>black</shadowcolor>
         <align>left</align>
-    </include>
-    <include name="PathID">
-        <left>15</left>
-        <top>15</top>
-        <width>800</width>
-        <height>21</height>
-		<font>font12</font>
-        <textcolor>orange</textcolor>
-        <shadowcolor>black</shadowcolor>
-        <align>right</align>
-    </include>
-    <include name="ControlID">
-        <left>990</left>
-        <top>48</top>
-        <width>900</width>
-        <height>21</height>
-        <textcolor>red</textcolor>
-        <shadowcolor/>
-        <align>right</align>
     </include>
     <include name="WidgetDimImage">
 		<param name="left_top">1</param>
@@ -521,7 +493,7 @@
                     <aspectratio>scale</aspectratio>
                     <fadetime>4000</fadetime>
                     <texture background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow.Image)]</texture>
-                    <visible>System.HasAddon(script.artistslideshow)+Skin.HasSetting(fanart)</visible>
+                    <visible>System.AddonIsEnabled(script.artistslideshow)+Skin.HasSetting(fanart)</visible>
                     <visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.Image))+!Window.IsVisible(Home)</visible>
                     <visible>!Visualisation.Enabled+Window.IsVisible(visualisation)</visible>
                 </control>
@@ -553,8 +525,8 @@
                     <fadetime>500</fadetime>
                     <randomize>true</randomize>
                     <colordiffuse>$VAR[BackgroundDim]</colordiffuse>
-                    <imagepath>$INFO[Player.FolderPath,,extrafanart/]</imagepath>
-                    <visible>!Control.IsVisible(2015)</visible>
+                    <imagepath>$VAR[PlayerExtraFanartPath]</imagepath>
+                    <visible>!Control.IsVisible(2015)+!String.StartsWith(Player.FolderPath,plugin://)</visible>
                 </control>
                 <control type="multiimage" id="2017">
                     <include>Dimensions_Fullscreen</include>
@@ -590,7 +562,7 @@
                 </control>
                 <control type="multiimage">
                     <include>Dimensions_Fullscreen</include>
-                    <imagepath border="1" fallback="Empty.png">$INFO[ListItem.Path]extrafanart</imagepath>
+                    <imagepath border="1">$VAR[ListItemExtraFanartPath]</imagepath>
                     <aspectratio>scale</aspectratio>
                     <timeperimage>4000</timeperimage>
                     <fadetime>800</fadetime>
@@ -598,6 +570,7 @@
                     <colordiffuse>$VAR[BackgroundDim]</colordiffuse>
                     <visible>[[Container.Content(Movies)|Container.Content(musicvideos)]+Skin.HasSetting(EnableExtendedArt)+!Skin.HasSetting(no_extrafanart)]
 					|[[Container.Content(Seasons)|Container.Content(tvshows)]+Skin.HasSetting(EnableExtendedArt)]</visible>
+                    <visible>!String.StartsWith(ListItem.Path,plugin://)</visible>
                     <visible>!ListItem.IsParentFolder</visible>
                     <include>openclosevisible</include>
                 </control>
@@ -792,7 +765,6 @@
                 <height>21</height>
                 <font>impacted21</font>
                 <urlset>1</urlset>
-                <highlightcolor>description</highlightcolor>
                 <titlecolor>description</titlecolor>
                 <headlinecolor>white</headlinecolor>
                 <textcolor>white</textcolor>
@@ -1157,7 +1129,7 @@
         <animation effect="rotate" end="-9" center="auto" time="200" reversible="true" condition="String.StartsWith(Player.Volume,-58.0)">Conditional</animation>
         <animation effect="rotate" end="-6" center="auto" time="200" reversible="true" condition="String.StartsWith(Player.Volume,-58.7)">Conditional</animation>
         <animation effect="rotate" end="-3" center="auto" time="200" reversible="true" condition="String.StartsWith(Player.Volume,-59.3)">Conditional</animation>
-        <animation effect="rotate" end="0" center="auto" time="200" reversible="true" condition="Player.Mute">Conditional</animation>
+        <animation effect="rotate" end="0" center="auto" time="200" reversible="true" condition="Player.Muted">Conditional</animation>
     </include>
     <include name="CommonPageCount">
         <param name="right">SpacePadding</param>
@@ -1489,7 +1461,7 @@
             <width>225</width>
             <height>225</height>
             <aspectratio>keep</aspectratio>
-            <texture>$INFO[VideoPlayer.cover]</texture>
+            <texture>$INFO[VideoPlayer.Cover]</texture>
             <bordertexture border="10">ThumbShadow.png</bordertexture>
             <bordersize>6</bordersize>
         </control>
@@ -1963,6 +1935,7 @@
 		<param name="visible">true</param>
 		<definition>
 			<control type="group">
+                <visible>$PARAM[visible]</visible>
                 <top>$PARAM[top]</top>
                 <width>$PARAM[width]</width> <!-- 512 -->
                 <height>$PARAM[height]</height> <!-- 50 -->
@@ -1976,7 +1949,7 @@
                     <focusposition>1</focusposition>
                     <!-- <visible>Control.IsVisible($PARAM[id])</visible>
                     <visible>!String.IsEmpty(Container(99950).ListItem.Property(Provider.1.Icon))</visible>
-                    <visible>$PARAM[visible]</visible> -->
+                    -->
                     <itemgap>$PARAM[itemgap]</itemgap>
                     <include content="Info_Provider"><param name="pos" value="1" /><param name="dimension" value="$PARAM[box]" /></include>
                     <include content="Info_Provider"><param name="pos" value="2" /><param name="dimension" value="$PARAM[box]" /></include>
@@ -2073,10 +2046,6 @@
 					<item>
 						<label>$INFO[ListItem.PictureCity]</label>
 						<visible>!String.IsEmpty(ListItem.PictureCity)</visible>
-					</item>
-					<item>
-						<label>$INFO[ListItem.PictureColour]</label>
-						<visible>!String.IsEmpty(ListItem.PictureColour)</visible>
 					</item>
 					<item>
 						<label>$INFO[ListItem.PictureComment]</label>
@@ -2193,10 +2162,6 @@
 					<item>
 						<label>$INFO[ListItem.PicturePath]</label>
 						<visible>!String.IsEmpty(ListItem.PicturePath)</visible>
-					</item>
-					<item>
-						<label>$INFO[ListItem.PictureProcess]</label>
-						<visible>!String.IsEmpty(ListItem.PictureProcess)</visible>
 					</item>
 					<item>
 						<label>$INFO[ListItem.PictureReferenceService]</label>
@@ -2504,8 +2469,8 @@
             <control type="label">
                 <height>45</height>
                 <scroll>true</scroll>
-                <label>$LOCALIZE[38045]: $INFO[ListItem.Contributor]</label>
-                <visible>!String.IsEmpty(ListItem.Contributor)</visible>
+                <label>$LOCALIZE[38045]: $INFO[ListItem.Contributors]</label>
+                <visible>!String.IsEmpty(ListItem.Contributors)+String.IsEmpty(ListItem.ContributorAndRole)</visible>
             </control>
             <control type="label">
                 <height>45</height>
@@ -2513,7 +2478,7 @@
                 <scroll>true</scroll>
                 <label>•</label>
                 <visible>$PARAM[visible_points]</visible>
-                <visible>!String.IsEmpty(ListItem.Contributor)</visible>
+                <visible>!String.IsEmpty(ListItem.Contributors)+String.IsEmpty(ListItem.ContributorAndRole)</visible>
             </control>
             <control type="label">
                 <height>45</height>
@@ -2776,8 +2741,8 @@
                 <width>auto</width>
                 <font>$PARAM[font]</font>
                 <textcolor>$PARAM[color2]</textcolor>
-                <label>[COLOR=$PARAM[color1]]$LOCALIZE[24098]:[/COLOR] $INFO[ListItem.AddonBroken]</label>
-                <visible>!String.IsEmpty(ListItem.AddonBroken)</visible>
+                <label>[COLOR=$PARAM[color1]]$INFO[ListItem.AddonLifecycleType]:[/COLOR] $INFO[ListItem.AddonLifecycleDesc]</label>
+                <visible>[String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24170])|String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24171])]</visible>
             </control>
             <control type="label">
                 <height>$PARAM[height]</height>
@@ -2792,8 +2757,8 @@
                 <width>auto</width>
                 <font>$PARAM[font]</font>
                 <textcolor>$PARAM[color2]</textcolor>
-                <label>[COLOR=$PARAM[color1]]$LOCALIZE[24011]:[/COLOR] $INFO[ListItem.AddonRepository]</label>
-                <visible>!String.IsEmpty(ListItem.AddonRepository)</visible>
+                <label>[COLOR=$PARAM[color1]]$LOCALIZE[39030]:[/COLOR] $INFO[ListItem.AddonOrigin]</label>
+                <visible>!String.IsEmpty(ListItem.AddonOrigin)</visible>
             </control>
             <control type="label">
                 <height>$PARAM[height]</height>
@@ -2808,104 +2773,32 @@
                 <width>auto</width>
                 <font>$PARAM[font]</font>
                 <textcolor>$PARAM[color2]</textcolor>
-                <label>[COLOR=$PARAM[color1]]$LOCALIZE[573]:[/COLOR] $INFO[ListItem.AddonPath]</label>
-                <visible>!String.IsEmpty(ListItem.AddonPath)</visible>
+                <label>[COLOR=$PARAM[color1]]$LOCALIZE[12013]:[/COLOR] $INFO[ListItem.AddonInstallDate]</label>
+                <visible>!String.IsEmpty(ListItem.AddonInstallDate)</visible>
             </control>
             <control type="label">
                 <height>$PARAM[height]</height>
                 <width>auto</width>
                 <font>$PARAM[font]</font>
                 <textcolor>$PARAM[color2]</textcolor>
-                <label>[COLOR=$PARAM[color1]]$LOCALIZE[39030]:[/COLOR] $INFO[ListItem.AddonSource]</label>
-                <visible>!String.IsEmpty(ListItem.AddonSource)</visible>
+                <label>[COLOR=$PARAM[color1]]$LOCALIZE[12014]:[/COLOR] $INFO[ListItem.AddonLastUpdated]</label>
+                <visible>!String.IsEmpty(ListItem.AddonLastUpdated)</visible>
             </control>
             <control type="label">
                 <height>$PARAM[height]</height>
                 <width>auto</width>
                 <font>$PARAM[font]</font>
                 <textcolor>$PARAM[color2]</textcolor>
-                <label>[COLOR=$PARAM[color1]]$LOCALIZE[12013]:[/COLOR] $INFO[ListItem.Property(Addon.Installdate)]</label>
-                <visible>!String.IsEmpty(ListItem.Property(Addon.Installdate))</visible>
+                <label>[COLOR=$PARAM[color1]]$LOCALIZE[126]:[/COLOR] $INFO[ListItem.Property(Addon.Status)]</label>
+                <visible>!String.IsEmpty(ListItem.Property(Addon.Status))</visible>
             </control>
             <control type="label">
                 <height>$PARAM[height]</height>
                 <width>auto</width>
                 <font>$PARAM[font]</font>
                 <textcolor>$PARAM[color2]</textcolor>
-                <label>[COLOR=$PARAM[color1]]$LOCALIZE[12014]:[/COLOR] $INFO[ListItem.Property(Addon.LastUpdated)]</label>
-                <visible>!String.IsEmpty(ListItem.Property(Addon.LastUpdated))</visible>
-            </control>
-            <control type="label">
-                <height>$PARAM[height]</height>
-                <width>auto</width>
-                <font>$PARAM[font]</font>
-                <textcolor>$PARAM[color2]</textcolor>
-                <label>[COLOR=$PARAM[color1]]$LOCALIZE[39024]:[/COLOR] $INFO[ListItem.Property(Addon.Dependencies)]</label>
-                <visible>!String.IsEmpty(ListItem.Property(Addon.Dependencies))</visible>
-            </control>
-            <control type="label">
-                <height>$PARAM[height]</height>
-                <width>auto</width>
-                <font>$PARAM[font]</font>
-                <textcolor>$PARAM[color2]</textcolor>
-                <label>[COLOR=$PARAM[color1]]$LOCALIZE[305]:[/COLOR] $INFO[ListItem.Property(Addon.Enabled)]</label>
-                <visible>!String.IsEmpty(ListItem.Property(Addon.Enabled))</visible>
-            </control>
-            <control type="label">
-                <height>$PARAM[height]</height>
-                <width>auto</width>
-                <font>$PARAM[font]</font>
-                <textcolor>$PARAM[color2]</textcolor>
-                <label>[COLOR=$PARAM[color1]]$LOCALIZE[24053][/COLOR] $INFO[ListItem.Property(Addon.License)]</label>
-                <visible>!String.IsEmpty(ListItem.Property(Addon.License))</visible>
-            </control>
-            <control type="label">
-                <height>$PARAM[height]</height>
-                <width>auto</width>
-                <font>$PARAM[font]</font>
-                <textcolor>$PARAM[color2]</textcolor>
-                <label>[COLOR=$PARAM[color1]]Homepage:[/COLOR] $INFO[ListItem.Property(Addon.Homepage)]</label>
-                <visible>!String.IsEmpty(ListItem.Property(Addon.Homepage))</visible>
-            </control>
-            <control type="label">
-                <height>$PARAM[height]</height>
-                <width>auto</width>
-                <font>$PARAM[font]</font>
-                <textcolor>$PARAM[color2]</textcolor>
-                <label>[COLOR=$PARAM[color1]]$LOCALIZE[15225]:[/COLOR] $INFO[ListItem.Property(Addon.Provider)]</label>
-                <visible>!String.IsEmpty(ListItem.Property(Addon.Provider))</visible>
-            </control>
-            <control type="label">
-                <height>$PARAM[height]</height>
-                <width>auto</width>
-                <font>$PARAM[font]</font>
-                <textcolor>$PARAM[color2]</textcolor>
-                <label>[COLOR=$PARAM[color1]]$LOCALIZE[563]:[/COLOR] $INFO[ListItem.Property(Addon.StarRating)]</label>
-                <visible>!String.IsEmpty(ListItem.Property(Addon.StarRating))</visible>
-            </control>
-            <control type="label">
-                <height>$PARAM[height]</height>
-                <width>auto</width>
-                <font>$PARAM[font]</font>
-                <textcolor>$PARAM[color2]</textcolor>
-                <label>[COLOR=$PARAM[color1]]$LOCALIZE[12014]:[/COLOR] $INFO[ListItem.AddonLastUsed]</label>
+                <label>[COLOR=$PARAM[color1]]$LOCALIZE[12012]:[/COLOR] $INFO[ListItem.AddonLastUsed]</label>
                 <visible>!String.IsEmpty(ListItem.AddonLastUsed)</visible>
-            </control>
-            <control type="label">
-                <height>$PARAM[height]</height>
-                <width>auto</width>
-                <font>$PARAM[font]</font>
-                <textcolor>$PARAM[color2]</textcolor>
-                <label>[COLOR=$PARAM[color1]]Lifecycle Desc:[/COLOR] $INFO[ListItem.AddonLifecycleDesc]</label>
-                <visible>!String.IsEmpty(ListItem.AddonLifecycleDesc)</visible>
-            </control>
-            <control type="label">
-                <height>$PARAM[height]</height>
-                <width>auto</width>
-                <font>$PARAM[font]</font>
-                <textcolor>$PARAM[color2]</textcolor>
-                <label>[COLOR=$PARAM[color1]]Lifecycle Type:[/COLOR] $INFO[ListItem.AddonLifecycleType]</label>
-                <visible>!String.IsEmpty(ListItem.AddonLifecycleType)</visible>
             </control>
             <control type="label">
                 <height>$PARAM[height]</height>
@@ -2915,15 +2808,6 @@
                 <label>[COLOR=$PARAM[color1]]$LOCALIZE[289]:[/COLOR] $INFO[ListItem.AddonSize]</label>
                 <visible>!String.IsEmpty(ListItem.AddonSize)</visible>
             </control>
-            <!-- <control type="label">
-                <height>$PARAM[height]</height>
-                <width>auto</width>
-                <scroll>true</scroll>
-                <font>$PARAM[font]</font>
-                <textcolor>$PARAM[color2]</textcolor>
-                <label>[COLOR=$PARAM[color1]]$LOCALIZE[24000] $LOCALIZE[551]:[/COLOR] $INFO[ListItem.Property(Addon.Name)]</label>
-                <visible>!String.IsEmpty(ListItem.Property(Addon.Name))</visible>
-            </control> -->
             <control type="label">
                 <height min="$PARAM[height]" max="80">auto</height>
                 <width>100%</width>

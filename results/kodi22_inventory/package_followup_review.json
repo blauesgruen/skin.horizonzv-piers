@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-04",
+  "archive": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-package-followup-0b336bd3af8349678096f7c2c4330b55\\skin.horizonzv-1.22.0.1.zip",
+  "sha256": "313b9595815ca1a475ca8d80e2082704c7922bd0b2a227617a4c3a1fe0d75b13",
+  "size_bytes": 29810438,
+  "files": 294,
+  "crc_ok": true,
+  "all_archive_files_match_worktree": true,
+  "manifest_164_skin_xml_11_xsp_and_helper_present": true,
+  "xml_and_xsp_parse_ok": true,
+  "previous_archive_file_set_identical": true,
+  "changed_since_previous_archive": [
+    "README.md",
+    "playlists/TVShows_recent_tvshows.xsp",
+    "playlists/Videos_recently.xsp",
+    "xml/SkinSettings.xml"
+  ],
+  "context": "package_followup_context.json",
+  "limits": [
+    "ZIP was not freshly installed into Kodi. Native tests used the matching isolated skin copy.",
+    "Previous expanded reference inventory applies to unchanged file set; only three runtime files and README differ.",
+    "No published archive overwritten; global packager and its commit hook unchanged."
+  ]
+}

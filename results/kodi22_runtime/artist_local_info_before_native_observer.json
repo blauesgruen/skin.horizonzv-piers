@@ -1,0 +1,29 @@
+{
+  "scope": "Unchanged Artist Slideshow 4.2.1 consumes authored local NFO/WAV/image fixtures and drives the real skin artist-info window. Fanart skin option off, three artist-info options on. No online metadata test.",
+  "cases": [],
+  "verified_files": {
+    "script.artistslideshow": 100,
+    "script.module.requests": 21,
+    "script.module.certifi": 7,
+    "script.module.chardet": 51,
+    "script.module.idna": 11,
+    "script.module.urllib3": 40,
+    "script.module.defusedxml": 16,
+    "script.module.future": 214,
+    "script.module.mutagen": 60
+  },
+  "observation_hooks": "Temporary IDs only on three conditional groups and biography textbox; no conditions or data sources changed.",
+  "pid": 13036,
+  "failure": "AssertionError({'bio': 'Authored local biography for skin fixture A.', 'groups': {'1188': True, '1189': True, '1190': True}, 'albums': [], 'similar': []})",
+  "trace": "Traceback (most recent call last):\n  File \"D:\\Program Files\\Kodi22\\portable_data\\addons\\skin.horizonzv-piers\\results\\kodi22_runtime\\run_artist_local_info_probe.py\", line 247, in main\n    assert [x[\"label\"] for x in actual[\"albums\"]] == case[\"albums\"], actual\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: {'bio': 'Authored local biography for skin fixture A.', 'groups': {'1188': True, '1189': True, '1190': True}, 'albums': [], 'similar': []}\n",
+  "cleanup": {
+    "process_exited": true,
+    "profile_settings_restored": true,
+    "music_databases_restored": true,
+    "skin_xml_restored": true,
+    "standard_provider_sources_unchanged": true,
+    "test_provider_copies_unchanged": true
+  },
+  "errors": [],
+  "limit": "The Python ControlList proxy vecItems vector is not the native static XML container item source; its empty size is not skin failure evidence."
+}

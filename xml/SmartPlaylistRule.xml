@@ -61,7 +61,7 @@
 						<include content="DialogEditButton">
 							<param name="id" value="17" />
 							<param name="width" value="860" />
-							<param name="hinttext" value="31103" />
+							<param name="hinttext" value="16028" />
 							<param name="onup" value="9001" />
 							<param name="ondown" value="9000" />
 						</include>

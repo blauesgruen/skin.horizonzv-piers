@@ -1,0 +1,275 @@
+{
+  "scope": "Production Fritz/GTO control structures and guards, with addon IDs remapped only in isolated XML to an authored local plugin. No real backend data or widget clicks. Actual native directory jobs and enable/disable transition.",
+  "work": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-widget-provider-lifecycle-h60btjfg",
+  "mapped_addon_ids": {
+    "Includes_Dash_FritzDect.xml": "script.program.fritzact",
+    "Includes_Dash_GTO.xml": "script.service.gto"
+  },
+  "rows": [
+    {
+      "phase": "initial",
+      "enabled": true,
+      "visible": {
+        "6100": true,
+        "6200": true
+      },
+      "labels": {
+        "Container(6100).ListItem.Label": "Authored fritz initial",
+        "Container(6100).NumItems": "1",
+        "Container(6200).ListItem(1).Label": "Authored gto initial",
+        "Container(6200).NumItems": "2",
+        "Skin.AspectRatio": "16:9"
+      },
+      "requests": [
+        {
+          "kind": "fritz",
+          "timestamp": "initial",
+          "argv": [
+            "plugin://plugin.video.horizonzv.widgetprobe/",
+            "1",
+            "?ts=initial",
+            "resume:false"
+          ]
+        },
+        {
+          "kind": "gto",
+          "timestamp": "initial",
+          "argv": [
+            "plugin://plugin.video.horizonzv.widgetprobe/",
+            "2",
+            "?action=getcontent&ts=initial",
+            "resume:false"
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "enabled-refresh",
+      "enabled": true,
+      "visible": {
+        "6100": true,
+        "6200": true
+      },
+      "labels": {
+        "Container(6100).ListItem.Label": "Authored fritz enabled-refresh",
+        "Container(6100).NumItems": "1",
+        "Container(6200).ListItem(1).Label": "Authored gto enabled-refresh",
+        "Container(6200).NumItems": "2",
+        "Skin.AspectRatio": "16:9"
+      },
+      "requests": [
+        {
+          "kind": "fritz",
+          "timestamp": "initial",
+          "argv": [
+            "plugin://plugin.video.horizonzv.widgetprobe/",
+            "1",
+            "?ts=initial",
+            "resume:false"
+          ]
+        },
+        {
+          "kind": "fritz",
+          "timestamp": "enabled-refresh",
+          "argv": [
+            "plugin://plugin.video.horizonzv.widgetprobe/",
+            "3",
+            "?ts=enabled-refresh",
+            "resume:false"
+          ]
+        },
+        {
+          "kind": "gto",
+          "timestamp": "initial",
+          "argv": [
+            "plugin://plugin.video.horizonzv.widgetprobe/",
+            "2",
+            "?action=getcontent&ts=initial",
+            "resume:false"
+          ]
+        },
+        {
+          "kind": "gto",
+          "timestamp": "enabled-refresh",
+          "argv": [
+            "plugin://plugin.video.horizonzv.widgetprobe/",
+            "4",
+            "?action=getcontent&ts=enabled-refresh",
+            "resume:false"
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "disabled",
+      "requests_before_changes": 4,
+      "enabled": false,
+      "visible": {
+        "6100": false,
+        "6200": false
+      },
+      "labels": {
+        "Container(6100).ListItem.Label": "Authored fritz enabled-refresh",
+        "Container(6100).NumItems": "1",
+        "Container(6200).ListItem(1).Label": "Authored gto enabled-refresh",
+        "Container(6200).NumItems": "2",
+        "Skin.AspectRatio": "16:9"
+      },
+      "requests": [
+        {
+          "kind": "fritz",
+          "timestamp": "initial",
+          "argv": [
+            "plugin://plugin.video.horizonzv.widgetprobe/",
+            "1",
+            "?ts=initial",
+            "resume:false"
+          ]
+        },
+        {
+          "kind": "fritz",
+          "timestamp": "enabled-refresh",
+          "argv": [
+            "plugin://plugin.video.horizonzv.widgetprobe/",
+            "3",
+            "?ts=enabled-refresh",
+            "resume:false"
+          ]
+        },
+        {
+          "kind": "gto",
+          "timestamp": "initial",
+          "argv": [
+            "plugin://plugin.video.horizonzv.widgetprobe/",
+            "2",
+            "?action=getcontent&ts=initial",
+            "resume:false"
+          ]
+        },
+        {
+          "kind": "gto",
+          "timestamp": "enabled-refresh",
+          "argv": [
+            "plugin://plugin.video.horizonzv.widgetprobe/",
+            "4",
+            "?action=getcontent&ts=enabled-refresh",
+            "resume:false"
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "reenabled",
+      "enabled": true,
+      "visible": {
+        "6100": true,
+        "6200": true
+      },
+      "labels": {
+        "Container(6100).ListItem.Label": "Authored fritz reenabled",
+        "Container(6100).NumItems": "1",
+        "Container(6200).ListItem(1).Label": "Authored gto reenabled",
+        "Container(6200).NumItems": "2",
+        "Skin.AspectRatio": "16:9"
+      },
+      "requests": [
+        {
+          "kind": "fritz",
+          "timestamp": "disabled-2",
+          "argv": [
+            "plugin://plugin.video.horizonzv.widgetprobe/",
+            "5",
+            "?ts=disabled-2",
+            "resume:false"
+          ]
+        },
+        {
+          "kind": "fritz",
+          "timestamp": "initial",
+          "argv": [
+            "plugin://plugin.video.horizonzv.widgetprobe/",
+            "1",
+            "?ts=initial",
+            "resume:false"
+          ]
+        },
+        {
+          "kind": "fritz",
+          "timestamp": "enabled-refresh",
+          "argv": [
+            "plugin://plugin.video.horizonzv.widgetprobe/",
+            "3",
+            "?ts=enabled-refresh",
+            "resume:false"
+          ]
+        },
+        {
+          "kind": "gto",
+          "timestamp": "initial",
+          "argv": [
+            "plugin://plugin.video.horizonzv.widgetprobe/",
+            "2",
+            "?action=getcontent&ts=initial",
+            "resume:false"
+          ]
+        },
+        {
+          "kind": "gto",
+          "timestamp": "enabled-refresh",
+          "argv": [
+            "plugin://plugin.video.horizonzv.widgetprobe/",
+            "4",
+            "?action=getcontent&ts=enabled-refresh",
+            "resume:false"
+          ]
+        },
+        {
+          "kind": "gto",
+          "timestamp": "reenabled",
+          "argv": [
+            "plugin://plugin.video.horizonzv.widgetprobe/",
+            "8",
+            "?action=getcontent&ts=reenabled",
+            "resume:false"
+          ]
+        },
+        {
+          "kind": "gto",
+          "timestamp": "disabled-2",
+          "argv": [
+            "plugin://plugin.video.horizonzv.widgetprobe/",
+            "6",
+            "?action=getcontent&ts=disabled-2",
+            "resume:false"
+          ]
+        },
+        {
+          "kind": "fritz",
+          "timestamp": "reenabled",
+          "argv": [
+            "plugin://plugin.video.horizonzv.widgetprobe/",
+            "7",
+            "?ts=reenabled",
+            "resume:false"
+          ]
+        }
+      ]
+    }
+  ],
+  "production_sha256": {
+    "Includes_Dash_FritzDect.xml": "3c209b4f1e2681411f0f3235c1c66e15d7c3671ee4a0700695de3d20795a7f79",
+    "Includes_Dash_GTO.xml": "1799c2cb4b3779c44db614f5152ad7089e2c6b5f413ed43c448a16b21db8d90b"
+  },
+  "pid": 29988,
+  "cleanup": {
+    "process_exited": true,
+    "settings_restored": true,
+    "addon_databases_restored": true,
+    "fixture_removed": true,
+    "skin_xml_match": true
+  },
+  "errors": [
+    "2026-11-05 01:00:06.501 T:31004   error <general>: Misplaced [",
+    "2026-11-05 01:00:06.501 T:31004   error <general>: Error parsing boolean expression string.isempty($info[listitem.property(gto_dash_firstplacelabel)]$info[listitem.property(channel)]$info[listitem.label2])"
+  ]
+}

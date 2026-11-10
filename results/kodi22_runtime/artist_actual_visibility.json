@@ -1,0 +1,6 @@
+{
+  "process_id": 23496,
+  "requested_window_style": "Normal",
+  "foreground_request_succeeded": true,
+  "evidence": "Start-Process and WScript.Shell.AppActivate results recorded during the actual-provider run."
+}

@@ -1,0 +1,158 @@
+[
+  {
+    "case": "locate target",
+    "labels": {
+      "Container(36110).ListItem.Label": "Ten",
+      "Container(36110).ListItem.Property(number)": "10. ",
+      "Container(36110).NumItems": "5",
+      "Window(Home).Property(Audit.StatusRequested)": "",
+      "Window(Home).Property(Audit.Wake1)": "",
+      "Window(Home).Property(Audit.Wake10)": "",
+      "Window(Home).Property(Audit.Wake2)": ""
+    }
+  },
+  {
+    "case": "locate target",
+    "labels": {
+      "Container(36110).ListItem.Label": "Wake all configured devices",
+      "Container(36110).ListItem.Property(number)": "",
+      "Container(36110).NumItems": "5",
+      "Window(Home).Property(Audit.StatusRequested)": "",
+      "Window(Home).Property(Audit.Wake1)": "",
+      "Window(Home).Property(Audit.Wake10)": "",
+      "Window(Home).Property(Audit.Wake2)": ""
+    }
+  },
+  {
+    "case": "locate target",
+    "labels": {
+      "Container(36110).ListItem.Label": "Refresh",
+      "Container(36110).ListItem.Property(number)": "",
+      "Container(36110).NumItems": "5",
+      "Window(Home).Property(Audit.StatusRequested)": "",
+      "Window(Home).Property(Audit.Wake1)": "",
+      "Window(Home).Property(Audit.Wake10)": "",
+      "Window(Home).Property(Audit.Wake2)": ""
+    }
+  },
+  {
+    "case": "locate target",
+    "labels": {
+      "Container(36110).ListItem.Label": "One",
+      "Container(36110).ListItem.Property(number)": "1. ",
+      "Container(36110).NumItems": "5",
+      "Window(Home).Property(Audit.StatusRequested)": "",
+      "Window(Home).Property(Audit.Wake1)": "",
+      "Window(Home).Property(Audit.Wake10)": "",
+      "Window(Home).Property(Audit.Wake2)": ""
+    }
+  },
+  {
+    "case": "locate target",
+    "labels": {
+      "Container(36110).ListItem.Label": "IP only (192.0.2.2)",
+      "Container(36110).ListItem.Property(number)": "2. ",
+      "Container(36110).NumItems": "5",
+      "Window(Home).Property(Audit.StatusRequested)": "",
+      "Window(Home).Property(Audit.Wake1)": "",
+      "Window(Home).Property(Audit.Wake10)": "",
+      "Window(Home).Property(Audit.Wake2)": ""
+    }
+  },
+  {
+    "case": "before IP-only click",
+    "labels": {
+      "Container(36110).ListItem.Label": "IP only (192.0.2.2)",
+      "Container(36110).ListItem.Property(number)": "2. ",
+      "Container(36110).NumItems": "5",
+      "Window(Home).Property(Audit.StatusRequested)": "",
+      "Window(Home).Property(Audit.Wake1)": "",
+      "Window(Home).Property(Audit.Wake10)": "",
+      "Window(Home).Property(Audit.Wake2)": ""
+    }
+  },
+  {
+    "case": "after IP-only click",
+    "labels": {
+      "Container(36110).ListItem.Label": "IP only (192.0.2.2)",
+      "Container(36110).ListItem.Property(number)": "2. ",
+      "Container(36110).NumItems": "5",
+      "Window(Home).Property(Audit.StatusRequested)": "",
+      "Window(Home).Property(Audit.Wake1)": "",
+      "Window(Home).Property(Audit.Wake10)": "",
+      "Window(Home).Property(Audit.Wake2)": ""
+    }
+  },
+  {
+    "case": "locate target",
+    "labels": {
+      "Container(36110).ListItem.Label": "IP only (192.0.2.2)",
+      "Container(36110).ListItem.Property(number)": "2. ",
+      "Container(36110).NumItems": "5",
+      "Window(Home).Property(Audit.StatusRequested)": "",
+      "Window(Home).Property(Audit.Wake1)": "",
+      "Window(Home).Property(Audit.Wake10)": "",
+      "Window(Home).Property(Audit.Wake2)": ""
+    }
+  },
+  {
+    "case": "locate target",
+    "labels": {
+      "Container(36110).ListItem.Label": "Ten",
+      "Container(36110).ListItem.Property(number)": "10. ",
+      "Container(36110).NumItems": "5",
+      "Window(Home).Property(Audit.StatusRequested)": "",
+      "Window(Home).Property(Audit.Wake1)": "",
+      "Window(Home).Property(Audit.Wake10)": "",
+      "Window(Home).Property(Audit.Wake2)": ""
+    }
+  },
+  {
+    "case": "after slot10 click",
+    "labels": {
+      "Container(36110).ListItem.Label": "Ten",
+      "Container(36110).ListItem.Property(number)": "10. ",
+      "Container(36110).NumItems": "5",
+      "Window(Home).Property(Audit.StatusRequested)": "true",
+      "Window(Home).Property(Audit.Wake1)": "",
+      "Window(Home).Property(Audit.Wake10)": "02:00:00:00:00:10",
+      "Window(Home).Property(Audit.Wake2)": ""
+    }
+  },
+  {
+    "case": "locate target",
+    "labels": {
+      "Container(36110).ListItem.Label": "Ten",
+      "Container(36110).ListItem.Property(number)": "10. ",
+      "Container(36110).NumItems": "5",
+      "Window(Home).Property(Audit.StatusRequested)": "true",
+      "Window(Home).Property(Audit.Wake1)": "",
+      "Window(Home).Property(Audit.Wake10)": "02:00:00:00:00:10",
+      "Window(Home).Property(Audit.Wake2)": ""
+    }
+  },
+  {
+    "case": "locate target",
+    "labels": {
+      "Container(36110).ListItem.Label": "Wake all configured devices",
+      "Container(36110).ListItem.Property(number)": "",
+      "Container(36110).NumItems": "5",
+      "Window(Home).Property(Audit.StatusRequested)": "true",
+      "Window(Home).Property(Audit.Wake1)": "",
+      "Window(Home).Property(Audit.Wake10)": "02:00:00:00:00:10",
+      "Window(Home).Property(Audit.Wake2)": ""
+    }
+  },
+  {
+    "case": "after all click",
+    "labels": {
+      "Container(36110).ListItem.Label": "Wake all configured devices",
+      "Container(36110).ListItem.Property(number)": "",
+      "Container(36110).NumItems": "5",
+      "Window(Home).Property(Audit.StatusRequested)": "true",
+      "Window(Home).Property(Audit.Wake1)": "02:00:00:00:00:01",
+      "Window(Home).Property(Audit.Wake10)": "02:00:00:00:00:10",
+      "Window(Home).Property(Audit.Wake2)": ""
+    }
+  }
+]

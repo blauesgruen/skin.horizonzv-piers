@@ -1,0 +1,72 @@
+{
+  "before": {
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Container(20).NumItems": "86",
+        "Control.GetLabel(34)": "Radiosender",
+        "Window.Property(IsRadio)": ""
+      }
+    },
+    "conditions": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Control.HasFocus(34)": false,
+        "String.IsEmpty(Window.Property(IsRadio))": true
+      }
+    }
+  },
+  "radio": {
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Container(20).NumItems": "103",
+        "Control.GetLabel(34)": "TV-Sender",
+        "Window.Property(IsRadio)": "true"
+      }
+    },
+    "conditions": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Control.HasFocus(34)": true,
+        "String.IsEmpty(Window.Property(IsRadio))": false
+      }
+    }
+  },
+  "restored_tv": {
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Container(20).NumItems": "86",
+        "Control.GetLabel(34)": "Radiosender",
+        "Window.Property(IsRadio)": ""
+      }
+    },
+    "conditions": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Control.HasFocus(34)": true,
+        "String.IsEmpty(Window.Property(IsRadio))": true
+      }
+    }
+  },
+  "closed": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "currentcontrol": {
+        "label": ""
+      },
+      "currentwindow": {
+        "id": 10000,
+        "label": "Hauptmen\u00fc"
+      }
+    }
+  }
+}

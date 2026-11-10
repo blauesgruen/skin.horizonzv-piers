@@ -1,0 +1,48 @@
+{
+  "scope": "Actual production DashboardContent in a native WindowXML list and actual shutdownmenu addon item with one marker property. Only own local marker addon can run. No power/device action selected.",
+  "baseline": true,
+  "work": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-addon-dispatch-o7yvaaj4",
+  "rows": [
+    {
+      "target": "dashboard",
+      "mode": "disabled",
+      "slot": 1,
+      "invocations_before": 0,
+      "invocations_after": 0,
+      "selector_visible": false
+    },
+    {
+      "target": "dashboard",
+      "mode": "disabled",
+      "slot": 10,
+      "invocations_before": 0,
+      "invocations_after": 0,
+      "selector_visible": false
+    },
+    {
+      "target": "shutdown_addon_item",
+      "mode": "disabled",
+      "invocations_before": 0,
+      "invocations_after": 0,
+      "selector_visible": false
+    }
+  ],
+  "production_sha256": {
+    "Includes_Dash_Addonpath_Fav.xml": "86d9d0ff45ef46f37bc674a74e1f8673e5b84154432a10fc0e756bdc7e8852c4",
+    "DialogButtonMenu.xml": "edddbffdc530778907ceba5ea49727c44a198cff835bc8c1495cebe3743c56e6"
+  },
+  "pid": 10108,
+  "invocations": [],
+  "cleanup": {
+    "process_exited": true,
+    "settings_restored": true,
+    "addon_databases_restored": true,
+    "fixture_removed": true,
+    "skin_xml_match": true
+  },
+  "errors": [
+    "2026-11-05 00:44:33.130 T:7836    error <general>: RunAddon: unknown add-on id 'script.horizonzv.dispatchprobe', or unexpected add-on type (not a script or plugin).",
+    "2026-11-05 00:44:34.015 T:7836    error <general>: RunAddon: unknown add-on id 'script.horizonzv.dispatchprobe', or unexpected add-on type (not a script or plugin).",
+    "2026-11-05 00:44:35.499 T:7836    error <general>: RunAddon: unknown add-on id 'script.horizonzv.dispatchprobe', or unexpected add-on type (not a script or plugin)."
+  ]
+}

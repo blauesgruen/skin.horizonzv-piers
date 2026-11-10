@@ -58,8 +58,8 @@
         <value>$INFO[ListItem.Art(fanart)]</value>
     </variable>
     <variable name="Panel3Cover">
-        <value condition="Control.HasFocus($PARAM[viewid])+!String.IsEmpty(ListItem.Art(season.poster))">$INFO[ListItem.Art(season.poster)]</value>
-        <value condition="Control.HasFocus($PARAM[viewid])+String.IsEmpty(ListItem.Art(season.poster))">$INFO[ListItem.Art(poster)]</value>
+        <value condition="Control.HasFocus(302)+!String.IsEmpty(ListItem.Art(season.poster))">$INFO[ListItem.Art(season.poster)]</value>
+        <value condition="Control.HasFocus(302)+String.IsEmpty(ListItem.Art(season.poster))">$INFO[ListItem.Art(poster)]</value>
         <value condition="Control.HasFocus(303)">$INFO[Container(303).ListItem.Art(poster)]</value>
         <value>$INFO[ListItem.Art(poster)]</value>
     </variable>
@@ -443,7 +443,7 @@
 												<visible>Container($PARAM[viewid]).ListItem.IsResumable</visible>
 											</control>
 										</focusedlayout>
-										<content target="videos">$INFO[ListItem.FolderPath]</content>
+										<content target="videos">$VAR[FolderPreviewContentPath]</content>
 									</control>
 									<include content="DefaultScrollbar">
 										<param name="id" value="3031" />

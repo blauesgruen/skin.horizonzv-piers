@@ -1,0 +1,64 @@
+{
+  "selected": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "ListItem.ChannelName": "Das Erste HD",
+      "ListItem.FileNameAndPath": "pvr://guide/0024/2026-11-03 20:00:00.epg",
+      "ListItem.Label": "In aller Freundschaft (1154)"
+    }
+  },
+  "gui": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "currentcontrol": {
+        "label": "OK"
+      },
+      "currentwindow": {
+        "id": 10600,
+        "label": "Programm\u00fcbersichtsinformation"
+      }
+    }
+  },
+  "labels": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "ListItem.ChannelName": "Das Erste HD",
+      "ListItem.Duration": "45:00",
+      "ListItem.EndTime": "21:45",
+      "ListItem.StartTime": "21:00",
+      "ListItem.Title": "In aller Freundschaft (1154)"
+    }
+  },
+  "image_exists": true,
+  "after_back": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "currentcontrol": {
+        "label": "OK"
+      },
+      "currentwindow": {
+        "id": 10600,
+        "label": "Programm\u00fcbersichtsinformation"
+      }
+    }
+  },
+  "initial_image_scope": "Earlier screenshot was taken during opening slide animation, not a settled layout.",
+  "settled_image": "standard_pvr_program_info_settled.png",
+  "close_confirmed_after_animation": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "currentcontrol": {
+        "label": "In aller Freundschaft (1154)"
+      },
+      "currentwindow": {
+        "id": 10704,
+        "label": "TV-Programm\u00fcbersichtssuche"
+      }
+    }
+  }
+}

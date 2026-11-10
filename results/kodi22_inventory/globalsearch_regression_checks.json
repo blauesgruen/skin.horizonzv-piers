@@ -1,0 +1,26 @@
+[
+  {
+    "case": "valid_current_contract",
+    "findings": 0
+  },
+  {
+    "case": "missing_990",
+    "detected": true
+  },
+  {
+    "case": "missing_991",
+    "detected": true
+  },
+  {
+    "case": "missing_999",
+    "detected": true
+  },
+  {
+    "case": "missing_9000",
+    "detected": true
+  },
+  {
+    "case": "legacy_filename",
+    "detected": true
+  }
+]

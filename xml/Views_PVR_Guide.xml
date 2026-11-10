@@ -180,7 +180,7 @@
                         <colordiffuse>$VAR[BackgroundOverlayColorDialog]</colordiffuse>
                         <texture>White.png</texture>
                     </control>
-                    <control type="im age" id="14">
+                    <control type="image" id="14">
                         <left>2</left>
                         <right>2</right>
                         <top>2</top>

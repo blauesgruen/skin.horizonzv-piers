@@ -1,0 +1,381 @@
+{
+  "scope": "Production Fritz/GTO structures with addon IDs remapped only in isolated XML to a local fixture. No real backend data or widget Select actions. Actual directory jobs, enable/disable transition and eight focused-label input combinations.",
+  "work": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-widget-provider-lifecycle-x62igus0",
+  "mapped_addon_ids": {
+    "Includes_Dash_FritzDect.xml": "script.program.fritzact",
+    "Includes_Dash_GTO.xml": "script.service.gto"
+  },
+  "rows": [
+    {
+      "phase": "initial",
+      "enabled": true,
+      "visible": {
+        "6100": true,
+        "6200": true
+      },
+      "labels": {
+        "Container(6100).ListItem.Label": "Authored fritz initial case0",
+        "Container(6100).NumItems": "1",
+        "Container(6200).ListItem(1).Label": "Authored gto initial case0",
+        "Container(6200).NumItems": "9",
+        "Skin.AspectRatio": "16:9"
+      },
+      "requests": [
+        {
+          "kind": "gto",
+          "timestamp": "initial",
+          "addon_enabled_at_entry": true,
+          "argv": [
+            "plugin://plugin.video.horizonzv.widgetprobe/",
+            "2",
+            "?action=getcontent&ts=initial",
+            "resume:false"
+          ]
+        },
+        {
+          "kind": "fritz",
+          "timestamp": "initial",
+          "addon_enabled_at_entry": true,
+          "argv": [
+            "plugin://plugin.video.horizonzv.widgetprobe/",
+            "1",
+            "?ts=initial",
+            "resume:false"
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "enabled-refresh",
+      "enabled": true,
+      "visible": {
+        "6100": true,
+        "6200": true
+      },
+      "labels": {
+        "Container(6100).ListItem.Label": "Authored fritz enabled-refresh case0",
+        "Container(6100).NumItems": "1",
+        "Container(6200).ListItem(1).Label": "Authored gto enabled-refresh case0",
+        "Container(6200).NumItems": "9",
+        "Skin.AspectRatio": "16:9"
+      },
+      "requests": [
+        {
+          "kind": "gto",
+          "timestamp": "initial",
+          "addon_enabled_at_entry": true,
+          "argv": [
+            "plugin://plugin.video.horizonzv.widgetprobe/",
+            "2",
+            "?action=getcontent&ts=initial",
+            "resume:false"
+          ]
+        },
+        {
+          "kind": "gto",
+          "timestamp": "enabled-refresh",
+          "addon_enabled_at_entry": true,
+          "argv": [
+            "plugin://plugin.video.horizonzv.widgetprobe/",
+            "4",
+            "?action=getcontent&ts=enabled-refresh",
+            "resume:false"
+          ]
+        },
+        {
+          "kind": "fritz",
+          "timestamp": "enabled-refresh",
+          "addon_enabled_at_entry": true,
+          "argv": [
+            "plugin://plugin.video.horizonzv.widgetprobe/",
+            "3",
+            "?ts=enabled-refresh",
+            "resume:false"
+          ]
+        },
+        {
+          "kind": "fritz",
+          "timestamp": "initial",
+          "addon_enabled_at_entry": true,
+          "argv": [
+            "plugin://plugin.video.horizonzv.widgetprobe/",
+            "1",
+            "?ts=initial",
+            "resume:false"
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "disabled",
+      "requests_before_changes": 4,
+      "enabled": false,
+      "visible": {
+        "6100": false,
+        "6200": false
+      },
+      "labels": {
+        "Container(6100).ListItem.Label": "Authored fritz enabled-refresh case0",
+        "Container(6100).NumItems": "1",
+        "Container(6200).ListItem(1).Label": "",
+        "Container(6200).NumItems": "9",
+        "Skin.AspectRatio": "16:9"
+      },
+      "requests": [
+        {
+          "kind": "gto",
+          "timestamp": "initial",
+          "addon_enabled_at_entry": true,
+          "argv": [
+            "plugin://plugin.video.horizonzv.widgetprobe/",
+            "2",
+            "?action=getcontent&ts=initial",
+            "resume:false"
+          ]
+        },
+        {
+          "kind": "gto",
+          "timestamp": "enabled-refresh",
+          "addon_enabled_at_entry": true,
+          "argv": [
+            "plugin://plugin.video.horizonzv.widgetprobe/",
+            "4",
+            "?action=getcontent&ts=enabled-refresh",
+            "resume:false"
+          ]
+        },
+        {
+          "kind": "fritz",
+          "timestamp": "enabled-refresh",
+          "addon_enabled_at_entry": true,
+          "argv": [
+            "plugin://plugin.video.horizonzv.widgetprobe/",
+            "3",
+            "?ts=enabled-refresh",
+            "resume:false"
+          ]
+        },
+        {
+          "kind": "fritz",
+          "timestamp": "initial",
+          "addon_enabled_at_entry": true,
+          "argv": [
+            "plugin://plugin.video.horizonzv.widgetprobe/",
+            "1",
+            "?ts=initial",
+            "resume:false"
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "reenabled",
+      "enabled": true,
+      "visible": {
+        "6100": true,
+        "6200": true
+      },
+      "labels": {
+        "Container(6100).ListItem.Label": "Authored fritz reenabled case0",
+        "Container(6100).NumItems": "1",
+        "Container(6200).ListItem(1).Label": "Authored gto reenabled case2",
+        "Container(6200).NumItems": "9",
+        "Skin.AspectRatio": "16:9"
+      },
+      "requests": [
+        {
+          "kind": "fritz",
+          "timestamp": "disabled-2",
+          "addon_enabled_at_entry": true,
+          "argv": [
+            "plugin://plugin.video.horizonzv.widgetprobe/",
+            "5",
+            "?ts=disabled-2",
+            "resume:false"
+          ]
+        },
+        {
+          "kind": "fritz",
+          "timestamp": "reenabled",
+          "addon_enabled_at_entry": true,
+          "argv": [
+            "plugin://plugin.video.horizonzv.widgetprobe/",
+            "7",
+            "?ts=reenabled",
+            "resume:false"
+          ]
+        },
+        {
+          "kind": "gto",
+          "timestamp": "initial",
+          "addon_enabled_at_entry": true,
+          "argv": [
+            "plugin://plugin.video.horizonzv.widgetprobe/",
+            "2",
+            "?action=getcontent&ts=initial",
+            "resume:false"
+          ]
+        },
+        {
+          "kind": "gto",
+          "timestamp": "enabled-refresh",
+          "addon_enabled_at_entry": true,
+          "argv": [
+            "plugin://plugin.video.horizonzv.widgetprobe/",
+            "4",
+            "?action=getcontent&ts=enabled-refresh",
+            "resume:false"
+          ]
+        },
+        {
+          "kind": "gto",
+          "timestamp": "disabled-2",
+          "addon_enabled_at_entry": true,
+          "argv": [
+            "plugin://plugin.video.horizonzv.widgetprobe/",
+            "6",
+            "?action=getcontent&ts=disabled-2",
+            "resume:false"
+          ]
+        },
+        {
+          "kind": "fritz",
+          "timestamp": "enabled-refresh",
+          "addon_enabled_at_entry": true,
+          "argv": [
+            "plugin://plugin.video.horizonzv.widgetprobe/",
+            "3",
+            "?ts=enabled-refresh",
+            "resume:false"
+          ]
+        },
+        {
+          "kind": "fritz",
+          "timestamp": "initial",
+          "addon_enabled_at_entry": true,
+          "argv": [
+            "plugin://plugin.video.horizonzv.widgetprobe/",
+            "1",
+            "?ts=initial",
+            "resume:false"
+          ]
+        },
+        {
+          "kind": "gto",
+          "timestamp": "reenabled",
+          "addon_enabled_at_entry": true,
+          "argv": [
+            "plugin://plugin.video.horizonzv.widgetprobe/",
+            "8",
+            "?action=getcontent&ts=reenabled",
+            "resume:false"
+          ]
+        }
+      ]
+    }
+  ],
+  "focused_labels": [
+    {
+      "case": 0,
+      "labels": {
+        "ListItem.Label": "Authored gto enabled-refresh case0",
+        "ListItem.Label2": "",
+        "ListItem.Property(GTO_Dash_FirstplaceLabel)": "",
+        "ListItem.Property(channel)": ""
+      },
+      "empty_predicate": "String.IsEmpty(ListItem.Property(GTO_Dash_FirstplaceLabel))+String.IsEmpty(ListItem.Property(channel))+String.IsEmpty(ListItem.Label2)",
+      "is_empty": true
+    },
+    {
+      "case": 1,
+      "labels": {
+        "ListItem.Label": "Authored gto enabled-refresh case1",
+        "ListItem.Label2": "Secondary",
+        "ListItem.Property(GTO_Dash_FirstplaceLabel)": "",
+        "ListItem.Property(channel)": ""
+      },
+      "empty_predicate": "String.IsEmpty(ListItem.Property(GTO_Dash_FirstplaceLabel))+String.IsEmpty(ListItem.Property(channel))+String.IsEmpty(ListItem.Label2)",
+      "is_empty": false
+    },
+    {
+      "case": 2,
+      "labels": {
+        "ListItem.Label": "Authored gto enabled-refresh case2",
+        "ListItem.Label2": "",
+        "ListItem.Property(GTO_Dash_FirstplaceLabel)": "",
+        "ListItem.Property(channel)": "Channel"
+      },
+      "empty_predicate": "String.IsEmpty(ListItem.Property(GTO_Dash_FirstplaceLabel))+String.IsEmpty(ListItem.Property(channel))+String.IsEmpty(ListItem.Label2)",
+      "is_empty": false
+    },
+    {
+      "case": 3,
+      "labels": {
+        "ListItem.Label": "Authored gto enabled-refresh case3",
+        "ListItem.Label2": "Secondary",
+        "ListItem.Property(GTO_Dash_FirstplaceLabel)": "",
+        "ListItem.Property(channel)": "Channel"
+      },
+      "empty_predicate": "String.IsEmpty(ListItem.Property(GTO_Dash_FirstplaceLabel))+String.IsEmpty(ListItem.Property(channel))+String.IsEmpty(ListItem.Label2)",
+      "is_empty": false
+    },
+    {
+      "case": 4,
+      "labels": {
+        "ListItem.Label": "Authored gto enabled-refresh case4",
+        "ListItem.Label2": "",
+        "ListItem.Property(GTO_Dash_FirstplaceLabel)": "First",
+        "ListItem.Property(channel)": ""
+      },
+      "empty_predicate": "String.IsEmpty(ListItem.Property(GTO_Dash_FirstplaceLabel))+String.IsEmpty(ListItem.Property(channel))+String.IsEmpty(ListItem.Label2)",
+      "is_empty": false
+    },
+    {
+      "case": 5,
+      "labels": {
+        "ListItem.Label": "Authored gto enabled-refresh case5",
+        "ListItem.Label2": "Secondary",
+        "ListItem.Property(GTO_Dash_FirstplaceLabel)": "First",
+        "ListItem.Property(channel)": ""
+      },
+      "empty_predicate": "String.IsEmpty(ListItem.Property(GTO_Dash_FirstplaceLabel))+String.IsEmpty(ListItem.Property(channel))+String.IsEmpty(ListItem.Label2)",
+      "is_empty": false
+    },
+    {
+      "case": 6,
+      "labels": {
+        "ListItem.Label": "Authored gto enabled-refresh case6",
+        "ListItem.Label2": "",
+        "ListItem.Property(GTO_Dash_FirstplaceLabel)": "First",
+        "ListItem.Property(channel)": "Channel"
+      },
+      "empty_predicate": "String.IsEmpty(ListItem.Property(GTO_Dash_FirstplaceLabel))+String.IsEmpty(ListItem.Property(channel))+String.IsEmpty(ListItem.Label2)",
+      "is_empty": false
+    },
+    {
+      "case": 7,
+      "labels": {
+        "ListItem.Label": "Authored gto enabled-refresh case7",
+        "ListItem.Label2": "Secondary",
+        "ListItem.Property(GTO_Dash_FirstplaceLabel)": "First",
+        "ListItem.Property(channel)": "Channel"
+      },
+      "empty_predicate": "String.IsEmpty(ListItem.Property(GTO_Dash_FirstplaceLabel))+String.IsEmpty(ListItem.Property(channel))+String.IsEmpty(ListItem.Label2)",
+      "is_empty": false
+    }
+  ],
+  "production_sha256": {
+    "Includes_Dash_FritzDect.xml": "3c209b4f1e2681411f0f3235c1c66e15d7c3671ee4a0700695de3d20795a7f79",
+    "Includes_Dash_GTO.xml": "73ad9f4b1538d4fa2e0720bfeb3ac3fa9f6d560075ba0e2b8fdc62a2737e163b",
+    "Includes_Dash_Layout.xml": "0e53c64ff955af58b1f388777a4e3ef77cd24f10f0e4469e9aef32503b38688f"
+  },
+  "pid": 16876,
+  "cleanup": {
+    "process_exited": true,
+    "settings_restored": true,
+    "addon_databases_restored": true,
+    "fixture_removed": true,
+    "skin_xml_match": true
+  },
+  "errors": []
+}

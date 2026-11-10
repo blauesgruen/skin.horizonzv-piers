@@ -184,7 +184,7 @@
                         <top>0</top>
                         <width>60</width>
                         <height>60</height>
-                        <texture>osd/RepeatFO.png</texture>
+                        <texture>osd/RepeatOff.png</texture>
                         <visible>!Playlist.IsRepeat + !Playlist.IsRepeatOne</visible>
                         <visible>!Control.HasFocus(607)</visible>
                         <visible>!VideoPlayer.Content(LiveTV)</visible>
@@ -194,7 +194,7 @@
                         <top>0</top>
                         <width>60</width>
                         <height>60</height>
-                        <texture colordiffuse="description">osd/RepeatFO.png</texture>
+                        <texture colordiffuse="description">osd/RepeatOff.png</texture>
                         <visible>!Playlist.IsRepeat + !Playlist.IsRepeatOne</visible>
                         <visible>Control.HasFocus(607)</visible>
                         <visible>!VideoPlayer.Content(LiveTV)</visible>
@@ -204,7 +204,7 @@
                         <top>0</top>
                         <width>60</width>
                         <height>60</height>
-                        <texture>osd/RepeatOneFO.png</texture>
+                        <texture>osd/RepeatOne.png</texture>
                         <visible>Playlist.IsRepeatOne</visible>
                         <visible>!Control.HasFocus(607)</visible>
                         <visible>!VideoPlayer.Content(LiveTV)</visible>
@@ -214,7 +214,7 @@
                         <top>0</top>
                         <width>60</width>
                         <height>60</height>
-                        <texture colordiffuse="description">osd/RepeatOneFO.png</texture>
+                        <texture colordiffuse="description">osd/RepeatOne.png</texture>
                         <visible>Playlist.IsRepeatOne</visible>
                         <visible>Control.HasFocus(607)</visible>
                         <visible>!VideoPlayer.Content(LiveTV)</visible>
@@ -224,7 +224,7 @@
                         <top>0</top>
                         <width>60</width>
                         <height>60</height>
-                        <texture>osd/RepeatAllFO.png</texture>
+                        <texture>osd/RepeatAll.png</texture>
                         <visible>Playlist.IsRepeat</visible>
                         <visible>!Control.HasFocus(607)</visible>
                         <visible>!VideoPlayer.Content(LiveTV)</visible>
@@ -234,7 +234,7 @@
                         <top>0</top>
                         <width>60</width>
                         <height>60</height>
-                        <texture colordiffuse="description">osd/RepeatAllFO.png</texture>
+                        <texture colordiffuse="description">osd/RepeatAll.png</texture>
                         <visible>Playlist.IsRepeat</visible>
                         <visible>Control.HasFocus(607)</visible>
                         <visible>!VideoPlayer.Content(LiveTV)</visible>
@@ -273,11 +273,11 @@
                         <onup>100</onup>
                         <ondown>100</ondown>
                         <onclick>Close</onclick>
-                        <onclick>RunScript($INFO[Skin.String(LyricScript_Path)])</onclick>
+                        <onclick>Skin.SetBool(Lyrics)</onclick>
+                        <onclick condition="!String.IsEmpty(System.AddonVersion(Skin.String(LyricScript_Path)))+String.IsEqual(Skin.String(LyricScript_Path),script.cu.lrclyrics)+String.IsEqual(Window(Home).Property(culrc.running),true)+!String.IsEqual(Window(Home).Property(culrc.guirunning),TRUE)">SetProperty(culrc.force,TRUE,home)</onclick>
+                        <onclick condition="!String.IsEqual(Skin.String(LyricScript_Path),script.cu.lrclyrics)|!String.IsEqual(Window(Home).Property(culrc.running),true)">RunScript($INFO[Skin.String(LyricScript_Path)])</onclick>
                         <altclick>Skin.SetAddon(LyricScript_Path,xbmc.python.lyrics)</altclick>
-                        <altclick>Close</altclick>
-                        <altclick>XBMC.RunScript($INFO[Skin.String(LyricScript_Path)])</altclick>
-                        <usealttexture>String.IsEmpty(Skin.String(LyricScript_Path))</usealttexture>
+                        <usealttexture>String.IsEmpty(System.AddonVersion(Skin.String(LyricScript_Path)))</usealttexture>
                         <visible>Player.HasAudio</visible>
                         <visible>!VideoPlayer.Content(LiveTV)</visible>
                     </control>
@@ -338,7 +338,6 @@
                     <ondown>200</ondown>
                     <onclick>PlayerControl(Play)</onclick>
                     <visible>VideoPlayer.Content(LiveTV)</visible>
-                    <enable>false</enable>
                     <enable>Player.PauseEnabled</enable>
                     <animation effect="fade" start="100" end="50" time="100" condition="true">Conditional</animation>
                 </control>

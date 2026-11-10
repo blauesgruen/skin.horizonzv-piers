@@ -1,0 +1,37 @@
+{
+  "scope": "Native Disney+ Movies navigation; standard profile, target skin.",
+  "labels": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container.FolderPath": "plugin://slyguy.disney.plus/?_=movies",
+      "Container.NumItems": "16",
+      "Container.PluginName": "slyguy.disney.plus",
+      "ListItem.Label": "..",
+      "ListItem.Path": "plugin://"
+    }
+  },
+  "conditions": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container.Content(movies)": false,
+      "Container.Content(tvshows)": false,
+      "Skin.HasSetting(EnableExtendedArt)": true,
+      "String.StartsWith(ListItem.Path,plugin://)": true
+    }
+  },
+  "gui": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "currentcontrol": {
+        "label": "[..]"
+      },
+      "currentwindow": {
+        "id": 10025,
+        "label": "Videos"
+      }
+    }
+  }
+}

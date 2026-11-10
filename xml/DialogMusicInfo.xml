@@ -174,7 +174,7 @@
 															<right>5</right>
 															<height>180</height>
 															<colordiffuse>$VAR[CoverDim]</colordiffuse>
-															<texture border="2" fallback="DefaultFolder.png">$INFO[ListItem.Thumb]</texture>
+															<texture border="2" fallback="DefaultFolder.png">$INFO[ListItem.Art(thumb)]</texture>
 															<aspectratio>keep</aspectratio>
 														</control>
 														<control type="image">
@@ -210,7 +210,7 @@
 																<left>5</left>
 																<right>5</right>
 																<height>180</height>
-																<texture border="2" fallback="DefaultFolder.png">$INFO[ListItem.Thumb]</texture>
+																<texture border="2" fallback="DefaultFolder.png">$INFO[ListItem.Art(thumb)]</texture>
 																<aspectratio>keep</aspectratio>
 															</control>
 															<control type="image">
@@ -365,10 +365,10 @@
 									<param name="font" value="bebas19" />
 									<param name="onclick" value="Action(close)" />
 									<param name="onclick2_condition" value="!String.IsEqual(ListItem.DBType,song)" />
-									<param name="onclick2" value="RunScript(script.extendedinfo,info=youtubebrowser,id=$INFO[ListItem.Artist] $INFO[ListItem.Album])" />
+									<param name="onclick2" value="RunScript(script.extendedinfo,info=youtubebrowser,id=$ESCVAR[ExtendedInfoYoutubeAlbumQuery])" />
 									<param name="onclick3_condition" value="String.IsEqual(ListItem.DBType,song)" />
-									<param name="onclick3" value="RunScript(script.extendedinfo,info=youtubebrowser,id=$INFO[ListItem.Artist] $INFO[ListItem.Title])" />
-									<param name="visible" value="System.hasAddon(script.extendedinfo)" />
+									<param name="onclick3" value="RunScript(script.extendedinfo,info=youtubebrowser,id=$ESCVAR[ExtendedInfoYoutubeSongQuery])" />
+									<param name="visible" value="System.AddonIsEnabled(script.extendedinfo)" />
 									<param name="nofocus" value="" />
 								</include>
 								<include content="DefaultDialogButton">
@@ -380,8 +380,8 @@
 									<param name="onclick2_condition" value="true" />
 									<param name="onclick3" value="SetProperty(TextViewer_Text,$ESCINFO[ListItem.Property(Artist_Description)],home)" />
 									<param name="onclick3_condition" value="true" />
-									<param name="onclick4" value="ActivateWindow(1102)" />
-									<param name="onclick4_condition" value="true" />
+									<param name="onclick4" value="ClearProperty(TextViewer_Bottom,home)" />
+									<param name="onclick5" value="ActivateWindow(1102)" />
 									<param name="visible" value="!String.IsEmpty(ListItem.Property(Artist_Description))" />
 									<param name="nofocus" value="" />
 								</include>

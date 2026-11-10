@@ -1,0 +1,78 @@
+{
+  "checked_on": "2026-11-04",
+  "classification": "Skin invocation-state and hidden-focus bugs; no removed Kodi API claimed",
+  "before": "Lyrics=false in baseline, direct provider launch does not set it. Hidden default 99 in skin lyrics window executes Back if false; provider finds local LRC but the window immediately deinitializes.",
+  "fix": [
+    "Set Lyrics on both configured direct entry paths before provider invocation",
+    "Remove unconditional enabled-entry focus to hidden page control 101; provider owns focus assignment after population"
+  ],
+  "radio_toggle_note": "2401 action conditions are evaluated before Skin.ToggleSetting executes. Existing start/stop conditions are retained; they must not be inverted based on sequential re-evaluation assumptions.",
+  "provider_evidence": {
+    "addon.xml": {
+      "read_only_local_source": "D:\\Program Files\\Kodi22\\portable_data\\addons\\script.cu.lrclyrics\\addon.xml",
+      "sha256": "04231c799dcd7db6f51b6d25438dcdad1d1c7ddd2027bc4d44b18e40fc7c66cd"
+    },
+    "default.py": {
+      "read_only_local_source": "D:\\Program Files\\Kodi22\\portable_data\\addons\\script.cu.lrclyrics\\default.py",
+      "sha256": "95f3e9ddf988986c200eaee7b9064c5adfe7f30f31e3bf2d1a6262c11bc70187"
+    },
+    "lib/gui.py": {
+      "read_only_local_source": "D:\\Program Files\\Kodi22\\portable_data\\addons\\script.cu.lrclyrics\\lib\\gui.py",
+      "sha256": "54bc0dc50e2dd90a8605755afd49685139b5af3b32ea90dbc7e197f6090129af"
+    }
+  },
+  "native_evidence": [
+    "../kodi22_runtime/lyrics_visualisation_before_enable_fix.json",
+    "../kodi22_runtime/lyrics_visualisation_before_focus_fix.json",
+    "../kodi22_runtime/lyrics_visualisation_checks.json",
+    "../kodi22_runtime/lyrics_visualisation.png"
+  ],
+  "static_checks": [
+    {
+      "tool": "check_skin_compatibility.py",
+      "exit_code": 0,
+      "findings": 0,
+      "errors": 0,
+      "warnings": 0,
+      "literal_references": null,
+      "arity_candidates": 0,
+      "condition_atom_candidates": 0
+    },
+    {
+      "tool": "audit_skin_actions.py",
+      "exit_code": 0,
+      "findings": 0,
+      "errors": 0,
+      "warnings": 0,
+      "literal_references": 1615,
+      "arity_candidates": 0,
+      "condition_atom_candidates": 0
+    },
+    {
+      "tool": "audit_skin_windows.py",
+      "exit_code": 0,
+      "findings": 0,
+      "errors": 0,
+      "warnings": 0,
+      "literal_references": null,
+      "arity_candidates": 0,
+      "condition_atom_candidates": 0
+    },
+    {
+      "tool": "audit_skin_info_names.py",
+      "exit_code": 0,
+      "findings": 0,
+      "errors": 0,
+      "warnings": 0,
+      "literal_references": null,
+      "arity_candidates": 0,
+      "condition_atom_candidates": 0
+    }
+  ],
+  "sources": [
+    "xml/MusicOSD.xml",
+    "xml/PlayerControls.xml",
+    "xml/script-cu-lrclyrics-main.xml",
+    "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/guilib/GUIAction.cpp"
+  ]
+}

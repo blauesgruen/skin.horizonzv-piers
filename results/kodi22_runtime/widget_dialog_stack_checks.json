@@ -1,0 +1,100 @@
+{
+  "initial": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "currentcontrol": {
+        "label": "Visible (*)"
+      },
+      "currentwindow": {
+        "id": 11501,
+        "label": ""
+      }
+    }
+  },
+  "initial_conditions": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Control.IsVisible(36001)": true,
+      "Window.IsDialogTopmost(1501)": true,
+      "Window.IsVisible(1500)": false,
+      "Window.IsVisible(1501)": true
+    }
+  },
+  "navigation": [
+    "Visible (*)",
+    "- Custom ( )",
+    "Multiimage Background ( )",
+    "Background",
+    "Reset",
+    "Positions",
+    "Widget Settings"
+  ],
+  "widget": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "currentcontrol": {
+        "label": "last album belonged to number 1 ( )"
+      },
+      "currentwindow": {
+        "id": 11500,
+        "label": ""
+      }
+    }
+  },
+  "widget_conditions": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Control.IsVisible(36000)": true,
+      "Window.IsDialogTopmost(1500)": true,
+      "Window.IsDialogTopmost(1501)": false,
+      "Window.IsVisible(1500)": true,
+      "Window.IsVisible(1501)": true
+    }
+  },
+  "back_to_targets": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "currentcontrol": {
+        "label": "Widget Settings"
+      },
+      "currentwindow": {
+        "id": 11501,
+        "label": ""
+      }
+    }
+  },
+  "back_conditions": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Control.IsVisible(36001)": true,
+      "Window.IsDialogTopmost(1501)": true,
+      "Window.IsVisible(1500)": false
+    }
+  },
+  "back_home": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "currentcontrol": {
+        "label": "TV shows"
+      },
+      "currentwindow": {
+        "id": 10000,
+        "label": "Home"
+      }
+    }
+  },
+  "home_property": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Window(Home).Property(HomeButton)": ""
+    }
+  }
+}

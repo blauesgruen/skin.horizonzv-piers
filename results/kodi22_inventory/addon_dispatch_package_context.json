@@ -1,0 +1,16 @@
+﻿{
+    "builder_sha256":  "9F9944DD6608144363167F6EE5AC5342ED8E79F0CE545686861C5FF1952216EB",
+    "purpose":  "Dashboard and shutdown addon-item availability; isolated TEMP archive",
+    "archive":  "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-addon-dispatch-package-7a7c7ec34f82493980a59829c3a66d02\\skin.horizonzv-1.22.0.1.zip",
+    "builder":  "C:/Users/zorno/scripts/build-kodi-addon.ps1",
+    "excluded_directories":  [
+                                 ".git",
+                                 ".github",
+                                 ".vscode",
+                                 "__pycache__",
+                                 "temp",
+                                 "results",
+                                 "tools"
+                             ],
+    "stage_target_verified":  "C:\\Users\\zorno\\AppData\\Local\\Temp\\kodi-package-skin.horizonzv"
+}

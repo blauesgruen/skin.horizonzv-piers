@@ -1,0 +1,19 @@
+{
+  "scope": "INFO-level standard log of direct target-skin startup and Disney navigation; counts only, no raw provider URLs/credentials copied.",
+  "extra_fanart_lines": 0,
+  "disney_extrafanart_lines": 0,
+  "router_error_lines": 0,
+  "all_error_lines": 0,
+  "active_skin": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "value": "skin.horizonzv"
+    }
+  },
+  "players": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": []
+  }
+}

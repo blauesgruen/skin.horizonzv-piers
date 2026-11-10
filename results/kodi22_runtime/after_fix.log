@@ -1,0 +1,13 @@
+2026-11-01 16:55:43.235 T:32356 warning <CSettingsManager>: missing version attribute
+2026-11-01 16:55:44.820 T:29520 warning <general>: ActiveAE::CActiveAE::ValidateOutputDevices: passthrough output device setting has been updated from 'WASAPI:default' to 'WASAPI:{BA128D38-95BC-4816-A3E4-E2B9C4842C2C}|HDMI - 3 - Q27G4SDR (AMD High Definition Audio Device)'
+2026-11-01 16:55:44.855 T:29520 warning <general>: CActiveAE::ActiveAE::CActiveAE::StateMachine - signal: 0 from port: OutputControlPort not handled for state: 7
+2026-11-01 16:55:44.856 T:32356 warning <general>: Skipped 2 duplicate messages..
+2026-11-01 16:55:45.087 T:32356    info <general>:   load skin from: C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\portable_data\addons\skin.horizonzv\ (version: 1.22.0.1)
+2026-11-01 16:55:45.186 T:32356 warning <general>: CSkinTimerManager::LoadTimers: Could not load timers file C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\portable_data\addons\skin.horizonzv\xml\Timers.xml:  (Line: 0)
+2026-11-01 16:55:45.217 T:32356 warning <general>: JSONRPC: Could not parse type "Setting.Details.SettingList"
+2026-11-01 16:55:45.233 T:32356 warning <general>: CApplication::Initialize - startup.xml taints init process
+2026-11-01 16:55:45.316 T:32356 warning <general>: Trying to add unsupported control type 7
+2026-11-01 16:55:55.357 T:7200  warning <general>: [WS-Discovery]: The initial search for servers has failed. No servers found.
+2026-11-01 16:55:58.920 T:32356   debug <general>: [Warning] CGUITextureManager::GetTexturePath: could not find texture 'DefaultMusicSources.png'
+2026-11-01 16:55:58.932 T:32356   debug <general>: [Warning] CGUITextureManager::GetTexturePath: could not find texture 'DefaultMusicSources.png'
+2026-11-01 16:55:58.943 T:32356   debug <general>: [Warning] CGUITextureManager::GetTexturePath: could not find texture 'DefaultMusicSources.png'

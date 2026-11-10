@@ -1,0 +1,181 @@
+{
+  "focus_before_stop": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Control.HasFocus(2402)": true
+    }
+  },
+  "observations": [
+    {
+      "Window(Home).Property(culrc.force)": "TRUE",
+      "Window(Home).Property(culrc.guirunning)": "",
+      "Window(Home).Property(culrc.running)": "true"
+    },
+    {
+      "Window(Home).Property(culrc.force)": "TRUE",
+      "Window(Home).Property(culrc.guirunning)": "",
+      "Window(Home).Property(culrc.running)": "true"
+    },
+    {
+      "Window(Home).Property(culrc.force)": "TRUE",
+      "Window(Home).Property(culrc.guirunning)": "",
+      "Window(Home).Property(culrc.running)": "true"
+    },
+    {
+      "Window(Home).Property(culrc.force)": "TRUE",
+      "Window(Home).Property(culrc.guirunning)": "",
+      "Window(Home).Property(culrc.running)": "true"
+    },
+    {
+      "Window(Home).Property(culrc.force)": "TRUE",
+      "Window(Home).Property(culrc.guirunning)": "",
+      "Window(Home).Property(culrc.running)": "true"
+    },
+    {
+      "Window(Home).Property(culrc.force)": "TRUE",
+      "Window(Home).Property(culrc.guirunning)": "",
+      "Window(Home).Property(culrc.running)": "true"
+    },
+    {
+      "Window(Home).Property(culrc.force)": "TRUE",
+      "Window(Home).Property(culrc.guirunning)": "",
+      "Window(Home).Property(culrc.running)": "true"
+    },
+    {
+      "Window(Home).Property(culrc.force)": "TRUE",
+      "Window(Home).Property(culrc.guirunning)": "",
+      "Window(Home).Property(culrc.running)": "true"
+    },
+    {
+      "Window(Home).Property(culrc.force)": "TRUE",
+      "Window(Home).Property(culrc.guirunning)": "",
+      "Window(Home).Property(culrc.running)": "true"
+    },
+    {
+      "Window(Home).Property(culrc.force)": "TRUE",
+      "Window(Home).Property(culrc.guirunning)": "",
+      "Window(Home).Property(culrc.running)": "true"
+    },
+    {
+      "Window(Home).Property(culrc.force)": "TRUE",
+      "Window(Home).Property(culrc.guirunning)": "",
+      "Window(Home).Property(culrc.running)": "true"
+    },
+    {
+      "Window(Home).Property(culrc.force)": "TRUE",
+      "Window(Home).Property(culrc.guirunning)": "",
+      "Window(Home).Property(culrc.running)": "true"
+    },
+    {
+      "Window(Home).Property(culrc.force)": "TRUE",
+      "Window(Home).Property(culrc.guirunning)": "",
+      "Window(Home).Property(culrc.running)": "true"
+    },
+    {
+      "Window(Home).Property(culrc.force)": "TRUE",
+      "Window(Home).Property(culrc.guirunning)": "",
+      "Window(Home).Property(culrc.running)": "true"
+    },
+    {
+      "Window(Home).Property(culrc.force)": "TRUE",
+      "Window(Home).Property(culrc.guirunning)": "",
+      "Window(Home).Property(culrc.running)": "true"
+    },
+    {
+      "Window(Home).Property(culrc.force)": "TRUE",
+      "Window(Home).Property(culrc.guirunning)": "",
+      "Window(Home).Property(culrc.running)": "true"
+    },
+    {
+      "Window(Home).Property(culrc.force)": "TRUE",
+      "Window(Home).Property(culrc.guirunning)": "",
+      "Window(Home).Property(culrc.running)": "true"
+    },
+    {
+      "Window(Home).Property(culrc.force)": "TRUE",
+      "Window(Home).Property(culrc.guirunning)": "",
+      "Window(Home).Property(culrc.running)": "true"
+    },
+    {
+      "Window(Home).Property(culrc.force)": "TRUE",
+      "Window(Home).Property(culrc.guirunning)": "",
+      "Window(Home).Property(culrc.running)": "true"
+    },
+    {
+      "Window(Home).Property(culrc.force)": "TRUE",
+      "Window(Home).Property(culrc.guirunning)": "",
+      "Window(Home).Property(culrc.running)": "true"
+    },
+    {
+      "Window(Home).Property(culrc.force)": "TRUE",
+      "Window(Home).Property(culrc.guirunning)": "",
+      "Window(Home).Property(culrc.running)": "true"
+    },
+    {
+      "Window(Home).Property(culrc.force)": "TRUE",
+      "Window(Home).Property(culrc.guirunning)": "",
+      "Window(Home).Property(culrc.running)": "true"
+    },
+    {
+      "Window(Home).Property(culrc.force)": "TRUE",
+      "Window(Home).Property(culrc.guirunning)": "",
+      "Window(Home).Property(culrc.running)": "true"
+    },
+    {
+      "Window(Home).Property(culrc.force)": "TRUE",
+      "Window(Home).Property(culrc.guirunning)": "",
+      "Window(Home).Property(culrc.running)": "true"
+    },
+    {
+      "Window(Home).Property(culrc.force)": "TRUE",
+      "Window(Home).Property(culrc.guirunning)": "",
+      "Window(Home).Property(culrc.running)": "true"
+    },
+    {
+      "Window(Home).Property(culrc.force)": "TRUE",
+      "Window(Home).Property(culrc.guirunning)": "",
+      "Window(Home).Property(culrc.running)": "true"
+    },
+    {
+      "Window(Home).Property(culrc.force)": "TRUE",
+      "Window(Home).Property(culrc.guirunning)": "",
+      "Window(Home).Property(culrc.running)": "true"
+    },
+    {
+      "Window(Home).Property(culrc.force)": "TRUE",
+      "Window(Home).Property(culrc.guirunning)": "",
+      "Window(Home).Property(culrc.running)": "true"
+    },
+    {
+      "Window(Home).Property(culrc.force)": "TRUE",
+      "Window(Home).Property(culrc.guirunning)": "",
+      "Window(Home).Property(culrc.running)": "true"
+    },
+    {
+      "Window(Home).Property(culrc.force)": "TRUE",
+      "Window(Home).Property(culrc.guirunning)": "",
+      "Window(Home).Property(culrc.running)": "true"
+    }
+  ],
+  "after_stop": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Window(Home).Property(culrc.force)": "TRUE",
+      "Window(Home).Property(culrc.guirunning)": "",
+      "Window(Home).Property(culrc.running)": "true"
+    }
+  },
+  "players": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": [
+      {
+        "playerid": 0,
+        "playertype": "internal",
+        "type": "audio"
+      }
+    ]
+  }
+}

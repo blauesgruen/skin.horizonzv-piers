@@ -1,0 +1,16 @@
+﻿{
+    "builder":  "C:/Users/zorno/scripts/build-kodi-addon.ps1",
+    "builder_sha256":  "9F9944DD6608144363167F6EE5AC5342ED8E79F0CE545686861C5FF1952216EB",
+    "archive":  "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-lyrics-background-package-ff475dc97e3747479d9d94dde1890f86\\skin.horizonzv-1.22.0.1.zip",
+    "stage_target_verified":  "C:\\Users\\zorno\\AppData\\Local\\Temp\\kodi-package-skin.horizonzv",
+    "excluded_directories":  [
+                                 ".git",
+                                 ".github",
+                                 ".vscode",
+                                 "__pycache__",
+                                 "temp",
+                                 "results",
+                                 "tools"
+                             ],
+    "purpose":  "CU LRC background lifecycle and existing-service reuse; isolated TEMP archive"
+}

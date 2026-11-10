@@ -1,0 +1,32 @@
+{
+  "scope": "Native Disney+ Series > Recommendations, standard profile target skin.",
+  "labels": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container.Content": "tvshows",
+      "Container.FolderPath": "plugin://slyguy.disney.plus/?_=set&set_id=b61dc76b-b20c-4191-b3d0-d96948c430f2",
+      "Container.NumItems": "49",
+      "ListItem.Path": "plugin://slyguy.disney.plus/"
+    }
+  },
+  "selected": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "ListItem.DBTYPE": "tvshow",
+      "ListItem.Label": "The Kardashians",
+      "ListItem.Path": "plugin://slyguy.disney.plus/"
+    }
+  },
+  "conditions": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container.Content(tvshows)": true,
+      "ListItem.IsFolder": true,
+      "Skin.HasSetting(EnableExtendedArt)": true,
+      "String.StartsWith(ListItem.Path,plugin://)": true
+    }
+  }
+}

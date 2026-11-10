@@ -1,0 +1,175 @@
+Setting;Lesend;Schreibend;Reset;Dateien
+addon_fav1;5;1;1;Includes_Dash_Addonpath_Fav.xml
+addon_fav10;5;1;1;Includes_Dash_Addonpath_Fav.xml
+addon_fav10_icon;1;0;1;Includes_Dash_Addonpath_Fav.xml
+addon_fav10_label;1;0;1;Includes_Dash_Addonpath_Fav.xml
+addon_fav1_icon;1;0;1;Includes_Dash_Addonpath_Fav.xml
+addon_fav1_label;1;0;1;Includes_Dash_Addonpath_Fav.xml
+addon_fav2;5;1;1;Includes_Dash_Addonpath_Fav.xml
+addon_fav2_icon;1;0;1;Includes_Dash_Addonpath_Fav.xml
+addon_fav2_label;1;0;1;Includes_Dash_Addonpath_Fav.xml
+addon_fav3;5;1;2;Includes_Dash_Addonpath_Fav.xml
+addon_fav3_icon;1;0;2;Includes_Dash_Addonpath_Fav.xml
+addon_fav3_label;1;0;2;Includes_Dash_Addonpath_Fav.xml
+addon_fav4;5;1;1;Includes_Dash_Addonpath_Fav.xml
+addon_fav4_icon;1;0;1;Includes_Dash_Addonpath_Fav.xml
+addon_fav4_label;1;0;1;Includes_Dash_Addonpath_Fav.xml
+addon_fav5;5;1;1;Includes_Dash_Addonpath_Fav.xml
+addon_fav5_icon;1;0;1;Includes_Dash_Addonpath_Fav.xml
+addon_fav5_label;1;0;1;Includes_Dash_Addonpath_Fav.xml
+addon_fav6;5;1;1;Includes_Dash_Addonpath_Fav.xml
+addon_fav6_icon;1;0;1;Includes_Dash_Addonpath_Fav.xml
+addon_fav6_label;1;0;1;Includes_Dash_Addonpath_Fav.xml
+addon_fav7;5;1;1;Includes_Dash_Addonpath_Fav.xml
+addon_fav7_icon;1;0;1;Includes_Dash_Addonpath_Fav.xml
+addon_fav7_label;1;0;1;Includes_Dash_Addonpath_Fav.xml
+addon_fav8;5;1;1;Includes_Dash_Addonpath_Fav.xml
+addon_fav8_icon;1;0;1;Includes_Dash_Addonpath_Fav.xml
+addon_fav8_label;1;0;1;Includes_Dash_Addonpath_Fav.xml
+addon_fav9;5;1;1;Includes_Dash_Addonpath_Fav.xml
+addon_fav9_icon;1;0;1;Includes_Dash_Addonpath_Fav.xml
+addon_fav9_label;1;0;1;Includes_Dash_Addonpath_Fav.xml
+addonpath_dash_path;3;1;0;Custom_1500_WidgetSettings.xml, Includes_Dash_Addonpath_Fav.xml
+addonpath_dash_path1;3;1;0;Custom_1500_WidgetSettings.xml, Includes_Dash_Addonpath_Fav.xml
+addonpath_dash_path2;3;1;0;Custom_1500_WidgetSettings.xml, Includes_Dash_Addonpath_Fav.xml
+addonpath_dash_path3;3;1;0;Custom_1500_WidgetSettings.xml, Includes_Dash_Addonpath_Fav.xml
+customcolor;1;0;0;Variables.xml
+hidehomemenu_timer;3;1;0;SkinSettings.xml, Timers.xml
+home_custom1_custom_label;3;1;0;Variables_HomemenuCustomItems.xml
+home_custom1_custom_path;5;6;0;Includes_HomeContent.xml, Variables_HomemenuCustomItems.xml
+home_custom2_custom_label;3;1;0;Variables_HomemenuCustomItems.xml
+home_custom2_custom_path;5;6;0;Includes_HomeContent.xml, Variables_HomemenuCustomItems.xml
+home_custom3_custom_label;3;1;0;Variables_HomemenuCustomItems.xml
+home_custom3_custom_path;5;6;0;Includes_HomeContent.xml, Variables_HomemenuCustomItems.xml
+home_custom4_custom_label;3;1;0;Variables_HomemenuCustomItems.xml
+home_custom4_custom_path;5;6;0;Includes_HomeContent.xml, Variables_HomemenuCustomItems.xml
+home_custom5_custom_label;3;1;0;Variables_HomemenuCustomItems.xml
+home_custom5_custom_path;5;6;0;Includes_HomeContent.xml, Variables_HomemenuCustomItems.xml
+home_custom6_custom_label;3;1;0;Variables_HomemenuCustomItems.xml
+home_custom6_custom_path;5;6;0;Includes_HomeContent.xml, Variables_HomemenuCustomItems.xml
+home_custom7_custom_label;3;1;0;Variables_HomemenuCustomItems.xml
+home_custom7_custom_path;5;6;0;Includes_HomeContent.xml, Variables_HomemenuCustomItems.xml
+home_custom8_custom_label;3;1;0;Variables_HomemenuCustomItems.xml
+home_custom8_custom_path;5;6;0;Includes_HomeContent.xml, Variables_HomemenuCustomItems.xml
+home_custom9_custom_label;3;1;0;Variables_HomemenuCustomItems.xml
+home_custom9_custom_path;5;6;0;Includes_HomeContent.xml, Variables_HomemenuCustomItems.xml
+home_custom_back_picture_onlyone;11;2;2;Includes.xml, SkinSettings.xml, Variables.xml, Variables_SkinSettings_Description.xml
+home_games_custom_label;2;1;0;Variables_HomemenuCustomItems.xml
+home_games_custom_path;4;5;0;Includes_HomeContent.xml, Variables_HomemenuCustomItems.xml
+home_movies_custom_label;2;1;0;Variables_HomemenuCustomItems.xml
+home_movies_custom_path;4;5;0;Includes_HomeContent.xml, Variables_HomemenuCustomItems.xml
+home_music_custom_label;2;1;0;Variables_HomemenuCustomItems.xml
+home_music_custom_path;4;5;0;Includes_HomeContent.xml, Variables_HomemenuCustomItems.xml
+home_musicvideo_custom_label;2;1;0;Variables_HomemenuCustomItems.xml
+home_musicvideo_custom_path;4;5;0;Includes_HomeContent.xml, Variables_HomemenuCustomItems.xml
+home_picture_custom_label;2;1;0;Variables_HomemenuCustomItems.xml
+home_picture_custom_path;4;5;0;Includes_HomeContent.xml, Variables_HomemenuCustomItems.xml
+home_tvshow_custom_label;2;1;0;Variables_HomemenuCustomItems.xml
+home_tvshow_custom_path;4;5;0;Includes_HomeContent.xml, Variables_HomemenuCustomItems.xml
+home_videos_custom_label;2;1;0;Variables_HomemenuCustomItems.xml
+home_videos_custom_path;4;5;0;Includes_HomeContent.xml, Variables_HomemenuCustomItems.xml
+homemenufocus;3;1;0;Home.xml, SkinSettings.xml
+homemenugames;23;0;0;Includes_HomeContent.xml
+homemenuitemcustom1;24;1;2;Custom_1301_HomeMenuItemsPosition.xml, Includes_HomeContent.xml
+homemenuitemcustom2;24;1;2;Custom_1301_HomeMenuItemsPosition.xml, Includes_HomeContent.xml
+homemenuitemcustom3;24;1;2;Custom_1301_HomeMenuItemsPosition.xml, Includes_HomeContent.xml
+homemenuitemcustom4;24;1;2;Custom_1301_HomeMenuItemsPosition.xml, Includes_HomeContent.xml
+homemenuitemcustom5;24;1;2;Custom_1301_HomeMenuItemsPosition.xml, Includes_HomeContent.xml
+homemenuitemcustom6;24;1;2;Custom_1301_HomeMenuItemsPosition.xml, Includes_HomeContent.xml
+homemenuitemcustom7;24;1;2;Custom_1301_HomeMenuItemsPosition.xml, Includes_HomeContent.xml
+homemenuitemcustom8;24;1;2;Custom_1301_HomeMenuItemsPosition.xml, Includes_HomeContent.xml
+homemenuitemcustom9;24;1;2;Custom_1301_HomeMenuItemsPosition.xml, Includes_HomeContent.xml
+homemenuitemdashboard;24;1;2;Custom_1301_HomeMenuItemsPosition.xml, Includes_HomeContent.xml
+homemenuitemgames;1;1;2;Custom_1301_HomeMenuItemsPosition.xml
+homemenuitemmovie;24;1;2;Custom_1301_HomeMenuItemsPosition.xml, Includes_HomeContent.xml
+homemenuitemmusic;24;1;2;Custom_1301_HomeMenuItemsPosition.xml, Includes_HomeContent.xml
+homemenuitemmusicvideos;24;1;2;Custom_1301_HomeMenuItemsPosition.xml, Includes_HomeContent.xml
+homemenuitempictures;24;1;2;Custom_1301_HomeMenuItemsPosition.xml, Includes_HomeContent.xml
+homemenuitemplaydisc;24;1;2;Custom_1301_HomeMenuItemsPosition.xml, Includes_HomeContent.xml
+homemenuitempvr;24;1;2;Custom_1301_HomeMenuItemsPosition.xml, Includes_HomeContent.xml
+homemenuitemradio;23;1;2;Custom_1301_HomeMenuItemsPosition.xml, Includes_HomeContent.xml
+homemenuitemsettings;24;1;2;Custom_1301_HomeMenuItemsPosition.xml, Includes_HomeContent.xml
+homemenuitemtvshows;24;1;2;Custom_1301_HomeMenuItemsPosition.xml, Includes_HomeContent.xml
+homemenuitemvideo;24;1;2;Custom_1301_HomeMenuItemsPosition.xml, Includes_HomeContent.xml
+homemenuitemweather;24;1;2;Custom_1301_HomeMenuItemsPosition.xml, Includes_HomeContent.xml
+homewidget_custom1_label;2;1;0;Includes_Widget_Param.xml
+homewidget_custom1_path;2;6;0;Variables_HomemenuCustomItems.xml
+homewidget_custom2_label;2;1;0;Includes_Widget_Param.xml
+homewidget_custom2_path;2;5;0;Variables_HomemenuCustomItems.xml
+homewidget_custom3_label;2;1;0;Includes_Widget_Param.xml
+homewidget_custom3_path;2;5;0;Variables_HomemenuCustomItems.xml
+homewidget_custom4_label;2;1;0;Includes_Widget_Param.xml
+homewidget_custom4_path;2;5;0;Variables_HomemenuCustomItems.xml
+homewidget_custom5_label;2;1;0;Includes_Widget_Param.xml
+homewidget_custom5_path;2;5;0;Variables_HomemenuCustomItems.xml
+homewidget_custom6_label;2;1;0;Includes_Widget_Param.xml
+homewidget_custom6_path;2;5;0;Variables_HomemenuCustomItems.xml
+homewidget_custom7_label;2;1;0;Includes_Widget_Param.xml
+homewidget_custom7_path;2;5;0;Variables_HomemenuCustomItems.xml
+homewidget_custom8_label;2;1;0;Includes_Widget_Param.xml
+homewidget_custom8_path;2;5;0;Variables_HomemenuCustomItems.xml
+homewidget_custom9_label;2;1;0;Includes_Widget_Param.xml
+homewidget_custom9_path;2;5;0;Variables_HomemenuCustomItems.xml
+homewidget_games_label;3;2;0;Custom_1500_WidgetSettings.xml, Includes_Widget_Param.xml
+homewidget_games_path;3;5;0;Custom_1500_WidgetSettings.xml, Variables_HomemenuCustomItems.xml
+homewidget_movies_label;3;2;0;Custom_1500_WidgetSettings.xml, Includes_Widget_Param.xml
+homewidget_movies_path;3;5;0;Custom_1500_WidgetSettings.xml, Variables_HomemenuCustomItems.xml
+homewidget_music_label;3;2;0;Custom_1500_WidgetSettings.xml, Includes_Widget_Param.xml
+homewidget_music_path;3;5;0;Custom_1500_WidgetSettings.xml, Variables_HomemenuCustomItems.xml
+homewidget_musicvideo_label;3;2;0;Custom_1500_WidgetSettings.xml, Includes_Widget_Param.xml
+homewidget_musicvideo_path;3;5;0;Custom_1500_WidgetSettings.xml, Variables_HomemenuCustomItems.xml
+homewidget_picture_label;3;2;0;Custom_1500_WidgetSettings.xml, Includes_Widget_Param.xml
+homewidget_picture_path;3;5;0;Custom_1500_WidgetSettings.xml, Variables_HomemenuCustomItems.xml
+homewidget_tvshow_label;3;2;0;Custom_1500_WidgetSettings.xml, Includes_Widget_Param.xml
+homewidget_tvshow_path;3;5;0;Custom_1500_WidgetSettings.xml, Variables_HomemenuCustomItems.xml
+homewidget_videos_label;3;2;1;Custom_1500_WidgetSettings.xml, Includes_Widget_Param.xml
+homewidget_videos_path;3;5;1;Custom_1500_WidgetSettings.xml, Variables_HomemenuCustomItems.xml
+lyricscript_path;19;2;0;MusicOSD.xml, PlayerControls.xml
+moviegenreicons.ext;2;0;0;Variables.xml
+moviegenreicons.name;16;0;0;Variables.xml
+musicgenreicons.ext;2;0;0;Variables.xml
+musicgenreicons.name;6;0;0;Variables.xml
+myskincolor;4;0;0;SkinSettings.xml, Variables.xml
+series_node_widgetlabel_randomtvshows;1;1;0;Custom_1500_WidgetSettings.xml
+series_node_widgetlabel_recenttvshows;1;1;0;Custom_1500_WidgetSettings.xml
+shutdown_addon1;7;2;0;DialogButtonMenu.xml, SkinSettings.xml, Variables.xml
+shutdown_addon1_label;4;1;0;SkinSettings.xml, Variables.xml
+start_volume;3;1;0;SkinSettings.xml, Startup.xml
+startup_playlist_path;2;1;0;SkinSettings.xml, Startup.xml
+studiologos.ext;4;0;0;Variables.xml, View_562_Showcase.xml
+studiologos.name;5;0;0;DialogVideoInfo.xml, Variables.xml
+studiologos.path;4;0;0;Variables.xml, View_562_Showcase.xml
+tmdbhelper.monitorcontainer;0;1;0;Startup.xml
+user_bkg_custom1;3;1;0;Custom_1301_HomeMenuItemsPosition.xml, Includes_HomeContent.xml
+user_bkg_custom2;3;1;0;Custom_1301_HomeMenuItemsPosition.xml, Includes_HomeContent.xml
+user_bkg_custom3;3;1;0;Custom_1301_HomeMenuItemsPosition.xml, Includes_HomeContent.xml
+user_bkg_custom4;3;1;0;Custom_1301_HomeMenuItemsPosition.xml, Includes_HomeContent.xml
+user_bkg_custom5;3;1;0;Custom_1301_HomeMenuItemsPosition.xml, Includes_HomeContent.xml
+user_bkg_custom6;3;1;0;Custom_1301_HomeMenuItemsPosition.xml, Includes_HomeContent.xml
+user_bkg_custom7;3;1;0;Custom_1301_HomeMenuItemsPosition.xml, Includes_HomeContent.xml
+user_bkg_custom8;4;1;0;Custom_1301_HomeMenuItemsPosition.xml, Includes_HomeContent.xml
+user_bkg_custom9;3;1;0;Custom_1301_HomeMenuItemsPosition.xml, Includes_HomeContent.xml
+user_bkg_dashboard;3;1;0;Custom_1301_HomeMenuItemsPosition.xml, Includes_HomeContent.xml
+user_bkg_games;3;1;0;Custom_1301_HomeMenuItemsPosition.xml, Includes_HomeContent.xml
+user_bkg_movies;3;1;0;Custom_1301_HomeMenuItemsPosition.xml, Includes_HomeContent.xml
+user_bkg_music;3;1;0;Custom_1301_HomeMenuItemsPosition.xml, Includes_HomeContent.xml
+user_bkg_musicvideo;3;1;0;Custom_1301_HomeMenuItemsPosition.xml, Includes_HomeContent.xml
+user_bkg_picture;3;1;0;Custom_1301_HomeMenuItemsPosition.xml, Includes_HomeContent.xml
+user_bkg_playdisc;3;1;0;Custom_1301_HomeMenuItemsPosition.xml, Includes_HomeContent.xml
+user_bkg_pvr;4;3;1;Custom_1301_HomeMenuItemsPosition.xml, Custom_1500_WidgetSettings.xml, Includes_HomeContent.xml
+user_bkg_radio;3;3;1;Custom_1500_WidgetSettings.xml, Includes_HomeContent.xml
+user_bkg_setting;3;1;0;Custom_1301_HomeMenuItemsPosition.xml, Includes_HomeContent.xml
+user_bkg_tvshow;3;1;0;Custom_1301_HomeMenuItemsPosition.xml, Includes_HomeContent.xml
+user_bkg_videos;3;1;0;Custom_1301_HomeMenuItemsPosition.xml, Includes_HomeContent.xml
+user_bkg_weather;3;1;0;Custom_1301_HomeMenuItemsPosition.xml, Includes_HomeContent.xml
+videopath_dash_name;3;2;0;Custom_1500_WidgetSettings.xml, Includes_Dash_Addonpath_Fav.xml
+videopath_dash_name1;3;2;0;Custom_1500_WidgetSettings.xml, Includes_Dash_Addonpath_Fav.xml
+videopath_dash_name2;3;2;0;Custom_1500_WidgetSettings.xml, Includes_Dash_Addonpath_Fav.xml
+videopath_dash_name3;3;2;0;Custom_1500_WidgetSettings.xml, Includes_Dash_Addonpath_Fav.xml
+weatherfanart.ext;1;0;0;Variables.xml
+weatherfanart.path;18;0;0;Includes.xml, Includes_Submenu.xml, MyWeather.xml, SkinSettings.xml, Variables.xml
+weathericons.ext;2;0;0;Variables.xml
+weathericons.path;4;1;0;Home.xml, Variables.xml
+widget_diashow_folder;2;1;0;Custom_1500_WidgetSettings.xml, Includes_Widget_Param.xml
+widget_pvr_radio_widgetchannels_path;4;1;0;Custom_1500_WidgetSettings.xml, Includes_Widget_Param.xml
+widget_pvr_tv_widgetchannels_path;5;1;0;Custom_1500_WidgetSettings.xml, Includes_Widget_Param.xml

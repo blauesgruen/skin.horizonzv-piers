@@ -65,13 +65,17 @@
 							<include>View562LayoutItemlayout</include>
 						</itemlayout>
 						<focusedlayout condition="![Container.Content(Albums)|Container.Content(artists)]" height="auto" width="390">
-							<include>View562LayoutFocused</include>
+							<include content="View562LayoutFocused">
+								<param name="viewid" value="$PARAM[viewid]" />
+							</include>
 						</focusedlayout>
 						<itemlayout condition="Container.Content(Albums)|Container.Content(artists)" height="auto" width="380">
 							<include>View562LayoutItemlayout</include>
 						</itemlayout>
 						<focusedlayout condition="Container.Content(Albums)|Container.Content(artists)" height="auto" width="560">
-							<include>View562LayoutFocused</include>
+							<include content="View562LayoutFocused">
+								<param name="viewid" value="$PARAM[viewid]" />
+							</include>
 						</focusedlayout>
 					</control>
 					<control type="group"> <!-- Title and Tagline -->
@@ -179,10 +183,6 @@
 						<control type="group">
 							<height>90</height>
 							<bottom>20</bottom>
-							<control type="ima ge"> <!-- testimage -->
-								<colordiffuse>red</colordiffuse>
-								<texture>WhiteBack.png</texture>
-							</control>
 							<control type="label">
 								<description>item label</description>
 								<height>45</height>

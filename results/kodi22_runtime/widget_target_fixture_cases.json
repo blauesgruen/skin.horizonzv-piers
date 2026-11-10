@@ -1,0 +1,251 @@
+{
+  "variables": [
+    "WidgetTarget_Dash",
+    "WidgetTarget_Dash_FirstItem",
+    "WidgetTarget"
+  ],
+  "cases": [
+    [
+      "Movie",
+      "movie",
+      "",
+      "",
+      [
+        "videos",
+        "videos",
+        "videos"
+      ]
+    ],
+    [
+      "Musicvideo",
+      "musicvideo",
+      "",
+      "",
+      [
+        "videos",
+        "videos",
+        "videos"
+      ]
+    ],
+    [
+      "Song",
+      "song",
+      "",
+      "",
+      [
+        "music",
+        "music",
+        "music"
+      ]
+    ],
+    [
+      "Album",
+      "album",
+      "",
+      "",
+      [
+        "music",
+        "music",
+        "music"
+      ]
+    ],
+    [
+      "Artist",
+      "artist",
+      "",
+      "",
+      [
+        "music",
+        "music",
+        "music"
+      ]
+    ],
+    [
+      "TV timers",
+      "",
+      "pvr://timers/tv/timers/",
+      "",
+      [
+        "tvtimers",
+        "tvtimers",
+        "tvtimers"
+      ]
+    ],
+    [
+      "Radio timers",
+      "",
+      "pvr://timers/radio/timers/",
+      "",
+      [
+        "radiotimers",
+        "radiotimers",
+        "radiotimers"
+      ]
+    ],
+    [
+      "TV rules",
+      "",
+      "pvr://timers/tv/rules/",
+      "",
+      [
+        "tvtimerrules",
+        "tvtimerrules",
+        "tvtimerrules"
+      ]
+    ],
+    [
+      "Radio rules",
+      "",
+      "pvr://timers/radio/rules/",
+      "",
+      [
+        "radiotimerrules",
+        "radiotimerrules",
+        "radiotimerrules"
+      ]
+    ],
+    [
+      "Radio rule child",
+      "",
+      "pvr://timers/radio/rules/1/2",
+      "",
+      [
+        "radiotimerrules",
+        "radiotimerrules",
+        "radiotimerrules"
+      ]
+    ],
+    [
+      "TV recordings",
+      "",
+      "pvr://recordings/tv/active/",
+      "",
+      [
+        "tvrecordings",
+        "tvrecordings",
+        "tvrecordings"
+      ]
+    ],
+    [
+      "TV channels",
+      "",
+      "pvr://channels/tv/All channels/",
+      "",
+      [
+        "tvchannels",
+        "tvchannels",
+        "tvchannels"
+      ]
+    ],
+    [
+      "Addon directory",
+      "",
+      "addons://user/all/",
+      "",
+      [
+        "addonbrowser",
+        "addonbrowser",
+        "addonbrowser"
+      ]
+    ],
+    [
+      "Favourites",
+      "",
+      "favourites://",
+      "",
+      [
+        "favouritesbrowser",
+        "favouritesbrowser",
+        ""
+      ]
+    ],
+    [
+      "Unknown video plugin",
+      "",
+      "plugin://plugin.video.fixture/",
+      "",
+      [
+        "videos",
+        "videos",
+        "videos"
+      ]
+    ],
+    [
+      "Unknown plugin",
+      "",
+      "plugin://fixture/",
+      "",
+      [
+        "videos",
+        "videos",
+        ""
+      ]
+    ],
+    [
+      "Audio plugin",
+      "",
+      "plugin://plugin.audio.fixture/",
+      "",
+      [
+        "music",
+        "music",
+        "music"
+      ]
+    ],
+    [
+      "Local folder",
+      "",
+      "C:/skin-audit-folder/",
+      "",
+      [
+        "videos",
+        "videos",
+        ""
+      ]
+    ],
+    [
+      "Games",
+      "",
+      "plugin://fixture/",
+      "games",
+      [
+        "games",
+        "games",
+        "games"
+      ]
+    ],
+    [
+      "Empty",
+      "",
+      "",
+      "",
+      [
+        "videos",
+        "videos",
+        ""
+      ]
+    ],
+    [
+      "Musicvideo again",
+      "musicvideo",
+      "",
+      "",
+      [
+        "videos",
+        "videos",
+        "videos"
+      ]
+    ]
+  ],
+  "input_replacements": {
+    "Container.ListItem(1).DBTYPE": "Container(600).ListItem.Property(Audit.DBTYPE)",
+    "Container.ListItem.DBTYPE": "Container(600).ListItem.Property(Audit.DBTYPE)",
+    "ListItem.DBTYPE": "Container(600).ListItem.Property(Audit.DBTYPE)",
+    "Container.ListItem(1).FolderPath": "Container(600).ListItem.Property(Audit.Path)",
+    "Container.ListItem.FolderPath": "Container(600).ListItem.Property(Audit.Path)",
+    "ListItem.FolderPath": "Container(600).ListItem.Property(Audit.Path)",
+    "Container(9000).ListItem(1).Property(homemenu_id)": "Container(600).ListItem.Property(Audit.HomeID)",
+    "Container(9000).ListItem.Property(homemenu_id)": "Container(600).ListItem.Property(Audit.HomeID)",
+    "Window(home).Property(WidgetLabel)": "Container(600).ListItem.Property(Audit.WidgetLabel)"
+  }
+}

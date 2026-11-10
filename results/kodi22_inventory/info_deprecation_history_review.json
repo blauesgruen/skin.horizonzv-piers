@@ -1,0 +1,115 @@
+{
+  "scope": "Explicit @deprecated markers and the additional removal-history section in GUIInfoManager.cpp, compared between Piers tag and master. This section is not all Kodi APIs or future unpublished changes.",
+  "sources": [
+    "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/GUIInfoManager.cpp",
+    "https://github.com/xbmc/xbmc/blob/master/xbmc/GUIInfoManager.cpp"
+  ],
+  "reviewed_date": "2026-11-03",
+  "deprecated_names": [
+    "System.IsInhibit",
+    "ListItem.Thumb",
+    "ListItem.PictureColour",
+    "ListItem.PictureProcess",
+    "ListItem.AddonBroken",
+    "Window.IsTopmost",
+    "Slideshow.Colour",
+    "Slideshow.Process"
+  ],
+  "additional_deprecated_names_in_master": [],
+  "excluded_deprecation_marker": "Label 24170 describes an addon's lifecycle, not a deprecated skin API.",
+  "removal_history": {
+    "13": [
+      "Network.SubnetAddress"
+    ],
+    "16": [
+      "System.Platform.ATV2"
+    ],
+    "17": [
+      "ListItem.StarRating",
+      "on",
+      "off",
+      "Player.ShowCodec",
+      "System.GetBool(pvrmanager.enabled)"
+    ],
+    "18": [
+      "ListItem.Property(artistthumbs)",
+      "ListItem.Property(artistthumb)",
+      "ADSP.ActiveStreamType",
+      "ADSP.DetectedStreamType",
+      "ADSP.MasterName",
+      "ADSP.MasterInfo",
+      "ADSP.MasterOwnIcon",
+      "ADSP.MasterOverrideIcon",
+      "ListItem.ChannelNumber",
+      "ListItem.SubChannelNumber",
+      "MusicPlayer.ChannelNumber",
+      "MusicPlayer.SubChannelNumber",
+      "VideoPlayer.ChannelNumber",
+      "VideoPlayer.SubChannelNumber",
+      "System.HasModalDialog",
+      "StringCompare()",
+      "SubString()",
+      "IntegerGreaterThan()",
+      "IsEmpty()",
+      "System.HasADSP",
+      "ADSP.IsActive",
+      "ADSP.HasInputResample",
+      "ADSP.HasPreProcess",
+      "ADSP.HasMasterProcess",
+      "ADSP.HasPostProcess",
+      "ADSP.HasOutputResample",
+      "ADSP.MasterActive"
+    ],
+    "19": [
+      "System.Platform.Linux.RaspberryPi"
+    ],
+    "20": [
+      "Player.DisplayAfterSeek"
+    ],
+    "21": [
+      "Network.DHCPAddress"
+    ],
+    "22": [
+      "Player.Cutlist",
+      "Slideshow.EXIFSoftware"
+    ]
+  },
+  "entry_count": 39,
+  "history_latest_version": 22,
+  "conflicting_documentation": "Window.IsTopmost source registry still says remove in v19 while it remains registered in Piers and master. Classified deprecated, not already removed.",
+  "limits": "Removal lists describe documented Kodi core interfaces. Literal properties can theoretically have custom producers; a scanner finding requires review of the actual context.",
+  "new_history_rules": 35,
+  "removed_name_detection_cases": 37,
+  "all_removed_name_cases_detected": true,
+  "supported_near_match_cases": [
+    "ListItem.ChannelNumberLabel",
+    "MusicPlayer.ChannelNumberLabel",
+    "VideoPlayer.ChannelNumberLabel",
+    "ListItem.Property(artistthumbs_custom)",
+    "Player.CutlistCustom",
+    "String.IsEmpty(foo)",
+    "String.IsEqual(foo,on)",
+    "System.GetBool(pvrmanager.enabled.custom)",
+    "System.Platform.Linux.RaspberryPiSupported"
+  ],
+  "supported_near_match_false_positives": 0,
+  "on_off_atoms_handled_by_existing_info_audit": [
+    "on",
+    "off",
+    "String.IsEqual(foo,on)"
+  ],
+  "current_skin_findings": [],
+  "current_files_checked": 165,
+  "test_fixture_in_temporary_directory_only": true,
+  "active_explicit_deprecation_name_hits": [],
+  "current_condition_atom_candidates": [],
+  "actual_info_audit_command": "python tools/audit_skin_info_names.py",
+  "on_off_full_audit_mutation_case": {
+    "expression": "[on|!off]+String.IsEqual(foo,on)",
+    "detected_removed_atoms": [
+      "on",
+      "off"
+    ],
+    "argument_literal_on_not_flagged_as_atom": true
+  }
+}

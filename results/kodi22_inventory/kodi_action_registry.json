@@ -1,0 +1,1021 @@
+{
+  "source_ref": "22.0rc1-Piers",
+  "scope": "Names and minimum argument counts parsed from Kodi built-in command maps, plus literal input action names. Conditional platform registrations do not imply availability.",
+  "sources": [
+    "https://raw.githubusercontent.com/xbmc/xbmc/22.0rc1-Piers/xbmc/interfaces/builtins/AddonBuiltins.cpp",
+    "https://raw.githubusercontent.com/xbmc/xbmc/22.0rc1-Piers/xbmc/interfaces/builtins/AndroidBuiltins.cpp",
+    "https://raw.githubusercontent.com/xbmc/xbmc/22.0rc1-Piers/xbmc/interfaces/builtins/ApplicationBuiltins.cpp",
+    "https://raw.githubusercontent.com/xbmc/xbmc/22.0rc1-Piers/xbmc/interfaces/builtins/Builtins.cpp",
+    "https://raw.githubusercontent.com/xbmc/xbmc/22.0rc1-Piers/xbmc/interfaces/builtins/CECBuiltins.cpp",
+    "https://raw.githubusercontent.com/xbmc/xbmc/22.0rc1-Piers/xbmc/interfaces/builtins/GUIBuiltins.cpp",
+    "https://raw.githubusercontent.com/xbmc/xbmc/22.0rc1-Piers/xbmc/interfaces/builtins/GUIContainerBuiltins.cpp",
+    "https://raw.githubusercontent.com/xbmc/xbmc/22.0rc1-Piers/xbmc/interfaces/builtins/GUIControlBuiltins.cpp",
+    "https://raw.githubusercontent.com/xbmc/xbmc/22.0rc1-Piers/xbmc/interfaces/builtins/LibraryBuiltins.cpp",
+    "https://raw.githubusercontent.com/xbmc/xbmc/22.0rc1-Piers/xbmc/interfaces/builtins/OpticalBuiltins.cpp",
+    "https://raw.githubusercontent.com/xbmc/xbmc/22.0rc1-Piers/xbmc/interfaces/builtins/PVRBuiltins.cpp",
+    "https://raw.githubusercontent.com/xbmc/xbmc/22.0rc1-Piers/xbmc/interfaces/builtins/PictureBuiltins.cpp",
+    "https://raw.githubusercontent.com/xbmc/xbmc/22.0rc1-Piers/xbmc/interfaces/builtins/PlayerBuiltins.cpp",
+    "https://raw.githubusercontent.com/xbmc/xbmc/22.0rc1-Piers/xbmc/interfaces/builtins/ProfileBuiltins.cpp",
+    "https://raw.githubusercontent.com/xbmc/xbmc/22.0rc1-Piers/xbmc/interfaces/builtins/SkinBuiltins.cpp",
+    "https://raw.githubusercontent.com/xbmc/xbmc/22.0rc1-Piers/xbmc/interfaces/builtins/SystemBuiltins.cpp",
+    "https://raw.githubusercontent.com/xbmc/xbmc/22.0rc1-Piers/xbmc/interfaces/builtins/WeatherBuiltins.cpp"
+  ],
+  "action_source": "https://raw.githubusercontent.com/xbmc/xbmc/22.0rc1-Piers/xbmc/input/actions/ActionTranslator.cpp",
+  "commands": [
+    {
+      "name": "startandroidactivity",
+      "min_args": 1,
+      "file": "AndroidBuiltins.cpp",
+      "conditional": "TARGET_ANDROID"
+    },
+    {
+      "name": "weather.locationset",
+      "min_args": 1,
+      "file": "WeatherBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "addon.default.opensettings",
+      "min_args": 1,
+      "file": "AddonBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "addon.default.set",
+      "min_args": 1,
+      "file": "AddonBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "addon.opensettings",
+      "min_args": 1,
+      "file": "AddonBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "enableaddon",
+      "min_args": 1,
+      "file": "AddonBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "installaddon",
+      "min_args": 1,
+      "file": "AddonBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "installfromzip",
+      "min_args": 0,
+      "file": "AddonBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "runaddon",
+      "min_args": 1,
+      "file": "AddonBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "runapplescript",
+      "min_args": 1,
+      "file": "AddonBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "runplugin",
+      "min_args": 1,
+      "file": "AddonBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "runscript",
+      "min_args": 1,
+      "file": "AddonBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "stopscript",
+      "min_args": 1,
+      "file": "AddonBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "updateaddonrepos",
+      "min_args": 0,
+      "file": "AddonBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "updatelocaladdons",
+      "min_args": 0,
+      "file": "AddonBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "extract",
+      "min_args": 1,
+      "file": "ApplicationBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "mute",
+      "min_args": 0,
+      "file": "ApplicationBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "notifyall",
+      "min_args": 2,
+      "file": "ApplicationBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "setvolume",
+      "min_args": 1,
+      "file": "ApplicationBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "toggledebug",
+      "min_args": 0,
+      "file": "ApplicationBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "toggledpms",
+      "min_args": 0,
+      "file": "ApplicationBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "wakeonlan",
+      "min_args": 1,
+      "file": "ApplicationBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "cectogglestate",
+      "min_args": 0,
+      "file": "CECBuiltins.cpp",
+      "conditional": "HAVE_LIBCEC"
+    },
+    {
+      "name": "cecactivatesource",
+      "min_args": 0,
+      "file": "CECBuiltins.cpp",
+      "conditional": "HAVE_LIBCEC"
+    },
+    {
+      "name": "cecstandby",
+      "min_args": 0,
+      "file": "CECBuiltins.cpp",
+      "conditional": "HAVE_LIBCEC"
+    },
+    {
+      "name": "action",
+      "min_args": 1,
+      "file": "GUIBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "cancelalarm",
+      "min_args": 1,
+      "file": "GUIBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "alarmclock",
+      "min_args": 2,
+      "file": "GUIBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "activatewindow",
+      "min_args": 1,
+      "file": "GUIBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "activatewindowandfocus",
+      "min_args": 1,
+      "file": "GUIBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "clearproperty",
+      "min_args": 1,
+      "file": "GUIBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "dialog.close",
+      "min_args": 1,
+      "file": "GUIBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "notification",
+      "min_args": 2,
+      "file": "GUIBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "refreshrss",
+      "min_args": 0,
+      "file": "GUIBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "replacewindow",
+      "min_args": 1,
+      "file": "GUIBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "replacewindowandfocus",
+      "min_args": 1,
+      "file": "GUIBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "setguilanguage",
+      "min_args": 1,
+      "file": "GUIBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "setproperty",
+      "min_args": 2,
+      "file": "GUIBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "setstereomode",
+      "min_args": 1,
+      "file": "GUIBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "takescreenshot",
+      "min_args": 0,
+      "file": "GUIBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "toggledirtyregionvisualization",
+      "min_args": 0,
+      "file": "GUIBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "control.resetgrouplist",
+      "min_args": 1,
+      "file": "GUIBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "container.nextsortmethod",
+      "min_args": 0,
+      "file": "GUIContainerBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "container.nextviewmode",
+      "min_args": 0,
+      "file": "GUIContainerBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "container.previoussortmethod",
+      "min_args": 0,
+      "file": "GUIContainerBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "container.previousviewmode",
+      "min_args": 0,
+      "file": "GUIContainerBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "container.refresh",
+      "min_args": 0,
+      "file": "GUIContainerBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "container.setsortdirection",
+      "min_args": 0,
+      "file": "GUIContainerBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "container.setsortmethod",
+      "min_args": 1,
+      "file": "GUIContainerBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "container.setviewmode",
+      "min_args": 1,
+      "file": "GUIContainerBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "container.update",
+      "min_args": 1,
+      "file": "GUIContainerBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "control.message",
+      "min_args": 2,
+      "file": "GUIControlBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "control.move",
+      "min_args": 2,
+      "file": "GUIControlBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "control.setfocus",
+      "min_args": 1,
+      "file": "GUIControlBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "control.setvisible",
+      "min_args": 1,
+      "file": "GUIControlBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "control.sethidden",
+      "min_args": 1,
+      "file": "GUIControlBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "pagedown",
+      "min_args": 1,
+      "file": "GUIControlBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "pageup",
+      "min_args": 1,
+      "file": "GUIControlBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "sendclick",
+      "min_args": 1,
+      "file": "GUIControlBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "setfocus",
+      "min_args": 1,
+      "file": "GUIControlBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "cleanlibrary",
+      "min_args": 1,
+      "file": "LibraryBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "exportlibrary",
+      "min_args": 1,
+      "file": "LibraryBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "exportlibrary2",
+      "min_args": 1,
+      "file": "LibraryBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "updatelibrary",
+      "min_args": 1,
+      "file": "LibraryBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "videolibrary.search",
+      "min_args": 0,
+      "file": "LibraryBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "musiclibrary.refreshartist",
+      "min_args": 1,
+      "file": "LibraryBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "musiclibrary.refreshalbum",
+      "min_args": 1,
+      "file": "LibraryBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "ejecttray",
+      "min_args": 0,
+      "file": "OpticalBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "ripcd",
+      "min_args": 0,
+      "file": "OpticalBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "pvr.searchmissingchannelicons",
+      "min_args": 0,
+      "file": "PVRBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "pvr.togglerecordplayingchannel",
+      "min_args": 0,
+      "file": "PVRBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "pvr.seekpercentage",
+      "min_args": 1,
+      "file": "PVRBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "pvr.epggridcontrol",
+      "min_args": 1,
+      "file": "PVRBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "recursiveslideshow",
+      "min_args": 1,
+      "file": "PictureBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "showpicture",
+      "min_args": 1,
+      "file": "PictureBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "slideshow",
+      "min_args": 1,
+      "file": "PictureBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "playdisc",
+      "min_args": 0,
+      "file": "PlayerBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "playdvd",
+      "min_args": 0,
+      "file": "PlayerBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "playplaylist",
+      "min_args": 0,
+      "file": "PlayerBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "playlist.clear",
+      "min_args": 0,
+      "file": "PlayerBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "playlist.playoffset",
+      "min_args": 1,
+      "file": "PlayerBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "playercontrol",
+      "min_args": 1,
+      "file": "PlayerBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "playmedia",
+      "min_args": 1,
+      "file": "PlayerBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "queuemedia",
+      "min_args": 1,
+      "file": "PlayerBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "playwith",
+      "min_args": 1,
+      "file": "PlayerBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "seek",
+      "min_args": 1,
+      "file": "PlayerBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "subtitleshiftup",
+      "min_args": 0,
+      "file": "PlayerBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "subtitleshiftdown",
+      "min_args": 0,
+      "file": "PlayerBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "loadprofile",
+      "min_args": 1,
+      "file": "ProfileBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "mastermode",
+      "min_args": 0,
+      "file": "ProfileBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "system.logoff",
+      "min_args": 0,
+      "file": "ProfileBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "reloadskin",
+      "min_args": 0,
+      "file": "SkinBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "unloadskin",
+      "min_args": 0,
+      "file": "SkinBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "loadskin",
+      "min_args": 0,
+      "file": "SkinBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "skin.reset",
+      "min_args": 1,
+      "file": "SkinBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "skin.resetsettings",
+      "min_args": 0,
+      "file": "SkinBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "skin.setaddon",
+      "min_args": 2,
+      "file": "SkinBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "skin.selectbool",
+      "min_args": 2,
+      "file": "SkinBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "skin.setbool",
+      "min_args": 1,
+      "file": "SkinBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "skin.setfile",
+      "min_args": 1,
+      "file": "SkinBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "skin.setimage",
+      "min_args": 1,
+      "file": "SkinBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "skin.setcolor",
+      "min_args": 1,
+      "file": "SkinBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "skin.setnumeric",
+      "min_args": 1,
+      "file": "SkinBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "skin.setpath",
+      "min_args": 1,
+      "file": "SkinBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "skin.setstring",
+      "min_args": 1,
+      "file": "SkinBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "skin.theme",
+      "min_args": 1,
+      "file": "SkinBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "skin.toggledebug",
+      "min_args": 0,
+      "file": "SkinBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "skin.togglesetting",
+      "min_args": 1,
+      "file": "SkinBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "skin.timerstart",
+      "min_args": 1,
+      "file": "SkinBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "skin.timerstop",
+      "min_args": 1,
+      "file": "SkinBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "activatescreensaver",
+      "min_args": 0,
+      "file": "SystemBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "resetscreensaver",
+      "min_args": 0,
+      "file": "SystemBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "hibernate",
+      "min_args": 0,
+      "file": "SystemBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "inhibitidleshutdown",
+      "min_args": 0,
+      "file": "SystemBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "inhibitscreensaver",
+      "min_args": 0,
+      "file": "SystemBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "minimize",
+      "min_args": 0,
+      "file": "SystemBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "powerdown",
+      "min_args": 0,
+      "file": "SystemBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "quit",
+      "min_args": 0,
+      "file": "SystemBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "reboot",
+      "min_args": 0,
+      "file": "SystemBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "reset",
+      "min_args": 0,
+      "file": "SystemBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "restart",
+      "min_args": 0,
+      "file": "SystemBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "restartapp",
+      "min_args": 0,
+      "file": "SystemBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "shutdown",
+      "min_args": 0,
+      "file": "SystemBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "suspend",
+      "min_args": 0,
+      "file": "SystemBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "system.exec",
+      "min_args": 1,
+      "file": "SystemBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "system.execwait",
+      "min_args": 1,
+      "file": "SystemBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "weather.refresh",
+      "min_args": 0,
+      "file": "WeatherBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "weather.locationnext",
+      "min_args": 0,
+      "file": "WeatherBuiltins.cpp",
+      "conditional": null
+    },
+    {
+      "name": "weather.locationprevious",
+      "min_args": 0,
+      "file": "WeatherBuiltins.cpp",
+      "conditional": null
+    }
+  ],
+  "actions": [
+    "analogfastforward",
+    "analogmove",
+    "analogmovexleft",
+    "analogmovexright",
+    "analogmoveydown",
+    "analogmoveyup",
+    "analogrewind",
+    "analogseekback",
+    "analogseekforward",
+    "aspectratio",
+    "audiodelay",
+    "audiodelayminus",
+    "audiodelayplus",
+    "audionextlanguage",
+    "audiotoggledigital",
+    "back",
+    "backspace",
+    "bigstepback",
+    "bigstepforward",
+    "blue",
+    "browsesubtitle",
+    "channeldown",
+    "channelnumberseparator",
+    "channelup",
+    "chapterorbigstepback",
+    "chapterorbigstepforward",
+    "close",
+    "codecinfo",
+    "contextmenu",
+    "copy",
+    "createbookmark",
+    "createepisodebookmark",
+    "cursorleft",
+    "cursorright",
+    "cyclesubtitle",
+    "cycletonemapmethod",
+    "decreasepar",
+    "decreaserating",
+    "decreasevisrating",
+    "delete",
+    "dialogselectaudio",
+    "dialogselectsubtitle",
+    "dialogselectvideo",
+    "doubleclick",
+    "down",
+    "enter",
+    "error",
+    "fastforward",
+    "filter",
+    "filterclear",
+    "filtersms2",
+    "filtersms3",
+    "filtersms4",
+    "filtersms5",
+    "filtersms6",
+    "filtersms7",
+    "filtersms8",
+    "filtersms9",
+    "firstpage",
+    "fullscreen",
+    "green",
+    "guiprofile",
+    "hdrtoggle",
+    "highlight",
+    "increasepar",
+    "increaserating",
+    "increasevisrating",
+    "info",
+    "jumpsms2",
+    "jumpsms3",
+    "jumpsms4",
+    "jumpsms5",
+    "jumpsms6",
+    "jumpsms7",
+    "jumpsms8",
+    "jumpsms9",
+    "lastpage",
+    "left",
+    "leftclick",
+    "lockpreset",
+    "longclick",
+    "longpress",
+    "menu",
+    "middleclick",
+    "mousedrag",
+    "mousedragend",
+    "mousemove",
+    "move",
+    "moveitemdown",
+    "moveitemup",
+    "mute",
+    "nextcalibration",
+    "nextchannelgroup",
+    "nextletter",
+    "nextpicture",
+    "nextpreset",
+    "nextresolution",
+    "nextscene",
+    "nextstereomode",
+    "nextsubtitle",
+    "noop",
+    "number0",
+    "number1",
+    "number2",
+    "number3",
+    "number4",
+    "number5",
+    "number6",
+    "number7",
+    "number8",
+    "number9",
+    "osd",
+    "pagedown",
+    "pageup",
+    "pangesture",
+    "parentdir",
+    "parentfolder",
+    "pause",
+    "play",
+    "playerdebug",
+    "playerdebugvideo",
+    "playerprocessinfo",
+    "playerprogramselect",
+    "playerresolutionselect",
+    "playlist",
+    "playnext",
+    "playpause",
+    "playpvr",
+    "playpvrradio",
+    "playpvrtv",
+    "previouschannelgroup",
+    "previousmenu",
+    "previouspicture",
+    "previouspreset",
+    "previousscene",
+    "previousstereomode",
+    "previoussubtitle",
+    "prevletter",
+    "queue",
+    "randompreset",
+    "record",
+    "red",
+    "reloadkeymaps",
+    "rename",
+    "resetcalibration",
+    "rewind",
+    "right",
+    "rightclick",
+    "rotate",
+    "rotateccw",
+    "rotategesture",
+    "scanitem",
+    "screenshot",
+    "scrolldown",
+    "scrollup",
+    "select",
+    "setrating",
+    "settingslevelchange",
+    "settingsreset",
+    "shift",
+    "showpreset",
+    "showsubtitles",
+    "showtime",
+    "showtimerrule",
+    "showvideomenu",
+    "skipnext",
+    "skipprevious",
+    "smallstepback",
+    "stepback",
+    "stepforward",
+    "stereomode",
+    "stereomodetomono",
+    "stop",
+    "subtitlealign",
+    "subtitledelay",
+    "subtitledelayminus",
+    "subtitledelayplus",
+    "subtitleshiftdown",
+    "subtitleshiftup",
+    "swipedown",
+    "swipeleft",
+    "swiperight",
+    "swipeup",
+    "switchplayer",
+    "symbols",
+    "tap",
+    "tempodown",
+    "tempoup",
+    "togglecommskip",
+    "togglefont",
+    "togglefullscreen",
+    "togglestereomode",
+    "togglewatched",
+    "up",
+    "verticalshiftdown",
+    "verticalshiftup",
+    "videonextstream",
+    "voicerecognizer",
+    "volampdown",
+    "volampup",
+    "volumeamplification",
+    "volumedown",
+    "volumeup",
+    "wheeldown",
+    "wheelup",
+    "yellow",
+    "zoomgesture",
+    "zoomin",
+    "zoomlevel1",
+    "zoomlevel2",
+    "zoomlevel3",
+    "zoomlevel4",
+    "zoomlevel5",
+    "zoomlevel6",
+    "zoomlevel7",
+    "zoomlevel8",
+    "zoomlevel9",
+    "zoomnormal",
+    "zoomout"
+  ]
+}

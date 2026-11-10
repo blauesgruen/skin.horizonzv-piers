@@ -29,7 +29,7 @@
 							<onright condition="!Control.IsVisible($PARAM[viewid]1)+!Control.IsVisible(15000)">732</onright>
 							<onup>$PARAM[viewid]</onup>
 							<ondown>$PARAM[viewid]</ondown>
-							<viewtype label="$LOCALIZE[301310]">info</viewtype>
+							<viewtype label="$LOCALIZE[31268]">info</viewtype>
 							<visible>Window.IsVisible(AddonBrowser)|Container.Content(Addons)</visible>
 							<pagecontrol>$PARAM[viewid]1</pagecontrol>
 							<scrolltime>200</scrolltime>
@@ -133,13 +133,13 @@
 								<control type="image">
 									<aspectratio>keep</aspectratio>
 									<texture border="4">$VAR[PosterThumb]</texture>
-									<visible>String.IsEmpty(ListItem.AddonBroken)</visible>
+									<visible>String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24169])</visible>
 								</control>
 								<control type="image">
 									<aspectratio>keep</aspectratio>
 									<colordiffuse>grey2</colordiffuse>
 									<texture border="4">$VAR[PosterThumb]</texture>
-									<visible>!String.IsEmpty(ListItem.AddonBroken)</visible>
+									<visible>[String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24170])|String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24171])]</visible>
 								</control>
 								<control type="image">
 									<left>7</left>
@@ -147,8 +147,8 @@
 									<top>8</top>
 									<bottom>8</bottom>
 									<aspectratio>keep</aspectratio>
-									<texture>Broken.png</texture>
-									<visible>!String.IsEmpty(ListItem.AddonBroken)</visible>
+									<texture>$VAR[AddonLifecycleIcon]</texture>
+									<visible>[String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24170])|String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24171])]</visible>
 								</control>
 							</control>
 							<control type="group">
@@ -167,7 +167,7 @@
 									<description>Author Value</description>
 									<left>220</left>
 									<height>30</height>
-									<label fallback="416">$INFO[ListItem.AddonCreator]</label>
+									<label fallback="13205">$INFO[ListItem.AddonCreator]</label>
 									<align>left</align>
 									<aligny>center</aligny>
 									<scrollout>false</scrollout>
@@ -190,7 +190,7 @@
 									<left>220</left>
 									<top>27</top>
 									<height>30</height>
-									<label fallback="416">$INFO[ListItem.AddonVersion]</label>
+									<label fallback="13205">$INFO[ListItem.AddonVersion]</label>
 									<align>left</align>
 									<aligny>center</aligny>
 									<scroll>true</scroll>
@@ -253,7 +253,7 @@
 								<onright condition="!Control.IsVisible($PARAM[viewid]1)+Control.IsVisible(15000)">15000</onright>
 								<onup>$PARAM[viewid]</onup>
 								<ondown>$PARAM[viewid]</ondown>
-								<viewtype label="$LOCALIZE[301312]">thumbview</viewtype>
+								<viewtype label="$LOCALIZE[31269]">thumbview</viewtype>
 								<visible>Window.IsVisible(AddonBrowser)|Container.Content(Addons)</visible>
 								<pagecontrol>$PARAM[viewid]1</pagecontrol>
 								<scrolltime>200</scrolltime>
@@ -267,7 +267,7 @@
 										<bordertexture border="10">BlackBack.png</bordertexture>
 										<bordersize>6</bordersize>
 										<texture>$VAR[PosterThumb]</texture>
-										<visible>String.IsEmpty(ListItem.AddonBroken)</visible>
+										<visible>String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24169])</visible>
 										<aspectratio>keep</aspectratio>
 									</control>
 									<control type="image">
@@ -279,7 +279,7 @@
 										<bordertexture border="10">BlackBack.png</bordertexture>
 										<bordersize>6</bordersize>
 										<texture>$VAR[PosterThumb]</texture>
-										<visible>!String.IsEmpty(ListItem.AddonBroken)</visible>
+										<visible>[String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24170])|String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24171])]</visible>
 										<aspectratio>keep</aspectratio>
 									</control>
 									<control type="image">
@@ -287,8 +287,8 @@
 										<right>45</right>
 										<top>45</top>
 										<bottom>95</bottom>
-										<texture>Broken.png</texture>
-										<visible>!String.IsEmpty(ListItem.AddonBroken)</visible>
+										<texture>$VAR[AddonLifecycleIcon]</texture>
+										<visible>[String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24170])|String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24171])]</visible>
 									</control>
 									<control type="group">
 										<left>10</left>
@@ -315,7 +315,7 @@
 										<bordertexture border="7">BlackBack.png</bordertexture>
 										<bordersize>9</bordersize>
 										<texture>$VAR[PosterThumb]</texture>
-										<visible>String.IsEmpty(ListItem.AddonBroken)</visible>
+										<visible>String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24169])</visible>
 										<aspectratio>keep</aspectratio>
 									</control>
 									<control type="image">
@@ -326,7 +326,7 @@
 										<bordertexture border="7">BlackBack.png</bordertexture>
 										<bordersize>9</bordersize>
 										<texture colordiffuse="grey2">$VAR[PosterThumb]</texture>
-										<visible>!String.IsEmpty(ListItem.AddonBroken)</visible>
+										<visible>[String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24170])|String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24171])]</visible>
 										<aspectratio>keep</aspectratio>
 									</control>
 									<control type="image">
@@ -334,8 +334,8 @@
 										<right>30</right>
 										<top>30</top>
 										<bottom>80</bottom>
-										<texture>Broken.png</texture>
-										<visible>!String.IsEmpty(ListItem.AddonBroken)</visible>
+										<texture>$VAR[AddonLifecycleIcon]</texture>
+										<visible>[String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24170])|String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24171])]</visible>
 									</control>
 									<control type="group">
 										<left>10</left>
@@ -383,7 +383,7 @@
 								<control type="label">
 									<description>Show Title txt</description>
 									<font>impacted30</font>
-									<label>$INFO[ListItem.Property(Addon.Name)]</label>
+									<label>$INFO[ListItem.AddonName]</label>
 									<align>left</align>
 									<aligny>center</aligny>
 									<textcolor>white</textcolor>
@@ -445,7 +445,7 @@
 											<bordertexture border="30">ThumbShadow.png</bordertexture>
 											<bordersize>6</bordersize>
 											<texture>$INFO[Container($PARAM[viewid]).Listitem.Icon]</texture>
-											<visible>String.IsEmpty(ListItem.AddonBroken)</visible>
+											<visible>String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24169])</visible>
 										</control>
 										<control type="image">
 											<include>openclosevisible</include>
@@ -454,15 +454,15 @@
 											<bordersize>6</bordersize>
 											<colordiffuse>grey2</colordiffuse>
 											<texture>$VAR[PosterThumb]</texture>
-											<visible>!String.IsEmpty(ListItem.AddonBroken)</visible>
+											<visible>[String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24170])|String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24171])]</visible>
 										</control>
 										<control type="image">
 											<include>openclosevisible</include>
 											<aspectratio>keep</aspectratio>
 											<top>10</top>
 											<bottom>10</bottom>
-											<texture>Broken.png</texture>
-											<visible>!String.IsEmpty(ListItem.AddonBroken)</visible>
+										<texture>$VAR[AddonLifecycleIcon]</texture>
+											<visible>[String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24170])|String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24171])]</visible>
 										</control>
 									</control>
 								</control>

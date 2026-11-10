@@ -1,0 +1,8 @@
+{
+  "test_copy_only": true,
+  "production_sha256": "680b25a503a12f06b3c6258d07021389796da9c06b8522ea87def7fefb0f26eb",
+  "test_before_sha256": "680b25a503a12f06b3c6258d07021389796da9c06b8522ea87def7fefb0f26eb",
+  "only_change": "Remove provider presence/enabled visibility condition from button 4444; retain numeric visibility condition and textwidth 40.",
+  "provider_present": false,
+  "real_provider_integration_test": false
+}

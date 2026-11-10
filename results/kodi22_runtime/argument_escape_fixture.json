@@ -1,0 +1,44 @@
+{
+  "scope": "Native GUIInfoLabel ESCVAR/ESCINFO and builtin argument round-trip via SetProperty. Production query variables copied, only input labels redirected. Not a real ExtendedInfo request or close/dialog-context test.",
+  "controls": [
+    {
+      "id": 1001,
+      "variable": "ExtendedInfoYoutubeAlbumQuery",
+      "revised": false,
+      "command": "SetProperty(HorizonAudit.Result,id=$INFO[Window(Home).Property(HorizonAudit.Artist)] $INFO[Window(Home).Property(HorizonAudit.Album)])"
+    },
+    {
+      "id": 1002,
+      "variable": "ExtendedInfoYoutubeAlbumQuery",
+      "revised": true,
+      "command": "SetProperty(HorizonAudit.Result,id=$ESCVAR[ExtendedInfoYoutubeAlbumQuery])"
+    },
+    {
+      "id": 1003,
+      "variable": "ExtendedInfoYoutubeSongQuery",
+      "revised": false,
+      "command": "SetProperty(HorizonAudit.Result,id=$INFO[Window(Home).Property(HorizonAudit.Artist)] $INFO[Window(Home).Property(HorizonAudit.Title)])"
+    },
+    {
+      "id": 1004,
+      "variable": "ExtendedInfoYoutubeSongQuery",
+      "revised": true,
+      "command": "SetProperty(HorizonAudit.Result,id=$ESCVAR[ExtendedInfoYoutubeSongQuery])"
+    },
+    {
+      "id": 1005,
+      "variable": "ExtendedInfoYoutubeVideoQuery",
+      "revised": false,
+      "command": "SetProperty(HorizonAudit.Result,id=$INFO[Window(Home).Property(HorizonAudit.Title)] $INFO[Window(Home).Property(HorizonAudit.Year)])"
+    },
+    {
+      "id": 1006,
+      "variable": "ExtendedInfoYoutubeVideoQuery",
+      "revised": true,
+      "command": "SetProperty(HorizonAudit.Result,id=$ESCVAR[ExtendedInfoYoutubeVideoQuery])"
+    }
+  ],
+  "production_escvar_calls": 3,
+  "production_escaped_single_value_calls": 4,
+  "fixture": "Custom_1197_ArgumentAudit.xml"
+}

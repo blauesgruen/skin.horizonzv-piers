@@ -1,0 +1,62 @@
+{
+  "scope": "Direct control properties with source-proven first-match parsing. Retain the effective first value; remove five ignored later values. No layout redesign.",
+  "sources": [
+    "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/guilib/GUIControlFactory.cpp",
+    "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/utils/XMLUtils.cpp"
+  ],
+  "loader_functions": [
+    "GetAlignment",
+    "GetPosition",
+    "XMLUtils::GetFloat",
+    "XMLUtils::GetString"
+  ],
+  "changes": [
+    {
+      "file": "xml/Home.xml",
+      "tag": "align",
+      "kept": "right",
+      "removed_ignored_value": "center",
+      "count": 1
+    },
+    {
+      "file": "xml/Includes_HomeOSD.xml",
+      "tag": "itemgap",
+      "kept": "3",
+      "removed_ignored_value": "6",
+      "count": 2
+    },
+    {
+      "file": "xml/MyMusicPlaylistEditor.xml",
+      "tag": "right",
+      "kept": "20",
+      "removed_ignored_value": "100",
+      "count": 1
+    },
+    {
+      "file": "xml/script-cu-lrclyrics-main.xml",
+      "tag": "font",
+      "kept": "impacted30",
+      "removed_ignored_value": "font16",
+      "count": 1
+    }
+  ],
+  "verification": {
+    "changed_xml_files_compared_to_HEAD": [
+      "xml/Custom_1154_SkinSettingReset.xml",
+      "xml/Home.xml",
+      "xml/Includes_Buttons_and_Lists.xml",
+      "xml/Includes_Dash_Addonpath_Fav.xml",
+      "xml/Includes_Dash_GTO.xml",
+      "xml/Includes_Dash_Weather.xml",
+      "xml/Includes_DebugInfo.xml",
+      "xml/Includes_HomeOSD.xml",
+      "xml/Includes_PVR.xml",
+      "xml/MusicVisualisation.xml",
+      "xml/MyMusicPlaylistEditor.xml",
+      "xml/View_Movie_402_Fanart_Episode.xml",
+      "xml/script-cu-lrclyrics-main.xml"
+    ],
+    "first_property_signatures_unchanged": true,
+    "duplicate_singleton_negative_cli_test_passed": true
+  }
+}

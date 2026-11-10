@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "currentwindow": {
+        "id": 11151,
+        "label": ""
+      },
+      "skin": {
+        "id": "skin.horizonzv",
+        "name": "Horizonz V"
+      }
+    }
+  },
+  {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container(36110).NumItems": "0",
+      "Window(Home).Property(SkinHelperPING.mac10)": ""
+    }
+  },
+  {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "String.IsEqual(Container(36110).NumItems,0)": true,
+      "System.AddonIsEnabled(script.skinhelper.ping)": false
+    }
+  }
+]

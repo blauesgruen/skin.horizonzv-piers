@@ -70,7 +70,7 @@
                             <top>165</top>
                             <width>300</width>
                             <height>300</height>
-                            <imagepath>$VAR[WeatherIconVar]$INFO[Weather.Data(Current.FanartCode)]$VAR[WeatherIconFolderVar]</imagepath>
+                            <imagepath>$VAR[WeatherIcon]</imagepath>
                             <timeperimage>100</timeperimage>
                             <randomize>false</randomize>
                             <fadetime>10</fadetime>
@@ -231,7 +231,7 @@
                         <include>WeatherWeekend</include>
                         <include>WeatherHourly</include>
                         <include>WeatherMaps</include>
-                        <!-- <include>WeatherAlerts</include> -->
+                        <include>WeatherAlerts</include>
                         <control type="label">
                             <description>number of files/pages</description>
                             <left>0</left>
@@ -349,6 +349,7 @@
                             <label>33050</label>
                             <onfocus>SetProperty(Weather.CurrentView,alerts)</onfocus>
                             <visible>!String.IsEmpty(Window.Property(Alerts.IsFetched))</visible>
+                            <visible>!String.IsEmpty(Window.Property(Alerts))|String.IsEqual(Window.Property(Alerts.Count),0)</visible>
                         </control>
                         <control type="label" id="201">
                             <textcolor>focused</textcolor>
@@ -384,16 +385,16 @@
                         <control type="button" id="209">
                             <description>Select weather fanart</description>
                             <include>SidePanelButton</include>
-                            <label>301516</label>
+                            <label>31369</label>
                             <onclick>RunScript(script.image.resource.select,property=weatherfanart&amp;type=resource.images.weatherfanart)</onclick>
-                            <visible>System.HasAddon(script.image.resource.select)</visible>
+                            <visible>System.AddonIsEnabled(script.image.resource.select)</visible>
                         </control>
                         <control type="button" id="211">
                             <description>Select weather icons</description>
                             <include>SidePanelButton</include>
-                            <label>301514</label>
+                            <label>31368</label>
                             <onclick>RunScript(script.image.resource.select,property=weathericons&amp;type=resource.images.weathericons)</onclick>
-                            <visible>System.HasAddon(script.image.resource.select)</visible>
+                            <visible>System.AddonIsEnabled(script.image.resource.select)</visible>
                         </control>
                     </control>
                     <include>SidePanelNavigation</include>

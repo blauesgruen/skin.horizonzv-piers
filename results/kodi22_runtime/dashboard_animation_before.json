@@ -1,0 +1,52 @@
+{
+  "skin": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "value": "skin.horizonzv"
+    }
+  },
+  "gui": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "currentcontrol": {
+        "label": "TV shows"
+      },
+      "currentwindow": {
+        "id": 10000,
+        "label": "Home"
+      }
+    }
+  },
+  "rows": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Skin.HasSetting(Row2_Fav)": false,
+      "Skin.HasSetting(Row2_Fritzact)": false,
+      "Skin.HasSetting(Row2_GTO)": false,
+      "Skin.HasSetting(Row2_Path)": false,
+      "Skin.HasSetting(Row2_Weather)": false,
+      "Skin.HasSetting(Row2_off)": true,
+      "Skin.HasSetting(Row3_Fav)": false,
+      "Skin.HasSetting(Row3_Fritzact)": false,
+      "Skin.HasSetting(Row3_GTO)": false,
+      "Skin.HasSetting(Row3_Path)": false,
+      "Skin.HasSetting(Row3_Weather)": false,
+      "Skin.HasSetting(Row3_off)": true,
+      "Skin.HasSetting(Row4_Fav)": false,
+      "Skin.HasSetting(Row4_Fritzact)": false,
+      "Skin.HasSetting(Row4_GTO)": false,
+      "Skin.HasSetting(Row4_Path)": false,
+      "Skin.HasSetting(Row4_Weather)": false,
+      "Skin.HasSetting(Row4_off)": true,
+      "Skin.HasSetting(Row5_Fav)": false,
+      "Skin.HasSetting(Row5_Fritzact)": false,
+      "Skin.HasSetting(Row5_GTO)": false,
+      "Skin.HasSetting(Row5_Path)": false,
+      "Skin.HasSetting(Row5_Weather)": false,
+      "Skin.HasSetting(Row5_off)": true
+    }
+  }
+}

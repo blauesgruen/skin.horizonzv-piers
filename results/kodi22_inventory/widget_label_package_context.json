@@ -1,0 +1,16 @@
+﻿{
+    "builder_sha256":  "9F9944DD6608144363167F6EE5AC5342ED8E79F0CE545686861C5FF1952216EB",
+    "purpose":  "Dashboard focused-label Boolean parameter contract; isolated TEMP archive",
+    "archive":  "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-widget-label-package-0914818110cb49b78ef1f2441501cdb3\\skin.horizonzv-1.22.0.1.zip",
+    "builder":  "C:/Users/zorno/scripts/build-kodi-addon.ps1",
+    "excluded_directories":  [
+                                 ".git",
+                                 ".github",
+                                 ".vscode",
+                                 "__pycache__",
+                                 "temp",
+                                 "results",
+                                 "tools"
+                             ],
+    "stage_target_verified":  "C:\\Users\\zorno\\AppData\\Local\\Temp\\kodi-package-skin.horizonzv"
+}

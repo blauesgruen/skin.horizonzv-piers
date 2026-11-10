@@ -1,0 +1,53 @@
+{
+  "scope": "Native New search item opens dialog with a caller-supplied temporary TV filter.",
+  "gui": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "currentcontrol": {
+        "label": ""
+      },
+      "currentwindow": {
+        "id": 10605,
+        "label": "PVR-Programm\u00fcbersichtssuche"
+      }
+    }
+  },
+  "labels": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Control.GetLabel(12)": "Minimale Dauer (-)",
+      "Control.GetLabel(13)": "Maximale Dauer (-)",
+      "Control.GetLabel(14)": "Startdatum",
+      "Control.GetLabel(15)": "Enddatum",
+      "Control.GetLabel(16)": "Startzeit",
+      "Control.GetLabel(17)": "Endzeit",
+      "Control.GetLabel(18)": "Genre (Alle)",
+      "Control.GetLabel(19)": "Wiederholungen vermeiden ( )",
+      "Control.GetLabel(21)": "Sendergruppe (Alle Sender)",
+      "Control.GetLabel(23)": "Sender (Alle TV-Sender)",
+      "Control.GetLabel(25)": "Abbrechen",
+      "Control.GetLabel(26)": "Suchen",
+      "Control.GetLabel(29)": "Speichern",
+      "Control.GetLabel(9)": ""
+    }
+  },
+  "conditions": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Control.HasFocus(9)": true,
+      "Control.IsEnabled(21)": true,
+      "Control.IsEnabled(23)": true,
+      "Control.IsVisible(21)": true,
+      "Control.IsVisible(23)": true
+    }
+  },
+  "selected_broadcast": {
+    "broadcastid": 48555,
+    "endtime": "2026-11-03 20:45:00",
+    "label": "In aller Freundschaft (1154)",
+    "starttime": "2026-11-03 20:00:00"
+  }
+}

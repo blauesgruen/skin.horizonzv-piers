@@ -1,0 +1,48 @@
+[
+  {
+    "case": "system_addon",
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Container(400).CurrentPage": "1",
+        "Container(400).NumPages": "1",
+        "ListItem.AddonOrigin": "System",
+        "ListItem.Label": "AAC encoder",
+        "ListItem.Property(Addon.ID)": "audioencoder.kodi.builtin.aac",
+        "ListItem.Property(Addon.Status)": "Enabled"
+      }
+    },
+    "paging": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Container(400).HasNext": false,
+        "Container(400).HasPrevious": false
+      }
+    }
+  },
+  {
+    "case": "manually_copied_addon",
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Container(400).CurrentPage": "1",
+        "Container(400).NumPages": "1",
+        "ListItem.AddonOrigin": "Manual",
+        "ListItem.Label": "Artist Slideshow",
+        "ListItem.Property(Addon.ID)": "script.artistslideshow",
+        "ListItem.Property(Addon.Status)": "Enabled"
+      }
+    },
+    "paging": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Container(400).HasNext": false,
+        "Container(400).HasPrevious": false
+      }
+    }
+  }
+]

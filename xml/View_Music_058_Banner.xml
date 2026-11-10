@@ -76,7 +76,6 @@
 						<focusposition>2</focusposition>
 						<preloaditems>PreloadItems</preloaditems>
 						<movement>2</movement>
-						<wraparound>true</wraparound>
 						<scrolltime tween="Quadratic" easing="out">300</scrolltime>
 						<visible>Container.Content(songs)|Container.Content(artists)|Container.Content(albums)</visible>
 						<itemlayout width="auto" height="90">

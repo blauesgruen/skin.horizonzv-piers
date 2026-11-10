@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
+    <onload>Skin.SetBool(Lyrics)</onload>
     <defaultcontrol always="false">99</defaultcontrol>
     <controls>
         <control type="button" id="99">
             <include>HiddenButton</include>
-            <onfocus condition="!Skin.HasSetting(Lyrics)">Action(back)</onfocus>
-            <onfocus condition="Skin.HasSetting(Lyrics)">Control.SetFocus(101)</onfocus>
+            <!-- The provider assigns focus after populating its lyric list. -->
         </control>
         <control type="group">
             <!-- musicoverlay -->
@@ -255,7 +255,6 @@
                 <height>45</height>
                 <font>impacted30</font>
                 <label>$ADDON[script.cu.lrclyrics 32199]</label>
-                <font>font16</font>
                 <align>left</align>
                 <textcolor>grey</textcolor>
                 <shadowcolor>black</shadowcolor>

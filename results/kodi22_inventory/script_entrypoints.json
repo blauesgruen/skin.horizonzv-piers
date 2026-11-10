@@ -1,0 +1,102 @@
+{
+  "source": "https://raw.githubusercontent.com/xbmc/xbmc/22.0rc1-Piers/xbmc/interfaces/builtins/AddonBuiltins.cpp",
+  "scope": "Literal RunScript targets in active XML; installed sibling manifests read only. Piers deprecates fallback execution of non-script extension points. This checks entry types, not Python runtime behavior or arguments.",
+  "targets": [
+    {
+      "target": "$INFO[Skin.String(LyricScript_Path)]",
+      "files": [
+        "xml\\MusicOSD.xml",
+        "xml\\PlayerControls.xml"
+      ],
+      "status": "dynamic target; configured value not resolved"
+    },
+    {
+      "target": "script.artistslideshow",
+      "files": [
+        "xml\\Timers.xml"
+      ],
+      "version": "4.2.1",
+      "extensions": [
+        "xbmc.python.script",
+        "xbmc.addon.metadata"
+      ],
+      "status": "accepted script entry type present"
+    },
+    {
+      "target": "script.extendedinfo",
+      "files": [
+        "xml\\DialogMusicInfo.xml",
+        "xml\\DialogVideoInfo.xml",
+        "xml\\Variables.xml"
+      ],
+      "status": "not installed; exact manifest not checked in this pass"
+    },
+    {
+      "target": "script.globalsearch",
+      "files": [
+        "xml\\Home.xml"
+      ],
+      "version": "9.2.1",
+      "extensions": [
+        "xbmc.python.script",
+        "xbmc.addon.metadata"
+      ],
+      "status": "accepted script entry type present"
+    },
+    {
+      "target": "script.image.resource.select",
+      "files": [
+        "xml\\Custom_1500_WidgetSettings.xml",
+        "xml\\Includes_Submenu.xml",
+        "xml\\MyVideoNav.xml",
+        "xml\\MyWeather.xml",
+        "xml\\SkinSettings.xml"
+      ],
+      "version": "3.0.2",
+      "extensions": [
+        "xbmc.python.library",
+        "xbmc.addon.metadata"
+      ],
+      "status": "accepted script entry type present"
+    },
+    {
+      "target": "script.program.fritzact",
+      "files": [
+        "xml\\Includes_Dash_FritzDect.xml"
+      ],
+      "version": "3.1.7+matrix",
+      "extensions": [
+        "xbmc.python.script",
+        "xbmc.addon.metadata"
+      ],
+      "status": "accepted script entry type present"
+    },
+    {
+      "target": "script.skin.helper.colorpicker.bg",
+      "files": [
+        "xml\\SkinSettings.xml"
+      ],
+      "version": "1.0.1",
+      "extensions": [
+        "xbmc.python.script",
+        "xbmc.addon.metadata"
+      ],
+      "status": "accepted script entry type present"
+    },
+    {
+      "target": "script.skinhelper.ping",
+      "files": [
+        "xml\\Custom_1151_WOL.xml",
+        "xml\\Home.xml",
+        "xml\\Includes_Buttons_and_Lists.xml"
+      ],
+      "version": "4.1.2",
+      "extensions": [
+        "xbmc.python.script",
+        "xbmc.service",
+        "xbmc.addon.metadata"
+      ],
+      "status": "accepted script entry type present"
+    }
+  ]
+}

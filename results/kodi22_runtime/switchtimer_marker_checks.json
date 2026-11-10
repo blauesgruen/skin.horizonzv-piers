@@ -1,0 +1,45 @@
+{
+  "scope": "Native old/new variable comparison with one generic item lacking PVR channel/date, and the retained global count condition. No actual backend, timer service, scheduling or channel switching.",
+  "rows": [
+    {
+      "count": 0,
+      "values": {
+        "Control.GetLabel(1001)": "PVR-Switchtimer.png",
+        "Control.GetLabel(1002)": "",
+        "ListItem.ChannelName": "",
+        "ListItem.Date": "",
+        "Skin.AspectRatio": "16:9"
+      },
+      "global_marker_visible": false
+    },
+    {
+      "count": 1,
+      "values": {
+        "Control.GetLabel(1001)": "PVR-Switchtimer.png",
+        "Control.GetLabel(1002)": "",
+        "ListItem.ChannelName": "",
+        "ListItem.Date": "",
+        "Skin.AspectRatio": "16:9"
+      },
+      "global_marker_visible": true
+    },
+    {
+      "count": 0,
+      "values": {
+        "Control.GetLabel(1001)": "PVR-Switchtimer.png",
+        "Control.GetLabel(1002)": "",
+        "ListItem.ChannelName": "",
+        "ListItem.Date": "",
+        "Skin.AspectRatio": "16:9"
+      },
+      "global_marker_visible": false
+    }
+  ],
+  "pid": 48968,
+  "cleanup": {
+    "process_exited": true,
+    "profile_settings_restored": true,
+    "all_skin_xml_match": true
+  },
+  "errors": []
+}

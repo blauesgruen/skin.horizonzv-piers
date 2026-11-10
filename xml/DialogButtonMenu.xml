@@ -154,13 +154,13 @@
 						<item>
 							<label>$LOCALIZE[13017]</label>
 							<onclick>InhibitIdleShutdown(true)</onclick>
-							<visible>System.HasShutdown +!System.IsInhibit</visible>
+							<visible>System.HasShutdown +!System.IdleShutdownInhibited</visible>
 							<visible>!Skin.HasSetting(shutdown_noinhibitidle)</visible>
 						</item>
 						<item>
 							<label>$LOCALIZE[13018]</label>
 							<onclick>InhibitIdleShutdown(false)</onclick>
-							<visible>System.HasShutdown + System.IsInhibit</visible>
+							<visible>System.HasShutdown + System.IdleShutdownInhibited</visible>
 							<visible>!Skin.HasSetting(shutdown_noallowidle)</visible>
 						</item>
 						<item>
@@ -172,10 +172,10 @@
 							<label></label>
 							<property name="separator">Separator2.png</property>
 							<onclick/>
-							<visible>Skin.HasSetting(shutdown_nand)|Skin.HasSetting(shutdown_restart)|Skin.HasSetting(shutdown_reload)|Skin.HasSetting(shutdown_addon)</visible>
+							<visible>[Skin.HasSetting(shutdown_nand)+System.CanReboot+System.HasAddon(service.coreelec.settings)]|Skin.HasSetting(shutdown_restart)|Skin.HasSetting(shutdown_reload)|Skin.HasSetting(shutdown_addon)</visible>
 						</item>
 						<item>
-							<label>$LOCALIZE[301592]</label>
+							<label>$LOCALIZE[31405]</label>
 							<onclick>RestartApp</onclick>
 							<visible>Skin.HasSetting(shutdown_restart)</visible>
 						</item>
@@ -186,17 +186,18 @@
 							<onclick>Reset()</onclick>
 							<visible>System.CanReboot</visible>
 							<visible>Skin.HasSetting(shutdown_nand)</visible>
+							<visible>System.HasAddon(service.coreelec.settings)</visible>
 						</item>
 						<item>
-							<label>$LOCALIZE[301590]</label>
+							<label>$LOCALIZE[31404]</label>
 							<onclick>ReloadSkin()</onclick>
 							<visible>Skin.HasSetting(shutdown_reload)</visible>
 						</item>
 						<item>
 							<label>$VAR[shutdown_addon_var]</label>
 							<onclick>Dialog.Close(all)</onclick>
-							<onclick condition="!String.IsEmpty(Skin.String(shutdown_addon1))">RunAddon($INFO[Skin.String(shutdown_addon1)])</onclick>
-							<onclick condition="String.IsEmpty(Skin.String(shutdown_addon1))">Skin.SetAddon(shutdown_addon1,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.executable,xbmc.addon.image,kodi.gameclient)</onclick>
+							<onclick condition="!String.IsEmpty(System.AddonVersion(Skin.String(shutdown_addon1)))">RunAddon($INFO[Skin.String(shutdown_addon1)])</onclick>
+							<onclick condition="String.IsEmpty(System.AddonVersion(Skin.String(shutdown_addon1)))">Skin.SetAddon(shutdown_addon1,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.executable,xbmc.addon.image,kodi.gameclient)</onclick>
 							<visible>Skin.HasSetting(shutdown_addon)</visible>
 						</item>
 						<item>
@@ -228,9 +229,6 @@
             <top>230</top>
 			<bottom>165</bottom>
             <include>openclosemedium</include>
-			<control type="ima ge"> <!-- testimage-->
-				<texture>WhiteBack.png</texture>
-			</control>
 			<control type="group"> <!-- Artistlogo -->
 				<right>0</right>
 				<bottom>0</bottom>
@@ -269,7 +267,7 @@
 					<font>impacted24</font>
 					<textcolor>grey</textcolor>
 					<shadowcolor/>
-					<label>$INFO[System.Uptime,$LOCALIZE[301504]  ,] | CPU $INFO[System.CPUUsage] | Memory $INFO[system.memory(used.percent)]</label>
+					<label>$INFO[System.Uptime,$LOCALIZE[31363]  ,] | CPU $INFO[System.CPUUsage] | Memory $INFO[system.memory(used.percent)]</label>
 				</control>
 				<control type="group">
 					<height>150</height>
@@ -323,11 +321,6 @@
                 <height>30</height>
                 <label>$INFO[Pvr.NextRecordingTitle,[COLOR=red]$LOCALIZE[19157]: [/COLOR],]$INFO[Pvr.NextRecordingChannel, / ,]</label>
                 <visible>Pvr.HasNonRecordingTVTimer|Pvr.HasNonRecordingRadioTimer</visible>
-            </control>
-            <control type="label">
-                <height>30</height>
-                <label>[COLOR=red]nächster Umschalttimer: [/COLOR]$INFO[Window(Home).Property(t0:date)]$INFO[Window(Home).Property(t0:channel), / ,]</label>
-                <visible>!String.IsEmpty(Window(Home).Property(t0:date))</visible>
             </control>
         </control>
         <control type="group"> <!-- Shutdown Timer Display -->

@@ -1,0 +1,3560 @@
+{
+  "source_ref": "22.0rc1-Piers",
+  "scope": "Literal action tags and action include parameters, including Action argument 0 and AlarmClock argument 1; registration and minimum argument count only. No include expansion, variable values, other nested arguments, semantic parameter validation or runtime availability checks. Dynamic text is excluded from argument checks; numeric focus targets are counted separately.",
+  "registered_builtins": 129,
+  "registered_input_actions": 209,
+  "literal_references": 1616,
+  "distinct_literal_names": [
+    "action",
+    "activatewindow",
+    "activatewindowandfocus",
+    "addon.default.opensettings",
+    "addon.opensettings",
+    "alarmclock",
+    "audionextlanguage",
+    "back",
+    "cancelalarm",
+    "channeldown",
+    "channelup",
+    "cleanlibrary",
+    "clearproperty",
+    "close",
+    "container.nextsortmethod",
+    "container.nextviewmode",
+    "container.refresh",
+    "container.setsortdirection",
+    "container.setviewmode",
+    "control.move",
+    "control.setfocus",
+    "dialog.close",
+    "down",
+    "ejecttray",
+    "enableaddon",
+    "exportlibrary",
+    "filter",
+    "fullscreen",
+    "hibernate",
+    "inhibitidleshutdown",
+    "installaddon",
+    "mastermode",
+    "nextchannelgroup",
+    "nextsubtitle",
+    "noop",
+    "notification",
+    "play",
+    "playdisc",
+    "playercontrol",
+    "playerprogramselect",
+    "playerresolutionselect",
+    "playmedia",
+    "powerdown",
+    "previouschannelgroup",
+    "pvr.togglerecordplayingchannel",
+    "quit",
+    "reloadskin",
+    "replacewindow",
+    "reset",
+    "restartapp",
+    "right",
+    "ripcd",
+    "runaddon",
+    "runplugin",
+    "runscript",
+    "sendclick",
+    "setfocus",
+    "setproperty",
+    "setrating",
+    "settingslevelchange",
+    "setvolume",
+    "showsubtitles",
+    "skin.reset",
+    "skin.resetsettings",
+    "skin.selectbool",
+    "skin.setaddon",
+    "skin.setbool",
+    "skin.setfile",
+    "skin.setimage",
+    "skin.setnumeric",
+    "skin.setpath",
+    "skin.setstring",
+    "skin.togglesetting",
+    "stereomode",
+    "stereomodetomono",
+    "stop",
+    "stopscript",
+    "subtitledelay",
+    "suspend",
+    "system.execwait",
+    "system.logoff",
+    "togglestereomode",
+    "updatelibrary",
+    "wakeonlan"
+  ],
+  "findings": [],
+  "dynamic": [
+    {
+      "file": "xml/Custom_1151_WOL.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "WakeOnLan($INFO[Window(Home).Property(SkinHelperPING.mac1)])",
+      "name": "wakeonlan"
+    },
+    {
+      "file": "xml/Custom_1151_WOL.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "WakeOnLan($INFO[Window(Home).Property(SkinHelperPING.mac2)])",
+      "name": "wakeonlan"
+    },
+    {
+      "file": "xml/Custom_1151_WOL.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "WakeOnLan($INFO[Window(Home).Property(SkinHelperPING.mac3)])",
+      "name": "wakeonlan"
+    },
+    {
+      "file": "xml/Custom_1151_WOL.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "WakeOnLan($INFO[Window(Home).Property(SkinHelperPING.mac4)])",
+      "name": "wakeonlan"
+    },
+    {
+      "file": "xml/Custom_1151_WOL.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "WakeOnLan($INFO[Window(Home).Property(SkinHelperPING.mac5)])",
+      "name": "wakeonlan"
+    },
+    {
+      "file": "xml/Custom_1151_WOL.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "WakeOnLan($INFO[Window(Home).Property(SkinHelperPING.mac6)])",
+      "name": "wakeonlan"
+    },
+    {
+      "file": "xml/Custom_1151_WOL.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "WakeOnLan($INFO[Window(Home).Property(SkinHelperPING.mac7)])",
+      "name": "wakeonlan"
+    },
+    {
+      "file": "xml/Custom_1151_WOL.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "WakeOnLan($INFO[Window(Home).Property(SkinHelperPING.mac8)])",
+      "name": "wakeonlan"
+    },
+    {
+      "file": "xml/Custom_1151_WOL.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "WakeOnLan($INFO[Window(Home).Property(SkinHelperPING.mac9)])",
+      "name": "wakeonlan"
+    },
+    {
+      "file": "xml/Custom_1151_WOL.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "WakeOnLan($INFO[Window(Home).Property(SkinHelperPING.mac10)])",
+      "name": "wakeonlan"
+    },
+    {
+      "file": "xml/Custom_1151_WOL.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Notification(WOL,$LOCALIZE[31951],3000)",
+      "name": "notification"
+    },
+    {
+      "file": "xml/Custom_1200_Dashboard.xml",
+      "element": "param",
+      "param": "onclick",
+      "value": "Skin.SetAddon(addon_fav$INFO[Container(8006).CurrentItem],xbmc.addon.video,xbmc.addon.audio,xbmc.addon.executable,xbmc.addon.image,kodi.gameclient)",
+      "name": "skin.setaddon"
+    },
+    {
+      "file": "xml/Custom_1200_Dashboard.xml",
+      "element": "param",
+      "param": "onclick",
+      "value": "Skin.Reset(addon_fav$INFO[Container(8006).CurrentItem])",
+      "name": "skin.reset"
+    },
+    {
+      "file": "xml/Custom_1200_Dashboard.xml",
+      "element": "param",
+      "param": "onclick2",
+      "value": "Skin.Reset(addon_fav$INFO[Container(8006).CurrentItem]_icon)",
+      "name": "skin.reset"
+    },
+    {
+      "file": "xml/Custom_1200_Dashboard.xml",
+      "element": "param",
+      "param": "onclick3",
+      "value": "Skin.Reset(addon_fav$INFO[Container(8006).CurrentItem]_label)",
+      "name": "skin.reset"
+    },
+    {
+      "file": "xml/Custom_1500_WidgetSettings.xml",
+      "element": "param",
+      "param": "onclick",
+      "value": "$VAR[HomeWidget_music_Currentpath]"
+    },
+    {
+      "file": "xml/Custom_1500_WidgetSettings.xml",
+      "element": "param",
+      "param": "onclick",
+      "value": "$VAR[HomeWidget_videos_Currentpath]"
+    },
+    {
+      "file": "xml/Custom_1500_WidgetSettings.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "$VAR[HomeWidget_movies_Currentpath]"
+    },
+    {
+      "file": "xml/Custom_1500_WidgetSettings.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "Skin.SetString(Videopath_Dash_Name3,$LOCALIZE[1212] $LOCALIZE[573])",
+      "name": "skin.setstring"
+    },
+    {
+      "file": "xml/Custom_1500_WidgetSettings.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "Skin.SetString(Videopath_Dash_Name2,$LOCALIZE[1212] $LOCALIZE[573])",
+      "name": "skin.setstring"
+    },
+    {
+      "file": "xml/Custom_1500_WidgetSettings.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "Skin.SetString(Videopath_Dash_Name1,$LOCALIZE[1212] $LOCALIZE[573])",
+      "name": "skin.setstring"
+    },
+    {
+      "file": "xml/Custom_1500_WidgetSettings.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "Skin.SetString(Videopath_Dash_Name,$LOCALIZE[1212] $LOCALIZE[573])",
+      "name": "skin.setstring"
+    },
+    {
+      "file": "xml/Custom_1500_WidgetSettings.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "$VAR[HomeWidget_tvshow_Currentpath]"
+    },
+    {
+      "file": "xml/Custom_1500_WidgetSettings.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "$VAR[HomeWidget_musicvideo_Currentpath]"
+    },
+    {
+      "file": "xml/Custom_1500_WidgetSettings.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "$VAR[HomeWidget_picture_Currentpath]"
+    },
+    {
+      "file": "xml/Custom_1500_WidgetSettings.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "$VAR[HomeWidget_games_Currentpath]"
+    },
+    {
+      "file": "xml/DialogButtonMenu.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "RunAddon($INFO[Skin.String(shutdown_addon1)])",
+      "name": "runaddon"
+    },
+    {
+      "file": "xml/DialogMusicInfo.xml",
+      "element": "param",
+      "param": "onclick2",
+      "value": "RunScript(script.extendedinfo,info=youtubebrowser,id=$INFO[ListItem.Artist] $INFO[ListItem.Album])",
+      "name": "runscript"
+    },
+    {
+      "file": "xml/DialogMusicInfo.xml",
+      "element": "param",
+      "param": "onclick3",
+      "value": "RunScript(script.extendedinfo,info=youtubebrowser,id=$INFO[ListItem.Artist] $INFO[ListItem.Title])",
+      "name": "runscript"
+    },
+    {
+      "file": "xml/DialogMusicInfo.xml",
+      "element": "param",
+      "param": "onclick2",
+      "value": "SetProperty(TextViewer_Header,$LOCALIZE[207],home)",
+      "name": "setproperty"
+    },
+    {
+      "file": "xml/DialogMusicInfo.xml",
+      "element": "param",
+      "param": "onclick3",
+      "value": "SetProperty(TextViewer_Text,$ESCINFO[ListItem.Property(Artist_Description)],home)",
+      "name": "setproperty"
+    },
+    {
+      "file": "xml/DialogVideoInfo.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "SetProperty(TextViewer_Header,$LOCALIZE[207],home)",
+      "name": "setproperty"
+    },
+    {
+      "file": "xml/DialogVideoInfo.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "SetProperty(TextViewer_Text,$ESCINFO[ListItem.Plot],home)",
+      "name": "setproperty"
+    },
+    {
+      "file": "xml/DialogVideoInfo.xml",
+      "element": "param",
+      "param": "onclick2",
+      "value": "ActivateWindow(Videos,videodb://movies/sets/$INFO[ListItem.SetId]/?setid=$INFO[ListItem.SetId])",
+      "name": "activatewindow"
+    },
+    {
+      "file": "xml/DialogVideoInfo.xml",
+      "element": "param",
+      "param": "onclick",
+      "value": "PlayMedia($INFO[ListItem.Trailer],1)",
+      "name": "playmedia"
+    },
+    {
+      "file": "xml/DialogVideoInfo.xml",
+      "element": "param",
+      "param": "onclick2",
+      "value": "RunScript(script.extendedinfo,info=youtubebrowser,id=$INFO[ListItem.Title] $INFO[ListItem.Year])",
+      "name": "runscript"
+    },
+    {
+      "file": "xml/DialogVideoInfo.xml",
+      "element": "param",
+      "param": "onclick",
+      "value": "$VAR[ExtendedInfoDialog]"
+    },
+    {
+      "file": "xml/GameOSD.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "SetProperty(settingslist_header,$LOCALIZE[5],home)",
+      "name": "setproperty"
+    },
+    {
+      "file": "xml/Home.xml",
+      "element": "onload",
+      "param": null,
+      "value": "Control.Move(9000,$INFO[Skin.String(homemenufocus)])",
+      "name": "control.move"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "onleft",
+      "param": null,
+      "value": "$PARAM[onleft]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "onright",
+      "param": null,
+      "value": "$PARAM[onright1]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "onright",
+      "param": null,
+      "value": "$PARAM[onright2]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "onup",
+      "param": null,
+      "value": "$PARAM[onup]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "ondown",
+      "param": null,
+      "value": "$PARAM[ondown1]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "ondown",
+      "param": null,
+      "value": "$PARAM[ondown2]"
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "ondown",
+      "param": null,
+      "value": "$PARAM[ondown3]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onup",
+      "param": null,
+      "value": "$PARAM[onup]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "ondown",
+      "param": null,
+      "value": "$PARAM[ondown]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onleft",
+      "param": null,
+      "value": "$PARAM[onleft]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onright",
+      "param": null,
+      "value": "$PARAM[onright]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "$PARAM[onclick]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "$PARAM[onclick2]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "$PARAM[onclick3]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "$PARAM[onclick4]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "$PARAM[onclick5]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "$PARAM[onclick6]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "$PARAM[onclick7]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "$PARAM[onclick8]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "$PARAM[onclick9]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "$PARAM[onclick10]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onup",
+      "param": null,
+      "value": "$PARAM[onup]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "ondown",
+      "param": null,
+      "value": "$PARAM[ondown]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onleft",
+      "param": null,
+      "value": "$PARAM[onleft]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onright",
+      "param": null,
+      "value": "$PARAM[onright]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onup",
+      "param": null,
+      "value": "$PARAM[onup]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "ondown",
+      "param": null,
+      "value": "$PARAM[ondown]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onleft",
+      "param": null,
+      "value": "$PARAM[onleft]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onright",
+      "param": null,
+      "value": "$PARAM[onright]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "$PARAM[onclick]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "$PARAM[onclick2]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "$PARAM[onclick3]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "$PARAM[onclick4]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "$PARAM[onclick5]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onup",
+      "param": null,
+      "value": "$PARAM[onup]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "ondown",
+      "param": null,
+      "value": "$PARAM[ondown]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onleft",
+      "param": null,
+      "value": "$PARAM[onleft]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onright",
+      "param": null,
+      "value": "$PARAM[onright]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "$PARAM[onclick]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "$PARAM[onclick2]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "$PARAM[onclick3]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "$PARAM[onclick4]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "$PARAM[onclick5]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onup",
+      "param": null,
+      "value": "$PARAM[onup]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "ondown",
+      "param": null,
+      "value": "$PARAM[ondown]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onleft",
+      "param": null,
+      "value": "$PARAM[onleft]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onright",
+      "param": null,
+      "value": "$PARAM[onright]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "$PARAM[onclick]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "$PARAM[onclick2]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "$PARAM[onclick3]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "$PARAM[onclick4]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "$PARAM[onclick5]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onup",
+      "param": null,
+      "value": "$PARAM[onup]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "ondown",
+      "param": null,
+      "value": "$PARAM[ondown]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onleft",
+      "param": null,
+      "value": "$PARAM[onleft]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onright",
+      "param": null,
+      "value": "$PARAM[onright]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "$PARAM[onclick]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "$PARAM[onclick2]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "$PARAM[onclick3]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "$PARAM[onclick4]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "$PARAM[onclick5]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "param",
+      "param": "onup",
+      "value": "$PARAM[grouplist_id]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "param",
+      "param": "ondown",
+      "value": "$PARAM[grouplist_id]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "param",
+      "param": "onclick",
+      "value": "Skin.ToggleSetting(HomeMenuNo_$PARAM[homemenu_name]_Button)",
+      "name": "skin.togglesetting"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "param",
+      "param": "onclick",
+      "value": "Skin.ToggleSetting(Home_$PARAM[homemenu_name]_Button)",
+      "name": "skin.togglesetting"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "param",
+      "param": "onclick",
+      "value": "Skin.SetString(Home_$PARAM[homemenu_name]_Custom_Label)",
+      "name": "skin.setstring"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "param",
+      "param": "onclick",
+      "value": "Skin.SelectBool(21866, 36912|Home_$PARAM[homemenu_name]_Custom_Category_Video, 2|Home_$PARAM[homemenu_name]_Custom_Category_Music, 1|Home_$PARAM[homemenu_name]_Custom_Category_Pictures, 559|Home_$PARAM[homemenu_name]_Custom_Category_File, 10821|Home_$PARAM[homemenu_name]_Custom_Category_Games)",
+      "name": "skin.selectbool"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "param",
+      "param": "onclick",
+      "value": "Skin.SelectBool(21866, 36912|Home_$PARAM[homemenu_name]_Custom_SubCategory_Video, 2|Home_$PARAM[homemenu_name]_Custom_SubCategory_Music)",
+      "name": "skin.selectbool"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "param",
+      "param": "onclick",
+      "value": "$VAR[Home_$PARAM[homemenu_name]_Currentpath]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "param",
+      "param": "onclick",
+      "value": "Skin.Reset(Home_$PARAM[homemenu_name]_Custom_Label)",
+      "name": "skin.reset"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "param",
+      "param": "onclick2",
+      "value": "Skin.Reset(Home_$PARAM[homemenu_name]_Custom_Category_Video)",
+      "name": "skin.reset"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "param",
+      "param": "onclick3",
+      "value": "Skin.Reset(Home_$PARAM[homemenu_name]_Custom_Category_Music)",
+      "name": "skin.reset"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "param",
+      "param": "onclick4",
+      "value": "Skin.Reset(Home_$PARAM[homemenu_name]_Custom_Category_Pictures)",
+      "name": "skin.reset"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "param",
+      "param": "onclick5",
+      "value": "Skin.Reset(Home_$PARAM[homemenu_name]_Custom_Category_File)",
+      "name": "skin.reset"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "param",
+      "param": "onclick6",
+      "value": "Skin.Reset(Home_$PARAM[homemenu_name]_Custom_Category_Games)",
+      "name": "skin.reset"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "param",
+      "param": "onclick7",
+      "value": "Skin.Reset(Home_$PARAM[homemenu_name]_Custom_SubCategory_Video)",
+      "name": "skin.reset"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "param",
+      "param": "onclick8",
+      "value": "Skin.Reset(Home_$PARAM[homemenu_name]_Custom_SubCategory_Music)",
+      "name": "skin.reset"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "param",
+      "param": "onclick9",
+      "value": "Skin.Reset(Home_$PARAM[homemenu_name]_Custom_Path)",
+      "name": "skin.reset"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "param",
+      "param": "onclick10",
+      "value": "Skin.Reset(Home_$PARAM[homemenu_name]_Button)",
+      "name": "skin.reset"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "param",
+      "param": "onclick",
+      "value": "Skin.ToggleSetting(Home_$PARAM[homemenu_name]_Button)",
+      "name": "skin.togglesetting"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "param",
+      "param": "onclick",
+      "value": "Skin.SetString(Home_$PARAM[homemenu_name]_Custom_Label)",
+      "name": "skin.setstring"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "param",
+      "param": "onclick",
+      "value": "Skin.SelectBool(21866, 36912|Home_$PARAM[homemenu_name]_Custom_Category_Video, 2|Home_$PARAM[homemenu_name]_Custom_Category_Music, 1|Home_$PARAM[homemenu_name]_Custom_Category_Pictures, 559|Home_$PARAM[homemenu_name]_Custom_Category_File, 10821|Home_$PARAM[homemenu_name]_Custom_Category_Games, 31611|Home_$PARAM[homemenu_name]_Custom_Category_Code)",
+      "name": "skin.selectbool"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "param",
+      "param": "onclick",
+      "value": "Skin.SelectBool(21866, 36912|Home_$PARAM[homemenu_name]_Custom_SubCategory_Video, 2|Home_$PARAM[homemenu_name]_Custom_SubCategory_Music)",
+      "name": "skin.selectbool"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "param",
+      "param": "onclick",
+      "value": "$VAR[Home_$PARAM[homemenu_name]_Currentpath]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "param",
+      "param": "onclick",
+      "value": "Skin.Reset(Home_$PARAM[homemenu_name]_Custom_Label)",
+      "name": "skin.reset"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "param",
+      "param": "onclick2",
+      "value": "Skin.Reset(Home_$PARAM[homemenu_name]_Custom_Category_Video)",
+      "name": "skin.reset"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "param",
+      "param": "onclick3",
+      "value": "Skin.Reset(Home_$PARAM[homemenu_name]_Custom_Category_Music)",
+      "name": "skin.reset"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "param",
+      "param": "onclick4",
+      "value": "Skin.Reset(Home_$PARAM[homemenu_name]_Custom_Category_Pictures)",
+      "name": "skin.reset"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "param",
+      "param": "onclick5",
+      "value": "Skin.Reset(Home_$PARAM[homemenu_name]_Custom_Category_File)",
+      "name": "skin.reset"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "param",
+      "param": "onclick6",
+      "value": "Skin.Reset(Home_$PARAM[homemenu_name]_Custom_Category_Games)",
+      "name": "skin.reset"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "param",
+      "param": "onclick7",
+      "value": "Skin.Reset(Home_$PARAM[homemenu_name]_Custom_SubCategory_Video)",
+      "name": "skin.reset"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "param",
+      "param": "onclick8",
+      "value": "Skin.Reset(Home_$PARAM[homemenu_name]_Custom_SubCategory_Music)",
+      "name": "skin.reset"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "param",
+      "param": "onclick9",
+      "value": "Skin.Reset(Home_$PARAM[homemenu_name]_Custom_Path)",
+      "name": "skin.reset"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "param",
+      "param": "onclick10",
+      "value": "Skin.Reset(Home_$PARAM[homemenu_name]_Button)",
+      "name": "skin.reset"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "param",
+      "param": "onclick",
+      "value": "Skin.ToggleSetting(Home_Background_$PARAM[homemenu_name]_Multiimage)",
+      "name": "skin.togglesetting"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "param",
+      "param": "onclick2",
+      "value": "Skin.SetImage(user_bkg_$PARAM[homemenu_name],smb://)",
+      "name": "skin.setimage"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "param",
+      "param": "onclick3",
+      "value": "Skin.SetPath(user_bkg_$PARAM[homemenu_name],smb://)",
+      "name": "skin.setpath"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "param",
+      "param": "onclick",
+      "value": "Skin.Reset(user_bkg_$PARAM[homemenu_name])",
+      "name": "skin.reset"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "param",
+      "param": "onclick",
+      "value": "SetProperty(HomeButton,$PARAM[homemenu_name])",
+      "name": "setproperty"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "param",
+      "param": "onup",
+      "value": "$PARAM[grouplist_id]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "param",
+      "param": "ondown",
+      "value": "$PARAM[grouplist_id]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "param",
+      "param": "onclick",
+      "value": "Skin.ToggleSetting(HomeWidget_$PARAM[homemenu_name]_Standard)",
+      "name": "skin.togglesetting"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "param",
+      "param": "onclick2",
+      "value": "Skin.Reset(HomeWidget_$PARAM[homemenu_name]_User)",
+      "name": "skin.reset"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "param",
+      "param": "onclick",
+      "value": "Skin.ToggleSetting(HomeWidget_$PARAM[homemenu_name]_User)",
+      "name": "skin.togglesetting"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "param",
+      "param": "onclick2",
+      "value": "Skin.Reset(HomeWidget_$PARAM[homemenu_name]_Standard)",
+      "name": "skin.reset"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "param",
+      "param": "onclick",
+      "value": "Skin.SetString(HomeWidget_$PARAM[homemenu_name]_Label)",
+      "name": "skin.setstring"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "param",
+      "param": "onclick",
+      "value": "$VAR[HomeWidget_$PARAM[homemenu_name]_Currentpath]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "param",
+      "param": "onclick",
+      "value": "Skin.Reset(HomeWidget_$PARAM[homemenu_name]_Label)",
+      "name": "skin.reset"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "param",
+      "param": "onclick2",
+      "value": "Skin.Reset(HomeWidget_$PARAM[homemenu_name]_Path)",
+      "name": "skin.reset"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "param",
+      "param": "onclick3",
+      "value": "Skin.Reset(HomeWidget_$PARAM[homemenu_name]_User)",
+      "name": "skin.reset"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onup",
+      "param": null,
+      "value": "$PARAM[onup]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "ondown",
+      "param": null,
+      "value": "$PARAM[ondown]"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "WakeOnLan($INFO[Window(Home).Property(SkinHelperPING.mac$PARAM[slot])])",
+      "name": "wakeonlan"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Notification(WOL,$LOCALIZE[31951],3000)",
+      "name": "notification"
+    },
+    {
+      "file": "xml/Includes_Dash_Addonpath_Fav.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "ActivateWindow($VAR[WidgetTarget_Dash_FirstItem],$INFO[Skin.String(Addonpath_Dash_Path)],return)",
+      "name": "activatewindow"
+    },
+    {
+      "file": "xml/Includes_Dash_Addonpath_Fav.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "ActivateWindow($VAR[WidgetTarget_Dash_FirstItem],$INFO[Skin.String(Addonpath_Dash_Path1)],return)",
+      "name": "activatewindow"
+    },
+    {
+      "file": "xml/Includes_Dash_Addonpath_Fav.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "ActivateWindow($VAR[WidgetTarget_Dash_FirstItem],$INFO[Skin.String(Addonpath_Dash_Path2)],return)",
+      "name": "activatewindow"
+    },
+    {
+      "file": "xml/Includes_Dash_Addonpath_Fav.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "ActivateWindow($VAR[WidgetTarget_Dash_FirstItem],$INFO[Skin.String(Addonpath_Dash_Path3)],return)",
+      "name": "activatewindow"
+    },
+    {
+      "file": "xml/Includes_Dash_Addonpath_Fav.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "RunAddon($INFO[Skin.String(addon_fav1)])",
+      "name": "runaddon"
+    },
+    {
+      "file": "xml/Includes_Dash_Addonpath_Fav.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "RunAddon($INFO[Skin.String(addon_fav2)])",
+      "name": "runaddon"
+    },
+    {
+      "file": "xml/Includes_Dash_Addonpath_Fav.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "RunAddon($INFO[Skin.String(addon_fav3)])",
+      "name": "runaddon"
+    },
+    {
+      "file": "xml/Includes_Dash_Addonpath_Fav.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "RunAddon($INFO[Skin.String(addon_fav4)])",
+      "name": "runaddon"
+    },
+    {
+      "file": "xml/Includes_Dash_Addonpath_Fav.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "RunAddon($INFO[Skin.String(addon_fav5)])",
+      "name": "runaddon"
+    },
+    {
+      "file": "xml/Includes_Dash_Addonpath_Fav.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "RunAddon($INFO[Skin.String(addon_fav6)])",
+      "name": "runaddon"
+    },
+    {
+      "file": "xml/Includes_Dash_Addonpath_Fav.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "RunAddon($INFO[Skin.String(addon_fav7)])",
+      "name": "runaddon"
+    },
+    {
+      "file": "xml/Includes_Dash_Addonpath_Fav.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "RunAddon($INFO[Skin.String(addon_fav8)])",
+      "name": "runaddon"
+    },
+    {
+      "file": "xml/Includes_Dash_Addonpath_Fav.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "RunAddon($INFO[Skin.String(addon_fav9)])",
+      "name": "runaddon"
+    },
+    {
+      "file": "xml/Includes_Dash_Addonpath_Fav.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "RunAddon($INFO[Skin.String(addon_fav10)])",
+      "name": "runaddon"
+    },
+    {
+      "file": "xml/Includes_Dash_FritzDect.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "RunScript(script.program.fritzact,action=toggle&ain=$INFO[ListItem.Label2])",
+      "name": "runscript"
+    },
+    {
+      "file": "xml/Includes_Dash_FritzDect.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "RunScript(script.program.fritzact,action=toggle&ain=$INFO[ListItem.Label2])",
+      "name": "runscript"
+    },
+    {
+      "file": "xml/Includes_Dash_FritzDect.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "RunScript(script.program.fritzact,action=temp&ain=$INFO[ListItem.Label2])",
+      "name": "runscript"
+    },
+    {
+      "file": "xml/Includes_Dash_FritzDect.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Notification(wird geschaltet ...,FritzDect ($INFO[ListItem.Label]),2000)",
+      "name": "notification"
+    },
+    {
+      "file": "xml/Includes_Dash_GTO.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "RunPlugin(plugin://script.service.gto?action=info&item=$INFO[ListItem.Property(Item)])",
+      "name": "runplugin"
+    },
+    {
+      "file": "xml/Includes_HomeContent.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "ActivateWindow($VAR[Home_music_SubCategory],$INFO[Skin.String(Home_music_Custom_Path)],return)",
+      "name": "activatewindow"
+    },
+    {
+      "file": "xml/Includes_HomeContent.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "ActivateWindow($VAR[Home_videos_SubCategory],$INFO[Skin.String(Home_videos_Custom_Path)],return)",
+      "name": "activatewindow"
+    },
+    {
+      "file": "xml/Includes_HomeContent.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "ActivateWindow($VAR[Home_movies_SubCategory],$INFO[Skin.String(Home_movies_Custom_Path)],return)",
+      "name": "activatewindow"
+    },
+    {
+      "file": "xml/Includes_HomeContent.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "ActivateWindow($VAR[Home_tvshow_SubCategory],$INFO[Skin.String(Home_tvshow_Custom_Path)],return)",
+      "name": "activatewindow"
+    },
+    {
+      "file": "xml/Includes_HomeContent.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "ActivateWindow($VAR[Home_musicvideo_SubCategory],$INFO[Skin.String(Home_musicvideo_Custom_Path)],return)",
+      "name": "activatewindow"
+    },
+    {
+      "file": "xml/Includes_HomeContent.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "ActivateWindow($VAR[Home_picture_SubCategory],$INFO[Skin.String(Home_picture_Custom_Path)],return)",
+      "name": "activatewindow"
+    },
+    {
+      "file": "xml/Includes_HomeContent.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "ActivateWindow($VAR[Home_custom1_SubCategory],$INFO[Skin.String(Home_custom1_Custom_Path)],return)",
+      "name": "activatewindow"
+    },
+    {
+      "file": "xml/Includes_HomeContent.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "$INFO[Skin.String(Home_custom1_Custom_Path)]"
+    },
+    {
+      "file": "xml/Includes_HomeContent.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "ActivateWindow($VAR[Home_custom2_SubCategory],$INFO[Skin.String(Home_custom2_Custom_Path)],return)",
+      "name": "activatewindow"
+    },
+    {
+      "file": "xml/Includes_HomeContent.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "$INFO[Skin.String(Home_custom2_Custom_Path)]"
+    },
+    {
+      "file": "xml/Includes_HomeContent.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "ActivateWindow($VAR[Home_custom3_SubCategory],$INFO[Skin.String(Home_custom3_Custom_Path)],return)",
+      "name": "activatewindow"
+    },
+    {
+      "file": "xml/Includes_HomeContent.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "$INFO[Skin.String(Home_custom3_Custom_Path)]"
+    },
+    {
+      "file": "xml/Includes_HomeContent.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "ActivateWindow($VAR[Home_custom4_SubCategory],$INFO[Skin.String(Home_custom4_Custom_Path)],return)",
+      "name": "activatewindow"
+    },
+    {
+      "file": "xml/Includes_HomeContent.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "$INFO[Skin.String(Home_custom4_Custom_Path)]"
+    },
+    {
+      "file": "xml/Includes_HomeContent.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "ActivateWindow($VAR[Home_custom5_SubCategory],$INFO[Skin.String(Home_custom5_Custom_Path)],return)",
+      "name": "activatewindow"
+    },
+    {
+      "file": "xml/Includes_HomeContent.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "$INFO[Skin.String(Home_custom5_Custom_Path)]"
+    },
+    {
+      "file": "xml/Includes_HomeContent.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "ActivateWindow($VAR[Home_custom6_SubCategory],$INFO[Skin.String(Home_custom6_Custom_Path)],return)",
+      "name": "activatewindow"
+    },
+    {
+      "file": "xml/Includes_HomeContent.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "$INFO[Skin.String(Home_custom6_Custom_Path)]"
+    },
+    {
+      "file": "xml/Includes_HomeContent.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "ActivateWindow($VAR[Home_custom7_SubCategory],$INFO[Skin.String(Home_custom7_Custom_Path)],return)",
+      "name": "activatewindow"
+    },
+    {
+      "file": "xml/Includes_HomeContent.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "$INFO[Skin.String(Home_custom7_Custom_Path)]"
+    },
+    {
+      "file": "xml/Includes_HomeContent.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "ActivateWindow($VAR[Home_custom8_SubCategory],$INFO[Skin.String(Home_custom8_Custom_Path)],return)",
+      "name": "activatewindow"
+    },
+    {
+      "file": "xml/Includes_HomeContent.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "$INFO[Skin.String(Home_custom8_Custom_Path)]"
+    },
+    {
+      "file": "xml/Includes_HomeContent.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "ActivateWindow($VAR[Home_custom9_SubCategory],$INFO[Skin.String(Home_custom9_Custom_Path)],return)",
+      "name": "activatewindow"
+    },
+    {
+      "file": "xml/Includes_HomeContent.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "$INFO[Skin.String(Home_custom9_Custom_Path)]"
+    },
+    {
+      "file": "xml/Includes_HomeContent.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "ActivateWindow($VAR[Home_games_SubCategory],$INFO[Skin.String(Home_games_Custom_Path)],return)",
+      "name": "activatewindow"
+    },
+    {
+      "file": "xml/Includes_JumpSMS.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "SetFocus($PARAM[id])",
+      "name": "setfocus"
+    },
+    {
+      "file": "xml/Includes_JumpSMS.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "SetFocus($PARAM[id])",
+      "name": "setfocus"
+    },
+    {
+      "file": "xml/Includes_JumpSMS.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "SetFocus($PARAM[id])",
+      "name": "setfocus"
+    },
+    {
+      "file": "xml/Includes_JumpSMS.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "SetFocus($PARAM[id])",
+      "name": "setfocus"
+    },
+    {
+      "file": "xml/Includes_JumpSMS.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "SetFocus($PARAM[id])",
+      "name": "setfocus"
+    },
+    {
+      "file": "xml/Includes_JumpSMS.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "SetFocus($PARAM[id])",
+      "name": "setfocus"
+    },
+    {
+      "file": "xml/Includes_JumpSMS.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "SetFocus($PARAM[id])",
+      "name": "setfocus"
+    },
+    {
+      "file": "xml/Includes_JumpSMS.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "SetFocus($PARAM[id])",
+      "name": "setfocus"
+    },
+    {
+      "file": "xml/Includes_JumpSMS.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "SetFocus($PARAM[id])",
+      "name": "setfocus"
+    },
+    {
+      "file": "xml/Includes_JumpSMS.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "SetFocus($PARAM[id])",
+      "name": "setfocus"
+    },
+    {
+      "file": "xml/Includes_JumpSMS.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "SetFocus($PARAM[id])",
+      "name": "setfocus"
+    },
+    {
+      "file": "xml/Includes_JumpSMS.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "SetFocus($PARAM[id])",
+      "name": "setfocus"
+    },
+    {
+      "file": "xml/Includes_JumpSMS.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "SetFocus($PARAM[id])",
+      "name": "setfocus"
+    },
+    {
+      "file": "xml/Includes_JumpSMS.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "SetFocus($PARAM[id])",
+      "name": "setfocus"
+    },
+    {
+      "file": "xml/Includes_JumpSMS.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "SetFocus($PARAM[id])",
+      "name": "setfocus"
+    },
+    {
+      "file": "xml/Includes_JumpSMS.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "SetFocus($PARAM[id])",
+      "name": "setfocus"
+    },
+    {
+      "file": "xml/Includes_SetInformation.xml",
+      "element": "ondown",
+      "param": null,
+      "value": "$PARAM[ondown]"
+    },
+    {
+      "file": "xml/Includes_SkinAddonsContent.xml",
+      "element": "onup",
+      "param": null,
+      "value": "$PARAM[id]"
+    },
+    {
+      "file": "xml/Includes_SkinAddonsContent.xml",
+      "element": "ondown",
+      "param": null,
+      "value": "$PARAM[id]"
+    },
+    {
+      "file": "xml/Includes_SkinAddonsContent.xml",
+      "element": "onleft",
+      "param": null,
+      "value": "$PARAM[onleft]"
+    },
+    {
+      "file": "xml/Includes_SkinAddonsContent.xml",
+      "element": "onright",
+      "param": null,
+      "value": "$PARAM[pagecontrol]"
+    },
+    {
+      "file": "xml/Includes_Submenu.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "SetProperty(HomeButton,$INFO[Container(9000).ListItem.Property(homemenu_id)],home)",
+      "name": "setproperty"
+    },
+    {
+      "file": "xml/Includes_Widget_Param.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "SetProperty(Widget_Content_Info,$INFO[Container($PARAM[Widget_Listlayout_id]).ListItem.DBType],home)",
+      "name": "setproperty"
+    },
+    {
+      "file": "xml/Includes_Widget_Param.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "$PARAM[HomePageWidget_list_onfocus]"
+    },
+    {
+      "file": "xml/Includes_Widget_Param.xml",
+      "element": "onunfocus",
+      "param": null,
+      "value": "$PARAM[HomePageWidget_list_onunfocus]"
+    },
+    {
+      "file": "xml/MusicOSD.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Skin.SelectBool(31324, $VAR[ColorAkzentVar])",
+      "name": "skin.selectbool"
+    },
+    {
+      "file": "xml/MusicOSD.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "RunScript($INFO[Skin.String(LyricScript_Path)])",
+      "name": "runscript"
+    },
+    {
+      "file": "xml/MusicOSD.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "StopScript($INFO[Skin.String(LyricScript_Path)])",
+      "name": "stopscript"
+    },
+    {
+      "file": "xml/MusicOSD.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "StopScript($INFO[Skin.String(LyricScript_Path)])",
+      "name": "stopscript"
+    },
+    {
+      "file": "xml/MusicOSD.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "RunScript($INFO[Skin.String(LyricScript_Path)])",
+      "name": "runscript"
+    },
+    {
+      "file": "xml/MusicOSD.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "RunScript($INFO[Skin.String(LyricScript_Path)])",
+      "name": "runscript"
+    },
+    {
+      "file": "xml/MyGames.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Addon.OpenSettings($INFO[Container.PluginName])",
+      "name": "addon.opensettings"
+    },
+    {
+      "file": "xml/MyMusicNav.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Addon.OpenSettings($INFO[Container.PluginName])",
+      "name": "addon.opensettings"
+    },
+    {
+      "file": "xml/MyPics.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Addon.OpenSettings($INFO[Container.PluginName])",
+      "name": "addon.opensettings"
+    },
+    {
+      "file": "xml/MyPrograms.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Addon.OpenSettings($INFO[Container.PluginName])",
+      "name": "addon.opensettings"
+    },
+    {
+      "file": "xml/MyVideoNav.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Addon.OpenSettings($INFO[Container.PluginName])",
+      "name": "addon.opensettings"
+    },
+    {
+      "file": "xml/PlayerControls.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "RunScript($INFO[Skin.String(LyricScript_Path)])",
+      "name": "runscript"
+    },
+    {
+      "file": "xml/skin.horizonzv.script-gto-info.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "RunPlugin(plugin://script.service.gto?action=switch_channel&pvrid=$INFO[Window(Home).Property(GTO.Info.ChannelID)]&item=$INFO[Window(Home).Property(GTO.Info.Item)])",
+      "name": "runplugin"
+    },
+    {
+      "file": "xml/skin.horizonzv.script-gto-info.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "RunPlugin(plugin://script.service.gto?action=record&broadcastid=$INFO[Window(Home).Property(GTO.Info.BroadcastID)]&item=$INFO[Window(Home).Property(GTO.Info.Item)])",
+      "name": "runplugin"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "SetProperty(SSD,\"$LOCALIZE[31200]\",skinsettings)",
+      "name": "setproperty"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "SetProperty(SSD,\"$LOCALIZE[31201]\",skinsettings)",
+      "name": "setproperty"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "SetProperty(SSD,\"$LOCALIZE[31202]\",skinsettings)",
+      "name": "setproperty"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "SetProperty(SSD,\"$LOCALIZE[31203]\",skinsettings)",
+      "name": "setproperty"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "SetProperty(SSD,\"$LOCALIZE[31204]\",skinsettings)",
+      "name": "setproperty"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "SetProperty(SSD,\"$LOCALIZE[31205]\",skinsettings)",
+      "name": "setproperty"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "SetProperty(SSD,\"$LOCALIZE[31206]\",skinsettings)",
+      "name": "setproperty"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "SetProperty(SSD,\"$LOCALIZE[31207]\",skinsettings)",
+      "name": "setproperty"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "SetProperty(SSD,\"$LOCALIZE[31208]\",skinsettings)",
+      "name": "setproperty"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "SetProperty(SSD,\"$LOCALIZE[31210]\",skinsettings)",
+      "name": "setproperty"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "SetProperty(SSD,\"$LOCALIZE[31212]\",skinsettings)",
+      "name": "setproperty"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "SetProperty(SSD,\"$LOCALIZE[31213]\",skinsettings)",
+      "name": "setproperty"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "SetProperty(SSD,\"$LOCALIZE[31215]\",skinsettings)",
+      "name": "setproperty"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "SetProperty(SSD,\"$LOCALIZE[31216]\",skinsettings)",
+      "name": "setproperty"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "SetProperty(SSD,\"$LOCALIZE[31217]\",skinsettings)",
+      "name": "setproperty"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "SetProperty(SSD,\"$LOCALIZE[31218]\",skinsettings)",
+      "name": "setproperty"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "SetProperty(SSD,\"$LOCALIZE[31219]\",skinsettings)",
+      "name": "setproperty"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "SetProperty(SSD,\"$LOCALIZE[31220]\",skinsettings)",
+      "name": "setproperty"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "SetProperty(SSD,\"$LOCALIZE[31221]\",skinsettings)",
+      "name": "setproperty"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "SetProperty(SSD,\"$LOCALIZE[31222]\",skinsettings)",
+      "name": "setproperty"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "SetProperty(SSD,\"$LOCALIZE[31223]\",skinsettings)",
+      "name": "setproperty"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "SetProperty(SSD,\"$LOCALIZE[31224]\",skinsettings)",
+      "name": "setproperty"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Skin.SelectBool(31324, $VAR[ColorAkzentVar])",
+      "name": "skin.selectbool"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "SetProperty(SSD,\"$LOCALIZE[31225]\",skinsettings)",
+      "name": "setproperty"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "SetProperty(SSD,\"$LOCALIZE[31226]\",skinsettings)",
+      "name": "setproperty"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "SetProperty(SSD,\"$LOCALIZE[31227]\",skinsettings)",
+      "name": "setproperty"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "SetProperty(SSD,\"$LOCALIZE[31228]\",skinsettings)",
+      "name": "setproperty"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "SetProperty(SSD,\"$LOCALIZE[31229]\",skinsettings)",
+      "name": "setproperty"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "SetProperty(SSD,\"$LOCALIZE[31230]\",skinsettings)",
+      "name": "setproperty"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "SetProperty(SSD,\"$LOCALIZE[31231]\",skinsettings)",
+      "name": "setproperty"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "SetProperty(SSD,\"$LOCALIZE[31232]\",skinsettings)",
+      "name": "setproperty"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "SetProperty(SSD,\"$LOCALIZE[31233]\",skinsettings)",
+      "name": "setproperty"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "SetProperty(SSD,\"$LOCALIZE[31234]\",skinsettings)",
+      "name": "setproperty"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "SetProperty(SSD,\"$LOCALIZE[31235]\",skinsettings)",
+      "name": "setproperty"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "SetProperty(SSD,\"$LOCALIZE[31236]\",skinsettings)",
+      "name": "setproperty"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "SetProperty(SSD,\"$LOCALIZE[31237]\",skinsettings)",
+      "name": "setproperty"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "SetProperty(SSD,\"$LOCALIZE[31238]\",skinsettings)",
+      "name": "setproperty"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "SetProperty(SSD,\"$LOCALIZE[31239]\",skinsettings)",
+      "name": "setproperty"
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "SetProperty(SSD,\"$LOCALIZE[31240]\",skinsettings)",
+      "name": "setproperty"
+    },
+    {
+      "file": "xml/Startup.xml",
+      "element": "onload",
+      "param": null,
+      "value": "SetVolume($INFO[Skin.String(start_volume)])",
+      "name": "setvolume"
+    },
+    {
+      "file": "xml/Startup.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "XBMC.PlayMedia($INFO[Skin.String(Startup_Playlist_Path)])",
+      "name": "playmedia"
+    },
+    {
+      "file": "xml/Startup.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "ReplaceWindow($INFO[System.StartupWindow])",
+      "name": "replacewindow"
+    },
+    {
+      "file": "xml/View_50_List.xml",
+      "element": "onright",
+      "param": null,
+      "value": "$PARAM[viewid]1"
+    },
+    {
+      "file": "xml/View_50_List.xml",
+      "element": "onup",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/View_50_List.xml",
+      "element": "ondown",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/View_50_List.xml",
+      "element": "param",
+      "param": "onleft",
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/View_50_List.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "Control.SetFocus($PARAM[viewid])",
+      "name": "control.setfocus"
+    },
+    {
+      "file": "xml/View_515_Episode.xml",
+      "element": "onup",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/View_515_Episode.xml",
+      "element": "ondown",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/View_515_Episode.xml",
+      "element": "onright",
+      "param": null,
+      "value": "$PARAM[viewid]1"
+    },
+    {
+      "file": "xml/View_515_Episode.xml",
+      "element": "param",
+      "param": "onleft",
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/View_515_Episode.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "Control.SetFocus($PARAM[viewid])",
+      "name": "control.setfocus"
+    },
+    {
+      "file": "xml/View_562_Showcase.xml",
+      "element": "onleft",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/View_562_Showcase.xml",
+      "element": "onright",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/View_562_Showcase.xml",
+      "element": "ondown",
+      "param": null,
+      "value": "$PARAM[viewid]1"
+    },
+    {
+      "file": "xml/View_562_Showcase.xml",
+      "element": "param",
+      "param": "onup",
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/View_562_Showcase.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "Control.SetFocus($PARAM[viewid])",
+      "name": "control.setfocus"
+    },
+    {
+      "file": "xml/View_722_RightList.xml",
+      "element": "onright",
+      "param": null,
+      "value": "$PARAM[viewid]1"
+    },
+    {
+      "file": "xml/View_722_RightList.xml",
+      "element": "onup",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/View_722_RightList.xml",
+      "element": "ondown",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/View_722_RightList.xml",
+      "element": "param",
+      "param": "onleft",
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/View_722_RightList.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "Control.SetFocus($PARAM[viewid])",
+      "name": "control.setfocus"
+    },
+    {
+      "file": "xml/View_Movie_057_Banner.xml",
+      "element": "onright",
+      "param": null,
+      "value": "$PARAM[viewid]1"
+    },
+    {
+      "file": "xml/View_Movie_057_Banner.xml",
+      "element": "onup",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/View_Movie_057_Banner.xml",
+      "element": "ondown",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/View_Movie_057_Banner.xml",
+      "element": "param",
+      "param": "onleft",
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/View_Movie_057_Banner.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "Control.SetFocus($PARAM[viewid])",
+      "name": "control.setfocus"
+    },
+    {
+      "file": "xml/View_Movie_302_3Panel.xml",
+      "element": "onleft",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/View_Movie_302_3Panel.xml",
+      "element": "onleft",
+      "param": null,
+      "value": "$PARAM[viewid]1"
+    },
+    {
+      "file": "xml/View_Movie_302_3Panel.xml",
+      "element": "onup",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/View_Movie_302_3Panel.xml",
+      "element": "ondown",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/View_Movie_302_3Panel.xml",
+      "element": "param",
+      "param": "onright1",
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/View_Movie_302_3Panel.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "Control.SetFocus($PARAM[viewid])",
+      "name": "control.setfocus"
+    },
+    {
+      "file": "xml/View_Movie_401_Fanart.xml",
+      "element": "onleft",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/View_Movie_401_Fanart.xml",
+      "element": "onright",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/View_Movie_401_Fanart.xml",
+      "element": "ondown",
+      "param": null,
+      "value": "$PARAM[viewid]1"
+    },
+    {
+      "file": "xml/View_Movie_401_Fanart.xml",
+      "element": "param",
+      "param": "onup",
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/View_Movie_401_Fanart.xml",
+      "element": "ondown",
+      "param": null,
+      "value": "Control.SetFocus($PARAM[viewid])",
+      "name": "control.setfocus"
+    },
+    {
+      "file": "xml/View_Movie_401_Fanart.xml",
+      "element": "onleft",
+      "param": null,
+      "value": "Control.Move($PARAM[viewid],-1)",
+      "name": "control.move"
+    },
+    {
+      "file": "xml/View_Movie_401_Fanart.xml",
+      "element": "onright",
+      "param": null,
+      "value": "Control.Move($PARAM[viewid],1)",
+      "name": "control.move"
+    },
+    {
+      "file": "xml/View_Movie_401_Fanart.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "Control.SetFocus($PARAM[viewid])",
+      "name": "control.setfocus"
+    },
+    {
+      "file": "xml/View_Movie_402_Fanart_Episode.xml",
+      "element": "onleft",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/View_Movie_402_Fanart_Episode.xml",
+      "element": "onright",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/View_Movie_402_Fanart_Episode.xml",
+      "element": "ondown",
+      "param": null,
+      "value": "$PARAM[viewid]1"
+    },
+    {
+      "file": "xml/View_Movie_402_Fanart_Episode.xml",
+      "element": "param",
+      "param": "onup",
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/View_Movie_402_Fanart_Episode.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "Control.SetFocus($PARAM[viewid])",
+      "name": "control.setfocus"
+    },
+    {
+      "file": "xml/View_Movie_500_Panel.xml",
+      "element": "onleft",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/View_Movie_500_Panel.xml",
+      "element": "onright",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/View_Movie_500_Panel.xml",
+      "element": "ondown",
+      "param": null,
+      "value": "$PARAM[viewid]1"
+    },
+    {
+      "file": "xml/View_Movie_500_Panel.xml",
+      "element": "param",
+      "param": "onup",
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/View_Movie_500_Panel.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "Control.SetFocus($PARAM[viewid])",
+      "name": "control.setfocus"
+    },
+    {
+      "file": "xml/View_Movie_502_Don.xml",
+      "element": "onright",
+      "param": null,
+      "value": "$PARAM[viewid]1"
+    },
+    {
+      "file": "xml/View_Movie_502_Don.xml",
+      "element": "onup",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/View_Movie_502_Don.xml",
+      "element": "ondown",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/View_Movie_502_Don.xml",
+      "element": "param",
+      "param": "onleft",
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/View_Movie_502_Don.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "Control.SetFocus($PARAM[viewid])",
+      "name": "control.setfocus"
+    },
+    {
+      "file": "xml/View_Movie_503_MediaInfo.xml",
+      "element": "onright",
+      "param": null,
+      "value": "$PARAM[viewid]1"
+    },
+    {
+      "file": "xml/View_Movie_503_MediaInfo.xml",
+      "element": "onup",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/View_Movie_503_MediaInfo.xml",
+      "element": "ondown",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/View_Movie_503_MediaInfo.xml",
+      "element": "param",
+      "param": "onleft",
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/View_Movie_503_MediaInfo.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "Control.SetFocus($PARAM[viewid])",
+      "name": "control.setfocus"
+    },
+    {
+      "file": "xml/View_Movie_505_Wide.xml",
+      "element": "onright",
+      "param": null,
+      "value": "$PARAM[viewid]1"
+    },
+    {
+      "file": "xml/View_Movie_505_Wide.xml",
+      "element": "onup",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/View_Movie_505_Wide.xml",
+      "element": "ondown",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/View_Movie_505_Wide.xml",
+      "element": "param",
+      "param": "onleft",
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/View_Movie_505_Wide.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "Control.SetFocus($PARAM[viewid])",
+      "name": "control.setfocus"
+    },
+    {
+      "file": "xml/View_Movie_721_RightList.xml",
+      "element": "onright",
+      "param": null,
+      "value": "$PARAM[viewid]1"
+    },
+    {
+      "file": "xml/View_Movie_721_RightList.xml",
+      "element": "onup",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/View_Movie_721_RightList.xml",
+      "element": "ondown",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/View_Movie_721_RightList.xml",
+      "element": "param",
+      "param": "onleft",
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/View_Movie_721_RightList.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "Control.SetFocus($PARAM[viewid])",
+      "name": "control.setfocus"
+    },
+    {
+      "file": "xml/View_Movie_740_BigWall.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "Control.SetFocus($PARAM[viewid])",
+      "name": "control.setfocus"
+    },
+    {
+      "file": "xml/View_Movie_742_Wall.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "Control.SetFocus($PARAM[viewid])",
+      "name": "control.setfocus"
+    },
+    {
+      "file": "xml/View_Movie_742_Wall.xml",
+      "element": "onright",
+      "param": null,
+      "value": "$PARAM[id]1"
+    },
+    {
+      "file": "xml/View_Movie_742_Wall.xml",
+      "element": "onup",
+      "param": null,
+      "value": "$PARAM[id]"
+    },
+    {
+      "file": "xml/View_Movie_742_Wall.xml",
+      "element": "ondown",
+      "param": null,
+      "value": "$PARAM[id]"
+    },
+    {
+      "file": "xml/View_Movie_742_Wall.xml",
+      "element": "param",
+      "param": "onleft",
+      "value": "$PARAM[id]"
+    },
+    {
+      "file": "xml/View_Music_058_Banner.xml",
+      "element": "onright",
+      "param": null,
+      "value": "$PARAM[viewid]1"
+    },
+    {
+      "file": "xml/View_Music_058_Banner.xml",
+      "element": "onup",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/View_Music_058_Banner.xml",
+      "element": "ondown",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/View_Music_058_Banner.xml",
+      "element": "param",
+      "param": "onleft",
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/View_Music_058_Banner.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "Control.SetFocus($PARAM[viewid])",
+      "name": "control.setfocus"
+    },
+    {
+      "file": "xml/View_Music_506_InfoList.xml",
+      "element": "onright",
+      "param": null,
+      "value": "$PARAM[viewid]1"
+    },
+    {
+      "file": "xml/View_Music_506_InfoList.xml",
+      "element": "onup",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/View_Music_506_InfoList.xml",
+      "element": "ondown",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/View_Music_506_InfoList.xml",
+      "element": "param",
+      "param": "onleft",
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/View_Music_506_InfoList.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "Control.SetFocus($PARAM[viewid])",
+      "name": "control.setfocus"
+    },
+    {
+      "file": "xml/View_Music_509_Fanart.xml",
+      "element": "ondown",
+      "param": null,
+      "value": "Control.SetFocus($PARAM[viewid])",
+      "name": "control.setfocus"
+    },
+    {
+      "file": "xml/View_Music_509_Fanart.xml",
+      "element": "onleft",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/View_Music_509_Fanart.xml",
+      "element": "onright",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/View_Music_509_Fanart.xml",
+      "element": "ondown",
+      "param": null,
+      "value": "$PARAM[viewid]1"
+    },
+    {
+      "file": "xml/View_Music_509_Fanart.xml",
+      "element": "param",
+      "param": "onup",
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/View_Music_509_Fanart.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "Control.SetFocus($PARAM[viewid])",
+      "name": "control.setfocus"
+    },
+    {
+      "file": "xml/View_Music_512_ArtistMediaList.xml",
+      "element": "onright",
+      "param": null,
+      "value": "$PARAM[viewid]1"
+    },
+    {
+      "file": "xml/View_Music_512_ArtistMediaList.xml",
+      "element": "onup",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/View_Music_512_ArtistMediaList.xml",
+      "element": "ondown",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/View_Music_512_ArtistMediaList.xml",
+      "element": "param",
+      "param": "onleft",
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/View_Music_512_ArtistMediaList.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "Control.SetFocus($PARAM[viewid])",
+      "name": "control.setfocus"
+    },
+    {
+      "file": "xml/View_Music_570_DiscFlow.xml",
+      "element": "onleft",
+      "param": null,
+      "value": "$PARAM[viewid]1"
+    },
+    {
+      "file": "xml/View_Music_570_DiscFlow.xml",
+      "element": "onup",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/View_Music_570_DiscFlow.xml",
+      "element": "ondown",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/View_Music_570_DiscFlow.xml",
+      "element": "param",
+      "param": "onright1",
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/View_Music_741_CoverWall.xml",
+      "element": "onright",
+      "param": null,
+      "value": "$PARAM[viewid]1"
+    },
+    {
+      "file": "xml/View_Music_741_CoverWall.xml",
+      "element": "onup",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/View_Music_741_CoverWall.xml",
+      "element": "ondown",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/View_Music_741_CoverWall.xml",
+      "element": "param",
+      "param": "onleft",
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/View_Music_741_CoverWall.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "Control.SetFocus($PARAM[viewid])",
+      "name": "control.setfocus"
+    },
+    {
+      "file": "xml/Views_Addon_Browser.xml",
+      "element": "onright",
+      "param": null,
+      "value": "$PARAM[viewid]1"
+    },
+    {
+      "file": "xml/Views_Addon_Browser.xml",
+      "element": "onup",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/Views_Addon_Browser.xml",
+      "element": "ondown",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/Views_Addon_Browser.xml",
+      "element": "param",
+      "param": "onleft",
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/Views_Addon_Browser.xml",
+      "element": "onright",
+      "param": null,
+      "value": "$PARAM[viewid]1"
+    },
+    {
+      "file": "xml/Views_Addon_Browser.xml",
+      "element": "onup",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/Views_Addon_Browser.xml",
+      "element": "ondown",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/Views_Addon_Browser.xml",
+      "element": "param",
+      "param": "onleft",
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/Views_Pictures.xml",
+      "element": "onleft",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/Views_Pictures.xml",
+      "element": "onright",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/Views_Pictures.xml",
+      "element": "ondown",
+      "param": null,
+      "value": "$PARAM[viewid]1"
+    },
+    {
+      "file": "xml/Views_Pictures.xml",
+      "element": "param",
+      "param": "onup",
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/Views_Pictures.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "Control.SetFocus($PARAM[viewid])",
+      "name": "control.setfocus"
+    },
+    {
+      "file": "xml/Views_Pictures.xml",
+      "element": "onright",
+      "param": null,
+      "value": "$PARAM[viewid]1"
+    },
+    {
+      "file": "xml/Views_Pictures.xml",
+      "element": "onup",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/Views_Pictures.xml",
+      "element": "ondown",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/Views_Pictures.xml",
+      "element": "param",
+      "param": "onleft",
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/Views_Pictures.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "Control.SetFocus($PARAM[viewid])",
+      "name": "control.setfocus"
+    },
+    {
+      "file": "xml/Views_Pictures.xml",
+      "element": "onright",
+      "param": null,
+      "value": "$PARAM[viewid]1"
+    },
+    {
+      "file": "xml/Views_Pictures.xml",
+      "element": "onup",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/Views_Pictures.xml",
+      "element": "ondown",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/Views_Pictures.xml",
+      "element": "param",
+      "param": "onleft",
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/Views_Pictures.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "Control.SetFocus($PARAM[viewid])",
+      "name": "control.setfocus"
+    },
+    {
+      "file": "xml/Views_PVR_Channels.xml",
+      "element": "onright",
+      "param": null,
+      "value": "$PARAM[viewid]1"
+    },
+    {
+      "file": "xml/Views_PVR_Channels.xml",
+      "element": "onup",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/Views_PVR_Channels.xml",
+      "element": "ondown",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/Views_PVR_Channels.xml",
+      "element": "onleft",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/Views_PVR_Guide.xml",
+      "element": "onright",
+      "param": null,
+      "value": "$PARAM[viewid]1"
+    },
+    {
+      "file": "xml/Views_PVR_Guide.xml",
+      "element": "onup",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/Views_PVR_Guide.xml",
+      "element": "ondown",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/Views_PVR_Guide.xml",
+      "element": "onleft",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/Views_PVR_Guide.xml",
+      "element": "onright",
+      "param": null,
+      "value": "$PARAM[viewid]1"
+    },
+    {
+      "file": "xml/Views_PVR_Guide.xml",
+      "element": "onup",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/Views_PVR_Guide.xml",
+      "element": "ondown",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/Views_PVR_Guide.xml",
+      "element": "onleft",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/Views_PVR_Guide.xml",
+      "element": "onright",
+      "param": null,
+      "value": "$PARAM[viewid]1"
+    },
+    {
+      "file": "xml/Views_PVR_Guide.xml",
+      "element": "onup",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/Views_PVR_Guide.xml",
+      "element": "ondown",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/Views_PVR_Guide.xml",
+      "element": "onleft",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/Views_PVR_Recordings.xml",
+      "element": "onright",
+      "param": null,
+      "value": "$PARAM[viewid]1"
+    },
+    {
+      "file": "xml/Views_PVR_Recordings.xml",
+      "element": "onup",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/Views_PVR_Recordings.xml",
+      "element": "ondown",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/Views_PVR_Recordings.xml",
+      "element": "onleft",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/Views_PVR_Search.xml",
+      "element": "onright",
+      "param": null,
+      "value": "$PARAM[viewid]1"
+    },
+    {
+      "file": "xml/Views_PVR_Search.xml",
+      "element": "onup",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/Views_PVR_Search.xml",
+      "element": "ondown",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/Views_PVR_Search.xml",
+      "element": "onleft",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/Views_PVR_Timers.xml",
+      "element": "onright",
+      "param": null,
+      "value": "$PARAM[viewid]1"
+    },
+    {
+      "file": "xml/Views_PVR_Timers.xml",
+      "element": "onup",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/Views_PVR_Timers.xml",
+      "element": "ondown",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    },
+    {
+      "file": "xml/Views_PVR_Timers.xml",
+      "element": "onleft",
+      "param": null,
+      "value": "$PARAM[viewid]"
+    }
+  ],
+  "nested": [
+    {
+      "file": "xml/Custom_1155_FirstRun.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Action(back)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "back",
+      "nested_name": "back"
+    },
+    {
+      "file": "xml/Custom_1155_FirstRun.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Action(back)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "back",
+      "nested_name": "back"
+    },
+    {
+      "file": "xml/Custom_1155_FirstRun.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Action(back)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "back",
+      "nested_name": "back"
+    },
+    {
+      "file": "xml/Custom_1200_Dashboard.xml",
+      "element": "param",
+      "param": "onclick",
+      "value": "Action(back)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "back",
+      "nested_name": "back"
+    },
+    {
+      "file": "xml/Custom_1200_Dashboard.xml",
+      "element": "ondown",
+      "param": null,
+      "value": "Action(back)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "back",
+      "nested_name": "back"
+    },
+    {
+      "file": "xml/Custom_1301_HomeMenuItemsPosition.xml",
+      "element": "onleft",
+      "param": null,
+      "value": "Action(back)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "back",
+      "nested_name": "back"
+    },
+    {
+      "file": "xml/DialogButtonMenu.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "AlarmClock(shutdowntimer,Shutdown())",
+      "name": "alarmclock",
+      "wrapper": "alarmclock",
+      "nested_value": "Shutdown()",
+      "nested_name": "shutdown"
+    },
+    {
+      "file": "xml/DialogContextMenu.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Action(close)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "close",
+      "nested_name": "close"
+    },
+    {
+      "file": "xml/DialogMusicInfo.xml",
+      "element": "param",
+      "param": "onclick",
+      "value": "Action(close)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "close",
+      "nested_name": "close"
+    },
+    {
+      "file": "xml/DialogPVRChannelGuide.xml",
+      "element": "onleft",
+      "param": null,
+      "value": "Action(back)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "back",
+      "nested_name": "back"
+    },
+    {
+      "file": "xml/DialogVideoInfo.xml",
+      "element": "param",
+      "param": "onclick",
+      "value": "Action(close)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "close",
+      "nested_name": "close"
+    },
+    {
+      "file": "xml/GameOSD.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Action(close)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "close",
+      "nested_name": "close"
+    },
+    {
+      "file": "xml/Home.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "action(up)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "up",
+      "nested_name": "up"
+    },
+    {
+      "file": "xml/Home.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "action(up)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "up",
+      "nested_name": "up"
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "param",
+      "param": "onclick",
+      "value": "Action(back)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "back",
+      "nested_name": "back"
+    },
+    {
+      "file": "xml/Includes_JumpSMS.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Action(JumpSMS2)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "JumpSMS2",
+      "nested_name": "jumpsms2"
+    },
+    {
+      "file": "xml/Includes_JumpSMS.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Action(JumpSMS3)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "JumpSMS3",
+      "nested_name": "jumpsms3"
+    },
+    {
+      "file": "xml/Includes_JumpSMS.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Action(JumpSMS4)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "JumpSMS4",
+      "nested_name": "jumpsms4"
+    },
+    {
+      "file": "xml/Includes_JumpSMS.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Action(JumpSMS5)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "JumpSMS5",
+      "nested_name": "jumpsms5"
+    },
+    {
+      "file": "xml/Includes_JumpSMS.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Action(JumpSMS6)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "JumpSMS6",
+      "nested_name": "jumpsms6"
+    },
+    {
+      "file": "xml/Includes_JumpSMS.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Action(JumpSMS7)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "JumpSMS7",
+      "nested_name": "jumpsms7"
+    },
+    {
+      "file": "xml/Includes_JumpSMS.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Action(JumpSMS8)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "JumpSMS8",
+      "nested_name": "jumpsms8"
+    },
+    {
+      "file": "xml/Includes_JumpSMS.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Action(JumpSMS9)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "JumpSMS9",
+      "nested_name": "jumpsms9"
+    },
+    {
+      "file": "xml/Includes_JumpSMS.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Action(JumpSMS2)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "JumpSMS2",
+      "nested_name": "jumpsms2"
+    },
+    {
+      "file": "xml/Includes_JumpSMS.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Action(JumpSMS3)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "JumpSMS3",
+      "nested_name": "jumpsms3"
+    },
+    {
+      "file": "xml/Includes_JumpSMS.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Action(JumpSMS4)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "JumpSMS4",
+      "nested_name": "jumpsms4"
+    },
+    {
+      "file": "xml/Includes_JumpSMS.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Action(JumpSMS5)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "JumpSMS5",
+      "nested_name": "jumpsms5"
+    },
+    {
+      "file": "xml/Includes_JumpSMS.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Action(JumpSMS6)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "JumpSMS6",
+      "nested_name": "jumpsms6"
+    },
+    {
+      "file": "xml/Includes_JumpSMS.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Action(JumpSMS7)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "JumpSMS7",
+      "nested_name": "jumpsms7"
+    },
+    {
+      "file": "xml/Includes_JumpSMS.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Action(JumpSMS8)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "JumpSMS8",
+      "nested_name": "jumpsms8"
+    },
+    {
+      "file": "xml/Includes_JumpSMS.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Action(JumpSMS9)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "JumpSMS9",
+      "nested_name": "jumpsms9"
+    },
+    {
+      "file": "xml/Includes_TouchButtons.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Action(menu)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "menu",
+      "nested_name": "menu"
+    },
+    {
+      "file": "xml/Includes_ViewTypeList.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Action(down)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "down",
+      "nested_name": "down"
+    },
+    {
+      "file": "xml/Includes_ViewTypeList.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Action(down)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "down",
+      "nested_name": "down"
+    },
+    {
+      "file": "xml/Includes_ViewTypeList.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Action(down)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "down",
+      "nested_name": "down"
+    },
+    {
+      "file": "xml/Includes_ViewTypeList.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Action(down)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "down",
+      "nested_name": "down"
+    },
+    {
+      "file": "xml/Includes_ViewTypeList.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Action(down)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "down",
+      "nested_name": "down"
+    },
+    {
+      "file": "xml/Includes_ViewTypeList.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Action(down)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "down",
+      "nested_name": "down"
+    },
+    {
+      "file": "xml/Includes_ViewTypeList.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Action(down)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "down",
+      "nested_name": "down"
+    },
+    {
+      "file": "xml/Includes_ViewTypeList.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Action(down)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "down",
+      "nested_name": "down"
+    },
+    {
+      "file": "xml/Includes_ViewTypeList.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Action(down)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "down",
+      "nested_name": "down"
+    },
+    {
+      "file": "xml/Includes_ViewTypeList.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Action(down)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "down",
+      "nested_name": "down"
+    },
+    {
+      "file": "xml/Includes_ViewTypeList.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Action(down)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "down",
+      "nested_name": "down"
+    },
+    {
+      "file": "xml/Includes_ViewTypeList.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Action(down)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "down",
+      "nested_name": "down"
+    },
+    {
+      "file": "xml/Includes_ViewTypeList.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Action(down)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "down",
+      "nested_name": "down"
+    },
+    {
+      "file": "xml/Includes_ViewTypeList.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Action(down)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "down",
+      "nested_name": "down"
+    },
+    {
+      "file": "xml/Includes_ViewTypeList.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Action(down)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "down",
+      "nested_name": "down"
+    },
+    {
+      "file": "xml/Includes_ViewTypeList.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Action(down)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "down",
+      "nested_name": "down"
+    },
+    {
+      "file": "xml/Includes_ViewTypeList.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Action(down)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "down",
+      "nested_name": "down"
+    },
+    {
+      "file": "xml/Includes_ViewTypeList.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Action(down)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "down",
+      "nested_name": "down"
+    },
+    {
+      "file": "xml/Includes_ViewTypeList.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Action(down)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "down",
+      "nested_name": "down"
+    },
+    {
+      "file": "xml/Includes_ViewTypeList.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Action(down)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "down",
+      "nested_name": "down"
+    },
+    {
+      "file": "xml/Includes_ViewTypeList.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Action(down)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "down",
+      "nested_name": "down"
+    },
+    {
+      "file": "xml/Includes_ViewTypeList.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Action(down)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "down",
+      "nested_name": "down"
+    },
+    {
+      "file": "xml/Includes_ViewTypeList.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Action(down)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "down",
+      "nested_name": "down"
+    },
+    {
+      "file": "xml/Includes_ViewTypeList.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Action(down)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "down",
+      "nested_name": "down"
+    },
+    {
+      "file": "xml/Includes_ViewTypeList.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Action(down)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "down",
+      "nested_name": "down"
+    },
+    {
+      "file": "xml/Includes_ViewTypeList.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Action(down)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "down",
+      "nested_name": "down"
+    },
+    {
+      "file": "xml/Includes_ViewTypeList.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Action(down)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "down",
+      "nested_name": "down"
+    },
+    {
+      "file": "xml/Includes_ViewTypeList.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Action(down)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "down",
+      "nested_name": "down"
+    },
+    {
+      "file": "xml/Includes_Widget_Param.xml",
+      "element": "ondown",
+      "param": null,
+      "value": "Action(FirstPage)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "FirstPage",
+      "nested_name": "firstpage"
+    },
+    {
+      "file": "xml/Includes_Widget_Param.xml",
+      "element": "ondown",
+      "param": null,
+      "value": "Action(FirstPage)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "FirstPage",
+      "nested_name": "firstpage"
+    },
+    {
+      "file": "xml/script-cu-lrclyrics-main.xml",
+      "element": "onfocus",
+      "param": null,
+      "value": "Action(back)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "back",
+      "nested_name": "back"
+    },
+    {
+      "file": "xml/SettingsProfile.xml",
+      "element": "onclick",
+      "param": null,
+      "value": "Action(back)",
+      "name": "action",
+      "wrapper": "action",
+      "nested_value": "back",
+      "nested_name": "back"
+    }
+  ],
+  "numeric_focus_targets": 1277
+}

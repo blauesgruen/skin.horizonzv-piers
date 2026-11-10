@@ -46,7 +46,7 @@
 			<height>40</height>
 			<aligny>center</aligny>
 			<align>left</align>
-			<font>font11</font>
+			<font>font12</font>
 			<label>[B]$INFO[Player.SeekNumeric(hh:mm:ss)][/B]</label>
 			<shadowcolor>black</shadowcolor>
 			<visible>!String.IsEmpty(Player.SeekNumeric)</visible>

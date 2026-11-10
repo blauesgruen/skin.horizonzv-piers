@@ -1,0 +1,204 @@
+{
+  "scope": "Unchanged Artist Slideshow 4.2.1 reads authored local NFO/WAV/image fixtures and drives actual skin controls. Fanart set off and all three info flags set on before playback.",
+  "cases": [
+    {
+      "expected": {
+        "case": "A",
+        "artist": "HorizonzV Local Artist A",
+        "audio": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-artist-local-info-czcbspao\\artist-A.wav",
+        "bio": "Authored local biography for skin fixture A.",
+        "albums": [
+          "Fixture A Album 1",
+          "Fixture A Album 2"
+        ],
+        "similar": [
+          "Fixture A Similar 1"
+        ]
+      },
+      "native_controls": {
+        "bio": "Authored local biography for skin fixture A.",
+        "groups": {
+          "1188": true,
+          "1189": true,
+          "1190": true,
+          "1193": true,
+          "1186": true
+        },
+        "window_visible": true,
+        "effective_sections": {
+          "albums": true,
+          "similar": true,
+          "bio": true
+        },
+        "counts": {
+          "albums": "2",
+          "similar": "1"
+        },
+        "albums": [
+          "Fixture A Album 1",
+          "Fixture A Album 2"
+        ],
+        "similar": [
+          "Fixture A Similar 1",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "first_icons": {
+          "albums": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-artist-local-info-czcbspao\\fixture.jpg",
+          "similar": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-artist-local-info-czcbspao\\fixture.jpg"
+        }
+      },
+      "properties": {
+        "Skin.AspectRatio": "16:9",
+        "Window(visualisation).Property(ArtistSlideshow.1.AlbumThumb)": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-artist-local-info-czcbspao\\fixture.jpg",
+        "Window(visualisation).Property(ArtistSlideshow.1.SimilarThumb)": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-artist-local-info-czcbspao\\fixture.jpg",
+        "Window(visualisation).Property(ArtistSlideshow.2.AlbumName)": "Fixture A Album 2"
+      }
+    },
+    {
+      "expected": {
+        "case": "B",
+        "artist": "HorizonzV Local Artist B",
+        "audio": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-artist-local-info-czcbspao\\artist-B.wav",
+        "bio": "Authored local biography for skin fixture B.",
+        "albums": [
+          "Fixture B Album 1"
+        ],
+        "similar": [
+          "Fixture B Similar 1",
+          "Fixture B Similar 2",
+          "Fixture B Similar 3",
+          "Fixture B Similar 4",
+          "Fixture B Similar 5"
+        ]
+      },
+      "native_controls": {
+        "bio": "Authored local biography for skin fixture B.",
+        "groups": {
+          "1188": true,
+          "1189": true,
+          "1190": true,
+          "1193": true,
+          "1186": true
+        },
+        "window_visible": true,
+        "effective_sections": {
+          "albums": true,
+          "similar": true,
+          "bio": true
+        },
+        "counts": {
+          "albums": "1",
+          "similar": "5"
+        },
+        "albums": [
+          "Fixture B Album 1",
+          ""
+        ],
+        "similar": [
+          "Fixture B Similar 1",
+          "Fixture B Similar 2",
+          "Fixture B Similar 3",
+          "Fixture B Similar 4",
+          "Fixture B Similar 5"
+        ],
+        "first_icons": {
+          "albums": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-artist-local-info-czcbspao\\fixture.jpg",
+          "similar": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-artist-local-info-czcbspao\\fixture.jpg"
+        }
+      },
+      "properties": {
+        "Skin.AspectRatio": "16:9",
+        "Window(visualisation).Property(ArtistSlideshow.1.AlbumThumb)": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-artist-local-info-czcbspao\\fixture.jpg",
+        "Window(visualisation).Property(ArtistSlideshow.1.SimilarThumb)": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-artist-local-info-czcbspao\\fixture.jpg",
+        "Window(visualisation).Property(ArtistSlideshow.2.AlbumName)": ""
+      }
+    },
+    {
+      "expected": {
+        "case": "Empty",
+        "artist": "HorizonzV Local Artist Empty",
+        "audio": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-artist-local-info-czcbspao\\artist-Empty.wav",
+        "bio": "",
+        "albums": [],
+        "similar": []
+      },
+      "native_controls": {
+        "bio": "",
+        "groups": {
+          "1188": false,
+          "1189": true,
+          "1190": false,
+          "1193": false,
+          "1186": true
+        },
+        "window_visible": true,
+        "effective_sections": {
+          "albums": false,
+          "similar": false,
+          "bio": false
+        },
+        "counts": {
+          "albums": "1",
+          "similar": "0"
+        },
+        "albums": [
+          "Fixture B Album 1",
+          ""
+        ],
+        "similar": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "first_icons": {
+          "albums": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-artist-local-info-czcbspao\\fixture.jpg",
+          "similar": ""
+        }
+      },
+      "properties": {
+        "Skin.AspectRatio": "16:9",
+        "Window(visualisation).Property(ArtistSlideshow.1.AlbumThumb)": "",
+        "Window(visualisation).Property(ArtistSlideshow.1.SimilarThumb)": "",
+        "Window(visualisation).Property(ArtistSlideshow.2.AlbumName)": ""
+      }
+    }
+  ],
+  "verified_files": {
+    "script.artistslideshow": 100,
+    "script.module.requests": 21,
+    "script.module.certifi": 7,
+    "script.module.chardet": 51,
+    "script.module.idna": 11,
+    "script.module.urllib3": 40,
+    "script.module.defusedxml": 16,
+    "script.module.future": 214,
+    "script.module.mutagen": 60
+  },
+  "observation_hooks": "IDs on existing info groups/biography textbox and offscreen read-only GUI-info/visibility probes in the real window; production expressions unchanged.",
+  "pid": 616,
+  "after_stop": {
+    "running": "",
+    "bio": ""
+  },
+  "cleanup": {
+    "process_exited": true,
+    "profile_settings_restored": true,
+    "music_databases_restored": true,
+    "skin_xml_restored": true,
+    "standard_provider_sources_unchanged": true,
+    "test_provider_copies_unchanged": true
+  },
+  "errors": [],
+  "limitations": [
+    "Absolute local NFO image paths and controlled biographies/list lengths only; no online source or relative-path variant tested.",
+    "Hidden containers may retain cached rows and raw child visibility; parent/window hierarchy was measured before judging effective display.",
+    "Autoscroll movement, every setting combination, more than 20 entries and all aspect ratios are not approved by these cases.",
+    "Own test settings temporarily disable CU LRC autostart; those settings are restored exactly.",
+    "Only observability IDs/read-only offscreen probes were added to the isolated XML, then removed by restoration."
+  ]
+}

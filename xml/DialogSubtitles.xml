@@ -39,7 +39,7 @@
                     <top>75</top>
                     <width>825</width>
                     <height>45</height>
-                    <label>301274 </label>
+                    <label>31251 </label>
                     <align>right</align>
                     <aligny>center</aligny>
                     <textcolor>grey1</textcolor>
@@ -125,7 +125,7 @@
                             <top>12</top>
                             <width>39</width>
                             <height>39</height>
-                            <texture>resource://resource.images.languageflags.colour/$INFO[ListItem.Thumb].png</texture>
+                            <texture>resource://resource.images.languageflags.colour/$INFO[ListItem.Art(thumb)].png</texture>
                         </control>
                         <control type="label">
                             <left>60</left>
@@ -197,7 +197,7 @@
                                 <top>12</top>
                                 <width>39</width>
                                 <height>39</height>
-                                <texture>resource://resource.images.languageflags.colour/$INFO[ListItem.Thumb].png</texture>
+                                <texture>resource://resource.images.languageflags.colour/$INFO[ListItem.Art(thumb)].png</texture>
                             </control>
                             <control type="label">
                                 <left>60</left>

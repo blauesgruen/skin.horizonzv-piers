@@ -1,0 +1,38 @@
+{
+  "sidebar_focus": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Control.HasFocus(305)": true,
+      "Window.IsVisible(weather)": true
+    }
+  },
+  "gui": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "currentwindow": {
+        "id": 12600,
+        "label": "Wetter"
+      }
+    }
+  },
+  "conditions": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Control.HasFocus(52)": true,
+      "Control.IsVisible(51)": false,
+      "Control.IsVisible(52)": true
+    }
+  },
+  "labels": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container(52).NumItems": "11",
+      "Window.Property(Weather.CurrentView)": "hourly"
+    }
+  },
+  "initial_attempt_note": "First Right was issued before the view transition settled; second Right after observing hourly view focused list 52. Not treated as a skin defect."
+}

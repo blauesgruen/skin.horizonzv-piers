@@ -1,0 +1,28 @@
+{
+  "scope": "Native idle-inhibit menu actions and official repository addon origin",
+  "rows": [
+    {
+      "before_inhibited": false,
+      "visible_items": [
+        "Exit",
+        "Power off system",
+        "Custom shutdown timer",
+        "Suspend",
+        "Hibernate",
+        "Reboot",
+        "Inhibit idle shutdown",
+        "Configure skin..."
+      ],
+      "clicked": "Inhibit idle shutdown",
+      "after_inhibited": true
+    }
+  ],
+  "pid": 31900,
+  "failure": "AssertionError({'actual': False, 'expected': True})",
+  "live_power_baseline_restored": true,
+  "cleanup": {
+    "process_exited": true,
+    "profile_restored": true,
+    "all_test_xml_match_production": true
+  }
+}

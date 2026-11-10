@@ -1,0 +1,90 @@
+{
+  "checked_on": "2026-11-10",
+  "scope": "ASM display contract: original writer methods and real skin variables in visible Kodi.\n\nSelects pure display-writing methods from installed ASM without importing its\nservice entry point. No playback, live recognition, QF request or addon edit.\n",
+  "passed": false,
+  "provider_version": "1.1.13",
+  "source_files": {
+    "service.py": "88ef9a51fe11916d26b6c245ddf71b3b1ed9a08ed5f6c9c5dfcb835c3303a71b",
+    "constants.py": "49f9771eb1d1d99e5744e75354bd302d4304bb01c266aee85439f8a41f0d8910",
+    "text_encoding.py": "b8364e139396676fb7ea5b3e6fa4e3b13b68bf9f6623b933a70d3a680f0980bf"
+  },
+  "skin_files": {
+    "Variables.xml": "e223d53d9def025b3916991ceafd1de4bcdef2e43b3ed22b04b245f597ea896c",
+    "MusicVisualisation.xml": "dd13475746098c0b1ccc3b99e3f98baa3de9ce12d6dd46f2458e59a3c9958bcf"
+  },
+  "label_expressions": {
+    "title": "$VAR[HomeOSDTitle]",
+    "label": "$VAR[HomeOSDLabel]",
+    "genre": "$VAR[RadioDE_Genre]",
+    "poster": "$VAR[NowPlayingPosterVar]",
+    "band": "$VAR[HomeOSDTitle]$INFO[Window(Home).Property(RadioMonitor.BandFormed), (,)]$INFO[Window(Home).Property(RadioMonitor.BandMembers),[COLOR=grey] - ,[/COLOR]]",
+    "album": "$INFO[Window(Home).Property(RadioMonitor.Album),$LOCALIZE[558]: ,]"
+  },
+  "previous_skin": "skin.metis",
+  "pid": 26968,
+  "native": {
+    "scope": "ASM display contract: original writer methods and real skin variables in visible Kodi.\n\nSelects pure display-writing methods from installed ASM without importing its\nservice entry point. No playback, live recognition, QF request or addon edit.\n",
+    "python_assertions_enabled": false,
+    "language": "German",
+    "cases": [
+      {
+        "name": "plain",
+        "values": {
+          "title": "",
+          "label": "",
+          "genre": "",
+          "poster": "",
+          "band": "",
+          "album": ""
+        },
+        "album_visible": true,
+        "mismatches": {
+          "genre": {
+            "expected": "Probe Genre",
+            "actual": ""
+          },
+          "poster": {
+            "expected": "special://skin/icon.png",
+            "actual": ""
+          },
+          "album": {
+            "expected": "Album: Probe Album",
+            "actual": ""
+          },
+          "band": {
+            "expected": "Probe Artist (1990)[COLOR=grey] - Member A / Member B[/COLOR]",
+            "actual": ""
+          },
+          "label": {
+            "expected": "Probe Song (2001)",
+            "actual": ""
+          },
+          "title": {
+            "expected": "Probe Artist",
+            "actual": ""
+          }
+        },
+        "screenshot": "asm_display_plain.png"
+      }
+    ],
+    "passed": false,
+    "failure": "RuntimeError('Display mismatch: plain')",
+    "trace": "Traceback (most recent call last):\n  File \"D:/Program Files/Kodi22/portable_data/addons/skin.horizonzv-piers/results/kodi22_runtime/run_asm_display_native_probe.py\", line 107, in inside_kodi\n    raise RuntimeError('Display mismatch: ' + name)\nRuntimeError: Display mismatch: plain\n",
+    "home_properties_restored": true
+  },
+  "failure": "RuntimeError('Native display check failed')",
+  "trace": "Traceback (most recent call last):\n  File \"D:\\Program Files\\Kodi22\\portable_data\\addons\\skin.horizonzv-piers\\results\\kodi22_runtime\\run_asm_display_native_probe.py\", line 180, in main\n    raise RuntimeError('Native display check failed')\nRuntimeError: Native display check failed\n",
+  "cleanup": {
+    "owned_process_exited": true,
+    "settings_restored": true,
+    "fixture_removed": true,
+    "provider_files_unchanged": true
+  },
+  "limits": [
+    "Original pure display setters with authored data only; no live service entry point imported.",
+    "No radio playback, metadata recognition, online artwork or QF backend verification.",
+    "No code change justified solely by supported names or passing controlled data."
+  ],
+  "classification": "Test-helper observation failure: ControlLabel.getLabel returned wrapper text, while native screenshot displayed the correct resolved values. Follow-up uses Control.GetLabel info labels.",
+  "screenshot_note": "Capture filenames subsequently overwritten by corrected follow-up; no retained baseline image evidence."
+}

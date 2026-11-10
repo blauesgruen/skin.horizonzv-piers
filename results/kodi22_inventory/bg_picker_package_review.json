@@ -1,0 +1,14 @@
+{
+  "checked_on": "2026-11-05",
+  "archive": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-bg-picker-package-edf6da046d4745b9a176f63ff252e0c5\\skin.horizonzv-1.22.0.1.zip",
+  "sha256": "8ba5f2955d777dbecfd8758ffe94ad2cd741ba13d44dbeb88996134883bfa2de",
+  "file_count": 295,
+  "crc_ok": true,
+  "all_entries_equal_workspace": true,
+  "xml_xsp_parsed": 180,
+  "changed_from_previous_test_package": [
+    "xml/Variables.xml",
+    "xml/script-skin_helper_service-ColorPicker.xml"
+  ],
+  "native_install_evidence": "../kodi22_runtime/bg_picker_install_checks.json"
+}

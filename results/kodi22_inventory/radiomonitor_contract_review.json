@@ -1,0 +1,1102 @@
+{
+  "checked_on": "2026-11-04",
+  "scope": "HorizonzV RadioMonitor window-property contracts only",
+  "upstream_constants": {
+    "source": "https://github.com/blauesgruen/service.audio.stream.monitor/blob/master/constants.py",
+    "modified": "2026-05-11T07:48:34Z",
+    "matches": [
+      {
+        "line": 173,
+        "text": "STATION        = 'RadioMonitor.Station'"
+      },
+      {
+        "line": 174,
+        "text": "TITLE          = 'RadioMonitor.Title'"
+      },
+      {
+        "line": 175,
+        "text": "ARTIST         = 'RadioMonitor.Artist'"
+      },
+      {
+        "line": 176,
+        "text": "ARTIST_DISPLAY = 'RadioMonitor.ArtistDisplay'"
+      },
+      {
+        "line": 177,
+        "text": "ALBUM          = 'RadioMonitor.Album'"
+      },
+      {
+        "line": 178,
+        "text": "ALBUM_DATE = 'RadioMonitor.AlbumDate'"
+      },
+      {
+        "line": 179,
+        "text": "GENRE      = 'RadioMonitor.Genre'"
+      },
+      {
+        "line": 180,
+        "text": "MBID       = 'RadioMonitor.ArtistMBID'"
+      },
+      {
+        "line": 181,
+        "text": "FIRST_REL  = 'RadioMonitor.FirstRelease'"
+      },
+      {
+        "line": 182,
+        "text": "STREAM_TTL = 'RadioMonitor.StreamTitle'"
+      },
+      {
+        "line": 183,
+        "text": "API_NOW    = 'RadioMonitor.ApiNowPlaying'"
+      },
+      {
+        "line": 184,
+        "text": "ICY_NOW    = 'RadioMonitor.IcyNowPlaying'"
+      },
+      {
+        "line": 185,
+        "text": "SOURCE     = 'RadioMonitor.Source'"
+      },
+      {
+        "line": 186,
+        "text": "SOURCE_DETAIL = 'RadioMonitor.SourceDetail'"
+      },
+      {
+        "line": 187,
+        "text": "SOURCE_SWAP_STATUS = 'RadioMonitor.SourceSwapStatus'"
+      },
+      {
+        "line": 188,
+        "text": "PLAYING    = 'RadioMonitor.Playing'"
+      },
+      {
+        "line": 189,
+        "text": "LOGO       = 'RadioMonitor.Logo'"
+      },
+      {
+        "line": 190,
+        "text": "BAND_FORM  = 'RadioMonitor.BandFormed'"
+      },
+      {
+        "line": 191,
+        "text": "BAND_MEM   = 'RadioMonitor.BandMembers'"
+      },
+      {
+        "line": 192,
+        "text": "MB_DUR_MS  = 'RadioMonitor.MBDurationMs'"
+      },
+      {
+        "line": 193,
+        "text": "MB_DUR_S   = 'RadioMonitor.MBDurationS'"
+      },
+      {
+        "line": 194,
+        "text": "TMO_TOTAL  = 'RadioMonitor.TimeoutTotal'"
+      },
+      {
+        "line": 195,
+        "text": "TMO_LEFT   = 'RadioMonitor.TimeoutRemaining'"
+      },
+      {
+        "line": 199,
+        "text": "RAW_STREAM_URL = 'RadioMonitor.Source.StreamUrl'"
+      },
+      {
+        "line": 200,
+        "text": "RAW_PLUGIN_URL = 'RadioMonitor.Source.PluginPlaybackUrl'"
+      },
+      {
+        "line": 201,
+        "text": "RAW_STREAM_HEADERS = 'RadioMonitor.Source.StreamHeaders'"
+      },
+      {
+        "line": 202,
+        "text": "RAW_ICY_METADATA = 'RadioMonitor.Source.IcyMetadataRaw'"
+      },
+      {
+        "line": 203,
+        "text": "RAW_ICY_STREAMTITLE = 'RadioMonitor.Source.IcyStreamTitleRaw'"
+      },
+      {
+        "line": 204,
+        "text": "RAW_ICY_PARSED = 'RadioMonitor.Source.IcyParsed'"
+      },
+      {
+        "line": 205,
+        "text": "RAW_PLAYING_ITEM = 'RadioMonitor.Source.PlayingItemRaw'"
+      },
+      {
+        "line": 206,
+        "text": "RAW_JSONRPC_PLAYER = 'RadioMonitor.Source.JsonRpcPlayerRaw'"
+      },
+      {
+        "line": 207,
+        "text": "RAW_LISTITEM = 'RadioMonitor.Source.ListItemRaw'"
+      },
+      {
+        "line": 208,
+        "text": "RAW_API_RADIODE_NOWPLAYING = 'RadioMonitor.Source.Api.RadioDeNowPlayingRaw'"
+      },
+      {
+        "line": 209,
+        "text": "RAW_API_TUNEIN_JSON = 'RadioMonitor.Source.Api.TuneInJsonRaw'"
+      },
+      {
+        "line": 210,
+        "text": "RAW_API_TUNEIN_TEXT = 'RadioMonitor.Source.Api.TuneInTextRaw'"
+      },
+      {
+        "line": 211,
+        "text": "VERIFIED_SOURCE_URL = 'RadioMonitor.VerifiedSourceUrl'"
+      },
+      {
+        "line": 212,
+        "text": "VERIFIED_SOURCE_BY = 'RadioMonitor.VerifiedSourceBy'"
+      },
+      {
+        "line": 213,
+        "text": "VERIFIED_SOURCE_CONF = 'RadioMonitor.VerifiedSourceConfidence'"
+      },
+      {
+        "line": 214,
+        "text": "QF_REQUEST_ID = 'RadioMonitor.QF.Request.Id'"
+      },
+      {
+        "line": 215,
+        "text": "QF_REQUEST_STATION = 'RadioMonitor.QF.Request.Station'"
+      },
+      {
+        "line": 216,
+        "text": "QF_REQUEST_STATION_ID = 'RadioMonitor.QF.Request.StationId'"
+      },
+      {
+        "line": 217,
+        "text": "QF_REQUEST_MODE = 'RadioMonitor.QF.Request.Mode'"
+      },
+      {
+        "line": 218,
+        "text": "QF_REQUEST_TS = 'RadioMonitor.QF.Request.Ts'"
+      },
+      {
+        "line": 219,
+        "text": "QF_RESPONSE_ID = 'RadioMonitor.QF.Response.Id'"
+      },
+      {
+        "line": 220,
+        "text": "QF_RESPONSE_STATUS = 'RadioMonitor.QF.Response.Status'"
+      },
+      {
+        "line": 221,
+        "text": "QF_RESPONSE_ARTIST = 'RadioMonitor.QF.Response.Artist'"
+      },
+      {
+        "line": 222,
+        "text": "QF_RESPONSE_TITLE = 'RadioMonitor.QF.Response.Title'"
+      },
+      {
+        "line": 223,
+        "text": "QF_RESPONSE_SOURCE = 'RadioMonitor.QF.Response.Source'"
+      },
+      {
+        "line": 224,
+        "text": "QF_RESPONSE_REASON = 'RadioMonitor.QF.Response.Reason'"
+      },
+      {
+        "line": 225,
+        "text": "QF_RESPONSE_META = 'RadioMonitor.QF.Response.Meta'"
+      },
+      {
+        "line": 226,
+        "text": "QF_RESPONSE_STATION_USED = 'RadioMonitor.QF.Response.StationUsed'"
+      },
+      {
+        "line": 227,
+        "text": "QF_RESPONSE_TS = 'RadioMonitor.QF.Response.Ts'"
+      },
+      {
+        "line": 228,
+        "text": "QF_RESULT = 'RadioMonitor.QF.Result'"
+      },
+      {
+        "line": 229,
+        "text": "QF_ENABLED = 'RadioMonitor.QF.Enabled'"
+      },
+      {
+        "line": 230,
+        "text": "AN_TRACE_ID = 'RadioMonitor.Analysis.TraceId'"
+      },
+      {
+        "line": 231,
+        "text": "AN_TRIGGER = 'RadioMonitor.Analysis.Trigger'"
+      },
+      {
+        "line": 232,
+        "text": "AN_WINNER_SOURCE = 'RadioMonitor.Analysis.WinnerSource'"
+      },
+      {
+        "line": 233,
+        "text": "AN_WINNER_PAIR = 'RadioMonitor.Analysis.WinnerPair'"
+      },
+      {
+        "line": 234,
+        "text": "AN_LAST_EVENT = 'RadioMonitor.Analysis.LastEvent'"
+      }
+    ]
+  },
+  "qf_upstream_status": "GitHub fetch of the declared repository master/addon.xml was unsuccessful; no current upstream availability claim.",
+  "limits": [
+    "Static source review; no online radio station or MusicBrainz/API result tested.",
+    "No external add-on code changed.",
+    "Writer presence does not guarantee a non-empty value, a successful upstream response, or timely clearing in every state.",
+    "Only the three listed installed ASM files were inspected for this property contract; no full external add-on compatibility claim."
+  ],
+  "installed_reference": {
+    "service.audio.stream.monitor": "1.1.6",
+    "service.audio.stream.monitor.qf": "0.1.7"
+  },
+  "active_skin_properties": 43,
+  "property_contracts": [
+    {
+      "property": "RadioMonitor.Album",
+      "skin_files": [
+        "xml/Includes_DebugInfo.xml",
+        "xml/MusicVisualisation.xml"
+      ],
+      "local_writer_calls": [
+        {
+          "file": "service.py",
+          "line": 4642,
+          "setter": "self.set_property_safe"
+        },
+        {
+          "file": "service.py",
+          "line": 4468,
+          "setter": "self.set_property_safe"
+        },
+        {
+          "file": "service.py",
+          "line": 5917,
+          "setter": "self.set_property_safe"
+        }
+      ],
+      "present_in_current_upstream_constants": true
+    },
+    {
+      "property": "RadioMonitor.AlbumDate",
+      "skin_files": [
+        "xml/Includes_DebugInfo.xml"
+      ],
+      "local_writer_calls": [
+        {
+          "file": "service.py",
+          "line": 4646,
+          "setter": "self.set_property_safe"
+        },
+        {
+          "file": "service.py",
+          "line": 4472,
+          "setter": "self.set_property_safe"
+        },
+        {
+          "file": "service.py",
+          "line": 5922,
+          "setter": "self.set_property_safe"
+        }
+      ],
+      "present_in_current_upstream_constants": true
+    },
+    {
+      "property": "RadioMonitor.Analysis.LastEvent",
+      "skin_files": [
+        "xml/Includes_DebugInfo.xml"
+      ],
+      "local_writer_calls": [
+        {
+          "file": "service.py",
+          "line": 3256,
+          "setter": "self.raw_sources.set_json"
+        }
+      ],
+      "present_in_current_upstream_constants": true
+    },
+    {
+      "property": "RadioMonitor.Analysis.TraceId",
+      "skin_files": [
+        "xml/Includes_DebugInfo.xml"
+      ],
+      "local_writer_calls": [
+        {
+          "file": "service.py",
+          "line": 3252,
+          "setter": "self.raw_sources.set_text"
+        }
+      ],
+      "present_in_current_upstream_constants": true
+    },
+    {
+      "property": "RadioMonitor.Analysis.Trigger",
+      "skin_files": [
+        "xml/Includes_DebugInfo.xml"
+      ],
+      "local_writer_calls": [
+        {
+          "file": "service.py",
+          "line": 3253,
+          "setter": "self.raw_sources.set_text"
+        }
+      ],
+      "present_in_current_upstream_constants": true
+    },
+    {
+      "property": "RadioMonitor.Analysis.WinnerPair",
+      "skin_files": [
+        "xml/Includes_DebugInfo.xml"
+      ],
+      "local_writer_calls": [
+        {
+          "file": "service.py",
+          "line": 3255,
+          "setter": "self.raw_sources.set_text"
+        }
+      ],
+      "present_in_current_upstream_constants": true
+    },
+    {
+      "property": "RadioMonitor.Analysis.WinnerSource",
+      "skin_files": [
+        "xml/Includes_DebugInfo.xml"
+      ],
+      "local_writer_calls": [
+        {
+          "file": "service.py",
+          "line": 3254,
+          "setter": "self.raw_sources.set_text"
+        }
+      ],
+      "present_in_current_upstream_constants": true
+    },
+    {
+      "property": "RadioMonitor.ApiNowPlaying",
+      "skin_files": [
+        "xml/Includes_DebugInfo.xml"
+      ],
+      "local_writer_calls": [
+        {
+          "file": "service.py",
+          "line": 2191,
+          "setter": "self.set_property_safe"
+        }
+      ],
+      "present_in_current_upstream_constants": true
+    },
+    {
+      "property": "RadioMonitor.Artist",
+      "skin_files": [
+        "xml/Includes_DebugInfo.xml"
+      ],
+      "local_writer_calls": [
+        {
+          "file": "service.py",
+          "line": 3115,
+          "setter": "self.set_property_safe"
+        },
+        {
+          "file": "service.py",
+          "line": 4658,
+          "setter": "self.set_property_safe"
+        },
+        {
+          "file": "service.py",
+          "line": 4484,
+          "setter": "self.set_property_safe"
+        },
+        {
+          "file": "service.py",
+          "line": 5764,
+          "setter": "self.set_property_safe"
+        },
+        {
+          "file": "service.py",
+          "line": 5937,
+          "setter": "self.set_property_safe"
+        }
+      ],
+      "present_in_current_upstream_constants": true
+    },
+    {
+      "property": "RadioMonitor.ArtistDisplay",
+      "skin_files": [
+        "xml/Custom_1400_MusicOverlay.xml",
+        "xml/Includes_DebugInfo.xml",
+        "xml/Includes_HomeOSD.xml",
+        "xml/Includes_SidePanel.xml",
+        "xml/MusicVisualisation.xml",
+        "xml/Variables.xml"
+      ],
+      "local_writer_calls": [
+        {
+          "file": "service.py",
+          "line": 3118,
+          "setter": "self.set_property_safe"
+        },
+        {
+          "file": "service.py",
+          "line": 4659,
+          "setter": "self.set_property_safe"
+        },
+        {
+          "file": "service.py",
+          "line": 4485,
+          "setter": "self.set_property_safe"
+        },
+        {
+          "file": "service.py",
+          "line": 5765,
+          "setter": "self.set_property_safe"
+        },
+        {
+          "file": "service.py",
+          "line": 5938,
+          "setter": "self.set_property_safe"
+        }
+      ],
+      "present_in_current_upstream_constants": true
+    },
+    {
+      "property": "RadioMonitor.ArtistMBID",
+      "skin_files": [
+        "xml/Includes_DebugInfo.xml"
+      ],
+      "local_writer_calls": [
+        {
+          "file": "service.py",
+          "line": 4650,
+          "setter": "self.set_property_safe"
+        },
+        {
+          "file": "service.py",
+          "line": 4476,
+          "setter": "self.set_property_safe"
+        },
+        {
+          "file": "service.py",
+          "line": 5927,
+          "setter": "self.set_property_safe"
+        }
+      ],
+      "present_in_current_upstream_constants": true
+    },
+    {
+      "property": "RadioMonitor.BandFormed",
+      "skin_files": [
+        "xml/Includes_DebugInfo.xml",
+        "xml/MusicVisualisation.xml"
+      ],
+      "local_writer_calls": [
+        {
+          "file": "service.py",
+          "line": 4681,
+          "setter": "self.set_property_safe"
+        },
+        {
+          "file": "service.py",
+          "line": 4491,
+          "setter": "self.set_property_safe"
+        },
+        {
+          "file": "service.py",
+          "line": 5976,
+          "setter": "self.set_property_safe"
+        }
+      ],
+      "present_in_current_upstream_constants": true
+    },
+    {
+      "property": "RadioMonitor.BandMembers",
+      "skin_files": [
+        "xml/Includes_DebugInfo.xml",
+        "xml/MusicVisualisation.xml"
+      ],
+      "local_writer_calls": [
+        {
+          "file": "service.py",
+          "line": 4685,
+          "setter": "self.set_property_safe"
+        },
+        {
+          "file": "service.py",
+          "line": 4495,
+          "setter": "self.set_property_safe"
+        },
+        {
+          "file": "service.py",
+          "line": 5981,
+          "setter": "self.set_property_safe"
+        }
+      ],
+      "present_in_current_upstream_constants": true
+    },
+    {
+      "property": "RadioMonitor.FirstRelease",
+      "skin_files": [
+        "xml/Includes_DebugInfo.xml",
+        "xml/Variables.xml"
+      ],
+      "local_writer_calls": [
+        {
+          "file": "service.py",
+          "line": 4654,
+          "setter": "self.set_property_safe"
+        },
+        {
+          "file": "service.py",
+          "line": 4480,
+          "setter": "self.set_property_safe"
+        },
+        {
+          "file": "service.py",
+          "line": 5932,
+          "setter": "self.set_property_safe"
+        }
+      ],
+      "present_in_current_upstream_constants": true
+    },
+    {
+      "property": "RadioMonitor.Genre",
+      "skin_files": [
+        "xml/Includes_DebugInfo.xml",
+        "xml/Variables.xml"
+      ],
+      "local_writer_calls": [
+        {
+          "file": "service.py",
+          "line": 4689,
+          "setter": "self.set_property_safe"
+        },
+        {
+          "file": "service.py",
+          "line": 4499,
+          "setter": "self.set_property_safe"
+        },
+        {
+          "file": "service.py",
+          "line": 5574,
+          "setter": "self.set_property_safe"
+        },
+        {
+          "file": "service.py",
+          "line": 5986,
+          "setter": "self.set_property_safe"
+        }
+      ],
+      "present_in_current_upstream_constants": true
+    },
+    {
+      "property": "RadioMonitor.IcyNowPlaying",
+      "skin_files": [
+        "xml/Includes_DebugInfo.xml"
+      ],
+      "local_writer_calls": [
+        {
+          "file": "service.py",
+          "line": 2278,
+          "setter": "self.set_property_safe"
+        }
+      ],
+      "present_in_current_upstream_constants": true
+    },
+    {
+      "property": "RadioMonitor.Logo",
+      "skin_files": [
+        "xml/Includes_DebugInfo.xml",
+        "xml/Variables.xml"
+      ],
+      "local_writer_calls": [
+        {
+          "file": "service.py",
+          "line": 2018,
+          "setter": "self.set_property_safe"
+        },
+        {
+          "file": "service.py",
+          "line": 6397,
+          "setter": "self.set_property_safe"
+        }
+      ],
+      "present_in_current_upstream_constants": true
+    },
+    {
+      "property": "RadioMonitor.MBDurationS",
+      "skin_files": [
+        "xml/Includes_DebugInfo.xml"
+      ],
+      "local_writer_calls": [
+        {
+          "file": "service.py",
+          "line": 1639,
+          "setter": "WINDOW.setProperty"
+        }
+      ],
+      "present_in_current_upstream_constants": true
+    },
+    {
+      "property": "RadioMonitor.Playing",
+      "skin_files": [
+        "xml/Includes_DebugInfo.xml"
+      ],
+      "local_writer_calls": [
+        {
+          "file": "service.py",
+          "line": 6403,
+          "setter": "WINDOW.setProperty"
+        }
+      ],
+      "present_in_current_upstream_constants": true
+    },
+    {
+      "property": "RadioMonitor.QF.Response.StationUsed",
+      "skin_files": [
+        "xml/Variables.xml"
+      ],
+      "local_writer_calls": [
+        {
+          "file": "service.py",
+          "line": 2404,
+          "setter": "self.set_property_safe"
+        }
+      ],
+      "present_in_current_upstream_constants": true
+    },
+    {
+      "property": "RadioMonitor.Source",
+      "skin_files": [
+        "xml/Includes_DebugInfo.xml"
+      ],
+      "local_writer_calls": [
+        {
+          "file": "service.py",
+          "line": 4076,
+          "setter": "self.set_property_safe"
+        }
+      ],
+      "present_in_current_upstream_constants": true
+    },
+    {
+      "property": "RadioMonitor.Source.Api.RadioDeNowPlayingRaw",
+      "skin_files": [
+        "xml/Includes_DebugInfo.xml"
+      ],
+      "local_writer_calls": [
+        {
+          "file": "raw_sources.py",
+          "line": 66,
+          "setter": "API_CONTEXT_MAP -> set_api_payload -> set_json -> set_text"
+        },
+        {
+          "file": "raw_sources.py",
+          "line": 67,
+          "setter": "API_CONTEXT_MAP -> set_api_payload -> set_json -> set_text"
+        }
+      ],
+      "present_in_current_upstream_constants": true
+    },
+    {
+      "property": "RadioMonitor.Source.Api.TuneInJsonRaw",
+      "skin_files": [
+        "xml/Includes_DebugInfo.xml"
+      ],
+      "local_writer_calls": [
+        {
+          "file": "raw_sources.py",
+          "line": 68,
+          "setter": "API_CONTEXT_MAP -> set_api_payload -> set_json -> set_text"
+        }
+      ],
+      "present_in_current_upstream_constants": true
+    },
+    {
+      "property": "RadioMonitor.Source.Api.TuneInTextRaw",
+      "skin_files": [
+        "xml/Includes_DebugInfo.xml"
+      ],
+      "local_writer_calls": [
+        {
+          "file": "raw_sources.py",
+          "line": 69,
+          "setter": "API_CONTEXT_MAP -> set_api_payload -> set_json -> set_text"
+        }
+      ],
+      "present_in_current_upstream_constants": true
+    },
+    {
+      "property": "RadioMonitor.Source.IcyMetadataRaw",
+      "skin_files": [
+        "xml/Includes_DebugInfo.xml"
+      ],
+      "local_writer_calls": [
+        {
+          "file": "service.py",
+          "line": 5395,
+          "setter": "self.raw_sources.set_text"
+        }
+      ],
+      "present_in_current_upstream_constants": true
+    },
+    {
+      "property": "RadioMonitor.Source.IcyParsed",
+      "skin_files": [
+        "xml/Includes_DebugInfo.xml"
+      ],
+      "local_writer_calls": [
+        {
+          "file": "service.py",
+          "line": 5506,
+          "setter": "self.raw_sources.set_json"
+        }
+      ],
+      "present_in_current_upstream_constants": true
+    },
+    {
+      "property": "RadioMonitor.Source.IcyStreamTitleRaw",
+      "skin_files": [
+        "xml/Includes_DebugInfo.xml"
+      ],
+      "local_writer_calls": [
+        {
+          "file": "service.py",
+          "line": 5504,
+          "setter": "self.raw_sources.set_text"
+        }
+      ],
+      "present_in_current_upstream_constants": true
+    },
+    {
+      "property": "RadioMonitor.Source.JsonRpcPlayerRaw",
+      "skin_files": [
+        "xml/Includes_DebugInfo.xml"
+      ],
+      "local_writer_calls": [
+        {
+          "file": "service.py",
+          "line": 3190,
+          "setter": "self.raw_sources.set_json"
+        },
+        {
+          "file": "service.py",
+          "line": 3165,
+          "setter": "self.raw_sources.set_text"
+        },
+        {
+          "file": "service.py",
+          "line": 3169,
+          "setter": "self.raw_sources.set_text"
+        }
+      ],
+      "present_in_current_upstream_constants": true
+    },
+    {
+      "property": "RadioMonitor.Source.ListItemRaw",
+      "skin_files": [
+        "xml/Includes_DebugInfo.xml"
+      ],
+      "local_writer_calls": [
+        {
+          "file": "service.py",
+          "line": 3140,
+          "setter": "self.raw_sources.set_json"
+        }
+      ],
+      "present_in_current_upstream_constants": true
+    },
+    {
+      "property": "RadioMonitor.Source.PlayingItemRaw",
+      "skin_files": [
+        "xml/Includes_DebugInfo.xml"
+      ],
+      "local_writer_calls": [
+        {
+          "file": "service.py",
+          "line": 3150,
+          "setter": "self.raw_sources.set_json"
+        }
+      ],
+      "present_in_current_upstream_constants": true
+    },
+    {
+      "property": "RadioMonitor.Source.PluginPlaybackUrl",
+      "skin_files": [
+        "xml/Includes_DebugInfo.xml"
+      ],
+      "local_writer_calls": [
+        {
+          "file": "service.py",
+          "line": 3126,
+          "setter": "self.raw_sources.set_text"
+        }
+      ],
+      "present_in_current_upstream_constants": true
+    },
+    {
+      "property": "RadioMonitor.Source.StreamHeaders",
+      "skin_files": [
+        "xml/Includes_DebugInfo.xml"
+      ],
+      "local_writer_calls": [
+        {
+          "file": "service.py",
+          "line": 4721,
+          "setter": "self.raw_sources.set_json"
+        }
+      ],
+      "present_in_current_upstream_constants": true
+    },
+    {
+      "property": "RadioMonitor.Source.StreamUrl",
+      "skin_files": [
+        "xml/Includes_DebugInfo.xml"
+      ],
+      "local_writer_calls": [
+        {
+          "file": "service.py",
+          "line": 3123,
+          "setter": "self.raw_sources.set_text"
+        }
+      ],
+      "present_in_current_upstream_constants": true
+    },
+    {
+      "property": "RadioMonitor.SourceDetail",
+      "skin_files": [
+        "xml/Includes_DebugInfo.xml"
+      ],
+      "local_writer_calls": [
+        {
+          "file": "service.py",
+          "line": 4077,
+          "setter": "self.set_property_safe"
+        }
+      ],
+      "present_in_current_upstream_constants": true
+    },
+    {
+      "property": "RadioMonitor.SourceSwapStatus",
+      "skin_files": [
+        "xml/Includes_DebugInfo.xml"
+      ],
+      "local_writer_calls": [
+        {
+          "file": "service.py",
+          "line": 940,
+          "setter": "self.set_property_safe"
+        }
+      ],
+      "present_in_current_upstream_constants": true
+    },
+    {
+      "property": "RadioMonitor.Station",
+      "skin_files": [
+        "xml/Custom_1400_MusicOverlay.xml",
+        "xml/DialogButtonMenu.xml",
+        "xml/Includes_DebugInfo.xml",
+        "xml/Includes_HomeOSD.xml",
+        "xml/Includes_SidePanel.xml",
+        "xml/MusicVisualisation.xml",
+        "xml/Variables.xml"
+      ],
+      "local_writer_calls": [
+        {
+          "file": "service.py",
+          "line": 1967,
+          "setter": "self.set_property_safe"
+        },
+        {
+          "file": "service.py",
+          "line": 655,
+          "setter": "self.set_property_safe"
+        },
+        {
+          "file": "service.py",
+          "line": 4344,
+          "setter": "self.set_property_safe"
+        },
+        {
+          "file": "service.py",
+          "line": 4740,
+          "setter": "self.set_property_safe"
+        },
+        {
+          "file": "service.py",
+          "line": 3342,
+          "setter": "self.set_property_safe"
+        },
+        {
+          "file": "service.py",
+          "line": 5572,
+          "setter": "self.set_property_safe"
+        }
+      ],
+      "present_in_current_upstream_constants": true
+    },
+    {
+      "property": "RadioMonitor.StreamTitle",
+      "skin_files": [
+        "xml/Includes_DebugInfo.xml"
+      ],
+      "local_writer_calls": [
+        {
+          "file": "service.py",
+          "line": 4466,
+          "setter": "self.set_property_safe"
+        },
+        {
+          "file": "service.py",
+          "line": 4521,
+          "setter": "self.set_property_safe"
+        },
+        {
+          "file": "service.py",
+          "line": 5903,
+          "setter": "self.set_property_safe"
+        },
+        {
+          "file": "service.py",
+          "line": 5866,
+          "setter": "self.set_property_safe"
+        }
+      ],
+      "present_in_current_upstream_constants": true
+    },
+    {
+      "property": "RadioMonitor.TimeoutRemaining",
+      "skin_files": [
+        "xml/Includes_DebugInfo.xml"
+      ],
+      "local_writer_calls": [
+        {
+          "file": "service.py",
+          "line": 1580,
+          "setter": "WINDOW.setProperty"
+        }
+      ],
+      "present_in_current_upstream_constants": true
+    },
+    {
+      "property": "RadioMonitor.TimeoutTotal",
+      "skin_files": [
+        "xml/Includes_DebugInfo.xml"
+      ],
+      "local_writer_calls": [
+        {
+          "file": "service.py",
+          "line": 1644,
+          "setter": "WINDOW.setProperty"
+        }
+      ],
+      "present_in_current_upstream_constants": true
+    },
+    {
+      "property": "RadioMonitor.Title",
+      "skin_files": [
+        "xml/Includes_DebugInfo.xml",
+        "xml/Variables.xml"
+      ],
+      "local_writer_calls": [
+        {
+          "file": "service.py",
+          "line": 3119,
+          "setter": "self.set_property_safe"
+        },
+        {
+          "file": "service.py",
+          "line": 4638,
+          "setter": "self.set_property_safe"
+        },
+        {
+          "file": "service.py",
+          "line": 4465,
+          "setter": "self.set_property_safe"
+        },
+        {
+          "file": "service.py",
+          "line": 4520,
+          "setter": "self.set_property_safe"
+        },
+        {
+          "file": "service.py",
+          "line": 5762,
+          "setter": "self.set_property_safe"
+        },
+        {
+          "file": "service.py",
+          "line": 5911,
+          "setter": "self.set_property_safe"
+        }
+      ],
+      "present_in_current_upstream_constants": true
+    },
+    {
+      "property": "RadioMonitor.VerifiedSourceBy",
+      "skin_files": [
+        "xml/Includes_DebugInfo.xml"
+      ],
+      "local_writer_calls": [
+        {
+          "file": "service.py",
+          "line": 619,
+          "setter": "WINDOW.setProperty"
+        }
+      ],
+      "present_in_current_upstream_constants": true
+    },
+    {
+      "property": "RadioMonitor.VerifiedSourceConfidence",
+      "skin_files": [
+        "xml/Includes_DebugInfo.xml"
+      ],
+      "local_writer_calls": [
+        {
+          "file": "service.py",
+          "line": 627,
+          "setter": "WINDOW.setProperty"
+        }
+      ],
+      "present_in_current_upstream_constants": true
+    },
+    {
+      "property": "RadioMonitor.VerifiedSourceUrl",
+      "skin_files": [
+        "xml/Includes_DebugInfo.xml"
+      ],
+      "local_writer_calls": [
+        {
+          "file": "service.py",
+          "line": 615,
+          "setter": "WINDOW.setProperty"
+        }
+      ],
+      "present_in_current_upstream_constants": true
+    }
+  ],
+  "reviewed_local_files": [
+    {
+      "file": "D:\\Program Files\\Kodi22\\portable_data\\addons\\service.audio.stream.monitor\\constants.py",
+      "sha256": "49f9771eb1d1d99e5744e75354bd302d4304bb01c266aee85439f8a41f0d8910"
+    },
+    {
+      "file": "D:\\Program Files\\Kodi22\\portable_data\\addons\\service.audio.stream.monitor\\service.py",
+      "sha256": "cb6d227baf84be5dbbe74f0964e098122b98c527ad457384dadabfe72c095881"
+    },
+    {
+      "file": "D:\\Program Files\\Kodi22\\portable_data\\addons\\service.audio.stream.monitor\\raw_sources.py",
+      "sha256": "1c7afdff54b2724e2cfcd70e51a274a62f51f05f29f52f01d832650666156f82"
+    }
+  ],
+  "result": "All 43 distinct properties read by active skin XML have local writer paths and remain declared in fetched upstream ASM constants. No skin rewrite justified by these property names.",
+  "qf_station_used_note": "RadioMonitor.QF.Response.StationUsed is published by ASM via set_property_safe; it is not evidence that the QF service itself publishes that property.",
+  "current_followup": {
+    "checked_on": "2026-11-10",
+    "source": "asm_display_source_review.json",
+    "native": "../kodi22_runtime/asm_display_native_checks.json",
+    "scope": "43 current literal names still declared; executable display/clear method code matches published source. Six controlled native display cases pass. Not live radio/QF or complete MusicVisualisation verification."
+  }
+}

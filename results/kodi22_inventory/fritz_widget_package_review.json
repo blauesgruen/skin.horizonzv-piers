@@ -1,0 +1,16 @@
+{
+  "checked_on": "2026-11-10",
+  "archive": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-fritz-state-package-1928a6252cc3406b99b7ff1fde4ba67d\\skin.horizonzv-1.22.1.1.zip",
+  "sha256": "c76f8e8bf09f438c924e73aa6b5e4f6a88b212c6aa750935fa53db2abff6d26a",
+  "version": "1.22.1.1",
+  "file_count": 296,
+  "crc_ok": true,
+  "all_entries_equal_workspace": true,
+  "xml_xsp_parsed": 181,
+  "changed_from_previous_test_package": [
+    "xml/Includes_Dash_FritzDect.xml"
+  ],
+  "native_install_status": "Not performed for this change; previous isolated startup attempt failed before log/RPC. This is not a claim that a new attempt would fail.",
+  "previous_startup_failure": "../kodi22_runtime/gto_dialog_install_start_failure.json",
+  "source_review": "fritz_widget_state_review.json"
+}

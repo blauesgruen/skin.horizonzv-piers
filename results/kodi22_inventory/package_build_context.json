@@ -1,0 +1,15 @@
+﻿{
+    "archive":  "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-package-review-6ded07b49f774e96860e0c3a1df9957b\\skin.horizonzv-1.22.0.1.zip",
+    "excluded_directories":  [
+                                 ".git",
+                                 ".github",
+                                 ".vscode",
+                                 "__pycache__",
+                                 "temp",
+                                 "results",
+                                 "tools"
+                             ],
+    "builder":  "C:\\Users\\zorno\\scripts\\build-kodi-addon.ps1",
+    "staging_target_verified":  "C:\\Users\\zorno\\AppData\\Local\\Temp\\kodi-package-skin.horizonzv",
+    "read_only_git_config":  "core.safecrlf=false for diff; no files converted"
+}

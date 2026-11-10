@@ -1,0 +1,145 @@
+{
+  "checked_on": "2026-11-10",
+  "scope": "ASM display contract: original writer methods and real skin variables in visible Kodi.\n\nSelects pure display-writing methods from installed ASM without importing its\nservice entry point. No playback, live recognition, QF request or addon edit.\n",
+  "passed": true,
+  "provider_version": "1.1.13",
+  "source_files": {
+    "service.py": "88ef9a51fe11916d26b6c245ddf71b3b1ed9a08ed5f6c9c5dfcb835c3303a71b",
+    "constants.py": "49f9771eb1d1d99e5744e75354bd302d4304bb01c266aee85439f8a41f0d8910",
+    "text_encoding.py": "b8364e139396676fb7ea5b3e6fa4e3b13b68bf9f6623b933a70d3a680f0980bf"
+  },
+  "skin_files": {
+    "Variables.xml": "e223d53d9def025b3916991ceafd1de4bcdef2e43b3ed22b04b245f597ea896c",
+    "MusicVisualisation.xml": "dd13475746098c0b1ccc3b99e3f98baa3de9ce12d6dd46f2458e59a3c9958bcf"
+  },
+  "label_expressions": {
+    "title": "$VAR[HomeOSDTitle]",
+    "label": "$VAR[HomeOSDLabel]",
+    "genre": "$VAR[RadioDE_Genre]",
+    "poster": "$VAR[NowPlayingPosterVar]",
+    "band": "$VAR[HomeOSDTitle]$INFO[Window(Home).Property(RadioMonitor.BandFormed), (,)]$INFO[Window(Home).Property(RadioMonitor.BandMembers),[COLOR=grey] - ,[/COLOR]]",
+    "album": "$INFO[Window(Home).Property(RadioMonitor.Album),$LOCALIZE[558]: ,]"
+  },
+  "previous_skin": "skin.metis",
+  "pid": 32352,
+  "native": {
+    "scope": "ASM display contract: original writer methods and real skin variables in visible Kodi.\n\nSelects pure display-writing methods from installed ASM without importing its\nservice entry point. No playback, live recognition, QF request or addon edit.\n",
+    "python_assertions_enabled": false,
+    "language": "German",
+    "cases": [
+      {
+        "name": "plain",
+        "values": {
+          "title": "Probe Artist",
+          "label": "Probe Song (2001)",
+          "genre": "Probe Genre",
+          "poster": "special://skin/icon.png",
+          "band": "Probe Artist (1990)[COLOR=grey] - Member A / Member B[/COLOR]",
+          "album": "Album: Probe Album"
+        },
+        "album_visible": true,
+        "mismatches": {},
+        "screenshot": "asm_display_plain.png"
+      },
+      {
+        "name": "bullet",
+        "values": {
+          "title": "[COLOR green]\u2022[/COLOR] Probe Artist",
+          "label": "[COLOR green]\u2022[/COLOR] Probe Song (2001)",
+          "genre": "[COLOR green]\u2022[/COLOR] Probe Genre",
+          "poster": "special://skin/icon.png",
+          "band": "[COLOR green]\u2022[/COLOR] Probe Artist (1990)[COLOR=grey] - Member A / Member B[/COLOR]",
+          "album": "Album: [COLOR green]\u2022[/COLOR] Probe Album"
+        },
+        "album_visible": true,
+        "mismatches": {},
+        "screenshot": "asm_display_bullet.png"
+      },
+      {
+        "name": "genre_qf_fallback",
+        "values": {
+          "title": "Probe Artist",
+          "label": "",
+          "genre": "Probe QF Station",
+          "poster": "",
+          "band": "Probe Artist",
+          "album": ""
+        },
+        "album_visible": false,
+        "mismatches": {},
+        "screenshot": "asm_display_genre_qf_fallback.png"
+      },
+      {
+        "name": "qf_station",
+        "values": {
+          "title": "Probe QF Station",
+          "label": "",
+          "genre": "",
+          "poster": "",
+          "band": "Probe QF Station",
+          "album": ""
+        },
+        "album_visible": false,
+        "mismatches": {},
+        "screenshot": "asm_display_qf_station.png"
+      },
+      {
+        "name": "station",
+        "values": {
+          "title": "Probe Station B",
+          "label": "",
+          "genre": "",
+          "poster": "",
+          "band": "Probe Station B",
+          "album": ""
+        },
+        "album_visible": false,
+        "mismatches": {},
+        "screenshot": "asm_display_station.png"
+      },
+      {
+        "name": "cleared",
+        "values": {
+          "title": "",
+          "label": "",
+          "genre": "",
+          "poster": "",
+          "band": "",
+          "album": ""
+        },
+        "album_visible": false,
+        "mismatches": {},
+        "screenshot": "asm_display_cleared.png"
+      }
+    ],
+    "passed": true,
+    "home_properties_restored": true
+  },
+  "cleanup": {
+    "owned_process_exited": true,
+    "settings_restored": true,
+    "fixture_removed": true,
+    "provider_files_unchanged": true
+  },
+  "limits": [
+    "Original pure display setters with authored data only; no live service entry point imported.",
+    "No radio playback, metadata recognition, online artwork or QF backend verification.",
+    "No code change justified solely by supported names or passing controlled data."
+  ],
+  "visual_review": {
+    "inspected": [
+      "asm_display_bullet.png",
+      "asm_display_genre_qf_fallback.png",
+      "asm_display_cleared.png"
+    ],
+    "assessment": "Colored prefix rendered correctly, genre QF fallback visible, cleared case blank. All six value cases checked independently via native Control.GetLabel."
+  },
+  "screenshot_sha256": {
+    "asm_display_bullet.png": "6a6dba34f49ee4e275c8d3e8e1a6626a0e4bed54710f9c6bc426aa76466df924",
+    "asm_display_cleared.png": "856b941632aa55f501c35d9ab753492cff5122e2bbd9b1eebc150c5c01835109",
+    "asm_display_genre_qf_fallback.png": "11302196f6a6ce5c833e204b69013741a7af3e9ba982dffdcc2b57a2e00460ae",
+    "asm_display_plain.png": "42d20ca065bbf0fd2f927dde6c5b9facf8fcfdc766b5713b0a0ccd884e1d1005",
+    "asm_display_qf_station.png": "b85a58b4b437a5b03327da63747518a1bf5f18eb96ff47ee0470ce344e94b86f",
+    "asm_display_station.png": "4ad28e366fd7fe4d04812923a0b4cc332c2493d91ec161e94e1d81d935c013f1"
+  }
+}

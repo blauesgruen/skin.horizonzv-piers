@@ -20,7 +20,7 @@
                     <param name="height" value="1040" />
 					<param name="bottomimage" value="980" />
                     <param name="header_id" value="1" />
-                    <param name="header_label" value="301498" />
+                    <param name="header_label" value="31360" />
                     <param name="stripe_height" value="120" />
                 </include>
 				<control type="label">
@@ -160,7 +160,7 @@
 								<visible/>
 							</item>
 							<item id="4">
-								<label>301371</label>
+								<label>31301</label>
 								<label2 fallback="4.">$INFO[Skin.String(HomeMenuItemDashboard),,.]</label2>
 								<thumb>$VAR[backgroundfolder]home_addons$VAR[bkg_fileext]</thumb>
 								<icon>$INFO[Skin.String(user_bkg_dashboard)]</icon>
@@ -288,8 +288,8 @@
 							<item id="18">
 								<label>$VAR[Home_custom9_Label]</label>
 								<label2 fallback="18.">$INFO[Skin.String(HomeMenuItemCustom9),,.]</label2>
-								<thumb>$VAR[backgroundfolder]home_custom7$VAR[bkg_fileext]</thumb>
-								<icon>$INFO[Skin.String(user_bkg_custom7)]</icon>
+								<thumb>$VAR[backgroundfolder]home_custom9$VAR[bkg_fileext]</thumb>
+								<icon>$INFO[Skin.String(user_bkg_custom9)]</icon>
 								<onclick>Skin.Reset(HomeMenuItemCustom9)</onclick>
 								<onclick>Skin.SetNumeric(HomeMenuItemCustom9)</onclick>
 								<visible/>

@@ -1,0 +1,56 @@
+{
+  "scope": "INFO-level standard-profile direct-start run; counts only, no raw provider URLs/headers/credentials copied.",
+  "extrafanart_lines": 0,
+  "routererror_lines": 0,
+  "error_lines": 0,
+  "skin": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "value": "skin.horizonzv"
+    }
+  },
+  "players": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": []
+  },
+  "providers": {
+    "slyguy.disney.plus": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "addon": {
+          "addonid": "slyguy.disney.plus",
+          "enabled": true,
+          "type": "xbmc.python.pluginsource",
+          "version": "0.20.33"
+        }
+      }
+    },
+    "weather.gismeteo": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "addon": {
+          "addonid": "weather.gismeteo",
+          "enabled": true,
+          "type": "xbmc.python.weather",
+          "version": "0.6.4+matrix.1"
+        }
+      }
+    },
+    "pvr.satip": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "addon": {
+          "addonid": "pvr.satip",
+          "enabled": true,
+          "type": "kodi.pvrclient",
+          "version": "0.1.15"
+        }
+      }
+    }
+  }
+}

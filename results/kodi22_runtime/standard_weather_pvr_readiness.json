@@ -1,0 +1,70 @@
+{
+  "weather_provider": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "value": "weather.gismeteo"
+    }
+  },
+  "pvr": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "available": true,
+      "recording": false,
+      "scanning": false
+    }
+  },
+  "tv_group_count": 1,
+  "tv_groups_error": null,
+  "gui": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "currentcontrol": {
+        "label": "[weather location label omitted]"
+      },
+      "currentwindow": {
+        "id": 12600,
+        "label": "Wetter"
+      }
+    }
+  },
+  "weather_conditions": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "String.IsEmpty(Weather.Conditions)": false,
+      "String.IsEmpty(Weather.FanartCode)": false,
+      "String.IsEmpty(Weather.Plugin)": false,
+      "String.IsEmpty(Weather.Temperature)": false,
+      "Weather.IsFetched": true
+    }
+  },
+  "weather_fields": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Weather.FanartCode": "26",
+      "Weather.Plugin": "weather.gismeteo"
+    }
+  },
+  "pvr_counts": {
+    "tv": {
+      "total": 86,
+      "error": null
+    },
+    "radio": {
+      "total": 103,
+      "error": null
+    },
+    "recordings": {
+      "total": 0,
+      "error": null
+    },
+    "timers": {
+      "total": 0,
+      "error": null
+    }
+  }
+}

@@ -13,6 +13,7 @@
 			<include content="DashFocusedlayout">
 				<param name="Dash_Label1" value="$INFO[ListItem.TVShowTitle]" />
 				<param name="Dash_Label2" value="$INFO[ListItem.Label]" />
+				<param name="Dash_Label2_IsEmpty" value="String.IsEmpty(ListItem.Label)" />
 				<param name="Dash_Label3" value="$INFO[ListItem.Genre,❖ ,]" />
 				<param name="Dash_Icon" value="$INFO[ListItem.Icon]" />
 				<param name="aspect" value="keep" />
@@ -40,6 +41,7 @@
 			<include content="DashFocusedlayout">
 				<param name="Dash_Label1" value="$INFO[ListItem.TVShowTitle]" />
 				<param name="Dash_Label2" value="$INFO[ListItem.Label]" />
+				<param name="Dash_Label2_IsEmpty" value="String.IsEmpty(ListItem.Label)" />
 				<param name="Dash_Label3" value="$INFO[ListItem.Genre,❖ ,]" />
 				<param name="Dash_Icon" value="$INFO[ListItem.Icon]" />
 				<param name="aspect" value="scale" />
@@ -141,7 +143,7 @@
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<label>[B][UPPERCASE]$PARAM[Dash_Label1][/UPPERCASE][/B]</label>
-					<visible>String.IsEmpty($PARAM[Dash_Label2])</visible>
+					<visible>$PARAM[Dash_Label2_IsEmpty]</visible>
 				</control>
 				<control type="label">
 					<left>5</left>

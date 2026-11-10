@@ -6,16 +6,18 @@
     <onload condition="!Skin.HasSetting(firstrun_horizonzv)">Skin.ResetSettings</onload>
 	<onload condition="String.IsEmpty(Skin.String(weathericons.path))">Skin.SetString(weathericons.path,resource://resource.images.weathericons.outline-hd/)</onload>
 	<onload condition="System.HasAddon(script.skinhelper.ping)+System.AddonIsEnabled(script.skinhelper.ping)">RunScript(script.skinhelper.ping,status)</onload>
+    <!-- Resolve addon strings in actions: boolean expressions treat their brackets as operators. -->
+    <onload condition="System.AddonIsEnabled(script.program.fritzact)">SetProperty(HorizonzV.FritzAct.StateOn,$ADDON[script.program.fritzact 30031],Home)</onload>
+    <onload condition="System.AddonIsEnabled(script.program.fritzact)">SetProperty(HorizonzV.FritzAct.StateOff,$ADDON[script.program.fritzact 30030],Home)</onload>
+    <onunload>ClearProperty(HorizonzV.FritzAct.StateOn,Home)</onunload>
+    <onunload>ClearProperty(HorizonzV.FritzAct.StateOff,Home)</onunload>
     <onload condition="!Skin.HasSetting(gambit_background)+!Skin.HasSetting(avengers_sw)+!Skin.HasSetting(standard_bkg)">Skin.SetBool(standard_bkg)</onload>
     <onload condition="!String.IsEmpty(Skin.String(homemenufocus))+Window.Previous(startup)">Control.Move(9000,$INFO[Skin.String(homemenufocus)])</onload>
     <onload condition="!Skin.HasSetting(firstrun_horizonzv)">ActivateWindow(1155)</onload>
-    <onload condition="!System.HasAddon(service.library.data.provider)+Skin.HasSetting(Widget_inProgress_tvshow_Place1)">Skin.Reset(Widget_inProgress_tvshow_Place1)</onload>
     <onload condition="![Skin.HasSetting(Row5_Weather)|Skin.HasSetting(Row5_GTO)|Skin.HasSetting(Row5_Path)|Skin.HasSetting(Row5_Fav)|Skin.HasSetting(Row5_Fritzact)]">Skin.SetBool(Row5_off)</onload>
     <onload condition="![Skin.HasSetting(Row4_Weather)|Skin.HasSetting(Row4_GTO)|Skin.HasSetting(Row4_Path)|Skin.HasSetting(Row4_Fav)|Skin.HasSetting(Row4_Fritzact)]">Skin.SetBool(Row4_off)</onload>
     <onload condition="![Skin.HasSetting(Row3_Weather)|Skin.HasSetting(Row3_GTO)|Skin.HasSetting(Row3_Path)|Skin.HasSetting(Row3_Fav)|Skin.HasSetting(Row3_Fritzact)]">Skin.SetBool(Row3_off)</onload>
     <onload condition="![Skin.HasSetting(Row2_Weather)|Skin.HasSetting(Row2_GTO)|Skin.HasSetting(Row2_Path)|Skin.HasSetting(Row2_Fav)|Skin.HasSetting(Row2_Fritzact)]">Skin.SetBool(Row2_off)</onload>
-    <onload>CancelAlarm(HideMenu,true)</onload>
-    <onunload>CancelAlarm(HideMenu,true)</onunload>
     <include>openclose</include>
     <controls>
         <control type="button" id="3020">
@@ -213,7 +215,7 @@
 				<width>38</width>
 				<height>40</height>
 				<textoffsetx>0</textoffsetx>
-				<textwidht>40</textwidht>
+				<textwidth>40</textwidth>
 				<label>$INFO[Window(Home).Property(SkinHelperPING.serveron)]</label>
 				<texturefocus>ServerIcon.png</texturefocus>
 				<texturenofocus>ServerIcon.png</texturenofocus>
@@ -333,10 +335,9 @@
                             <right>SpacePadding</right>
                             <height>100%</height>
                             <align>right</align>
-                            <align>center</align>
                             <font>impacted26</font>
                             <textcolor>grey1</textcolor>
-                            <label>[COLOR=grey]$INFO[Container(200).ListItem.Label] |[/COLOR] $LOCALIZE[301466]</label>
+                            <label>[COLOR=grey]$INFO[Container(200).ListItem.Label] |[/COLOR] $LOCALIZE[31344]</label>
                         </control>
                         <control type="list" id="200">
                             <left>SpacePaddingLarge</left>
@@ -445,7 +446,7 @@
                                     <label>137</label>
                                     <icon>center/Center_Search.png</icon>
                                     <onclick>RunScript(script.globalsearch)</onclick>
-                                    <visible>System.HasAddon(script.globalsearch)</visible>
+                                    <visible>System.AddonIsEnabled(script.globalsearch)</visible>
                                 </item>
                                 <item id="9">
                                     <description>SkinAddons</description>
@@ -488,7 +489,7 @@
 		</include>
         <include condition="Skin.HasSetting(FavDashboard)">HomemenuFavInclude</include>
 		<control type="group">
-			<visible>Window.IsVisible(1500)|Window.IsVisible(1501)|Window.IsVisible(1151)|Window.IsVisible(1800)|Window.IsVisible(skin.horizonzv.script-gto-info.xml)</visible>
+			<visible>Window.IsVisible(1500)|Window.IsVisible(1501)|Window.IsVisible(1151)|Window.IsVisible(1800)|Window.IsVisible(skin.horizonzv.script-gto-info.xml)|Window.IsVisible(skin.horizonzv-piers.script-gto-info.xml)</visible>
 			<include>openclosevisible</include>
 			<include>BlackBack</include>
 		</control>

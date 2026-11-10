@@ -1,0 +1,24 @@
+{
+  "checked_on": "2026-11-05",
+  "scope": "Actual plugin playback and production Home player-fanart control, within the original extrafanart objective.",
+  "primary_source": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/guilib/guiinfo/PlayerGUIInfo.cpp",
+  "source_finding": "Player path/file labels derive from the playing item's GetPath(). Resolving media through a plugin need not replace the original plugin item path shown to the skin.",
+  "runtime_report": "../kodi22_runtime/plugin_player_fanart_checks.json",
+  "fixture": "Authored temporary plugin.video.horizonzv.fanartprobe in the own isolated test profile; resolves own local AVI file or local two-file stack and logs every requested route. Not an existing provider correction.",
+  "observed": [
+    "Both native playback cases reached Player.HasVideo and elapsed playback time.",
+    "Player.FolderPath and Player.FilenameAndPath retained the genuine plugin URI.",
+    "Production Home multiimage 2016 remained empty and not visible, despite an available local extrafanart image next to the resolved media.",
+    "Exactly two fixture requests, one play request per case; no extrafanart route.",
+    "Stop clears player folder and fanart. Final ERROR list empty."
+  ],
+  "cleanup": "Own process exited; secured settings and video/addon DB bytes/file sets restored; fixture moved out of addon directory into its own retained test work folder; production XML copies match.",
+  "paired_local_positive_evidence": "../kodi22_runtime/player_stack_fanart_checks.json",
+  "limits": [
+    "Real Disney playback is still limited by the documented Widevine prerequisite.",
+    "This covers plain plugin item URLs resolving a local file/stack, not a stack URI containing plugin URLs, encoded wrapper combinations, mixed protocols or a second-part transition.",
+    "No SMB server, remote streaming source, all player-fanart controls or all aspect ratios tested.",
+    "No product/runtime-code change this turn. Existing external addons and standard profile left untouched."
+  ],
+  "conclusion": "The existing skin guard works for these actual plugin-player paths. Keep it; no additional code rewrite justified."
+}

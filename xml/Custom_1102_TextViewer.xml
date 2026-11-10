@@ -18,9 +18,8 @@
                 <include content="DialogBackgroundCommons">
                     <param name="width" value="80%" />
                     <param name="height" value="80%" />
-                    <param name="header_label" value="$LOCALIZE[13406]" />
                     <param name="header_id" value="1" />
-                    <param name="header_label" value="$INFO[Window(home).Property(TextViewer_Header)]" />
+                    <param name="header_label" value="$VAR[TextViewerHeaderVar]" />
                 </include>
                 <control type="group">
                     <left>SpacePadding</left>

@@ -1,0 +1,68 @@
+{
+  "classification": "Unproduced metadata properties in the checked native addon browser/info path; no historical Kodi removal version established.",
+  "removed_properties": [
+    "Addon.Dependencies",
+    "Addon.Homepage",
+    "Addon.License",
+    "Addon.Provider",
+    "Addon.StarRating"
+  ],
+  "native_property_reader": "GUIInfoManager::GetMultiInfoItemLabel LISTITEM_PROPERTY reads item->GetProperty(key).asString(); no addon-manifest fallback.",
+  "native_item_chain": [
+    "CFileItem(addonInfo) stores addon pointer only",
+    "CAddonsDirectory::FileItemFromAddon creates this item and sets Addon.ID, Addon.Name, optional Addon.Language",
+    "Browser list paths set Addon.Status for applicable states",
+    "CGUIDialogAddonInfo::SetItem copies the supplied file item"
+  ],
+  "retained_properties": [
+    "Addon.ID",
+    "Addon.Status"
+  ],
+  "retained_fields": "Supported AddonCreator/Version/Type/Origin/install-date/summary and other existing dedicated labels unchanged.",
+  "removed_special_case": "A third-party manually injected item carrying these five custom properties would no longer display those extra rows. No such producer was established for the native contexts used here.",
+  "before_sha256": "e89d1d129268bab899cd61c4b079038041ae649a29d23feffccbd59742f7c974",
+  "after_sha256": "989b9efa0cad027292edccf7592304103c221c3fe726108da23e3077e35e291c",
+  "remaining_include_tree_equal_after_selected_row_removal": true,
+  "removed_line_count": 40,
+  "sources": [
+    "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/filesystem/AddonsDirectory.cpp",
+    "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/FileItem.cpp",
+    "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/addons/gui/GUIDialogAddonInfo.cpp",
+    "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/addons/gui/GUIWindowAddonBrowser.cpp",
+    "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/guilib/guiinfo/AddonsGUIInfo.cpp",
+    "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/GUIInfoManager.cpp"
+  ],
+  "runtime_scope": "No new Kodi launch. Existing addon origin tests only prove the retained ID/Status cases; they did not query all removed properties. Source-path proof is the basis of this change.",
+  "static_checks": [
+    {
+      "tool": "check_skin_compatibility.py",
+      "exit_code": 0,
+      "findings": 0
+    },
+    {
+      "tool": "audit_skin_actions.py",
+      "exit_code": 0,
+      "findings": 0
+    },
+    {
+      "tool": "audit_skin_windows.py",
+      "exit_code": 0,
+      "findings": 0
+    },
+    {
+      "tool": "audit_skin_info_names.py",
+      "exit_code": 0,
+      "findings": 0,
+      "reference_contexts": 15745,
+      "candidate_occurrences": 43,
+      "arity_candidates": 0,
+      "condition_atom_candidates": 0
+    }
+  ],
+  "remaining_info_candidate_review": {
+    "candidate_occurrences": 43,
+    "candidate_names": 9,
+    "unclassified": 0,
+    "review_file": "info_name_candidate_review.json"
+  }
+}

@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "currentcontrol": {
+        "label": "Toggle biography"
+      },
+      "currentwindow": {
+        "id": 11196,
+        "label": ""
+      }
+    }
+  },
+  {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Skin.HasSetting(artistslideshow_artistinfos_bio)": true,
+      "Skin.TimerIsRunning(artistslideshowrequest)": false,
+      "System.AddonIsEnabled(script.artistslideshow)": false
+    }
+  }
+]

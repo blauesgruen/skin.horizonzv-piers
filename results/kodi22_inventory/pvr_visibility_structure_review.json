@@ -1,0 +1,19 @@
+{
+  "source": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/guilib/GUIControlFactory.cpp",
+  "function": "CGUIControlFactory::GetConditionalVisibility",
+  "finding": "Nested visible element in NavInfoPvrContent label. Loader reads FirstChild()->Value(), not descendant condition text. Flattened to direct condition text.",
+  "scope": "Element children within listed scalar skin tags; not a complete schema validation.",
+  "tags": [
+    "enable",
+    "imagepath",
+    "label",
+    "onclick",
+    "onfocus",
+    "onload",
+    "onunload",
+    "texture",
+    "visible"
+  ],
+  "files_checked": 164,
+  "remaining_nested_elements": []
+}

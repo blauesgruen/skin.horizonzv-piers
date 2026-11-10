@@ -1,0 +1,34 @@
+{
+  "scope": "Actual numeric dialog (four modes) and three shared native settings dialogs; titles, focus, number entry/backspace/confirmation and cancellation only. No player, persistent device settings or addon code changed.",
+  "baseline": false,
+  "work": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\review-native-headings-08wnhqc5",
+  "xml_sha256": {
+    "DialogNumeric.xml": "c8e0b1e38141160ab160df0b83c6377dc1db9382d728a72135cddb83c704b4c6",
+    "DialogSettings.xml": "d1ec9446795cc23c93a9aba63f0b5a22e536f9e23be4e9dc218ae0c72c0d56ef"
+  },
+  "numeric": [
+    {
+      "mode": 0,
+      "expected_heading": "HorizonzV native input 0",
+      "observed": {
+        "Control.GetLabel(1)": "HorizonzV native input 0",
+        "Control.GetLabel(4)": "12",
+        "Skin.AspectRatio": "16:9",
+        "System.CurrentControlID": "21"
+      },
+      "after_digit_and_backspace": "123"
+    }
+  ],
+  "settings": [],
+  "pid": 12024,
+  "failure": "AssertionError({'mode': 0, 'expected_heading': 'HorizonzV native input 0', 'observed': {'Control.GetLabel(1)': 'HorizonzV native input 0', 'Control.GetLabel(4)': '12', 'Skin.AspectRatio': '16:9', 'System.CurrentControlID': '21'}, 'after_digit_and_backspace': '123'})",
+  "trace": "Traceback (most recent call last):\n  File \"D:\\Program Files\\Kodi22\\portable_data\\addons\\skin.horizonzv-piers\\results\\kodi22_runtime\\run_native_heading_probe.py\", line 130, in main\n    assert row[\"after_digit_and_backspace\"] == \"3\", row\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: {'mode': 0, 'expected_heading': 'HorizonzV native input 0', 'observed': {'Control.GetLabel(1)': 'HorizonzV native input 0', 'Control.GetLabel(4)': '12', 'Skin.AspectRatio': '16:9', 'System.CurrentControlID': '21'}, 'after_digit_and_backspace': '123'}\n",
+  "cleanup": {
+    "process_exited": true,
+    "profile_settings_restored": true,
+    "skin_xml_match": true
+  },
+  "errors": [
+    "2026-11-05 00:02:16.287 T:31676   error <general>: CPythonInvoker(5, C:/Users/zorno/AppData/Local/Temp/horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440/review-native-headings-08wnhqc5/numeric.py): script didn't stop in 5 seconds - let's kill it"
+  ]
+}

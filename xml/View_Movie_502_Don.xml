@@ -60,13 +60,11 @@
 						<width>40</width>
 						<include content="AlphabetScrollerContainer">
 							<param name="width" value="40"/>
-							<param name="visible_background" value="$VAR[WideView_AlphabetScroller_BackgroundVar]"/>
 						</include>
 					</control>
 					<include content="AlphabetScrollerContainer">
 						<param name="right" value="2"/>
 						<param name="width" value="40"/>
-						<param name="visible_background" value="$VAR[WideView_AlphabetScroller_BackgroundVar]"/>
 					</include>
 					<control type="image">
 						<top>5</top>
@@ -104,13 +102,17 @@
 								<include>donview_itemlayout</include>
 							</itemlayout>
 							<focusedlayout height="230" width="901" condition="!Container.Content(episodes) + !Skin.HasSetting(wideview_3itemsrow)">
-								<include>donview_focusedlayout</include>
+								<include content="donview_focusedlayout">
+									<param name="viewid" value="$PARAM[viewid]" />
+								</include>
 							</focusedlayout>
 							<itemlayout height="173" width="600" condition="!Container.Content(episodes) + Skin.HasSetting(wideview_3itemsrow)">
 								<include>donview_itemlayout</include>
 							</itemlayout>
 							<focusedlayout height="173" width="600" condition="!Container.Content(episodes) + Skin.HasSetting(wideview_3itemsrow)">
-								<include>donview_focusedlayout</include>
+								<include content="donview_focusedlayout">
+									<param name="viewid" value="$PARAM[viewid]" />
+								</include>
 							</focusedlayout>
 							<itemlayout height="230" width="360" condition="Container.Content(episodes)">
 								<control type="group">

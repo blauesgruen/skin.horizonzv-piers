@@ -1,0 +1,135 @@
+{
+  "checked_on": "2026-11-10",
+  "source_checkpoint": "93474b3",
+  "scope": "Final literal registration, control-type and selected argument checks against pinned Piers and freshly fetched published master. Not a complete Kodi schema or all dynamic/handler semantics proof.",
+  "controls": {
+    "count": 5582,
+    "types": {
+      "group": 1531,
+      "grouplist": 247,
+      "button": 535,
+      "togglebutton": 17,
+      "radiobutton": 188,
+      "image": 1473,
+      "list": 68,
+      "label": 1191,
+      "fixedlist": 14,
+      "textbox": 83,
+      "scrollbar": 39,
+      "panel": 32,
+      "spincontrol": 6,
+      "progress": 41,
+      "edit": 8,
+      "fadelabel": 34,
+      "slider": 4,
+      "videowindow": 6,
+      "gamecontroller": 8,
+      "multiimage": 30,
+      "visualisation": 1,
+      "rss": 1,
+      "ranges": 4,
+      "spincontrolex": 3,
+      "sliderex": 2,
+      "gamewindow": 4,
+      "gamecontrollerlist": 2,
+      "wraplist": 4,
+      "mover": 4,
+      "resize": 1,
+      "epggrid": 1
+    },
+    "unsupported_in_piers": [],
+    "unsupported_in_master": [],
+    "dynamic_types": 0
+  },
+  "info_tables": {
+    "count": 30,
+    "delta": [
+      {
+        "table": "retroplayer",
+        "removed": [],
+        "added": [
+          "achievementshardcore",
+          "leaderboardtrackertitle"
+        ]
+      },
+      {
+        "table": "listitem_labels",
+        "removed": [],
+        "added": [
+          "agerating",
+          "developer",
+          "platform",
+          "players",
+          "publisher"
+        ]
+      }
+    ],
+    "piers_contexts": 15579,
+    "master_contexts": 15579,
+    "new_name_candidates": 0,
+    "literal_candidate_contexts_reviewed": 43,
+    "candidate_names": [
+      "addon.id",
+      "addon.status",
+      "library.node",
+      "skin.helper",
+      "skin.horizonzv",
+      "slideshow.xml",
+      "weather.currentview",
+      "weather.openweathermap",
+      "weather.wunderground"
+    ],
+    "candidate_assessment": "All are literal property keys, addon IDs or XML file names nested inside supported APIs; no unclassified API method in these candidates.",
+    "arity_candidates": [],
+    "condition_atom_candidates": [],
+    "unrecognized_roots": []
+  },
+  "builtins": {
+    "modules": 12,
+    "parsed_commands": 118,
+    "same_as_previous_master_command_snapshot": true,
+    "literal_references": 1631,
+    "findings": []
+  },
+  "input_actions": {
+    "piers_count": 219,
+    "master_count": 221,
+    "added": [
+      "chapterorsceneorbigstepback",
+      "chapterorsceneorbigstepforward"
+    ],
+    "removed_used": [],
+    "changed_used_symbolic_target": [],
+    "note": "Fresh master source text differs from the historical source hash; mappings and current uses were compared directly instead of treating hash mismatch as API removal."
+  },
+  "window_findings": [],
+  "known_regressions": {
+    "files": 167,
+    "errors": 0,
+    "warnings": 0
+  },
+  "sources": [
+    "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/guilib/GUIControlFactory.cpp",
+    "https://github.com/xbmc/xbmc/blob/master/xbmc/guilib/GUIControlFactory.cpp",
+    "https://github.com/xbmc/xbmc/blob/master/xbmc/GUIInfoManager.cpp",
+    "https://github.com/xbmc/xbmc/blob/master/xbmc/input/actions/ActionTranslator.cpp",
+    "https://github.com/xbmc/xbmc/blob/master/xbmc/interfaces/builtins/AddonBuiltins.cpp",
+    "https://github.com/xbmc/xbmc/blob/master/xbmc/interfaces/builtins/ApplicationBuiltins.cpp",
+    "https://github.com/xbmc/xbmc/blob/master/xbmc/interfaces/builtins/GUIBuiltins.cpp",
+    "https://github.com/xbmc/xbmc/blob/master/xbmc/interfaces/builtins/GUIContainerBuiltins.cpp",
+    "https://github.com/xbmc/xbmc/blob/master/xbmc/interfaces/builtins/GUIControlBuiltins.cpp",
+    "https://github.com/xbmc/xbmc/blob/master/xbmc/interfaces/builtins/LibraryBuiltins.cpp",
+    "https://github.com/xbmc/xbmc/blob/master/xbmc/interfaces/builtins/OpticalBuiltins.cpp",
+    "https://github.com/xbmc/xbmc/blob/master/xbmc/interfaces/builtins/PVRBuiltins.cpp",
+    "https://github.com/xbmc/xbmc/blob/master/xbmc/interfaces/builtins/PlayerBuiltins.cpp",
+    "https://github.com/xbmc/xbmc/blob/master/xbmc/interfaces/builtins/ProfileBuiltins.cpp",
+    "https://github.com/xbmc/xbmc/blob/master/xbmc/interfaces/builtins/SkinBuiltins.cpp",
+    "https://github.com/xbmc/xbmc/blob/master/xbmc/interfaces/builtins/SystemBuiltins.cpp"
+  ],
+  "limits": [
+    "Hardcoded helper-name/parser contracts not represented in InfoMap arrays retain the separately documented source review; no new whole-handler equivalence claim.",
+    "Include expansion, arbitrary configured actions and all native states are not validated by these static checks.",
+    "Actual changed behaviours have separate targeted native reports and current-package install evidence.",
+    "Published development branch is not a guarantee of final Kodi 23 behaviour."
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "checked_on": "2026-11-05",
+  "archive": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-widget-label-package-0914818110cb49b78ef1f2441501cdb3\\skin.horizonzv-1.22.0.1.zip",
+  "sha256": "9138b831f758ff7f628e794c2722c749abec1bcac8ec3e77c814382b8602464d",
+  "file_count": 294,
+  "crc_ok": true,
+  "all_entries_equal_workspace": true,
+  "xml_xsp_parsed": 179,
+  "changed_from_previous_test_package": [
+    "xml/Includes_Dash_GTO.xml",
+    "xml/Includes_Dash_Layout.xml"
+  ],
+  "native_install_evidence": "../kodi22_runtime/widget_label_install_checks.json"
+}

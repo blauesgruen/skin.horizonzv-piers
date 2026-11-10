@@ -1,0 +1,122 @@
+{
+  "scope": "Direct child tag names of control elements in active skin XML against quoted names in selected Piers loader sources. This is a lexical candidate pass, not a type-specific schema validator, include expander or runtime proof.",
+  "distinct_child_tags_before": 119,
+  "direct_child_occurrences_before": 34707,
+  "sources": [
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/guilib/GUIControlFactory.cpp",
+      "length": 67285
+    },
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/guilib/GUIBaseContainer.cpp",
+      "length": 52533
+    },
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/guilib/GUITextBox.cpp",
+      "length": 13124
+    },
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/pvr/guilib/GUIEPGGridContainer.cpp",
+      "length": 80298
+    },
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/guilib/GUIFixedListContainer.cpp",
+      "length": 12071
+    },
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/guilib/GUIRSSControl.cpp",
+      "length": 5477
+    },
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/guilib/GUIControl.cpp",
+      "length": 26490
+    },
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/guilib/listproviders/IListProvider.cpp",
+      "length": 1146
+    }
+  ],
+  "classification": "Invalid or ignored XML properties in the checked Piers loaders; no historical removal version established.",
+  "findings": [
+    {
+      "file": "xml/Home.xml",
+      "control": "button 4444",
+      "property": "textwidht",
+      "action": "Rename to supported textwidth; retain value 40.",
+      "behavior_change": "Previously ignored width now enables labelInfo.width and XBFONT_TRUNCATED. Controlled visual cases 1 and 10 inspected within server icon; 0 hidden. Real provider-populated status remains untested."
+    },
+    {
+      "file": "xml/Includes.xml",
+      "control": "RSS Feed",
+      "property": "highlightcolor",
+      "action": "Remove ignored property. Existing titlecolor=description and headlinecolor=textcolor=white remain."
+    },
+    {
+      "file": "xml/View_Movie_057_Banner.xml",
+      "control": "fixedlist",
+      "property": "wraparound",
+      "action": "Remove ignored XML property. Retain native fixedlist type, actions, movement and focusposition."
+    },
+    {
+      "file": "xml/View_Music_058_Banner.xml",
+      "control": "fixedlist",
+      "property": "wraparound",
+      "action": "Remove ignored XML property. Retain native fixedlist type, actions, movement and focusposition."
+    },
+    {
+      "file": "xml/View_Music_570_DiscFlow.xml",
+      "control": "fixedlist",
+      "property": "wraparound",
+      "action": "Remove ignored XML property. Retain native fixedlist type, actions, movement and focusposition."
+    }
+  ],
+  "remaining_nonfactory_tags": {
+    "include": "Include expansion",
+    "control": "Child control construction",
+    "description": "Descriptive skin metadata",
+    "autoscroll": "GUIBaseContainer / GUITextBox",
+    "itemlayout": "GUIBaseContainer / GUIEPGGridContainer",
+    "focusedlayout": "GUIBaseContainer / GUIEPGGridContainer",
+    "content": "GUIBaseContainer::LoadListProvider delegates to IListProvider::Create, which reads content elements.",
+    "rulerlayout": "GUIEPGGridContainer",
+    "channellayout": "GUIEPGGridContainer",
+    "focusedchannellayout": "GUIEPGGridContainer"
+  },
+  "forward_check": {
+    "url": "https://xbmc.github.io/docs.kodi.tv/master/kodi-base/d8/d22/skinning_v23.html",
+    "generated_utc": "2026-11-03 06:55:16",
+    "documented_removal": "gamewindow pixels; screenshot art recommended instead",
+    "new_removal_since_previous_review": false
+  },
+  "regression_check": "Three control-property checks added to tools/check_skin_compatibility.py",
+  "checks": [
+    {
+      "command": "python tools/check_skin_compatibility.py",
+      "exit_code": 0,
+      "findings": []
+    },
+    {
+      "command": "python tools/audit_skin_actions.py",
+      "exit_code": 0,
+      "findings": []
+    },
+    {
+      "command": "python tools/audit_skin_windows.py",
+      "exit_code": 0,
+      "findings": []
+    },
+    {
+      "command": "python tools/audit_skin_info_names.py",
+      "exit_code": 0,
+      "findings": []
+    }
+  ],
+  "distinct_child_tags_after": 116,
+  "direct_child_occurrences_after": 34703,
+  "runtime_limit": "Controlled server-count render passed with values 0, 1, 10 in visible isolated Kodi PID 37980. Provider guard relaxed only in test-copy button 4444; no provider installed, so real provider-status integration remains open. Test copy and profile baseline restored.",
+  "runtime_evidence": [
+    "server_counter_fixture.json",
+    "server_counter_checks.json",
+    "home_dashboard_cleanup.json"
+  ]
+}

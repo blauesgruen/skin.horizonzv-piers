@@ -2,8 +2,6 @@
 <window>
     <defaultcontrol/>
 	<backgroundcolor>grey3</backgroundcolor>
-    <onload condition="Skin.HasSetting(fanart)+System.HasAddon(script.artistslideshow)">RunScript(script.artistslideshow)</onload>
-    <!-- <onload condition="Skin.HasSetting(fanart)+System.HasAddon(script.artistslideshow)+!Visualisation.Enabled">RunScript(script.artistslideshow)</onload> -->
     <include>openclose</include>
     <controls>
         <control type="group">
@@ -174,7 +172,6 @@
                                     <timeperimage>100</timeperimage>
                                     <randomize>false</randomize>
                                     <fadetime>10</fadetime>
-                                    <aspectratio>keep</aspectratio>
                                 </control>
                             </control>
                             <control type="group">
@@ -585,7 +582,7 @@
                                                 <width>120</width>
                                                 <height>52</height>
                                                 <aspectratio align="right">keep</aspectratio>
-                                                <texture>$INFO[MusicPlayer.Codec,flagging/audio/,.png]</texture>
+                                                <texture fallback="flagging/audio/unknown.png">$VAR[MusicCodecTexture]</texture>
                                             </control>
                                             <control type="label">
                                                 <description>Audio Codec Image</description>
@@ -612,7 +609,7 @@
                                                 <width>165</width>
                                                 <height>52</height>
                                                 <aspectratio align="center">keep</aspectratio>
-                                                <texture fallback="leftrating/rating0.png">$INFO[Player.StarRating,leftrating/]</texture>
+                                                <texture fallback="leftuserrating/0.png">$INFO[MusicPlayer.UserRating,leftuserrating/,.png]</texture>
                                                 <visible>!Player.IsInternetStream</visible>
                                             </control>
                                         </control>
@@ -746,7 +743,7 @@
                                                     <description>Cd Disc</description>
                                                     <aspectratio>keep</aspectratio>
                                                     <texture diffuse="masks/mask_cdart.png">$VAR[DiscartPlayerVAR]</texture>
-                                                    <visible>![String.Contains(Control.GetLabel(79),$LOCALIZE[301456])|String.Contains(Control.GetLabel(79),$LOCALIZE[301458])]</visible>
+                                                    <visible>![String.Contains(Control.GetLabel(79),$LOCALIZE[31339])|String.Contains(Control.GetLabel(79),$LOCALIZE[31340])]</visible>
                                                 </control>
                                                 <control type="image" id="81">
                                                     <description>Poster</description>
@@ -754,7 +751,7 @@
                                                     <bottom>14</bottom>
                                                     <aspectratio>scale</aspectratio>
                                                     <texture diffuse="masks/mask_cdart.png">$VAR[NowPlayingPosterVar]</texture>
-                                                    <visible>String.Contains(Control.GetLabel(79),$LOCALIZE[301456])|String.Contains(Control.GetLabel(79),$LOCALIZE[301458])</visible>
+                                                    <visible>String.Contains(Control.GetLabel(79),$LOCALIZE[31339])|String.Contains(Control.GetLabel(79),$LOCALIZE[31340])</visible>
                                                 </control>
                                             </control>
                                             <control type="group">
@@ -853,7 +850,7 @@
                                         <description>Rating</description>
                                         <width>165</width>
                                         <aspectratio align="center">keep</aspectratio>
-                                        <texture fallback="leftrating/rating0.png">$INFO[Player.StarRating,leftrating/]</texture>
+                                        <texture fallback="leftuserrating/0.png">$INFO[MusicPlayer.UserRating,leftuserrating/,.png]</texture>
                                         <visible>!Player.IsInternetStream</visible>
                                     </control>
                                     <control type="image">
@@ -866,7 +863,7 @@
                                         <description>Audio Codec Image</description>
                                         <width>120</width>
                                         <aspectratio align="right">keep</aspectratio>
-                                        <texture>$INFO[MusicPlayer.Codec,flagging/audio/,.png]</texture>
+                                        <texture fallback="flagging/audio/unknown.png">$VAR[MusicCodecTexture]</texture>
                                     </control>
                                     <control type="label">
                                         <description>Audio BitRate Image</description>

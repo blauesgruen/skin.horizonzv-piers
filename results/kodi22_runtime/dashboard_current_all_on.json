@@ -1,0 +1,32 @@
+{
+  "initial_post_reload_attempt_discarded": "ReloadSkin selected tvshow; child visibility alone did not prove visible dashboard. Dashboard selected before final checks.",
+  "conditions": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Control.HasFocus(8022)": true,
+      "Control.IsVisible(8001)": true,
+      "Control.IsVisible(8022)": true,
+      "Control.IsVisible(8032)": true,
+      "Control.IsVisible(8042)": true,
+      "Control.IsVisible(8052)": true,
+      "Control.IsVisible(9006)": true,
+      "Skin.HasSetting(Row2_off)": false,
+      "Skin.HasSetting(Row3_off)": false,
+      "Skin.HasSetting(Row4_off)": false,
+      "Skin.HasSetting(Row5_off)": false
+    }
+  },
+  "labels": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container(8009).NumItems": "10",
+      "Container(8022).NumItems": "11",
+      "Container(8032).NumItems": "11",
+      "Container(8042).NumItems": "11",
+      "Container(8052).NumItems": "11",
+      "Container(9000).ListItem.Property(homemenu_id)": "dashboard"
+    }
+  }
+}

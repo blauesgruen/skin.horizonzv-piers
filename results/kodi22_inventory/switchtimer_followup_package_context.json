@@ -1,0 +1,16 @@
+﻿{
+    "builder":  "C:/Users/zorno/scripts/build-kodi-addon.ps1",
+    "builder_sha256":  "9F9944DD6608144363167F6EE5AC5342ED8E79F0CE545686861C5FF1952216EB",
+    "archive":  "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-switchtimer-followup-package-30da5fcccb9a44ca8a702c3bcd30bcfc\\skin.horizonzv-1.22.0.1.zip",
+    "stage_target_verified":  "C:\\Users\\zorno\\AppData\\Local\\Temp\\kodi-package-skin.horizonzv",
+    "excluded_directories":  [
+                                 ".git",
+                                 ".github",
+                                 ".vscode",
+                                 "__pycache__",
+                                 "temp",
+                                 "results",
+                                 "tools"
+                             ],
+    "purpose":  "Remove remaining unsupported KN next-timer display dependencies; isolated TEMP archive"
+}

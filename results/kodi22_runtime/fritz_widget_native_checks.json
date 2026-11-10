@@ -1,0 +1,116 @@
+{
+  "checked_on": "2026-11-10",
+  "scope": "Visible FritzAct state/focus check with original skin layouts and local data.\n\nThe fixture removes provider content and click actions. It runs no router/device\ncommand and restores its XML files, skin settings and previous startup skin.\n",
+  "passed": true,
+  "provider_version": "3.1.7+matrix",
+  "source_sha256": "bf51a7dc3c2fd6654641da0b19f53f2c3f0a9348815c283a1a9267a39540c4e2",
+  "fixture_layouts_equal_source": true,
+  "removed_fixture_nodes": [
+    "<onclick condition=\"String.IsEqual(ListItem.Property(type),switch)\">RunScript(script.program.fritzact,action=toggle&amp;ain=$INFO[ListItem.Label2])</onclick>\n\t\t\t",
+    "<onclick condition=\"String.IsEqual(ListItem.Property(type),group)\">RunScript(script.program.fritzact,action=toggle&amp;ain=$INFO[ListItem.Label2])</onclick>\n\t\t\t",
+    "<onclick condition=\"String.IsEqual(ListItem.Property(type),thermostat)\">RunScript(script.program.fritzact,action=temp&amp;ain=$INFO[ListItem.Label2])</onclick>\n\t\t\t",
+    "<onclick>Notification(wird geschaltet ...,FritzDect ($INFO[ListItem.Label]),2000)</onclick>\n\t\t\t",
+    "<content>\n\t\t\t\t<item>\n\t\t\t\t\t<label />\n\t\t\t\t\t<property name=\"BusyIcon\">Busy.png</property>\n\t\t\t\t\t<visible>String.IsEmpty(Container($PARAM[id]).ListItem(1).Label)</visible>\n\t\t\t\t</item>\n\t\t\t</content>\n\t\t\t",
+    "<include condition=\"System.AddonIsEnabled(script.program.fritzact)\">FritzdectContent</include>\n\t\t\t\n\t\t"
+  ],
+  "backup_directory": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-fritz-widget-native-znv8fmso",
+  "previous_skin": "skin.metis",
+  "pid": 24080,
+  "native": {
+    "provider_states": [
+      "an",
+      "aus",
+      ""
+    ],
+    "language": "German",
+    "python_assertions_enabled": false,
+    "cases": [
+      {
+        "name": "unfocused",
+        "selected_state": "an",
+        "state_conditions": {
+          "green": true,
+          "red": false
+        },
+        "panel_has_focus": false,
+        "screenshot": "fritz_widget_unfocused.png"
+      },
+      {
+        "name": "on",
+        "selected_state": "an",
+        "state_conditions": {
+          "green": true,
+          "red": false
+        },
+        "panel_has_focus": true,
+        "screenshot": "fritz_widget_on.png"
+      },
+      {
+        "name": "off",
+        "selected_state": "aus",
+        "state_conditions": {
+          "green": false,
+          "red": true
+        },
+        "panel_has_focus": true,
+        "screenshot": "fritz_widget_off.png"
+      },
+      {
+        "name": "empty",
+        "selected_state": "",
+        "state_conditions": {
+          "green": false,
+          "red": false
+        },
+        "panel_has_focus": true,
+        "screenshot": "fritz_widget_empty.png"
+      }
+    ],
+    "mismatches": [],
+    "passed": true
+  },
+  "relevant_parser_error_count": 0,
+  "production_home_lifecycle": [
+    {
+      "window": "settings",
+      "properties": {
+        "Window(Home).Property(HorizonzV.FritzAct.StateOff)": "",
+        "Window(Home).Property(HorizonzV.FritzAct.StateOn)": ""
+      }
+    },
+    {
+      "window": "home",
+      "properties": {
+        "Window(Home).Property(HorizonzV.FritzAct.StateOff)": "aus",
+        "Window(Home).Property(HorizonzV.FritzAct.StateOn)": "an"
+      }
+    },
+    {
+      "window": "settings",
+      "properties": {
+        "Window(Home).Property(HorizonzV.FritzAct.StateOff)": "",
+        "Window(Home).Property(HorizonzV.FritzAct.StateOn)": ""
+      }
+    }
+  ],
+  "cleanup": {
+    "owned_process_exited": true,
+    "settings_and_includes_restored": true,
+    "fixture_xml_removed": true,
+    "provider_files_unchanged": true
+  },
+  "limits": [
+    "Controlled widget data only; no device/provider backend verification.",
+    "Current installed language only; foreign-language differences retain source evidence.",
+    "No real FritzAct content acquisition or click action in the fixture."
+  ],
+  "visual_review": {
+    "images_inspected": [
+      "fritz_widget_unfocused.png",
+      "fritz_widget_on.png",
+      "fritz_widget_off.png",
+      "fritz_widget_empty.png"
+    ],
+    "result": "Unfocused on green, off red, empty neutral. Focus highlight follows selected item; focused on/off/empty use the standard skin focus style. Actual layout bodies match production source."
+  }
+}

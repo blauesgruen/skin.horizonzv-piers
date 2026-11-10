@@ -1,0 +1,90 @@
+{
+  "scope": "Native MusicOSD lyrics entry over real Visualisation with unchanged CU LRC 6.7.6 and authored local LRC",
+  "background_service_configured": false,
+  "verified_addon_files": {
+    "script.cu.lrclyrics": 140,
+    "script.module.beautifulsoup4": 13,
+    "script.module.soupsieve": 10,
+    "script.module.mutagen": 60
+  },
+  "observations": [
+    {
+      "before_start": {
+        "MusicPlayer.Artist": "HorizonzV Audit Artist",
+        "MusicPlayer.Title": "HorizonzV Lyrics Audit",
+        "System.CurrentControlID": "",
+        "System.CurrentWindow": "Audio visualisation",
+        "Window(Home).Property(culrc.guirunning)": "",
+        "Window(Home).Property(culrc.lyrics)": "",
+        "Window(Home).Property(culrc.running)": "",
+        "Window(Home).Property(culrc.source)": ""
+      }
+    },
+    {
+      "lyrics_visible": {
+        "MusicPlayer.Artist": "HorizonzV Audit Artist",
+        "MusicPlayer.Title": "HorizonzV Lyrics Audit",
+        "System.CurrentControlID": "110",
+        "System.CurrentWindow": "System",
+        "Window(Home).Property(culrc.guirunning)": "TRUE",
+        "Window(Home).Property(culrc.lyrics)": "[00:00.00]HorizonzV audit line one\r\n[00:03.00]Native lyrics entry works\r\n[00:06.00]Authored local fixture\r\n",
+        "Window(Home).Property(culrc.running)": "true",
+        "Window(Home).Property(culrc.source)": "File"
+      }
+    },
+    {
+      "before_native_stop": {
+        "MusicPlayer.Artist": "HorizonzV Audit Artist",
+        "MusicPlayer.Title": "HorizonzV Lyrics Audit",
+        "System.CurrentControlID": "2402",
+        "System.CurrentWindow": "Music OSD",
+        "Window(Home).Property(culrc.guirunning)": "TRUE",
+        "Window(Home).Property(culrc.lyrics)": "[00:00.00]HorizonzV audit line one\r\n[00:03.00]Native lyrics entry works\r\n[00:06.00]Authored local fixture\r\n",
+        "Window(Home).Property(culrc.running)": "true",
+        "Window(Home).Property(culrc.source)": "File"
+      },
+      "lyrics_window_visible": true
+    },
+    {
+      "after_native_stop": {
+        "MusicPlayer.Artist": "HorizonzV Audit Artist",
+        "MusicPlayer.Title": "HorizonzV Lyrics Audit",
+        "System.CurrentControlID": "2402",
+        "System.CurrentWindow": "Music OSD",
+        "Window(Home).Property(culrc.guirunning)": "",
+        "Window(Home).Property(culrc.lyrics)": "",
+        "Window(Home).Property(culrc.running)": "",
+        "Window(Home).Property(culrc.source)": ""
+      }
+    },
+    {
+      "player_controls_restart": {
+        "MusicPlayer.Artist": "HorizonzV Audit Artist",
+        "MusicPlayer.Title": "HorizonzV Lyrics Audit",
+        "System.CurrentControlID": "110",
+        "System.CurrentWindow": "Immediate HDD spindown",
+        "Window(Home).Property(culrc.guirunning)": "TRUE",
+        "Window(Home).Property(culrc.lyrics)": "[00:00.00]HorizonzV audit line one\r\n[00:03.00]Native lyrics entry works\r\n[00:06.00]Authored local fixture\r\n",
+        "Window(Home).Property(culrc.running)": "true",
+        "Window(Home).Property(culrc.source)": "File"
+      },
+      "lyrics_setting": true
+    }
+  ],
+  "pid": 31436,
+  "lyrics_setting_after_start": true,
+  "provider_invokers_after_restart": [
+    0,
+    4,
+    6
+  ],
+  "cleanup": {
+    "process_exited": true,
+    "provider_settings_restored": true,
+    "profile_restored": true,
+    "all_test_xml_match_production": true,
+    "all_copied_addon_files_unchanged": true,
+    "all_standard_source_files_unchanged": true
+  },
+  "errors": []
+}

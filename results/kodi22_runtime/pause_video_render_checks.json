@@ -1,0 +1,88 @@
+[
+  {
+    "case": "light_infos_off",
+    "player": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "speed": 0,
+        "time": {
+          "hours": 0,
+          "milliseconds": 173,
+          "minutes": 0,
+          "seconds": 0
+        }
+      }
+    },
+    "conditions": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.Paused": true,
+        "Skin.HasSetting(pause_light)": true,
+        "Skin.HasSetting(pause_light_hideinfos)": false,
+        "Window.IsVisible(seekbar)": true
+      }
+    },
+    "screenshot_action": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": "OK"
+    },
+    "image": "pause_light_infos_off.png"
+  },
+  {
+    "case": "light_infos_on",
+    "player": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "speed": 0,
+        "time": {
+          "hours": 0,
+          "milliseconds": 193,
+          "minutes": 0,
+          "seconds": 0
+        }
+      }
+    },
+    "conditions": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.Paused": true,
+        "Skin.HasSetting(pause_light)": true,
+        "Skin.HasSetting(pause_light_hideinfos)": true,
+        "Window.IsVisible(seekbar)": true
+      }
+    },
+    "image": "pause_light_infos_on.png"
+  },
+  {
+    "case": "standard",
+    "player": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "speed": 0,
+        "time": {
+          "hours": 0,
+          "milliseconds": 121,
+          "minutes": 0,
+          "seconds": 0
+        }
+      }
+    },
+    "conditions": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.Paused": true,
+        "Skin.HasSetting(pause_light)": false,
+        "Skin.HasSetting(pause_light_hideinfos)": false,
+        "Window.IsVisible(seekbar)": true
+      }
+    },
+    "image": "pause_standard.png"
+  }
+]

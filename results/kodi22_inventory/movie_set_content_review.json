@@ -1,0 +1,91 @@
+{
+  "date": "2026-11-04",
+  "classification": "Invalid skin directory request from hidden movie-set content; no Kodi API removal",
+  "files": [
+    "xml/Includes_SetInformation.xml",
+    "xml/Variables.xml"
+  ],
+  "finding": "MovieSetInformationCover in DialogVideoInfo always supplied ListItem.FolderPath as dynamic directory content, including ordinary movies. Visibility predicates did not prevent the initial request. This reproduced the AVI directory error in HorizonzV; the unchanged Estuary reference did not reproduce it.",
+  "change": "Supply each existing content path through a variable that is nonempty only when ListItem.IsCollection. Preserve the original ListItem.FolderPath versus Container.ListItem.FolderPath context, sort order, target and existing visibility.",
+  "sources": [
+    "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/guilib/GUIBaseContainer.cpp",
+    "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/guilib/listproviders/DirectoryProvider.cpp"
+  ],
+  "source_review": "GUIBaseContainer::AllocResources and SetListProvider call UpdateListProvider. DirectoryProvider evaluates the URL independently of the later group visibility; URL/limit/sort/browse changes normally schedule work only for a nonempty current URL. This is not a guarantee against every later invalidation or in-flight job.",
+  "native": {
+    "before": "../kodi22_runtime/globalsearch_before_set_content_guard.json",
+    "estuary_reference": "../kodi22_runtime/globalsearch_reference_checks.json",
+    "current_global_entry": "../kodi22_runtime/globalsearch_current_checks.json",
+    "set_positive_and_negative": "../kodi22_runtime/globalsearch_sets_checks.json",
+    "before_avi_error_count": 1,
+    "reference_error_count": 0,
+    "after_global_error_count": 0,
+    "after_sets_error_count": 0,
+    "provider_archive_files_unchanged": 226,
+    "set_phases": [
+      {
+        "phase": "ordinary_movie_info_sources_empty",
+        "cover_source": "",
+        "list_source": ""
+      },
+      {
+        "phase": "real_set_selected",
+        "folder": "videodb://movies/sets/1/?ignoreSingleMovieSets=false&setid=1",
+        "cover_source": "videodb://movies/sets/1/?ignoreSingleMovieSets=false&setid=1",
+        "list_source": "videodb://movies/sets/1/?ignoreSingleMovieSets=false&setid=1"
+      },
+      {
+        "phase": "real_set_info",
+        "cover_count": "1",
+        "movie": "Skin Audit Movie",
+        "cover_source": "videodb://movies/sets/1/?ignoreSingleMovieSets=false&setid=1"
+      },
+      {
+        "phase": "set_list_prerequisites",
+        "aspect_ratio": "16:9",
+        "plot": "",
+        "info_enabled": true,
+        "cover_visible": true
+      },
+      {
+        "phase": "real_set_list_view401",
+        "list_count": "1",
+        "movie": "Skin Audit Movie"
+      },
+      {
+        "phase": "ordinary_movie_after_set",
+        "cover_source": "",
+        "list_source": ""
+      }
+    ],
+    "cleanup": {
+      "process_exited": true,
+      "profile_restored": true,
+      "media_databases_restored": true,
+      "skin_xml_match_production": true,
+      "provider_copy_matches_archive": true
+    },
+    "reference_skin_files": "movie_set_reference_skin_check.json"
+  },
+  "static_checks": {
+    "compatibility_findings": 0,
+    "action_findings": 0,
+    "window_findings": 0,
+    "info_arity_candidates": 0,
+    "condition_atom_candidates": 0,
+    "literal_name_candidates": 43,
+    "inventory_missing_includes_variables_strings_textures": 0
+  },
+  "limits": [
+    "One temporary real movie set with one authored local film; native ignoreSingleMovieSets=false route used.",
+    "View401 positive list case uses enabled VideoInfo, empty set plot and native verified 16:9; full layout/all-ratio coverage is not claimed.",
+    "No plugin-backed collection, SMB collection, rapid switching or removal of final member tested.",
+    "Other previously recorded addon-info errors were not rerun and are not automatically declared resolved."
+  ],
+  "test_setup_notes": [
+    "Temporary observation labels 2397/2398 existed only in isolated DialogVideoInfo/MyVideoNav copies and were removed by final production-file sync.",
+    "Filmset created and overview cleared using native JSON-RPC; backed-up original media databases and settings restored.",
+    "Draft attempts had incorrect expectations about one-movie set visibility and about the view401 list prerequisites; these are not additional confirmed skin regressions."
+  ],
+  "package": "movie_set_content_package_review.json"
+}

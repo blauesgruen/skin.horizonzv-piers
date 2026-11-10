@@ -1,0 +1,110 @@
+{
+  "date": "2026-11-04",
+  "scope": "HorizonzV skin-facing TMDb Helper contract only",
+  "upstream_commit": "1aaa5b0d336c9e7b48d0c8cb9ce15e1a3dc2ddb8",
+  "upstream_version": "6.20.7",
+  "installed_reference_version": "5.4.16",
+  "result": "Retained service switch, monitor container selector, container delivery and indexed provider icon properties. No skin change justified by these contracts.",
+  "skin_consumers": [
+    "xml/Startup.xml",
+    "xml/Includes.xml",
+    "xml/MyVideoNav.xml",
+    "xml/MyFavourites.xml"
+  ],
+  "evidence": [
+    {
+      "file": "addon.xml",
+      "sha256": "804c9d7aef62138f1c37c850b8f62baed371f4505bd8635db0e50df334682359",
+      "source": "https://github.com/jurialmunkey/plugin.video.themoviedb.helper/blob/1aaa5b0d336c9e7b48d0c8cb9ce15e1a3dc2ddb8/addon.xml",
+      "matches": [
+        {
+          "line": 3,
+          "text": "version=\"6.20.7\""
+        }
+      ]
+    },
+    {
+      "file": "resources/tmdbhelper/lib/monitor/poller.py",
+      "sha256": "a7ac3d3eea37e5ef20e0ff8813935f3b66026e9a71904de50e26722784000e59",
+      "source": "https://github.com/jurialmunkey/plugin.video.themoviedb.helper/blob/1aaa5b0d336c9e7b48d0c8cb9ce15e1a3dc2ddb8/resources/tmdbhelper/lib/monitor/poller.py",
+      "matches": [
+        {
+          "line": 9,
+          "text": "CV_DISABLED = \"!Skin.HasSetting(TMDbHelper.Service)\""
+        }
+      ]
+    },
+    {
+      "file": "resources/tmdbhelper/lib/monitor/basegetter.py",
+      "sha256": "62dae1971b92d8356203ec864299d6f84095593cee871d0766fb978585e8579f",
+      "source": "https://github.com/jurialmunkey/plugin.video.themoviedb.helper/blob/1aaa5b0d336c9e7b48d0c8cb9ce15e1a3dc2ddb8/resources/tmdbhelper/lib/monitor/basegetter.py",
+      "matches": [
+        {
+          "line": 60,
+          "text": "return get_infolabel('Skin.String(TMDbHelper.MonitorContainer)')"
+        }
+      ]
+    },
+    {
+      "file": "resources/tmdbhelper/lib/monitor/listitemfinaliser.py",
+      "sha256": "eb26c14a19650c761d5b9c2f9ff88d9ce35a4142a7d666887de3e2aaccae9321",
+      "source": "https://github.com/jurialmunkey/plugin.video.themoviedb.helper/blob/1aaa5b0d336c9e7b48d0c8cb9ce15e1a3dc2ddb8/resources/tmdbhelper/lib/monitor/listitemfinaliser.py",
+      "matches": [
+        {
+          "line": 188,
+          "text": "class ListItemMonitorFinaliserContainerMethod(ListItemMonitorFinaliser):"
+        },
+        {
+          "line": 192,
+          "text": "self.add_item_listcontainer(self.listitem)  # Add item to container"
+        }
+      ]
+    },
+    {
+      "file": "resources/tmdbhelper/lib/items/database/itemmeta_factories/concrete_classes/basemedia.py",
+      "sha256": "55bd0ae818faefd6d385085ffa9ce6fe731fe3c0af3e2ba06d9894da85b35f72",
+      "source": "https://github.com/jurialmunkey/plugin.video.themoviedb.helper/blob/1aaa5b0d336c9e7b48d0c8cb9ce15e1a3dc2ddb8/resources/tmdbhelper/lib/items/database/itemmeta_factories/concrete_classes/basemedia.py",
+      "matches": [
+        {
+          "line": 294,
+          "text": "'instance': ('provider', None),"
+        },
+        {
+          "line": 295,
+          "text": "'mappings': {'name': 'name', 'tmdb_id': 'tmdb_id', 'type': 'availability', 'icon': 'logo'},"
+        },
+        {
+          "line": 296,
+          "text": "'propname': ('provider', ),"
+        }
+      ]
+    },
+    {
+      "file": "resources/tmdbhelper/lib/items/database/itemmeta_factories/concrete_classes/baseclass.py",
+      "sha256": "322c032089d746c00524e4377c4901fc701928f3da9743295c7a5f46081795fa",
+      "source": "https://github.com/jurialmunkey/plugin.video.themoviedb.helper/blob/1aaa5b0d336c9e7b48d0c8cb9ce15e1a3dc2ddb8/resources/tmdbhelper/lib/items/database/itemmeta_factories/concrete_classes/baseclass.py",
+      "matches": [
+        {
+          "line": 91,
+          "text": "for x, i in enumerate(instance.cached_data, 1):"
+        },
+        {
+          "line": 97,
+          "text": "infoproperties[f'{name}.{x}.{dkey}'] = data"
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Source review, not a native test of TMDb Helper 6.20.7.",
+    "Does not prove online watch-provider availability or all monitor transitions.",
+    "No external add-on files changed or installed."
+  ],
+  "current_followup": {
+    "checked_on": "2026-11-10",
+    "upstream_version": "6.21.5",
+    "upstream_commit": "7f0c7a2cfd81351f03405f91fcd22e1ac06fe568",
+    "evidence": "tmdbhelper_6_21_5_contract_review.json",
+    "result": "6.21.5 retains endpoint names but requires explicit Favourites monitoring opt-in. Skin correction now additionally verified with current unmodified provider in a real native Kodi session: movie 603/eight icon fields, Favourites modes, delivery/clearing. Original 6.20.7 source snapshot retained."
+  }
+}

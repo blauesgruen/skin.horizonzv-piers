@@ -1,0 +1,19 @@
+{
+  "start": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container(9000).ListItem.Property(homemenu_id)": "weather",
+      "System.CurrentControlId": "9000",
+      "Weather.Plugin": ""
+    }
+  },
+  "after_delay": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Control.HasFocus(9000)": true,
+      "Skin.TimerIsRunning(homeweatherautohide)": false
+    }
+  }
+}

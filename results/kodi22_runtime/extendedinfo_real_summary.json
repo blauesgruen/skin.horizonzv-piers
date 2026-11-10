@@ -1,0 +1,39 @@
+{
+  "addon": "script.extendedinfo",
+  "version": "6.0.9",
+  "installation": "Kodi InstallAddon from official repository in isolated profile; dependencies installed by Kodi; no addon source modified",
+  "native_trigger": "DialogVideoInfo control 440 with original Close order",
+  "query": "Skin Audit Movie 2026",
+  "addon_dispatch_log_query_matches": true,
+  "visible_result": "ExtendedInfo YouTube browser displays Search for Skin Audit Movie 2026; zero results",
+  "online_request_failure": "YouTube rejects unregistered callers without established identity; API key or other consumer identity required",
+  "error_lines_in_segment": 5,
+  "exception_names": [],
+  "returned_window_after_back": {
+    "currentwindow": {
+      "id": 10025,
+      "label": "Videos"
+    }
+  },
+  "cleanup": {
+    "process_exited": true,
+    "profile_baseline_restored": true,
+    "all_164_test_xml_match_production": true
+  },
+  "limits": [
+    "No successful search results or playback verified",
+    "No API credential configured or requested",
+    "Metadata action dialogs and live album/song addon invocations not exercised",
+    "Unmodified addon and dependencies retained only in isolated test profile"
+  ],
+  "official_package_verification": {
+    "sha256": "d90e8c737d134998746b7d976afd1437c958e5496d5238b8d744ac19e565f474",
+    "archive_files_checked": 984,
+    "installed_file_mismatches": []
+  },
+  "error_line_classification": {
+    "addon_python_syntax_warnings": 4,
+    "videodb_directory_error": 1,
+    "videodb_directory_error_cause": "Not established; occurred before ExtendedInfo execution. No causal attribution to ExtendedInfo or a specific skin expression."
+  }
+}

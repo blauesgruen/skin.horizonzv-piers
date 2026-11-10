@@ -1,0 +1,69 @@
+{
+  "date": "2026-11-04",
+  "classification": "Invalid directory inputs and unresolved include parameter, not a Kodi API removal",
+  "changes": [
+    {
+      "file": "xml/View_Movie_302_3Panel.xml",
+      "control": "303",
+      "old_source": "$INFO[ListItem.FolderPath]",
+      "new_source": "$VAR[FolderPreviewContentPath]"
+    },
+    {
+      "file": "xml/Includes_PVR.xml",
+      "control": "5000",
+      "old_source": "$INFO[ListItem.FilenameAndPath]",
+      "new_source": "$VAR[PVRFolderContentPath]",
+      "sort_change": "Remove never-defined folder_sortorder parameter; retain date sort and ascending fallback."
+    }
+  ],
+  "guard": "ListItem.IsFolder + !ListItem.IsParentFolder",
+  "sources": [
+    "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/guilib/GUIBaseContainer.cpp",
+    "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/guilib/listproviders/DirectoryProvider.cpp",
+    "https://github.com/xbmc/xbmc/blob/master/xbmc/guilib/listproviders/DirectoryProvider.cpp",
+    "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/FileItem.cpp"
+  ],
+  "source_findings": [
+    "Early AllocResources/SetListProvider updates can precede display visibility.",
+    "Invalid or absent sort order falls back to ascending in reviewed Piers and published master.",
+    "CFileItem::SetLabel marks .. as folder and parent."
+  ],
+  "native_evidence": "../kodi22_runtime/folder_content_checks.json",
+  "native_method": "Copied production content expressions/attributes in always-visible native probe providers. This forces provider evaluation independently of production parent visibility; not a full 3-panel/PVR layout or backend test.",
+  "native_rows": 8,
+  "before_error_lines": 4,
+  "before_directory_error_lines": 2,
+  "after_error_lines": 0,
+  "folder_order_before_and_after": [
+    "z_early.avi",
+    "a_late.avi"
+  ],
+  "cleanup": {
+    "process_exited": true,
+    "profile_restored": true,
+    "media_databases_restored": true,
+    "test_skin_xml_match_production": true
+  },
+  "static_checks": {
+    "four_checkers_confirmed_findings": 0,
+    "literal_name_candidates": 43,
+    "missing_static_references": 0,
+    "variables": 282
+  },
+  "limits": [
+    "Always-visible probe providers exercise the copied sources, not the full production 3-panel/PVR windows.",
+    "No real PVR backend, SMB/plugin folders or rapid-switch test.",
+    "Empty URL does not itself clear cached provider rows; original parent visibility is retained."
+  ],
+  "harness_draft": "folder_content_view_binding_draft.json records premature wait before native view activation; cleanup completed.",
+  "package": "folder_content_package_review.json",
+  "additional_sort_case_pending": {
+    "state": "Completed; a free Kodi window became available",
+    "case": "Reverse lexical/date ordering: z_early.avi precedes a_late.avi by date.",
+    "observed_before_and_after": [
+      "z_early.avi",
+      "a_late.avi"
+    ],
+    "evidence": "../kodi22_runtime/folder_content_checks.json"
+  }
+}

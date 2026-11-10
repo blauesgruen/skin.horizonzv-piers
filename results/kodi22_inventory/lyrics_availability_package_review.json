@@ -1,0 +1,14 @@
+{
+  "checked_on": "2026-11-05",
+  "archive": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-lyrics-availability-package-3d7563374d2f46d6929794225b0d63e2\\skin.horizonzv-1.22.0.1.zip",
+  "sha256": "54f22f8aa6ed387854137e2e0f691cf750db1e5ebd2d2a1848cca48282701eff",
+  "file_count": 294,
+  "crc_ok": true,
+  "all_entries_equal_workspace": true,
+  "xml_xsp_parsed": 179,
+  "changed_from_previous_test_package": [
+    "xml/MusicOSD.xml",
+    "xml/PlayerControls.xml"
+  ],
+  "native_install_evidence": "../kodi22_runtime/lyrics_availability_install_checks.json"
+}

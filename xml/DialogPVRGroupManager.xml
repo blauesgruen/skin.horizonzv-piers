@@ -210,6 +210,7 @@
                             <param name="width" value="100%" />
                             <param name="label" value="$LOCALIZE[19174]" />
                             <param name="altlabel" value="$LOCALIZE[19173]" />
+                            <param name="usealttexture" value="!String.IsEmpty(Window.Property(IsRadio))" />
                             <param name="font" value="impacted18" />
                             <param name="onleft" value="12" />
                             <param name="onright" value="13" />

@@ -1,0 +1,77 @@
+{
+  "checked_on": "2026-11-04",
+  "scope": "Seven Home.xml library count properties without skin/addon literal setters.",
+  "sources": [
+    {
+      "source": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/utils/RecentlyAddedJob.cpp",
+      "matches": [
+        {
+          "line": 364,
+          "text": "home->SetProperty(\"TVShows.Count\"         , tvShowCount);"
+        },
+        {
+          "line": 366,
+          "text": "home->SetProperty(\"TVShows.UnWatched\"     , tvShowCount - TvShowsWatched);"
+        },
+        {
+          "line": 370,
+          "text": "home->SetProperty(\"Movies.Count\"          , movieTotals);"
+        },
+        {
+          "line": 372,
+          "text": "home->SetProperty(\"Movies.UnWatched\"      , movieTotals - movieWatched);"
+        },
+        {
+          "line": 376,
+          "text": "home->SetProperty(\"Music.SongsCount\"      , MusSongTotals);"
+        },
+        {
+          "line": 377,
+          "text": "home->SetProperty(\"Music.AlbumsCount\"     , MusAlbumTotals);"
+        },
+        {
+          "line": 378,
+          "text": "home->SetProperty(\"Music.ArtistsCount\"    , MusArtistTotals);"
+        }
+      ]
+    },
+    {
+      "source": "https://github.com/xbmc/xbmc/blob/master/xbmc/utils/RecentlyAddedJob.cpp",
+      "matches": [
+        {
+          "line": 377,
+          "text": "home->SetProperty(\"TVShows.Count\"         , tvShowCount);"
+        },
+        {
+          "line": 379,
+          "text": "home->SetProperty(\"TVShows.UnWatched\"     , tvShowCount - TvShowsWatched);"
+        },
+        {
+          "line": 383,
+          "text": "home->SetProperty(\"Movies.Count\"          , movieTotals);"
+        },
+        {
+          "line": 385,
+          "text": "home->SetProperty(\"Movies.UnWatched\"      , movieTotals - movieWatched);"
+        },
+        {
+          "line": 389,
+          "text": "home->SetProperty(\"Music.SongsCount\"      , MusSongTotals);"
+        },
+        {
+          "line": 390,
+          "text": "home->SetProperty(\"Music.AlbumsCount\"     , MusAlbumTotals);"
+        },
+        {
+          "line": 391,
+          "text": "home->SetProperty(\"Music.ArtistsCount\"    , MusArtistTotals);"
+        }
+      ]
+    }
+  ],
+  "result": "These seven keys are native Kodi Home window properties written by RecentlyAddedJob in both Piers and fetched master, not missing addon outputs. Retain the skin reads.",
+  "limits": [
+    "Source contract check, not a new native count/filter accuracy test.",
+    "No API removal or required code change identified."
+  ]
+}

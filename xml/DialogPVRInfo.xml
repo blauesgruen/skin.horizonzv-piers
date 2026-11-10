@@ -141,6 +141,7 @@
 				<itemgap>dialogbuttons_itemgap</itemgap>
 				<align>center</align>
 				<orientation>horizontal</orientation>
+				<scrolltime>200</scrolltime>
 				<onleft>9000</onleft>
 				<onright>9000</onright>
 				<onup>49</onup>
@@ -157,6 +158,7 @@
 					<param name="id" value="11" />
 					<param name="width" value="auto" />
 					<param name="label" value="$LOCALIZE[826]" />
+					<param name="visible" value="Window.IsActive(PVRGuideInfo)" />
 					<param name="font" value="bebas19" />
 					<param name="nofocus" />
 					<param name="onup" value="49" />
@@ -173,6 +175,16 @@
 					<param name="id" value="5" />
 					<param name="width" value="auto" />
 					<param name="label" value="$LOCALIZE[19165]" />
+					<param name="visible" value="Window.IsActive(PVRGuideInfo)" />
+					<param name="font" value="bebas19" />
+					<param name="nofocus" />
+					<param name="onup" value="49" />
+				</include>
+				<include content="DefaultDialogButton">
+					<param name="id" value="10" />
+					<param name="width" value="auto" />
+					<param name="label" value="$LOCALIZE[19190]" />
+					<param name="visible" value="Window.IsActive(PVRGuideInfo)" />
 					<param name="font" value="bebas19" />
 					<param name="nofocus" />
 					<param name="onup" value="49" />
@@ -180,8 +192,27 @@
 				<include content="DefaultDialogButton">
 					<param name="id" value="6" />
 					<param name="width" value="auto" />
+					<param name="visible" value="Window.IsActive(PVRGuideInfo)" />
 					<param name="font" value="bebas19" />
 					<param name="align" value="left" />
+					<param name="nofocus" />
+					<param name="onup" value="49" />
+				</include>
+				<include content="DefaultDialogButton">
+					<param name="id" value="9" />
+					<param name="width" value="auto" />
+					<param name="label" value="$LOCALIZE[19061]" />
+					<param name="visible" value="Window.IsActive(PVRGuideInfo)" />
+					<param name="font" value="bebas19" />
+					<param name="nofocus" />
+					<param name="onup" value="49" />
+				</include>
+				<include content="DefaultDialogButton">
+					<param name="id" value="8" />
+					<param name="width" value="auto" />
+					<param name="label" value="$LOCALIZE[19687]" />
+					<param name="visible" value="Window.IsActive(PVRGuideInfo)|Window.IsActive(PVRRecordingInfo)" />
+					<param name="font" value="bebas19" />
 					<param name="nofocus" />
 					<param name="onup" value="49" />
 				</include>

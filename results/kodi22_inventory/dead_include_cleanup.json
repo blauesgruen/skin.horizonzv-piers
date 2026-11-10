@@ -1,0 +1,116 @@
+{
+  "classification": "Unused skin definitions and commented code, not removed Kodi APIs",
+  "removed_include_count": 6,
+  "dynamic_include_calls": [
+    {
+      "file": "xml/Includes_Dash_Addonpath_Fav.xml",
+      "value": "$PARAM[content]"
+    }
+  ],
+  "dynamic_content_caller_values": [
+    "DashboardContent",
+    "FavContent"
+  ],
+  "installed_external_consumer_review": "dead_definition_external_scan.json",
+  "changes": [
+    {
+      "file": "xml/Includes.xml",
+      "removed_definitions": [
+        "FakeFocusButton555",
+        "PathID",
+        "ControlID"
+      ],
+      "removed_comment_blocks": [],
+      "removed_lines": 27,
+      "before_sha256": "66fbb15f1d125871b8133ae7c546a0154dcff2fac97f03cfc8706872649c48d1",
+      "after_sha256": "2be162f16588f8a1abfbddba8c7bca4b30053a9d636ddc995336625f59ffefaf",
+      "remaining_active_tree_equal_after_selected_definition_removal": true
+    },
+    {
+      "file": "xml/Includes_BackgroundBuilding.xml",
+      "removed_definitions": [
+        "InfoListLeft",
+        "InfoListRight"
+      ],
+      "removed_comment_blocks": [],
+      "removed_lines": 88,
+      "before_sha256": "5828cdc1ff6dde1b494bc3bc558f0b565f0f0782a8d316d8bf1625d36ab32ecb",
+      "after_sha256": "ac8adadb9aec9ad110b678312fb090a7e871ba044a686916acce5f0d925503b7",
+      "remaining_active_tree_equal_after_selected_definition_removal": true
+    },
+    {
+      "file": "xml/Includes_SidePanel.xml",
+      "removed_definitions": [
+        "SidePanelShortcutsBackground"
+      ],
+      "removed_comment_blocks": [],
+      "removed_lines": 17,
+      "before_sha256": "83e1f228beeb1e92df5fa57adbd7fffb8e29b90ac551cb808488747c369cf53f",
+      "after_sha256": "1bef7d65223c201f1ddeac5b1d4b037c655543a27f4c7c25856ab20618612798",
+      "remaining_active_tree_equal_after_selected_definition_removal": true
+    },
+    {
+      "file": "xml/View_Music_506_InfoList.xml",
+      "removed_definitions": [],
+      "removed_comment_blocks": [
+        {
+          "start_line": 234,
+          "lines": 241
+        }
+      ],
+      "removed_lines": 241,
+      "before_sha256": "78dc4383f726d204dd5017cb95eb22729807bf1e54c28e2879ddb851d7a13358",
+      "after_sha256": "8fdc64b76c2d011a94c18ab28ac15570a2390c4df0fc9cc30bc83839365acd40",
+      "remaining_active_tree_equal_after_selected_definition_removal": true
+    }
+  ],
+  "limitations": "No claim about future externally generated references. Font definitions and shared resources unchanged.",
+  "checks": [
+    {
+      "scope": "Known literal regressions and selected XML structures only; no include expansion, dynamic API resolution or runtime validation.",
+      "files_checked": 165,
+      "errors": 0,
+      "warnings": 0,
+      "finding_count": 0,
+      "command": "python tools/check_skin_compatibility.py",
+      "exit_code": 0
+    },
+    {
+      "source_ref": "22.0rc1-Piers",
+      "scope": "Literal action tags and action include parameters, including Action argument 0 and AlarmClock argument 1; registration and minimum argument count only. No include expansion, variable values, other nested arguments, semantic parameter validation or runtime availability checks. Dynamic text is excluded from argument checks; numeric focus targets are counted separately.",
+      "registered_builtins": 129,
+      "registered_input_actions": 209,
+      "literal_references": 1616,
+      "numeric_focus_targets": 1277,
+      "finding_count": 0,
+      "command": "python tools/audit_skin_actions.py",
+      "exit_code": 0
+    },
+    {
+      "source_ref": "22.0rc1-Piers",
+      "scope": "Literal window-action first targets, content target names and literal branches of directly referenced target variables. Does not evaluate conditions, expand include parameters or prove nonempty branch selection, property-target validity or runtime registration. Known numeric constants/custom XML IDs do not prove runtime availability.",
+      "finding_count": 0,
+      "command": "python tools/audit_skin_windows.py",
+      "exit_code": 0
+    },
+    {
+      "source_ref": "22.0rc1-Piers",
+      "scope": "Literal method names in conditions/info expressions; selected static argument counts also checked. Candidates may be literal property keys/strings and require source review. No complete argument semantics, nested qualifier, provider-property, dynamic substitution or runtime validation.",
+      "xml_files": 164,
+      "references": 15770,
+      "arity_checked": 8487,
+      "condition_atom_count": 8863,
+      "finding_count": 0,
+      "command": "python tools/audit_skin_info_names.py",
+      "exit_code": 0
+    }
+  ],
+  "inventory_after": {
+    "xml_dateien": 164,
+    "xml_parsefehler": 0,
+    "includes_definiert": 374,
+    "includes_unbenutzt": 0,
+    "includes_fehlend": 0,
+    "includes_doppelt": 0
+  }
+}

@@ -37,12 +37,10 @@
                 <font>impacted24</font>
                 <textcolor>white</textcolor>
                 <label>$LOCALIZE[19020]</label>
-                <visible>
-				<visible>Window.IsVisible(MyPVRChannels.xml)|Window.IsVisible(MyPVRGuide.xml)|Window.IsVisible(MyPVRRecordings.xml)|Window.IsVisible(MyPVRTimers.xml)|Window.IsVisible(MyPVRSearch.xml)</visible></visible>
+                <visible>Window.IsVisible(MyPVRChannels.xml)|Window.IsVisible(MyPVRGuide.xml)|Window.IsVisible(MyPVRRecordings.xml)|Window.IsVisible(MyPVRTimers.xml)|Window.IsVisible(MyPVRSearch.xml)</visible>
             </control>
             <control type="label">
                 <width>auto</width>
-				<height>45</height>
 				<height>45</height>
                 <font>impacted24</font>
                 <textcolor>white</textcolor>
@@ -180,11 +178,6 @@
                 <left>10</left>
                 <width>27</width>
                 <texture>$VAR[PVRTimerIcon]</texture>
-            </control>
-            <control type="image">
-                <animation effect="slide" end="30" condition="ListItem.IsRecording|ListItem.HasRecording|ListItem.HasTimer">Conditional</animation>
-                <width>27</width>
-                <texture>$VAR[VARSwitchtimer]</texture>
             </control>
         </control>
     </include>
@@ -453,7 +446,7 @@
 							<label>$VAR[RecordingDateSizeLabel]$INFO[ListItem.Label]$INFO[ListItem.EpisodeName, (,)]</label>
 						</control>
 					</itemlayout>
-					<content sortby="date" sortorder="$PARAM[folder_sortorder]">$INFO[ListItem.FilenameAndPath]</content>
+					<content sortby="date">$VAR[PVRFolderContentPath]</content>
 				</control>
 			</control>
 		</control>
@@ -728,7 +721,7 @@
                         <top>6</top>
                         <height>130</height>
                         <align>center</align>
-                        <font>small</font>
+                        <font>Small</font>
                         <textcolor>grey3</textcolor>
                         <shadowcolor>white</shadowcolor>
                         <label>$INFO[ListItem.Label]</label>

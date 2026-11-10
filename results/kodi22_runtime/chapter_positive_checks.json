@@ -1,0 +1,128 @@
+[
+  {
+    "case": "chapter_1",
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.Chapter": "01",
+        "Player.ChapterCount": "03",
+        "Player.ChapterName": "Audit chapter 1",
+        "Player.Time": "00:02"
+      }
+    },
+    "conditions": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Integer.IsGreater(Player.ChapterCount,0)": true,
+        "Player.ChapterCount": true,
+        "Window.IsVisible(seekbar)": true
+      }
+    }
+  },
+  {
+    "case": "chapter_2",
+    "seek": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "percentage": 2.074444532394409,
+        "time": {
+          "hours": 0,
+          "milliseconds": 867,
+          "minutes": 0,
+          "seconds": 1
+        },
+        "totaltime": {
+          "hours": 0,
+          "milliseconds": 0,
+          "minutes": 1,
+          "seconds": 30
+        }
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.Chapter": "02",
+        "Player.ChapterCount": "03",
+        "Player.ChapterName": "Audit chapter 2",
+        "Player.Time": "00:37"
+      }
+    },
+    "conditions": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Integer.IsGreater(Player.ChapterCount,0)": true,
+        "Player.ChapterCount": true,
+        "Window.IsVisible(seekbar)": true
+      }
+    }
+  },
+  {
+    "case": "chapter_3",
+    "seek": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "percentage": 41.11111068725586,
+        "time": {
+          "hours": 0,
+          "milliseconds": 0,
+          "minutes": 0,
+          "seconds": 37
+        },
+        "totaltime": {
+          "hours": 0,
+          "milliseconds": 0,
+          "minutes": 1,
+          "seconds": 30
+        }
+      }
+    },
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.Chapter": "03",
+        "Player.ChapterCount": "03",
+        "Player.ChapterName": "Audit chapter 3",
+        "Player.Time": "01:07"
+      }
+    },
+    "conditions": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Integer.IsGreater(Player.ChapterCount,0)": true,
+        "Player.ChapterCount": true,
+        "Window.IsVisible(seekbar)": true
+      }
+    }
+  },
+  {
+    "case": "switch_to_no_chapters",
+    "labels": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Player.Chapter": "00",
+        "Player.ChapterCount": "00",
+        "Player.ChapterName": "",
+        "Player.Time": "00:01"
+      }
+    },
+    "conditions": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Integer.IsGreater(Player.ChapterCount,0)": false,
+        "Player.ChapterCount": false,
+        "Window.IsVisible(seekbar)": true
+      }
+    }
+  }
+]

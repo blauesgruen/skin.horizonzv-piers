@@ -1,0 +1,78 @@
+{
+  "checked_on": "2026-11-04",
+  "scope": "Native Kodi color-dialog layout in HorizonzV only; separate from the retained optional BG colorpicker addon call.",
+  "sources": [
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/dialogs/GUIDialogColorPicker.cpp",
+      "finding": "The native dialog loads DialogColorPicker.xml, registers control 6 as a view container, fills it with palette items, uses heading 1 and cancel button 7, and returns a confirmed Label2 color."
+    },
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/master/xbmc/dialogs/GUIDialogColorPicker.cpp",
+      "finding": "Published master retains the same dialog filename, view registration and control IDs when inspected."
+    },
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/addons/skin.estuary/xml/DialogColorPicker.xml",
+      "finding": "Official reference uses a panel for control 6 and has no music-playlist content source."
+    },
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/interfaces/builtins/SkinBuiltins.cpp",
+      "finding": "Skin.SetColor opens the native dialog and writes the skin setting only on confirmation. It supplies a palette, not the complete BG helper feature set."
+    },
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/master/xbmc/interfaces/builtins/SkinBuiltins.cpp",
+      "finding": "Skin.SetColor remains registered on published master."
+    },
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/dialogs/GUIDialogBoxBase.cpp",
+      "finding": "Base Process writes body text to controls starting at 2. The attempted count label with ID 2 is overwritten; the skin now binds an independent count label 20 to Container(6).NumItems."
+    }
+  ],
+  "baseline": {
+    "report": "../kodi22_runtime/native_colorpicker_before.json",
+    "screenshot": "../kodi22_runtime/native_colorpicker_before.png",
+    "finding": "Visible native dialog has no colors, no heading and no selectable palette item, despite no log ERROR. Control 6 was a group instead of a view container."
+  },
+  "implementation": {
+    "files": [
+      "xml/DialogColorPicker.xml"
+    ],
+    "changes": [
+      "Use panel 6 with explicit dimensions fitting the existing scrollbar position.",
+      "Remove unrelated Music_Albums_random.xsp content: native dialog supplies palette items.",
+      "Provide native heading label 1.",
+      "Replace unrelated SelectLabel with independent count label 20; avoid base body-text IDs."
+    ],
+    "external_addon_code_changed": false,
+    "optional_bg_picker_action_changed": false
+  },
+  "native_evidence": "../kodi22_runtime/native_colorpicker_checks.json",
+  "result": "Four phases passed: Back cancel, select, reopening with selected-color preselection and Back cancel, explicit cancel button. All 162 default palette colors reported, correct heading/count, zero ERROR lines, secured settings restored.",
+  "intermediate_reports": [
+    {
+      "path": "../kodi22_runtime/native_colorpicker_before_count_binding.json",
+      "finding": "Panel and heading work, but attempted count control 2 reads empty."
+    },
+    {
+      "path": "../kodi22_runtime/native_colorpicker_before_count_observer.json",
+      "finding": "Adding a dynamic count binding on ID 2 still gets overwritten."
+    },
+    {
+      "path": "../kodi22_runtime/native_colorpicker_before_label_probe.json",
+      "finding": "Python ControlLabel proxy returns an empty label even for visibly populated heading 1. Not used as native-label proof in final test; native GUI info and screenshot used."
+    }
+  ],
+  "limits": [
+    "This is a malformed supported-dialog contract, not proof that a Kodi API was recently removed.",
+    "Only native Skin.SetColor with isolated test setting and default Kodi palette, at 16:9; no real subtitle-setting workflow, custom palette, pointer, all aspect ratios or scrollbar traversal tested.",
+    "The optional external BG picker remains available with its documented limitations; no feature reduction by replacing it with the native palette.",
+    "Temporary CU LRC autostart isolation only in secured test settings; restored after each run."
+  ],
+  "bounded_static_check": {
+    "tool": "tools/check_skin_compatibility.py",
+    "files_checked": 165,
+    "findings": [],
+    "scope": "Known literal regressions and selected XML structures; not a complete control-contract parser."
+  },
+  "package_review": "native_colorpicker_package_review.json",
+  "native_install_evidence": "../kodi22_runtime/native_colorpicker_install_checks.json"
+}

@@ -1,0 +1,9 @@
+Datei;Art;Detail
+Home.xml;Alte Skin-ID referenziert;skin.horizonzv.script-gto-info.xml
+Includes_DebugInfo.xml;Viel auskommentierter Code;4 Kommentarbloecke mit <control>
+Includes_SidePanel.xml;Viel auskommentierter Code;4 Kommentarbloecke mit <control>
+Includes_Systeminfo.xml;Alte Skin-ID referenziert;skin.horizonzv
+Includes_Systeminfo.xml;Alte Skin-ID referenziert;skin.horizonzv
+MyVideoNav.xml;Viel auskommentierter Code;3 Kommentarbloecke mit <control>
+keymaps/keyboard.xml;Hartkodierter Windows-Pfad (Entwickler-Keymap);D:\Program Files\Kodi21\portable_data\addons\skin.horizonzv-omega\scripts\RunSetKodiWindow_min.bat\
+keymaps/keyboard.xml;Hartkodierter Windows-Pfad (Entwickler-Keymap);D:\Program Files\Kodi21\portable_data\addons\skin.horizonzv-omega\scripts\RunSetKodiWindow_min.bat\

@@ -1,0 +1,13 @@
+{
+  "checked_on": "2026-11-04",
+  "archive": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-native-colorpicker-package-6383415a5dda4e3aa6d6f922e216ce1a\\skin.horizonzv-1.22.0.1.zip",
+  "sha256": "f177bd53a5eaa8c6dca75e2bdc69509c1109756f8a2e5a91671c5ecbdd0b205c",
+  "file_count": 294,
+  "crc_ok": true,
+  "all_entries_equal_workspace": true,
+  "xml_xsp_parsed": 179,
+  "changed_from_previous_test_package": [
+    "xml/DialogColorPicker.xml"
+  ],
+  "native_install_evidence": "../kodi22_runtime/native_colorpicker_install_checks.json"
+}

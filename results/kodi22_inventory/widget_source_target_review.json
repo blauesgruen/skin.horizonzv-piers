@@ -1,0 +1,349 @@
+{
+  "checked_on": "2026-11-05",
+  "scope": "Complete caller and semantic structure review of explicit HomePageWidget_target migration; not all caller data/backends exercised natively.",
+  "base_checkpoint": "017200c",
+  "callers": [
+    {
+      "id": "210",
+      "source": "special://skin/playlists/Music_Albums_random.xsp",
+      "target": "music"
+    },
+    {
+      "id": "211",
+      "source": "special://skin/playlists/Music_Songs_random.xsp",
+      "target": "music"
+    },
+    {
+      "id": "212",
+      "source": "special://skin/playlists/Music_Albums_recently.xsp",
+      "target": "music"
+    },
+    {
+      "id": "213",
+      "source": "special://skin/playlists/Music_Albums_recommended.xsp",
+      "target": "music"
+    },
+    {
+      "id": "214",
+      "source": "$VAR[HomeWidget_music_Path]",
+      "target": "$VAR[Home_music_SubCategory]"
+    },
+    {
+      "id": "215",
+      "source": "$VAR[WidgetInProgressPlace1]",
+      "target": "music"
+    },
+    {
+      "id": "218",
+      "source": "sources://video/",
+      "target": "videos"
+    },
+    {
+      "id": "219",
+      "source": "special://videoplaylists/",
+      "target": "videos"
+    },
+    {
+      "id": "220",
+      "source": "$VAR[HomeWidget_videos_Path]",
+      "target": "$VAR[Home_videos_SubCategory]"
+    },
+    {
+      "id": "224",
+      "source": "special://skin/playlists/Videos_inprogress.xsp",
+      "target": "videos"
+    },
+    {
+      "id": "225",
+      "source": "videodb://movies/titles",
+      "target": "videos"
+    },
+    {
+      "id": "226",
+      "source": "special://skin/playlists/Videos_recently.xsp",
+      "target": "videos"
+    },
+    {
+      "id": "227",
+      "source": "$VAR[HomeWidget_movies_Path]",
+      "target": "$VAR[Home_movies_SubCategory]"
+    },
+    {
+      "id": "228",
+      "source": "$VAR[WidgetInProgressPlace1]",
+      "target": "videos"
+    },
+    {
+      "id": "232",
+      "source": "special://skin/playlists/TVShows_inprogress.xsp",
+      "target": "videos"
+    },
+    {
+      "id": "233",
+      "source": "videodb://recentlyaddedepisodes/",
+      "target": "videos"
+    },
+    {
+      "id": "234",
+      "source": "special://skin/playlists/TVShows_recent_tvshows.xsp",
+      "target": "videos"
+    },
+    {
+      "id": "235",
+      "source": "special://skin/playlists/TVShows_random_episodes.xsp",
+      "target": "videos"
+    },
+    {
+      "id": "236",
+      "source": "$VAR[HomeWidget_tvshow_Path]",
+      "target": "$VAR[Home_tvshow_SubCategory]"
+    },
+    {
+      "id": "240",
+      "source": "videodb://musicvideos/titles",
+      "target": "videos"
+    },
+    {
+      "id": "241",
+      "source": "videodb://musicvideos/titles",
+      "target": "videos"
+    },
+    {
+      "id": "242",
+      "source": "videodb://recentlyaddedmusicvideos/",
+      "target": "videos"
+    },
+    {
+      "id": "243",
+      "source": "$VAR[HomeWidget_musicvideo_Path]",
+      "target": "$VAR[Home_musicvideo_SubCategory]"
+    },
+    {
+      "id": "244",
+      "source": "$VAR[WidgetInProgressPlace1]",
+      "target": "videos"
+    },
+    {
+      "id": "248",
+      "source": "$VAR[HomeWidget_picture_Path]",
+      "target": "$VAR[Home_picture_SubCategory]"
+    },
+    {
+      "id": "250",
+      "source": "$VAR[HomeWidget_custom1_Path]",
+      "target": "$VAR[Home_custom1_SubCategory]"
+    },
+    {
+      "id": "254",
+      "source": "$VAR[HomeWidget_custom2_Path]",
+      "target": "$VAR[Home_custom2_SubCategory]"
+    },
+    {
+      "id": "258",
+      "source": "$VAR[HomeWidget_custom3_Path]",
+      "target": "$VAR[Home_custom3_SubCategory]"
+    },
+    {
+      "id": "262",
+      "source": "$VAR[HomeWidget_custom4_Path]",
+      "target": "$VAR[Home_custom4_SubCategory]"
+    },
+    {
+      "id": "266",
+      "source": "$VAR[HomeWidget_custom5_Path]",
+      "target": "$VAR[Home_custom5_SubCategory]"
+    },
+    {
+      "id": "270",
+      "source": "$VAR[HomeWidget_custom6_Path]",
+      "target": "$VAR[Home_custom6_SubCategory]"
+    },
+    {
+      "id": "274",
+      "source": "$VAR[HomeWidget_custom7_Path]",
+      "target": "$VAR[Home_custom7_SubCategory]"
+    },
+    {
+      "id": "278",
+      "source": "$VAR[HomeWidget_custom8_Path]",
+      "target": "$VAR[Home_custom8_SubCategory]"
+    },
+    {
+      "id": "282",
+      "source": "$VAR[HomeWidget_custom9_Path]",
+      "target": "$VAR[Home_custom9_SubCategory]"
+    },
+    {
+      "id": "286",
+      "source": "$VAR[PVRWidgetRecordsFlatVAR]",
+      "target": "tvrecordings"
+    },
+    {
+      "id": "287",
+      "source": "pvr://timers/tv/timers",
+      "target": "tvtimers"
+    },
+    {
+      "id": "288",
+      "source": "$INFO[Skin.String(Widget_pvr_TV_WidgetChannels_Path)]",
+      "target": "tvchannels"
+    },
+    {
+      "id": "289",
+      "source": "pvr://channels/tv/*",
+      "target": "tvchannels"
+    },
+    {
+      "id": "292",
+      "source": "$INFO[Skin.String(Widget_pvr_radio_WidgetChannels_Path)]",
+      "target": "radiochannels"
+    },
+    {
+      "id": "294",
+      "source": "addons://sources/game/",
+      "target": "games"
+    },
+    {
+      "id": "295",
+      "source": "$VAR[HomeWidget_games_Path]",
+      "target": "$VAR[Home_games_SubCategory]"
+    }
+  ],
+  "configured_target_variables": {
+    "Home_music_SubCategory": [
+      "videos",
+      "music",
+      "pictures",
+      "games"
+    ],
+    "Home_videos_SubCategory": [
+      "videos",
+      "music",
+      "pictures",
+      "games"
+    ],
+    "Home_movies_SubCategory": [
+      "videos",
+      "music",
+      "pictures",
+      "games"
+    ],
+    "Home_tvshow_SubCategory": [
+      "videos",
+      "music",
+      "pictures",
+      "games"
+    ],
+    "Home_musicvideo_SubCategory": [
+      "videos",
+      "music",
+      "pictures",
+      "games"
+    ],
+    "Home_picture_SubCategory": [
+      "videos",
+      "music",
+      "pictures",
+      "games"
+    ],
+    "Home_custom1_SubCategory": [
+      "videos",
+      "music",
+      "pictures",
+      "games"
+    ],
+    "Home_custom2_SubCategory": [
+      "videos",
+      "music",
+      "pictures",
+      "games"
+    ],
+    "Home_custom3_SubCategory": [
+      "videos",
+      "music",
+      "pictures",
+      "games"
+    ],
+    "Home_custom4_SubCategory": [
+      "videos",
+      "music",
+      "pictures",
+      "games"
+    ],
+    "Home_custom5_SubCategory": [
+      "videos",
+      "music",
+      "pictures",
+      "games"
+    ],
+    "Home_custom6_SubCategory": [
+      "videos",
+      "music",
+      "pictures",
+      "games"
+    ],
+    "Home_custom7_SubCategory": [
+      "videos",
+      "music",
+      "pictures",
+      "games"
+    ],
+    "Home_custom8_SubCategory": [
+      "videos",
+      "music",
+      "pictures",
+      "games"
+    ],
+    "Home_custom9_SubCategory": [
+      "videos",
+      "music",
+      "pictures",
+      "games"
+    ],
+    "Home_games_SubCategory": [
+      "videos",
+      "music",
+      "pictures",
+      "games"
+    ]
+  },
+  "callers_checked": 41,
+  "literal_targets_registered": true,
+  "configured_target_branches_registered": true,
+  "layout_and_nonrouting_structure_unchanged": true,
+  "production_files": [
+    "xml/Includes_Widget_Param.xml",
+    "xml/Variables_Widgets.xml"
+  ],
+  "change_summary": "41 caller target arguments; two content target attributes; timer-list shortcut follows caller target; remove obsolete WidgetTarget heuristic variable. No provider change.",
+  "baseline": "../kodi22_runtime/widget_folder_navigation_before.json",
+  "runtime": "../kodi22_runtime/widget_source_target_checks.json",
+  "sources": [
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/guilib/GUIBaseContainer.cpp",
+      "finding": "Select dispatches to the directory provider when no matching explicit click action applies."
+    },
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/guilib/listproviders/DirectoryProvider.cpp",
+      "finding": "Provider/item node.target precedes the XML target. OnClick uses resolved target when constructing execution."
+    },
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/utils/ExecString.cpp",
+      "finding": "A regular folder only builds ActivateWindow when its context window is nonempty."
+    },
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/utils/guilib/GUIBuiltinsUtils.cpp",
+      "finding": "An empty execution string returns false without navigation."
+    }
+  ],
+  "classification": "Existing invalid/incomplete skin-to-directory-provider target contract, not a newly removed Kodi API.",
+  "limits": [
+    "Ten native cases cover standard video/music, configured video/music/pictures/games, secondary content and provider node.target override.",
+    "No actual PVR timer/backend action, all 41 source datasets, malformed manual settings, every favourite/media-file type or provider race tested.",
+    "The existing configured category variables remain conditional; malformed or missing category selections are not inferred or repaired."
+  ],
+  "bounded_action_check": {
+    "literal_references": 1623,
+    "findings": []
+  }
+}

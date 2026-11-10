@@ -1,0 +1,445 @@
+{
+  "source_ref": "22.0rc1-Piers",
+  "scope": "Manual context categories with marker checks for every candidate from the bounded name scan. These classifications do not establish provider-property validity or parameter semantics.",
+  "matched_name_references": 15745,
+  "distinct_strings": 462,
+  "registered_distinct_names": 453,
+  "candidate_occurrences": 43,
+  "candidate_distinct_names": 9,
+  "confirmed_unsupported_names": [],
+  "unclassified": [],
+  "literal_contexts": [
+    {
+      "file": "xml/Home.xml",
+      "element": "visible",
+      "document_index": 406,
+      "kind": "condition/info",
+      "expression": "Window.IsVisible(1500)|Window.IsVisible(1501)|Window.IsVisible(1151)|Window.IsVisible(1800)|Window.IsVisible(skin.horizonzv.script-gto-info.xml)",
+      "name": "skin.horizonzv",
+      "classification": "skin/add-on ID or XML window name",
+      "confirmed_literal_context": true
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "label",
+      "document_index": 2337,
+      "kind": "info macro",
+      "expression": "ListItem.Property(Addon.ID)",
+      "name": "addon.id",
+      "classification": "ListItem.Property key; not an Addon namespace method",
+      "confirmed_literal_context": true
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 2338,
+      "kind": "condition/info",
+      "expression": "!String.IsEmpty(ListItem.Property(Addon.ID))",
+      "name": "addon.id",
+      "classification": "ListItem.Property key; not an Addon namespace method",
+      "confirmed_literal_context": true
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "label",
+      "document_index": 2358,
+      "kind": "info macro",
+      "expression": "ListItem.Property(Addon.Status)",
+      "name": "addon.status",
+      "classification": "ListItem.Property key; not an Addon namespace method",
+      "confirmed_literal_context": true
+    },
+    {
+      "file": "xml/Includes.xml",
+      "element": "visible",
+      "document_index": 2359,
+      "kind": "condition/info",
+      "expression": "!String.IsEmpty(ListItem.Property(Addon.Status))",
+      "name": "addon.status",
+      "classification": "ListItem.Property key; not an Addon namespace method",
+      "confirmed_literal_context": true
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "label",
+      "document_index": 870,
+      "kind": "info macro",
+      "expression": "ListItem.Property(Addon.Status)",
+      "name": "addon.status",
+      "classification": "ListItem.Property key; not an Addon namespace method",
+      "confirmed_literal_context": true
+    },
+    {
+      "file": "xml/Includes_Buttons_and_Lists.xml",
+      "element": "label",
+      "document_index": 919,
+      "kind": "info macro",
+      "expression": "ListItem.Property(Addon.Status)",
+      "name": "addon.status",
+      "classification": "ListItem.Property key; not an Addon namespace method",
+      "confirmed_literal_context": true
+    },
+    {
+      "file": "xml/Includes_DebugInfo.xml",
+      "element": "visible",
+      "document_index": 259,
+      "kind": "condition/info",
+      "expression": "Window.IsVisible(SlideShow.xml)",
+      "name": "slideshow.xml",
+      "classification": "window filename argument",
+      "confirmed_literal_context": true
+    },
+    {
+      "file": "xml/Includes_SkinAddonsContent.xml",
+      "element": "visible",
+      "document_index": 174,
+      "kind": "condition/info",
+      "expression": "!System.HasAddon(plugin.library.node.editor)",
+      "name": "library.node",
+      "classification": "add-on ID plugin.library.node.editor",
+      "confirmed_literal_context": true
+    },
+    {
+      "file": "xml/Includes_SkinAddonsContent.xml",
+      "element": "label",
+      "document_index": 176,
+      "kind": "info macro",
+      "expression": "System.AddonVersion(plugin.library.node.editor),(,)",
+      "name": "library.node",
+      "classification": "add-on ID plugin.library.node.editor",
+      "confirmed_literal_context": true
+    },
+    {
+      "file": "xml/Includes_SkinAddonsContent.xml",
+      "element": "visible",
+      "document_index": 180,
+      "kind": "condition/info",
+      "expression": "System.HasAddon(plugin.library.node.editor)",
+      "name": "library.node",
+      "classification": "add-on ID plugin.library.node.editor",
+      "confirmed_literal_context": true
+    },
+    {
+      "file": "xml/Includes_SkinAddonsContent.xml",
+      "element": "visible",
+      "document_index": 185,
+      "kind": "condition/info",
+      "expression": "!System.HasAddon(script.skin.helper.colorpicker.bg)",
+      "name": "skin.helper",
+      "classification": "script.skin.helper add-on ID",
+      "confirmed_literal_context": true
+    },
+    {
+      "file": "xml/Includes_SkinAddonsContent.xml",
+      "element": "label",
+      "document_index": 187,
+      "kind": "info macro",
+      "expression": "System.AddonVersion(script.skin.helper.colorpicker.bg),(,)",
+      "name": "skin.helper",
+      "classification": "script.skin.helper add-on ID",
+      "confirmed_literal_context": true
+    },
+    {
+      "file": "xml/Includes_SkinAddonsContent.xml",
+      "element": "visible",
+      "document_index": 191,
+      "kind": "condition/info",
+      "expression": "System.HasAddon(script.skin.helper.colorpicker.bg)",
+      "name": "skin.helper",
+      "classification": "script.skin.helper add-on ID",
+      "confirmed_literal_context": true
+    },
+    {
+      "file": "xml/Includes_Systeminfo.xml",
+      "element": "label",
+      "document_index": 21,
+      "kind": "info macro",
+      "expression": "System.AddonTitle(skin.horizonzv)",
+      "name": "skin.horizonzv",
+      "classification": "skin/add-on ID or XML window name",
+      "confirmed_literal_context": true
+    },
+    {
+      "file": "xml/Includes_Systeminfo.xml",
+      "element": "label",
+      "document_index": 21,
+      "kind": "info macro",
+      "expression": "System.AddonVersion(skin.horizonzv), v,",
+      "name": "skin.horizonzv",
+      "classification": "skin/add-on ID or XML window name",
+      "confirmed_literal_context": true
+    },
+    {
+      "file": "xml/MyWeather.xml",
+      "element": "visible",
+      "document_index": 133,
+      "kind": "condition/info",
+      "expression": "!String.StartsWith(Weather.Plugin,weather.openweathermap)",
+      "name": "weather.openweathermap",
+      "classification": "weather provider ID comparison literal",
+      "confirmed_literal_context": true
+    },
+    {
+      "file": "xml/MyWeather.xml",
+      "element": "visible",
+      "document_index": 138,
+      "kind": "condition/info",
+      "expression": "String.StartsWith(Weather.Plugin,weather.openweathermap)",
+      "name": "weather.openweathermap",
+      "classification": "weather provider ID comparison literal",
+      "confirmed_literal_context": true
+    },
+    {
+      "file": "xml/MyWeather.xml",
+      "element": "visible",
+      "document_index": 159,
+      "kind": "condition/info",
+      "expression": "!String.StartsWith(Weather.Plugin,weather.openweathermap)",
+      "name": "weather.openweathermap",
+      "classification": "weather provider ID comparison literal",
+      "confirmed_literal_context": true
+    },
+    {
+      "file": "xml/MyWeather.xml",
+      "element": "visible",
+      "document_index": 168,
+      "kind": "condition/info",
+      "expression": "[String.IsEqual(Weather.Plugin,weather.wunderground)|String.StartsWith(Weather.Plugin,weather.openweathermap)] + !String.IsEmpty(Window.Property(36Hour.IsFetched))",
+      "name": "weather.wunderground",
+      "classification": "weather provider ID comparison literal",
+      "confirmed_literal_context": true
+    },
+    {
+      "file": "xml/MyWeather.xml",
+      "element": "visible",
+      "document_index": 168,
+      "kind": "condition/info",
+      "expression": "[String.IsEqual(Weather.Plugin,weather.wunderground)|String.StartsWith(Weather.Plugin,weather.openweathermap)] + !String.IsEmpty(Window.Property(36Hour.IsFetched))",
+      "name": "weather.openweathermap",
+      "classification": "weather provider ID comparison literal",
+      "confirmed_literal_context": true
+    },
+    {
+      "file": "xml/MyWeather.xml",
+      "element": "visible",
+      "document_index": 173,
+      "kind": "condition/info",
+      "expression": "[String.IsEqual(Weather.Plugin,weather.wunderground)|String.StartsWith(Weather.Plugin,weather.openweathermap)] + !String.IsEmpty(Window.Property(36Hour.IsFetched))",
+      "name": "weather.wunderground",
+      "classification": "weather provider ID comparison literal",
+      "confirmed_literal_context": true
+    },
+    {
+      "file": "xml/MyWeather.xml",
+      "element": "visible",
+      "document_index": 173,
+      "kind": "condition/info",
+      "expression": "[String.IsEqual(Weather.Plugin,weather.wunderground)|String.StartsWith(Weather.Plugin,weather.openweathermap)] + !String.IsEmpty(Window.Property(36Hour.IsFetched))",
+      "name": "weather.openweathermap",
+      "classification": "weather provider ID comparison literal",
+      "confirmed_literal_context": true
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "element": "visible",
+      "document_index": 1393,
+      "kind": "condition/info",
+      "expression": "System.HasAddon(script.skin.helper.colorpicker.bg)+System.AddonIsEnabled(script.skin.helper.colorpicker.bg)",
+      "name": "skin.helper",
+      "classification": "script.skin.helper add-on ID",
+      "confirmed_literal_context": true
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "element": "onclick",
+      "document_index": 1403,
+      "kind": "condition attribute",
+      "expression": "!System.HasAddon(script.skin.helper.colorpicker.bg)",
+      "name": "skin.helper",
+      "classification": "script.skin.helper add-on ID",
+      "confirmed_literal_context": true
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "element": "onclick",
+      "document_index": 1404,
+      "kind": "condition attribute",
+      "expression": "System.HasAddon(script.skin.helper.colorpicker.bg)+!System.AddonIsEnabled(script.skin.helper.colorpicker.bg)",
+      "name": "skin.helper",
+      "classification": "script.skin.helper add-on ID",
+      "confirmed_literal_context": true
+    },
+    {
+      "file": "xml/SkinSettings.xml",
+      "element": "visible",
+      "document_index": 1408,
+      "kind": "condition/info",
+      "expression": "![System.HasAddon(script.skin.helper.colorpicker.bg)+System.AddonIsEnabled(script.skin.helper.colorpicker.bg)]",
+      "name": "skin.helper",
+      "classification": "script.skin.helper add-on ID",
+      "confirmed_literal_context": true
+    },
+    {
+      "file": "xml/Variables.xml",
+      "element": "value",
+      "document_index": 1015,
+      "kind": "condition attribute",
+      "expression": "String.IsEqual(ListItem.Property(Addon.Status),$LOCALIZE[24023])",
+      "name": "addon.status",
+      "classification": "ListItem.Property key; not an Addon namespace method",
+      "confirmed_literal_context": true
+    },
+    {
+      "file": "xml/Variables.xml",
+      "element": "value",
+      "document_index": 1016,
+      "kind": "condition attribute",
+      "expression": "String.IsEqual(ListItem.Property(Addon.Status),$LOCALIZE[305])",
+      "name": "addon.status",
+      "classification": "ListItem.Property key; not an Addon namespace method",
+      "confirmed_literal_context": true
+    },
+    {
+      "file": "xml/Variables.xml",
+      "element": "value",
+      "document_index": 1017,
+      "kind": "condition attribute",
+      "expression": "String.IsEqual(ListItem.Property(Addon.Status),$LOCALIZE[24098])",
+      "name": "addon.status",
+      "classification": "ListItem.Property key; not an Addon namespace method",
+      "confirmed_literal_context": true
+    },
+    {
+      "file": "xml/View_Movie_721_RightList.xml",
+      "element": "label",
+      "document_index": 81,
+      "kind": "info macro",
+      "expression": "ListItem.Property(Addon.Status)",
+      "name": "addon.status",
+      "classification": "ListItem.Property key; not an Addon namespace method",
+      "confirmed_literal_context": true
+    },
+    {
+      "file": "xml/View_Movie_721_RightList.xml",
+      "element": "visible",
+      "document_index": 108,
+      "kind": "condition/info",
+      "expression": "String.Contains(ListItem.Property(Addon.Status),$LOCALIZE[13413])",
+      "name": "addon.status",
+      "classification": "ListItem.Property key; not an Addon namespace method",
+      "confirmed_literal_context": true
+    },
+    {
+      "file": "xml/View_Movie_721_RightList.xml",
+      "element": "label",
+      "document_index": 142,
+      "kind": "info macro",
+      "expression": "ListItem.Property(Addon.Status)",
+      "name": "addon.status",
+      "classification": "ListItem.Property key; not an Addon namespace method",
+      "confirmed_literal_context": true
+    },
+    {
+      "file": "xml/View_Movie_721_RightList.xml",
+      "element": "visible",
+      "document_index": 185,
+      "kind": "condition/info",
+      "expression": "String.Contains(ListItem.Property(Addon.Status),$LOCALIZE[13413])",
+      "name": "addon.status",
+      "classification": "ListItem.Property key; not an Addon namespace method",
+      "confirmed_literal_context": true
+    },
+    {
+      "file": "xml/Views_Addon_Browser.xml",
+      "element": "label",
+      "document_index": 50,
+      "kind": "info macro",
+      "expression": "ListItem.Property(Addon.Status)",
+      "name": "addon.status",
+      "classification": "ListItem.Property key; not an Addon namespace method",
+      "confirmed_literal_context": true
+    },
+    {
+      "file": "xml/Views_Addon_Browser.xml",
+      "element": "label",
+      "document_index": 87,
+      "kind": "info macro",
+      "expression": "ListItem.Property(Addon.Status)",
+      "name": "addon.status",
+      "classification": "ListItem.Property key; not an Addon namespace method",
+      "confirmed_literal_context": true
+    },
+    {
+      "file": "xml/Views_Weather.xml",
+      "element": "visible",
+      "document_index": 29,
+      "kind": "condition/info",
+      "expression": "String.IsEmpty(Window.Property(Weather.CurrentView))",
+      "name": "weather.currentview",
+      "classification": "Window.Property key",
+      "confirmed_literal_context": true
+    },
+    {
+      "file": "xml/Views_Weather.xml",
+      "element": "visible",
+      "document_index": 312,
+      "kind": "condition/info",
+      "expression": "String.IsEqual(Window.Property(Weather.CurrentView),36hour) + !String.IsEmpty(Window.Property(36Hour.IsFetched))",
+      "name": "weather.currentview",
+      "classification": "Window.Property key",
+      "confirmed_literal_context": true
+    },
+    {
+      "file": "xml/Views_Weather.xml",
+      "element": "visible",
+      "document_index": 503,
+      "kind": "condition/info",
+      "expression": "String.IsEqual(Window.Property(Weather.CurrentView),weekend) + !String.IsEmpty(Window.Property(Weekend.IsFetched))",
+      "name": "weather.currentview",
+      "classification": "Window.Property key",
+      "confirmed_literal_context": true
+    },
+    {
+      "file": "xml/Views_Weather.xml",
+      "element": "visible",
+      "document_index": 698,
+      "kind": "condition/info",
+      "expression": "String.IsEqual(Window.Property(Weather.CurrentView),hourly) + !String.IsEmpty(Weather.Data(Hourly.IsFetched))",
+      "name": "weather.currentview",
+      "classification": "Window.Property key",
+      "confirmed_literal_context": true
+    },
+    {
+      "file": "xml/Views_Weather.xml",
+      "element": "visible",
+      "document_index": 862,
+      "kind": "condition/info",
+      "expression": "String.IsEqual(Window.Property(Weather.CurrentView),map) + !String.IsEmpty(Weather.Data(Map.IsFetched))",
+      "name": "weather.currentview",
+      "classification": "Window.Property key",
+      "confirmed_literal_context": true
+    },
+    {
+      "file": "xml/Views_Weather.xml",
+      "element": "visible",
+      "document_index": 897,
+      "kind": "condition/info",
+      "expression": "String.IsEqual(Window.Property(Weather.CurrentView),map) + !String.IsEmpty(Weather.Data(Map.IsFetched))",
+      "name": "weather.currentview",
+      "classification": "Window.Property key",
+      "confirmed_literal_context": true
+    },
+    {
+      "file": "xml/Views_Weather.xml",
+      "element": "visible",
+      "document_index": 961,
+      "kind": "condition/info",
+      "expression": "String.IsEqual(Window.Property(Weather.CurrentView),alerts) + !String.IsEmpty(Window.Property(Alerts.IsFetched))",
+      "name": "weather.currentview",
+      "classification": "Window.Property key",
+      "confirmed_literal_context": true
+    }
+  ],
+  "previous_candidate_occurrences": 53,
+  "current_change_context": "Refreshed document indices after ExtendedInfo escaped argument/query-variable changes. Literal candidate classifications unchanged."
+}

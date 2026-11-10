@@ -1,0 +1,8 @@
+{
+  "scope": "Only isolated profile skin selection changed; no other skin/add-on source edited.",
+  "original_skin": "skin.horizonzv",
+  "baseline_skin": "skin.estuary",
+  "test_file": "Skin Audit Movie - Baseline Extra.mkv",
+  "bytes_reused_from": "Skin Audit Movie - Chapter Edition.mkv",
+  "existing_extra_count_before": 1
+}

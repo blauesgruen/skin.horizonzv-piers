@@ -1,0 +1,19 @@
+{
+  "checked_on": "2026-11-10",
+  "archive": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-fritz-parser-package-0abc01012e924175a7166ac4fe782557\\skin.horizonzv-1.22.1.1.zip",
+  "sha256": "177175b86a5d96d1444461ebffbde29294a8398e5b0e4f4ddba8e0efedc999a3",
+  "version": "1.22.1.1",
+  "file_count": 296,
+  "crc_ok": true,
+  "all_entries_equal_workspace": true,
+  "xml_xsp_parsed": 181,
+  "previous_package_review": "tmdb_favourites_package_review.json",
+  "changed_from_previous_test_package": [
+    "xml/Home.xml",
+    "xml/Includes_Dash_FritzDect.xml"
+  ],
+  "native_status": "Passed native InstallFromZip without a pre-existing skin directory, followed by separate restart into packaged skin. All 296 installed files equal ZIP before and after restart; Home 16:9; no ERROR/FATAL in either stage. Retained skin settings, not all first-run states.",
+  "native_review": "../kodi22_runtime/fritz_widget_native_checks.json",
+  "source_review": "fritz_widget_parser_review.json",
+  "native_install_review": "../kodi22_runtime/final_skin_package_clean_checks.json"
+}

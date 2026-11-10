@@ -1,0 +1,341 @@
+{
+  "addon_version": "6.0.9",
+  "trigger": "native DialogVideoInfo control 440",
+  "before": {
+    "ListItem.DBType": "movie",
+    "ListItem.Title": "Skin Audit Movie",
+    "ListItem.Year": "2026"
+  },
+  "observations": [
+    {
+      "window": {
+        "id": 12003,
+        "label": "Video info"
+      },
+      "labels": {
+        "Container.NumItems": "1",
+        "ListItem.Label": "Skin Audit Movie",
+        "Window(Home).Property(extendedinfo_running)": ""
+      }
+    },
+    {
+      "window": {
+        "id": 10025,
+        "label": "Videos"
+      },
+      "labels": {
+        "Container.NumItems": "1",
+        "ListItem.Label": "Skin Audit Movie",
+        "Window(Home).Property(extendedinfo_running)": ""
+      }
+    },
+    {
+      "window": {
+        "id": 10025,
+        "label": "Videos"
+      },
+      "labels": {
+        "Container.NumItems": "1",
+        "ListItem.Label": "Skin Audit Movie",
+        "Window(Home).Property(extendedinfo_running)": ""
+      }
+    },
+    {
+      "window": {
+        "id": 10025,
+        "label": "Videos"
+      },
+      "labels": {
+        "Container.NumItems": "1",
+        "ListItem.Label": "Skin Audit Movie",
+        "Window(Home).Property(extendedinfo_running)": ""
+      }
+    },
+    {
+      "window": {
+        "id": 10025,
+        "label": "Videos"
+      },
+      "labels": {
+        "Container.NumItems": "1",
+        "ListItem.Label": "Skin Audit Movie",
+        "Window(Home).Property(extendedinfo_running)": ""
+      }
+    },
+    {
+      "window": {
+        "id": 10025,
+        "label": "Videos"
+      },
+      "labels": {
+        "Container.NumItems": "1",
+        "ListItem.Label": "Skin Audit Movie",
+        "Window(Home).Property(extendedinfo_running)": ""
+      }
+    },
+    {
+      "window": {
+        "id": 13000,
+        "label": "System"
+      },
+      "labels": {
+        "Container.NumItems": "1",
+        "ListItem.Label": "",
+        "Window(Home).Property(extendedinfo_running)": "true"
+      }
+    },
+    {
+      "window": {
+        "id": 13000,
+        "label": "System"
+      },
+      "labels": {
+        "Container.NumItems": "1",
+        "ListItem.Label": "",
+        "Window(Home).Property(extendedinfo_running)": "true"
+      }
+    },
+    {
+      "window": {
+        "id": 13000,
+        "label": "System"
+      },
+      "labels": {
+        "Container.NumItems": "1",
+        "ListItem.Label": "",
+        "Window(Home).Property(extendedinfo_running)": "true"
+      }
+    },
+    {
+      "window": {
+        "id": 13000,
+        "label": "System"
+      },
+      "labels": {
+        "Container.NumItems": "1",
+        "ListItem.Label": "",
+        "Window(Home).Property(extendedinfo_running)": "true"
+      }
+    },
+    {
+      "window": {
+        "id": 13000,
+        "label": "System"
+      },
+      "labels": {
+        "Container.NumItems": "1",
+        "ListItem.Label": "",
+        "Window(Home).Property(extendedinfo_running)": "true"
+      }
+    },
+    {
+      "window": {
+        "id": 13000,
+        "label": "System"
+      },
+      "labels": {
+        "Container.NumItems": "1",
+        "ListItem.Label": "",
+        "Window(Home).Property(extendedinfo_running)": "true"
+      }
+    },
+    {
+      "window": {
+        "id": 13000,
+        "label": "System"
+      },
+      "labels": {
+        "Container.NumItems": "1",
+        "ListItem.Label": "",
+        "Window(Home).Property(extendedinfo_running)": "true"
+      }
+    },
+    {
+      "window": {
+        "id": 13000,
+        "label": "System"
+      },
+      "labels": {
+        "Container.NumItems": "1",
+        "ListItem.Label": "",
+        "Window(Home).Property(extendedinfo_running)": "true"
+      }
+    },
+    {
+      "window": {
+        "id": 13000,
+        "label": "System"
+      },
+      "labels": {
+        "Container.NumItems": "1",
+        "ListItem.Label": "",
+        "Window(Home).Property(extendedinfo_running)": "true"
+      }
+    },
+    {
+      "window": {
+        "id": 13000,
+        "label": "System"
+      },
+      "labels": {
+        "Container.NumItems": "1",
+        "ListItem.Label": "",
+        "Window(Home).Property(extendedinfo_running)": "true"
+      }
+    },
+    {
+      "window": {
+        "id": 13000,
+        "label": "System"
+      },
+      "labels": {
+        "Container.NumItems": "1",
+        "ListItem.Label": "",
+        "Window(Home).Property(extendedinfo_running)": "true"
+      }
+    },
+    {
+      "window": {
+        "id": 13000,
+        "label": "System"
+      },
+      "labels": {
+        "Container.NumItems": "1",
+        "ListItem.Label": "",
+        "Window(Home).Property(extendedinfo_running)": "true"
+      }
+    },
+    {
+      "window": {
+        "id": 13000,
+        "label": "System"
+      },
+      "labels": {
+        "Container.NumItems": "1",
+        "ListItem.Label": "",
+        "Window(Home).Property(extendedinfo_running)": "true"
+      }
+    },
+    {
+      "window": {
+        "id": 13000,
+        "label": "System"
+      },
+      "labels": {
+        "Container.NumItems": "1",
+        "ListItem.Label": "",
+        "Window(Home).Property(extendedinfo_running)": "true"
+      }
+    },
+    {
+      "window": {
+        "id": 13000,
+        "label": "System"
+      },
+      "labels": {
+        "Container.NumItems": "1",
+        "ListItem.Label": "",
+        "Window(Home).Property(extendedinfo_running)": "true"
+      }
+    },
+    {
+      "window": {
+        "id": 13000,
+        "label": "System"
+      },
+      "labels": {
+        "Container.NumItems": "1",
+        "ListItem.Label": "",
+        "Window(Home).Property(extendedinfo_running)": "true"
+      }
+    },
+    {
+      "window": {
+        "id": 13000,
+        "label": "System"
+      },
+      "labels": {
+        "Container.NumItems": "1",
+        "ListItem.Label": "",
+        "Window(Home).Property(extendedinfo_running)": "true"
+      }
+    },
+    {
+      "window": {
+        "id": 13000,
+        "label": "System"
+      },
+      "labels": {
+        "Container.NumItems": "1",
+        "ListItem.Label": "",
+        "Window(Home).Property(extendedinfo_running)": "true"
+      }
+    },
+    {
+      "window": {
+        "id": 13000,
+        "label": "System"
+      },
+      "labels": {
+        "Container.NumItems": "1",
+        "ListItem.Label": "",
+        "Window(Home).Property(extendedinfo_running)": "true"
+      }
+    },
+    {
+      "window": {
+        "id": 13000,
+        "label": "System"
+      },
+      "labels": {
+        "Container.NumItems": "1",
+        "ListItem.Label": "",
+        "Window(Home).Property(extendedinfo_running)": "true"
+      }
+    },
+    {
+      "window": {
+        "id": 13000,
+        "label": "System"
+      },
+      "labels": {
+        "Container.NumItems": "1",
+        "ListItem.Label": "",
+        "Window(Home).Property(extendedinfo_running)": "true"
+      }
+    },
+    {
+      "window": {
+        "id": 13000,
+        "label": "System"
+      },
+      "labels": {
+        "Container.NumItems": "1",
+        "ListItem.Label": "",
+        "Window(Home).Property(extendedinfo_running)": "true"
+      }
+    },
+    {
+      "window": {
+        "id": 13000,
+        "label": "System"
+      },
+      "labels": {
+        "Container.NumItems": "1",
+        "ListItem.Label": "",
+        "Window(Home).Property(extendedinfo_running)": "true"
+      }
+    },
+    {
+      "window": {
+        "id": 13000,
+        "label": "System"
+      },
+      "labels": {
+        "Container.NumItems": "1",
+        "ListItem.Label": "",
+        "Window(Home).Property(extendedinfo_running)": "true"
+      }
+    }
+  ]
+}

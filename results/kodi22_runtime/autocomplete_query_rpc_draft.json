@@ -1,0 +1,16 @@
+{
+  "scope": "Production skin query encoder with unchanged AutoCompletion 2.1.2 / local dictionary; no remote suggestion service",
+  "rows": [],
+  "pid": 31624,
+  "failure": "AssertionError({'expected': 'A&B', 'actual': None})",
+  "failure_trace": "Traceback (most recent call last):\n  File \"D:\\Program Files\\Kodi22\\portable_data\\addons\\skin.horizonzv-piers\\results\\kodi22_runtime\\run_autocomplete_query_probe.py\", line 92, in main\n    wait(lambda: dict(parse_qsl(label(\"$VAR[AutoCompletionContentVar]\").split(\"?\", 1)[-1])).get(\"id\"), text)\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Program Files\\Kodi22\\portable_data\\addons\\skin.horizonzv-piers\\results\\kodi22_runtime\\run_autocomplete_query_probe.py\", line 61, in wait\n    raise AssertionError({\"expected\": expected, \"actual\": value})\nAssertionError: {'expected': 'A&B', 'actual': None}\n",
+  "enabled_state_restored": true,
+  "cleanup": {
+    "process_exited": true,
+    "provider_settings_restored": true,
+    "profile_restored": true,
+    "all_test_xml_match_production": true,
+    "skin_helper_and_manifest_match_production": true,
+    "provider_sources_unchanged": true
+  }
+}

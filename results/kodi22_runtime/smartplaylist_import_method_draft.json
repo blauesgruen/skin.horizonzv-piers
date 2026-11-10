@@ -1,0 +1,14 @@
+{
+  "scope": "All shipped smartplaylist directory calls; native before/after comparison of two invalid nested node rules using authored media in isolated databases",
+  "comparisons": [],
+  "all_playlists": [],
+  "pid": 26732,
+  "failure": "AssertionError({'error': {'code': -32601, 'message': 'Method not found.'}, 'id': 1, 'jsonrpc': '2.0'})",
+  "failure_trace": "Traceback (most recent call last):\n  File \"D:\\Program Files\\Kodi22\\portable_data\\addons\\skin.horizonzv-piers\\results\\kodi22_runtime\\run_smartplaylist_probe.py\", line 128, in main\n    rpc(\"VideoLibrary.Import\", {\"path\": str(work)})\n    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Program Files\\Kodi22\\portable_data\\addons\\skin.horizonzv-piers\\results\\kodi22_runtime\\run_smartplaylist_probe.py\", line 86, in rpc\n    assert \"result\" in result, result\n           ^^^^^^^^^^^^^^^^^^\nAssertionError: {'error': {'code': -32601, 'message': 'Method not found.'}, 'id': 1, 'jsonrpc': '2.0'}\n",
+  "cleanup": {
+    "process_exited": true,
+    "media_databases_restored": true,
+    "profile_restored": true,
+    "test_playlists_match_production": true
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "checked_on": "2026-11-04",
+  "scope": "Wrapper parent-path semantics relevant to existing direct plugin-prefix guards",
+  "source_contracts": [
+    "Player.FolderPath maps to PLAYER_PATH and GetFileInfoLabelValueFromPath, which calls URIUtils::GetParentPath.",
+    "Generic ListItem.Path also calls GetParentPath; ListItem.FolderPath instead returns the complete item URL without user details.",
+    "VideoGUIInfo handles video-tag paths separately, but calls GetParentPath for non-folder file paths.",
+    "URIUtils unwraps stack via StackDirectory::GetParentPath and multipath via decoded first path before recursing.",
+    "The plugin branch removes query options or the plugin route before returning its parent; resulting prefixes remain plugin://.",
+    "StackDirectory::GetBasePath compares normalized parents. Native same-provider examples resolve to the plugin root."
+  ],
+  "sources": [
+    "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/guilib/guiinfo/PlayerGUIInfo.cpp",
+    "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/guilib/guiinfo/GUIInfoHelper.cpp",
+    "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/GUIInfoManager.cpp",
+    "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/guilib/guiinfo/VideoGUIInfo.cpp",
+    "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/utils/URIUtils.cpp",
+    "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/filesystem/StackDirectory.cpp",
+    "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/filesystem/MultiPathDirectory.cpp"
+  ],
+  "native_evidence": "../kodi22_runtime/fanart_wrapper_path_checks.json",
+  "native_passed_cases": 7,
+  "conclusion": "Existing ListItem.Path plugin-prefix guard passes four plugin cases, including nested encoded wrappers, and preserves three local parent paths. No additional blanket protocol filtering justified by these cases.",
+  "source_changes_required": false,
+  "remaining": [
+    "Real SMB share absent from standard sources and video databases; user path requested asynchronously.",
+    "Actual Disney/plugin playback and player wrappers beyond the tested local stack remain open.",
+    "Mixed-provider, mixed local/plugin or malformed wrappers not exercised."
+  ],
+  "fixture_limit": "Earlier authored-window attempts failed due malformed fixture XML, missing active media view and unsuitable label observation/expected plugin parent. They are not skin regression evidence.",
+  "player_stack_followup": {
+    "native_evidence": "../kodi22_runtime/player_stack_fanart_checks.json",
+    "passed_cases": [
+      "ordinary local file playback",
+      "actual local stack playback retaining stack URI"
+    ],
+    "production_control": "Home multiimage 2016, unchanged PlayerExtraFanartPath",
+    "cleanup": "Profile settings, video database file set and skin XML verified.",
+    "limits": [
+      "No actual SMB, plugin playback, mixed/malformed stack or second-part transition tested.",
+      "Video-background and weather-background overrides disabled only in secured test settings.",
+      "Initial attempt returned an empty image observation; playback settling and weather-background override were adjusted together, so the exact cause was not isolated. It is not a skin failure proof."
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "skin": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "value": "skin.horizonzv"
+    }
+  },
+  "gui": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "currentcontrol": {
+        "label": "Close"
+      },
+      "currentwindow": {
+        "id": 12017,
+        "label": ""
+      }
+    }
+  },
+  "empty": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container(50).NumItems": "0"
+    }
+  },
+  "focus": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Control.HasFocus(23)": false,
+      "Control.HasFocus(9900)": true,
+      "Control.IsVisible(23)": false,
+      "Control.IsVisible(9900)": true,
+      "Window.IsDialogTopmost(managevideoextras)": true
+    }
+  },
+  "after_close": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "currentcontrol": {
+        "label": "Extras"
+      },
+      "currentwindow": {
+        "id": 12003,
+        "label": "Video info"
+      }
+    }
+  }
+}

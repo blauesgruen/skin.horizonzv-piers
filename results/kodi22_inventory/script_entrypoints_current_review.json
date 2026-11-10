@@ -1,0 +1,439 @@
+{
+  "checked_on": "2026-11-05",
+  "scope": "Direct RunScript calls in current active XML text and attributes, including action include parameters and variable values. Uses existing argument splitter. No full include expansion or user-configured action parsing. Manifest/type validation is not runtime enablement/availability proof.",
+  "sources": [
+    "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/interfaces/builtins/AddonBuiltins.cpp",
+    "https://github.com/xbmc/xbmc/blob/master/xbmc/interfaces/builtins/AddonBuiltins.cpp"
+  ],
+  "accepted_extension_points": [
+    "xbmc.python.library",
+    "xbmc.python.lyrics",
+    "xbmc.python.script",
+    "xbmc.python.weather"
+  ],
+  "distinct_targets": 9,
+  "direct_call_count": 30,
+  "targets": [
+    {
+      "target": "script.skinhelper.ping",
+      "files": [
+        "xml/Custom_1151_WOL.xml",
+        "xml/Home.xml",
+        "xml/Includes_Buttons_and_Lists.xml"
+      ],
+      "occurrences": [
+        {
+          "file": "xml/Custom_1151_WOL.xml",
+          "element": "onload",
+          "param": null,
+          "action": "RunScript(script.skinhelper.ping,status)"
+        },
+        {
+          "file": "xml/Custom_1151_WOL.xml",
+          "element": "onclick",
+          "param": null,
+          "action": "RunScript(script.skinhelper.ping,status)"
+        },
+        {
+          "file": "xml/Custom_1151_WOL.xml",
+          "element": "onclick",
+          "param": null,
+          "action": "RunScript(script.skinhelper.ping,status)"
+        },
+        {
+          "file": "xml/Home.xml",
+          "element": "onload",
+          "param": null,
+          "action": "RunScript(script.skinhelper.ping,status)"
+        },
+        {
+          "file": "xml/Includes_Buttons_and_Lists.xml",
+          "element": "onclick",
+          "param": null,
+          "action": "RunScript(script.skinhelper.ping,status)"
+        }
+      ],
+      "classification": "explicitly accepted script entry type present",
+      "version": "4.1.2",
+      "manifest": "D:\\Program Files\\Kodi22\\portable_data\\addons\\script.skinhelper.ping\\addon.xml",
+      "manifest_sha256": "9c65dadc9b2462a8395f8d3c65e034a151ce09a8db2e992765084e22a6b85785",
+      "extensions": [
+        "xbmc.python.script",
+        "xbmc.service",
+        "xbmc.addon.metadata"
+      ],
+      "accepted_entrypoints": [
+        {
+          "point": "xbmc.python.script",
+          "library": "default.py"
+        }
+      ],
+      "reference_location": "standard addon directory",
+      "accepted_entrypoint_files_exist": true
+    },
+    {
+      "target": "script.image.resource.select",
+      "files": [
+        "xml/Custom_1500_WidgetSettings.xml",
+        "xml/Includes_Submenu.xml",
+        "xml/MyVideoNav.xml",
+        "xml/MyWeather.xml",
+        "xml/SkinSettings.xml"
+      ],
+      "occurrences": [
+        {
+          "file": "xml/Custom_1500_WidgetSettings.xml",
+          "element": "onclick",
+          "param": null,
+          "action": "RunScript(script.image.resource.select,property=weathericons&type=resource.images.weathericons)"
+        },
+        {
+          "file": "xml/Includes_Submenu.xml",
+          "element": "onclick",
+          "param": null,
+          "action": "RunScript(script.image.resource.select,property=weatherfanart&type=resource.images.weatherfanart)"
+        },
+        {
+          "file": "xml/Includes_Submenu.xml",
+          "element": "onclick",
+          "param": null,
+          "action": "RunScript(script.image.resource.select,property=weathericons&type=resource.images.weathericons)"
+        },
+        {
+          "file": "xml/MyVideoNav.xml",
+          "element": "onclick",
+          "param": null,
+          "action": "RunScript(script.image.resource.select,property=moviegenreicons&type=resource.images.moviegenreicons)"
+        },
+        {
+          "file": "xml/MyVideoNav.xml",
+          "element": "onclick",
+          "param": null,
+          "action": "RunScript(script.image.resource.select,property=studiologos&type=resource.images.studios)"
+        },
+        {
+          "file": "xml/MyWeather.xml",
+          "element": "onclick",
+          "param": null,
+          "action": "RunScript(script.image.resource.select,property=weatherfanart&type=resource.images.weatherfanart)"
+        },
+        {
+          "file": "xml/MyWeather.xml",
+          "element": "onclick",
+          "param": null,
+          "action": "RunScript(script.image.resource.select,property=weathericons&type=resource.images.weathericons)"
+        },
+        {
+          "file": "xml/SkinSettings.xml",
+          "element": "onclick",
+          "param": null,
+          "action": "RunScript(script.image.resource.select,property=weatherfanart&type=resource.images.weatherfanart)"
+        }
+      ],
+      "classification": "explicitly accepted script entry type present",
+      "version": "3.0.2",
+      "manifest": "D:\\Program Files\\Kodi22\\portable_data\\addons\\script.image.resource.select\\addon.xml",
+      "manifest_sha256": "8dc154e464d5076ebe07ba460108d53228d1d2d2cd634bdc3803d7936a84f233",
+      "extensions": [
+        "xbmc.python.library",
+        "xbmc.addon.metadata"
+      ],
+      "accepted_entrypoints": [
+        {
+          "point": "xbmc.python.library",
+          "library": "default.py"
+        }
+      ],
+      "reference_location": "standard addon directory",
+      "accepted_entrypoint_files_exist": true
+    },
+    {
+      "target": "special://skin/resources/scripts/autocomplete_query.py",
+      "files": [
+        "xml/DialogKeyboard.xml"
+      ],
+      "occurrences": [
+        {
+          "file": "xml/DialogKeyboard.xml",
+          "element": "onload",
+          "param": null,
+          "action": "RunScript(special://skin/resources/scripts/autocomplete_query.py)"
+        }
+      ],
+      "classification": "skin-owned direct Python file; no addon-type fallback",
+      "file_sha256": "97e3c6019d04f92a5a8f76cdf8a1fd6216a8287a24f0a12e86e80735448bf6bb"
+    },
+    {
+      "target": "script.globalsearch",
+      "files": [
+        "xml/Home.xml"
+      ],
+      "occurrences": [
+        {
+          "file": "xml/Home.xml",
+          "element": "onclick",
+          "param": null,
+          "action": "RunScript(script.globalsearch)"
+        }
+      ],
+      "classification": "explicitly accepted script entry type present",
+      "version": "9.2.1",
+      "manifest": "D:\\Program Files\\Kodi22\\portable_data\\addons\\script.globalsearch\\addon.xml",
+      "manifest_sha256": "147aa08d6254ad1f01f1ca7301dddb82c0b0d5eb3005813d436902345ef33ade",
+      "extensions": [
+        "xbmc.python.script",
+        "xbmc.addon.metadata"
+      ],
+      "accepted_entrypoints": [
+        {
+          "point": "xbmc.python.script",
+          "library": "default.py"
+        }
+      ],
+      "reference_location": "standard addon directory",
+      "accepted_entrypoint_files_exist": true
+    },
+    {
+      "target": "script.program.fritzact",
+      "files": [
+        "xml/Includes_Dash_FritzDect.xml"
+      ],
+      "occurrences": [
+        {
+          "file": "xml/Includes_Dash_FritzDect.xml",
+          "element": "onclick",
+          "param": null,
+          "action": "RunScript(script.program.fritzact,action=toggle&ain=$INFO[ListItem.Label2])"
+        },
+        {
+          "file": "xml/Includes_Dash_FritzDect.xml",
+          "element": "onclick",
+          "param": null,
+          "action": "RunScript(script.program.fritzact,action=toggle&ain=$INFO[ListItem.Label2])"
+        },
+        {
+          "file": "xml/Includes_Dash_FritzDect.xml",
+          "element": "onclick",
+          "param": null,
+          "action": "RunScript(script.program.fritzact,action=temp&ain=$INFO[ListItem.Label2])"
+        }
+      ],
+      "classification": "explicitly accepted script entry type present",
+      "version": "3.1.7+matrix",
+      "manifest": "D:\\Program Files\\Kodi22\\portable_data\\addons\\script.program.fritzact\\addon.xml",
+      "manifest_sha256": "1877847104691d437a3117ac4adc9b1cd35821c60de40988f020e5225ef81430",
+      "extensions": [
+        "xbmc.python.script",
+        "xbmc.addon.metadata"
+      ],
+      "accepted_entrypoints": [
+        {
+          "point": "xbmc.python.script",
+          "library": "default.py"
+        }
+      ],
+      "reference_location": "standard addon directory",
+      "accepted_entrypoint_files_exist": true
+    },
+    {
+      "target": "$INFO[Skin.String(LyricScript_Path)]",
+      "files": [
+        "xml/MusicOSD.xml",
+        "xml/PlayerControls.xml"
+      ],
+      "occurrences": [
+        {
+          "file": "xml/MusicOSD.xml",
+          "element": "onclick",
+          "param": null,
+          "action": "RunScript($INFO[Skin.String(LyricScript_Path)])"
+        },
+        {
+          "file": "xml/MusicOSD.xml",
+          "element": "onclick",
+          "param": null,
+          "action": "RunScript($INFO[Skin.String(LyricScript_Path)])"
+        },
+        {
+          "file": "xml/PlayerControls.xml",
+          "element": "onclick",
+          "param": null,
+          "action": "RunScript($INFO[Skin.String(LyricScript_Path)])"
+        }
+      ],
+      "classification": "dynamic typed lyrics selection; explicitly accepted SCRIPT_LYRICS entry type, not deprecated arbitrary-type fallback",
+      "selectors": [
+        {
+          "file": "xml/MusicOSD.xml",
+          "element": "onclick"
+        },
+        {
+          "file": "xml/PlayerControls.xml",
+          "element": "altclick"
+        }
+      ],
+      "reference_provider": {
+        "addon": "script.cu.lrclyrics",
+        "version": "6.7.6",
+        "manifest": "D:\\Program Files\\Kodi22\\portable_data\\addons\\script.cu.lrclyrics\\addon.xml",
+        "manifest_sha256": "04231c799dcd7db6f51b6d25438dcdad1d1c7ddd2027bc4d44b18e40fc7c66cd",
+        "extensions": [
+          "xbmc.python.lyrics",
+          "xbmc.service",
+          "xbmc.addon.metadata"
+        ]
+      },
+      "limits": "Source/type proof plus earlier actual CU runtime evidence; not execution of every third-party lyrics provider or arbitrary manual settings value.",
+      "accepted_entrypoint_files_exist": true
+    },
+    {
+      "target": "script.skin.helper.colorpicker.bg",
+      "files": [
+        "xml/SkinSettings.xml"
+      ],
+      "occurrences": [
+        {
+          "file": "xml/SkinSettings.xml",
+          "element": "onclick",
+          "param": null,
+          "action": "RunScript(script.skin.helper.colorpicker.bg,skinstring=MySkinColor)"
+        }
+      ],
+      "classification": "explicitly accepted script entry type present",
+      "version": "1.0.1",
+      "manifest": "D:\\Program Files\\Kodi22\\portable_data\\addons\\script.skin.helper.colorpicker.bg\\addon.xml",
+      "manifest_sha256": "168d4dc5a0d2d49f5d7619f5d669cb1b39ea37611dc9f2792408d6f1902a0103",
+      "extensions": [
+        "xbmc.python.script",
+        "xbmc.addon.metadata"
+      ],
+      "accepted_entrypoints": [
+        {
+          "point": "xbmc.python.script",
+          "library": "default.py"
+        }
+      ],
+      "reference_location": "standard addon directory",
+      "accepted_entrypoint_files_exist": true
+    },
+    {
+      "target": "script.artistslideshow",
+      "files": [
+        "xml/Timers.xml"
+      ],
+      "occurrences": [
+        {
+          "file": "xml/Timers.xml",
+          "element": "onstart",
+          "param": null,
+          "action": "RunScript(script.artistslideshow)"
+        }
+      ],
+      "classification": "explicitly accepted script entry type present",
+      "version": "4.2.1",
+      "manifest": "D:\\Program Files\\Kodi22\\portable_data\\addons\\script.artistslideshow\\addon.xml",
+      "manifest_sha256": "fbfe5faf271bd8d59d0c6a5d3a096581b30586919ff289eaf97d62f348c73246",
+      "extensions": [
+        "xbmc.python.script",
+        "xbmc.addon.metadata"
+      ],
+      "accepted_entrypoints": [
+        {
+          "library": "default.py",
+          "point": "xbmc.python.script"
+        }
+      ],
+      "reference_location": "standard addon directory",
+      "accepted_entrypoint_files_exist": true
+    },
+    {
+      "target": "script.extendedinfo",
+      "files": [
+        "xml/DialogMusicInfo.xml",
+        "xml/DialogVideoInfo.xml",
+        "xml/Variables.xml"
+      ],
+      "occurrences": [
+        {
+          "file": "xml/Variables.xml",
+          "element": "value",
+          "param": null,
+          "action": "RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[ListItem.DBID],name=$ESCINFO[ListItem.Title])"
+        },
+        {
+          "file": "xml/Variables.xml",
+          "element": "value",
+          "param": null,
+          "action": "RunScript(script.extendedinfo,info=extendedtvinfo,dbid=$INFO[ListItem.DBID],name=$ESCINFO[ListItem.TvShowTitle])"
+        },
+        {
+          "file": "xml/Variables.xml",
+          "element": "value",
+          "param": null,
+          "action": "RunScript(script.extendedinfo,info=seasoninfo,tvshow=$ESCINFO[ListItem.TvShowTitle],season=$INFO[ListItem.Season])"
+        },
+        {
+          "file": "xml/Variables.xml",
+          "element": "value",
+          "param": null,
+          "action": "RunScript(script.extendedinfo,info=extendedepisodeinfo,tvshow=$ESCINFO[ListItem.TvShowTitle],season=$INFO[ListItem.Season],episode=$INFO[ListItem.Episode])"
+        },
+        {
+          "file": "xml/DialogMusicInfo.xml",
+          "element": "param",
+          "param": "onclick2",
+          "attribute": "value",
+          "action": "RunScript(script.extendedinfo,info=youtubebrowser,id=$ESCVAR[ExtendedInfoYoutubeAlbumQuery])"
+        },
+        {
+          "file": "xml/DialogMusicInfo.xml",
+          "element": "param",
+          "param": "onclick3",
+          "attribute": "value",
+          "action": "RunScript(script.extendedinfo,info=youtubebrowser,id=$ESCVAR[ExtendedInfoYoutubeSongQuery])"
+        },
+        {
+          "file": "xml/DialogVideoInfo.xml",
+          "element": "param",
+          "param": "onclick2",
+          "attribute": "value",
+          "action": "RunScript(script.extendedinfo,info=youtubebrowser,id=$ESCVAR[ExtendedInfoYoutubeVideoQuery])"
+        }
+      ],
+      "classification": "explicitly accepted script entry type present",
+      "version": "6.0.9",
+      "manifest": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440\\portable_data\\addons\\script.extendedinfo\\addon.xml",
+      "manifest_sha256": "5355143e3207d32814ba3c3200b7e084c1d5af56ecc442f8b62091f2da6fdd23",
+      "extensions": [
+        "xbmc.python.script",
+        "xbmc.python.pluginsource",
+        "xbmc.addon.metadata"
+      ],
+      "accepted_entrypoints": [
+        {
+          "point": "xbmc.python.script",
+          "library": "default.py"
+        }
+      ],
+      "reference_location": "isolated test addon directory",
+      "accepted_entrypoint_files_exist": true
+    }
+  ],
+  "conclusion": "All directly enumerated targets use an explicitly accepted script type, typed lyrics selection or an existing own Python file. No arbitrary-type deprecation identified among these calls. No skin/runtime change justified.",
+  "runtime_evidence": [
+    "../kodi22_runtime/lyrics_visualisation_checks.json",
+    "../kodi22_runtime/lyrics_background_paths_checks.json",
+    "../kodi22_runtime/autocomplete_query_checks.json",
+    "../kodi22_runtime/extendedinfo_real_summary.json"
+  ],
+  "limits": [
+    "A typed extension declaration does not prove every provider action, dependency, online service or configured manual value.",
+    "The dynamic RunScript lyrics target was unresolved in the historical inventory; it is now classified from its actual selector and accepted builtin branch.",
+    "No other addon source or configuration changed."
+  ],
+  "builtin_function_body_verified": {
+    "Piers": "Actual RunScript body explicitly accepts SCRIPT, SCRIPT_WEATHER, SCRIPT_LYRICS and SCRIPT_LIBRARY before its deprecated arbitrary-type fallback.",
+    "master": "Same four explicit entry types retained in actual RunScript body."
+  },
+  "additional_literal_scan": "No embedded/nested RunScript text outside these direct calls found in the current XML; three attribute-valued include actions are included."
+}

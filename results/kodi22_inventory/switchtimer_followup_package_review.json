@@ -1,0 +1,14 @@
+{
+  "checked_on": "2026-11-04",
+  "archive": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-switchtimer-followup-package-30da5fcccb9a44ca8a702c3bcd30bcfc\\skin.horizonzv-1.22.0.1.zip",
+  "sha256": "27b24960444243777d5d59c52eccd7eadfe6d011950d0c56f13b0980e182bafc",
+  "file_count": 294,
+  "crc_ok": true,
+  "all_entries_equal_workspace": true,
+  "xml_xsp_parsed": 179,
+  "changed_from_previous_test_package": [
+    "xml/DialogButtonMenu.xml",
+    "xml/SkinSettings.xml"
+  ],
+  "native_install_evidence": "../kodi22_runtime/switchtimer_followup_install_checks.json"
+}

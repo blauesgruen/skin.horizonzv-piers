@@ -1,0 +1,59 @@
+{
+  "checked_on": "2026-11-05",
+  "scope": "Native directory-provider lifecycle through production Fritz/GTO widget structures, plus the focused-label Boolean parameter contract. Existing providers and device actions unchanged.",
+  "sources": [
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/guilib/GUIBaseContainer.cpp",
+      "finding": "UpdateVisibility returns before UpdateListProvider for controls that are hidden and cannot focus. This is a different update path from multiimage loading."
+    },
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/guilib/listproviders/DirectoryProvider.cpp",
+      "finding": "Update checks URL/sort/limit changes and starts directory jobs; URL comes from a GUI info label. Pending-job callbacks can also start work, so ordinary hidden-container evidence does not prove all in-flight races."
+    },
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/guilib/GUIIncludes.cpp",
+      "finding": "Parameterized includes substitute caller data into the control tree; the old display-string parameter consequently became part of a Boolean condition."
+    },
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/GUIInfoManager.cpp",
+      "finding": "String.IsEmpty is a supported registered Boolean operation; the correction supplies direct item info expressions."
+    },
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/master/xbmc/GUIInfoManager.cpp",
+      "finding": "String.IsEmpty remains registered on the published development branch."
+    }
+  ],
+  "provider_result": "Existing widget availability gates work in settled native initial/refresh/disable/reenable phases with the local fixture. Disabled phase retained cached rows but hid both controls and made no further query during three timestamp changes. Reenabled widgets refreshed successfully; no availability rewrite justified.",
+  "fixture": "Own plugin.video.horizonzv.widgetprobe returns authored local rows only. In isolated XML the Fritz/GTO addon IDs are mapped to that fixture, including their existing enabled gates. The original control types/content/visibility/layout structures remain. No widget Select action or real device/backend provider was invoked.",
+  "label_defect": {
+    "before": "String.IsEmpty($PARAM[Dash_Label2]) receives the GTO concatenation of three $INFO display fragments. Native Kodi reports Misplaced [ and Error parsing boolean expression.",
+    "baseline": "../kodi22_runtime/widget_provider_lifecycle_before_label_condition.json",
+    "classification": "Invalid existing include/Boolean contract, not a newly removed API claim.",
+    "fix": "Pass a separate Dash_Label2_IsEmpty Boolean parameter. Generic callers test ListItem.Label; GTO tests all three source fields independently with AND. Keep rendered text composition and layout dimensions unchanged.",
+    "files": [
+      "xml/Includes_Dash_Layout.xml",
+      "xml/Includes_Dash_GTO.xml"
+    ],
+    "callers": 3,
+    "structure_review": "widget_label_structure_review.json"
+  },
+  "native_evidence": "../kodi22_runtime/widget_provider_lifecycle_checks.json",
+  "focused_cases": "Eight combinations of empty/nonempty GTO first-place label, channel and Label2; predicate true only when all are empty. Focused empty/full screenshots inspected after existing scroll animation settles.",
+  "timestamp_note": "The reenabled stage can query the last property value named disabled-2; this name is content, not an execution timestamp. Per-request addon_enabled_at_entry is true for every final request. Disabled-stage snapshots record no new requests.",
+  "cleanup": "Own process exited, secured settings/addon DB file sets and bytes restored, own fixture removed from addon directory, all mapped XML restored to current production.",
+  "limits": [
+    "No real Fritz login, device action, GTO server/PVR action or real provider-data format approval.",
+    "Provider ID remapping is a control/VFS model test, not execution of the original SCRIPT-manifest fallback route.",
+    "Settled transitions only; disablement during a running/pending job, every row configuration, rapid races, every container class and aspect ratio remain untested.",
+    "Eight focused GTO predicate cases tested natively; the two generic include callers are source/structure checked, not a complete media-widget runtime matrix.",
+    "Cached rows while hidden are expected here; not a claim that all internal data is cleared.",
+    "Initial helper did not propagate its integer return to process status; report error-list inspection caught the two parser errors. Final helper uses sys.exit(main())."
+  ],
+  "package_review": "widget_label_package_review.json",
+  "native_install_evidence": "../kodi22_runtime/widget_label_install_checks.json",
+  "bounded_static_check": {
+    "tool": "tools/check_skin_compatibility.py",
+    "files_checked": 165,
+    "findings": []
+  }
+}

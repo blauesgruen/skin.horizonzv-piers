@@ -1,0 +1,29 @@
+{
+  "activate": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": "OK"
+  },
+  "gui": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "currentcontrol": {
+        "label": ""
+      },
+      "currentwindow": {
+        "id": 10604,
+        "label": "PVR-Sendermanager"
+      }
+    }
+  },
+  "state": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "Container(20).NumItems": "86",
+      "Control.GetLabel(34)": "Radiosender",
+      "Window.Property(IsRadio)": ""
+    }
+  }
+}

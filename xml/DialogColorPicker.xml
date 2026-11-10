@@ -9,15 +9,17 @@
 			<include content="DialogBackgroundCommons">
 				<param name="width" value="1200" />
 				<param name="height" value="816" />
-				<param name="header_id" value="0" />
-				<param name="header_label" value="$INFO[System.CurrentWindow]" />
+				<param name="header_id" value="1" />
+				<param name="header_label" value="" />
 			</include>
 			<control type="group">
 				<left>SpacePadding</left>
 				<right>SpacePadding</right>
 				<top>SpacePaddingXL</top>
 				<bottom>SpacePaddingXL</bottom>
-				<control type="group" id="6">
+				<control type="panel" id="6">
+					<width>840</width>
+					<height>100%</height>
 					<onup>6</onup>
 					<ondown>6</ondown>
 					<onleft>9001</onleft>
@@ -32,7 +34,7 @@
 								<left>8</left>
 								<width>138</width>
 								<height>74</height>
-								<texture>buttons/color-back.png</texture>
+								<texture>BlackBack.png</texture>
 							</control>
 							<control type="image">
 								<top>3</top>
@@ -66,7 +68,6 @@
 							</control>
 						</control>
 					</focusedlayout>
-					<content>special://skin/playlists/Music_Albums_random.xsp</content>
 				</control>
 				<control type="scrollbar" id="61">
 					<left>850</left>
@@ -97,13 +98,14 @@
 					<textcolor>grey</textcolor>
 					<label>$LOCALIZE[737]: $INFO[Container(6).ListItem.Label,, - ]$INFO[Container(6).ListItem.Label2,#,]</label>
 				</control>
-				<control type="label">
+				<control type="label" id="20">
+					<right>15</right>
 					<width>50%</width>
 					<height>35</height>
 					<font>font12</font>
 					<align>right</align>
 					<textcolor>grey</textcolor>
-					<label>$VAR[SelectLabel]</label>
+					<label>$INFO[Container(6).NumItems] $LOCALIZE[127]</label>
 				</control>
 			</control>
 		</control>

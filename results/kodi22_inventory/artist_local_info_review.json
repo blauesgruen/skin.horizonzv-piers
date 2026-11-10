@@ -1,0 +1,182 @@
+{
+  "checked_on": "2026-11-04",
+  "scope": "Artist Slideshow 4.2.1 local provider contract and validity of observation methods for the real skin window.",
+  "sources": [
+    {
+      "source": "https://github.com/pkscout/script.artistslideshow/blob/7dfe816c68b603c18b95f071ca96a8343e8335f2/resources/plugins/local.py",
+      "matches": [
+        {
+          "line": 11,
+          "text": "self.BIOFILEPATH = os.path.join('override', 'artistbio.nfo')"
+        },
+        {
+          "line": 12,
+          "text": "self.ALBUMFILEPATH = os.path.join('override', 'artistsalbums.nfo')"
+        },
+        {
+          "line": 13,
+          "text": "self.SIMILARFILEPATH = os.path.join('override', 'artistsimilar.nfo')"
+        },
+        {
+          "line": 15,
+          "text": "def provides(self):"
+        },
+        {
+          "line": 16,
+          "text": "return ['bio', 'albums', 'similar', 'mbid']"
+        },
+        {
+          "line": 18,
+          "text": "def getAlbumList(self, album_params):"
+        },
+        {
+          "line": 22,
+          "text": "'localartistdir', ''), self.ALBUMFILEPATH)"
+        },
+        {
+          "line": 50,
+          "text": "def getBio(self, bio_params):"
+        },
+        {
+          "line": 54,
+          "text": "'localartistdir', ''), self.BIOFILEPATH)"
+        },
+        {
+          "line": 71,
+          "text": "def getMBID(self, mbid_params):"
+        },
+        {
+          "line": 84,
+          "text": "def getSimilarArtists(self, sim_params):"
+        },
+        {
+          "line": 88,
+          "text": "'localartistdir', ''), self.SIMILARFILEPATH)"
+        }
+      ]
+    },
+    {
+      "source": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/interfaces/legacy/Control.cpp",
+      "matches": [
+        {
+          "line": 150,
+          "text": "String ControlTextBox::getText()"
+        },
+        {
+          "line": 156,
+          "text": "return static_cast<CGUITextBox*>(pGUIControl)->GetDescription();"
+        },
+        {
+          "line": 1451,
+          "text": "long ControlList::size()"
+        },
+        {
+          "line": 1453,
+          "text": "return (long)vecItems.size();"
+        }
+      ]
+    },
+    {
+      "source": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/interfaces/legacy/Window.cpp",
+      "matches": [
+        {
+          "line": 320,
+          "text": "case CGUIControl::GUICONTAINER_FIXEDLIST:"
+        },
+        {
+          "line": 322,
+          "text": "pControl = new ControlList();"
+        },
+        {
+          "line": 326,
+          "text": "case CGUIControl::GUICONTROL_GROUP:"
+        },
+        {
+          "line": 327,
+          "text": "pControl = new ControlGroup();"
+        },
+        {
+          "line": 359,
+          "text": "throw WindowException(\"Unknown control type for python\");"
+        }
+      ]
+    },
+    {
+      "source": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/cores/playercorefactory/PlayerCoreFactory.cpp",
+      "matches": [
+        {
+          "line": 190,
+          "text": "if (item.IsGame())"
+        },
+        {
+          "line": 192,
+          "text": "CLog::Log(LOGDEBUG, \"CPlayerCoreFactory::GetPlayers: forcing retroplayer\");"
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Only authored local NFO/audio/image fixtures and absolute local image paths; no online metadata service tested.",
+    "Python proxy size, raw child visibility and unsupported grouplist wrapper attempts are retained as test-helper failures, not established skin defects.",
+    "One functional run included an unrelated CU LRC shutdown error. Its autostart is then isolated only in the secured test profile.",
+    "No skin product code or external provider code changed for this metadata test."
+  ],
+  "local_provider_sources": [
+    {
+      "file": "D:\\Program Files\\Kodi22\\portable_data\\addons\\script.artistslideshow\\resources\\plugins\\local.py",
+      "sha256": "a465cd51d1c184d16f092fda002bf3788e69117e2166dd0dfc249315eebc18d1"
+    },
+    {
+      "file": "D:\\Program Files\\Kodi22\\portable_data\\addons\\script.artistslideshow\\resources\\lib\\artistslideshow.py",
+      "sha256": "8e0af2c129d5891f1272df8e4a99bfe8dd55cc75373d074fef96b3f03a7b90cc"
+    }
+  ],
+  "fixture_note": "All artist names, biographies, album/similar names and MBID are explicit synthetic fixtures. No real artist claims.",
+  "observation_note": "IDs and offscreen read-only probes were added only in the isolated artist-info XML. Original data expressions and visibility predicates are preserved; native parent-window labels avoid the Python list-vector limitation.",
+  "native_evidence": "../kodi22_runtime/artist_local_info_checks.json",
+  "native_cases": [
+    {
+      "case": "A",
+      "albums": 2,
+      "similar": 1,
+      "effective_sections": {
+        "albums": true,
+        "similar": true,
+        "bio": true
+      }
+    },
+    {
+      "case": "B",
+      "albums": 1,
+      "similar": 5,
+      "effective_sections": {
+        "albums": true,
+        "similar": true,
+        "bio": true
+      }
+    },
+    {
+      "case": "Empty",
+      "albums": 0,
+      "similar": 0,
+      "effective_sections": {
+        "albums": false,
+        "similar": false,
+        "bio": false
+      }
+    }
+  ],
+  "conclusion": "Existing skin consumes actual AS local metadata and hides empty sections correctly in these cases. No product rewrite justified.",
+  "verified_provider_files": {
+    "script.artistslideshow": 100,
+    "script.module.requests": 21,
+    "script.module.certifi": 7,
+    "script.module.chardet": 51,
+    "script.module.idna": 11,
+    "script.module.urllib3": 40,
+    "script.module.defusedxml": 16,
+    "script.module.future": 214,
+    "script.module.mutagen": 60
+  },
+  "pinned_local_plugin_matches_installed": true
+}

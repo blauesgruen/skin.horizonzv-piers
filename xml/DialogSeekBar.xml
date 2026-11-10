@@ -413,6 +413,7 @@
                                 <textcolor>orange</textcolor>
                                 <shadowcolor>black</shadowcolor>
                                 <label>$INFO[player.chapter,$LOCALIZE[21396]: ,]$INFO[player.chaptercount, / , [COLOR=description]•[/COLOR]]</label>
+                                <visible>Integer.IsGreater(Player.ChapterCount,0)</visible>
                             </control>
                             <control type="label">
                                 <width>auto</width>

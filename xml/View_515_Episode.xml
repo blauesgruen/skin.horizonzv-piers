@@ -67,8 +67,12 @@
 						<animation effect="slide" end="-30,0" time="300" tween="cubic" easing="inout" condition="Control.HasFocus($PARAM[viewid]1)">Conditional</animation>
 						<visible>Window.IsVisible(videos)|Container.Content(artists)|Container.Content(Albums)|Container.Content(songs)|Container.Content(favourites)</visible>
 						<visible>!Container.Content(files)+!Container.Content(Addons)</visible>
-						<include condition="Window.IsActive(music)">EpisodeViewtypeMusicLayouts</include>
-						<include condition="!Window.IsActive(music)">EpisodeViewtypeVideoLayouts</include>
+						<include content="EpisodeViewtypeMusicLayouts" condition="Window.IsActive(music)">
+							<param name="viewid" value="$PARAM[viewid]" />
+						</include>
+						<include content="EpisodeViewtypeVideoLayouts" condition="!Window.IsActive(music)">
+							<param name="viewid" value="$PARAM[viewid]" />
+						</include>
 					</control>
 					<control type="group">
 						<animation effect="slide" end="-30,0" time="300">Focus</animation>

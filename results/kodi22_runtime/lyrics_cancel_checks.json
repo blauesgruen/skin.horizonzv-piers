@@ -1,0 +1,132 @@
+[
+  {
+    "control": 1001,
+    "selection_dialog": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentwindow": {
+          "id": 12000,
+          "label": "Select dialog"
+        }
+      }
+    },
+    "after_cancel": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentwindow": {
+          "id": 10000,
+          "label": "Home"
+        }
+      }
+    },
+    "setting_after_cancel": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.String(LyricScript_Path)": ""
+      }
+    },
+    "script_diagnostics": [
+      "2026-11-03 18:15:33.643 T:12872   error <general>: Keymapping error: no such action 'xbmc.runscript()' defined",
+      "2026-11-03 18:15:33.681 T:12872   debug <general>: CApplication::ExecuteXBMCAction: Tried translating, but failed to understand XBMC.RunScript($INFO[Skin.String(LyricScript_Path)])"
+    ]
+  },
+  {
+    "control": 1002,
+    "selection_dialog": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentwindow": {
+          "id": 12000,
+          "label": "Select dialog"
+        }
+      }
+    },
+    "after_cancel": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentwindow": {
+          "id": 10000,
+          "label": "Home"
+        }
+      }
+    },
+    "setting_after_cancel": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.String(LyricScript_Path)": ""
+      }
+    },
+    "script_diagnostics": [
+      "2026-11-03 18:15:35.309 T:12872   error <general>: Keymapping error: no such action 'runscript()' defined",
+      "2026-11-03 18:15:35.309 T:12872   debug <general>: CApplication::ExecuteXBMCAction: Tried translating, but failed to understand RunScript($INFO[Skin.String(LyricScript_Path)])"
+    ]
+  },
+  {
+    "control": 1003,
+    "selection_dialog": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentwindow": {
+          "id": 12000,
+          "label": "Select dialog"
+        }
+      }
+    },
+    "after_cancel": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentwindow": {
+          "id": 11199,
+          "label": ""
+        }
+      }
+    },
+    "setting_after_cancel": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.String(LyricScript_Path)": ""
+      }
+    },
+    "script_diagnostics": []
+  },
+  {
+    "control": 1004,
+    "selection_dialog": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentwindow": {
+          "id": 12000,
+          "label": "Select dialog"
+        }
+      }
+    },
+    "after_cancel": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "currentwindow": {
+          "id": 11199,
+          "label": ""
+        }
+      }
+    },
+    "setting_after_cancel": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "Skin.String(LyricScript_Path)": ""
+      }
+    },
+    "script_diagnostics": []
+  }
+]
