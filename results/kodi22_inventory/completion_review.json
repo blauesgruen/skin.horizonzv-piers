@@ -1,14 +1,14 @@
 {
   "checked_on": "2026-11-10",
-  "scope": "Skin-only compatibility and direct addon support. Current TMDb Helper 6.21.5 now passes real native receiver/icon data flow plus original native Poller and live Favourites receiver transitions in both modes. Current package installation already passed. No additional production change justified; full requirement audit still outstanding.",
-  "source_checkpoint": "7cff7c1",
+  "scope": "Final requirement-by-requirement audit of the original skin-only cleanup objective: completed for Kodi22 and the reviewed published development interfaces, with explicit external/integration coverage limits retained. No concrete required skin correction remains.",
+  "source_checkpoint": "93474b3",
   "branch": "refactor/kodi22-kompatibilitaet",
-  "acceptance_document_local_links_checked": 97,
+  "acceptance_document_local_links_checked": 99,
   "missing_acceptance_document_targets": [],
   "requirements": [
     {
       "requirement": "Find and replace removed/deprecated Kodi skin interfaces",
-      "assessment": "Source-history, current/master registration reviews and bounded checks provide evidence for implemented fixes; limitations of dynamic resolution remain documented. Native normal/deprecated/broken metadata and positive 19-page description cases now additionally verify the earlier migration; other contexts remain bounded. A native widget probe exposed an invalid expanded Boolean display-string argument; separate Boolean parameter and all three caller arguments now pass eight field combinations. Native folder navigation now additionally confirms and fixes the empty generic widget target: 41 explicit source/category arguments replace the heuristic; ten normal navigation cases pass.",
+      "assessment": "Completed for the current skin and reviewed Kodi22/published development APIs. Identified obsolete names, invalid control/action contracts and malformed expressions were corrected. Fresh final registration/control audit has no unresolved finding; all 31 literal control types and selected argument/name checks pass. Literal candidate strings were reviewed as property keys, addon IDs or filenames.",
       "evidence": [
         "AENDERUNGSUEBERSICHT.md",
         "kodi22_inventory/info_deprecation_history_review.json",
@@ -26,12 +26,26 @@
         "kodi22_runtime/widget_source_target_checks.json",
         "kodi22_inventory/widget_source_package_review.json",
         "kodi22_runtime/widget_source_install_checks.json",
-        "kodi22_inventory/boolean_macro_followup.json"
+        "kodi22_inventory/boolean_macro_followup.json",
+        "kodi22_inventory/final_literal_api_audit.json"
+      ],
+      "status": "fulfilled"
+    },
+    {
+      "requirement": "Review published upcoming Kodi changes",
+      "status": "fulfilled",
+      "assessment": "Fresh master registries, control mappings, twelve builtin modules and input action mappings were compared with Piers/current skin uses. No removed or changed used registration requires another skin edit. Two new master input actions are not used. Previously documented parser changes and announced removals were reviewed; final Kodi23 runtime and unpublished future changes are not guaranteed.",
+      "evidence": [
+        "kodi22_inventory/final_literal_api_audit.json",
+        "kodi22_inventory/master_info_compatibility_review.json",
+        "kodi22_inventory/master_builtin_compatibility_review.json",
+        "kodi22_inventory/master_input_action_review.json",
+        "kodi22_compatibility_audit.md"
       ]
     },
     {
       "requirement": "Check used addon skin contracts",
-      "assessment": "Named provider contracts and direct script entry types have source evidence and targeted native runs. Selected lyrics and eleven selected RunAddon links now guard unavailable providers. 28 additional native link cases pass; further backend/provider contexts remain separately bounded. Direct addon support now has a dedicated inventory; BG ColorPicker 1.0.1 is served by a compatible skin-owned dialog instead of its legacy fallback. Seven native cases pass with no ERROR lines and unchanged provider hashes. GTO now supports canonical and checkout filenames through one shared dialog body; ten native states and both Home backdrop predicates pass. Provider/router/backend execution is not claimed. FritzAct 3.1.7+matrix state values now use producer addon string IDs instead of independent skin translations; source proof confirms the same Kodi localization getter on both sides. Four conditions and missing unfocused parameter fixed; new native color/focus test pending. Current published TMDb Helper 6.21.5 pinned-source review confirms service flag, receiver selector, list delivery/clearing and one-based provider icons; both skin receiver windows and eight icon slots structurally match. No upgrade or runtime claim. Further 6.21.5 window-filter review confirms Favourites is not automatically polled. Skin-owned opt-in and cleanup added. Original upstream AST with mocked Kodi API passes local/global modes and default container selection; not native execution. Subsequent visible standard Kodi with unchanged 5.4.16 passes actual onload/onunload property actions in both modes and receiver visibility. Both settings restored; provider files unchanged. No 6.21.5 service/online delivery claim. Fritz native follow-up disproves the prior inline ADDON source argument: expression registration parses brackets before comparison localization. Four conditions now use Home properties initialized from provider translations by gated onload actions, cleared on unload. Explicit checks independent of optimized Python pass all four controlled German cases and actual Home lifecycle. Backend and other languages remain untested. ASM current 1.1.13 constants retain all 43 literal consumers; executable display/stop/clear methods match published source. Six native cases exercise original pure display setters against four real skin variables and two label expressions. No live radio/QF/artwork claim and no production change. Current unmodified 6.21.5 now passes native real-data follow-up: movie 603 and eight indexed icon fields delivered and rendered, original Poller active in Favourites local/global modes, base label updated and old movie icons cleared. No further skin edit needed. Older source-only and 5.4.16 limitations are superseded for these exact cases.",
+      "assessment": "Completed as a skin-interface review of all 13 direct integrations plus typed script entry points and installation/resource links. Current producer/consumer contracts and targeted native evidence support the implemented changes. TMDb6.21.5 real metadata/eight icons and Favourites transitions, Fritz state/focus, ASM display values, GTO dialog aliases, lyrics, search, artwork selection, Auto Completion and both color-dialog contracts have scoped evidence. External backend/hardware and exhaustive variation testing remain documented limits, not identified remaining skin fixes.",
       "evidence": [
         "kodi22_compatibility_audit.md",
         "kodi22_inventory/artistslideshow_contract_review.json",
@@ -69,11 +83,12 @@
         "kodi22_runtime/asm_display_native_checks.json",
         "kodi22_runtime/tmdb_current_addon_setup.json",
         "kodi22_runtime/tmdb_current_native_checks.json"
-      ]
+      ],
+      "status": "fulfilled"
     },
     {
       "requirement": "Implement affected skin changes only",
-      "assessment": "Latest work adds a current-provider test and strengthens test-host validation. Production XML and other addon code unchanged. Published provider/dependency files are installed byte-equal only into owned isolated profile; standard installation untouched.",
+      "assessment": "Completed. Product edits are confined to this skin project. Other addon sources were not corrected; published copies/dependencies exist only as isolated test fixtures and their relevant byte fingerprints were verified. Standard profile settings were restored after visible standard-profile tests.",
       "evidence": [
         "AENDERUNGSUEBERSICHT.md",
         "kodi22_inventory/switchtimer_property_contract_review.json",
@@ -84,11 +99,12 @@
         "kodi22_runtime/tmdb_favourites_protocol_checks.json",
         "kodi22_inventory/fritz_widget_parser_review.json",
         "kodi22_inventory/asm_display_source_review.json"
-      ]
+      ],
+      "status": "fulfilled"
     },
     {
       "requirement": "Targeted tests and original plugin/local/SMB fanart behaviour",
-      "assessment": "Actual local file/stack and two actual plugin-player cases now passed. Plugin item paths retained plugin:// and made no extrafanart request. Native Kodi VFS now reads five images over both the mapped drive and SMB. Source guards preserve smb://; native target-skin SMB rendering remains unobserved. No SMB video library or further connection setup is requested; Disney playback retains its DRM prerequisite. Plugin-containing stack URIs, mixed/encoded wrappers and other named contexts remain open. Current ZIP additionally passes native installation and separate restart with byte-identical installed contents; no fresh fanart/provider playback claim from this package test.",
+      "assessment": "Completed at the scope of the skin correction. Actual local file/stack and real plugin-player cases exercise the production Home control; plugin paths remain plugin URLs and make no extrafanart request. Disney navigation and native generic/wrapper path cases provide additional evidence. Local/SMB suffix expressions are preserved for non-plugin paths; Kodi VFS reads five SMB/mapped images. Direct target-skin SMB rendering, additional wrappers and Disney playback behind Widevine remain explicit integration limits, not evidence of a skin regression or a request to create an SMB library.",
       "evidence": [
         "kodi22_runtime/player_stack_fanart_checks.json",
         "kodi22_runtime/fanart_wrapper_path_checks.json",
@@ -97,19 +113,21 @@
         "kodi22_runtime/plugin_player_fanart_checks.json",
         "kodi22_runtime/smb_fanart_path_review.json",
         "kodi22_runtime/final_skin_package_clean_checks.json"
-      ]
+      ],
+      "status": "fulfilled"
     },
     {
       "requirement": "Document sources and remaining uncertainty",
-      "assessment": "Current acceptance links resolve; source and runtime scopes remain separated, failed helper attempts retained.",
+      "assessment": "Completed. Current acceptance overview, change list and direct-addon matrix link source/native evidence and distinguish historical invalid/failed attempts from current positive proof. Explicit limits are retained without treating them as guarantees or manufacturing new acceptance gates.",
       "evidence": [
         "ABNAHMESTAND.md",
         "kodi22_runtime/PRUEFBERICHT.md"
-      ]
+      ],
+      "status": "fulfilled"
     },
     {
       "requirement": "Own branch and visible Kodi tests",
-      "assessment": "Correct branch verified. Native reports record visible test processes and restoration. Evidence belongs to this branch; no push claimed.",
+      "assessment": "Completed. All work is on refactor/kodi22-kompatibilitaet. Native runs used visible Kodi processes and recorded restoration. Current 1.22.1.1 ZIP installs natively and restarts into the skin; all 296 files match the package before and after restart, with zero ERROR/FATAL lines in both stages. Publication to origin is a separate delivery action; this finalization does not push or replace a published ZIP.",
       "evidence": [
         "kodi22_runtime/player_stack_fanart_checks.json",
         "kodi22_runtime/switchtimer_followup_install_checks.json",
@@ -118,12 +136,12 @@
         "kodi22_runtime/asm_display_native_checks.json",
         "kodi22_runtime/final_skin_package_clean_checks.json",
         "kodi22_runtime/tmdb_current_native_checks.json"
-      ]
+      ],
+      "status": "fulfilled"
     }
   ],
-  "completion_proven": false,
+  "completion_proven": true,
   "next_external_input": null,
-  "remaining_work_reference": "ABNAHMESTAND.md",
   "no_external_addon_correction": true,
   "external_prerequisites_current_readonly_check": {
     "standard_sources_smb_paths": 0,
@@ -163,7 +181,7 @@
     "xml\\Includes_Dash_FritzDect.xml": "bf51a7dc3c2fd6654641da0b19f53f2c3f0a9348815c283a1a9267a39540c4e2",
     "xml\\MyFavourites.xml": "7d8192b05cc15addc7badc6859712c332a9bfc3f650a999d2133125f3924ad6a"
   },
-  "latest_source_checkpoint": "7cff7c1",
+  "latest_source_checkpoint": "93474b3",
   "current_package_native_install_limit": null,
   "current_package_native_install": {
     "passed": true,
@@ -171,5 +189,23 @@
     "runtime_setup": "kodi22_runtime/fresh_package_probe_setup.json",
     "scope": "Retained test skin settings, all 296 installed files match ZIP, separate restart Home 16:9, no ERROR/FATAL in either stage. Not every first-run or provider context."
   },
-  "next_step": "Final requirement-by-requirement audit of actual current skin changes and source/native evidence; no additional SMB library or credentials requested."
+  "next_step": null,
+  "remaining_required_skin_work": [],
+  "documented_limits_reference": "ABNAHMESTAND.md",
+  "parallel_readonly_reviews": [
+    {
+      "scope": "13 direct addon contracts, current XML/source/native evidence",
+      "result": "No concrete remaining skin-contract defect identified; documented backend/variant limits retained."
+    },
+    {
+      "scope": "Changed skin behaviours, original fanart requirement, package and goal evidence",
+      "result": "No production-code blocker identified; documentary closure required and now performed."
+    }
+  ],
+  "publication": {
+    "push_performed_during_finalization": false,
+    "release_zip_replaced": false,
+    "scope": "Branch work is local; remote publication is not claimed."
+  },
+  "documentation_closure_note": "Superseded pending Fritz/TMDb statements replaced by current final assessments; historical attempts remain in their dated reports."
 }

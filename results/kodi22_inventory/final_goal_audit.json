@@ -1,0 +1,167 @@
+{
+  "checked_on": "2026-11-10",
+  "base_checkpoint": "93474b3",
+  "objective": "Only HorizonzV/horizonzv-piers: Kodi22 and published upcoming API cleanup, used-addon skin interfaces, affected skin-only fixes, source-backed targeted tests, documented limits, own branch and visible Kodi.",
+  "requirements_verified": [
+    {
+      "requirement": "Find and replace removed/deprecated Kodi skin interfaces",
+      "status": "fulfilled",
+      "evidence": [
+        "AENDERUNGSUEBERSICHT.md",
+        "kodi22_inventory/info_deprecation_history_review.json",
+        "kodi22_inventory/master_info_compatibility_review.json",
+        "kodi22_inventory/master_builtin_compatibility_review.json",
+        "kodi22_inventory/master_input_action_review.json",
+        "kodi22_inventory/addon_lifecycle_review.json",
+        "kodi22_runtime/addon_lifecycle_checks.json",
+        "kodi22_inventory/widget_provider_lifecycle_review.json",
+        "kodi22_inventory/widget_label_structure_review.json",
+        "kodi22_runtime/widget_provider_lifecycle_checks.json",
+        "kodi22_inventory/startup_window_contract_review.json",
+        "kodi22_inventory/widget_source_target_review.json",
+        "kodi22_runtime/widget_folder_navigation_before.json",
+        "kodi22_runtime/widget_source_target_checks.json",
+        "kodi22_inventory/widget_source_package_review.json",
+        "kodi22_runtime/widget_source_install_checks.json",
+        "kodi22_inventory/boolean_macro_followup.json",
+        "kodi22_inventory/final_literal_api_audit.json"
+      ]
+    },
+    {
+      "requirement": "Review published upcoming Kodi changes",
+      "status": "fulfilled",
+      "evidence": [
+        "kodi22_inventory/final_literal_api_audit.json",
+        "kodi22_inventory/master_info_compatibility_review.json",
+        "kodi22_inventory/master_builtin_compatibility_review.json",
+        "kodi22_inventory/master_input_action_review.json",
+        "kodi22_compatibility_audit.md"
+      ]
+    },
+    {
+      "requirement": "Check used addon skin contracts",
+      "status": "fulfilled",
+      "evidence": [
+        "kodi22_compatibility_audit.md",
+        "kodi22_inventory/artistslideshow_contract_review.json",
+        "kodi22_inventory/tmdbhelper_contract_review.json",
+        "kodi22_inventory/fritz_gto_contract_review.json",
+        "kodi22_inventory/radiomonitor_contract_review.json",
+        "kodi22_inventory/lyrics_background_review.json",
+        "kodi22_runtime/lyrics_background_paths_checks.json",
+        "kodi22_inventory/artist_local_info_review.json",
+        "kodi22_runtime/artist_local_info_checks.json",
+        "kodi22_inventory/script_entrypoints_current_review.json",
+        "kodi22_inventory/lyrics_availability_review.json",
+        "kodi22_runtime/lyrics_availability_checks.json",
+        "kodi22_runtime/lyrics_availability_regression_restore.json",
+        "kodi22_inventory/addon_dispatch_review.json",
+        "kodi22_runtime/addon_dispatch_checks.json",
+        "DIREKTE_ADDON_UNTERSTUETZUNG.md",
+        "kodi22_inventory/bg_colorpicker_skin_review.json",
+        "kodi22_runtime/bg_colorpicker_skin_checks.json",
+        "kodi22_inventory/bg_picker_package_review.json",
+        "kodi22_runtime/bg_picker_install_checks.json",
+        "kodi22_inventory/gto_info_dialog_review.json",
+        "kodi22_runtime/gto_info_dialog_checks.json",
+        "kodi22_runtime/gto_info_canonical_checks.json",
+        "kodi22_inventory/fritz_widget_state_review.json",
+        "kodi22_inventory/fritz_widget_package_review.json",
+        "kodi22_inventory/tmdbhelper_6_21_5_contract_review.json",
+        "kodi22_runtime/tmdb_favourites_protocol_checks.json",
+        "kodi22_inventory/tmdb_favourites_package_review.json",
+        "kodi22_runtime/tmdb_favourites_native_checks.json",
+        "kodi22_inventory/fritz_widget_parser_review.json",
+        "kodi22_runtime/fritz_widget_native_checks.json",
+        "kodi22_inventory/fritz_widget_parser_package_review.json",
+        "kodi22_inventory/asm_display_source_review.json",
+        "kodi22_runtime/asm_display_native_checks.json",
+        "kodi22_runtime/tmdb_current_addon_setup.json",
+        "kodi22_runtime/tmdb_current_native_checks.json"
+      ]
+    },
+    {
+      "requirement": "Implement affected skin changes only",
+      "status": "fulfilled",
+      "evidence": [
+        "AENDERUNGSUEBERSICHT.md",
+        "kodi22_inventory/switchtimer_property_contract_review.json",
+        "kodi22_inventory/native_colorpicker_review.json",
+        "kodi22_runtime/native_colorpicker_checks.json",
+        "kodi22_inventory/native_heading_review.json",
+        "kodi22_runtime/native_heading_checks.json",
+        "kodi22_runtime/tmdb_favourites_protocol_checks.json",
+        "kodi22_inventory/fritz_widget_parser_review.json",
+        "kodi22_inventory/asm_display_source_review.json"
+      ]
+    },
+    {
+      "requirement": "Targeted tests and original plugin/local/SMB fanart behaviour",
+      "status": "fulfilled",
+      "evidence": [
+        "kodi22_runtime/player_stack_fanart_checks.json",
+        "kodi22_runtime/fanart_wrapper_path_checks.json",
+        "kodi22_runtime/standard_disney_playback_prerequisite.json",
+        "kodi22_inventory/plugin_player_fanart_review.json",
+        "kodi22_runtime/plugin_player_fanart_checks.json",
+        "kodi22_runtime/smb_fanart_path_review.json",
+        "kodi22_runtime/final_skin_package_clean_checks.json"
+      ]
+    },
+    {
+      "requirement": "Document sources and remaining uncertainty",
+      "status": "fulfilled",
+      "evidence": [
+        "ABNAHMESTAND.md",
+        "kodi22_runtime/PRUEFBERICHT.md"
+      ]
+    },
+    {
+      "requirement": "Own branch and visible Kodi tests",
+      "status": "fulfilled",
+      "evidence": [
+        "kodi22_runtime/player_stack_fanart_checks.json",
+        "kodi22_runtime/switchtimer_followup_install_checks.json",
+        "kodi22_runtime/tmdb_favourites_native_checks.json",
+        "kodi22_runtime/fritz_widget_native_checks.json",
+        "kodi22_runtime/asm_display_native_checks.json",
+        "kodi22_runtime/final_skin_package_clean_checks.json",
+        "kodi22_runtime/tmdb_current_native_checks.json"
+      ]
+    }
+  ],
+  "remaining_required_skin_changes": [],
+  "verdict": "The compatibility review/cleanup objective is completed. This is not certification of every external addon backend, hardware combination or unpublished/final future Kodi runtime.",
+  "current_package": "fritz_widget_parser_package_review.json",
+  "native_package": "../kodi22_runtime/final_skin_package_clean_checks.json",
+  "explicit_limits": [
+    "Disney playback is blocked by the recorded Widevine prerequisite; no DRM/provider correction is part of the task.",
+    "SMB VFS/source-preservation evidence exists; direct HorizonzV SMB rendering and additional mixed/wrapper cases are not all observed. No SMB library setup required.",
+    "Further addon regions/titles, live ASM/QF recognition, ExtendedInfo authenticated APIs, hardware/device actions and all provider failure states are not exhaustively tested.",
+    "Published future Kodi API review is source based; no guarantee for unpublished changes or a full final Kodi23 runtime.",
+    "Static checkers do not expand all includes, arbitrary user-configured actions or every handler argument semantic. Changed behaviours have targeted native/source proof."
+  ],
+  "independent_reviews": [
+    {
+      "scope": "13 direct addon contracts, current XML/source/native evidence",
+      "result": "No concrete remaining skin-contract defect identified; documented backend/variant limits retained."
+    },
+    {
+      "scope": "Changed skin behaviours, original fanart requirement, package and goal evidence",
+      "result": "No production-code blocker identified; documentary closure required and now performed."
+    }
+  ],
+  "publication": {
+    "push_performed_during_finalization": false,
+    "release_zip_replaced": false,
+    "scope": "Branch work is local; remote publication is not claimed."
+  },
+  "historical_plan_review": {
+    "scope": "Historical six-part catalogue includes additional integration variants; current goal requires source-backed targeted tests and documented open limits. No unsupported case is counted as passed.",
+    "weather_alerts": "Generic aggregate Alerts.IsFetched/Alerts/Alerts.Count contract is source-backed and gated; no NOAA mapping implemented. Positive warning runtime variants remain untested, not a proven skin contract defect.",
+    "smb": "Source expressions preserve non-plugin SMB paths and native VFS reads five images; direct target-skin SMB rendering remains unobserved. No library setup required.",
+    "hardware_and_accounts": "Real device effects, authenticated provider backends and exhaustive language/region/title variants remain outside the targeted proof; other addon correction is not part of this goal."
+  },
+  "acceptance_links_checked": 99,
+  "missing_acceptance_links": []
+}

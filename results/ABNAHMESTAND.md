@@ -1,8 +1,8 @@
 # Abnahmestand des Kodi-Umbaus
 
-Stand: 10. November 2026. Ausschließlich HorizonzV / `horizonzv-piers`, Branch `refactor/kodi22-kompatibilitaet`. Dies ist eine Zuordnung vorhandener Belege und verbleibender Prüfungen, keine Gesamtfreigabe. Chronologische offene Punkte in älteren Berichten können durch spätere Belege überholt sein.
+Stand: 10. November 2026. Ausschließlich HorizonzV / `horizonzv-piers`, Branch `refactor/kodi22-kompatibilitaet`. Die Kompatibilitätsprüfung und die daraus abgeleiteten Skin-Korrekturen sind abgeschlossen. Chronologische offene Punkte in älteren Berichten können durch spätere Belege überholt sein; die unten genannten Integrationsgrenzen gelten weiterhin.
 
-Die [Anforderungsprüfung](kodi22_inventory/completion_review.json) ordnet die Belege dem ursprünglichen Ziel zu. Der Gesamtabschluss ist weiterhin nicht belegt; konkrete verbleibende Anbieterprüfungen und die abgegrenzten Laufzeitfälle stehen unten und in der direkten Add-on-Bestandsaufnahme.
+Die [abschließende Anforderungsprüfung](kodi22_inventory/final_goal_audit.json) und der [aktuelle Nachweisstand](kodi22_inventory/completion_review.json) ordnen die Belege dem unveränderten ursprünglichen Ziel zu. Sieben Anforderungen sind erfüllt; aus dem Abgleich bleibt keine konkrete erforderliche Skin-Korrektur offen. Die [frische Prüfung der Piers-/master-Registrierungen](kodi22_inventory/final_literal_api_audit.json) bestätigt die verwendeten Control-Typen, Aufrufnamen und geprüften Argumentzahlen ohne neuen Befund. Die dokumentierten Grenzen betreffen unter anderem externe Dienste, Hardware, weitere Datenvarianten und die spätere endgültige Kodi-23-Laufzeit. Sie sind keine Behauptung, dass diese Varianten vollständig getestet wurden.
 
 Die [Bestandsaufnahme der direkten Add-on-Unterstützung](DIREKTE_ADDON_UNTERSTUETZUNG.md) ordnet eigene Dialoge, Widgets, Bedienelemente und Eigenschaftsanbindungen den konkreten Add-ons zu. Sie unterscheidet diese von reinen Installations-/Einstellungszugängen und Asset-Verweisen.
 

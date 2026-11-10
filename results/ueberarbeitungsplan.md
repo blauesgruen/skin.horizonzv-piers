@@ -1,4 +1,6 @@
-# HorizonZV Piers: Überarbeitung und Prüfung
+# HorizonzV Piers: Überarbeitung und Prüfung
+
+Abschlussstand 10. November 2026: Die [Prüfung der ursprünglichen Anforderungen](kodi22_inventory/final_goal_audit.json) ist abgeschlossen. Es bleibt keine aus diesem Abgleich konkret erforderliche Skin-Korrektur offen. [Aktueller Abnahmestand und ausdrücklich begrenzte Integrationsnachweise](ABNAHMESTAND.md). Die folgenden datierten Ergänzungen und der frühere Prüfkatalog bleiben als Verlauf erhalten; daraus werden keine ungetesteten Fälle zu bestandenen Tests erklärt.
 
 Geltungsbereich: dieser Skin (`skin.horizonzv` im Checkout `skin.horizonzv-piers`). Andere Add-ons werden nicht geändert. Der ausführliche Quellennachweis und die Einschränkungen stehen in `kodi22_compatibility_audit.md`.
 
@@ -86,7 +88,9 @@ Zusatzabgleich von Variablenwerten: 174 mit wörtlichem Aktionsbeginn, vier unte
 
 6. **Wake-on-LAN:** Der Skin verwendet jetzt native `WakeOnLan(mac)`-Aufrufe statt versionsabhängiger `wolN`-Befehle. Zehn mögliche Geräteplätze teilen einen Include; vor dem Statusabruf werden alte Werte gelöscht. Abgefangene Zieltests und der Fall ohne Anbieter sind geprüft. Echte Statuslieferung mit älteren/neuen Anbietern, Dienst-/Fehlerfälle, weitere Sprachen/Seitenverhältnisse der inzwischen geprüften Zehnerliste und ein echter Gerätestart bleiben offen. Details und Abnahmekriterien: `wol_ueberarbeitung.md`. Andere Add-ons wurden nicht geändert.
 
-## Vor Abschluss erforderlich
+## Ursprünglicher Prüfkatalog und verbleibende Integrationsgrenzen
+
+Die für die gefundenen Schnittstellenkorrekturen nötigen Quellen- und gezielten Laufzeitnachweise sind im Abschlussaudit zugeordnet. Dieser breitere historische Katalog enthält zusätzlich nicht vollständig ausgeführte Integrations- und Variantenprüfungen, etwa positive Wetterwarnungsdaten, weitere Wrapper, Anbieter-/Ortswechsel und echte Geräteaktionen. Diese Grenzen bleiben ausdrücklich offen dokumentiert. Es folgt daraus weder eine NOAA-Implementierung noch eine SMB-Bibliothek oder eine Korrektur anderer Add-ons als zusätzliche Zielanforderung.
 
 Die getrennte Kodi-22-RC1-Laufzeitprüfung ist erfolgt: Ziel-Skin geladen, mehrere Grundfenster geöffnet, Video-/Wetterpfadfehler korrigiert und nach Neustart erneut geprüft. Der nicht unterstützte Button im fokussierten Hauptmenü-Listenlayout wurde durch einen Skin-Timer ersetzt; Standardwartezeit, eigener Wert, Abbruch beim Menüwechsel und fehlender Wetteranbieter wurden zur Laufzeit geprüft. Einzelheiten und Grenzen stehen in `kodi22_runtime/PRUEFBERICHT.md`. Die danach bearbeiteten Ressourcenfunde und ihre Nachprüfung sind im letzten Abschnitt dokumentiert. Der ursprüngliche Auslöser des bloßen `home_tvshows.jpg`-Pfads bleibt ungeklärt.
 
