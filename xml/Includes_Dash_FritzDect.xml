@@ -22,16 +22,18 @@
 						<colordiffuse>green</colordiffuse>
 						<animation effect="fade" end="40" condition="true">Conditional</animation>
 						<texture border="4">WhiteBack$VAR[CornerSettingVar].png</texture>
-						<visible>String.Contains(ListItem.Property(state),$LOCALIZE[31416])</visible>
+						<visible>!String.IsEmpty(ListItem.Property(state))+String.IsEqual(ListItem.Property(state),$ADDON[script.program.fritzact 30031])</visible>
 					</control>
 					<control type="image">
 						<description>background</description>
 						<colordiffuse>red</colordiffuse>
 						<animation effect="fade" end="40" condition="true">Conditional</animation>
 						<texture border="4">WhiteBack$VAR[CornerSettingVar].png</texture>
-						<visible>String.Contains(ListItem.Property(state),$LOCALIZE[31417])</visible>
+						<visible>!String.IsEmpty(ListItem.Property(state))+String.IsEqual(ListItem.Property(state),$ADDON[script.program.fritzact 30030])</visible>
 					</control>
-					<include>FritzDect_layout</include>
+					<include content="FritzDect_layout">
+						<param name="fritzid" value="$PARAM[id]"/>
+					</include>
 					<control type="image">
 						<left>1</left>
 						<right>1</right>
@@ -65,14 +67,14 @@
 						<description>background</description>
 						<colordiffuse>green</colordiffuse>
 						<texture border="4">WhiteBack$VAR[CornerSettingVar].png</texture>
-						<visible>String.Contains(ListItem.Property(state),$LOCALIZE[31416])</visible>
+						<visible>!String.IsEmpty(ListItem.Property(state))+String.IsEqual(ListItem.Property(state),$ADDON[script.program.fritzact 30031])</visible>
 						<visible>!Control.HasFocus($PARAM[id])</visible>
 					</control>
 					<control type="image">
 						<description>background</description>
 						<colordiffuse>red</colordiffuse>
 						<texture border="4">WhiteBack$VAR[CornerSettingVar].png</texture>
-						<visible>String.Contains(ListItem.Property(state),$LOCALIZE[31417])</visible>
+						<visible>!String.IsEmpty(ListItem.Property(state))+String.IsEqual(ListItem.Property(state),$ADDON[script.program.fritzact 30030])</visible>
 						<visible>!Control.HasFocus($PARAM[id])</visible>
 					</control>
 					<control type="image">

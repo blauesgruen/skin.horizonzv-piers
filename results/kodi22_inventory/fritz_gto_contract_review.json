@@ -417,7 +417,7 @@
     "record",
     "switch_channel"
   ],
-  "result": "Reviewed skin action/property contracts retained; no code change justified by these contracts.",
+  "result": "Reviewed action/property names remain supported. Skin-side Fritz localized-state consumption and focus forwarding were corrected; GTO filename correction is documented separately.",
   "gto_layout_contract": {
     "rule": "Provider derives INFO_XML from the physical special://skin folder name.",
     "packaged_folder": "skin.horizonzv",
@@ -428,9 +428,10 @@
   },
   "limits": [
     "Static source contract review; no device command or PVR action executed.",
-    "Hardware results, data refresh and native dialog rendering remain unverified.",
+    "Hardware actions and real data refresh remain unverified. GTO native UI states are documented separately; the new Fritz state/focus correction is source-verified only.",
     "Only the three reviewed installed files were compared with upstream; no full-addon equality claim.",
     "No external addon code changed."
   ],
-  "gto_dialog_followup": "gto_info_dialog_review.json"
+  "gto_dialog_followup": "gto_info_dialog_review.json",
+  "fritz_state_followup": "fritz_widget_state_review.json"
 }

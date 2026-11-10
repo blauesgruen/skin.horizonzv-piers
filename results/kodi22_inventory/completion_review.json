@@ -1,9 +1,9 @@
 {
   "checked_on": "2026-11-10",
-  "scope": "Original skin-only compatibility objective including direct addon dialogs/widgets/properties. GTO filename integration closed with ten controlled-property native cases from November 5, correlated with unchanged current UI elements, leaf text and attributes; current 1.22.1.1 package installation recheck did not start. Overall completion remains unproven.",
-  "source_checkpoint": "da69622",
+  "scope": "Skin-only compatibility and direct addon support. Latest FritzAct correction aligns localized state-value comparisons and nested focus parameter forwarding; source/structure verification passed, new native check remains open. Overall completion remains unproven.",
+  "source_checkpoint": "2077de8",
   "branch": "refactor/kodi22-kompatibilitaet",
-  "acceptance_document_local_links_checked": 82,
+  "acceptance_document_local_links_checked": 83,
   "missing_acceptance_document_targets": [],
   "requirements": [
     {
@@ -30,7 +30,7 @@
     },
     {
       "requirement": "Check used addon skin contracts",
-      "assessment": "Named provider contracts and direct script entry types have source evidence and targeted native runs. Selected lyrics and eleven selected RunAddon links now guard unavailable providers. 28 additional native link cases pass; further backend/provider contexts remain separately bounded. Direct addon support now has a dedicated inventory; BG ColorPicker 1.0.1 is served by a compatible skin-owned dialog instead of its legacy fallback. Seven native cases pass with no ERROR lines and unchanged provider hashes. GTO now supports canonical and checkout filenames through one shared dialog body; ten native states and both Home backdrop predicates pass. Provider/router/backend execution is not claimed.",
+      "assessment": "Named provider contracts and direct script entry types have source evidence and targeted native runs. Selected lyrics and eleven selected RunAddon links now guard unavailable providers. 28 additional native link cases pass; further backend/provider contexts remain separately bounded. Direct addon support now has a dedicated inventory; BG ColorPicker 1.0.1 is served by a compatible skin-owned dialog instead of its legacy fallback. Seven native cases pass with no ERROR lines and unchanged provider hashes. GTO now supports canonical and checkout filenames through one shared dialog body; ten native states and both Home backdrop predicates pass. Provider/router/backend execution is not claimed. FritzAct 3.1.7+matrix state values now use producer addon string IDs instead of independent skin translations; source proof confirms the same Kodi localization getter on both sides. Four conditions and missing unfocused parameter fixed; new native color/focus test pending.",
       "evidence": [
         "kodi22_compatibility_audit.md",
         "kodi22_inventory/artistslideshow_contract_review.json",
@@ -54,12 +54,14 @@
         "kodi22_runtime/bg_picker_install_checks.json",
         "kodi22_inventory/gto_info_dialog_review.json",
         "kodi22_runtime/gto_info_dialog_checks.json",
-        "kodi22_runtime/gto_info_canonical_checks.json"
+        "kodi22_runtime/gto_info_canonical_checks.json",
+        "kodi22_inventory/fritz_widget_state_review.json",
+        "kodi22_inventory/fritz_widget_package_review.json"
       ]
     },
     {
       "requirement": "Implement affected skin changes only",
-      "assessment": "Latest production change only adds a checkout-name GTO dialog entry, shares the unchanged dialog body and includes the alias in the Home backdrop predicate. Full expansion reproduces the old dialog; existing dashboard definitions match the base. Provider files unchanged; preexisting addon manifest version 1.22.1.1 preserved.",
+      "assessment": "Latest production edit is confined to Includes_Dash_FritzDect.xml: four guarded provider-state comparisons and one include parameter forwarding. Reversing those edits reproduces the base semantic tree. No action payload, addon source, translation file, dimensions or other presentation structure changed.",
       "evidence": [
         "AENDERUNGSUEBERSICHT.md",
         "kodi22_inventory/switchtimer_property_contract_review.json",
@@ -136,8 +138,9 @@
     "xml\\script-skin_helper_service-ColorPicker.xml": "61310a08f2dabbb0b1d7943068969e8adb95a38f5cf67633a5ae13adbd45c9a8",
     "xml\\Home.xml": "8c56509fd40c7aa13656d69c9cd2d9318e6e2f30a725239e927b060c63f67ed7",
     "xml\\skin.horizonzv.script-gto-info.xml": "c3de5f8dcc0295cc62fe916bef98e5a76235cb9bb14095060c0fee99a67ccf20",
-    "xml\\skin.horizonzv-piers.script-gto-info.xml": "c3de5f8dcc0295cc62fe916bef98e5a76235cb9bb14095060c0fee99a67ccf20"
+    "xml\\skin.horizonzv-piers.script-gto-info.xml": "c3de5f8dcc0295cc62fe916bef98e5a76235cb9bb14095060c0fee99a67ccf20",
+    "xml\\Includes_Dash_FritzDect.xml": "8040c89f743abd8892eb515ddcbe3a1573a5bd04d1582e5bfe6a6574e2403192"
   },
-  "latest_source_checkpoint": "da69622",
+  "latest_source_checkpoint": "2077de8",
   "current_package_native_install_limit": "gto_dialog_install_start_failure.json: test process exited before RPC/startup log; no fresh install pass for 1.22.1.1."
 }
