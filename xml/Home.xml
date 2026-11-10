@@ -6,6 +6,11 @@
     <onload condition="!Skin.HasSetting(firstrun_horizonzv)">Skin.ResetSettings</onload>
 	<onload condition="String.IsEmpty(Skin.String(weathericons.path))">Skin.SetString(weathericons.path,resource://resource.images.weathericons.outline-hd/)</onload>
 	<onload condition="System.HasAddon(script.skinhelper.ping)+System.AddonIsEnabled(script.skinhelper.ping)">RunScript(script.skinhelper.ping,status)</onload>
+    <!-- Resolve addon strings in actions: boolean expressions treat their brackets as operators. -->
+    <onload condition="System.AddonIsEnabled(script.program.fritzact)">SetProperty(HorizonzV.FritzAct.StateOn,$ADDON[script.program.fritzact 30031],Home)</onload>
+    <onload condition="System.AddonIsEnabled(script.program.fritzact)">SetProperty(HorizonzV.FritzAct.StateOff,$ADDON[script.program.fritzact 30030],Home)</onload>
+    <onunload>ClearProperty(HorizonzV.FritzAct.StateOn,Home)</onunload>
+    <onunload>ClearProperty(HorizonzV.FritzAct.StateOff,Home)</onunload>
     <onload condition="!Skin.HasSetting(gambit_background)+!Skin.HasSetting(avengers_sw)+!Skin.HasSetting(standard_bkg)">Skin.SetBool(standard_bkg)</onload>
     <onload condition="!String.IsEmpty(Skin.String(homemenufocus))+Window.Previous(startup)">Control.Move(9000,$INFO[Skin.String(homemenufocus)])</onload>
     <onload condition="!Skin.HasSetting(firstrun_horizonzv)">ActivateWindow(1155)</onload>

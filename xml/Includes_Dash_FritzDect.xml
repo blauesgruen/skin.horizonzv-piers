@@ -22,14 +22,14 @@
 						<colordiffuse>green</colordiffuse>
 						<animation effect="fade" end="40" condition="true">Conditional</animation>
 						<texture border="4">WhiteBack$VAR[CornerSettingVar].png</texture>
-						<visible>!String.IsEmpty(ListItem.Property(state))+String.IsEqual(ListItem.Property(state),$ADDON[script.program.fritzact 30031])</visible>
+						<visible>!String.IsEmpty(ListItem.Property(state))+String.IsEqual(ListItem.Property(state),Window(Home).Property(HorizonzV.FritzAct.StateOn))</visible>
 					</control>
 					<control type="image">
 						<description>background</description>
 						<colordiffuse>red</colordiffuse>
 						<animation effect="fade" end="40" condition="true">Conditional</animation>
 						<texture border="4">WhiteBack$VAR[CornerSettingVar].png</texture>
-						<visible>!String.IsEmpty(ListItem.Property(state))+String.IsEqual(ListItem.Property(state),$ADDON[script.program.fritzact 30030])</visible>
+						<visible>!String.IsEmpty(ListItem.Property(state))+String.IsEqual(ListItem.Property(state),Window(Home).Property(HorizonzV.FritzAct.StateOff))</visible>
 					</control>
 					<include content="FritzDect_layout">
 						<param name="fritzid" value="$PARAM[id]"/>
@@ -67,14 +67,14 @@
 						<description>background</description>
 						<colordiffuse>green</colordiffuse>
 						<texture border="4">WhiteBack$VAR[CornerSettingVar].png</texture>
-						<visible>!String.IsEmpty(ListItem.Property(state))+String.IsEqual(ListItem.Property(state),$ADDON[script.program.fritzact 30031])</visible>
+						<visible>!String.IsEmpty(ListItem.Property(state))+String.IsEqual(ListItem.Property(state),Window(Home).Property(HorizonzV.FritzAct.StateOn))</visible>
 						<visible>!Control.HasFocus($PARAM[id])</visible>
 					</control>
 					<control type="image">
 						<description>background</description>
 						<colordiffuse>red</colordiffuse>
 						<texture border="4">WhiteBack$VAR[CornerSettingVar].png</texture>
-						<visible>!String.IsEmpty(ListItem.Property(state))+String.IsEqual(ListItem.Property(state),$ADDON[script.program.fritzact 30030])</visible>
+						<visible>!String.IsEmpty(ListItem.Property(state))+String.IsEqual(ListItem.Property(state),Window(Home).Property(HorizonzV.FritzAct.StateOff))</visible>
 						<visible>!Control.HasFocus($PARAM[id])</visible>
 					</control>
 					<control type="image">

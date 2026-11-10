@@ -154,6 +154,14 @@ def check(root):
         for index, element in enumerate(tree.getroot().iter()):
             location = f"{element.tag}[document-index={index}]"
             condition = element.get("condition", "")
+            boolean_values = [condition]
+            if element.tag in ("visible", "enable"):
+                boolean_values.append(element.text or "")
+            for value in boolean_values:
+                if "$ADDON[" in value:
+                    report(path, location, "invalid-addon-string-in-condition", "error",
+                           "Boolean registration expands LOCALIZE only; ADDON brackets are parsed as expression operators. Resolve addon text outside the condition and compare an info label/property.",
+                           PIERS_INFO, value.strip())
             if re.search(r"(?:^|[+|\[!])\s*Conditional\s*(?=$|[+|\]])", condition, re.I):
                 report(path, location, "invalid-conditional-operand", "error",
                        "Conditional is an animation type, not a registered boolean operand.", PIERS_INFO, condition)

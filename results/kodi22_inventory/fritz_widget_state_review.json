@@ -1,6 +1,6 @@
 {
   "checked_on": "2026-11-10",
-  "scope": "Direct FritzAct widget state-value contract and nested include parameter forwarding. Source/structure verification only; no new native or device test.",
+  "scope": "Original source/structure snapshot at a6a5cd4, based on 2077de8. Inline ADDON reasoning was superseded by the current_followup after native testing; not current-code runtime proof.",
   "base_checkpoint": "2077de8",
   "provider_version": "3.1.7+matrix",
   "findings": [
@@ -74,7 +74,7 @@
     },
     {
       "url": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/GUIInfoManager.cpp",
-      "finding": "Second String comparison parameter passes through CGUIInfoLabel::GetLabel, allowing ADDON string expansion before comparison."
+      "finding": "String comparison later supports CGUIInfoLabel expansion; this original evidence omitted the preceding Register/expression stage. Direct ADDON brackets fail there; see current_followup."
     },
     {
       "url": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/guilib/guiinfo/GUIInfoLabel.cpp",
@@ -91,9 +91,9 @@
     "resources/language/resource.language.en_gb/strings.po": "5bb226549bc111cfd32f6e73f144735c7c18df44a5f11322fcba7fc7f23e7776",
     "resources/language/resource.language.de_de/strings.po": "d0b27dd47bb061bd35620bf1ad18ca2d8abefa71c711a87fa6fa5afc5a08f577"
   },
-  "native_status": "Not run for this change. Existing isolated Kodi startup failure is recorded in gto_dialog_install_start_failure.json. No generalized environment repair undertaken.",
+  "native_status": "Superseded by native follow-up: four controlled display cases and actual Home property lifecycle pass with unchanged FritzAct 3.1.7+matrix. No device/backend or foreign-language runtime claim.",
   "limits": [
-    "Actual multi-language color rendering and focus transitions remain to be checked visibly.",
+    "Original source-only snapshot; current German color/focus tests are in the follow-up. Other languages remain source evidence only.",
     "No router/device command or other addon code/configuration changed.",
     "No guarantee for unpublished provider contract changes."
   ],
@@ -110,5 +110,11 @@
       "unrecognized_info_roots": 0
     }
   },
-  "package_review": "fritz_widget_package_review.json"
+  "package_review": "fritz_widget_package_review.json",
+  "current_followup": {
+    "evidence": "fritz_widget_parser_review.json",
+    "native": "../kodi22_runtime/fritz_widget_native_checks.json",
+    "correction": "Earlier GetLabel source reasoning omitted Boolean Register/expression parsing. Direct ADDON macros fail there; current conditions use Home properties populated by localized onload actions. Four native German fixture cases and actual Home entry/exit now pass. Other source/translation findings remain valid."
+  },
+  "snapshot_checkpoint": "a6a5cd4"
 }

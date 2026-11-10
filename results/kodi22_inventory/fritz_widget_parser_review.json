@@ -1,0 +1,81 @@
+{
+  "checked_on": "2026-11-10",
+  "base_checkpoint": "0591862",
+  "finding": "Inline ADDON macro in Boolean conditions reaches expression parsing before string-parameter localization. Prior source review omitted this stage; visible native test returned false for both state colors.",
+  "change": "Four conditions now compare against Home properties populated from provider translations by two gated onload actions and cleared by two onunload actions.",
+  "structural_proof": {
+    "only_four_conditions_and_four_lifecycle_actions_changed": true,
+    "other_semantic_trees_equal_base": true
+  },
+  "sources": [
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/GUIInfoManager.cpp",
+      "lines": [
+        11959,
+        11961,
+        11971
+      ],
+      "finding": "Register expands LOCALIZE only before dispatching expressions containing brackets. String second-parameter CGUIInfoLabel processing is later and cannot repair a failed expression."
+    },
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/interfaces/info/InfoExpression.cpp",
+      "lines": [
+        206,
+        223,
+        231
+      ],
+      "finding": "Parse treats square brackets as operators without ADDON macro expansion."
+    },
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/master/xbmc/GUIInfoManager.cpp",
+      "lines": [
+        12083,
+        12085,
+        12095
+      ],
+      "finding": "Same registration order in the current published master source checked on this date; live branch, no future guarantee."
+    },
+    {
+      "url": "https://github.com/xbmc/xbmc/blob/master/xbmc/interfaces/info/InfoExpression.cpp",
+      "finding": "Published master retains the same bracket parser."
+    }
+  ],
+  "native_checks": "../kodi22_runtime/fritz_widget_native_checks.json",
+  "failed_native_inline_comparison": "../kodi22_runtime/fritz_widget_inline_addon_failure.json",
+  "invalidated_assert_attempt": "../kodi22_runtime/fritz_widget_unreliable_assert_attempt.json",
+  "bounded_static_checks": {
+    "action": {
+      "findings": 0
+    },
+    "window": {
+      "findings": 0
+    },
+    "info": {
+      "arity_candidates": 0,
+      "condition_atom_candidates": 0,
+      "unrecognized_info_roots": 0
+    }
+  },
+  "checker_regression_probe": {
+    "old_inline_errors": 4,
+    "current_errors": 0,
+    "current_warnings": 0,
+    "checks": "Literal condition attributes and visible/enable text only; action text and labels allowed."
+  },
+  "skin_sha256": {
+    "Home.xml": "d2a63bb8ea4e3ecdf976bbe9aa2f211f513df6d03542eb007c64f8a281c0eb6c",
+    "Includes_Dash_FritzDect.xml": "bf51a7dc3c2fd6654641da0b19f53f2c3f0a9348815c283a1a9267a39540c4e2"
+  },
+  "limits": [
+    "Current German language and controlled display data only; no backend, hardware or foreign-language runtime test.",
+    "Fixture keeps actual item/focused layouts and nested include parameters; removes real content and onclick actions."
+  ],
+  "package_review": "fritz_widget_parser_package_review.json",
+  "native_visual_review": "All four captures inspected: on green, off red, empty neutral; selected on/off/empty follow standard focus appearance.",
+  "screenshot_sha256": {
+    "fritz_widget_empty.png": "a94a69ea8296537b3d9ecd84a2188e313fa3d6174a4d3ac1fa004fa53cdf0d0c",
+    "fritz_widget_off.png": "cf507afc18d14774564f15c3a248dc9f60bf4c63146ba4eae0604b4b3995c3f3",
+    "fritz_widget_on.png": "ac5f217b4ee69f713acc65845c2290949690f63e40452b1cc052ae2bc1670ae7",
+    "fritz_widget_unfocused.png": "14a0390438a2040d94287a2e0d169fd4b7774d7b7266c5b59d6e8084efdf7f23"
+  }
+}
