@@ -1,0 +1,9 @@
+{
+  "scope": "Bootstrap fresh owned Kodi runtime/profile for native skin package installation; no standard profile changed.",
+  "root": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-kodi-test-clean-941d3ebe96ea",
+  "rpc_ready": true,
+  "pid": 36568,
+  "active_skin": "skin.estuary",
+  "owned_process_exited": true,
+  "database_initialized": true
+}

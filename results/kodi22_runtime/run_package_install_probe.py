@@ -20,9 +20,11 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--package-review", type=Path, default=repo / "results/kodi22_inventory/switchtimer_package_review.json")
     parser.add_argument("--report-prefix", default="package_install")
+    parser.add_argument("--test-root", type=Path, default=Path(r"C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440"))
     args = parser.parse_args()
     assert args.report_prefix and all(c.isalnum() or c == "_" for c in args.report_prefix)
-    root = Path(r"C:\Users\zorno\AppData\Local\Temp\horizonzv-kodi-test-146cbb2c139f4f68b53148a6e4286440").resolve()
+    root = args.test_root.resolve()
+    assert root.parent == Path(tempfile.gettempdir()).resolve() and root.name.startswith("horizonzv-kodi-test-")
     profile = root / "portable_data"
     skin = profile / "addons/skin.horizonzv"
     review = json.loads(args.package_review.read_text(encoding="utf-8-sig"))
@@ -69,7 +71,7 @@ def main():
     from xbmcclient import XBMCClient
     process = client = None
     failure = None
-    report = {"scope": "Native InstallFromZip with no pre-existing skin directory, followed by a separate restart into the packaged skin. Retained test skin settings, not an empty first-run user profile.", "archive": str(archive), "archive_sha256": review["sha256"], "pids": [], "stages": []}
+    report = {"scope": "Native InstallFromZip with no pre-existing skin directory, followed by a separate restart into the packaged skin. Retained test skin settings, not an empty first-run user profile.", "test_root": str(root), "archive": str(archive), "archive_sha256": review["sha256"], "pids": [], "stages": []}
 
     def rpc(method, params=None):
         r = raw_rpc(method, params)
@@ -114,7 +116,11 @@ def main():
                 rpc("JSONRPC.Ping")
                 break
             except Exception:
-                assert process.poll() is None
+                exit_code = process.poll()
+                if exit_code is not None:
+                    report["startup_exit"] = {"pid": process.pid, "code": exit_code,
+                                              "windows_code_hex": f"0x{exit_code & 0xffffffff:08x}"}
+                    raise RuntimeError("Owned Kodi exited before RPC: " + report["startup_exit"]["windows_code_hex"])
                 time.sleep(.25)
         client = XBMCClient(name="HorizonzV ZIP installation", uid=secrets.randbits(32))
         client.connect(port=9777)

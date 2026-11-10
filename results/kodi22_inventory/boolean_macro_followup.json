@@ -1,0 +1,28 @@
+{
+  "checked_on": "2026-11-10",
+  "scope": "Literal condition attributes and visible/enable text only; no include-parameter or user-defined action expansion.",
+  "contexts": 6531,
+  "direct_bracket_macros": [],
+  "evidence": "fritz_widget_parser_review.json",
+  "limits": [
+    "No full Kodi Boolean parser or proof of arbitrary dynamic expressions."
+  ],
+  "bounded_static_checks": {
+    "known_regressions": {
+      "files": 167,
+      "errors": 0,
+      "warnings": 0
+    },
+    "action": {
+      "findings": 0
+    },
+    "window": {
+      "findings": 0
+    },
+    "info": {
+      "arity_candidates": 0,
+      "condition_atom_candidates": 0,
+      "unrecognized_info_roots": 0
+    }
+  }
+}

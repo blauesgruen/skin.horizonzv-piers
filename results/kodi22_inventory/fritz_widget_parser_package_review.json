@@ -12,7 +12,8 @@
     "xml/Home.xml",
     "xml/Includes_Dash_FritzDect.xml"
   ],
-  "native_status": "Exact workspace XML tested visibly with local fixture data and actual Home lifecycle; no native fresh InstallFromZip for this package.",
+  "native_status": "Passed native InstallFromZip without a pre-existing skin directory, followed by separate restart into packaged skin. All 296 installed files equal ZIP before and after restart; Home 16:9; no ERROR/FATAL in either stage. Retained skin settings, not all first-run states.",
   "native_review": "../kodi22_runtime/fritz_widget_native_checks.json",
-  "source_review": "fritz_widget_parser_review.json"
+  "source_review": "fritz_widget_parser_review.json",
+  "native_install_review": "../kodi22_runtime/final_skin_package_clean_checks.json"
 }

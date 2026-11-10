@@ -1,9 +1,9 @@
 {
   "checked_on": "2026-11-10",
-  "scope": "Skin-only compatibility and direct addon support. ASM 1.1.13 current property names and display/clear source methods verified; six visible native display cases with original pure writers and controlled data pass. No production change justified. Actual online/device/backend scopes and overall completion remain unproven.",
-  "source_checkpoint": "79ee03e",
+  "scope": "Skin-only compatibility and direct addon support. Current 1.22.1.1 package now passes visible native InstallFromZip and separate restart in a fresh complete owned runtime: 296 byte-equal installed files and no ERROR/FATAL in either stage. Provider/backend and remaining integration contexts remain documented; overall completion unproven.",
+  "source_checkpoint": "4222c67",
   "branch": "refactor/kodi22-kompatibilitaet",
-  "acceptance_document_local_links_checked": 90,
+  "acceptance_document_local_links_checked": 93,
   "missing_acceptance_document_targets": [],
   "requirements": [
     {
@@ -25,7 +25,8 @@
         "kodi22_runtime/widget_folder_navigation_before.json",
         "kodi22_runtime/widget_source_target_checks.json",
         "kodi22_inventory/widget_source_package_review.json",
-        "kodi22_runtime/widget_source_install_checks.json"
+        "kodi22_runtime/widget_source_install_checks.json",
+        "kodi22_inventory/boolean_macro_followup.json"
       ]
     },
     {
@@ -70,7 +71,7 @@
     },
     {
       "requirement": "Implement affected skin changes only",
-      "assessment": "Latest ASM work adds source/native evidence and test-only helpers. No production skin XML, provider code or provider settings changed. Previous production checkpoint remains 79ee03e.",
+      "assessment": "Current work adds package-install evidence and test-launch diagnostics only. Production XML, addon.xml and other addons unchanged. A new complete owned runtime was copied unchanged from the working installation; no standard profile or Windows settings changed.",
       "evidence": [
         "AENDERUNGSUEBERSICHT.md",
         "kodi22_inventory/switchtimer_property_contract_review.json",
@@ -85,14 +86,15 @@
     },
     {
       "requirement": "Targeted tests and original plugin/local/SMB fanart behaviour",
-      "assessment": "Actual local file/stack and two actual plugin-player cases now passed. Plugin item paths retained plugin:// and made no extrafanart request. Native Kodi VFS now reads five images over both the mapped drive and SMB. Source guards preserve smb://; native target-skin SMB rendering remains unobserved. No SMB video library or further connection setup is requested; Disney playback retains its DRM prerequisite. Plugin-containing stack URIs, mixed/encoded wrappers and other named contexts remain open.",
+      "assessment": "Actual local file/stack and two actual plugin-player cases now passed. Plugin item paths retained plugin:// and made no extrafanart request. Native Kodi VFS now reads five images over both the mapped drive and SMB. Source guards preserve smb://; native target-skin SMB rendering remains unobserved. No SMB video library or further connection setup is requested; Disney playback retains its DRM prerequisite. Plugin-containing stack URIs, mixed/encoded wrappers and other named contexts remain open. Current ZIP additionally passes native installation and separate restart with byte-identical installed contents; no fresh fanart/provider playback claim from this package test.",
       "evidence": [
         "kodi22_runtime/player_stack_fanart_checks.json",
         "kodi22_runtime/fanart_wrapper_path_checks.json",
         "kodi22_runtime/standard_disney_playback_prerequisite.json",
         "kodi22_inventory/plugin_player_fanart_review.json",
         "kodi22_runtime/plugin_player_fanart_checks.json",
-        "kodi22_runtime/smb_fanart_path_review.json"
+        "kodi22_runtime/smb_fanart_path_review.json",
+        "kodi22_runtime/final_skin_package_clean_checks.json"
       ]
     },
     {
@@ -111,7 +113,8 @@
         "kodi22_runtime/switchtimer_followup_install_checks.json",
         "kodi22_runtime/tmdb_favourites_native_checks.json",
         "kodi22_runtime/fritz_widget_native_checks.json",
-        "kodi22_runtime/asm_display_native_checks.json"
+        "kodi22_runtime/asm_display_native_checks.json",
+        "kodi22_runtime/final_skin_package_clean_checks.json"
       ]
     }
   ],
@@ -157,6 +160,12 @@
     "xml\\Includes_Dash_FritzDect.xml": "bf51a7dc3c2fd6654641da0b19f53f2c3f0a9348815c283a1a9267a39540c4e2",
     "xml\\MyFavourites.xml": "7d8192b05cc15addc7badc6859712c332a9bfc3f650a999d2133125f3924ad6a"
   },
-  "latest_source_checkpoint": "79ee03e",
-  "current_package_native_install_limit": "tmdb_favourites_install_checks.json: fresh isolated attempt did not reach a test stage; no native InstallFromZip pass for current package. Separate standard-Kodi XML lifecycle passes with unchanged 5.4.16."
+  "latest_source_checkpoint": "4222c67",
+  "current_package_native_install_limit": null,
+  "current_package_native_install": {
+    "passed": true,
+    "evidence": "kodi22_runtime/final_skin_package_clean_checks.json",
+    "runtime_setup": "kodi22_runtime/fresh_package_probe_setup.json",
+    "scope": "Retained test skin settings, all 296 installed files match ZIP, separate restart Home 16:9, no ERROR/FATAL in either stage. Not every first-run or provider context."
+  }
 }
