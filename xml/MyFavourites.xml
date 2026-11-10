@@ -4,6 +4,12 @@
 	<backgroundcolor>grey3</backgroundcolor>
     <menucontrol>9000</menucontrol>
     <include>ViewidVideo</include>
+    <!-- TMDb Helper does not list MyFavourites.xml as a media window.
+         Its non-empty widget opt-in "0" selects the native default container. -->
+    <onload condition="System.AddonIsEnabled(plugin.video.themoviedb.helper)">SetProperty(TMDbHelper.WidgetContainer,0,favouritesbrowser)</onload>
+    <onload condition="System.AddonIsEnabled(plugin.video.themoviedb.helper)">SetProperty(TMDbHelper.WidgetContainer,0,Home)</onload>
+    <onunload>ClearProperty(TMDbHelper.WidgetContainer,favouritesbrowser)</onunload>
+    <onunload>ClearProperty(TMDbHelper.WidgetContainer,Home)</onunload>
     <!-- <onload condition="!Skin.HasSetting(firstrun1_horizonzv)">ActivateWindow(1140)</onload> -->
     <controls>
 		<include condition="System.AddonIsEnabled(plugin.video.themoviedb.helper)">TMDbhelperListButton</include>

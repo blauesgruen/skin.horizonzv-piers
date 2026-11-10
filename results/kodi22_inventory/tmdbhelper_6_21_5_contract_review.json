@@ -1,0 +1,165 @@
+{
+  "checked_on": "2026-11-10",
+  "scope": "Direct skin-owned TMDb Helper 6.21.5 contract review and Favourites opt-in correction; source protocol check with mocked Kodi API, no native or online data claim.",
+  "skin_checkpoint": "a6a5cd4",
+  "upstream_version": "6.21.5",
+  "upstream_commit": "7f0c7a2cfd81351f03405f91fcd22e1ac06fe568",
+  "previous_source_review": "tmdbhelper_contract_review.json",
+  "installed_reference_version": "5.4.16",
+  "sources": [
+    {
+      "url": "https://github.com/jurialmunkey/plugin.video.themoviedb.helper/blob/7f0c7a2cfd81351f03405f91fcd22e1ac06fe568/addon.xml",
+      "finding": "Manifest identifies the checked upstream version as 6.21.5.",
+      "lines": [
+        3
+      ],
+      "source_line_count": 51
+    },
+    {
+      "url": "https://github.com/jurialmunkey/plugin.video.themoviedb.helper/blob/7f0c7a2cfd81351f03405f91fcd22e1ac06fe568/resources/tmdbhelper/lib/monitor/poller.py",
+      "finding": "The skin service opt-in is still TMDbHelper.Service.",
+      "lines": [
+        9,
+        70,
+        139
+      ],
+      "source_line_count": 253
+    },
+    {
+      "url": "https://github.com/jurialmunkey/plugin.video.themoviedb.helper/blob/7f0c7a2cfd81351f03405f91fcd22e1ac06fe568/resources/tmdbhelper/lib/monitor/basegetter.py",
+      "finding": "The receiving container selector remains Skin.String(TMDbHelper.MonitorContainer).",
+      "lines": [
+        58,
+        60
+      ],
+      "source_line_count": 85
+    },
+    {
+      "url": "https://github.com/jurialmunkey/plugin.video.themoviedb.helper/blob/7f0c7a2cfd81351f03405f91fcd22e1ac06fe568/resources/tmdbhelper/lib/monitor/listitemtools.py",
+      "finding": "Selector is converted to an integer; receiver must be visible; the active-window control receives the ListItem through addItem. Exit sends an empty ListItem.",
+      "lines": [
+        37,
+        38,
+        48,
+        51,
+        69,
+        77,
+        84,
+        86,
+        143,
+        146
+      ],
+      "source_line_count": 152
+    },
+    {
+      "url": "https://github.com/jurialmunkey/plugin.video.themoviedb.helper/blob/7f0c7a2cfd81351f03405f91fcd22e1ac06fe568/resources/tmdbhelper/lib/monitor/listitemfinaliser.py",
+      "finding": "Container finalisation delivers the populated ListItem to that control.",
+      "lines": [
+        187,
+        189,
+        191
+      ],
+      "source_line_count": 233
+    },
+    {
+      "url": "https://github.com/jurialmunkey/plugin.video.themoviedb.helper/blob/7f0c7a2cfd81351f03405f91fcd22e1ac06fe568/resources/tmdbhelper/lib/items/database/itemmeta_factories/concrete_classes/basemedia.py",
+      "finding": "Provider metadata maps the icon field to the provider logo and uses the provider property prefix.",
+      "lines": [
+        293,
+        294,
+        295,
+        296
+      ],
+      "source_line_count": 491
+    },
+    {
+      "url": "https://github.com/jurialmunkey/plugin.video.themoviedb.helper/blob/7f0c7a2cfd81351f03405f91fcd22e1ac06fe568/resources/tmdbhelper/lib/items/database/itemmeta_factories/concrete_classes/baseclass.py",
+      "finding": "Property enumeration begins at one and materialises indexed provider property names.",
+      "lines": [
+        87,
+        94,
+        99,
+        100
+      ],
+      "source_line_count": 229
+    },
+    {
+      "url": "https://github.com/jurialmunkey/plugin.video.themoviedb.helper/blob/7f0c7a2cfd81351f03405f91fcd22e1ac06fe568/resources/tmdbhelper/lib/monitor/poller.py",
+      "finding": "WINDOW_XML_MEDIA omits MyFavourites.xml; non-empty WidgetContainer string enables polling. Listitem branch precedes clear branch."
+    },
+    {
+      "url": "https://github.com/jurialmunkey/plugin.video.themoviedb.helper/blob/7f0c7a2cfd81351f03405f91fcd22e1ac06fe568/resources/tmdbhelper/lib/monitor/utils.py",
+      "finding": "widget_id converts property to int; container(0) returns Container. and preserves the native default view."
+    },
+    {
+      "url": "https://github.com/jurialmunkey/script.module.jurialmunkey/blob/8a3e7c64a7545b00d3833c73fab12b3d628c5120/resources/modules/jurialmunkey/window.py",
+      "finding": "WindowChecker.get_window_property defaults to string; get_property accepts explicit int conversion. String zero opts in while integer zero selects default container."
+    }
+  ],
+  "kodi_property_case_source": {
+    "url": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/guilib/GUIListItem.h",
+    "implementation_url": "https://github.com/xbmc/xbmc/blob/22.0rc1-Piers/xbmc/guilib/GUIListItem.cpp",
+    "finding": "ListItem properties use CaseInsensitiveCompare. The skin's Provider.N.Icon casing and the producer's provider.N.icon casing are compatible."
+  },
+  "checked_contracts": [
+    {
+      "item": "Service opt-in",
+      "skin": "Skin.SetBool(TMDbHelper.Service), gated by System.AddonIsEnabled(plugin.video.themoviedb.helper)",
+      "assessment": "Name retained; not a new native service-start test."
+    },
+    {
+      "item": "Receiver selector",
+      "skin": "Skin.SetString(TMDbHelper.MonitorContainer,99950)",
+      "assessment": "Current upstream getter and integer conversion accept the same selector."
+    },
+    {
+      "item": "Receiver control",
+      "skin": "List 99950, 1 by 1 pixels, off-screen, with no explicit false visibility",
+      "assessment": "XML supplies the expected Python-populated list type. Runtime visibility/delivery remains untested here."
+    },
+    {
+      "item": "Receiver windows",
+      "skin": "MyVideoNav.xml and MyFavourites.xml include the receiver when the addon is enabled.",
+      "assessment": "MyVideoNav.xml matches the upstream media-window list; MyFavourites.xml does not. Four skin lifecycle actions now explicitly opt Favourites in and clean up. Original upstream-code model passes for local/global mode; native lifecycle not tested."
+    },
+    {
+      "item": "Provider icons",
+      "skin": "Container(99950).ListItem.Property(Provider.1.Icon) through Provider.8.Icon",
+      "assessment": "One-based icon fields and case-insensitive property lookup agree with producer."
+    },
+    {
+      "item": "Clearing",
+      "skin": "Empty icon properties hide their image controls.",
+      "assessment": "Upstream exit path sends an empty item. Actual transitions and outstanding jobs were not tested."
+    }
+  ],
+  "conclusion": "Service/container/icon names remain supported. Current upstream excludes MyFavourites.xml from automatic media-window monitoring. Skin now opts its default container into monitoring via WidgetContainer=0 and clears local/Home properties on unload; original upstream code confirms both container modes in the bounded source model. Native verification remains pending.",
+  "limits": [
+    "No native run of 6.21.5 or verification of its dependencies performed.",
+    "No addon upgraded, copied or modified for this review.",
+    "Online watch-provider availability, country/settings, selection/dialog transitions and first installation remain outside this source proof.",
+    "Off-screen XML placement alone does not prove actual native Control.IsVisible or renderer behaviour.",
+    "No guarantee for unpublished future changes.",
+    "New onload/onunload builtin dispatch and timing are source-model verified only; visible Kodi test remains open."
+  ],
+  "skin_structure_verified": true,
+  "verified_icon_positions": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "skin_file_sha256": {
+    "Startup.xml": "e449b33a1af60bc1d4d4b88af9bee10fd17140af876163974cd9a19bcf4cad26",
+    "Includes.xml": "989b9efa0cad027292edccf7592304103c221c3fe726108da23e3077e35e291c",
+    "MyVideoNav.xml": "40610586300c4d38b1aa19c30cce12c4a53df9078f1cf40bb54e7c8ea51fbddc",
+    "MyFavourites.xml": "7d8192b05cc15addc7badc6859712c332a9bfc3f650a999d2133125f3924ad6a",
+    "View_Movie_503_MediaInfo.xml": "4db90f625907524f62ec0b1bcb086f65f9acb30a1102fd6d46ec275410820cea"
+  },
+  "protocol_checks": "../kodi22_runtime/tmdb_favourites_protocol_checks.json",
+  "package_review": "tmdb_favourites_package_review.json"
+}

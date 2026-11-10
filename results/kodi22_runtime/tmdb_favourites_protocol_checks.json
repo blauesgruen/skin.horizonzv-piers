@@ -1,0 +1,41 @@
+{
+  "checked_on": "2026-11-10",
+  "passed": true,
+  "scope": "Original pinned upstream AST with mocked Kodi property/window API; not native Kodi execution.",
+  "source_sha256": {
+    "poller.py": "a7ac3d3eea37e5ef20e0ff8813935f3b66026e9a71904de50e26722784000e59",
+    "utils.py": "4845cc9b5838ee5372f302e22af116b3d2ee55134da1bbf73b0a5706eb49c720",
+    "window.py": "9f8bf242b206cac116c3a708c44c090757e0073241a8f514bb57d829fd9b54fa"
+  },
+  "sources": {
+    "poller.py": "https://raw.githubusercontent.com/jurialmunkey/plugin.video.themoviedb.helper/7f0c7a2cfd81351f03405f91fcd22e1ac06fe568/resources/tmdbhelper/lib/monitor/poller.py",
+    "utils.py": "https://raw.githubusercontent.com/jurialmunkey/plugin.video.themoviedb.helper/7f0c7a2cfd81351f03405f91fcd22e1ac06fe568/resources/tmdbhelper/lib/monitor/utils.py",
+    "window.py": "https://raw.githubusercontent.com/jurialmunkey/script.module.jurialmunkey/8a3e7c64a7545b00d3833c73fab12b3d628c5120/resources/modules/jurialmunkey/window.py"
+  },
+  "cases": [
+    {
+      "local_widget_mode": false,
+      "before_not_polled": true,
+      "after_polled": true,
+      "native_default_container": true,
+      "service_disabled_guard_retained": true,
+      "unload_cleared": true
+    },
+    {
+      "local_widget_mode": true,
+      "before_not_polled": true,
+      "after_polled": true,
+      "native_default_container": true,
+      "service_disabled_guard_retained": true,
+      "unload_cleared": true
+    }
+  ],
+  "disabled_addon_no_opt_in": true,
+  "only_four_lifecycle_actions_added_to_skin_tree": true,
+  "skin_sha256": "7d8192b05cc15addc7badc6859712c332a9bfc3f650a999d2133125f3924ad6a",
+  "limits": [
+    "Kodi builtin dispatch and onload/onunload timing not executed.",
+    "Receiver visibility, item delivery and actual online icons not tested.",
+    "No addon modified or installed."
+  ]
+}
