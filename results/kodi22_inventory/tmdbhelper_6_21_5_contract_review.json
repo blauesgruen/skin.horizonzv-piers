@@ -115,12 +115,12 @@
     {
       "item": "Receiver control",
       "skin": "List 99950, 1 by 1 pixels, off-screen, with no explicit false visibility",
-      "assessment": "XML supplies the expected Python-populated list type. Runtime visibility/delivery remains untested here."
+      "assessment": "Expected list type present. Visible standard Kodi with unchanged 5.4.16 reports Control.IsVisible(99950)=true in Favourites in both widget modes; actual 6.21.5 delivery not tested."
     },
     {
       "item": "Receiver windows",
       "skin": "MyVideoNav.xml and MyFavourites.xml include the receiver when the addon is enabled.",
-      "assessment": "MyVideoNav.xml matches the upstream media-window list; MyFavourites.xml does not. Four skin lifecycle actions now explicitly opt Favourites in and clean up. Original upstream-code model passes for local/global mode; native lifecycle not tested."
+      "assessment": "MyVideoNav.xml matches the upstream automatic filter; MyFavourites.xml requires the added lifecycle opt-in. Original 6.21.5 source model passes both modes. Actual Kodi dispatch/cleanup passes with installed 5.4.16; no 6.21.5 service runtime test."
     },
     {
       "item": "Provider icons",
@@ -133,14 +133,15 @@
       "assessment": "Upstream exit path sends an empty item. Actual transitions and outstanding jobs were not tested."
     }
   ],
-  "conclusion": "Service/container/icon names remain supported. Current upstream excludes MyFavourites.xml from automatic media-window monitoring. Skin now opts its default container into monitoring via WidgetContainer=0 and clears local/Home properties on unload; original upstream code confirms both container modes in the bounded source model. Native verification remains pending.",
+  "conclusion": "Service/container/icon names remain supported. Current upstream excludes MyFavourites.xml from automatic media-window monitoring. Skin now opts its default container into monitoring via WidgetContainer=0 and clears local/Home properties on unload; original upstream code confirms both container modes in the bounded source model. Native verification remains pending. Subsequent visible standard-Kodi run with unchanged 5.4.16 confirms both lifecycle modes and receiver visibility; 6.21.5 service/data delivery still pending.",
   "limits": [
     "No native run of 6.21.5 or verification of its dependencies performed.",
     "No addon upgraded, copied or modified for this review.",
     "Online watch-provider availability, country/settings, selection/dialog transitions and first installation remain outside this source proof.",
     "Off-screen XML placement alone does not prove actual native Control.IsVisible or renderer behaviour.",
     "No guarantee for unpublished future changes.",
-    "New onload/onunload builtin dispatch and timing are source-model verified only; visible Kodi test remains open."
+    "New onload/onunload dispatch passed natively with installed 5.4.16; execution of 6.21.5 still pending.",
+    "Screenshots capture an early window transition; no full rendering approval claimed."
   ],
   "skin_structure_verified": true,
   "verified_icon_positions": [
@@ -161,5 +162,13 @@
     "View_Movie_503_MediaInfo.xml": "4db90f625907524f62ec0b1bcb086f65f9acb30a1102fd6d46ec275410820cea"
   },
   "protocol_checks": "../kodi22_runtime/tmdb_favourites_protocol_checks.json",
-  "package_review": "tmdb_favourites_package_review.json"
+  "package_review": "tmdb_favourites_package_review.json",
+  "native_followup": {
+    "evidence": "../kodi22_runtime/tmdb_favourites_native_checks.json",
+    "provider_version": "5.4.16",
+    "scope": "Visible standard Kodi: actual XML onload/onunload dispatch and receiver visibility in both widget modes. Not 6.21.5 service execution or actual online data delivery.",
+    "passed": true,
+    "settings_restored": true,
+    "provider_files_unchanged": true
+  }
 }

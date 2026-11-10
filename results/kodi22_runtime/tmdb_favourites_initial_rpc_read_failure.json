@@ -1,0 +1,23 @@
+{
+  "scope": "Visible standard Kodi: skin-owned Favourites lifecycle, installed provider unchanged.\n\nTests Kodi builtin dispatch with the installed TMDb Helper version, not 6.21.5\nservice execution or real online watch-provider delivery. Restores both settings.\n",
+  "checked_on": "2026-11-10",
+  "provider_version": "5.4.16",
+  "skin_sha256": "7d8192b05cc15addc7badc6859712c332a9bfc3f650a999d2133125f3924ad6a",
+  "cases": [],
+  "backup_directory": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-tmdb-native-0iergzcb",
+  "passed": false,
+  "previous_skin": "skin.metis",
+  "pid": 2128,
+  "failure": "ParseError('no element found: line 1, column 0')",
+  "trace": "Traceback (most recent call last):\n  File \"D:\\Program Files\\Kodi22\\portable_data\\addons\\skin.horizonzv-piers\\results\\kodi22_runtime\\run_tmdb_favourites_native_probe.py\", line 96, in main\n    wait(lambda: boolean('Skin.HasSetting(TMDbHelper.UseLocalWidgetContainer)') == local)\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Program Files\\Kodi22\\portable_data\\addons\\skin.horizonzv-piers\\results\\kodi22_runtime\\run_tmdb_favourites_native_probe.py\", line 60, in wait\n    if predicate():\n       ~~~~~~~~~^^\n  File \"D:\\Program Files\\Kodi22\\portable_data\\addons\\skin.horizonzv-piers\\results\\kodi22_runtime\\run_tmdb_favourites_native_probe.py\", line 96, in <lambda>\n    wait(lambda: boolean('Skin.HasSetting(TMDbHelper.UseLocalWidgetContainer)') == local)\n                 ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Program Files\\Kodi22\\portable_data\\addons\\skin.horizonzv-piers\\results\\kodi22_runtime\\run_tmdb_favourites_native_probe.py\", line 54, in boolean\n    return rpc('XBMC.GetInfoBooleans', {'booleans': [condition]})[condition]\n           ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Program Files\\Kodi22\\portable_data\\addons\\skin.horizonzv-piers\\results\\kodi22_runtime\\run_tmdb_favourites_native_probe.py\", line 44, in rpc\n    result = raw_rpc(method, params)\n  File \"C:\\Users/zorno/AppData/Local/Temp/horizonzv-standard-integration-20261103\\standard_rpc.py\", line 5, in rpc\n    s={e.get(\"id\"):e.text for e in E.parse(root/\"userdata/guisettings.xml\").getroot().iter(\"setting\")}\n                                   ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zorno\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\xml\\etree\\ElementTree.py\", line 1204, in parse\n    tree.parse(source, parser)\n    ~~~~~~~~~~^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zorno\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\xml\\etree\\ElementTree.py\", line 569, in parse\n    self._root = parser._parse_whole(source)\n                 ~~~~~~~~~~~~~~~~~~~^^^^^^^^\nxml.etree.ElementTree.ParseError: no element found: line 1, column 0\n",
+  "cleanup": {
+    "owned_process_exited": true,
+    "settings_restored": true,
+    "provider_files_unchanged": true
+  },
+  "limits": [
+    "Installed provider version only; no 6.21.5 runtime test.",
+    "No actual online provider-icon delivery asserted.",
+    "Standard-profile background services may execute normally; no provider code edited."
+  ]
+}

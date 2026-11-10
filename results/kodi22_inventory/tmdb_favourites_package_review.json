@@ -11,6 +11,8 @@
     "xml/MyFavourites.xml"
   ],
   "previous_package_review": "fritz_widget_package_review.json",
-  "native_install_status": "Not performed for this change. Native window lifecycle and actual provider icons remain untested.",
-  "source_review": "tmdbhelper_6_21_5_contract_review.json"
+  "native_install_status": "New isolated InstallFromZip attempt did not reach any test stage; original skin, settings and databases restored. Standard-Kodi Favourites lifecycle passed separately with installed 5.4.16, not a fresh package installation.",
+  "source_review": "tmdbhelper_6_21_5_contract_review.json",
+  "native_install_attempt": "../kodi22_runtime/tmdb_favourites_install_checks.json",
+  "separate_native_lifecycle": "../kodi22_runtime/tmdb_favourites_native_checks.json"
 }

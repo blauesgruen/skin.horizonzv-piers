@@ -1,0 +1,49 @@
+{
+  "scope": "Visible standard Kodi: skin-owned Favourites lifecycle, installed provider unchanged.\n\nTests Kodi builtin dispatch with the installed TMDb Helper version, not 6.21.5\nservice execution or real online watch-provider delivery. Restores both settings.\n",
+  "checked_on": "2026-11-10",
+  "provider_version": "5.4.16",
+  "skin_sha256": "7d8192b05cc15addc7badc6859712c332a9bfc3f650a999d2133125f3924ad6a",
+  "cases": [
+    {
+      "local_widget_mode": false,
+      "onload_properties": {
+        "Window(10060).Property(TMDbHelper.WidgetContainer)": "0",
+        "Window(Home).Property(TMDbHelper.WidgetContainer)": "0"
+      },
+      "receiver_visible": true,
+      "screenshot": "tmdb_favourites_global.png",
+      "onunload_properties": {
+        "Window(10060).Property(TMDbHelper.WidgetContainer)": "",
+        "Window(Home).Property(TMDbHelper.WidgetContainer)": ""
+      }
+    },
+    {
+      "local_widget_mode": true,
+      "onload_properties": {
+        "Window(10060).Property(TMDbHelper.WidgetContainer)": "0",
+        "Window(Home).Property(TMDbHelper.WidgetContainer)": "0"
+      },
+      "receiver_visible": true,
+      "screenshot": "tmdb_favourites_local.png",
+      "onunload_properties": {
+        "Window(10060).Property(TMDbHelper.WidgetContainer)": "",
+        "Window(Home).Property(TMDbHelper.WidgetContainer)": ""
+      }
+    }
+  ],
+  "backup_directory": "C:\\Users\\zorno\\AppData\\Local\\Temp\\horizonzv-tmdb-native-zm_qlzjg",
+  "passed": true,
+  "previous_skin": "skin.metis",
+  "pid": 33340,
+  "cleanup": {
+    "owned_process_exited": true,
+    "settings_restored": true,
+    "provider_files_unchanged": true
+  },
+  "limits": [
+    "Installed provider version only; no 6.21.5 runtime test.",
+    "No actual online provider-icon delivery asserted.",
+    "Standard-profile background services may execute normally; no provider code edited."
+  ],
+  "screenshot_review": "Images inspected: early window transition/background and EventServer notification; no full Favourites rendering approval."
+}
