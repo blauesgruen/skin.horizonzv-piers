@@ -1,0 +1,45 @@
+{
+  "checked_on": "2026-11-10",
+  "upstream_version": "1.1.13",
+  "upstream_service_url": "https://github.com/blauesgruen/service.audio.stream.monitor/blob/master/service.py",
+  "upstream_manifest_url": "https://github.com/blauesgruen/service.audio.stream.monitor/blob/master/addon.xml",
+  "scope": "Original display writer and stop/transition/clear executable method AST match installed and fetched published source; no live service entry point execution.",
+  "comparison_note": "Leading docstrings excluded: dedenting extracted methods changes indentation inside triple-quoted documentation. Executable AST compared unchanged.",
+  "matched_method_lines": {
+    "set_property_safe": 1995,
+    "_normalize_display_text": 1992,
+    "_sanitize_station_text": 2152,
+    "clear_properties": 1713,
+    "_handle_playback_stop": 1830,
+    "_handle_stream_transition": 1818,
+    "_clear_qf_response_properties": 2735
+  },
+  "executable_ast_equal": {
+    "set_property_safe": true,
+    "_normalize_display_text": true,
+    "_sanitize_station_text": true,
+    "clear_properties": true,
+    "_handle_playback_stop": true,
+    "_handle_stream_transition": true,
+    "_clear_qf_response_properties": true
+  },
+  "native_checks": "../kodi22_runtime/asm_display_native_checks.json",
+  "finding": "Supported properties and value formatting agree with current skin consumers. Six native controlled cases verify plain/colored text, QF/station precedence and clearing; no production rewrite justified.",
+  "lifecycle_source_evidence": "Published clear_properties clears Station, Title, ArtistDisplay, Album, Genre, FirstRelease, Logo, BandFormed and BandMembers and invokes QF response clearing. Playback stop and stream transition call clear_properties. This is source evidence, not native live-service execution.",
+  "source_sha256": {
+    "service.py": "88ef9a51fe11916d26b6c245ddf71b3b1ed9a08ed5f6c9c5dfcb835c3303a71b",
+    "constants.py": "49f9771eb1d1d99e5744e75354bd302d4304bb01c266aee85439f8a41f0d8910",
+    "text_encoding.py": "b8364e139396676fb7ea5b3e6fa4e3b13b68bf9f6623b933a70d3a680f0980bf"
+  },
+  "limits": [
+    "Published master snapshot checked on this date; no guarantee for unpublished changes.",
+    "No live radio/QF, external artwork download or complete MusicVisualisation layout test.",
+    "Existing 43-property registry review includes debug-only consumers; this native test covers four display variables and two label expressions only."
+  ],
+  "current_upstream_constants_check": {
+    "source": "https://github.com/blauesgruen/service.audio.stream.monitor/blob/master/constants.py",
+    "skin_property_count": 43,
+    "missing": []
+  },
+  "current_skin_literal_properties_equal_previous_inventory": true
+}

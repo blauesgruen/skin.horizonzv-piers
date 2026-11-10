@@ -1092,5 +1092,11 @@
     }
   ],
   "result": "All 43 distinct properties read by active skin XML have local writer paths and remain declared in fetched upstream ASM constants. No skin rewrite justified by these property names.",
-  "qf_station_used_note": "RadioMonitor.QF.Response.StationUsed is published by ASM via set_property_safe; it is not evidence that the QF service itself publishes that property."
+  "qf_station_used_note": "RadioMonitor.QF.Response.StationUsed is published by ASM via set_property_safe; it is not evidence that the QF service itself publishes that property.",
+  "current_followup": {
+    "checked_on": "2026-11-10",
+    "source": "asm_display_source_review.json",
+    "native": "../kodi22_runtime/asm_display_native_checks.json",
+    "scope": "43 current literal names still declared; executable display/clear method code matches published source. Six controlled native display cases pass. Not live radio/QF or complete MusicVisualisation verification."
+  }
 }
