@@ -1,4 +1,22 @@
-﻿v 1.22.0.0
+﻿v 1.22.1.2
+- Kodi 22: entfernte, veraltete und ungültige Skin-Schnittstellen durch unterstützte Aufrufe und InfoLabels ersetzt.
+- Extra-Fanart: Verzeichnisabfragen für Plugin-Pfade verhindert; bestehende lokale und SMB-Pfadausdrücke erhalten.
+- TMDb Helper: Favoritenüberwachung ergänzt; Anbieter-Icons und Datenwechsel mit unverändertem Anbieter 6.21.5 geprüft.
+- FritzAct: Zustandsfarben an die übersetzten Anbieterwerte gebunden und fehlende Fokus-ID im Widget ergänzt.
+- GTO: Infodialog für die Skin-Ordner skin.horizonzv und skin.horizonzv-piers unterstützt; fehlerhafte Leerprüfung im Widget korrigiert.
+- CU LRC Lyrics: laufenden Hintergrunddienst wiederverwenden; Wiederöffnung, Stop und fehlende oder deaktivierte Lyrics-Anbieter berücksichtigen.
+- Global Search und Farbwähler: Skin-Dateien und Control-Anbindungen ergänzt bzw. korrigiert; Überschriften und Fokus nativer Dialoge berichtigt.
+- Widgets: Ordnerziele aus Quelle und Medienkategorie ableiten; fehlende oder deaktivierte Add-on-Ziele abfangen.
+- Auto Completion: Suchtexte mit Sonderzeichen URL-kodiert übergeben und Vorschläge bei verdeckten Eingaben sperren.
+- Wake-on-LAN: native WakeOnLan-Aufrufe, gemeinsame Gerätezeilen und Bereinigung alter Statuswerte vor der Abfrage eingeführt.
+- Medien und PVR: Suchfilter, Untertitel- und Wetterbilder, Bewertungs- und Seek-Anzeigen sowie Videoversionen und dynamische Bild-Fallbacks korrigiert.
+- Bildressourcen: doppelten Auswahlaufruf entfernt; Bildpfade und Dateiendungen berichtigt.
+- Bereinigung: Serienplaner, archiviertes Next-Episode-Widget des Library Data Provider und OpenELEC-spezifischen Eintrag entfernt.
+- KN Switchtimer: nicht mehr gelieferte Einzelmarker und nächste-Timer-Details entfernt; Gesamtzähler und native PVR-Anzeigen erhalten.
+- Vorbereitung auf veröffentlichte kommende Kodi-Änderungen: veraltete Fotofelder und Pixel-Vorschauen von Spielständen entfernt; Screenshot-Artwork erhalten.
+- Quellen, gezielte sichtbare Kodi-Tests und verbleibende Integrationsgrenzen unter results/ dokumentiert. Änderungen betreffen ausschließlich den Skin.
+
+v 1.22.0.0
 - Kopie fuer Kodi 22 erstellt; bestehende Funktionen und Komfortfunktionen unveraendert uebernommen.
 
 v 1.21.3.31
