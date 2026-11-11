@@ -23,7 +23,9 @@
 		<platform>all</platform>
 		<license>CC BY-SA 4.0, GNU GENERAL PUBLIC LICENSE Version 2.0</license>
         <email></email>
-		<news>v 1.22.1.6
+		<news>v 1.22.1.7
+- Seitenverhältnis und Position der PVR Icons in PVR-Ansicht (oben rechts) korrigert.
+v 1.22.1.6
 - Wetterwidget: leeren Daily.0-Eintrag überspringen und bei 1-basierten Wetterdaten den ersten verfügbaren Tag anzeigen.
 v 1.22.1.5
 - Home-Widgets: automatisch erzeugten „Mehr“-Ordner entfernt; dadurch ausgelösten Wechsel von schmalen Filmcovern auf breite Kacheln verhindert. Eintragslimits bleiben erhalten.

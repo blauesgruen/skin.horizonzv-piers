@@ -1,4 +1,6 @@
-﻿v 1.22.1.6
+﻿v 1.22.1.7
+- Seitenverhältnis und Position der PVR Icons in PVR-Ansicht (oben rechts) korrigert.
+v 1.22.1.6
 - Wetterwidget: leeren Daily.0-Eintrag überspringen und bei 1-basierten Wetterdaten den ersten verfügbaren Tag anzeigen.
 
 v 1.22.1.5
