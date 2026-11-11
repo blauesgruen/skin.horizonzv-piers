@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.horizonzv" name="Horizonz V" version="1.22.1.2" provider-name="blauesgruen">
+<addon id="skin.horizonzv" name="Horizonz V" version="1.22.1.3" provider-name="blauesgruen">
 	<requires>
 		<import addon="xbmc.gui" version="5.18.0"/>
 		<import addon="xbmc.python" version="3.0.0" optional="true"/>
@@ -23,7 +23,10 @@
 		<platform>all</platform>
 		<license>CC BY-SA 4.0, GNU GENERAL PUBLIC LICENSE Version 2.0</license>
         <email></email>
-		<news>v 1.22.1.2
+		<news>v 1.22.1.3
+- Farbauswahl: nativen Kodi-Dialog im HorizonzV-Design verwenden; Hex-Eingabe und Deckkraft ohne Colorpicker-Add-on erhalten.
+- Colorpicker-BG-Anbindung aus den unterstützten Add-ons entfernt; Installationsaufrufe und Add-on-Dialog gelöscht.
+v 1.22.1.2
 - Kodi-22-Kompatibilität: veraltete Skin-Aufrufe, Dialoge und Fokusbedingungen korrigiert; veröffentlichte kommende Änderungen berücksichtigt.
 - Extra-Fanart: ungültige Abfragen von Plugin-Verzeichnissen verhindert; lokale und SMB-Pfadausdrücke erhalten.
 - Skin-Anbindungen für TMDb Helper, FritzAct, GTO, CU LRC Lyrics, Global Search und Farbwähler überarbeitet.

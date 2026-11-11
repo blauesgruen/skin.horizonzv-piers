@@ -211,19 +211,6 @@
 				<visible>System.HasAddon(plugin.library.node.editor)</visible>
 			</item>
 			<item>
-				<label>Skinhelper Colorpicker BG-Edition</label>
-				<label2>$LOCALIZE[24038]</label2>
-				<onclick>InstallAddon(script.skin.helper.colorpicker.bg)</onclick>
-				<visible>!System.HasAddon(script.skin.helper.colorpicker.bg)</visible>
-			</item>
-			<item>
-				<label>Skinhelper Colorpicker BG-Edition $INFO[System.AddonVersion(script.skin.helper.colorpicker.bg),(,)]</label>
-				<label2/>
-				<icon>OverlayWatched.png</icon>
-				<onclick/>
-				<visible>System.HasAddon(script.skin.helper.colorpicker.bg)</visible>
-			</item>
-			<item>
 				<label>Skinhelper Ping &amp; WOL by _Andy_</label>
 				<label2>$LOCALIZE[24038]</label2>
 				<onclick>InstallAddon(script.skinhelper.ping)</onclick>

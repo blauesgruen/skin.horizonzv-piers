@@ -1584,11 +1584,10 @@
                                 <focusedcolor>black</focusedcolor>
                                 <label> - $LOCALIZE[31394]</label>
                                 <label2>$INFO[Skin.String(MySkinColor)]</label2>
-                                <onclick>RunScript(script.skin.helper.colorpicker.bg,skinstring=MySkinColor)</onclick>
+                                <onclick>Skin.SetColor(MySkinColor,31394,FFFFFFFF)</onclick>
                                 <!-- <onfocus>SetProperty(SSD,"$LOCALIZE[31226]",skinsettings)</onfocus> -->
                                 <onunfocus>ClearProperty(SSD)</onunfocus>
                                 <visible>Skin.HasSetting(color_custom)</visible>
-                                <visible>System.HasAddon(script.skin.helper.colorpicker.bg)+System.AddonIsEnabled(script.skin.helper.colorpicker.bg)</visible>
                             </control>
                             <control type="button" id="825">
                                 <description>BackgroundOverlayColor</description>
@@ -1597,14 +1596,12 @@
                                 <align>left</align>
                                 <include>DialogButtonTextureFocus</include>
                                 <focusedcolor>black</focusedcolor>
-                                <label> - $LOCALIZE[31394]</label>
-                                <label2>$LOCALIZE[24038]</label2>
-                                <onclick condition="!System.HasAddon(script.skin.helper.colorpicker.bg)">InstallAddon(script.skin.helper.colorpicker.bg)</onclick>
-                                <onclick condition="System.HasAddon(script.skin.helper.colorpicker.bg)+!System.AddonIsEnabled(script.skin.helper.colorpicker.bg)">EnableAddon(script.skin.helper.colorpicker.bg)</onclick>
+                                <label> - $LOCALIZE[31956]</label>
+                                <label2>$INFO[Skin.String(MySkinColor)]</label2>
+                                <onclick>RunScript(special://skin/resources/scripts/edit_color.py)</onclick>
                                 <onfocus>SetProperty(SSD,"$LOCALIZE[31226]",skinsettings)</onfocus>
                                 <onunfocus>ClearProperty(SSD)</onunfocus>
                                 <visible>Skin.HasSetting(color_custom)</visible>
-                                <visible>![System.HasAddon(script.skin.helper.colorpicker.bg)+System.AddonIsEnabled(script.skin.helper.colorpicker.bg)]</visible>
                             </control>
                             <control type="radiobutton" id="826">
                                 <description>Page Count</description>

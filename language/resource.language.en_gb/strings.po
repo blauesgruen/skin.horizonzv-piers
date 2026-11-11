@@ -1205,3 +1205,27 @@ msgstr "No devices available"
 msgctxt "#31953"
 msgid "Adding the first extra is temporarily disabled to avoid a crash in the tested Kodi version.[CR][CR]Existing extras can still be managed."
 msgstr "Adding the first extra is temporarily disabled to avoid a crash in the tested Kodi version.[CR][CR]Existing extras can still be managed."
+
+msgctxt "#31954"
+msgid "Hex color (RGB or ARGB)"
+msgstr "Hex color (RGB or ARGB)"
+
+
+msgctxt "#31955"
+msgid "Opacity (%)"
+msgstr "Opacity (%)"
+
+
+msgctxt "#31956"
+msgid "Edit color"
+msgstr "Edit color"
+
+
+msgctxt "#31957"
+msgid "Enter six or eight hexadecimal digits (RGB or ARGB)."
+msgstr "Enter six or eight hexadecimal digits (RGB or ARGB)."
+
+
+msgctxt "#31958"
+msgid "Enter an opacity between 0 and 100."
+msgstr "Enter an opacity between 0 and 100."

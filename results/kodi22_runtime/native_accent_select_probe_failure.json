@@ -1,0 +1,15 @@
+{
+  "native_palette": {
+    "colors": 162,
+    "heading": "ColorPicker"
+  },
+  "palette_selection_saved": "FF000000",
+  "palette_cancel_preserves_color": true,
+  "passed": false,
+  "error": "RuntimeError: Native probe condition timed out",
+  "cleanup": {
+    "owned_process_exited": true,
+    "settings_restored": true
+  },
+  "test_skin_files_restored": true
+}

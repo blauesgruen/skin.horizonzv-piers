@@ -17,7 +17,8 @@ Im Skin sind unter anderem folgende Integrationen beziehungsweise Verwaltungs-/I
 - Skinhelper Ping (`script.skinhelper.ping`)
 - TMDbHelper (`plugin.video.themoviedb.helper`), unter anderem für Anbieterangaben
 - Bildressourcen-Auswahl (`script.image.resource.select`)
-- Skinhelper Colorpicker BG (`script.skin.helper.colorpicker.bg`)
+
+Die eigene Akzentfarbe nutzt Kodis nativen Farbdialog im HorizonzV-Design. Hex-Eingabe (RGB oder ARGB) und Deckkraft sind ohne Colorpicker-Add-on verfügbar; vorhandene MySkinColor-Werte bleiben erhalten.
 
 Disc-Grafiken werden aus Kodis Artwork-Feldern `discart`, `disc` und `cdart` gelesen. Dafür ist keine direkte CDArt-Manager-Integration im Skin vorhanden.
 

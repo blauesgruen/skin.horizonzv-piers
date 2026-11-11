@@ -1,0 +1,18 @@
+{
+  "native_palette": {
+    "colors": 162,
+    "heading": "ColorPicker"
+  },
+  "palette_selection_saved": "FF000000",
+  "palette_cancel_preserves_color": true,
+  "hex_input_saved": "40123456",
+  "numeric_input": "50",
+  "opacity_50_preserves_rgb": "80123456",
+  "editor_cancel_preserves_color": true,
+  "passed": true,
+  "cleanup": {
+    "owned_process_exited": true,
+    "settings_restored": true
+  },
+  "test_skin_files_restored": true
+}

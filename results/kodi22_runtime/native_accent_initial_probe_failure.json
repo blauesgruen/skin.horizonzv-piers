@@ -1,0 +1,9 @@
+{
+  "passed": false,
+  "error": "RuntimeError: Native probe condition timed out",
+  "cleanup": {
+    "owned_process_exited": true,
+    "settings_restored": true
+  },
+  "test_skin_files_restored": true
+}

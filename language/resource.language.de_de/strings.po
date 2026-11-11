@@ -1205,3 +1205,27 @@ msgstr "Keine Geräte verfügbar"
 msgctxt "#31953"
 msgid "Adding the first extra is temporarily disabled to avoid a crash in the tested Kodi version.[CR][CR]Existing extras can still be managed."
 msgstr "Das erste Extra kann derzeit nicht hinzugefügt werden, da dieser Vorgang im geprüften Kodi-Stand einen Absturz auslöst.[CR][CR]Vorhandene Extras können weiterhin verwaltet werden."
+
+msgctxt "#31954"
+msgid "Hex color (RGB or ARGB)"
+msgstr "Hex-Farbe (RGB oder ARGB)"
+
+
+msgctxt "#31955"
+msgid "Opacity (%)"
+msgstr "Deckkraft (%)"
+
+
+msgctxt "#31956"
+msgid "Edit color"
+msgstr "Farbe bearbeiten"
+
+
+msgctxt "#31957"
+msgid "Enter six or eight hexadecimal digits (RGB or ARGB)."
+msgstr "Sechs oder acht Hexadezimalstellen eingeben (RGB oder ARGB)."
+
+
+msgctxt "#31958"
+msgid "Enter an opacity between 0 and 100."
+msgstr "Eine Deckkraft zwischen 0 und 100 eingeben."
