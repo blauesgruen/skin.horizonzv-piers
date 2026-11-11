@@ -1534,8 +1534,8 @@
 				<include content="Widget_Listlayout">
                     <param name="Widget_Listlayout_id" value="$PARAM[HomePageWidget_list_id]"/>
 				</include>
-				<content limit="1" sortby="$PARAM[HomePageWidget_sortby]" sortorder="$PARAM[HomePageWidget_sortorder]" target="$PARAM[HomePageWidget_target]">$PARAM[HomePageWidget_content2]</content>
-				<content limit="$PARAM[HomePageWidget_limit]" sortby="$PARAM[HomePageWidget_sortby]" sortorder="$PARAM[HomePageWidget_sortorder]" target="$PARAM[HomePageWidget_target]">$PARAM[HomePageWidget_content]</content>
+				<content browse="never" limit="1" sortby="$PARAM[HomePageWidget_sortby]" sortorder="$PARAM[HomePageWidget_sortorder]" target="$PARAM[HomePageWidget_target]">$PARAM[HomePageWidget_content2]</content>
+				<content browse="never" limit="$PARAM[HomePageWidget_limit]" sortby="$PARAM[HomePageWidget_sortby]" sortorder="$PARAM[HomePageWidget_sortorder]" target="$PARAM[HomePageWidget_target]">$PARAM[HomePageWidget_content]</content>
 			</control>
 		</control>
 		<include content="HomepageWidgetInfoPanel_BehindShadowImage">

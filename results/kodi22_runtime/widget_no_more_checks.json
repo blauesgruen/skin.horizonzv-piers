@@ -1,0 +1,155 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "focus": 9000,
+      "lists": {
+        "30551": {
+          "count": 11,
+          "more_count": 1,
+          "dbtype": "movie",
+          "pages": "3"
+        },
+        "30552": {
+          "count": 10,
+          "more_count": 0,
+          "dbtype": "movie",
+          "pages": "3"
+        },
+        "30553": {
+          "count": 1,
+          "more_count": 0,
+          "dbtype": "movie",
+          "pages": "1"
+        },
+        "30554": {
+          "count": 3,
+          "more_count": 0,
+          "dbtype": "album",
+          "pages": "1"
+        }
+      }
+    },
+    {
+      "focus": 30552,
+      "lists": {
+        "30551": {
+          "count": 11,
+          "more_count": 1,
+          "dbtype": "movie",
+          "pages": "3"
+        },
+        "30552": {
+          "count": 10,
+          "more_count": 0,
+          "dbtype": "movie",
+          "pages": "3"
+        },
+        "30553": {
+          "count": 1,
+          "more_count": 0,
+          "dbtype": "movie",
+          "pages": "1"
+        },
+        "30554": {
+          "count": 3,
+          "more_count": 0,
+          "dbtype": "album",
+          "pages": "1"
+        }
+      }
+    },
+    {
+      "focus": 30554,
+      "lists": {
+        "30551": {
+          "count": 11,
+          "more_count": 1,
+          "dbtype": "movie",
+          "pages": "3"
+        },
+        "30552": {
+          "count": 10,
+          "more_count": 0,
+          "dbtype": "movie",
+          "pages": "3"
+        },
+        "30553": {
+          "count": 1,
+          "more_count": 0,
+          "dbtype": "movie",
+          "pages": "1"
+        },
+        "30554": {
+          "count": 3,
+          "more_count": 0,
+          "dbtype": "album",
+          "pages": "1"
+        }
+      }
+    },
+    {
+      "focus": 9000,
+      "lists": {
+        "30551": {
+          "count": 11,
+          "more_count": 1,
+          "dbtype": "movie",
+          "pages": "3"
+        },
+        "30552": {
+          "count": 10,
+          "more_count": 0,
+          "dbtype": "movie",
+          "pages": "3"
+        },
+        "30553": {
+          "count": 1,
+          "more_count": 0,
+          "dbtype": "movie",
+          "pages": "1"
+        },
+        "30554": {
+          "count": 3,
+          "more_count": 0,
+          "dbtype": "album",
+          "pages": "1"
+        }
+      }
+    },
+    {
+      "focus": 30552,
+      "lists": {
+        "30551": {
+          "count": 11,
+          "more_count": 1,
+          "dbtype": "movie",
+          "pages": "3"
+        },
+        "30552": {
+          "count": 10,
+          "more_count": 0,
+          "dbtype": "movie",
+          "pages": "3"
+        },
+        "30553": {
+          "count": 1,
+          "more_count": 0,
+          "dbtype": "movie",
+          "pages": "1"
+        },
+        "30554": {
+          "count": 3,
+          "more_count": 0,
+          "dbtype": "album",
+          "pages": "1"
+        }
+      }
+    }
+  ],
+  "cleanup": {
+    "owned_process_exited": true,
+    "settings_restored": true
+  },
+  "scope": "Real Kodi directory providers and active Widget_Listlayout, with browse attributes read from the two modified skin content branches; baseline auto versus never. Not full Home navigation or plugin-generated pagination."
+}

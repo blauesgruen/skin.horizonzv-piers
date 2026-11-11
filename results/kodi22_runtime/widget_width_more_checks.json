@@ -1,0 +1,110 @@
+{
+  "scope": "Actual Widget_Listlayout with 11 typed movie/album entries plus one controlled target_folder item matching Kodi More metadata; explicit selection and focus transitions. Does not reproduce automatic selection in the full Home menu.",
+  "cases": [
+    {
+      "phase": "initial",
+      "focus": 9000,
+      "lists": {
+        "30551": {
+          "dbtype": "movie",
+          "first_dbtype": "movie",
+          "selected_node": "",
+          "count": "12",
+          "pages": "3"
+        },
+        "30552": {
+          "dbtype": "album",
+          "first_dbtype": "album",
+          "selected_node": "",
+          "count": "12",
+          "pages": "4"
+        }
+      }
+    },
+    {
+      "phase": "movie-more-selected",
+      "focus": 30551,
+      "lists": {
+        "30551": {
+          "dbtype": "",
+          "first_dbtype": "movie",
+          "selected_node": "target_folder",
+          "count": "12",
+          "pages": "4"
+        },
+        "30552": {
+          "dbtype": "album",
+          "first_dbtype": "album",
+          "selected_node": "",
+          "count": "12",
+          "pages": "4"
+        }
+      }
+    },
+    {
+      "phase": "music-focused",
+      "focus": 30552,
+      "lists": {
+        "30551": {
+          "dbtype": "",
+          "first_dbtype": "movie",
+          "selected_node": "target_folder",
+          "count": "12",
+          "pages": "4"
+        },
+        "30552": {
+          "dbtype": "album",
+          "first_dbtype": "album",
+          "selected_node": "",
+          "count": "12",
+          "pages": "4"
+        }
+      }
+    },
+    {
+      "phase": "outside-after-music",
+      "focus": 9000,
+      "lists": {
+        "30551": {
+          "dbtype": "",
+          "first_dbtype": "movie",
+          "selected_node": "target_folder",
+          "count": "12",
+          "pages": "4"
+        },
+        "30552": {
+          "dbtype": "album",
+          "first_dbtype": "album",
+          "selected_node": "",
+          "count": "12",
+          "pages": "4"
+        }
+      }
+    },
+    {
+      "phase": "movie-first-selected",
+      "focus": 30551,
+      "lists": {
+        "30551": {
+          "dbtype": "movie",
+          "first_dbtype": "movie",
+          "selected_node": "",
+          "count": "12",
+          "pages": "3"
+        },
+        "30552": {
+          "dbtype": "album",
+          "first_dbtype": "album",
+          "selected_node": "",
+          "count": "12",
+          "pages": "4"
+        }
+      }
+    }
+  ],
+  "verified": true,
+  "cleanup": {
+    "owned_process_exited": true,
+    "settings_restored": true
+  }
+}

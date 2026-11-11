@@ -1,0 +1,101 @@
+{
+  "scope": "Actual Widget_Listlayout include in temporary modal dialogs; controlled typed items, not full Home layout or provider integration.",
+  "source_changed": false,
+  "cases": [
+    {
+      "phase": "initial",
+      "requested_focus": 9000,
+      "actual_focus": 9000,
+      "lists": {
+        "30551": {
+          "width": 736,
+          "dbtype": "movie",
+          "count": "12",
+          "pages": "3"
+        },
+        "30552": {
+          "width": 736,
+          "dbtype": "album",
+          "count": "12",
+          "pages": "4"
+        }
+      }
+    },
+    {
+      "phase": "movie-focused",
+      "requested_focus": 30551,
+      "actual_focus": 30551,
+      "lists": {
+        "30551": {
+          "width": 736,
+          "dbtype": "movie",
+          "count": "12",
+          "pages": "3"
+        },
+        "30552": {
+          "width": 736,
+          "dbtype": "album",
+          "count": "12",
+          "pages": "4"
+        }
+      }
+    },
+    {
+      "phase": "album-focused",
+      "requested_focus": 30552,
+      "actual_focus": 30552,
+      "lists": {
+        "30551": {
+          "width": 736,
+          "dbtype": "movie",
+          "count": "12",
+          "pages": "3"
+        },
+        "30552": {
+          "width": 736,
+          "dbtype": "album",
+          "count": "12",
+          "pages": "4"
+        }
+      }
+    },
+    {
+      "phase": "movie-to-album-unfocused",
+      "requested_focus": 9000,
+      "actual_focus": 9000,
+      "lists": {
+        "30551": {
+          "width": 736,
+          "dbtype": "album",
+          "count": "12",
+          "pages": "4"
+        },
+        "30552": {
+          "width": 736,
+          "dbtype": "album",
+          "count": "12",
+          "pages": "4"
+        }
+      }
+    },
+    {
+      "phase": "album-to-movie-unfocused",
+      "requested_focus": 9000,
+      "actual_focus": 9000,
+      "lists": {
+        "30551": {
+          "width": 736,
+          "dbtype": "movie",
+          "count": "12",
+          "pages": "3"
+        },
+        "30552": {
+          "width": 736,
+          "dbtype": "album",
+          "count": "12",
+          "pages": "4"
+        }
+      }
+    }
+  ]
+}

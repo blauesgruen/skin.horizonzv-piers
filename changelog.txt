@@ -1,4 +1,9 @@
-﻿v 1.22.1.3
+﻿v 1.22.1.5
+- Home-Widgets: automatisch erzeugten „Mehr“-Ordner in beiden Inhaltszweigen mit browse="never" deaktiviert, einschließlich des optionalen ersten Eintrags.
+- Den durch Auswahl dieses typfreien Ordners ausgelösten Wechsel auf breite Filmkacheln verhindert; Quellen, Sortierung und Eintragslimits bleiben erhalten.
+- Sichtbarer Kodi-Gegenversuch mit echten Bibliothekslisten bestanden: keine zusätzlichen „Mehr“-Ordner bei Limit 10 oder 1; Filmformat bleibt beim geprüften Wechsel zum Musikwidget und zurück erhalten.
+
+v 1.22.1.3
 - Farbauswahl: nativen Kodi-Dialog im HorizonzV-Design verwenden; Hex-Eingabe und Deckkraft ohne Colorpicker-Add-on erhalten.
 - Colorpicker-BG-Anbindung aus den unterstützten Add-ons entfernt; Installationsaufrufe und Add-on-Dialog gelöscht.
 
