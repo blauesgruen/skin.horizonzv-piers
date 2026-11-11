@@ -1790,9 +1790,9 @@
 			</control>
 		</definition>
     </include>
-    <include name="fakevideowindow">
-        <control type="group">
             <!-- Fake Videowindow for flowing presentation -->
+    <!-- <include name="fakevideowindow">
+        <control type="group">
             <control type="videowindow">
                 <left>0</left>
                 <top>0</top>
@@ -1811,7 +1811,7 @@
                 <visible>[Window.IsVisible(Home)+!Skin.HasSetting(BackgroundVideo)]+!Window.IsVisible(fullscreenvideo)+!Window.IsVisible(movieinformation)</visible>
             </control>
         </control>
-    </include>
+    </include> -->
 	<include name="HomemenuDiashowInclude">
 		<control type="list" id="787878">
 			<left>-100</left>

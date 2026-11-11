@@ -1,4 +1,7 @@
-﻿v 1.22.1.5
+﻿v 1.22.1.6
+- Wetterwidget: leeren Daily.0-Eintrag überspringen und bei 1-basierten Wetterdaten den ersten verfügbaren Tag anzeigen.
+
+v 1.22.1.5
 - Home-Widgets: automatisch erzeugten „Mehr“-Ordner in beiden Inhaltszweigen mit browse="never" deaktiviert, einschließlich des optionalen ersten Eintrags.
 - Den durch Auswahl dieses typfreien Ordners ausgelösten Wechsel auf breite Filmkacheln verhindert; Quellen, Sortierung und Eintragslimits bleiben erhalten.
 - Sichtbarer Kodi-Gegenversuch mit echten Bibliothekslisten bestanden: keine zusätzlichen „Mehr“-Ordner bei Limit 10 oder 1; Filmformat bleibt beim geprüften Wechsel zum Musikwidget und zurück erhalten.

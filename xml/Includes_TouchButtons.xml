@@ -108,6 +108,6 @@
                 </control>
             </control>
         </control>
-		<include>fakevideowindow</include>
+		<!-- <include>fakevideowindow</include> -->
     </include>
 </includes>

@@ -298,7 +298,7 @@
                     <top>6</top>
                     <align>center</align>
                     <aligny>center</aligny>
-                    <visible>Player.HasVideo+!Window.IsVisible(playercontrols)</visible>
+                    <visible>Player.HasVideo</visible>
                     <animation effect="slide" start="0,0" end="-3000,0" time="0">WindowClose</animation>
                 </control>
                 <control type="image">

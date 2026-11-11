@@ -17,6 +17,7 @@
             <icon>$VAR[WeatherIconVar]$INFO[Weather.Data(Daily.$PARAM[day_id].FanartCode)]$VAR[WeatherIconFolderVar]</icon>
             <onclick>ActivateWindow(weather)</onclick>
             <visible>Weather.IsFetched + !String.IsEmpty(Weather.Data(Daily.IsFetched))</visible>
+            <visible>!String.IsEmpty(Weather.Data(Daily.$PARAM[day_id].ShortDay))</visible>
             <visible>$PARAM[visible]</visible>
         </item>
     </include>

@@ -1,0 +1,30 @@
+{
+  "checked_at": "2026-11-11T11:49:33.178160+01:00",
+  "scope": "Read-only observation of user-started Radio Browser / StarFM playback; no playback, skin settings or addon source changes.",
+  "labels": {
+    "MusicPlayer.Artist": "",
+    "MusicPlayer.Title": "StarFM Berlin",
+    "Player.Title": "StarFM Berlin",
+    "System.CurrentWindow": "Audiovisualisierung",
+    "Window(Home).Property(RadioMonitor.Artist)": "",
+    "Window(Home).Property(RadioMonitor.ArtistDisplay)": "",
+    "Window(Home).Property(RadioMonitor.QF.Response.Reason)": "missing_station",
+    "Window(Home).Property(RadioMonitor.QF.Response.Status)": "no_hit",
+    "Window(Home).Property(RadioMonitor.Source)": "",
+    "Window(Home).Property(RadioMonitor.Station)": "STAR FM MAXIMUM ROCK Berlin",
+    "Window(Home).Property(RadioMonitor.Title)": ""
+  },
+  "skin": {
+    "addonid": "skin.horizonzv",
+    "enabled": true,
+    "type": "xbmc.gui.skin",
+    "version": "1.22.1.5"
+  },
+  "asm": {
+    "addonid": "service.audio.stream.monitor",
+    "enabled": true,
+    "type": "xbmc.service",
+    "version": "1.1.14"
+  },
+  "finding": "ASM display properties are empty; station is populated. Kodi title is StarFM Berlin. QF reports no_hit/missing_station. Raw StreamTitle logged earlier is not evidence that display properties were published."
+}

@@ -636,7 +636,7 @@
                             <label2>$INFO[Weather.Data(Daily.0.HighTemperature),, 7] $INFO[Weather.Data(Daily.0.LowTemperature)]</label2>
                             <icon>$VAR[WeatherIconVar]$INFO[Weather.Data(Daily.0.FanartCode)]$VAR[WeatherIconFolderVar]</icon>
                             <onclick>ActivateWindow(weather)</onclick>
-                            <visible>Weather.IsFetched + !String.IsEmpty(Weather.Data(Daily.IsFetched))</visible>
+                            <visible>Weather.IsFetched + !String.IsEmpty(Weather.Data(Daily.IsFetched)) + !String.IsEmpty(Weather.Data(Daily.0.ShortDay))</visible>
                         </item>
                         <include content="WeatherContentDefaultItem">
                             <param name="day_id" value="1"/>
@@ -664,7 +664,7 @@
                         </include>
                         <include content="WeatherContentDailyItem">
                             <param name="day_id" value="1"/>
-                            <param name="visible" value="Skin.HasSetting(HomeWeatherWidgetFull)"/>
+                            <param name="visible" value="Skin.HasSetting(HomeWeatherWidgetFull)|String.IsEmpty(Weather.Data(Daily.0.ShortDay))"/>
                         </include>
                         <include content="WeatherContentDailyItem">
                             <param name="day_id" value="2"/>
